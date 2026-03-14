@@ -1,0 +1,272 @@
+{
+  "data_date": "2026-03",
+  "archive_span": "2017-01 to 2026-03",
+  "total_editions": 108,
+  "total_course_codes_ever": 1594,
+  "active_ap_codes": 838,
+  "active_cert_codes": 52,
+  "retired_ap_codes": 756,
+  "active_programs": 114,
+  "retired_programs": 82,
+  "active_by_school": {
+    "Business": 190,
+    "Health": 193,
+    "Technology": 200,
+    "Education": 299
+  },
+  "active_by_school_note": "Courses in multiple schools are counted in each. Total may exceed active_ap_codes.",
+  "curated_major_events_count": 10,
+  "most_recent_curated_event": "Graduate CS/SWE Specialization Split and Education/Health Expansion",
+  "recent_version_changes": [
+    {
+      "program_code": "BAELED",
+      "last_version_date": "2026-03",
+      "version_stamp": "202603",
+      "degree_heading": "Bachelor of Arts, Elementary Education | Master of Arts in Teaching programs are the choice for you. These teacher-prep programs qualify you to become",
+      "school": "Teachers College"
+    },
+    {
+      "program_code": "BAESELED",
+      "last_version_date": "2026-03",
+      "version_stamp": "202603",
+      "degree_heading": "Bachelor of Arts, Educational Studies in Elementary Education",
+      "school": "School of Education"
+    },
+    {
+      "program_code": "BAESMES",
+      "last_version_date": "2026-03",
+      "version_stamp": "202603",
+      "degree_heading": "Bachelor of Arts, Educational Studies in Secondary Mathematics Education",
+      "school": "School of Education"
+    },
+    {
+      "program_code": "BAESSESB",
+      "last_version_date": "2026-03",
+      "version_stamp": "202603",
+      "degree_heading": "Bachelor of Arts, Educational Studies in Secondary Biological Science Education",
+      "school": "School of Education"
+    },
+    {
+      "program_code": "BAESSESC",
+      "last_version_date": "2026-03",
+      "version_stamp": "202603",
+      "degree_heading": "Bachelor of Arts, Educational Studies in Secondary Chemistry Science Education",
+      "school": "School of Education"
+    },
+    {
+      "program_code": "BAESSESE",
+      "last_version_date": "2026-03",
+      "version_stamp": "202603",
+      "degree_heading": "Bachelor of Arts, Educational Studies in Secondary Earth Science Education",
+      "school": "School of Education"
+    },
+    {
+      "program_code": "BAESSESP",
+      "last_version_date": "2026-03",
+      "version_stamp": "202603",
+      "degree_heading": "Bachelor of Arts, Educational Studies in Secondary Physics Science Education",
+      "school": "School of Education"
+    },
+    {
+      "program_code": "BAESSPEE",
+      "last_version_date": "2026-03",
+      "version_stamp": "202603",
+      "degree_heading": "Bachelor of Arts, Educational Studies in Special and Elementary Education",
+      "school": "School of Education"
+    }
+  ],
+  "newest_programs": [
+    {
+      "program_code": "MSIT",
+      "first_seen": "2026-02",
+      "degree_heading": "Master of Science, Information Technology",
+      "school": "School of Technology"
+    },
+    {
+      "program_code": "MSITPM",
+      "first_seen": "2026-02",
+      "degree_heading": "Master of Science, Information Technology - Product Management",
+      "school": "School of Technology"
+    },
+    {
+      "program_code": "MSITUG",
+      "first_seen": "2026-02",
+      "degree_heading": "Bachelor of Science, Information Technology (BSIT to MSIT)",
+      "school": "School of Technology"
+    },
+    {
+      "program_code": "BSCNE",
+      "first_seen": "2025-08",
+      "degree_heading": "Bachelor of Science, Cloud and Network Engineering",
+      "school": "School of Technology"
+    },
+    {
+      "program_code": "BSCNEAWS",
+      "first_seen": "2025-08",
+      "degree_heading": "Bachelor of Science, Cloud and Network Engineering - Amazon Web Services",
+      "school": "School of Technology"
+    },
+    {
+      "program_code": "BSCNEAZR",
+      "first_seen": "2025-08",
+      "degree_heading": "Bachelor of Science, Cloud and Network Engineering - Microsoft Azure",
+      "school": "School of Technology"
+    },
+    {
+      "program_code": "BSCNECIS",
+      "first_seen": "2025-08",
+      "degree_heading": "Bachelor of Science, Cloud and Network Engineering - Cisco",
+      "school": "School of Technology"
+    },
+    {
+      "program_code": "ENDMEMG",
+      "first_seen": "2025-07",
+      "degree_heading": "Endorsement Preparation Program, Middle Grades Math",
+      "school": "School of Education"
+    }
+  ],
+  "recent_course_additions": [
+    {
+      "code": "D822",
+      "title": "Technology Governance",
+      "added_in": "2026-02",
+      "school": "School of Technology"
+    },
+    {
+      "code": "E005",
+      "title": "Business Productivity Software",
+      "added_in": "2026-02",
+      "school": "School of Technology"
+    },
+    {
+      "code": "E006",
+      "title": "Digital Transformation in the Enterprise",
+      "added_in": "2026-02",
+      "school": "School of Technology"
+    },
+    {
+      "code": "E007",
+      "title": "Agile Methodology",
+      "added_in": "2026-02",
+      "school": "School of Technology"
+    },
+    {
+      "code": "E008",
+      "title": "Technology Management",
+      "added_in": "2026-02",
+      "school": "School of Technology"
+    },
+    {
+      "code": "D907",
+      "title": "Health Services Research",
+      "added_in": "2025-12",
+      "school": "Leavitt School of Health"
+    },
+    {
+      "code": "D908",
+      "title": "Healthcare Management",
+      "added_in": "2025-12",
+      "school": "Leavitt School of Health"
+    },
+    {
+      "code": "D909",
+      "title": "Healthcare Law and Ethics",
+      "added_in": "2025-12",
+      "school": "Leavitt School of Health"
+    },
+    {
+      "code": "D910",
+      "title": "Data Analysis for Healthcare Decisions",
+      "added_in": "2025-12",
+      "school": "Leavitt School of Health"
+    },
+    {
+      "code": "D911",
+      "title": "Transforming Healthcare Through Technology",
+      "added_in": "2025-12",
+      "school": "Leavitt School of Health"
+    }
+  ],
+  "curated_major_events_preview": [
+    {
+      "event_id": "EVT-001",
+      "date_range": "2017-01 → 2017-03",
+      "title": "Pre-Clinical Title Standardization",
+      "type": "rename_cleanup",
+      "schools": "Business; Education; Health; Technology",
+      "summary": "WGU standardized the hyphenation of 'Preclinical' across all teacher-education preclinical experience course titles. A concurrent wave of 13 program version bumps suggests this was part of a broader E"
+    },
+    {
+      "event_id": "EVT-002",
+      "date_range": "2017-05 → 2017-07",
+      "title": "2017 Assessment Code Migration and Teacher Program Rationalization",
+      "type": "composite",
+      "schools": "Education; Technology",
+      "summary": "The single most structurally disruptive transition in the 2017–2026 archive. WGU simultaneously retired the legacy assessment code taxonomy (AXX-format codes such as ABP1, AEP1) and reorganized the Ed"
+    },
+    {
+      "event_id": "EVT-003",
+      "date_range": "2018-04 → 2018-05",
+      "title": "Education School Domain Reorganization — Grade-Band to Subject-Discipline",
+      "type": "domain_reorganization",
+      "schools": "Education; Health; Technology",
+      "summary": "WGU reorganized teacher education program structure from grade-band taxonomy (K-9, 5-12 etc.) to subject-discipline taxonomy (Science, Math, Social Studies, etc.). The structural change retired 11 pro"
+    },
+    {
+      "event_id": "EVT-004",
+      "date_range": "2018-05 → 2018-06",
+      "title": "Education School Follow-On Reorganization Wave",
+      "type": "domain_reorganization",
+      "schools": "Education",
+      "summary": "Continuation of the 2018 Education school reorganization. Additional programs added and retired in the month immediately following the primary restructuring event, suggesting the April→May reorganizat"
+    },
+    {
+      "event_id": "EVT-005",
+      "date_range": "2020-01 → 2020-02",
+      "title": "Business School Program Family Rebuild (BSBA)",
+      "type": "program_family_rebuild",
+      "schools": "Business",
+      "summary": "WGU restructured the Business school program family, retiring older BSBA variants and introducing new program codes with shared core curriculum. The zero version change count is consistent with a name"
+    },
+    {
+      "event_id": "EVT-006",
+      "date_range": "2020-06 → 2020-07",
+      "title": "Mid-Archive Curriculum Version Wave — Business, Education, Health",
+      "type": "curriculum_version_wave",
+      "schools": "Business; Education; Health",
+      "summary": "A large curriculum-content refresh wave affecting three schools simultaneously with no structural program additions or removals. The 18 version changes indicate formal curriculum revision across many "
+    },
+    {
+      "event_id": "EVT-007",
+      "date_range": "2022-12 → 2023-01",
+      "title": "Leavitt School of Health Rename and Curriculum Restructuring",
+      "type": "composite",
+      "schools": "Business; Health; Technology",
+      "summary": "The Leavitt School of Health rename coincided with significant structural changes in the Health school — 9 program churn and 80 course churn together suggest the rename accompanied a broader health cu"
+    },
+    {
+      "event_id": "EVT-008",
+      "date_range": "2024-08 → 2024-09",
+      "title": "Certificate Formalization and BAES Program Launch",
+      "type": "composite",
+      "schools": "Business; Education; Technology",
+      "summary": "WGU added a formal 'Certificates - Standard Paths' section to the catalog for the first time, introducing 16 certificate programs with 52 dedicated course codes (all disjoint from Academic Programs). "
+    },
+    {
+      "event_id": "EVT-009",
+      "date_range": "2024-09 → 2024-10",
+      "title": "Post-Cert-Launch Curriculum Integration Wave",
+      "type": "curriculum_version_wave",
+      "schools": "Business; Education; Health; Technology",
+      "summary": "The month following the certificate section launch saw the highest four-college course churn in the recent archive, suggesting a broad curriculum integration across all four schools that may have been"
+    },
+    {
+      "event_id": "EVT-010",
+      "date_range": "2025-01 → 2025-02",
+      "title": "Graduate CS/SWE Specialization Split and Education/Health Expansion",
+      "type": "composite",
+      "schools": "Education; Health; Technology",
+      "summary": "The largest single-month expansion in the 2017–2026 archive by severity score. WGU launched multiple new graduate specialization tracks in Computer Science and Software Engineering (MSCS and MSSWE fam"
+    }
+  ]
+}

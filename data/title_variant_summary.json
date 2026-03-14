@@ -1,0 +1,27 @@
+{
+  "total_codes_with_variants": 167,
+  "counts_by_class": {
+    "extraction_noise": 145,
+    "punctuation_only": 16,
+    "wording_refinement": 3,
+    "substantive_change": 2,
+    "formatting_only": 1
+  },
+  "manual_review_needed_count": 1,
+  "substantive_change_codes": [
+    "D346",
+    "D347"
+  ],
+  "manual_review_codes": [
+    "D344"
+  ],
+  "method_notes": [
+    "extraction_noise: PDF line-wrap truncations (shorter is strict prefix of longer) OR Unicode quote differences OR catalog oscillations that reverted within 1-2 editions",
+    "formatting_only:  whitespace differences only",
+    "punctuation_only: differences in hyphens, commas, em-dashes, '&' vs 'and'",
+    "wording_refinement: typo corrections, synonym swaps, minor rewordings preserving core meaning",
+    "substantive_change: genuine semantic rename with meaningfully different wording",
+    "unresolved: insufficient evidence to classify confidently",
+    "Codes appearing in edition_diffs truncation set are classified extraction_noise unless a genuine change is also confirmed"
+  ]
+}
