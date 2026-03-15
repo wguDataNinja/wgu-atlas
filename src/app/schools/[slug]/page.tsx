@@ -88,17 +88,12 @@ export default async function SchoolPage({ params }: Props) {
 
       {/* Header */}
       <div className="mb-8">
-        <div className="flex items-center gap-2 mb-2">
-          <span className="text-sm bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded font-medium">
-            Active
-          </span>
-          <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
-            Source: WGU Catalog 2026-03
-          </span>
-        </div>
         <h1 className="text-3xl font-bold text-slate-800">{school.current_name}</h1>
         <p className="text-slate-500 mt-1">
           {programs.length} active programs · {courses.length} active courses
+        </p>
+        <p className="text-xs text-slate-400 mt-2">
+          Source: WGU public catalog · 2026-03 edition
         </p>
       </div>
 
@@ -109,9 +104,6 @@ export default async function SchoolPage({ params }: Props) {
         <div className="flex items-center gap-2 mb-4">
           <div className="w-1 h-5 bg-blue-600 rounded" />
           <h2 className="text-lg font-bold text-slate-800">School History</h2>
-          <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
-            Source: WGU public catalog archive
-          </span>
         </div>
         <SchoolLineage lineage={school.lineage} />
       </section>
@@ -218,9 +210,6 @@ export default async function SchoolPage({ params }: Props) {
           <h2 className="text-lg font-bold text-slate-800">
             Active Programs ({programs.length})
           </h2>
-          <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
-            Source: WGU Catalog 2026-03
-          </span>
         </div>
 
         {Object.entries(programsByLevel).map(([level, progs]) => (
@@ -281,9 +270,6 @@ export default async function SchoolPage({ params }: Props) {
           <h2 className="text-lg font-bold text-slate-800">
             Active Courses ({courses.length})
           </h2>
-          <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
-            Source: WGU Catalog 2026-03
-          </span>
         </div>
 
         <details className="group">
@@ -301,11 +287,8 @@ export default async function SchoolPage({ params }: Props) {
                   <th className="text-left px-3 py-2 text-xs font-medium text-slate-500">
                     Title
                   </th>
-                  <th className="text-right px-3 py-2 text-xs font-medium text-slate-500">
-                    CUs
-                  </th>
                   <th className="text-right px-3 py-2 text-xs font-medium text-slate-500 hidden md:table-cell">
-                    First seen
+                    First in catalog
                   </th>
                 </tr>
               </thead>
@@ -328,10 +311,6 @@ export default async function SchoolPage({ params }: Props) {
                     <td className="px-3 py-1.5 text-slate-700 text-sm">
                       {c.title}
                     </td>
-                    <td className="px-3 py-1.5 text-slate-400 text-xs text-right">
-                      {/* CUs not on CourseCard — would need detail lookup */}
-                      —
-                    </td>
                     <td className="px-3 py-1.5 text-slate-400 text-xs text-right hidden md:table-cell">
                       {c.first_seen}
                     </td>
@@ -349,9 +328,9 @@ export default async function SchoolPage({ params }: Props) {
       {retiredInSchool.length > 0 && (
         <section className="mb-10">
           <div className="flex items-center gap-2 mb-4">
-            <div className="w-1 h-5 bg-slate-400 rounded" />
-            <h2 className="text-lg font-bold text-slate-800">
-              Deprecated Programs ({retiredInSchool.length})
+            <div className="w-1 h-5 bg-slate-300 rounded" />
+            <h2 className="text-base font-semibold text-slate-600">
+              Retired Programs ({retiredInSchool.length})
             </h2>
           </div>
           <details className="group">

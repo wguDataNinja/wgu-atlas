@@ -328,6 +328,64 @@ School name on program page now links to `/schools/[slug]`.
 
 ---
 
+## 2026-03-14 — Session 8: Student-facing re-centering and cleanup pass
+
+### What was done
+
+A focused cleanup pass to re-center Atlas around student usefulness rather than archival novelty.
+
+#### Homepage (`src/app/page.tsx`)
+
+- Subtitle simplified: "Search courses, programs, and WGU catalog history"
+- Orientation stats band: removed "Retired codes" and "Named events"; kept Active courses + Active programs + data date + methods link
+- Removed "Programs with Recent Updates" module (archive-facing, low student value)
+- Added "Browse by School" module: 4 school tiles with program count, each linking to `/schools/[slug]`
+- Renamed "Around the WGU Web" → "Official WGU Resources"
+- Timeline preview heading reduced in visual weight; moved to bottom of page
+- Added `cleanHeading()` and `shortSchool()` helpers to reduce clutter in module listings
+
+#### Course detail (`src/app/courses/[code]/page.tsx`)
+
+- Removed "Discussion Signals — Coming in v1.1" placeholder section
+- Removed `ghost_flag` badge from header
+- Status badge wording: "Deprecated" → "Retired", "Current" → "Active"
+- Renamed primary section "Official Catalog History" → "Course Details" (blue left bar)
+- Reordered primary stats: `{credit units, current programs, total programs, offered in}` + programs list + school chips + other names
+- Archive stats (first/last seen, editions, catalog presence) moved to secondary "Catalog History" section (slate left bar, lower visual weight)
+- Simplified label maps: stability, variant, and context labels now use plain language ("Present in all editions", "Formatting variation only", "Degree programs", etc.)
+- Removed repeated source badge from primary section; source badge kept only on secondary "Catalog History" section
+
+#### Course explorer (`src/app/courses/page.tsx`, `src/components/courses/CourseExplorer.tsx`)
+
+- Page title: "Courses" (was "Course Explorer")
+- Removed `ghost_flag` visual badge from course rows in `CourseExplorer`
+
+#### School pages (`src/app/schools/[slug]/page.tsx`)
+
+- Removed broken CUs column from active courses table (CourseCard doesn't carry CU values — removed rather than show "—")
+- Fixed "Deprecated Programs" → "Retired Programs" section heading
+- Consolidated repeated source badge clutter: moved provenance to page header level
+
+#### Navigation (`src/components/layout/Nav.tsx`)
+
+- Split nav into `primaryLinks` (Home / Courses / Programs / Schools) and `secondaryLinks` (Timeline / Methods / Data)
+- Visual divider separates the two groups
+- Secondary links styled lighter (`text-slate-400` base, `text-slate-600` hover) vs. primary (`text-slate-600` base, `text-slate-900` hover)
+- Secondary active state: `bg-slate-100 text-slate-700` (not the blue highlight used for primary)
+
+### Build result
+
+1,851 static pages — identical count to Session 7, no regressions.
+
+### Next steps
+
+- [ ] Improve outcomes matching for remaining 40 programs
+- [ ] Add CU values to `CourseCard` so school course tables can show CUs
+- [ ] Add `stability_class` badge to course cards
+- [ ] Add school tenet text (once parsed from catalog)
+
+---
+
 ## 2026-03-14 — Session 5: Product direction review
 
 ### What was done

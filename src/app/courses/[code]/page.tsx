@@ -13,10 +13,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { code } = await params;
   const course = getCourseDetail(code);
   if (!course) return { title: "Course Not Found" };
-  const statusLabel = course.active_current ? "" : " (Deprecated)";
+  const statusLabel = course.active_current ? "" : " (Retired)";
   return {
     title: `${code}${statusLabel} — ${course.canonical_title_current}`,
-    description: `WGU catalog history for ${code}: ${course.canonical_title_current}. First seen ${course.first_seen_edition}, ${course.historical_program_count} historical programs.`,
+    description: `${course.canonical_title_current} (${code}). ${course.active_current ? "Active" : "Retired"} WGU course — ${course.historical_program_count} programs, first offered ${course.first_seen_edition}.`,
   };
 }
 
@@ -32,7 +32,7 @@ export default async function CourseDetailPage({ params }: Props) {
     (t) => t !== course.canonical_title_current
   );
 
-  // For deprecated courses without programs_timeline, parse historical_programs
+  // For retired courses without programs_timeline, parse historical_programs
   const historicalProgramList: string[] =
     course.historical_programs && !course.programs_timeline
       ? course.historical_programs
@@ -44,6 +44,19 @@ export default async function CourseDetailPage({ params }: Props) {
   const isCurrent = course.active_current;
   const isRichDetail = Array.isArray(course.programs_timeline);
 
+  // Normalize colleges_seen to array
+  const collegesSeen: string[] = Array.isArray(course.colleges_seen)
+    ? course.colleges_seen
+    : course.colleges_seen
+    ? [course.colleges_seen]
+    : [];
+
+  // Normalize current_programs to array
+  const currentPrograms: string[] =
+    typeof course.current_programs === "string"
+      ? (course.current_programs as string).split(";").map((s) => s.trim()).filter(Boolean)
+      : (course.current_programs ?? []);
+
   return (
     <div className="max-w-4xl mx-auto px-4 py-10">
       {/* Breadcrumb */}
@@ -53,7 +66,7 @@ export default async function CourseDetailPage({ params }: Props) {
         <span className="text-slate-600">{code}</span>
       </nav>
 
-      {/* Header */}
+      {/* ── Header ──────────────────────────────────────────────────────── */}
       <div className="mb-8">
         <div className="flex items-start flex-wrap gap-2 mb-2">
           <span className="font-mono text-sm bg-blue-100 text-blue-700 px-2 py-1 rounded font-semibold mt-0.5">
@@ -66,16 +79,11 @@ export default async function CourseDetailPage({ params }: Props) {
           )}
           {isCurrent ? (
             <span className="text-sm bg-green-50 text-green-700 border border-green-200 px-2 py-1 rounded font-medium">
-              Current
+              Active
             </span>
           ) : (
             <span className="text-sm bg-slate-100 text-slate-500 px-2 py-1 rounded font-medium">
-              Deprecated
-            </span>
-          )}
-          {course.ghost_flag && (
-            <span className="text-sm bg-orange-50 text-orange-600 border border-orange-200 px-2 py-1 rounded">
-              Ghost (≤2 appearances)
+              Retired
             </span>
           )}
         </div>
@@ -85,59 +93,91 @@ export default async function CourseDetailPage({ params }: Props) {
         )}
         {!isCurrent && (
           <p className="text-sm text-slate-400 mt-1">
-            Last seen: {course.last_seen_edition} · Final source: WGU Catalog ({course.last_seen_edition})
+            Last in catalog: {course.last_seen_edition} · Source: WGU public catalog
           </p>
         )}
       </div>
 
-      {/* Official catalog history section */}
+      {/* ── Course details (student-facing primary section) ─────────────── */}
       <section className="mb-8">
         <div className="flex items-center gap-2 mb-4">
           <div className="w-1 h-5 bg-blue-600 rounded" />
-          <h2 className="text-lg font-bold text-slate-800">Official Catalog History</h2>
-          <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
-            Source: WGU public catalog archive
-          </span>
+          <h2 className="text-lg font-bold text-slate-800">Course Details</h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
-          <StatCard label="First seen" value={course.first_seen_edition} />
-          <StatCard label="Last seen" value={course.last_seen_edition} />
-          <StatCard label="Catalog editions" value={String(course.edition_count)} />
-          <StatCard
-            label="Stability"
-            value={STABILITY_LABELS[course.stability_class] ?? course.stability_class}
-          />
+        {/* Primary facts grid — CUs, programs, scope */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5">
           {course.canonical_cus != null && (
-            <StatCard label="Credit units (CUs)" value={String(course.canonical_cus)} />
+            <StatCard label="Credit units" value={`${course.canonical_cus} CUs`} />
           )}
+          <StatCard
+            label="Current programs"
+            value={String(course.current_program_count)}
+          />
+          <StatCard
+            label="Total programs (all time)"
+            value={String(course.historical_program_count)}
+          />
+          <StatCard
+            label="Offered in"
+            value={CONTEXT_LABELS[course.contexts_seen] ?? course.contexts_seen}
+          />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
-          <StatCard label="Current programs" value={String(course.current_program_count)} />
-          <StatCard label="Historical programs" value={String(course.historical_program_count)} />
-        </div>
+        {/* Current programs list */}
+        {currentPrograms.length > 0 && (
+          <div className="mb-5">
+            <dt className="text-xs text-slate-500 mb-2">
+              Current programs ({course.current_program_count})
+            </dt>
+            <ul className="flex flex-col gap-1">
+              {currentPrograms.map((p, i) => {
+                const pCode = headingToCode[p];
+                return (
+                  <li key={i} className="text-sm text-slate-700 flex items-start gap-1">
+                    <span className="text-slate-300 mt-0.5">·</span>
+                    {pCode ? (
+                      <Link href={`/programs/${pCode}`} className="hover:text-blue-600 hover:underline">
+                        {p}
+                      </Link>
+                    ) : p}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        )}
 
-        {/* Contexts */}
-        <div className="mb-4">
-          <dt className="text-xs text-slate-500 mb-1">Appears in</dt>
-          <dd className="text-sm text-slate-700">{CONTEXT_LABELS[course.contexts_seen] ?? course.contexts_seen}</dd>
-        </div>
+        {/* School */}
+        {collegesSeen.length > 0 && (
+          <div className="mb-5">
+            <dt className="text-xs text-slate-500 mb-1">
+              {collegesSeen.length > 1 ? "Schools (historical)" : "School"}
+            </dt>
+            <div className="flex flex-wrap gap-1">
+              {collegesSeen.map((c, i) => (
+                <span key={i} className="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">
+                  {c}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
 
-        {/* Title history */}
+        {/* Other names in catalog */}
         {titleVariants.length > 0 && (
           <div className="mb-4">
             <dt className="text-xs text-slate-500 mb-1">
-              Observed title variants
+              Other names in catalog
               {course.title_variant_class !== "none" && (
-                <span className="ml-2 bg-slate-100 text-slate-500 px-1.5 rounded">
+                <span className="ml-2 bg-slate-100 text-slate-400 px-1.5 rounded text-xs">
                   {VARIANT_LABELS[course.title_variant_class] ?? course.title_variant_class}
                 </span>
               )}
             </dt>
             <ul className="flex flex-col gap-1">
               {titleVariants.map((t, i) => (
-                <li key={i} className="text-sm text-slate-600 font-mono bg-slate-50 border border-slate-200 rounded px-2 py-1">
+                <li key={i} className="text-sm text-slate-500 font-mono bg-slate-50 border border-slate-200 rounded px-2 py-1">
                   {t}
                 </li>
               ))}
@@ -148,47 +188,7 @@ export default async function CourseDetailPage({ params }: Props) {
           </div>
         )}
 
-        {/* Current programs */}
-        {course.current_programs && course.current_programs.length > 0 && (
-          <div className="mb-4">
-            <dt className="text-xs text-slate-500 mb-2">Current programs ({course.current_program_count})</dt>
-            <ul className="flex flex-col gap-1">
-              {(typeof course.current_programs === "string"
-                ? (course.current_programs as string).split(";").map((s) => s.trim()).filter(Boolean)
-                : course.current_programs
-              ).map((p, i) => {
-                const code = headingToCode[p];
-                return (
-                  <li key={i} className="text-sm text-slate-700 flex items-start gap-1">
-                    <span className="text-slate-300 mt-0.5">·</span>
-                    {code ? (
-                      <Link href={`/programs/${code}`} className="hover:text-blue-600 hover:underline">{p}</Link>
-                    ) : p}
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        )}
-
-        {/* Colleges seen */}
-        {course.colleges_seen && (
-          <div className="mb-4">
-            <dt className="text-xs text-slate-500 mb-1">Schools / colleges seen</dt>
-            <div className="flex flex-wrap gap-1">
-              {(Array.isArray(course.colleges_seen)
-                ? course.colleges_seen
-                : [course.colleges_seen]
-              ).map((c, i) => (
-                <span key={i} className="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">
-                  {c}
-                </span>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Notes / confidence */}
+        {/* Notes */}
         {(course.notes_confidence || course.notes) && (
           <div className="mt-4 bg-amber-50 border border-amber-200 rounded p-3 text-xs text-amber-800">
             <span className="font-semibold">Note: </span>
@@ -197,15 +197,36 @@ export default async function CourseDetailPage({ params }: Props) {
         )}
       </section>
 
-      {/* Program history — rich timeline (active AP) */}
+      {/* ── Catalog history (secondary section) ─────────────────────────── */}
+      <section className="mb-8">
+        <div className="flex items-center gap-2 mb-3">
+          <div className="w-1 h-5 bg-slate-300 rounded" />
+          <h2 className="text-base font-semibold text-slate-600">Catalog History</h2>
+          <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
+            Source: WGU public catalog archive
+          </span>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <StatCard label="First in catalog" value={course.first_seen_edition} />
+          <StatCard label="Last in catalog" value={course.last_seen_edition} />
+          <StatCard label="Editions present" value={String(course.edition_count)} />
+          <StatCard
+            label="Catalog presence"
+            value={STABILITY_LABELS[course.stability_class] ?? course.stability_class}
+          />
+        </div>
+      </section>
+
+      {/* ── Program history — active AP (rich) ──────────────────────────── */}
       {isRichDetail && course.programs_timeline && course.programs_timeline.length > 0 && (
         <section className="mb-8">
-          <div className="flex items-center gap-2 mb-4">
-            <div className="w-1 h-5 bg-blue-600 rounded" />
-            <h2 className="text-lg font-bold text-slate-800">Program History</h2>
+          <div className="flex items-center gap-2 mb-3">
+            <div className="w-1 h-5 bg-slate-300 rounded" />
+            <h2 className="text-base font-semibold text-slate-600">Program History</h2>
           </div>
           <p className="text-sm text-slate-500 mb-3">
-            All programs in which this course has appeared ({course.programs_timeline.length} total).
+            All programs this course has appeared in ({course.programs_timeline.length} total).
           </p>
           <div className="border border-slate-200 rounded-lg overflow-hidden">
             <table className="w-full text-sm">
@@ -242,16 +263,15 @@ export default async function CourseDetailPage({ params }: Props) {
         </section>
       )}
 
-      {/* Program history — simple list (deprecated/cert) */}
+      {/* ── Program history — retired/cert (simple list) ─────────────────── */}
       {!isRichDetail && historicalProgramList.length > 0 && (
         <section className="mb-8">
-          <div className="flex items-center gap-2 mb-4">
-            <div className="w-1 h-5 bg-blue-600 rounded" />
-            <h2 className="text-lg font-bold text-slate-800">Historical Programs</h2>
+          <div className="flex items-center gap-2 mb-3">
+            <div className="w-1 h-5 bg-slate-300 rounded" />
+            <h2 className="text-base font-semibold text-slate-600">
+              Programs ({historicalProgramList.length})
+            </h2>
           </div>
-          <p className="text-sm text-slate-500 mb-3">
-            Programs in which this course appeared ({historicalProgramList.length} total).
-          </p>
           <ul className="flex flex-col gap-1">
             {historicalProgramList.map((p, i) => {
               const progCode = headingToCode[p];
@@ -267,21 +287,6 @@ export default async function CourseDetailPage({ params }: Props) {
           </ul>
         </section>
       )}
-
-      {/* Discussion placeholder */}
-      <section className="mb-8">
-        <div className="flex items-center gap-2 mb-4">
-          <div className="w-1 h-5 bg-slate-300 rounded" />
-          <h2 className="text-lg font-bold text-slate-500">Discussion Signals</h2>
-          <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
-            Coming in v1.1
-          </span>
-        </div>
-        <p className="text-sm text-slate-400 italic">
-          Student discussion data from Reddit and other community spaces will appear here in a future release.
-          Official catalog facts and discussion signals will always remain clearly separated.
-        </p>
-      </section>
 
       {/* Back */}
       <div className="border-t border-slate-100 pt-6">
@@ -303,25 +308,25 @@ function StatCard({ label, value }: { label: string; value: string }) {
 }
 
 const STABILITY_LABELS: Record<string, string> = {
-  perpetual: "Perpetual (all editions)",
-  stable: "Stable",
-  moderate: "Moderate",
-  ephemeral: "Ephemeral",
-  single: "Single appearance",
-  cert_only: "Cert only",
+  perpetual: "Present in all editions",
+  stable: "Stable across most editions",
+  moderate: "Present in many editions",
+  ephemeral: "Short-lived",
+  single: "Appeared once",
+  cert_only: "Certificate-only",
 };
 
 const CONTEXT_LABELS: Record<string, string> = {
-  AP: "Academic programs (AP)",
+  AP: "Degree programs",
   cert: "Certificate programs",
-  both: "Academic programs + certificates",
+  both: "Degree and certificate programs",
 };
 
 const VARIANT_LABELS: Record<string, string> = {
-  none: "No variants",
-  extraction_noise: "Extraction noise (not a real rename)",
-  punctuation_only: "Punctuation only",
-  wording_refinement: "Minor wording refinement",
-  substantive_change: "Substantive title change",
-  formatting_only: "Formatting only",
+  none: "",
+  extraction_noise: "Formatting variation only",
+  punctuation_only: "Punctuation variation only",
+  wording_refinement: "Minor wording update",
+  substantive_change: "Title changed",
+  formatting_only: "Formatting variation only",
 };

@@ -173,9 +173,6 @@ function CourseRow({ course, hasDetail }: { course: CourseCard; hasDetail: boole
         {!course.active && (
           <span className="text-xs text-slate-400">retired {course.last_seen}</span>
         )}
-        {course.ghost_flag && (
-          <span className="text-xs bg-orange-50 text-orange-600 border border-orange-200 px-1.5 rounded">ghost</span>
-        )}
         <span className="text-xs text-slate-400">{course.current_college}</span>
         {hasDetail && <span className="text-blue-400">→</span>}
       </div>
