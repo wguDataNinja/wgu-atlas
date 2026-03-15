@@ -9,7 +9,7 @@ import {
   getHomepageSummary,
   getPrograms,
 } from "@/lib/data";
-import type { ProgramRecord, CourseCard } from "@/lib/types";
+import type { ProgramRecord } from "@/lib/types";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -61,11 +61,6 @@ export default async function SchoolPage({ params }: Props) {
   const recentCourseAdditions = summary.recent_course_additions
     .filter((c) => schoolNormMap[c.school] === slug)
     .slice(0, 10);
-
-  // Programs sorted by first_seen descending
-  const programsSortedByRecent = [...programs].sort((a, b) =>
-    b.first_seen.localeCompare(a.first_seen)
-  );
 
   // Group programs by degree level for organized display
   const programsByLevel = groupProgramsByLevel(programs);
@@ -487,14 +482,6 @@ function cleanHeading(heading: string): string {
 function groupProgramsByLevel(
   programs: ProgramRecord[]
 ): Record<string, ProgramRecord[]> {
-  const order = [
-    "Doctor",
-    "Master",
-    "Bachelor",
-    "Associate",
-    "Endorsement",
-    "Other",
-  ];
   const groups: Record<string, ProgramRecord[]> = {};
 
   for (const p of programs) {

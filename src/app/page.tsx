@@ -56,13 +56,18 @@ export default function HomePage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
           {/* Newest programs */}
-          <Module title="Newest Programs" href="/courses">
+          <Module title="Newest Programs" href="/programs">
             <ul className="flex flex-col gap-2">
               {summary.newest_programs.slice(0, 5).map((p) => (
                 <li key={p.program_code} className="text-sm">
                   <span className="font-mono text-xs text-slate-400 mr-1">{p.first_seen}</span>
-                  <span className="text-slate-700">{p.degree_heading}</span>
-                  <span className="text-xs text-slate-400 block ml-0">{p.school}</span>
+                  <Link
+                    href={`/programs/${p.program_code}`}
+                    className="text-slate-700 hover:text-blue-600 hover:underline"
+                  >
+                    {p.degree_heading}
+                  </Link>
+                  <span className="text-xs text-slate-400 block">{p.school}</span>
                 </li>
               ))}
             </ul>
@@ -87,11 +92,16 @@ export default function HomePage() {
           </Module>
 
           {/* Recent version changes */}
-          <Module title="Programs with Recent Updates" href="/timeline">
+          <Module title="Programs with Recent Updates" href="/programs">
             <ul className="flex flex-col gap-2">
               {summary.recent_version_changes.slice(0, 5).map((p) => (
                 <li key={p.program_code} className="text-sm">
-                  <span className="text-slate-700 line-clamp-1">{p.degree_heading}</span>
+                  <Link
+                    href={`/programs/${p.program_code}`}
+                    className="text-slate-700 hover:text-blue-600 hover:underline line-clamp-1"
+                  >
+                    {p.degree_heading}
+                  </Link>
                   <span className="text-xs text-slate-400">{p.school} · updated {p.last_version_date}</span>
                 </li>
               ))}

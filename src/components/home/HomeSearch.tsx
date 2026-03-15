@@ -52,7 +52,7 @@ export default function HomeSearch() {
 
   function href(entry: SearchEntry) {
     if (entry.type === "course") return `/courses/${entry.code}`;
-    return `/courses?q=${encodeURIComponent(entry.title)}`;
+    return `/programs/${entry.code}`;
   }
 
   return (
@@ -93,7 +93,9 @@ export default function HomeSearch() {
               </span>
               <span className="text-sm text-slate-800 truncate">{entry.title}</span>
               {!entry.active && (
-                <span className="ml-auto text-xs text-slate-400 shrink-0">retired</span>
+                <span className="ml-auto text-xs text-slate-400 shrink-0">
+                  {entry.type === "program" ? "deprecated" : "retired"}
+                </span>
               )}
             </Link>
           ))}

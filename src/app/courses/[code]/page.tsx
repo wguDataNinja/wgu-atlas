@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getCourseDetail, getDetailableCodes } from "@/lib/data";
+import { getCourseDetail, getAllCourseCodes, getHeadingToProgramCode } from "@/lib/data";
 
 type Props = { params: Promise<{ code: string }> };
 
 export async function generateStaticParams() {
-  return getDetailableCodes().map((code) => ({ code }));
+  return getAllCourseCodes().map((code) => ({ code }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { code } = await params;
   const course = getCourseDetail(code);
   if (!course) return { title: "Course Not Found" };
+  const statusLabel = course.active_current ? "" : " (Deprecated)";
   return {
-    title: `${code} — ${course.canonical_title_current}`,
+    title: `${code}${statusLabel} — ${course.canonical_title_current}`,
     description: `WGU catalog history for ${code}: ${course.canonical_title_current}. First seen ${course.first_seen_edition}, ${course.historical_program_count} historical programs.`,
   };
 }
@@ -23,14 +24,25 @@ export default async function CourseDetailPage({ params }: Props) {
   const { code } = await params;
   const course = getCourseDetail(code);
 
-  if (!course) {
-    // Retired/cert codes have no detail file — redirect to explorer
-    notFound();
-  }
+  if (!course) notFound();
+
+  const headingToCode = getHeadingToProgramCode();
 
   const titleVariants = course.observed_titles.filter(
     (t) => t !== course.canonical_title_current
   );
+
+  // For deprecated courses without programs_timeline, parse historical_programs
+  const historicalProgramList: string[] =
+    course.historical_programs && !course.programs_timeline
+      ? course.historical_programs
+          .split(";")
+          .map((s) => s.trim())
+          .filter(Boolean)
+      : [];
+
+  const isCurrent = course.active_current;
+  const isRichDetail = Array.isArray(course.programs_timeline);
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-10">
@@ -43,13 +55,22 @@ export default async function CourseDetailPage({ params }: Props) {
 
       {/* Header */}
       <div className="mb-8">
-        <div className="flex items-start gap-3 mb-2">
+        <div className="flex items-start flex-wrap gap-2 mb-2">
           <span className="font-mono text-sm bg-blue-100 text-blue-700 px-2 py-1 rounded font-semibold mt-0.5">
             {code}
           </span>
-          {!course.active_current && (
-            <span className="text-sm bg-slate-100 text-slate-500 px-2 py-1 rounded">
-              Retired
+          {course.canonical_cus != null && (
+            <span className="text-sm bg-indigo-50 text-indigo-700 border border-indigo-200 px-2 py-1 rounded font-semibold">
+              {course.canonical_cus} CU{course.canonical_cus !== 1 ? "s" : ""}
+            </span>
+          )}
+          {isCurrent ? (
+            <span className="text-sm bg-green-50 text-green-700 border border-green-200 px-2 py-1 rounded font-medium">
+              Current
+            </span>
+          ) : (
+            <span className="text-sm bg-slate-100 text-slate-500 px-2 py-1 rounded font-medium">
+              Deprecated
             </span>
           )}
           {course.ghost_flag && (
@@ -61,6 +82,11 @@ export default async function CourseDetailPage({ params }: Props) {
         <h1 className="text-3xl font-bold text-slate-800">{course.canonical_title_current}</h1>
         {course.current_college && (
           <p className="text-slate-500 mt-1">{course.current_college}</p>
+        )}
+        {!isCurrent && (
+          <p className="text-sm text-slate-400 mt-1">
+            Last seen: {course.last_seen_edition} · Final source: WGU Catalog ({course.last_seen_edition})
+          </p>
         )}
       </div>
 
@@ -82,6 +108,9 @@ export default async function CourseDetailPage({ params }: Props) {
             label="Stability"
             value={STABILITY_LABELS[course.stability_class] ?? course.stability_class}
           />
+          {course.canonical_cus != null && (
+            <StatCard label="Credit units (CUs)" value={String(course.canonical_cus)} />
+          )}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
@@ -120,21 +149,29 @@ export default async function CourseDetailPage({ params }: Props) {
         )}
 
         {/* Current programs */}
-        {course.current_programs.length > 0 && (
+        {course.current_programs && course.current_programs.length > 0 && (
           <div className="mb-4">
             <dt className="text-xs text-slate-500 mb-2">Current programs ({course.current_program_count})</dt>
             <ul className="flex flex-col gap-1">
-              {course.current_programs.map((p, i) => (
-                <li key={i} className="text-sm text-slate-700 flex items-start gap-1">
-                  <span className="text-slate-300 mt-0.5">·</span>
-                  {p}
-                </li>
-              ))}
+              {(typeof course.current_programs === "string"
+                ? (course.current_programs as string).split(";").map((s) => s.trim()).filter(Boolean)
+                : course.current_programs
+              ).map((p, i) => {
+                const code = headingToCode[p];
+                return (
+                  <li key={i} className="text-sm text-slate-700 flex items-start gap-1">
+                    <span className="text-slate-300 mt-0.5">·</span>
+                    {code ? (
+                      <Link href={`/programs/${code}`} className="hover:text-blue-600 hover:underline">{p}</Link>
+                    ) : p}
+                  </li>
+                );
+              })}
             </ul>
           </div>
         )}
 
-        {/* Colleges seen — field may be a string or array depending on the course */}
+        {/* Colleges seen */}
         {course.colleges_seen && (
           <div className="mb-4">
             <dt className="text-xs text-slate-500 mb-1">Schools / colleges seen</dt>
@@ -152,15 +189,16 @@ export default async function CourseDetailPage({ params }: Props) {
         )}
 
         {/* Notes / confidence */}
-        {course.notes_confidence && (
+        {(course.notes_confidence || course.notes) && (
           <div className="mt-4 bg-amber-50 border border-amber-200 rounded p-3 text-xs text-amber-800">
-            <span className="font-semibold">Note: </span>{course.notes_confidence}
+            <span className="font-semibold">Note: </span>
+            {course.notes_confidence ?? course.notes}
           </div>
         )}
       </section>
 
-      {/* Program history */}
-      {course.programs_timeline.length > 0 && (
+      {/* Program history — rich timeline (active AP) */}
+      {isRichDetail && course.programs_timeline && course.programs_timeline.length > 0 && (
         <section className="mb-8">
           <div className="flex items-center gap-2 mb-4">
             <div className="w-1 h-5 bg-blue-600 rounded" />
@@ -178,12 +216,21 @@ export default async function CourseDetailPage({ params }: Props) {
                 </tr>
               </thead>
               <tbody>
-                {course.programs_timeline.slice(0, 50).map((entry, i) => (
-                  <tr key={i} className="border-b border-slate-100 last:border-0 hover:bg-slate-50">
-                    <td className="px-4 py-2 text-slate-700">{entry.program}</td>
-                    <td className="px-4 py-2 text-slate-400 font-mono text-xs">{entry.first_seen}</td>
-                  </tr>
-                ))}
+                {course.programs_timeline.slice(0, 50).map((entry, i) => {
+                  const progCode = headingToCode[entry.program];
+                  return (
+                    <tr key={i} className="border-b border-slate-100 last:border-0 hover:bg-slate-50">
+                      <td className="px-4 py-2 text-slate-700">
+                        {progCode ? (
+                          <Link href={`/programs/${progCode}`} className="hover:text-blue-600 hover:underline">
+                            {entry.program}
+                          </Link>
+                        ) : entry.program}
+                      </td>
+                      <td className="px-4 py-2 text-slate-400 font-mono text-xs">{entry.first_seen}</td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
             {course.programs_timeline.length > 50 && (
@@ -192,6 +239,32 @@ export default async function CourseDetailPage({ params }: Props) {
               </div>
             )}
           </div>
+        </section>
+      )}
+
+      {/* Program history — simple list (deprecated/cert) */}
+      {!isRichDetail && historicalProgramList.length > 0 && (
+        <section className="mb-8">
+          <div className="flex items-center gap-2 mb-4">
+            <div className="w-1 h-5 bg-blue-600 rounded" />
+            <h2 className="text-lg font-bold text-slate-800">Historical Programs</h2>
+          </div>
+          <p className="text-sm text-slate-500 mb-3">
+            Programs in which this course appeared ({historicalProgramList.length} total).
+          </p>
+          <ul className="flex flex-col gap-1">
+            {historicalProgramList.map((p, i) => {
+              const progCode = headingToCode[p];
+              return (
+                <li key={i} className="text-sm text-slate-700 flex items-start gap-1">
+                  <span className="text-slate-300 mt-0.5">·</span>
+                  {progCode ? (
+                    <Link href={`/programs/${progCode}`} className="hover:text-blue-600 hover:underline">{p}</Link>
+                  ) : p}
+                </li>
+              );
+            })}
+          </ul>
         </section>
       )}
 
