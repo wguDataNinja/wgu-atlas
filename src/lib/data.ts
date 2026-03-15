@@ -5,8 +5,10 @@ import type {
   CourseDetail,
   CatalogEvent,
   HomepageSummary,
+  OfficialResourcePlacement,
   ProgramRecord,
   ProgramEnriched,
+  ResourceSurface,
   SchoolRecord,
 } from "./types";
 
@@ -219,6 +221,43 @@ export function getCoursesBySchool(historicalNames: string[]): CourseCard[] {
   return getCourses().filter(
     (c) => c.active && historicalNames.includes(c.current_college)
   );
+}
+
+// ---------------------------------------------------------------------------
+// Official resource placements
+// ---------------------------------------------------------------------------
+
+let _officialResourcePlacements: OfficialResourcePlacement[] | null = null;
+
+export function getOfficialResourcePlacements(): OfficialResourcePlacement[] {
+  if (!_officialResourcePlacements) {
+    const raw = fs.readFileSync(
+      path.join(PUBLIC_DATA, "official_resource_placements.json"),
+      "utf-8"
+    );
+    _officialResourcePlacements = JSON.parse(raw);
+  }
+  return _officialResourcePlacements!;
+}
+
+export function getOfficialResourcePlacementsForSurface(
+  showOnSurface: ResourceSurface,
+  surfaceKey: string
+): OfficialResourcePlacement[] {
+  return getOfficialResourcePlacements()
+    .filter(
+      (row) =>
+        row.status === "show" &&
+        row.show_on_surface === showOnSurface &&
+        row.surface_key === surfaceKey &&
+        row.placement_mode === "sidebar"
+    )
+    .sort((a, b) => {
+      if (a.display_priority !== b.display_priority) {
+        return a.display_priority - b.display_priority;
+      }
+      return a.resource_title.localeCompare(b.resource_title);
+    });
 }
 
 // ---------------------------------------------------------------------------

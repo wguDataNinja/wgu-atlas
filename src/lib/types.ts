@@ -205,3 +205,22 @@ export interface HomepageSummary {
   recent_course_additions: RecentCourseAddition[];
   curated_major_events_preview: CuratedEventPreview[];
 }
+
+// ---------------------------------------------------------------------------
+// Official resource placements — from public/data/official_resource_placements.json
+// ---------------------------------------------------------------------------
+export type ResourceSurface = "program_detail" | "school_detail";
+
+export interface OfficialResourcePlacement {
+  resource_url: string;
+  resource_title: string;
+  show_on_surface: ResourceSurface;
+  surface_key: string;
+  surface_label: string;
+  site_area: "programs" | "schools" | string;
+  placement_mode: "sidebar" | string;
+  display_priority: number;
+  resource_group: string;
+  benefit_reason: string;
+  status: "show" | "hide" | string;
+}

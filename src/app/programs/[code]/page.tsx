@@ -5,9 +5,11 @@ import {
   getProgramDetail,
   getAllProgramCodes,
   getProgramEnrichedByCode,
+  getOfficialResourcePlacementsForSurface,
   getSchools,
 } from "@/lib/data";
 import type { RosterCourse } from "@/lib/types";
+import RelevantResources from "@/components/resources/RelevantResources";
 
 type Props = { params: Promise<{ code: string }> };
 
@@ -33,6 +35,9 @@ export default async function ProgramDetailPage({ params }: Props) {
 
   const enriched = getProgramEnrichedByCode(code);
   const schools = getSchools();
+  const hasRelevantResources =
+    getOfficialResourcePlacementsForSurface("program_detail", program.program_code)
+      .length > 0;
 
   const isActive = program.status === "ACTIVE";
   const versionSteps = parseVersionProgression(program.version_progression);
@@ -62,7 +67,17 @@ export default async function ProgramDetailPage({ params }: Props) {
     .sort((a, b) => a - b);
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-10">
+    <div
+      className={`${hasRelevantResources ? "max-w-6xl" : "max-w-4xl"} mx-auto px-4 py-10`}
+    >
+      <div
+        className={
+          hasRelevantResources
+            ? "lg:grid lg:grid-cols-[minmax(0,1fr)_19rem] lg:gap-10"
+            : ""
+        }
+      >
+        <main className={hasRelevantResources ? "min-w-0" : ""}>
       {/* Breadcrumb */}
       <nav className="text-sm text-slate-400 mb-6">
         <Link href="/programs" className="hover:text-blue-600">
@@ -140,8 +155,8 @@ export default async function ProgramDetailPage({ params }: Props) {
           ================================================================ */}
       <section className="mb-8">
         <div className="flex items-center gap-2 mb-4">
-          <div className="w-1 h-5 bg-blue-600 rounded" />
-          <h2 className="text-lg font-bold text-slate-800">Official Catalog History</h2>
+          <div className="w-1 h-5 bg-slate-300 rounded" />
+          <h2 className="text-base font-semibold text-slate-700">Catalog History</h2>
           <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
             Source: WGU public catalog archive
           </span>
@@ -368,6 +383,14 @@ export default async function ProgramDetailPage({ params }: Props) {
         <Link href="/programs" className="text-sm text-blue-600 hover:underline">
           ← Back to Programs
         </Link>
+      </div>
+        </main>
+
+        {hasRelevantResources && (
+          <aside className="mt-8 self-start lg:sticky lg:top-24 lg:mt-0">
+            <RelevantResources surface="program_detail" surfaceKey={program.program_code} />
+          </aside>
+        )}
       </div>
     </div>
   );

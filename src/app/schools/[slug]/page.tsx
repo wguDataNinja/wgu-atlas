@@ -6,10 +6,12 @@ import {
   getSchoolBySlug,
   getProgramsBySchool,
   getCoursesBySchool,
+  getOfficialResourcePlacementsForSurface,
   getHomepageSummary,
   getPrograms,
 } from "@/lib/data";
 import type { ProgramRecord } from "@/lib/types";
+import RelevantResources from "@/components/resources/RelevantResources";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -36,6 +38,8 @@ export default async function SchoolPage({ params }: Props) {
   const courses = getCoursesBySchool(school.historical_names);
   const summary = getHomepageSummary();
   const allPrograms = getPrograms();
+  const hasRelevantResources =
+    getOfficialResourcePlacementsForSurface("school_detail", school.slug).length > 0;
 
   // School-filtered activity modules
   // Normalize school names: some homepage_summary entries use historical school names
@@ -76,7 +80,17 @@ export default async function SchoolPage({ params }: Props) {
   );
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-10">
+    <div
+      className={`${hasRelevantResources ? "max-w-7xl" : "max-w-5xl"} mx-auto px-4 py-10`}
+    >
+      <div
+        className={
+          hasRelevantResources
+            ? "lg:grid lg:grid-cols-[minmax(0,1fr)_19rem] lg:gap-10"
+            : ""
+        }
+      >
+        <main className={hasRelevantResources ? "min-w-0" : ""}>
       {/* Breadcrumb */}
       <nav className="text-sm text-slate-400 mb-6">
         <Link href="/schools" className="hover:text-blue-600">
@@ -102,8 +116,8 @@ export default async function SchoolPage({ params }: Props) {
           ================================================================ */}
       <section className="mb-10">
         <div className="flex items-center gap-2 mb-4">
-          <div className="w-1 h-5 bg-blue-600 rounded" />
-          <h2 className="text-lg font-bold text-slate-800">School History</h2>
+          <div className="w-1 h-5 bg-slate-300 rounded" />
+          <h2 className="text-base font-semibold text-slate-700">School History</h2>
         </div>
         <SchoolLineage lineage={school.lineage} />
       </section>
@@ -390,6 +404,14 @@ export default async function SchoolPage({ params }: Props) {
         <Link href="/schools" className="text-sm text-blue-600 hover:underline">
           ← Back to Schools
         </Link>
+      </div>
+        </main>
+
+        {hasRelevantResources && (
+          <aside className="mt-8 self-start lg:sticky lg:top-24 lg:mt-0">
+            <RelevantResources surface="school_detail" surfaceKey={school.slug} />
+          </aside>
+        )}
       </div>
     </div>
   );
