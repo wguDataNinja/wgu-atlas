@@ -19,6 +19,7 @@ export interface CourseCard {
 
 // ---------------------------------------------------------------------------
 // Course detail — from public/data/courses/{code}.json (838 active AP files)
+// or canonical_courses.json fallback for retired/cert-only codes
 // ---------------------------------------------------------------------------
 export interface ProgramTimelineEntry {
   program: string;
@@ -37,16 +38,77 @@ export interface CourseDetail {
   current_programs: string[];
   current_program_count: number;
   historical_program_count: number;
-  programs_timeline: ProgramTimelineEntry[];
+  // Present in individual detail files (active AP only):
+  programs_timeline?: ProgramTimelineEntry[];
+  title_variant_detail?: string | null;
+  notes?: string | null;
+  // Present in canonical_courses.json (all courses):
+  historical_programs?: string;  // semicolon-separated list for retired/cert
+  notes_confidence?: string | null;
   edition_count: number;
+  canonical_cus: number | null;
   stability_class: string;
   ghost_flag: boolean;
   single_appearance_flag: boolean;
   title_variant_class: string;
-  title_variant_detail: string | null;
   current_title_confidence: string;
-  notes_confidence: string | null;
   colleges_seen: string[] | string;
+}
+
+// ---------------------------------------------------------------------------
+// Program — from public/data/programs.json (196 entries)
+// ---------------------------------------------------------------------------
+export interface ProgramRecord {
+  program_code: string;
+  status: "ACTIVE" | "RETIRED";
+  canonical_name: string;
+  degree_headings: string[];
+  first_seen: string;
+  last_seen: string;
+  edition_count: number;
+  version_changes: number;
+  version_progression: string;
+  colleges: string[];
+  cus_values: number[];
+  school: string;
+}
+
+// ---------------------------------------------------------------------------
+// Program enriched — from public/data/program_enriched.json
+// Extracted from 2026-03 catalog text: descriptions, rosters, outcomes
+// ---------------------------------------------------------------------------
+export interface RosterCourse {
+  term: number;
+  code: string;
+  title: string;
+  cus: number;
+}
+
+export interface ProgramEnriched {
+  program_code: string;
+  description: string;
+  description_source: string;
+  roster: RosterCourse[];
+  roster_source: string;
+  outcomes: string[];
+  outcomes_source: string | null;
+}
+
+// ---------------------------------------------------------------------------
+// School — derived from programs.json + lineage constants
+// ---------------------------------------------------------------------------
+export interface SchoolLineageEntry {
+  date: string;      // "YYYY-MM"
+  name: string;      // School/college name at that date
+  program_count?: number | null;
+}
+
+export interface SchoolRecord {
+  slug: string;         // "business" | "health" | "technology" | "education"
+  current_name: string;
+  canonical_key: string; // matches programs.json school field
+  lineage: SchoolLineageEntry[];
+  historical_names: string[]; // all historical raw names (for matching courses.json)
 }
 
 // ---------------------------------------------------------------------------

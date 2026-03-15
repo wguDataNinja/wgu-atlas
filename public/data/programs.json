@@ -1,0 +1,4122 @@
+[
+  {
+    "program_code": "BAESELED",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Arts, Educational Studies in Elementary Education",
+    "degree_headings": [
+      "Bachelor of Arts, Educational Studies in Elementary Education"
+    ],
+    "first_seen": "2024-08",
+    "last_seen": "2026-03",
+    "edition_count": 20,
+    "version_changes": 2,
+    "version_progression": "2024-08:202402 \u2192 2024-09:202411 \u2192 2026-03:202603",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      96,
+      98
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "BAESSPMM",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Arts, Educational Studies in Mild to Moderate Exceptionalities Special Education",
+    "degree_headings": [
+      "Bachelor of Arts, Educational Studies in Mild to Moderate Exceptionalities Special Education"
+    ],
+    "first_seen": "2024-09",
+    "last_seen": "2026-03",
+    "edition_count": 19,
+    "version_changes": 2,
+    "version_progression": "2024-09:202402 \u2192 2024-10:202412 \u2192 2026-03:202603",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      98,
+      103
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "BAESSESB",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Arts, Educational Studies in Secondary Biological Science Education",
+    "degree_headings": [
+      "Bachelor of Arts, Educational Studies in Secondary Biological Science Education"
+    ],
+    "first_seen": "2024-09",
+    "last_seen": "2026-03",
+    "edition_count": 19,
+    "version_changes": 2,
+    "version_progression": "2024-09:202402 \u2192 2025-02:202504 \u2192 2026-03:202603",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      97,
+      102
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "BAESSESC",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Arts, Educational Studies in Secondary Chemistry Science Education",
+    "degree_headings": [
+      "Bachelor of Arts, Educational Studies in Secondary Chemistry Science Education"
+    ],
+    "first_seen": "2024-09",
+    "last_seen": "2026-03",
+    "edition_count": 19,
+    "version_changes": 2,
+    "version_progression": "2024-09:202402 \u2192 2025-02:202504 \u2192 2026-03:202603",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      102,
+      104
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "BAESSESE",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Arts, Educational Studies in Secondary Earth Science Education",
+    "degree_headings": [
+      "Bachelor of Arts, Educational Studies in Secondary Earth Science Education"
+    ],
+    "first_seen": "2024-09",
+    "last_seen": "2026-03",
+    "edition_count": 19,
+    "version_changes": 2,
+    "version_progression": "2024-09:202402 \u2192 2025-02:202504 \u2192 2026-03:202603",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      99,
+      102
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "BAESMES",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Arts, Educational Studies in Secondary Mathematics Education",
+    "degree_headings": [
+      "Bachelor of Arts, Educational Studies in Secondary Mathematics Education"
+    ],
+    "first_seen": "2024-09",
+    "last_seen": "2026-03",
+    "edition_count": 19,
+    "version_changes": 2,
+    "version_progression": "2024-09:202402 \u2192 2025-02:202504 \u2192 2026-03:202603",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      107,
+      113
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "BAESSESP",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Arts, Educational Studies in Secondary Physics Science Education",
+    "degree_headings": [
+      "Bachelor of Arts, Educational Studies in Secondary Physics Science Education"
+    ],
+    "first_seen": "2024-09",
+    "last_seen": "2026-03",
+    "edition_count": 19,
+    "version_changes": 2,
+    "version_progression": "2024-09:202402 \u2192 2025-02:202504 \u2192 2026-03:202603",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      102,
+      106
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "BAESSPEE",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Arts, Educational Studies in Special and Elementary Education",
+    "degree_headings": [
+      "Bachelor of Arts, Educational Studies in Special and Elementary Education"
+    ],
+    "first_seen": "2024-09",
+    "last_seen": "2026-03",
+    "edition_count": 19,
+    "version_changes": 2,
+    "version_progression": "2024-09:202402 \u2192 2024-10:202412 \u2192 2026-03:202603",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      113,
+      124
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "BAELED",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Arts, Elementary Education",
+    "degree_headings": [
+      "Bachelor of Arts, Elementary Education",
+      "Master of Arts in Teaching programs are the choice for you. These teacher-prep programs qualify you to become"
+    ],
+    "first_seen": "2018-07",
+    "last_seen": "2026-03",
+    "edition_count": 93,
+    "version_changes": 5,
+    "version_progression": "2018-07:201808 \u2192 2020-07:202007 \u2192 2023-07:202308 \u2192 2023-12:202402 \u2192 2024-09:202411 \u2192 2026-03:202603",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      119,
+      120
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "BASPMM",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Arts, Special Education Mild to Moderate",
+    "degree_headings": [
+      "Bachelor of Arts, Special Education Mild to Moderate",
+      "Bachelor of Arts, Special Education, Mild to Moderate"
+    ],
+    "first_seen": "2018-10",
+    "last_seen": "2026-03",
+    "edition_count": 90,
+    "version_changes": 5,
+    "version_progression": "2018-10:201812 \u2192 2020-07:202007 \u2192 2023-07:202308 \u2192 2023-12:202402 \u2192 2024-10:202412 \u2192 2026-03:202603",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      121,
+      124,
+      125
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "BASPEE",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Arts, Special Education and Elementary Education (Dual Licensure)",
+    "degree_headings": [
+      "Bachelor of Arts, Special Education and Elementary Education (Dual Licensure)"
+    ],
+    "first_seen": "2019-04",
+    "last_seen": "2026-03",
+    "edition_count": 84,
+    "version_changes": 5,
+    "version_progression": "2019-04:201905 \u2192 2020-07:202007 \u2192 2023-07:202308 \u2192 2023-12:202402 \u2192 2024-10:202412 \u2192 2026-03:202603",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      136,
+      137,
+      140,
+      146
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "BSSCOM",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science Supply Chain and Operations Management",
+    "degree_headings": [
+      "Bachelor of Science Supply Chain and Operations Management",
+      "Bachelor of Science, Supply Chain and Operations Management"
+    ],
+    "first_seen": "2023-04",
+    "last_seen": "2026-03",
+    "edition_count": 36,
+    "version_changes": 1,
+    "version_progression": "2023-04:202306 \u2192 2026-03:202605",
+    "colleges": [
+      "College of Business",
+      "School of Business"
+    ],
+    "cus_values": [
+      110
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "BSPSY",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science in Psychology",
+    "degree_headings": [
+      "Bachelor of Science in Psychology"
+    ],
+    "first_seen": "2024-02",
+    "last_seen": "2026-03",
+    "edition_count": 26,
+    "version_changes": 0,
+    "version_progression": "2024-02:202404",
+    "colleges": [
+      "Leavitt School of Health"
+    ],
+    "cus_values": [
+      106
+    ],
+    "school": "Leavitt School of Health"
+  },
+  {
+    "program_code": "BSACC",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Accounting",
+    "degree_headings": [
+      "Bachelor of Science, Accounting"
+    ],
+    "first_seen": "2025-01",
+    "last_seen": "2026-03",
+    "edition_count": 15,
+    "version_changes": 0,
+    "version_progression": "2025-01:202503",
+    "colleges": [
+      "School of Business"
+    ],
+    "cus_values": [
+      121
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "BSMGT",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Business Management",
+    "degree_headings": [
+      "Bachelor of Science, Business Management",
+      "Bachelor of Science, Management"
+    ],
+    "first_seen": "2025-01",
+    "last_seen": "2026-03",
+    "edition_count": 15,
+    "version_changes": 1,
+    "version_progression": "2025-01:202503 \u2192 2026-03:202605",
+    "colleges": [
+      "School of Business"
+    ],
+    "cus_values": [
+      110,
+      111
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "BSCNE",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Cloud and Network Engineering",
+    "degree_headings": [
+      "Bachelor of Science, Cloud and Network Engineering"
+    ],
+    "first_seen": "2025-08",
+    "last_seen": "2026-03",
+    "edition_count": 8,
+    "version_changes": 0,
+    "version_progression": "2025-08:202510",
+    "colleges": [
+      "School of Technology"
+    ],
+    "cus_values": [
+      109
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "BSCNEAWS",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Cloud and Network Engineering - Amazon Web Services",
+    "degree_headings": [
+      "Bachelor of Science, Cloud and Network Engineering - Amazon Web Services"
+    ],
+    "first_seen": "2025-08",
+    "last_seen": "2026-03",
+    "edition_count": 8,
+    "version_changes": 0,
+    "version_progression": "2025-08:202510",
+    "colleges": [
+      "School of Technology"
+    ],
+    "cus_values": [
+      112
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "BSCNECIS",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Cloud and Network Engineering - Cisco",
+    "degree_headings": [
+      "Bachelor of Science, Cloud and Network Engineering - Cisco"
+    ],
+    "first_seen": "2025-08",
+    "last_seen": "2026-03",
+    "edition_count": 8,
+    "version_changes": 0,
+    "version_progression": "2025-08:202510",
+    "colleges": [
+      "School of Technology"
+    ],
+    "cus_values": [
+      112
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "BSCNEAZR",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Cloud and Network Engineering - Microsoft Azure",
+    "degree_headings": [
+      "Bachelor of Science, Cloud and Network Engineering - Microsoft Azure"
+    ],
+    "first_seen": "2025-08",
+    "last_seen": "2026-03",
+    "edition_count": 8,
+    "version_changes": 0,
+    "version_progression": "2025-08:202510",
+    "colleges": [
+      "School of Technology"
+    ],
+    "cus_values": [
+      112
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "BSC",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Communications",
+    "degree_headings": [
+      "Bachelor of Science, Communications"
+    ],
+    "first_seen": "2024-08",
+    "last_seen": "2026-03",
+    "edition_count": 20,
+    "version_changes": 1,
+    "version_progression": "2024-08:202409 \u2192 2025-09:202510",
+    "colleges": [
+      "School of Business"
+    ],
+    "cus_values": [
+      115
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "BSCS",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Computer Science",
+    "degree_headings": [
+      "Bachelor of Science, Computer Science"
+    ],
+    "first_seen": "2018-05",
+    "last_seen": "2026-03",
+    "edition_count": 95,
+    "version_changes": 4,
+    "version_progression": "2018-05:201806 \u2192 2018-08:201809 \u2192 2020-10:202011 \u2192 2023-05:202306 \u2192 2024-10:202412",
+    "colleges": [
+      "College of Information Technology",
+      "School of Technology"
+    ],
+    "cus_values": [
+      117,
+      120,
+      122,
+      123
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "MSCSUG",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Computer Science (BSCS to MSCS)",
+    "degree_headings": [
+      "Bachelor of Science, Computer Science (BSCS to MSCS)"
+    ],
+    "first_seen": "2025-02",
+    "last_seen": "2026-03",
+    "edition_count": 14,
+    "version_changes": 0,
+    "version_progression": "2025-02:202504",
+    "colleges": [
+      "School of Technology"
+    ],
+    "cus_values": [
+      116
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "BSCSIA",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Cybersecurity and Information Assurance",
+    "degree_headings": [
+      "Bachelor of Science, Cybersecurity and Information Assurance"
+    ],
+    "first_seen": "2017-07",
+    "last_seen": "2026-03",
+    "edition_count": 105,
+    "version_changes": 4,
+    "version_progression": "2017-07:201706 \u2192 2018-12:201901 \u2192 2020-10:202010 \u2192 2023-02:202303 \u2192 2025-07:202509",
+    "colleges": [
+      "College of Information Technology",
+      "School of Technology"
+    ],
+    "cus_values": [
+      122
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "BSDA",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Data Analytics",
+    "degree_headings": [
+      "Bachelor of Science, Data Analytics"
+    ],
+    "first_seen": "2023-08",
+    "last_seen": "2026-03",
+    "edition_count": 32,
+    "version_changes": 0,
+    "version_progression": "2023-08:202309",
+    "colleges": [
+      "College of Information Technology",
+      "School of Technology"
+    ],
+    "cus_values": [
+      122
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "BSFIN",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Finance",
+    "degree_headings": [
+      "Bachelor of Science, Finance"
+    ],
+    "first_seen": "2023-01",
+    "last_seen": "2026-03",
+    "edition_count": 39,
+    "version_changes": 0,
+    "version_progression": "2023-01:202304",
+    "colleges": [
+      "College of Business",
+      "School of Business"
+    ],
+    "cus_values": [
+      120
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "BSHIM",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Health Information Management",
+    "degree_headings": [
+      "Bachelor of Science, Health Information Management"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2026-03",
+    "edition_count": 108,
+    "version_changes": 11,
+    "version_progression": "2017-01:201611 \u2192 2017-07:201710 \u2192 2019-02:201903 \u2192 2020-11:202109 \u2192 2020-12:201903 \u2192 2021-04:202109 \u2192 2021-05:201903 \u2192 2021-09:202109 \u2192 2023-08:202309 \u2192 2024-01:202401 \u2192 2024-02:202402 \u2192 2025-02:202504",
+    "colleges": [
+      "College of Information Technology",
+      "College of Health Professions",
+      "Leavitt School of Health"
+    ],
+    "cus_values": [
+      120,
+      121,
+      122
+    ],
+    "school": "Leavitt School of Health"
+  },
+  {
+    "program_code": "BSHS",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Health Science",
+    "degree_headings": [
+      "Bachelor of Science, Health Science"
+    ],
+    "first_seen": "2024-04",
+    "last_seen": "2026-03",
+    "edition_count": 24,
+    "version_changes": 0,
+    "version_progression": "2024-04:202406",
+    "colleges": [
+      "Leavitt School of Health"
+    ],
+    "cus_values": [
+      91
+    ],
+    "school": "Leavitt School of Health"
+  },
+  {
+    "program_code": "BSHHS",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Health and Human Services",
+    "degree_headings": [
+      "Bachelor of Science, Health and Human Services"
+    ],
+    "first_seen": "2022-12",
+    "last_seen": "2026-03",
+    "edition_count": 40,
+    "version_changes": 3,
+    "version_progression": "2022-12:202302 \u2192 2024-01:202401 \u2192 2024-02:202402 \u2192 2024-10:202411",
+    "colleges": [
+      "College of Health Professions",
+      "Leavitt School of Health"
+    ],
+    "cus_values": [
+      110,
+      111
+    ],
+    "school": "Leavitt School of Health"
+  },
+  {
+    "program_code": "BSHA",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Healthcare Administration",
+    "degree_headings": [
+      "Bachelor of Science, Healthcare Administration"
+    ],
+    "first_seen": "2023-08",
+    "last_seen": "2026-03",
+    "edition_count": 32,
+    "version_changes": 2,
+    "version_progression": "2023-08:202309 \u2192 2024-06:202407 \u2192 2025-08:202509",
+    "colleges": [
+      "College of Business",
+      "School of Business"
+    ],
+    "cus_values": [
+      110,
+      120
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "BSHR",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Human Resource Management",
+    "degree_headings": [
+      "Bachelor of Science, Human Resource Management"
+    ],
+    "first_seen": "2025-01",
+    "last_seen": "2026-03",
+    "edition_count": 15,
+    "version_changes": 1,
+    "version_progression": "2025-01:202503 \u2192 2025-08:202509",
+    "colleges": [
+      "School of Business"
+    ],
+    "cus_values": [
+      117
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "BSIT",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Information Technology",
+    "degree_headings": [
+      "Bachelor of Science, Information Technology"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2026-03",
+    "edition_count": 108,
+    "version_changes": 4,
+    "version_progression": "2017-01:201702 \u2192 2017-09:201710 \u2192 2018-12:201901 \u2192 2022-06:202207 \u2192 2026-02:202604",
+    "colleges": [
+      "College of Information Technology",
+      "School of Technology"
+    ],
+    "cus_values": [
+      110,
+      120,
+      121
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "MSITUG",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Information Technology (BSIT to MSIT)",
+    "degree_headings": [
+      "Bachelor of Science, Information Technology (BSIT to MSIT)"
+    ],
+    "first_seen": "2026-02",
+    "last_seen": "2026-03",
+    "edition_count": 2,
+    "version_changes": 0,
+    "version_progression": "2026-02:202604",
+    "colleges": [
+      "School of Technology"
+    ],
+    "cus_values": [
+      110
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "BSITM",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Information Technology Management",
+    "degree_headings": [
+      "Bachelor of Science, Information Technology Management"
+    ],
+    "first_seen": "2025-01",
+    "last_seen": "2026-03",
+    "edition_count": 15,
+    "version_changes": 0,
+    "version_progression": "2025-01:202503",
+    "colleges": [
+      "School of Business"
+    ],
+    "cus_values": [
+      120
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "BSMKT",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Marketing",
+    "degree_headings": [
+      "Bachelor of Science, Marketing"
+    ],
+    "first_seen": "2024-11",
+    "last_seen": "2026-03",
+    "edition_count": 17,
+    "version_changes": 0,
+    "version_progression": "2024-11:202501",
+    "colleges": [
+      "School of Business"
+    ],
+    "cus_values": [
+      112
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "BSMES",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Mathematics Education (Secondary)",
+    "degree_headings": [
+      "Bachelor of Science, Mathematics Education (Secondary)"
+    ],
+    "first_seen": "2018-09",
+    "last_seen": "2026-03",
+    "edition_count": 91,
+    "version_changes": 4,
+    "version_progression": "2018-09:201810 \u2192 2020-07:202007 \u2192 2023-12:202402 \u2192 2025-02:202504 \u2192 2026-03:202603",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      129,
+      138
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "BSNU",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Nursing",
+    "degree_headings": [
+      "Bachelor of Science, Nursing"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2026-03",
+    "edition_count": 108,
+    "version_changes": 2,
+    "version_progression": "2017-01:201611 \u2192 2022-01:202202 \u2192 2024-08:202410",
+    "colleges": [
+      "College of Health Professions",
+      "Leavitt School of Health"
+    ],
+    "cus_values": [
+      120
+    ],
+    "school": "Leavitt School of Health"
+  },
+  {
+    "program_code": "BSNPLTR",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Nursing - Prelicensure (Nursing)",
+    "degree_headings": [
+      "Bachelor of Science, Nursing - Prelicensure (Nursing)"
+    ],
+    "first_seen": "2023-01",
+    "last_seen": "2026-03",
+    "edition_count": 39,
+    "version_changes": 0,
+    "version_progression": "2023-01:202303",
+    "colleges": [
+      "Leavitt School of Health"
+    ],
+    "cus_values": [
+      59
+    ],
+    "school": "Leavitt School of Health"
+  },
+  {
+    "program_code": "BSPNTR",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Nursing - Prelicensure (Pre-Nursing)",
+    "degree_headings": [
+      "Bachelor of Science, Nursing - Prelicensure (Pre-Nursing)"
+    ],
+    "first_seen": "2023-01",
+    "last_seen": "2026-03",
+    "edition_count": 39,
+    "version_changes": 0,
+    "version_progression": "2023-01:202303",
+    "colleges": [
+      "Leavitt School of Health"
+    ],
+    "cus_values": [
+      61
+    ],
+    "school": "Leavitt School of Health"
+  },
+  {
+    "program_code": "BSPH",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Public Health",
+    "degree_headings": [
+      "Bachelor of Science, Public Health"
+    ],
+    "first_seen": "2024-07",
+    "last_seen": "2026-03",
+    "edition_count": 21,
+    "version_changes": 0,
+    "version_progression": "2024-07:202409",
+    "colleges": [
+      "Leavitt School of Health"
+    ],
+    "cus_values": [
+      104
+    ],
+    "school": "Leavitt School of Health"
+  },
+  {
+    "program_code": "BSSESB",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Science Education (Secondary Biological Science)",
+    "degree_headings": [
+      "Bachelor of Science, Science Education (Secondary Biological Science)"
+    ],
+    "first_seen": "2018-05",
+    "last_seen": "2026-03",
+    "edition_count": 95,
+    "version_changes": 4,
+    "version_progression": "2018-05:201806 \u2192 2020-07:202007 \u2192 2023-12:202402 \u2192 2025-02:202504 \u2192 2026-03:202603",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      122,
+      124
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "BSSESC",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Science Education (Secondary Chemistry)",
+    "degree_headings": [
+      "Bachelor of Science, Science Education (Secondary Chemistry)"
+    ],
+    "first_seen": "2018-05",
+    "last_seen": "2026-03",
+    "edition_count": 95,
+    "version_changes": 4,
+    "version_progression": "2018-05:201806 \u2192 2020-07:202007 \u2192 2023-12:202402 \u2192 2025-02:202504 \u2192 2026-03:202603",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      124,
+      129
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "BSSESE",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Science Education (Secondary Earth Science)",
+    "degree_headings": [
+      "Bachelor of Science, Science Education (Secondary Earth Science)"
+    ],
+    "first_seen": "2018-05",
+    "last_seen": "2026-03",
+    "edition_count": 95,
+    "version_changes": 4,
+    "version_progression": "2018-05:201806 \u2192 2020-07:202007 \u2192 2023-12:202402 \u2192 2025-02:202504 \u2192 2026-03:202603",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      124
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "BSSESP",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Science Education (Secondary Physics)",
+    "degree_headings": [
+      "Bachelor of Science, Science Education (Secondary Physics)"
+    ],
+    "first_seen": "2018-05",
+    "last_seen": "2026-03",
+    "edition_count": 95,
+    "version_changes": 4,
+    "version_progression": "2018-05:201806 \u2192 2020-07:202007 \u2192 2023-12:202402 \u2192 2025-02:202504 \u2192 2026-03:202603",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      124,
+      131
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "BSSWE",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Software Engineering",
+    "degree_headings": [
+      "Bachelor of Science, Software Engineering",
+      "Master of Science, Information Technology Management portion"
+    ],
+    "first_seen": "2023-01",
+    "last_seen": "2026-03",
+    "edition_count": 39,
+    "version_changes": 0,
+    "version_progression": "2023-01:202303",
+    "colleges": [
+      "College of Information Technology",
+      "School of Technology"
+    ],
+    "cus_values": [
+      119
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "BSSWE_C",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Software Engineering",
+    "degree_headings": [
+      "Bachelor of Science, Software Engineering"
+    ],
+    "first_seen": "2023-01",
+    "last_seen": "2026-03",
+    "edition_count": 39,
+    "version_changes": 0,
+    "version_progression": "2023-01:202303",
+    "colleges": [
+      "College of Information Technology",
+      "School of Technology"
+    ],
+    "cus_values": [
+      119
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "MSSWEUG",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, Software Engineering (BSSWE to MSSWE)",
+    "degree_headings": [
+      "Bachelor of Science, Software Engineering (BSSWE to MSSWE)"
+    ],
+    "first_seen": "2025-02",
+    "last_seen": "2026-03",
+    "edition_count": 14,
+    "version_changes": 0,
+    "version_progression": "2025-02:202504",
+    "colleges": [
+      "School of Technology"
+    ],
+    "cus_values": [
+      119
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "BSUXD",
+    "status": "ACTIVE",
+    "canonical_name": "Bachelor of Science, User Experience Design",
+    "degree_headings": [
+      "Bachelor of Science, User Experience Design"
+    ],
+    "first_seen": "2024-08",
+    "last_seen": "2026-03",
+    "edition_count": 20,
+    "version_changes": 1,
+    "version_progression": "2024-08:202410 \u2192 2025-09:202510",
+    "colleges": [
+      "School of Business"
+    ],
+    "cus_values": [
+      115
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "ENDSESB",
+    "status": "ACTIVE",
+    "canonical_name": "Endorsement Preparation Program, Biology",
+    "degree_headings": [
+      "Endorsement Preparation Program, Biology"
+    ],
+    "first_seen": "2025-07",
+    "last_seen": "2026-03",
+    "edition_count": 9,
+    "version_changes": 0,
+    "version_progression": "2025-07:202509",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      28
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "ENDSESC",
+    "status": "ACTIVE",
+    "canonical_name": "Endorsement Preparation Program, Chemistry",
+    "degree_headings": [
+      "Endorsement Preparation Program, Chemistry"
+    ],
+    "first_seen": "2025-07",
+    "last_seen": "2026-03",
+    "edition_count": 9,
+    "version_changes": 0,
+    "version_progression": "2025-07:202509",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      23
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "ENDSESE",
+    "status": "ACTIVE",
+    "canonical_name": "Endorsement Preparation Program, Earth Science",
+    "degree_headings": [
+      "Endorsement Preparation Program, Earth Science"
+    ],
+    "first_seen": "2025-07",
+    "last_seen": "2026-03",
+    "edition_count": 9,
+    "version_changes": 0,
+    "version_progression": "2025-07:202509",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      28
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "ENDELL",
+    "status": "ACTIVE",
+    "canonical_name": "Endorsement Preparation Program, English Language Learning",
+    "degree_headings": [
+      "Endorsement Preparation Program, English Language Learning"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2026-03",
+    "edition_count": 108,
+    "version_changes": 0,
+    "version_progression": "2017-01:201112",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      25
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "ENDMEMG",
+    "status": "ACTIVE",
+    "canonical_name": "Endorsement Preparation Program, Middle Grades Math",
+    "degree_headings": [
+      "Endorsement Preparation Program, Middle Grades Math"
+    ],
+    "first_seen": "2025-07",
+    "last_seen": "2026-03",
+    "edition_count": 9,
+    "version_changes": 0,
+    "version_progression": "2025-07:202509",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      6
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "ENDSEMG",
+    "status": "ACTIVE",
+    "canonical_name": "Endorsement Preparation Program, Middle Grades Science",
+    "degree_headings": [
+      "Endorsement Preparation Program, Middle Grades Science"
+    ],
+    "first_seen": "2025-07",
+    "last_seen": "2026-03",
+    "edition_count": 9,
+    "version_changes": 0,
+    "version_progression": "2025-07:202509",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      6
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "ENDSESP",
+    "status": "ACTIVE",
+    "canonical_name": "Endorsement Preparation Program, Physics",
+    "degree_headings": [
+      "Endorsement Preparation Program, Physics"
+    ],
+    "first_seen": "2025-07",
+    "last_seen": "2026-03",
+    "edition_count": 9,
+    "version_changes": 0,
+    "version_progression": "2025-07:202509",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      23
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MBAITM",
+    "status": "ACTIVE",
+    "canonical_name": "MBA, IT Management",
+    "degree_headings": [
+      "MBA, IT Management"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2026-03",
+    "edition_count": 108,
+    "version_changes": 0,
+    "version_progression": "2017-01:201408",
+    "colleges": [
+      "College of Business",
+      "School of Business"
+    ],
+    "cus_values": [
+      35
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "MASEMG",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Arts Science Education (Middle Grades)",
+    "degree_headings": [
+      "Master of Arts Science Education (Middle Grades)"
+    ],
+    "first_seen": "2018-05",
+    "last_seen": "2026-03",
+    "edition_count": 95,
+    "version_changes": 0,
+    "version_progression": "2018-05:201806",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      32,
+      34
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MASESB",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Arts Science Education (Secondary Biological Science)",
+    "degree_headings": [
+      "Master of Arts Science Education (Secondary Biological Science)"
+    ],
+    "first_seen": "2018-05",
+    "last_seen": "2026-03",
+    "edition_count": 95,
+    "version_changes": 0,
+    "version_progression": "2018-05:201806",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      33
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MASESC",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Arts Science Education (Secondary Chemistry)",
+    "degree_headings": [
+      "Master of Arts Science Education (Secondary Chemistry)"
+    ],
+    "first_seen": "2018-05",
+    "last_seen": "2026-03",
+    "edition_count": 95,
+    "version_changes": 0,
+    "version_progression": "2018-05:201806",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      34
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MASESE",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Arts Science Education (Secondary Earth Science)",
+    "degree_headings": [
+      "Master of Arts Science Education (Secondary Earth Science)"
+    ],
+    "first_seen": "2018-05",
+    "last_seen": "2026-03",
+    "edition_count": 95,
+    "version_changes": 0,
+    "version_progression": "2018-05:201806",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      32
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MASESP",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Arts Science Education (Secondary Physics)",
+    "degree_headings": [
+      "Master of Arts Science Education (Secondary Physics)"
+    ],
+    "first_seen": "2018-05",
+    "last_seen": "2026-03",
+    "edition_count": 95,
+    "version_changes": 0,
+    "version_progression": "2018-05:201806",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      32
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MAMEMG",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Arts in Mathematics Education (Middle Grades)",
+    "degree_headings": [
+      "Master of Arts in Mathematics Education (Middle Grades)"
+    ],
+    "first_seen": "2018-09",
+    "last_seen": "2026-03",
+    "edition_count": 91,
+    "version_changes": 0,
+    "version_progression": "2018-09:201810",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      32
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MAMES",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Arts in Mathematics Education (Secondary)",
+    "degree_headings": [
+      "Master of Arts in Mathematics Education (Secondary)"
+    ],
+    "first_seen": "2018-09",
+    "last_seen": "2026-03",
+    "edition_count": 91,
+    "version_changes": 0,
+    "version_progression": "2018-09:201810",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      39
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MATELED",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Arts in Teaching, Elementary Education",
+    "degree_headings": [
+      "Master of Arts in Teaching, Elementary Education"
+    ],
+    "first_seen": "2018-06",
+    "last_seen": "2026-03",
+    "edition_count": 94,
+    "version_changes": 6,
+    "version_progression": "2018-06:201807 \u2192 2020-07:202007 \u2192 2020-11:202109 \u2192 2020-12:202007 \u2192 2021-09:202109 \u2192 2023-12:202402 \u2192 2024-09:202411",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      47,
+      48,
+      49,
+      59
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MATEES",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Arts in Teaching, English Education (Secondary)",
+    "degree_headings": [
+      "Master of Arts in Teaching, English Education (Secondary)"
+    ],
+    "first_seen": "2018-06",
+    "last_seen": "2026-03",
+    "edition_count": 94,
+    "version_changes": 6,
+    "version_progression": "2018-06:201807 \u2192 2020-07:202007 \u2192 2020-11:202109 \u2192 2020-12:202007 \u2192 2021-09:202109 \u2192 2023-12:202402 \u2192 2025-02:202504",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      37,
+      38,
+      39,
+      41,
+      43
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MATMES",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Arts in Teaching, Mathematics Education (Secondary)",
+    "degree_headings": [
+      "Master of Arts in Teaching, Mathematics Education (Secondary)"
+    ],
+    "first_seen": "2018-06",
+    "last_seen": "2026-03",
+    "edition_count": 94,
+    "version_changes": 6,
+    "version_progression": "2018-06:201807 \u2192 2020-07:202007 \u2192 2020-11:202109 \u2192 2020-12:202007 \u2192 2021-09:202109 \u2192 2023-12:202402 \u2192 2025-02:202504",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      44,
+      45,
+      46,
+      48
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MATSESB",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Arts in Teaching, Science Education (Secondary Biology)",
+    "degree_headings": [
+      "Master of Arts in Teaching, Science Education (Secondary Biology)"
+    ],
+    "first_seen": "2025-02",
+    "last_seen": "2026-03",
+    "edition_count": 14,
+    "version_changes": 0,
+    "version_progression": "2025-02:202504",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      42
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MATSESC",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Arts in Teaching, Science Education (Secondary Chemistry)",
+    "degree_headings": [
+      "Master of Arts in Teaching, Science Education (Secondary Chemistry)"
+    ],
+    "first_seen": "2025-02",
+    "last_seen": "2026-03",
+    "edition_count": 14,
+    "version_changes": 0,
+    "version_progression": "2025-02:202504",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      42
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MATSESE",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Arts in Teaching, Science Education (Secondary Earth Science)",
+    "degree_headings": [
+      "Master of Arts in Teaching, Science Education (Secondary Earth Science)"
+    ],
+    "first_seen": "2025-02",
+    "last_seen": "2026-03",
+    "edition_count": 14,
+    "version_changes": 0,
+    "version_progression": "2025-02:202504",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      42
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MATSESP",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Arts in Teaching, Science Education (Secondary Physics)",
+    "degree_headings": [
+      "Master of Arts in Teaching, Science Education (Secondary Physics)"
+    ],
+    "first_seen": "2025-02",
+    "last_seen": "2026-03",
+    "edition_count": 14,
+    "version_changes": 0,
+    "version_progression": "2025-02:202504",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      42
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MATSSES",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Arts in Teaching, Social Studies Education (Secondary)",
+    "degree_headings": [
+      "Master of Arts in Teaching, Social Studies Education (Secondary)"
+    ],
+    "first_seen": "2025-02",
+    "last_seen": "2026-03",
+    "edition_count": 14,
+    "version_changes": 0,
+    "version_progression": "2025-02:202504",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      41
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MATSPED",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Arts in Teaching, Special Education",
+    "degree_headings": [
+      "Master of Arts in Teaching, Special Education"
+    ],
+    "first_seen": "2020-11",
+    "last_seen": "2026-03",
+    "edition_count": 62,
+    "version_changes": 4,
+    "version_progression": "2020-11:202109 \u2192 2021-03:202105 \u2192 2021-09:202109 \u2192 2023-12:202402 \u2192 2024-10:202412",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      52,
+      53,
+      64
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MAELLP12",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Arts, English Language Learning",
+    "degree_headings": [
+      "Master of Arts, English Language Learning",
+      "Master of Arts, English Language Learning (PreK-12)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2026-03",
+    "edition_count": 108,
+    "version_changes": 0,
+    "version_progression": "2017-01:201501",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      30
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MAMEK6",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Arts, Mathematics Education (K-6)",
+    "degree_headings": [
+      "Master of Arts, Mathematics Education (K-6)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2026-03",
+    "edition_count": 108,
+    "version_changes": 0,
+    "version_progression": "2017-01:201504",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      30
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MBA",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Business Administration",
+    "degree_headings": [
+      "Master of Business Administration"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2026-03",
+    "edition_count": 108,
+    "version_changes": 0,
+    "version_progression": "2017-01:201404",
+    "colleges": [
+      "College of Business",
+      "School of Business"
+    ],
+    "cus_values": [
+      34
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "MBAHA",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Business Administration, Healthcare Administration",
+    "degree_headings": [
+      "Master of Business Administration, Healthcare Administration"
+    ],
+    "first_seen": "2025-05",
+    "last_seen": "2026-03",
+    "edition_count": 11,
+    "version_changes": 0,
+    "version_progression": "2025-05:202507",
+    "colleges": [
+      "School of Business"
+    ],
+    "cus_values": [
+      36
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "MEDETID",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Education, Education Technology and Instructional Design",
+    "degree_headings": [
+      "Master of Education, Education Technology and Instructional Design"
+    ],
+    "first_seen": "2023-11",
+    "last_seen": "2026-03",
+    "edition_count": 29,
+    "version_changes": 0,
+    "version_progression": "2023-11:202312",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      38
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MEDETIDA",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Education, Education Technology and Instructional Design",
+    "degree_headings": [
+      "Master of Education, Education Technology and Instructional Design"
+    ],
+    "first_seen": "2023-11",
+    "last_seen": "2026-03",
+    "edition_count": 29,
+    "version_changes": 0,
+    "version_progression": "2023-11:202312",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      32
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MEDETIDK12",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Education, Education Technology and Instructional Design",
+    "degree_headings": [
+      "Master of Education, Education Technology and Instructional Design"
+    ],
+    "first_seen": "2023-11",
+    "last_seen": "2026-03",
+    "edition_count": 29,
+    "version_changes": 0,
+    "version_progression": "2023-11:202312",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      32
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MHA",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Healthcare Administration",
+    "degree_headings": [
+      "Master of Healthcare Administration"
+    ],
+    "first_seen": "2023-04",
+    "last_seen": "2026-03",
+    "edition_count": 36,
+    "version_changes": 1,
+    "version_progression": "2023-04:202306 \u2192 2025-12:202602",
+    "colleges": [
+      "Leavitt School of Health"
+    ],
+    "cus_values": [
+      31,
+      34
+    ],
+    "school": "Leavitt School of Health"
+  },
+  {
+    "program_code": "MPH",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Public Health",
+    "degree_headings": [
+      "Master of Public Health"
+    ],
+    "first_seen": "2024-06",
+    "last_seen": "2026-03",
+    "edition_count": 22,
+    "version_changes": 0,
+    "version_progression": "2024-06:202408",
+    "colleges": [
+      "Leavitt School of Health"
+    ],
+    "cus_values": [
+      36
+    ],
+    "school": "Leavitt School of Health"
+  },
+  {
+    "program_code": "MACCA",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science in Accounting, Auditing Specialization",
+    "degree_headings": [
+      "Master of Science in Accounting, Auditing Specialization"
+    ],
+    "first_seen": "2024-10",
+    "last_seen": "2026-03",
+    "edition_count": 18,
+    "version_changes": 0,
+    "version_progression": "2024-10:202412",
+    "colleges": [
+      "School of Business"
+    ],
+    "cus_values": [
+      30
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "MACCF",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science in Accounting, Financial Reporting Specialization",
+    "degree_headings": [
+      "Master of Science in Accounting, Financial Reporting Specialization"
+    ],
+    "first_seen": "2024-10",
+    "last_seen": "2026-03",
+    "edition_count": 18,
+    "version_changes": 0,
+    "version_progression": "2024-10:202412",
+    "colleges": [
+      "School of Business"
+    ],
+    "cus_values": [
+      33
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "MACCM",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science in Accounting, Management Accounting Specialization",
+    "degree_headings": [
+      "Master of Science in Accounting, Management Accounting Specialization"
+    ],
+    "first_seen": "2024-10",
+    "last_seen": "2026-03",
+    "edition_count": 18,
+    "version_changes": 0,
+    "version_progression": "2024-10:202412",
+    "colleges": [
+      "School of Business"
+    ],
+    "cus_values": [
+      30
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "MACCT",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science in Accounting, Taxation Specialization",
+    "degree_headings": [
+      "Master of Science in Accounting, Taxation Specialization"
+    ],
+    "first_seen": "2024-10",
+    "last_seen": "2026-03",
+    "edition_count": 18,
+    "version_changes": 0,
+    "version_progression": "2024-10:202412",
+    "colleges": [
+      "School of Business"
+    ],
+    "cus_values": [
+      30
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "MSMK",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science in Marketing, Digital Marketing Specialization",
+    "degree_headings": [
+      "Master of Science in Marketing, Digital Marketing Specialization"
+    ],
+    "first_seen": "2022-12",
+    "last_seen": "2026-03",
+    "edition_count": 40,
+    "version_changes": 0,
+    "version_progression": "2022-12:202301",
+    "colleges": [
+      "College of Business",
+      "School of Business"
+    ],
+    "cus_values": [
+      33
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "MSMKA",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science in Marketing, Marketing Analytics Specialization",
+    "degree_headings": [
+      "Master of Science in Marketing, Marketing Analytics Specialization"
+    ],
+    "first_seen": "2023-01",
+    "last_seen": "2026-03",
+    "edition_count": 39,
+    "version_changes": 0,
+    "version_progression": "2023-01:202303",
+    "colleges": [
+      "College of Business",
+      "School of Business"
+    ],
+    "cus_values": [
+      34
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "MSCSAIML",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science, Computer Science, Artificial Intelligence and Machine Learning",
+    "degree_headings": [
+      "Master of Science, Computer Science, Artificial Intelligence and Machine Learning"
+    ],
+    "first_seen": "2025-02",
+    "last_seen": "2026-03",
+    "edition_count": 14,
+    "version_changes": 0,
+    "version_progression": "2025-02:202504",
+    "colleges": [
+      "School of Technology"
+    ],
+    "cus_values": [
+      31
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "MSCSCS",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science, Computer Science, Computing Systems",
+    "degree_headings": [
+      "Master of Science, Computer Science, Computing Systems"
+    ],
+    "first_seen": "2025-02",
+    "last_seen": "2026-03",
+    "edition_count": 14,
+    "version_changes": 0,
+    "version_progression": "2025-02:202504",
+    "colleges": [
+      "School of Technology"
+    ],
+    "cus_values": [
+      31
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "MSCSHCI",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science, Computer Science, Human-Computer Interaction",
+    "degree_headings": [
+      "Master of Science, Computer Science, Human-Computer Interaction"
+    ],
+    "first_seen": "2025-02",
+    "last_seen": "2026-03",
+    "edition_count": 14,
+    "version_changes": 0,
+    "version_progression": "2025-02:202504",
+    "colleges": [
+      "School of Technology"
+    ],
+    "cus_values": [
+      31
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "MSCIN",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science, Curriculum and Instruction",
+    "degree_headings": [
+      "Master of Science, Curriculum and Instruction"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2026-03",
+    "edition_count": 108,
+    "version_changes": 2,
+    "version_progression": "2017-01:201504 \u2192 2020-10:202012 \u2192 2024-03:202404",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      30,
+      32
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MSCSIA",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science, Cybersecurity and Information Assurance",
+    "degree_headings": [
+      "Master of Science, Cybersecurity and Information Assurance"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2026-03",
+    "edition_count": 108,
+    "version_changes": 2,
+    "version_progression": "2017-01:201603 \u2192 2019-01:201902 \u2192 2023-05:202306",
+    "colleges": [
+      "College of Information Technology",
+      "School of Technology"
+    ],
+    "cus_values": [
+      30,
+      34
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "MSDADE",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science, Data Analytics - Data Engineering",
+    "degree_headings": [
+      "Master of Science, Data Analytics - Data Engineering"
+    ],
+    "first_seen": "2024-06",
+    "last_seen": "2026-03",
+    "edition_count": 22,
+    "version_changes": 0,
+    "version_progression": "2024-06:202408",
+    "colleges": [
+      "School of Technology"
+    ],
+    "cus_values": [
+      32
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "MSDADS",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science, Data Analytics - Data Science",
+    "degree_headings": [
+      "Master of Science, Data Analytics - Data Science"
+    ],
+    "first_seen": "2024-06",
+    "last_seen": "2026-03",
+    "edition_count": 22,
+    "version_changes": 0,
+    "version_progression": "2024-06:202408",
+    "colleges": [
+      "School of Technology"
+    ],
+    "cus_values": [
+      32
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "MSDADPE",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science, Data Analytics - Decision Process Engineering",
+    "degree_headings": [
+      "Master of Science, Data Analytics - Decision Process Engineering"
+    ],
+    "first_seen": "2024-06",
+    "last_seen": "2026-03",
+    "edition_count": 22,
+    "version_changes": 0,
+    "version_progression": "2024-06:202408",
+    "colleges": [
+      "School of Technology"
+    ],
+    "cus_values": [
+      33
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "MSEDL",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science, Educational Leadership",
+    "degree_headings": [
+      "Master of Science, Educational Leadership"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2026-03",
+    "edition_count": 108,
+    "version_changes": 2,
+    "version_progression": "2017-01:201209 \u2192 2019-04:201905 \u2192 2024-03:202404",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      39,
+      40
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MSHRM",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science, Human Resource Management",
+    "degree_headings": [
+      "Master of Science, Human Resource Management"
+    ],
+    "first_seen": "2023-08",
+    "last_seen": "2026-03",
+    "edition_count": 32,
+    "version_changes": 0,
+    "version_progression": "2023-08:202311",
+    "colleges": [
+      "College of Business",
+      "School of Business"
+    ],
+    "cus_values": [
+      30
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "MSIT",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science, Information Technology",
+    "degree_headings": [
+      "Master of Science, Information Technology"
+    ],
+    "first_seen": "2026-02",
+    "last_seen": "2026-03",
+    "edition_count": 2,
+    "version_changes": 0,
+    "version_progression": "2026-02:202604",
+    "colleges": [
+      "School of Technology"
+    ],
+    "cus_values": [
+      32
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "MSITPM",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science, Information Technology - Product Management",
+    "degree_headings": [
+      "Master of Science, Information Technology - Product Management"
+    ],
+    "first_seen": "2026-02",
+    "last_seen": "2026-03",
+    "edition_count": 2,
+    "version_changes": 0,
+    "version_progression": "2026-02:202604",
+    "colleges": [
+      "School of Technology"
+    ],
+    "cus_values": [
+      30
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "MSML",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science, Management and Leadership",
+    "degree_headings": [
+      "Master of Science, Management and Leadership"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2026-03",
+    "edition_count": 108,
+    "version_changes": 1,
+    "version_progression": "2017-01:201404 \u2192 2020-05:202007",
+    "colleges": [
+      "College of Business",
+      "School of Business"
+    ],
+    "cus_values": [
+      31,
+      34
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "MSNUED",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science, Nursing - Education",
+    "degree_headings": [
+      "Master of Science, Nursing - Education",
+      "Master of Science, Nursing - Education (BSN to MSN)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2026-03",
+    "edition_count": 108,
+    "version_changes": 2,
+    "version_progression": "2017-01:201611 \u2192 2018-04:201805 \u2192 2020-03:202003",
+    "colleges": [
+      "College of Health Professions",
+      "Leavitt School of Health"
+    ],
+    "cus_values": [
+      36
+    ],
+    "school": "Leavitt School of Health"
+  },
+  {
+    "program_code": "MSRNNUEDGR",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science, Nursing - Education",
+    "degree_headings": [
+      "Master of Science, Nursing - Education",
+      "Master of Science, Nursing - Education (RN to MSN)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2026-03",
+    "edition_count": 108,
+    "version_changes": 3,
+    "version_progression": "2017-01:201611 \u2192 2018-04:201805 \u2192 2020-03:202003 \u2192 2022-01:202202",
+    "colleges": [
+      "College of Health Professions",
+      "Leavitt School of Health"
+    ],
+    "cus_values": [
+      141,
+      145,
+      150
+    ],
+    "school": "Leavitt School of Health"
+  },
+  {
+    "program_code": "MSNUFNP",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science, Nursing - Family Nurse Practitioner (BSN to MSN)",
+    "degree_headings": [
+      "Master of Science, Nursing - Family Nurse Practitioner (BSN to MSN)"
+    ],
+    "first_seen": "2020-11",
+    "last_seen": "2026-03",
+    "edition_count": 65,
+    "version_changes": 0,
+    "version_progression": "2020-11:202003",
+    "colleges": [
+      "College of Health Professions",
+      "Leavitt School of Health"
+    ],
+    "cus_values": [
+      48
+    ],
+    "school": "Leavitt School of Health"
+  },
+  {
+    "program_code": "MSNULM",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science, Nursing - Leadership and Management",
+    "degree_headings": [
+      "Master of Science, Nursing - Leadership and Management",
+      "Master of Science, Nursing - Leadership and Management (BSN to MSN)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2026-03",
+    "edition_count": 108,
+    "version_changes": 3,
+    "version_progression": "2017-01:201611 \u2192 2020-07:202009 \u2192 2020-09:202008 \u2192 2020-10:202011",
+    "colleges": [
+      "College of Health Professions",
+      "Leavitt School of Health"
+    ],
+    "cus_values": [
+      34,
+      36
+    ],
+    "school": "Leavitt School of Health"
+  },
+  {
+    "program_code": "MSRNNULMGR",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science, Nursing - Leadership and Management",
+    "degree_headings": [
+      "Master of Science, Nursing - Leadership and Management",
+      "Master of Science, Nursing - Leadership and Management (RN to MSN)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2026-03",
+    "edition_count": 108,
+    "version_changes": 4,
+    "version_progression": "2017-01:201611 \u2192 2020-07:202009 \u2192 2020-09:202008 \u2192 2020-10:202011 \u2192 2022-01:202202",
+    "colleges": [
+      "College of Health Professions",
+      "Leavitt School of Health"
+    ],
+    "cus_values": [
+      141,
+      143,
+      145,
+      150
+    ],
+    "school": "Leavitt School of Health"
+  },
+  {
+    "program_code": "MSNUNI",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science, Nursing - Nursing Informatics",
+    "degree_headings": [
+      "Master of Science, Nursing - Nursing Informatics",
+      "Master of Science, Nursing - Nursing Informatics (BSN to MSN)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2026-03",
+    "edition_count": 108,
+    "version_changes": 2,
+    "version_progression": "2017-01:201702 \u2192 2018-12:201812 \u2192 2020-03:202003",
+    "colleges": [
+      "College of Health Professions",
+      "Leavitt School of Health"
+    ],
+    "cus_values": [
+      36
+    ],
+    "school": "Leavitt School of Health"
+  },
+  {
+    "program_code": "MSRNNUNIFGR",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science, Nursing - Nursing Informatics (RN to MSN)",
+    "degree_headings": [
+      "Master of Science, Nursing - Nursing Informatics (RN to MSN)"
+    ],
+    "first_seen": "2024-08",
+    "last_seen": "2026-03",
+    "edition_count": 20,
+    "version_changes": 0,
+    "version_progression": "2024-08:202202",
+    "colleges": [
+      "Leavitt School of Health"
+    ],
+    "cus_values": [
+      141
+    ],
+    "school": "Leavitt School of Health"
+  },
+  {
+    "program_code": "MSNUPMHNP",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science, Nursing - Psychiatric Mental Health Nurse Practitioner",
+    "degree_headings": [
+      "Master of Science, Nursing - Psychiatric Mental Health Nurse Practitioner"
+    ],
+    "first_seen": "2022-04",
+    "last_seen": "2026-03",
+    "edition_count": 48,
+    "version_changes": 0,
+    "version_progression": "2022-04:202203",
+    "colleges": [
+      "College of Health Professions",
+      "Leavitt School of Health"
+    ],
+    "cus_values": [
+      51
+    ],
+    "school": "Leavitt School of Health"
+  },
+  {
+    "program_code": "MSSWEAIE",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science, Software Engineering - AI Engineering",
+    "degree_headings": [
+      "Master of Science, Software Engineering - AI Engineering"
+    ],
+    "first_seen": "2025-02",
+    "last_seen": "2026-03",
+    "edition_count": 14,
+    "version_changes": 0,
+    "version_progression": "2025-02:202504",
+    "colleges": [
+      "School of Technology"
+    ],
+    "cus_values": [
+      30
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "MSSWEDOE",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science, Software Engineering - DevOps Engineering",
+    "degree_headings": [
+      "Master of Science, Software Engineering - DevOps Engineering"
+    ],
+    "first_seen": "2025-02",
+    "last_seen": "2026-03",
+    "edition_count": 14,
+    "version_changes": 0,
+    "version_progression": "2025-02:202504",
+    "colleges": [
+      "School of Technology"
+    ],
+    "cus_values": [
+      30
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "MSSWEDDD",
+    "status": "ACTIVE",
+    "canonical_name": "Master of Science, Software Engineering - Domain Driven Design",
+    "degree_headings": [
+      "Master of Science, Software Engineering - Domain Driven Design"
+    ],
+    "first_seen": "2025-02",
+    "last_seen": "2026-03",
+    "edition_count": 14,
+    "version_changes": 0,
+    "version_progression": "2025-02:202504",
+    "colleges": [
+      "School of Technology"
+    ],
+    "cus_values": [
+      30
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "PMCNUFNP",
+    "status": "ACTIVE",
+    "canonical_name": "Post-Master's Certificate, Nursing - Family Nurse Practitioner (Post-MSN)",
+    "degree_headings": [
+      "Post-Master's Certificate, Nursing - Family Nurse Practitioner (Post-MSN)"
+    ],
+    "first_seen": "2023-05",
+    "last_seen": "2026-03",
+    "edition_count": 35,
+    "version_changes": 0,
+    "version_progression": "2023-05:202306",
+    "colleges": [
+      "Leavitt School of Health"
+    ],
+    "cus_values": [
+      33
+    ],
+    "school": "Leavitt School of Health"
+  },
+  {
+    "program_code": "PMCNULM",
+    "status": "ACTIVE",
+    "canonical_name": "Post-Master's Certificate, Nursing - Leadership and Management (Post-MSN)",
+    "degree_headings": [
+      "Post-Master's Certificate, Nursing - Leadership and Management (Post-MSN)"
+    ],
+    "first_seen": "2022-01",
+    "last_seen": "2026-03",
+    "edition_count": 51,
+    "version_changes": 0,
+    "version_progression": "2022-01:202110",
+    "colleges": [
+      "College of Health Professions",
+      "Leavitt School of Health"
+    ],
+    "cus_values": [
+      16
+    ],
+    "school": "Leavitt School of Health"
+  },
+  {
+    "program_code": "PMCNUED",
+    "status": "ACTIVE",
+    "canonical_name": "Post-Master's Certificate, Nursing - Nursing Education (Post-MSN)",
+    "degree_headings": [
+      "Post-Master's Certificate, Nursing - Nursing Education (Post-MSN)"
+    ],
+    "first_seen": "2022-01",
+    "last_seen": "2026-03",
+    "edition_count": 51,
+    "version_changes": 0,
+    "version_progression": "2022-01:202110",
+    "colleges": [
+      "College of Health Professions",
+      "Leavitt School of Health"
+    ],
+    "cus_values": [
+      16
+    ],
+    "school": "Leavitt School of Health"
+  },
+  {
+    "program_code": "PMCNUPMHNP",
+    "status": "ACTIVE",
+    "canonical_name": "Post-Master's Certificate, Nursing - Psychiatric Mental Health Nurse Practitioner (Post-MSN)",
+    "degree_headings": [
+      "Post-Master's Certificate, Nursing - Psychiatric Mental Health Nurse Practitioner (Post-MSN)"
+    ],
+    "first_seen": "2023-05",
+    "last_seen": "2026-03",
+    "edition_count": 35,
+    "version_changes": 0,
+    "version_progression": "2023-05:202306",
+    "colleges": [
+      "Leavitt School of Health"
+    ],
+    "cus_values": [
+      36
+    ],
+    "school": "Leavitt School of Health"
+  },
+  {
+    "program_code": "BAESMEMG",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Arts, Educational Studies in Middle Grades Mathematics Education",
+    "degree_headings": [
+      "Bachelor of Arts, Educational Studies in Middle Grades Mathematics Education"
+    ],
+    "first_seen": "2024-09",
+    "last_seen": "2025-02",
+    "edition_count": 6,
+    "version_changes": 0,
+    "version_progression": "2024-09:202402",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      97
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "BAESSEMG",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Arts, Educational Studies in Middle Grades Science Education",
+    "degree_headings": [
+      "Bachelor of Arts, Educational Studies in Middle Grades Science Education"
+    ],
+    "first_seen": "2024-09",
+    "last_seen": "2025-02",
+    "edition_count": 6,
+    "version_changes": 0,
+    "version_progression": "2024-09:202402",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      99
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "BAISK8",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Arts, Interdisciplinary Studies (K-8)",
+    "degree_headings": [
+      "Bachelor of Arts, Interdisciplinary Studies (K-8)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2018-06",
+    "edition_count": 15,
+    "version_changes": 2,
+    "version_progression": "2017-01:201703 \u2192 2017-03:201708 \u2192 2017-07:201709",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      120,
+      123,
+      126
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "BAMA12",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Arts, Mathematics (5-12)",
+    "degree_headings": [
+      "Bachelor of Arts, Mathematics (5-12)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2018-08",
+    "edition_count": 17,
+    "version_changes": 1,
+    "version_progression": "2017-01:201703 \u2192 2017-03:201708",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      122,
+      138
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "BAMA9",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Arts, Mathematics (5-9)",
+    "degree_headings": [
+      "Bachelor of Arts, Mathematics (5-9)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2018-08",
+    "edition_count": 17,
+    "version_changes": 1,
+    "version_progression": "2017-01:201703 \u2192 2017-03:201708",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      120,
+      122
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "BASCB12",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Arts, Science (5-12, Bio)",
+    "degree_headings": [
+      "Bachelor of Arts, Science (5-12, Bio)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2018-04",
+    "edition_count": 13,
+    "version_changes": 2,
+    "version_progression": "2017-01:201703 \u2192 2017-03:201708 \u2192 2017-07:201709",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      124,
+      125
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "BASCCH12",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Arts, Science (5-12, Chemistry)",
+    "degree_headings": [
+      "Bachelor of Arts, Science (5-12, Chemistry)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2018-04",
+    "edition_count": 13,
+    "version_changes": 2,
+    "version_progression": "2017-01:201703 \u2192 2017-03:201708 \u2192 2017-07:201709",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      121,
+      122
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "BASCG12",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Arts, Science (5-12, Geo)",
+    "degree_headings": [
+      "Bachelor of Arts, Science (5-12, Geo)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2018-04",
+    "edition_count": 13,
+    "version_changes": 2,
+    "version_progression": "2017-01:201703 \u2192 2017-03:201708 \u2192 2017-07:201709",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      121,
+      127
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "BASCPH12",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Arts, Science (5-12, Physics)",
+    "degree_headings": [
+      "Bachelor of Arts, Science (5-12, Physics)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2018-04",
+    "edition_count": 13,
+    "version_changes": 2,
+    "version_progression": "2017-01:201703 \u2192 2017-03:201708 \u2192 2017-07:201709",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      122,
+      123
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "BASC9",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Arts, Science (5-9)",
+    "degree_headings": [
+      "Bachelor of Arts, Science (5-9)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2018-04",
+    "edition_count": 13,
+    "version_changes": 2,
+    "version_progression": "2017-01:201703 \u2192 2017-03:201708 \u2192 2017-07:201709",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      122,
+      124
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "BASP",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Arts, Special Education",
+    "degree_headings": [
+      "Bachelor of Arts, Special Education"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2019-03",
+    "edition_count": 24,
+    "version_changes": 2,
+    "version_progression": "2017-01:201703 \u2192 2017-03:201708 \u2192 2017-07:201709",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      135,
+      138,
+      141
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "BSBAAC",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science Business Administration Accounting",
+    "degree_headings": [
+      "Bachelor of Science Business Administration Accounting",
+      "Bachelor of Science Business Administration, Accounting"
+    ],
+    "first_seen": "2020-02",
+    "last_seen": "2024-12",
+    "edition_count": 59,
+    "version_changes": 5,
+    "version_progression": "2020-02:202003 \u2192 2020-09:202010 \u2192 2020-11:202103 \u2192 2020-12:202010 \u2192 2021-01:202103 \u2192 2022-02:202203",
+    "colleges": [
+      "College of Business",
+      "School of Business"
+    ],
+    "cus_values": [
+      121
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "BSBAHC",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science Business Administration Healthcare Management",
+    "degree_headings": [
+      "Bachelor of Science Business Administration Healthcare Management",
+      "Bachelor of Science Business Administration, Healthcare Management"
+    ],
+    "first_seen": "2020-02",
+    "last_seen": "2023-07",
+    "edition_count": 42,
+    "version_changes": 2,
+    "version_progression": "2020-02:202003 \u2192 2020-09:202010 \u2192 2022-02:202203",
+    "colleges": [
+      "College of Business"
+    ],
+    "cus_values": [
+      120,
+      122
+    ],
+    "school": "College of Business"
+  },
+  {
+    "program_code": "BSBAHR",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science Business Administration Human Resource Management",
+    "degree_headings": [
+      "Bachelor of Science Business Administration Human Resource Management",
+      "Bachelor of Science Business Administration, Human Resource Management"
+    ],
+    "first_seen": "2020-02",
+    "last_seen": "2024-12",
+    "edition_count": 59,
+    "version_changes": 3,
+    "version_progression": "2020-02:202003 \u2192 2020-09:202010 \u2192 2022-02:202203 \u2192 2023-02:202304",
+    "colleges": [
+      "College of Business",
+      "School of Business"
+    ],
+    "cus_values": [
+      122
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "BSBAIT",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science Business Administration Information Technology Management",
+    "degree_headings": [
+      "Bachelor of Science Business Administration Information Technology Management",
+      "Bachelor of Science Business Administration, Information Technology Management"
+    ],
+    "first_seen": "2020-02",
+    "last_seen": "2024-12",
+    "edition_count": 59,
+    "version_changes": 2,
+    "version_progression": "2020-02:202003 \u2192 2020-09:202010 \u2192 2022-02:202203",
+    "colleges": [
+      "College of Business",
+      "School of Business"
+    ],
+    "cus_values": [
+      120
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "BSBAMGA",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science Business Administration Management",
+    "degree_headings": [
+      "Bachelor of Science Business Administration Management",
+      "Bachelor of Science Business Administration, Management"
+    ],
+    "first_seen": "2020-02",
+    "last_seen": "2021-08",
+    "edition_count": 18,
+    "version_changes": 1,
+    "version_progression": "2020-02:202003 \u2192 2020-09:202010",
+    "colleges": [
+      "College of Business"
+    ],
+    "cus_values": [
+      123
+    ],
+    "school": "College of Business"
+  },
+  {
+    "program_code": "BSBAMGB",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science Business Administration Management",
+    "degree_headings": [
+      "Bachelor of Science Business Administration Management",
+      "Bachelor of Science Business Administration, Management"
+    ],
+    "first_seen": "2020-02",
+    "last_seen": "2021-08",
+    "edition_count": 18,
+    "version_changes": 1,
+    "version_progression": "2020-02:202003 \u2192 2020-09:202010",
+    "colleges": [
+      "College of Business"
+    ],
+    "cus_values": [
+      123
+    ],
+    "school": "College of Business"
+  },
+  {
+    "program_code": "BSBAMK",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science Business Administration Marketing",
+    "degree_headings": [
+      "Bachelor of Science Business Administration Marketing",
+      "Bachelor of Science Business Administration, Marketing"
+    ],
+    "first_seen": "2020-02",
+    "last_seen": "2024-10",
+    "edition_count": 57,
+    "version_changes": 4,
+    "version_progression": "2020-02:202003 \u2192 2020-09:202010 \u2192 2020-10:202012 \u2192 2022-02:202203 \u2192 2023-09:202311",
+    "colleges": [
+      "College of Business",
+      "School of Business"
+    ],
+    "cus_values": [
+      118,
+      121,
+      122
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "BSBAMGC",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science Business Administration, Management",
+    "degree_headings": [
+      "Bachelor of Science Business Administration, Management"
+    ],
+    "first_seen": "2020-06",
+    "last_seen": "2024-12",
+    "edition_count": 55,
+    "version_changes": 3,
+    "version_progression": "2020-06:202007 \u2192 2020-09:202010 \u2192 2022-02:202203 \u2192 2023-09:202311",
+    "colleges": [
+      "College of Business",
+      "School of Business"
+    ],
+    "cus_values": [
+      120,
+      122
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "BSAC",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science, Accounting",
+    "degree_headings": [
+      "Bachelor of Science, Accounting"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2020-01",
+    "edition_count": 34,
+    "version_changes": 3,
+    "version_progression": "2017-01:201605 \u2192 2017-11:201801 \u2192 2017-12:201605 \u2192 2018-01:201801",
+    "colleges": [
+      "College of Business"
+    ],
+    "cus_values": [
+      121,
+      122
+    ],
+    "school": "College of Business"
+  },
+  {
+    "program_code": "BSBUHCM",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science, Business - Healthcare Management",
+    "degree_headings": [
+      "Bachelor of Science, Business - Healthcare Management"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2020-01",
+    "edition_count": 34,
+    "version_changes": 1,
+    "version_progression": "2017-01:201605 \u2192 2017-11:201801",
+    "colleges": [
+      "College of Business"
+    ],
+    "cus_values": [
+      120,
+      124
+    ],
+    "school": "College of Business"
+  },
+  {
+    "program_code": "BSBUHR",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science, Business - Human Resource Management",
+    "degree_headings": [
+      "Bachelor of Science, Business - Human Resource Management"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2020-01",
+    "edition_count": 34,
+    "version_changes": 1,
+    "version_progression": "2017-01:201605 \u2192 2017-11:201712",
+    "colleges": [
+      "College of Business"
+    ],
+    "cus_values": [
+      120
+    ],
+    "school": "College of Business"
+  },
+  {
+    "program_code": "BSBUITM",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science, Business - Information Technology Management",
+    "degree_headings": [
+      "Bachelor of Science, Business - Information Technology Management"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2020-01",
+    "edition_count": 34,
+    "version_changes": 1,
+    "version_progression": "2017-01:201605 \u2192 2017-10:201712",
+    "colleges": [
+      "College of Business"
+    ],
+    "cus_values": [
+      120,
+      122
+    ],
+    "school": "College of Business"
+  },
+  {
+    "program_code": "BSMG",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science, Business Management",
+    "degree_headings": [
+      "Bachelor of Science, Business Management"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2020-01",
+    "edition_count": 34,
+    "version_changes": 3,
+    "version_progression": "2017-01:201605 \u2192 2017-05:201707 \u2192 2018-08:201809 \u2192 2018-12:201901",
+    "colleges": [
+      "College of Business"
+    ],
+    "cus_values": [
+      120,
+      121
+    ],
+    "school": "College of Business"
+  },
+  {
+    "program_code": "BSCC",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science, Cloud Computing",
+    "degree_headings": [
+      "Bachelor of Science, Cloud Computing"
+    ],
+    "first_seen": "2020-04",
+    "last_seen": "2022-04",
+    "edition_count": 25,
+    "version_changes": 0,
+    "version_progression": "2020-04:202005",
+    "colleges": [
+      "College of Information Technology"
+    ],
+    "cus_values": [
+      123
+    ],
+    "school": "College of Information Technology"
+  },
+  {
+    "program_code": "BSCCMCL",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science, Cloud Computing",
+    "degree_headings": [
+      "Bachelor of Science, Cloud Computing"
+    ],
+    "first_seen": "2022-05",
+    "last_seen": "2025-07",
+    "edition_count": 39,
+    "version_changes": 2,
+    "version_progression": "2022-05:202205 \u2192 2022-06:202207 \u2192 2024-04:202406",
+    "colleges": [
+      "College of Information Technology",
+      "School of Technology"
+    ],
+    "cus_values": [
+      120,
+      121
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "BSCCAWS",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science, Cloud Computing - Amazon Web Services track",
+    "degree_headings": [
+      "Bachelor of Science, Cloud Computing - Amazon Web Services track",
+      "Bachelor of Science, Cloud Computing \u2013 Amazon Web Services track"
+    ],
+    "first_seen": "2022-06",
+    "last_seen": "2025-07",
+    "edition_count": 38,
+    "version_changes": 1,
+    "version_progression": "2022-06:202207 \u2192 2024-04:202406",
+    "colleges": [
+      "College of Information Technology",
+      "School of Technology"
+    ],
+    "cus_values": [
+      121
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "BSCCAZR",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science, Cloud Computing - Microsoft Azure track",
+    "degree_headings": [
+      "Bachelor of Science, Cloud Computing - Microsoft Azure track",
+      "Bachelor of Science, Cloud Computing \u2013 Microsoft Azure track"
+    ],
+    "first_seen": "2022-06",
+    "last_seen": "2025-07",
+    "edition_count": 38,
+    "version_changes": 1,
+    "version_progression": "2022-06:202207 \u2192 2024-04:202406",
+    "colleges": [
+      "College of Information Technology",
+      "School of Technology"
+    ],
+    "cus_values": [
+      121
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "BSCLSA",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science, Cloud and Systems Administration",
+    "degree_headings": [
+      "Bachelor of Science, Cloud and Systems Administration"
+    ],
+    "first_seen": "2017-10",
+    "last_seen": "2020-03",
+    "edition_count": 30,
+    "version_changes": 1,
+    "version_progression": "2017-10:201712 \u2192 2019-08:201909",
+    "colleges": [
+      "College of Information Technology"
+    ],
+    "cus_values": [
+      122,
+      123
+    ],
+    "school": "College of Information Technology"
+  },
+  {
+    "program_code": "BSDMDA",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science, Data Management/Data Analytics",
+    "degree_headings": [
+      "Bachelor of Science, Data Management/Data Analytics"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2023-07",
+    "edition_count": 76,
+    "version_changes": 7,
+    "version_progression": "2017-01:201611 \u2192 2017-10:201711 \u2192 2018-08:201809 \u2192 2018-12:201901 \u2192 2020-10:202011 \u2192 2020-11:202111 \u2192 2020-12:202011 \u2192 2021-10:202111",
+    "colleges": [
+      "College of Information Technology"
+    ],
+    "cus_values": [
+      120,
+      121,
+      122
+    ],
+    "school": "College of Information Technology"
+  },
+  {
+    "program_code": "BSHSC",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science, Health Services Coordination",
+    "degree_headings": [
+      "Bachelor of Science, Health Services Coordination"
+    ],
+    "first_seen": "2019-09",
+    "last_seen": "2022-11",
+    "edition_count": 39,
+    "version_changes": 0,
+    "version_progression": "2019-09:201907",
+    "colleges": [
+      "College of Health Professions"
+    ],
+    "cus_values": [
+      112
+    ],
+    "school": "College of Health Professions"
+  },
+  {
+    "program_code": "BSITNW",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science, IT - Networks Administration Emphasis",
+    "degree_headings": [
+      "Bachelor of Science, IT - Networks Administration Emphasis"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2017-09",
+    "edition_count": 6,
+    "version_changes": 0,
+    "version_progression": "2017-01:201702",
+    "colleges": [
+      "College of Information Technology"
+    ],
+    "cus_values": [
+      122
+    ],
+    "school": "College of Information Technology"
+  },
+  {
+    "program_code": "BSITSEC",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science, IT - Security Emphasis",
+    "degree_headings": [
+      "Bachelor of Science, IT - Security Emphasis"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2017-08",
+    "edition_count": 5,
+    "version_changes": 0,
+    "version_progression": "2017-01:201702",
+    "colleges": [
+      "College of Information Technology"
+    ],
+    "cus_values": [
+      123
+    ],
+    "school": "College of Information Technology"
+  },
+  {
+    "program_code": "MSITMUG",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science, Information Technology (BSIT to MSITM)",
+    "degree_headings": [
+      "Bachelor of Science, Information Technology (BSIT to MSITM)",
+      "Master of Science, Information Technology Management portion"
+    ],
+    "first_seen": "2022-10",
+    "last_seen": "2026-01",
+    "edition_count": 40,
+    "version_changes": 0,
+    "version_progression": "2022-10:202207",
+    "colleges": [
+      "College of Information Technology",
+      "School of Technology"
+    ],
+    "cus_values": [
+      17,
+      122
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "BSMK",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science, Marketing Management",
+    "degree_headings": [
+      "Bachelor of Science, Marketing Management"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2020-01",
+    "edition_count": 34,
+    "version_changes": 3,
+    "version_progression": "2017-01:201605 \u2192 2017-09:201710 \u2192 2018-08:201809 \u2192 2018-12:201901",
+    "colleges": [
+      "College of Business"
+    ],
+    "cus_values": [
+      120,
+      121
+    ],
+    "school": "College of Business"
+  },
+  {
+    "program_code": "BSMEMG",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science, Mathematics Education (Middle Grades)",
+    "degree_headings": [
+      "Bachelor of Science, Mathematics Education (Middle Grades)"
+    ],
+    "first_seen": "2018-09",
+    "last_seen": "2025-02",
+    "edition_count": 78,
+    "version_changes": 2,
+    "version_progression": "2018-09:201810 \u2192 2020-07:202007 \u2192 2023-12:202402",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      122
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "BSNES",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science, Network Engineering and Security",
+    "degree_headings": [
+      "Bachelor of Science, Network Engineering and Security",
+      "Master of Science, Information Technology Management portion"
+    ],
+    "first_seen": "2022-08",
+    "last_seen": "2025-07",
+    "edition_count": 36,
+    "version_changes": 1,
+    "version_progression": "2022-08:202208 \u2192 2024-04:202406",
+    "colleges": [
+      "College of Information Technology",
+      "School of Technology"
+    ],
+    "cus_values": [
+      111
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "BSNES_C",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science, Network Engineering and Security Cisco Track",
+    "degree_headings": [
+      "Bachelor of Science, Network Engineering and Security Cisco Track"
+    ],
+    "first_seen": "2022-08",
+    "last_seen": "2025-07",
+    "edition_count": 36,
+    "version_changes": 1,
+    "version_progression": "2022-08:202208 \u2192 2024-04:202406",
+    "colleges": [
+      "College of Information Technology",
+      "School of Technology"
+    ],
+    "cus_values": [
+      111
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "BSNOS",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science, Network Operations and Security",
+    "degree_headings": [
+      "Bachelor of Science, Network Operations and Security"
+    ],
+    "first_seen": "2017-09",
+    "last_seen": "2022-07",
+    "edition_count": 59,
+    "version_changes": 2,
+    "version_progression": "2017-09:201711 \u2192 2018-12:201901 \u2192 2020-01:202002",
+    "colleges": [
+      "College of Information Technology"
+    ],
+    "cus_values": [
+      120,
+      122,
+      123
+    ],
+    "school": "College of Information Technology"
+  },
+  {
+    "program_code": "BSRN",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science, Nursing",
+    "degree_headings": [
+      "Bachelor of Science, Nursing"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2022-12",
+    "edition_count": 69,
+    "version_changes": 0,
+    "version_progression": "2017-01:201611",
+    "colleges": [
+      "College of Health Professions"
+    ],
+    "cus_values": [
+      120
+    ],
+    "school": "College of Health Professions"
+  },
+  {
+    "program_code": "BSSEMG",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science, Science Education (Middle Grades)",
+    "degree_headings": [
+      "Bachelor of Science, Science Education (Middle Grades)"
+    ],
+    "first_seen": "2018-05",
+    "last_seen": "2025-02",
+    "edition_count": 82,
+    "version_changes": 2,
+    "version_progression": "2018-05:201806 \u2192 2020-07:202007 \u2192 2023-12:202402",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      124
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "BSITSW",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science, Software Development",
+    "degree_headings": [
+      "Bachelor of Science, Software Development"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2022-12",
+    "edition_count": 22,
+    "version_changes": 2,
+    "version_progression": "2017-01:201703 \u2192 2017-10:201712 \u2192 2022-06:202011",
+    "colleges": [
+      "College of Information Technology"
+    ],
+    "cus_values": [
+      121,
+      122
+    ],
+    "school": "College of Information Technology"
+  },
+  {
+    "program_code": "BSITSWC",
+    "status": "RETIRED",
+    "canonical_name": "Bachelor of Science, Software Development",
+    "degree_headings": [
+      "Bachelor of Science, Software Development"
+    ],
+    "first_seen": "2018-07",
+    "last_seen": "2022-12",
+    "edition_count": 54,
+    "version_changes": 3,
+    "version_progression": "2018-07:201806 \u2192 2018-08:201809 \u2192 2018-12:201901 \u2192 2020-10:202011",
+    "colleges": [
+      "College of Information Technology"
+    ],
+    "cus_values": [
+      122
+    ],
+    "school": "College of Information Technology"
+  },
+  {
+    "program_code": "CFSEBE",
+    "status": "RETIRED",
+    "canonical_name": "Certificate: Back End Web Development",
+    "degree_headings": [
+      "Certificate: Back End Web Development"
+    ],
+    "first_seen": "2024-02",
+    "last_seen": "2024-08",
+    "edition_count": 7,
+    "version_changes": 0,
+    "version_progression": "2024-02:202303",
+    "colleges": [
+      "College of Information Technology",
+      "School of Technology"
+    ],
+    "cus_values": [
+      16
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "CFSEFE",
+    "status": "RETIRED",
+    "canonical_name": "Certificate: Front End Web Development",
+    "degree_headings": [
+      "Certificate: Front End Web Development"
+    ],
+    "first_seen": "2023-12",
+    "last_seen": "2024-08",
+    "edition_count": 9,
+    "version_changes": 0,
+    "version_progression": "2023-12:202303",
+    "colleges": [
+      "College of Information Technology",
+      "School of Technology"
+    ],
+    "cus_values": [
+      16
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "CLD",
+    "status": "RETIRED",
+    "canonical_name": "Certificate: Leadership",
+    "degree_headings": [
+      "Certificate: Leadership"
+    ],
+    "first_seen": "2023-09",
+    "last_seen": "2024-08",
+    "edition_count": 12,
+    "version_changes": 0,
+    "version_progression": "2023-09:202311",
+    "colleges": [
+      "College of Business",
+      "School of Business"
+    ],
+    "cus_values": [
+      9
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "CFSEWADS",
+    "status": "RETIRED",
+    "canonical_name": "Certificate: Web Application Deployment and Support",
+    "degree_headings": [
+      "Certificate: Web Application Deployment and Support"
+    ],
+    "first_seen": "2023-09",
+    "last_seen": "2024-08",
+    "edition_count": 12,
+    "version_changes": 0,
+    "version_progression": "2023-09:202303",
+    "colleges": [
+      "College of Information Technology",
+      "School of Technology"
+    ],
+    "cus_values": [
+      12
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "ENDECE",
+    "status": "RETIRED",
+    "canonical_name": "Endorsement Preparation Program, Early Childhood Education",
+    "degree_headings": [
+      "Endorsement Preparation Program, Early Childhood Education"
+    ],
+    "first_seen": "2025-07",
+    "last_seen": "2026-01",
+    "edition_count": 7,
+    "version_changes": 0,
+    "version_progression": "2025-07:202509",
+    "colleges": [
+      "School of Education"
+    ],
+    "cus_values": [
+      18
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "ENDEDL",
+    "status": "RETIRED",
+    "canonical_name": "Endorsement Preparation Program, Educational Leadership",
+    "degree_headings": [
+      "Endorsement Preparation Program, Educational Leadership"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2019-07",
+    "edition_count": 28,
+    "version_changes": 0,
+    "version_progression": "2017-01:201209",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      37
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "MBAHM",
+    "status": "RETIRED",
+    "canonical_name": "MBA, Healthcare Management",
+    "degree_headings": [
+      "MBA, Healthcare Management"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2025-04",
+    "edition_count": 97,
+    "version_changes": 1,
+    "version_progression": "2017-01:201408 \u2192 2018-01:201802",
+    "colleges": [
+      "College of Business",
+      "School of Business"
+    ],
+    "cus_values": [
+      36
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "MATELK8",
+    "status": "RETIRED",
+    "canonical_name": "Master of Arts in Teaching, Elementary Education (K-8)",
+    "degree_headings": [
+      "Master of Arts in Teaching, Elementary Education (K-8)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2018-05",
+    "edition_count": 14,
+    "version_changes": 1,
+    "version_progression": "2017-01:201504 \u2192 2017-07:201709",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      41,
+      48
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "MATENG12",
+    "status": "RETIRED",
+    "canonical_name": "Master of Arts in Teaching, English Education (5-12)",
+    "degree_headings": [
+      "Master of Arts in Teaching, English Education (5-12)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2018-05",
+    "edition_count": 14,
+    "version_changes": 2,
+    "version_progression": "2017-01:201703 \u2192 2017-03:201708 \u2192 2017-07:201709",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      32,
+      40
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "MATMA12",
+    "status": "RETIRED",
+    "canonical_name": "Master of Arts in Teaching, Mathematics (5-12)",
+    "degree_headings": [
+      "Master of Arts in Teaching, Mathematics (5-12)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2018-05",
+    "edition_count": 14,
+    "version_changes": 1,
+    "version_progression": "2017-01:201504 \u2192 2017-07:201708",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      31,
+      47
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "MATMA9",
+    "status": "RETIRED",
+    "canonical_name": "Master of Arts in Teaching, Mathematics (5-9)",
+    "degree_headings": [
+      "Master of Arts in Teaching, Mathematics (5-9)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2018-05",
+    "edition_count": 14,
+    "version_changes": 1,
+    "version_progression": "2017-01:201504 \u2192 2017-07:201708",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      31,
+      43
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "MATMEMG",
+    "status": "RETIRED",
+    "canonical_name": "Master of Arts in Teaching, Mathematics Education (Middle Grades)",
+    "degree_headings": [
+      "Master of Arts in Teaching, Mathematics Education (Middle Grades)"
+    ],
+    "first_seen": "2018-06",
+    "last_seen": "2025-02",
+    "edition_count": 81,
+    "version_changes": 5,
+    "version_progression": "2018-06:201807 \u2192 2020-07:202007 \u2192 2020-11:202109 \u2192 2020-12:202007 \u2192 2021-09:202109 \u2192 2023-12:202402",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      42,
+      43,
+      44,
+      46
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MATSC12",
+    "status": "RETIRED",
+    "canonical_name": "Master of Arts in Teaching, Science (5-12)",
+    "degree_headings": [
+      "Master of Arts in Teaching, Science (5-12)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2018-05",
+    "edition_count": 14,
+    "version_changes": 1,
+    "version_progression": "2017-01:201504 \u2192 2017-07:201709",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      31,
+      42
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "MATSC9",
+    "status": "RETIRED",
+    "canonical_name": "Master of Arts in Teaching, Science (5-9)",
+    "degree_headings": [
+      "Master of Arts in Teaching, Science (5-9)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2017-05",
+    "edition_count": 3,
+    "version_changes": 0,
+    "version_progression": "2017-01:201504",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      31
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "MATSES",
+    "status": "RETIRED",
+    "canonical_name": "Master of Arts in Teaching, Science Education (Secondary)",
+    "degree_headings": [
+      "Master of Arts in Teaching, Science Education (Secondary)"
+    ],
+    "first_seen": "2018-06",
+    "last_seen": "2025-01",
+    "edition_count": 80,
+    "version_changes": 5,
+    "version_progression": "2018-06:201807 \u2192 2020-07:202007 \u2192 2020-11:202109 \u2192 2020-12:202007 \u2192 2021-09:202109 \u2192 2023-12:202402",
+    "colleges": [
+      "Teachers College",
+      "School of Education"
+    ],
+    "cus_values": [
+      39,
+      40,
+      41,
+      43
+    ],
+    "school": "School of Education"
+  },
+  {
+    "program_code": "MATSS12",
+    "status": "RETIRED",
+    "canonical_name": "Master of Arts in Teaching, Social Science (5-12)",
+    "degree_headings": [
+      "Master of Arts in Teaching, Social Science (5-12)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2017-05",
+    "edition_count": 3,
+    "version_changes": 1,
+    "version_progression": "2017-01:201703 \u2192 2017-03:201708",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      31
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "MAME12",
+    "status": "RETIRED",
+    "canonical_name": "Master of Arts, Mathematics Education (5-12)",
+    "degree_headings": [
+      "Master of Arts, Mathematics Education (5-12)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2018-08",
+    "edition_count": 17,
+    "version_changes": 1,
+    "version_progression": "2017-01:201504 \u2192 2017-07:201708",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      32,
+      39
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "MAME9",
+    "status": "RETIRED",
+    "canonical_name": "Master of Arts, Mathematics Education (5-9)",
+    "degree_headings": [
+      "Master of Arts, Mathematics Education (5-9)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2018-08",
+    "edition_count": 17,
+    "version_changes": 1,
+    "version_progression": "2017-01:201504 \u2192 2017-07:201708",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      30
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "MASEB12",
+    "status": "RETIRED",
+    "canonical_name": "Master of Arts, Science Education (5-12, Bio)",
+    "degree_headings": [
+      "Master of Arts, Science Education (5-12, Bio)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2018-04",
+    "edition_count": 13,
+    "version_changes": 1,
+    "version_progression": "2017-01:201603 \u2192 2017-07:201709",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      32
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "MASECH12",
+    "status": "RETIRED",
+    "canonical_name": "Master of Arts, Science Education (5-12, Chemistry)",
+    "degree_headings": [
+      "Master of Arts, Science Education (5-12, Chemistry)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2018-04",
+    "edition_count": 13,
+    "version_changes": 1,
+    "version_progression": "2017-01:201504 \u2192 2017-07:201709",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      33
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "MASEG12",
+    "status": "RETIRED",
+    "canonical_name": "Master of Arts, Science Education (5-12, Geo)",
+    "degree_headings": [
+      "Master of Arts, Science Education (5-12, Geo)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2018-04",
+    "edition_count": 13,
+    "version_changes": 1,
+    "version_progression": "2017-01:201504 \u2192 2017-07:201709",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      33,
+      34
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "MASEPH12",
+    "status": "RETIRED",
+    "canonical_name": "Master of Arts, Science Education (5-12, Physics)",
+    "degree_headings": [
+      "Master of Arts, Science Education (5-12, Physics)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2018-04",
+    "edition_count": 13,
+    "version_changes": 1,
+    "version_progression": "2017-01:201603 \u2192 2017-07:201709",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      31,
+      34
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "MASE9",
+    "status": "RETIRED",
+    "canonical_name": "Master of Arts, Science Education (5-9)",
+    "degree_headings": [
+      "Master of Arts, Science Education (5-9)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2018-04",
+    "edition_count": 13,
+    "version_changes": 1,
+    "version_progression": "2017-01:201504 \u2192 2017-07:201709",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      31,
+      32
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "MEDID",
+    "status": "RETIRED",
+    "canonical_name": "Master of Education, Instructional Design",
+    "degree_headings": [
+      "Master of Education, Instructional Design"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2022-10",
+    "edition_count": 67,
+    "version_changes": 0,
+    "version_progression": "2017-01:201504",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      30
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "MEDLT",
+    "status": "RETIRED",
+    "canonical_name": "Master of Education, Learning and Technology",
+    "degree_headings": [
+      "Master of Education, Learning and Technology"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2022-10",
+    "edition_count": 67,
+    "version_changes": 0,
+    "version_progression": "2017-01:201504",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      30
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "MHL",
+    "status": "RETIRED",
+    "canonical_name": "Master of Health Leadership",
+    "degree_headings": [
+      "Master of Health Leadership"
+    ],
+    "first_seen": "2018-05",
+    "last_seen": "2023-03",
+    "edition_count": 59,
+    "version_changes": 0,
+    "version_progression": "2018-05:201806",
+    "colleges": [
+      "College of Health Professions",
+      "Leavitt School of Health"
+    ],
+    "cus_values": [
+      34
+    ],
+    "school": "Leavitt School of Health"
+  },
+  {
+    "program_code": "MACC",
+    "status": "RETIRED",
+    "canonical_name": "Master of Science, Accounting",
+    "degree_headings": [
+      "Master of Science, Accounting"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2024-09",
+    "edition_count": 90,
+    "version_changes": 2,
+    "version_progression": "2017-01:201407 \u2192 2020-07:202008 \u2192 2022-01:202202",
+    "colleges": [
+      "College of Business",
+      "School of Business"
+    ],
+    "cus_values": [
+      30
+    ],
+    "school": "School of Business"
+  },
+  {
+    "program_code": "MSDA",
+    "status": "RETIRED",
+    "canonical_name": "Master of Science, Data Analytics",
+    "degree_headings": [
+      "Master of Science, Data Analytics"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2024-05",
+    "edition_count": 86,
+    "version_changes": 2,
+    "version_progression": "2017-01:201612 \u2192 2018-12:201812 \u2192 2020-10:202011",
+    "colleges": [
+      "College of Information Technology",
+      "School of Technology"
+    ],
+    "cus_values": [
+      31,
+      32
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "MSITM",
+    "status": "RETIRED",
+    "canonical_name": "Master of Science, Information Technology Management",
+    "degree_headings": [
+      "Master of Science, Information Technology Management"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2026-01",
+    "edition_count": 106,
+    "version_changes": 4,
+    "version_progression": "2017-01:201611 \u2192 2017-10:201803 \u2192 2017-11:201611 \u2192 2018-02:201803 \u2192 2018-07:201808",
+    "colleges": [
+      "College of Information Technology",
+      "School of Technology"
+    ],
+    "cus_values": [
+      24,
+      30
+    ],
+    "school": "School of Technology"
+  },
+  {
+    "program_code": "MSIHCM",
+    "status": "RETIRED",
+    "canonical_name": "Master of Science, Integrated Healthcare Management",
+    "degree_headings": [
+      "Master of Science, Integrated Healthcare Management"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2018-04",
+    "edition_count": 13,
+    "version_changes": 1,
+    "version_progression": "2017-01:201602 \u2192 2017-03:201703",
+    "colleges": [
+      "College of Business",
+      "College of Health Professions"
+    ],
+    "cus_values": [
+      32,
+      35
+    ],
+    "school": "College of Health Professions"
+  },
+  {
+    "program_code": "MSRNNUNIGR",
+    "status": "RETIRED",
+    "canonical_name": "Master of Science, Nursing - Nursing Informatics",
+    "degree_headings": [
+      "Master of Science, Nursing - Nursing Informatics"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2017-01",
+    "edition_count": 1,
+    "version_changes": 0,
+    "version_progression": "2017-01:201702",
+    "colleges": [
+      "College of Health Professions"
+    ],
+    "cus_values": [
+      150
+    ],
+    "school": "College of Health Professions"
+  },
+  {
+    "program_code": "MSSP",
+    "status": "RETIRED",
+    "canonical_name": "Master of Science, Special Education",
+    "degree_headings": [
+      "Master of Science, Special Education"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2020-05",
+    "edition_count": 38,
+    "version_changes": 0,
+    "version_progression": "2017-01:201504",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      31
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "PBELK8",
+    "status": "RETIRED",
+    "canonical_name": "Post-baccalaureate Teacher Preparation, Elementary Education (K-8)",
+    "degree_headings": [
+      "Post-baccalaureate Teacher Preparation, Elementary Education (K-8)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2018-05",
+    "edition_count": 14,
+    "version_changes": 1,
+    "version_progression": "2017-01:201504 \u2192 2017-07:201709",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      37,
+      46
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "PBMA12",
+    "status": "RETIRED",
+    "canonical_name": "Post-baccalaureate Teacher Preparation, Mathematics (5-12)",
+    "degree_headings": [
+      "Post-baccalaureate Teacher Preparation, Mathematics (5-12)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2017-05",
+    "edition_count": 3,
+    "version_changes": 0,
+    "version_progression": "2017-01:201504",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      27
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "PBMA9",
+    "status": "RETIRED",
+    "canonical_name": "Post-baccalaureate Teacher Preparation, Mathematics (5-9)",
+    "degree_headings": [
+      "Post-baccalaureate Teacher Preparation, Mathematics (5-9)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2017-05",
+    "edition_count": 3,
+    "version_changes": 0,
+    "version_progression": "2017-01:201504",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      27
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "PBSC12",
+    "status": "RETIRED",
+    "canonical_name": "Post-baccalaureate Teacher Preparation, Science (5-12)",
+    "degree_headings": [
+      "Post-baccalaureate Teacher Preparation, Science (5-12)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2017-12",
+    "edition_count": 9,
+    "version_changes": 1,
+    "version_progression": "2017-01:201504 \u2192 2017-07:201709",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      27,
+      40
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "PBSC9",
+    "status": "RETIRED",
+    "canonical_name": "Post-baccalaureate Teacher Preparation, Science (5-9)",
+    "degree_headings": [
+      "Post-baccalaureate Teacher Preparation, Science (5-9)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2017-05",
+    "edition_count": 3,
+    "version_changes": 0,
+    "version_progression": "2017-01:201504",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      27
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "PBSS12",
+    "status": "RETIRED",
+    "canonical_name": "Post-baccalaureate Teacher Preparation, Social Science (5-12)",
+    "degree_headings": [
+      "Post-baccalaureate Teacher Preparation, Social Science (5-12)"
+    ],
+    "first_seen": "2017-01",
+    "last_seen": "2017-05",
+    "edition_count": 3,
+    "version_changes": 1,
+    "version_progression": "2017-01:201703 \u2192 2017-03:201708",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      27
+    ],
+    "school": "Teachers College"
+  },
+  {
+    "program_code": "PBELED",
+    "status": "RETIRED",
+    "canonical_name": "Post-baccalaureate, Elementary Education",
+    "degree_headings": [
+      "Post-baccalaureate, Elementary Education"
+    ],
+    "first_seen": "2018-06",
+    "last_seen": "2020-05",
+    "edition_count": 24,
+    "version_changes": 0,
+    "version_progression": "2018-06:201807",
+    "colleges": [
+      "Teachers College"
+    ],
+    "cus_values": [
+      47
+    ],
+    "school": "Teachers College"
+  }
+]

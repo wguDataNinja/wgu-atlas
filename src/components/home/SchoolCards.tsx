@@ -20,7 +20,7 @@ export default function SchoolCards({ counts }: { counts: Record<string, number>
         return (
           <Link
             key={school.slug}
-            href={`/courses?school=${encodeURIComponent(school.slug)}`}
+            href={`/schools/${school.slug}`}
             className={`border rounded-lg p-4 flex flex-col gap-1 transition-colors ${school.color}`}
           >
             <span className="text-2xl">{school.icon}</span>

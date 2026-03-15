@@ -142,6 +142,225 @@ Scaffolded the site manually (create-next-app refused non-empty directory).
 
 ---
 
+## 2026-03-14 — Session 6: Entity-navigation and program-page pass
+
+### Canonical entity-page rule adopted
+
+Every course and every program shown on the site now resolves to a real Atlas entity page.
+
+- **Current entities**: show latest catalog-backed state; labeled `Current`
+- **Deprecated entities**: show final known catalog-backed state; labeled `Deprecated · Last seen: YYYY-MM · Final source: WGU Catalog (YYYY-MM)`
+- No redirect for deprecated entities; no broken links
+
+### Navigation/link audit completed
+
+All major dead-end navigation fixed:
+- Homepage `Newest Programs` module: items now link to `/programs/[code]` (was unlinked)
+- Homepage `Programs with Recent Updates` module: items now link to `/programs/[code]` (was unlinked)
+- Homepage `Recent Course Additions` module: already linked to `/courses/[code]` — confirmed intact
+- Homepage module "See all →" links for program modules updated to `/programs`
+- Search results: program results now link to `/programs/[code]` (was a dead fake-search link)
+- Search: deprecated programs now labeled "deprecated" (was "retired")
+- Course detail `programs_timeline`: entries now linked to `/programs/[code]` via heading→code map
+- Course detail `current_programs`: entries now linked to `/programs/[code]`
+- Course detail `historical_programs`: entries linked to `/programs/[code]` where matched
+- Nav: added `Programs` link between Courses and Timeline
+
+### Course page coverage expanded
+
+Previously: 838 active AP course pages only.
+Now: **1,641 course entity pages** (all known course codes).
+
+- Active AP (838): served from individual `courses/{code}.json` — rich, includes `programs_timeline`
+- Retired AP (751) + active cert (52): served from `canonical_courses.json` fallback — full fields except `programs_timeline`; shows `historical_programs` list instead
+- All deprecated course pages show: `Deprecated` badge, `Last seen: YYYY-MM`, final source attribution
+- Field normalization: `observed_titles` (` | ` separated) and `current_programs` (`; ` separated) normalized to arrays at load time for canonical fallback
+
+### Program pages added
+
+New routes:
+- `/programs` — Programs explorer (client-side filter by status, school, text search)
+- `/programs/[code]` — Program detail page (196 pages: 114 active, 82 deprecated)
+
+Each program detail page shows:
+- Status badge (Current / Deprecated)
+- Canonical name, school, first/last seen
+- Edition count, version change count
+- School lineage with → progression
+- Known name variants (if multiple degree_headings)
+- Version history table (date → version stamp)
+- Total CUs with change flag if CU values varied
+
+Data source: `data/program_history.csv` (copied from wgu-reddit) → `public/data/programs.json` (generated at migration time).
+
+### Data added
+
+- `data/program_history.csv` — copied from wgu-reddit change_tracking outputs
+- `public/data/programs.json` — generated from CSV (196 programs, 114 active / 82 retired)
+
+### Heading→code map
+
+Built `getHeadingToProgramCode()` in `data.ts`. Resolves `programs_timeline` heading strings to program codes. ACTIVE programs win over RETIRED on conflict; latest `last_seen` wins among same status. Best-effort: some renamed programs may not match.
+
+### Build result
+
+2,043 static pages generated cleanly (was 846).
+
+### Known limitations / deferred
+
+- `programs_timeline` heading→code map is best-effort; some historical headings won't match any current program code
+- Program pages have no course roster yet (program_history.csv does not include per-program course list)
+- Cert-only courses lack `programs_timeline`; show `historical_programs` list without per-program first-seen dates
+- Program descriptions and learning outcomes still not extracted (requires parser work — deferred per session scope)
+
+### Next steps
+
+- [ ] Extract program descriptions (parser work, well-bounded, moderate effort)
+- [ ] Build school/college pages
+- [ ] Push to GitHub and verify live deployment
+
+---
+
+## 2026-03-14 — Session 7: Big data-surfacing pass
+
+### What was done
+
+#### New extraction script
+
+Added `scripts/extract_program_enriched.py` — a standalone script that reads the 2026-03 catalog text and program_blocks file from `wgu-reddit` and extracts:
+- **Program descriptions**: paragraph text between the degree heading and the CCN table (lines `deg_idx+1` to `ccn_idx`)
+- **Course rosters**: per-program ordered course list with `{term, code, title, cus}`, handles title wrap-across-lines
+- **Program learning outcomes**: from the "Program Outcomes" section (ERA_B / 2024-08+), matched to program codes by fuzzy name overlap
+
+Results written to `public/data/program_enriched.json` (keyed by program_code, 114 active programs).
+
+**Extraction results:**
+- Descriptions: 114/114 (all active programs)
+- Rosters: 113/114 (one program has no CCN table)
+- Outcomes: 74/114 (ERA_B only; 40 programs unmatched due to label variations)
+- Total roster course rows: 2,519
+
+**Run command:**
+```bash
+python3 scripts/extract_program_enriched.py \
+  --catalog  /path/to/wgu-reddit/WGU_catalog/data/raw_catalog_texts/catalog_2026_03.txt \
+  --blocks   /path/to/wgu-reddit/WGU_catalog/outputs/program_names/2026_03_program_blocks_v11.json \
+  --programs /path/to/wgu-atlas/public/data/programs.json \
+  --out      /path/to/wgu-atlas/public/data/program_enriched.json
+```
+
+#### New pages / routes
+
+| Route | Description |
+|---|---|
+| `/schools` | School index — 4 school cards with program/course counts |
+| `/schools/[slug]` | School detail pages (4 static pages: business, health, technology, education) |
+
+Each school page includes:
+- School name + current/active badge + source label
+- **School history table** — compact lineage from README_INTERNAL.md §12 (effective date + name, current highlighted)
+- **Recent Activity module** (3-column grid): Newest Programs, Recent Version Updates, Recent Course Additions — all filtered to that school, all linked
+- **Active Programs** table grouped by degree level (Doctoral / Master's / Bachelor's / Certificates & Endorsements), with program code, name, CUs, first seen
+- **Active Courses** table (collapsible) — all active courses in that school, linked to course pages
+- **Deprecated Programs** table (collapsible) — retired programs that were in that school, linked
+
+#### Program pages enriched
+
+`/programs/[code]` now shows:
+- **About This Program** — official catalog description text, blockquote with provenance label
+- **Program Learning Outcomes** — bullet list of WGU-authored outcomes where available (ERA_B)
+- **Course Roster** — grouped by term, with code (linked), title, CUs; total CU sum shown
+
+School name on program page now links to `/schools/[slug]`.
+
+#### Navigation updated
+
+- Nav: added `Schools` link between Programs and Timeline
+- Homepage school cards: now link to `/schools/[slug]` instead of `/courses?school=...`
+
+#### Data added
+
+- `public/data/program_enriched.json` — 114 active programs with description, roster, outcomes (740 KB)
+
+#### Types added
+
+- `RosterCourse` — `{term, code, title, cus}`
+- `ProgramEnriched` — `{program_code, description, description_source, roster, roster_source, outcomes, outcomes_source}`
+- `SchoolRecord` — `{slug, current_name, canonical_key, lineage, historical_names}`
+- `SchoolLineageEntry` — `{date, name}`
+
+#### Data functions added to `data.ts`
+
+- `getProgramEnriched()`, `getProgramEnrichedByCode(code)`
+- `getSchools()`, `getSchoolBySlug(slug)`
+- `getProgramsBySchool(canonicalKey)`, `getCoursesBySchool(historicalNames)`
+- School lineage constants derived from README_INTERNAL.md §12
+
+#### Build result
+
+1,851 static pages generated cleanly (up from 1,641 + 196 + other prior counts; new pages: 4 school routes + 1 school index).
+
+### Provenance approach used
+
+- Section-level source labels on all new sections: `Source: WGU Catalog 2026-03` or `Source: WGU public catalog archive`
+- Program descriptions shown as `<blockquote>` with explicit "Official catalog text — WGU-authored" footnote
+- Learning outcomes section labeled "Official WGU-authored outcomes from the catalog Program Outcomes section. Present in ERA_B catalogs (2024-08+)."
+- School history table attributed to "WGU public catalog archive"
+- Recent activity modules labeled "Based on 2026-03 catalog"
+
+### Known limitations / deferred
+
+- **40 programs without outcomes** — outcome label matching uses fuzzy word overlap; some programs (especially those with generic or abbreviated labels in the outcomes section) aren't matched. No outcomes are fabricated; blank = genuinely not matched.
+- **Outcomes limited to ERA_B (2024-08+)** — the Program Outcomes section is not present in ERA_A catalogs (pre-2024-08). Historical outcomes are not available.
+- **Course CUs not on CourseCard** — the active courses table on school pages shows "—" for CUs because `courses.json` course cards don't carry CU values (only individual detail files do). This is a minor gap; the roster on program pages shows CUs correctly.
+- **School activity modules are catalog-snapshot** — recent_version_changes, newest_programs, and recent_course_additions all come from `homepage_summary.json` which is a pre-computed static artifact. Some entries use historical school names; normalized via `schoolNormMap` on the school page.
+- **1 program with no roster** — one active program block had no parseable CCN table (likely a structural edge case). Shown as no roster section.
+- **`program_enriched.json` is 2026-03 only** — descriptions and rosters are current snapshot only; historical roster changes are not tracked.
+
+### Next steps
+
+- [ ] Improve outcomes matching for remaining 40 programs (lower threshold or alternative label patterns)
+- [ ] Add CU values to course cards so school course tables can show CUs
+- [ ] Add `stability_class` badge to course cards (course explorer and school course list)
+- [ ] Add school tenet text (once parsed from catalog)
+- [ ] Consider extracting program descriptions from earlier catalogs for deprecated programs
+- [ ] Push to GitHub and deploy
+
+---
+
+## 2026-03-14 — Session 5: Product direction review
+
+### What was done
+
+Produced `_internal/PRODUCT_REVIEW_2026_03.md` — a structured product direction memo responding to a shift in emphasis: the site should lead with **useful catalog-backed course/program information**, not with the change-history/event layer.
+
+Memo covers six questions: (1) what's extracted but not yet surfaced, (2) what's in the catalog but not yet extracted, (3) effort classification table, (4) page-by-page recommendations, (5) provenance/citation pattern, (6) monthly update workflow.
+
+### Main direction
+
+**Lead with catalog facts, not events.** Events remain but are secondary.
+
+### Priority order going forward
+
+1. Add CUs to course card and course detail page (no new data, high value)
+2. Build program pages from existing `program_history.csv`
+3. Build school/college pages (needs only existing data + school tenets text)
+4. Extract program descriptions (new parsing, well-bounded, moderate effort)
+5. Extract program learning outcomes (ERA_B only, new parsing)
+6. Surface `stability_class` as visible badge on course cards
+7. Extract certificate descriptions (minor parser extension)
+
+### Key finding
+
+`canonical_cus` is present in all 838 active course detail JSON files and `canonical_courses.csv`. CUs are **not shown anywhere in the current UI**. This is the highest-value zero-effort improvement.
+
+### Next steps
+
+- [ ] Add CUs to course card and detail page (Session 6)
+- [ ] Build program pages (Session 7+)
+
+---
+
 ## 2026-03-14 — Session 3: GitHub Pages deployment (Phase 5)
 
 ### What was done
