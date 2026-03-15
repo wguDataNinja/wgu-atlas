@@ -1,0 +1,972 @@
+WGU ATLAS — FULL SITE CONTENT MAP
+Generated: 2026-03-15T18:00:35.245Z
+Purpose: Proofreading reference. Shows all visible text with source locations.
+
+======================================================================
+  GLOBAL LAYOUT (EVERY PAGE)
+======================================================================
+
+----------------------------------------------------------------------
+  Top Navigation Bar
+----------------------------------------------------------------------
+  [source: src/components/layout/Nav.tsx]
+
+  Brand / Logo: WGU Atlas
+    [source: src/components/layout/Nav.tsx:29]
+
+  Primary Links (student-facing):
+    Home  |  Courses  |  Programs  |  Schools
+    [source: src/components/layout/Nav.tsx:6]
+
+  Secondary Links (archive/meta):
+    Timeline  |  Methods  |  Data
+    [source: src/components/layout/Nav.tsx:13]
+
+----------------------------------------------------------------------
+  Footer
+----------------------------------------------------------------------
+  [source: src/components/layout/Footer.tsx]
+
+  Column 1 — About:
+    Title: WGU Atlas
+    [source: src/components/layout/Footer.tsx:9]
+    Byline: Created by WGU-DataNinja
+    Note: An independent community project. Not affiliated with WGU.
+
+  Column 2 — Data:
+    Label: Data
+    Archive span: Catalog archive: 2017-01 → 2026-03
+    Site data: Site data: {dataDate}  (dynamic — from homepage_summary.json → data_date: "2026-03")
+    Links: Methods & caveats  ·  Download datasets
+
+  Column 3 — Disclaimer:
+    Text: All data is derived from WGU's publicly available course catalog. Catalog dates reflect publication, not student rollout timing.
+
+======================================================================
+  HOME PAGE  (/)
+======================================================================
+  [source: src/app/page.tsx]
+
+----------------------------------------------------------------------
+  Hero Section
+----------------------------------------------------------------------
+  H1 Title: WGU Atlas
+    [source: src/app/page.tsx:18]
+  Subtitle: Search courses, programs, and WGU catalog history
+    [source: src/app/page.tsx:21]
+
+----------------------------------------------------------------------
+  Search Bar (HomeSearch component)
+----------------------------------------------------------------------
+  [source: src/components/home/HomeSearch.tsx]
+  Placeholder: Search by course code or title…
+    [source: src/components/home/HomeSearch.tsx:66]
+  Clear button: ✕
+  'See all' link text: See all results for "{query}" →
+  Inactive result label (course): retired
+  Inactive result label (program): deprecated
+
+----------------------------------------------------------------------
+  School Cards (under search bar)
+----------------------------------------------------------------------
+  [source: src/components/home/SchoolCards.tsx]
+  (4 cards — school names are dynamic from data)
+  Card labels: [School current_name] + active course count
+
+----------------------------------------------------------------------
+  Orientation Band
+----------------------------------------------------------------------
+  [source: src/app/page.tsx]  line 32
+
+  Paragraph:
+    WGU Atlas is an unofficial reference built from WGU's public academic catalog. It covers {active_ap_codes} active courses and {active_programs} current programs across four schools, with history going back to {archive_span start year}. Use it to look up courses, browse programs, and understand how WGU's curriculum has changed over time.
+
+  Stat pills:
+    Pill 1: Active courses: 838  (dynamic)
+    Pill 2: Active programs: 114  (dynamic)
+
+    Attribution line: Data from WGU public catalog · {data_date} edition · About this data
+    data_date value (current): 2026-03
+
+----------------------------------------------------------------------
+  Activity Modules
+----------------------------------------------------------------------
+  [source: src/app/page.tsx]  line 57
+
+  Module 1:
+    Title: New Programs
+    Link: See all →  (→ /programs)
+    Content: Top 5 newest programs (dynamic from homepage_summary.json → newest_programs)
+
+  Module 2:
+    Title: New Courses
+    Link: See all →  (→ /courses)
+    Content: Top 6 recent course additions (dynamic from homepage_summary.json → recent_course_additions)
+
+  Module 3:
+    Title: Browse by School
+    Link: See all →  (→ /schools)
+    Content: All 4 schools by current_name + program count (dynamic)
+
+----------------------------------------------------------------------
+  Official WGU Resources Section
+----------------------------------------------------------------------
+  [source: src/app/page.tsx]  line 125
+
+  Section H2: Official WGU Resources
+
+  Link Group: Official Channels
+    WGU Website ↗  (https://www.wgu.edu)
+    WGU YouTube ↗  (https://www.youtube.com/@WGU)
+    WGU Instagram ↗  (https://www.instagram.com/westerngovernors/)
+    WGU Facebook ↗  (https://www.facebook.com/wgu.edu)
+
+  Link Group: Community
+    r/WGU ↗  (https://www.reddit.com/r/WGU/)
+    r/WGUIT ↗  (https://www.reddit.com/r/WGUIT/)
+    r/WGUTeaching ↗  (https://www.reddit.com/r/WGUTeaching/)
+
+  Link Group: Career & Support
+    WGU Career Services ↗  (https://www.wgu.edu/alumni/career-services.html)
+    WGU Partners ↗  (https://partners.wgu.edu)
+
+  Disclaimer: WGU Atlas is not affiliated with WGU. External links are provided for reference only.
+    [source: src/app/page.tsx:145]
+
+----------------------------------------------------------------------
+  WGU Catalog History Section
+----------------------------------------------------------------------
+  [source: src/app/page.tsx]  line 154
+
+  H2: WGU Catalog History
+  Link: Full timeline →  (→ /timeline)
+  Subtext: Notable curriculum and structural changes drawn from {total_editions} catalog editions.
+  total_editions value (current): 108
+  Content: EventPreview component — first 4 curated major events from homepage_summary.json
+
+  --- Sample: Curated Events Preview (first 4) ---
+  Event 1: EVT-001
+  Event 2: EVT-002
+  Event 3: EVT-003
+  Event 4: EVT-004
+
+======================================================================
+  COURSES PAGE  (/COURSES)
+======================================================================
+  [source: src/app/courses/page.tsx]
+
+----------------------------------------------------------------------
+  Page Header
+----------------------------------------------------------------------
+  H1: Courses
+    [source: src/app/courses/page.tsx:7]
+  Subtext: {activeCourses.length} active courses across WGU's four schools. Search by code or title, or filter by school.
+  Meta description: Search and browse WGU courses — active and retired, with catalog history for each.
+
+----------------------------------------------------------------------
+  CourseExplorer Filters
+----------------------------------------------------------------------
+  [source: src/components/courses/CourseExplorer.tsx]
+
+  Search label: Search
+  Search placeholder: Code or title…
+    [source: src/components/courses/CourseExplorer.tsx:58]
+
+  Status label: Status
+  Status options:
+    Active only  (default)
+    Retired only
+    All
+
+  Scope label: Scope
+  Scope options:
+    AP + Cert  (default)
+    AP only
+    Cert only
+
+  School label: School
+  School options:
+    All schools  (default)
+    Business  |  Health  |  Technology  |  Education
+
+  Reset button: Reset
+  Result count: {n} courses  [of {total}]
+  Empty state: No courses match these filters.
+  Load more button: Show more ({n} remaining)
+
+======================================================================
+  COURSE DETAIL PAGE  (/COURSES/[CODE])
+======================================================================
+  [source: src/app/courses/[code]/page.tsx]
+
+----------------------------------------------------------------------
+  Breadcrumb
+----------------------------------------------------------------------
+  Courses  ›  {code}
+
+
+----------------------------------------------------------------------
+  Header Badges
+----------------------------------------------------------------------
+  {code}  |  {N} CUs  |  Active -or- Retired
+
+  Status badge text:
+    Active: Active
+    [source: src/app/courses/[code]/page.tsx:19]
+    Retired: Retired
+    [source: src/app/courses/[code]/page.tsx:19]
+
+
+----------------------------------------------------------------------
+  Section: Official Catalog History
+----------------------------------------------------------------------
+  H2: Official Catalog History
+  Source badge: Source: WGU public catalog archive
+
+  Stat cards (labels):
+    First seen  |  Last seen  |  Catalog editions  |  Versions seen
+
+
+----------------------------------------------------------------------
+  Section: School & Program Membership (course detail)
+----------------------------------------------------------------------
+  (Dynamic — from course JSON data)
+  Schools seen  |  Current programs  |  Program history
+
+
+----------------------------------------------------------------------
+  Observed Titles (if variant)
+----------------------------------------------------------------------
+  Label: Also seen as:
+
+
+----------------------------------------------------------------------
+  Back Link
+----------------------------------------------------------------------
+  Text: ← Back to Courses
+
+======================================================================
+  PROGRAMS PAGE  (/PROGRAMS)
+======================================================================
+  [source: src/app/programs/page.tsx]
+
+----------------------------------------------------------------------
+  Page Header
+----------------------------------------------------------------------
+  H1: Programs
+    [source: src/app/programs/page.tsx:7]
+  Subtext: {programs.length} programs tracked across the WGU catalog archive — {activeCount} current, {retiredCount} deprecated.
+  Current active count (live): 114
+  Current retired count (live): 82
+  Meta description: Browse all 196 WGU degree programs — active and deprecated — with version history and school lineage.
+
+----------------------------------------------------------------------
+  ProgramExplorer Filters
+----------------------------------------------------------------------
+  [source: src/components/programs/ProgramExplorer.tsx]
+
+  Search label: Search
+  Search placeholder: Program name or code…
+    [source: src/components/programs/ProgramExplorer.tsx:37]
+
+  Status label: Status
+  Status options:
+    Active only  (default)
+    Deprecated only
+    All
+
+  School label: School
+  School options:
+    All schools  (default)
+    Business  |  Health Professions  |  Technology  |  Education
+
+  Reset button: Reset
+  Result count: {n} programs  [of {total}]
+  Empty state: No programs match these filters.
+  Load more button: Show more ({n} remaining)
+  Row status badge (retired): deprecated {last_seen}
+
+======================================================================
+  PROGRAM DETAIL PAGE  (/PROGRAMS/[CODE])
+======================================================================
+  [source: src/app/programs/[code]/page.tsx]
+
+----------------------------------------------------------------------
+  Breadcrumb
+----------------------------------------------------------------------
+  Programs  ›  {code}
+
+
+----------------------------------------------------------------------
+  Header Badges
+----------------------------------------------------------------------
+  {code}  |  {status badge}  |  {N} CUs
+    Active badge: Current
+    Retired badge: Deprecated
+
+
+----------------------------------------------------------------------
+  Section: About This Program
+----------------------------------------------------------------------
+  H2: About This Program
+  Source badge: {enriched.description_source}  (dynamic from program_enriched.json)
+  Content: {enriched.description}  (official catalog text, italicized blockquote)
+  Attribution: Official catalog text — WGU-authored. Sourced from {description_source}.
+
+
+----------------------------------------------------------------------
+  Section: Official Catalog History
+----------------------------------------------------------------------
+  H2: Official Catalog History
+  Source badge: Source: WGU public catalog archive
+
+  Stat cards (labels):
+    First seen  |  Last seen  |  Catalog editions  |  Version changes  |  Total CUs (latest)
+
+  Sub-label: School lineage: School lineage
+  Sub-label: Known names: Known names
+  Canonical marker: (canonical)
+
+
+----------------------------------------------------------------------
+  Section: Program Learning Outcomes
+----------------------------------------------------------------------
+  H2: Program Learning Outcomes
+  Source badge: {enriched.outcomes_source}
+  Note: Official WGU-authored outcomes from the catalog Program Outcomes section. Present in ERA_B catalogs (2024-08+).
+
+
+----------------------------------------------------------------------
+  Section: Version History
+----------------------------------------------------------------------
+  H2: Version History
+  No changes text: No curriculum version changes observed across catalog editions.
+  Changes text: {N} version change(s) observed.
+  Table headers:  Catalog date  |  Version stamp
+  CU change note: Total CUs changed across versions: {cus_values joined by →}
+
+
+----------------------------------------------------------------------
+  Section: Course Roster
+----------------------------------------------------------------------
+  H2: Course Roster ({N} courses)
+  Source badge: {enriched.roster_source}
+  Note: Term sequence and course list from the 2026-03 catalog. Click any course code to view its full catalog history.
+  Table headers:  Code  |  Title  |  CUs
+  Term sub-header: Term {N}
+  Footer: Total: {sum} CUs across {N} courses. Program total per catalog: {latestCus} CUs.
+
+
+----------------------------------------------------------------------
+  Back link
+----------------------------------------------------------------------
+  Text: ← Back to Programs
+
+======================================================================
+  SCHOOLS PAGE  (/SCHOOLS)
+======================================================================
+  [source: src/app/schools/page.tsx]
+
+----------------------------------------------------------------------
+  Page Header
+----------------------------------------------------------------------
+  H1: Schools
+    [source: src/app/schools/page.tsx:6]
+  Subtext: WGU is organized into four schools. Each school page shows its program and course catalog, lineage history, and recent activity.
+    [source: src/app/schools/page.tsx:25]
+  Attribution: Source: WGU public catalog archive · {current year}
+
+----------------------------------------------------------------------
+  School Cards (SCHOOL_DESCRIPTIONS)
+----------------------------------------------------------------------
+  [source: src/app/schools/page.tsx]  lines 10-15
+
+  business: Bachelor's, master's, and MBA programs in accounting, management, marketing, IT management, finance, and related fields.
+  health: Programs in nursing, healthcare administration, public health, health informatics, and allied health disciplines.
+  technology: Programs in IT, cybersecurity, software engineering, data analytics, cloud computing, and computer science.
+  education: Teacher preparation, educational leadership, and learning and technology programs across all grade bands.
+
+  Card subtext: Formerly: {historical names}  (if any)
+  Stats: {N} active programs  ·  {N} active courses
+  Meta description: Browse WGU's four schools — Business, Health, Technology, and Education — with program and course listings.
+
+======================================================================
+  SCHOOL DETAIL PAGE  (/SCHOOLS/[SLUG])
+======================================================================
+  [source: src/app/schools/[slug]/page.tsx]
+
+----------------------------------------------------------------------
+  Breadcrumb
+----------------------------------------------------------------------
+  Schools  ›  {school.current_name}
+
+
+----------------------------------------------------------------------
+  Page Header
+----------------------------------------------------------------------
+  H1: {school.current_name}  (dynamic)
+  Historical names: Formerly known as: {historical names}  (if any)
+
+
+----------------------------------------------------------------------
+  Detected Section Headings
+----------------------------------------------------------------------
+  • School History
+  • Recent Activity
+  • Newest Programs
+  • Recent Version Updates
+  • Recent Course Additions
+  Meta description: WGU {school.current_name} — programs, courses, and catalog history.
+
+======================================================================
+  TIMELINE PAGE  (/TIMELINE)
+======================================================================
+  [source: src/app/timeline/page.tsx]
+
+----------------------------------------------------------------------
+  Page Header
+----------------------------------------------------------------------
+  H1: Catalog Timeline
+    [source: src/app/timeline/page.tsx:47]
+  Subtext: {events.length} named catalog events across 107 edition transitions (2017–2026). Curated major events include hand-written interpretations; remaining events have machine-generated observed summaries.
+  events.length (current): 41
+  Info note: All entries sourced from WGU public catalog archive. Observed summaries describe what changed; interpreted summaries explain why. Confidence noted where applicable.
+
+----------------------------------------------------------------------
+  Type Label Definitions
+----------------------------------------------------------------------
+  [source: src/app/timeline/page.tsx]  lines 10-19
+
+  rename_cleanup  →  "Rename / Cleanup"
+  composite  →  "Composite"
+  school_rename  →  "School Rename"
+  program_restructure  →  "Program Restructure"
+  expansion  →  "Expansion"
+  cert_formalization  →  "Cert Formalization"
+  version_review  →  "Version Review"
+  mixed  →  "Mixed"
+
+----------------------------------------------------------------------
+  Severity Labels
+----------------------------------------------------------------------
+  score >= 300  →  Very High
+  score >= 150  →  High
+  score >= 75   →  Moderate
+  score < 75    →  Low
+
+----------------------------------------------------------------------
+  Major Events Section
+----------------------------------------------------------------------
+  H2: Major Events
+  Subtext: {curated.length} curated events with hand-written titles and interpretations.
+  curated count (current): 10
+
+  Event card fields:
+    {start_edition} → {end_edition}  |  [type label]  |  Severity {label}  |  {confidence} confidence
+    H3: {event.event_title}
+    Observed: (label)  {event.observed_summary}
+    Interpretation: (label)  {event.interpreted_summary}
+    Schools: {affected_schools}
+    +{courses_added_count} / −{courses_removed_count} courses
+    {version_changes_count} version changes  (if > 0)
+    {title_changes_count} title changes  (if > 0)
+
+----------------------------------------------------------------------
+  All Catalog Events Section
+----------------------------------------------------------------------
+  H2: All Catalog Events
+  Subtext: {other.length} additional threshold-crossing transitions with observed summaries.
+  other count (current): 31
+
+----------------------------------------------------------------------
+  Sample: Curated Events (all)
+----------------------------------------------------------------------
+
+  [1] EVT-001
+      Title: Pre-Clinical Title Standardization
+      Editions: 2017-01 → 2017-03
+      Type: rename_cleanup  |  Severity: 112
+      Observed: 14 genuine title changes; all are 'Pre-Clinical Experiences' → 'Preclinical Experiences' (hyphen removal). 13 program version changes also in this transition.
+      Interpreted: WGU standardized the hyphenation of 'Preclinical' across all teacher-education preclinical experience course titles. A concurrent wave of 13 program version bumps suggests this was part of a broader Education curriculum review cycle.
+      Schools: Business; Education; Health; Technology
+
+  [2] EVT-002
+      Title: 2017 Assessment Code Migration and Teacher Program Rationalization
+      Editions: 2017-05 → 2017-07
+      Type: composite  |  Severity: 318
+      Observed: 175 course churn (largest in archive): 101 added, 74 removed. 22 program version changes. 7 net program change. Grade-band teacher programs retired; subject-discipline format introduced. Old AXX-format assessment codes retired; C-codes expand.
+      Interpreted: The single most structurally disruptive transition in the 2017–2026 archive. WGU simultaneously retired the legacy assessment code taxonomy (AXX-format codes such as ABP1, AEP1) and reorganized the Education school from grade-band programs (K-8, 5-12) toward subject-specific teacher programs. The 22 program version changes suggest comprehensive curriculum review coincided with this structural shift.
+      Schools: Education; Technology
+
+  [3] EVT-003
+      Title: Education School Domain Reorganization — Grade-Band to Subject-Discipline
+      Editions: 2018-04 → 2018-05
+      Type: domain_reorganization  |  Severity: 301
+      Observed: 23 program churn (largest in archive): 11 grade-band teacher programs retired (BASC9, BASCB12, BASCCH12…), 12 new subject-discipline programs added (BSCS, BSSEMG, BSSESB…). 61 course churn, 0 version changes.
+      Interpreted: WGU reorganized teacher education program structure from grade-band taxonomy (K-9, 5-12 etc.) to subject-discipline taxonomy (Science, Math, Social Studies, etc.). The structural change retired 11 programs and launched 12 replacements. Zero version changes indicates this was a program-taxonomy reorganization rather than a curriculum content revision.
+      Schools: Education; Health; Technology
+
+  [4] EVT-004
+      Title: Education School Follow-On Reorganization Wave
+      Editions: 2018-05 → 2018-06
+      Type: domain_reorganization  |  Severity: 124
+      Observed: 12 program churn in Education; 4 course churn. Follow-on wave from the April→May 2018 domain reorganization.
+      Interpreted: Continuation of the 2018 Education school reorganization. Additional programs added and retired in the month immediately following the primary restructuring event, suggesting the April→May reorganization was rolled out in two phases.
+      Schools: Education
+
+  [5] EVT-005
+      Title: Business School Program Family Rebuild (BSBA)
+      Editions: 2020-01 → 2020-02
+      Type: program_family_rebuild  |  Severity: 171
+      Observed: 13 program churn in Business only. 41 course churn. 0 version changes. Net program change: Business restructuring.
+      Interpreted: WGU restructured the Business school program family, retiring older BSBA variants and introducing new program codes with shared core curriculum. The zero version change count is consistent with a namespace migration rather than a content revision — the underlying curriculum may have been unchanged while programs were reorganized.
+      Schools: Business
+
+  [6] EVT-006
+      Title: Mid-Archive Curriculum Version Wave — Business, Education, Health
+      Editions: 2020-06 → 2020-07
+      Type: curriculum_version_wave  |  Severity: 183
+      Observed: 119 course churn, 18 version changes, 0 program count change. Affects Business, Education, Health schools.
+      Interpreted: A large curriculum-content refresh wave affecting three schools simultaneously with no structural program additions or removals. The 18 version changes indicate formal curriculum revision across many programs in the same cycle. The 119 course churn with zero program churn suggests course substitutions within existing programs rather than new program launches.
+      Schools: Business; Education; Health
+
+  [7] EVT-007
+      Title: Leavitt School of Health Rename and Curriculum Restructuring
+      Editions: 2022-12 → 2023-01
+      Type: composite  |  Severity: 184
+      Observed: 80 course churn, 9 program churn, 2 genuine title changes. Affects Business, Health, Technology. Health school renamed from 'College of Health Professions' to 'Leavitt School of Health' effective this edition.
+      Interpreted: The Leavitt School of Health rename coincided with significant structural changes in the Health school — 9 program churn and 80 course churn together suggest the rename accompanied a broader health curriculum reorganization rather than being a pure administrative rename. The title changes for D346 and D347 ('Psychological Care' → 'Psychiatric Mental Health Care') reflect genuine course renaming within the health restructuring.
+      Schools: Business; Health; Technology
+
+  [8] EVT-008
+      Title: Certificate Formalization and BAES Program Launch
+      Editions: 2024-08 → 2024-09
+      Type: composite  |  Severity: 240
+      Observed: 91 course churn, 13 program churn, 3 version changes. New 'Certificates - Standard Paths' section added with 16 cert programs and 52 unique course codes. Endorsement program restructuring; new D6xx course series. Notes: cert_section_added.
+      Interpreted: WGU added a formal 'Certificates - Standard Paths' section to the catalog for the first time, introducing 16 certificate programs with 52 dedicated course codes (all disjoint from Academic Programs). Simultaneously, endorsement programs in the Education school were restructured, introducing a new D6xx course code series and retiring older endorsement codes.
+      Schools: Business; Education; Technology
+
+  [9] EVT-009
+      Title: Post-Cert-Launch Curriculum Integration Wave
+      Editions: 2024-09 → 2024-10
+      Type: curriculum_version_wave  |  Severity: 187
+      Observed: 101 course churn, 5 program churn, 7 version changes. All 4 colleges affected.
+      Interpreted: The month following the certificate section launch saw the highest four-college course churn in the recent archive, suggesting a broad curriculum integration across all four schools that may have been coordinated with the structural changes from the prior month.
+      Schools: Business; Education; Health; Technology
+
+  [10] EVT-010
+      Title: Graduate CS/SWE Specialization Split and Education/Health Expansion
+      Editions: 2025-01 → 2025-02
+      Type: composite  |  Severity: 347
+      Observed: Severity 347 — highest in archive. 158 course churn (110 added, 48 removed), 14 program churn, 13 version changes. Education, Health, Technology schools affected.
+      Interpreted: The largest single-month expansion in the 2017–2026 archive by severity score. WGU launched multiple new graduate specialization tracks in Computer Science and Software Engineering (MSCS and MSSWE family programs), each with dedicated course series. Concurrent Health and Education program additions suggest a coordinated multi-school expansion rather than a single isolated program launch.
+      Schools: Education; Health; Technology
+
+----------------------------------------------------------------------
+  Sample: Non-Curated Events (all)
+----------------------------------------------------------------------
+
+  [1] EVT-030
+      Editions: 2018-06 → 2018-07
+      Type: domain_reorganization  |  Severity: 59
+      Observed: course_churn=11, programs_added=2, programs_removed=2, version_changes=1, title_changes=0, flags=['program_churn=4']
+
+  [2] EVT-023
+      Editions: 2018-08 → 2018-09
+      Type: domain_reorganization  |  Severity: 86
+      Observed: course_churn=6, programs_added=4, programs_removed=4, version_changes=0, title_changes=0, flags=['program_churn=8']
+
+  [3] EVT-035
+      Editions: 2018-11 → 2018-12
+      Type: curriculum_version_wave  |  Severity: 48
+      Observed: course_churn=11, programs_added=0, programs_removed=0, version_changes=9, title_changes=0, flags=['affected_college_count=3']
+
+  [4] EVT-036
+      Editions: 2019-03 → 2019-04
+      Type: curriculum_version_wave  |  Severity: 43
+      Observed: course_churn=20, programs_added=1, programs_removed=1, version_changes=1, title_changes=0, flags=['course_churn=20']
+
+  [5] EVT-039
+      Editions: 2019-08 → 2019-09
+      Type: curriculum_version_wave  |  Severity: 36
+      Observed: course_churn=26, programs_added=1, programs_removed=0, version_changes=0, title_changes=0, flags=['course_churn=26']
+
+  [6] EVT-034
+      Editions: 2020-08 → 2020-09
+      Type: curriculum_version_wave  |  Severity: 51
+      Observed: course_churn=14, programs_added=0, programs_removed=0, version_changes=10, title_changes=0, flags=['version_changes_count=10']
+
+  [7] EVT-016
+      Editions: 2020-09 → 2020-10
+      Type: program_family_rebuild  |  Severity: 111
+      Observed: course_churn=69, programs_added=0, programs_removed=0, version_changes=9, title_changes=0, flags=['course_churn=69', 'affected_college_count=4']
+
+  [8] EVT-011
+      Editions: 2020-10 → 2020-11
+      Type: program_family_rebuild  |  Severity: 134
+      Observed: course_churn=53, programs_added=2, programs_removed=2, version_changes=8, title_changes=0, flags=['course_churn=53', 'program_churn=4', 'affected_college_count=4']
+
+  [9] EVT-015
+      Editions: 2020-11 → 2020-12
+      Type: curriculum_version_wave  |  Severity: 112
+      Observed: course_churn=43, programs_added=2, programs_removed=1, version_changes=8, title_changes=0, flags=['course_churn=43', 'affected_college_count=4']
+
+  [10] EVT-026
+      Editions: 2021-08 → 2021-09
+      Type: curriculum_version_wave  |  Severity: 69
+      Observed: course_churn=18, programs_added=0, programs_removed=2, version_changes=7, title_changes=0, flags=['affected_college_count=3']
+
+  [11] EVT-027
+      Editions: 2021-12 → 2022-01
+      Type: curriculum_version_wave  |  Severity: 66
+      Observed: course_churn=29, programs_added=2, programs_removed=0, version_changes=4, title_changes=0, flags=['course_churn=29']
+
+  [12] EVT-032
+      Editions: 2022-04 → 2022-05
+      Type: curriculum_version_wave  |  Severity: 57
+      Observed: course_churn=37, programs_added=1, programs_removed=1, version_changes=0, title_changes=0, flags=['course_churn=37']
+
+  [13] EVT-028
+      Editions: 2022-05 → 2022-06
+      Type: curriculum_version_wave  |  Severity: 62
+      Observed: course_churn=21, programs_added=3, programs_removed=0, version_changes=2, title_changes=0, flags=['course_churn=21']
+
+  [14] EVT-020
+      Editions: 2022-11 → 2022-12
+      Type: program_family_rebuild  |  Severity: 95
+      Observed: course_churn=60, programs_added=2, programs_removed=1, version_changes=0, title_changes=0, flags=['course_churn=60']
+
+  [15] EVT-038
+      Editions: 2023-01 → 2023-02
+      Type: curriculum_version_wave  |  Severity: 40
+      Observed: course_churn=20, programs_added=0, programs_removed=0, version_changes=2, title_changes=2, flags=['course_churn=20', 'affected_college_count=3']
+
+  [16] EVT-025
+      Editions: 2023-03 → 2023-04
+      Type: curriculum_version_wave  |  Severity: 76
+      Observed: course_churn=35, programs_added=2, programs_removed=1, version_changes=0, title_changes=1, flags=['course_churn=35']
+
+  [17] EVT-031
+      Editions: 2023-04 → 2023-05
+      Type: curriculum_version_wave  |  Severity: 59
+      Observed: course_churn=24, programs_added=2, programs_removed=0, version_changes=2, title_changes=0, flags=['course_churn=24']
+
+  [18] EVT-018
+      Editions: 2023-07 → 2023-08
+      Type: domain_reorganization  |  Severity: 106
+      Observed: course_churn=43, programs_added=3, programs_removed=2, version_changes=1, title_changes=0, flags=['course_churn=43', 'program_churn=5', 'affected_college_count=3']
+
+  [19] EVT-014
+      Editions: 2023-11 → 2023-12
+      Type: program_family_rebuild  |  Severity: 116
+      Observed: course_churn=53, programs_added=1, programs_removed=0, version_changes=16, title_changes=0, flags=['course_churn=53', 'version_changes_count=16']
+
+  [20] EVT-040
+      Editions: 2023-12 → 2024-01
+      Type: curriculum_version_wave  |  Severity: 31
+      Observed: course_churn=15, programs_added=0, programs_removed=0, version_changes=2, title_changes=0, flags=['affected_college_count=3']
+
+  [21] EVT-033
+      Editions: 2024-01 → 2024-02
+      Type: curriculum_version_wave  |  Severity: 55
+      Observed: course_churn=24, programs_added=2, programs_removed=0, version_changes=2, title_changes=0, flags=['course_churn=24']
+
+  [22] EVT-037
+      Editions: 2024-03 → 2024-04
+      Type: curriculum_version_wave  |  Severity: 43
+      Observed: course_churn=4, programs_added=1, programs_removed=0, version_changes=5, title_changes=2, flags=['affected_college_count=3']
+
+  [23] EVT-013
+      Editions: 2024-05 → 2024-06
+      Type: program_family_rebuild  |  Severity: 120
+      Observed: course_churn=57, programs_added=4, programs_removed=1, version_changes=1, title_changes=0, flags=['course_churn=57', 'program_churn=5', 'affected_college_count=3']
+
+  [24] EVT-024
+      Editions: 2024-07 → 2024-08
+      Type: domain_reorganization  |  Severity: 81
+      Observed: course_churn=21, programs_added=4, programs_removed=0, version_changes=1, title_changes=1, flags=['course_churn=21', 'program_churn=4', 'affected_college_count=4']
+
+  [25] EVT-022
+      Editions: 2024-12 → 2025-01
+      Type: domain_reorganization  |  Severity: 93
+      Observed: course_churn=8, programs_added=4, programs_removed=4, version_changes=0, title_changes=0, flags=['program_churn=8']
+
+  [26] EVT-019
+      Editions: 2025-02 → 2025-03
+      Type: program_family_rebuild  |  Severity: 103
+      Observed: course_churn=53, programs_added=0, programs_removed=5, version_changes=0, title_changes=0, flags=['course_churn=53', 'program_churn=5']
+
+  [27] EVT-021
+      Editions: 2025-06 → 2025-07
+      Type: domain_reorganization  |  Severity: 94
+      Observed: course_churn=16, programs_added=7, programs_removed=0, version_changes=1, title_changes=0, flags=['program_churn=7']
+
+  [28] EVT-012
+      Editions: 2025-07 → 2025-08
+      Type: program_family_rebuild  |  Severity: 121
+      Observed: course_churn=20, programs_added=4, programs_removed=5, version_changes=2, title_changes=0, flags=['course_churn=20', 'program_churn=9']
+
+  [29] EVT-041
+      Editions: 2025-11 → 2025-12
+      Type: curriculum_version_wave  |  Severity: 25
+      Observed: course_churn=22, programs_added=0, programs_removed=0, version_changes=1, title_changes=0, flags=['course_churn=22']
+
+  [30] EVT-017
+      Editions: 2026-01 → 2026-02
+      Type: domain_reorganization  |  Severity: 107
+      Observed: course_churn=39, programs_added=3, programs_removed=3, version_changes=1, title_changes=0, flags=['course_churn=39', 'program_churn=6']
+
+  [31] EVT-029
+      Editions: 2026-02 → 2026-03
+      Type: curriculum_version_wave  |  Severity: 60
+      Observed: course_churn=1, programs_added=0, programs_removed=0, version_changes=18, title_changes=0, flags=['version_changes_count=18']
+
+======================================================================
+  METHODS PAGE  (/METHODS)
+======================================================================
+  [source: src/app/methods/page.tsx]
+  H1: Methods & Caveats
+    [source: src/app/methods/page.tsx:4]
+  Subtext: How this data was collected, validated, and how to interpret it correctly.
+  Meta description: How WGU Atlas data was collected, validated, and interpreted — archive coverage, parser eras, and trust caveats.
+
+
+----------------------------------------------------------------------
+  Section: Archive Coverage
+----------------------------------------------------------------------
+  H2: Archive Coverage
+
+  WGU Atlas is built from 108 public WGU catalog editions spanning
+  January 2017 through March 2026. Three editions are absent from
+  the archive (2017-02, 2017-04, 2017-06), likely never published as separate
+  snapshots on the WGU public catalog page.
+
+  Each edition represents a distinct published snapshot of WGU's public course
+  catalog. The parser extracts course codes, titles, program memberships, and
+  structural metadata from each edition.
+
+    [source: src/app/methods/page.tsx:16]
+
+----------------------------------------------------------------------
+  Section: Parser Eras
+----------------------------------------------------------------------
+  H2: Parser Eras
+
+  The WGU catalog underwent a structural formatting change in mid-2024. Two
+  parser eras are recognized:
+
+  • ERA_A: 2017-01 through 2024-07 — original catalog structure
+  • ERA_B: 2024-08 through 2026-03 — updated catalog structure
+
+  The active parser (parse_catalog_v11.py) handles both eras. A full archive
+  run produces 0 skipped editions and 0 body-parse anomalies.
+
+    [source: src/app/methods/page.tsx:30]
+
+----------------------------------------------------------------------
+  Section: Validation
+----------------------------------------------------------------------
+  H2: Validation
+
+  The 2026-03 edition serves as the trusted reference baseline. It was validated
+  deeply after an initial scrape returned incomplete results (696 AP codes vs.
+  the correct 838). The discrepancy was traced, corrected, and verified.
+
+  14 structurally critical editions — breakpoints where the parser or catalog
+  structure changed — were individually validated. All 14 passed clean.
+
+  [Callout box] The 696 → 838 correction is an important part of this project's trust story.
+  The current counts are hard-won and verified, not taken at face value from
+  the first parser run.
+
+    [source: src/app/methods/page.tsx:46]
+
+----------------------------------------------------------------------
+  Section: Observed vs. Inferred
+----------------------------------------------------------------------
+  H2: Observed vs. Inferred
+
+  WGU Atlas distinguishes between observed facts and inferred relationships:
+
+  • Observed: directly present in the catalog archive — course code,
+    title, program membership, edition dates
+  • Inferred: derived from patterns across editions — event types,
+    event interpretations, stability classifications
+
+  Interpretive content (event interpretations, title variant classifications) is
+  labeled with confidence levels: high, moderate, or tentative.
+
+    [source: src/app/methods/page.tsx:63]
+
+----------------------------------------------------------------------
+  Section: Title Variant Classification
+----------------------------------------------------------------------
+  H2: Title Variant Classification
+
+  167 course codes show title variation across editions. These have been manually
+  classified into categories:
+
+  • Extraction noise (145 codes, 87%) — PDF line-wrap, Unicode variants, catalog oscillations. Not real renames.
+  • Punctuation only (16) — hyphen, comma, em-dash changes.
+  • Wording refinement (3) — typo fix or minor synonym swap.
+  • Substantive change (2) — genuine semantic renames.
+  • Formatting only (1) — space insertion.
+
+  The overwhelming majority of apparent title variation is extraction artifact,
+  not editorial intent.
+
+    [source: src/app/methods/page.tsx:84]
+
+----------------------------------------------------------------------
+  Section: Key Caveats
+----------------------------------------------------------------------
+  H2: Key Caveats
+
+  Caveat 1: Catalog date ≠ implementation date
+    The catalog reflects publication timing, not guaranteed student rollout.
+    A course appearing in a March catalog may have been deployed to students earlier or later.
+
+  Caveat 2: Catalog presence ≠ lived experience
+    Official structure does not perfectly capture actual student pathways or
+    the subjective experience of a course.
+
+  Caveat 3: Code change ≠ substantive change
+    Course code changes may reflect renumbering, administrative reorganization,
+    or cleanup — not necessarily changes to course content.
+
+  Caveat 4: Reddit is supplementary context
+    Student discussion data (planned for v1.1) is useful context, not
+    institutional truth. WGU Atlas keeps official catalog facts and discussion
+    signals in clearly separate sections.
+
+  Caveat 5: One-off courses require caution
+    Courses with only 1–2 catalog appearances are flagged (ghost_flag,
+    single_appearance_flag). These may represent data anomalies or genuinely
+    short-lived entries.
+
+    [source: src/app/methods/page.tsx:102]
+
+----------------------------------------------------------------------
+  Section: Data Separation Policy
+----------------------------------------------------------------------
+  H2: Data Separation Policy
+
+  WGU Atlas enforces a strict separation between three information types:
+
+  • Official catalog facts — from the WGU public catalog archive
+  • Discussion signals — from Reddit and community spaces (v1.1)
+  • LLM-generated summaries — clearly labeled with date, source count, and disclaimer (v1.1)
+
+  These three types are never mixed in the same field or presented as equivalent.
+
+    [source: src/app/methods/page.tsx:129]
+
+======================================================================
+  DATA PAGE  (/DATA)
+======================================================================
+  [source: src/app/data/page.tsx]
+  H1: Data
+    [source: src/app/data/page.tsx:6]
+  Subtext: Download the canonical datasets behind WGU Atlas. All files reflect the {data_date} catalog baseline.
+  data_date (current): 2026-03
+  Archive line: Archive span: {archive_span} · {total_editions} editions · {total_course_codes_ever} total course codes ever seen
+  archive_span (current): 2017-01 to 2026-03
+  total_editions (current): 108
+  total_course_codes_ever (current): 1594
+  Meta description: Download WGU Atlas canonical datasets — course history, named events, title variant classification.
+
+----------------------------------------------------------------------
+  Section: Canonical Datasets (CSV)
+----------------------------------------------------------------------
+  H2: Canonical Datasets (CSV)
+
+  Dataset 1:
+    Label: Canonical Course Table
+    Description: 1,646-row table covering all course codes ever seen in the archive. Includes active/retired status, title variant classification, stability class, program counts, and confidence notes.
+    Format: CSV  |  1,646 rows
+    File: canonical_courses.csv
+
+  Dataset 2:
+    Label: Named Catalog Events
+    Description: 41 named events (all threshold-crossing transitions). Includes event type, severity score, affected schools/programs/courses, observed and interpreted summaries, confidence, and curated-event flag.
+    Format: CSV  |  41 rows
+    File: named_events.csv
+
+  Dataset 3:
+    Label: Title Variant Classification
+    Description: 167 course codes with title variation across editions, each classified by variant type: extraction noise, punctuation only, wording refinement, substantive change, or formatting only.
+    Format: CSV  |  167 rows
+    File: title_variant_classification.csv
+
+----------------------------------------------------------------------
+  Section: Site-Ready JSON Exports
+----------------------------------------------------------------------
+  H2: Site-Ready JSON Exports
+  Intro text: The same JSON files that power the WGU Atlas frontend. Provided for transparency and for developers who want to build on the data.
+
+  Export 1:
+    Label: Course Cards (full list)
+    Description: 1,646 course cards with code, title, status, scope, school, edition count, stability class, and flags. Used by the course explorer.
+    File: courses.json  |  712 KB
+
+  Export 2:
+    Label: Events (full)
+    Description: 41 events in full JSON form with all fields including course/program sample lists.
+    File: events.json  |  48 KB
+
+  Export 3:
+    Label: Search Index
+    Description: 1,842-entry search index covering all courses and programs, with alt_titles for search matching.
+    File: search_index.json  |  392 KB
+
+----------------------------------------------------------------------
+  Section: Schema Notes
+----------------------------------------------------------------------
+  H2: Schema Notes
+
+  stability_class — Classifies a course by its persistence across editions:
+    perpetual (all 108 editions), stable, moderate, ephemeral, single (1 edition), cert_only.
+
+  ghost_flag — True for retired AP courses with ≤2 catalog appearances.
+    These may represent data anomalies or genuinely short-lived entries.
+
+  title_variant_class — Classification of title variation across editions.
+    extraction_noise accounts for 87% of apparent title variation and does
+    not represent intentional renames.
+
+  programs_timeline (in individual course JSON files) — Lists programs by raw
+    degree heading text, not by program code. Minor wording variations across
+    editions may exist.
+
+  Full field definitions are in docs/README_INTERNAL.md in the GitHub repository.
+
+    [source: src/app/data/page.tsx:147]
+
+======================================================================
+  SEO / PAGE METADATA SUMMARY
+======================================================================
+
+  Route               Title                          Meta Description
+  ------------------------------------------------------------------------------------------
+  /                   WGU Atlas                      (from layout.tsx)
+  /courses            Courses                        Search and browse WGU courses — active and retired, with catalog history for each.
+  /programs           Programs                       Browse all 196 WGU degree programs — active and deprecated — with version history and school lineage.
+  /schools            Schools                        Browse WGU's four schools — Business, Health, Technology, and Education — with program and course listings.
+  /timeline           Timeline                       Major WGU catalog events from 2017 to 2026 — school reorganizations, mass course changes, program additions, and more.
+  /methods            Methods                        How WGU Atlas data was collected, validated, and interpreted — archive coverage, parser eras, and trust caveats.
+  /data               Data                           Download WGU Atlas canonical datasets — course history, named events, title variant classification.
+  /courses/[code]     {code} — {title}               {title} ({code}). Active/Retired WGU course — {N} programs, first offered {date}.
+  /programs/[code]    {program name}                 WGU program history for {name}. First seen {date}, {N} version changes tracked.
+  /schools/[slug]     {school name}                  WGU {school name} — programs, courses, and catalog history.
+
+======================================================================
+  END OF CONTENT MAP
+======================================================================
+
+  To edit content, find the [source: path:line] reference above each item.
+  Static text → edit the .tsx file directly.
+  Dynamic data (labeled 'dynamic') → sourced from public/data/*.json files.
+  School descriptions → src/app/schools/page.tsx  lines 10-15
+  Nav links → src/components/layout/Nav.tsx  lines 6-17
+  Footer text → src/components/layout/Footer.tsx
+

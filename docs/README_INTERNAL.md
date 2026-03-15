@@ -1077,3 +1077,47 @@ This document previously treated the historical pipeline as the final layer. Tha
 
 There is now a distinct website data layer on top of the scraper/history pipeline. Future updates should integrate this appendix into the main document structure rather than leaving it as a temporary addendum.
 
+
+
+
+
+Append this section to the top-level README.md:
+
+⸻
+
+Official WGU Context Layer
+
+WGU Atlas is not only built from the public catalog archive. It is also planned to surface relevant official WGU website resources that help students understand courses, programs, schools, and major institutional changes.
+
+This is a distinct product layer and is intentionally separate from both:
+	•	official catalog facts
+	•	student/community discussion
+
+The goal is to help users discover useful official WGU pages that are often hard to find through the main website navigation, such as:
+	•	program guide pages and PDFs
+	•	school rename announcements
+	•	program launch pages
+	•	comparison articles
+	•	certification-related advice pages
+	•	other relevant official WGU resources discoverable from the sitemap
+
+These links will eventually appear as a first-class supporting layer on Atlas pages under headings like:
+	•	Related official WGU resources
+	•	Official context
+	•	Helpful official WGU pages
+
+This comes before broad Reddit integration in the product roadmap. The intended content hierarchy for Atlas is:
+	1.	Official catalog facts
+	2.	Related official WGU resources
+	3.	Student/community discussion (later, clearly secondary)
+
+Internal planning for this work lives in:
+	•	_internal/OFFICIAL_CONTEXT_LAYER_PLAN.md
+
+That document defines:
+	•	why this layer matters
+	•	how official WGU links should be discovered and classified
+	•	how they should be matched to Atlas entities
+	•	how they should be surfaced without compromising trust or provenance
+
+⸻

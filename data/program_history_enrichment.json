@@ -1,0 +1,4225 @@
+{
+  "events": [
+    {
+      "event_id": "PLE-001",
+      "transition_type": "successor",
+      "start_edition": "2017-08",
+      "end_edition": "2017-09",
+      "from_programs": [
+        {
+          "program_code": "BSITSEC",
+          "title": "Bachelor of Science, IT - Security Emphasis"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSNOS",
+          "title": "Bachelor of Science, Network Operations and Security"
+        }
+      ],
+      "importance": "high",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "BSITSEC",
+          "to_program": "BSNOS",
+          "shared_course_count": 30,
+          "removed_course_count": 4,
+          "added_course_count": 5,
+          "old_retained_pct": 0.8824,
+          "new_inherited_pct": 0.8571,
+          "jaccard_overlap": 0.7692,
+          "courses_added": [
+            "C846",
+            "C849",
+            "C850",
+            "C851",
+            "C917"
+          ],
+          "courses_removed": [
+            "C170",
+            "C179",
+            "C697",
+            "C698"
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-002",
+      "transition_type": "successor",
+      "start_edition": "2017-09",
+      "end_edition": "2017-10",
+      "from_programs": [
+        {
+          "program_code": "BSITNW",
+          "title": "Bachelor of Science, IT - Networks Administration Emphasis"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSCLSA",
+          "title": "Bachelor of Science, Cloud and Systems Administration"
+        }
+      ],
+      "importance": "high",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "BSITNW",
+          "to_program": "BSCLSA",
+          "shared_course_count": 28,
+          "removed_course_count": 5,
+          "added_course_count": 7,
+          "old_retained_pct": 0.8485,
+          "new_inherited_pct": 0.8,
+          "jaccard_overlap": 0.7,
+          "courses_added": [
+            "C846",
+            "C849",
+            "C850",
+            "C851",
+            "C916",
+            "C923",
+            "C924"
+          ],
+          "courses_removed": [
+            "ABV1",
+            "C170",
+            "C179",
+            "C268",
+            "C456"
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-003",
+      "transition_type": "family_restructure",
+      "start_edition": "2018-04",
+      "end_edition": "2018-05",
+      "from_programs": [
+        {
+          "program_code": "BASC9",
+          "title": "Bachelor of Arts, Science (5-9)"
+        },
+        {
+          "program_code": "BASCB12",
+          "title": "Bachelor of Arts, Science (5-12, Bio)"
+        },
+        {
+          "program_code": "BASCCH12",
+          "title": "Bachelor of Arts, Science (5-12, Chemistry)"
+        },
+        {
+          "program_code": "BASCG12",
+          "title": "Bachelor of Arts, Science (5-12, Geo)"
+        },
+        {
+          "program_code": "BASCPH12",
+          "title": "Bachelor of Arts, Science (5-12, Physics)"
+        },
+        {
+          "program_code": "MASE9",
+          "title": "Master of Arts, Science Education (5-9)"
+        },
+        {
+          "program_code": "MASEB12",
+          "title": "Master of Arts, Science Education (5-12, Bio)"
+        },
+        {
+          "program_code": "MASECH12",
+          "title": "Master of Arts, Science Education (5-12, Chemistry)"
+        },
+        {
+          "program_code": "MASEG12",
+          "title": "Master of Arts, Science Education (5-12, Geo)"
+        },
+        {
+          "program_code": "MASEPH12",
+          "title": "Master of Arts, Science Education (5-12, Physics)"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSSEMG",
+          "title": "Bachelor of Science, Science Education (Middle Grades)"
+        },
+        {
+          "program_code": "BSSESB",
+          "title": "Bachelor of Science, Science Education (Secondary Biological Science)"
+        },
+        {
+          "program_code": "BSSESC",
+          "title": "Bachelor of Science, Science Education (Secondary Chemistry)"
+        },
+        {
+          "program_code": "BSSESE",
+          "title": "Bachelor of Science, Science Education (Secondary Earth Science)"
+        },
+        {
+          "program_code": "BSSESP",
+          "title": "Bachelor of Science, Science Education (Secondary Physics)"
+        },
+        {
+          "program_code": "MASEMG",
+          "title": "Master of Arts Science Education (Middle Grades)"
+        },
+        {
+          "program_code": "MASESB",
+          "title": "Master of Arts Science Education (Secondary Biological Science)"
+        },
+        {
+          "program_code": "MASESC",
+          "title": "Master of Arts Science Education (Secondary Chemistry)"
+        },
+        {
+          "program_code": "MASESE",
+          "title": "Master of Arts Science Education (Secondary Earth Science)"
+        },
+        {
+          "program_code": "MASESP",
+          "title": "Master of Arts Science Education (Secondary Physics)"
+        }
+      ],
+      "importance": "high",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "BASCPH12",
+          "to_program": "BSSESP",
+          "shared_course_count": 36,
+          "removed_course_count": 3,
+          "added_course_count": 5,
+          "old_retained_pct": 0.9231,
+          "new_inherited_pct": 0.878,
+          "jaccard_overlap": 0.8182,
+          "courses_added": [
+            "C278",
+            "C371",
+            "C459",
+            "C832",
+            "C943"
+          ],
+          "courses_removed": [
+            "C288",
+            "C896",
+            "TSP1"
+          ]
+        },
+        {
+          "from_program": "BASCB12",
+          "to_program": "BSSESB",
+          "shared_course_count": 35,
+          "removed_course_count": 5,
+          "added_course_count": 4,
+          "old_retained_pct": 0.875,
+          "new_inherited_pct": 0.8974,
+          "jaccard_overlap": 0.7955,
+          "courses_added": [
+            "C371",
+            "C459",
+            "C832",
+            "C940"
+          ],
+          "courses_removed": [
+            "C280",
+            "C288",
+            "C463",
+            "C896",
+            "TSP1"
+          ]
+        },
+        {
+          "from_program": "BASCCH12",
+          "to_program": "BSSESC",
+          "shared_course_count": 35,
+          "removed_course_count": 5,
+          "added_course_count": 6,
+          "old_retained_pct": 0.875,
+          "new_inherited_pct": 0.8537,
+          "jaccard_overlap": 0.7609,
+          "courses_added": [
+            "C278",
+            "C371",
+            "C373",
+            "C374",
+            "C459",
+            "C941"
+          ],
+          "courses_removed": [
+            "C288",
+            "C289",
+            "C896",
+            "TSP1",
+            "TUP1"
+          ]
+        },
+        {
+          "from_program": "BASCG12",
+          "to_program": "BSSESE",
+          "shared_course_count": 35,
+          "removed_course_count": 5,
+          "added_course_count": 4,
+          "old_retained_pct": 0.875,
+          "new_inherited_pct": 0.8974,
+          "jaccard_overlap": 0.7955,
+          "courses_added": [
+            "C371",
+            "C459",
+            "C832",
+            "C942"
+          ],
+          "courses_removed": [
+            "C288",
+            "C463",
+            "C646",
+            "C896",
+            "TSP1"
+          ]
+        },
+        {
+          "from_program": "BASC9",
+          "to_program": "BSSEMG",
+          "shared_course_count": 35,
+          "removed_course_count": 5,
+          "added_course_count": 5,
+          "old_retained_pct": 0.875,
+          "new_inherited_pct": 0.875,
+          "jaccard_overlap": 0.7778,
+          "courses_added": [
+            "C371",
+            "C459",
+            "C832",
+            "C965",
+            "C974"
+          ],
+          "courses_removed": [
+            "C168",
+            "C288",
+            "C463",
+            "C896",
+            "TSP1"
+          ]
+        },
+        {
+          "from_program": "MASEPH12",
+          "to_program": "MASESP",
+          "shared_course_count": 10,
+          "removed_course_count": 3,
+          "added_course_count": 3,
+          "old_retained_pct": 0.7692,
+          "new_inherited_pct": 0.7692,
+          "jaccard_overlap": 0.625,
+          "courses_added": [
+            "C670",
+            "C833",
+            "C979"
+          ],
+          "courses_removed": [
+            "C645",
+            "TSC2",
+            "TSP2"
+          ]
+        },
+        {
+          "from_program": "MASE9",
+          "to_program": "MASEMG",
+          "shared_course_count": 10,
+          "removed_course_count": 3,
+          "added_course_count": 3,
+          "old_retained_pct": 0.7692,
+          "new_inherited_pct": 0.7692,
+          "jaccard_overlap": 0.625,
+          "courses_added": [
+            "C670",
+            "C833",
+            "C975"
+          ],
+          "courses_removed": [
+            "C645",
+            "TSC2",
+            "TSP2"
+          ]
+        },
+        {
+          "from_program": "MASEB12",
+          "to_program": "MASESB",
+          "shared_course_count": 10,
+          "removed_course_count": 3,
+          "added_course_count": 3,
+          "old_retained_pct": 0.7692,
+          "new_inherited_pct": 0.7692,
+          "jaccard_overlap": 0.625,
+          "courses_added": [
+            "C670",
+            "C833",
+            "C976"
+          ],
+          "courses_removed": [
+            "C645",
+            "TSC2",
+            "TSP2"
+          ]
+        },
+        {
+          "from_program": "MASECH12",
+          "to_program": "MASESC",
+          "shared_course_count": 10,
+          "removed_course_count": 5,
+          "added_course_count": 4,
+          "old_retained_pct": 0.6667,
+          "new_inherited_pct": 0.7143,
+          "jaccard_overlap": 0.5263,
+          "courses_added": [
+            "C670",
+            "C672",
+            "C673",
+            "C977"
+          ],
+          "courses_removed": [
+            "C645",
+            "TSC2",
+            "TSP2",
+            "TUC2",
+            "TUP2"
+          ]
+        },
+        {
+          "from_program": "MASEG12",
+          "to_program": "MASESE",
+          "shared_course_count": 9,
+          "removed_course_count": 4,
+          "added_course_count": 3,
+          "old_retained_pct": 0.6923,
+          "new_inherited_pct": 0.75,
+          "jaccard_overlap": 0.5625,
+          "courses_added": [
+            "C670",
+            "C833",
+            "C978"
+          ],
+          "courses_removed": [
+            "C645",
+            "C647",
+            "TSC2",
+            "TSP2"
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-004",
+      "transition_type": "family_restructure",
+      "start_edition": "2018-05",
+      "end_edition": "2018-06",
+      "from_programs": [
+        {
+          "program_code": "MATELK8",
+          "title": "Master of Arts in Teaching, Elementary Education (K-8)"
+        },
+        {
+          "program_code": "MATENG12",
+          "title": "Master of Arts in Teaching, English Education (5-12)"
+        },
+        {
+          "program_code": "MATMA12",
+          "title": "Master of Arts in Teaching, Mathematics (5-12)"
+        },
+        {
+          "program_code": "MATMA9",
+          "title": "Master of Arts in Teaching, Mathematics (5-9)"
+        },
+        {
+          "program_code": "MATSC12",
+          "title": "Master of Arts in Teaching, Science (5-12)"
+        },
+        {
+          "program_code": "PBELK8",
+          "title": "Post-baccalaureate Teacher Preparation, Elementary Education (K-8)"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "MATEES",
+          "title": "Master of Arts in Teaching, English Education (Secondary)"
+        },
+        {
+          "program_code": "MATELED",
+          "title": "Master of Arts in Teaching, Elementary Education"
+        },
+        {
+          "program_code": "MATMEMG",
+          "title": "Master of Arts in Teaching, Mathematics Education (Middle Grades)"
+        },
+        {
+          "program_code": "MATMES",
+          "title": "Master of Arts in Teaching, Mathematics Education (Secondary)"
+        },
+        {
+          "program_code": "MATSES",
+          "title": "Master of Arts in Teaching, Science Education (Secondary)"
+        },
+        {
+          "program_code": "PBELED",
+          "title": "Post-baccalaureate, Elementary Education"
+        }
+      ],
+      "importance": "high",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "MATELK8",
+          "to_program": "MATELED",
+          "shared_course_count": 23,
+          "removed_course_count": 1,
+          "added_course_count": 1,
+          "old_retained_pct": 0.9583,
+          "new_inherited_pct": 0.9583,
+          "jaccard_overlap": 0.92,
+          "courses_added": [
+            "C973"
+          ],
+          "courses_removed": [
+            "C552"
+          ]
+        },
+        {
+          "from_program": "PBELK8",
+          "to_program": "PBELED",
+          "shared_course_count": 22,
+          "removed_course_count": 1,
+          "added_course_count": 1,
+          "old_retained_pct": 0.9565,
+          "new_inherited_pct": 0.9565,
+          "jaccard_overlap": 0.9167,
+          "courses_added": [
+            "C973"
+          ],
+          "courses_removed": [
+            "C552"
+          ]
+        },
+        {
+          "from_program": "MATENG12",
+          "to_program": "MATEES",
+          "shared_course_count": 17,
+          "removed_course_count": 1,
+          "added_course_count": 1,
+          "old_retained_pct": 0.9444,
+          "new_inherited_pct": 0.9444,
+          "jaccard_overlap": 0.8947,
+          "courses_added": [
+            "C973"
+          ],
+          "courses_removed": [
+            "C552"
+          ]
+        },
+        {
+          "from_program": "MATMA12",
+          "to_program": "MATMES",
+          "shared_course_count": 21,
+          "removed_course_count": 1,
+          "added_course_count": 1,
+          "old_retained_pct": 0.9545,
+          "new_inherited_pct": 0.9545,
+          "jaccard_overlap": 0.913,
+          "courses_added": [
+            "C973"
+          ],
+          "courses_removed": [
+            "C552"
+          ]
+        },
+        {
+          "from_program": "MATSC12",
+          "to_program": "MATSES",
+          "shared_course_count": 18,
+          "removed_course_count": 1,
+          "added_course_count": 1,
+          "old_retained_pct": 0.9474,
+          "new_inherited_pct": 0.9474,
+          "jaccard_overlap": 0.9,
+          "courses_added": [
+            "C973"
+          ],
+          "courses_removed": [
+            "C552"
+          ]
+        },
+        {
+          "from_program": "MATMA9",
+          "to_program": "MATMEMG",
+          "shared_course_count": 19,
+          "removed_course_count": 1,
+          "added_course_count": 2,
+          "old_retained_pct": 0.95,
+          "new_inherited_pct": 0.9048,
+          "jaccard_overlap": 0.8636,
+          "courses_added": [
+            "C966",
+            "C973"
+          ],
+          "courses_removed": [
+            "C552"
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-005",
+      "transition_type": "successor",
+      "start_edition": "2018-06",
+      "end_edition": "2018-07",
+      "from_programs": [
+        {
+          "program_code": "BAISK8",
+          "title": "Bachelor of Arts, Interdisciplinary Studies (K-8)"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BAELED",
+          "title": "Bachelor of Arts, Elementary Education"
+        }
+      ],
+      "importance": "high",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "BAISK8",
+          "to_program": "BAELED",
+          "shared_course_count": 37,
+          "removed_course_count": 4,
+          "added_course_count": 3,
+          "old_retained_pct": 0.9024,
+          "new_inherited_pct": 0.925,
+          "jaccard_overlap": 0.8409,
+          "courses_added": [
+            "C217",
+            "C963",
+            "C970"
+          ],
+          "courses_removed": [
+            "C168",
+            "C181",
+            "C269",
+            "C457"
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-006",
+      "transition_type": "family_restructure",
+      "start_edition": "2018-08",
+      "end_edition": "2018-09",
+      "from_programs": [
+        {
+          "program_code": "BAMA12",
+          "title": "Bachelor of Arts, Mathematics (5-12)"
+        },
+        {
+          "program_code": "BAMA9",
+          "title": "Bachelor of Arts, Mathematics (5-9)"
+        },
+        {
+          "program_code": "MAME12",
+          "title": "Master of Arts, Mathematics Education (5-12)"
+        },
+        {
+          "program_code": "MAME9",
+          "title": "Master of Arts, Mathematics Education (5-9)"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSMEMG",
+          "title": "Bachelor of Science, Mathematics Education (Middle Grades)"
+        },
+        {
+          "program_code": "BSMES",
+          "title": "Bachelor of Science, Mathematics Education (Secondary)"
+        },
+        {
+          "program_code": "MAMEMG",
+          "title": "Master of Arts in Mathematics Education (Middle Grades)"
+        },
+        {
+          "program_code": "MAMES",
+          "title": "Master of Arts in Mathematics Education (Secondary)"
+        }
+      ],
+      "importance": "high",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "BAMA12",
+          "to_program": "BSMES",
+          "shared_course_count": 43,
+          "removed_course_count": 1,
+          "added_course_count": 1,
+          "old_retained_pct": 0.9773,
+          "new_inherited_pct": 0.9773,
+          "jaccard_overlap": 0.9556,
+          "courses_added": [
+            "C972"
+          ],
+          "courses_removed": [
+            "C281"
+          ]
+        },
+        {
+          "from_program": "MAME12",
+          "to_program": "MAMES",
+          "shared_course_count": 17,
+          "removed_course_count": 1,
+          "added_course_count": 1,
+          "old_retained_pct": 0.9444,
+          "new_inherited_pct": 0.9444,
+          "jaccard_overlap": 0.8947,
+          "courses_added": [
+            "C992"
+          ],
+          "courses_removed": [
+            "EXP2"
+          ]
+        },
+        {
+          "from_program": "BAMA9",
+          "to_program": "BSMEMG",
+          "shared_course_count": 36,
+          "removed_course_count": 2,
+          "added_course_count": 3,
+          "old_retained_pct": 0.9474,
+          "new_inherited_pct": 0.9231,
+          "jaccard_overlap": 0.878,
+          "courses_added": [
+            "C963",
+            "C965",
+            "C972"
+          ],
+          "courses_removed": [
+            "C181",
+            "C281"
+          ]
+        },
+        {
+          "from_program": "MAME9",
+          "to_program": "MAMEMG",
+          "shared_course_count": 12,
+          "removed_course_count": 1,
+          "added_course_count": 2,
+          "old_retained_pct": 0.9231,
+          "new_inherited_pct": 0.8571,
+          "jaccard_overlap": 0.8,
+          "courses_added": [
+            "C966",
+            "C992"
+          ],
+          "courses_removed": [
+            "EXP2"
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-007",
+      "transition_type": "successor",
+      "start_edition": "2019-03",
+      "end_edition": "2019-04",
+      "from_programs": [
+        {
+          "program_code": "BASP",
+          "title": "Bachelor of Arts, Special Education"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BASPEE",
+          "title": "Bachelor of Arts, Special Education and Elementary Education (Dual Licensure)"
+        }
+      ],
+      "importance": "high",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "BASP",
+          "to_program": "BASPEE",
+          "shared_course_count": 37,
+          "removed_course_count": 8,
+          "added_course_count": 10,
+          "old_retained_pct": 0.8222,
+          "new_inherited_pct": 0.7872,
+          "jaccard_overlap": 0.6727,
+          "courses_added": [
+            "C217",
+            "C963",
+            "C970",
+            "D001",
+            "D002",
+            "D003",
+            "D004",
+            "D005",
+            "D006",
+            "D007"
+          ],
+          "courses_removed": [
+            "C168",
+            "C181",
+            "C269",
+            "C457",
+            "EFV1",
+            "FCC1",
+            "FJC1",
+            "FLC1"
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-008",
+      "transition_type": "family_restructure",
+      "start_edition": "2020-01",
+      "end_edition": "2020-02",
+      "from_programs": [
+        {
+          "program_code": "BSAC",
+          "title": "Bachelor of Science, Accounting"
+        },
+        {
+          "program_code": "BSBUHCM",
+          "title": "Bachelor of Science, Business - Healthcare Management"
+        },
+        {
+          "program_code": "BSBUHR",
+          "title": "Bachelor of Science, Business - Human Resource Management"
+        },
+        {
+          "program_code": "BSBUITM",
+          "title": "Bachelor of Science, Business - Information Technology Management"
+        },
+        {
+          "program_code": "BSMG",
+          "title": "Bachelor of Science, Business Management"
+        },
+        {
+          "program_code": "BSMK",
+          "title": "Bachelor of Science, Marketing Management"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSBAAC",
+          "title": "Bachelor of Science Business Administration Accounting"
+        },
+        {
+          "program_code": "BSBAHC",
+          "title": "Bachelor of Science Business Administration Healthcare Management"
+        },
+        {
+          "program_code": "BSBAHR",
+          "title": "Bachelor of Science Business Administration Human Resource Management"
+        },
+        {
+          "program_code": "BSBAIT",
+          "title": "Bachelor of Science Business Administration Information Technology Management"
+        },
+        {
+          "program_code": "BSBAMGA",
+          "title": "Bachelor of Science Business Administration Management"
+        },
+        {
+          "program_code": "BSBAMGB",
+          "title": "Bachelor of Science Business Administration Management"
+        },
+        {
+          "program_code": "BSBAMK",
+          "title": "Bachelor of Science Business Administration Marketing"
+        }
+      ],
+      "importance": "high",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "BSMG",
+          "to_program": "BSBAMGA",
+          "shared_course_count": 23,
+          "removed_course_count": 16,
+          "added_course_count": 18,
+          "old_retained_pct": 0.5897,
+          "new_inherited_pct": 0.561,
+          "jaccard_overlap": 0.4035,
+          "courses_added": [
+            "C182",
+            "C236",
+            "D072",
+            "D073",
+            "D074",
+            "D075",
+            "D076",
+            "D077",
+            "D078",
+            "D079",
+            "D080",
+            "D081",
+            "D082",
+            "D083",
+            "D089",
+            "D098",
+            "D099",
+            "D100"
+          ],
+          "courses_removed": [
+            "C255",
+            "C268",
+            "C483",
+            "C708",
+            "C712",
+            "C713",
+            "C714",
+            "C717",
+            "C718",
+            "C719",
+            "C724",
+            "C961",
+            "C994",
+            "FVC1",
+            "UFC1",
+            "VYC1"
+          ]
+        },
+        {
+          "from_program": "BSBUHCM",
+          "to_program": "BSBAHC",
+          "shared_course_count": 22,
+          "removed_course_count": 18,
+          "added_course_count": 19,
+          "old_retained_pct": 0.55,
+          "new_inherited_pct": 0.5366,
+          "jaccard_overlap": 0.3729,
+          "courses_added": [
+            "C233",
+            "C236",
+            "C955",
+            "C957",
+            "D072",
+            "D073",
+            "D074",
+            "D075",
+            "D076",
+            "D077",
+            "D078",
+            "D079",
+            "D080",
+            "D081",
+            "D082",
+            "D083",
+            "D089",
+            "D100",
+            "QHT1"
+          ],
+          "courses_removed": [
+            "C255",
+            "C268",
+            "C278",
+            "C459",
+            "C463",
+            "C483",
+            "C708",
+            "C712",
+            "C713",
+            "C714",
+            "C716",
+            "C717",
+            "C718",
+            "C719",
+            "C724",
+            "FVC1",
+            "UFC1",
+            "VYC1"
+          ]
+        },
+        {
+          "from_program": "BSBUHR",
+          "to_program": "BSBAHR",
+          "shared_course_count": 21,
+          "removed_course_count": 18,
+          "added_course_count": 20,
+          "old_retained_pct": 0.5385,
+          "new_inherited_pct": 0.5122,
+          "jaccard_overlap": 0.3559,
+          "courses_added": [
+            "C425",
+            "C426",
+            "C427",
+            "C955",
+            "C957",
+            "D072",
+            "D073",
+            "D074",
+            "D075",
+            "D076",
+            "D077",
+            "D078",
+            "D079",
+            "D080",
+            "D081",
+            "D082",
+            "D083",
+            "D089",
+            "D100",
+            "QHT1"
+          ],
+          "courses_removed": [
+            "C180",
+            "C268",
+            "C459",
+            "C463",
+            "C483",
+            "C708",
+            "C712",
+            "C713",
+            "C714",
+            "C717",
+            "C718",
+            "C719",
+            "C724",
+            "FVC1",
+            "PFHM",
+            "UFC1",
+            "VYC1",
+            "VZT1"
+          ]
+        },
+        {
+          "from_program": "BSMG",
+          "to_program": "BSBAMGB",
+          "shared_course_count": 22,
+          "removed_course_count": 17,
+          "added_course_count": 19,
+          "old_retained_pct": 0.5641,
+          "new_inherited_pct": 0.5366,
+          "jaccard_overlap": 0.3793,
+          "courses_added": [
+            "C182",
+            "C236",
+            "C425",
+            "C426",
+            "C427",
+            "D072",
+            "D073",
+            "D074",
+            "D075",
+            "D076",
+            "D077",
+            "D078",
+            "D079",
+            "D080",
+            "D081",
+            "D082",
+            "D083",
+            "D089",
+            "D100"
+          ],
+          "courses_removed": [
+            "C255",
+            "C268",
+            "C483",
+            "C708",
+            "C712",
+            "C713",
+            "C714",
+            "C717",
+            "C718",
+            "C719",
+            "C724",
+            "C961",
+            "C994",
+            "FVC1",
+            "UFC1",
+            "VYC1",
+            "VZT1"
+          ]
+        },
+        {
+          "from_program": "BSBUITM",
+          "to_program": "BSBAIT",
+          "shared_course_count": 20,
+          "removed_course_count": 18,
+          "added_course_count": 20,
+          "old_retained_pct": 0.5263,
+          "new_inherited_pct": 0.5,
+          "jaccard_overlap": 0.3448,
+          "courses_added": [
+            "C233",
+            "C236",
+            "C273",
+            "C955",
+            "C957",
+            "D072",
+            "D073",
+            "D074",
+            "D075",
+            "D076",
+            "D077",
+            "D078",
+            "D079",
+            "D080",
+            "D081",
+            "D082",
+            "D083",
+            "D089",
+            "D100",
+            "QHT1"
+          ],
+          "courses_removed": [
+            "C180",
+            "C182",
+            "C268",
+            "C278",
+            "C459",
+            "C463",
+            "C483",
+            "C708",
+            "C712",
+            "C713",
+            "C714",
+            "C716",
+            "C717",
+            "C718",
+            "C719",
+            "FVC1",
+            "UFC1",
+            "VYC1"
+          ]
+        },
+        {
+          "from_program": "BSMK",
+          "to_program": "BSBAMK",
+          "shared_course_count": 20,
+          "removed_course_count": 15,
+          "added_course_count": 18,
+          "old_retained_pct": 0.5714,
+          "new_inherited_pct": 0.5263,
+          "jaccard_overlap": 0.3774,
+          "courses_added": [
+            "C236",
+            "D072",
+            "D073",
+            "D074",
+            "D075",
+            "D076",
+            "D077",
+            "D078",
+            "D079",
+            "D080",
+            "D081",
+            "D082",
+            "D083",
+            "D089",
+            "D098",
+            "D099",
+            "D100",
+            "QHT1"
+          ],
+          "courses_removed": [
+            "AST1",
+            "C268",
+            "C483",
+            "C708",
+            "C712",
+            "C713",
+            "C714",
+            "C717",
+            "C718",
+            "C719",
+            "C724",
+            "C994",
+            "FVC1",
+            "UFC1",
+            "VYC1"
+          ]
+        },
+        {
+          "from_program": "BSMG",
+          "to_program": "BSBAAC",
+          "shared_course_count": 17,
+          "removed_course_count": 22,
+          "added_course_count": 24,
+          "old_retained_pct": 0.4359,
+          "new_inherited_pct": 0.4146,
+          "jaccard_overlap": 0.2698,
+          "courses_added": [
+            "C236",
+            "C237",
+            "C240",
+            "C241",
+            "C242",
+            "D072",
+            "D073",
+            "D074",
+            "D075",
+            "D076",
+            "D077",
+            "D078",
+            "D079",
+            "D080",
+            "D081",
+            "D082",
+            "D083",
+            "D089",
+            "D100",
+            "D101",
+            "D102",
+            "D103",
+            "D104",
+            "D105"
+          ],
+          "courses_removed": [
+            "C234",
+            "C235",
+            "C255",
+            "C268",
+            "C483",
+            "C708",
+            "C712",
+            "C713",
+            "C714",
+            "C716",
+            "C718",
+            "C719",
+            "C721",
+            "C722",
+            "C724",
+            "C961",
+            "C994",
+            "FVC1",
+            "QGT1",
+            "UFC1",
+            "VYC1",
+            "VZT1"
+          ]
+        },
+        {
+          "from_program": "BSAC",
+          "to_program": "BSBAAC",
+          "shared_course_count": 16,
+          "removed_course_count": 23,
+          "added_course_count": 25,
+          "old_retained_pct": 0.4103,
+          "new_inherited_pct": 0.3902,
+          "jaccard_overlap": 0.25,
+          "courses_added": [
+            "C168",
+            "C233",
+            "C236",
+            "C955",
+            "C957",
+            "D072",
+            "D073",
+            "D074",
+            "D075",
+            "D076",
+            "D077",
+            "D078",
+            "D079",
+            "D080",
+            "D081",
+            "D082",
+            "D083",
+            "D089",
+            "D100",
+            "D101",
+            "D102",
+            "D103",
+            "D104",
+            "D105",
+            "QHT1"
+          ],
+          "courses_removed": [
+            "C238",
+            "C248",
+            "C249",
+            "C250",
+            "C251",
+            "C268",
+            "C278",
+            "C459",
+            "C463",
+            "C483",
+            "C708",
+            "C712",
+            "C713",
+            "C714",
+            "C716",
+            "C718",
+            "C719",
+            "C722",
+            "C724",
+            "CZC1",
+            "FVC1",
+            "UFC1",
+            "VYC1"
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-009",
+      "transition_type": "successor",
+      "start_edition": "2020-03",
+      "end_edition": "2020-04",
+      "from_programs": [
+        {
+          "program_code": "BSCLSA",
+          "title": "Bachelor of Science, Cloud and Systems Administration"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSCC",
+          "title": "Bachelor of Science, Cloud Computing"
+        }
+      ],
+      "importance": "high",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "BSCLSA",
+          "to_program": "BSCC",
+          "shared_course_count": 38,
+          "removed_course_count": 0,
+          "added_course_count": 0,
+          "old_retained_pct": 1.0,
+          "new_inherited_pct": 1.0,
+          "jaccard_overlap": 1.0,
+          "courses_added": [],
+          "courses_removed": []
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-027",
+      "transition_type": "namespace_migration",
+      "start_edition": "2022-04",
+      "end_edition": "2022-05",
+      "from_programs": [
+        {
+          "program_code": "BSCC",
+          "title": "Bachelor of Science, Cloud Computing"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSCCMCL",
+          "title": "Bachelor of Science, Cloud Computing"
+        }
+      ],
+      "importance": "medium",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "BSCC",
+          "to_program": "BSCCMCL",
+          "shared_course_count": 5,
+          "removed_course_count": 33,
+          "added_course_count": 32,
+          "old_retained_pct": 0.1316,
+          "new_inherited_pct": 0.1351,
+          "jaccard_overlap": 0.0714,
+          "courses_added": [
+            "D199",
+            "D268",
+            "D269",
+            "D276",
+            "D278",
+            "D281",
+            "D282",
+            "D303",
+            "D306",
+            "D315",
+            "D316",
+            "D317",
+            "D318",
+            "D319",
+            "D320",
+            "D322",
+            "D323",
+            "D324",
+            "D325",
+            "D326",
+            "D329",
+            "D330",
+            "D333",
+            "D334",
+            "D335",
+            "D336",
+            "D337",
+            "D338",
+            "D339",
+            "D342",
+            "D370",
+            "D411"
+          ],
+          "courses_removed": [
+            "C100",
+            "C172",
+            "C173",
+            "C175",
+            "C176",
+            "C178",
+            "C182",
+            "C188",
+            "C255",
+            "C393",
+            "C394",
+            "C455",
+            "C464",
+            "C480",
+            "C683",
+            "C768",
+            "C769",
+            "C779",
+            "C839",
+            "C846",
+            "C849",
+            "C850",
+            "C851",
+            "C859",
+            "C916",
+            "C923",
+            "C924",
+            "C961",
+            "D084",
+            "D085",
+            "D086",
+            "D087",
+            "D088"
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-010",
+      "transition_type": "split",
+      "start_edition": "2022-04",
+      "end_edition": "2022-06",
+      "from_programs": [
+        {
+          "program_code": "BSCC",
+          "title": "Bachelor of Science, Cloud Computing"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSCCMCL",
+          "title": "Bachelor of Science, Cloud Computing"
+        },
+        {
+          "program_code": "BSCCAWS",
+          "title": "Bachelor of Science, Cloud Computing - Amazon Web Services track"
+        },
+        {
+          "program_code": "BSCCAZR",
+          "title": "Bachelor of Science, Cloud Computing - Microsoft Azure track"
+        }
+      ],
+      "importance": "medium",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "BSCC",
+          "to_program": "BSCCMCL",
+          "shared_course_count": 5,
+          "removed_course_count": 33,
+          "added_course_count": 32,
+          "old_retained_pct": 0.1316,
+          "new_inherited_pct": 0.1351,
+          "jaccard_overlap": 0.0714,
+          "courses_added": [
+            "D199",
+            "D268",
+            "D269",
+            "D276",
+            "D278",
+            "D281",
+            "D282",
+            "D303",
+            "D306",
+            "D315",
+            "D316",
+            "D317",
+            "D318",
+            "D319",
+            "D320",
+            "D322",
+            "D324",
+            "D325",
+            "D329",
+            "D330",
+            "D333",
+            "D334",
+            "D335",
+            "D336",
+            "D337",
+            "D338",
+            "D339",
+            "D342",
+            "D370",
+            "D411",
+            "D426",
+            "D427"
+          ],
+          "courses_removed": [
+            "C100",
+            "C172",
+            "C173",
+            "C175",
+            "C176",
+            "C178",
+            "C182",
+            "C188",
+            "C255",
+            "C393",
+            "C394",
+            "C455",
+            "C464",
+            "C480",
+            "C683",
+            "C768",
+            "C769",
+            "C779",
+            "C839",
+            "C846",
+            "C849",
+            "C850",
+            "C851",
+            "C859",
+            "C916",
+            "C923",
+            "C924",
+            "C961",
+            "D084",
+            "D085",
+            "D086",
+            "D087",
+            "D088"
+          ]
+        },
+        {
+          "from_program": "BSCC",
+          "to_program": "BSCCAWS",
+          "shared_course_count": 5,
+          "removed_course_count": 33,
+          "added_course_count": 32,
+          "old_retained_pct": 0.1316,
+          "new_inherited_pct": 0.1351,
+          "jaccard_overlap": 0.0714,
+          "courses_added": [
+            "D199",
+            "D268",
+            "D269",
+            "D276",
+            "D278",
+            "D281",
+            "D282",
+            "D315",
+            "D316",
+            "D317",
+            "D318",
+            "D319",
+            "D320",
+            "D321",
+            "D322",
+            "D324",
+            "D325",
+            "D329",
+            "D330",
+            "D333",
+            "D334",
+            "D335",
+            "D336",
+            "D337",
+            "D338",
+            "D339",
+            "D341",
+            "D342",
+            "D370",
+            "D411",
+            "D426",
+            "D427"
+          ],
+          "courses_removed": [
+            "C100",
+            "C172",
+            "C173",
+            "C175",
+            "C176",
+            "C178",
+            "C182",
+            "C188",
+            "C255",
+            "C393",
+            "C394",
+            "C455",
+            "C464",
+            "C480",
+            "C683",
+            "C768",
+            "C769",
+            "C779",
+            "C839",
+            "C846",
+            "C849",
+            "C850",
+            "C851",
+            "C859",
+            "C916",
+            "C923",
+            "C924",
+            "C961",
+            "D084",
+            "D085",
+            "D086",
+            "D087",
+            "D088"
+          ]
+        },
+        {
+          "from_program": "BSCC",
+          "to_program": "BSCCAZR",
+          "shared_course_count": 5,
+          "removed_course_count": 33,
+          "added_course_count": 32,
+          "old_retained_pct": 0.1316,
+          "new_inherited_pct": 0.1351,
+          "jaccard_overlap": 0.0714,
+          "courses_added": [
+            "D199",
+            "D268",
+            "D269",
+            "D276",
+            "D278",
+            "D281",
+            "D303",
+            "D304",
+            "D305",
+            "D306",
+            "D315",
+            "D316",
+            "D317",
+            "D318",
+            "D320",
+            "D322",
+            "D324",
+            "D325",
+            "D329",
+            "D330",
+            "D333",
+            "D334",
+            "D335",
+            "D336",
+            "D337",
+            "D338",
+            "D339",
+            "D342",
+            "D370",
+            "D411",
+            "D426",
+            "D427"
+          ],
+          "courses_removed": [
+            "C100",
+            "C172",
+            "C173",
+            "C175",
+            "C176",
+            "C178",
+            "C182",
+            "C188",
+            "C255",
+            "C393",
+            "C394",
+            "C455",
+            "C464",
+            "C480",
+            "C683",
+            "C768",
+            "C769",
+            "C779",
+            "C839",
+            "C846",
+            "C849",
+            "C850",
+            "C851",
+            "C859",
+            "C916",
+            "C923",
+            "C924",
+            "C961",
+            "D084",
+            "D085",
+            "D086",
+            "D087",
+            "D088"
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-011",
+      "transition_type": "split",
+      "start_edition": "2022-07",
+      "end_edition": "2022-08",
+      "from_programs": [
+        {
+          "program_code": "BSNOS",
+          "title": "Bachelor of Science, Network Operations and Security"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSNES",
+          "title": "Bachelor of Science, Network Engineering and Security"
+        },
+        {
+          "program_code": "BSNES_C",
+          "title": "Bachelor of Science, Network Engineering and Security Cisco Track"
+        }
+      ],
+      "importance": "medium",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "BSNOS",
+          "to_program": "BSNES",
+          "shared_course_count": 3,
+          "removed_course_count": 33,
+          "added_course_count": 34,
+          "old_retained_pct": 0.0833,
+          "new_inherited_pct": 0.0811,
+          "jaccard_overlap": 0.0429,
+          "courses_added": [
+            "D197",
+            "D199",
+            "D265",
+            "D269",
+            "D276",
+            "D278",
+            "D281",
+            "D315",
+            "D316",
+            "D317",
+            "D318",
+            "D320",
+            "D322",
+            "D324",
+            "D325",
+            "D329",
+            "D333",
+            "D334",
+            "D335",
+            "D336",
+            "D337",
+            "D339",
+            "D370",
+            "D372",
+            "D412",
+            "D413",
+            "D415",
+            "D417",
+            "D418",
+            "D420",
+            "D421",
+            "D422",
+            "D423",
+            "D426"
+          ],
+          "courses_removed": [
+            "C100",
+            "C172",
+            "C173",
+            "C175",
+            "C176",
+            "C178",
+            "C182",
+            "C190",
+            "C255",
+            "C268",
+            "C393",
+            "C394",
+            "C455",
+            "C456",
+            "C464",
+            "C480",
+            "C483",
+            "C484",
+            "C683",
+            "C768",
+            "C769",
+            "C779",
+            "C838",
+            "C839",
+            "C846",
+            "C849",
+            "C850",
+            "C851",
+            "C859",
+            "C924",
+            "C961",
+            "C963",
+            "D114"
+          ]
+        },
+        {
+          "from_program": "BSNOS",
+          "to_program": "BSNES_C",
+          "shared_course_count": 3,
+          "removed_course_count": 33,
+          "added_course_count": 31,
+          "old_retained_pct": 0.0833,
+          "new_inherited_pct": 0.0882,
+          "jaccard_overlap": 0.0448,
+          "courses_added": [
+            "D199",
+            "D265",
+            "D269",
+            "D276",
+            "D278",
+            "D281",
+            "D315",
+            "D316",
+            "D317",
+            "D318",
+            "D320",
+            "D322",
+            "D324",
+            "D333",
+            "D334",
+            "D335",
+            "D336",
+            "D339",
+            "D370",
+            "D372",
+            "D412",
+            "D413",
+            "D414",
+            "D416",
+            "D418",
+            "D419",
+            "D420",
+            "D421",
+            "D422",
+            "D423",
+            "D426"
+          ],
+          "courses_removed": [
+            "C100",
+            "C172",
+            "C173",
+            "C175",
+            "C176",
+            "C178",
+            "C182",
+            "C190",
+            "C255",
+            "C268",
+            "C393",
+            "C394",
+            "C455",
+            "C456",
+            "C464",
+            "C480",
+            "C483",
+            "C484",
+            "C683",
+            "C768",
+            "C769",
+            "C779",
+            "C838",
+            "C839",
+            "C846",
+            "C849",
+            "C850",
+            "C851",
+            "C859",
+            "C924",
+            "C961",
+            "C963",
+            "D114"
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-028",
+      "transition_type": "family_restructure",
+      "start_edition": "2022-10",
+      "end_edition": "2023-11",
+      "from_programs": [
+        {
+          "program_code": "MEDID",
+          "title": "Master of Education, Instructional Design"
+        },
+        {
+          "program_code": "MEDLT",
+          "title": "Master of Education, Learning and Technology"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "MEDETID",
+          "title": "Master of Education, Education Technology and Instructional Design"
+        },
+        {
+          "program_code": "MEDETIDA",
+          "title": "Master of Education, Education Technology and Instructional Design"
+        },
+        {
+          "program_code": "MEDETIDK12",
+          "title": "Master of Education, Education Technology and Instructional Design"
+        }
+      ],
+      "importance": "low",
+      "site_worthy": false,
+      "pairs": [
+        {
+          "from_program": "MEDID",
+          "to_program": "MEDETID",
+          "shared_course_count": 0,
+          "removed_course_count": 13,
+          "added_course_count": 12,
+          "old_retained_pct": 0.0,
+          "new_inherited_pct": 0.0,
+          "jaccard_overlap": 0.0,
+          "courses_added": [
+            "D291",
+            "D292",
+            "D293",
+            "D294",
+            "D295",
+            "D296",
+            "D297",
+            "D298",
+            "D299",
+            "D300",
+            "D301",
+            "D302"
+          ],
+          "courses_removed": [
+            "C224",
+            "C225",
+            "C226",
+            "C227",
+            "C636",
+            "IDC1",
+            "JNT2",
+            "JOT2",
+            "JPT2",
+            "JQT2",
+            "JRT2",
+            "JST2",
+            "MEC1"
+          ]
+        },
+        {
+          "from_program": "MEDID",
+          "to_program": "MEDETIDA",
+          "shared_course_count": 0,
+          "removed_course_count": 13,
+          "added_course_count": 10,
+          "old_retained_pct": 0.0,
+          "new_inherited_pct": 0.0,
+          "jaccard_overlap": 0.0,
+          "courses_added": [
+            "D291",
+            "D292",
+            "D293",
+            "D294",
+            "D297",
+            "D298",
+            "D299",
+            "D300",
+            "D301",
+            "D302"
+          ],
+          "courses_removed": [
+            "C224",
+            "C225",
+            "C226",
+            "C227",
+            "C636",
+            "IDC1",
+            "JNT2",
+            "JOT2",
+            "JPT2",
+            "JQT2",
+            "JRT2",
+            "JST2",
+            "MEC1"
+          ]
+        },
+        {
+          "from_program": "MEDID",
+          "to_program": "MEDETIDK12",
+          "shared_course_count": 0,
+          "removed_course_count": 13,
+          "added_course_count": 10,
+          "old_retained_pct": 0.0,
+          "new_inherited_pct": 0.0,
+          "jaccard_overlap": 0.0,
+          "courses_added": [
+            "D291",
+            "D292",
+            "D293",
+            "D294",
+            "D295",
+            "D296",
+            "D299",
+            "D300",
+            "D301",
+            "D302"
+          ],
+          "courses_removed": [
+            "C224",
+            "C225",
+            "C226",
+            "C227",
+            "C636",
+            "IDC1",
+            "JNT2",
+            "JOT2",
+            "JPT2",
+            "JQT2",
+            "JRT2",
+            "JST2",
+            "MEC1"
+          ]
+        },
+        {
+          "from_program": "MEDLT",
+          "to_program": "MEDETID",
+          "shared_course_count": 0,
+          "removed_course_count": 12,
+          "added_course_count": 12,
+          "old_retained_pct": 0.0,
+          "new_inherited_pct": 0.0,
+          "jaccard_overlap": 0.0,
+          "courses_added": [
+            "D291",
+            "D292",
+            "D293",
+            "D294",
+            "D295",
+            "D296",
+            "D297",
+            "D298",
+            "D299",
+            "D300",
+            "D301",
+            "D302"
+          ],
+          "courses_removed": [
+            "C224",
+            "C225",
+            "C226",
+            "C227",
+            "C626",
+            "IDC1",
+            "JNT2",
+            "JOT2",
+            "JPT2",
+            "TAT2",
+            "TDT1",
+            "TET1"
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-012",
+      "transition_type": "successor",
+      "start_edition": "2022-11",
+      "end_edition": "2022-12",
+      "from_programs": [
+        {
+          "program_code": "BSHSC",
+          "title": "Bachelor of Science, Health Services Coordination"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSHHS",
+          "title": "Bachelor of Science, Health and Human Services"
+        }
+      ],
+      "importance": "low",
+      "site_worthy": false,
+      "pairs": [
+        {
+          "from_program": "BSHSC",
+          "to_program": "BSHHS",
+          "shared_course_count": 3,
+          "removed_course_count": 33,
+          "added_course_count": 32,
+          "old_retained_pct": 0.0833,
+          "new_inherited_pct": 0.0857,
+          "jaccard_overlap": 0.0441,
+          "courses_added": [
+            "C190",
+            "C458",
+            "C805",
+            "D202",
+            "D203",
+            "D254",
+            "D265",
+            "D268",
+            "D269",
+            "D389",
+            "D390",
+            "D391",
+            "D392",
+            "D393",
+            "D394",
+            "D395",
+            "D396",
+            "D397",
+            "D398",
+            "D399",
+            "D400",
+            "D401",
+            "D402",
+            "D403",
+            "D404",
+            "D405",
+            "D406",
+            "D407",
+            "D408",
+            "D409",
+            "D410",
+            "D458"
+          ],
+          "courses_removed": [
+            "C107",
+            "C168",
+            "C217",
+            "C273",
+            "C405",
+            "C455",
+            "C820",
+            "D046",
+            "D047",
+            "D048",
+            "D049",
+            "D050",
+            "D051",
+            "D052",
+            "D053",
+            "D054",
+            "D055",
+            "D056",
+            "D057",
+            "D058",
+            "D059",
+            "D060",
+            "D061",
+            "D062",
+            "D063",
+            "D064",
+            "D065",
+            "D066",
+            "D067",
+            "D068",
+            "D069",
+            "D070",
+            "D071"
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-013",
+      "transition_type": "successor",
+      "start_edition": "2022-12",
+      "end_edition": "2023-01",
+      "from_programs": [
+        {
+          "program_code": "BSITSW",
+          "title": "Bachelor of Science, Software Development"
+        },
+        {
+          "program_code": "BSITSWC",
+          "title": "Bachelor of Science, Software Development"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSSWE",
+          "title": "Bachelor of Science, Software Engineering"
+        },
+        {
+          "program_code": "BSSWE_C",
+          "title": "Bachelor of Science, Software Engineering"
+        }
+      ],
+      "importance": "medium",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "BSITSWC",
+          "to_program": "BSSWE_C",
+          "shared_course_count": 7,
+          "removed_course_count": 27,
+          "added_course_count": 29,
+          "old_retained_pct": 0.2059,
+          "new_inherited_pct": 0.1944,
+          "jaccard_overlap": 0.1111,
+          "courses_added": [
+            "C458",
+            "C683",
+            "D197",
+            "D199",
+            "D270",
+            "D276",
+            "D277",
+            "D278",
+            "D279",
+            "D280",
+            "D282",
+            "D284",
+            "D315",
+            "D322",
+            "D324",
+            "D326",
+            "D333",
+            "D335",
+            "D336",
+            "D339",
+            "D370",
+            "D372",
+            "D385",
+            "D386",
+            "D424",
+            "D426",
+            "D427",
+            "D479",
+            "D480"
+          ],
+          "courses_removed": [
+            "C100",
+            "C165",
+            "C168",
+            "C170",
+            "C172",
+            "C173",
+            "C175",
+            "C176",
+            "C182",
+            "C188",
+            "C255",
+            "C393",
+            "C394",
+            "C455",
+            "C464",
+            "C484",
+            "C768",
+            "C773",
+            "C777",
+            "C779",
+            "C846",
+            "C856",
+            "C857",
+            "C867",
+            "C868",
+            "C961",
+            "D191"
+          ]
+        },
+        {
+          "from_program": "BSITSW",
+          "to_program": "BSSWE",
+          "shared_course_count": 4,
+          "removed_course_count": 30,
+          "added_course_count": 34,
+          "old_retained_pct": 0.1176,
+          "new_inherited_pct": 0.1053,
+          "jaccard_overlap": 0.0588,
+          "courses_added": [
+            "C458",
+            "C683",
+            "D197",
+            "D199",
+            "D270",
+            "D276",
+            "D277",
+            "D278",
+            "D279",
+            "D280",
+            "D282",
+            "D284",
+            "D286",
+            "D287",
+            "D288",
+            "D308",
+            "D315",
+            "D322",
+            "D324",
+            "D326",
+            "D333",
+            "D335",
+            "D336",
+            "D339",
+            "D370",
+            "D372",
+            "D385",
+            "D386",
+            "D387",
+            "D424",
+            "D426",
+            "D427",
+            "D479",
+            "D480"
+          ],
+          "courses_removed": [
+            "C100",
+            "C165",
+            "C168",
+            "C170",
+            "C172",
+            "C173",
+            "C175",
+            "C176",
+            "C182",
+            "C188",
+            "C195",
+            "C196",
+            "C255",
+            "C393",
+            "C394",
+            "C455",
+            "C464",
+            "C482",
+            "C484",
+            "C768",
+            "C773",
+            "C777",
+            "C779",
+            "C846",
+            "C856",
+            "C857",
+            "C867",
+            "C868",
+            "C961",
+            "D191"
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-025",
+      "transition_type": "merge",
+      "start_edition": "2022-12",
+      "end_edition": "2023-01",
+      "from_programs": [
+        {
+          "program_code": "BSRN",
+          "title": "Bachelor of Science, Nursing"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSNPLTR",
+          "title": "Bachelor of Science, Nursing - Prelicensure (Nursing)"
+        },
+        {
+          "program_code": "BSPNTR",
+          "title": "Bachelor of Science, Nursing - Prelicensure (Pre-Nursing)"
+        }
+      ],
+      "importance": "medium",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "BSRN",
+          "to_program": "BSPNTR",
+          "shared_course_count": 3,
+          "removed_course_count": 37,
+          "added_course_count": 16,
+          "old_retained_pct": 0.075,
+          "new_inherited_pct": 0.1579,
+          "jaccard_overlap": 0.0536,
+          "courses_added": [
+            "C165",
+            "C957",
+            "D198",
+            "D202",
+            "D236",
+            "D265",
+            "D266",
+            "D268",
+            "D269",
+            "D311",
+            "D312",
+            "D313",
+            "D425",
+            "D439",
+            "D440",
+            "D441"
+          ],
+          "courses_removed": [
+            "C100",
+            "C107",
+            "C181",
+            "C217",
+            "C230",
+            "C304",
+            "C361",
+            "C405",
+            "C453",
+            "C455",
+            "C464",
+            "C465",
+            "C466",
+            "C467",
+            "C468",
+            "C469",
+            "C470",
+            "C471",
+            "C472",
+            "C473",
+            "C474",
+            "C475",
+            "C476",
+            "C477",
+            "C478",
+            "C486",
+            "C487",
+            "C488",
+            "C489",
+            "C490",
+            "C491",
+            "C492",
+            "C785",
+            "C787",
+            "C820",
+            "C825",
+            "C826"
+          ]
+        },
+        {
+          "from_program": "BSRN",
+          "to_program": "BSNPLTR",
+          "shared_course_count": 0,
+          "removed_course_count": 40,
+          "added_course_count": 15,
+          "old_retained_pct": 0.0,
+          "new_inherited_pct": 0.0,
+          "jaccard_overlap": 0.0,
+          "courses_added": [
+            "D218",
+            "D219",
+            "D220",
+            "D221",
+            "D442",
+            "D443",
+            "D444",
+            "D445",
+            "D446",
+            "D447",
+            "D449",
+            "D450",
+            "D453",
+            "D454",
+            "D455"
+          ],
+          "courses_removed": [
+            "C100",
+            "C107",
+            "C180",
+            "C181",
+            "C217",
+            "C230",
+            "C273",
+            "C304",
+            "C361",
+            "C405",
+            "C453",
+            "C455",
+            "C464",
+            "C465",
+            "C466",
+            "C467",
+            "C468",
+            "C469",
+            "C470",
+            "C471",
+            "C472",
+            "C473",
+            "C474",
+            "C475",
+            "C476",
+            "C477",
+            "C478",
+            "C486",
+            "C487",
+            "C488",
+            "C489",
+            "C490",
+            "C491",
+            "C492",
+            "C784",
+            "C785",
+            "C787",
+            "C820",
+            "C825",
+            "C826"
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-023",
+      "transition_type": "successor",
+      "start_edition": "2023-03",
+      "end_edition": "2023-04",
+      "from_programs": [
+        {
+          "program_code": "MHL",
+          "title": "Master of Health Leadership"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "MHA",
+          "title": "Master of Healthcare Administration"
+        }
+      ],
+      "importance": "low",
+      "site_worthy": false,
+      "pairs": [
+        {
+          "from_program": "MHL",
+          "to_program": "MHA",
+          "shared_course_count": 0,
+          "removed_course_count": 12,
+          "added_course_count": 12,
+          "old_retained_pct": 0.0,
+          "new_inherited_pct": 0.0,
+          "jaccard_overlap": 0.0,
+          "courses_added": [
+            "D509",
+            "D510",
+            "D511",
+            "D512",
+            "D513",
+            "D514",
+            "D515",
+            "D516",
+            "D517",
+            "D518",
+            "D519",
+            "D520"
+          ],
+          "courses_removed": [
+            "C980",
+            "C981",
+            "C982",
+            "C983",
+            "C984",
+            "C985",
+            "C986",
+            "C987",
+            "C988",
+            "C989",
+            "C990",
+            "C991"
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-014",
+      "transition_type": "successor",
+      "start_edition": "2023-07",
+      "end_edition": "2023-08",
+      "from_programs": [
+        {
+          "program_code": "BSDMDA",
+          "title": "Bachelor of Science, Data Management/Data Analytics"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSDA",
+          "title": "Bachelor of Science, Data Analytics"
+        }
+      ],
+      "importance": "medium",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "BSDMDA",
+          "to_program": "BSDA",
+          "shared_course_count": 9,
+          "removed_course_count": 30,
+          "added_course_count": 33,
+          "old_retained_pct": 0.2308,
+          "new_inherited_pct": 0.2143,
+          "jaccard_overlap": 0.125,
+          "courses_added": [
+            "C458",
+            "C721",
+            "D199",
+            "D246",
+            "D276",
+            "D278",
+            "D282",
+            "D315",
+            "D324",
+            "D326",
+            "D333",
+            "D335",
+            "D370",
+            "D372",
+            "D386",
+            "D388",
+            "D420",
+            "D421",
+            "D426",
+            "D427",
+            "D428",
+            "D491",
+            "D492",
+            "D493",
+            "D494",
+            "D495",
+            "D496",
+            "D497",
+            "D498",
+            "D499",
+            "D500",
+            "D501",
+            "D502"
+          ],
+          "courses_removed": [
+            "C100",
+            "C165",
+            "C170",
+            "C172",
+            "C173",
+            "C175",
+            "C176",
+            "C182",
+            "C255",
+            "C393",
+            "C394",
+            "C480",
+            "C749",
+            "C751",
+            "C753",
+            "C756",
+            "C768",
+            "C779",
+            "C846",
+            "C859",
+            "C867",
+            "C939",
+            "C961",
+            "D100",
+            "D191",
+            "D192",
+            "D193",
+            "D194",
+            "D195",
+            "D309"
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-015",
+      "transition_type": "successor",
+      "start_edition": "2023-07",
+      "end_edition": "2023-08",
+      "from_programs": [
+        {
+          "program_code": "BSBAHC",
+          "title": "Bachelor of Science Business Administration Healthcare Management"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSHA",
+          "title": "Bachelor of Science, Healthcare Administration"
+        }
+      ],
+      "importance": "high",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "BSBAHC",
+          "to_program": "BSHA",
+          "shared_course_count": 40,
+          "removed_course_count": 0,
+          "added_course_count": 0,
+          "old_retained_pct": 1.0,
+          "new_inherited_pct": 1.0,
+          "jaccard_overlap": 1.0,
+          "courses_added": [],
+          "courses_removed": []
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-016",
+      "transition_type": "split",
+      "start_edition": "2024-05",
+      "end_edition": "2024-06",
+      "from_programs": [
+        {
+          "program_code": "MSDA",
+          "title": "Master of Science, Data Analytics"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "MSDADE",
+          "title": "Master of Science, Data Analytics - Data Engineering"
+        },
+        {
+          "program_code": "MSDADPE",
+          "title": "Master of Science, Data Analytics - Decision Process Engineering"
+        },
+        {
+          "program_code": "MSDADS",
+          "title": "Master of Science, Data Analytics - Data Science"
+        }
+      ],
+      "importance": "medium",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "MSDA",
+          "to_program": "MSDADE",
+          "shared_course_count": 0,
+          "removed_course_count": 11,
+          "added_course_count": 11,
+          "old_retained_pct": 0.0,
+          "new_inherited_pct": 0.0,
+          "jaccard_overlap": 0.0,
+          "courses_added": [
+            "D596",
+            "D597",
+            "D598",
+            "D599",
+            "D600",
+            "D601",
+            "D602",
+            "D607",
+            "D608",
+            "D609",
+            "D610"
+          ],
+          "courses_removed": [
+            "D204",
+            "D205",
+            "D206",
+            "D207",
+            "D208",
+            "D209",
+            "D210",
+            "D211",
+            "D212",
+            "D213",
+            "D214"
+          ]
+        },
+        {
+          "from_program": "MSDA",
+          "to_program": "MSDADPE",
+          "shared_course_count": 0,
+          "removed_course_count": 11,
+          "added_course_count": 11,
+          "old_retained_pct": 0.0,
+          "new_inherited_pct": 0.0,
+          "jaccard_overlap": 0.0,
+          "courses_added": [
+            "C783",
+            "D596",
+            "D597",
+            "D598",
+            "D599",
+            "D600",
+            "D601",
+            "D602",
+            "D612",
+            "D613",
+            "D614"
+          ],
+          "courses_removed": [
+            "D204",
+            "D205",
+            "D206",
+            "D207",
+            "D208",
+            "D209",
+            "D210",
+            "D211",
+            "D212",
+            "D213",
+            "D214"
+          ]
+        },
+        {
+          "from_program": "MSDA",
+          "to_program": "MSDADS",
+          "shared_course_count": 0,
+          "removed_course_count": 11,
+          "added_course_count": 11,
+          "old_retained_pct": 0.0,
+          "new_inherited_pct": 0.0,
+          "jaccard_overlap": 0.0,
+          "courses_added": [
+            "D596",
+            "D597",
+            "D598",
+            "D599",
+            "D600",
+            "D601",
+            "D602",
+            "D603",
+            "D604",
+            "D605",
+            "D606"
+          ],
+          "courses_removed": [
+            "D204",
+            "D205",
+            "D206",
+            "D207",
+            "D208",
+            "D209",
+            "D210",
+            "D211",
+            "D212",
+            "D213",
+            "D214"
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-024",
+      "transition_type": "family_restructure",
+      "start_edition": "2024-07",
+      "end_edition": "2024-09",
+      "from_programs": [
+        {
+          "program_code": "BAELED",
+          "title": "Bachelor of Arts, Elementary Education"
+        },
+        {
+          "program_code": "BASPEE",
+          "title": "Bachelor of Arts, Special Education and Elementary Education (Dual Licensure)"
+        },
+        {
+          "program_code": "BASPMM",
+          "title": "Bachelor of Arts, Special Education Mild to Moderate"
+        },
+        {
+          "program_code": "BSMEMG",
+          "title": "Bachelor of Science, Mathematics Education (Middle Grades)"
+        },
+        {
+          "program_code": "BSMES",
+          "title": "Bachelor of Science, Mathematics Education (Secondary)"
+        },
+        {
+          "program_code": "BSSEMG",
+          "title": "Bachelor of Science, Science Education (Middle Grades)"
+        },
+        {
+          "program_code": "BSSESB",
+          "title": "Bachelor of Science, Science Education (Secondary Biological Science)"
+        },
+        {
+          "program_code": "BSSESC",
+          "title": "Bachelor of Science, Science Education (Secondary Chemistry)"
+        },
+        {
+          "program_code": "BSSESE",
+          "title": "Bachelor of Science, Science Education (Secondary Earth Science)"
+        },
+        {
+          "program_code": "BSSESP",
+          "title": "Bachelor of Science, Science Education (Secondary Physics)"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BAESELED",
+          "title": "Bachelor of Arts, Educational Studies in Elementary Education"
+        },
+        {
+          "program_code": "BAESSPEE",
+          "title": "Bachelor of Arts, Educational Studies in Special and Elementary Education"
+        },
+        {
+          "program_code": "BAESSPMM",
+          "title": "Bachelor of Arts, Educational Studies in Mild to Moderate Exceptionalities Special Education"
+        },
+        {
+          "program_code": "BAESMEMG",
+          "title": "Bachelor of Arts, Educational Studies in Middle Grades Mathematics Education"
+        },
+        {
+          "program_code": "BAESMES",
+          "title": "Bachelor of Arts, Educational Studies in Secondary Mathematics Education"
+        },
+        {
+          "program_code": "BAESSEMG",
+          "title": "Bachelor of Arts, Educational Studies in Middle Grades Science Education"
+        },
+        {
+          "program_code": "BAESSESB",
+          "title": "Bachelor of Arts, Educational Studies in Secondary Biological Science Education"
+        },
+        {
+          "program_code": "BAESSESC",
+          "title": "Bachelor of Arts, Educational Studies in Secondary Chemistry Science Education"
+        },
+        {
+          "program_code": "BAESSESE",
+          "title": "Bachelor of Arts, Educational Studies in Secondary Earth Science Education"
+        },
+        {
+          "program_code": "BAESSESP",
+          "title": "Bachelor of Arts, Educational Studies in Secondary Physics Science Education"
+        }
+      ],
+      "importance": "high",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "BASPMM",
+          "to_program": "BAESSPMM",
+          "shared_course_count": 33,
+          "removed_course_count": 6,
+          "added_course_count": 0,
+          "old_retained_pct": 0.8462,
+          "new_inherited_pct": 1.0,
+          "jaccard_overlap": 0.8462,
+          "courses_added": [],
+          "courses_removed": [
+            "C340",
+            "D009",
+            "D149",
+            "D151",
+            "D529",
+            "D531"
+          ]
+        },
+        {
+          "from_program": "BASPEE",
+          "to_program": "BAESSPEE",
+          "shared_course_count": 38,
+          "removed_course_count": 6,
+          "added_course_count": 0,
+          "old_retained_pct": 0.8636,
+          "new_inherited_pct": 1.0,
+          "jaccard_overlap": 0.8636,
+          "courses_added": [],
+          "courses_removed": [
+            "C340",
+            "C934",
+            "D147",
+            "D151",
+            "D523",
+            "D531"
+          ]
+        },
+        {
+          "from_program": "BSMES",
+          "to_program": "BAESMES",
+          "shared_course_count": 35,
+          "removed_course_count": 7,
+          "added_course_count": 0,
+          "old_retained_pct": 0.8333,
+          "new_inherited_pct": 1.0,
+          "jaccard_overlap": 0.8333,
+          "courses_added": [],
+          "courses_removed": [
+            "C341",
+            "C897",
+            "C932",
+            "D148",
+            "D151",
+            "D533",
+            "D535"
+          ]
+        },
+        {
+          "from_program": "BSSESP",
+          "to_program": "BAESSESP",
+          "shared_course_count": 32,
+          "removed_course_count": 7,
+          "added_course_count": 0,
+          "old_retained_pct": 0.8205,
+          "new_inherited_pct": 1.0,
+          "jaccard_overlap": 0.8205,
+          "courses_added": [],
+          "courses_removed": [
+            "C341",
+            "C901",
+            "C937",
+            "D150",
+            "D151",
+            "D533",
+            "D535"
+          ]
+        },
+        {
+          "from_program": "BSSESC",
+          "to_program": "BAESSESC",
+          "shared_course_count": 32,
+          "removed_course_count": 7,
+          "added_course_count": 0,
+          "old_retained_pct": 0.8205,
+          "new_inherited_pct": 1.0,
+          "jaccard_overlap": 0.8205,
+          "courses_added": [],
+          "courses_removed": [
+            "C341",
+            "C915",
+            "C937",
+            "D150",
+            "D151",
+            "D533",
+            "D535"
+          ]
+        },
+        {
+          "from_program": "BSMEMG",
+          "to_program": "BAESMEMG",
+          "shared_course_count": 30,
+          "removed_course_count": 7,
+          "added_course_count": 0,
+          "old_retained_pct": 0.8108,
+          "new_inherited_pct": 1.0,
+          "jaccard_overlap": 0.8108,
+          "courses_added": [],
+          "courses_removed": [
+            "C341",
+            "C903",
+            "C930",
+            "D148",
+            "D151",
+            "D533",
+            "D535"
+          ]
+        },
+        {
+          "from_program": "BSSEMG",
+          "to_program": "BAESSEMG",
+          "shared_course_count": 31,
+          "removed_course_count": 7,
+          "added_course_count": 0,
+          "old_retained_pct": 0.8158,
+          "new_inherited_pct": 1.0,
+          "jaccard_overlap": 0.8158,
+          "courses_added": [],
+          "courses_removed": [
+            "C341",
+            "C902",
+            "C937",
+            "D150",
+            "D151",
+            "D533",
+            "D535"
+          ]
+        },
+        {
+          "from_program": "BSSESE",
+          "to_program": "BAESSESE",
+          "shared_course_count": 30,
+          "removed_course_count": 7,
+          "added_course_count": 0,
+          "old_retained_pct": 0.8108,
+          "new_inherited_pct": 1.0,
+          "jaccard_overlap": 0.8108,
+          "courses_added": [],
+          "courses_removed": [
+            "C341",
+            "C898",
+            "C937",
+            "D150",
+            "D151",
+            "D533",
+            "D535"
+          ]
+        },
+        {
+          "from_program": "BSSESB",
+          "to_program": "BAESSESB",
+          "shared_course_count": 30,
+          "removed_course_count": 7,
+          "added_course_count": 0,
+          "old_retained_pct": 0.8108,
+          "new_inherited_pct": 1.0,
+          "jaccard_overlap": 0.8108,
+          "courses_added": [],
+          "courses_removed": [
+            "C341",
+            "C900",
+            "C937",
+            "D150",
+            "D151",
+            "D533",
+            "D535"
+          ]
+        },
+        {
+          "from_program": "BAELED",
+          "to_program": "BAESSPEE",
+          "shared_course_count": 31,
+          "removed_course_count": 7,
+          "added_course_count": 7,
+          "old_retained_pct": 0.8158,
+          "new_inherited_pct": 0.8158,
+          "jaccard_overlap": 0.6889,
+          "courses_added": [
+            "D001",
+            "D002",
+            "D003",
+            "D004",
+            "D005",
+            "D006",
+            "D007"
+          ],
+          "courses_removed": [
+            "C341",
+            "C935",
+            "D146",
+            "D151",
+            "D152",
+            "D523",
+            "D525"
+          ]
+        },
+        {
+          "from_program": "BAELED",
+          "to_program": "BAESELED",
+          "shared_course_count": 7,
+          "removed_course_count": 31,
+          "added_course_count": 26,
+          "old_retained_pct": 0.1842,
+          "new_inherited_pct": 0.2121,
+          "jaccard_overlap": 0.1094,
+          "courses_added": [
+            "D459",
+            "D658",
+            "D659",
+            "D660",
+            "D661",
+            "D662",
+            "D663",
+            "D664",
+            "D668",
+            "D669",
+            "D670",
+            "D671",
+            "D672",
+            "D673",
+            "D674",
+            "D688",
+            "D689",
+            "D690",
+            "D691",
+            "D692",
+            "D693",
+            "D694",
+            "D695",
+            "D771",
+            "D772",
+            "D773"
+          ],
+          "courses_removed": [
+            "C104",
+            "C105",
+            "C108",
+            "C109",
+            "C341",
+            "C365",
+            "C367",
+            "C732",
+            "C909",
+            "C935",
+            "C970",
+            "D090",
+            "D091",
+            "D092",
+            "D093",
+            "D094",
+            "D095",
+            "D096",
+            "D097",
+            "D125",
+            "D126",
+            "D127",
+            "D146",
+            "D151",
+            "D152",
+            "D198",
+            "D199",
+            "D265",
+            "D267",
+            "D523",
+            "D525"
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-017",
+      "transition_type": "split",
+      "start_edition": "2024-09",
+      "end_edition": "2024-10",
+      "from_programs": [
+        {
+          "program_code": "MACC",
+          "title": "Master of Science, Accounting"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "MACCA",
+          "title": "Master of Science in Accounting, Auditing Specialization"
+        },
+        {
+          "program_code": "MACCF",
+          "title": "Master of Science in Accounting, Financial Reporting Specialization"
+        },
+        {
+          "program_code": "MACCM",
+          "title": "Master of Science in Accounting, Management Accounting Specialization"
+        },
+        {
+          "program_code": "MACCT",
+          "title": "Master of Science in Accounting, Taxation Specialization"
+        }
+      ],
+      "importance": "high",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "MACC",
+          "to_program": "MACCA",
+          "shared_course_count": 3,
+          "removed_course_count": 7,
+          "added_course_count": 7,
+          "old_retained_pct": 0.3,
+          "new_inherited_pct": 0.3,
+          "jaccard_overlap": 0.1765,
+          "courses_added": [
+            "D550",
+            "D551",
+            "D552",
+            "D553",
+            "D560",
+            "D561",
+            "D562"
+          ],
+          "courses_removed": [
+            "C209",
+            "C214",
+            "C239",
+            "C243",
+            "C253",
+            "C254",
+            "D250"
+          ]
+        },
+        {
+          "from_program": "MACC",
+          "to_program": "MACCF",
+          "shared_course_count": 4,
+          "removed_course_count": 6,
+          "added_course_count": 7,
+          "old_retained_pct": 0.4,
+          "new_inherited_pct": 0.3636,
+          "jaccard_overlap": 0.2353,
+          "courses_added": [
+            "D550",
+            "D551",
+            "D552",
+            "D553",
+            "D554",
+            "D555",
+            "D556"
+          ],
+          "courses_removed": [
+            "C209",
+            "C214",
+            "C239",
+            "C243",
+            "C253",
+            "C254"
+          ]
+        },
+        {
+          "from_program": "MACC",
+          "to_program": "MACCM",
+          "shared_course_count": 2,
+          "removed_course_count": 8,
+          "added_course_count": 8,
+          "old_retained_pct": 0.2,
+          "new_inherited_pct": 0.2,
+          "jaccard_overlap": 0.1111,
+          "courses_added": [
+            "D550",
+            "D551",
+            "D552",
+            "D553",
+            "D556",
+            "D559",
+            "D560",
+            "D561"
+          ],
+          "courses_removed": [
+            "C209",
+            "C214",
+            "C239",
+            "C243",
+            "C253",
+            "C254",
+            "D250",
+            "D251"
+          ]
+        },
+        {
+          "from_program": "MACC",
+          "to_program": "MACCT",
+          "shared_course_count": 2,
+          "removed_course_count": 8,
+          "added_course_count": 8,
+          "old_retained_pct": 0.2,
+          "new_inherited_pct": 0.2,
+          "jaccard_overlap": 0.1111,
+          "courses_added": [
+            "D550",
+            "D551",
+            "D552",
+            "D553",
+            "D554",
+            "D555",
+            "D557",
+            "D558"
+          ],
+          "courses_removed": [
+            "C209",
+            "C214",
+            "C239",
+            "C243",
+            "C253",
+            "C254",
+            "D250",
+            "D251"
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-018",
+      "transition_type": "successor",
+      "start_edition": "2024-10",
+      "end_edition": "2024-11",
+      "from_programs": [
+        {
+          "program_code": "BSBAMK",
+          "title": "Bachelor of Science Business Administration Marketing"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSMKT",
+          "title": "Bachelor of Science, Marketing"
+        }
+      ],
+      "importance": "high",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "BSBAMK",
+          "to_program": "BSMKT",
+          "shared_course_count": 36,
+          "removed_course_count": 3,
+          "added_course_count": 1,
+          "old_retained_pct": 0.9231,
+          "new_inherited_pct": 0.973,
+          "jaccard_overlap": 0.9,
+          "courses_added": [
+            "D246"
+          ],
+          "courses_removed": [
+            "C721",
+            "C957",
+            "D077"
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-019",
+      "transition_type": "family_restructure",
+      "start_edition": "2024-12",
+      "end_edition": "2025-01",
+      "from_programs": [
+        {
+          "program_code": "BSBAAC",
+          "title": "Bachelor of Science Business Administration Accounting"
+        },
+        {
+          "program_code": "BSBAHR",
+          "title": "Bachelor of Science Business Administration Human Resource Management"
+        },
+        {
+          "program_code": "BSBAIT",
+          "title": "Bachelor of Science Business Administration Information Technology Management"
+        },
+        {
+          "program_code": "BSBAMGC",
+          "title": "Bachelor of Science Business Administration, Management"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSACC",
+          "title": "Bachelor of Science, Accounting"
+        },
+        {
+          "program_code": "BSHR",
+          "title": "Bachelor of Science, Human Resource Management"
+        },
+        {
+          "program_code": "BSITM",
+          "title": "Bachelor of Science, Information Technology Management"
+        },
+        {
+          "program_code": "BSMGT",
+          "title": "Bachelor of Science, Business Management"
+        }
+      ],
+      "importance": "high",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "BSBAIT",
+          "to_program": "BSITM",
+          "shared_course_count": 40,
+          "removed_course_count": 0,
+          "added_course_count": 0,
+          "old_retained_pct": 1.0,
+          "new_inherited_pct": 1.0,
+          "jaccard_overlap": 1.0,
+          "courses_added": [],
+          "courses_removed": []
+        },
+        {
+          "from_program": "BSBAHR",
+          "to_program": "BSHR",
+          "shared_course_count": 37,
+          "removed_course_count": 4,
+          "added_course_count": 2,
+          "old_retained_pct": 0.9024,
+          "new_inherited_pct": 0.9487,
+          "jaccard_overlap": 0.8605,
+          "courses_added": [
+            "D265",
+            "D388"
+          ],
+          "courses_removed": [
+            "C168",
+            "C720",
+            "D100",
+            "D361"
+          ]
+        },
+        {
+          "from_program": "BSBAMGC",
+          "to_program": "BSMGT",
+          "shared_course_count": 34,
+          "removed_course_count": 5,
+          "added_course_count": 2,
+          "old_retained_pct": 0.8718,
+          "new_inherited_pct": 0.9444,
+          "jaccard_overlap": 0.8293,
+          "courses_added": [
+            "D774",
+            "D775"
+          ],
+          "courses_removed": [
+            "C720",
+            "D076",
+            "D196",
+            "D352",
+            "D355"
+          ]
+        },
+        {
+          "from_program": "BSBAAC",
+          "to_program": "BSACC",
+          "shared_course_count": 30,
+          "removed_course_count": 11,
+          "added_course_count": 10,
+          "old_retained_pct": 0.7317,
+          "new_inherited_pct": 0.75,
+          "jaccard_overlap": 0.5882,
+          "courses_added": [
+            "C458",
+            "C716",
+            "C721",
+            "C722",
+            "D198",
+            "D265",
+            "D267",
+            "D268",
+            "D270",
+            "D388"
+          ],
+          "courses_removed": [
+            "C100",
+            "C121",
+            "C168",
+            "C232",
+            "C233",
+            "C236",
+            "C455",
+            "C456",
+            "C464",
+            "D075",
+            "D100"
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-020",
+      "transition_type": "split",
+      "start_edition": "2025-01",
+      "end_edition": "2025-02",
+      "from_programs": [
+        {
+          "program_code": "MATSES",
+          "title": "Master of Arts in Teaching, Science Education (Secondary)"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "MATSESB",
+          "title": "Master of Arts in Teaching, Science Education (Secondary Biology)"
+        },
+        {
+          "program_code": "MATSESC",
+          "title": "Master of Arts in Teaching, Science Education (Secondary Chemistry)"
+        },
+        {
+          "program_code": "MATSESE",
+          "title": "Master of Arts in Teaching, Science Education (Secondary Earth Science)"
+        },
+        {
+          "program_code": "MATSESP",
+          "title": "Master of Arts in Teaching, Science Education (Secondary Physics)"
+        }
+      ],
+      "importance": "medium",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "MATSES",
+          "to_program": "MATSESB",
+          "shared_course_count": 0,
+          "removed_course_count": 18,
+          "added_course_count": 20,
+          "old_retained_pct": 0.0,
+          "new_inherited_pct": 0.0,
+          "jaccard_overlap": 0.0,
+          "courses_added": [
+            "D635",
+            "D636",
+            "D637",
+            "D638",
+            "D639",
+            "D665",
+            "D726",
+            "D729",
+            "D741",
+            "D742",
+            "D743",
+            "D752",
+            "D770",
+            "D806",
+            "D808",
+            "D842",
+            "D883",
+            "D884",
+            "D885",
+            "D886"
+          ],
+          "courses_removed": [
+            "C339",
+            "C347",
+            "C389",
+            "C645",
+            "C904",
+            "C938",
+            "D162",
+            "D163",
+            "D166",
+            "D168",
+            "D169",
+            "D170",
+            "D171",
+            "D172",
+            "D173",
+            "D307",
+            "D534",
+            "D536"
+          ]
+        },
+        {
+          "from_program": "MATSES",
+          "to_program": "MATSESC",
+          "shared_course_count": 0,
+          "removed_course_count": 18,
+          "added_course_count": 20,
+          "old_retained_pct": 0.0,
+          "new_inherited_pct": 0.0,
+          "jaccard_overlap": 0.0,
+          "courses_added": [
+            "D635",
+            "D636",
+            "D637",
+            "D638",
+            "D639",
+            "D665",
+            "D726",
+            "D729",
+            "D741",
+            "D742",
+            "D743",
+            "D752",
+            "D770",
+            "D806",
+            "D808",
+            "D842",
+            "D872",
+            "D884",
+            "D885",
+            "D886"
+          ],
+          "courses_removed": [
+            "C339",
+            "C347",
+            "C389",
+            "C645",
+            "C904",
+            "C938",
+            "D162",
+            "D163",
+            "D166",
+            "D168",
+            "D169",
+            "D170",
+            "D171",
+            "D172",
+            "D173",
+            "D307",
+            "D534",
+            "D536"
+          ]
+        },
+        {
+          "from_program": "MATSES",
+          "to_program": "MATSESE",
+          "shared_course_count": 0,
+          "removed_course_count": 18,
+          "added_course_count": 20,
+          "old_retained_pct": 0.0,
+          "new_inherited_pct": 0.0,
+          "jaccard_overlap": 0.0,
+          "courses_added": [
+            "D635",
+            "D636",
+            "D637",
+            "D638",
+            "D639",
+            "D665",
+            "D726",
+            "D729",
+            "D741",
+            "D742",
+            "D743",
+            "D752",
+            "D770",
+            "D806",
+            "D808",
+            "D842",
+            "D858",
+            "D884",
+            "D885",
+            "D886"
+          ],
+          "courses_removed": [
+            "C339",
+            "C347",
+            "C389",
+            "C645",
+            "C904",
+            "C938",
+            "D162",
+            "D163",
+            "D166",
+            "D168",
+            "D169",
+            "D170",
+            "D171",
+            "D172",
+            "D173",
+            "D307",
+            "D534",
+            "D536"
+          ]
+        },
+        {
+          "from_program": "MATSES",
+          "to_program": "MATSESP",
+          "shared_course_count": 0,
+          "removed_course_count": 18,
+          "added_course_count": 20,
+          "old_retained_pct": 0.0,
+          "new_inherited_pct": 0.0,
+          "jaccard_overlap": 0.0,
+          "courses_added": [
+            "D635",
+            "D636",
+            "D637",
+            "D638",
+            "D639",
+            "D665",
+            "D726",
+            "D729",
+            "D741",
+            "D742",
+            "D743",
+            "D752",
+            "D770",
+            "D806",
+            "D808",
+            "D842",
+            "D865",
+            "D884",
+            "D885",
+            "D886"
+          ],
+          "courses_removed": [
+            "C339",
+            "C347",
+            "C389",
+            "C645",
+            "C904",
+            "C938",
+            "D162",
+            "D163",
+            "D166",
+            "D168",
+            "D169",
+            "D170",
+            "D171",
+            "D172",
+            "D173",
+            "D307",
+            "D534",
+            "D536"
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-026",
+      "transition_type": "successor",
+      "start_edition": "2025-04",
+      "end_edition": "2025-05",
+      "from_programs": [
+        {
+          "program_code": "MBAHM",
+          "title": "MBA, Healthcare Management"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "MBAHA",
+          "title": "Master of Business Administration, Healthcare Administration"
+        }
+      ],
+      "importance": "high",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "MBAHM",
+          "to_program": "MBAHA",
+          "shared_course_count": 11,
+          "removed_course_count": 0,
+          "added_course_count": 0,
+          "old_retained_pct": 1.0,
+          "new_inherited_pct": 1.0,
+          "jaccard_overlap": 1.0,
+          "courses_added": [],
+          "courses_removed": []
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-021",
+      "transition_type": "family_restructure",
+      "start_edition": "2025-07",
+      "end_edition": "2025-08",
+      "from_programs": [
+        {
+          "program_code": "BSCCAWS",
+          "title": "Bachelor of Science, Cloud Computing - Amazon Web Services track"
+        },
+        {
+          "program_code": "BSCCAZR",
+          "title": "Bachelor of Science, Cloud Computing - Microsoft Azure track"
+        },
+        {
+          "program_code": "BSCCMCL",
+          "title": "Bachelor of Science, Cloud Computing"
+        },
+        {
+          "program_code": "BSNES",
+          "title": "Bachelor of Science, Network Engineering and Security"
+        },
+        {
+          "program_code": "BSNES_C",
+          "title": "Bachelor of Science, Network Engineering and Security Cisco Track"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSCNE",
+          "title": "Bachelor of Science, Cloud and Network Engineering"
+        },
+        {
+          "program_code": "BSCNEAWS",
+          "title": "Bachelor of Science, Cloud and Network Engineering - Amazon Web Services"
+        },
+        {
+          "program_code": "BSCNEAZR",
+          "title": "Bachelor of Science, Cloud and Network Engineering - Microsoft Azure"
+        },
+        {
+          "program_code": "BSCNECIS",
+          "title": "Bachelor of Science, Cloud and Network Engineering - Cisco"
+        }
+      ],
+      "importance": "high",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "BSNES",
+          "to_program": "BSCNE",
+          "shared_course_count": 22,
+          "removed_course_count": 21,
+          "added_course_count": 12,
+          "old_retained_pct": 0.5116,
+          "new_inherited_pct": 0.6471,
+          "jaccard_overlap": 0.4,
+          "courses_added": [
+            "C458",
+            "D246",
+            "D267",
+            "D270",
+            "D459",
+            "E004",
+            "E010",
+            "E025",
+            "E026",
+            "E027",
+            "E028",
+            "E029"
+          ],
+          "courses_removed": [
+            "C498",
+            "C927",
+            "C928",
+            "C929",
+            "D100",
+            "D199",
+            "D265",
+            "D269",
+            "D276",
+            "D278",
+            "D320",
+            "D322",
+            "D324",
+            "D334",
+            "D372",
+            "D418",
+            "D420",
+            "D421",
+            "D422",
+            "LZT2",
+            "MBT2"
+          ]
+        },
+        {
+          "from_program": "BSNES_C",
+          "to_program": "BSCNECIS",
+          "shared_course_count": 19,
+          "removed_course_count": 15,
+          "added_course_count": 13,
+          "old_retained_pct": 0.5588,
+          "new_inherited_pct": 0.5938,
+          "jaccard_overlap": 0.4043,
+          "courses_added": [
+            "C458",
+            "D246",
+            "D267",
+            "D270",
+            "D337",
+            "D459",
+            "E004",
+            "E010",
+            "E025",
+            "E026",
+            "E027",
+            "E028",
+            "E032"
+          ],
+          "courses_removed": [
+            "D100",
+            "D199",
+            "D265",
+            "D269",
+            "D276",
+            "D278",
+            "D320",
+            "D322",
+            "D324",
+            "D334",
+            "D372",
+            "D418",
+            "D420",
+            "D421",
+            "D422"
+          ]
+        },
+        {
+          "from_program": "BSCCAWS",
+          "to_program": "BSCNEAWS",
+          "shared_course_count": 19,
+          "removed_course_count": 18,
+          "added_course_count": 16,
+          "old_retained_pct": 0.5135,
+          "new_inherited_pct": 0.5429,
+          "jaccard_overlap": 0.3585,
+          "courses_added": [
+            "C458",
+            "D197",
+            "D246",
+            "D267",
+            "D270",
+            "D412",
+            "D413",
+            "D415",
+            "D459",
+            "E004",
+            "E010",
+            "E025",
+            "E026",
+            "E027",
+            "E028",
+            "E030"
+          ],
+          "courses_removed": [
+            "C190",
+            "C963",
+            "D199",
+            "D269",
+            "D276",
+            "D278",
+            "D318",
+            "D320",
+            "D321",
+            "D322",
+            "D324",
+            "D330",
+            "D334",
+            "D338",
+            "D342",
+            "D372",
+            "D411",
+            "D427"
+          ]
+        },
+        {
+          "from_program": "BSCCAZR",
+          "to_program": "BSCNEAZR",
+          "shared_course_count": 18,
+          "removed_course_count": 19,
+          "added_course_count": 17,
+          "old_retained_pct": 0.4865,
+          "new_inherited_pct": 0.5143,
+          "jaccard_overlap": 0.3333,
+          "courses_added": [
+            "C458",
+            "D197",
+            "D246",
+            "D267",
+            "D270",
+            "D412",
+            "D413",
+            "D415",
+            "D459",
+            "E004",
+            "E010",
+            "E025",
+            "E026",
+            "E027",
+            "E028",
+            "E031",
+            "E033"
+          ],
+          "courses_removed": [
+            "C190",
+            "C963",
+            "D199",
+            "D269",
+            "D276",
+            "D278",
+            "D304",
+            "D305",
+            "D306",
+            "D318",
+            "D320",
+            "D322",
+            "D324",
+            "D330",
+            "D334",
+            "D342",
+            "D372",
+            "D411",
+            "D427"
+          ]
+        },
+        {
+          "from_program": "BSCCMCL",
+          "to_program": "BSCNEAZR",
+          "shared_course_count": 18,
+          "removed_course_count": 19,
+          "added_course_count": 17,
+          "old_retained_pct": 0.4865,
+          "new_inherited_pct": 0.5143,
+          "jaccard_overlap": 0.3333,
+          "courses_added": [
+            "C458",
+            "D197",
+            "D246",
+            "D267",
+            "D270",
+            "D412",
+            "D413",
+            "D415",
+            "D459",
+            "E004",
+            "E010",
+            "E025",
+            "E026",
+            "E027",
+            "E028",
+            "E031",
+            "E033"
+          ],
+          "courses_removed": [
+            "C190",
+            "C963",
+            "D199",
+            "D269",
+            "D276",
+            "D278",
+            "D282",
+            "D306",
+            "D318",
+            "D319",
+            "D320",
+            "D322",
+            "D324",
+            "D330",
+            "D334",
+            "D342",
+            "D372",
+            "D411",
+            "D427"
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "PLE-022",
+      "transition_type": "split",
+      "start_edition": "2026-01",
+      "end_edition": "2026-02",
+      "from_programs": [
+        {
+          "program_code": "MSITM",
+          "title": "Master of Science, Information Technology Management"
+        },
+        {
+          "program_code": "MSITMUG",
+          "title": "Bachelor of Science, Information Technology (BSIT to MSITM)"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "MSIT",
+          "title": "Master of Science, Information Technology"
+        },
+        {
+          "program_code": "MSITPM",
+          "title": "Master of Science, Information Technology - Product Management"
+        },
+        {
+          "program_code": "MSITUG",
+          "title": "Bachelor of Science, Information Technology (BSIT to MSIT)"
+        }
+      ],
+      "importance": "high",
+      "site_worthy": true,
+      "pairs": [
+        {
+          "from_program": "MSITMUG",
+          "to_program": "MSITUG",
+          "shared_course_count": 17,
+          "removed_course_count": 19,
+          "added_course_count": 18,
+          "old_retained_pct": 0.4722,
+          "new_inherited_pct": 0.4857,
+          "jaccard_overlap": 0.3148,
+          "courses_added": [
+            "C458",
+            "D246",
+            "D318",
+            "D388",
+            "D459",
+            "D522",
+            "D685",
+            "D773",
+            "D822",
+            "E004",
+            "E005",
+            "E006",
+            "E007",
+            "E009",
+            "E010",
+            "E011",
+            "E012",
+            "E015"
+          ],
+          "courses_removed": [
+            "C165",
+            "C268",
+            "C277",
+            "C483",
+            "C484",
+            "C769",
+            "C773",
+            "C777",
+            "C783",
+            "C948",
+            "C954",
+            "C962",
+            "D199",
+            "D268",
+            "D269",
+            "D276",
+            "D278",
+            "D322",
+            "D333"
+          ]
+        },
+        {
+          "from_program": "MSITM",
+          "to_program": "MSIT",
+          "shared_course_count": 0,
+          "removed_course_count": 10,
+          "added_course_count": 11,
+          "old_retained_pct": 0.0,
+          "new_inherited_pct": 0.0,
+          "jaccard_overlap": 0.0,
+          "courses_added": [
+            "E011",
+            "E012",
+            "E013",
+            "E014",
+            "E015",
+            "E016",
+            "E017",
+            "E018",
+            "E019",
+            "E020",
+            "E021"
+          ],
+          "courses_removed": [
+            "C498",
+            "C783",
+            "C927",
+            "C928",
+            "C929",
+            "C948",
+            "C954",
+            "C962",
+            "LZT2",
+            "MBT2"
+          ]
+        },
+        {
+          "from_program": "MSITM",
+          "to_program": "MSITPM",
+          "shared_course_count": 0,
+          "removed_course_count": 10,
+          "added_course_count": 10,
+          "old_retained_pct": 0.0,
+          "new_inherited_pct": 0.0,
+          "jaccard_overlap": 0.0,
+          "courses_added": [
+            "E011",
+            "E012",
+            "E013",
+            "E014",
+            "E015",
+            "E016",
+            "E017",
+            "E022",
+            "E023",
+            "E024"
+          ],
+          "courses_removed": [
+            "C498",
+            "C783",
+            "C927",
+            "C928",
+            "C929",
+            "C948",
+            "C954",
+            "C962",
+            "LZT2",
+            "MBT2"
+          ]
+        }
+      ]
+    }
+  ]
+}

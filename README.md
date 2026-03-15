@@ -82,3 +82,8 @@ wgu-atlas/
 ## Disclaimer
 
 WGU Atlas is an independent community project and is not affiliated with Western Governors University. All catalog data is derived from WGU's publicly available course catalog. No proprietary or internal WGU data is used.
+
+
+
+
+

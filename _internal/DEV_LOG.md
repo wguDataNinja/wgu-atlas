@@ -483,3 +483,86 @@ Expected live URL: `https://wgudataninja.github.io/wgu-atlas/`
 - [ ] Phase 7 (later): program pages, visual improvements, Reddit integration
 
 ---
+
+## 2026-03-14 — Official Context Layer Phase 1: Raw sitemap manifest extraction
+
+### What was done
+
+Started the Official Context Layer workstream (see `_internal/OFFICIAL_CONTEXT_LAYER_PLAN.md`).
+
+**Internal structure created:**
+- `_internal/official_context/README.md` — workflow overview, Phase 1–5 definitions
+- `_internal/official_context/DEV_LOG.md` — durable log for this workstream
+- `_internal/official_context/REVIEW_QUEUE.md` — instructions for manual review pass
+
+**Phase 1 manifest created:**
+- Source: https://www.wgu.edu/sitemap.html
+- 806 raw hyperlinks extracted → 797 after basic filter → **604 unique entries** after dedup
+- Written to:
+  - `data/official_context_manifest_phase1.csv`
+  - `data/official_context_manifest_phase1.json`
+- Schema: title, url, keep, status, page_type, official_context_type, summary, school_candidates, program_candidates, course_candidates, notes, source
+- Only `title`, `url`, `source=sitemap` populated in Phase 1; all other fields blank for review
+
+**Patterns observed:**
+- ~94 program guide HTML pages (all school areas represented)
+- ~88 IT school program pages, ~73 business, ~73 health/nursing, ~56 teaching
+- ~145 financial aid / scholarship / tuition pages (likely low entity-relevance)
+- ~32 about/governance pages
+- Zero PDFs directly in sitemap (program guide PDFs linked from within program guide pages)
+- Sparse newsroom coverage (~1-2 entries); newsroom discovery deferred to later pass
+
+### Status
+
+Phase 1 complete. **Awaiting manual review** of manifest before Phase 2 enrichment.
+
+Phase 2 (page inspection + enrichment) should not start until manual review prunes the 604 entries to a keep-list.
+
+---
+
+## 2026-03-15 — Official Context Layer Phase 2: Partial enrichment (session cut short)
+
+### Current state of `data/official_context_manifest_phase2_test.json`
+
+**122 entries enriched** (of ~384 target):
+- 115 program guide pages (template-enriched via parent title lookup — no fetches)
+- 3 accreditation pages (fetched)
+- 2 outcomes pages (fetched)
+- 2 program subpages (fetched)
+
+### Remaining: 262 entries
+
+Saved to `_internal/official_context/phase2_remaining_batch.json`:
+- 1 accreditation (CAE-CDE designation)
+- 123 specialization/track/variant/certificate pages
+- 138 program landing pages (main WGU page per program)
+
+### Resume instructions
+
+Next session: read `_internal/official_context/DEV_LOG.md` for full resume notes. Process remaining batch in sub-batches of 20-30, not one giant agent run.
+
+---
+
+## 2026-03-14 — Official Context Layer Phase 2: Enrichment test pass (15 entries)
+
+### What was done
+
+Ran a focused Phase 2 test enrichment on 15 high-value entries selected from the Phase 1 manifest.
+
+Output: `data/official_context_manifest_phase2_test.json`
+Notes: `_internal/official_context/PHASE2_TEST_NOTES.md`
+
+### Findings
+
+- All 15 pages active; workflow validated end-to-end
+- Program guide pages: all confirmed downloadable PDFs linked from HTML
+- `outcomes.html` pages are richest: structured competency data, pass rates, assessment tables
+- Specialization subpages more useful than guide pages for entity enrichment
+- Accreditation pages: school-level (ACBSP/CAEP) vs program-specific (CAHIIM) — different attachment targets
+- `school_candidates` derivable automatically from URL path prefix
+
+### Status
+
+Phase 2 test complete. Schema validated. Ready to plan full enrichment pass scope.
+
+---

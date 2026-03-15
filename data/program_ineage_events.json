@@ -1,0 +1,948 @@
+{
+  "events": [
+    {
+      "event_id": "PLE-001",
+      "transition_type": "successor",
+      "confidence": "high",
+      "start_edition": "2017-08",
+      "end_edition": "2017-09",
+      "from_programs": [
+        {
+          "program_code": "BSITSEC",
+          "title": "Bachelor of Science, IT - Security Emphasis"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSNOS",
+          "title": "Bachelor of Science, Network Operations and Security"
+        }
+      ],
+      "summary": "BSNOS appears to be the meaningful successor to BSITSEC, preserving the security domain while reframing the program around network operations and security."
+    },
+    {
+      "event_id": "PLE-002",
+      "transition_type": "successor",
+      "confidence": "high",
+      "start_edition": "2017-09",
+      "end_edition": "2017-10",
+      "from_programs": [
+        {
+          "program_code": "BSITNW",
+          "title": "Bachelor of Science, IT - Networks Administration Emphasis"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSCLSA",
+          "title": "Bachelor of Science, Cloud and Systems Administration"
+        }
+      ],
+      "summary": "BSCLSA appears to replace BSITNW as the newer cloud- and systems-oriented evolution of the prior network administration program."
+    },
+    {
+      "event_id": "PLE-003",
+      "transition_type": "family_restructure",
+      "confidence": "high",
+      "start_edition": "2018-04",
+      "end_edition": "2018-05",
+      "from_programs": [
+        {
+          "program_code": "BASC9",
+          "title": "Bachelor of Arts, Science (5-9)"
+        },
+        {
+          "program_code": "BASCB12",
+          "title": "Bachelor of Arts, Science (5-12, Bio)"
+        },
+        {
+          "program_code": "BASCCH12",
+          "title": "Bachelor of Arts, Science (5-12, Chemistry)"
+        },
+        {
+          "program_code": "BASCG12",
+          "title": "Bachelor of Arts, Science (5-12, Geo)"
+        },
+        {
+          "program_code": "BASCPH12",
+          "title": "Bachelor of Arts, Science (5-12, Physics)"
+        },
+        {
+          "program_code": "MASE9",
+          "title": "Master of Arts, Science Education (5-9)"
+        },
+        {
+          "program_code": "MASEB12",
+          "title": "Master of Arts, Science Education (5-12, Bio)"
+        },
+        {
+          "program_code": "MASECH12",
+          "title": "Master of Arts, Science Education (5-12, Chemistry)"
+        },
+        {
+          "program_code": "MASEG12",
+          "title": "Master of Arts, Science Education (5-12, Geo)"
+        },
+        {
+          "program_code": "MASEPH12",
+          "title": "Master of Arts, Science Education (5-12, Physics)"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSSEMG",
+          "title": "Bachelor of Science, Science Education (Middle Grades)"
+        },
+        {
+          "program_code": "BSSESB",
+          "title": "Bachelor of Science, Science Education (Secondary Biological Science)"
+        },
+        {
+          "program_code": "BSSESC",
+          "title": "Bachelor of Science, Science Education (Secondary Chemistry)"
+        },
+        {
+          "program_code": "BSSESE",
+          "title": "Bachelor of Science, Science Education (Secondary Earth Science)"
+        },
+        {
+          "program_code": "BSSESP",
+          "title": "Bachelor of Science, Science Education (Secondary Physics)"
+        },
+        {
+          "program_code": "MASEMG",
+          "title": "Master of Arts Science Education (Middle Grades)"
+        },
+        {
+          "program_code": "MASESB",
+          "title": "Master of Arts Science Education (Secondary Biological Science)"
+        },
+        {
+          "program_code": "MASESC",
+          "title": "Master of Arts Science Education (Secondary Chemistry)"
+        },
+        {
+          "program_code": "MASESE",
+          "title": "Master of Arts Science Education (Secondary Earth Science)"
+        },
+        {
+          "program_code": "MASESP",
+          "title": "Master of Arts Science Education (Secondary Physics)"
+        }
+      ],
+      "summary": "The science education family appears to be comprehensively restructured from older BA/MA grade-band programs into middle grades and secondary science education programs with clearer disciplinary taxonomy."
+    },
+    {
+      "event_id": "PLE-004",
+      "transition_type": "family_restructure",
+      "confidence": "high",
+      "start_edition": "2018-05",
+      "end_edition": "2018-06",
+      "from_programs": [
+        {
+          "program_code": "MATELK8",
+          "title": "Master of Arts in Teaching, Elementary Education (K-8)"
+        },
+        {
+          "program_code": "MATENG12",
+          "title": "Master of Arts in Teaching, English Education (5-12)"
+        },
+        {
+          "program_code": "MATMA12",
+          "title": "Master of Arts in Teaching, Mathematics (5-12)"
+        },
+        {
+          "program_code": "MATMA9",
+          "title": "Master of Arts in Teaching, Mathematics (5-9)"
+        },
+        {
+          "program_code": "MATSC12",
+          "title": "Master of Arts in Teaching, Science (5-12)"
+        },
+        {
+          "program_code": "PBELK8",
+          "title": "Post-baccalaureate Teacher Preparation, Elementary Education (K-8)"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "MATEES",
+          "title": "Master of Arts in Teaching, English Education (Secondary)"
+        },
+        {
+          "program_code": "MATELED",
+          "title": "Master of Arts in Teaching, Elementary Education"
+        },
+        {
+          "program_code": "MATMEMG",
+          "title": "Master of Arts in Teaching, Mathematics Education (Middle Grades)"
+        },
+        {
+          "program_code": "MATMES",
+          "title": "Master of Arts in Teaching, Mathematics Education (Secondary)"
+        },
+        {
+          "program_code": "MATSES",
+          "title": "Master of Arts in Teaching, Science Education (Secondary)"
+        },
+        {
+          "program_code": "PBELED",
+          "title": "Post-baccalaureate, Elementary Education"
+        }
+      ],
+      "summary": "Teacher-prep programs appear to be reorganized from older K-8 and 5-9/5-12 naming into newer elementary, middle grades, and secondary program structures."
+    },
+    {
+      "event_id": "PLE-005",
+      "transition_type": "successor",
+      "confidence": "high",
+      "start_edition": "2018-06",
+      "end_edition": "2018-07",
+      "from_programs": [
+        {
+          "program_code": "BAISK8",
+          "title": "Bachelor of Arts, Interdisciplinary Studies (K-8)"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BAELED",
+          "title": "Bachelor of Arts, Elementary Education"
+        }
+      ],
+      "summary": "BAELED appears to be the direct student-facing successor to BAISK8, carrying the elementary teacher-prep pathway into a clearer Elementary Education identity."
+    },
+    {
+      "event_id": "PLE-006",
+      "transition_type": "family_restructure",
+      "confidence": "high",
+      "start_edition": "2018-08",
+      "end_edition": "2018-09",
+      "from_programs": [
+        {
+          "program_code": "BAMA12",
+          "title": "Bachelor of Arts, Mathematics (5-12)"
+        },
+        {
+          "program_code": "BAMA9",
+          "title": "Bachelor of Arts, Mathematics (5-9)"
+        },
+        {
+          "program_code": "MAME12",
+          "title": "Master of Arts, Mathematics Education (5-12)"
+        },
+        {
+          "program_code": "MAME9",
+          "title": "Master of Arts, Mathematics Education (5-9)"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSMEMG",
+          "title": "Bachelor of Science, Mathematics Education (Middle Grades)"
+        },
+        {
+          "program_code": "BSMES",
+          "title": "Bachelor of Science, Mathematics Education (Secondary)"
+        },
+        {
+          "program_code": "MAMEMG",
+          "title": "Master of Arts in Mathematics Education (Middle Grades)"
+        },
+        {
+          "program_code": "MAMES",
+          "title": "Master of Arts in Mathematics Education (Secondary)"
+        }
+      ],
+      "summary": "The mathematics education family appears to be restructured from older 5-9 and 5-12 programs into middle grades and secondary pathways with updated program naming."
+    },
+    {
+      "event_id": "PLE-007",
+      "transition_type": "successor",
+      "confidence": "high",
+      "start_edition": "2019-03",
+      "end_edition": "2019-04",
+      "from_programs": [
+        {
+          "program_code": "BASP",
+          "title": "Bachelor of Arts, Special Education"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BASPEE",
+          "title": "Bachelor of Arts, Special Education and Elementary Education (Dual Licensure)"
+        }
+      ],
+      "summary": "BASPEE appears to replace BASP with a broader dual-licensure structure that is meaningfully different and more informative for students."
+    },
+    {
+      "event_id": "PLE-008",
+      "transition_type": "family_restructure",
+      "confidence": "high",
+      "start_edition": "2020-01",
+      "end_edition": "2020-02",
+      "from_programs": [
+        {
+          "program_code": "BSAC",
+          "title": "Bachelor of Science, Accounting"
+        },
+        {
+          "program_code": "BSBUHCM",
+          "title": "Bachelor of Science, Business - Healthcare Management"
+        },
+        {
+          "program_code": "BSBUHR",
+          "title": "Bachelor of Science, Business - Human Resource Management"
+        },
+        {
+          "program_code": "BSBUITM",
+          "title": "Bachelor of Science, Business - Information Technology Management"
+        },
+        {
+          "program_code": "BSMG",
+          "title": "Bachelor of Science, Business Management"
+        },
+        {
+          "program_code": "BSMK",
+          "title": "Bachelor of Science, Marketing Management"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSBAAC",
+          "title": "Bachelor of Science Business Administration Accounting"
+        },
+        {
+          "program_code": "BSBAHC",
+          "title": "Bachelor of Science Business Administration Healthcare Management"
+        },
+        {
+          "program_code": "BSBAHR",
+          "title": "Bachelor of Science Business Administration Human Resource Management"
+        },
+        {
+          "program_code": "BSBAIT",
+          "title": "Bachelor of Science Business Administration Information Technology Management"
+        },
+        {
+          "program_code": "BSBAMGA",
+          "title": "Bachelor of Science Business Administration Management"
+        },
+        {
+          "program_code": "BSBAMGB",
+          "title": "Bachelor of Science Business Administration Management"
+        },
+        {
+          "program_code": "BSBAMK",
+          "title": "Bachelor of Science Business Administration Marketing"
+        }
+      ],
+      "summary": "Multiple business bachelor’s programs appear to be migrated into a unified BS Business Administration namespace while preserving their underlying student-facing disciplines."
+    },
+    {
+      "event_id": "PLE-009",
+      "transition_type": "successor",
+      "confidence": "high",
+      "start_edition": "2020-03",
+      "end_edition": "2020-04",
+      "from_programs": [
+        {
+          "program_code": "BSCLSA",
+          "title": "Bachelor of Science, Cloud and Systems Administration"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSCC",
+          "title": "Bachelor of Science, Cloud Computing"
+        }
+      ],
+      "summary": "BSCC appears to be the meaningful successor to BSCLSA, reframing the same general technical domain around cloud computing."
+    },
+    {
+      "event_id": "PLE-010",
+      "transition_type": "split",
+      "confidence": "high",
+      "start_edition": "2022-04",
+      "end_edition": "2022-06",
+      "from_programs": [
+        {
+          "program_code": "BSCC",
+          "title": "Bachelor of Science, Cloud Computing"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSCCMCL",
+          "title": "Bachelor of Science, Cloud Computing"
+        },
+        {
+          "program_code": "BSCCAWS",
+          "title": "Bachelor of Science, Cloud Computing - Amazon Web Services track"
+        },
+        {
+          "program_code": "BSCCAZR",
+          "title": "Bachelor of Science, Cloud Computing - Microsoft Azure track"
+        }
+      ],
+      "summary": "The general Cloud Computing program appears to evolve into a family consisting of a core cloud program plus AWS and Azure specialization tracks."
+    },
+    {
+      "event_id": "PLE-011",
+      "transition_type": "split",
+      "confidence": "high",
+      "start_edition": "2022-07",
+      "end_edition": "2022-08",
+      "from_programs": [
+        {
+          "program_code": "BSNOS",
+          "title": "Bachelor of Science, Network Operations and Security"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSNES",
+          "title": "Bachelor of Science, Network Engineering and Security"
+        },
+        {
+          "program_code": "BSNES_C",
+          "title": "Bachelor of Science, Network Engineering and Security Cisco Track"
+        }
+      ],
+      "summary": "BSNOS appears to be restructured into a newer Network Engineering and Security family with both a general path and a Cisco-focused track."
+    },
+    {
+      "event_id": "PLE-012",
+      "transition_type": "successor",
+      "confidence": "high",
+      "start_edition": "2022-11",
+      "end_edition": "2022-12",
+      "from_programs": [
+        {
+          "program_code": "BSHSC",
+          "title": "Bachelor of Science, Health Services Coordination"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSHHS",
+          "title": "Bachelor of Science, Health and Human Services"
+        }
+      ],
+      "summary": "BSHHS appears to be the meaningful successor to BSHSC, broadening the health-services framing into a Health and Human Services identity."
+    },
+    {
+      "event_id": "PLE-013",
+      "transition_type": "successor",
+      "confidence": "high",
+      "start_edition": "2022-12",
+      "end_edition": "2023-01",
+      "from_programs": [
+        {
+          "program_code": "BSITSW",
+          "title": "Bachelor of Science, Software Development"
+        },
+        {
+          "program_code": "BSITSWC",
+          "title": "Bachelor of Science, Software Development"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSSWE",
+          "title": "Bachelor of Science, Software Engineering"
+        },
+        {
+          "program_code": "BSSWE_C",
+          "title": "Bachelor of Science, Software Engineering"
+        }
+      ],
+      "summary": "The Software Development programs appear to be replaced by the newer Software Engineering programs, representing a major student-meaningful evolution of the software degree family."
+    },
+    {
+      "event_id": "PLE-014",
+      "transition_type": "successor",
+      "confidence": "high",
+      "start_edition": "2023-07",
+      "end_edition": "2023-08",
+      "from_programs": [
+        {
+          "program_code": "BSDMDA",
+          "title": "Bachelor of Science, Data Management/Data Analytics"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSDA",
+          "title": "Bachelor of Science, Data Analytics"
+        }
+      ],
+      "summary": "BSDA appears to be the direct successor to BSDMDA, preserving the analytics pathway under a cleaner and more modern title."
+    },
+    {
+      "event_id": "PLE-015",
+      "transition_type": "successor",
+      "confidence": "high",
+      "start_edition": "2023-07",
+      "end_edition": "2023-08",
+      "from_programs": [
+        {
+          "program_code": "BSBAHC",
+          "title": "Bachelor of Science Business Administration Healthcare Management"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSHA",
+          "title": "Bachelor of Science, Healthcare Administration"
+        }
+      ],
+      "summary": "BSHA appears to be the successor to BSBAHC, moving the program from a business-administration framing to a more direct healthcare administration identity."
+    },
+    {
+      "event_id": "PLE-016",
+      "transition_type": "split",
+      "confidence": "high",
+      "start_edition": "2024-05",
+      "end_edition": "2024-06",
+      "from_programs": [
+        {
+          "program_code": "MSDA",
+          "title": "Master of Science, Data Analytics"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "MSDADE",
+          "title": "Master of Science, Data Analytics - Data Engineering"
+        },
+        {
+          "program_code": "MSDADPE",
+          "title": "Master of Science, Data Analytics - Decision Process Engineering"
+        },
+        {
+          "program_code": "MSDADS",
+          "title": "Master of Science, Data Analytics - Data Science"
+        }
+      ],
+      "summary": "The general MSDA program appears to split into specialized graduate analytics tracks in data engineering, decision process engineering, and data science."
+    },
+    {
+      "event_id": "PLE-017",
+      "transition_type": "split",
+      "confidence": "high",
+      "start_edition": "2024-09",
+      "end_edition": "2024-10",
+      "from_programs": [
+        {
+          "program_code": "MACC",
+          "title": "Master of Science, Accounting"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "MACCA",
+          "title": "Master of Science in Accounting, Auditing Specialization"
+        },
+        {
+          "program_code": "MACCF",
+          "title": "Master of Science in Accounting, Financial Reporting Specialization"
+        },
+        {
+          "program_code": "MACCM",
+          "title": "Master of Science in Accounting, Management Accounting Specialization"
+        },
+        {
+          "program_code": "MACCT",
+          "title": "Master of Science in Accounting, Taxation Specialization"
+        }
+      ],
+      "summary": "The general accounting master’s program appears to split into four specialization tracks, a highly student-meaningful expansion of the program family."
+    },
+    {
+      "event_id": "PLE-018",
+      "transition_type": "successor",
+      "confidence": "high",
+      "start_edition": "2024-10",
+      "end_edition": "2024-11",
+      "from_programs": [
+        {
+          "program_code": "BSBAMK",
+          "title": "Bachelor of Science Business Administration Marketing"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSMKT",
+          "title": "Bachelor of Science, Marketing"
+        }
+      ],
+      "summary": "BSMKT appears to be the student-facing successor to BSBAMK, simplifying the marketing degree out of the BSBA naming framework."
+    },
+    {
+      "event_id": "PLE-019",
+      "transition_type": "family_restructure",
+      "confidence": "high",
+      "start_edition": "2024-12",
+      "end_edition": "2025-01",
+      "from_programs": [
+        {
+          "program_code": "BSBAAC",
+          "title": "Bachelor of Science Business Administration Accounting"
+        },
+        {
+          "program_code": "BSBAHR",
+          "title": "Bachelor of Science Business Administration Human Resource Management"
+        },
+        {
+          "program_code": "BSBAIT",
+          "title": "Bachelor of Science Business Administration Information Technology Management"
+        },
+        {
+          "program_code": "BSBAMGC",
+          "title": "Bachelor of Science Business Administration, Management"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSACC",
+          "title": "Bachelor of Science, Accounting"
+        },
+        {
+          "program_code": "BSHR",
+          "title": "Bachelor of Science, Human Resource Management"
+        },
+        {
+          "program_code": "BSITM",
+          "title": "Bachelor of Science, Information Technology Management"
+        },
+        {
+          "program_code": "BSMGT",
+          "title": "Bachelor of Science, Business Management"
+        }
+      ],
+      "summary": "Several business programs appear to migrate out of the BSBA namespace into direct-discipline degree titles while preserving the same core student-facing fields."
+    },
+    {
+      "event_id": "PLE-020",
+      "transition_type": "split",
+      "confidence": "high",
+      "start_edition": "2025-01",
+      "end_edition": "2025-02",
+      "from_programs": [
+        {
+          "program_code": "MATSES",
+          "title": "Master of Arts in Teaching, Science Education (Secondary)"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "MATSESB",
+          "title": "Master of Arts in Teaching, Science Education (Secondary Biology)"
+        },
+        {
+          "program_code": "MATSESC",
+          "title": "Master of Arts in Teaching, Science Education (Secondary Chemistry)"
+        },
+        {
+          "program_code": "MATSESE",
+          "title": "Master of Arts in Teaching, Science Education (Secondary Earth Science)"
+        },
+        {
+          "program_code": "MATSESP",
+          "title": "Master of Arts in Teaching, Science Education (Secondary Physics)"
+        }
+      ],
+      "summary": "The secondary science MAT program appears to split into subject-specific biology, chemistry, earth science, and physics teaching tracks."
+    },
+    {
+      "event_id": "PLE-021",
+      "transition_type": "family_restructure",
+      "confidence": "high",
+      "start_edition": "2025-07",
+      "end_edition": "2025-08",
+      "from_programs": [
+        {
+          "program_code": "BSCCAWS",
+          "title": "Bachelor of Science, Cloud Computing - Amazon Web Services track"
+        },
+        {
+          "program_code": "BSCCAZR",
+          "title": "Bachelor of Science, Cloud Computing - Microsoft Azure track"
+        },
+        {
+          "program_code": "BSCCMCL",
+          "title": "Bachelor of Science, Cloud Computing"
+        },
+        {
+          "program_code": "BSNES",
+          "title": "Bachelor of Science, Network Engineering and Security"
+        },
+        {
+          "program_code": "BSNES_C",
+          "title": "Bachelor of Science, Network Engineering and Security Cisco Track"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSCNE",
+          "title": "Bachelor of Science, Cloud and Network Engineering"
+        },
+        {
+          "program_code": "BSCNEAWS",
+          "title": "Bachelor of Science, Cloud and Network Engineering - Amazon Web Services"
+        },
+        {
+          "program_code": "BSCNEAZR",
+          "title": "Bachelor of Science, Cloud and Network Engineering - Microsoft Azure"
+        },
+        {
+          "program_code": "BSCNECIS",
+          "title": "Bachelor of Science, Cloud and Network Engineering - Cisco"
+        }
+      ],
+      "summary": "The cloud computing and network engineering/security families appear to be merged and reorganized into a unified Cloud and Network Engineering family with retained provider-specific specializations."
+    },
+    {
+      "event_id": "PLE-022",
+      "transition_type": "split",
+      "confidence": "high",
+      "start_edition": "2026-01",
+      "end_edition": "2026-02",
+      "from_programs": [
+        {
+          "program_code": "MSITM",
+          "title": "Master of Science, Information Technology Management"
+        },
+        {
+          "program_code": "MSITMUG",
+          "title": "Bachelor of Science, Information Technology (BSIT to MSITM)"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "MSIT",
+          "title": "Master of Science, Information Technology"
+        },
+        {
+          "program_code": "MSITPM",
+          "title": "Master of Science, Information Technology - Product Management"
+        },
+        {
+          "program_code": "MSITUG",
+          "title": "Bachelor of Science, Information Technology (BSIT to MSIT)"
+        }
+      ],
+      "summary": "The MSITM family appears to be restructured into a broader MSIT family that includes both a general IT master’s path and a Product Management specialization, along with a renamed BSIT-to-master’s pathway."
+    },
+    {
+      "event_id": "PLE-023",
+      "transition_type": "successor",
+      "confidence": "moderate",
+      "start_edition": "2023-03",
+      "end_edition": "2023-04",
+      "from_programs": [
+        {
+          "program_code": "MHL",
+          "title": "Master of Health Leadership"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "MHA",
+          "title": "Master of Healthcare Administration"
+        }
+      ],
+      "summary": "MHA may be the student-meaningful successor to MHL, but this should be confirmed with candidate-level overlap and relationship evidence."
+    },
+    {
+      "event_id": "PLE-024",
+      "transition_type": "family_restructure",
+      "confidence": "moderate",
+      "start_edition": "2024-07",
+      "end_edition": "2024-09",
+      "from_programs": [
+        {
+          "program_code": "BAELED",
+          "title": "Bachelor of Arts, Elementary Education"
+        },
+        {
+          "program_code": "BASPEE",
+          "title": "Bachelor of Arts, Special Education and Elementary Education (Dual Licensure)"
+        },
+        {
+          "program_code": "BASPMM",
+          "title": "Bachelor of Arts, Special Education Mild to Moderate"
+        },
+        {
+          "program_code": "BSMEMG",
+          "title": "Bachelor of Science, Mathematics Education (Middle Grades)"
+        },
+        {
+          "program_code": "BSMES",
+          "title": "Bachelor of Science, Mathematics Education (Secondary)"
+        },
+        {
+          "program_code": "BSSEMG",
+          "title": "Bachelor of Science, Science Education (Middle Grades)"
+        },
+        {
+          "program_code": "BSSESB",
+          "title": "Bachelor of Science, Science Education (Secondary Biological Science)"
+        },
+        {
+          "program_code": "BSSESC",
+          "title": "Bachelor of Science, Science Education (Secondary Chemistry)"
+        },
+        {
+          "program_code": "BSSESE",
+          "title": "Bachelor of Science, Science Education (Secondary Earth Science)"
+        },
+        {
+          "program_code": "BSSESP",
+          "title": "Bachelor of Science, Science Education (Secondary Physics)"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BAESELED",
+          "title": "Bachelor of Arts, Educational Studies in Elementary Education"
+        },
+        {
+          "program_code": "BAESSPEE",
+          "title": "Bachelor of Arts, Educational Studies in Special and Elementary Education"
+        },
+        {
+          "program_code": "BAESSPMM",
+          "title": "Bachelor of Arts, Educational Studies in Mild to Moderate Exceptionalities Special Education"
+        },
+        {
+          "program_code": "BAESMEMG",
+          "title": "Bachelor of Arts, Educational Studies in Middle Grades Mathematics Education"
+        },
+        {
+          "program_code": "BAESMES",
+          "title": "Bachelor of Arts, Educational Studies in Secondary Mathematics Education"
+        },
+        {
+          "program_code": "BAESSEMG",
+          "title": "Bachelor of Arts, Educational Studies in Middle Grades Science Education"
+        },
+        {
+          "program_code": "BAESSESB",
+          "title": "Bachelor of Arts, Educational Studies in Secondary Biological Science Education"
+        },
+        {
+          "program_code": "BAESSESC",
+          "title": "Bachelor of Arts, Educational Studies in Secondary Chemistry Science Education"
+        },
+        {
+          "program_code": "BAESSESE",
+          "title": "Bachelor of Arts, Educational Studies in Secondary Earth Science Education"
+        },
+        {
+          "program_code": "BAESSESP",
+          "title": "Bachelor of Arts, Educational Studies in Secondary Physics Science Education"
+        }
+      ],
+      "summary": "A large education-family migration into an Educational Studies namespace appears likely, but exact one-to-one lineage should be confirmed from candidate-level evidence."
+    },
+    {
+      "event_id": "PLE-025",
+      "transition_type": "merge",
+      "confidence": "moderate",
+      "start_edition": "2022-12",
+      "end_edition": "2023-01",
+      "from_programs": [
+        {
+          "program_code": "BSRN",
+          "title": "Bachelor of Science, Nursing"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSNPLTR",
+          "title": "Bachelor of Science, Nursing - Prelicensure (Nursing)"
+        },
+        {
+          "program_code": "BSPNTR",
+          "title": "Bachelor of Science, Nursing - Prelicensure (Pre-Nursing)"
+        }
+      ],
+      "summary": "BSRN may have been restructured into a two-stage prelicensure nursing pathway, but this needs candidate-level evidence before being treated as a confirmed lineage event."
+    },
+    {
+      "event_id": "PLE-026",
+      "transition_type": "successor",
+      "confidence": "moderate",
+      "start_edition": "2025-04",
+      "end_edition": "2025-05",
+      "from_programs": [
+        {
+          "program_code": "MBAHM",
+          "title": "MBA, Healthcare Management"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "MBAHA",
+          "title": "Master of Business Administration, Healthcare Administration"
+        }
+      ],
+      "summary": "MBAHA may be the successor to MBAHM, but the boundary evidence alone is not enough to distinguish a meaningful lineage event from a mostly nomenclature-level update."
+    },
+    {
+      "event_id": "PLE-027",
+      "transition_type": "namespace_migration",
+      "confidence": "moderate",
+      "start_edition": "2022-04",
+      "end_edition": "2022-05",
+      "from_programs": [
+        {
+          "program_code": "BSCC",
+          "title": "Bachelor of Science, Cloud Computing"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "BSCCMCL",
+          "title": "Bachelor of Science, Cloud Computing"
+        }
+      ],
+      "summary": "BSCC to BSCCMCL may represent a code or namespace migration preceding the later cloud-track expansion, but it is less clearly student-meaningful on its own."
+    },
+    {
+      "event_id": "PLE-028",
+      "transition_type": "family_restructure",
+      "confidence": "moderate",
+      "start_edition": "2022-10",
+      "end_edition": "2023-11",
+      "from_programs": [
+        {
+          "program_code": "MEDID",
+          "title": "Master of Education, Instructional Design"
+        },
+        {
+          "program_code": "MEDLT",
+          "title": "Master of Education, Learning and Technology"
+        }
+      ],
+      "to_programs": [
+        {
+          "program_code": "MEDETID",
+          "title": "Master of Education, Education Technology and Instructional Design"
+        },
+        {
+          "program_code": "MEDETIDA",
+          "title": "Master of Education, Education Technology and Instructional Design"
+        },
+        {
+          "program_code": "MEDETIDK12",
+          "title": "Master of Education, Education Technology and Instructional Design"
+        }
+      ],
+      "summary": "The instructional design and learning technology programs may have been consolidated into a new Education Technology and Instructional Design family, but candidate-level mapping is needed to confirm this."
+    }
+  ]
+}
