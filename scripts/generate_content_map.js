@@ -120,7 +120,7 @@ blank();
 item("Brand / Logo", "WGU Atlas", line("src/components/layout/Nav.tsx", findLine(navSrc, "WGU Atlas")));
 blank();
 console.log("  Primary Links (student-facing):");
-console.log("    Home  |  Courses  |  Programs  |  Schools");
+console.log("    Home  |  Courses  |  Programs  |  Schools  |  Compare");
 console.log(`  ${line("src/components/layout/Nav.tsx", findLine(navSrc, "primaryLinks"))}`);
 blank();
 console.log("  Secondary Links (archive/meta):");
@@ -709,6 +709,7 @@ console.log("  /                   WGU Atlas                      (from layout.t
 console.log("  /courses            Courses                        Search and browse WGU courses — active and retired, with catalog history for each.");
 console.log("  /programs           Programs                       Browse all 196 WGU degree programs — active and deprecated — with version history and school lineage.");
 console.log("  /schools            Schools                        Browse WGU's four schools — Business, Health, Technology, and Education — with program and course listings.");
+console.log("  /compare            Compare Programs               Compare WGU degree program course rosters side by side. See shared courses, track-specific courses, and overlap metrics.");
 console.log("  /timeline           Timeline                       Major WGU catalog events from 2017 to 2026 — school reorganizations, mass course changes, program additions, and more.");
 console.log("  /methods            Methods                        How WGU Atlas data was collected, validated, and interpreted — archive coverage, parser eras, and trust caveats.");
 console.log("  /data               Data                           Download WGU Atlas canonical datasets — course history, named events, title variant classification.");

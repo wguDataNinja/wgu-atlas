@@ -1,5 +1,5 @@
 WGU ATLAS — FULL SITE CONTENT MAP
-Generated: 2026-03-16T00:57:45.299Z
+Generated: 2026-03-16T17:11:24.672Z
 Purpose: Proofreading reference. Shows all visible text with source locations.
 
 ======================================================================
@@ -12,15 +12,15 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   [source: src/components/layout/Nav.tsx]
 
   Brand / Logo: WGU Atlas
-    [source: src/components/layout/Nav.tsx:29]
+    [source: src/components/layout/Nav.tsx:30]
 
   Primary Links (student-facing):
-    Home  |  Courses  |  Programs  |  Schools
+    Home  |  Courses  |  Programs  |  Schools  |  Compare
     [source: src/components/layout/Nav.tsx:6]
 
   Secondary Links (archive/meta):
     Timeline  |  Methods  |  Data
-    [source: src/components/layout/Nav.tsx:13]
+    [source: src/components/layout/Nav.tsx:14]
 
 ----------------------------------------------------------------------
   Footer
@@ -267,7 +267,7 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
 
   Search label: Search
   Search placeholder: Program name or code…
-    [source: src/components/programs/ProgramExplorer.tsx:37]
+    [source: src/components/programs/ProgramExplorer.tsx:44]
 
   Status label: Status
   Status options:
@@ -952,6 +952,7 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   /courses            Courses                        Search and browse WGU courses — active and retired, with catalog history for each.
   /programs           Programs                       Browse all 196 WGU degree programs — active and deprecated — with version history and school lineage.
   /schools            Schools                        Browse WGU's four schools — Business, Health, Technology, and Education — with program and course listings.
+  /compare            Compare Programs               Compare WGU degree program course rosters side by side. See shared courses, track-specific courses, and overlap metrics.
   /timeline           Timeline                       Major WGU catalog events from 2017 to 2026 — school reorganizations, mass course changes, program additions, and more.
   /methods            Methods                        How WGU Atlas data was collected, validated, and interpreted — archive coverage, parser eras, and trust caveats.
   /data               Data                           Download WGU Atlas canonical datasets — course history, named events, title variant classification.
