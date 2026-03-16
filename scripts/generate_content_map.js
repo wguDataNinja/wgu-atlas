@@ -696,7 +696,7 @@ console.log(`
     degree heading text, not by program code. Minor wording variations across
     editions may exist.
 
-  Full field definitions are in docs/README_INTERNAL.md in the GitHub repository.`);
+  Full field definitions are in docs/ATLAS_SPEC.md in the GitHub repository.`);
 console.log(`\n  ${line("src/app/data/page.tsx", findLine(dataSrc, "Schema Notes"))}`);
 
 // ══════════════════════════════════════════════════════════════════════════════

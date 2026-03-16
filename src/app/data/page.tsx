@@ -171,7 +171,7 @@ export default function DataPage() {
           </p>
           <p className="text-slate-400 text-xs mt-4">
             Full field definitions are in{" "}
-            <code className="bg-slate-100 px-1 rounded">docs/README_INTERNAL.md</code>{" "}
+            <code className="bg-slate-100 px-1 rounded">docs/ATLAS_SPEC.md</code>{" "}
             in the GitHub repository.
           </p>
         </div>

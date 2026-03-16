@@ -1,5 +1,5 @@
 WGU ATLAS — FULL SITE CONTENT MAP
-Generated: 2026-03-15T18:00:35.245Z
+Generated: 2026-03-16T00:57:45.299Z
 Purpose: Proofreading reference. Shows all visible text with source locations.
 
 ======================================================================
@@ -938,7 +938,7 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
     degree heading text, not by program code. Minor wording variations across
     editions may exist.
 
-  Full field definitions are in docs/README_INTERNAL.md in the GitHub repository.
+  Full field definitions are in docs/ATLAS_SPEC.md in the GitHub repository.
 
     [source: src/app/data/page.tsx:147]
 
