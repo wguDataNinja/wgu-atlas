@@ -153,10 +153,11 @@ export function getProgramEnrichedByCode(code: string): ProgramEnriched | null {
 }
 
 // ---------------------------------------------------------------------------
-// Schools — static data derived from README_INTERNAL.md §12 (College name history)
+// Schools — static lineage constants derived from archived migration notes
+// and canonized in docs/ATLAS_SPEC.md.
 // ---------------------------------------------------------------------------
 
-// School lineage extracted from README_INTERNAL.md §12
+// School lineage extracted from prior trusted documentation.
 // program_count at lineage entry = approximate active programs at that era
 const SCHOOL_RECORDS: SchoolRecord[] = [
   {
@@ -207,6 +208,19 @@ export function getSchools(): SchoolRecord[] {
 
 export function getSchoolBySlug(slug: string): SchoolRecord | null {
   return SCHOOL_RECORDS.find((s) => s.slug === slug) ?? null;
+}
+
+/**
+ * Look up a school slug from any historical or current school name.
+ * Matches against all entries in SchoolRecord.historical_names (which includes
+ * the current name). Replaces ad-hoc schoolNormMap derivations in route files.
+ * Returns null if the name is not recognized.
+ */
+export function getSchoolSlugByName(name: string): string | null {
+  for (const school of SCHOOL_RECORDS) {
+    if (school.historical_names.includes(name)) return school.slug;
+  }
+  return null;
 }
 
 /** Programs belonging to a given school (by canonical_key, current school field). */

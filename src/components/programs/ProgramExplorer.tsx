@@ -4,7 +4,14 @@ import { useState, useMemo } from "react";
 import Link from "next/link";
 import type { ProgramRecord } from "@/lib/types";
 
-const SCHOOLS = ["Business", "Health Professions", "Technology", "Education"];
+// Filter values are substrings matched against program.school.
+// "Health Professions" was incorrect — it does not match "Leavitt School of Health".
+const SCHOOL_FILTERS: { label: string; value: string }[] = [
+  { label: "Business", value: "Business" },
+  { label: "Health", value: "Health" },
+  { label: "Technology", value: "Technology" },
+  { label: "Education", value: "Education" },
+];
 
 export default function ProgramExplorer({ programs }: { programs: ProgramRecord[] }) {
   const [query, setQuery] = useState("");
@@ -62,8 +69,8 @@ export default function ProgramExplorer({ programs }: { programs: ProgramRecord[
             className="border border-slate-300 rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             <option value="">All schools</option>
-            {SCHOOLS.map((s) => (
-              <option key={s} value={s}>{s}</option>
+            {SCHOOL_FILTERS.map((s) => (
+              <option key={s.value} value={s.value}>{s.label}</option>
             ))}
           </select>
         </div>

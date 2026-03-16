@@ -4,13 +4,14 @@ import Link from "next/link";
 import {
   getSchools,
   getSchoolBySlug,
+  getSchoolSlugByName,
   getProgramsBySchool,
   getCoursesBySchool,
   getOfficialResourcePlacementsForSurface,
   getHomepageSummary,
   getPrograms,
 } from "@/lib/data";
-import type { ProgramRecord } from "@/lib/types";
+import { groupProgramsByLevel } from "@/lib/programs";
 import RelevantResources from "@/components/resources/RelevantResources";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -41,29 +42,19 @@ export default async function SchoolPage({ params }: Props) {
   const hasRelevantResources =
     getOfficialResourcePlacementsForSurface("school_detail", school.slug).length > 0;
 
-  // School-filtered activity modules
-  // Normalize school names: some homepage_summary entries use historical school names
-  const schoolNormMap: Record<string, string> = {
-    "Teachers College": "education",
-    "School of Education": "education",
-    "College of Business": "business",
-    "School of Business": "business",
-    "College of Health Professions": "health",
-    "Leavitt School of Health": "health",
-    "College of Information Technology": "technology",
-    "School of Technology": "technology",
-  };
-
+  // School-filtered activity modules.
+  // homepage_summary entries may carry historical school names; getSchoolSlugByName
+  // resolves any historical or current name to a slug via SchoolRecord.historical_names.
   const recentVersionChanges = summary.recent_version_changes
-    .filter((v) => schoolNormMap[v.school] === slug)
+    .filter((v) => getSchoolSlugByName(v.school) === slug)
     .slice(0, 8);
 
   const newestPrograms = summary.newest_programs
-    .filter((p) => schoolNormMap[p.school] === slug)
+    .filter((p) => getSchoolSlugByName(p.school) === slug)
     .slice(0, 8);
 
   const recentCourseAdditions = summary.recent_course_additions
-    .filter((c) => schoolNormMap[c.school] === slug)
+    .filter((c) => getSchoolSlugByName(c.school) === slug)
     .slice(0, 10);
 
   // Group programs by degree level for organized display
@@ -479,47 +470,3 @@ function cleanHeading(heading: string): string {
   return cleaned.length > 65 ? cleaned.slice(0, 65) + "…" : cleaned;
 }
 
-/** Group programs by degree level prefix. */
-function groupProgramsByLevel(
-  programs: ProgramRecord[]
-): Record<string, ProgramRecord[]> {
-  const groups: Record<string, ProgramRecord[]> = {};
-
-  for (const p of programs) {
-    const name = p.canonical_name.toLowerCase();
-    let level = "Other";
-    if (name.startsWith("doctor") || name.startsWith("ph.d")) level = "Doctoral";
-    else if (name.startsWith("master") || name.startsWith("m.b.a") || name.startsWith("mba"))
-      level = "Master's";
-    else if (name.startsWith("bachelor")) level = "Bachelor's";
-    else if (name.startsWith("associate")) level = "Associate";
-    else if (name.startsWith("endorsement") || name.startsWith("graduate certificate"))
-      level = "Certificates & Endorsements";
-    else level = "Other";
-
-    if (!groups[level]) groups[level] = [];
-    groups[level].push(p);
-  }
-
-  // Sort within groups by name
-  for (const g of Object.values(groups)) {
-    g.sort((a, b) => a.canonical_name.localeCompare(b.canonical_name));
-  }
-
-  // Return in logical order
-  const levelOrder = [
-    "Doctoral",
-    "Master's",
-    "Bachelor's",
-    "Associate",
-    "Certificates & Endorsements",
-    "Other",
-  ];
-  const ordered: Record<string, ProgramRecord[]> = {};
-  for (const lv of levelOrder) {
-    if (groups[lv] && groups[lv].length > 0) {
-      ordered[lv] = groups[lv];
-    }
-  }
-  return ordered;
-}

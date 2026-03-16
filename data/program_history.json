@@ -24,7 +24,9 @@
             "C181",
             "C269",
             "C457"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -102,7 +104,9 @@
             "D267",
             "D523",
             "D525"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -129,7 +133,9 @@
             "D151",
             "D533",
             "D535"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -156,7 +162,9 @@
             "D151",
             "D533",
             "D535"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -183,7 +191,9 @@
             "D151",
             "D533",
             "D535"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -210,7 +220,9 @@
             "D151",
             "D533",
             "D535"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -237,7 +249,9 @@
             "D151",
             "D533",
             "D535"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -264,7 +278,9 @@
             "D151",
             "D533",
             "D535"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -291,7 +307,9 @@
             "D151",
             "D533",
             "D535"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -326,7 +344,9 @@
             "D152",
             "D523",
             "D525"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         },
         {
           "predecessor": "BASPEE",
@@ -347,7 +367,9 @@
             "D151",
             "D523",
             "D531"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -373,7 +395,9 @@
             "D151",
             "D529",
             "D531"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -412,7 +436,9 @@
             "FCC1",
             "FJC1",
             "FLC1"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -454,7 +480,9 @@
             "C464",
             "D075",
             "D100"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -523,7 +551,9 @@
             "FVC1",
             "UFC1",
             "VYC1"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         },
         {
           "predecessor": "BSMG",
@@ -585,7 +615,9 @@
             "UFC1",
             "VYC1",
             "VZT1"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -643,7 +675,9 @@
             "FVC1",
             "UFC1",
             "VYC1"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -702,7 +736,9 @@
             "UFC1",
             "VYC1",
             "VZT1"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -761,7 +797,9 @@
             "FVC1",
             "UFC1",
             "VYC1"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -816,7 +854,9 @@
             "FVC1",
             "UFC1",
             "VYC1"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -873,7 +913,9 @@
             "UFC1",
             "VYC1",
             "VZT1"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -927,7 +969,9 @@
             "FVC1",
             "UFC1",
             "VYC1"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -946,7 +990,9 @@
           "new_inherited_pct": 1.0,
           "jaccard_overlap": 1.0,
           "courses_added": [],
-          "courses_removed": []
+          "courses_removed": [],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -1032,7 +1078,9 @@
             "D086",
             "D087",
             "D088"
-          ]
+          ],
+          "importance": "medium",
+          "site_worthy": true
         }
       ]
     },
@@ -1118,7 +1166,9 @@
             "D086",
             "D087",
             "D088"
-          ]
+          ],
+          "importance": "medium",
+          "site_worthy": true
         }
       ]
     },
@@ -1204,7 +1254,9 @@
             "D086",
             "D087",
             "D088"
-          ]
+          ],
+          "importance": "medium",
+          "site_worthy": true
         },
         {
           "predecessor": "BSCC",
@@ -1285,7 +1337,9 @@
             "D086",
             "D087",
             "D088"
-          ]
+          ],
+          "importance": "medium",
+          "site_worthy": true
         }
       ]
     },
@@ -1318,7 +1372,9 @@
             "C179",
             "C268",
             "C456"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -1372,7 +1428,9 @@
             "D422",
             "LZT2",
             "MBT2"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -1427,7 +1485,9 @@
             "D372",
             "D411",
             "D427"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -1484,7 +1544,9 @@
             "D372",
             "D411",
             "D427"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         },
         {
           "predecessor": "BSCCMCL",
@@ -1536,7 +1598,9 @@
             "D372",
             "D411",
             "D427"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -1585,7 +1649,9 @@
             "D420",
             "D421",
             "D422"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -1669,7 +1735,9 @@
             "D194",
             "D195",
             "D309"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -1688,7 +1756,9 @@
           "new_inherited_pct": 1.0,
           "jaccard_overlap": 1.0,
           "courses_added": [],
-          "courses_removed": []
+          "courses_removed": [],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -1774,7 +1844,9 @@
             "D069",
             "D070",
             "D071"
-          ]
+          ],
+          "importance": "low",
+          "site_worthy": false
         }
       ]
     },
@@ -1801,7 +1873,9 @@
             "C720",
             "D100",
             "D361"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -1820,7 +1894,9 @@
           "new_inherited_pct": 1.0,
           "jaccard_overlap": 1.0,
           "courses_added": [],
-          "courses_removed": []
+          "courses_removed": [],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -1846,7 +1922,9 @@
           "courses_removed": [
             "C181",
             "C281"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -1869,7 +1947,9 @@
           ],
           "courses_removed": [
             "C281"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -1897,7 +1977,9 @@
             "D196",
             "D352",
             "D355"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -1922,7 +2004,9 @@
             "C721",
             "C957",
             "D077"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -2010,7 +2094,9 @@
             "C961",
             "C963",
             "D114"
-          ]
+          ],
+          "importance": "medium",
+          "site_worthy": true
         }
       ]
     },
@@ -2095,7 +2181,9 @@
             "C961",
             "C963",
             "D114"
-          ]
+          ],
+          "importance": "medium",
+          "site_worthy": true
         }
       ]
     },
@@ -2125,7 +2213,9 @@
             "C179",
             "C697",
             "C698"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -2201,7 +2291,9 @@
             "C820",
             "C825",
             "C826"
-          ]
+          ],
+          "importance": "medium",
+          "site_worthy": true
         }
       ]
     },
@@ -2275,7 +2367,9 @@
             "C820",
             "C825",
             "C826"
-          ]
+          ],
+          "importance": "medium",
+          "site_worthy": true
         }
       ]
     },
@@ -2306,7 +2400,9 @@
             "C463",
             "C896",
             "TSP1"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -2336,7 +2432,9 @@
             "C463",
             "C896",
             "TSP1"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -2368,7 +2466,9 @@
             "C896",
             "TSP1",
             "TUP1"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -2398,7 +2498,9 @@
             "C646",
             "C896",
             "TSP1"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -2427,7 +2529,9 @@
             "C288",
             "C896",
             "TSP1"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -2512,7 +2616,9 @@
             "C868",
             "C961",
             "D191"
-          ]
+          ],
+          "importance": "medium",
+          "site_worthy": true
         }
       ]
     },
@@ -2589,7 +2695,9 @@
             "C868",
             "C961",
             "D191"
-          ]
+          ],
+          "importance": "medium",
+          "site_worthy": true
         }
       ]
     },
@@ -2624,7 +2732,9 @@
             "C253",
             "C254",
             "D250"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -2658,7 +2768,9 @@
             "C243",
             "C253",
             "C254"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -2695,7 +2807,9 @@
             "C254",
             "D250",
             "D251"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -2732,7 +2846,9 @@
             "C254",
             "D250",
             "D251"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -2756,7 +2872,9 @@
           ],
           "courses_removed": [
             "EXP2"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -2779,7 +2897,9 @@
           ],
           "courses_removed": [
             "EXP2"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -2806,7 +2926,9 @@
             "C645",
             "TSC2",
             "TSP2"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -2833,7 +2955,9 @@
             "C645",
             "TSC2",
             "TSP2"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -2863,7 +2987,9 @@
             "TSP2",
             "TUC2",
             "TUP2"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -2891,7 +3017,9 @@
             "C647",
             "TSC2",
             "TSP2"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -2918,7 +3046,9 @@
             "C645",
             "TSC2",
             "TSP2"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -2941,7 +3071,9 @@
           ],
           "courses_removed": [
             "C552"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -2964,7 +3096,9 @@
           ],
           "courses_removed": [
             "C552"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -2988,7 +3122,9 @@
           ],
           "courses_removed": [
             "C552"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -3011,7 +3147,9 @@
           ],
           "courses_removed": [
             "C552"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -3034,7 +3172,9 @@
           ],
           "courses_removed": [
             "C552"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -3093,7 +3233,9 @@
             "D307",
             "D534",
             "D536"
-          ]
+          ],
+          "importance": "medium",
+          "site_worthy": true
         }
       ]
     },
@@ -3152,7 +3294,9 @@
             "D307",
             "D534",
             "D536"
-          ]
+          ],
+          "importance": "medium",
+          "site_worthy": true
         }
       ]
     },
@@ -3211,7 +3355,9 @@
             "D307",
             "D534",
             "D536"
-          ]
+          ],
+          "importance": "medium",
+          "site_worthy": true
         }
       ]
     },
@@ -3270,7 +3416,9 @@
             "D307",
             "D534",
             "D536"
-          ]
+          ],
+          "importance": "medium",
+          "site_worthy": true
         }
       ]
     },
@@ -3289,7 +3437,9 @@
           "new_inherited_pct": 1.0,
           "jaccard_overlap": 1.0,
           "courses_added": [],
-          "courses_removed": []
+          "courses_removed": [],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -3335,7 +3485,9 @@
             "JRT2",
             "JST2",
             "MEC1"
-          ]
+          ],
+          "importance": "low",
+          "site_worthy": false
         },
         {
           "predecessor": "MEDLT",
@@ -3375,7 +3527,9 @@
             "TAT2",
             "TDT1",
             "TET1"
-          ]
+          ],
+          "importance": "low",
+          "site_worthy": false
         }
       ]
     },
@@ -3419,7 +3573,9 @@
             "JRT2",
             "JST2",
             "MEC1"
-          ]
+          ],
+          "importance": "low",
+          "site_worthy": false
         }
       ]
     },
@@ -3463,7 +3619,9 @@
             "JRT2",
             "JST2",
             "MEC1"
-          ]
+          ],
+          "importance": "low",
+          "site_worthy": false
         }
       ]
     },
@@ -3508,7 +3666,9 @@
             "C989",
             "C990",
             "C991"
-          ]
+          ],
+          "importance": "low",
+          "site_worthy": false
         }
       ]
     },
@@ -3551,7 +3711,9 @@
             "D212",
             "D213",
             "D214"
-          ]
+          ],
+          "importance": "medium",
+          "site_worthy": true
         }
       ]
     },
@@ -3594,7 +3756,9 @@
             "D212",
             "D213",
             "D214"
-          ]
+          ],
+          "importance": "medium",
+          "site_worthy": true
         }
       ]
     },
@@ -3637,7 +3801,9 @@
             "D212",
             "D213",
             "D214"
-          ]
+          ],
+          "importance": "medium",
+          "site_worthy": true
         }
       ]
     },
@@ -3679,7 +3845,9 @@
             "C962",
             "LZT2",
             "MBT2"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -3720,7 +3888,9 @@
             "C962",
             "LZT2",
             "MBT2"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -3778,7 +3948,9 @@
             "D278",
             "D322",
             "D333"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     },
@@ -3801,7 +3973,9 @@
           ],
           "courses_removed": [
             "C552"
-          ]
+          ],
+          "importance": "high",
+          "site_worthy": true
         }
       ]
     }

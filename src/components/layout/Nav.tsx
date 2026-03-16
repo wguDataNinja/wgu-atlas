@@ -8,6 +8,7 @@ const primaryLinks = [
   { href: "/courses", label: "Courses" },
   { href: "/programs", label: "Programs" },
   { href: "/schools", label: "Schools" },
+  { href: "/compare", label: "Compare" },
 ];
 
 const secondaryLinks = [
