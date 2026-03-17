@@ -1,11 +1,8 @@
 import Link from "next/link";
-import { getHomepageSummary } from "@/lib/data";
 import HomeSearch from "@/components/home/HomeSearch";
 import SchoolCards from "@/components/home/SchoolCards";
-import Footer from "@/components/layout/Footer";
 
 export default function HomePage() {
-  const summary = getHomepageSummary();
 
   return (
     <>
@@ -43,7 +40,7 @@ export default function HomePage() {
       <section className="max-w-3xl mx-auto px-4 py-8">
         <div className="border border-slate-200 rounded-lg px-5 py-4 flex items-center justify-between gap-4">
           <div>
-            <p className="text-sm font-medium text-slate-800">Compare degrees</p>
+            <p className="text-sm font-medium text-slate-800">Compare Degrees</p>
             <p className="text-xs text-slate-500 mt-0.5">
               See how related WGU degrees differ — course rosters, shared
               courses, and track-specific requirements.
@@ -53,7 +50,7 @@ export default function HomePage() {
             href="/compare"
             className="shrink-0 text-sm text-blue-600 hover:text-blue-800 font-medium hover:underline"
           >
-            Compare degrees →
+            Compare Degrees →
           </Link>
         </div>
       </section>
@@ -68,7 +65,6 @@ export default function HomePage() {
         </p>
       </section>
 
-      <Footer dataDate={summary.data_date} />
     </>
   );
 }

@@ -2,28 +2,28 @@ import Link from "next/link";
 
 const SCHOOLS = [
   {
-    name: "Business",
+    name: "School of Business",
     slug: "business",
     color: "bg-blue-50 border-blue-200 hover:border-blue-400",
     description:
       "Bachelor's, master's, and MBA degrees in accounting, management, marketing, IT management, finance, and related fields.",
   },
   {
-    name: "Health Professions",
+    name: "Leavitt School of Health",
     slug: "health",
     color: "bg-green-50 border-green-200 hover:border-green-400",
     description:
       "Degrees in nursing, healthcare administration, public health, health informatics, and allied health disciplines.",
   },
   {
-    name: "Technology",
+    name: "School of Technology",
     slug: "technology",
     color: "bg-purple-50 border-purple-200 hover:border-purple-400",
     description:
       "Degrees in IT, cybersecurity, software engineering, data analytics, cloud computing, and computer science.",
   },
   {
-    name: "Education",
+    name: "School of Education",
     slug: "education",
     color: "bg-amber-50 border-amber-200 hover:border-amber-400",
     description:

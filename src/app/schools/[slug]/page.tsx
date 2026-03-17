@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!school) return { title: "School Not Found" };
   return {
     title: school.current_name,
-    description: `WGU ${school.current_name} — degrees, courses, and catalog history.`,
+    description: `WGU ${school.current_name} — degrees, courses, and recent changes.`,
   };
 }
 
@@ -102,9 +102,6 @@ export default async function SchoolPage({ params }: Props) {
         <h1 className="text-3xl font-bold text-slate-800">{school.current_name}</h1>
         <p className="text-slate-500 mt-1">
           {programs.length} current degrees · {courses.length} active courses
-        </p>
-        <p className="text-xs text-slate-400 mt-2">
-          Source: WGU public catalog · 2026-03 edition
         </p>
       </div>
 

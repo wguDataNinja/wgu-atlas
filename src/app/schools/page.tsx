@@ -25,9 +25,6 @@ export default function SchoolsPage() {
           WGU is organized into four schools. Each school page shows its current
           degrees and courses, school background, and recent changes.
         </p>
-        <p className="text-xs text-slate-400 mt-2">
-          Source: WGU public catalog archive · {new Date().getFullYear()}
-        </p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

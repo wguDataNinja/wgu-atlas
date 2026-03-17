@@ -16,7 +16,7 @@ export default function AboutPage() {
 
       <Section title="What is WGU Atlas?">
         <p>
-          WGU Atlas is an independent reference built from WGU&apos;s public academic catalog. It
+          WGU Atlas is an independent guide built from WGU&apos;s public academic catalog. It
           is not affiliated with, endorsed by, or operated by Western Governors University.
         </p>
         <p>
@@ -30,7 +30,7 @@ export default function AboutPage() {
         <ul className="list-disc list-inside space-y-1 text-slate-600">
           <li>Current degrees across WGU&apos;s four schools</li>
           <li>Course catalog with history going back to 2017</li>
-          <li>Degree comparisons for related programs (pilot set)</li>
+          <li>Degree comparisons for related degrees</li>
           <li>Retired degrees still visible for reference</li>
           <li>School background and earlier names over time</li>
         </ul>
@@ -38,9 +38,9 @@ export default function AboutPage() {
 
       <Section title="Source and independence">
         <p>
-          All data is derived from WGU&apos;s publicly available course catalog, scraped and
-          parsed from 108 catalog editions spanning January 2017 through March 2026. No
-          internal WGU systems or private data were accessed.
+          All data is derived from WGU&apos;s publicly available course catalog, covering 108
+          editions from January 2017 through March 2026. No internal WGU systems or private
+          data were accessed.
         </p>
         <p>
           Atlas is a community project. It is not a substitute for official WGU advising,

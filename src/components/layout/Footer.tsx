@@ -14,11 +14,11 @@ export default function Footer({ dataDate }: { dataDate?: string }) {
           </div>
           <div>
             <p className="font-semibold text-slate-700 mb-1">Data</p>
-            <p>Catalog archive: 2017-01 → 2026-03</p>
-            {dataDate && <p>Site data: {dataDate}</p>}
+            <p>Catalog coverage: 2017-01 → 2026-03</p>
+            {dataDate && <p>Data through: {dataDate}</p>}
             <p className="mt-1">
               <Link href="/methods" className="underline hover:text-slate-700">
-                Methods &amp; caveats
+                Methods
               </Link>
               {" · "}
               <Link href="/data" className="underline hover:text-slate-700">

@@ -63,7 +63,7 @@ export default function HomeSearch() {
         </svg>
         <input
           type="text"
-          placeholder="Search by course code or title…"
+          placeholder="Search degrees or courses…"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => results.length > 0 && setOpen(true)}
@@ -94,7 +94,7 @@ export default function HomeSearch() {
               <span className="text-sm text-slate-800 truncate">{entry.title}</span>
               {!entry.active && (
                 <span className="ml-auto text-xs text-slate-400 shrink-0">
-                  {entry.type === "program" ? "deprecated" : "retired"}
+                  retired
                 </span>
               )}
             </Link>

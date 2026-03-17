@@ -197,24 +197,11 @@ export default async function CourseDetailPage({ params }: Props) {
         )}
       </section>
 
-      {/* ── Catalog history (secondary section) ─────────────────────────── */}
+      {/* ── Catalog metadata ─────────────────────────────────────────────── */}
       <section className="mb-8">
-        <div className="flex items-center gap-2 mb-3">
-          <div className="w-1 h-5 bg-slate-300 rounded" />
-          <h2 className="text-base font-semibold text-slate-600">Catalog History</h2>
-          <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
-            Source: WGU public catalog archive
-          </span>
-        </div>
-
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          <StatCard label="First in catalog" value={course.first_seen_edition} />
-          <StatCard label="Last in catalog" value={course.last_seen_edition} />
-          <StatCard label="Editions present" value={String(course.edition_count)} />
-          <StatCard
-            label="Catalog presence"
-            value={STABILITY_LABELS[course.stability_class] ?? course.stability_class}
-          />
+          <StatCard label="First listed" value={course.first_seen_edition} />
+          <StatCard label="Status" value={isCurrent ? "Active" : "Retired"} />
         </div>
       </section>
 
@@ -291,7 +278,7 @@ export default async function CourseDetailPage({ params }: Props) {
       {/* Back */}
       <div className="border-t border-slate-100 pt-6">
         <Link href="/courses" className="text-sm text-blue-600 hover:underline">
-          ← Back to Course Explorer
+          ← Back to Courses
         </Link>
       </div>
     </div>

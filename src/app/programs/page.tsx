@@ -18,8 +18,7 @@ export default function ProgramsPage() {
       <div className="mb-6">
         <h1 className="text-3xl font-bold text-slate-800">Degrees</h1>
         <p className="text-slate-500 mt-1">
-          {programs.length} degrees tracked across the WGU catalog —{" "}
-          {activeCount} current, {retiredCount} retired.
+          {programs.length} WGU degrees — {activeCount} current, {retiredCount} retired.
         </p>
       </div>
       <Suspense>
