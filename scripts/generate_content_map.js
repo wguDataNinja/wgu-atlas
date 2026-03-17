@@ -70,12 +70,13 @@ function blank() {
 }
 
 // ──────────────────────────────────────────────────────────────────────────────
-// Load data files we'll sample
+// Load data files
 // ──────────────────────────────────────────────────────────────────────────────
 
 const homepageSummary = readJson("public/data/homepage_summary.json");
 const programs = readJson("public/data/programs.json");
 const events = readJson("public/data/events.json");
+const programEnriched = readJson("public/data/program_enriched.json");
 
 const activePrograms = programs.filter((p) => p.status === "ACTIVE");
 const retiredPrograms = programs.filter((p) => p.status === "RETIRED");
@@ -86,21 +87,27 @@ const otherEvents = events.filter((e) => !e.is_curated_major_event);
 // Read source files
 // ──────────────────────────────────────────────────────────────────────────────
 
-const navSrc = readFile("src/components/layout/Nav.tsx");
-const footerSrc = readFile("src/components/layout/Footer.tsx");
-const homeSrc = readFile("src/app/page.tsx");
-const coursesSrc = readFile("src/app/courses/page.tsx");
+const navSrc           = readFile("src/components/layout/Nav.tsx");
+const footerSrc        = readFile("src/components/layout/Footer.tsx");
+const layoutSrc        = readFile("src/app/layout.tsx");
+const homeSrc          = readFile("src/app/page.tsx");
+const schoolCardsSrc   = readFile("src/components/home/SchoolCards.tsx");
+const homeSearchSrc    = readFile("src/components/home/HomeSearch.tsx");
+const coursesSrc       = readFile("src/app/courses/page.tsx");
 const courseExplorerSrc = readFile("src/components/courses/CourseExplorer.tsx");
-const programsSrc = readFile("src/app/programs/page.tsx");
+const courseDetailSrc  = readFile("src/app/courses/[code]/page.tsx");
+const programsSrc      = readFile("src/app/programs/page.tsx");
 const programExplorerSrc = readFile("src/components/programs/ProgramExplorer.tsx");
 const programDetailSrc = readFile("src/app/programs/[code]/page.tsx");
-const schoolsSrc = readFile("src/app/schools/page.tsx");
-const schoolDetailSrc = readFile("src/app/schools/[slug]/page.tsx");
-const timelineSrc = readFile("src/app/timeline/page.tsx");
-const methodsSrc = readFile("src/app/methods/page.tsx");
-const dataSrc = readFile("src/app/data/page.tsx");
-const homeSearchSrc = readFile("src/components/home/HomeSearch.tsx");
-const courseDetailSrc = readFile("src/app/courses/[code]/page.tsx");
+const schoolsSrc       = readFile("src/app/schools/page.tsx");
+const schoolDetailSrc  = readFile("src/app/schools/[slug]/page.tsx");
+const compareSrc       = readFile("src/app/compare/page.tsx");
+const compareSelectorSrc = readFile("src/components/compare/CompareSelector.tsx");
+const compareViewSrc   = readFile("src/components/compare/CompareView.tsx");
+const aboutSrc         = readFile("src/app/about/page.tsx");
+const timelineSrc      = readFile("src/app/timeline/page.tsx");
+const methodsSrc       = readFile("src/app/methods/page.tsx");
+const dataSrc          = readFile("src/app/data/page.tsx");
 
 // ──────────────────────────────────────────────────────────────────────────────
 // OUTPUT
@@ -114,31 +121,35 @@ console.log("Purpose: Proofreading reference. Shows all visible text with source
 header("GLOBAL LAYOUT (every page)");
 // ══════════════════════════════════════════════════════════════════════════════
 
+header("Site Metadata (layout.tsx)", 2);
+console.log(src("src/app/layout.tsx"));
+item("Default title", "WGU Atlas");
+item("Title template", "%s | WGU Atlas");
+item("Meta description", "An independent guide to WGU degrees, courses, and schools, built from public WGU sources.");
+
 header("Top Navigation Bar", 2);
-console.log(`${src("src/components/layout/Nav.tsx")}`);
+console.log(src("src/components/layout/Nav.tsx"));
 blank();
-item("Brand / Logo", "WGU Atlas", line("src/components/layout/Nav.tsx", findLine(navSrc, "WGU Atlas")));
+item("Brand / Logo", "WGU Atlas");
 blank();
-console.log("  Primary Links (student-facing):");
-console.log("    Home  |  Courses  |  Programs  |  Schools  |  Compare");
+console.log("  Primary Links:");
+console.log("    Home  |  Courses  |  Degrees  |  Schools  |  Compare Degrees  |  About");
 console.log(`  ${line("src/components/layout/Nav.tsx", findLine(navSrc, "primaryLinks"))}`);
 blank();
-console.log("  Secondary Links (archive/meta):");
-console.log("    Timeline  |  Methods  |  Data");
-console.log(`  ${line("src/components/layout/Nav.tsx", findLine(navSrc, "secondaryLinks"))}`);
+console.log("  Note: Timeline, Methods, and Data are NOT in top nav.");
+console.log("  They are accessible from the About page (/about).");
 
 header("Footer", 2);
-console.log(`${src("src/components/layout/Footer.tsx")}`);
+console.log(src("src/components/layout/Footer.tsx"));
 blank();
 console.log("  Column 1 — About:");
-item("  Title", "WGU Atlas", line("src/components/layout/Footer.tsx", findLine(footerSrc, "WGU Atlas")));
+item("  Title", "WGU Atlas");
 item("  Byline", "Created by WGU-DataNinja");
 item("  Note", "An independent community project. Not affiliated with WGU.");
 blank();
 console.log("  Column 2 — Data:");
-item("  Label", "Data");
 item("  Archive span", "Catalog archive: 2017-01 → 2026-03");
-item("  Site data", `Site data: {dataDate}  (dynamic — from homepage_summary.json → data_date: "${homepageSummary.data_date}")`);
+item("  Site data", `Site data: {dataDate}  (dynamic — data_date: "${homepageSummary.data_date}")`);
 item("  Links", "Methods & caveats  ·  Download datasets");
 blank();
 console.log("  Column 3 — Disclaimer:");
@@ -146,116 +157,65 @@ item("  Text", "All data is derived from WGU's publicly available course catalog
 
 // ══════════════════════════════════════════════════════════════════════════════
 header("HOME PAGE  (/)", 1);
-console.log(`${src("src/app/page.tsx")}`);
+console.log(src("src/app/page.tsx"));
 // ══════════════════════════════════════════════════════════════════════════════
 
 header("Hero Section", 2);
 item("H1 Title", "WGU Atlas", line("src/app/page.tsx", findLine(homeSrc, "WGU Atlas")));
-item("Subtitle", "Search courses, programs, and WGU catalog history", line("src/app/page.tsx", findLine(homeSrc, "Search courses, programs")));
+item("Subtitle", "Explore WGU degrees, courses, and schools. Compare related degrees.", line("src/app/page.tsx", findLine(homeSrc, "Explore WGU degrees")));
 
 header("Search Bar (HomeSearch component)", 2);
-console.log(`${src("src/components/home/HomeSearch.tsx")}`);
+console.log(src("src/components/home/HomeSearch.tsx"));
 item("Placeholder", "Search by course code or title…", line("src/components/home/HomeSearch.tsx", findLine(homeSearchSrc, "Search by course code")));
-item("Clear button", "✕");
-item("'See all' link text", 'See all results for "{query}" →');
 item("Inactive result label (course)", "retired");
-item("Inactive result label (program)", "deprecated");
+item("Inactive result label (degree)", "retired");
 
 header("School Cards (under search bar)", 2);
-console.log(`${src("src/components/home/SchoolCards.tsx")}`);
-console.log("  (4 cards — school names are dynamic from data)");
-console.log("  Card labels: [School current_name] + active course count");
+console.log(src("src/components/home/SchoolCards.tsx"));
+blank();
+console.log("  Four cards, each with: school name, description, 'Explore [School] →' CTA");
+blank();
+item("Business description", "Bachelor's, master's, and MBA degrees in accounting, management, marketing, IT management, finance, and related fields.");
+item("Health description", "Degrees in nursing, healthcare administration, public health, health informatics, and allied health disciplines.");
+item("Technology description", "Degrees in IT, cybersecurity, software engineering, data analytics, cloud computing, and computer science.");
+item("Education description", "Teacher preparation, educational leadership, and learning and technology degrees across all grade bands.");
+blank();
+console.log("  CTA format: 'Explore [School Name] →'");
+console.log(`  ${line("src/components/home/SchoolCards.tsx", findLine(schoolCardsSrc, "Explore"))}`);
 
-header("Orientation Band", 2);
-console.log(`${src("src/app/page.tsx")}  line ${findLine(homeSrc, "Orientation band")}`);
+header("Orientation Paragraph", 2);
+console.log(src("src/app/page.tsx"));
 blank();
-const orientText = `WGU Atlas is an unofficial reference built from WGU's public academic catalog. ` +
-  `It covers {active_ap_codes} active courses and {active_programs} current programs across ` +
-  `four schools, with history going back to {archive_span start year}. ` +
-  `Use it to look up courses, browse programs, and understand how WGU's curriculum has changed over time.`;
-console.log("  Paragraph:");
-console.log("    " + orientText);
-blank();
-console.log("  Stat pills:");
-item("  Pill 1", `Active courses: ${homepageSummary.active_ap_codes}  (dynamic)`);
-item("  Pill 2", `Active programs: ${homepageSummary.active_programs}  (dynamic)`);
-blank();
-item("  Attribution line", `Data from WGU public catalog · {data_date} edition · About this data`);
-item("  data_date value (current)", homepageSummary.data_date);
+const orientText = "WGU Atlas is an independent guide to WGU degrees, courses, and schools, built from public WGU sources. " +
+  "It helps students explore degree options, compare related degrees, and understand changes over time when those changes matter to what they're viewing.";
+console.log("  " + orientText);
+console.log(`  ${line("src/app/page.tsx", findLine(homeSrc, "independent guide"))}`);
 
-header("Activity Modules", 2);
-console.log(`${src("src/app/page.tsx")}  line ${findLine(homeSrc, "Activity modules")}`);
+header("Compare Callout", 2);
+console.log(src("src/app/page.tsx"));
 blank();
-console.log("  Module 1:");
-item("  Title", "New Programs");
-item("  Link", "See all →  (→ /programs)");
-item("  Content", `Top 5 newest programs (dynamic from homepage_summary.json → newest_programs)`);
-blank();
-console.log("  Module 2:");
-item("  Title", "New Courses");
-item("  Link", "See all →  (→ /courses)");
-item("  Content", `Top 6 recent course additions (dynamic from homepage_summary.json → recent_course_additions)`);
-blank();
-console.log("  Module 3:");
-item("  Title", "Browse by School");
-item("  Link", "See all →  (→ /schools)");
-item("  Content", `All 4 schools by current_name + program count (dynamic)`);
+item("Label", "Compare degrees");
+item("Description", "See how related WGU degrees differ — course rosters, shared courses, and track-specific requirements.");
+item("Link", "Compare degrees →  (→ /compare)");
+console.log(`  ${line("src/app/page.tsx", findLine(homeSrc, "Compare degrees"))}`);
 
-header("Official WGU Resources Section", 2);
-console.log(`${src("src/app/page.tsx")}  line ${findLine(homeSrc, "Official WGU Resources")}`);
-blank();
-item("Section H2", "Official WGU Resources");
-blank();
-console.log("  Link Group: Official Channels");
-console.log("    WGU Website ↗  (https://www.wgu.edu)");
-console.log("    WGU YouTube ↗  (https://www.youtube.com/@WGU)");
-console.log("    WGU Instagram ↗  (https://www.instagram.com/westerngovernors/)");
-console.log("    WGU Facebook ↗  (https://www.facebook.com/wgu.edu)");
-blank();
-console.log("  Link Group: Community");
-console.log("    r/WGU ↗  (https://www.reddit.com/r/WGU/)");
-console.log("    r/WGUIT ↗  (https://www.reddit.com/r/WGUIT/)");
-console.log("    r/WGUTeaching ↗  (https://www.reddit.com/r/WGUTeaching/)");
-blank();
-console.log("  Link Group: Career & Support");
-console.log("    WGU Career Services ↗  (https://www.wgu.edu/alumni/career-services.html)");
-console.log("    WGU Partners ↗  (https://partners.wgu.edu)");
-blank();
-item("Disclaimer", "WGU Atlas is not affiliated with WGU. External links are provided for reference only.", line("src/app/page.tsx", findLine(homeSrc, "not affiliated with WGU. External")));
-
-header("WGU Catalog History Section", 2);
-console.log(`${src("src/app/page.tsx")}  line ${findLine(homeSrc, "WGU Catalog History")}`);
-blank();
-item("H2", "WGU Catalog History");
-item("Link", "Full timeline →  (→ /timeline)");
-item("Subtext", `Notable curriculum and structural changes drawn from {total_editions} catalog editions.`);
-item("total_editions value (current)", homepageSummary.total_editions);
-console.log("  Content: EventPreview component — first 4 curated major events from homepage_summary.json");
-blank();
-
-// Show the curated events preview sample
-console.log("  --- Sample: Curated Events Preview (first 4) ---");
-const preview = homepageSummary.curated_major_events_preview || [];
-preview.slice(0, 4).forEach((ev, i) => {
-  console.log(`  Event ${i + 1}: ${ev.event_title || ev.event_id}`);
-  if (ev.start_edition) console.log(`    Editions: ${ev.start_edition} → ${ev.end_edition}`);
-  if (ev.observed_summary) console.log(`    Observed: ${ev.observed_summary}`);
-});
+header("Attribution Line", 2);
+item("Text", "Built from WGU's public catalog · Updated through March 2026 · About this site");
+item("'About this site' link", "→ /about");
+console.log(`  ${line("src/app/page.tsx", findLine(homeSrc, "public catalog"))}`);
 
 // ══════════════════════════════════════════════════════════════════════════════
 header("COURSES PAGE  (/courses)", 1);
-console.log(`${src("src/app/courses/page.tsx")}`);
+console.log(src("src/app/courses/page.tsx"));
 // ══════════════════════════════════════════════════════════════════════════════
 
 header("Page Header", 2);
 item("H1", "Courses", line("src/app/courses/page.tsx", findLine(coursesSrc, '"Courses"')));
-item("Subtext", "{activeCourses.length} active courses across WGU's four schools. Search by code or title, or filter by school.");
 item("Meta description", "Search and browse WGU courses — active and retired, with catalog history for each.");
 
 header("CourseExplorer Filters", 2);
-console.log(`${src("src/components/courses/CourseExplorer.tsx")}`);
+console.log(src("src/components/courses/CourseExplorer.tsx"));
 blank();
-item("Search label", "Search");
 item("Search placeholder", "Code or title…", line("src/components/courses/CourseExplorer.tsx", findLine(courseExplorerSrc, "Code or title")));
 blank();
 item("Status label", "Status");
@@ -265,24 +225,19 @@ console.log("    Retired only");
 console.log("    All");
 blank();
 item("Scope label", "Scope");
-console.log("  Scope options:");
-console.log("    AP + Cert  (default)");
-console.log("    AP only");
-console.log("    Cert only");
+console.log("  Scope options:  AP + Cert (default)  |  AP only  |  Cert only");
 blank();
 item("School label", "School");
-console.log("  School options:");
-console.log("    All schools  (default)");
-console.log("    Business  |  Health  |  Technology  |  Education");
+console.log("  School options:  All schools (default)  |  Business  |  Health  |  Technology  |  Education");
 blank();
 item("Reset button", "Reset");
 item("Result count", "{n} courses  [of {total}]");
 item("Empty state", "No courses match these filters.");
-item("Load more button", "Show more ({n} remaining)");
+item("Load more", "Show more ({n} remaining)");
 
 // ══════════════════════════════════════════════════════════════════════════════
 header("COURSE DETAIL PAGE  (/courses/[code])", 1);
-console.log(`${src("src/app/courses/[code]/page.tsx")}`);
+console.log(src("src/app/courses/[code]/page.tsx"));
 // ══════════════════════════════════════════════════════════════════════════════
 
 header("Breadcrumb", 2);
@@ -290,100 +245,81 @@ console.log("  Courses  ›  {code}");
 blank();
 header("Header Badges", 2);
 console.log("  {code}  |  {N} CUs  |  Active -or- Retired");
-blank();
-console.log("  Status badge text:");
-item("  Active", "Active", line("src/app/courses/[code]/page.tsx", findLine(courseDetailSrc, '"Active"')));
-item("  Retired", "Retired", line("src/app/courses/[code]/page.tsx", findLine(courseDetailSrc, '"Retired"')));
-blank();
-header("Section: Official Catalog History", 2);
-item("H2", "Official Catalog History");
+item("  Active badge", "Active", line("src/app/courses/[code]/page.tsx", findLine(courseDetailSrc, '"Active"')));
+item("  Retired badge", "Retired", line("src/app/courses/[code]/page.tsx", findLine(courseDetailSrc, '"Retired"')));
+
+header("Section: Catalog History", 2);
+item("H2", "Catalog History");
 item("Source badge", "Source: WGU public catalog archive");
-blank();
-console.log("  Stat cards (labels):");
-console.log("    First seen  |  Last seen  |  Catalog editions  |  Versions seen");
-blank();
-header("Section: School & Program Membership (course detail)", 2);
-console.log("  (Dynamic — from course JSON data)");
-console.log("  Schools seen  |  Current programs  |  Program history");
-blank();
-header("Observed Titles (if variant)", 2);
-item("Label", "Also seen as:");
-blank();
+console.log("  Stat cards:  First in catalog  |  Last in catalog  |  Editions present  |  Catalog presence");
+
 header("Back Link", 2);
-item("Text", "← Back to Courses");
+item("Text", "← Back to Course Explorer");
 
 // ══════════════════════════════════════════════════════════════════════════════
-header("PROGRAMS PAGE  (/programs)", 1);
-console.log(`${src("src/app/programs/page.tsx")}`);
+header("DEGREES PAGE  (/programs)", 1);
+console.log(src("src/app/programs/page.tsx"));
 // ══════════════════════════════════════════════════════════════════════════════
 
 header("Page Header", 2);
-item("H1", "Programs", line("src/app/programs/page.tsx", findLine(programsSrc, '"Programs"')));
-item("Subtext", `{programs.length} programs tracked across the WGU catalog archive — {activeCount} current, {retiredCount} deprecated.`);
-item("Current active count (live)", activePrograms.length);
-item("Current retired count (live)", retiredPrograms.length);
-item("Meta description", "Browse all 196 WGU degree programs — active and deprecated — with version history and school lineage.");
+item("H1", "Degrees", line("src/app/programs/page.tsx", findLine(programsSrc, '"Degrees"')));
+item("Subtext", `{programs.length} degrees tracked across the WGU catalog — {activeCount} current, {retiredCount} retired.`);
+item("Current count (live)", activePrograms.length);
+item("Retired count (live)", retiredPrograms.length);
+item("Meta description", "Browse all WGU degrees — current and retired — with changes over time and school history.");
 
 header("ProgramExplorer Filters", 2);
-console.log(`${src("src/components/programs/ProgramExplorer.tsx")}`);
+console.log(src("src/components/programs/ProgramExplorer.tsx"));
 blank();
-item("Search label", "Search");
-item("Search placeholder", "Program name or code…", line("src/components/programs/ProgramExplorer.tsx", findLine(programExplorerSrc, "Program name or code")));
+item("Search placeholder", "Degree name or code…", line("src/components/programs/ProgramExplorer.tsx", findLine(programExplorerSrc, "Degree name or code")));
 blank();
-item("Status label", "Status");
-console.log("  Status options:");
-console.log("    Active only  (default)");
-console.log("    Deprecated only");      // Note: uses "Deprecated" not "Retired"
-console.log("    All");
+item("Status control", "Checkbox: Include retired degrees  (default: unchecked = current degrees only)");
+console.log(`  ${line("src/components/programs/ProgramExplorer.tsx", findLine(programExplorerSrc, "Include retired"))}`);
 blank();
 item("School label", "School");
-console.log("  School options:");
-console.log("    All schools  (default)");
-console.log("    Business  |  Health Professions  |  Technology  |  Education");
+console.log("  School options:  All schools (default)  |  Business  |  Health  |  Technology  |  Education");
 blank();
 item("Reset button", "Reset");
-item("Result count", "{n} programs  [of {total}]");
-item("Empty state", "No programs match these filters.");
-item("Load more button", "Show more ({n} remaining)");
-item("Row status badge (retired)", "deprecated {last_seen}");
+item("Result count", "{n} degree(s)  [of {total}]");
+item("Empty state", "No degrees match these filters.");
+item("Load more", "Show more ({n} remaining)");
+item("Row status badge (retired)", "retired {last_seen}");
 
 // ══════════════════════════════════════════════════════════════════════════════
-header("PROGRAM DETAIL PAGE  (/programs/[code])", 1);
-console.log(`${src("src/app/programs/[code]/page.tsx")}`);
+header("DEGREE DETAIL PAGE  (/programs/[code])", 1);
+console.log(src("src/app/programs/[code]/page.tsx"));
 // ══════════════════════════════════════════════════════════════════════════════
 
 header("Breadcrumb", 2);
-console.log("  Programs  ›  {code}");
+console.log("  Degrees  ›  {code}");
 blank();
 header("Header Badges", 2);
 console.log("  {code}  |  {status badge}  |  {N} CUs");
-item("  Active badge", "Current");
-item("  Retired badge", "Deprecated");
+item("  Current badge", "Current");
+item("  Retired badge", "Retired", line("src/app/programs/[code]/page.tsx", findLine(programDetailSrc, '"Retired"')));
 blank();
-header("Section: About This Program", 2);
+header("Section: About This Degree", 2);
 item("H2", "About This Program");
 item("Source badge", "{enriched.description_source}  (dynamic from program_enriched.json)");
 item("Content", "{enriched.description}  (official catalog text, italicized blockquote)");
 item("Attribution", "Official catalog text — WGU-authored. Sourced from {description_source}.");
 blank();
-header("Section: Official Catalog History", 2);
-item("H2", "Official Catalog History");
+header("Section: Changes Over Time", 2);
+item("H2", "Changes Over Time", line("src/app/programs/[code]/page.tsx", findLine(programDetailSrc, "Changes Over Time")));
 item("Source badge", "Source: WGU public catalog archive");
 blank();
-console.log("  Stat cards (labels):");
-console.log("    First seen  |  Last seen  |  Catalog editions  |  Version changes  |  Total CUs (latest)");
+console.log("  Stat cards:  First seen  |  Last seen  |  Catalog editions  |  Version changes  |  Total CUs (latest)");
 blank();
-item("Sub-label: School lineage", "School lineage");
+item("Sub-label: School name history", "Earlier names", line("src/app/programs/[code]/page.tsx", findLine(programDetailSrc, "Earlier names")));
 item("Sub-label: Known names", "Known names");
 item("Canonical marker", "(canonical)");
 blank();
 header("Section: Program Learning Outcomes", 2);
 item("H2", "Program Learning Outcomes");
-item("Source badge", "{enriched.outcomes_source}");
 item("Note", "Official WGU-authored outcomes from the catalog Program Outcomes section. Present in ERA_B catalogs (2024-08+).");
 blank();
-header("Section: Version History", 2);
-item("H2", "Version History");
+header("Section: Past Versions", 2);
+item("H2", "Past Versions", line("src/app/programs/[code]/page.tsx", findLine(programDetailSrc, "Past Versions")));
 item("No changes text", "No curriculum version changes observed across catalog editions.");
 item("Changes text", "{N} version change(s) observed.");
 console.log("  Table headers:  Catalog date  |  Version stamp");
@@ -391,86 +327,277 @@ item("CU change note", "Total CUs changed across versions: {cus_values joined by
 blank();
 header("Section: Course Roster", 2);
 item("H2", "Course Roster ({N} courses)");
-item("Source badge", "{enriched.roster_source}");
 item("Note", "Term sequence and course list from the 2026-03 catalog. Click any course code to view its full catalog history.");
 console.log("  Table headers:  Code  |  Title  |  CUs");
-item("Term sub-header", "Term {N}");
 item("Footer", "Total: {sum} CUs across {N} courses. Program total per catalog: {latestCus} CUs.");
 blank();
-header("Back link", 2);
-item("Text", "← Back to Programs");
+header("Back Link", 2);
+item("Text", "← Back to Degrees", line("src/app/programs/[code]/page.tsx", findLine(programDetailSrc, "Back to Degrees")));
 
 // ══════════════════════════════════════════════════════════════════════════════
 header("SCHOOLS PAGE  (/schools)", 1);
-console.log(`${src("src/app/schools/page.tsx")}`);
+console.log(src("src/app/schools/page.tsx"));
 // ══════════════════════════════════════════════════════════════════════════════
 
 header("Page Header", 2);
 item("H1", "Schools", line("src/app/schools/page.tsx", findLine(schoolsSrc, '"Schools"')));
-item("Subtext", "WGU is organized into four schools. Each school page shows its program and course catalog, lineage history, and recent activity.", line("src/app/schools/page.tsx", findLine(schoolsSrc, "WGU is organized")));
+item("Subtext", "WGU is organized into four schools. Each school page shows its current degrees and courses, school background, and recent changes.", line("src/app/schools/page.tsx", findLine(schoolsSrc, "WGU is organized")));
 item("Attribution", `Source: WGU public catalog archive · {current year}`);
 
 header("School Cards (SCHOOL_DESCRIPTIONS)", 2);
-console.log(`${src("src/app/schools/page.tsx")}  lines 10-15`);
+console.log(src("src/app/schools/page.tsx"));
 blank();
-item("business", "Bachelor's, master's, and MBA programs in accounting, management, marketing, IT management, finance, and related fields.");
-item("health", "Programs in nursing, healthcare administration, public health, health informatics, and allied health disciplines.");
-item("technology", "Programs in IT, cybersecurity, software engineering, data analytics, cloud computing, and computer science.");
-item("education", "Teacher preparation, educational leadership, and learning and technology programs across all grade bands.");
+item("business", "Bachelor's, master's, and MBA degrees in accounting, management, marketing, IT management, finance, and related fields.");
+item("health", "Degrees in nursing, healthcare administration, public health, health informatics, and allied health disciplines.");
+item("technology", "Degrees in IT, cybersecurity, software engineering, data analytics, cloud computing, and computer science.");
+item("education", "Teacher preparation, educational leadership, and learning and technology degrees across all grade bands.");
 blank();
 console.log("  Card subtext: Formerly: {historical names}  (if any)");
-item("Stats", "{N} active programs  ·  {N} active courses");
-item("Meta description", "Browse WGU's four schools — Business, Health, Technology, and Education — with program and course listings.");
+item("Stats", "{N} current degrees  ·  {N} active courses");
+item("Meta description", "Browse WGU's four schools — Business, Health, Technology, and Education — with degree and course listings.");
 
 // ══════════════════════════════════════════════════════════════════════════════
 header("SCHOOL DETAIL PAGE  (/schools/[slug])", 1);
-console.log(`${src("src/app/schools/[slug]/page.tsx")}`);
+console.log(src("src/app/schools/[slug]/page.tsx"));
 // ══════════════════════════════════════════════════════════════════════════════
 
-// Read the rest of the school detail page
-const schoolDetailFull = readFile("src/app/schools/[slug]/page.tsx");
 header("Breadcrumb", 2);
 console.log("  Schools  ›  {school.current_name}");
 blank();
-header("Page Header", 2);
-item("H1", "{school.current_name}  (dynamic)");
-item("Historical names", "Formerly known as: {historical names}  (if any)");
+header("Page Sections (in order)", 2);
 blank();
 
-// Extract some of the section headings from the school detail page
-const schoolSections = [];
-const h2Matches = [...schoolDetailFull.matchAll(/h2[^>]*>([^<{]+)</g)];
-const h3Matches = [...schoolDetailFull.matchAll(/h3[^>]*>([^<{]+)</g)];
-[...h2Matches, ...h3Matches].forEach(m => {
-  const text = m[1].trim();
-  if (text && text.length > 2 && !text.includes("{")) schoolSections.push(text);
-});
+// Extract section headings dynamically
+const h2Matches = [...schoolDetailSrc.matchAll(/h2[^>]*>([^<{]+)</g)];
+const h3Matches = [...schoolDetailSrc.matchAll(/h3[^>]*>([^<{]+)</g)];
+const schoolSections = [...h2Matches, ...h3Matches]
+  .map((m) => m[1].trim())
+  .filter((t) => t.length > 2 && !t.includes("{"));
 
 if (schoolSections.length > 0) {
-  header("Detected Section Headings", 2);
-  schoolSections.forEach(s => console.log(`  • ${s}`));
+  console.log("  Section headings (from source):");
+  schoolSections.forEach((s) => console.log(`    • ${s}`));
 } else {
-  // Manually list known sections from reading the file
-  header("Sections", 2);
-  console.log("  (Sections are dynamic — school name, programs, courses from data)");
+  console.log("  1. Header: {school.current_name} — N current degrees · N active courses");
+  console.log("  2. Short description (from SCHOOL_DESCRIPTIONS)");
+  console.log("  3. Current Degrees (N)  — grouped by degree level");
+  console.log("  4. Active Courses (N)  — collapsible");
+  console.log("  5. Recent Changes  — New Degrees / Recent Degree Updates / Recent Course Additions");
+  console.log("  6. Retired Degrees (N)  — collapsible");
+  console.log("  7. School Background  — name lineage table");
 }
 
-item("Meta description", "WGU {school.current_name} — programs, courses, and catalog history.");
+blank();
+item("Header subtext", "{N} current degrees · {N} active courses");
+item("Retired degrees toggle", "▶ Show retired degrees / ▼ Hide retired degrees");
+item("Courses toggle", "▶ Show all {N} active courses / ▼ Hide course list");
+item("Meta description", "WGU {school.current_name} — degrees, courses, and catalog history.");
+
+// ══════════════════════════════════════════════════════════════════════════════
+header("COMPARE DEGREES PAGE  (/compare)", 1);
+console.log(src("src/app/compare/page.tsx"));
+// ══════════════════════════════════════════════════════════════════════════════
+
+header("Page Header", 2);
+item("H1", "Compare Degrees", line("src/app/compare/page.tsx", findLine(compareSrc, "Compare Degrees")));
+item("Description", "Select two related degrees to compare their course rosters side by side. Shared courses, track-specific courses, and overlap metrics are shown for each comparison.");
+item("Meta title", "Compare Degrees");
+item("Meta description", "Compare WGU degree course rosters side by side. See shared courses, track-specific courses, and overlap metrics.");
+
+header("CompareSelector UI", 2);
+console.log(src("src/components/compare/CompareSelector.tsx"));
+blank();
+console.log("  Step 1 panel:");
+item("  Header", "Choose a degree", line("src/components/compare/CompareSelector.tsx", findLine(compareSelectorSrc, "Choose a degree")));
+item("  Filters", "All schools (default) + All levels (default)");
+item("  Empty state", "No degrees match these filters.");
+item("  Footer note", "Only degrees with comparable track variants are shown.");
+blank();
+console.log("  Step 2 panel:");
+item("  Header", "Compare with");
+item("  Prompt (before step 1)", "Select a degree in step 1 first.");
+item("  No siblings text", "No comparable degrees.");
+item("  Footer note", "Showing only degrees in the same family as your selection.");
+blank();
+console.log("  Compact bar (both selected):");
+item("  Buttons", "Change  |  Reset");
+blank();
+console.log("  Prompt (A selected, waiting for B):");
+item("  Text", "Now select a degree in step 2 to see the comparison.");
+
+header("CompareView — Section labels", 2);
+console.log(src("src/components/compare/CompareView.tsx"));
+blank();
+item("Overlap summary heading", "Overlap Summary");
+item("Legend chips", "{N} shared  |  {track}-only  |  {track}-only");
+item("Overlap bar note", "Overlap bar: shared (green) / {left}-only (blue) / {right}-only (amber). Jaccard = shared ÷ union.");
+item("Column headers", "{Left track label}  |  Shared Courses ({N})  |  {Right track label}");
+item("Attribution", "Comparison source: 2026-03 WGU catalog roster. Exact course code identity only — no alias or fuzzy matching. Atlas-derived analysis.");
+
+header("Pilot Families", 2);
+console.log("  (Defined in src/lib/families.ts)");
+blank();
+console.log("  Family 1: Software Engineering  (bsswe-tracks)");
+console.log("    School: School of Technology  |  Level: Bachelor's");
+console.log("    Programs: BSSWE (Java Track)  ·  BSSWE_C (C# Track)");
+console.log("    Note: Both tracks cover the same Software Engineering curriculum.");
+console.log("          The difference is the programming language: Java (Android) or C# (.NET).");
+blank();
+console.log("  Family 2: MS Data Analytics  (msda-tracks)");
+console.log("    School: School of Technology  |  Level: Master's");
+console.log("    Programs: MSDADE (Data Engineering)  ·  MSDADS (Data Science)  ·  MSDADPE (Decision Process Eng.)");
+console.log("    Note: All three tracks share the same 7-course Data Analytics foundation.");
+console.log("          The final 4 courses are the specialization.");
+
+// ══════════════════════════════════════════════════════════════════════════════
+header("COMPARE SIMULATION — BSSWE vs BSSWE_C (actual data)", 1);
+// ══════════════════════════════════════════════════════════════════════════════
+
+console.log("\n  Live comparison computed from public/data/program_enriched.json");
+console.log("  This mirrors what the Compare Degrees UI renders at /compare");
+blank();
+
+try {
+  const bsswe = programEnriched["BSSWE"];
+  const bsswe_c = programEnriched["BSSWE_C"];
+
+  if (!bsswe || !bsswe_c) {
+    console.log("  [WARNING] BSSWE or BSSWE_C not found in program_enriched.json — skipping simulation.");
+  } else {
+    const rosterA = bsswe.roster || [];
+    const rosterB = bsswe_c.roster || [];
+
+    const codesA = new Set(rosterA.map((c) => c.code));
+    const codesB = new Set(rosterB.map((c) => c.code));
+
+    const sharedCodes = [...codesA].filter((c) => codesB.has(c));
+    const leftOnlyCodes = [...codesA].filter((c) => !codesB.has(c));
+    const rightOnlyCodes = [...codesB].filter((c) => !codesA.has(c));
+
+    const union = new Set([...codesA, ...codesB]);
+    const jaccard = Math.round((sharedCodes.length / union.size) * 100);
+
+    const totalCusA = rosterA.reduce((s, c) => s + (c.cus || 0), 0);
+    const totalCusB = rosterB.reduce((s, c) => s + (c.cus || 0), 0);
+
+    // Build lookup maps
+    const mapA = Object.fromEntries(rosterA.map((c) => [c.code, c]));
+    const mapB = Object.fromEntries(rosterB.map((c) => [c.code, c]));
+
+    const leftProgram = programs.find((p) => p.program_code === "BSSWE");
+    const rightProgram = programs.find((p) => p.program_code === "BSSWE_C");
+
+    console.log("  ┌─────────────────────────────────────────────────────────────────┐");
+    console.log("  │  COMPARE DEGREES: B.S. Software Engineering                     │");
+    console.log("  │  B.S. Software Engineering (Java Track)  vs  (C# Track)         │");
+    console.log("  └─────────────────────────────────────────────────────────────────┘");
+    blank();
+    console.log(`  Left:   BSSWE — ${leftProgram?.canonical_name ?? "B.S. Software Engineering"}`);
+    console.log(`  Right:  BSSWE_C — ${rightProgram?.canonical_name ?? "B.S. Software Engineering"}`);
+    blank();
+    console.log("  Overlap Summary");
+    console.log("  " + "─".repeat(50));
+    console.log(`  Shared courses:      ${sharedCodes.length}`);
+    console.log(`  Java-only courses:   ${leftOnlyCodes.length}`);
+    console.log(`  C#-only courses:     ${rightOnlyCodes.length}`);
+    console.log(`  Total courses (A):   ${rosterA.length}  (${totalCusA} CUs)`);
+    console.log(`  Total courses (B):   ${rosterB.length}  (${totalCusB} CUs)`);
+    console.log(`  Jaccard overlap:     ${jaccard}%  (${sharedCodes.length} shared / ${union.size} union)`);
+    blank();
+
+    // Shared courses column
+    console.log("  Shared Courses (" + sharedCodes.length + ")");
+    console.log("  " + "─".repeat(50));
+    sharedCodes.forEach((code) => {
+      const c = mapA[code];
+      const termA = c.term ?? "?";
+      const termB = mapB[code]?.term ?? "?";
+      const driftNote = termA !== termB ? `  ← term ${termA} / term ${termB}` : `  (term ${termA})`;
+      console.log(`    ${code.padEnd(10)} ${(c.title || "").slice(0, 45).padEnd(46)} ${c.cus ?? "?"}cu${driftNote}`);
+    });
+    blank();
+
+    // Left-only courses
+    console.log(`  Java Track Only (${leftOnlyCodes.length})`);
+    console.log("  " + "─".repeat(50));
+    leftOnlyCodes.forEach((code) => {
+      const c = mapA[code];
+      console.log(`    ${code.padEnd(10)} ${(c.title || "").slice(0, 45).padEnd(46)} ${c.cus ?? "?"}cu  (term ${c.term ?? "?"})`);
+    });
+    blank();
+
+    // Right-only courses
+    console.log(`  C# Track Only (${rightOnlyCodes.length})`);
+    console.log("  " + "─".repeat(50));
+    rightOnlyCodes.forEach((code) => {
+      const c = mapB[code];
+      console.log(`    ${code.padEnd(10)} ${(c.title || "").slice(0, 45).padEnd(46)} ${c.cus ?? "?"}cu  (term ${c.term ?? "?"})`);
+    });
+    blank();
+
+    console.log("  Family note: Both tracks cover the same Software Engineering curriculum.");
+    console.log("  The difference is the programming language: Java (with Android mobile");
+    console.log("  development) or C# (.NET mobile development). 33 of the courses are identical.");
+  }
+} catch (e) {
+  console.log("  [ERROR computing comparison]: " + e.message);
+}
+
+// ══════════════════════════════════════════════════════════════════════════════
+header("ABOUT PAGE  (/about)", 1);
+console.log(src("src/app/about/page.tsx"));
+// ══════════════════════════════════════════════════════════════════════════════
+
+header("Page Header", 2);
+item("H1", "About WGU Atlas", line("src/app/about/page.tsx", findLine(aboutSrc, "About WGU Atlas")));
+item("Subtitle", "An independent guide to WGU degrees, courses, and schools.");
+item("Meta description", "About WGU Atlas — an independent guide to WGU degrees, courses, and schools, built from public WGU catalog sources.");
+
+header("Sections", 2);
+blank();
+console.log("  Section 1: What is WGU Atlas?");
+console.log("    WGU Atlas is an independent reference built from WGU's public academic catalog.");
+console.log("    It is not affiliated with, endorsed by, or operated by Western Governors University.");
+console.log("    Atlas helps students explore WGU degree options, compare related degrees, and");
+console.log("    understand how degrees and courses have changed over time when those changes");
+console.log("    are relevant to what they're viewing.");
+blank();
+console.log("  Section 2: What it covers");
+console.log("    • Current degrees across WGU's four schools");
+console.log("    • Course catalog with history going back to 2017");
+console.log("    • Degree comparisons for related programs (pilot set)");
+console.log("    • Retired degrees still visible for reference");
+console.log("    • School background and earlier names over time");
+blank();
+console.log("  Section 3: Source and independence");
+console.log("    All data is derived from WGU's publicly available course catalog, scraped and");
+console.log("    parsed from 108 catalog editions spanning January 2017 through March 2026.");
+console.log("    No internal WGU systems or private data were accessed.");
+console.log("    Atlas is a community project. Not a substitute for official WGU advising.");
+blank();
+console.log("  Section 4: How history and resources are used");
+console.log("    Where a degree or school has changed names or structure over time, Atlas surfaces");
+console.log("    that history where relevant — earlier names on detail pages. History is secondary");
+console.log("    context, not the primary lens.");
+blank();
+console.log("  More detail links:");
+item("  Methods & Caveats", "→ /methods  — how data was collected, validated, and how to interpret it");
+item("  Data", "→ /data  — download the canonical datasets behind Atlas");
+item("  Timeline", "→ /timeline  — major WGU catalog events from 2017 to 2026");
 
 // ══════════════════════════════════════════════════════════════════════════════
 header("TIMELINE PAGE  (/timeline)", 1);
-console.log(`${src("src/app/timeline/page.tsx")}`);
+console.log(src("src/app/timeline/page.tsx"));
+console.log("  Note: Timeline is accessible from About page and footer — NOT in top nav.");
 // ══════════════════════════════════════════════════════════════════════════════
 
 header("Page Header", 2);
 item("H1", "Catalog Timeline", line("src/app/timeline/page.tsx", findLine(timelineSrc, "Catalog Timeline")));
-item("Subtext", `{events.length} named catalog events across 107 edition transitions (2017–2026). Curated major events include hand-written interpretations; remaining events have machine-generated observed summaries.`);
 item("events.length (current)", events.length);
-item("Info note", "All entries sourced from WGU public catalog archive. Observed summaries describe what changed; interpreted summaries explain why. Confidence noted where applicable.");
+item("curated events (current)", curatedEvents.length);
+item("other events (current)", otherEvents.length);
 
-header("Type Label Definitions", 2);
-console.log(`${src("src/app/timeline/page.tsx")}  lines 10-19`);
-blank();
+header("Event Type Labels", 2);
 const typeLabels = {
   rename_cleanup: "Rename / Cleanup",
   composite: "Composite",
@@ -482,32 +609,6 @@ const typeLabels = {
   mixed: "Mixed",
 };
 Object.entries(typeLabels).forEach(([k, v]) => console.log(`  ${k}  →  "${v}"`));
-
-header("Severity Labels", 2);
-console.log("  score >= 300  →  Very High");
-console.log("  score >= 150  →  High");
-console.log("  score >= 75   →  Moderate");
-console.log("  score < 75    →  Low");
-
-header("Major Events Section", 2);
-item("H2", "Major Events");
-item("Subtext", `{curated.length} curated events with hand-written titles and interpretations.`);
-item("curated count (current)", curatedEvents.length);
-blank();
-console.log("  Event card fields:");
-console.log("    {start_edition} → {end_edition}  |  [type label]  |  Severity {label}  |  {confidence} confidence");
-console.log("    H3: {event.event_title}");
-console.log("    Observed: (label)  {event.observed_summary}");
-console.log("    Interpretation: (label)  {event.interpreted_summary}");
-console.log("    Schools: {affected_schools}");
-console.log("    +{courses_added_count} / −{courses_removed_count} courses");
-console.log("    {version_changes_count} version changes  (if > 0)");
-console.log("    {title_changes_count} title changes  (if > 0)");
-
-header("All Catalog Events Section", 2);
-item("H2", "All Catalog Events");
-item("Subtext", `{other.length} additional threshold-crossing transitions with observed summaries.`);
-item("other count (current)", otherEvents.length);
 
 header("Sample: Curated Events (all)", 2);
 curatedEvents.forEach((ev, i) => {
@@ -530,192 +631,49 @@ otherEvents.forEach((ev, i) => {
 
 // ══════════════════════════════════════════════════════════════════════════════
 header("METHODS PAGE  (/methods)", 1);
-console.log(`${src("src/app/methods/page.tsx")}`);
+console.log(src("src/app/methods/page.tsx"));
+console.log("  Note: Methods is accessible from About page and footer — NOT in top nav.");
 // ══════════════════════════════════════════════════════════════════════════════
 
-item("H1", "Methods & Caveats", line("src/app/methods/page.tsx", findLine(methodsSrc, "Methods")));
-item("Subtext", "How this data was collected, validated, and how to interpret it correctly.");
+item("H1", "Methods & Caveats");
 item("Meta description", "How WGU Atlas data was collected, validated, and interpreted — archive coverage, parser eras, and trust caveats.");
 blank();
-
-header("Section: Archive Coverage", 2);
-item("H2", "Archive Coverage");
-console.log(`\n  WGU Atlas is built from 108 public WGU catalog editions spanning`);
-console.log(`  January 2017 through March 2026. Three editions are absent from`);
-console.log(`  the archive (2017-02, 2017-04, 2017-06), likely never published as separate`);
-console.log(`  snapshots on the WGU public catalog page.`);
-console.log(`\n  Each edition represents a distinct published snapshot of WGU's public course`);
-console.log(`  catalog. The parser extracts course codes, titles, program memberships, and`);
-console.log(`  structural metadata from each edition.`);
-console.log(`\n  ${line("src/app/methods/page.tsx", findLine(methodsSrc, "Archive Coverage"))}`);
-
-header("Section: Parser Eras", 2);
-item("H2", "Parser Eras");
-console.log(`\n  The WGU catalog underwent a structural formatting change in mid-2024. Two`);
-console.log(`  parser eras are recognized:`);
-console.log(`\n  • ERA_A: 2017-01 through 2024-07 — original catalog structure`);
-console.log(`  • ERA_B: 2024-08 through 2026-03 — updated catalog structure`);
-console.log(`\n  The active parser (parse_catalog_v11.py) handles both eras. A full archive`);
-console.log(`  run produces 0 skipped editions and 0 body-parse anomalies.`);
-console.log(`\n  ${line("src/app/methods/page.tsx", findLine(methodsSrc, "Parser Eras"))}`);
-
-header("Section: Validation", 2);
-item("H2", "Validation");
-console.log(`\n  The 2026-03 edition serves as the trusted reference baseline. It was validated`);
-console.log(`  deeply after an initial scrape returned incomplete results (696 AP codes vs.`);
-console.log(`  the correct 838). The discrepancy was traced, corrected, and verified.`);
-console.log(`\n  14 structurally critical editions — breakpoints where the parser or catalog`);
-console.log(`  structure changed — were individually validated. All 14 passed clean.`);
-console.log(`\n  [Callout box] The 696 → 838 correction is an important part of this project's trust story.`);
-console.log(`  The current counts are hard-won and verified, not taken at face value from`);
-console.log(`  the first parser run.`);
-console.log(`\n  ${line("src/app/methods/page.tsx", findLine(methodsSrc, "Validation"))}`);
-
-header("Section: Observed vs. Inferred", 2);
-item("H2", "Observed vs. Inferred");
-console.log(`\n  WGU Atlas distinguishes between observed facts and inferred relationships:`);
-console.log(`\n  • Observed: directly present in the catalog archive — course code,`);
-console.log(`    title, program membership, edition dates`);
-console.log(`  • Inferred: derived from patterns across editions — event types,`);
-console.log(`    event interpretations, stability classifications`);
-console.log(`\n  Interpretive content (event interpretations, title variant classifications) is`);
-console.log(`  labeled with confidence levels: high, moderate, or tentative.`);
-console.log(`\n  ${line("src/app/methods/page.tsx", findLine(methodsSrc, "Observed vs. Inferred"))}`);
-
-header("Section: Title Variant Classification", 2);
-item("H2", "Title Variant Classification");
-console.log(`\n  167 course codes show title variation across editions. These have been manually`);
-console.log(`  classified into categories:`);
-console.log(`\n  • Extraction noise (145 codes, 87%) — PDF line-wrap, Unicode variants, catalog oscillations. Not real renames.`);
-console.log(`  • Punctuation only (16) — hyphen, comma, em-dash changes.`);
-console.log(`  • Wording refinement (3) — typo fix or minor synonym swap.`);
-console.log(`  • Substantive change (2) — genuine semantic renames.`);
-console.log(`  • Formatting only (1) — space insertion.`);
-console.log(`\n  The overwhelming majority of apparent title variation is extraction artifact,`);
-console.log(`  not editorial intent.`);
-console.log(`\n  ${line("src/app/methods/page.tsx", findLine(methodsSrc, "Title Variant Classification"))}`);
-
-header("Section: Key Caveats", 2);
-item("H2", "Key Caveats");
-console.log(`\n  Caveat 1: Catalog date ≠ implementation date`);
-console.log(`    The catalog reflects publication timing, not guaranteed student rollout.`);
-console.log(`    A course appearing in a March catalog may have been deployed to students earlier or later.`);
-console.log(`\n  Caveat 2: Catalog presence ≠ lived experience`);
-console.log(`    Official structure does not perfectly capture actual student pathways or`);
-console.log(`    the subjective experience of a course.`);
-console.log(`\n  Caveat 3: Code change ≠ substantive change`);
-console.log(`    Course code changes may reflect renumbering, administrative reorganization,`);
-console.log(`    or cleanup — not necessarily changes to course content.`);
-console.log(`\n  Caveat 4: Reddit is supplementary context`);
-console.log(`    Student discussion data (planned for v1.1) is useful context, not`);
-console.log(`    institutional truth. WGU Atlas keeps official catalog facts and discussion`);
-console.log(`    signals in clearly separate sections.`);
-console.log(`\n  Caveat 5: One-off courses require caution`);
-console.log(`    Courses with only 1–2 catalog appearances are flagged (ghost_flag,`);
-console.log(`    single_appearance_flag). These may represent data anomalies or genuinely`);
-console.log(`    short-lived entries.`);
-console.log(`\n  ${line("src/app/methods/page.tsx", findLine(methodsSrc, "Key Caveats"))}`);
-
-header("Section: Data Separation Policy", 2);
-item("H2", "Data Separation Policy");
-console.log(`\n  WGU Atlas enforces a strict separation between three information types:`);
-console.log(`\n  • Official catalog facts — from the WGU public catalog archive`);
-console.log(`  • Discussion signals — from Reddit and community spaces (v1.1)`);
-console.log(`  • LLM-generated summaries — clearly labeled with date, source count, and disclaimer (v1.1)`);
-console.log(`\n  These three types are never mixed in the same field or presented as equivalent.`);
-console.log(`\n  ${line("src/app/methods/page.tsx", findLine(methodsSrc, "Data Separation Policy"))}`);
+console.log("  Sections: Archive Coverage · Parser Eras · Validation · Observed vs. Inferred");
+console.log("            Title Variant Classification · Key Caveats · Data Separation Policy");
 
 // ══════════════════════════════════════════════════════════════════════════════
 header("DATA PAGE  (/data)", 1);
-console.log(`${src("src/app/data/page.tsx")}`);
+console.log(src("src/app/data/page.tsx"));
+console.log("  Note: Data is accessible from About page and footer — NOT in top nav.");
 // ══════════════════════════════════════════════════════════════════════════════
 
 item("H1", "Data", line("src/app/data/page.tsx", findLine(dataSrc, '"Data"')));
-item("Subtext", `Download the canonical datasets behind WGU Atlas. All files reflect the {data_date} catalog baseline.`);
 item("data_date (current)", homepageSummary.data_date);
-item("Archive line", `Archive span: {archive_span} · {total_editions} editions · {total_course_codes_ever} total course codes ever seen`);
 item("archive_span (current)", homepageSummary.archive_span);
 item("total_editions (current)", homepageSummary.total_editions);
-item("total_course_codes_ever (current)", homepageSummary.total_course_codes_ever);
 item("Meta description", "Download WGU Atlas canonical datasets — course history, named events, title variant classification.");
-
-header("Section: Canonical Datasets (CSV)", 2);
-item("H2", "Canonical Datasets (CSV)");
 blank();
-console.log("  Dataset 1:");
-item("  Label", "Canonical Course Table");
-item("  Description", "1,646-row table covering all course codes ever seen in the archive. Includes active/retired status, title variant classification, stability class, program counts, and confidence notes.");
-item("  Format", "CSV  |  1,646 rows");
-item("  File", "canonical_courses.csv");
-blank();
-console.log("  Dataset 2:");
-item("  Label", "Named Catalog Events");
-item("  Description", "41 named events (all threshold-crossing transitions). Includes event type, severity score, affected schools/programs/courses, observed and interpreted summaries, confidence, and curated-event flag.");
-item("  Format", "CSV  |  41 rows");
-item("  File", "named_events.csv");
-blank();
-console.log("  Dataset 3:");
-item("  Label", "Title Variant Classification");
-item("  Description", "167 course codes with title variation across editions, each classified by variant type: extraction noise, punctuation only, wording refinement, substantive change, or formatting only.");
-item("  Format", "CSV  |  167 rows");
-item("  File", "title_variant_classification.csv");
-
-header("Section: Site-Ready JSON Exports", 2);
-item("H2", "Site-Ready JSON Exports");
-item("Intro text", "The same JSON files that power the WGU Atlas frontend. Provided for transparency and for developers who want to build on the data.");
-blank();
-console.log("  Export 1:");
-item("  Label", "Course Cards (full list)");
-item("  Description", "1,646 course cards with code, title, status, scope, school, edition count, stability class, and flags. Used by the course explorer.");
-item("  File", "courses.json  |  712 KB");
-blank();
-console.log("  Export 2:");
-item("  Label", "Events (full)");
-item("  Description", "41 events in full JSON form with all fields including course/program sample lists.");
-item("  File", "events.json  |  48 KB");
-blank();
-console.log("  Export 3:");
-item("  Label", "Search Index");
-item("  Description", "1,842-entry search index covering all courses and programs, with alt_titles for search matching.");
-item("  File", "search_index.json  |  392 KB");
-
-header("Section: Schema Notes", 2);
-item("H2", "Schema Notes");
-console.log(`
-  stability_class — Classifies a course by its persistence across editions:
-    perpetual (all 108 editions), stable, moderate, ephemeral, single (1 edition), cert_only.
-
-  ghost_flag — True for retired AP courses with ≤2 catalog appearances.
-    These may represent data anomalies or genuinely short-lived entries.
-
-  title_variant_class — Classification of title variation across editions.
-    extraction_noise accounts for 87% of apparent title variation and does
-    not represent intentional renames.
-
-  programs_timeline (in individual course JSON files) — Lists programs by raw
-    degree heading text, not by program code. Minor wording variations across
-    editions may exist.
-
-  Full field definitions are in docs/ATLAS_SPEC.md in the GitHub repository.`);
-console.log(`\n  ${line("src/app/data/page.tsx", findLine(dataSrc, "Schema Notes"))}`);
+console.log("  Downloads: canonical_courses.csv  |  named_events.csv  |  title_variant_classification.csv");
+console.log("  JSON:      courses.json  |  events.json  |  search_index.json");
 
 // ══════════════════════════════════════════════════════════════════════════════
 header("SEO / PAGE METADATA SUMMARY", 1);
 // ══════════════════════════════════════════════════════════════════════════════
 
 console.log("\n  Route               Title                          Meta Description");
-console.log("  " + "-".repeat(90));
-console.log("  /                   WGU Atlas                      (from layout.tsx)");
+console.log("  " + "-".repeat(100));
+console.log("  /                   WGU Atlas                      An independent guide to WGU degrees, courses, and schools, built from public WGU sources.");
 console.log("  /courses            Courses                        Search and browse WGU courses — active and retired, with catalog history for each.");
-console.log("  /programs           Programs                       Browse all 196 WGU degree programs — active and deprecated — with version history and school lineage.");
-console.log("  /schools            Schools                        Browse WGU's four schools — Business, Health, Technology, and Education — with program and course listings.");
-console.log("  /compare            Compare Programs               Compare WGU degree program course rosters side by side. See shared courses, track-specific courses, and overlap metrics.");
-console.log("  /timeline           Timeline                       Major WGU catalog events from 2017 to 2026 — school reorganizations, mass course changes, program additions, and more.");
+console.log("  /programs           Degrees                        Browse all WGU degrees — current and retired — with changes over time and school history.");
+console.log("  /schools            Schools                        Browse WGU's four schools — Business, Health, Technology, and Education — with degree and course listings.");
+console.log("  /compare            Compare Degrees                Compare WGU degree course rosters side by side. See shared courses, track-specific courses, and overlap metrics.");
+console.log("  /about              About                          About WGU Atlas — an independent guide to WGU degrees, courses, and schools, built from public WGU catalog sources.");
+console.log("  /timeline           Timeline                       (on page — major WGU catalog events from 2017 to 2026)");
 console.log("  /methods            Methods                        How WGU Atlas data was collected, validated, and interpreted — archive coverage, parser eras, and trust caveats.");
 console.log("  /data               Data                           Download WGU Atlas canonical datasets — course history, named events, title variant classification.");
-console.log("  /courses/[code]     {code} — {title}               {title} ({code}). Active/Retired WGU course — {N} programs, first offered {date}.");
-console.log("  /programs/[code]    {program name}                 WGU program history for {name}. First seen {date}, {N} version changes tracked.");
-console.log("  /schools/[slug]     {school name}                  WGU {school name} — programs, courses, and catalog history.");
+console.log("  /courses/[code]     {code} — {title}               WGU course {code}: {title}. Active/Retired.");
+console.log("  /programs/[code]    {program name}                 WGU degree detail for {name}. First seen {date}, {N} version changes tracked.");
+console.log("  /schools/[slug]     {school name}                  WGU {school name} — degrees, courses, and catalog history.");
 
 // ══════════════════════════════════════════════════════════════════════════════
 header("END OF CONTENT MAP", 1);
@@ -724,7 +682,8 @@ header("END OF CONTENT MAP", 1);
 console.log("\n  To edit content, find the [source: path:line] reference above each item.");
 console.log("  Static text → edit the .tsx file directly.");
 console.log("  Dynamic data (labeled 'dynamic') → sourced from public/data/*.json files.");
-console.log("  School descriptions → src/app/schools/page.tsx  lines 10-15");
-console.log("  Nav links → src/components/layout/Nav.tsx  lines 6-17");
+console.log("  School descriptions → src/app/schools/page.tsx  and  src/components/home/SchoolCards.tsx");
+console.log("  Nav links → src/components/layout/Nav.tsx");
 console.log("  Footer text → src/components/layout/Footer.tsx");
+console.log("  Pilot families (compare) → src/lib/families.ts");
 console.log("");

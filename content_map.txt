@@ -1,5 +1,5 @@
 WGU ATLAS — FULL SITE CONTENT MAP
-Generated: 2026-03-16T17:11:24.672Z
+Generated: 2026-03-17T04:54:01.112Z
 Purpose: Proofreading reference. Shows all visible text with source locations.
 
 ======================================================================
@@ -7,20 +7,26 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
 ======================================================================
 
 ----------------------------------------------------------------------
+  Site Metadata (layout.tsx)
+----------------------------------------------------------------------
+  [source: src/app/layout.tsx]
+  Default title: WGU Atlas
+  Title template: %s | WGU Atlas
+  Meta description: An independent guide to WGU degrees, courses, and schools, built from public WGU sources.
+
+----------------------------------------------------------------------
   Top Navigation Bar
 ----------------------------------------------------------------------
   [source: src/components/layout/Nav.tsx]
 
   Brand / Logo: WGU Atlas
-    [source: src/components/layout/Nav.tsx:30]
 
-  Primary Links (student-facing):
-    Home  |  Courses  |  Programs  |  Schools  |  Compare
+  Primary Links:
+    Home  |  Courses  |  Degrees  |  Schools  |  Compare Degrees  |  About
     [source: src/components/layout/Nav.tsx:6]
 
-  Secondary Links (archive/meta):
-    Timeline  |  Methods  |  Data
-    [source: src/components/layout/Nav.tsx:14]
+  Note: Timeline, Methods, and Data are NOT in top nav.
+  They are accessible from the About page (/about).
 
 ----------------------------------------------------------------------
   Footer
@@ -29,14 +35,12 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
 
   Column 1 — About:
     Title: WGU Atlas
-    [source: src/components/layout/Footer.tsx:9]
     Byline: Created by WGU-DataNinja
     Note: An independent community project. Not affiliated with WGU.
 
   Column 2 — Data:
-    Label: Data
     Archive span: Catalog archive: 2017-01 → 2026-03
-    Site data: Site data: {dataDate}  (dynamic — from homepage_summary.json → data_date: "2026-03")
+    Site data: Site data: {dataDate}  (dynamic — data_date: "2026-03")
     Links: Methods & caveats  ·  Download datasets
 
   Column 3 — Disclaimer:
@@ -51,9 +55,9 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   Hero Section
 ----------------------------------------------------------------------
   H1 Title: WGU Atlas
-    [source: src/app/page.tsx:18]
-  Subtitle: Search courses, programs, and WGU catalog history
-    [source: src/app/page.tsx:21]
+    [source: src/app/page.tsx:16]
+  Subtitle: Explore WGU degrees, courses, and schools. Compare related degrees.
+    [source: src/app/page.tsx:19]
 
 ----------------------------------------------------------------------
   Search Bar (HomeSearch component)
@@ -61,94 +65,48 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   [source: src/components/home/HomeSearch.tsx]
   Placeholder: Search by course code or title…
     [source: src/components/home/HomeSearch.tsx:66]
-  Clear button: ✕
-  'See all' link text: See all results for "{query}" →
   Inactive result label (course): retired
-  Inactive result label (program): deprecated
+  Inactive result label (degree): retired
 
 ----------------------------------------------------------------------
   School Cards (under search bar)
 ----------------------------------------------------------------------
   [source: src/components/home/SchoolCards.tsx]
-  (4 cards — school names are dynamic from data)
-  Card labels: [School current_name] + active course count
+
+  Four cards, each with: school name, description, 'Explore [School] →' CTA
+
+  Business description: Bachelor's, master's, and MBA degrees in accounting, management, marketing, IT management, finance, and related fields.
+  Health description: Degrees in nursing, healthcare administration, public health, health informatics, and allied health disciplines.
+  Technology description: Degrees in IT, cybersecurity, software engineering, data analytics, cloud computing, and computer science.
+  Education description: Teacher preparation, educational leadership, and learning and technology degrees across all grade bands.
+
+  CTA format: 'Explore [School Name] →'
+    [source: src/components/home/SchoolCards.tsx:50]
 
 ----------------------------------------------------------------------
-  Orientation Band
+  Orientation Paragraph
 ----------------------------------------------------------------------
-  [source: src/app/page.tsx]  line 32
+  [source: src/app/page.tsx]
 
-  Paragraph:
-    WGU Atlas is an unofficial reference built from WGU's public academic catalog. It covers {active_ap_codes} active courses and {active_programs} current programs across four schools, with history going back to {archive_span start year}. Use it to look up courses, browse programs, and understand how WGU's curriculum has changed over time.
-
-  Stat pills:
-    Pill 1: Active courses: 838  (dynamic)
-    Pill 2: Active programs: 114  (dynamic)
-
-    Attribution line: Data from WGU public catalog · {data_date} edition · About this data
-    data_date value (current): 2026-03
+  WGU Atlas is an independent guide to WGU degrees, courses, and schools, built from public WGU sources. It helps students explore degree options, compare related degrees, and understand changes over time when those changes matter to what they're viewing.
+    [source: src/app/page.tsx:34]
 
 ----------------------------------------------------------------------
-  Activity Modules
+  Compare Callout
 ----------------------------------------------------------------------
-  [source: src/app/page.tsx]  line 57
+  [source: src/app/page.tsx]
 
-  Module 1:
-    Title: New Programs
-    Link: See all →  (→ /programs)
-    Content: Top 5 newest programs (dynamic from homepage_summary.json → newest_programs)
-
-  Module 2:
-    Title: New Courses
-    Link: See all →  (→ /courses)
-    Content: Top 6 recent course additions (dynamic from homepage_summary.json → recent_course_additions)
-
-  Module 3:
-    Title: Browse by School
-    Link: See all →  (→ /schools)
-    Content: All 4 schools by current_name + program count (dynamic)
+  Label: Compare degrees
+  Description: See how related WGU degrees differ — course rosters, shared courses, and track-specific requirements.
+  Link: Compare degrees →  (→ /compare)
+    [source: src/app/page.tsx:46]
 
 ----------------------------------------------------------------------
-  Official WGU Resources Section
+  Attribution Line
 ----------------------------------------------------------------------
-  [source: src/app/page.tsx]  line 125
-
-  Section H2: Official WGU Resources
-
-  Link Group: Official Channels
-    WGU Website ↗  (https://www.wgu.edu)
-    WGU YouTube ↗  (https://www.youtube.com/@WGU)
-    WGU Instagram ↗  (https://www.instagram.com/westerngovernors/)
-    WGU Facebook ↗  (https://www.facebook.com/wgu.edu)
-
-  Link Group: Community
-    r/WGU ↗  (https://www.reddit.com/r/WGU/)
-    r/WGUIT ↗  (https://www.reddit.com/r/WGUIT/)
-    r/WGUTeaching ↗  (https://www.reddit.com/r/WGUTeaching/)
-
-  Link Group: Career & Support
-    WGU Career Services ↗  (https://www.wgu.edu/alumni/career-services.html)
-    WGU Partners ↗  (https://partners.wgu.edu)
-
-  Disclaimer: WGU Atlas is not affiliated with WGU. External links are provided for reference only.
-    [source: src/app/page.tsx:145]
-
-----------------------------------------------------------------------
-  WGU Catalog History Section
-----------------------------------------------------------------------
-  [source: src/app/page.tsx]  line 154
-
-  H2: WGU Catalog History
-  Link: Full timeline →  (→ /timeline)
-  Subtext: Notable curriculum and structural changes drawn from {total_editions} catalog editions.
-  total_editions value (current): 108
-  Content: EventPreview component — first 4 curated major events from homepage_summary.json
-
-  --- Sample: Curated Events Preview (first 4) ---
-  Event 1: EVT-001
-  Event 2: EVT-002
-  Event 3: EVT-003
-  Event 4: EVT-004
+  Text: Built from WGU's public catalog · Updated through March 2026 · About this site
+  'About this site' link: → /about
+    [source: src/app/page.tsx:64]
 
 ======================================================================
   COURSES PAGE  (/COURSES)
@@ -160,7 +118,6 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
 ----------------------------------------------------------------------
   H1: Courses
     [source: src/app/courses/page.tsx:7]
-  Subtext: {activeCourses.length} active courses across WGU's four schools. Search by code or title, or filter by school.
   Meta description: Search and browse WGU courses — active and retired, with catalog history for each.
 
 ----------------------------------------------------------------------
@@ -168,7 +125,6 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
 ----------------------------------------------------------------------
   [source: src/components/courses/CourseExplorer.tsx]
 
-  Search label: Search
   Search placeholder: Code or title…
     [source: src/components/courses/CourseExplorer.tsx:58]
 
@@ -179,20 +135,15 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
     All
 
   Scope label: Scope
-  Scope options:
-    AP + Cert  (default)
-    AP only
-    Cert only
+  Scope options:  AP + Cert (default)  |  AP only  |  Cert only
 
   School label: School
-  School options:
-    All schools  (default)
-    Business  |  Health  |  Technology  |  Education
+  School options:  All schools (default)  |  Business  |  Health  |  Technology  |  Education
 
   Reset button: Reset
   Result count: {n} courses  [of {total}]
   Empty state: No courses match these filters.
-  Load more button: Show more ({n} remaining)
+  Load more: Show more ({n} remaining)
 
 ======================================================================
   COURSE DETAIL PAGE  (/COURSES/[CODE])
@@ -209,104 +160,80 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   Header Badges
 ----------------------------------------------------------------------
   {code}  |  {N} CUs  |  Active -or- Retired
-
-  Status badge text:
-    Active: Active
+    Active badge: Active
     [source: src/app/courses/[code]/page.tsx:19]
-    Retired: Retired
+    Retired badge: Retired
     [source: src/app/courses/[code]/page.tsx:19]
 
-
 ----------------------------------------------------------------------
-  Section: Official Catalog History
+  Section: Catalog History
 ----------------------------------------------------------------------
-  H2: Official Catalog History
+  H2: Catalog History
   Source badge: Source: WGU public catalog archive
-
-  Stat cards (labels):
-    First seen  |  Last seen  |  Catalog editions  |  Versions seen
-
-
-----------------------------------------------------------------------
-  Section: School & Program Membership (course detail)
-----------------------------------------------------------------------
-  (Dynamic — from course JSON data)
-  Schools seen  |  Current programs  |  Program history
-
-
-----------------------------------------------------------------------
-  Observed Titles (if variant)
-----------------------------------------------------------------------
-  Label: Also seen as:
-
+  Stat cards:  First in catalog  |  Last in catalog  |  Editions present  |  Catalog presence
 
 ----------------------------------------------------------------------
   Back Link
 ----------------------------------------------------------------------
-  Text: ← Back to Courses
+  Text: ← Back to Course Explorer
 
 ======================================================================
-  PROGRAMS PAGE  (/PROGRAMS)
+  DEGREES PAGE  (/PROGRAMS)
 ======================================================================
   [source: src/app/programs/page.tsx]
 
 ----------------------------------------------------------------------
   Page Header
 ----------------------------------------------------------------------
-  H1: Programs
+  H1: Degrees
     [source: src/app/programs/page.tsx:7]
-  Subtext: {programs.length} programs tracked across the WGU catalog archive — {activeCount} current, {retiredCount} deprecated.
-  Current active count (live): 114
-  Current retired count (live): 82
-  Meta description: Browse all 196 WGU degree programs — active and deprecated — with version history and school lineage.
+  Subtext: {programs.length} degrees tracked across the WGU catalog — {activeCount} current, {retiredCount} retired.
+  Current count (live): 114
+  Retired count (live): 82
+  Meta description: Browse all WGU degrees — current and retired — with changes over time and school history.
 
 ----------------------------------------------------------------------
   ProgramExplorer Filters
 ----------------------------------------------------------------------
   [source: src/components/programs/ProgramExplorer.tsx]
 
-  Search label: Search
-  Search placeholder: Program name or code…
-    [source: src/components/programs/ProgramExplorer.tsx:44]
+  Search placeholder: Degree name or code…
+    [source: src/components/programs/ProgramExplorer.tsx:42]
 
-  Status label: Status
-  Status options:
-    Active only  (default)
-    Deprecated only
-    All
+  Status control: Checkbox: Include retired degrees  (default: unchecked = current degrees only)
+    [source: src/components/programs/ProgramExplorer.tsx:70]
 
   School label: School
-  School options:
-    All schools  (default)
-    Business  |  Health Professions  |  Technology  |  Education
+  School options:  All schools (default)  |  Business  |  Health  |  Technology  |  Education
 
   Reset button: Reset
-  Result count: {n} programs  [of {total}]
-  Empty state: No programs match these filters.
-  Load more button: Show more ({n} remaining)
-  Row status badge (retired): deprecated {last_seen}
+  Result count: {n} degree(s)  [of {total}]
+  Empty state: No degrees match these filters.
+  Load more: Show more ({n} remaining)
+  Row status badge (retired): retired {last_seen}
 
 ======================================================================
-  PROGRAM DETAIL PAGE  (/PROGRAMS/[CODE])
+  DEGREE DETAIL PAGE  (/PROGRAMS/[CODE])
 ======================================================================
   [source: src/app/programs/[code]/page.tsx]
 
 ----------------------------------------------------------------------
   Breadcrumb
 ----------------------------------------------------------------------
-  Programs  ›  {code}
+  Degrees  ›  {code}
 
 
 ----------------------------------------------------------------------
   Header Badges
 ----------------------------------------------------------------------
   {code}  |  {status badge}  |  {N} CUs
-    Active badge: Current
-    Retired badge: Deprecated
+    Current badge: Current
+    Retired badge: Retired
+    [source: src/app/programs/[code]/page.tsx:?]
 
 
 ----------------------------------------------------------------------
-  Section: About This Program
+  Section: About This Degree
 ----------------------------------------------------------------------
   H2: About This Program
   Source badge: {enriched.description_source}  (dynamic from program_enriched.json)
@@ -315,15 +242,16 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
 
 
 ----------------------------------------------------------------------
-  Section: Official Catalog History
+  Section: Changes Over Time
 ----------------------------------------------------------------------
-  H2: Official Catalog History
+  H2: Changes Over Time
+    [source: src/app/programs/[code]/page.tsx:159]
   Source badge: Source: WGU public catalog archive
 
-  Stat cards (labels):
-    First seen  |  Last seen  |  Catalog editions  |  Version changes  |  Total CUs (latest)
+  Stat cards:  First seen  |  Last seen  |  Catalog editions  |  Version changes  |  Total CUs (latest)
 
-  Sub-label: School lineage: School lineage
+  Sub-label: School name history: Earlier names
+    [source: src/app/programs/[code]/page.tsx:181]
   Sub-label: Known names: Known names
   Canonical marker: (canonical)
 
@@ -332,14 +260,14 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   Section: Program Learning Outcomes
 ----------------------------------------------------------------------
   H2: Program Learning Outcomes
-  Source badge: {enriched.outcomes_source}
   Note: Official WGU-authored outcomes from the catalog Program Outcomes section. Present in ERA_B catalogs (2024-08+).
 
 
 ----------------------------------------------------------------------
-  Section: Version History
+  Section: Past Versions
 ----------------------------------------------------------------------
-  H2: Version History
+  H2: Past Versions
+    [source: src/app/programs/[code]/page.tsx:257]
   No changes text: No curriculum version changes observed across catalog editions.
   Changes text: {N} version change(s) observed.
   Table headers:  Catalog date  |  Version stamp
@@ -350,17 +278,16 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   Section: Course Roster
 ----------------------------------------------------------------------
   H2: Course Roster ({N} courses)
-  Source badge: {enriched.roster_source}
   Note: Term sequence and course list from the 2026-03 catalog. Click any course code to view its full catalog history.
   Table headers:  Code  |  Title  |  CUs
-  Term sub-header: Term {N}
   Footer: Total: {sum} CUs across {N} courses. Program total per catalog: {latestCus} CUs.
 
 
 ----------------------------------------------------------------------
-  Back link
+  Back Link
 ----------------------------------------------------------------------
-  Text: ← Back to Programs
+  Text: ← Back to Degrees
+    [source: src/app/programs/[code]/page.tsx:384]
 
 ======================================================================
   SCHOOLS PAGE  (/SCHOOLS)
@@ -372,23 +299,23 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
 ----------------------------------------------------------------------
   H1: Schools
     [source: src/app/schools/page.tsx:6]
-  Subtext: WGU is organized into four schools. Each school page shows its program and course catalog, lineage history, and recent activity.
+  Subtext: WGU is organized into four schools. Each school page shows its current degrees and courses, school background, and recent changes.
     [source: src/app/schools/page.tsx:25]
   Attribution: Source: WGU public catalog archive · {current year}
 
 ----------------------------------------------------------------------
   School Cards (SCHOOL_DESCRIPTIONS)
 ----------------------------------------------------------------------
-  [source: src/app/schools/page.tsx]  lines 10-15
+  [source: src/app/schools/page.tsx]
 
-  business: Bachelor's, master's, and MBA programs in accounting, management, marketing, IT management, finance, and related fields.
-  health: Programs in nursing, healthcare administration, public health, health informatics, and allied health disciplines.
-  technology: Programs in IT, cybersecurity, software engineering, data analytics, cloud computing, and computer science.
-  education: Teacher preparation, educational leadership, and learning and technology programs across all grade bands.
+  business: Bachelor's, master's, and MBA degrees in accounting, management, marketing, IT management, finance, and related fields.
+  health: Degrees in nursing, healthcare administration, public health, health informatics, and allied health disciplines.
+  technology: Degrees in IT, cybersecurity, software engineering, data analytics, cloud computing, and computer science.
+  education: Teacher preparation, educational leadership, and learning and technology degrees across all grade bands.
 
   Card subtext: Formerly: {historical names}  (if any)
-  Stats: {N} active programs  ·  {N} active courses
-  Meta description: Browse WGU's four schools — Business, Health, Technology, and Education — with program and course listings.
+  Stats: {N} current degrees  ·  {N} active courses
+  Meta description: Browse WGU's four schools — Business, Health, Technology, and Education — with degree and course listings.
 
 ======================================================================
   SCHOOL DETAIL PAGE  (/SCHOOLS/[SLUG])
@@ -402,41 +329,230 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
 
 
 ----------------------------------------------------------------------
+  Page Sections (in order)
+----------------------------------------------------------------------
+
+  Section headings (from source):
+    • Recent Changes
+    • School Background
+    • New Degrees
+    • Recent Degree Updates
+    • Recent Course Additions
+
+  Header subtext: {N} current degrees · {N} active courses
+  Retired degrees toggle: ▶ Show retired degrees / ▼ Hide retired degrees
+  Courses toggle: ▶ Show all {N} active courses / ▼ Hide course list
+  Meta description: WGU {school.current_name} — degrees, courses, and catalog history.
+
+======================================================================
+  COMPARE DEGREES PAGE  (/COMPARE)
+======================================================================
+  [source: src/app/compare/page.tsx]
+
+----------------------------------------------------------------------
   Page Header
 ----------------------------------------------------------------------
-  H1: {school.current_name}  (dynamic)
-  Historical names: Formerly known as: {historical names}  (if any)
-
+  H1: Compare Degrees
+    [source: src/app/compare/page.tsx:9]
+  Description: Select two related degrees to compare their course rosters side by side. Shared courses, track-specific courses, and overlap metrics are shown for each comparison.
+  Meta title: Compare Degrees
+  Meta description: Compare WGU degree course rosters side by side. See shared courses, track-specific courses, and overlap metrics.
 
 ----------------------------------------------------------------------
-  Detected Section Headings
+  CompareSelector UI
 ----------------------------------------------------------------------
-  • School History
-  • Recent Activity
-  • Newest Programs
-  • Recent Version Updates
-  • Recent Course Additions
-  Meta description: WGU {school.current_name} — programs, courses, and catalog history.
+  [source: src/components/compare/CompareSelector.tsx]
+
+  Step 1 panel:
+    Header: Choose a degree
+    [source: src/components/compare/CompareSelector.tsx:173]
+    Filters: All schools (default) + All levels (default)
+    Empty state: No degrees match these filters.
+    Footer note: Only degrees with comparable track variants are shown.
+
+  Step 2 panel:
+    Header: Compare with
+    Prompt (before step 1): Select a degree in step 1 first.
+    No siblings text: No comparable degrees.
+    Footer note: Showing only degrees in the same family as your selection.
+
+  Compact bar (both selected):
+    Buttons: Change  |  Reset
+
+  Prompt (A selected, waiting for B):
+    Text: Now select a degree in step 2 to see the comparison.
+
+----------------------------------------------------------------------
+  CompareView — Section labels
+----------------------------------------------------------------------
+  [source: src/components/compare/CompareView.tsx]
+
+  Overlap summary heading: Overlap Summary
+  Legend chips: {N} shared  |  {track}-only  |  {track}-only
+  Overlap bar note: Overlap bar: shared (green) / {left}-only (blue) / {right}-only (amber). Jaccard = shared ÷ union.
+  Column headers: {Left track label}  |  Shared Courses ({N})  |  {Right track label}
+  Attribution: Comparison source: 2026-03 WGU catalog roster. Exact course code identity only — no alias or fuzzy matching. Atlas-derived analysis.
+
+----------------------------------------------------------------------
+  Pilot Families
+----------------------------------------------------------------------
+  (Defined in src/lib/families.ts)
+
+  Family 1: Software Engineering  (bsswe-tracks)
+    School: School of Technology  |  Level: Bachelor's
+    Programs: BSSWE (Java Track)  ·  BSSWE_C (C# Track)
+    Note: Both tracks cover the same Software Engineering curriculum.
+          The difference is the programming language: Java (Android) or C# (.NET).
+
+  Family 2: MS Data Analytics  (msda-tracks)
+    School: School of Technology  |  Level: Master's
+    Programs: MSDADE (Data Engineering)  ·  MSDADS (Data Science)  ·  MSDADPE (Decision Process Eng.)
+    Note: All three tracks share the same 7-course Data Analytics foundation.
+          The final 4 courses are the specialization.
+
+======================================================================
+  COMPARE SIMULATION — BSSWE VS BSSWE_C (ACTUAL DATA)
+======================================================================
+
+  Live comparison computed from public/data/program_enriched.json
+  This mirrors what the Compare Degrees UI renders at /compare
+
+  ┌─────────────────────────────────────────────────────────────────┐
+  │  COMPARE DEGREES: B.S. Software Engineering                     │
+  │  B.S. Software Engineering (Java Track)  vs  (C# Track)         │
+  └─────────────────────────────────────────────────────────────────┘
+
+  Left:   BSSWE — Bachelor of Science, Software Engineering
+  Right:  BSSWE_C — Bachelor of Science, Software Engineering
+
+  Overlap Summary
+  ──────────────────────────────────────────────────
+  Shared courses:      33
+  Java-only courses:   5
+  C#-only courses:     3
+  Total courses (A):   38  (119 CUs)
+  Total courses (B):   36  (119 CUs)
+  Jaccard overlap:     80%  (33 shared / 41 union)
+
+  Shared Courses (33)
+  ──────────────────────────────────────────────────
+    D278       Scripting and Programming - Foundations        3cu  (term 1)
+    D335       Introduction to Programming in Python          3cu  (term 1)
+    D370       IT Leadership Foundations                      3cu  (term 1)
+    D276       Web Development Foundations                    3cu  (term 1)
+    D197       Version Control                                1cu  (term 2)
+    D277       Front-End Web Development                      3cu  (term 2)
+    C955       Applied Probability and Statistics             3cu  (term 2)
+    D322       Introduction to IT                             4cu  (term 2)
+    C683       Natural Science Lab                            2cu  (term 2)
+    C957       Applied Algebra                                3cu  (term 3)
+    C949       Data Structures and Algorithms I               4cu  (term 3)
+    D372       Introduction to Systems Thinking               3cu  (term 3)
+    D426       Data Management - Foundations                  3cu  (term 3)
+    D427       Data Management - Applications                 4cu  (term 4)
+    D280       JavaScript Programming                         3cu  (term 4)
+    D333       Ethics in Technology                           3cu  (term 4)
+    D315       Network and Security - Foundations             3cu  (term 4)
+    D326       Advanced Data Management                       3cu  (term 5)
+    D279       User Interface Design                          3cu  (term 5)
+    D479       User Experience Design                         3cu  (term 5)
+    C458       Health, Fitness, and Wellness                  4cu  ← term 6 / term 5
+    D282       Cloud Foundations                              3cu  (term 6)
+    D386       Hardware and Operating Systems Essentials      3cu  (term 6)
+    D324       Business of IT - Project Management            4cu  (term 7)
+    D270       Composition: Successful Self-Expression        3cu  ← term 7 / term 8
+    D336       Business of IT - Applications                  4cu  (term 7)
+    D199       Introduction to Physical and Human Geography   3cu  (term 8)
+    D385       Software Security and Testing                  3cu  (term 8)
+    D339       Technical Communication                        3cu  (term 8)
+    D480       Software Design and Quality Assurance          3cu  (term 9)
+    C963       American Politics and the US Constitution      3cu  (term 9)
+    D284       Software Engineering                           4cu  (term 9)
+    D424       Software Engineering Capstone                  4cu  (term 10)
+
+  Java Track Only (5)
+  ──────────────────────────────────────────────────
+    D286       Java Fundamentals                              3cu  (term 5)
+    D287       Java Frameworks                                3cu  (term 6)
+    D288       Back-End Programming                           3cu  (term 7)
+    D387       Advanced Java                                  3cu  (term 8)
+    D308       Mobile Application Development (Android)       3cu  (term 9)
+
+  C# Track Only (3)
+  ──────────────────────────────────────────────────
+    C968       Software I – C#                                6cu  (term 6)
+    C969       Software II – Advanced C#                      6cu  (term 7)
+    C971       Mobile Application Development Using C#        3cu  (term 9)
+
+  Family note: Both tracks cover the same Software Engineering curriculum.
+  The difference is the programming language: Java (with Android mobile
+  development) or C# (.NET mobile development). 33 of the courses are identical.
+
+======================================================================
+  ABOUT PAGE  (/ABOUT)
+======================================================================
+  [source: src/app/about/page.tsx]
+
+----------------------------------------------------------------------
+  Page Header
+----------------------------------------------------------------------
+  H1: About WGU Atlas
+    [source: src/app/about/page.tsx:6]
+  Subtitle: An independent guide to WGU degrees, courses, and schools.
+  Meta description: About WGU Atlas — an independent guide to WGU degrees, courses, and schools, built from public WGU catalog sources.
+
+----------------------------------------------------------------------
+  Sections
+----------------------------------------------------------------------
+
+  Section 1: What is WGU Atlas?
+    WGU Atlas is an independent reference built from WGU's public academic catalog.
+    It is not affiliated with, endorsed by, or operated by Western Governors University.
+    Atlas helps students explore WGU degree options, compare related degrees, and
+    understand how degrees and courses have changed over time when those changes
+    are relevant to what they're viewing.
+
+  Section 2: What it covers
+    • Current degrees across WGU's four schools
+    • Course catalog with history going back to 2017
+    • Degree comparisons for related programs (pilot set)
+    • Retired degrees still visible for reference
+    • School background and earlier names over time
+
+  Section 3: Source and independence
+    All data is derived from WGU's publicly available course catalog, scraped and
+    parsed from 108 catalog editions spanning January 2017 through March 2026.
+    No internal WGU systems or private data were accessed.
+    Atlas is a community project. Not a substitute for official WGU advising.
+
+  Section 4: How history and resources are used
+    Where a degree or school has changed names or structure over time, Atlas surfaces
+    that history where relevant — earlier names on detail pages. History is secondary
+    context, not the primary lens.
+
+  More detail links:
+    Methods & Caveats: → /methods  — how data was collected, validated, and how to interpret it
+    Data: → /data  — download the canonical datasets behind Atlas
+    Timeline: → /timeline  — major WGU catalog events from 2017 to 2026
 
 ======================================================================
   TIMELINE PAGE  (/TIMELINE)
 ======================================================================
   [source: src/app/timeline/page.tsx]
+  Note: Timeline is accessible from About page and footer — NOT in top nav.
 
 ----------------------------------------------------------------------
   Page Header
 ----------------------------------------------------------------------
   H1: Catalog Timeline
     [source: src/app/timeline/page.tsx:47]
-  Subtext: {events.length} named catalog events across 107 edition transitions (2017–2026). Curated major events include hand-written interpretations; remaining events have machine-generated observed summaries.
   events.length (current): 41
-  Info note: All entries sourced from WGU public catalog archive. Observed summaries describe what changed; interpreted summaries explain why. Confidence noted where applicable.
+  curated events (current): 10
+  other events (current): 31
 
 ----------------------------------------------------------------------
-  Type Label Definitions
+  Event Type Labels
 ----------------------------------------------------------------------
-  [source: src/app/timeline/page.tsx]  lines 10-19
-
   rename_cleanup  →  "Rename / Cleanup"
   composite  →  "Composite"
   school_rename  →  "School Rename"
@@ -445,38 +561,6 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   cert_formalization  →  "Cert Formalization"
   version_review  →  "Version Review"
   mixed  →  "Mixed"
-
-----------------------------------------------------------------------
-  Severity Labels
-----------------------------------------------------------------------
-  score >= 300  →  Very High
-  score >= 150  →  High
-  score >= 75   →  Moderate
-  score < 75    →  Low
-
-----------------------------------------------------------------------
-  Major Events Section
-----------------------------------------------------------------------
-  H2: Major Events
-  Subtext: {curated.length} curated events with hand-written titles and interpretations.
-  curated count (current): 10
-
-  Event card fields:
-    {start_edition} → {end_edition}  |  [type label]  |  Severity {label}  |  {confidence} confidence
-    H3: {event.event_title}
-    Observed: (label)  {event.observed_summary}
-    Interpretation: (label)  {event.interpreted_summary}
-    Schools: {affected_schools}
-    +{courses_added_count} / −{courses_removed_count} courses
-    {version_changes_count} version changes  (if > 0)
-    {title_changes_count} title changes  (if > 0)
-
-----------------------------------------------------------------------
-  All Catalog Events Section
-----------------------------------------------------------------------
-  H2: All Catalog Events
-  Subtext: {other.length} additional threshold-crossing transitions with observed summaries.
-  other count (current): 31
 
 ----------------------------------------------------------------------
   Sample: Curated Events (all)
@@ -725,240 +809,46 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   METHODS PAGE  (/METHODS)
 ======================================================================
   [source: src/app/methods/page.tsx]
+  Note: Methods is accessible from About page and footer — NOT in top nav.
   H1: Methods & Caveats
-    [source: src/app/methods/page.tsx:4]
-  Subtext: How this data was collected, validated, and how to interpret it correctly.
   Meta description: How WGU Atlas data was collected, validated, and interpreted — archive coverage, parser eras, and trust caveats.
 
-
-----------------------------------------------------------------------
-  Section: Archive Coverage
-----------------------------------------------------------------------
-  H2: Archive Coverage
-
-  WGU Atlas is built from 108 public WGU catalog editions spanning
-  January 2017 through March 2026. Three editions are absent from
-  the archive (2017-02, 2017-04, 2017-06), likely never published as separate
-  snapshots on the WGU public catalog page.
-
-  Each edition represents a distinct published snapshot of WGU's public course
-  catalog. The parser extracts course codes, titles, program memberships, and
-  structural metadata from each edition.
-
-    [source: src/app/methods/page.tsx:16]
-
-----------------------------------------------------------------------
-  Section: Parser Eras
-----------------------------------------------------------------------
-  H2: Parser Eras
-
-  The WGU catalog underwent a structural formatting change in mid-2024. Two
-  parser eras are recognized:
-
-  • ERA_A: 2017-01 through 2024-07 — original catalog structure
-  • ERA_B: 2024-08 through 2026-03 — updated catalog structure
-
-  The active parser (parse_catalog_v11.py) handles both eras. A full archive
-  run produces 0 skipped editions and 0 body-parse anomalies.
-
-    [source: src/app/methods/page.tsx:30]
-
-----------------------------------------------------------------------
-  Section: Validation
-----------------------------------------------------------------------
-  H2: Validation
-
-  The 2026-03 edition serves as the trusted reference baseline. It was validated
-  deeply after an initial scrape returned incomplete results (696 AP codes vs.
-  the correct 838). The discrepancy was traced, corrected, and verified.
-
-  14 structurally critical editions — breakpoints where the parser or catalog
-  structure changed — were individually validated. All 14 passed clean.
-
-  [Callout box] The 696 → 838 correction is an important part of this project's trust story.
-  The current counts are hard-won and verified, not taken at face value from
-  the first parser run.
-
-    [source: src/app/methods/page.tsx:46]
-
-----------------------------------------------------------------------
-  Section: Observed vs. Inferred
-----------------------------------------------------------------------
-  H2: Observed vs. Inferred
-
-  WGU Atlas distinguishes between observed facts and inferred relationships:
-
-  • Observed: directly present in the catalog archive — course code,
-    title, program membership, edition dates
-  • Inferred: derived from patterns across editions — event types,
-    event interpretations, stability classifications
-
-  Interpretive content (event interpretations, title variant classifications) is
-  labeled with confidence levels: high, moderate, or tentative.
-
-    [source: src/app/methods/page.tsx:63]
-
-----------------------------------------------------------------------
-  Section: Title Variant Classification
-----------------------------------------------------------------------
-  H2: Title Variant Classification
-
-  167 course codes show title variation across editions. These have been manually
-  classified into categories:
-
-  • Extraction noise (145 codes, 87%) — PDF line-wrap, Unicode variants, catalog oscillations. Not real renames.
-  • Punctuation only (16) — hyphen, comma, em-dash changes.
-  • Wording refinement (3) — typo fix or minor synonym swap.
-  • Substantive change (2) — genuine semantic renames.
-  • Formatting only (1) — space insertion.
-
-  The overwhelming majority of apparent title variation is extraction artifact,
-  not editorial intent.
-
-    [source: src/app/methods/page.tsx:84]
-
-----------------------------------------------------------------------
-  Section: Key Caveats
-----------------------------------------------------------------------
-  H2: Key Caveats
-
-  Caveat 1: Catalog date ≠ implementation date
-    The catalog reflects publication timing, not guaranteed student rollout.
-    A course appearing in a March catalog may have been deployed to students earlier or later.
-
-  Caveat 2: Catalog presence ≠ lived experience
-    Official structure does not perfectly capture actual student pathways or
-    the subjective experience of a course.
-
-  Caveat 3: Code change ≠ substantive change
-    Course code changes may reflect renumbering, administrative reorganization,
-    or cleanup — not necessarily changes to course content.
-
-  Caveat 4: Reddit is supplementary context
-    Student discussion data (planned for v1.1) is useful context, not
-    institutional truth. WGU Atlas keeps official catalog facts and discussion
-    signals in clearly separate sections.
-
-  Caveat 5: One-off courses require caution
-    Courses with only 1–2 catalog appearances are flagged (ghost_flag,
-    single_appearance_flag). These may represent data anomalies or genuinely
-    short-lived entries.
-
-    [source: src/app/methods/page.tsx:102]
-
-----------------------------------------------------------------------
-  Section: Data Separation Policy
-----------------------------------------------------------------------
-  H2: Data Separation Policy
-
-  WGU Atlas enforces a strict separation between three information types:
-
-  • Official catalog facts — from the WGU public catalog archive
-  • Discussion signals — from Reddit and community spaces (v1.1)
-  • LLM-generated summaries — clearly labeled with date, source count, and disclaimer (v1.1)
-
-  These three types are never mixed in the same field or presented as equivalent.
-
-    [source: src/app/methods/page.tsx:129]
+  Sections: Archive Coverage · Parser Eras · Validation · Observed vs. Inferred
+            Title Variant Classification · Key Caveats · Data Separation Policy
 
 ======================================================================
   DATA PAGE  (/DATA)
 ======================================================================
   [source: src/app/data/page.tsx]
+  Note: Data is accessible from About page and footer — NOT in top nav.
   H1: Data
     [source: src/app/data/page.tsx:6]
-  Subtext: Download the canonical datasets behind WGU Atlas. All files reflect the {data_date} catalog baseline.
   data_date (current): 2026-03
-  Archive line: Archive span: {archive_span} · {total_editions} editions · {total_course_codes_ever} total course codes ever seen
   archive_span (current): 2017-01 to 2026-03
   total_editions (current): 108
-  total_course_codes_ever (current): 1594
   Meta description: Download WGU Atlas canonical datasets — course history, named events, title variant classification.
 
-----------------------------------------------------------------------
-  Section: Canonical Datasets (CSV)
-----------------------------------------------------------------------
-  H2: Canonical Datasets (CSV)
-
-  Dataset 1:
-    Label: Canonical Course Table
-    Description: 1,646-row table covering all course codes ever seen in the archive. Includes active/retired status, title variant classification, stability class, program counts, and confidence notes.
-    Format: CSV  |  1,646 rows
-    File: canonical_courses.csv
-
-  Dataset 2:
-    Label: Named Catalog Events
-    Description: 41 named events (all threshold-crossing transitions). Includes event type, severity score, affected schools/programs/courses, observed and interpreted summaries, confidence, and curated-event flag.
-    Format: CSV  |  41 rows
-    File: named_events.csv
-
-  Dataset 3:
-    Label: Title Variant Classification
-    Description: 167 course codes with title variation across editions, each classified by variant type: extraction noise, punctuation only, wording refinement, substantive change, or formatting only.
-    Format: CSV  |  167 rows
-    File: title_variant_classification.csv
-
-----------------------------------------------------------------------
-  Section: Site-Ready JSON Exports
-----------------------------------------------------------------------
-  H2: Site-Ready JSON Exports
-  Intro text: The same JSON files that power the WGU Atlas frontend. Provided for transparency and for developers who want to build on the data.
-
-  Export 1:
-    Label: Course Cards (full list)
-    Description: 1,646 course cards with code, title, status, scope, school, edition count, stability class, and flags. Used by the course explorer.
-    File: courses.json  |  712 KB
-
-  Export 2:
-    Label: Events (full)
-    Description: 41 events in full JSON form with all fields including course/program sample lists.
-    File: events.json  |  48 KB
-
-  Export 3:
-    Label: Search Index
-    Description: 1,842-entry search index covering all courses and programs, with alt_titles for search matching.
-    File: search_index.json  |  392 KB
-
-----------------------------------------------------------------------
-  Section: Schema Notes
-----------------------------------------------------------------------
-  H2: Schema Notes
-
-  stability_class — Classifies a course by its persistence across editions:
-    perpetual (all 108 editions), stable, moderate, ephemeral, single (1 edition), cert_only.
-
-  ghost_flag — True for retired AP courses with ≤2 catalog appearances.
-    These may represent data anomalies or genuinely short-lived entries.
-
-  title_variant_class — Classification of title variation across editions.
-    extraction_noise accounts for 87% of apparent title variation and does
-    not represent intentional renames.
-
-  programs_timeline (in individual course JSON files) — Lists programs by raw
-    degree heading text, not by program code. Minor wording variations across
-    editions may exist.
-
-  Full field definitions are in docs/ATLAS_SPEC.md in the GitHub repository.
-
-    [source: src/app/data/page.tsx:147]
+  Downloads: canonical_courses.csv  |  named_events.csv  |  title_variant_classification.csv
+  JSON:      courses.json  |  events.json  |  search_index.json
 
 ======================================================================
   SEO / PAGE METADATA SUMMARY
 ======================================================================
 
   Route               Title                          Meta Description
-  ------------------------------------------------------------------------------------------
-  /                   WGU Atlas                      (from layout.tsx)
+  ----------------------------------------------------------------------------------------------------
+  /                   WGU Atlas                      An independent guide to WGU degrees, courses, and schools, built from public WGU sources.
   /courses            Courses                        Search and browse WGU courses — active and retired, with catalog history for each.
-  /programs           Programs                       Browse all 196 WGU degree programs — active and deprecated — with version history and school lineage.
-  /schools            Schools                        Browse WGU's four schools — Business, Health, Technology, and Education — with program and course listings.
-  /compare            Compare Programs               Compare WGU degree program course rosters side by side. See shared courses, track-specific courses, and overlap metrics.
-  /timeline           Timeline                       Major WGU catalog events from 2017 to 2026 — school reorganizations, mass course changes, program additions, and more.
+  /programs           Degrees                        Browse all WGU degrees — current and retired — with changes over time and school history.
+  /schools            Schools                        Browse WGU's four schools — Business, Health, Technology, and Education — with degree and course listings.
+  /compare            Compare Degrees                Compare WGU degree course rosters side by side. See shared courses, track-specific courses, and overlap metrics.
+  /about              About                          About WGU Atlas — an independent guide to WGU degrees, courses, and schools, built from public WGU catalog sources.
+  /timeline           Timeline                       (on page — major WGU catalog events from 2017 to 2026)
   /methods            Methods                        How WGU Atlas data was collected, validated, and interpreted — archive coverage, parser eras, and trust caveats.
   /data               Data                           Download WGU Atlas canonical datasets — course history, named events, title variant classification.
-  /courses/[code]     {code} — {title}               {title} ({code}). Active/Retired WGU course — {N} programs, first offered {date}.
-  /programs/[code]    {program name}                 WGU program history for {name}. First seen {date}, {N} version changes tracked.
-  /schools/[slug]     {school name}                  WGU {school name} — programs, courses, and catalog history.
+  /courses/[code]     {code} — {title}               WGU course {code}: {title}. Active/Retired.
+  /programs/[code]    {program name}                 WGU degree detail for {name}. First seen {date}, {N} version changes tracked.
+  /schools/[slug]     {school name}                  WGU {school name} — degrees, courses, and catalog history.
 
 ======================================================================
   END OF CONTENT MAP
@@ -967,7 +857,8 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   To edit content, find the [source: path:line] reference above each item.
   Static text → edit the .tsx file directly.
   Dynamic data (labeled 'dynamic') → sourced from public/data/*.json files.
-  School descriptions → src/app/schools/page.tsx  lines 10-15
-  Nav links → src/components/layout/Nav.tsx  lines 6-17
+  School descriptions → src/app/schools/page.tsx  and  src/components/home/SchoolCards.tsx
+  Nav links → src/components/layout/Nav.tsx
   Footer text → src/components/layout/Footer.tsx
+  Pilot families (compare) → src/lib/families.ts
 
