@@ -89,25 +89,9 @@ export default async function ProgramDetailPage({ params }: Props) {
 
       {/* Header */}
       <div className="mb-8">
-        <div className="flex items-start flex-wrap gap-2 mb-2">
-          <span className="font-mono text-sm bg-purple-100 text-purple-700 px-2 py-1 rounded font-semibold mt-0.5">
-            {code}
-          </span>
-          {isActive ? (
-            <span className="text-sm bg-green-50 text-green-700 border border-green-200 px-2 py-1 rounded font-medium">
-              Current
-            </span>
-          ) : (
-            <span className="text-sm bg-slate-100 text-slate-500 px-2 py-1 rounded font-medium">
-              Retired
-            </span>
-          )}
-          {latestCus != null && (
-            <span className="text-sm bg-indigo-50 text-indigo-700 border border-indigo-200 px-2 py-1 rounded font-semibold">
-              {latestCus} CUs{cusChanged ? " (changed)" : ""}
-            </span>
-          )}
-        </div>
+        <p className="text-sm text-slate-500 mb-2">
+          {code} · {isActive ? "Current" : "Retired"}{latestCus != null ? ` · ${latestCus} CUs` : ""}
+        </p>
         <h1 className="text-3xl font-bold text-slate-800">{program.canonical_name}</h1>
         <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1">
           {schoolRecord ? (
@@ -136,7 +120,7 @@ export default async function ProgramDetailPage({ params }: Props) {
         <section className="mb-8">
           <div className="flex items-center gap-2 mb-3">
             <div className="w-1 h-5 bg-blue-600 rounded" />
-            <h2 className="text-lg font-bold text-slate-800">About This Program</h2>
+            <h2 className="text-lg font-bold text-slate-800">About This Degree</h2>
             <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
               {enriched.description_source}
             </span>
@@ -157,15 +141,11 @@ export default async function ProgramDetailPage({ params }: Props) {
         <div className="flex items-center gap-2 mb-4">
           <div className="w-1 h-5 bg-slate-300 rounded" />
           <h2 className="text-base font-semibold text-slate-700">Changes Over Time</h2>
-          <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
-            Source: WGU public catalog archive
-          </span>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
-          <StatCard label="First seen" value={program.first_seen} />
-          <StatCard label="Last seen" value={program.last_seen} />
-          <StatCard label="Catalog editions" value={String(program.edition_count)} />
+          <StatCard label="First listed" value={program.first_seen} />
+          {!isActive && <StatCard label="Last seen" value={program.last_seen} />}
           <StatCard label="Version changes" value={String(program.version_changes)} />
           {latestCus != null && (
             <StatCard
@@ -176,9 +156,9 @@ export default async function ProgramDetailPage({ params }: Props) {
         </div>
 
         {/* School lineage */}
-        {program.colleges.length > 0 && (
+        {program.colleges.length > 1 && (
           <div className="mb-5">
-            <dt className="text-xs text-slate-500 mb-2">Earlier names</dt>
+            <dt className="text-xs text-slate-500 mb-2">School name history</dt>
             <div className="flex flex-wrap items-center gap-1">
               {program.colleges.map((college, i) => (
                 <span key={i} className="flex items-center gap-1">
@@ -194,30 +174,6 @@ export default async function ProgramDetailPage({ params }: Props) {
           </div>
         )}
 
-        {/* Known names */}
-        {program.degree_headings.length > 1 && (
-          <div className="mb-5">
-            <dt className="text-xs text-slate-500 mb-1">Known names</dt>
-            <ul className="flex flex-col gap-1">
-              {program.degree_headings.map((h, i) => (
-                <li
-                  key={i}
-                  className={`text-sm ${
-                    h === program.canonical_name
-                      ? "font-medium text-slate-800"
-                      : "text-slate-500"
-                  }`}
-                >
-                  {h === program.canonical_name ? "· " : "  "}
-                  {h}
-                  {h === program.canonical_name && (
-                    <span className="ml-2 text-xs text-slate-400">(canonical)</span>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
       </section>
 
       {/* ================================================================
