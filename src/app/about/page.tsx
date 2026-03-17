@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "About WGU Atlas — an independent guide to WGU degrees, courses, and schools, built from public WGU catalog sources.",
+  description: "About WGU Atlas — an independent guide to WGU degree programs and courses, built from public WGU sources.",
 };
 
 export default function AboutPage() {
@@ -11,54 +11,52 @@ export default function AboutPage() {
     <div className="max-w-3xl mx-auto px-4 py-10">
       <h1 className="text-3xl font-bold text-slate-800 mb-2">About WGU Atlas</h1>
       <p className="text-slate-500 mb-10">
-        An independent guide to WGU degrees, courses, and schools.
+        An independent guide to WGU degree programs and courses.
       </p>
 
       <Section title="What is WGU Atlas?">
         <p>
-          WGU Atlas is an independent guide built from WGU&apos;s public academic catalog. It
-          is not affiliated with, endorsed by, or operated by Western Governors University.
+          WGU Atlas is an independent guide built from WGU&apos;s public catalog and other
+          public WGU sources. It is not affiliated with or operated by WGU.
         </p>
         <p>
-          Atlas helps students explore WGU degree options, compare related degrees, and
-          understand how degrees and courses have changed over time when those changes are
-          relevant to what they&apos;re viewing.
+          The site is meant to help students understand WGU degree options, explore
+          courses, compare related degrees, and find useful context in one place.
         </p>
       </Section>
 
       <Section title="What it covers">
         <ul className="list-disc list-inside space-y-1 text-slate-600">
-          <li>Current degrees across WGU&apos;s four schools</li>
-          <li>Course catalog with history going back to 2017</li>
+          <li>Current WGU degrees across all four schools</li>
+          <li>A course catalog with historical coverage back to 2017</li>
           <li>Degree comparisons for related degrees</li>
-          <li>Retired degrees still visible for reference</li>
-          <li>School background and earlier names over time</li>
+          <li>Retired degrees that are still useful for reference</li>
+          <li>School background and earlier names where relevant</li>
         </ul>
       </Section>
 
       <Section title="Source and independence">
         <p>
-          All data is derived from WGU&apos;s publicly available course catalog, covering 108
-          editions from January 2017 through March 2026. No internal WGU systems or private
-          data were accessed.
+          Atlas is built from WGU&apos;s publicly available catalog data, covering 108
+          editions from January 2017 through March 2026. It does not use internal WGU
+          systems or private data.
         </p>
         <p>
-          Atlas is a community project. It is not a substitute for official WGU advising,
-          enrollment, or academic records.
+          It is a community project, and official WGU sources should still be the final
+          word for advising, enrollment, and academic policy.
         </p>
       </Section>
 
       <Section title="How history and resources are used">
         <p>
-          Where a degree or school has changed names or structure over time, Atlas surfaces
-          that history where it is relevant — for example, showing earlier names of a degree
-          or a school on the relevant detail page. History is secondary context, not the
-          primary lens.
+          When a degree or school has changed over time, Atlas shows that context where
+          it helps explain what you&apos;re viewing. That might include earlier names,
+          past versions, or other relevant background.
         </p>
         <p>
-          Official WGU resource links (program guides, outcome pages) are attached to degree
-          and school pages where they have been identified and validated from public WGU web
-          sources.
+          Official WGU resources, such as program guides and outcomes pages, are attached
+          to degree and school pages when they have been identified and verified from
+          public WGU sources.
         </p>
       </Section>
 
@@ -67,10 +65,10 @@ export default function AboutPage() {
         <ul className="flex flex-col gap-3 text-sm">
           <li>
             <Link href="/methods" className="text-blue-600 hover:underline font-medium">
-              Methods &amp; Caveats
+              Methods
             </Link>
             <span className="text-slate-500 ml-2">
-              — how data was collected, validated, and how to interpret it correctly
+              — how the data was collected and how to interpret it
             </span>
           </li>
           <li>
@@ -78,7 +76,7 @@ export default function AboutPage() {
               Data
             </Link>
             <span className="text-slate-500 ml-2">
-              — download the canonical datasets behind Atlas
+              — download the Atlas datasets
             </span>
           </li>
           <li>

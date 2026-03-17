@@ -67,7 +67,7 @@ export default function HomeSearch() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => results.length > 0 && setOpen(true)}
-          className="flex-1 bg-transparent outline-none text-sm placeholder-slate-400"
+          className="flex-1 bg-transparent outline-none text-sm text-slate-800 placeholder-slate-400"
           autoComplete="off"
         />
         {query && (
