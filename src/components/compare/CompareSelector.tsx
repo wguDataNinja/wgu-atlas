@@ -170,7 +170,7 @@ export default function CompareSelector({
               <div className="bg-slate-50 border-b border-slate-200 px-4 py-3 flex items-center justify-between">
                 <h2 className="text-sm font-semibold text-slate-700 flex items-center gap-2">
                   <StepBadge n={1} active />
-                  Choose a program
+                  Choose a degree
                 </h2>
                 {selectedA && (
                   <button
@@ -219,7 +219,7 @@ export default function CompareSelector({
               <div className="divide-y divide-slate-100">
                 {programsForA.length === 0 ? (
                   <p className="px-4 py-8 text-center text-sm text-slate-400">
-                    No programs match these filters.
+                    No degrees match these filters.
                   </p>
                 ) : (
                   programsForA.map((p) => {
@@ -269,7 +269,7 @@ export default function CompareSelector({
 
               <div className="px-4 py-3 border-t border-slate-100 bg-slate-50/60">
                 <p className="text-xs text-slate-400">
-                  Only programs with comparable track variants are shown.
+                  Only degrees with comparable track variants are shown.
                 </p>
               </div>
             </div>
@@ -299,12 +299,12 @@ export default function CompareSelector({
                 {!selectedA ? (
                   <div className="px-4 py-12 text-center">
                     <p className="text-sm text-slate-400">
-                      Select a program in step 1 first.
+                      Select a degree in step 1 first.
                     </p>
                   </div>
                 ) : siblingsForB.length === 0 ? (
                   <div className="px-4 py-8 text-center">
-                    <p className="text-sm text-slate-500">No comparable programs.</p>
+                    <p className="text-sm text-slate-500">No comparable degrees.</p>
                     <p className="text-xs text-slate-400 mt-1">
                       This program has no track variants in the comparison set.
                     </p>
@@ -365,7 +365,7 @@ export default function CompareSelector({
               {selectedA && siblingsForB.length > 0 && (
                 <div className="px-4 py-3 border-t border-slate-100 bg-slate-50/60">
                   <p className="text-xs text-slate-400">
-                    Showing only programs in the same family as your selection.
+                    Showing only degrees in the same family as your selection.
                   </p>
                 </div>
               )}
@@ -388,7 +388,7 @@ export default function CompareSelector({
           {selectedA && !selectedB && siblingsForB.length > 0 && (
             <div className="border border-dashed border-slate-200 rounded-xl p-8 text-center mb-6">
               <p className="text-slate-400 text-sm">
-                Now select a program in step 2 to see the comparison.
+                Now select a degree in step 2 to see the comparison.
               </p>
             </div>
           )}

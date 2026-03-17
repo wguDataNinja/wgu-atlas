@@ -6,9 +6,9 @@ import CompareSelector from "@/components/compare/CompareSelector";
 import type { ProgramEnriched } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: "Compare Programs",
+  title: "Compare Degrees",
   description:
-    "Compare WGU degree program course rosters side by side. See shared courses, track-specific courses, and overlap metrics.",
+    "Compare WGU degree course rosters side by side. See shared courses, track-specific courses, and overlap metrics.",
 };
 
 export default function ComparePage() {
@@ -26,11 +26,11 @@ export default function ComparePage() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-10">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-slate-800">Compare Programs</h1>
+        <h1 className="text-3xl font-bold text-slate-800">Compare Degrees</h1>
         <p className="text-slate-500 mt-2 max-w-2xl">
-          Select two related degree programs to compare their course rosters side by
-          side. Shared courses, track-specific courses, and overlap metrics are shown
-          for each comparison.
+          Select two related degrees to compare their course rosters side by side.
+          Shared courses, track-specific courses, and overlap metrics are shown for
+          each comparison.
         </p>
       </div>
       <Suspense>

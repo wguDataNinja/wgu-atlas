@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s | WGU Atlas",
   },
   description:
-    "Explore courses, programs, catalog changes, and student discussion — WGU catalog history from 2017 to 2026.",
+    "An independent guide to WGU degrees, courses, and schools, built from public WGU sources.",
 };
 
 export default function RootLayout({

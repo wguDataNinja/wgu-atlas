@@ -4,7 +4,7 @@ import { getSchools, getProgramsBySchool, getCoursesBySchool } from "@/lib/data"
 
 export const metadata: Metadata = {
   title: "Schools",
-  description: "Browse WGU's four schools — Business, Health, Technology, and Education — with program and course listings.",
+  description: "Browse WGU's four schools — Business, Health, Technology, and Education — with degree and course listings.",
 };
 
 const SCHOOL_DESCRIPTIONS: Record<string, string> = {
@@ -22,8 +22,8 @@ export default function SchoolsPage() {
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-slate-800">Schools</h1>
         <p className="text-slate-500 mt-1">
-          WGU is organized into four schools. Each school page shows its program
-          and course catalog, lineage history, and recent activity.
+          WGU is organized into four schools. Each school page shows its current
+          degrees and courses, school background, and recent changes.
         </p>
         <p className="text-xs text-slate-400 mt-2">
           Source: WGU public catalog archive · {new Date().getFullYear()}
@@ -58,7 +58,7 @@ export default function SchoolsPage() {
               <div className="flex gap-4 text-xs text-slate-500">
                 <span>
                   <span className="font-semibold text-slate-700">{programs.length}</span>{" "}
-                  active programs
+                  current degrees
                 </span>
                 <span>
                   <span className="font-semibold text-slate-700">{courses.length}</span>{" "}

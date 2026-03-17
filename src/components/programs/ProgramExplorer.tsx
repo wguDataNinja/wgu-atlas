@@ -5,7 +5,6 @@ import Link from "next/link";
 import type { ProgramRecord } from "@/lib/types";
 
 // Filter values are substrings matched against program.school.
-// "Health Professions" was incorrect — it does not match "Leavitt School of Health".
 const SCHOOL_FILTERS: { label: string; value: string }[] = [
   { label: "Business", value: "Business" },
   { label: "Health", value: "Health" },
@@ -15,7 +14,7 @@ const SCHOOL_FILTERS: { label: string; value: string }[] = [
 
 export default function ProgramExplorer({ programs }: { programs: ProgramRecord[] }) {
   const [query, setQuery] = useState("");
-  const [statusFilter, setStatusFilter] = useState<"all" | "active" | "retired">("active");
+  const [includeRetired, setIncludeRetired] = useState(false);
   const [schoolFilter, setSchoolFilter] = useState("");
   const [page, setPage] = useState(1);
   const PAGE_SIZE = 50;
@@ -23,13 +22,12 @@ export default function ProgramExplorer({ programs }: { programs: ProgramRecord[
   const filtered = useMemo(() => {
     const q = query.toLowerCase();
     return programs.filter((p) => {
-      if (statusFilter === "active" && p.status !== "ACTIVE") return false;
-      if (statusFilter === "retired" && p.status !== "RETIRED") return false;
+      if (!includeRetired && p.status !== "ACTIVE") return false;
       if (schoolFilter && !p.school.toLowerCase().includes(schoolFilter.toLowerCase())) return false;
       if (q && !p.canonical_name.toLowerCase().includes(q) && !p.program_code.toLowerCase().includes(q)) return false;
       return true;
     });
-  }, [programs, query, statusFilter, schoolFilter]);
+  }, [programs, query, includeRetired, schoolFilter]);
 
   const paged = filtered.slice(0, page * PAGE_SIZE);
 
@@ -41,24 +39,11 @@ export default function ProgramExplorer({ programs }: { programs: ProgramRecord[
           <label className="block text-xs text-slate-500 mb-1">Search</label>
           <input
             type="text"
-            placeholder="Program name or code…"
+            placeholder="Degree name or code…"
             value={query}
             onChange={(e) => { setQuery(e.target.value); setPage(1); }}
             className="w-full border border-slate-300 rounded px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
-        </div>
-
-        <div>
-          <label className="block text-xs text-slate-500 mb-1">Status</label>
-          <select
-            value={statusFilter}
-            onChange={(e) => { setStatusFilter(e.target.value as typeof statusFilter); setPage(1); }}
-            className="border border-slate-300 rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
-            <option value="active">Active only</option>
-            <option value="retired">Deprecated only</option>
-            <option value="all">All</option>
-          </select>
         </div>
 
         <div>
@@ -75,8 +60,18 @@ export default function ProgramExplorer({ programs }: { programs: ProgramRecord[
           </select>
         </div>
 
+        <label className="flex items-center gap-2 text-sm text-slate-600 cursor-pointer pb-0.5">
+          <input
+            type="checkbox"
+            checked={includeRetired}
+            onChange={(e) => { setIncludeRetired(e.target.checked); setPage(1); }}
+            className="rounded border-slate-300 text-blue-600 focus:ring-blue-500"
+          />
+          Include retired degrees
+        </label>
+
         <button
-          onClick={() => { setQuery(""); setStatusFilter("active"); setSchoolFilter(""); setPage(1); }}
+          onClick={() => { setQuery(""); setIncludeRetired(false); setSchoolFilter(""); setPage(1); }}
           className="text-xs text-slate-500 hover:text-slate-800 underline"
         >
           Reset
@@ -84,7 +79,7 @@ export default function ProgramExplorer({ programs }: { programs: ProgramRecord[
       </div>
 
       <p className="text-sm text-slate-500 mb-3">
-        {filtered.length.toLocaleString()} program{filtered.length !== 1 ? "s" : ""}
+        {filtered.length.toLocaleString()} degree{filtered.length !== 1 ? "s" : ""}
         {filtered.length !== programs.length && ` of ${programs.length.toLocaleString()}`}
       </p>
 
@@ -100,7 +95,7 @@ export default function ProgramExplorer({ programs }: { programs: ProgramRecord[
               </span>
               <div className="hidden md:flex items-center gap-3 shrink-0 text-xs text-slate-400">
                 {program.status === "RETIRED" && (
-                  <span>deprecated {program.last_seen}</span>
+                  <span>retired {program.last_seen}</span>
                 )}
                 <span>{program.school}</span>
                 <span className="text-blue-400">→</span>
@@ -120,7 +115,7 @@ export default function ProgramExplorer({ programs }: { programs: ProgramRecord[
       )}
 
       {filtered.length === 0 && (
-        <p className="text-center text-slate-400 py-12">No programs match these filters.</p>
+        <p className="text-center text-slate-400 py-12">No degrees match these filters.</p>
       )}
     </div>
   );

@@ -16,6 +16,17 @@ import RelevantResources from "@/components/resources/RelevantResources";
 
 type Props = { params: Promise<{ slug: string }> };
 
+const SCHOOL_DESCRIPTIONS: Record<string, string> = {
+  business:
+    "Bachelor's, master's, and MBA degrees in accounting, management, marketing, IT management, finance, and related fields.",
+  health:
+    "Degrees in nursing, healthcare administration, public health, health informatics, and allied health disciplines.",
+  technology:
+    "Degrees in IT, cybersecurity, software engineering, data analytics, cloud computing, and computer science.",
+  education:
+    "Teacher preparation, educational leadership, and learning and technology degrees across all grade bands.",
+};
+
 export async function generateStaticParams() {
   return getSchools().map((s) => ({ slug: s.slug }));
 }
@@ -26,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!school) return { title: "School Not Found" };
   return {
     title: school.current_name,
-    description: `WGU ${school.current_name} — programs, courses, and catalog history.`,
+    description: `WGU ${school.current_name} — degrees, courses, and catalog history.`,
   };
 }
 
@@ -42,9 +53,6 @@ export default async function SchoolPage({ params }: Props) {
   const hasRelevantResources =
     getOfficialResourcePlacementsForSurface("school_detail", school.slug).length > 0;
 
-  // School-filtered activity modules.
-  // homepage_summary entries may carry historical school names; getSchoolSlugByName
-  // resolves any historical or current name to a slug via SchoolRecord.historical_names.
   const recentVersionChanges = summary.recent_version_changes
     .filter((v) => getSchoolSlugByName(v.school) === slug)
     .slice(0, 8);
@@ -57,13 +65,9 @@ export default async function SchoolPage({ params }: Props) {
     .filter((c) => getSchoolSlugByName(c.school) === slug)
     .slice(0, 10);
 
-  // Group programs by degree level for organized display
   const programsByLevel = groupProgramsByLevel(programs);
-
-  // Courses grouped by term (sort by code)
   const coursesSorted = [...courses].sort((a, b) => a.code.localeCompare(b.code));
 
-  // Retired programs that were in this school
   const retiredInSchool = allPrograms.filter(
     (p) =>
       p.status === "RETIRED" &&
@@ -91,11 +95,13 @@ export default async function SchoolPage({ params }: Props) {
         <span className="text-slate-600">{school.current_name}</span>
       </nav>
 
-      {/* Header */}
-      <div className="mb-8">
+      {/* ================================================================
+          HEADER
+          ================================================================ */}
+      <div className="mb-6">
         <h1 className="text-3xl font-bold text-slate-800">{school.current_name}</h1>
         <p className="text-slate-500 mt-1">
-          {programs.length} active programs · {courses.length} active courses
+          {programs.length} current degrees · {courses.length} active courses
         </p>
         <p className="text-xs text-slate-400 mt-2">
           Source: WGU public catalog · 2026-03 edition
@@ -103,117 +109,22 @@ export default async function SchoolPage({ params }: Props) {
       </div>
 
       {/* ================================================================
-          SCHOOL LINEAGE
+          SHORT DESCRIPTION
           ================================================================ */}
-      <section className="mb-10">
-        <div className="flex items-center gap-2 mb-4">
-          <div className="w-1 h-5 bg-slate-300 rounded" />
-          <h2 className="text-base font-semibold text-slate-700">School History</h2>
-        </div>
-        <SchoolLineage lineage={school.lineage} />
-      </section>
-
-      {/* ================================================================
-          RECENT ACTIVITY
-          ================================================================ */}
-      {(newestPrograms.length > 0 ||
-        recentVersionChanges.length > 0 ||
-        recentCourseAdditions.length > 0) && (
-        <section className="mb-10">
-          <div className="flex items-center gap-2 mb-4">
-            <div className="w-1 h-5 bg-amber-500 rounded" />
-            <h2 className="text-lg font-bold text-slate-800">Recent Activity</h2>
-            <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
-              Based on 2026-03 catalog
-            </span>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {/* Newest programs */}
-            {newestPrograms.length > 0 && (
-              <div className="border border-slate-200 rounded-lg p-4">
-                <h3 className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3">
-                  Newest Programs
-                </h3>
-                <ul className="space-y-2">
-                  {newestPrograms.map((p) => (
-                    <li key={p.program_code}>
-                      <Link
-                        href={`/programs/${p.program_code}`}
-                        className="text-sm text-blue-700 hover:underline"
-                      >
-                        {p.degree_heading.length > 60
-                          ? p.degree_heading.slice(0, 60) + "…"
-                          : p.degree_heading}
-                      </Link>
-                      <span className="text-xs text-slate-400 ml-1">
-                        {p.first_seen}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
-            {/* Recent version changes */}
-            {recentVersionChanges.length > 0 && (
-              <div className="border border-slate-200 rounded-lg p-4">
-                <h3 className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3">
-                  Recent Version Updates
-                </h3>
-                <ul className="space-y-2">
-                  {recentVersionChanges.map((v) => (
-                    <li key={v.program_code}>
-                      <Link
-                        href={`/programs/${v.program_code}`}
-                        className="text-sm text-blue-700 hover:underline"
-                      >
-                        {cleanHeading(v.degree_heading)}
-                      </Link>
-                      <span className="text-xs text-slate-400 ml-1">
-                        v{v.version_stamp}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
-            {/* Recent course additions */}
-            {recentCourseAdditions.length > 0 && (
-              <div className="border border-slate-200 rounded-lg p-4">
-                <h3 className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3">
-                  Recent Course Additions
-                </h3>
-                <ul className="space-y-2">
-                  {recentCourseAdditions.map((c) => (
-                    <li key={c.code}>
-                      <Link
-                        href={`/courses/${c.code}`}
-                        className="text-sm text-blue-700 hover:underline"
-                      >
-                        {c.code} — {c.title.length > 40 ? c.title.slice(0, 40) + "…" : c.title}
-                      </Link>
-                      <span className="text-xs text-slate-400 ml-1">
-                        {c.added_in}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </div>
-        </section>
+      {SCHOOL_DESCRIPTIONS[slug] && (
+        <p className="text-slate-600 text-sm leading-relaxed mb-8">
+          {SCHOOL_DESCRIPTIONS[slug]}
+        </p>
       )}
 
       {/* ================================================================
-          ACTIVE PROGRAMS
+          CURRENT DEGREES
           ================================================================ */}
       <section className="mb-10">
         <div className="flex items-center gap-2 mb-4">
           <div className="w-1 h-5 bg-blue-600 rounded" />
           <h2 className="text-lg font-bold text-slate-800">
-            Active Programs ({programs.length})
+            Current Degrees ({programs.length})
           </h2>
         </div>
 
@@ -328,20 +239,110 @@ export default async function SchoolPage({ params }: Props) {
       </section>
 
       {/* ================================================================
-          DEPRECATED PROGRAMS
+          RECENT CHANGES
+          ================================================================ */}
+      {(newestPrograms.length > 0 ||
+        recentVersionChanges.length > 0 ||
+        recentCourseAdditions.length > 0) && (
+        <section className="mb-10">
+          <div className="flex items-center gap-2 mb-4">
+            <div className="w-1 h-5 bg-amber-500 rounded" />
+            <h2 className="text-lg font-bold text-slate-800">Recent Changes</h2>
+            <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
+              Based on 2026-03 catalog
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {newestPrograms.length > 0 && (
+              <div className="border border-slate-200 rounded-lg p-4">
+                <h3 className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3">
+                  New Degrees
+                </h3>
+                <ul className="space-y-2">
+                  {newestPrograms.map((p) => (
+                    <li key={p.program_code}>
+                      <Link
+                        href={`/programs/${p.program_code}`}
+                        className="text-sm text-blue-700 hover:underline"
+                      >
+                        {p.degree_heading.length > 60
+                          ? p.degree_heading.slice(0, 60) + "…"
+                          : p.degree_heading}
+                      </Link>
+                      <span className="text-xs text-slate-400 ml-1">
+                        {p.first_seen}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {recentVersionChanges.length > 0 && (
+              <div className="border border-slate-200 rounded-lg p-4">
+                <h3 className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3">
+                  Recent Degree Updates
+                </h3>
+                <ul className="space-y-2">
+                  {recentVersionChanges.map((v) => (
+                    <li key={v.program_code}>
+                      <Link
+                        href={`/programs/${v.program_code}`}
+                        className="text-sm text-blue-700 hover:underline"
+                      >
+                        {cleanHeading(v.degree_heading)}
+                      </Link>
+                      <span className="text-xs text-slate-400 ml-1">
+                        v{v.version_stamp}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {recentCourseAdditions.length > 0 && (
+              <div className="border border-slate-200 rounded-lg p-4">
+                <h3 className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3">
+                  Recent Course Additions
+                </h3>
+                <ul className="space-y-2">
+                  {recentCourseAdditions.map((c) => (
+                    <li key={c.code}>
+                      <Link
+                        href={`/courses/${c.code}`}
+                        className="text-sm text-blue-700 hover:underline"
+                      >
+                        {c.code} — {c.title.length > 40 ? c.title.slice(0, 40) + "…" : c.title}
+                      </Link>
+                      <span className="text-xs text-slate-400 ml-1">
+                        {c.added_in}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        </section>
+      )}
+
+      {/* ================================================================
+          RETIRED DEGREES
           ================================================================ */}
       {retiredInSchool.length > 0 && (
         <section className="mb-10">
           <div className="flex items-center gap-2 mb-4">
             <div className="w-1 h-5 bg-slate-300 rounded" />
             <h2 className="text-base font-semibold text-slate-600">
-              Retired Programs ({retiredInSchool.length})
+              Retired Degrees ({retiredInSchool.length})
             </h2>
           </div>
           <details className="group">
             <summary className="cursor-pointer text-sm text-slate-500 hover:text-blue-600 mb-3 list-none flex items-center gap-1">
-              <span className="group-open:hidden">▶ Show deprecated programs</span>
-              <span className="hidden group-open:inline">▼ Hide deprecated programs</span>
+              <span className="group-open:hidden">▶ Show retired degrees</span>
+              <span className="hidden group-open:inline">▼ Hide retired degrees</span>
             </summary>
             <div className="border border-slate-200 rounded-lg overflow-hidden">
               <table className="w-full text-sm">
@@ -389,6 +390,17 @@ export default async function SchoolPage({ params }: Props) {
           </details>
         </section>
       )}
+
+      {/* ================================================================
+          SCHOOL BACKGROUND / EARLIER NAMES
+          ================================================================ */}
+      <section className="mb-10">
+        <div className="flex items-center gap-2 mb-4">
+          <div className="w-1 h-5 bg-slate-300 rounded" />
+          <h2 className="text-base font-semibold text-slate-700">School Background</h2>
+        </div>
+        <SchoolLineage lineage={school.lineage} />
+      </section>
 
       {/* Back */}
       <div className="border-t border-slate-100 pt-6">
@@ -464,9 +476,7 @@ function SchoolLineage({
 // Helpers
 // ---------------------------------------------------------------------------
 
-/** Strip truncated degree headings (artifact from catalog extraction). */
 function cleanHeading(heading: string): string {
   const cleaned = heading.split("|")[0].trim();
   return cleaned.length > 65 ? cleaned.slice(0, 65) + "…" : cleaned;
 }
-

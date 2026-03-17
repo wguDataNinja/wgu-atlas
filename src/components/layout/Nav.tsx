@@ -6,15 +6,10 @@ import { usePathname } from "next/navigation";
 const primaryLinks = [
   { href: "/", label: "Home" },
   { href: "/courses", label: "Courses" },
-  { href: "/programs", label: "Programs" },
+  { href: "/programs", label: "Degrees" },
   { href: "/schools", label: "Schools" },
-  { href: "/compare", label: "Compare" },
-];
-
-const secondaryLinks = [
-  { href: "/timeline", label: "Timeline" },
-  { href: "/methods", label: "Methods" },
-  { href: "/data", label: "Data" },
+  { href: "/compare", label: "Compare Degrees" },
+  { href: "/about", label: "About" },
 ];
 
 export default function Nav() {
@@ -47,25 +42,6 @@ export default function Nav() {
           ))}
         </div>
 
-        {/* Divider */}
-        <div className="h-4 w-px bg-slate-200 mx-2" />
-
-        {/* Secondary nav — archive/meta destinations */}
-        <div className="flex gap-1">
-          {secondaryLinks.map(({ href, label }) => (
-            <Link
-              key={href}
-              href={href}
-              className={`px-3 py-1.5 rounded text-sm transition-colors ${
-                isActive(href)
-                  ? "bg-slate-100 text-slate-700 font-medium"
-                  : "text-slate-400 hover:text-slate-600 hover:bg-slate-50"
-              }`}
-            >
-              {label}
-            </Link>
-          ))}
-        </div>
       </div>
     </nav>
   );

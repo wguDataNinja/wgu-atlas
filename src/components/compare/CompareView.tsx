@@ -328,10 +328,10 @@ function CourseRow({
     course.term_left !== course.term_right;
 
   return (
-    <div className="flex items-start gap-1.5 py-1 min-w-0">
+    <div className="flex items-baseline gap-1.5 py-1 min-w-0">
       <Link
         href={`/courses/${course.code}`}
-        className="font-mono text-xs text-blue-700 hover:underline shrink-0 mt-0.5"
+        className="font-mono text-xs text-blue-700 hover:underline shrink-0"
       >
         {course.code}
       </Link>

@@ -21,10 +21,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { code } = await params;
   const program = getProgramDetail(code);
   if (!program) return { title: "Program Not Found" };
-  const statusLabel = program.status === "ACTIVE" ? "" : " (Deprecated)";
+  const statusLabel = program.status === "ACTIVE" ? "" : " (Retired)";
   return {
     title: `${program.canonical_name}${statusLabel}`,
-    description: `WGU program history for ${program.canonical_name}. First seen ${program.first_seen}, ${program.version_changes} version changes tracked.`,
+    description: `WGU degree detail for ${program.canonical_name}. First seen ${program.first_seen}, ${program.version_changes} version changes tracked.`,
   };
 }
 
@@ -81,7 +81,7 @@ export default async function ProgramDetailPage({ params }: Props) {
       {/* Breadcrumb */}
       <nav className="text-sm text-slate-400 mb-6">
         <Link href="/programs" className="hover:text-blue-600">
-          Programs
+          Degrees
         </Link>
         <span className="mx-2">›</span>
         <span className="text-slate-600">{code}</span>
@@ -99,7 +99,7 @@ export default async function ProgramDetailPage({ params }: Props) {
             </span>
           ) : (
             <span className="text-sm bg-slate-100 text-slate-500 px-2 py-1 rounded font-medium">
-              Deprecated
+              Retired
             </span>
           )}
           {latestCus != null && (
@@ -156,7 +156,7 @@ export default async function ProgramDetailPage({ params }: Props) {
       <section className="mb-8">
         <div className="flex items-center gap-2 mb-4">
           <div className="w-1 h-5 bg-slate-300 rounded" />
-          <h2 className="text-base font-semibold text-slate-700">Catalog History</h2>
+          <h2 className="text-base font-semibold text-slate-700">Changes Over Time</h2>
           <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
             Source: WGU public catalog archive
           </span>
@@ -178,7 +178,7 @@ export default async function ProgramDetailPage({ params }: Props) {
         {/* School lineage */}
         {program.colleges.length > 0 && (
           <div className="mb-5">
-            <dt className="text-xs text-slate-500 mb-2">School lineage</dt>
+            <dt className="text-xs text-slate-500 mb-2">Earlier names</dt>
             <div className="flex flex-wrap items-center gap-1">
               {program.colleges.map((college, i) => (
                 <span key={i} className="flex items-center gap-1">
@@ -254,7 +254,7 @@ export default async function ProgramDetailPage({ params }: Props) {
         <section className="mb-8">
           <div className="flex items-center gap-2 mb-4">
             <div className="w-1 h-5 bg-blue-600 rounded" />
-            <h2 className="text-lg font-bold text-slate-800">Version History</h2>
+            <h2 className="text-lg font-bold text-slate-800">Past Versions</h2>
           </div>
           <p className="text-sm text-slate-500 mb-3">
             {program.version_changes === 0
@@ -381,7 +381,7 @@ export default async function ProgramDetailPage({ params }: Props) {
       {/* Back */}
       <div className="border-t border-slate-100 pt-6">
         <Link href="/programs" className="text-sm text-blue-600 hover:underline">
-          ← Back to Programs
+          ← Back to Degrees
         </Link>
       </div>
         </main>
