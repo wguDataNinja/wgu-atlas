@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "About WGU Atlas — an independent guide to WGU degree programs and courses, built from public WGU sources.",
+  description: "About WGU Atlas — an independent guide to WGU degrees and courses, built from public WGU sources.",
 };
 
 export default function AboutPage() {
@@ -11,7 +11,7 @@ export default function AboutPage() {
     <div className="max-w-3xl mx-auto px-4 py-10">
       <h1 className="text-3xl font-bold text-slate-800 mb-2">About WGU Atlas</h1>
       <p className="text-slate-500 mb-10">
-        An independent guide to WGU degree programs and courses.
+        An independent guide to WGU degrees and courses.
       </p>
 
       <Section title="What is WGU Atlas?">

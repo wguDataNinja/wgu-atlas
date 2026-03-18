@@ -198,14 +198,14 @@ export default async function ProgramDetailPage({ params }: Props) {
           </section>
 
           {/* ============================================================
-              PROGRAM LEARNING OUTCOMES (collapsible)
+              LEARNING OUTCOMES (collapsible)
               ============================================================ */}
           {enriched?.outcomes && enriched.outcomes.length > 0 && (
             <section className="mb-8">
               <details className="group">
                 <summary className="flex items-center gap-2 cursor-pointer list-none">
                   <div className="w-1 h-5 bg-blue-600 rounded shrink-0" />
-                  <h2 className="text-lg font-bold text-slate-800">Program Learning Outcomes</h2>
+                  <h2 className="text-lg font-bold text-slate-800">Learning Outcomes</h2>
                   <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
                     {enriched.outcomes_source}
                   </span>

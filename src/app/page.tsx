@@ -13,7 +13,7 @@ export default function HomePage() {
             WGU Atlas
           </h1>
           <p className="text-blue-200 text-lg mb-8">
-            Explore WGU degree programs and courses. Compare related degrees.
+            Explore WGU degrees and courses. See what&apos;s included. Compare related degrees.
           </p>
 
           <div className="flex justify-center mb-10">
@@ -28,10 +28,10 @@ export default function HomePage() {
       <section className="border-b border-slate-100 bg-slate-50">
         <div className="max-w-3xl mx-auto px-4 py-8">
           <p className="text-slate-600 text-sm leading-relaxed">
-            WGU Atlas is an independent guide to WGU, its degree programs, and
-            its courses, built from public WGU sources. It helps students explore
-            degree options, compare related degrees, and understand relevant
-            context in one place.
+            WGU Atlas is an independent guide to WGU degrees and courses, built
+            from public WGU sources. Use it to explore available degrees, see
+            the courses included in each, compare related degrees side by side,
+            and look up any course&apos;s details or degree appearances.
           </p>
         </div>
       </section>

@@ -22,8 +22,7 @@ export default function SchoolsPage() {
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-slate-800">Colleges</h1>
         <p className="text-slate-500 mt-1">
-          WGU is organized into four colleges. Each college page shows its current
-          degrees and courses, college background, and recent changes.
+          WGU is organized into four colleges. Browse degrees and courses by college, or explore each college&apos;s full offerings.
         </p>
       </div>
 

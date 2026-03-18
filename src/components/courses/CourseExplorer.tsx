@@ -296,7 +296,10 @@ function CourseRow({ course, hasDetail }: { course: CourseCard; hasDetail: boole
       </span>
       <div className="hidden md:flex items-center gap-2 shrink-0">
         {!course.active && (
-          <span className="text-xs text-slate-400">retired {course.last_seen}</span>
+          <>
+            <span className="text-xs bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded font-medium">Retired</span>
+            <span className="text-xs text-slate-400">{course.last_seen}</span>
+          </>
         )}
         <span className="text-xs text-slate-400">{course.current_college.split("; ")[0]}</span>
         {hasDetail && <span className="text-blue-400">→</span>}

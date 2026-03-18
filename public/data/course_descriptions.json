@@ -60,16 +60,16 @@
     "description": "Reasoning and Problem Solving helps candidates internalize a systematic process for exploring issues that takes them beyond an unexamined point of view and encourages them to become more self-aware thinkers by applying principles of problem identification and clarification, planning and information gathering, identifying assumptions and values, analyzing and interpreting information and data, reaching well-founded conclusions, and identifying the role of critical thinking in disciplines and professions."
   },
   "C172": {
-    "title": "Network and Security",
-    "description": "Foundations - Network and Security - Foundations introduces students to the components of a computer network and the concept and role of communication protocols. The course covers widely used categorical classifications of networks (e.g., LAN, MAN, WAN, WLAN, PAN, SAN, CAN, and VPN) as well as network topologies, physical devices, and layered abstraction. The course also introduces students to basic concepts of security, covering vulnerabilities of networks and mitigation techniques, security of physical media, and security policies and procedures. This course has no prerequisites."
+    "title": "Network and Security - Foundations",
+    "description": "Network and Security - Foundations introduces students to the components of a computer network and the concept and role of communication protocols. The course covers widely used categorical classifications of networks (e.g., LAN, MAN, WAN, WLAN, PAN, SAN, CAN, and VPN) as well as network topologies, physical devices, and layered abstraction. The course also introduces students to basic concepts of security, covering vulnerabilities of networks and mitigation techniques, security of physical media, and security policies and procedures. This course has no prerequisites."
   },
   "C175": {
-    "title": "Data Management",
-    "description": "Foundations - This course introduces students to the concepts and terminology used in the field of data management. Students will be introduced to Structured Query Language (SQL) and will learn how to use Data Definition Language (DDL) and Data Manipulation Language (DML) commands to define, retrieve, and manipulate data. This course covers differentiations of data—structured vs. unstructured and quasi-structured (relational, hierarchical, XML, textual, visual, etc); it also covers aspects of data management (quality, policy, storage methodologies). Foundational concepts of data security are included."
+    "title": "Data Management - Foundations",
+    "description": "This course introduces students to the concepts and terminology used in the field of data management. Students will be introduced to Structured Query Language (SQL) and will learn how to use Data Definition Language (DDL) and Data Manipulation Language (DML) commands to define, retrieve, and manipulate data. This course covers differentiations of data—structured vs. unstructured and quasi-structured (relational, hierarchical, XML, textual, visual, etc); it also covers aspects of data management (quality, policy, storage methodologies). Foundational concepts of data security are included."
   },
   "C179": {
-    "title": "Business of IT",
-    "description": "Applications - This course introduces IT students to information systems (IS). The course includes important topics related to the management of information systems (MIS), such as system development and business continuity. The course also provides an overview of management tools and issue tracking systems."
+    "title": "Business of IT - Applications",
+    "description": "This course introduces IT students to information systems (IS). The course includes important topics related to the management of information systems (MIS), such as system development and business continuity. The course also provides an overview of management tools and issue tracking systems."
   },
   "C180": {
     "title": "Introduction to Psychology",
@@ -452,8 +452,8 @@
     "description": "Nursing Informatics Capstone requires students to complete clinical/practice experiences (CPE) and finalize their system optimization proposal paper, which addresses the Institute of Health’s Triple Aim initiative. During this course, students will plan the final phase of their system development life cycle (SDLC), which consists of proposing the processes, methods, and tasks for monitoring, maintaining, supporting, and evaluating their system optimization. The knowledge and skills that students acquire during the CPE in this course will prepare them to complete their system optimization proposal paper. This is a culminating course that provides students an opportunity to demonstrate the competencies acquired during this program. All MSN Core and Specialty courses, including the Field Experience course, are prerequisites to this course and must be completed before taking this course. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information."
   },
   "C867": {
-    "title": "Scripting and Programming",
-    "description": "Applications - In this undergraduate course students explore the various aspects of the C++ programming language by examining its syntax, the development environment, and tools and techniques to solve some real-world problems."
+    "title": "Scripting and Programming - Applications",
+    "description": "In this undergraduate course students explore the various aspects of the C++ programming language by examining its syntax, the development environment, and tools and techniques to solve some real-world problems."
   },
   "C870": {
     "title": "Human Anatomy and Physiology",
@@ -704,12 +704,12 @@
     "description": "Educational Inquiry focuses on practical problem solving. This course teaches candidates to use scholarly literature to inform their own practice. It also teaches candidates to engage in their own action research processes, which empowers educators to recognize opportunities for improvement and to systematically implement and evaluate changes. This course prepares candidates to conduct research for the capstone. Prerequisites for this course: Data Literacy and Evidence-Based Practices."
   },
   "D036": {
-    "title": "Practicum in Educational Leadership",
-    "description": "Focus on Professional Practices - Practicum in Educational Leadership - Focus on Professional Practices provides candidates with an authentic, real-world work experience as an educational leader in a K–12 school environment. This is the first of a two-part experience designed to take place under the leadership and supervision of a practicing school principal or assistant principal at an approved practicum school site (K–12). This course includes an emphasis on the application of knowledge and skills to areas directly or indirectly affecting students. Collaboration within the school and local community is a focal point for this course. The course also includes the completion of assigned administrative duties in a K–12 setting, as defined by the candidate's state of residence, under the supervision of the cooperating administrator of the candidate's approved practicum site. Prior to enrolling in this practicum course, the candidate must complete a minimum of 18 CUs."
+    "title": "Practicum in Educational Leadership - Focus on Professional Practices",
+    "description": "Practicum in Educational Leadership - Focus on Professional Practices provides candidates with an authentic, real-world work experience as an educational leader in a K–12 school environment. This is the first of a two-part experience designed to take place under the leadership and supervision of a practicing school principal or assistant principal at an approved practicum school site (K–12). This course includes an emphasis on the application of knowledge and skills to areas directly or indirectly affecting students. Collaboration within the school and local community is a focal point for this course. The course also includes the completion of assigned administrative duties in a K–12 setting, as defined by the candidate's state of residence, under the supervision of the cooperating administrator of the candidate's approved practicum site. Prior to enrolling in this practicum course, the candidate must complete a minimum of 18 CUs."
   },
   "D037": {
-    "title": "Practicum in Educational Leadership",
-    "description": "Focus on Instruction and Operations - Practicum in Educational Leadership - Focus on Instruction and Operations provides candidates with an authentic, real-world work experience as an educational leader in a K–12 school environment. This is the second of a two-part experience designed to take place under the leadership and supervision of a practicing school principal or assistant principal at an approved practicum school site (K–12). This course includes an emphasis on the application of knowledge and skills to areas affecting school operations and school personnel. The course also includes the completion of assigned administrative duties in a K–12 setting, as defined by the candidate's state of residence, under the supervision of the cooperating administrator of the candidate's approved practicum site. Prior to enrolling in this practicum course, the candidate must complete a minimum of 18 CUs."
+    "title": "Practicum in Educational Leadership - Focus on Instruction and Operations",
+    "description": "Practicum in Educational Leadership - Focus on Instruction and Operations provides candidates with an authentic, real-world work experience as an educational leader in a K–12 school environment. This is the second of a two-part experience designed to take place under the leadership and supervision of a practicing school principal or assistant principal at an approved practicum school site (K–12). This course includes an emphasis on the application of knowledge and skills to areas affecting school operations and school personnel. The course also includes the completion of assigned administrative duties in a K–12 setting, as defined by the candidate's state of residence, under the supervision of the cooperating administrator of the candidate's approved practicum site. Prior to enrolling in this practicum course, the candidate must complete a minimum of 18 CUs."
   },
   "D038": {
     "title": "Educational Leadership Capstone",
@@ -1068,8 +1068,8 @@
     "description": "Front-End Web Development builds upon web design and development skills to teach students how to organize websites with navigational schemes and create reactive user web interfaces using cascading style sheets (CSS). In this course, students will implement data entry and data storage capabilities in a web design, as well as implement best practices in design, including user-centered design and usability. Web Development Foundations is a prerequisite for this course."
   },
   "D278": {
-    "title": "Scripting and Programming",
-    "description": "Foundations - Scripting and Programming - Foundations introduces programming basics such as variables, data types, flow control, and design concepts. The course is language-agnostic in nature, ending in a survey of languages, and introduces the distinction between interpreted and compiled languages. Learners will gain skills in identifying scripts for computer program requirements and in using fundamental programming elements as part of common computer programming tasks. Learners will also gain an understanding of the logic and outcome of simple algorithms."
+    "title": "Scripting and Programming - Foundations",
+    "description": "Scripting and Programming - Foundations introduces programming basics such as variables, data types, flow control, and design concepts. The course is language-agnostic in nature, ending in a survey of languages, and introduces the distinction between interpreted and compiled languages. Learners will gain skills in identifying scripts for computer program requirements and in using fundamental programming elements as part of common computer programming tasks. Learners will also gain an understanding of the logic and outcome of simple algorithms."
   },
   "D279": {
     "title": "User Interface Design",
@@ -1176,8 +1176,8 @@
     "description": "The learner will explore professional communication by applying the principles of academic writing to their discipline. Learners will incorporate these skills into the development of an evidence-based scholarly paper in their specialty area. As learners develop a scholarly paper, they will acquire a deeper understanding of the research topic selected and analyze whether initiatives and interventions have been effective or ineffective."
   },
   "D315": {
-    "title": "Network and Security",
-    "description": "Foundations - Network and Security - Foundations introduces learners to the basic network systems and concepts related to networking technologies. Learners will gain skills in applying network security concepts for business continuity, data access, and confidentiality, and in identifying solutions for compliance with security guidance."
+    "title": "Network and Security - Foundations",
+    "description": "Network and Security - Foundations introduces learners to the basic network systems and concepts related to networking technologies. Learners will gain skills in applying network security concepts for business continuity, data access, and confidentiality, and in identifying solutions for compliance with security guidance."
   },
   "D316": {
     "title": "IT Foundations",
@@ -1204,8 +1204,8 @@
     "description": "Introduction to IT examines information technology as a discipline and the various roles and functions of the IT department as business support. Students are presented with various IT disciplines, including systems and services, network and security, scripting and programming, data management, and business of IT, with a survey of technologies in every area and how they relate to each other and to the business."
   },
   "D324": {
-    "title": "Business of IT",
-    "description": "Project Management - In this course, students will build on industry standard concepts, techniques, and processes to develop a comprehensive foundation for project management activities. During a project's life cycle, students will develop the critical skills necessary to initiate, plan, execute, monitor, control, and close a project. Students will apply best practices in areas such as scope management, resource allocation, project planning, project scheduling, quality control, risk management, performance measurement, and project reporting. This course prepares students for the following certification exam: CompTIA Project+."
+    "title": "Business of IT - Project Management",
+    "description": "In this course, students will build on industry standard concepts, techniques, and processes to develop a comprehensive foundation for project management activities. During a project's life cycle, students will develop the critical skills necessary to initiate, plan, execute, monitor, control, and close a project. Students will apply best practices in areas such as scope management, resource allocation, project planning, project scheduling, quality control, risk management, performance measurement, and project reporting. This course prepares students for the following certification exam: CompTIA Project+."
   },
   "D325": {
     "title": "Networks",
@@ -1216,8 +1216,8 @@
     "description": "Advanced Data Management enables learners to extract and analyze raw data. Skillful data management allows organizations to discover and explore data in ways that uncover trends, issues, and their root causes. In turn, businesses are better equipped to capitalize on opportunities and more accurately plan for the future. As organizations continue to extract larger and more detailed volumes of data, the need is rapidly growing for IT professionals who possess data management skills. The skills gained in this course include performing advanced relational data modeling as well as designing data marts, lakes, and warehouses. This course will empower learners with the skills to build business logic at the database layer to employ more stability and higher data-processing speeds. Learners will gain the ability to automate common tasks to summarize and integrate data as they prepare it for analysis. Data Management - Foundations is a prerequisite for this course."
   },
   "D329": {
-    "title": "Network and Security",
-    "description": "Applications - Network and Security - Applications prepares learners for the CompTIA Security+ certification exam. The course introduces learners to skills in identifying threats, attacks, and vulnerabilities to organizational security. The learner will also gain skills in designing security solutions for enterprise infrastructures and architectures, as well as in implementing security solutions across hardware, applications, and network services. Learners will be able to execute operations and incident response with tools, policies, forensics, and mitigation techniques, and to analyze information security controls, governance, risk, and compliance."
+    "title": "Network and Security - Applications",
+    "description": "Network and Security - Applications prepares learners for the CompTIA Security+ certification exam. The course introduces learners to skills in identifying threats, attacks, and vulnerabilities to organizational security. The learner will also gain skills in designing security solutions for enterprise infrastructures and architectures, as well as in implementing security solutions across hardware, applications, and network services. Learners will be able to execute operations and incident response with tools, policies, forensics, and mitigation techniques, and to analyze information security controls, governance, risk, and compliance."
   },
   "D332": {
     "title": "Penetration Testing and Vulnerability Analysis",
@@ -1232,8 +1232,8 @@
     "description": "Introduction to Programming in Python introduces skills in creating Python scripts with basic programming concepts. Learners will be able to create control flow with functions and loops, and to implement code with packages, modules, and libraries."
   },
   "D336": {
-    "title": "Business of IT",
-    "description": "Applications - Business of IT - Applications examines Information Technology Infrastructure Library (ITIL®) terminology, structure, policies, and concepts. Focusing on the management of information technology (IT) infrastructure, development, and operations, learners will explore the core principles of ITIL practices for service management to prepare them for careers as IT professionals, business managers, and business process owners. This course has no prerequisites."
+    "title": "Business of IT - Applications",
+    "description": "Business of IT - Applications examines Information Technology Infrastructure Library (ITIL®) terminology, structure, policies, and concepts. Focusing on the management of information technology (IT) infrastructure, development, and operations, learners will explore the core principles of ITIL practices for service management to prepare them for careers as IT professionals, business managers, and business process owners. This course has no prerequisites."
   },
   "D337": {
     "title": "Internet of Things (IoT) and Infrastructure",
@@ -1556,12 +1556,12 @@
     "description": "In Introduction to Chemistry, learners will discover the impact of chemistry on everyday life. They’ll learn about the structure of the atom, study periodic trends, analyze the structure of molecules and their properties, and describe the importance of common functional groups within the periodic table. They’ll identify balanced chemical equations, describe types of chemical reactions and predict their products, and examine intermolecular forces and describe their impact on the properties of substances. Finally, they’ll study the properties of acids, bases, and buffer systems, and properties unique to liquids and gases."
   },
   "D426": {
-    "title": "Data Management",
-    "description": "Foundations - Data Management Foundations offers an introduction in creating conceptual, logical and physical data models. Students gain skills in creating databases and tables in SQL-enabled database management systems, as well as skills in normalizing databases. No prerequisites are required for this course."
+    "title": "Data Management - Foundations",
+    "description": "Data Management Foundations offers an introduction in creating conceptual, logical and physical data models. Students gain skills in creating databases and tables in SQL-enabled database management systems, as well as skills in normalizing databases. No prerequisites are required for this course."
   },
   "D427": {
-    "title": "Data Management",
-    "description": "Applications - Data Management - Applications covers conceptual data modeling and introduces MySQL. Students will learn how to create simple to complex SELECT queries, including subqueries and joins, and how to use SQL to update and delete data. Topics covered in this course include exposure to MySQL; creating and modifying databases, tables, views, foreign keys and primary keys (FKs and PKs), and indexes; populating tables; and developing simple Select-From-Where (SFW) queries to complex 3+ table join queries. The following course is a prerequisite: Data Management - Foundations."
+    "title": "Data Management - Applications",
+    "description": "Data Management - Applications covers conceptual data modeling and introduces MySQL. Students will learn how to create simple to complex SELECT queries, including subqueries and joins, and how to use SQL to update and delete data. Topics covered in this course include exposure to MySQL; creating and modifying databases, tables, views, foreign keys and primary keys (FKs and PKs), and indexes; populating tables; and developing simple Select-From-Where (SFW) queries to complex 3+ table join queries. The following course is a prerequisite: Data Management - Foundations."
   },
   "D428": {
     "title": "Design Thinking for Business",
@@ -1752,12 +1752,12 @@
     "description": "Analytics is the creative use of data and statistical modeling to tell a compelling story that not only drives strategic action, but also results in business value. Introduction to Analytics examines data analytics as a discipline and the various roles and functions within the field. You will expand your knowledge about what analytics is and develop a basic understanding of statistics, analysis, problem solving, and programming concepts."
   },
   "D492": {
-    "title": "Data Analytics",
-    "description": "Applications - Data Analytics - Applications covers advanced concepts across the various phases of the data product lifecycle. You will learn to choose and apply appropriate techniques for data management and data manipulation, statistical analysis, visualization, and data governance concepts to satisfy business needs."
+    "title": "Data Analytics - Applications",
+    "description": "Data Analytics - Applications covers advanced concepts across the various phases of the data product lifecycle. You will learn to choose and apply appropriate techniques for data management and data manipulation, statistical analysis, visualization, and data governance concepts to satisfy business needs."
   },
   "D493": {
-    "title": "Scripting and Programming",
-    "description": "Applications - Scripting and Programming - Applications for undergraduates explores the various aspects of the Python programming language by examining its syntax, the development environment, and tools and techniques to solve some real-world problems. Introduction to Programming in Python is a prerequisite for this course."
+    "title": "Scripting and Programming - Applications",
+    "description": "Scripting and Programming - Applications for undergraduates explores the various aspects of the Python programming language by examining its syntax, the development environment, and tools and techniques to solve some real-world problems. Introduction to Programming in Python is a prerequisite for this course."
   },
   "D494": {
     "title": "Data and Information Governance",
@@ -3296,16 +3296,16 @@
     "description": "Mathematics Learning and Teaching will help students develop the knowledge and skills necessary to become a prospective and practicing educator. This course will help students use a variety of instructional strategies to effectively facilitate the learning of mathematics. It focuses on selecting appropriate resources, using multiple strategies, and instructional planning, with methods based on research and problem solving. A deep understanding of the knowledge, skills, and disposition of mathematics pedagogy is necessary to become an effective secondary mathematics educator. There are no prerequisites for this course."
   },
   "PFIT": {
-    "title": "Business",
-    "description": "IT Management Portfolio Requirement - Business - IT Management Portfolio Requirement is designed to help the learner complete the culminating Undergraduate Business Portfolio assessment; it focuses on developing a business portfolio containing a strengths essay, a career report, a reflection essay, a resume, and exhibits that support one’s strengths in the workplace."
+    "title": "Business - IT Management Portfolio Requirement",
+    "description": "Business - IT Management Portfolio Requirement is designed to help the learner complete the culminating Undergraduate Business Portfolio assessment; it focuses on developing a business portfolio containing a strengths essay, a career report, a reflection essay, a resume, and exhibits that support one’s strengths in the workplace."
   },
   "QDT2": {
     "title": "Abstract Algebra",
     "description": "Abstract Algebra is the axiomatic and rigorous study of the underlying structure of algebra and arithmetic. It covers the knowledge and skills necessary to understand, apply, and prove theorems about numbers, groups, rings, and fields. Topics include the well-ordering principle, equivalence classes, the division algorithm, Euclid's algorithm, prime factorization, greatest common divisor, least common multiple, congruence, the Chinese remainder theorem, modular arithmetic, rings, integral domains, fields, groups, roots of unity, and homomorphisms. Linear Algebra is a prerequisite for this course."
   },
   "QFT1": {
-    "title": "Business",
-    "description": "IT Management Capstone Project - The Business - IT Management Capstone Project requires students to demonstrate the integration and synthesis of competencies in all domains required for the degree in Information Technology Management. The student produces a business plan for a start-up company that is selected and approved by the student and mentor."
+    "title": "Business - IT Management Capstone Project",
+    "description": "The Business - IT Management Capstone Project requires students to demonstrate the integration and synthesis of competencies in all domains required for the degree in Information Technology Management. The student produces a business plan for a start-up company that is selected and approved by the student and mentor."
   },
   "QGT1": {
     "title": "Business Management Capstone Written Project",

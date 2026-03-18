@@ -5,7 +5,7 @@ import ProgramExplorer from "@/components/programs/ProgramExplorer";
 
 export const metadata: Metadata = {
   title: "Degrees",
-  description: "Browse all WGU degrees — current and retired — with college and history context.",
+  description: "Browse WGU degrees — view course rosters, compare related degrees, and see current or retired status for each.",
 };
 
 export default function ProgramsPage() {

@@ -236,6 +236,80 @@ export default async function SchoolPage({ params }: Props) {
       </section>
 
       {/* ================================================================
+          RETIRED DEGREES
+          ================================================================ */}
+      {retiredInSchool.length > 0 && (
+        <section className="mb-10">
+          <div className="flex items-center gap-2 mb-4">
+            <div className="w-1 h-5 bg-slate-300 rounded" />
+            <h2 className="text-base font-semibold text-slate-600">
+              Retired Degrees ({retiredInSchool.length})
+            </h2>
+          </div>
+          <details className="group">
+            <summary className="cursor-pointer text-sm text-slate-500 hover:text-blue-600 mb-3 list-none flex items-center gap-1">
+              <span className="group-open:hidden">▶ Show retired degrees</span>
+              <span className="hidden group-open:inline">▼ Hide retired degrees</span>
+            </summary>
+            <div className="border border-slate-200 rounded-lg overflow-hidden">
+              <table className="w-full text-sm">
+                <thead className="bg-slate-50 border-b border-slate-200">
+                  <tr>
+                    <th className="text-left px-3 py-2 text-xs font-medium text-slate-500">Code</th>
+                    <th className="text-left px-3 py-2 text-xs font-medium text-slate-500">Name</th>
+                    <th className="text-right px-3 py-2 text-xs font-medium text-slate-500 hidden md:table-cell">Last seen</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {retiredInSchool
+                    .sort((a, b) => b.last_seen.localeCompare(a.last_seen))
+                    .map((p, i) => (
+                      <tr
+                        key={p.program_code}
+                        className={`border-b border-slate-100 last:border-0 hover:bg-slate-50 ${
+                          i % 2 === 0 ? "" : "bg-slate-50/30"
+                        }`}
+                      >
+                        <td className="px-3 py-1.5">
+                          <Link
+                            href={`/programs/${p.program_code}`}
+                            className="font-mono text-xs text-slate-500 hover:text-blue-600 hover:underline"
+                          >
+                            {p.program_code}
+                          </Link>
+                        </td>
+                        <td className="px-3 py-1.5 text-slate-500 text-sm">
+                          <Link
+                            href={`/programs/${p.program_code}`}
+                            className="hover:text-blue-600 hover:underline"
+                          >
+                            {p.canonical_name}
+                          </Link>
+                        </td>
+                        <td className="px-3 py-1.5 text-slate-400 text-xs text-right hidden md:table-cell">
+                          {p.last_seen}
+                        </td>
+                      </tr>
+                    ))}
+                </tbody>
+              </table>
+            </div>
+          </details>
+        </section>
+      )}
+
+      {/* ================================================================
+          COLLEGE HISTORY / EARLIER NAMES
+          ================================================================ */}
+      <section className="mb-10">
+        <div className="flex items-center gap-2 mb-4">
+          <div className="w-1 h-5 bg-slate-300 rounded" />
+          <h2 className="text-base font-semibold text-slate-700">College History</h2>
+        </div>
+        <SchoolLineage lineage={school.lineage} />
+      </section>
+
+      {/* ================================================================
           RECENT CHANGES
           ================================================================ */}
       {(newestPrograms.length > 0 ||
@@ -324,80 +398,6 @@ export default async function SchoolPage({ params }: Props) {
           </div>
         </section>
       )}
-
-      {/* ================================================================
-          RETIRED DEGREES
-          ================================================================ */}
-      {retiredInSchool.length > 0 && (
-        <section className="mb-10">
-          <div className="flex items-center gap-2 mb-4">
-            <div className="w-1 h-5 bg-slate-300 rounded" />
-            <h2 className="text-base font-semibold text-slate-600">
-              Retired Degrees ({retiredInSchool.length})
-            </h2>
-          </div>
-          <details className="group">
-            <summary className="cursor-pointer text-sm text-slate-500 hover:text-blue-600 mb-3 list-none flex items-center gap-1">
-              <span className="group-open:hidden">▶ Show retired degrees</span>
-              <span className="hidden group-open:inline">▼ Hide retired degrees</span>
-            </summary>
-            <div className="border border-slate-200 rounded-lg overflow-hidden">
-              <table className="w-full text-sm">
-                <thead className="bg-slate-50 border-b border-slate-200">
-                  <tr>
-                    <th className="text-left px-3 py-2 text-xs font-medium text-slate-500">Code</th>
-                    <th className="text-left px-3 py-2 text-xs font-medium text-slate-500">Name</th>
-                    <th className="text-right px-3 py-2 text-xs font-medium text-slate-500 hidden md:table-cell">Last seen</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {retiredInSchool
-                    .sort((a, b) => b.last_seen.localeCompare(a.last_seen))
-                    .map((p, i) => (
-                      <tr
-                        key={p.program_code}
-                        className={`border-b border-slate-100 last:border-0 hover:bg-slate-50 ${
-                          i % 2 === 0 ? "" : "bg-slate-50/30"
-                        }`}
-                      >
-                        <td className="px-3 py-1.5">
-                          <Link
-                            href={`/programs/${p.program_code}`}
-                            className="font-mono text-xs text-slate-500 hover:text-blue-600 hover:underline"
-                          >
-                            {p.program_code}
-                          </Link>
-                        </td>
-                        <td className="px-3 py-1.5 text-slate-500 text-sm">
-                          <Link
-                            href={`/programs/${p.program_code}`}
-                            className="hover:text-blue-600 hover:underline"
-                          >
-                            {p.canonical_name}
-                          </Link>
-                        </td>
-                        <td className="px-3 py-1.5 text-slate-400 text-xs text-right hidden md:table-cell">
-                          {p.last_seen}
-                        </td>
-                      </tr>
-                    ))}
-                </tbody>
-              </table>
-            </div>
-          </details>
-        </section>
-      )}
-
-      {/* ================================================================
-          SCHOOL BACKGROUND / EARLIER NAMES
-          ================================================================ */}
-      <section className="mb-10">
-        <div className="flex items-center gap-2 mb-4">
-          <div className="w-1 h-5 bg-slate-300 rounded" />
-          <h2 className="text-base font-semibold text-slate-700">College History</h2>
-        </div>
-        <SchoolLineage lineage={school.lineage} />
-      </section>
 
       {/* Back */}
       <div className="border-t border-slate-100 pt-6">

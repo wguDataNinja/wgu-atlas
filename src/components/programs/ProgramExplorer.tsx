@@ -166,8 +166,8 @@ export default function ProgramExplorer({ programs }: { programs: ProgramRecord[
       <div className="flex flex-col gap-2">
         {paged.map((program) => (
           <Link key={program.program_code} href={`/programs/${program.program_code}`}>
-            <div className="border border-slate-200 rounded-lg px-4 py-3 flex items-center gap-3 text-sm hover:border-blue-300 hover:bg-blue-50 transition-colors cursor-pointer">
-              <span className="font-mono text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded font-semibold shrink-0">
+            <div className={`border rounded-lg px-4 py-3 flex items-center gap-3 text-sm hover:border-blue-300 hover:bg-blue-50 transition-colors cursor-pointer ${program.status === "RETIRED" ? "border-slate-100 bg-slate-50/40" : "border-slate-200"}`}>
+              <span className={`font-mono text-xs px-2 py-0.5 rounded font-semibold shrink-0 ${program.status === "RETIRED" ? "bg-slate-100 text-slate-500" : "bg-purple-100 text-purple-700"}`}>
                 {program.program_code}
               </span>
               <span className={`flex-1 font-medium ${program.status === "ACTIVE" ? "text-slate-800" : "text-slate-500"}`}>
@@ -175,7 +175,10 @@ export default function ProgramExplorer({ programs }: { programs: ProgramRecord[
               </span>
               <div className="hidden md:flex items-center gap-3 shrink-0 text-xs text-slate-400">
                 {program.status === "RETIRED" && (
-                  <span>retired {program.last_seen}</span>
+                  <>
+                    <span className="bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded font-medium">Retired</span>
+                    <span>{program.last_seen}</span>
+                  </>
                 )}
                 <span>{program.school}</span>
                 <span className="text-blue-400">→</span>

@@ -6,7 +6,7 @@ import CourseExplorer from "@/components/courses/CourseExplorer";
 
 export const metadata: Metadata = {
   title: "Courses",
-  description: "Search and browse WGU courses — active and retired, with catalog history for each.",
+  description: "Browse WGU courses — see which degrees include each course, check active or retired status, and access course details.",
 };
 
 function mapToDisplayLevel(level: string): string | null {

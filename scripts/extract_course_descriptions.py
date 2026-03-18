@@ -84,6 +84,28 @@ def parse_courses(lines: list[str], start: int) -> dict[str, dict]:
             # Clean up any remaining line-wrap artifacts
             desc = re.sub(r"\s+", " ", desc).strip()
             if desc:
+                # Fix artifact: the catalog format is "CODE - Full Title - Description"
+                # where Full Title may contain " - " (e.g. "Network and Security - Foundations").
+                # The regex captures only the first segment as title, leaving the subtitle
+                # as a leading fragment in the description (e.g. "Foundations - real desc...").
+                # Detect and strip this artifact when:
+                #   1. Description starts with a short Title-Case phrase followed by " - "
+                #   2. The phrase doesn't look like prose (no common sentence openers)
+                #   3. The phrase doesn't overlap with the start of the captured title
+                #      (which would mean the description prose starts with the course name)
+                subtitle_m = re.match(r"^([A-Z][^-]{0,60}?)\s+-\s+", desc)
+                if subtitle_m:
+                    potential_sub = subtitle_m.group(1).strip()
+                    _prose_openers = re.compile(
+                        r"^(This|In |The |Students|A |An |Each|Through|Using|By |These|For )"
+                    )
+                    if (
+                        len(potential_sub.split()) <= 6
+                        and not _prose_openers.match(potential_sub)
+                        and not (current_title or "").lower().startswith(potential_sub.lower())
+                    ):
+                        current_title = f"{current_title} - {potential_sub}"
+                        desc = desc[subtitle_m.end():]
                 descriptions[current_code] = {
                     "title": current_title or "",
                     "description": desc,
