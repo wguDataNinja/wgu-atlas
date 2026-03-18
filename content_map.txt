@@ -1,5 +1,5 @@
 WGU ATLAS — FULL SITE CONTENT MAP
-Generated: 2026-03-17T04:54:01.112Z
+Generated: 2026-03-18T07:55:57.617Z
 Purpose: Proofreading reference. Shows all visible text with source locations.
 
 ======================================================================
@@ -55,16 +55,16 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   Hero Section
 ----------------------------------------------------------------------
   H1 Title: WGU Atlas
-    [source: src/app/page.tsx:16]
+    [source: src/app/page.tsx:13]
   Subtitle: Explore WGU degrees, courses, and schools. Compare related degrees.
-    [source: src/app/page.tsx:19]
+    [source: src/app/page.tsx:?]
 
 ----------------------------------------------------------------------
   Search Bar (HomeSearch component)
 ----------------------------------------------------------------------
   [source: src/components/home/HomeSearch.tsx]
   Placeholder: Search by course code or title…
-    [source: src/components/home/HomeSearch.tsx:66]
+    [source: src/components/home/HomeSearch.tsx:?]
   Inactive result label (course): retired
   Inactive result label (degree): retired
 
@@ -89,7 +89,7 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   [source: src/app/page.tsx]
 
   WGU Atlas is an independent guide to WGU degrees, courses, and schools, built from public WGU sources. It helps students explore degree options, compare related degrees, and understand changes over time when those changes matter to what they're viewing.
-    [source: src/app/page.tsx:34]
+    [source: src/app/page.tsx:31]
 
 ----------------------------------------------------------------------
   Compare Callout
@@ -99,14 +99,14 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   Label: Compare degrees
   Description: See how related WGU degrees differ — course rosters, shared courses, and track-specific requirements.
   Link: Compare degrees →  (→ /compare)
-    [source: src/app/page.tsx:46]
+    [source: src/app/page.tsx:?]
 
 ----------------------------------------------------------------------
   Attribution Line
 ----------------------------------------------------------------------
   Text: Built from WGU's public catalog · Updated through March 2026 · About this site
   'About this site' link: → /about
-    [source: src/app/page.tsx:64]
+    [source: src/app/page.tsx:61]
 
 ======================================================================
   COURSES PAGE  (/COURSES)
@@ -117,7 +117,7 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   Page Header
 ----------------------------------------------------------------------
   H1: Courses
-    [source: src/app/courses/page.tsx:7]
+    [source: src/app/courses/page.tsx:8]
   Meta description: Search and browse WGU courses — active and retired, with catalog history for each.
 
 ----------------------------------------------------------------------
@@ -126,7 +126,7 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   [source: src/components/courses/CourseExplorer.tsx]
 
   Search placeholder: Code or title…
-    [source: src/components/courses/CourseExplorer.tsx:58]
+    [source: src/components/courses/CourseExplorer.tsx:201]
 
   Status label: Status
   Status options:
@@ -198,10 +198,10 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   [source: src/components/programs/ProgramExplorer.tsx]
 
   Search placeholder: Degree name or code…
-    [source: src/components/programs/ProgramExplorer.tsx:42]
+    [source: src/components/programs/ProgramExplorer.tsx:120]
 
   Status control: Checkbox: Include retired degrees  (default: unchecked = current degrees only)
-    [source: src/components/programs/ProgramExplorer.tsx:70]
+    [source: src/components/programs/ProgramExplorer.tsx:85]
 
   School label: School
   School options:  All schools (default)  |  Business  |  Health  |  Technology  |  Education
@@ -229,7 +229,7 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   {code}  |  {status badge}  |  {N} CUs
     Current badge: Current
     Retired badge: Retired
-    [source: src/app/programs/[code]/page.tsx:?]
+    [source: src/app/programs/[code]/page.tsx:93]
 
 
 ----------------------------------------------------------------------
@@ -245,13 +245,13 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   Section: Changes Over Time
 ----------------------------------------------------------------------
   H2: Changes Over Time
-    [source: src/app/programs/[code]/page.tsx:159]
+    [source: src/app/programs/[code]/page.tsx:143]
   Source badge: Source: WGU public catalog archive
 
   Stat cards:  First seen  |  Last seen  |  Catalog editions  |  Version changes  |  Total CUs (latest)
 
   Sub-label: School name history: Earlier names
-    [source: src/app/programs/[code]/page.tsx:181]
+    [source: src/app/programs/[code]/page.tsx:?]
   Sub-label: Known names: Known names
   Canonical marker: (canonical)
 
@@ -267,7 +267,7 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   Section: Past Versions
 ----------------------------------------------------------------------
   H2: Past Versions
-    [source: src/app/programs/[code]/page.tsx:257]
+    [source: src/app/programs/[code]/page.tsx:213]
   No changes text: No curriculum version changes observed across catalog editions.
   Changes text: {N} version change(s) observed.
   Table headers:  Catalog date  |  Version stamp
@@ -287,7 +287,7 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   Back Link
 ----------------------------------------------------------------------
   Text: ← Back to Degrees
-    [source: src/app/programs/[code]/page.tsx:384]
+    [source: src/app/programs/[code]/page.tsx:340]
 
 ======================================================================
   SCHOOLS PAGE  (/SCHOOLS)
@@ -354,7 +354,7 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
 ----------------------------------------------------------------------
   H1: Compare Degrees
     [source: src/app/compare/page.tsx:9]
-  Description: Select two related degrees to compare their course rosters side by side. Shared courses, track-specific courses, and overlap metrics are shown for each comparison.
+  Description: Select two degrees to compare their course rosters side by side. Shared courses, unique courses, and overlap metrics are shown for each comparison.
   Meta title: Compare Degrees
   Meta description: Compare WGU degree course rosters side by side. See shared courses, track-specific courses, and overlap metrics.
 
@@ -363,52 +363,76 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
 ----------------------------------------------------------------------
   [source: src/components/compare/CompareSelector.tsx]
 
+  Universe: active programs with non-empty rosters, excluding LAB_EXCLUSIONS (6 programs).
+  Sibling logic: same school + same degree level as the selected program (not pilot-family gated).
+
   Step 1 panel:
     Header: Choose a degree
-    [source: src/components/compare/CompareSelector.tsx:173]
+    [source: src/components/compare/CompareSelector.tsx:120]
     Filters: All schools (default) + All levels (default)
     Empty state: No degrees match these filters.
-    Footer note: Only degrees with comparable track variants are shown.
+    Footer note: {N} degrees shown. Select one to see comparable degrees in step 2.
 
   Step 2 panel:
     Header: Compare with
     Prompt (before step 1): Select a degree in step 1 first.
     No siblings text: No comparable degrees.
-    Footer note: Showing only degrees in the same family as your selection.
-
-  Compact bar (both selected):
-    Buttons: Change  |  Reset
+    No siblings sub-text: No other degrees share the same school and level as this program.
+    Comparing-with label: Comparing with: {index_name ?? canonical_name}
+    Footer note: Showing degrees in the same school and level as your selection.
 
   Prompt (A selected, waiting for B):
     Text: Now select a degree in step 2 to see the comparison.
 
+  Note: Change and Reset live in the CompareView sticky header — no compact bar.
+
 ----------------------------------------------------------------------
-  CompareView — Section labels
+  CompareView — Sticky header + lane roster
 ----------------------------------------------------------------------
   [source: src/components/compare/CompareView.tsx]
 
-  Overlap summary heading: Overlap Summary
-  Legend chips: {N} shared  |  {track}-only  |  {track}-only
-  Overlap bar note: Overlap bar: shared (green) / {left}-only (blue) / {right}-only (amber). Jaccard = shared ÷ union.
-  Column headers: {Left track label}  |  Shared Courses ({N})  |  {Right track label}
-  Attribution: Comparison source: 2026-03 WGU catalog roster. Exact course code identity only — no alias or fuzzy matching. Atlas-derived analysis.
+  Sticky header (sticky top-14 z-10) — spans the full compare view while scrolling:
+
+    Utility bar (top row, dark slate-800, top-right):
+      Change button: Change  (text link, slate-300)
+      Reset button: Reset  (text link, slate-400)
+
+    3-column lane headers (grid-cols-[1fr_2fr_1fr]):
+      Left column (bg-blue-600): {leftLabel}  /  {leftOnly} unique · {left.program_code}
+      Center column (bg-slate-700): Shared  /  {metrics.shared_count} in both
+      Right column (bg-amber-500): {rightLabel}  /  {rightOnly} unique · {right.program_code}
+
+  Term dividers (bg-slate-600, white bold text):
+    Label format: TERM {N}  (or UNPLACED for term=0)
+    All-shared annotation: all shared this term  (slate-300, when no unique courses in term)
+
+  Course cards (within lanes):
+    Left-only card: border-l-2 border-blue-400  ·  blue-200 code badge  ·  title  ·  CU count
+    Shared card: border-l-2 border-emerald-400  ·  emerald-100 code badge  ·  title  ·  drift annotation if term differs
+    Right-only card: border-l-2 border-amber-400  ·  amber-200 code badge  ·  title  ·  CU count
+    Term-drift annotation: ↕ term {term_right} in {rightCode}  (amber-600, shown on shared cards when left/right term differs)
+
+  Removed vs previous version:
+    — Identity bar (left code / vs / right code section)
+    — Overlap / count strip (unique + shared counts with colored segments)
+    — Comparison source disclaimer footer
 
 ----------------------------------------------------------------------
-  Pilot Families
+  Compare Universe
 ----------------------------------------------------------------------
-  (Defined in src/lib/families.ts)
+  (Defined in src/lib/compareUtils.ts — LAB_EXCLUSIONS)
 
-  Family 1: Software Engineering  (bsswe-tracks)
-    School: School of Technology  |  Level: Bachelor's
-    Programs: BSSWE (Java Track)  ·  BSSWE_C (C# Track)
-    Note: Both tracks cover the same Software Engineering curriculum.
-          The difference is the programming language: Java (Android) or C# (.NET).
+  Universe: active programs with non-empty rosters, same school + degree level pairing.
+  Previous: gated to 5 pilot-family codes only.
+  Current:  ~107 active programs across all 4 colleges.
 
-  Family 2: MS Data Analytics  (msda-tracks)
-    School: School of Technology  |  Level: Master's
-    Programs: MSDADE (Data Engineering)  ·  MSDADS (Data Science)  ·  MSDADPE (Decision Process Eng.)
-    Note: All three tracks share the same 7-course Data Analytics foundation.
-          The final 4 courses are the specialization.
+  Exclusions (6 programs hardcoded in LAB_EXCLUSIONS):
+    MSCSUG, MSITUG, MSSWEUG
+      → Pathway / bridge programs. Name starts with 'Bachelor of Science' but are
+        upper-division accelerated paths into a master's — not standalone degrees.
+    MEDETID, MEDETIDA, MEDETIDK12
+      → Identical canonical name group. All three share the exact same canonical_name.
+        No curated track_labels to disambiguate them; compare UI is unusable.
 
 ======================================================================
   COMPARE SIMULATION — BSSWE VS BSSWE_C (ACTUAL DATA)
@@ -860,5 +884,5 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   School descriptions → src/app/schools/page.tsx  and  src/components/home/SchoolCards.tsx
   Nav links → src/components/layout/Nav.tsx
   Footer text → src/components/layout/Footer.tsx
-  Pilot families (compare) → src/lib/families.ts
+  Compare universe + exclusions (compare) → src/lib/compareUtils.ts
 
