@@ -259,7 +259,7 @@ export default function CompareSelector({
                   <div className="px-4 py-8 text-center">
                     <p className="text-sm text-slate-500">No comparable degrees.</p>
                     <p className="text-xs text-slate-400 mt-1">
-                      No other degrees share the same school and level as this program.
+                      No other degrees share the same college and level as this degree.
                     </p>
                   </div>
                 ) : (
@@ -322,7 +322,7 @@ export default function CompareSelector({
               {selectedA && siblingsForB.length > 0 && (
                 <div className="px-4 py-3 border-t border-slate-100 bg-slate-50/60">
                   <p className="text-xs text-slate-400">
-                    Showing degrees in the same school and level as your selection.
+                    Showing degrees in the same college and level as your selection.
                   </p>
                 </div>
               )}

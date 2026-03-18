@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | WGU Atlas",
   },
   description:
-    "An independent guide to WGU degrees, courses, and schools, built from public WGU sources.",
+    "An independent guide to WGU degrees, courses, and colleges, built from public WGU sources.",
 };
 
 export default function RootLayout({

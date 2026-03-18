@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import type {
   CourseCard,
+  CourseDescription,
   CourseDetail,
   CatalogEvent,
   HomepageSummary,
@@ -81,6 +82,30 @@ function getCanonicalCourses(): Record<string, CourseDetail> {
     _canonicalCourses = JSON.parse(raw);
   }
   return _canonicalCourses!;
+}
+
+// ---------------------------------------------------------------------------
+// Course descriptions — from public/data/course_descriptions.json
+// Extracted from the WGU catalog "Courses" section (CODE - Title - Description)
+// ---------------------------------------------------------------------------
+
+let _courseDescriptions: Record<string, CourseDescription> | null = null;
+
+export function getCourseDescriptions(): Record<string, CourseDescription> {
+  if (!_courseDescriptions) {
+    const filePath = path.join(PUBLIC_DATA, "course_descriptions.json");
+    if (fs.existsSync(filePath)) {
+      const raw = fs.readFileSync(filePath, "utf-8");
+      _courseDescriptions = JSON.parse(raw);
+    } else {
+      _courseDescriptions = {};
+    }
+  }
+  return _courseDescriptions!;
+}
+
+export function getCourseDescription(code: string): CourseDescription | null {
+  return getCourseDescriptions()[code] ?? null;
 }
 
 // ---------------------------------------------------------------------------

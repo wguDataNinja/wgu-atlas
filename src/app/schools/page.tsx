@@ -3,15 +3,15 @@ import Link from "next/link";
 import { getSchools, getProgramsBySchool, getCoursesBySchool } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Schools",
-  description: "Browse WGU's four schools — Business, Health, Technology, and Education — with degree and course listings.",
+  title: "Colleges",
+  description: "Browse WGU's four colleges — Business, Health, Technology, and Education — with degree and course listings.",
 };
 
-const SCHOOL_DESCRIPTIONS: Record<string, string> = {
-  business: "Bachelor's, master's, and MBA programs in accounting, management, marketing, IT management, finance, and related fields.",
-  health: "Programs in nursing, healthcare administration, public health, health informatics, and allied health disciplines.",
-  technology: "Programs in IT, cybersecurity, software engineering, data analytics, cloud computing, and computer science.",
-  education: "Teacher preparation, educational leadership, and learning and technology programs across all grade bands.",
+const COLLEGE_DESCRIPTIONS: Record<string, string> = {
+  business: "Bachelor's, master's, and MBA degrees in accounting, management, marketing, IT management, finance, and related fields.",
+  health: "Degrees in nursing, healthcare administration, public health, health informatics, and allied health disciplines.",
+  technology: "Degrees in IT, cybersecurity, software engineering, data analytics, cloud computing, and computer science.",
+  education: "Teacher preparation, educational leadership, and learning and technology degrees across all grade bands.",
 };
 
 export default function SchoolsPage() {
@@ -20,10 +20,10 @@ export default function SchoolsPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-10">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-slate-800">Schools</h1>
+        <h1 className="text-3xl font-bold text-slate-800">Colleges</h1>
         <p className="text-slate-500 mt-1">
-          WGU is organized into four schools. Each school page shows its current
-          degrees and courses, school background, and recent changes.
+          WGU is organized into four colleges. Each college page shows its current
+          degrees and courses, college background, and recent changes.
         </p>
       </div>
 
@@ -50,7 +50,7 @@ export default function SchoolsPage() {
                 </p>
               )}
               <p className="text-sm text-slate-600 mb-3">
-                {SCHOOL_DESCRIPTIONS[school.slug]}
+                {COLLEGE_DESCRIPTIONS[school.slug]}
               </p>
               <div className="flex gap-4 text-xs text-slate-500">
                 <span>

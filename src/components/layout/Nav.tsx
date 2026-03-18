@@ -7,7 +7,7 @@ const primaryLinks = [
   { href: "/", label: "Home" },
   { href: "/courses", label: "Courses" },
   { href: "/programs", label: "Degrees" },
-  { href: "/schools", label: "Schools" },
+  { href: "/schools", label: "Colleges" },
   { href: "/compare", label: "Compare Degrees" },
   { href: "/about", label: "About" },
 ];

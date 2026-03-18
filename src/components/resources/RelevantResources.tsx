@@ -26,7 +26,7 @@ export default function RelevantResources({
   if (rows.length === 0) return null;
 
   const grouped = groupByResourceGroup(rows);
-  const contextLabel = surface === "program_detail" ? "program" : "school";
+  const contextLabel = surface === "program_detail" ? "degree" : "college";
 
   return (
     <section

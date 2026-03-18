@@ -20,11 +20,11 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { code } = await params;
   const program = getProgramDetail(code);
-  if (!program) return { title: "Program Not Found" };
+  if (!program) return { title: "Degree Not Found" };
   const statusLabel = program.status === "ACTIVE" ? "" : " (Retired)";
   return {
     title: `${program.canonical_name}${statusLabel}`,
-    description: `WGU degree detail for ${program.canonical_name}. First seen ${program.first_seen}, ${program.version_changes} version changes tracked.`,
+    description: `WGU degree: ${program.canonical_name}. First offered ${program.first_seen}.`,
   };
 }
 
@@ -40,7 +40,6 @@ export default async function ProgramDetailPage({ params }: Props) {
       .length > 0;
 
   const isActive = program.status === "ACTIVE";
-  const versionSteps = parseVersionProgression(program.version_progression);
   const latestCus =
     program.cus_values.length > 0
       ? program.cus_values[program.cus_values.length - 1]
@@ -78,268 +77,241 @@ export default async function ProgramDetailPage({ params }: Props) {
         }
       >
         <main className={hasRelevantResources ? "min-w-0" : ""}>
-      {/* Breadcrumb */}
-      <nav className="text-sm text-slate-400 mb-6">
-        <Link href="/programs" className="hover:text-blue-600">
-          Degrees
-        </Link>
-        <span className="mx-2">›</span>
-        <span className="text-slate-600">{code}</span>
-      </nav>
-
-      {/* Header */}
-      <div className="mb-8">
-        <p className="text-sm text-slate-500 mb-2">
-          {code} · {isActive ? "Current" : "Retired"}{latestCus != null ? ` · ${latestCus} CUs` : ""}
-        </p>
-        <h1 className="text-3xl font-bold text-slate-800">{program.canonical_name}</h1>
-        <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1">
-          {schoolRecord ? (
-            <Link
-              href={`/schools/${schoolRecord.slug}`}
-              className="text-blue-600 hover:underline text-sm"
-            >
-              {program.school}
+          {/* Breadcrumb */}
+          <nav className="text-sm text-slate-400 mb-6">
+            <Link href="/programs" className="hover:text-blue-600">
+              Degrees
             </Link>
-          ) : (
-            <p className="text-slate-500 text-sm">{program.school}</p>
-          )}
-        </div>
-        {!isActive && (
-          <p className="text-sm text-slate-400 mt-1">
-            Last seen: {program.last_seen} · Final source: WGU Catalog (
-            {program.last_seen})
-          </p>
-        )}
-      </div>
+            <span className="mx-2">›</span>
+            <span className="text-slate-600">{code}</span>
+          </nav>
 
-      {/* ================================================================
-          PROGRAM DESCRIPTION (from catalog text)
-          ================================================================ */}
-      {enriched?.description && (
-        <section className="mb-8">
-          <div className="flex items-center gap-2 mb-3">
-            <div className="w-1 h-5 bg-blue-600 rounded" />
-            <h2 className="text-lg font-bold text-slate-800">About This Degree</h2>
-            <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
-              {enriched.description_source}
-            </span>
+          {/* Header */}
+          <div className="mb-8">
+            <p className="text-sm text-slate-500 mb-2">
+              {code} · {isActive ? "Current" : "Retired"}{latestCus != null ? ` · ${latestCus} CUs` : ""}
+            </p>
+            <h1 className="text-3xl font-bold text-slate-800">{program.canonical_name}</h1>
+            <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1">
+              {schoolRecord ? (
+                <Link
+                  href={`/schools/${schoolRecord.slug}`}
+                  className="text-blue-600 hover:underline text-sm"
+                >
+                  {program.school}
+                </Link>
+              ) : (
+                <p className="text-slate-500 text-sm">{program.school}</p>
+              )}
+            </div>
+            {!isActive && (
+              <p className="text-sm text-slate-400 mt-1">
+                Retired — last seen: {program.last_seen}
+              </p>
+            )}
           </div>
-          <blockquote className="border-l-4 border-blue-100 pl-4 text-slate-700 text-sm leading-relaxed italic">
-            {enriched.description}
-          </blockquote>
-          <p className="text-xs text-slate-400 mt-2">
-            Official catalog text — WGU-authored. Sourced from {enriched.description_source}.
-          </p>
-        </section>
-      )}
 
-      {/* ================================================================
-          OFFICIAL CATALOG HISTORY
-          ================================================================ */}
-      <section className="mb-8">
-        <div className="flex items-center gap-2 mb-4">
-          <div className="w-1 h-5 bg-slate-300 rounded" />
-          <h2 className="text-base font-semibold text-slate-700">Changes Over Time</h2>
-        </div>
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
-          <StatCard label="First listed" value={program.first_seen} />
-          {!isActive && <StatCard label="Last seen" value={program.last_seen} />}
-          <StatCard label="Version changes" value={String(program.version_changes)} />
-          {latestCus != null && (
-            <StatCard
-              label={cusChanged ? "Total CUs (latest)" : "Total CUs"}
-              value={String(latestCus)}
-            />
+          {/* ============================================================
+              ABOUT THIS DEGREE
+              ============================================================ */}
+          {enriched?.description && (
+            <section className="mb-8">
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-1 h-5 bg-blue-600 rounded" />
+                <h2 className="text-lg font-bold text-slate-800">About This Degree</h2>
+                <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
+                  {enriched.description_source}
+                </span>
+              </div>
+              <blockquote className="border-l-4 border-blue-100 pl-4 text-slate-700 text-sm leading-relaxed italic">
+                {enriched.description}
+              </blockquote>
+              <p className="text-xs text-slate-400 mt-2">
+                Official catalog text — WGU-authored.
+              </p>
+            </section>
           )}
-        </div>
 
-        {/* School lineage */}
-        {program.colleges.length > 1 && (
-          <div className="mb-5">
-            <dt className="text-xs text-slate-500 mb-2">School name history</dt>
-            <div className="flex flex-wrap items-center gap-1">
-              {program.colleges.map((college, i) => (
-                <span key={i} className="flex items-center gap-1">
-                  <span className="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">
-                    {college}
+          {/* ============================================================
+              DEGREE HISTORY (compact — replaces Changes Over Time + Past Versions)
+              ============================================================ */}
+          <section className="mb-8">
+            <div className="flex items-center gap-2 mb-3">
+              <div className="w-1 h-5 bg-slate-300 rounded" />
+              <h2 className="text-base font-semibold text-slate-600">Degree History</h2>
+            </div>
+            <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-600 bg-slate-50 border border-slate-200 rounded-lg px-4 py-3">
+              <span>
+                <span className="text-xs text-slate-400 mr-1">First offered</span>
+                <span className="font-medium">{program.first_seen}</span>
+              </span>
+              <span>
+                <span className="text-xs text-slate-400 mr-1">Status</span>
+                <span className={`font-medium ${isActive ? "text-green-700" : "text-slate-500"}`}>
+                  {isActive ? "Current" : "Retired"}
+                </span>
+              </span>
+              {!isActive && (
+                <span>
+                  <span className="text-xs text-slate-400 mr-1">Last seen</span>
+                  <span className="font-medium">{program.last_seen}</span>
+                </span>
+              )}
+              {latestCus != null && (
+                <span>
+                  <span className="text-xs text-slate-400 mr-1">
+                    {cusChanged ? "CUs (latest)" : "CUs"}
                   </span>
-                  {i < program.colleges.length - 1 && (
-                    <span className="text-slate-300 text-xs">→</span>
+                  <span className="font-medium">{latestCus}</span>
+                  {cusChanged && (
+                    <span className="text-xs text-slate-400 ml-1">
+                      (was {program.cus_values[0]})
+                    </span>
                   )}
                 </span>
-              ))}
+              )}
             </div>
-          </div>
-        )}
-
-      </section>
-
-      {/* ================================================================
-          PROGRAM LEARNING OUTCOMES
-          ================================================================ */}
-      {enriched?.outcomes && enriched.outcomes.length > 0 && (
-        <section className="mb-8">
-          <div className="flex items-center gap-2 mb-3">
-            <div className="w-1 h-5 bg-blue-600 rounded" />
-            <h2 className="text-lg font-bold text-slate-800">Program Learning Outcomes</h2>
-            <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
-              {enriched.outcomes_source}
-            </span>
-          </div>
-          <p className="text-xs text-slate-400 mb-3">
-            Official WGU-authored outcomes from the catalog Program Outcomes section.
-            Present in ERA_B catalogs (2024-08+).
-          </p>
-          <ul className="space-y-2">
-            {enriched.outcomes.map((outcome, i) => (
-              <li key={i} className="flex gap-2 text-sm text-slate-700">
-                <span className="text-slate-300 mt-0.5 shrink-0">•</span>
-                <span>{outcome}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      {/* ================================================================
-          VERSION HISTORY
-          ================================================================ */}
-      {versionSteps.length > 0 && (
-        <section className="mb-8">
-          <div className="flex items-center gap-2 mb-4">
-            <div className="w-1 h-5 bg-blue-600 rounded" />
-            <h2 className="text-lg font-bold text-slate-800">Past Versions</h2>
-          </div>
-          <p className="text-sm text-slate-500 mb-3">
-            {program.version_changes === 0
-              ? "No curriculum version changes observed across catalog editions."
-              : `${program.version_changes} version change${
-                  program.version_changes !== 1 ? "s" : ""
-                } observed.`}
-          </p>
-          <div className="border border-slate-200 rounded-lg overflow-hidden">
-            <table className="w-full text-sm">
-              <thead className="bg-slate-50 border-b border-slate-200">
-                <tr>
-                  <th className="text-left px-4 py-2 text-xs font-medium text-slate-500">
-                    Catalog date
-                  </th>
-                  <th className="text-left px-4 py-2 text-xs font-medium text-slate-500">
-                    Version stamp
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {versionSteps.map((step, i) => (
-                  <tr
-                    key={i}
-                    className="border-b border-slate-100 last:border-0 hover:bg-slate-50"
-                  >
-                    <td className="px-4 py-2 text-slate-700 font-mono text-xs">
-                      {step.date}
-                    </td>
-                    <td className="px-4 py-2 text-slate-500 font-mono text-xs">
-                      {step.version}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          {cusChanged && (
-            <p className="text-xs text-slate-400 mt-2">
-              Total CUs changed across versions: {program.cus_values.join(" → ")}
-            </p>
-          )}
-        </section>
-      )}
-
-      {/* ================================================================
-          COURSE ROSTER
-          ================================================================ */}
-      {enriched?.roster && enriched.roster.length > 0 && (
-        <section className="mb-8">
-          <div className="flex items-center gap-2 mb-3">
-            <div className="w-1 h-5 bg-blue-600 rounded" />
-            <h2 className="text-lg font-bold text-slate-800">
-              Course Roster ({enriched.roster.length} courses)
-            </h2>
-            <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
-              {enriched.roster_source}
-            </span>
-          </div>
-          <p className="text-xs text-slate-400 mb-3">
-            Term sequence and course list from the 2026-03 catalog. Click any
-            course code to view its full catalog history.
-          </p>
-          <div className="space-y-4">
-            {terms.map((term) => (
-              <div key={term}>
-                <h3 className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">
-                  Term {term}
-                </h3>
-                <div className="border border-slate-200 rounded-lg overflow-hidden">
-                  <table className="w-full text-sm">
-                    <thead className="bg-slate-50 border-b border-slate-200">
-                      <tr>
-                        <th className="text-left px-3 py-2 text-xs font-medium text-slate-500">
-                          Code
-                        </th>
-                        <th className="text-left px-3 py-2 text-xs font-medium text-slate-500">
-                          Title
-                        </th>
-                        <th className="text-right px-3 py-2 text-xs font-medium text-slate-500">
-                          CUs
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {rosterByTerm[term].map((course, i) => (
-                        <tr
-                          key={course.code}
-                          className={`border-b border-slate-100 last:border-0 hover:bg-slate-50 ${
-                            i % 2 === 0 ? "" : "bg-slate-50/30"
-                          }`}
-                        >
-                          <td className="px-3 py-1.5">
-                            <Link
-                              href={`/courses/${course.code}`}
-                              className="font-mono text-xs text-blue-700 hover:underline"
-                            >
-                              {course.code}
-                            </Link>
-                          </td>
-                          <td className="px-3 py-1.5 text-slate-700">
-                            {course.title}
-                          </td>
-                          <td className="px-3 py-1.5 text-slate-500 text-xs text-right">
-                            {course.cus}
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
+            {/* College name history — only show if there were actual name changes */}
+            {program.colleges.length > 1 && (
+              <div className="mt-3">
+                <dt className="text-xs text-slate-400 mb-1.5">College name history</dt>
+                <div className="flex flex-wrap items-center gap-1">
+                  {program.colleges.map((college, i) => (
+                    <span key={i} className="flex items-center gap-1">
+                      <span
+                        className={`text-xs px-2 py-0.5 rounded ${
+                          i === program.colleges.length - 1
+                            ? "bg-blue-50 text-blue-700"
+                            : "bg-slate-100 text-slate-500"
+                        }`}
+                      >
+                        {college}
+                      </span>
+                      {i < program.colleges.length - 1 && (
+                        <span className="text-slate-300 text-xs">→</span>
+                      )}
+                    </span>
+                  ))}
                 </div>
               </div>
-            ))}
-          </div>
-          <p className="text-xs text-slate-400 mt-3">
-            Total: {enriched.roster.reduce((sum, c) => sum + c.cus, 0)} CUs across{" "}
-            {enriched.roster.length} courses.
-            {latestCus != null &&
-              ` Program total per catalog: ${latestCus} CUs.`}
-          </p>
-        </section>
-      )}
+            )}
+          </section>
 
-      {/* Back */}
-      <div className="border-t border-slate-100 pt-6">
-        <Link href="/programs" className="text-sm text-blue-600 hover:underline">
-          ← Back to Degrees
-        </Link>
-      </div>
+          {/* ============================================================
+              PROGRAM LEARNING OUTCOMES (collapsible)
+              ============================================================ */}
+          {enriched?.outcomes && enriched.outcomes.length > 0 && (
+            <section className="mb-8">
+              <details className="group">
+                <summary className="flex items-center gap-2 cursor-pointer list-none">
+                  <div className="w-1 h-5 bg-blue-600 rounded shrink-0" />
+                  <h2 className="text-lg font-bold text-slate-800">Program Learning Outcomes</h2>
+                  <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
+                    {enriched.outcomes_source}
+                  </span>
+                  <span className="text-xs text-slate-400 ml-auto group-open:hidden">
+                    Show ▾
+                  </span>
+                  <span className="text-xs text-slate-400 ml-auto hidden group-open:inline">
+                    Hide ▴
+                  </span>
+                </summary>
+                <div className="mt-3 pl-3">
+                  <p className="text-xs text-slate-400 mb-3">
+                    Official WGU-authored outcomes from the catalog Program Outcomes section.
+                  </p>
+                  <ul className="space-y-2">
+                    {enriched.outcomes.map((outcome, i) => (
+                      <li key={i} className="flex gap-2 text-sm text-slate-700">
+                        <span className="text-slate-300 mt-0.5 shrink-0">•</span>
+                        <span>{outcome}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </details>
+            </section>
+          )}
+
+          {/* ============================================================
+              COURSE ROSTER
+              ============================================================ */}
+          {enriched?.roster && enriched.roster.length > 0 && (
+            <section className="mb-8">
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-1 h-5 bg-blue-600 rounded" />
+                <h2 className="text-lg font-bold text-slate-800">
+                  Course Roster ({enriched.roster.length} courses)
+                </h2>
+                <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
+                  {enriched.roster_source}
+                </span>
+              </div>
+              <div className="space-y-4">
+                {terms.map((term) => (
+                  <div key={term}>
+                    <h3 className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">
+                      Term {term}
+                    </h3>
+                    <div className="border border-slate-200 rounded-lg overflow-hidden">
+                      <table className="w-full text-sm">
+                        <thead className="bg-slate-50 border-b border-slate-200">
+                          <tr>
+                            <th className="text-left px-3 py-2 text-xs font-medium text-slate-500">
+                              Code
+                            </th>
+                            <th className="text-left px-3 py-2 text-xs font-medium text-slate-500">
+                              Title
+                            </th>
+                            <th className="text-right px-3 py-2 text-xs font-medium text-slate-500">
+                              CUs
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {rosterByTerm[term].map((course, i) => (
+                            <tr
+                              key={course.code}
+                              className={`border-b border-slate-100 last:border-0 hover:bg-slate-50 ${
+                                i % 2 === 0 ? "" : "bg-slate-50/30"
+                              }`}
+                            >
+                              <td className="px-3 py-1.5">
+                                <Link
+                                  href={`/courses/${course.code}`}
+                                  className="font-mono text-xs text-blue-700 hover:underline"
+                                >
+                                  {course.code}
+                                </Link>
+                              </td>
+                              <td className="px-3 py-1.5 text-slate-700">
+                                {course.title}
+                              </td>
+                              <td className="px-3 py-1.5 text-slate-500 text-xs text-right">
+                                {course.cus}
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <p className="text-xs text-slate-400 mt-3">
+                Total: {enriched.roster.reduce((sum, c) => sum + c.cus, 0)} CUs across{" "}
+                {enriched.roster.length} courses.
+                {latestCus != null && ` Degree total per catalog: ${latestCus} CUs.`}
+              </p>
+            </section>
+          )}
+
+          {/* Back */}
+          <div className="border-t border-slate-100 pt-6">
+            <Link href="/programs" className="text-sm text-blue-600 hover:underline">
+              ← Back to Degrees
+            </Link>
+          </div>
         </main>
 
         {hasRelevantResources && (
@@ -350,28 +322,4 @@ export default async function ProgramDetailPage({ params }: Props) {
       </div>
     </div>
   );
-}
-
-function StatCard({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="bg-slate-50 border border-slate-200 rounded px-3 py-2">
-      <dt className="text-xs text-slate-400 mb-0.5">{label}</dt>
-      <dd className="text-sm font-semibold text-slate-700">{value}</dd>
-    </div>
-  );
-}
-
-function parseVersionProgression(
-  raw: string
-): Array<{ date: string; version: string }> {
-  if (!raw.trim()) return [];
-  return raw.split("→").map((step) => {
-    const trimmed = step.trim();
-    const colonIdx = trimmed.indexOf(":");
-    if (colonIdx === -1) return { date: trimmed, version: "" };
-    return {
-      date: trimmed.slice(0, colonIdx).trim(),
-      version: trimmed.slice(colonIdx + 1).trim(),
-    };
-  });
 }

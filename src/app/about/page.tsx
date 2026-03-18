@@ -27,11 +27,11 @@ export default function AboutPage() {
 
       <Section title="What it covers">
         <ul className="list-disc list-inside space-y-1 text-slate-600">
-          <li>Current WGU degrees across all four schools</li>
+          <li>Current WGU degrees across all four colleges</li>
           <li>A course catalog with historical coverage back to 2017</li>
           <li>Degree comparisons for related degrees</li>
           <li>Retired degrees that are still useful for reference</li>
-          <li>School background and earlier names where relevant</li>
+          <li>College background and earlier names where relevant</li>
         </ul>
       </Section>
 
@@ -49,13 +49,13 @@ export default function AboutPage() {
 
       <Section title="How history and resources are used">
         <p>
-          When a degree or school has changed over time, Atlas shows that context where
+          When a degree or college has changed over time, Atlas shows that context where
           it helps explain what you&apos;re viewing. That might include earlier names,
-          past versions, or other relevant background.
+          past curriculum versions, or other relevant background.
         </p>
         <p>
           Official WGU resources, such as program guides and outcomes pages, are attached
-          to degree and school pages when they have been identified and verified from
+          to degree and college pages when they have been identified and verified from
           public WGU sources.
         </p>
       </Section>

@@ -34,7 +34,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const school = getSchoolBySlug(slug);
-  if (!school) return { title: "School Not Found" };
+  if (!school) return { title: "College Not Found" };
   return {
     title: school.current_name,
     description: `WGU ${school.current_name} — degrees, courses, and recent changes.`,
@@ -89,7 +89,7 @@ export default async function SchoolPage({ params }: Props) {
       {/* Breadcrumb */}
       <nav className="text-sm text-slate-400 mb-6">
         <Link href="/schools" className="hover:text-blue-600">
-          Schools
+          Colleges
         </Link>
         <span className="mx-2">›</span>
         <span className="text-slate-600">{school.current_name}</span>
@@ -394,7 +394,7 @@ export default async function SchoolPage({ params }: Props) {
       <section className="mb-10">
         <div className="flex items-center gap-2 mb-4">
           <div className="w-1 h-5 bg-slate-300 rounded" />
-          <h2 className="text-base font-semibold text-slate-700">School Background</h2>
+          <h2 className="text-base font-semibold text-slate-700">College History</h2>
         </div>
         <SchoolLineage lineage={school.lineage} />
       </section>
@@ -402,7 +402,7 @@ export default async function SchoolPage({ params }: Props) {
       {/* Back */}
       <div className="border-t border-slate-100 pt-6">
         <Link href="/schools" className="text-sm text-blue-600 hover:underline">
-          ← Back to Schools
+          ← Back to Colleges
         </Link>
       </div>
         </main>

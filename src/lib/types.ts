@@ -207,6 +207,15 @@ export interface HomepageSummary {
 }
 
 // ---------------------------------------------------------------------------
+// Course description — from public/data/course_descriptions.json
+// Extracted from the "Courses" section of the WGU catalog text.
+// ---------------------------------------------------------------------------
+export interface CourseDescription {
+  title: string;        // title as it appears in the catalog (may differ slightly from canonical_title_current)
+  description: string;  // official catalog prose
+}
+
+// ---------------------------------------------------------------------------
 // Official resource placements — from public/data/official_resource_placements.json
 // ---------------------------------------------------------------------------
 export type ResourceSurface = "program_detail" | "school_detail";
