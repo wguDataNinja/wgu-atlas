@@ -103,46 +103,11 @@ export default function CompareSelector({
   const selectedBProgram = programs.find((p) => p.program_code === selectedB);
   const bothSelected = !!(selectedA && selectedB);
 
-  // Compact bar: shown when both selected and selectors are collapsed
-  const showCompactBar = bothSelected && !expandedSelectors;
   // Show full selector panels when expanded (or when only one selected)
   const showFullPanels = expandedSelectors || !bothSelected;
 
   return (
     <div>
-      {/* ── Compact selection bar (both selected, collapsed state) ─────── */}
-      {showCompactBar && selectedAProgram && selectedBProgram && (
-        <div className="flex items-center gap-3 mb-5 px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl">
-          <div className="flex items-center gap-2 flex-1 min-w-0 flex-wrap">
-            <span className="font-mono text-xs bg-blue-100 text-blue-700 px-1.5 py-0.5 rounded shrink-0">
-              {selectedA}
-            </span>
-            <span className="text-sm text-slate-700 truncate">
-              {getIndexName(selectedA!) ?? selectedAProgram.canonical_name}
-            </span>
-            <span className="text-slate-400 text-xs shrink-0">vs</span>
-            <span className="font-mono text-xs bg-amber-100 text-amber-700 px-1.5 py-0.5 rounded shrink-0">
-              {selectedB}
-            </span>
-            <span className="text-sm text-slate-700 truncate">
-              {getIndexName(selectedB!) ?? selectedBProgram.canonical_name}
-            </span>
-          </div>
-          <button
-            onClick={() => setExpandedSelectors(true)}
-            className="text-xs text-blue-600 hover:text-blue-800 underline shrink-0 transition-colors"
-          >
-            Change
-          </button>
-          <button
-            onClick={handleReset}
-            className="text-xs text-slate-400 hover:text-slate-600 underline shrink-0 transition-colors"
-          >
-            Reset
-          </button>
-        </div>
-      )}
-
       {/* ── Full selector panels ────────────────────────────────────────── */}
       {showFullPanels && (
         <>
@@ -389,7 +354,11 @@ export default function CompareSelector({
 
       {/* ── Compare result ─────────────────────────────────────────────── */}
       {comparePayload && (
-        <CompareView payload={comparePayload} />
+        <CompareView
+          payload={comparePayload}
+          onChangeSelection={() => setExpandedSelectors(true)}
+          onReset={handleReset}
+        />
       )}
     </div>
   );

@@ -3,134 +3,77 @@ import type { ComparePayload, CompareCourseEntry, TermLane } from "@/lib/compare
 import { buildTermLanes, labShortLabel } from "@/lib/compareUtils";
 
 // ---------------------------------------------------------------------------
-// Main component — Proto3 Lane-Based Visual Compare
+// Main component — Lane-Based Visual Compare
 // ---------------------------------------------------------------------------
-// Layout notes:
+// Layout:
 //   • Outer container has NO overflow-hidden so sticky lane headers work.
-//   • Top section (identity bar + overlap strip) gets its own rounded-t-xl
-//     overflow-hidden wrapper to clip backgrounds at the top corners.
-//   • Lane headers use sticky top-14 (below the 56px nav).
+//   • Sticky lane headers (top-14) are the primary structural anchor.
+//   • Change / Reset live in a utility bar above the 3-column headers,
+//     part of the same sticky container.
 
-export default function CompareView({ payload }: { payload: ComparePayload }) {
+export default function CompareView({
+  payload,
+  onChangeSelection,
+  onReset,
+}: {
+  payload: ComparePayload;
+  onChangeSelection?: () => void;
+  onReset?: () => void;
+}) {
   const { left, right, metrics } = payload;
   const leftLabel = labShortLabel(left.program_code, left.canonical_name);
   const rightLabel = labShortLabel(right.program_code, right.canonical_name);
   const leftOnly = metrics.left_count - metrics.shared_count;
   const rightOnly = metrics.right_count - metrics.shared_count;
-  const overlapPct = Math.round(metrics.jaccard_overlap * 100);
   const termLanes = buildTermLanes(payload);
 
   return (
-    <div className="mt-2">
+    <div className="mt-4">
       {/* Outer: NO overflow-hidden so sticky lane headers work */}
       <div className="rounded-xl border border-slate-300">
 
-        {/* ── Top section: rounded-t-xl overflow-hidden clips backgrounds ── */}
-        <div className="rounded-t-xl overflow-hidden">
-          {/* Identity bar */}
-          <div className="grid grid-cols-[1fr_auto_1fr] items-stretch divide-x divide-slate-200">
-            {/* Left program */}
-            <div className="flex items-center gap-2 px-4 py-3 bg-blue-50/60">
-              <span className="font-mono text-xs bg-blue-200 text-blue-800 px-1.5 py-0.5 rounded font-semibold shrink-0">
-                {left.program_code}
-              </span>
-              <div className="min-w-0">
-                <p
-                  className="text-sm font-medium text-slate-800 leading-tight truncate"
-                  title={left.canonical_name}
-                >
-                  <Link
-                    href={`/programs/${left.program_code}`}
-                    className="hover:underline"
-                  >
-                    {leftLabel}
-                  </Link>
-                </p>
-                <p className="text-xs text-slate-400 mt-0.5">
-                  {left.school} · {left.degree_level}
-                  {left.total_cus != null ? ` · ${left.total_cus} CU` : ""}
-                </p>
-              </div>
-            </div>
-
-            {/* VS divider */}
-            <div className="flex items-center px-4 bg-slate-50">
-              <span className="text-xs font-semibold text-slate-400">vs</span>
-            </div>
-
-            {/* Right program */}
-            <div className="flex items-center gap-2 px-4 py-3 bg-amber-50/60">
-              <span className="font-mono text-xs bg-amber-200 text-amber-800 px-1.5 py-0.5 rounded font-semibold shrink-0">
-                {right.program_code}
-              </span>
-              <div className="min-w-0">
-                <p
-                  className="text-sm font-medium text-slate-800 leading-tight truncate"
-                  title={right.canonical_name}
-                >
-                  <Link
-                    href={`/programs/${right.program_code}`}
-                    className="hover:underline"
-                  >
-                    {rightLabel}
-                  </Link>
-                </p>
-                <p className="text-xs text-slate-400 mt-0.5">
-                  {right.school} · {right.degree_level}
-                  {right.total_cus != null ? ` · ${right.total_cus} CU` : ""}
-                </p>
-              </div>
-            </div>
+        {/* ── Sticky header: utility bar + 3-column lane headers ── */}
+        <div className="sticky top-14 z-10">
+          {/* Utility bar: Change / Reset (top-right) */}
+          <div className="flex justify-end gap-4 px-3 py-1.5 bg-slate-800 rounded-t-xl border-b border-slate-700">
+            {onChangeSelection && (
+              <button
+                onClick={onChangeSelection}
+                className="text-xs text-slate-300 hover:text-white transition-colors"
+              >
+                Change
+              </button>
+            )}
+            {onReset && (
+              <button
+                onClick={onReset}
+                className="text-xs text-slate-400 hover:text-slate-200 transition-colors"
+              >
+                Reset
+              </button>
+            )}
           </div>
 
-          {/* Overlap strip: 3 columns with counts above color segments */}
-          <div className="border-t border-slate-200 grid grid-cols-[1fr_2fr_1fr]">
-            {/* Left-only column (blue) */}
-            <div className="px-3 pt-2 pb-0 bg-blue-50 border-r border-blue-100">
-              <p className="text-xs font-bold text-blue-800">{leftOnly}</p>
-              <p className="text-xs text-blue-600 leading-tight">
-                unique to {leftLabel}
+          {/* 3-column lane headers */}
+          <div className="grid grid-cols-[1fr_2fr_1fr]">
+            <div className="bg-blue-600 px-3 py-2.5 text-center border-r border-blue-700">
+              <p className="text-xs font-bold text-white leading-tight">{leftLabel}</p>
+              <p className="text-xs text-blue-200 mt-0.5">
+                {leftOnly} unique · {left.program_code}
               </p>
-              <div className="mt-2 h-2 bg-blue-400 rounded-bl-xl" />
             </div>
-            {/* Shared column (green) */}
-            <div className="px-3 pt-2 pb-0 bg-emerald-50 border-r border-emerald-100 text-center">
-              <p className="text-xs font-bold text-emerald-800">{metrics.shared_count}</p>
-              <p className="text-xs text-emerald-600 leading-tight">
-                shared · {overlapPct}% overlap
+            <div className="bg-slate-700 px-3 py-2.5 text-center border-r border-slate-600">
+              <p className="text-xs font-bold text-white leading-tight">Shared</p>
+              <p className="text-xs text-slate-300 mt-0.5">
+                {metrics.shared_count} in both
               </p>
-              <div className="mt-2 h-2 bg-emerald-400" />
             </div>
-            {/* Right-only column (amber) */}
-            <div className="px-3 pt-2 pb-0 bg-amber-50 text-right">
-              <p className="text-xs font-bold text-amber-800">{rightOnly}</p>
-              <p className="text-xs text-amber-600 leading-tight">
-                unique to {rightLabel}
+            <div className="bg-amber-500 px-3 py-2.5 text-center">
+              <p className="text-xs font-bold text-white leading-tight">{rightLabel}</p>
+              <p className="text-xs text-amber-100 mt-0.5">
+                {rightOnly} unique · {right.program_code}
               </p>
-              <div className="mt-2 h-2 bg-amber-400 rounded-br-xl" />
             </div>
-          </div>
-        </div>
-
-        {/* ── Sticky lane column headers ── */}
-        <div className="grid grid-cols-[1fr_2fr_1fr] sticky top-14 z-10">
-          <div className="bg-blue-600 px-3 py-2.5 text-center border-r border-blue-700">
-            <p className="text-xs font-bold text-white leading-tight">{leftLabel}</p>
-            <p className="text-xs text-blue-200 mt-0.5">
-              {leftOnly} unique · {left.program_code}
-            </p>
-          </div>
-          <div className="bg-slate-700 px-3 py-2.5 text-center border-r border-slate-600">
-            <p className="text-xs font-bold text-white leading-tight">Shared</p>
-            <p className="text-xs text-slate-300 mt-0.5">
-              {metrics.shared_count} in both
-            </p>
-          </div>
-          <div className="bg-amber-500 px-3 py-2.5 text-center">
-            <p className="text-xs font-bold text-white leading-tight">{rightLabel}</p>
-            <p className="text-xs text-amber-100 mt-0.5">
-              {rightOnly} unique · {right.program_code}
-            </p>
           </div>
         </div>
 
@@ -145,19 +88,13 @@ export default function CompareView({ payload }: { payload: ComparePayload }) {
             />
           ))}
         </div>
-
-        {/* ── Footer ── */}
-        <p className="text-xs text-slate-400 px-4 py-3 border-t border-slate-200 bg-slate-50 rounded-b-xl">
-          Comparison source: 2026-03 WGU catalog roster. Exact course code
-          identity only — no alias or fuzzy matching. Atlas-derived analysis.
-        </p>
       </div>
     </div>
   );
 }
 
 // ---------------------------------------------------------------------------
-// Term block — one row in the lane layout
+// Term block
 // ---------------------------------------------------------------------------
 
 function TermBlock({
@@ -176,7 +113,7 @@ function TermBlock({
 
   return (
     <div className="border-t border-slate-200">
-      {/* Term divider — dark, high-contrast */}
+      {/* Term divider */}
       <div className="bg-slate-600 px-4 py-1.5 flex items-center gap-3">
         <span className="text-xs font-bold text-white tracking-wide">
           {term === 0 ? "UNPLACED" : `TERM ${term}`}
@@ -190,7 +127,6 @@ function TermBlock({
 
       {/* Three-lane content */}
       <div className="grid grid-cols-[1fr_2fr_1fr]">
-        {/* Left-only */}
         <div
           className={`px-3 py-2 border-r border-slate-200 ${
             hasLeft ? "bg-blue-50" : "bg-blue-50/20"
@@ -201,14 +137,12 @@ function TermBlock({
           ))}
         </div>
 
-        {/* Shared */}
         <div className="px-3 py-2 border-r border-slate-200 bg-slate-50">
           {lane.shared.map((c) => (
             <SharedCourseCard key={c.code} course={c} rightCode={rightCode} />
           ))}
         </div>
 
-        {/* Right-only */}
         <div
           className={`px-3 py-2 ${hasRight ? "bg-amber-50" : "bg-amber-50/20"}`}
         >
