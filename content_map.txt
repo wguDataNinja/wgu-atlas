@@ -1,5 +1,5 @@
 WGU ATLAS — FULL SITE CONTENT MAP
-Generated: 2026-03-18T07:55:57.617Z
+Generated: 2026-03-18T09:25:08.466Z
 Purpose: Proofreading reference. Shows all visible text with source locations.
 
 ======================================================================
@@ -12,7 +12,7 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   [source: src/app/layout.tsx]
   Default title: WGU Atlas
   Title template: %s | WGU Atlas
-  Meta description: An independent guide to WGU degrees, courses, and schools, built from public WGU sources.
+  Meta description: An independent guide to WGU degrees, courses, and colleges, built from public WGU sources.
 
 ----------------------------------------------------------------------
   Top Navigation Bar
@@ -22,7 +22,7 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   Brand / Logo: WGU Atlas
 
   Primary Links:
-    Home  |  Courses  |  Degrees  |  Schools  |  Compare Degrees  |  About
+    Home  |  Courses  |  Degrees  |  Colleges  |  Compare Degrees  |  About
     [source: src/components/layout/Nav.tsx:6]
 
   Note: Timeline, Methods, and Data are NOT in top nav.
@@ -56,7 +56,7 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
 ----------------------------------------------------------------------
   H1 Title: WGU Atlas
     [source: src/app/page.tsx:13]
-  Subtitle: Explore WGU degrees, courses, and schools. Compare related degrees.
+  Subtitle: Explore WGU degrees, courses, and colleges. Compare related degrees.
     [source: src/app/page.tsx:?]
 
 ----------------------------------------------------------------------
@@ -69,18 +69,18 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   Inactive result label (degree): retired
 
 ----------------------------------------------------------------------
-  School Cards (under search bar)
+  College Cards (under search bar)
 ----------------------------------------------------------------------
   [source: src/components/home/SchoolCards.tsx]
 
-  Four cards, each with: school name, description, 'Explore [School] →' CTA
+  Four cards, each with: college name, description, 'Explore [College] →' CTA
 
   Business description: Bachelor's, master's, and MBA degrees in accounting, management, marketing, IT management, finance, and related fields.
   Health description: Degrees in nursing, healthcare administration, public health, health informatics, and allied health disciplines.
   Technology description: Degrees in IT, cybersecurity, software engineering, data analytics, cloud computing, and computer science.
   Education description: Teacher preparation, educational leadership, and learning and technology degrees across all grade bands.
 
-  CTA format: 'Explore [School Name] →'
+  CTA format: 'Explore [College Name] →'
     [source: src/components/home/SchoolCards.tsx:50]
 
 ----------------------------------------------------------------------
@@ -88,7 +88,7 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
 ----------------------------------------------------------------------
   [source: src/app/page.tsx]
 
-  WGU Atlas is an independent guide to WGU degrees, courses, and schools, built from public WGU sources. It helps students explore degree options, compare related degrees, and understand changes over time when those changes matter to what they're viewing.
+  WGU Atlas is an independent guide to WGU degrees, courses, and colleges, built from public WGU sources. It helps students explore degree options, compare related degrees, and understand changes over time when those changes matter to what they're viewing.
     [source: src/app/page.tsx:31]
 
 ----------------------------------------------------------------------
@@ -137,8 +137,8 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   Scope label: Scope
   Scope options:  AP + Cert (default)  |  AP only  |  Cert only
 
-  School label: School
-  School options:  All schools (default)  |  Business  |  Health  |  Technology  |  Education
+  College label: College
+  College options:  All colleges (default)  |  Business  |  Health  |  Technology  |  Education
 
   Reset button: Reset
   Result count: {n} courses  [of {total}]
@@ -161,21 +161,46 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
 ----------------------------------------------------------------------
   {code}  |  {N} CUs  |  Active -or- Retired
     Active badge: Active
-    [source: src/app/courses/[code]/page.tsx:19]
+    [source: src/app/courses/[code]/page.tsx:25]
     Retired badge: Retired
-    [source: src/app/courses/[code]/page.tsx:19]
+    [source: src/app/courses/[code]/page.tsx:25]
 
 ----------------------------------------------------------------------
-  Section: Catalog History
+  Section: About This Course
 ----------------------------------------------------------------------
-  H2: Catalog History
-  Source badge: Source: WGU public catalog archive
-  Stat cards:  First in catalog  |  Last in catalog  |  Editions present  |  Catalog presence
+  H2: About This Course
+  Source badge: WGU Catalog 2026-03
+  Content: {catalogDesc.description}  (official catalog text, blockquote)
+  Attribution: Official catalog text — WGU-authored.
+
+----------------------------------------------------------------------
+  Section: Compact Facts Bar
+----------------------------------------------------------------------
+  Inline facts row:  First in catalog  |  Status  |  Last seen (if retired)  |  Current degrees (if active)  |  Total degree appearances
+
+----------------------------------------------------------------------
+  Section: Included in Current Degrees
+----------------------------------------------------------------------
+  H2: Included in Current Degrees ({N})
+  List of linked degree names — linked to /programs/[code] when resolvable.
+
+----------------------------------------------------------------------
+  Section: Previously Appeared in Retired Degrees
+----------------------------------------------------------------------
+  H2: Previously Appeared in Retired Degrees ({N})
+  Muted (slate-400) list — linked when resolvable. first_seen date shown if available.
+  Overflow note: Showing 50 of {N} — full history in the downloadable dataset.
+
+----------------------------------------------------------------------
+  Section: Also known as
+----------------------------------------------------------------------
+  H3: Also known as in catalog
+  Title variants that differ from canonical_title_current.
 
 ----------------------------------------------------------------------
   Back Link
 ----------------------------------------------------------------------
-  Text: ← Back to Course Explorer
+  Text: ← Back to Courses
 
 ======================================================================
   DEGREES PAGE  (/PROGRAMS)
@@ -190,7 +215,7 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   Subtext: {programs.length} degrees tracked across the WGU catalog — {activeCount} current, {retiredCount} retired.
   Current count (live): 114
   Retired count (live): 82
-  Meta description: Browse all WGU degrees — current and retired — with changes over time and school history.
+  Meta description: Browse all WGU degrees — current and retired — with changes over time and college history.
 
 ----------------------------------------------------------------------
   ProgramExplorer Filters
@@ -203,8 +228,8 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   Status control: Checkbox: Include retired degrees  (default: unchecked = current degrees only)
     [source: src/components/programs/ProgramExplorer.tsx:85]
 
-  School label: School
-  School options:  All schools (default)  |  Business  |  Health  |  Technology  |  Education
+  College label: College
+  College options:  All colleges (default)  |  Business  |  Health  |  Technology  |  Education
 
   Reset button: Reset
   Result count: {n} degree(s)  [of {total}]
@@ -229,49 +254,37 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   {code}  |  {status badge}  |  {N} CUs
     Current badge: Current
     Retired badge: Retired
-    [source: src/app/programs/[code]/page.tsx:93]
+    [source: src/app/programs/[code]/page.tsx:92]
 
 
 ----------------------------------------------------------------------
   Section: About This Degree
 ----------------------------------------------------------------------
-  H2: About This Program
+  H2: About This Degree
   Source badge: {enriched.description_source}  (dynamic from program_enriched.json)
   Content: {enriched.description}  (official catalog text, italicized blockquote)
   Attribution: Official catalog text — WGU-authored. Sourced from {description_source}.
 
 
 ----------------------------------------------------------------------
-  Section: Changes Over Time
+  Section: Degree History
 ----------------------------------------------------------------------
-  H2: Changes Over Time
-    [source: src/app/programs/[code]/page.tsx:143]
-  Source badge: Source: WGU public catalog archive
+  H2: Degree History
 
-  Stat cards:  First seen  |  Last seen  |  Catalog editions  |  Version changes  |  Total CUs (latest)
+  Compact inline facts row:  First offered  |  Status  |  Last seen (if retired)  |  CUs (with change note if changed)
 
-  Sub-label: School name history: Earlier names
+  Sub-label: College name history: Earlier names
     [source: src/app/programs/[code]/page.tsx:?]
   Sub-label: Known names: Known names
   Canonical marker: (canonical)
 
 
 ----------------------------------------------------------------------
-  Section: Program Learning Outcomes
+  Section: Program Learning Outcomes (collapsible)
 ----------------------------------------------------------------------
-  H2: Program Learning Outcomes
-  Note: Official WGU-authored outcomes from the catalog Program Outcomes section. Present in ERA_B catalogs (2024-08+).
-
-
-----------------------------------------------------------------------
-  Section: Past Versions
-----------------------------------------------------------------------
-  H2: Past Versions
-    [source: src/app/programs/[code]/page.tsx:213]
-  No changes text: No curriculum version changes observed across catalog editions.
-  Changes text: {N} version change(s) observed.
-  Table headers:  Catalog date  |  Version stamp
-  CU change note: Total CUs changed across versions: {cus_values joined by →}
+  Summary label (collapsed): Program Learning Outcomes  ▾  Show
+  Summary label (expanded): Program Learning Outcomes  ▴  Hide
+  Note: Official WGU-authored outcomes from the catalog Program Outcomes section. Present in ERA_B catalogs (2024-08+). Collapsed by default.
 
 
 ----------------------------------------------------------------------
@@ -287,24 +300,24 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   Back Link
 ----------------------------------------------------------------------
   Text: ← Back to Degrees
-    [source: src/app/programs/[code]/page.tsx:340]
+    [source: src/app/programs/[code]/page.tsx:312]
 
 ======================================================================
-  SCHOOLS PAGE  (/SCHOOLS)
+  COLLEGES PAGE  (/SCHOOLS)
 ======================================================================
   [source: src/app/schools/page.tsx]
 
 ----------------------------------------------------------------------
   Page Header
 ----------------------------------------------------------------------
-  H1: Schools
+  H1: Colleges
     [source: src/app/schools/page.tsx:6]
-  Subtext: WGU is organized into four schools. Each school page shows its current degrees and courses, school background, and recent changes.
+  Subtext: WGU is organized into four colleges. Each college page shows its current degrees and courses, college history, and recent changes.
     [source: src/app/schools/page.tsx:25]
   Attribution: Source: WGU public catalog archive · {current year}
 
 ----------------------------------------------------------------------
-  School Cards (SCHOOL_DESCRIPTIONS)
+  College Cards (COLLEGE_DESCRIPTIONS)
 ----------------------------------------------------------------------
   [source: src/app/schools/page.tsx]
 
@@ -315,17 +328,17 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
 
   Card subtext: Formerly: {historical names}  (if any)
   Stats: {N} current degrees  ·  {N} active courses
-  Meta description: Browse WGU's four schools — Business, Health, Technology, and Education — with degree and course listings.
+  Meta description: Browse WGU's four colleges — Business, Health, Technology, and Education — with degree and course listings.
 
 ======================================================================
-  SCHOOL DETAIL PAGE  (/SCHOOLS/[SLUG])
+  COLLEGE DETAIL PAGE  (/SCHOOLS/[SLUG])
 ======================================================================
   [source: src/app/schools/[slug]/page.tsx]
 
 ----------------------------------------------------------------------
   Breadcrumb
 ----------------------------------------------------------------------
-  Schools  ›  {school.current_name}
+  Colleges  ›  {school.current_name}
 
 
 ----------------------------------------------------------------------
@@ -334,7 +347,7 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
 
   Section headings (from source):
     • Recent Changes
-    • School Background
+    • College History
     • New Degrees
     • Recent Degree Updates
     • Recent Course Additions
@@ -364,12 +377,12 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   [source: src/components/compare/CompareSelector.tsx]
 
   Universe: active programs with non-empty rosters, excluding LAB_EXCLUSIONS (6 programs).
-  Sibling logic: same school + same degree level as the selected program (not pilot-family gated).
+  Sibling logic: same college + same degree level as the selected degree (not pilot-family gated).
 
   Step 1 panel:
     Header: Choose a degree
     [source: src/components/compare/CompareSelector.tsx:120]
-    Filters: All schools (default) + All levels (default)
+    Filters: All colleges (default) + All levels (default)
     Empty state: No degrees match these filters.
     Footer note: {N} degrees shown. Select one to see comparable degrees in step 2.
 
@@ -377,9 +390,9 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
     Header: Compare with
     Prompt (before step 1): Select a degree in step 1 first.
     No siblings text: No comparable degrees.
-    No siblings sub-text: No other degrees share the same school and level as this program.
+    No siblings sub-text: No other degrees share the same college and level as this degree.
     Comparing-with label: Comparing with: {index_name ?? canonical_name}
-    Footer note: Showing degrees in the same school and level as your selection.
+    Footer note: Showing degrees in the same college and level as your selection.
 
   Prompt (A selected, waiting for B):
     Text: Now select a degree in step 2 to see the comparison.
@@ -422,7 +435,7 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
 ----------------------------------------------------------------------
   (Defined in src/lib/compareUtils.ts — LAB_EXCLUSIONS)
 
-  Universe: active programs with non-empty rosters, same school + degree level pairing.
+  Universe: active programs with non-empty rosters, same college + degree level pairing.
   Previous: gated to 5 pilot-family codes only.
   Current:  ~107 active programs across all 4 colleges.
 
@@ -522,8 +535,8 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
 ----------------------------------------------------------------------
   H1: About WGU Atlas
     [source: src/app/about/page.tsx:6]
-  Subtitle: An independent guide to WGU degrees, courses, and schools.
-  Meta description: About WGU Atlas — an independent guide to WGU degrees, courses, and schools, built from public WGU catalog sources.
+  Subtitle: An independent guide to WGU degrees, courses, and colleges.
+  Meta description: About WGU Atlas — an independent guide to WGU degrees, courses, and colleges, built from public WGU catalog sources.
 
 ----------------------------------------------------------------------
   Sections
@@ -537,11 +550,11 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
     are relevant to what they're viewing.
 
   Section 2: What it covers
-    • Current degrees across WGU's four schools
+    • Current degrees across WGU's four colleges
     • Course catalog with history going back to 2017
-    • Degree comparisons for related programs (pilot set)
+    • Degree comparisons for related degrees
     • Retired degrees still visible for reference
-    • School background and earlier names over time
+    • College background and earlier names over time
 
   Section 3: Source and independence
     All data is derived from WGU's publicly available course catalog, scraped and
@@ -550,7 +563,7 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
     Atlas is a community project. Not a substitute for official WGU advising.
 
   Section 4: How history and resources are used
-    Where a degree or school has changed names or structure over time, Atlas surfaces
+    Where a degree or college has changed names or structure over time, Atlas surfaces
     that history where relevant — earlier names on detail pages. History is secondary
     context, not the primary lens.
 
@@ -861,18 +874,18 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
 
   Route               Title                          Meta Description
   ----------------------------------------------------------------------------------------------------
-  /                   WGU Atlas                      An independent guide to WGU degrees, courses, and schools, built from public WGU sources.
+  /                   WGU Atlas                      An independent guide to WGU degrees, courses, and colleges, built from public WGU sources.
   /courses            Courses                        Search and browse WGU courses — active and retired, with catalog history for each.
-  /programs           Degrees                        Browse all WGU degrees — current and retired — with changes over time and school history.
-  /schools            Schools                        Browse WGU's four schools — Business, Health, Technology, and Education — with degree and course listings.
+  /programs           Degrees                        Browse all WGU degrees — current and retired — with changes over time and college history.
+  /schools            Colleges                       Browse WGU's four colleges — Business, Health, Technology, and Education — with degree and course listings.
   /compare            Compare Degrees                Compare WGU degree course rosters side by side. See shared courses, track-specific courses, and overlap metrics.
-  /about              About                          About WGU Atlas — an independent guide to WGU degrees, courses, and schools, built from public WGU catalog sources.
+  /about              About                          About WGU Atlas — an independent guide to WGU degrees, courses, and colleges, built from public WGU catalog sources.
   /timeline           Timeline                       (on page — major WGU catalog events from 2017 to 2026)
   /methods            Methods                        How WGU Atlas data was collected, validated, and interpreted — archive coverage, parser eras, and trust caveats.
   /data               Data                           Download WGU Atlas canonical datasets — course history, named events, title variant classification.
-  /courses/[code]     {code} — {title}               WGU course {code}: {title}. Active/Retired.
-  /programs/[code]    {program name}                 WGU degree detail for {name}. First seen {date}, {N} version changes tracked.
-  /schools/[slug]     {school name}                  WGU {school name} — degrees, courses, and catalog history.
+  /courses/[code]     {code} — {title}               {code} (Active/Retired) WGU course — {N} degree appearances, first offered {date}.
+  /programs/[code]    {program name}                 WGU degree {name}. {Active/Retired} — {college}, {N} total courses, first offered {date}.
+  /schools/[slug]     {college name}                 WGU {college name} — degrees, courses, and catalog history.
 
 ======================================================================
   END OF CONTENT MAP
@@ -881,7 +894,7 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   To edit content, find the [source: path:line] reference above each item.
   Static text → edit the .tsx file directly.
   Dynamic data (labeled 'dynamic') → sourced from public/data/*.json files.
-  School descriptions → src/app/schools/page.tsx  and  src/components/home/SchoolCards.tsx
+  College descriptions → src/app/schools/page.tsx  and  src/components/home/SchoolCards.tsx
   Nav links → src/components/layout/Nav.tsx
   Footer text → src/components/layout/Footer.tsx
   Compare universe + exclusions (compare) → src/lib/compareUtils.ts

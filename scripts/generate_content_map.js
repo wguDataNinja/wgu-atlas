@@ -125,7 +125,7 @@ header("Site Metadata (layout.tsx)", 2);
 console.log(src("src/app/layout.tsx"));
 item("Default title", "WGU Atlas");
 item("Title template", "%s | WGU Atlas");
-item("Meta description", "An independent guide to WGU degrees, courses, and schools, built from public WGU sources.");
+item("Meta description", "An independent guide to WGU degrees, courses, and colleges, built from public WGU sources.");
 
 header("Top Navigation Bar", 2);
 console.log(src("src/components/layout/Nav.tsx"));
@@ -133,7 +133,7 @@ blank();
 item("Brand / Logo", "WGU Atlas");
 blank();
 console.log("  Primary Links:");
-console.log("    Home  |  Courses  |  Degrees  |  Schools  |  Compare Degrees  |  About");
+console.log("    Home  |  Courses  |  Degrees  |  Colleges  |  Compare Degrees  |  About");
 console.log(`  ${line("src/components/layout/Nav.tsx", findLine(navSrc, "primaryLinks"))}`);
 blank();
 console.log("  Note: Timeline, Methods, and Data are NOT in top nav.");
@@ -162,7 +162,7 @@ console.log(src("src/app/page.tsx"));
 
 header("Hero Section", 2);
 item("H1 Title", "WGU Atlas", line("src/app/page.tsx", findLine(homeSrc, "WGU Atlas")));
-item("Subtitle", "Explore WGU degrees, courses, and schools. Compare related degrees.", line("src/app/page.tsx", findLine(homeSrc, "Explore WGU degrees")));
+item("Subtitle", "Explore WGU degrees, courses, and colleges. Compare related degrees.", line("src/app/page.tsx", findLine(homeSrc, "Explore WGU degrees")));
 
 header("Search Bar (HomeSearch component)", 2);
 console.log(src("src/components/home/HomeSearch.tsx"));
@@ -170,23 +170,23 @@ item("Placeholder", "Search by course code or title…", line("src/components/ho
 item("Inactive result label (course)", "retired");
 item("Inactive result label (degree)", "retired");
 
-header("School Cards (under search bar)", 2);
+header("College Cards (under search bar)", 2);
 console.log(src("src/components/home/SchoolCards.tsx"));
 blank();
-console.log("  Four cards, each with: school name, description, 'Explore [School] →' CTA");
+console.log("  Four cards, each with: college name, description, 'Explore [College] →' CTA");
 blank();
 item("Business description", "Bachelor's, master's, and MBA degrees in accounting, management, marketing, IT management, finance, and related fields.");
 item("Health description", "Degrees in nursing, healthcare administration, public health, health informatics, and allied health disciplines.");
 item("Technology description", "Degrees in IT, cybersecurity, software engineering, data analytics, cloud computing, and computer science.");
 item("Education description", "Teacher preparation, educational leadership, and learning and technology degrees across all grade bands.");
 blank();
-console.log("  CTA format: 'Explore [School Name] →'");
+console.log("  CTA format: 'Explore [College Name] →'");
 console.log(`  ${line("src/components/home/SchoolCards.tsx", findLine(schoolCardsSrc, "Explore"))}`);
 
 header("Orientation Paragraph", 2);
 console.log(src("src/app/page.tsx"));
 blank();
-const orientText = "WGU Atlas is an independent guide to WGU degrees, courses, and schools, built from public WGU sources. " +
+const orientText = "WGU Atlas is an independent guide to WGU degrees, courses, and colleges, built from public WGU sources. " +
   "It helps students explore degree options, compare related degrees, and understand changes over time when those changes matter to what they're viewing.";
 console.log("  " + orientText);
 console.log(`  ${line("src/app/page.tsx", findLine(homeSrc, "independent guide"))}`);
@@ -227,8 +227,8 @@ blank();
 item("Scope label", "Scope");
 console.log("  Scope options:  AP + Cert (default)  |  AP only  |  Cert only");
 blank();
-item("School label", "School");
-console.log("  School options:  All schools (default)  |  Business  |  Health  |  Technology  |  Education");
+item("College label", "College");
+console.log("  College options:  All colleges (default)  |  Business  |  Health  |  Technology  |  Education");
 blank();
 item("Reset button", "Reset");
 item("Result count", "{n} courses  [of {total}]");
@@ -248,13 +248,30 @@ console.log("  {code}  |  {N} CUs  |  Active -or- Retired");
 item("  Active badge", "Active", line("src/app/courses/[code]/page.tsx", findLine(courseDetailSrc, '"Active"')));
 item("  Retired badge", "Retired", line("src/app/courses/[code]/page.tsx", findLine(courseDetailSrc, '"Retired"')));
 
-header("Section: Catalog History", 2);
-item("H2", "Catalog History");
-item("Source badge", "Source: WGU public catalog archive");
-console.log("  Stat cards:  First in catalog  |  Last in catalog  |  Editions present  |  Catalog presence");
+header("Section: About This Course", 2);
+item("H2", "About This Course");
+item("Source badge", "WGU Catalog 2026-03");
+item("Content", "{catalogDesc.description}  (official catalog text, blockquote)");
+item("Attribution", "Official catalog text — WGU-authored.");
+
+header("Section: Compact Facts Bar", 2);
+console.log("  Inline facts row:  First in catalog  |  Status  |  Last seen (if retired)  |  Current degrees (if active)  |  Total degree appearances");
+
+header("Section: Included in Current Degrees", 2);
+item("H2", "Included in Current Degrees ({N})");
+console.log("  List of linked degree names — linked to /programs/[code] when resolvable.");
+
+header("Section: Previously Appeared in Retired Degrees", 2);
+item("H2", "Previously Appeared in Retired Degrees ({N})");
+console.log("  Muted (slate-400) list — linked when resolvable. first_seen date shown if available.");
+item("Overflow note", "Showing 50 of {N} — full history in the downloadable dataset.");
+
+header("Section: Also known as", 2);
+item("H3", "Also known as in catalog");
+console.log("  Title variants that differ from canonical_title_current.");
 
 header("Back Link", 2);
-item("Text", "← Back to Course Explorer");
+item("Text", "← Back to Courses");
 
 // ══════════════════════════════════════════════════════════════════════════════
 header("DEGREES PAGE  (/programs)", 1);
@@ -266,7 +283,7 @@ item("H1", "Degrees", line("src/app/programs/page.tsx", findLine(programsSrc, '"
 item("Subtext", `{programs.length} degrees tracked across the WGU catalog — {activeCount} current, {retiredCount} retired.`);
 item("Current count (live)", activePrograms.length);
 item("Retired count (live)", retiredPrograms.length);
-item("Meta description", "Browse all WGU degrees — current and retired — with changes over time and school history.");
+item("Meta description", "Browse all WGU degrees — current and retired — with changes over time and college history.");
 
 header("ProgramExplorer Filters", 2);
 console.log(src("src/components/programs/ProgramExplorer.tsx"));
@@ -276,8 +293,8 @@ blank();
 item("Status control", "Checkbox: Include retired degrees  (default: unchecked = current degrees only)");
 console.log(`  ${line("src/components/programs/ProgramExplorer.tsx", findLine(programExplorerSrc, "Include retired"))}`);
 blank();
-item("School label", "School");
-console.log("  School options:  All schools (default)  |  Business  |  Health  |  Technology  |  Education");
+item("College label", "College");
+console.log("  College options:  All colleges (default)  |  Business  |  Health  |  Technology  |  Education");
 blank();
 item("Reset button", "Reset");
 item("Result count", "{n} degree(s)  [of {total}]");
@@ -299,31 +316,24 @@ item("  Current badge", "Current");
 item("  Retired badge", "Retired", line("src/app/programs/[code]/page.tsx", findLine(programDetailSrc, '"Retired"')));
 blank();
 header("Section: About This Degree", 2);
-item("H2", "About This Program");
+item("H2", "About This Degree");
 item("Source badge", "{enriched.description_source}  (dynamic from program_enriched.json)");
 item("Content", "{enriched.description}  (official catalog text, italicized blockquote)");
 item("Attribution", "Official catalog text — WGU-authored. Sourced from {description_source}.");
 blank();
-header("Section: Changes Over Time", 2);
-item("H2", "Changes Over Time", line("src/app/programs/[code]/page.tsx", findLine(programDetailSrc, "Changes Over Time")));
-item("Source badge", "Source: WGU public catalog archive");
+header("Section: Degree History", 2);
+item("H2", "Degree History");
 blank();
-console.log("  Stat cards:  First seen  |  Last seen  |  Catalog editions  |  Version changes  |  Total CUs (latest)");
+console.log("  Compact inline facts row:  First offered  |  Status  |  Last seen (if retired)  |  CUs (with change note if changed)");
 blank();
-item("Sub-label: School name history", "Earlier names", line("src/app/programs/[code]/page.tsx", findLine(programDetailSrc, "Earlier names")));
+item("Sub-label: College name history", "Earlier names", line("src/app/programs/[code]/page.tsx", findLine(programDetailSrc, "Earlier names")));
 item("Sub-label: Known names", "Known names");
 item("Canonical marker", "(canonical)");
 blank();
-header("Section: Program Learning Outcomes", 2);
-item("H2", "Program Learning Outcomes");
-item("Note", "Official WGU-authored outcomes from the catalog Program Outcomes section. Present in ERA_B catalogs (2024-08+).");
-blank();
-header("Section: Past Versions", 2);
-item("H2", "Past Versions", line("src/app/programs/[code]/page.tsx", findLine(programDetailSrc, "Past Versions")));
-item("No changes text", "No curriculum version changes observed across catalog editions.");
-item("Changes text", "{N} version change(s) observed.");
-console.log("  Table headers:  Catalog date  |  Version stamp");
-item("CU change note", "Total CUs changed across versions: {cus_values joined by →}");
+header("Section: Program Learning Outcomes (collapsible)", 2);
+item("Summary label (collapsed)", "Program Learning Outcomes  ▾  Show");
+item("Summary label (expanded)", "Program Learning Outcomes  ▴  Hide");
+item("Note", "Official WGU-authored outcomes from the catalog Program Outcomes section. Present in ERA_B catalogs (2024-08+). Collapsed by default.");
 blank();
 header("Section: Course Roster", 2);
 item("H2", "Course Roster ({N} courses)");
@@ -335,16 +345,16 @@ header("Back Link", 2);
 item("Text", "← Back to Degrees", line("src/app/programs/[code]/page.tsx", findLine(programDetailSrc, "Back to Degrees")));
 
 // ══════════════════════════════════════════════════════════════════════════════
-header("SCHOOLS PAGE  (/schools)", 1);
+header("COLLEGES PAGE  (/schools)", 1);
 console.log(src("src/app/schools/page.tsx"));
 // ══════════════════════════════════════════════════════════════════════════════
 
 header("Page Header", 2);
-item("H1", "Schools", line("src/app/schools/page.tsx", findLine(schoolsSrc, '"Schools"')));
-item("Subtext", "WGU is organized into four schools. Each school page shows its current degrees and courses, school background, and recent changes.", line("src/app/schools/page.tsx", findLine(schoolsSrc, "WGU is organized")));
+item("H1", "Colleges", line("src/app/schools/page.tsx", findLine(schoolsSrc, '"Colleges"')));
+item("Subtext", "WGU is organized into four colleges. Each college page shows its current degrees and courses, college history, and recent changes.", line("src/app/schools/page.tsx", findLine(schoolsSrc, "WGU is organized")));
 item("Attribution", `Source: WGU public catalog archive · {current year}`);
 
-header("School Cards (SCHOOL_DESCRIPTIONS)", 2);
+header("College Cards (COLLEGE_DESCRIPTIONS)", 2);
 console.log(src("src/app/schools/page.tsx"));
 blank();
 item("business", "Bachelor's, master's, and MBA degrees in accounting, management, marketing, IT management, finance, and related fields.");
@@ -354,15 +364,15 @@ item("education", "Teacher preparation, educational leadership, and learning and
 blank();
 console.log("  Card subtext: Formerly: {historical names}  (if any)");
 item("Stats", "{N} current degrees  ·  {N} active courses");
-item("Meta description", "Browse WGU's four schools — Business, Health, Technology, and Education — with degree and course listings.");
+item("Meta description", "Browse WGU's four colleges — Business, Health, Technology, and Education — with degree and course listings.");
 
 // ══════════════════════════════════════════════════════════════════════════════
-header("SCHOOL DETAIL PAGE  (/schools/[slug])", 1);
+header("COLLEGE DETAIL PAGE  (/schools/[slug])", 1);
 console.log(src("src/app/schools/[slug]/page.tsx"));
 // ══════════════════════════════════════════════════════════════════════════════
 
 header("Breadcrumb", 2);
-console.log("  Schools  ›  {school.current_name}");
+console.log("  Colleges  ›  {school.current_name}");
 blank();
 header("Page Sections (in order)", 2);
 blank();
@@ -379,12 +389,12 @@ if (schoolSections.length > 0) {
   schoolSections.forEach((s) => console.log(`    • ${s}`));
 } else {
   console.log("  1. Header: {school.current_name} — N current degrees · N active courses");
-  console.log("  2. Short description (from SCHOOL_DESCRIPTIONS)");
+  console.log("  2. Short description (from COLLEGE_DESCRIPTIONS)");
   console.log("  3. Current Degrees (N)  — grouped by degree level");
   console.log("  4. Active Courses (N)  — collapsible");
   console.log("  5. Recent Changes  — New Degrees / Recent Degree Updates / Recent Course Additions");
   console.log("  6. Retired Degrees (N)  — collapsible");
-  console.log("  7. School Background  — name lineage table");
+  console.log("  7. College History  — name lineage table");
 }
 
 blank();
@@ -408,11 +418,11 @@ header("CompareSelector UI", 2);
 console.log(src("src/components/compare/CompareSelector.tsx"));
 blank();
 console.log("  Universe: active programs with non-empty rosters, excluding LAB_EXCLUSIONS (6 programs).");
-console.log("  Sibling logic: same school + same degree level as the selected program (not pilot-family gated).");
+console.log("  Sibling logic: same college + same degree level as the selected degree (not pilot-family gated).");
 blank();
 console.log("  Step 1 panel:");
 item("  Header", "Choose a degree", line("src/components/compare/CompareSelector.tsx", findLine(compareSelectorSrc, "Choose a degree")));
-item("  Filters", "All schools (default) + All levels (default)");
+item("  Filters", "All colleges (default) + All levels (default)");
 item("  Empty state", "No degrees match these filters.");
 item("  Footer note", "{N} degrees shown. Select one to see comparable degrees in step 2.");
 blank();
@@ -420,9 +430,9 @@ console.log("  Step 2 panel:");
 item("  Header", "Compare with");
 item("  Prompt (before step 1)", "Select a degree in step 1 first.");
 item("  No siblings text", "No comparable degrees.");
-item("  No siblings sub-text", "No other degrees share the same school and level as this program.");
+item("  No siblings sub-text", "No other degrees share the same college and level as this degree.");
 item("  Comparing-with label", "Comparing with: {index_name ?? canonical_name}");
-item("  Footer note", "Showing degrees in the same school and level as your selection.");
+item("  Footer note", "Showing degrees in the same college and level as your selection.");
 blank();
 console.log("  Prompt (A selected, waiting for B):");
 item("  Text", "Now select a degree in step 2 to see the comparison.");
@@ -461,7 +471,7 @@ console.log("    — Comparison source disclaimer footer");
 header("Compare Universe", 2);
 console.log("  (Defined in src/lib/compareUtils.ts — LAB_EXCLUSIONS)");
 blank();
-console.log("  Universe: active programs with non-empty rosters, same school + degree level pairing.");
+console.log("  Universe: active programs with non-empty rosters, same college + degree level pairing.");
 console.log("  Previous: gated to 5 pilot-family codes only.");
 console.log("  Current:  ~107 active programs across all 4 colleges.");
 blank();
@@ -574,8 +584,8 @@ console.log(src("src/app/about/page.tsx"));
 
 header("Page Header", 2);
 item("H1", "About WGU Atlas", line("src/app/about/page.tsx", findLine(aboutSrc, "About WGU Atlas")));
-item("Subtitle", "An independent guide to WGU degrees, courses, and schools.");
-item("Meta description", "About WGU Atlas — an independent guide to WGU degrees, courses, and schools, built from public WGU catalog sources.");
+item("Subtitle", "An independent guide to WGU degrees, courses, and colleges.");
+item("Meta description", "About WGU Atlas — an independent guide to WGU degrees, courses, and colleges, built from public WGU catalog sources.");
 
 header("Sections", 2);
 blank();
@@ -587,11 +597,11 @@ console.log("    understand how degrees and courses have changed over time when 
 console.log("    are relevant to what they're viewing.");
 blank();
 console.log("  Section 2: What it covers");
-console.log("    • Current degrees across WGU's four schools");
+console.log("    • Current degrees across WGU's four colleges");
 console.log("    • Course catalog with history going back to 2017");
-console.log("    • Degree comparisons for related programs (pilot set)");
+console.log("    • Degree comparisons for related degrees");
 console.log("    • Retired degrees still visible for reference");
-console.log("    • School background and earlier names over time");
+console.log("    • College background and earlier names over time");
 blank();
 console.log("  Section 3: Source and independence");
 console.log("    All data is derived from WGU's publicly available course catalog, scraped and");
@@ -600,7 +610,7 @@ console.log("    No internal WGU systems or private data were accessed.");
 console.log("    Atlas is a community project. Not a substitute for official WGU advising.");
 blank();
 console.log("  Section 4: How history and resources are used");
-console.log("    Where a degree or school has changed names or structure over time, Atlas surfaces");
+console.log("    Where a degree or college has changed names or structure over time, Atlas surfaces");
 console.log("    that history where relevant — earlier names on detail pages. History is secondary");
 console.log("    context, not the primary lens.");
 blank();
@@ -686,18 +696,18 @@ header("SEO / PAGE METADATA SUMMARY", 1);
 
 console.log("\n  Route               Title                          Meta Description");
 console.log("  " + "-".repeat(100));
-console.log("  /                   WGU Atlas                      An independent guide to WGU degrees, courses, and schools, built from public WGU sources.");
+console.log("  /                   WGU Atlas                      An independent guide to WGU degrees, courses, and colleges, built from public WGU sources.");
 console.log("  /courses            Courses                        Search and browse WGU courses — active and retired, with catalog history for each.");
-console.log("  /programs           Degrees                        Browse all WGU degrees — current and retired — with changes over time and school history.");
-console.log("  /schools            Schools                        Browse WGU's four schools — Business, Health, Technology, and Education — with degree and course listings.");
+console.log("  /programs           Degrees                        Browse all WGU degrees — current and retired — with changes over time and college history.");
+console.log("  /schools            Colleges                       Browse WGU's four colleges — Business, Health, Technology, and Education — with degree and course listings.");
 console.log("  /compare            Compare Degrees                Compare WGU degree course rosters side by side. See shared courses, track-specific courses, and overlap metrics.");
-console.log("  /about              About                          About WGU Atlas — an independent guide to WGU degrees, courses, and schools, built from public WGU catalog sources.");
+console.log("  /about              About                          About WGU Atlas — an independent guide to WGU degrees, courses, and colleges, built from public WGU catalog sources.");
 console.log("  /timeline           Timeline                       (on page — major WGU catalog events from 2017 to 2026)");
 console.log("  /methods            Methods                        How WGU Atlas data was collected, validated, and interpreted — archive coverage, parser eras, and trust caveats.");
 console.log("  /data               Data                           Download WGU Atlas canonical datasets — course history, named events, title variant classification.");
-console.log("  /courses/[code]     {code} — {title}               WGU course {code}: {title}. Active/Retired.");
-console.log("  /programs/[code]    {program name}                 WGU degree detail for {name}. First seen {date}, {N} version changes tracked.");
-console.log("  /schools/[slug]     {school name}                  WGU {school name} — degrees, courses, and catalog history.");
+console.log("  /courses/[code]     {code} — {title}               {code} (Active/Retired) WGU course — {N} degree appearances, first offered {date}.");
+console.log("  /programs/[code]    {program name}                 WGU degree {name}. {Active/Retired} — {college}, {N} total courses, first offered {date}.");
+console.log("  /schools/[slug]     {college name}                 WGU {college name} — degrees, courses, and catalog history.");
 
 // ══════════════════════════════════════════════════════════════════════════════
 header("END OF CONTENT MAP", 1);
@@ -706,7 +716,7 @@ header("END OF CONTENT MAP", 1);
 console.log("\n  To edit content, find the [source: path:line] reference above each item.");
 console.log("  Static text → edit the .tsx file directly.");
 console.log("  Dynamic data (labeled 'dynamic') → sourced from public/data/*.json files.");
-console.log("  School descriptions → src/app/schools/page.tsx  and  src/components/home/SchoolCards.tsx");
+console.log("  College descriptions → src/app/schools/page.tsx  and  src/components/home/SchoolCards.tsx");
 console.log("  Nav links → src/components/layout/Nav.tsx");
 console.log("  Footer text → src/components/layout/Footer.tsx");
 console.log("  Compare universe + exclusions (compare) → src/lib/compareUtils.ts");
