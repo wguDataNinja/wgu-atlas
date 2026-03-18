@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { getPrograms, getProgramEnriched } from "@/lib/data";
-import { PILOT_FAMILIES } from "@/lib/families";
+import { LAB_EXCLUSIONS } from "@/lib/compareUtils";
 import CompareSelector from "@/components/compare/CompareSelector";
 import type { ProgramEnriched } from "@/lib/types";
 
@@ -15,12 +15,20 @@ export default function ComparePage() {
   const programs = getPrograms();
   const allEnriched = getProgramEnriched();
 
-  // Only pass enriched data for pilot family programs — avoids serializing
-  // the full 114-program map as a React prop.
-  const pilotCodes = new Set(PILOT_FAMILIES.flatMap((f) => f.program_codes));
-  const pilotEnriched: Record<string, ProgramEnriched> = {};
-  for (const code of pilotCodes) {
-    if (allEnriched[code]) pilotEnriched[code] = allEnriched[code];
+  // Broadened universe: active programs with non-empty rosters, minus exclusions.
+  // No longer gated to pilot families — any same-college + same-level pair is valid.
+  const comparePrograms = programs.filter(
+    (p) =>
+      p.status === "ACTIVE" &&
+      !LAB_EXCLUSIONS.has(p.program_code) &&
+      (allEnriched[p.program_code]?.roster?.length ?? 0) > 0
+  );
+
+  // Lean enriched: only roster data (avoids serializing the full enriched map).
+  const compareEnriched: Record<string, Pick<ProgramEnriched, "roster">> = {};
+  for (const p of comparePrograms) {
+    const e = allEnriched[p.program_code];
+    if (e) compareEnriched[p.program_code] = { roster: e.roster };
   }
 
   return (
@@ -28,13 +36,13 @@ export default function ComparePage() {
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-slate-800">Compare Degrees</h1>
         <p className="text-slate-500 mt-2 max-w-2xl">
-          Select two related degrees to compare their course rosters side by side.
-          Shared courses, track-specific courses, and overlap metrics are shown for
-          each comparison.
+          Select two degrees to compare their course rosters side by side.
+          Shared courses, unique courses, and overlap metrics are shown for each
+          comparison.
         </p>
       </div>
       <Suspense>
-        <CompareSelector programs={programs} pilotEnriched={pilotEnriched} />
+        <CompareSelector programs={comparePrograms} enriched={compareEnriched} />
       </Suspense>
     </div>
   );
