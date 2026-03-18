@@ -118,7 +118,8 @@ function filterCourses(
   courses: CourseCard[],
   state: FilterState,
   courseLevels: Record<string, string[]>,
-  programRosterMap: Record<string, string[]>
+  programRosterMap: Record<string, string[]>,
+  activeOnly = true
 ): CourseCard[] {
   const q = state.search.toLowerCase().trim();
 
@@ -126,7 +127,7 @@ function filterCourses(
   if (state.degree) {
     const rosterSet = new Set(programRosterMap[state.degree] ?? []);
     return courses.filter((c) => {
-      if (!c.active) return false;
+      if (activeOnly && !c.active) return false;
       if (!rosterSet.has(c.code)) return false;
       if (q && !c.code.toLowerCase().includes(q) && !c.title.toLowerCase().includes(q)) return false;
       return true;
@@ -134,7 +135,7 @@ function filterCourses(
   }
 
   return courses.filter((c) => {
-    if (!c.active) return false;
+    if (activeOnly && !c.active) return false;
 
     if (state.college) {
       if (state.level === "Certificate") {
@@ -418,6 +419,7 @@ function Proto2({ courses, detailCodes, programs, programRosterMap, courseLevels
     degree: "",
     search: "",
   });
+  const [activeOnly, setActiveOnly] = useState(true);
 
   const setCollege = (college: string) =>
     setState((s) => ({ ...s, college, level: s.college === college ? s.level : "", degree: "", search: "" }));
@@ -434,8 +436,8 @@ function Proto2({ courses, detailCodes, programs, programRosterMap, courseLevels
   );
 
   const filtered = useMemo(
-    () => filterCourses(courses, state, courseLevels, programRosterMap),
-    [courses, state, courseLevels, programRosterMap]
+    () => filterCourses(courses, state, courseLevels, programRosterMap, activeOnly),
+    [courses, state, courseLevels, programRosterMap, activeOnly]
   );
 
   const selectedCollege = COLLEGES.find((c) => c.key === state.college);
@@ -473,6 +475,16 @@ function Proto2({ courses, detailCodes, programs, programRosterMap, courseLevels
               </button>
             );
           })}
+          <div className="h-5 w-px bg-slate-300 mx-1" />
+          <label className="flex items-center gap-1.5 cursor-pointer select-none">
+            <input
+              type="checkbox"
+              checked={activeOnly}
+              onChange={(e) => setActiveOnly(e.target.checked)}
+              className="rounded border-slate-300 text-blue-600 focus:ring-blue-500"
+            />
+            <span className="text-xs text-slate-600">Active courses only</span>
+          </label>
         </div>
 
         {/* Level + Degree + Search — secondary row */}
@@ -513,6 +525,16 @@ function Proto2({ courses, detailCodes, programs, programRosterMap, courseLevels
             </select>
           )}
 
+          {/* Reset */}
+          {(state.college || state.level || state.degree || state.search) && (
+            <button
+              onClick={() => setState(EMPTY_FILTER)}
+              className="text-xs text-slate-400 hover:text-slate-700 underline shrink-0"
+            >
+              Reset
+            </button>
+          )}
+
           {/* Search */}
           <div className="flex-1 min-w-32">
             <input
@@ -523,16 +545,6 @@ function Proto2({ courses, detailCodes, programs, programRosterMap, courseLevels
               className="w-full border border-slate-300 rounded-lg px-3 py-1.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
-
-          {/* Reset */}
-          {(state.college || state.level || state.degree || state.search) && (
-            <button
-              onClick={() => setState(EMPTY_FILTER)}
-              className="text-xs text-slate-400 hover:text-slate-700 underline"
-            >
-              Reset
-            </button>
-          )}
         </div>
       </div>
 
