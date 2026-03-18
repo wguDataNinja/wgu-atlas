@@ -82,8 +82,9 @@ export default function CourseExplorer({
         if (level === "Certificate") {
           if (c.scope !== "cert") return false;
         } else {
+          const collegeDef = COLLEGES.find((col) => col.key === college);
           const parts = c.current_college.split("; ").map((s) => s.trim());
-          if (!parts.includes(college)) return false;
+          if (!parts.some((p) => collegeDef?.allNames.includes(p))) return false;
         }
       }
 

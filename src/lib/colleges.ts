@@ -3,6 +3,8 @@
 
 export interface CollegeDef {
   key: string;
+  /** All historical names for this college, including the current one. */
+  allNames: string[];
   short: string;
   description: string;
   chipSelected: string;
@@ -12,6 +14,7 @@ export interface CollegeDef {
 export const COLLEGES: CollegeDef[] = [
   {
     key: "School of Business",
+    allNames: ["College of Business", "School of Business"],
     short: "Business",
     description: "Accounting, management, marketing, finance, IT management",
     chipSelected: "bg-blue-600 text-white",
@@ -19,6 +22,7 @@ export const COLLEGES: CollegeDef[] = [
   },
   {
     key: "Leavitt School of Health",
+    allNames: ["College of Health Professions", "Leavitt School of Health"],
     short: "Health",
     description: "Nursing, healthcare administration, public health, informatics",
     chipSelected: "bg-rose-600 text-white",
@@ -26,6 +30,7 @@ export const COLLEGES: CollegeDef[] = [
   },
   {
     key: "School of Technology",
+    allNames: ["College of Information Technology", "School of Technology"],
     short: "Technology",
     description: "IT, cybersecurity, software engineering, data analytics, CS",
     chipSelected: "bg-violet-600 text-white",
@@ -33,6 +38,7 @@ export const COLLEGES: CollegeDef[] = [
   },
   {
     key: "School of Education",
+    allNames: ["Teachers College", "School of Education"],
     short: "Education",
     description: "Teacher preparation, educational leadership, learning technology",
     chipSelected: "bg-amber-500 text-white",

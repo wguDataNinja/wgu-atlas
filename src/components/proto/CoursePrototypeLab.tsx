@@ -29,6 +29,7 @@ const EMPTY_FILTER: FilterState = { college: "", level: "", degree: "", search: 
 const COLLEGES = [
   {
     key: "School of Business",
+    allNames: ["College of Business", "School of Business"],
     short: "Business",
     description: "Accounting, management, marketing, finance, IT management",
     colorBg: "bg-blue-50",
@@ -41,6 +42,7 @@ const COLLEGES = [
   },
   {
     key: "Leavitt School of Health",
+    allNames: ["College of Health Professions", "Leavitt School of Health"],
     short: "Health",
     description: "Nursing, healthcare administration, public health, informatics",
     colorBg: "bg-rose-50",
@@ -53,6 +55,7 @@ const COLLEGES = [
   },
   {
     key: "School of Technology",
+    allNames: ["College of Information Technology", "School of Technology"],
     short: "Technology",
     description: "IT, cybersecurity, software engineering, data analytics, CS",
     colorBg: "bg-violet-50",
@@ -65,6 +68,7 @@ const COLLEGES = [
   },
   {
     key: "School of Education",
+    allNames: ["Teachers College", "School of Education"],
     short: "Education",
     description: "Teacher preparation, educational leadership, learning technology",
     colorBg: "bg-amber-50",
@@ -84,8 +88,9 @@ const LEVELS = ["Bachelor's", "Master's", "Certificate"];
 // ---------------------------------------------------------------------------
 
 function courseMatchesCollege(course: CourseCard, collegeKey: string): boolean {
+  const collegeDef = COLLEGES.find((c) => c.key === collegeKey);
   const parts = course.current_college.split("; ").map((s) => s.trim());
-  return parts.includes(collegeKey);
+  return parts.some((p) => collegeDef?.allNames.includes(p) ?? p === collegeKey);
 }
 
 function courseMatchesLevel(
