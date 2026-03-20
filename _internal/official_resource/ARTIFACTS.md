@@ -15,7 +15,7 @@
 
 | File | Status | Purpose |
 |---|---|---|
-| `_internal/official_resource/regulatory_candidate_queue.md` | **Complete — placements executed** | Curation-ready queue of regulatory/licensure/disclosure candidates. 14 entries reviewed; 14 `keep` (3 needs-review resolved), 8 `skip`. All 15 approved placements written to `official_resource_placements.json`. |
+| `_internal/official_resource/regulatory_candidate_queue.md` | **Complete — source-reviewed; 3 removed** | Curation-ready queue of regulatory/licensure/disclosure candidates. 14 entries reviewed; 14 `keep` (3 needs-review resolved), 8 `skip`. 15 placements written; 3 subsequently removed after full source review (BSNU/NCLEX: `generic_boilerplate`; MSNUFNP/FNP Preceptor: `wrong_audience`; MSNUPMHNP/PMHNP Preceptor: `source_content_error`). Net: 12 active regulatory_licensure placements. Education school page (5 links) pending visual density review. |
 
 ### Planned future artifacts (not yet created)
 

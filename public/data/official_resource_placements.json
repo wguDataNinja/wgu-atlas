@@ -1586,19 +1586,6 @@
     "status": "show"
   },
   {
-    "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/rn-to-bsn-nursing-bachelors-program/nclex-rn-exam.html",
-    "resource_title": "NCLEX-RN Exam \u2013 Nursing Licensure",
-    "show_on_surface": "program_detail",
-    "surface_key": "BSNU",
-    "surface_label": "Bachelor of Science, Nursing",
-    "site_area": "programs",
-    "placement_mode": "sidebar",
-    "display_priority": 12,
-    "resource_group": "regulatory_licensure",
-    "benefit_reason": "Explains the NCLEX-RN board exam for nursing licensure and how WGU RN-to-BSN graduates prepare for it.",
-    "status": "show"
-  },
-  {
     "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/state-licensure.html",
     "resource_title": "Nursing State Licensure Information",
     "show_on_surface": "program_detail",
@@ -1625,19 +1612,6 @@
     "status": "show"
   },
   {
-    "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/clinical-experience/fnp-preceptor.html",
-    "resource_title": "FNP Preceptor Requirements",
-    "show_on_surface": "program_detail",
-    "surface_key": "MSNUFNP",
-    "surface_label": "Master of Science, Nursing \u2013 Family Nurse Practitioner",
-    "site_area": "programs",
-    "placement_mode": "sidebar",
-    "display_priority": 12,
-    "resource_group": "regulatory_licensure",
-    "benefit_reason": "Explains who can serve as an FNP preceptor, supervision progression across three clinical courses, and state licensing constraints.",
-    "status": "show"
-  },
-  {
     "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/clinical-experience/pmhnp.html",
     "resource_title": "PMHNP Clinical Placement Information",
     "show_on_surface": "program_detail",
@@ -1648,19 +1622,6 @@
     "display_priority": 12,
     "resource_group": "regulatory_licensure",
     "benefit_reason": "Clinical placement for PMHNP: 650 hours across two psychiatric sites, state availability, and one-year advance planning requirement.",
-    "status": "show"
-  },
-  {
-    "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/clinical-experience/pmhnp-preceptor.html",
-    "resource_title": "PMHNP Preceptor Requirements",
-    "show_on_surface": "program_detail",
-    "surface_key": "MSNUPMHNP",
-    "surface_label": "Master of Science, Nursing \u2013 Psychiatric Mental Health Nurse Practitioner",
-    "site_area": "programs",
-    "placement_mode": "sidebar",
-    "display_priority": 12,
-    "resource_group": "regulatory_licensure",
-    "benefit_reason": "Explains PMHNP preceptor qualifications, two-site minimum requirement, supervision progression, and state licensing constraints.",
     "status": "show"
   },
   {

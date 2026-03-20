@@ -4,6 +4,50 @@ Append-only. Most recent entry first.
 
 ---
 
+## 2026-03-20 — Placement curation: source review + 3 removals
+
+**Task:** Full source review of all 15 placed regulatory_licensure URLs; remove entries that fail student-value test.
+
+**Files changed:**
+- `public/data/official_resource_placements.json` (−3 entries, 131 → 128)
+
+**Source review findings and reason codes:**
+
+| Surface | Resource | Decision | Reason code |
+|---------|----------|----------|-------------|
+| education (school) | Teaching License/Certification | keep | `high_student_value` |
+| education (school) | State Licensure Information (Education) | keep | `compliance_signal` |
+| education (school) | Teacher Licensure Programs | keep — pending density review | `overlap_trim_candidate` |
+| education (school) | Praxis Exam | keep | `high_student_value` |
+| education (school) | Student Teaching | keep | `high_student_value` |
+| health (school) | State Licensure Information (Nursing) | keep | `compliance_signal` |
+| health (school) | Health and Nursing Clinical Information | keep | `high_student_value` |
+| BSNPLTR | Health and Nursing Clinical Information | keep | `high_student_value` |
+| BSNU | NCLEX-RN Exam | **removed** | `generic_boilerplate` |
+| BSPNTR | State Licensure Information (Nursing) | keep | `compliance_signal` |
+| BSPNTR | Health and Nursing Clinical Information | keep | `high_student_value` |
+| MSNUFNP | FNP Placement | keep | `high_student_value` |
+| MSNUFNP | FNP Preceptor Requirements | **removed** | `wrong_audience` |
+| MSNUPMHNP | PMHNP Placement | keep | `high_student_value` |
+| MSNUPMHNP | PMHNP Preceptor Requirements | **removed** | `source_content_error` |
+| business (school) | Business Licensure Information by State | keep | `compliance_signal` |
+| technology (school) | IT Certifications Included in WGU Degrees | keep | `high_student_value` |
+
+**Removal rationale:**
+- BSNU / NCLEX-RN — `generic_boilerplate`: page is NCSBN boilerplate framed as RN-to-BSN marketing; no Atlas-grade student context
+- MSNUFNP / FNP Preceptor — `wrong_audience`: page targets healthcare professionals being recruited as preceptors, not FNP students; all student-critical content already in FNP Placement
+- MSNUPMHNP / PMHNP Preceptor — `source_content_error`: page appears misconfigured — contains FNP content (family medicine preceptors, CNMs, PAs) under a PMHNP heading; contact email is `CLPSFNP@wgu.edu`; unsafe to surface
+
+**Education trim status:** 5 links on education school page — pending visual density review. All 5 kept for now; apply 1–3 density rule after UI review. `Teacher Licensure Programs` is the most likely trim candidate (`overlap_trim_candidate`).
+
+**Net state after removals:**
+- 128 total placements
+- regulatory_licensure entries: 12 active
+
+**Next step:** Outcomes + accreditation completeness audit (Tier 2).
+
+---
+
 ## 2026-03-20 — Regulatory gap verification pass
 
 **Task:** Verify concrete gaps from the regulatory placement pass; make high-confidence corrections only.
