@@ -1,0 +1,52 @@
+[
+  {
+    "title": "B.S. Computer Science Outcomes",
+    "program_code": "BSCS",
+    "scope": "program",
+    "accreditation": "ABET",
+    "url": "https://www.wgu.edu/online-it-degrees/computer-science/outcomes.html",
+    "why": "ABET outcomes page with two substantive sections: Program Results and Program Assessment Results. It gives program-level metrics on graduates, enrollments, retention, on-time progress, and very satisfied students, plus course pass-rate reporting over time. Useful because it provides real program performance context rather than marketing copy."
+  },
+  {
+    "title": "B.S. Cybersecurity and Information Assurance Outcomes",
+    "program_code": "BSCSIA",
+    "scope": "program",
+    "accreditation": "ABET",
+    "url": "https://www.wgu.edu/online-it-degrees/cybersecurity-information-assurance-bachelors-program/outcomes.html",
+    "why": "ABET outcomes page with the same two substantive sections: Program Results and Program Assessment Results. It reports graduates, enrollments, retention, on-time progress, very satisfied students, and course pass rates. Useful because it gives real program-level performance context and shows the program is tracked over a multi-period timeline."
+  },
+  {
+    "title": "CAE-CDE Program Designation — B.S. Cybersecurity and Information Assurance",
+    "program_code": "BSCSIA",
+    "scope": "program",
+    "accreditation": "CAE-CDE (NSA/DHS)",
+    "url": "https://www.wgu.edu/online-it-degrees/cybersecurity-information-assurance-bachelors-program/cae-cde-program-designation.html",
+    "why": "Explains that WGU's cybersecurity program holds National Center of Academic Excellence in Cyber Defense designation through Academic Year 2026. The page says the designation is established by NSA and DHS, tied to rigorous criteria, aligned to the NICE Cybersecurity Workforce Framework, and signals government-recognized curriculum quality. Useful for a student choosing the degree because it explains what the designation means for curriculum rigor and employer signaling."
+  },
+  {
+    "title": "CAHIIM Accreditation — B.S. Health Information Management",
+    "program_code": "BSHIM",
+    "scope": "program",
+    "accreditation": "CAHIIM",
+    "url": "https://www.wgu.edu/online-nursing-health-degrees/health-information-management-bachelors-program/cahiim-accreditation.html",
+    "why": "Student-useful accreditation page because it includes concrete degree facts on the page itself: 61% of graduates earned the degree in 36 months or less, tuition is $4,210 per 6-month term, and the program has 36 total courses. It also says the CAHIIM-accredited program makes students eligible for the RHIA exam and notes eligibility for RHIA and RHIT exams. Useful because it combines accreditation meaning, time-to-degree context, cost/size context, and credential-pathway value."
+  },
+  {
+    "title": "ACBSP Accreditation — School of Business",
+    "program_code": null,
+    "scope": "school",
+    "school": "College of Business",
+    "accreditation": "ACBSP",
+    "url": "https://www.wgu.edu/online-business-degrees/successful-student-learning-outcomes.html",
+    "why": "School-level business accreditation page that explains what ACBSP means for students: career relevance, program quality, and learning-resource quality. It also links to public program-results files for School of Business graduates, enrollments, term-to-term retention, on-time progress, and very satisfied students by fiscal year. Useful for school pages because it provides both accreditation context and links to school-level outcomes reporting not available on ordinary degree pages."
+  },
+  {
+    "title": "CAEP Accreditation — Teachers College",
+    "program_code": null,
+    "scope": "school",
+    "school": "Teachers College",
+    "accreditation": "CAEP",
+    "url": "https://www.wgu.edu/online-teaching-degrees/successful-student-learning-outcomes.html",
+    "why": "School-level educator-preparation outcomes page. It covers completer effectiveness, employer satisfaction, competency at completion, hiring outcomes, Praxis pass rates, and average licensure rates. The page explicitly reports Praxis pass rates of 80.18% for initial level, 90.33% for advanced level, and 85.25% overall, plus average licensure rates of 100%. Useful for education school pages because it gives student-relevant outcomes on readiness, employer satisfaction, licensure, and hiring."
+  }
+]

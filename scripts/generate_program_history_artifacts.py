@@ -19,12 +19,12 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--input",
-        default="data/program_lineage_enriched.json",
+        default="data/lineage/program_lineage_enriched.json",
         help="Input lineage-enriched JSON path",
     )
     parser.add_argument(
         "--output",
-        default="data/program_history.json",
+        default="data/lineage/program_history.json",
         help="Output program-history JSON path",
     )
     return parser.parse_args()

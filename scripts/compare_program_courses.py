@@ -64,12 +64,12 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Compare lineage program course rosters")
     parser.add_argument(
         "--input",
-        default="data/program_lineage_events.json",
+        default="data/lineage/program_lineage_events.json",
         help="Stage 1 lineage events JSON input",
     )
     parser.add_argument(
         "--normalized-output",
-        default="data/program_lineage_events_normalized.json",
+        default="data/lineage/program_lineage_events_normalized.json",
         help="Normalized Stage 1 JSON output path",
     )
     parser.add_argument(
@@ -87,7 +87,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--output",
-        default="data/program_lineage_enriched.json",
+        default="data/lineage/program_lineage_enriched.json",
         help="Output JSON path",
     )
     return parser.parse_args()

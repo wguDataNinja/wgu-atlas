@@ -1,0 +1,386 @@
+{
+  "schema_version": "1.1",
+  "last_updated": "2026-03-20",
+
+  "event_decisions": [
+
+    {
+      "event_id": "PLE-010",
+      "decision": "approve_history",
+      "display_state": "show",
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "wording_guard": true,
+      "change_summary_template": "The general B.S. Cloud Computing program was replaced in 2022 by three specialized vendor-track programs. Approximately 7% of prior courses were retained; the curriculum was substantially rebuilt for each track.",
+      "zero_overlap_rationale": null,
+      "notes": "Jaccard 0.071. Approved §6.1. Wording guard required. PLE-027 covers an intermediate step in the same chain and is suppressed."
+    },
+
+    {
+      "event_id": "PLE-011",
+      "decision": "approve_history",
+      "display_state": "show",
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "wording_guard": true,
+      "change_summary_template": "This program was rebuilt in August 2022 as part of the B.S. Network Engineering and Security family. Fewer than 5% of prior courses were carried forward; the curriculum was substantially redesigned.",
+      "zero_overlap_rationale": null,
+      "notes": "Jaccard 0.043–0.045. Approved §6.1. Lowest-overlap event in include set. Wording guard required."
+    },
+
+    {
+      "event_id": "PLE-012",
+      "decision": "pending_hitl",
+      "display_state": "hide_pending",
+      "decided_by": null,
+      "decided_at": null,
+      "wording_guard": true,
+      "change_summary_template": null,
+      "zero_overlap_rationale": null,
+      "notes": "Jaccard 0.044. BSHSC (Health Services Coordination) vs. BSHHS (Health and Human Services) are semantically distinct program names. Requires health curriculum expert to confirm internal WGU linkage. Default on no confirmation: reject_history."
+    },
+
+    {
+      "event_id": "PLE-013",
+      "decision": "approve_history",
+      "display_state": "show",
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "wording_guard": true,
+      "change_summary_template": "This program replaced the B.S. Software Development in January 2023. The curriculum was substantially rebuilt — approximately 6–11% of prior courses were carried forward, with new content developed for the Software Engineering designation.",
+      "zero_overlap_rationale": null,
+      "notes": "Jaccard 0.059–0.111. Approved §6.1. Wording guard required."
+    },
+
+    {
+      "event_id": "PLE-014",
+      "decision": "approve_history",
+      "display_state": "show",
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "wording_guard": true,
+      "change_summary_template": "This program replaced the B.S. Data Management/Data Analytics (BSDMDA) in July 2023. The curriculum was substantially rebuilt: 33 new courses were introduced, 30 prior courses were retired, and 9 courses were carried forward. The data management component was removed in favor of a dedicated analytics focus.",
+      "zero_overlap_rationale": null,
+      "notes": "Jaccard 0.125. Approved §6.1. Wording guard required."
+    },
+
+    {
+      "event_id": "PLE-015",
+      "decision": "approve_history",
+      "display_state": "show",
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "wording_guard": true,
+      "change_summary_template": "This program replaced the B.S. Business Administration — Healthcare Management (BSBAHC) in July 2023. The degree was restructured as a standalone Healthcare Administration program; the Business Administration framework was retired.",
+      "zero_overlap_rationale": null,
+      "notes": "Structural parallel to approved PLE-014. Same boundary (EVT-018), same school, same rename pattern. Individual pair Jaccard not directly confirmed — verify before final publish."
+    },
+
+    {
+      "event_id": "PLE-022",
+      "decision": "approve_history",
+      "display_state": "show",
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "wording_guard": true,
+      "change_summary_template": "This program launched in February 2026 as part of a restructuring of the M.S. Information Technology Management (MSITM). The curriculum was entirely rebuilt; no courses were directly carried over from the prior program.",
+      "zero_overlap_rationale": "MSITM used a legacy course series. The successor programs were built on an entirely new course series at program launch. The zero course overlap reflects a complete curriculum refresh rather than a break in organizational lineage — IT Management to Information Technology is a confirmed institutional succession per the 2026-01→02 boundary event.",
+      "notes": "Jaccard 0.0 across all pairs. Approved §6.1 under §5.6 (semantic continuity). Only zero-Jaccard event in include set. zero_overlap_rationale required before export."
+    },
+
+    {
+      "event_id": "PLE-023",
+      "decision": "pending_hitl",
+      "display_state": "hide_pending",
+      "decided_by": null,
+      "decided_at": null,
+      "wording_guard": true,
+      "change_summary_template": null,
+      "zero_overlap_rationale": null,
+      "notes": "Jaccard 0.0. MHL (Health Leadership) vs. MHA (Healthcare Administration). Cannot confirm linkage from artifacts alone. Key question: did WGU internally describe MHA as replacing MHL? If confirmed: approve_history with rebuilt framing. If not: reject_history."
+    },
+
+    {
+      "event_id": "PLE-026",
+      "decision": "approve_history",
+      "display_state": "show",
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "wording_guard": true,
+      "change_summary_template": "This M.B.A. specialization replaced the Healthcare Management concentration (MBAHM) in May 2025. The program was retitled as Healthcare Administration within the M.B.A. program family.",
+      "zero_overlap_rationale": null,
+      "notes": "Structural parallel to PLE-015. Clean 1-to-1 rename at single-edition boundary. Individual pair Jaccard not directly confirmed — verify before final publish."
+    },
+
+    {
+      "event_id": "PLE-025",
+      "decision": "reject_history",
+      "display_state": "suppress",
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "wording_guard": false,
+      "change_summary_template": null,
+      "zero_overlap_rationale": null,
+      "notes": "BSRN → nursing prelicensure tracks. Policy-excluded per §6.2. Jaccard 0.0/0.054. Surfacing this transition as history would misrepresent a licensure-pathway launch as a curriculum successor."
+    },
+
+    {
+      "event_id": "PLE-027",
+      "decision": "reject_history",
+      "display_state": "suppress",
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "wording_guard": false,
+      "change_summary_template": null,
+      "zero_overlap_rationale": null,
+      "notes": "Proposed namespace_migration with Jaccard 0.071 — anomalous for a pure rename. Intermediate step in the BSCC-to-tracks restructure already covered by approved PLE-010. Suppress to prevent double-entry for the same chain."
+    },
+
+    {
+      "event_id": "PLE-028",
+      "decision": "pending_gap_check",
+      "display_state": "hide_pending",
+      "decided_by": null,
+      "decided_at": null,
+      "wording_guard": true,
+      "change_summary_template": null,
+      "zero_overlap_rationale": null,
+      "notes": "13-month span between from-program retirement (2022-10) and to-program launch (2023-11). Jaccard 0.0 across all 6 pairs. Must verify: was any intermediate program active in ed-tech/ID domain 2022-11 to 2023-10? If gap confirmed as discontinuity: split into separate retirement + new-launch events; do not surface as program lineage."
+    }
+
+  ],
+
+  "program_decisions": [
+
+    {
+      "program_code": "BSHA",
+      "program_state": "history_approved",
+      "history_ui_state": "show",
+      "linked_event_id": "PLE-015",
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "notes": "Approved via PLE-015 decision."
+    },
+
+    {
+      "program_code": "MBAHA",
+      "program_state": "history_approved",
+      "history_ui_state": "show",
+      "linked_event_id": "PLE-026",
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "notes": "Approved via PLE-026 decision."
+    },
+
+    {
+      "program_code": "BSHHS",
+      "program_state": "pending_hitl",
+      "history_ui_state": "hide_pending",
+      "linked_event_id": "PLE-012",
+      "decided_by": null,
+      "decided_at": null,
+      "notes": "Blocks on PLE-012 HITL decision. Default: hide."
+    },
+
+    {
+      "program_code": "MHA",
+      "program_state": "pending_hitl",
+      "history_ui_state": "hide_pending",
+      "linked_event_id": "PLE-023",
+      "decided_by": null,
+      "decided_at": null,
+      "notes": "Blocks on PLE-023 HITL decision. Default: hide."
+    },
+
+    {
+      "program_code": "MEDETID",
+      "program_state": "pending_gap_check",
+      "history_ui_state": "hide_pending",
+      "linked_event_id": "PLE-028",
+      "decided_by": null,
+      "decided_at": null,
+      "notes": "Blocks on PLE-028 gap investigation."
+    },
+
+    {
+      "program_code": "MEDETIDA",
+      "program_state": "pending_gap_check",
+      "history_ui_state": "hide_pending",
+      "linked_event_id": "PLE-028",
+      "decided_by": null,
+      "decided_at": null,
+      "notes": "Blocks on PLE-028 gap investigation."
+    },
+
+    {
+      "program_code": "MEDETIDK12",
+      "program_state": "pending_gap_check",
+      "history_ui_state": "hide_pending",
+      "linked_event_id": "PLE-028",
+      "decided_by": null,
+      "decided_at": null,
+      "notes": "Blocks on PLE-028 gap investigation."
+    },
+
+    {
+      "program_code": "BSDA",
+      "program_state": "history_approved",
+      "history_ui_state": "show",
+      "linked_event_id": "PLE-014",
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "notes": "Approved §6.1. Wording guard required on change_summary (see event entry)."
+    },
+
+    {
+      "program_code": "BSSWE",
+      "program_state": "history_approved",
+      "history_ui_state": "show",
+      "linked_event_id": "PLE-013",
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "notes": "Approved §6.1. Wording guard required."
+    },
+
+    {
+      "program_code": "BSSWE_C",
+      "program_state": "history_approved",
+      "history_ui_state": "show",
+      "linked_event_id": "PLE-013",
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "notes": "Approved §6.1. Wording guard required."
+    },
+
+    {
+      "program_code": "MSIT",
+      "program_state": "history_approved",
+      "history_ui_state": "show",
+      "linked_event_id": "PLE-022",
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "notes": "Approved §6.1. zero_overlap_rationale confirmed on event. Wording guard required."
+    },
+
+    {
+      "program_code": "MSITPM",
+      "program_state": "history_approved",
+      "history_ui_state": "show",
+      "linked_event_id": "PLE-022",
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "notes": "Approved §6.1. Same as MSIT."
+    },
+
+    {
+      "program_code": "MSITUG",
+      "program_state": "history_approved",
+      "history_ui_state": "show",
+      "linked_event_id": "PLE-022",
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "notes": "Approved §6.1. Same as MSIT."
+    },
+
+    {
+      "program_code": "MSCSAIML",
+      "program_state": "new_from_scratch",
+      "history_ui_state": "hide_new",
+      "linked_event_id": null,
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "notes": "First-generation M.S. Computer Science program. No MSCS general predecessor in catalog. Explicit designation added to prevent false candidate generation in future pipeline runs."
+    },
+
+    {
+      "program_code": "MSCSCS",
+      "program_state": "new_from_scratch",
+      "history_ui_state": "hide_new",
+      "linked_event_id": null,
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "notes": "Same as MSCSAIML."
+    },
+
+    {
+      "program_code": "MSCSHCI",
+      "program_state": "new_from_scratch",
+      "history_ui_state": "hide_new",
+      "linked_event_id": null,
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "notes": "Same as MSCSAIML."
+    },
+
+    {
+      "program_code": "MSSWEAIE",
+      "program_state": "new_from_scratch",
+      "history_ui_state": "hide_new",
+      "linked_event_id": null,
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "notes": "First-generation M.S. Software Engineering program. BSSWE naming parallel may confuse future pipeline candidates; explicit new_from_scratch designation suppresses false matches."
+    },
+
+    {
+      "program_code": "MSSWEDDD",
+      "program_state": "new_from_scratch",
+      "history_ui_state": "hide_new",
+      "linked_event_id": null,
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "notes": "Same as MSSWEAIE."
+    },
+
+    {
+      "program_code": "MSSWEDOE",
+      "program_state": "new_from_scratch",
+      "history_ui_state": "hide_new",
+      "linked_event_id": null,
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "notes": "Same as MSSWEAIE."
+    },
+
+    {
+      "program_code": "MSRNNUNIFGR",
+      "program_state": "pathway_variant",
+      "history_ui_state": "hide_new",
+      "linked_event_id": null,
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "notes": "Pathway variant (RN-to-MSN delivery track) of active MSNUNI. Not a lineage event — MSNUNI is still active. No predecessor was retired. Classified as pathway_variant, not new_from_scratch, to preserve the semantic distinction."
+    },
+
+    {
+      "program_code": "MATSPED",
+      "program_state": "pending_hitl",
+      "history_ui_state": "hide_pending",
+      "linked_event_id": null,
+      "decided_by": null,
+      "decided_at": null,
+      "notes": "Candidate predecessor: MSSP (retired 2020-05; 6-month gap). Degree-level mismatch (M.S. research vs. M.A.T. teaching). Requires HITL: was MATSPED marketed internally as replacing MSSP? If yes: create PLE and add to include set. If no: reclassify as new_from_scratch."
+    },
+
+    {
+      "program_code": "BSNPLTR",
+      "program_state": "history_excluded",
+      "history_ui_state": "hide_excluded",
+      "linked_event_id": "PLE-025",
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "notes": "PLE-025 (BSRN → nursing prelicensure) is in §6.2 exclude set. Jaccard 0.0/0.054. History is reviewed but policy-excluded; display as no history."
+    },
+
+    {
+      "program_code": "BSPNTR",
+      "program_state": "history_excluded",
+      "history_ui_state": "hide_excluded",
+      "linked_event_id": "PLE-025",
+      "decided_by": "human",
+      "decided_at": "2026-03-20",
+      "notes": "Same as BSNPLTR."
+    }
+
+  ]
+}

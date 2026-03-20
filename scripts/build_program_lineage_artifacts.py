@@ -98,12 +98,12 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--out-transition",
-        default="data/program_transition_universe.csv",
+        default="data/lineage/program_transition_universe.csv",
         help="Output CSV path for exhaustive adjacent transitions",
     )
     parser.add_argument(
         "--out-candidates",
-        default="data/program_link_candidates.json",
+        default="data/lineage/program_link_candidates.json",
         help="Output JSON path for link candidates",
     )
     parser.add_argument(

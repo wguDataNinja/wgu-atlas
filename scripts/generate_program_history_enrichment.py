@@ -34,12 +34,12 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--input",
-        default="data/program_lineage_enriched.json",
+        default="data/lineage/program_lineage_enriched.json",
         help="Input lineage-enriched JSON path",
     )
     parser.add_argument(
         "--output",
-        default="data/program_history_enrichment.json",
+        default="data/lineage/program_history_enrichment.json",
         help="Output final enrichment JSON path",
     )
     parser.add_argument(
@@ -203,9 +203,8 @@ def choose_stage1_path(args_stage1: str, enriched: dict[str, Any]) -> Path | Non
 
     candidates.extend(
         [
-            Path("data/program_lineage_events.json"),
-            Path("data/program_ineage_events.json"),
-            Path("data/program_lineage_events_normalized.json"),
+            Path("data/lineage/program_lineage_events.json"),
+            Path("data/lineage/program_lineage_events_normalized.json"),
         ]
     )
 

@@ -1,0 +1,340 @@
+{
+  "_meta": {
+    "description": "Course set for WGU Data Analytics degrees. Used to filter social media posts by course code.",
+    "generated": "2026-03-18",
+    "sources": {
+      "BSDA": "Bachelor of Science, Data Analytics",
+      "MSDADE": "Master of Science, Data Analytics \u2013 Data Engineering",
+      "MSDADS": "Master of Science, Data Analytics \u2013 Data Science",
+      "MSDADPE": "Master of Science, Data Analytics \u2013 Decision Process Engineering"
+    },
+    "notes": [
+      "BS and MS course sets are disjoint (no shared codes).",
+      "MS courses are listed once. ms_paths lists which of the 3 specializations include the course.",
+      "7 MS courses appear in all 3 paths (the common core)."
+    ],
+    "counts": {
+      "bs_courses": 42,
+      "ms_courses_unique": 19
+    }
+  },
+  "bs": [
+    {
+      "code": "D491",
+      "title": "Introduction to Analytics"
+    },
+    {
+      "code": "D370",
+      "title": "IT Leadership Foundations"
+    },
+    {
+      "code": "D278",
+      "title": "Scripting and Programming - Foundations"
+    },
+    {
+      "code": "D388",
+      "title": "Fundamentals of Spreadsheets and Data Presentations"
+    },
+    {
+      "code": "D426",
+      "title": "Data Management - Foundations"
+    },
+    {
+      "code": "C721",
+      "title": "Change Management"
+    },
+    {
+      "code": "D427",
+      "title": "Data Management - Applications"
+    },
+    {
+      "code": "C955",
+      "title": "Applied Probability and Statistics"
+    },
+    {
+      "code": "C683",
+      "title": "Natural Science Lab"
+    },
+    {
+      "code": "D326",
+      "title": "Advanced Data Management"
+    },
+    {
+      "code": "D265",
+      "title": "Critical Thinking: Reason and Evidence"
+    },
+    {
+      "code": "D335",
+      "title": "Introduction to Programming in Python"
+    },
+    {
+      "code": "D315",
+      "title": "Network and Security - Foundations"
+    },
+    {
+      "code": "C957",
+      "title": "Applied Algebra"
+    },
+    {
+      "code": "D197",
+      "title": "Version Control"
+    },
+    {
+      "code": "D428",
+      "title": "Design Thinking for Business"
+    },
+    {
+      "code": "D276",
+      "title": "Web Development Foundations"
+    },
+    {
+      "code": "D269",
+      "title": "Composition: Writing with a Strategy"
+    },
+    {
+      "code": "D333",
+      "title": "Ethics in Technology"
+    },
+    {
+      "code": "D282",
+      "title": "Cloud Foundations"
+    },
+    {
+      "code": "D386",
+      "title": "Hardware and Operating Systems Essentials"
+    },
+    {
+      "code": "C458",
+      "title": "Health, Fitness, and Wellness"
+    },
+    {
+      "code": "D492",
+      "title": "Data Analytics - Applications"
+    },
+    {
+      "code": "D420",
+      "title": "Discrete Math: Logic"
+    },
+    {
+      "code": "D421",
+      "title": "Discrete Math: Functions and Relations"
+    },
+    {
+      "code": "D493",
+      "title": "Scripting and Programming - Applications"
+    },
+    {
+      "code": "D268",
+      "title": "Introduction to Communication: Connecting with Others"
+    },
+    {
+      "code": "D199",
+      "title": "Introduction to Physical and Human Geography"
+    },
+    {
+      "code": "D324",
+      "title": "Business of IT - Project Management"
+    },
+    {
+      "code": "D494",
+      "title": "Data and Information Governance"
+    },
+    {
+      "code": "D495",
+      "title": "Big Data Foundations"
+    },
+    {
+      "code": "C963",
+      "title": "American Politics and the US Constitution"
+    },
+    {
+      "code": "D246",
+      "title": "Influential Communication through Visual Design and Storytelling"
+    },
+    {
+      "code": "C949",
+      "title": "Data Structures and Algorithms I"
+    },
+    {
+      "code": "D496",
+      "title": "Introduction to Data Science"
+    },
+    {
+      "code": "D497",
+      "title": "Data Wrangling"
+    },
+    {
+      "code": "D498",
+      "title": "Data Analysis with R"
+    },
+    {
+      "code": "D499",
+      "title": "Machine Learning"
+    },
+    {
+      "code": "D500",
+      "title": "Data Visualization"
+    },
+    {
+      "code": "D501",
+      "title": "Machine Learning DevOps"
+    },
+    {
+      "code": "D372",
+      "title": "Introduction to Systems Thinking"
+    },
+    {
+      "code": "D502",
+      "title": "Data Analytics Capstone"
+    }
+  ],
+  "ms": [
+    {
+      "code": "D596",
+      "title": "The Data Analytics Journey",
+      "ms_paths": [
+        "Data Engineering",
+        "Data Science",
+        "Decision Process Engineering"
+      ]
+    },
+    {
+      "code": "D597",
+      "title": "Data Management",
+      "ms_paths": [
+        "Data Engineering",
+        "Data Science",
+        "Decision Process Engineering"
+      ]
+    },
+    {
+      "code": "D598",
+      "title": "Analytics Programming",
+      "ms_paths": [
+        "Data Engineering",
+        "Data Science",
+        "Decision Process Engineering"
+      ]
+    },
+    {
+      "code": "D599",
+      "title": "Data Preparation and Exploration",
+      "ms_paths": [
+        "Data Engineering",
+        "Data Science",
+        "Decision Process Engineering"
+      ]
+    },
+    {
+      "code": "D600",
+      "title": "Statistical Data Mining",
+      "ms_paths": [
+        "Data Engineering",
+        "Data Science",
+        "Decision Process Engineering"
+      ]
+    },
+    {
+      "code": "D601",
+      "title": "Data Storytelling for Varied Audiences",
+      "ms_paths": [
+        "Data Engineering",
+        "Data Science",
+        "Decision Process Engineering"
+      ]
+    },
+    {
+      "code": "D602",
+      "title": "Deployment",
+      "ms_paths": [
+        "Data Engineering",
+        "Data Science",
+        "Decision Process Engineering"
+      ]
+    },
+    {
+      "code": "D607",
+      "title": "Cloud Databases",
+      "ms_paths": [
+        "Data Engineering"
+      ]
+    },
+    {
+      "code": "D608",
+      "title": "Data Processing",
+      "ms_paths": [
+        "Data Engineering"
+      ]
+    },
+    {
+      "code": "D609",
+      "title": "Data Analytics at Scale",
+      "ms_paths": [
+        "Data Engineering"
+      ]
+    },
+    {
+      "code": "D610",
+      "title": "Data Engineering Capstone",
+      "ms_paths": [
+        "Data Engineering"
+      ]
+    },
+    {
+      "code": "D603",
+      "title": "Machine Learning",
+      "ms_paths": [
+        "Data Science"
+      ]
+    },
+    {
+      "code": "D604",
+      "title": "Advanced Analytics",
+      "ms_paths": [
+        "Data Science"
+      ]
+    },
+    {
+      "code": "D605",
+      "title": "Optimization",
+      "ms_paths": [
+        "Data Science"
+      ]
+    },
+    {
+      "code": "D606",
+      "title": "Data Science Capstone",
+      "ms_paths": [
+        "Data Science"
+      ]
+    },
+    {
+      "code": "C783",
+      "title": "Project Management",
+      "ms_paths": [
+        "Decision Process Engineering"
+      ]
+    },
+    {
+      "code": "D612",
+      "title": "Business Process Engineering",
+      "ms_paths": [
+        "Decision Process Engineering"
+      ]
+    },
+    {
+      "code": "D613",
+      "title": "Decision Intelligence",
+      "ms_paths": [
+        "Decision Process Engineering"
+      ]
+    },
+    {
+      "code": "D614",
+      "title": "Decision Process Engineering Capstone",
+      "ms_paths": [
+        "Decision Process Engineering"
+      ]
+    }
+  ]
+}

@@ -71,8 +71,8 @@ def add_enrichment_to_history(program_history_data, enrichment_lookup):
 def main():
     # Define file paths
     script_dir = Path(__file__).parent
-    program_history_file = script_dir.parent / 'data' / 'program_history.json'
-    enrichment_file = script_dir.parent / 'data' / 'program_history_enrichment.json'
+    program_history_file = script_dir.parent / 'data' / 'lineage' / 'program_history.json'
+    enrichment_file = script_dir.parent / 'data' / 'lineage' / 'program_history_enrichment.json'
     
     print("Loading program history data...")
     program_history_data = load_json_file(program_history_file)

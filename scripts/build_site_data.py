@@ -53,11 +53,12 @@ HELP  = os.path.join(BASE, "helpers")
 # Output: wgu-atlas data/
 _ATLAS_DATA = os.environ.get("WGU_ATLAS_DATA",
                               os.path.join(_REPO_ROOT, "data"))
-OUT  = _ATLAS_DATA
+OUT      = _ATLAS_DATA
+SITE_OUT = os.path.join(_ATLAS_DATA, "site")
 EXP  = os.path.join(_REPO_ROOT, "public", "data")
 CDIR = os.path.join(EXP, "courses")
 
-for d in [OUT, EXP, CDIR]:
+for d in [OUT, SITE_OUT, EXP, CDIR]:
     os.makedirs(d, exist_ok=True)
 
 # ---------------------------------------------------------------------------
@@ -376,7 +377,7 @@ TVC_FIELDS = [
     "in_genuine_changes", "in_truncation_set", "genuine_change_detail",
     "notes", "confidence", "manual_review_needed",
 ]
-p = write_csv(os.path.join(OUT, "title_variant_classification.csv"), tv_rows, TVC_FIELDS)
+p = write_csv(os.path.join(SITE_OUT, "title_variant_classification.csv"), tv_rows, TVC_FIELDS)
 print(f"  → {p}")
 
 # Build summary
@@ -397,7 +398,7 @@ tv_summary = {
         "Codes appearing in edition_diffs truncation set are classified extraction_noise unless a genuine change is also confirmed"
     ]
 }
-write_json(os.path.join(OUT, "title_variant_summary.json"), tv_summary)
+write_json(os.path.join(SITE_OUT, "title_variant_summary.json"), tv_summary)
 print(f"  Classified {len(tv_rows)} codes. Counts: {dict(tv_by_class.most_common())}")
 print(f"  Substantive changes: {tv_summary['substantive_change_codes']}")
 print(f"  Manual review needed: {tv_summary['manual_review_needed_count']} codes")
@@ -885,17 +886,17 @@ EV_FIELDS = [
     "observed_summary", "interpreted_summary", "confidence",
     "is_curated_major_event",
 ]
-p = write_csv(os.path.join(OUT, "named_events.csv"), event_rows, EV_FIELDS)
+p = write_csv(os.path.join(SITE_OUT, "named_events.csv"), event_rows, EV_FIELDS)
 print(f"  → {p}")
 
-write_json(os.path.join(OUT, "named_events.json"), event_rows)
-print(f"  → {os.path.join(OUT, 'named_events.json')}")
+write_json(os.path.join(SITE_OUT, "named_events.json"), event_rows)
+print(f"  → {os.path.join(SITE_OUT, 'named_events.json')}")
 
 # Curated major events subset (for homepage/timeline)
 curated_events = [r for r in event_rows if r["is_curated_major_event"]]
 curated_events.sort(key=lambda r: r["start_edition"])  # chronological for timeline
-write_json(os.path.join(OUT, "curated_major_events.json"), curated_events)
-print(f"  → {os.path.join(OUT, 'curated_major_events.json')}")
+write_json(os.path.join(SITE_OUT, "curated_major_events.json"), curated_events)
+print(f"  → {os.path.join(SITE_OUT, 'curated_major_events.json')}")
 
 # Counts by event type
 ev_type_counts = Counter(r["event_type_primary"] for r in event_rows)
