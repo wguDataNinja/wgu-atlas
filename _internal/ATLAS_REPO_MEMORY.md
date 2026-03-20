@@ -569,6 +569,7 @@ Regenerate when a page changes significantly enough that the existing artifact w
 |---|---|---|
 | `/` | `_internal/page_designs/homepage.md` | current (2026-03-20) |
 | `/programs/[code]` | `_internal/page_designs/program_detail.md` | current (2026-03-20) — example: BSCS |
+| source reference | `_internal/page_designs/catalog_raw_analysis.md` | current (2026-03-20) — raw catalog UX analysis; Atlas value implications; homepage framing input |
 
 See `_internal/page_designs/README.md` for generation instructions and full route-to-filename convention.
 
@@ -721,6 +722,8 @@ Notes for when homepage or community work becomes active. Do not act on these no
 **Club ecosystem structure:** WGU's club ecosystem is real (large scale, officially endorsed) but structurally fragmented — no unified hub, five separate discovery surfaces. Some clubs have proper public pages (Women in Tech, Cybersecurity Club, SHRM, AMA); others are officially referenced but under-surfaced (Data Club, Military Alliance Club, Alumni Cybersecurity Club). Surface the well-paged clubs first; hold under-surfaced ones until a public landing page exists.
 
 **External benchmark:** Western Hemisphere University / WHU-style compact club listings are the clearest external design precedent for integrating club/community context into an academic reference product without overwhelming the primary catalog-navigation purpose.
+
+**Raw catalog baseline:** `_internal/page_designs/catalog_raw_analysis.md` documents exactly what the raw WGU catalog gives a student (flat table, no outcomes inline, no descriptions inline, no history, no compare, no links). Use this when writing homepage copy or feature framing — Atlas's value is most legible against the catalog baseline.
 
 ---
 

@@ -72,3 +72,4 @@ Then save the output here as `{route_slug}.md`.
 |---|---|---|---|
 | [homepage.md](./homepage.md) | `/` | 2026-03-20 | Initial capture |
 | [program_detail.md](./program_detail.md) | `/programs/[code]` | 2026-03-20 | Example: BSCS (all enrichment layers active — description, outcomes, roster, sidebar resources) |
+| [catalog_raw_analysis.md](./catalog_raw_analysis.md) | source reference | 2026-03-20 | Not a page design — analysis of the raw WGU catalog (2026-03) from a student-use perspective; documents what Atlas materially improves; useful for homepage and product framing |
