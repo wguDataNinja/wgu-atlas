@@ -11,12 +11,17 @@ Each entry records what changed, decisions locked, what's blocked, and the next 
 - Created `_internal/WGU_ONLINE_ECOSYSTEM_INDEX.md` — internal source atlas for official/unofficial/community/media surfaces related to WGU
 - Added cross-reference note to `_internal/ATLAS_CONTROL.md` (backlog area)
 - Added repo map entry and short subsection to `_internal/ATLAS_REPO_MEMORY.md`
+- Added §13 Official clubs / student organizations (8 entries: AMA, Cybersecurity Club, NBMBAA, NSLS, SHRM, Women in Tech, WGU Connect, hub page)
+- Added §13.3 dedicated WGU Data Club subsection — active, under-promoted, research_only for now
 
 **Decisions locked**
 - Ecosystem index is reference/awareness only; does not change product posture or deferred status of Reddit/community integration
+- Clubs classified as `official_adjacent`; not homepage-ready until infrastructure/discoverability stabilizes
+- Data Club: `research_only` until a public-facing entry point is confirmed
 
 **Blocked / open**
-- None; pure documentation session
+- Data Club public URL unconfirmed; flagged as `verify_internal_or_public_entry`
+- Club ecosystem discoverability fragmented across wgu.edu / careers / WGU Connect; no single authoritative hub yet
 
 **Next starting task**
 Outcomes + accreditation completeness audit (Tier 2): pick up where official-resource workstream left off.

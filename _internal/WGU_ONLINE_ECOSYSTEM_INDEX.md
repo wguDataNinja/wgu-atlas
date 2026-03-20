@@ -1,6 +1,6 @@
 # WGU Online Ecosystem Index
 
-Last updated: 2026-03-20
+Last updated: 2026-03-20 (rev 2)
 Role: internal source atlas for official/unofficial/community/media surfaces related to WGU
 Status: reference only; inclusion here does not imply product surfacing
 
@@ -11,6 +11,7 @@ Status: reference only; inclusion here does not imply product surfacing
 Tracks places across the internet where WGU is discussed or represented:
 - official WGU public channels
 - official WGU student/community surfaces
+- official clubs / student organizations
 - unofficial student communities
 - external forums/review platforms
 - creator/media ecosystem
@@ -297,7 +298,58 @@ Include only if:
 
 ---
 
-## 13. Explicit do-not-surface / caution set
+## 13. Official clubs / student organizations
+
+### 13.1 Overview
+
+Distinct from official public channels and unofficial communities. Clubs are official-adjacent: WGU-affiliated, student-facing, and present in the WGU web ecosystem, but often operated through career surfaces or WGU Connect rather than main wgu.edu pages. Discoverability is inconsistent and appears to be in transition — some are on wgu.edu program pages, some on careers.wgu.edu, some behind WGU Connect login.
+
+**Ecosystem note:** WGU appears to be transitioning where student organizations are surfaced and operated. Discoverability is fragmented across wgu.edu, careers.wgu.edu, and WGU Connect. Do not assume a single authoritative entry point exists yet.
+
+### 13.2 Known clubs / organizations
+
+| name | url | official_status | access | current_product_status | trust_risk | student_value | notes |
+|---|---|---|---|---|---|---|---|
+| Professional Student Organizations (hub) | https://careers.wgu.edu/resources/professional-student-organizations-2/ | official_adjacent | public | candidate_later | low | medium | Current official-adjacent student organizations hub; careers-operated; fragmented discoverability |
+| American Marketing Association (AMA) | https://www.wgu.edu/online-business-degrees/marketing-bachelors-program/ama.html | official_adjacent | public | candidate_later | low | medium | Marketing student org; lives on program subpage |
+| Cybersecurity Club | https://www.wgu.edu/online-it-degrees/cyber-club.html | official_adjacent | public | candidate_later | low | high | IT/security student org |
+| National Black MBA Association (NBMBAA) | https://www.wgu.edu/online-business-degrees/mba-masters-business-administration-program/nbmbaa-virtual-club.html | official_adjacent | public | candidate_later | low | medium | MBA/business affinity org; virtual club format |
+| National Society of Leadership & Success (NSLS) | https://www.nsls.org/ | official_adjacent | public | research_only | low | medium | External org linked by WGU; not WGU-operated |
+| Society for Human Resource Management (SHRM) | https://www.wgu.edu/online-business-degrees/human-resources-bachelors-program/shrm-student-chapter.html | official_adjacent | public | candidate_later | low | medium | HR student chapter; lives on program subpage |
+| Women in Tech | https://www.wgu.edu/online-it-degrees/women-in-tech.html | official_adjacent | public | candidate_later | low | high | IT/community/org surface |
+| WGU Connect | https://wguconnect.wgu.edu/v2 | official_adjacent | mixed | candidate_later | low | medium | Important community hub; login required for full access; likely main vehicle for club/org activity |
+
+### 13.3 WGU Data Club
+
+| field | value |
+|---|---|
+| name | WGU Data Club |
+| url_or_status | verify_internal_or_public_entry |
+| official_status | official_adjacent |
+| access | mixed |
+| current_product_status | research_only |
+| trust_risk | low |
+| student_value | high |
+
+**Notes:**
+- Active club of strategic interest
+- Not currently featured or meaningfully surfaced by WGU public channels
+- Firsthand knowledge confirms it exists and is active
+- Strong potential as a later ecosystem/community candidate given Atlas's data-oriented audience
+- No strong public-facing landing page confirmed yet — verify before surfacing
+- Under-promoted example: a real, active student organization with direct relevance to WGU data students that WGU is not currently sharing well
+
+### 13.4 Club ecosystem posture
+
+- do not put clubs on the homepage yet
+- do not imply all clubs are equally active
+- do not overstate public discoverability where access is mainly through WGU Connect or login-gated surfaces
+- do not treat Data Club as homepage-ready until a public-facing entry point and appropriate framing exists
+- revisit as candidate_later once club infrastructure/discoverability stabilizes
+
+---
+
+## 14. Explicit do-not-surface / caution set
 
 | source_or_class | reason |
 |---|---|
@@ -311,12 +363,13 @@ Include only if:
 
 ---
 
-## 14. Summary judgment
+## 15. Summary judgment
 
 | category | value_to_research | value_to_homepage | risk | note |
 |---|---|---|---|---|
 | official WGU public channels | high | high | low | best early candidates |
 | official student/community surfaces | medium | medium/low | low | useful but often gated/specialized |
+| official clubs / student organizations | medium | medium/later | low | real student value; discoverability fragmented; infrastructure in transition |
 | Reddit ecosystem | high | medium/later | medium | important but must stay clearly unofficial |
 | Facebook groups | medium | low | medium/high | index only for now |
 | Discord/Slack | medium | low | medium | verify before any use |
@@ -325,7 +378,7 @@ Include only if:
 
 ---
 
-## 15. Maintenance notes
+## 16. Maintenance notes
 
 - update subreddit counts only when strategically useful
 - preserve this file as an ecosystem map, not a product roadmap
