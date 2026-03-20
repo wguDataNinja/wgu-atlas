@@ -49,6 +49,11 @@ These documents describe what the raw source system gives the student and how At
   - preserves the structural transformation argument
   - important for homepage positioning and product explanation
 
+- `wgu_public_site_student_experience.md`
+  - baseline documentation of how students actually encounter and explore WGU on the public website
+  - distinct from the catalog baseline — covers the official web exploration experience
+  - in progress / initial baseline only; to be expanded next session
+
 ---
 
 ## 3. Screenshot-based design analysis
@@ -124,5 +129,6 @@ Its purpose is preservation of product understanding and page-level design knowl
 - `catalog_raw_analysis.md`
 - `compare_page.md`
 - `source_vs_atlas_program_entry.md`
+- `wgu_public_site_student_experience.md`
 - `screenshot_analysis_log.md`
 - `homepage_design_session_2026-03.md`

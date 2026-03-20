@@ -5,6 +5,25 @@ Each entry records what changed, decisions locked, what's blocked, and the next 
 
 ---
 
+## 2026-03-20 (session 9 — public site baseline stub)
+
+**Done**
+- Created `_internal/page_designs/wgu_public_site_student_experience.md` — initial baseline doc for how students encounter WGU on the public website; captures confirmed top-nav structure, Online Degrees dropdown options, and public degree hub URL; 14 sections stubbed for next session
+- Updated `_internal/page_designs/README.md` to register the new doc in the source-baseline group and file index
+
+**Decisions locked**
+- Atlas should be positioned against the public-site experience as well as the raw catalog; both baselines must be documented before homepage framing is finalized
+- Public-site baseline doc is intentionally partial; next session continues the official WGU site student journey
+
+**Blocked / open**
+- Sections 5–12 of `wgu_public_site_student_experience.md` require a follow-up session with live site observation
+- All open items from session 7 still stand
+
+**Next starting task**
+Continue `wgu_public_site_student_experience.md`: follow the Online Degrees entry flows, document school-level pages, and capture a representative official program page.
+
+---
+
 ## 2026-03-20 (session 8 — page design artifacts)
 
 **Done**
