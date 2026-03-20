@@ -1,6 +1,6 @@
 # WGU Online Ecosystem Index
 
-Last updated: 2026-03-20 (rev 5)
+Last updated: 2026-03-20 (rev 6)
 Role: internal source atlas for official/unofficial/community/media surfaces related to WGU
 Status: reference only; inclusion here does not imply product surfacing
 
@@ -70,8 +70,8 @@ Current Atlas posture:
 | Career Services | https://www.wgu.edu/career-services.html | career | public | high | low | candidate_later | Official career services hub; prominent on Communities page |
 | WGU Alumni LinkedIn | https://www.linkedin.com/in/wgualumni/ | alumni | public | medium | low | research_only | Dedicated alumni LinkedIn profile; distinct from institutional LinkedIn page (§4) |
 | Student Portal | https://www.wgu.edu/student-portal.html | student_portal | login_required | medium | low | research_only | Official logged-in student surface |
-| Owl's Nest | unknown_or_internal | community | mixed | medium | low | candidate_later | Official engagement/community surface; verify exact public URL if needed |
-| Handshake / Career platform | unknown_or_internal | career | login_required | medium | low | research_only | Career/recruiter/internship use |
+| Owl's Nest | url_not_verified | community | mixed | medium | low | candidate_later | Appears on Linktree as "Owl's Nest Refer-a-Friend" (referral/incentive program); may also be used as a broader community surface name; exact public URL not verified; likely login-gated or incentive-scoped |
+| Handshake / Career platform | url_not_verified | career | login_required | medium | low | research_only | Third-party career/recruiter platform integrated with WGU; not a wgu.edu surface; login required; WGU-specific entry URL not verified |
 
 ---
 
@@ -326,28 +326,20 @@ Include only if:
 
 ### 13.1 Overview
 
-Distinct from official public channels and unofficial communities. Clubs are official-adjacent: WGU-affiliated, student-facing, and present in the WGU web ecosystem, but often operated through career surfaces or WGU Connect rather than main wgu.edu pages.
+Clubs are official-adjacent: WGU-affiliated, student-facing, and present in the WGU web ecosystem, but not operated through a unified official surface. Distinct from official public channels (§4) and unofficial communities (§7–9).
 
-**WGU publicly endorses clubs.** Blog post `wgu.edu/blog/student-clubs-enhance-experience-even-virtually-advocate-post2309.html` confirms WGU treats clubs as meaningful to student experience and professional growth. Scale signals from that post:
-- SHRM chapter: 760 members
-- Cybersecurity Club: 7,000+ members
+**WGU publicly endorses clubs.** Blog post at `wgu.edu/blog/student-clubs-enhance-experience-even-virtually-advocate-post2309.html` confirms official endorsement with scale signals: SHRM chapter at 760 members; Cybersecurity Club at 7,000+. These are large, active, officially endorsed organizations.
 
-These are not niche communities. They are large, active, officially endorsed student organizations.
+**Club page model:** Women in Tech (`wgu.edu/online-it-degrees/women-in-tech.html`) — founded 2019, open enrollment, clear mission, LinkedIn follow-on — is the right template. NBMBAA (`wgu.edu/.../nbmbaa-virtual-club.html`) embeds an unlisted YouTube video (`youtube.com/watch?v=aQMYjdjfLFQ` — "NBMBAA at WGU"), showing clubs used as program-page content assets.
 
-**Club page model:** Women in Tech (`wgu.edu/online-it-degrees/women-in-tech.html`) shows the right public-facing club-page pattern: founded 2019, open to all COIT students, mission/purpose clearly stated, LinkedIn follow-on path. This is the template Data Club and others should eventually follow.
-
-**NBMBAA page** (`wgu.edu/online-business-degrees/mba-masters-business-administration-program/nbmbaa-virtual-club.html`) shows public-facing club promotion with an embedded unlisted YouTube video (`youtube.com/watch?v=aQMYjdjfLFQ` — titled "NBMBAA at WGU"). Clubs are being used as program-page content assets, not just listed somewhere.
-
-**Discoverability fragmentation:** WGU club/org references currently appear across five separate surfaces with no single authoritative hub:
+**Discoverability is fragmented across five surfaces** with no single authoritative hub:
 1. `careers.wgu.edu` — Professional Student Organizations page
-2. Program/center-specific wgu.edu pages — AMA, Cybersecurity Club, SHRM, Women in Tech, Cyber Education Center clubs
-3. WGU Connect — join links for most active clubs
+2. Program/center-specific wgu.edu pages (AMA, Cybersecurity Club, SHRM, Women in Tech, Cyber Education Center)
+3. WGU Connect — primary join-link vehicle for most clubs
 4. Alumni/community pages — Night Owl Network, alumni-adjacent orgs
-5. Blog/narrative surfaces — club scale/endorsement content
+5. Blog/narrative surfaces — scale signals and endorsement content
 
-This is a structural discoverability problem, not a credibility issue. Clubs exist, are large, and are officially endorsed; they are just hard to find. The Cyber Education Center club page (§13.2) is the clearest example: it functions as an unofficial club hub but is buried inside a center-specific page.
-
-**Historical note:** Reddit historical posts show students asking whether WGU even had clubs (older threads), and references to dead SAG (student affinity group) links and outdated join paths. This is consistent with the current fragmented state — club infrastructure has changed over time and has not been consolidated into a clean official surface. Current discoverability gaps are an inherited structural issue, not a recent regression.
+**This is a structural discoverability problem, not a credibility issue.** Clubs exist, are large, and are officially endorsed; they are just hard to find. The Cyber Education Center community outreach page (§13.2) functions as a buried multi-club hub — the clearest example of the fragmentation pattern. Historical Reddit threads asking "does WGU have clubs?" and references to dead SAG (student affinity group) links confirm this is an inherited structural gap, not a recent regression.
 
 ### 13.2 Known clubs / organizations
 
@@ -374,9 +366,9 @@ This is a structural discoverability problem, not a credibility issue. Clubs exi
 |---|---|---|---|---|---|---|---|
 | Cybersecurity Club | https://www.wgu.edu/online-it-degrees/cyber-club.html | official_adjacent | public | candidate_later | low | high | IT/security student org; also referenced from Cyber Education Center page |
 | Women in Technology (WiT / Women in Tech) | https://www.wgu.edu/online-it-degrees/women-in-tech.html | official_adjacent | public | candidate_later | low | high | IT/community org; **model club-page pattern** — stated founding year (2019), open enrollment, clear mission, LinkedIn follow-on path; template for what Data Club and others should eventually look like |
-| WiCyS (Women in CyberSecurity) | via Cyber Education Center page | official_adjacent | mixed | research_only | low | medium | Linked from Cyber Education Center community outreach; external org partnered with WGU |
-| Military Alliance Club | via Cyber Education Center page | official_adjacent | mixed | research_only | low | medium | Referenced on Cyber Education Center community outreach page |
-| Alumni Cybersecurity Club | via Cyber Education Center page | official_adjacent | mixed | research_only | low | medium | Alumni-facing cybersecurity club; referenced on Cyber Education Center page |
+| WiCyS (Women in CyberSecurity) | hub_reference_only | official_adjacent | mixed | research_only | low | medium | External org (wicys.org) partnered with WGU; WGU-specific reference only via Cyber Education Center community outreach page; no dedicated wgu.edu club page found |
+| Military Alliance Club | hub_reference_only | official_adjacent | mixed | research_only | low | medium | No dedicated public page found; referenced on Cyber Education Center community outreach page only; WGU Connect join path may exist but not confirmed |
+| Alumni Cybersecurity Club | hub_reference_only | official_adjacent | mixed | research_only | low | medium | No dedicated public page found; alumni-facing; referenced on Cyber Education Center community outreach page only; WGU Connect join path not confirmed |
 
 ### 13.3 WGU Data Club
 

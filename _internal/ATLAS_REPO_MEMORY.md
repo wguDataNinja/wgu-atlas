@@ -692,6 +692,8 @@ Notes for when homepage or community work becomes active. Do not act on these no
 
 **Club surfacing approach:** when clubs become a candidate surface, lean toward a compact card or sidebar pattern rather than a directory. Do not surface clubs that lack a stable, official, publicly accessible landing page.
 
+**Club ecosystem structure:** WGU's club ecosystem is real (large scale, officially endorsed) but structurally fragmented — no unified hub, five separate discovery surfaces. Some clubs have proper public pages (Women in Tech, Cybersecurity Club, SHRM, AMA); others are officially referenced but under-surfaced (Data Club, Military Alliance Club, Alumni Cybersecurity Club). Surface the well-paged clubs first; hold under-surfaced ones until a public landing page exists.
+
 **External benchmark:** Western Hemisphere University / WHU-style compact club listings are the clearest external design precedent for integrating club/community context into an academic reference product without overwhelming the primary catalog-navigation purpose.
 
 ---
