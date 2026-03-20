@@ -4,6 +4,40 @@ Append-only. Most recent entry first.
 
 ---
 
+## 2026-03-20 — Regulatory candidate queue built
+
+**Task:** Build `_internal/official_resource/regulatory_candidate_queue.md`.
+
+**Files created:**
+- `_internal/official_resource/regulatory_candidate_queue.md`
+
+**Source reads:**
+- `data/enrichment/official_context_manifest_phase1.csv` (605 rows)
+- `data/enrichment/README.txt`
+- `data/enrichment/official_context_manifest_phase2_test.json` (122 reviewed entries)
+- `data/enrichment/outcomes/outcomes_links.json` (cross-reference for already-captured accreditation)
+- `_internal/official_resource/next_workstream_memo.md`
+- `public/data/programs.json` (program codes and school assignments)
+
+**Candidates identified:** 14 entries reviewed; 11 marked `keep`, 3 marked `needs-review`, 8 skipped
+
+**Key findings:**
+- Strong school-level regulatory pairs exist for all four schools (Education: state licensure + teaching license; Health: state licensure + clinicals; Business: state licensure by state; Technology: IT certifications overview)
+- Nursing has degree-specific clinical placement pages for FNP and PMHNP — enrollment-critical; select-state programs
+- NCLEX-RN page found but is nested under RN-to-BSN program URL; should verify degree-level attachment target (BSNPLTR or BSNU)
+- Individual IT vendor cert pages (Cisco, AWS, etc.) deferred to specialization/track pass — not in regulatory queue scope
+- 3 needs-review items require reading the page before confirming: Teacher Licensure Programs (#3), FNP Preceptor (#11), PMHNP Preceptor (#12)
+
+**Gaps flagged for follow-up:**
+- NCLEX page specifically for BSNPLTR may not exist yet; verify
+- Nursing state approval/disclosure page (beyond state licensure overview) — check if required by federal regulation
+- ACEN or CCNE nursing accreditation pages — not found in this sitemap pass
+- Education state-specific restrictions at degree level may warrant additional annotations
+
+**Next step:** Curation review of `regulatory_candidate_queue.md` — confirm `keep` decisions, resolve 3 `needs-review` items, then update `public/data/official_resource_placements.json` with approved placements.
+
+---
+
 ## 2026-03-20 — Module initialization
 
 **Task:** Initialize module workspace and produce planning memo.

@@ -11,11 +11,16 @@
 | `_internal/official_resource/ARTIFACTS.md` | This file — artifact index. |
 | `_internal/official_resource/next_workstream_memo.md` | Planning memo — source class assessment, best next workstream, attachment model, exclusions, priority ranking, next bounded task. |
 
+### Current artifacts
+
+| File | Status | Purpose |
+|---|---|---|
+| `_internal/official_resource/regulatory_candidate_queue.md` | **Ready for curation review** | Curation-ready queue of regulatory/licensure/disclosure candidates. 14 entries; 11 `keep`, 3 `needs-review`, 8 `skip`. See file for placement targets and rationale. |
+
 ### Planned future artifacts (not yet created)
 
 | File (planned) | Purpose |
 |---|---|
-| `_internal/official_resource/regulatory_candidate_queue.md` | Curation-ready queue of regulatory/licensure/disclosure candidates: title, URL, source class, target surface, student value, recommendation. |
 | `_internal/official_resource/outcomes_accreditation_audit.md` | Completeness check of known outcomes/accreditation set against sitemap universe. |
 | `_internal/official_resource/specialization_candidate_queue.md` | Curation-ready queue of specialization/track/variant candidates. |
 | `_internal/official_resource/school_governance_review.md` | Review of four school governance/context pages for school-page suitability. |

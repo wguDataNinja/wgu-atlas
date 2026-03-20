@@ -5,6 +5,26 @@ Each entry records what changed, decisions locked, what's blocked, and the next 
 
 ---
 
+## 2026-03-20 (session 3 — baseline commits + regulatory queue)
+
+**Done**
+- Made 3 local commits: data reorg, control-plane docs, src baseline changes
+- Built `_internal/official_resource/regulatory_candidate_queue.md` — 14 candidates reviewed; 11 `keep`, 3 `needs-review`, 8 `skip`
+- Updated official_resource SESSION_LOG.md and ARTIFACTS.md
+
+**Decisions locked**
+- None new this session beyond prior
+
+**Blocked / open**
+- 3 `needs-review` items in regulatory queue require page reads before finalizing: #3 Teacher Licensure Programs, #11 FNP Preceptor, #12 PMHNP Preceptor
+- NCLEX page for BSNPLTR specifically — verify if degree-specific page exists or if school-level page is the right attachment
+- Nursing disclosure/accreditation gaps flagged in queue
+
+**Next starting task**
+Curation review: read the 3 `needs-review` pages, confirm or decline, then update `public/data/official_resource_placements.json` with the first round of approved regulatory/licensure placements.
+
+---
+
 ## 2026-03-20 (session 2 — housecleaning)
 
 **Done**
