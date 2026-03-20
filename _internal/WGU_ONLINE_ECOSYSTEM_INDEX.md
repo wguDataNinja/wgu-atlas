@@ -1,6 +1,6 @@
 # WGU Online Ecosystem Index
 
-Last updated: 2026-03-20 (rev 2)
+Last updated: 2026-03-20 (rev 3)
 Role: internal source atlas for official/unofficial/community/media surfaces related to WGU
 Status: reference only; inclusion here does not imply product surfacing
 
@@ -61,14 +61,17 @@ Current Atlas posture:
 
 ## 5. Official WGU student/community/career surfaces
 
+**Note:** `Student Communities` is a first-class official hub (see §6.4 for hub comparison). Treat it as the primary student/community orientation entry point for ecosystem purposes — distinct from Linktree.
+
 | name | url | surface_type | access | student_value | trust_risk | current_product_status | notes |
 |---|---|---|---|---|---|---|---|
-| Student Communities | https://www.wgu.edu/student-experience/student-resources/communities.html | website | public | medium | low | candidate_later | Official student community/resources entry |
+| Student Communities (hub) | https://www.wgu.edu/student-experience/student-resources/communities.html | link_hub | public | high | low | candidate_later | **First-class official student/community hub.** More structured and student-experience-oriented than Linktree. Promotes Night Owl Network, Career Services, WGU Alumni LinkedIn, official social channels (including YouTube). See §6.4. |
+| Night Owl Network | https://www.wgu.edu/alumni/stay-involved/night-owl-network.html | alumni | public | medium | low | candidate_later | Official alumni community/engagement surface; URL confirmed via Communities page |
+| Career Services | https://www.wgu.edu/career-services.html | career | public | high | low | candidate_later | Official career services hub; prominent on Communities page |
+| WGU Alumni LinkedIn | https://www.linkedin.com/in/wgualumni/ | alumni | public | medium | low | research_only | Dedicated alumni LinkedIn profile; distinct from institutional LinkedIn page (§4) |
 | Student Portal | https://www.wgu.edu/student-portal.html | student_portal | login_required | medium | low | research_only | Official logged-in student surface |
 | Owl's Nest | unknown_or_internal | community | mixed | medium | low | candidate_later | Official engagement/community surface; verify exact public URL if needed |
-| Night Owl Network | unknown_or_internal | alumni | mixed | medium | low | research_only | Alumni/community networking surface |
 | Handshake / Career platform | unknown_or_internal | career | login_required | medium | low | research_only | Career/recruiter/internship use |
-| Alumni / LinkedIn groups | mixed | alumni | mixed | medium | low | research_only | Official-adjacent networking surfaces; verify exact URLs before any surfacing |
 
 ---
 
@@ -109,18 +112,39 @@ Current Atlas posture:
 |---|---|
 | official_status | official |
 | quality | mixed |
-| main use | catch-all official hub |
-| problem | noisy; mixes core student links, events, careers, donations, misc items |
+| main use | catch-all public official hub |
+| problem | noisy; mixes core student links, events, careers, donations, misc rotating items |
 | homepage use | possible, but only as secondary official hub |
+| notable omission | WGU YouTube and WGU Career Services YouTube are not currently on Linktree (see §6.4) |
 
 ### 6.3 Important surfaces not currently represented on Linktree
 
 | missing_surface | notes |
 |---|---|
 | Reddit | No meaningful official Reddit/community presence; official Reddit account appears inactive/unused for years |
-| WGU YouTube | Important official video channel missing from Linktree |
+| WGU YouTube | Important official video channel missing from Linktree — but IS present on Communities page |
 | WGU Career Services YouTube | Important official career video channel missing from Linktree |
 | broader student community map | Linktree does not help students find unofficial student discussion spaces |
+| Night Owl Network / Alumni | Not on Linktree; present on Communities page |
+
+### 6.4 Official link hub comparison
+
+Two distinct official hubs exist. They overlap but are not identical.
+
+| hub | url | role | strengths | issues / omissions |
+|---|---|---|---|---|
+| Student Communities page | https://www.wgu.edu/student-experience/student-resources/communities.html | official student/community hub | clean student-experience orientation; promotes alumni, career, community surfaces; official social set **including YouTube** | broader wgu.edu site nav mixed in; not a comprehensive "all current links" hub |
+| WGU Linktree | https://linktr.ee/WesternGovernorsUniversity | catch-all public official hub | many rotating current links; events, announcements, misc | noisy; mixed-purpose; **missing YouTube**; missing alumni/community surfaces |
+
+**Overlap (present on both):** Facebook, LinkedIn, Instagram, TikTok
+
+**Communities page adds (not on Linktree):** YouTube, Night Owl Network, Career Services, WGU Alumni LinkedIn
+
+**Linktree adds (not on Communities page):** rotating events, announcements, WGU Store, EthicsPoint, donation links
+
+**Neither covers:** Reddit, unofficial student communities, club ecosystem
+
+**Implication for ecosystem work:** The Communities page is the better reference point for understanding what WGU chooses to promote as its student/community/career/social footprint. Linktree is a better reference for "what is WGU currently announcing/pushing." Both are useful; neither is complete.
 
 ---
 
