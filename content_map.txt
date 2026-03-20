@@ -1,5 +1,5 @@
 WGU ATLAS — FULL SITE CONTENT MAP
-Generated: 2026-03-18T09:25:08.466Z
+Generated: 2026-03-20T19:27:06.341Z
 Purpose: Proofreading reference. Shows all visible text with source locations.
 
 ======================================================================
@@ -57,7 +57,7 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   H1 Title: WGU Atlas
     [source: src/app/page.tsx:13]
   Subtitle: Explore WGU degrees, courses, and colleges. Compare related degrees.
-    [source: src/app/page.tsx:?]
+    [source: src/app/page.tsx:16]
 
 ----------------------------------------------------------------------
   Search Bar (HomeSearch component)
@@ -254,7 +254,7 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   {code}  |  {status badge}  |  {N} CUs
     Current badge: Current
     Retired badge: Retired
-    [source: src/app/programs/[code]/page.tsx:92]
+    [source: src/app/programs/[code]/page.tsx:93]
 
 
 ----------------------------------------------------------------------
@@ -300,7 +300,7 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   Back Link
 ----------------------------------------------------------------------
   Text: ← Back to Degrees
-    [source: src/app/programs/[code]/page.tsx:312]
+    [source: src/app/programs/[code]/page.tsx:287]
 
 ======================================================================
   COLLEGES PAGE  (/SCHOOLS)
@@ -346,8 +346,8 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
 ----------------------------------------------------------------------
 
   Section headings (from source):
-    • Recent Changes
     • College History
+    • Recent Changes
     • New Degrees
     • Recent Degree Updates
     • Recent Course Additions
@@ -381,7 +381,7 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
 
   Step 1 panel:
     Header: Choose a degree
-    [source: src/components/compare/CompareSelector.tsx:120]
+    [source: src/components/compare/CompareSelector.tsx:210]
     Filters: All colleges (default) + All levels (default)
     Empty state: No degrees match these filters.
     Footer note: {N} degrees shown. Select one to see comparable degrees in step 2.
@@ -867,6 +867,52 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
 
   Downloads: canonical_courses.csv  |  named_events.csv  |  title_variant_classification.csv
   JSON:      courses.json  |  events.json  |  search_index.json
+
+======================================================================
+  ENRICHMENT PROGRESS — DEGREE DETAIL PAGES
+======================================================================
+
+----------------------------------------------------------------------
+  On-page content enrichment  (program_enriched.json)
+----------------------------------------------------------------------
+  Total active programs:     114
+  Enriched programs:         114  (have catalog description + roster)
+
+  Description:       114 / 114 enriched
+  Course Roster:     113 / 114 enriched
+  Learning Outcomes:  74 / 114 enriched
+
+  Programs WITH learning outcomes (74):
+    BAESELED  BAESMES  BAESSESB  BAESSESC  BAESSESE  BAESSESP  BAESSPEE  BAESSPMM  BASPEE  BSACC  BSC  BSCNE  BSCNEAWS  BSCNEAZR  BSCNECIS  BSCS  BSCSIA  BSDA  BSFIN  BSHA  ... and 54 more
+
+  Enriched programs WITHOUT outcomes (40) — gap:
+    BAELED  BASPMM  BSMES  BSNU  BSPNTR  BSSESB  BSSESC  BSSESE  BSSESP  BSSWE_C  ENDELL  ENDMEMG  ENDSEMG  ENDSESB  ENDSESC  ENDSESE  ENDSESP  MACCA  MACCF  MACCM  ... and 20 more
+
+  Active programs with NO enrichment at all (0):
+
+
+----------------------------------------------------------------------
+  Linked resources sidebar  (official_resource_placements.json)
+----------------------------------------------------------------------
+  Total active placements:  128
+
+  Program Guide         109 surfaces
+    Programs (109):  BAELED  BAESELED  BAESMES  BAESSESB  BAESSESC  BAESSESE  BAESSESP  BAESSPEE  BAESSPMM  BASPEE  BASPMM  BSACC  BSC  BSCNE  BSCNEAWS  ... and 94 more
+
+  Accreditation         3 surfaces
+    Programs (1):  BSHIM
+    Schools  (2):  business  education
+
+  Outcomes (ext)        2 surfaces
+    Programs (2):  BSCS  BSCSIA
+
+  Licensure & Exams     8 surfaces
+    Programs (4):  BSNPLTR  BSPNTR  MSNUFNP  MSNUPMHNP
+    Schools  (4):  business  education  health  technology
+
+  Specializations       2 surfaces
+    Programs (2):  MSDADS  MSSWEAIE
+
 
 ======================================================================
   SEO / PAGE METADATA SUMMARY

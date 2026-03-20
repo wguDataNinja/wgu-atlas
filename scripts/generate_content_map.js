@@ -42,6 +42,13 @@ function findLine(content, substring) {
   return content.slice(0, idx).split("\n").length;
 }
 
+/** Return sorted list; truncates to `limit` items with "... and N more" */
+function listOrSample(arr, limit = 12) {
+  const sorted = [...arr].sort();
+  if (sorted.length <= limit) return sorted.join("  ");
+  return sorted.slice(0, limit).join("  ") + `  ... and ${sorted.length - limit} more`;
+}
+
 /** Print a section header */
 function header(title, level = 1) {
   const bar = "=".repeat(70);
@@ -77,11 +84,35 @@ const homepageSummary = readJson("public/data/homepage_summary.json");
 const programs = readJson("public/data/programs.json");
 const events = readJson("public/data/events.json");
 const programEnriched = readJson("public/data/program_enriched.json");
+const resourcePlacements = readJson("public/data/official_resource_placements.json");
 
 const activePrograms = programs.filter((p) => p.status === "ACTIVE");
 const retiredPrograms = programs.filter((p) => p.status === "RETIRED");
 const curatedEvents = events.filter((e) => e.is_curated_major_event);
 const otherEvents = events.filter((e) => !e.is_curated_major_event);
+
+// Enrichment stats
+const enrichedCodes = Object.keys(programEnriched);
+const withDescription = enrichedCodes.filter((c) => programEnriched[c].description?.trim());
+const withOutcomes = enrichedCodes.filter(
+  (c) => Array.isArray(programEnriched[c].outcomes) && programEnriched[c].outcomes.length > 0
+);
+const withRoster = enrichedCodes.filter(
+  (c) => Array.isArray(programEnriched[c].roster) && programEnriched[c].roster.length > 0
+);
+
+// Placement stats by group — split program_detail vs school_detail surfaces
+const placementsByGroup = {};
+for (const p of resourcePlacements.filter((p) => p.status === "show")) {
+  if (!placementsByGroup[p.resource_group]) {
+    placementsByGroup[p.resource_group] = { program: new Set(), school: new Set() };
+  }
+  if (p.show_on_surface === "program_detail") {
+    placementsByGroup[p.resource_group].program.add(p.surface_key);
+  } else {
+    placementsByGroup[p.resource_group].school.add(p.surface_key);
+  }
+}
 
 // ──────────────────────────────────────────────────────────────────────────────
 // Read source files
@@ -689,6 +720,74 @@ item("Meta description", "Download WGU Atlas canonical datasets — course histo
 blank();
 console.log("  Downloads: canonical_courses.csv  |  named_events.csv  |  title_variant_classification.csv");
 console.log("  JSON:      courses.json  |  events.json  |  search_index.json");
+
+// ══════════════════════════════════════════════════════════════════════════════
+header("ENRICHMENT PROGRESS — DEGREE DETAIL PAGES", 1);
+// ══════════════════════════════════════════════════════════════════════════════
+
+header("On-page content enrichment  (program_enriched.json)", 2);
+console.log(`  Total active programs:     ${activePrograms.length}`);
+console.log(`  Enriched programs:         ${enrichedCodes.length}  (have catalog description + roster)`);
+blank();
+console.log(`  Description:       ${String(withDescription.length).padStart(3)} / ${enrichedCodes.length} enriched`);
+console.log(`  Course Roster:     ${String(withRoster.length).padStart(3)} / ${enrichedCodes.length} enriched`);
+console.log(`  Learning Outcomes: ${String(withOutcomes.length).padStart(3)} / ${enrichedCodes.length} enriched`);
+blank();
+
+const withoutOutcomes = enrichedCodes.filter((c) => !withOutcomes.includes(c)).sort();
+console.log(`  Programs WITH learning outcomes (${withOutcomes.length}):`);
+console.log(`    ${listOrSample(withOutcomes, 20)}`);
+blank();
+console.log(`  Enriched programs WITHOUT outcomes (${withoutOutcomes.length}) — gap:`);
+console.log(`    ${listOrSample(withoutOutcomes, 20)}`);
+blank();
+
+const unenrichedActive = activePrograms
+  .filter((p) => !enrichedCodes.includes(p.program_code))
+  .sort((a, b) => a.program_code.localeCompare(b.program_code));
+console.log(`  Active programs with NO enrichment at all (${unenrichedActive.length}):`);
+const showAll = unenrichedActive.length <= 20;
+const toShow = showAll ? unenrichedActive : unenrichedActive.slice(0, 15);
+toShow.forEach((p) =>
+  console.log(`    ${p.program_code.padEnd(16)} ${p.canonical_name}`)
+);
+if (!showAll) console.log(`    ... and ${unenrichedActive.length - 15} more`);
+blank();
+
+header("Linked resources sidebar  (official_resource_placements.json)", 2);
+const activePlacements = resourcePlacements.filter((p) => p.status === "show");
+console.log(`  Total active placements:  ${activePlacements.length}`);
+blank();
+
+const GROUP_ORDER = ["program_guide", "accreditation", "outcomes", "regulatory_licensure", "program_variant"];
+const GROUP_DISPLAY = {
+  program_guide: "Program Guide",
+  accreditation: "Accreditation",
+  outcomes: "Outcomes (ext)",
+  regulatory_licensure: "Licensure & Exams",
+  program_variant: "Specializations",
+};
+
+for (const group of GROUP_ORDER) {
+  const entry = placementsByGroup[group];
+  const label = (GROUP_DISPLAY[group] ?? group).padEnd(20);
+  if (!entry) {
+    console.log(`  ${label}  0 surfaces`);
+    blank();
+    continue;
+  }
+  const programList = [...entry.program].sort();
+  const schoolList = [...entry.school].sort();
+  const total = programList.length + schoolList.length;
+  console.log(`  ${label}  ${total} surfaces`);
+  if (programList.length > 0) {
+    console.log(`    Programs (${programList.length}):  ${listOrSample(programList, 15)}`);
+  }
+  if (schoolList.length > 0) {
+    console.log(`    Schools  (${schoolList.length}):  ${schoolList.join("  ")}`);
+  }
+  blank();
+}
 
 // ══════════════════════════════════════════════════════════════════════════════
 header("SEO / PAGE METADATA SUMMARY", 1);
