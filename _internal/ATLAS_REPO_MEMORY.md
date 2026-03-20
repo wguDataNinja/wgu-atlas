@@ -142,6 +142,7 @@ Important config facts:
 | `content_map.txt` | generated full-site content reference; regenerate with `generate_content_map.js` after major UI changes |
 | `_internal/youtube/` | YouTube workstream notes and filtered title artifacts |
 | `_internal/WGU_ONLINE_ECOSYSTEM_INDEX.md` | ecosystem reference map — official, unofficial, and external discussion/community/media surfaces related to WGU |
+| `_internal/page_designs/` | text-based design reference artifacts for each live route — layout, content, visual tokens, interactions, functional inventory, planning observations |
 
 ---
 
@@ -548,7 +549,31 @@ Site runtime should depend on committed artifacts, not hidden live preprocessing
 
 ---
 
-## 14. Standalone-readiness reality
+## 14. Page design reference
+
+Text-based design artifacts live in `_internal/page_designs/`. Each file covers one route and captures: layout (section-by-section, ASCII diagrams), all visible text, visual design tokens (colors, typography, spacing), interaction behavior, functional inventory, and design observations for planning.
+
+### Purpose
+
+These exist for design and planning work — not for code generation or spec enforcement. They answer "what is actually on this page right now?" without requiring a browser or a code read of every component.
+
+### Regeneration
+
+Inputs: page component source + child components + `content_map.txt` section for the route + (optionally) live rendered text.
+
+Regenerate when a page changes significantly enough that the existing artifact would mislead a designer.
+
+### Artifact index
+
+| Route | File | Status |
+|---|---|---|
+| `/` | `_internal/page_designs/homepage.md` | current (2026-03-20) |
+
+See `_internal/page_designs/README.md` for generation instructions and full route-to-filename convention.
+
+---
+
+## 15. Standalone-readiness reality
 
 ### Current state
 
@@ -596,7 +621,7 @@ These are repo boundaries or mismatches that matter for rebuild assumptions and 
 
 ---
 
-## 15. Deployment memory
+## 16. Deployment memory
 
 ### Key facts
 
@@ -612,7 +637,7 @@ When making changes that affect asset paths, download links, or client-side fetc
 
 ---
 
-## 16. Durable decisions
+## 17. Durable decisions
 
 These decisions are wrapped here as stable repo memory and should not be reopened casually.
 
@@ -648,7 +673,7 @@ These decisions are wrapped here as stable repo memory and should not be reopene
 
 ---
 
-## 17. Known high-value next opportunities
+## 18. Known high-value next opportunities
 
 These are durable “good bets,” not automatic priorities.
 
@@ -698,7 +723,7 @@ Notes for when homepage or community work becomes active. Do not act on these no
 
 ---
 
-## 18. Fast orientation checklist
+## 19. Fast orientation checklist
 
 When returning to the repo after time away:
 
@@ -715,7 +740,7 @@ When returning to the repo after time away:
 
 ---
 
-## 19. File and artifact routing cheatsheet
+## 20. File and artifact routing cheatsheet
 
 | Question | Start here |
 |---|---|
@@ -728,10 +753,11 @@ When returning to the repo after time away:
 | Where do official resources attach? | `public/data/official_resource_placements.json` and `_internal/official_resource/` |
 | Where does lineage live? | `data/lineage/` plus related lineage artifacts in `data/` |
 | How is deployment configured? | `next.config.ts`, `package.json`, `.github/workflows/` |
+| What does a specific page look/do? | `_internal/page_designs/{route}.md` |
 
 ---
 
-## 20. Memory discipline
+## 21. Memory discipline
 
 This document should stay:
 
@@ -758,7 +784,7 @@ Update this file when one of these changes:
 
 ---
 
-## 21. Provenance and trust rules
+## 22. Provenance and trust rules
 
 Four distinct information categories — keep visibly separate at all times:
 
