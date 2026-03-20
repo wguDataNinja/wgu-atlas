@@ -42,6 +42,12 @@ function findLine(content, substring) {
   return content.slice(0, idx).split("\n").length;
 }
 
+/** Format a coverage fraction with percentage: "74 / 114  (65%)" */
+function pct(n, total) {
+  const p = total === 0 ? 0 : Math.round((n / total) * 100);
+  return `${String(n).padStart(3)} / ${total}  (${String(p).padStart(3)}%)`;
+}
+
 /** Return sorted list; truncates to `limit` items with "... and N more" */
 function listOrSample(arr, limit = 12) {
   const sorted = [...arr].sort();
@@ -105,13 +111,14 @@ const withRoster = enrichedCodes.filter(
 const placementsByGroup = {};
 for (const p of resourcePlacements.filter((p) => p.status === "show")) {
   if (!placementsByGroup[p.resource_group]) {
-    placementsByGroup[p.resource_group] = { program: new Set(), school: new Set() };
+    placementsByGroup[p.resource_group] = { program: new Set(), school: new Set(), count: 0 };
   }
   if (p.show_on_surface === "program_detail") {
     placementsByGroup[p.resource_group].program.add(p.surface_key);
   } else {
     placementsByGroup[p.resource_group].school.add(p.surface_key);
   }
+  placementsByGroup[p.resource_group].count++;
 }
 
 // ──────────────────────────────────────────────────────────────────────────────
@@ -725,40 +732,7 @@ console.log("  JSON:      courses.json  |  events.json  |  search_index.json");
 header("ENRICHMENT PROGRESS — DEGREE DETAIL PAGES", 1);
 // ══════════════════════════════════════════════════════════════════════════════
 
-header("On-page content enrichment  (program_enriched.json)", 2);
-console.log(`  Total active programs:     ${activePrograms.length}`);
-console.log(`  Enriched programs:         ${enrichedCodes.length}  (have catalog description + roster)`);
-blank();
-console.log(`  Description:       ${String(withDescription.length).padStart(3)} / ${enrichedCodes.length} enriched`);
-console.log(`  Course Roster:     ${String(withRoster.length).padStart(3)} / ${enrichedCodes.length} enriched`);
-console.log(`  Learning Outcomes: ${String(withOutcomes.length).padStart(3)} / ${enrichedCodes.length} enriched`);
-blank();
-
-const withoutOutcomes = enrichedCodes.filter((c) => !withOutcomes.includes(c)).sort();
-console.log(`  Programs WITH learning outcomes (${withOutcomes.length}):`);
-console.log(`    ${listOrSample(withOutcomes, 20)}`);
-blank();
-console.log(`  Enriched programs WITHOUT outcomes (${withoutOutcomes.length}) — gap:`);
-console.log(`    ${listOrSample(withoutOutcomes, 20)}`);
-blank();
-
-const unenrichedActive = activePrograms
-  .filter((p) => !enrichedCodes.includes(p.program_code))
-  .sort((a, b) => a.program_code.localeCompare(b.program_code));
-console.log(`  Active programs with NO enrichment at all (${unenrichedActive.length}):`);
-const showAll = unenrichedActive.length <= 20;
-const toShow = showAll ? unenrichedActive : unenrichedActive.slice(0, 15);
-toShow.forEach((p) =>
-  console.log(`    ${p.program_code.padEnd(16)} ${p.canonical_name}`)
-);
-if (!showAll) console.log(`    ... and ${unenrichedActive.length - 15} more`);
-blank();
-
-header("Linked resources sidebar  (official_resource_placements.json)", 2);
 const activePlacements = resourcePlacements.filter((p) => p.status === "show");
-console.log(`  Total active placements:  ${activePlacements.length}`);
-blank();
-
 const GROUP_ORDER = ["program_guide", "accreditation", "outcomes", "regulatory_licensure", "program_variant"];
 const GROUP_DISPLAY = {
   program_guide: "Program Guide",
@@ -768,18 +742,70 @@ const GROUP_DISPLAY = {
   program_variant: "Specializations",
 };
 
+// ── Snapshot dashboard ──────────────────────────────────────────────────────
+const bar = "─".repeat(62);
+console.log(`\n  ┌${bar}┐`);
+console.log(`  │  SNAPSHOT                                                      │`);
+console.log(`  ├${bar}┤`);
+console.log(`  │  Active programs:    ${String(activePrograms.length).padEnd(42)}│`);
+console.log(`  │  Description:        ${pct(withDescription.length, activePrograms.length).padEnd(41)}│`);
+console.log(`  │  Course Roster:      ${pct(withRoster.length, activePrograms.length).padEnd(41)}│`);
+console.log(`  │  Learning Outcomes:  ${pct(withOutcomes.length, activePrograms.length).padEnd(41)}│`);
+console.log(`  ├${bar}┤`);
+console.log(`  │  Sidebar placements: ${String(activePlacements.length + " total").padEnd(41)}│`);
+for (const group of GROUP_ORDER) {
+  const entry = placementsByGroup[group];
+  const label = (GROUP_DISPLAY[group] ?? group).padEnd(20);
+  const surfaces = entry ? entry.program.size + entry.school.size : 0;
+  const links = entry ? entry.count : 0;
+  const detail = `${String(surfaces).padStart(3)} surfaces / ${String(links).padStart(3)} links`;
+  const row = `    ${label}  ${detail}`;
+  console.log(`  │  ${row.padEnd(60)}│`);
+}
+console.log(`  └${bar}┘`);
+blank();
+
+// ── On-page content detail ──────────────────────────────────────────────────
+header("On-page content enrichment  (program_enriched.json)", 2);
+
+const withoutOutcomes = enrichedCodes.filter((c) => !withOutcomes.includes(c)).sort();
+console.log(`  Programs WITH outcomes (${withOutcomes.length}):`);
+console.log(`    ${listOrSample(withOutcomes, 20)}`);
+blank();
+console.log(`  Programs WITHOUT outcomes — gap (${withoutOutcomes.length}):`);
+console.log(`    ${listOrSample(withoutOutcomes, 20)}`);
+blank();
+
+const unenrichedActive = activePrograms
+  .filter((p) => !enrichedCodes.includes(p.program_code))
+  .sort((a, b) => a.program_code.localeCompare(b.program_code));
+if (unenrichedActive.length === 0) {
+  console.log(`  Active programs with NO enrichment: none`);
+} else {
+  console.log(`  Active programs with NO enrichment (${unenrichedActive.length}):`);
+  const toShow = unenrichedActive.length <= 20 ? unenrichedActive : unenrichedActive.slice(0, 15);
+  toShow.forEach((p) => console.log(`    ${p.program_code.padEnd(16)} ${p.canonical_name}`));
+  if (unenrichedActive.length > 20) console.log(`    ... and ${unenrichedActive.length - 15} more`);
+}
+blank();
+
+// ── Sidebar placement detail ─────────────────────────────────────────────────
+header("Linked resources sidebar  (official_resource_placements.json)", 2);
+console.log(`  Total active placements: ${activePlacements.length}  (surfaces = unique pages; links = total placements)`);
+blank();
+
 for (const group of GROUP_ORDER) {
   const entry = placementsByGroup[group];
   const label = (GROUP_DISPLAY[group] ?? group).padEnd(20);
   if (!entry) {
-    console.log(`  ${label}  0 surfaces`);
+    console.log(`  ${label}  0 surfaces / 0 links`);
     blank();
     continue;
   }
   const programList = [...entry.program].sort();
   const schoolList = [...entry.school].sort();
-  const total = programList.length + schoolList.length;
-  console.log(`  ${label}  ${total} surfaces`);
+  const surfaces = programList.length + schoolList.length;
+  console.log(`  ${label}  ${surfaces} surfaces / ${entry.count} links`);
   if (programList.length > 0) {
     console.log(`    Programs (${programList.length}):  ${listOrSample(programList, 15)}`);
   }
@@ -788,6 +814,45 @@ for (const group of GROUP_ORDER) {
   }
   blank();
 }
+
+// ── Gaps ─────────────────────────────────────────────────────────────────────
+header("Gaps", 2);
+
+const programGuideSurfaces = placementsByGroup["program_guide"]?.program ?? new Set();
+const missingGuide = activePrograms
+  .filter((p) => enrichedCodes.includes(p.program_code) && !programGuideSurfaces.has(p.program_code))
+  .sort((a, b) => a.program_code.localeCompare(b.program_code));
+console.log(`  Enriched programs missing a program guide (${missingGuide.length}):`);
+if (missingGuide.length === 0) {
+  console.log(`    none`);
+} else {
+  missingGuide.forEach((p) => console.log(`    ${p.program_code.padEnd(16)} ${p.canonical_name}`));
+}
+blank();
+
+const SCHOOL_SLUGS = ["business", "education", "health", "technology"];
+const schoolsWithAnyResource = new Set();
+for (const entry of Object.values(placementsByGroup)) {
+  for (const slug of entry.school) schoolsWithAnyResource.add(slug);
+}
+const schoolsWithout = SCHOOL_SLUGS.filter((s) => !schoolsWithAnyResource.has(s));
+console.log(`  School pages with NO sidebar resources (${schoolsWithout.length}):`);
+console.log(`    ${schoolsWithout.length === 0 ? "none" : schoolsWithout.join("  ")}`);
+blank();
+
+const outcomesGapBySchool = {};
+for (const code of withoutOutcomes) {
+  const prog = programs.find((p) => p.program_code === code);
+  if (!prog) continue;
+  const school = prog.school ?? "unknown";
+  if (!outcomesGapBySchool[school]) outcomesGapBySchool[school] = [];
+  outcomesGapBySchool[school].push(code);
+}
+console.log(`  Outcomes gap by school:`);
+for (const [school, codes] of Object.entries(outcomesGapBySchool).sort()) {
+  console.log(`    ${school.padEnd(36)} ${codes.length} programs  — ${listOrSample(codes, 8)}`);
+}
+blank();
 
 // ══════════════════════════════════════════════════════════════════════════════
 header("SEO / PAGE METADATA SUMMARY", 1);

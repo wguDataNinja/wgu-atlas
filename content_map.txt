@@ -1,5 +1,5 @@
 WGU ATLAS — FULL SITE CONTENT MAP
-Generated: 2026-03-20T19:27:06.341Z
+Generated: 2026-03-20T19:32:16.711Z
 Purpose: Proofreading reference. Shows all visible text with source locations.
 
 ======================================================================
@@ -872,46 +872,77 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   ENRICHMENT PROGRESS — DEGREE DETAIL PAGES
 ======================================================================
 
+  ┌──────────────────────────────────────────────────────────────┐
+  │  SNAPSHOT                                                      │
+  ├──────────────────────────────────────────────────────────────┤
+  │  Active programs:    114                                       │
+  │  Description:        114 / 114  (100%)                        │
+  │  Course Roster:      113 / 114  ( 99%)                        │
+  │  Learning Outcomes:   74 / 114  ( 65%)                        │
+  ├──────────────────────────────────────────────────────────────┤
+  │  Sidebar placements: 128 total                                │
+  │      Program Guide         109 surfaces / 109 links          │
+  │      Accreditation           3 surfaces /   3 links          │
+  │      Outcomes (ext)          2 surfaces /   2 links          │
+  │      Licensure & Exams       8 surfaces /  12 links          │
+  │      Specializations         2 surfaces /   2 links          │
+  └──────────────────────────────────────────────────────────────┘
+
+
 ----------------------------------------------------------------------
   On-page content enrichment  (program_enriched.json)
 ----------------------------------------------------------------------
-  Total active programs:     114
-  Enriched programs:         114  (have catalog description + roster)
-
-  Description:       114 / 114 enriched
-  Course Roster:     113 / 114 enriched
-  Learning Outcomes:  74 / 114 enriched
-
-  Programs WITH learning outcomes (74):
+  Programs WITH outcomes (74):
     BAESELED  BAESMES  BAESSESB  BAESSESC  BAESSESE  BAESSESP  BAESSPEE  BAESSPMM  BASPEE  BSACC  BSC  BSCNE  BSCNEAWS  BSCNEAZR  BSCNECIS  BSCS  BSCSIA  BSDA  BSFIN  BSHA  ... and 54 more
 
-  Enriched programs WITHOUT outcomes (40) — gap:
+  Programs WITHOUT outcomes — gap (40):
     BAELED  BASPMM  BSMES  BSNU  BSPNTR  BSSESB  BSSESC  BSSESE  BSSESP  BSSWE_C  ENDELL  ENDMEMG  ENDSEMG  ENDSESB  ENDSESC  ENDSESE  ENDSESP  MACCA  MACCF  MACCM  ... and 20 more
 
-  Active programs with NO enrichment at all (0):
+  Active programs with NO enrichment: none
 
 
 ----------------------------------------------------------------------
   Linked resources sidebar  (official_resource_placements.json)
 ----------------------------------------------------------------------
-  Total active placements:  128
+  Total active placements: 128  (surfaces = unique pages; links = total placements)
 
-  Program Guide         109 surfaces
+  Program Guide         109 surfaces / 109 links
     Programs (109):  BAELED  BAESELED  BAESMES  BAESSESB  BAESSESC  BAESSESE  BAESSESP  BAESSPEE  BAESSPMM  BASPEE  BASPMM  BSACC  BSC  BSCNE  BSCNEAWS  ... and 94 more
 
-  Accreditation         3 surfaces
+  Accreditation         3 surfaces / 3 links
     Programs (1):  BSHIM
     Schools  (2):  business  education
 
-  Outcomes (ext)        2 surfaces
+  Outcomes (ext)        2 surfaces / 2 links
     Programs (2):  BSCS  BSCSIA
 
-  Licensure & Exams     8 surfaces
+  Licensure & Exams     8 surfaces / 12 links
     Programs (4):  BSNPLTR  BSPNTR  MSNUFNP  MSNUPMHNP
     Schools  (4):  business  education  health  technology
 
-  Specializations       2 surfaces
+  Specializations       2 surfaces / 2 links
     Programs (2):  MSDADS  MSSWEAIE
+
+
+----------------------------------------------------------------------
+  Gaps
+----------------------------------------------------------------------
+  Enriched programs missing a program guide (6):
+    BSNPLTR          Bachelor of Science, Nursing - Prelicensure (Nursing)
+    BSPNTR           Bachelor of Science, Nursing - Prelicensure (Pre-Nursing)
+    MASEMG           Master of Arts Science Education (Middle Grades)
+    MEDETID          Master of Education, Education Technology and Instructional Design
+    MEDETIDA         Master of Education, Education Technology and Instructional Design
+    MEDETIDK12       Master of Education, Education Technology and Instructional Design
+
+  School pages with NO sidebar resources (0):
+    none
+
+  Outcomes gap by school:
+    Leavitt School of Health             6 programs  — BSNU  BSPNTR  PMCNUED  PMCNUFNP  PMCNULM  PMCNUPMHNP
+    School of Business                   7 programs  — MACCA  MACCF  MACCM  MACCT  MBAHA  MBAITM  MSHRM
+    School of Education                  21 programs  — BAELED  BASPMM  BSMES  BSSESB  BSSESC  BSSESE  BSSESP  ENDELL  ... and 13 more
+    School of Technology                 6 programs  — BSSWE_C  MSCSIA  MSCSUG  MSIT  MSITUG  MSSWEUG
 
 
 ======================================================================
