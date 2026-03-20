@@ -4,6 +4,42 @@ Append-only. Most recent entry first.
 
 ---
 
+## 2026-03-20 — Regulatory placement pass executed
+
+**Task:** Resolve needs-review items; write approved placements to `official_resource_placements.json`.
+
+**Files changed:**
+- `public/data/official_resource_placements.json` (+15 entries, 116 → 131)
+- `src/components/resources/RelevantResources.tsx` (added `regulatory_licensure: "Licensure & Exams"` to GROUP_LABELS)
+
+**Needs-review resolutions:**
+- #3 Teacher Licensure Programs → **keep** — page is a distinct program catalog with timelines and tuition, ~15% overlap with Teaching License/Certification; both warranted at school level
+- #11 FNP Preceptor → **keep** — distinct from FNP Placement; covers supervision progression and PA preceptor state constraints; ~40% overlap but different operational focus
+- #12 PMHNP Preceptor → **keep** — same logic as FNP Preceptor; covers two-site minimum and preceptor qualifications distinct from the placement checklist
+
+**Placements added (15 total):**
+- School of Education: 3 (state licensure, teaching license overview, teacher licensure programs)
+- School of Health: 2 (nursing state licensure, clinical requirements)
+- BSNPLTR: 2 (clinicals, NCLEX-RN)
+- BSNU: 1 (NCLEX-RN)
+- BSPNTR: 1 (nursing state licensure — select-state enrollment signal)
+- MSNUFNP: 2 (FNP placement, FNP preceptor)
+- MSNUPMHNP: 2 (PMHNP placement, PMHNP preceptor)
+- School of Business: 1 (business state licensure)
+- School of Technology: 1 (IT certifications overview)
+
+**New resource_group introduced:** `regulatory_licensure` (display priority 12; renders as "Licensure & Exams" in sidebar)
+
+**Gaps flagged for follow-up:**
+- NCLEX URL is nested under RN-to-BSN program path; verify if a BSNPLTR-specific NCLEX page exists
+- BSPNTR clinical requirements: only state licensure added; clinicals attachment deferred pending confirmation of which clinical pages apply to pre-nursing
+- Education degree-level Praxis/Student Teaching attachments: deferred; need to enumerate which program codes have student teaching and Praxis requirements before attaching
+- ACEN/CCNE nursing accreditation pages: not found in phase1 sitemap pass; check if they exist
+
+**Next step:** Outcomes + accreditation completeness audit (Tier 2) against `official_context_manifest_phase1.csv`.
+
+---
+
 ## 2026-03-20 — Regulatory candidate queue built
 
 **Task:** Build `_internal/official_resource/regulatory_candidate_queue.md`.

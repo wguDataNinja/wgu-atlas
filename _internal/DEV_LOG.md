@@ -5,6 +5,30 @@ Each entry records what changed, decisions locked, what's blocked, and the next 
 
 ---
 
+## 2026-03-20 (session 4 — regulatory placement pass)
+
+**Done**
+- Resolved 3 needs-review items: all 3 → keep (Teacher Licensure Programs, FNP Preceptor, PMHNP Preceptor)
+- Added 15 placement entries to `public/data/official_resource_placements.json` (116 → 131)
+- New `regulatory_licensure` resource_group introduced (priority 12, label "Licensure & Exams")
+- Added GROUP_LABELS entry in `RelevantResources.tsx`
+- Coverage: School of Education (3), School of Health (2), BSNPLTR (2), BSNU (1), BSPNTR (1), MSNUFNP (2), MSNUPMHNP (2), School of Business (1), School of Technology (1)
+
+**Decisions locked**
+- regulatory_licensure display_priority = 12 (above accreditation at 15, below outcomes at 10)
+- All 14 candidates from the queue resolved; none deferred
+
+**Blocked / open**
+- NCLEX URL is nested under RN-to-BSN path; verify if BSNPLTR-specific NCLEX page exists
+- BSPNTR clinicals: deferred; unclear which clinical pages apply to pre-nursing track
+- Education Praxis/Student Teaching degree-level attachments: deferred; need program code enumeration
+- ACEN/CCNE nursing accreditation: not found in sitemap pass
+
+**Next starting task**
+Outcomes + accreditation completeness audit (Tier 2): check `official_context_manifest_phase1.csv` for any outcomes/accreditation pages not yet in `official_resource_placements.json`.
+
+---
+
 ## 2026-03-20 (session 3 — baseline commits + regulatory queue)
 
 **Done**

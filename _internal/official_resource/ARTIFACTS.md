@@ -15,7 +15,7 @@
 
 | File | Status | Purpose |
 |---|---|---|
-| `_internal/official_resource/regulatory_candidate_queue.md` | **Ready for curation review** | Curation-ready queue of regulatory/licensure/disclosure candidates. 14 entries; 11 `keep`, 3 `needs-review`, 8 `skip`. See file for placement targets and rationale. |
+| `_internal/official_resource/regulatory_candidate_queue.md` | **Complete — placements executed** | Curation-ready queue of regulatory/licensure/disclosure candidates. 14 entries reviewed; 14 `keep` (3 needs-review resolved), 8 `skip`. All 15 approved placements written to `official_resource_placements.json`. |
 
 ### Planned future artifacts (not yet created)
 

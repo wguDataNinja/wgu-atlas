@@ -1,7 +1,7 @@
 [
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/elementary-education-bachelors-program/ba/program-guide.html",
-    "resource_title": "Elementary Education — Ba Track Program Guide",
+    "resource_title": "Elementary Education \u2014 Ba Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BAELED",
     "surface_label": "Bachelor of Arts, Elementary Education",
@@ -14,7 +14,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/educational-studies-bachelors-program/program-guide-baeseled.html",
-    "resource_title": "Educational Studies – B.A. (Does Not Lead to a Teaching License) Program Guide",
+    "resource_title": "Educational Studies \u2013 B.A. (Does Not Lead to a Teaching License) Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BAESELED",
     "surface_label": "Bachelor of Arts, Educational Studies in Elementary Education",
@@ -27,7 +27,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/educational-studies-bachelors-program/program-guide-baesmes.html",
-    "resource_title": "Educational Studies – B.A. (Does Not Lead to a Teaching License) Program Guide",
+    "resource_title": "Educational Studies \u2013 B.A. (Does Not Lead to a Teaching License) Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BAESMES",
     "surface_label": "Bachelor of Arts, Educational Studies in Secondary Mathematics Education",
@@ -40,7 +40,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/educational-studies-bachelors-program/program-guide-baessesb.html",
-    "resource_title": "Educational Studies – B.A. (Does Not Lead to a Teaching License) Program Guide",
+    "resource_title": "Educational Studies \u2013 B.A. (Does Not Lead to a Teaching License) Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BAESSESB",
     "surface_label": "Bachelor of Arts, Educational Studies in Secondary Biological Science Education",
@@ -53,7 +53,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/educational-studies-bachelors-program/program-guide-baessesc.html",
-    "resource_title": "Educational Studies – B.A. (Does Not Lead to a Teaching License) Program Guide",
+    "resource_title": "Educational Studies \u2013 B.A. (Does Not Lead to a Teaching License) Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BAESSESC",
     "surface_label": "Bachelor of Arts, Educational Studies in Secondary Chemistry Science Education",
@@ -66,7 +66,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/educational-studies-bachelors-program/program-guide-baessese.html",
-    "resource_title": "Educational Studies – B.A. (Does Not Lead to a Teaching License) Program Guide",
+    "resource_title": "Educational Studies \u2013 B.A. (Does Not Lead to a Teaching License) Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BAESSESE",
     "surface_label": "Bachelor of Arts, Educational Studies in Secondary Earth Science Education",
@@ -79,7 +79,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/educational-studies-bachelors-program/program-guide-baessesp.html",
-    "resource_title": "Educational Studies – B.A. (Does Not Lead to a Teaching License) Program Guide",
+    "resource_title": "Educational Studies \u2013 B.A. (Does Not Lead to a Teaching License) Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BAESSESP",
     "surface_label": "Bachelor of Arts, Educational Studies in Secondary Physics Science Education",
@@ -92,7 +92,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/educational-studies-bachelors-program/program-guide-baesspee.html",
-    "resource_title": "Educational Studies – B.A. (Does Not Lead to a Teaching License) Program Guide",
+    "resource_title": "Educational Studies \u2013 B.A. (Does Not Lead to a Teaching License) Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BAESSPEE",
     "surface_label": "Bachelor of Arts, Educational Studies in Special and Elementary Education",
@@ -105,7 +105,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/educational-studies-bachelors-program/program-guide-baesspmm.html",
-    "resource_title": "Educational Studies – B.A. (Does Not Lead to a Teaching License) Program Guide",
+    "resource_title": "Educational Studies \u2013 B.A. (Does Not Lead to a Teaching License) Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BAESSPMM",
     "surface_label": "Bachelor of Arts, Educational Studies in Mild to Moderate Exceptionalities Special Education",
@@ -118,7 +118,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/special-education-bachelors-program/dual-elementary-special-education/program-guide.html",
-    "resource_title": "Special Education — Dual Elementary Special Education Track Program Guide",
+    "resource_title": "Special Education \u2014 Dual Elementary Special Education Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BASPEE",
     "surface_label": "Bachelor of Arts, Special Education and Elementary Education (Dual Licensure)",
@@ -131,7 +131,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/special-education-bachelors-program/mild-moderate/program-guide.html",
-    "resource_title": "Special Education — Mild Moderate Track Program Guide",
+    "resource_title": "Special Education \u2014 Mild Moderate Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BASPMM",
     "surface_label": "Bachelor of Arts, Special Education Mild to Moderate",
@@ -144,7 +144,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-business-degrees/accounting-bachelors-program/program-guide.html",
-    "resource_title": "Accounting – B.S. Program Guide",
+    "resource_title": "Accounting \u2013 B.S. Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BSACC",
     "surface_label": "Bachelor of Science, Accounting",
@@ -157,7 +157,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-business-degrees/communications-bachelors-program/program-guide.html",
-    "resource_title": "Communications – B.S. Program Guide",
+    "resource_title": "Communications \u2013 B.S. Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BSC",
     "surface_label": "Bachelor of Science, Communications",
@@ -170,7 +170,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-it-degrees/cloud-network-engineering-bachelors-program/general/program-guide.html",
-    "resource_title": "BSCNE — General Track Program Guide",
+    "resource_title": "BSCNE \u2014 General Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BSCNE",
     "surface_label": "Bachelor of Science, Cloud and Network Engineering",
@@ -183,7 +183,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-it-degrees/cloud-network-engineering-bachelors-program/aws/program-guide.html",
-    "resource_title": "BSCNE — Aws Track Program Guide",
+    "resource_title": "BSCNE \u2014 Aws Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BSCNEAWS",
     "surface_label": "Bachelor of Science, Cloud and Network Engineering - Amazon Web Services",
@@ -196,7 +196,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-it-degrees/cloud-network-engineering-bachelors-program/azure/program-guide.html",
-    "resource_title": "BSCNE — Azure Track Program Guide",
+    "resource_title": "BSCNE \u2014 Azure Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BSCNEAZR",
     "surface_label": "Bachelor of Science, Cloud and Network Engineering - Microsoft Azure",
@@ -209,7 +209,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-it-degrees/cloud-network-engineering-bachelors-program/cisco/program-guide.html",
-    "resource_title": "BSCNE — Cisco Track Program Guide",
+    "resource_title": "BSCNE \u2014 Cisco Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BSCNECIS",
     "surface_label": "Bachelor of Science, Cloud and Network Engineering - Cisco",
@@ -287,7 +287,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-business-degrees/finance-bachelors-program/program-guide.html",
-    "resource_title": "Finance – B.S. Program Guide",
+    "resource_title": "Finance \u2013 B.S. Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BSFIN",
     "surface_label": "Bachelor of Science, Finance",
@@ -300,7 +300,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-business-degrees/healthcare-administration-bachelors-program/program-guide.html",
-    "resource_title": "Healthcare Administration – B.S. Program Guide",
+    "resource_title": "Healthcare Administration \u2013 B.S. Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BSHA",
     "surface_label": "Bachelor of Science, Healthcare Administration",
@@ -313,7 +313,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/health-human-services/program-guide.html",
-    "resource_title": "Health and Human Services – B.S. Program Guide",
+    "resource_title": "Health and Human Services \u2013 B.S. Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BSHHS",
     "surface_label": "Bachelor of Science, Health and Human Services",
@@ -326,7 +326,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/health-information-management-bachelors-program/cahiim-accreditation.html",
-    "resource_title": "CAHIIM Accreditation – B.S. Health Information Management",
+    "resource_title": "CAHIIM Accreditation \u2013 B.S. Health Information Management",
     "show_on_surface": "program_detail",
     "surface_key": "BSHIM",
     "surface_label": "Bachelor of Science, Health Information Management",
@@ -339,7 +339,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/health-information-management-bachelors-program/program-guide.html",
-    "resource_title": "Health Information Management – B.S. (from the Leavitt School of Health) Program Guide",
+    "resource_title": "Health Information Management \u2013 B.S. (from the Leavitt School of Health) Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BSHIM",
     "surface_label": "Bachelor of Science, Health Information Management",
@@ -352,7 +352,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-business-degrees/human-resources-bachelors-program/program-guide.html",
-    "resource_title": "Human Resource Management – B.S. Program Guide",
+    "resource_title": "Human Resource Management \u2013 B.S. Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BSHR",
     "surface_label": "Bachelor of Science, Human Resource Management",
@@ -365,7 +365,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/health-science-bachelors-program/program-guide.html",
-    "resource_title": "Health Science – B.S. Program Guide",
+    "resource_title": "Health Science \u2013 B.S. Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BSHS",
     "surface_label": "Bachelor of Science, Health Science",
@@ -391,7 +391,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-business-degrees/it-information-technology-management-bachelors-program/program-guide.html",
-    "resource_title": "Information Technology Management – B.S. Program Guide",
+    "resource_title": "Information Technology Management \u2013 B.S. Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BSITM",
     "surface_label": "Bachelor of Science, Information Technology Management",
@@ -430,7 +430,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-business-degrees/marketing-bachelors-program/program-guide.html",
-    "resource_title": "Marketing – B.S. Program Guide",
+    "resource_title": "Marketing \u2013 B.S. Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BSMKT",
     "surface_label": "Bachelor of Science, Marketing",
@@ -443,7 +443,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/rn-to-bsn-nursing-bachelors-program/program-guide.html",
-    "resource_title": "Nursing (RN-to-BSN online) – B.S. Program Guide",
+    "resource_title": "Nursing (RN-to-BSN online) \u2013 B.S. Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BSNU",
     "surface_label": "Bachelor of Science, Nursing",
@@ -456,7 +456,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/public-health-bachelors-program/program-guide.html",
-    "resource_title": "Public Health – B.S. Program Guide",
+    "resource_title": "Public Health \u2013 B.S. Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BSPH",
     "surface_label": "Bachelor of Science, Public Health",
@@ -469,7 +469,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/psychology-bachelors-program/program-guide.html",
-    "resource_title": "Psychology – B.S. Program Guide",
+    "resource_title": "Psychology \u2013 B.S. Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BSPSY",
     "surface_label": "Bachelor of Science in Psychology",
@@ -482,7 +482,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-business-degrees/supply-chain-operations-management-bachelors-program/program-guide.html",
-    "resource_title": "Supply Chain and Operations Management – B.S. Program Guide",
+    "resource_title": "Supply Chain and Operations Management \u2013 B.S. Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BSSCOM",
     "surface_label": "Bachelor of Science Supply Chain and Operations Management",
@@ -560,7 +560,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-it-degrees/software-engineering-bachelors-program/c-sharp/program-guide-c.html",
-    "resource_title": "Software Engineering — C# Track Program Guide",
+    "resource_title": "Software Engineering \u2014 C# Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BSSWE_C",
     "surface_label": "Bachelor of Science, Software Engineering",
@@ -573,7 +573,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-business-degrees/user-experience-design-bachelors-program/program-guide.html",
-    "resource_title": "User Experience Design – B.S. Program Guide",
+    "resource_title": "User Experience Design \u2013 B.S. Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "BSUXD",
     "surface_label": "Bachelor of Science, User Experience Design",
@@ -586,7 +586,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/endorsements/early-childhood-education/program-guide.html",
-    "resource_title": "View All Education Endorsement Programs — Early Childhood Education Track Program Guide",
+    "resource_title": "View All Education Endorsement Programs \u2014 Early Childhood Education Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "ENDECE",
     "surface_label": "Endorsement Preparation Program, Early Childhood Education",
@@ -599,7 +599,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/endorsements/ell-esl-english-language-learning/program-guide.html",
-    "resource_title": "View All Education Endorsement Programs — Ell Esl English Language Learning Track Program Guide",
+    "resource_title": "View All Education Endorsement Programs \u2014 Ell Esl English Language Learning Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "ENDELL",
     "surface_label": "Endorsement Preparation Program, English Language Learning",
@@ -612,7 +612,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/endorsements/middle-grades-math/program-guide.html",
-    "resource_title": "View All Education Endorsement Programs — Middle Grades Math Track Program Guide",
+    "resource_title": "View All Education Endorsement Programs \u2014 Middle Grades Math Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "ENDMEMG",
     "surface_label": "Endorsement Preparation Program, Middle Grades Math",
@@ -625,7 +625,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/endorsements/middle-grades-science/program-guide.html",
-    "resource_title": "View All Education Endorsement Programs — Middle Grades Science Track Program Guide",
+    "resource_title": "View All Education Endorsement Programs \u2014 Middle Grades Science Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "ENDSEMG",
     "surface_label": "Endorsement Preparation Program, Middle Grades Science",
@@ -638,7 +638,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/endorsements/secondary-biology/program-guide.html",
-    "resource_title": "View All Education Endorsement Programs — Secondary Biology Track Program Guide",
+    "resource_title": "View All Education Endorsement Programs \u2014 Secondary Biology Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "ENDSESB",
     "surface_label": "Endorsement Preparation Program, Biology",
@@ -651,7 +651,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/endorsements/secondary-chemistry/program-guide.html",
-    "resource_title": "View All Education Endorsement Programs — Secondary Chemistry Track Program Guide",
+    "resource_title": "View All Education Endorsement Programs \u2014 Secondary Chemistry Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "ENDSESC",
     "surface_label": "Endorsement Preparation Program, Chemistry",
@@ -664,7 +664,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/endorsements/secondary-earth-science/program-guide.html",
-    "resource_title": "View All Education Endorsement Programs — Secondary Earth Science Track Program Guide",
+    "resource_title": "View All Education Endorsement Programs \u2014 Secondary Earth Science Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "ENDSESE",
     "surface_label": "Endorsement Preparation Program, Earth Science",
@@ -677,7 +677,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/endorsements/secondary-physics/program-guide.html",
-    "resource_title": "View All Education Endorsement Programs — Secondary Physics Track Program Guide",
+    "resource_title": "View All Education Endorsement Programs \u2014 Secondary Physics Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "ENDSESP",
     "surface_label": "Endorsement Preparation Program, Physics",
@@ -690,7 +690,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-business-degrees/accounting-masters-program/auditing/program-guide.html",
-    "resource_title": "Accounting – M.S. — Auditing Track Program Guide",
+    "resource_title": "Accounting \u2013 M.S. \u2014 Auditing Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MACCA",
     "surface_label": "Master of Science in Accounting, Auditing Specialization",
@@ -703,7 +703,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-business-degrees/accounting-masters-program/financial-reporting/program-guide.html",
-    "resource_title": "Accounting – M.S. — Financial Reporting Track Program Guide",
+    "resource_title": "Accounting \u2013 M.S. \u2014 Financial Reporting Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MACCF",
     "surface_label": "Master of Science in Accounting, Financial Reporting Specialization",
@@ -716,7 +716,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-business-degrees/accounting-masters-program/management-accounting/program-guide.html",
-    "resource_title": "Accounting – M.S. — Management Accounting Track Program Guide",
+    "resource_title": "Accounting \u2013 M.S. \u2014 Management Accounting Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MACCM",
     "surface_label": "Master of Science in Accounting, Management Accounting Specialization",
@@ -729,7 +729,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-business-degrees/accounting-masters-program/taxation/program-guide.html",
-    "resource_title": "Accounting – M.S. — Taxation Track Program Guide",
+    "resource_title": "Accounting \u2013 M.S. \u2014 Taxation Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MACCT",
     "surface_label": "Master of Science in Accounting, Taxation Specialization",
@@ -755,7 +755,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/mathematics-education-masters-program/k-6/program-guide.html",
-    "resource_title": "Mathematics Education — K 6 Track Program Guide",
+    "resource_title": "Mathematics Education \u2014 K 6 Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MAMEK6",
     "surface_label": "Master of Arts, Mathematics Education (K-6)",
@@ -768,7 +768,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/mathematics-education-masters-program/middle-grades/program-guide.html",
-    "resource_title": "Mathematics Education — Middle Grades Track Program Guide",
+    "resource_title": "Mathematics Education \u2014 Middle Grades Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MAMEMG",
     "surface_label": "Master of Arts in Mathematics Education (Middle Grades)",
@@ -781,7 +781,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/mathematics-education-masters-program/ma/program-guide.html",
-    "resource_title": "Mathematics Education — Ma Track Program Guide",
+    "resource_title": "Mathematics Education \u2014 Ma Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MAMES",
     "surface_label": "Master of Arts in Mathematics Education (Secondary)",
@@ -807,7 +807,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/chemistry-education-masters-program/ma/program-guide.html",
-    "resource_title": "Chemistry Education — Ma Track Program Guide",
+    "resource_title": "Chemistry Education \u2014 Ma Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MASESC",
     "surface_label": "Master of Arts Science Education (Secondary Chemistry)",
@@ -820,7 +820,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/earth-science-education-masters-program/ma/program-guide.html",
-    "resource_title": "Earth Science Education — Ma Track Program Guide",
+    "resource_title": "Earth Science Education \u2014 Ma Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MASESE",
     "surface_label": "Master of Arts Science Education (Secondary Earth Science)",
@@ -833,7 +833,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/physics-education-masters-program/ma/program-guide.html",
-    "resource_title": "Physics Education — Ma Track Program Guide",
+    "resource_title": "Physics Education \u2014 Ma Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MASESP",
     "surface_label": "Master of Arts Science Education (Secondary Physics)",
@@ -872,7 +872,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/mathematics-education-masters-program/mat/program-guide.html",
-    "resource_title": "Mathematics Education — Mat Track Program Guide",
+    "resource_title": "Mathematics Education \u2014 Mat Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MATMES",
     "surface_label": "Master of Arts in Teaching, Mathematics Education (Secondary)",
@@ -885,7 +885,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/biology-education-masters-program/mat/program-guide.html",
-    "resource_title": "Biology Education — Mat Track Program Guide",
+    "resource_title": "Biology Education \u2014 Mat Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MATSESB",
     "surface_label": "Master of Arts in Teaching, Science Education (Secondary Biology)",
@@ -898,7 +898,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/chemistry-education-masters-program/mat/program-guide.html",
-    "resource_title": "Chemistry Education — Mat Track Program Guide",
+    "resource_title": "Chemistry Education \u2014 Mat Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MATSESC",
     "surface_label": "Master of Arts in Teaching, Science Education (Secondary Chemistry)",
@@ -911,7 +911,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/earth-science-education-masters-program/mat/program-guide.html",
-    "resource_title": "Earth Science Education — Mat Track Program Guide",
+    "resource_title": "Earth Science Education \u2014 Mat Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MATSESE",
     "surface_label": "Master of Arts in Teaching, Science Education (Secondary Earth Science)",
@@ -924,7 +924,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/physics-education-masters-program/mat/program-guide.html",
-    "resource_title": "Physics Education — Mat Track Program Guide",
+    "resource_title": "Physics Education \u2014 Mat Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MATSESP",
     "surface_label": "Master of Arts in Teaching, Science Education (Secondary Physics)",
@@ -1028,7 +1028,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/curriculum-instruction-education-masters-program/program-guide.html",
-    "resource_title": "Curriculum and Instruction – M.S. Program Guide",
+    "resource_title": "Curriculum and Instruction \u2013 M.S. Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSCIN",
     "surface_label": "Master of Science, Curriculum and Instruction",
@@ -1041,7 +1041,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-it-degrees/computer-science-masters-program/artificial-intelligence-machine-learning/program-guide.html",
-    "resource_title": "Computer Science — Artificial Intelligence Machine Learning Track Program Guide",
+    "resource_title": "Computer Science \u2014 Artificial Intelligence Machine Learning Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSCSAIML",
     "surface_label": "Master of Science, Computer Science, Artificial Intelligence and Machine Learning",
@@ -1054,7 +1054,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-it-degrees/computer-science-masters-program/computing-systems/program-guide.html",
-    "resource_title": "Computer Science — Computing Systems Track Program Guide",
+    "resource_title": "Computer Science \u2014 Computing Systems Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSCSCS",
     "surface_label": "Master of Science, Computer Science, Computing Systems",
@@ -1067,7 +1067,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-it-degrees/computer-science-masters-program/human-computer-interaction/program-guide.html",
-    "resource_title": "Computer Science — Human Computer Interaction Track Program Guide",
+    "resource_title": "Computer Science \u2014 Human Computer Interaction Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSCSHCI",
     "surface_label": "Master of Science, Computer Science, Human-Computer Interaction",
@@ -1093,7 +1093,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-it-degrees/computer-science/accelerated/program-guide.html",
-    "resource_title": "Computer Science — Accelerated Track Program Guide",
+    "resource_title": "Computer Science \u2014 Accelerated Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSCSUG",
     "surface_label": "Bachelor of Science, Computer Science (BSCS to MSCS)",
@@ -1106,7 +1106,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-it-degrees/data-analytics-masters-program/data-engineering/program-guide.html",
-    "resource_title": "Data Analytics – M.S. (from the School of Technology) — Data Engineering Track Program Guide",
+    "resource_title": "Data Analytics \u2013 M.S. (from the School of Technology) \u2014 Data Engineering Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSDADE",
     "surface_label": "Master of Science, Data Analytics - Data Engineering",
@@ -1119,7 +1119,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-it-degrees/data-analytics-masters-program/decision-process-engineering/program-guide.html",
-    "resource_title": "M.S. Data Analytics – Decision Process Engineering Program Guide",
+    "resource_title": "M.S. Data Analytics \u2013 Decision Process Engineering Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSDADPE",
     "surface_label": "Master of Science, Data Analytics - Decision Process Engineering",
@@ -1132,7 +1132,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-it-degrees/data-analytics-masters-program/data-science.html",
-    "resource_title": "Data Science Specialization | Data Analytics – M.S.",
+    "resource_title": "Data Science Specialization | Data Analytics \u2013 M.S.",
     "show_on_surface": "program_detail",
     "surface_key": "MSDADS",
     "surface_label": "Master of Science, Data Analytics - Data Science",
@@ -1145,7 +1145,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-it-degrees/data-analytics-masters-program/data-science/program-guide.html",
-    "resource_title": "Data Analytics – M.S. (from the School of Technology) — Data Science Track Program Guide",
+    "resource_title": "Data Analytics \u2013 M.S. (from the School of Technology) \u2014 Data Science Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSDADS",
     "surface_label": "Master of Science, Data Analytics - Data Science",
@@ -1158,7 +1158,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-teaching-degrees/educational-leadership-masters-program/program-guide.html",
-    "resource_title": "Educational Leadership – M.S. Program Guide",
+    "resource_title": "Educational Leadership \u2013 M.S. Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSEDL",
     "surface_label": "Master of Science, Educational Leadership",
@@ -1171,7 +1171,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-business-degrees/human-resources-masters-program/program-guide.html",
-    "resource_title": "Human Resource Management – M.S. Program Guide",
+    "resource_title": "Human Resource Management \u2013 M.S. Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSHRM",
     "surface_label": "Master of Science, Human Resource Management",
@@ -1197,7 +1197,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-it-degrees/information-technology-masters-program/product-management/program-guide.html",
-    "resource_title": "MSIT Redev — Product Management Track Program Guide",
+    "resource_title": "MSIT Redev \u2014 Product Management Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSITPM",
     "surface_label": "Master of Science, Information Technology - Product Management",
@@ -1210,7 +1210,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-it-degrees/information-technology-bachelors-program/accelerated/program-guide.html",
-    "resource_title": "Information Technology — Accelerated Track Program Guide",
+    "resource_title": "Information Technology \u2014 Accelerated Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSITUG",
     "surface_label": "Bachelor of Science, Information Technology (BSIT to MSIT)",
@@ -1223,7 +1223,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-business-degrees/marketing-masters-program/digital-marketing/program-guide.html",
-    "resource_title": "Marketing – M.S. — Digital Marketing Track Program Guide",
+    "resource_title": "Marketing \u2013 M.S. \u2014 Digital Marketing Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSMK",
     "surface_label": "Master of Science in Marketing, Digital Marketing Specialization",
@@ -1236,7 +1236,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-business-degrees/marketing-masters-program/marketing-analytics/program-guide.html",
-    "resource_title": "Marketing – M.S. — Marketing Analytics Track Program Guide",
+    "resource_title": "Marketing \u2013 M.S. \u2014 Marketing Analytics Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSMKA",
     "surface_label": "Master of Science in Marketing, Marketing Analytics Specialization",
@@ -1249,7 +1249,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-business-degrees/management-leadership-masters-program/program-guide.html",
-    "resource_title": "Management and Leadership – M.S. Program Guide",
+    "resource_title": "Management and Leadership \u2013 M.S. Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSML",
     "surface_label": "Master of Science, Management and Leadership",
@@ -1262,7 +1262,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/bsn-to-msn-nursing-education-masters-program/program-guide.html",
-    "resource_title": "Nursing – Education (BSN-to-MSN Program) – M.S. Program Guide",
+    "resource_title": "Nursing \u2013 Education (BSN-to-MSN Program) \u2013 M.S. Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSNUED",
     "surface_label": "Master of Science, Nursing - Education",
@@ -1275,7 +1275,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/family-nurse-practitioner-masters/program-guide.html",
-    "resource_title": "M.S. Nursing – Family Nurse Practitioner (BSN to MSN) Program Guide",
+    "resource_title": "M.S. Nursing \u2013 Family Nurse Practitioner (BSN to MSN) Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSNUFNP",
     "surface_label": "Master of Science, Nursing - Family Nurse Practitioner (BSN to MSN)",
@@ -1288,7 +1288,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/bsn-to-msn-nursing-leadership-management-masters-program/program-guide.html",
-    "resource_title": "Nursing – Leadership and Management (BSN-to-MSN Program) – M.S. Program Guide",
+    "resource_title": "Nursing \u2013 Leadership and Management (BSN-to-MSN Program) \u2013 M.S. Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSNULM",
     "surface_label": "Master of Science, Nursing - Leadership and Management",
@@ -1301,7 +1301,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/nursing-informatics-bsn-to-msn-masters-program/program-guide.html",
-    "resource_title": "Nursing – Nursing Informatics (BSN-to-MSN Program) – M.S. Program Guide",
+    "resource_title": "Nursing \u2013 Nursing Informatics (BSN-to-MSN Program) \u2013 M.S. Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSNUNI",
     "surface_label": "Master of Science, Nursing - Nursing Informatics",
@@ -1314,7 +1314,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/psychiatric-mental-health-nurse-practitioner-masters-program/program-guide.html",
-    "resource_title": "Nursing – Psychiatric Mental Health Nurse Practitioner (BSN-to-MSN Program) – M.S. (Available in select states) Program Guide",
+    "resource_title": "Nursing \u2013 Psychiatric Mental Health Nurse Practitioner (BSN-to-MSN Program) \u2013 M.S. (Available in select states) Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSNUPMHNP",
     "surface_label": "Master of Science, Nursing - Psychiatric Mental Health Nurse Practitioner",
@@ -1327,7 +1327,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/nursing-education-rn-to-msn-masters-program/program-guide.html",
-    "resource_title": "Nursing – Education (RN-to-MSN Program) – M.S. Program Guide",
+    "resource_title": "Nursing \u2013 Education (RN-to-MSN Program) \u2013 M.S. Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSRNNUEDGR",
     "surface_label": "Master of Science, Nursing - Education",
@@ -1340,7 +1340,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/rn-to-msn-nursing-leadership-management-masters-program/program-guide.html",
-    "resource_title": "Nursing – Leadership and Management (RN-to-MSN Program) – M.S. Program Guide",
+    "resource_title": "Nursing \u2013 Leadership and Management (RN-to-MSN Program) \u2013 M.S. Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSRNNULMGR",
     "surface_label": "Master of Science, Nursing - Leadership and Management",
@@ -1353,7 +1353,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/nursing-informatics-rn-to-msn-masters-program/program-guide.html",
-    "resource_title": "Nursing – Nursing Informatics (RN-to-MSN Program) – M.S. Program Guide",
+    "resource_title": "Nursing \u2013 Nursing Informatics (RN-to-MSN Program) \u2013 M.S. Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSRNNUNIFGR",
     "surface_label": "Master of Science, Nursing - Nursing Informatics (RN to MSN)",
@@ -1379,7 +1379,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-it-degrees/software-engineering-masters-program/ai-engineering/program-guide.html",
-    "resource_title": "Software Engineering — Ai Engineering Track Program Guide",
+    "resource_title": "Software Engineering \u2014 Ai Engineering Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSSWEAIE",
     "surface_label": "Master of Science, Software Engineering - AI Engineering",
@@ -1392,7 +1392,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-it-degrees/software-engineering-masters-program/domain-driven-design/program-guide.html",
-    "resource_title": "Software Engineering — Domain Driven Design Track Program Guide",
+    "resource_title": "Software Engineering \u2014 Domain Driven Design Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSSWEDDD",
     "surface_label": "Master of Science, Software Engineering - Domain Driven Design",
@@ -1405,7 +1405,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-it-degrees/software-engineering-masters-program/devops-engineering/program-guide.html",
-    "resource_title": "Software Engineering — Devops Engineering Track Program Guide",
+    "resource_title": "Software Engineering \u2014 Devops Engineering Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSSWEDOE",
     "surface_label": "Master of Science, Software Engineering - DevOps Engineering",
@@ -1418,7 +1418,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-it-degrees/software-engineering-bachelors-program/accelerated/program-guide.html",
-    "resource_title": "Software Engineering — Accelerated Track Program Guide",
+    "resource_title": "Software Engineering \u2014 Accelerated Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "MSSWEUG",
     "surface_label": "Bachelor of Science, Software Engineering (BSSWE to MSSWE)",
@@ -1431,7 +1431,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/post-masters-nursing-certificate/education/program-guide.html",
-    "resource_title": "Post-Master's Certificates in Nursing — Education Track Program Guide",
+    "resource_title": "Post-Master's Certificates in Nursing \u2014 Education Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "PMCNUED",
     "surface_label": "Post-Master's Certificate, Nursing - Nursing Education (Post-MSN)",
@@ -1444,7 +1444,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/post-masters-nursing-certificate/family-nurse-practitioner/program-guide.html",
-    "resource_title": "Post-Master's Certificates in Nursing — Family Nurse Practitioner Track Program Guide",
+    "resource_title": "Post-Master's Certificates in Nursing \u2014 Family Nurse Practitioner Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "PMCNUFNP",
     "surface_label": "Post-Master's Certificate, Nursing - Family Nurse Practitioner (Post-MSN)",
@@ -1457,7 +1457,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/post-masters-nursing-certificate/leadership-management/program-guide.html",
-    "resource_title": "Post-Master's Certificates in Nursing — Leadership Management Track Program Guide",
+    "resource_title": "Post-Master's Certificates in Nursing \u2014 Leadership Management Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "PMCNULM",
     "surface_label": "Post-Master's Certificate, Nursing - Leadership and Management (Post-MSN)",
@@ -1470,7 +1470,7 @@
   },
   {
     "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/post-masters-nursing-certificate/psychiatric-mental-health-nurse-practitioner/program-guide.html",
-    "resource_title": "Post-Master's Certificates in Nursing — Psychiatric Mental Health Nurse Practitioner Track Program Guide",
+    "resource_title": "Post-Master's Certificates in Nursing \u2014 Psychiatric Mental Health Nurse Practitioner Track Program Guide",
     "show_on_surface": "program_detail",
     "surface_key": "PMCNUPMHNP",
     "surface_label": "Post-Master's Certificate, Nursing - Psychiatric Mental Health Nurse Practitioner (Post-MSN)",
@@ -1505,6 +1505,201 @@
     "display_priority": 15,
     "resource_group": "accreditation",
     "benefit_reason": "Official school-level accreditation outcomes and reports.",
+    "status": "show"
+  },
+  {
+    "resource_url": "https://www.wgu.edu/online-teaching-degrees/state-licensure.html",
+    "resource_title": "Teaching State Licensure Information",
+    "show_on_surface": "school_detail",
+    "surface_key": "education",
+    "surface_label": "School of Education",
+    "site_area": "schools",
+    "placement_mode": "sidebar",
+    "display_priority": 12,
+    "resource_group": "regulatory_licensure",
+    "benefit_reason": "State-by-state teaching licensure availability; enrollment-critical because WGU education programs are not approved in all states for all license types.",
+    "status": "show"
+  },
+  {
+    "resource_url": "https://www.wgu.edu/online-teaching-degrees/teaching-license-certification.html",
+    "resource_title": "Teaching License & Certification Overview",
+    "show_on_surface": "school_detail",
+    "surface_key": "education",
+    "surface_label": "School of Education",
+    "site_area": "schools",
+    "placement_mode": "sidebar",
+    "display_priority": 12,
+    "resource_group": "regulatory_licensure",
+    "benefit_reason": "Explains what a teaching license is, the six-step certification process, and what students must do to obtain one.",
+    "status": "show"
+  },
+  {
+    "resource_url": "https://www.wgu.edu/online-teaching-degrees/teacher-licensure-programs.html",
+    "resource_title": "WGU Teacher Licensure Programs",
+    "show_on_surface": "school_detail",
+    "surface_key": "education",
+    "surface_label": "School of Education",
+    "site_area": "schools",
+    "placement_mode": "sidebar",
+    "display_priority": 12,
+    "resource_group": "regulatory_licensure",
+    "benefit_reason": "Lists all WGU programs that lead to teaching licensure, with program timelines, tuition, and certification requirements.",
+    "status": "show"
+  },
+  {
+    "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/state-licensure.html",
+    "resource_title": "Nursing State Licensure Information",
+    "show_on_surface": "school_detail",
+    "surface_key": "health",
+    "surface_label": "Leavitt School of Health",
+    "site_area": "schools",
+    "placement_mode": "sidebar",
+    "display_priority": 12,
+    "resource_group": "regulatory_licensure",
+    "benefit_reason": "State-by-state nursing program availability; enrollment-critical because prelicensure nursing is offered only in select states.",
+    "status": "show"
+  },
+  {
+    "resource_url": "https://www.wgu.edu/admissions/clinicals.html",
+    "resource_title": "Health and Nursing Clinical Requirements",
+    "show_on_surface": "school_detail",
+    "surface_key": "health",
+    "surface_label": "Leavitt School of Health",
+    "site_area": "schools",
+    "placement_mode": "sidebar",
+    "display_priority": 12,
+    "resource_group": "regulatory_licensure",
+    "benefit_reason": "Explains clinical hour requirements, placement support, and state availability for nursing programs with mandatory clinical rotations.",
+    "status": "show"
+  },
+  {
+    "resource_url": "https://www.wgu.edu/admissions/clinicals.html",
+    "resource_title": "Nursing Clinical Requirements",
+    "show_on_surface": "program_detail",
+    "surface_key": "BSNPLTR",
+    "surface_label": "Bachelor of Science, Nursing \u2013 Prelicensure",
+    "site_area": "programs",
+    "placement_mode": "sidebar",
+    "display_priority": 12,
+    "resource_group": "regulatory_licensure",
+    "benefit_reason": "Clinical rotations are required and state availability is enrollment-critical for the prelicensure nursing program.",
+    "status": "show"
+  },
+  {
+    "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/rn-to-bsn-nursing-bachelors-program/nclex-rn-exam.html",
+    "resource_title": "NCLEX-RN Exam \u2013 Nursing Licensure",
+    "show_on_surface": "program_detail",
+    "surface_key": "BSNPLTR",
+    "surface_label": "Bachelor of Science, Nursing \u2013 Prelicensure",
+    "site_area": "programs",
+    "placement_mode": "sidebar",
+    "display_priority": 12,
+    "resource_group": "regulatory_licensure",
+    "benefit_reason": "Explains the NCLEX-RN board exam required for nursing licensure and how WGU prepares students for it.",
+    "status": "show"
+  },
+  {
+    "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/rn-to-bsn-nursing-bachelors-program/nclex-rn-exam.html",
+    "resource_title": "NCLEX-RN Exam \u2013 Nursing Licensure",
+    "show_on_surface": "program_detail",
+    "surface_key": "BSNU",
+    "surface_label": "Bachelor of Science, Nursing",
+    "site_area": "programs",
+    "placement_mode": "sidebar",
+    "display_priority": 12,
+    "resource_group": "regulatory_licensure",
+    "benefit_reason": "Explains the NCLEX-RN board exam for nursing licensure and how WGU RN-to-BSN graduates prepare for it.",
+    "status": "show"
+  },
+  {
+    "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/state-licensure.html",
+    "resource_title": "Nursing State Licensure Information",
+    "show_on_surface": "program_detail",
+    "surface_key": "BSPNTR",
+    "surface_label": "Bachelor of Science, Nursing \u2013 Prelicensure (Pre-Nursing)",
+    "site_area": "programs",
+    "placement_mode": "sidebar",
+    "display_priority": 12,
+    "resource_group": "regulatory_licensure",
+    "benefit_reason": "Prelicensure nursing is available only in select states; verify state eligibility before enrolling in the pre-nursing pathway.",
+    "status": "show"
+  },
+  {
+    "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/clinical-experience/fnp.html",
+    "resource_title": "FNP Clinical Placement Information",
+    "show_on_surface": "program_detail",
+    "surface_key": "MSNUFNP",
+    "surface_label": "Master of Science, Nursing \u2013 Family Nurse Practitioner",
+    "site_area": "programs",
+    "placement_mode": "sidebar",
+    "display_priority": 12,
+    "resource_group": "regulatory_licensure",
+    "benefit_reason": "Clinical placement for FNP: 650 required hours, compliance checklist, state availability, and one-year advance planning requirement.",
+    "status": "show"
+  },
+  {
+    "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/clinical-experience/fnp-preceptor.html",
+    "resource_title": "FNP Preceptor Requirements",
+    "show_on_surface": "program_detail",
+    "surface_key": "MSNUFNP",
+    "surface_label": "Master of Science, Nursing \u2013 Family Nurse Practitioner",
+    "site_area": "programs",
+    "placement_mode": "sidebar",
+    "display_priority": 12,
+    "resource_group": "regulatory_licensure",
+    "benefit_reason": "Explains who can serve as an FNP preceptor, supervision progression across three clinical courses, and state licensing constraints.",
+    "status": "show"
+  },
+  {
+    "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/clinical-experience/pmhnp.html",
+    "resource_title": "PMHNP Clinical Placement Information",
+    "show_on_surface": "program_detail",
+    "surface_key": "MSNUPMHNP",
+    "surface_label": "Master of Science, Nursing \u2013 Psychiatric Mental Health Nurse Practitioner",
+    "site_area": "programs",
+    "placement_mode": "sidebar",
+    "display_priority": 12,
+    "resource_group": "regulatory_licensure",
+    "benefit_reason": "Clinical placement for PMHNP: 650 hours across two psychiatric sites, state availability, and one-year advance planning requirement.",
+    "status": "show"
+  },
+  {
+    "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/clinical-experience/pmhnp-preceptor.html",
+    "resource_title": "PMHNP Preceptor Requirements",
+    "show_on_surface": "program_detail",
+    "surface_key": "MSNUPMHNP",
+    "surface_label": "Master of Science, Nursing \u2013 Psychiatric Mental Health Nurse Practitioner",
+    "site_area": "programs",
+    "placement_mode": "sidebar",
+    "display_priority": 12,
+    "resource_group": "regulatory_licensure",
+    "benefit_reason": "Explains PMHNP preceptor qualifications, two-site minimum requirement, supervision progression, and state licensing constraints.",
+    "status": "show"
+  },
+  {
+    "resource_url": "https://www.wgu.edu/online-business-degrees/state-licensure.html",
+    "resource_title": "Business Licensure Information by State",
+    "show_on_surface": "school_detail",
+    "surface_key": "business",
+    "surface_label": "School of Business",
+    "site_area": "schools",
+    "placement_mode": "sidebar",
+    "display_priority": 12,
+    "resource_group": "regulatory_licensure",
+    "benefit_reason": "State-specific requirements for business-related licensure, including CPA exam eligibility and state accounting board rules.",
+    "status": "show"
+  },
+  {
+    "resource_url": "https://www.wgu.edu/online-it-degrees/it-certifications.html",
+    "resource_title": "IT Certifications Included in WGU Degrees",
+    "show_on_surface": "school_detail",
+    "surface_key": "technology",
+    "surface_label": "School of Technology",
+    "site_area": "schools",
+    "placement_mode": "sidebar",
+    "display_priority": 12,
+    "resource_group": "regulatory_licensure",
+    "benefit_reason": "Explains which industry certifications (CompTIA, AWS, Microsoft, Cisco, ISC2, and others) are embedded in WGU IT degree programs.",
     "status": "show"
   }
 ]

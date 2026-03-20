@@ -13,6 +13,7 @@ type Props = {
 const GROUP_LABELS: Record<string, string> = {
   outcomes: "Outcomes",
   accreditation: "Accreditation",
+  regulatory_licensure: "Licensure & Exams",
   program_variant: "Specializations",
   program_guide: "Program Guides",
 };
