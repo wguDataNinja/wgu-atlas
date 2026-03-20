@@ -163,6 +163,8 @@ These should not be reopened by default.
 - Approved zero-overlap lineage events require explicit rationale.
 - Suppressed or unresolved lineage events should not surface by default.
 
+**Ecosystem index note:** A broader WGU online ecosystem index now exists at `_internal/WGU_ONLINE_ECOSYSTEM_INDEX.md` for future homepage/community/social exploration. It does not change the current product posture or the deferred status of Reddit/community integration.
+
 ---
 
 ## 8. Open questions / blockers

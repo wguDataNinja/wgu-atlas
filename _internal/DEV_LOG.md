@@ -5,6 +5,24 @@ Each entry records what changed, decisions locked, what's blocked, and the next 
 
 ---
 
+## 2026-03-20 (session 6 — ecosystem index)
+
+**Done**
+- Created `_internal/WGU_ONLINE_ECOSYSTEM_INDEX.md` — internal source atlas for official/unofficial/community/media surfaces related to WGU
+- Added cross-reference note to `_internal/ATLAS_CONTROL.md` (backlog area)
+- Added repo map entry and short subsection to `_internal/ATLAS_REPO_MEMORY.md`
+
+**Decisions locked**
+- Ecosystem index is reference/awareness only; does not change product posture or deferred status of Reddit/community integration
+
+**Blocked / open**
+- None; pure documentation session
+
+**Next starting task**
+Outcomes + accreditation completeness audit (Tier 2): pick up where official-resource workstream left off.
+
+---
+
 ## 2026-03-20 (session 5 — regulatory gap verification)
 
 **Done**

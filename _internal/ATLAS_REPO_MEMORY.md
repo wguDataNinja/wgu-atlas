@@ -141,6 +141,7 @@ Important config facts:
 | `screenshots/` | visual project captures (PNG snapshots of live pages) |
 | `content_map.txt` | generated full-site content reference; regenerate with `generate_content_map.js` after major UI changes |
 | `_internal/youtube/` | YouTube workstream notes and filtered title artifacts |
+| `_internal/WGU_ONLINE_ECOSYSTEM_INDEX.md` | ecosystem reference map — official, unofficial, and external discussion/community/media surfaces related to WGU |
 
 ---
 
@@ -671,6 +672,13 @@ These are durable “good bets,” not automatic priorities.
 - continuity/lineage system sprawl
 - compare-system expansion beyond current bounded purpose
 - cleanup work without clear leverage
+
+### WGU online ecosystem index
+
+- `_internal/WGU_ONLINE_ECOSYSTEM_INDEX.md` inventories official WGU public channels, official student/community surfaces, unofficial Reddit/Facebook/Discord communities, external forums, review platforms, and the creator/media ecosystem
+- used for internal research, curation, and future homepage/community/social exploration
+- inclusion in the index does not imply product surfacing
+- does not change the deferred status of Reddit/community integration
 
 ---
 
