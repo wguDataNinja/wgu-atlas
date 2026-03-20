@@ -10,6 +10,7 @@ import {
 } from "@/lib/data";
 import type { RosterCourse } from "@/lib/types";
 import RelevantResources from "@/components/resources/RelevantResources";
+import LearningOutcomes from "./LearningOutcomes";
 
 type Props = { params: Promise<{ code: string }> };
 
@@ -201,36 +202,10 @@ export default async function ProgramDetailPage({ params }: Props) {
               LEARNING OUTCOMES (collapsible)
               ============================================================ */}
           {enriched?.outcomes && enriched.outcomes.length > 0 && (
-            <section className="mb-8">
-              <details className="group">
-                <summary className="flex items-center gap-2 cursor-pointer list-none">
-                  <div className="w-1 h-5 bg-blue-600 rounded shrink-0" />
-                  <h2 className="text-lg font-bold text-slate-800">Learning Outcomes</h2>
-                  <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
-                    {enriched.outcomes_source}
-                  </span>
-                  <span className="text-xs text-slate-400 ml-auto group-open:hidden">
-                    Show ▾
-                  </span>
-                  <span className="text-xs text-slate-400 ml-auto hidden group-open:inline">
-                    Hide ▴
-                  </span>
-                </summary>
-                <div className="mt-3 pl-3">
-                  <p className="text-xs text-slate-400 mb-3">
-                    Official WGU-authored outcomes from the catalog Program Outcomes section.
-                  </p>
-                  <ul className="space-y-2">
-                    {enriched.outcomes.map((outcome, i) => (
-                      <li key={i} className="flex gap-2 text-sm text-slate-700">
-                        <span className="text-slate-300 mt-0.5 shrink-0">•</span>
-                        <span>{outcome}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </details>
-            </section>
+            <LearningOutcomes
+              outcomes={enriched.outcomes}
+              source={enriched.outcomes_source}
+            />
           )}
 
           {/* ============================================================

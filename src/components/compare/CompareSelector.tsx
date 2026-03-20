@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import type { ProgramRecord, ProgramEnriched } from "@/lib/types";
 import { getIndexName } from "@/lib/families";
 import { classifyDegreeLevel, DEGREE_LEVEL_ORDER } from "@/lib/programs";
+import { COLLEGES, LEVELS } from "@/lib/colleges";
 import { buildLabPayload } from "@/lib/compareUtils";
 import CompareView from "./CompareView";
 
@@ -16,34 +17,37 @@ export default function CompareSelector({
 }) {
   const [selectedA, setSelectedA] = useState<string | null>(null);
   const [selectedB, setSelectedB] = useState<string | null>(null);
-  const [schoolFilter, setSchoolFilter] = useState("");
-  const [levelFilter, setLevelFilter] = useState("");
+  const [college, setCollege] = useState("");
+  const [level, setLevel] = useState("");
+  const [search, setSearch] = useState("");
   // When both programs are selected, selectors collapse to a compact bar.
   const [expandedSelectors, setExpandedSelectors] = useState(true);
 
-  // Schools available from the programs list
-  const schools = useMemo(
-    () => [...new Set(programs.map((p) => p.school))].sort(),
-    [programs]
-  );
-
-  // Degree levels available, restricted to the selected school
+  // Degree levels available, restricted to the selected college
   const availableLevels = useMemo(() => {
-    const base = schoolFilter
-      ? programs.filter((p) => p.school === schoolFilter)
+    const base = college
+      ? programs.filter((p) => p.school === college)
       : programs;
     const levels = new Set(base.map((p) => classifyDegreeLevel(p)));
     return DEGREE_LEVEL_ORDER.filter((l) => levels.has(l));
-  }, [programs, schoolFilter]);
+  }, [programs, college]);
 
-  // Programs shown in selector A (filtered by school + level)
+  // Programs shown in selector A (filtered by college + level + search)
   const programsForA = useMemo(() => {
+    const q = search.toLowerCase().trim();
     return programs.filter((p) => {
-      if (schoolFilter && p.school !== schoolFilter) return false;
-      if (levelFilter && classifyDegreeLevel(p) !== levelFilter) return false;
+      if (college && p.school !== college) return false;
+      if (level) {
+        const dl = classifyDegreeLevel(p);
+        if (level === "Bachelor's" && dl !== "Bachelor's") return false;
+        if (level === "Master's" && dl !== "Master's") return false;
+        if (level === "Certificate" && dl !== "Certificates & Endorsements") return false;
+      }
+      if (q && !p.canonical_name.toLowerCase().includes(q) && !p.program_code.toLowerCase().includes(q))
+        return false;
       return true;
     });
-  }, [programs, schoolFilter, levelFilter]);
+  }, [programs, college, level, search]);
 
   // Sibling options for selector B: same school + degree level as selected A
   const siblingsForB = useMemo(() => {
@@ -94,23 +98,109 @@ export default function CompareSelector({
   const handleReset = () => {
     setSelectedA(null);
     setSelectedB(null);
-    setSchoolFilter("");
-    setLevelFilter("");
+    setCollege("");
+    setLevel("");
+    setSearch("");
     setExpandedSelectors(true);
   };
 
   const selectedAProgram = programs.find((p) => p.program_code === selectedA);
-  const selectedBProgram = programs.find((p) => p.program_code === selectedB);
   const bothSelected = !!(selectedA && selectedB);
 
   // Show full selector panels when expanded (or when only one selected)
   const showFullPanels = expandedSelectors || !bothSelected;
+
+  const hasFilters = !!(college || level || search);
 
   return (
     <div>
       {/* ── Full selector panels ────────────────────────────────────────── */}
       {showFullPanels && (
         <>
+          {/* ── Filters ─────────────────────────────────────────────────── */}
+          <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 mb-5">
+            {/* College row */}
+            <div className="flex items-center gap-2 flex-wrap mb-3">
+              <span className="text-xs font-semibold text-slate-500 uppercase tracking-wide w-16 shrink-0">
+                College
+              </span>
+              {COLLEGES.map((col) => {
+                const isSelected = college === col.key;
+                return (
+                  <button
+                    key={col.key}
+                    onClick={() => {
+                      const next = isSelected ? "" : col.key;
+                      setCollege(next);
+                      setLevel("");
+                      setSelectedA(null);
+                      setSelectedB(null);
+                    }}
+                    className={`px-3 py-1.5 rounded-lg text-sm font-semibold transition-colors ${
+                      isSelected ? col.chipSelected : col.chipUnselected
+                    }`}
+                  >
+                    {col.short}
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Level + Search row */}
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="text-xs font-semibold text-slate-500 uppercase tracking-wide w-16 shrink-0">
+                Level
+              </span>
+              {LEVELS.map((lv) => {
+                // Only show levels that exist in the current college filter
+                const dlKey =
+                  lv === "Certificate" ? "Certificates & Endorsements" : lv;
+                if (college && !availableLevels.includes(dlKey as typeof availableLevels[number]))
+                  return null;
+                return (
+                  <button
+                    key={lv}
+                    onClick={() => {
+                      setLevel(level === lv ? "" : lv);
+                      setSelectedA(null);
+                      setSelectedB(null);
+                    }}
+                    className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
+                      level === lv
+                        ? "bg-slate-700 text-white"
+                        : "bg-white border border-slate-300 text-slate-600 hover:border-slate-400"
+                    }`}
+                  >
+                    {lv}
+                  </button>
+                );
+              })}
+
+              {hasFilters && (
+                <button
+                  onClick={handleReset}
+                  className="text-xs text-slate-400 hover:text-slate-700 underline shrink-0"
+                >
+                  Reset
+                </button>
+              )}
+
+              <div className="flex-1 min-w-40">
+                <input
+                  type="text"
+                  placeholder="Degree name or code…"
+                  value={search}
+                  onChange={(e) => {
+                    setSearch(e.target.value);
+                    setSelectedA(null);
+                    setSelectedB(null);
+                  }}
+                  className="w-full border border-slate-300 rounded-lg px-3 py-1.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-2 gap-5 mb-4">
             {/* ── Selector A ────────────────────────────────────────── */}
             <div className="border border-slate-200 rounded-xl overflow-hidden">
@@ -132,45 +222,8 @@ export default function CompareSelector({
                 )}
               </div>
 
-              {/* Filters */}
-              <div className="px-4 py-3 border-b border-slate-100 flex gap-2 flex-wrap bg-white">
-                <select
-                  value={schoolFilter}
-                  onChange={(e) => {
-                    setSchoolFilter(e.target.value);
-                    setLevelFilter("");
-                    setSelectedA(null);
-                    setSelectedB(null);
-                  }}
-                  className="border border-slate-300 rounded px-2 py-1 text-xs focus:outline-none focus:ring-2 focus:ring-blue-500"
-                >
-                  <option value="">All schools</option>
-                  {schools.map((s) => (
-                    <option key={s} value={s}>
-                      {s}
-                    </option>
-                  ))}
-                </select>
-                <select
-                  value={levelFilter}
-                  onChange={(e) => {
-                    setLevelFilter(e.target.value);
-                    setSelectedA(null);
-                    setSelectedB(null);
-                  }}
-                  className="border border-slate-300 rounded px-2 py-1 text-xs focus:outline-none focus:ring-2 focus:ring-blue-500"
-                >
-                  <option value="">All levels</option>
-                  {availableLevels.map((l) => (
-                    <option key={l} value={l}>
-                      {l}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
               {/* Program list for A */}
-              <div className="divide-y divide-slate-100 max-h-80 overflow-y-auto">
+              <div className="divide-y divide-slate-100">
                 {programsForA.length === 0 ? (
                   <p className="px-4 py-8 text-center text-sm text-slate-400">
                     No degrees match these filters.
@@ -248,7 +301,7 @@ export default function CompareSelector({
                 )}
               </div>
 
-              <div className="divide-y divide-slate-100 max-h-80 overflow-y-auto">
+              <div className="divide-y divide-slate-100">
                 {!selectedA ? (
                   <div className="px-4 py-12 text-center">
                     <p className="text-sm text-slate-400">
@@ -330,7 +383,7 @@ export default function CompareSelector({
           </div>
 
           {/* Reset link */}
-          {(selectedA || selectedB || schoolFilter || levelFilter) && (
+          {(selectedA || selectedB || hasFilters) && (
             <div className="flex justify-end mb-6">
               <button
                 onClick={handleReset}
