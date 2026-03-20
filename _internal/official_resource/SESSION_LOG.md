@@ -4,6 +4,36 @@ Append-only. Most recent entry first.
 
 ---
 
+## 2026-03-20 — Regulatory gap verification pass
+
+**Task:** Verify concrete gaps from the regulatory placement pass; make high-confidence corrections only.
+
+**Files changed:**
+- `public/data/official_resource_placements.json` (net 0: removed 1, added 1)
+
+**Gap findings:**
+
+| Gap | Finding | Action |
+|-----|---------|--------|
+| NCLEX for BSNPLTR — correct URL? | Page is explicitly scoped to RN-to-BSN students (BSNU). Prelicensure gets only a tangential redirect. Wrong audience for BSNPLTR. No separate prelicensure NCLEX page exists in phase1 sitemap. | **Removed** NCLEX from BSNPLTR |
+| BSPNTR clinicals — applicable? | Page explicitly covers prelicensure program structure including pre-nursing terms. Forward-looking language confirms it is relevant to students before nursing admission. | **Added** clinicals to BSPNTR |
+| No BSNPLTR-specific NCLEX page | Confirmed: manifest contains only one NCLEX URL (RN-to-BSN path). No separate prelicensure NCLEX page found. | Noted; no WGU resource currently exists to attach |
+| Education Praxis/Student Teaching at degree level | Too many programs (~15+) to enumerate safely without per-program verification. | Deferred cleanly |
+| ACEN/CCNE nursing accreditation | Tier 2 accreditation scope — not regulatory. | Deferred to outcomes/accreditation audit |
+| Education state-specific degree restrictions | Complex enumeration; out of scope for this pass. | Deferred cleanly |
+
+**Net state after verification:**
+- BSNPLTR: 1 placement (clinicals only)
+- BSPNTR: 2 placements (nursing state licensure + clinicals)
+- BSNU: 1 placement (NCLEX — correct; RN-to-BSN audience match)
+
+**Remaining open item from regulatory pass:**
+No BSNPLTR-specific NCLEX page exists on the WGU site (as of phase1 sitemap). If WGU adds one, attach it at BSNPLTR.
+
+**Next step:** Outcomes + accreditation completeness audit (Tier 2).
+
+---
+
 ## 2026-03-20 — Regulatory placement pass executed
 
 **Task:** Resolve needs-review items; write approved placements to `official_resource_placements.json`.

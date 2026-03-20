@@ -5,6 +5,28 @@ Each entry records what changed, decisions locked, what's blocked, and the next 
 
 ---
 
+## 2026-03-20 (session 5 — regulatory gap verification)
+
+**Done**
+- Verified 5 follow-up gaps from the regulatory placement pass
+- Removed NCLEX from BSNPLTR (page scoped to RN-to-BSN audience; wrong for prelicensure)
+- Added clinicals to BSPNTR (page confirmed to cover pre-nursing terms explicitly)
+- Net change: 131 entries (−1 +1)
+
+**Decisions locked**
+- No BSNPLTR-specific NCLEX page exists in the WGU sitemap (phase1); attach if/when WGU creates one
+- BSNPLTR gets clinicals only; BSNU gets NCLEX only; audience split is confirmed
+- Education Praxis/Student Teaching degree-level attachments: deferred; too many programs to enumerate without per-program verification
+
+**Blocked / open**
+- ACEN/CCNE nursing accreditation: deferred to Tier 2 outcomes/accreditation audit
+- Education degree-level Praxis/Student Teaching: deferred; clean defer with rationale
+
+**Next starting task**
+Outcomes + accreditation completeness audit (Tier 2): check `official_context_manifest_phase1.csv` for any outstanding outcomes/accreditation pages.
+
+---
+
 ## 2026-03-20 (session 4 — regulatory placement pass)
 
 **Done**

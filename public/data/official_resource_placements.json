@@ -1589,19 +1589,6 @@
     "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/rn-to-bsn-nursing-bachelors-program/nclex-rn-exam.html",
     "resource_title": "NCLEX-RN Exam \u2013 Nursing Licensure",
     "show_on_surface": "program_detail",
-    "surface_key": "BSNPLTR",
-    "surface_label": "Bachelor of Science, Nursing \u2013 Prelicensure",
-    "site_area": "programs",
-    "placement_mode": "sidebar",
-    "display_priority": 12,
-    "resource_group": "regulatory_licensure",
-    "benefit_reason": "Explains the NCLEX-RN board exam required for nursing licensure and how WGU prepares students for it.",
-    "status": "show"
-  },
-  {
-    "resource_url": "https://www.wgu.edu/online-nursing-health-degrees/rn-to-bsn-nursing-bachelors-program/nclex-rn-exam.html",
-    "resource_title": "NCLEX-RN Exam \u2013 Nursing Licensure",
-    "show_on_surface": "program_detail",
     "surface_key": "BSNU",
     "surface_label": "Bachelor of Science, Nursing",
     "site_area": "programs",
@@ -1700,6 +1687,19 @@
     "display_priority": 12,
     "resource_group": "regulatory_licensure",
     "benefit_reason": "Explains which industry certifications (CompTIA, AWS, Microsoft, Cisco, ISC2, and others) are embedded in WGU IT degree programs.",
+    "status": "show"
+  },
+  {
+    "resource_url": "https://www.wgu.edu/admissions/clinicals.html",
+    "resource_title": "Nursing Clinical Requirements",
+    "show_on_surface": "program_detail",
+    "surface_key": "BSPNTR",
+    "surface_label": "Bachelor of Science, Nursing \u2013 Prelicensure (Pre-Nursing)",
+    "site_area": "programs",
+    "placement_mode": "sidebar",
+    "display_priority": 12,
+    "resource_group": "regulatory_licensure",
+    "benefit_reason": "Explains clinical rotation requirements and state availability for the prelicensure nursing program, including the pre-nursing terms that precede clinical placement.",
     "status": "show"
   }
 ]
