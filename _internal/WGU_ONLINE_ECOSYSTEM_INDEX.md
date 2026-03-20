@@ -1,6 +1,6 @@
 # WGU Online Ecosystem Index
 
-Last updated: 2026-03-20 (rev 3)
+Last updated: 2026-03-20 (rev 4)
 Role: internal source atlas for official/unofficial/community/media surfaces related to WGU
 Status: reference only; inclusion here does not imply product surfacing
 
@@ -326,50 +326,79 @@ Include only if:
 
 ### 13.1 Overview
 
-Distinct from official public channels and unofficial communities. Clubs are official-adjacent: WGU-affiliated, student-facing, and present in the WGU web ecosystem, but often operated through career surfaces or WGU Connect rather than main wgu.edu pages. Discoverability is inconsistent and appears to be in transition — some are on wgu.edu program pages, some on careers.wgu.edu, some behind WGU Connect login.
+Distinct from official public channels and unofficial communities. Clubs are official-adjacent: WGU-affiliated, student-facing, and present in the WGU web ecosystem, but often operated through career surfaces or WGU Connect rather than main wgu.edu pages.
 
-**Ecosystem note:** WGU appears to be transitioning where student organizations are surfaced and operated. Discoverability is fragmented across wgu.edu, careers.wgu.edu, and WGU Connect. Do not assume a single authoritative entry point exists yet.
+**Discoverability fragmentation:** WGU club/org references currently appear across four separate surfaces with no single authoritative hub:
+1. `careers.wgu.edu` — Professional Student Organizations page
+2. Program/center-specific wgu.edu pages — AMA, Cybersecurity Club, SHRM, Women in Tech, Cyber Education Center clubs
+3. WGU Connect — join links for most active clubs
+4. Alumni/community pages — Night Owl Network, alumni-adjacent orgs
+
+This is a structural discoverability problem, not a credibility issue. Clubs exist and are active; they are just hard to find. The Cyber Education Center club page (§13.2) is the clearest example: it functions as an unofficial club hub but is buried inside a center-specific page.
 
 ### 13.2 Known clubs / organizations
 
+**Hub and infrastructure pages:**
+
 | name | url | official_status | access | current_product_status | trust_risk | student_value | notes |
 |---|---|---|---|---|---|---|---|
-| Professional Student Organizations (hub) | https://careers.wgu.edu/resources/professional-student-organizations-2/ | official_adjacent | public | candidate_later | low | medium | Current official-adjacent student organizations hub; careers-operated; fragmented discoverability |
+| Professional Student Organizations (hub) | https://careers.wgu.edu/resources/professional-student-organizations-2/ | official_adjacent | public | candidate_later | low | medium | Careers-operated official-adjacent hub; fragmented discoverability |
+| Cyber Education Center — Community Outreach (de facto club hub) | https://www.wgu.edu/online-it-degrees/cyber-education-center/community-outreach.html | official | public | research_only | low | high | **Public WGU page functioning as a buried multi-club hub.** References Data Club, Cybersecurity Club, WiCyS, Military Alliance Club, Alumni Cybersecurity Club, and WGU Connect join paths. Mis-scoped under Cyber Education Center; hard to discover. Important ecosystem find. |
+| WGU Connect | https://wguconnect.wgu.edu/v2 | official_adjacent | mixed | candidate_later | low | medium | Primary vehicle for club join links and activity; login required for full access |
+
+**Business / professional:**
+
+| name | url | official_status | access | current_product_status | trust_risk | student_value | notes |
+|---|---|---|---|---|---|---|---|
 | American Marketing Association (AMA) | https://www.wgu.edu/online-business-degrees/marketing-bachelors-program/ama.html | official_adjacent | public | candidate_later | low | medium | Marketing student org; lives on program subpage |
-| Cybersecurity Club | https://www.wgu.edu/online-it-degrees/cyber-club.html | official_adjacent | public | candidate_later | low | high | IT/security student org |
 | National Black MBA Association (NBMBAA) | https://www.wgu.edu/online-business-degrees/mba-masters-business-administration-program/nbmbaa-virtual-club.html | official_adjacent | public | candidate_later | low | medium | MBA/business affinity org; virtual club format |
 | National Society of Leadership & Success (NSLS) | https://www.nsls.org/ | official_adjacent | public | research_only | low | medium | External org linked by WGU; not WGU-operated |
 | Society for Human Resource Management (SHRM) | https://www.wgu.edu/online-business-degrees/human-resources-bachelors-program/shrm-student-chapter.html | official_adjacent | public | candidate_later | low | medium | HR student chapter; lives on program subpage |
-| Women in Tech | https://www.wgu.edu/online-it-degrees/women-in-tech.html | official_adjacent | public | candidate_later | low | high | IT/community/org surface |
-| WGU Connect | https://wguconnect.wgu.edu/v2 | official_adjacent | mixed | candidate_later | low | medium | Important community hub; login required for full access; likely main vehicle for club/org activity |
+
+**Technology / cybersecurity:**
+
+| name | url | official_status | access | current_product_status | trust_risk | student_value | notes |
+|---|---|---|---|---|---|---|---|
+| Cybersecurity Club | https://www.wgu.edu/online-it-degrees/cyber-club.html | official_adjacent | public | candidate_later | low | high | IT/security student org; also referenced from Cyber Education Center page |
+| Women in Technology (WiT / Women in Tech) | https://www.wgu.edu/online-it-degrees/women-in-tech.html | official_adjacent | public | candidate_later | low | high | IT/community/org surface |
+| WiCyS (Women in CyberSecurity) | via Cyber Education Center page | official_adjacent | mixed | research_only | low | medium | Linked from Cyber Education Center community outreach; external org partnered with WGU |
+| Military Alliance Club | via Cyber Education Center page | official_adjacent | mixed | research_only | low | medium | Referenced on Cyber Education Center community outreach page |
+| Alumni Cybersecurity Club | via Cyber Education Center page | official_adjacent | mixed | research_only | low | medium | Alumni-facing cybersecurity club; referenced on Cyber Education Center page |
 
 ### 13.3 WGU Data Club
 
 | field | value |
 |---|---|
 | name | WGU Data Club |
-| url_or_status | verify_internal_or_public_entry |
+| url | https://wguconnect.wgu.edu/hub/wgu-connect/groups/data-club/discussion?showBack=true |
 | official_status | official_adjacent |
 | access | mixed |
-| current_product_status | research_only |
+| current_product_status | candidate_later |
 | trust_risk | low |
 | student_value | high |
 
-**Notes:**
-- Active club of strategic interest
-- Not currently featured or meaningfully surfaced by WGU public channels
-- Firsthand knowledge confirms it exists and is active
-- Strong potential as a later ecosystem/community candidate given Atlas's data-oriented audience
-- No strong public-facing landing page confirmed yet — verify before surfacing
-- Under-promoted example: a real, active student organization with direct relevance to WGU data students that WGU is not currently sharing well
+**Status upgrade (rev 4):** Previously classified as "under-promoted / anecdotal." Now confirmed as **officially referenced on a public WGU page** (Cyber Education Center community outreach). Status upgraded from `research_only` to `candidate_later`.
+
+**Key facts:**
+- Officially referenced on `wgu.edu/online-it-degrees/cyber-education-center/community-outreach.html`
+- WGU Connect join link is confirmed and public-path accessible
+- Active club; firsthand knowledge of ongoing activity confirmed
+- High strategic relevance to Atlas's data-oriented audience
+
+**Discoverability problem (not a credibility problem):**
+- Data Club does not have its own dedicated public landing page on wgu.edu
+- Currently discoverable only through the Cyber Education Center club page — itself buried and mis-scoped
+- WGU Connect join link exists but requires login to participate
+- This is a structure/surfacing gap, not evidence of low legitimacy
+- **Data Club should likely have its own official public-facing landing page** — the same pattern WGU uses for AMA, Cybersecurity Club, SHRM, Women in Tech. Current state is clearly under-invested in discoverability.
 
 ### 13.4 Club ecosystem posture
 
 - do not put clubs on the homepage yet
 - do not imply all clubs are equally active
 - do not overstate public discoverability where access is mainly through WGU Connect or login-gated surfaces
-- do not treat Data Club as homepage-ready until a public-facing entry point and appropriate framing exists
-- revisit as candidate_later once club infrastructure/discoverability stabilizes
+- Data Club: upgrade to `candidate_later`; surface once a cleaner public entry point exists or once WGU creates a dedicated landing page
+- revisit all clubs as `candidate_later` candidates once club infrastructure/discoverability stabilizes
 
 ---
 

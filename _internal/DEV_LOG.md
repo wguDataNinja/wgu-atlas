@@ -14,6 +14,7 @@ Each entry records what changed, decisions locked, what's blocked, and the next 
 - Added §13 Official clubs / student organizations (8 entries: AMA, Cybersecurity Club, NBMBAA, NSLS, SHRM, Women in Tech, WGU Connect, hub page)
 - Added §13.3 dedicated WGU Data Club subsection — active, under-promoted, research_only for now
 - Rev 3: elevated Student Communities to first-class official hub entry; resolved Night Owl Network and Career Services URLs; added WGU Alumni LinkedIn; added §6.4 official link hub comparison (Communities page vs Linktree — Communities includes YouTube, Linktree does not)
+- Rev 4: added Cyber Education Center community outreach page as de facto buried club hub; upgraded Data Club from `research_only/anecdotal` to `candidate_later/officially referenced`; added WiCyS, Military Alliance Club, Alumni Cybersecurity Club; strengthened discoverability fragmentation note
 
 **Decisions locked**
 - Ecosystem index is reference/awareness only; does not change product posture or deferred status of Reddit/community integration
