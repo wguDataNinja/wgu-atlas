@@ -82,6 +82,19 @@ This file wraps the durable content that would otherwise be split across a spec 
 | `/methods` | methodology, provenance, caveats | supporting live |
 | `/about` | product framing and independence statement | supporting live |
 
+### Page design reference
+
+Current-state page docs, source-baseline analysis, screenshot readings, and homepage design-session conclusions are preserved in `_internal/page_designs/`. Key artifacts added 2026-03-20:
+
+- `compare_page.md` — compare page visual/product reading; established Compare as a flagship homepage-proof surface
+- `source_vs_atlas_program_entry.md` — before/after comparison (raw catalog vs Atlas BSCS); documents structural transformation argument
+- `screenshot_analysis_log.md` — running log of screenshot-based visual readings
+- `homepage_design_session_2026-03.md` — design session conclusions; strongest homepage framing is "Atlas turns a fragmented source into a structured student-use product"; degree pages and Compare are the two lead proof surfaces
+
+See `_internal/page_designs/README.md` for reading order and maintenance notes.
+
+---
+
 ### Experimental/prototype surfaces
 
 - `/proto/courses`

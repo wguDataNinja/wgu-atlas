@@ -198,6 +198,7 @@ These should not be reopened by default.
 | What matters now | `_internal/ATLAS_CONTROL.md` |
 | How the repo works | `_internal/ATLAS_REPO_MEMORY.md` |
 | What changed recently | `_internal/DEV_LOG.md` |
+| Page-state docs, source baseline, homepage design conclusions | `_internal/page_designs/` — see `README.md` for reading order |
 | Official-resource module materials | `_internal/official_resource/` |
 | Continuity-review materials | `_internal/continuity_review/` |
 | Lineage data + decisions | `data/lineage/` |

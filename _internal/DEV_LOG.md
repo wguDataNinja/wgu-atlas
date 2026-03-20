@@ -5,6 +5,29 @@ Each entry records what changed, decisions locked, what's blocked, and the next 
 
 ---
 
+## 2026-03-20 (session 8 — page design artifacts)
+
+**Done**
+- Created `_internal/page_designs/compare_page.md` — current-state visual/product reading of `/compare`; establishes Compare as a flagship homepage-proof surface
+- Created `_internal/page_designs/source_vs_atlas_program_entry.md` — raw catalog vs Atlas BSCS before/after; documents structural transformation argument
+- Created `_internal/page_designs/screenshot_analysis_log.md` — running log of screenshot-based design readings from 2026-03-20 session
+- Created `_internal/page_designs/homepage_design_session_2026-03.md` — March 2026 design session conclusions; homepage should move from navigation shell to proof-of-value surface
+- Replaced `_internal/page_designs/README.md` with expanded version covering all four artifact categories and recommended reading order
+- Added `_internal/page_designs/` pointer to `ATLAS_CONTROL.md` artifact map and `ATLAS_REPO_MEMORY.md` surface-roles section
+
+**Decisions locked**
+- Homepage strongest claim: "Atlas turns a fragmented source system into a structured student-use product"
+- Degree pages and Compare are the two lead homepage-proof surfaces; course-connectedness is third
+- Ecosystem material belongs lower on the homepage, not as the lead identity
+
+**Blocked / open**
+- Same as session 7
+
+**Next starting task**
+Same as session 7: outcomes + accreditation completeness audit (Tier 2).
+
+---
+
 ## 2026-03-20 (session 7 — second-pass doc update)
 
 **Done**

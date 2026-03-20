@@ -1,75 +1,128 @@
-# Page Design Reference
+# Page Designs
 
-Purpose: text-based representations of each WGU Atlas page — structure, content, visual design, and function — for use in design and planning work.
+This folder preserves page-state documentation, source-baseline analysis, screenshot-based design readings, and higher-level design-session synthesis for WGU Atlas.
 
-These are working reference artifacts, not live documentation. Regenerate when a page changes significantly.
+It exists so that important UI and product understanding does not live only in chat or in temporary memory.
 
----
-
-## What these files are
-
-Each file covers one route. It captures:
-- page section layout (top to bottom)
-- all visible text and labels
-- visual style signals (colors, typography, spacing tokens)
-- interactive behavior
-- functional inventory (what's on the page, what's notably absent)
-- design observations relevant to planning
-
-They are written in plain text with ASCII layout diagrams. The format is intentionally terse and machine-readable.
+The files in this directory are not all the same kind of artifact. They fall into four groups:
 
 ---
 
-## How to generate one
+## 1. Current page-state docs
 
-### Inputs to gather
+These documents describe what a page currently is:
+- route
+- layout
+- visible sections
+- conditional rendering
+- design characteristics
+- planning observations
 
-1. **Page component source** — `src/app/[route]/page.tsx`
-2. **Major child component sources** — all components imported and rendered on the page
-3. **content_map.txt section** — search for the route header (e.g. `HOME PAGE (/)`) in `content_map.txt`; this gives you the extracted visible text with source locations
-4. **Live page text** (optional but useful) — paste the rendered text from the browser; confirms what's actually visible vs what the source implies
+### Files
+- `homepage.md`
+  - current-state documentation for `/`
+  - captures structure, hierarchy, and current homepage limitations
 
-### Prompt to Claude
+- `program_detail.md`
+  - current-state documentation for `/programs/[code]`
+  - BSCS is used as reference example because it activates all major layers
 
-> Here is the page source, the content_map.txt section for this route, and the live rendered text.
-> Output a text-based representation of this page covering: layout, content, visual design tokens, interactions, functional inventory, and design observations for planning.
-
-Then save the output here as `{route_slug}.md`.
-
-### Route → filename convention
-
-| Route | Filename |
-|---|---|
-| `/` | `homepage.md` |
-| `/courses` | `courses.md` |
-| `/courses/[code]` | `course_detail.md` |
-| `/programs` | `programs.md` |
-| `/programs/[code]` | `program_detail.md` |
-| `/schools` | `schools.md` |
-| `/schools/[slug]` | `school_detail.md` |
-| `/compare` | `compare.md` |
-| `/timeline` | `timeline.md` |
-| `/data` | `data.md` |
-| `/methods` | `methods.md` |
-| `/about` | `about.md` |
+- `compare_page.md`
+  - current-state visual and product reading of `/compare`
+  - based on design-session screenshot analysis
+  - preserves why Compare is a flagship feature
 
 ---
 
-## Source locations for each input
+## 2. Source baseline / source-vs-product docs
 
-| Input | Location |
-|---|---|
-| Page components | `src/app/` |
-| Shared components | `src/components/` |
-| Content map | `content_map.txt` (root) — regenerate with `node scripts/generate_content_map.js` |
-| Runtime data shapes | `src/lib/types.ts`, `src/lib/data.ts` |
+These documents describe what the raw source system gives the student and how Atlas changes that experience.
+
+### Files
+- `catalog_raw_analysis.md`
+  - practical analysis of the March 2026 WGU catalog as a student-facing source
+  - explains how degree information is split across sections
+  - captures usability limitations of the raw catalog
+
+- `source_vs_atlas_program_entry.md`
+  - direct comparison between a raw catalog degree entry and an Atlas program detail page
+  - preserves the structural transformation argument
+  - important for homepage positioning and product explanation
 
 ---
 
-## Artifact index
+## 3. Screenshot-based design analysis
 
-| File | Route | Last updated | Notes |
-|---|---|---|---|
-| [homepage.md](./homepage.md) | `/` | 2026-03-20 | Initial capture |
-| [program_detail.md](./program_detail.md) | `/programs/[code]` | 2026-03-20 | Example: BSCS (all enrichment layers active — description, outcomes, roster, sidebar resources) |
-| [catalog_raw_analysis.md](./catalog_raw_analysis.md) | source reference | 2026-03-20 | Not a page design — analysis of the raw WGU catalog (2026-03) from a student-use perspective; documents what Atlas materially improves; useful for homepage and product framing |
+These files preserve observations that come from looking at real screens or screenshots, not just source files or machine-generated page docs.
+
+### Files
+- `screenshot_analysis_log.md`
+  - running log of screenshot readings and visual conclusions
+  - preserves what was visible, what stood out, and what each screenshot proved
+  - useful because screenshot analysis otherwise disappears from memory
+
+---
+
+## 4. Design-session synthesis
+
+These files preserve conclusions from broader design discussions that connect multiple pages and product arguments.
+
+### Files
+- `homepage_design_session_2026-03.md`
+  - higher-level conclusions from the March 2026 homepage design session
+  - preserves strongest product surfaces, source-baseline implications, and homepage direction
+
+---
+
+## Recommended reading order for homepage work
+
+If returning later to homepage planning, read in this order:
+
+1. `homepage.md`
+2. `catalog_raw_analysis.md`
+3. `program_detail.md`
+4. `compare_page.md`
+5. `source_vs_atlas_program_entry.md`
+6. `homepage_design_session_2026-03.md`
+7. `screenshot_analysis_log.md`
+
+That order moves from:
+- current homepage
+to
+- source limitations
+to
+- strongest inner surfaces
+to
+- homepage implications
+
+---
+
+## Maintenance notes
+
+Update this folder when any of the following happens:
+
+- a major page layout changes
+- a new screenshot analysis produces useful conclusions
+- a page becomes important enough for homepage or positioning decisions
+- the source baseline understanding changes
+- a major design session produces conclusions worth preserving
+
+Do not treat this folder as:
+- a task tracker
+- a dev log
+- an implementation checklist
+- a final design spec system
+
+Its purpose is preservation of product understanding and page-level design knowledge.
+
+---
+
+## File index
+
+- `homepage.md`
+- `program_detail.md`
+- `catalog_raw_analysis.md`
+- `compare_page.md`
+- `source_vs_atlas_program_entry.md`
+- `screenshot_analysis_log.md`
+- `homepage_design_session_2026-03.md`
