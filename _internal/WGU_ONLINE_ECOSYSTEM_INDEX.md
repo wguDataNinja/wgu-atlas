@@ -1,6 +1,6 @@
 # WGU Online Ecosystem Index
 
-Last updated: 2026-03-20 (rev 4)
+Last updated: 2026-03-20 (rev 5)
 Role: internal source atlas for official/unofficial/community/media surfaces related to WGU
 Status: reference only; inclusion here does not imply product surfacing
 
@@ -328,13 +328,26 @@ Include only if:
 
 Distinct from official public channels and unofficial communities. Clubs are official-adjacent: WGU-affiliated, student-facing, and present in the WGU web ecosystem, but often operated through career surfaces or WGU Connect rather than main wgu.edu pages.
 
-**Discoverability fragmentation:** WGU club/org references currently appear across four separate surfaces with no single authoritative hub:
+**WGU publicly endorses clubs.** Blog post `wgu.edu/blog/student-clubs-enhance-experience-even-virtually-advocate-post2309.html` confirms WGU treats clubs as meaningful to student experience and professional growth. Scale signals from that post:
+- SHRM chapter: 760 members
+- Cybersecurity Club: 7,000+ members
+
+These are not niche communities. They are large, active, officially endorsed student organizations.
+
+**Club page model:** Women in Tech (`wgu.edu/online-it-degrees/women-in-tech.html`) shows the right public-facing club-page pattern: founded 2019, open to all COIT students, mission/purpose clearly stated, LinkedIn follow-on path. This is the template Data Club and others should eventually follow.
+
+**NBMBAA page** (`wgu.edu/online-business-degrees/mba-masters-business-administration-program/nbmbaa-virtual-club.html`) shows public-facing club promotion with an embedded unlisted YouTube video (`youtube.com/watch?v=aQMYjdjfLFQ` — titled "NBMBAA at WGU"). Clubs are being used as program-page content assets, not just listed somewhere.
+
+**Discoverability fragmentation:** WGU club/org references currently appear across five separate surfaces with no single authoritative hub:
 1. `careers.wgu.edu` — Professional Student Organizations page
 2. Program/center-specific wgu.edu pages — AMA, Cybersecurity Club, SHRM, Women in Tech, Cyber Education Center clubs
 3. WGU Connect — join links for most active clubs
 4. Alumni/community pages — Night Owl Network, alumni-adjacent orgs
+5. Blog/narrative surfaces — club scale/endorsement content
 
-This is a structural discoverability problem, not a credibility issue. Clubs exist and are active; they are just hard to find. The Cyber Education Center club page (§13.2) is the clearest example: it functions as an unofficial club hub but is buried inside a center-specific page.
+This is a structural discoverability problem, not a credibility issue. Clubs exist, are large, and are officially endorsed; they are just hard to find. The Cyber Education Center club page (§13.2) is the clearest example: it functions as an unofficial club hub but is buried inside a center-specific page.
+
+**Historical note:** Reddit historical posts show students asking whether WGU even had clubs (older threads), and references to dead SAG (student affinity group) links and outdated join paths. This is consistent with the current fragmented state — club infrastructure has changed over time and has not been consolidated into a clean official surface. Current discoverability gaps are an inherited structural issue, not a recent regression.
 
 ### 13.2 Known clubs / organizations
 
@@ -351,7 +364,7 @@ This is a structural discoverability problem, not a credibility issue. Clubs exi
 | name | url | official_status | access | current_product_status | trust_risk | student_value | notes |
 |---|---|---|---|---|---|---|---|
 | American Marketing Association (AMA) | https://www.wgu.edu/online-business-degrees/marketing-bachelors-program/ama.html | official_adjacent | public | candidate_later | low | medium | Marketing student org; lives on program subpage |
-| National Black MBA Association (NBMBAA) | https://www.wgu.edu/online-business-degrees/mba-masters-business-administration-program/nbmbaa-virtual-club.html | official_adjacent | public | candidate_later | low | medium | MBA/business affinity org; virtual club format |
+| National Black MBA Association (NBMBAA) | https://www.wgu.edu/online-business-degrees/mba-masters-business-administration-program/nbmbaa-virtual-club.html | official_adjacent | public | candidate_later | low | medium | MBA/business affinity org; club page embeds unlisted YT video (`youtube.com/watch?v=aQMYjdjfLFQ` — "NBMBAA at WGU"); shows clubs being used as program-page content assets |
 | National Society of Leadership & Success (NSLS) | https://www.nsls.org/ | official_adjacent | public | research_only | low | medium | External org linked by WGU; not WGU-operated |
 | Society for Human Resource Management (SHRM) | https://www.wgu.edu/online-business-degrees/human-resources-bachelors-program/shrm-student-chapter.html | official_adjacent | public | candidate_later | low | medium | HR student chapter; lives on program subpage |
 
@@ -360,7 +373,7 @@ This is a structural discoverability problem, not a credibility issue. Clubs exi
 | name | url | official_status | access | current_product_status | trust_risk | student_value | notes |
 |---|---|---|---|---|---|---|---|
 | Cybersecurity Club | https://www.wgu.edu/online-it-degrees/cyber-club.html | official_adjacent | public | candidate_later | low | high | IT/security student org; also referenced from Cyber Education Center page |
-| Women in Technology (WiT / Women in Tech) | https://www.wgu.edu/online-it-degrees/women-in-tech.html | official_adjacent | public | candidate_later | low | high | IT/community/org surface |
+| Women in Technology (WiT / Women in Tech) | https://www.wgu.edu/online-it-degrees/women-in-tech.html | official_adjacent | public | candidate_later | low | high | IT/community org; **model club-page pattern** — stated founding year (2019), open enrollment, clear mission, LinkedIn follow-on path; template for what Data Club and others should eventually look like |
 | WiCyS (Women in CyberSecurity) | via Cyber Education Center page | official_adjacent | mixed | research_only | low | medium | Linked from Cyber Education Center community outreach; external org partnered with WGU |
 | Military Alliance Club | via Cyber Education Center page | official_adjacent | mixed | research_only | low | medium | Referenced on Cyber Education Center community outreach page |
 | Alumni Cybersecurity Club | via Cyber Education Center page | official_adjacent | mixed | research_only | low | medium | Alumni-facing cybersecurity club; referenced on Cyber Education Center page |

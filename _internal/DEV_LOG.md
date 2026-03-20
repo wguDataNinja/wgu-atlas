@@ -5,6 +5,26 @@ Each entry records what changed, decisions locked, what's blocked, and the next 
 
 ---
 
+## 2026-03-20 (session 7 — second-pass doc update)
+
+**Done**
+- Completed rev 5 of `_internal/WGU_ONLINE_ECOSYSTEM_INDEX.md`: §13.1 expanded with blog evidence, scale signals (SHRM 760 members, Cybersecurity Club 7,000+), Women in Tech as model club-page template, NBMBAA unlisted YT video evidence, Reddit historical dead-link note; §13.2 table rows updated with model/YT detail
+- Added `Homepage / community / social — planning implications` subsection to `_internal/ATLAS_REPO_MEMORY.md` §17: surface priority signal, feature/section directions, things to avoid, club surfacing approach, WHU external benchmark note
+- No changes to `_internal/ATLAS_CONTROL.md` (not clearly needed for this session's material)
+
+**Decisions locked**
+- Homepage/community planning notes are durable planning-only context in repo memory; do not act on them until explicitly selected as a workstream
+- WHU is the clearest external design precedent for compact club/community surfacing
+
+**Blocked / open**
+- Same as session 6: Data Club public URL unconfirmed; club ecosystem discoverability fragmented
+- 6 programs still missing guide placements in `official_resource_placements.json`
+
+**Next starting task**
+Outcomes + accreditation completeness audit (Tier 2): pick up where official-resource workstream left off. Check `official_context_manifest_phase1.csv` for outcomes/accreditation pages not yet in placements.
+
+---
+
 ## 2026-03-20 (session 6 — ecosystem index)
 
 **Done**

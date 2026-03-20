@@ -680,6 +680,20 @@ These are durable “good bets,” not automatic priorities.
 - inclusion in the index does not imply product surfacing
 - does not change the deferred status of Reddit/community integration
 
+### Homepage / community / social — planning implications
+
+Notes for when homepage or community work becomes active. Do not act on these now.
+
+**Surface priority signal (from informal review):** degree pages are the strongest surface; compare is a major differentiator; Methods is too technical for most visitors; footer and Data sections are power-user territory. Homepage updates should lead with the surfaces that already work.
+
+**Feature/section directions to hold:** a curated "feature teasers" section (showing what Atlas can do, not what WGU offers); an "Around WGU" section for official community/club/resource links; a clear official-vs-unofficial separation in any community or link-hub surface.
+
+**Things to avoid by default:** raw social feeds on homepage; a giant Reddit directory as a feature; mixing official and community without clear provenance signals.
+
+**Club surfacing approach:** when clubs become a candidate surface, lean toward a compact card or sidebar pattern rather than a directory. Do not surface clubs that lack a stable, official, publicly accessible landing page.
+
+**External benchmark:** Western Hemisphere University / WHU-style compact club listings are the clearest external design precedent for integrating club/community context into an academic reference product without overwhelming the primary catalog-navigation purpose.
+
 ---
 
 ## 18. Fast orientation checklist
