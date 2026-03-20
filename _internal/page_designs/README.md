@@ -71,3 +71,4 @@ Then save the output here as `{route_slug}.md`.
 | File | Route | Last updated | Notes |
 |---|---|---|---|
 | [homepage.md](./homepage.md) | `/` | 2026-03-20 | Initial capture |
+| [program_detail.md](./program_detail.md) | `/programs/[code]` | 2026-03-20 | Example: BSCS (all enrichment layers active — description, outcomes, roster, sidebar resources) |

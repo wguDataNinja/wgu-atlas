@@ -568,6 +568,7 @@ Regenerate when a page changes significantly enough that the existing artifact w
 | Route | File | Status |
 |---|---|---|
 | `/` | `_internal/page_designs/homepage.md` | current (2026-03-20) |
+| `/programs/[code]` | `_internal/page_designs/program_detail.md` | current (2026-03-20) — example: BSCS |
 
 See `_internal/page_designs/README.md` for generation instructions and full route-to-filename convention.
 
