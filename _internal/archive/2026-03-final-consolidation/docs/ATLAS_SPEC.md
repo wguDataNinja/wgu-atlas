@@ -35,7 +35,10 @@
 - `data/`: canonical artifacts, review artifacts, enrichment artifacts.
 - `scripts/`: deterministic generators/transforms/utilities.
 - `docs/`: canonical docs + legacy docs pending retirement.
-- `_internal/`: historical planning/dev docs and official-context work logs.
+- `_internal/`: planning/dev docs, official-context work logs, YouTube source workstream.
+  - `_internal/SOURCE_ENRICHMENT_AUDIT.md`: master audit and operating doc for all source-enrichment work.
+  - `_internal/youtube/`: YouTube workstream (raw inventories, filtered working copies, worklog).
+  - `_internal/workqueue_inputs/`: active work queue inputs for ongoing enrichment passes.
 
 ## 4) Data domains
 
@@ -60,18 +63,30 @@
 
 ### 4.3 Official-context domain
 - Purpose: attach official WGU resources to program/school surfaces.
-- Current artifacts:
-  - Discovery baseline: `data/official_context_manifest_phase1.csv|json`
-  - Enrichment test set: `data/official_context_manifest_phase2_test.json`
-  - Page attachment payload: `public/data/official_resource_placements.json`
-- Current execution state:
+- Audit and operating doc: `_internal/SOURCE_ENRICHMENT_AUDIT.md` — single reference for current state, pass log, next actions.
+- Work surfaces:
+
+| Source type | Raw universe | Active candidate manifest | Notes/log | Live placements |
+|---|---|---|---|---|
+| WGU sitemap pages | `data/official_context_manifest_phase1.csv|json` | `data/source_enrichment_manifest.json` | `_internal/SOURCE_ENRICHMENT_AUDIT.md` §5 | `public/data/official_resource_placements.json` |
+| Official WGU YouTube | `_internal/youtube/raw/wgu_official_titles_raw.txt` | `_internal/youtube/working/wgu_official_titles_filtered.txt` | `_internal/youtube/YOUTUBE_WORKLOG.md` | — (not yet placed) |
+| WGU Career Services YouTube | `_internal/youtube/raw/wgu_career_services_titles_raw.txt` | `_internal/youtube/working/wgu_career_services_titles_filtered.txt` | `_internal/youtube/YOUTUBE_WORKLOG.md` | — (not yet placed) |
+| Reddit/community | — (external project) | — (future) | `_internal/SOURCE_ENRICHMENT_AUDIT.md` §5 | — (future) |
+
+- Current sitemap execution state:
   - Phase 1 sitemap manifest: 604 unique entries.
-  - Phase 2 enriched set in test artifact: 122 entries.
-  - Remaining high-value batch input: `_internal/workqueue_inputs/official_context_phase2_remaining_batch.json` (262 entries at last checkpoint).
+  - Phase 2 enriched set: 122 entries (115 program guides + 7 other types).
+  - Remaining batch input: `_internal/workqueue_inputs/official_context_phase2_remaining_batch.json` (262 entries: 138 program landing pages, 123 specialization subpages, 1 accreditation).
+  - Program guides: **solved** — 109/114 active programs have live placements. 6 programs missing (BSNPLTR, BSPNTR, MASEMG, MEDETID, MEDETIDA, MEDETIDK12).
   - Validated enrichment heuristics from Phase 2:
     - `program-guide.html` pages are canonical wrapper pages for downloadable guide PDFs.
     - `outcomes.html` and specialization/track subpages are higher-signal than guide wrappers.
-    - school candidate seed can be inferred from first URL path segment (`online-it-degrees`, `online-business-degrees`, `online-nursing-health-degrees`, `online-teaching-degrees`).
+    - School candidate seed inferred from first URL path segment (`online-it-degrees`, `online-business-degrees`, `online-nursing-health-degrees`, `online-teaching-degrees`).
+- Current YouTube state:
+  - Raw inventories imported 2026-03-18 from external yt-video-analysis repo.
+  - Official WGU: 1,535 raw → 818 after commencement/graduation filter.
+  - Career Services: 441 raw → 267 after first-pass junk filter.
+  - No candidate artifacts or placements yet. Next pass: YT-1 (school-level, Official WGU).
 
 ### 4.4 Frontend export domain
 - Frontend directly consumes:
@@ -115,8 +130,36 @@
     - `event_id`, `transition_type`, `start_edition`, `end_edition`, `from_programs`, `to_programs`, `importance`, `site_worthy`, `pairs[]`.
   - pair keys in final artifact:
     - `from_program`, `to_program`, `shared_course_count`, `removed_course_count`, `added_course_count`, `old_retained_pct`, `new_inherited_pct`, `jaccard_overlap`, `courses_added`, `courses_removed`.
+- `data/lineage/lineage_decisions.json` top-level:
+  - `schema_version`, `last_updated`, `event_decisions[]`, `program_decisions[]`.
+  - `event_decisions[]` keys:
+    - `event_id`, `decision`, `display_state`, `decided_by`, `decided_at`, `wording_guard`, `change_summary_template`, `zero_overlap_rationale`, `notes`.
+  - `decision` values: `approve_history`, `reject_history`, `pending_hitl`, `pending_gap_check`.
+  - `display_state` values: `show`, `suppress`, `hide_pending`.
+  - `program_decisions[]` keys:
+    - `program_code`, `program_state`, `history_ui_state`, `linked_event_id`, `decided_by`, `decided_at`, `notes`.
+  - `program_state` values: `history_approved`, `history_excluded`, `new_from_scratch`, `pathway_variant`, `no_meaningful_history`, `pending_hitl`, `pending_gap_check`.
+  - `history_ui_state` values: `show`, `hide_new`, `hide_no_history`, `hide_excluded`, `hide_pending`.
+  - Curation overlay and display authority for the Program History feature.
+  - `display_state` overrides `program_history_enrichment.json` `site_worthy` at export time.
+  - Durable: survives pipeline reruns; must not be regenerated by scripts.
+  - Events absent from this file are suppressed at export regardless of `site_worthy`.
+  - Validated by `scripts/validate_lineage_decisions.py`.
 
-### 5.3 Frontend exports (`public/data/`)
+### 5.3 Source enrichment manifest (`data/source_enrichment_manifest.json`)
+- Durable candidate manifest spanning all enrichment source families (sitemap, YouTube, Reddit/community).
+- Generated once by `scripts/bootstrap_source_enrichment_manifest.py` (2026-03-18); updated incrementally by review sessions.
+- Field groups:
+  - **Identity/source:** `source_key` (stable row ID), `source_family`, `source_subtype`, `url`, `title`
+  - **Classification:** `candidate_type` (`program_guide | program_landing | specialization | accreditation | outcomes | school_context | youtube_video | other`), `target_scope` (`program | school | course`)
+  - **Review decision:** `review_status` (`unreviewed | keep | skip | defer`), `decision_reason`, `notes`
+  - **Candidate hints:** `program_candidates[]`, `school_candidates[]`, `course_candidates[]`
+  - **Placement targets:** `program_targets[]`, `school_targets[]`, `course_targets[]`
+  - **Lifecycle:** `is_currently_present`, `first_seen_at`, `last_seen_at`, `last_reviewed_at`
+- Bootstrap totals: 384 rows (122 `keep` from sitemap Phase 2, 262 `unreviewed` from remaining queue).
+- Supersedes `data/official_context_manifest_phase2_test.json` as the active enrichment artifact. That file is now a historical transitional artifact.
+
+### 5.4 Frontend exports (`public/data/`)
 - `courses.json`: 1,646 lightweight course cards (`code`, `title`, `active`, `scope`, `first_seen`, `last_seen`, `edition_count`, `current_college`, `current_program_count`, `stability_class`, `ghost_flag`, `single_appearance_flag`, `title_variant_class`).
 - `courses/{code}.json`: 838 rich AP course details incl. `programs_timeline`.
 - `programs.json`: 196 program records.
@@ -130,13 +173,15 @@
 
 | Script | Role | Inputs | Outputs |
 |---|---|---|---|
-| `scripts/build_site_data.py` | baseline site-data build (legacy but functional) | upstream `WGU_catalog/outputs/*` (`course_history.csv`, `program_history.csv`, `edition_diffs*`, `course_index_v10.json`, trusted 2026-03 CSVs) | `data/canonical_courses*`, `data/named_events*`, `data/curated_major_events.json`, `data/title_variant_*`, plus `public/data/courses.json`, `public/data/courses/{code}.json`, `public/data/events.json`, `public/data/search_index.json`, `public/data/homepage_summary.json` |
+| `scripts/build_site_data.py` | baseline site-data build (legacy but functional) | upstream `WGU_catalog/outputs/*` (`course_history.csv`, `program_history.csv`, `edition_diffs*`, `course_index_v10.json`, trusted 2026-03 CSVs) | `data/canonical_courses*`, `data/named_events*`, `data/curated_major_events.json`, `data/title_variant_*`, plus `public/data/courses.json`, `public/data/courses/{code}.json`, `public/data/events.json`, `public/data/search_index.json`, `public/data/homepage_summary.json`; (pending) `public/data/program_lineage.json` — merge of `program_history_enrichment.json` (metrics source) + `lineage_decisions.json` (display authority); export step not yet implemented |
 | `scripts/extract_program_enriched.py` | parse 2026-03 program descriptions/rosters/outcomes | `catalog_2026_03.txt`, `2026_03_program_blocks_v11.json`, `public/data/programs.json` | `public/data/program_enriched.json` |
 | `scripts/build_program_lineage_artifacts.py` | lineage recall + candidate generation | `data/program_history.csv`, `data/canonical_courses.csv`, catalog text+blocks dirs | `data/program_transition_universe.csv`, `data/program_link_candidates.json` |
 | `scripts/compare_program_courses.py` | lineage Stage 2 deterministic overlap/diffs + resilient JSON normalize | `data/program_lineage_events.json` (or typo fallback), `data/canonical_courses.csv`, catalog text+blocks dirs | `data/program_lineage_events_normalized.json`, `data/program_lineage_enriched.json` |
 | `scripts/generate_program_history_enrichment.py` | lineage final event-level transform | `data/program_lineage_enriched.json` (+ optional Stage1 titles) | `data/program_history_enrichment.json` |
 | `scripts/generate_program_history_artifacts.py` | optional program-centric derivative | `data/program_lineage_enriched.json` | `data/program_history.json` |
 | `scripts/add_program_history_enrichment.py` | helper backfill of importance/site_worthy into program-centric file | `data/program_history.json`, `data/program_history_enrichment.json` | in-place `data/program_history.json` update |
+| `scripts/validate_lineage_decisions.py` | integrity check for curation overlay before export | `data/lineage/lineage_decisions.json` (required); `data/lineage/program_history_enrichment.json`, `public/data/programs.json`, `data/lineage/program_link_candidates.json` (all optional) | stdout validation report; exit 1 on ERROR findings |
+| `scripts/bootstrap_source_enrichment_manifest.py` | one-time migration: merge phase2_test + remaining_batch into durable manifest | `data/official_context_manifest_phase2_test.json`, `_internal/workqueue_inputs/official_context_phase2_remaining_batch.json`, `public/data/official_resource_placements.json` | `data/source_enrichment_manifest.json` |
 | `scripts/generate_content_map.js` | content/proofreading utility | `src/*`, `public/data/*` | stdout / `content_map.txt` |
 
 ## 7) Operational pipelines
@@ -156,9 +201,15 @@
 ### 7.3 Program-lineage pipeline (current stage model)
 1. Stage 0 recall: `build_program_lineage_artifacts.py`.
 2. Stage 1 semantic review (LLM/HITL) produces `program_lineage_events.json`.
-3. Stage 2 deterministic overlap: `compare_program_courses.py`.
-4. Final deterministic transform: `generate_program_history_enrichment.py`.
-5. Optional derivative: `generate_program_history_artifacts.py`.
+3. Stage 1.5 curation overlay: `data/lineage/lineage_decisions.json`.
+   - Human-reviewed decisions per event and program.
+   - `display_state` overrides `site_worthy` at export time.
+   - Survives pipeline reruns; must not be regenerated.
+   - Validate before any export: `python3 scripts/validate_lineage_decisions.py`.
+4. Stage 2 deterministic overlap: `compare_program_courses.py`.
+5. Final deterministic transform: `generate_program_history_enrichment.py`.
+6. Optional derivative: `generate_program_history_artifacts.py`.
+7. Export (pending): `build_site_data.py` merges enrichment + decisions → `public/data/program_lineage.json`.
 
 ### 7.4 Incremental behavior
 - `build_program_lineage_artifacts.py --baseline-end-edition YYYY-MM` emits only new boundaries/candidates where `end_edition > baseline`.
@@ -234,8 +285,13 @@
   - `official_context/DEV_LOG.md` -> phase execution state -> this spec §2 snapshot.
   - `official_context/PHASE2_TEST_NOTES.md` -> validated page-type findings -> `DECISIONS` official-context attachment rules.
   - `official_context/REVIEW_QUEUE.md` -> manual review operations -> now encoded in `_internal/WORKQUEUE.md` A-02 rules.
-- Active queue input retained:
-  - `_internal/workqueue_inputs/official_context_phase2_remaining_batch.json` -> active work queue input, not canonical policy.
+- Active work surfaces retained:
+  - `data/source_enrichment_manifest.json` — durable enrichment candidate manifest (all source families).
+  - `_internal/SOURCE_ENRICHMENT_AUDIT.md` — master source enrichment audit and operating picture.
+  - `_internal/youtube/` — YouTube workstream (raw, filtered, worklog).
+- Historical transitional artifacts (data migrated, retained for reference):
+  - `data/official_context_manifest_phase2_test.json` — 122 reviewed rows from original enrichment pass.
+  - `_internal/workqueue_inputs/official_context_phase2_remaining_batch.json` — original 262-entry input queue.
 
 ## 12) Shared program helper library (`src/lib/programs.ts`)
 

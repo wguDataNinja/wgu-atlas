@@ -79,6 +79,40 @@ wgu-atlas/
 
 ---
 
+## Course code confidence
+
+### What we did
+
+- **108 catalog editions** scraped and parsed (2017-01 through 2026-03), covering every program roster across that span
+- **Cross-referenced two independent sources:** the edition history and the 2026-03 catalog snapshot; any code missing from the snapshot is flagged retired rather than silently dropped
+- **Internal consistency check:** every course code appearing in active program rosters (`program_enriched.json`, scraped from catalog program pages) is present in `canonical_courses.csv` — zero gaps found
+- **Per-code trust signals** computed and stored: `ghost_flag`, `single_appearance_flag`, `stability_class`, `current_title_confidence`, `title_variant_class` — each row carries its own confidence indicator rather than a single dataset-wide claim
+- **Known truncation and extraction artifacts** manually identified and overridden for affected codes
+
+### Honest assessment
+
+This dataset is **comprehensive for what the scraper saw** but cannot guarantee it saw everything. Structural blind spots remain:
+
+- **Certificate codes only tracked from 2024-09 forward** — cert courses that existed earlier or under different structures may not appear
+- **Courses not in any program roster** — if a course exists only as a standalone page the scraper never visited, it would be absent from the entire universe
+- **Post-2026-03 additions** — nothing added after the last scrape run is present
+- **No independent external cross-check** — there is no WGU API or authoritative public course list to validate against
+
+### Human review path
+
+The most practical completeness check is section-by-section human review. As course codes surface from student discussion or other sources, they can be spot-checked against the dataset:
+
+| What to check | How |
+|---|---|
+| Is a code in the dataset at all? | Search `canonical_courses.csv` or `canonical_courses.json` by `course_code` |
+| Is it marked active? | `active_current = True` and `stability_class` not `single` or `ghost_flag = False` |
+| Does the title look right? | Compare `canonical_title_current` against what students actually call it |
+| Is it flagged uncertain? | `current_title_confidence = low` or `title_variant_class = unresolved` means manual review was deferred |
+
+Any code that appears in student posts but is absent from the dataset is a genuine discovery worth adding. Over time, community-sourced codes are the most reliable signal for catching what the scraper missed.
+
+---
+
 ## Disclaimer
 
 WGU Atlas is an independent community project and is not affiliated with Western Governors University. All catalog data is derived from WGU's publicly available course catalog. No proprietary or internal WGU data is used.
