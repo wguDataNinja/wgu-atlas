@@ -5,6 +5,30 @@ Each entry records what changed, decisions locked, what's blocked, and the next 
 
 ---
 
+## 2026-03-20 (session 10 — public site baseline expanded)
+
+**Done**
+- Substantially expanded `_internal/page_designs/wgu_public_site_student_experience.md` from initial stub into a full baseline document
+- Added confirmed findings for: Online Degrees expanded submenu taxonomy and cross-listing patterns; Explore Your Options quiz/recommendation flow; All Degrees browse surface (default state + card expansion); official compare flow (confirmed real, narrow, headline-metrics-only); official program-detail template scaffold (18 observed elements); three representative program pages (BSCS, Nursing Informatics RN-to-MSN, BSDA); education official-resource standalone pages (student teaching, licensure, state compliance); official page-type taxonomy (12 types); alternative-start, advanced-course, cert-mapping, and accelerated page types; program guides as a major official artifact layer with worked BSDA example
+- Updated Atlas implications: revised away from "WGU has no compare tool" to more truthful contrast (WGU compares headline outcomes, Atlas compares program structure)
+- Preserved and updated open questions and session handoff
+
+**Decisions locked**
+- Official compare exists and is real — do not claim Atlas is the only compare surface; claim structural/curriculum comparison as the differentiator
+- Program guides are a major official artifact layer, not just supplemental PDFs — should be treated as a high-value harvest target
+- Public site is broad and information-rich in places but fragmented; the limitation is packaging and synthesis, not lack of data
+- Atlas homepage claim: restructure official WGU information into a clearer student-use guide without enrollment-funnel wrapping
+
+**Blocked / open**
+- School-level landing page reads not yet done (Business, Education, Technology, Health & Nursing)
+- Course-level discovery baseline on the public site not yet documented
+- Outcomes/competency-statement visibility on program pages not yet confirmed
+
+**Next starting task**
+School-level landing page reads; then course-level discovery baseline; then revisit `homepage_design_session_2026-03.md` synthesis with full dual baseline in hand.
+
+---
+
 ## 2026-03-20 (session 9 — public site baseline stub)
 
 **Done**

@@ -1,8 +1,8 @@
 # WGU Public Site Student Experience — Degree Exploration Baseline
 
 Reference capture date: 2026-03-20
-Status: **in progress — initial baseline only**
-To be expanded in the next design/documentation session.
+Last updated: 2026-03-20
+Status: **in progress — substantially expanded from initial baseline; further session work planned**
 
 Related docs:
 - `catalog_raw_analysis.md`
@@ -58,11 +58,31 @@ That is a stronger and more truthful claim.
 
 Conversely, if the public site is actually a strong exploration surface, that changes what Atlas needs to offer to stand out.
 
-This doc should answer which of those is true.
+This doc exists to answer which of those is true — and the answer turns out to be more nuanced than either extreme.
 
 ---
 
-## 3. Global navigation baseline
+## 3. Scope of the official public-site exploration experience
+
+The official WGU public-site exploration experience is broader than:
+- the raw catalog
+- the all-degrees grid
+- individual degree pages
+
+The public site currently exposes multiple overlapping exploration systems:
+- degree discovery surfaces (taxonomy, browse, compare)
+- long-form program-detail pages
+- guided recommendation / quiz flow
+- alternative-start entry pages (intro-term, single-course)
+- certificate and standalone-course product pages
+- licensure / compliance / teacher-preparation utility pages
+- program guides — linked high-value official academic PDFs
+
+This matters because the official site is not one coherent research surface. It is a set of overlapping discovery, enrollment, and compliance surfaces that students must navigate across.
+
+---
+
+## 4. Global navigation baseline
 
 ### Observed top navigation
 
@@ -74,25 +94,20 @@ Current wgu.edu top nav (observed):
 - Student Login
 - More
 
-### What this tells us now
+### What this tells us
 - Degree exploration is the first nav item — it is clearly the primary entry for prospective students.
-- The nav does not lead with schools or a degree index — it leads with a category-gated entry.
-
-### To document next session
-- Dropdown/hover/click behavior for each nav item
-- Whether nav paths are marketing-first or reference-first
-- What degree exploration paths are emphasized vs buried
-- Whether "More" reveals additional degree-related navigation
+- The nav does not lead with a school index or an open degree list. It leads with a category-gated dropdown.
+- Navigation paths are marketing/enrollment-first, not reference-first.
 
 ---
 
-## 4. Online Degrees entry flow
+## 5. Online Degrees taxonomy
 
-### Observed behavior (confirmed)
+### The menu is a deeper taxonomy layer than it first appears
 
-Clicking "Online Degrees" in the top nav forces a category selection before navigating to a degree surface.
+The Online Degrees nav is not just a simple seven-option menu. It is an official taxonomy layer organizing offerings simultaneously by school, degree level, credential type, pathway type, and support/utility page.
 
-Observed options presented:
+### Top-level degree-entry buckets
 - Business
 - Education
 - Technology
@@ -101,179 +116,694 @@ Observed options presented:
 - All Degrees
 - Explore Your Options
 
-### Initial analysis
+### Expanded submenu structures (observed)
 
-- Degree exploration begins through high-level marketing/navigation buckets, not through a structured degree index.
-- Students are being routed through a category choice before seeing any organized degree information.
-- This is a funnel entry pattern, not a browse entry pattern.
-- A student who does not know which bucket their program of interest belongs to must either guess or use "All Degrees" / "Explore Your Options."
+**Business**
+- Bachelor's
+- Master's
+- Certificates
+- Advanced Accounting Courses
 
-This is an important baseline for Atlas comparison. Atlas allows open browsing and search without requiring prior category commitment.
+**Education**
+- Bachelor's
+- Master's
+- Endorsements
+- Licensure
 
-### To document next session
-- Where each option (Business, Education, etc.) actually leads
-- Whether the destination is a school page, a program browse page, or a marketing page
-- Whether the overall path from top nav to a specific program is smooth or friction-heavy
-- Whether the experience is consistent across categories
+**Technology**
+- Bachelor's
+- Master's
+- Certificates
+- 3rd Party Certifications
+- Accelerated
+
+**Health & Nursing**
+- Bachelor's
+- Master's
+- Licensure
+- Certificates
+
+**Courses and Certificates**
+- Certificates
+- Recently Added
+- Courses
+
+### What the nav is actually doing
+
+The nav organizes offerings by school, degree level, credential type, pathway type, and support/utility pages at once. It is doing hidden recommendation work — steering users through school-first, level-first, certificate, licensure, accelerated-path, and single-course discovery simultaneously.
+
+This should be read as an official exploration map — but one that is fragmented across multiple UI layers rather than presented as a unified index.
+
+### Cross-listing as an official pattern
+
+WGU cross-lists programs across school menus, which shows that its official exploration model partially recognizes student-interest adjacency beyond administrative school boundaries.
+
+Examples observed:
+- Health Information Management appears under Business and Technology but belongs to the Leavitt School of Health
+- Information Technology Management appears in Technology but is from Business
+- User Experience Design appears in Technology but is from Business
+- Healthcare Administration appears in Health & Nursing but is from Business
+- MBA Information Technology Management appears in Technology but is from Business
+- Education Technology and Instructional Design appears under multiple school groupings
+
+### Analysis
+
+The official classification is more sophisticated than it looks at first. The problem is not lack of structure; the problem is that the structure is distributed across nav layers, browse pages, compare surfaces, long-form program pages, utility pages, and alternative product pages — not consolidated into a single legible index.
 
 ---
 
-## 5. All Degrees / Explore Your Options baseline
+## 6. Explore Your Options — guided quiz/recommendation flow
 
-**Stub — to be documented next session.**
+### What it is
 
-These two options appear to be the least-funnel-gated paths in the Online Degrees menu.
+`/quiz/program.html` is a guided recommendation funnel framed as:
+- "Discover your best path."
+- "Take a minute to answer — this is just for you."
+- Low-pressure disclaimer language
+- GET STARTED CTA
+- Question flow based on student motivations and interests
 
-Next session should document:
-- What "All Degrees" looks like — is it a true browse surface or a filtered landing page?
-- What "Explore Your Options" leads to — is it a quiz/recommendation flow or a structured index?
-- Whether either surface supports genuine scanning and comparison
-- Whether filtering, sorting, or search is available
-- Whether the student can understand degree options without clicking into each one individually
-- How the surface compares to what a student could do in Atlas
+### How to characterize it
 
----
+This is an official "help me choose" entry mode. It is not a browse or compare model. It is a recommendation funnel that routes users toward suggested degrees based on self-reported preferences.
 
-## 6. School/college-level public pages
+### Atlas implication
 
-**Stub — to be documented next session.**
-
-The Online Degrees menu presents degrees organized into these categories:
-- Business
-- Education
-- Technology
-- Health & Nursing
-- Courses and Certificates
-
-Next session should document how WGU presents each of these categories by visiting the corresponding pages and capturing:
-- Are these true browse hubs or mostly promotional landing pages?
-- Do they list actual programs clearly, or lead with testimonials, outcomes promises, and hero imagery?
-- How easily can a student understand their options from these pages without clicking into each degree individually?
-- Whether these map clearly to Atlas's school/college structure
+Atlas should not imitate this as a core structure. This is an official external chooser for students who do not yet have a degree family in mind. At most, Atlas might later reference or link to it. Atlas's core value is structured reasoning, inspection, and comparison — not quiz-based recommendation.
 
 ---
 
-## 7. Official program page structure
+## 7. All Degrees browse surface
 
-**Stub — to be documented next session.**
+### Default state
 
-The official WGU website includes individual program pages for each degree.
+The default all-degrees page is visually noisy and weakly organized:
+- mixed schools
+- mixed credential levels
+- mixed offer types
+- no strong default grouping by school, level, or intent
+- requires substantial scanning to identify relevant options
 
-The public degree hub is confirmed at:
+This makes the page weak for students who already have a degree family or college in mind. They must manually recover school context, degree level, offering type, and adjacency to related options.
 
-> https://www.wgu.edu/online-degree-programs.html
+### More Details expansion findings
 
-The official site presents online degrees and programs as a browse/filter surface, based on current web confirmation.
+Expanding a degree card from the default grid reveals genuinely useful facts:
+- duration
+- tuition
+- number of courses
+- skills list
+- short summary
+- sometimes a related compare link
 
-Next session should document one or more representative official WGU degree pages (e.g., the BSCS or a comparable program) and capture:
-- Hero structure and top-of-page identity
-- Whether the full course roster is visible
-- Whether program outcomes are visible on the page
-- Whether program guides or related resources are surfaced near the program description
-- Whether official-resource context (outcomes, accreditation, licensure) is attached near the degree
-- How much of the page is marketing-oriented vs academic-detail-oriented
-- How this compares to the same program's Atlas page
+This makes the surface more decision-relevant at the individual-card level.
+
+### Still-limiting factor
+
+Even with expanded cards, the page remains weak globally. The student must locate the right card, expand cards one by one, and manually synthesize across multiple expansions. The page is locally informative but not globally legible.
+
+**Strong baseline phrasing:** WGU does provide useful facts in the browse layer, but those facts are trapped in per-card expansions inside a mixed grid rather than surfaced in a strong default organizational structure.
 
 ---
 
 ## 8. Official compare baseline
 
-**Stub — to be documented next session.**
+### What exists
 
-Atlas offers a purpose-built degree comparison tool (`/compare`) that has no equivalent in the raw catalog.
+WGU provides a real public compare flow:
+- users select programs from the all-degrees grid
+- a compare tray appears at the bottom of the screen
+- users are routed to a dedicated compare page
+- compare supports up to 3 degrees
 
-Next session should answer:
-- Whether WGU's public site offers any direct degree comparison tool
-- What a student must do on wgu.edu if they want to compare two related degrees
-- Whether the official site supports any kind of side-by-side or overlap view
-- How Atlas Compare differs from that baseline experience
+### Comparison schema observed
 
-If the public site has no comparison surface, that further strengthens the case for Atlas Compare as a unique capability — not just relative to the catalog, but relative to the student's full official research experience.
+The compare surface is built around a stable set of headline metrics:
+- average time to completion
+- tuition per 6 months
+- average salary increase
+- career opportunities
+- View Degree CTA per column
 
----
+### Sibling program comparison confirmed
 
-## 9. Official course-discovery baseline
+The compare flow works not only for obviously different programs, but also for close sibling programs.
 
-**Stub — to be documented next session.**
+Observed sibling comparison example:
+- Computer Science – B.S.
+- Software Engineering – B.S.
+- Cloud and Network Engineering – B.S.
 
-A key Atlas feature is that every course code in a program roster is a link to a course detail page.
+WGU's compare should be treated as a real part of the official exploration baseline, not a decorative or trivial feature.
 
-Next session should document how a student discovers course-level information on the official WGU site:
-- Whether courses are publicly visible from program pages
-- Whether individual course-level pages exist on wgu.edu
-- How a student learns what a course in a degree actually covers
-- Whether the course list on an official program page is scannable and complete or abbreviated
+### Limits of the compare model
 
----
+Even in close-sibling cases, the compare remains narrow:
+- no course-by-course comparison
+- no curricular overlap view
+- no explicit structural differentiation
+- no direct explanation of shared vs divergent program composition
+- no relationship map between adjacent degrees
 
-## 10. Official-resource discovery baseline
+WGU compare supports high-level narrowing well — speed, cost, salary framing, role-family framing. It does not support deep academic reasoning.
 
-**Stub — to be documented next session.**
+### Page posture
 
-Atlas surfaces official WGU resources (program guides, outcomes, accreditation, etc.) directly on program pages via the Relevant Resources sidebar.
+The compare page is still embedded inside a broader persuasion shell:
+- hero framing
+- testimonial/reviews
+- FAQ
+- support messaging
+- employer-preparedness claims
+- start-date / apply nudges
 
-Next session should document how a student finds these materials on the official site:
-- Program guides — are they easy to locate from degree pages?
-- Learning outcomes — are they visible on or near degree pages?
-- Accreditation — is accreditation status and detail easy to find?
-- Licensure and disclosure — are licensure disclosures visible and accessible?
-- Admissions and program-specific requirements — how easy to find from the degree page?
-- Other official supporting materials — how are they organized?
+It is a useful compare tool, but not a clean research workspace.
 
----
+### Atlas implication
 
-## 11. WGU public-site design posture
-
-**Stub — to be documented next session.**
-
-Once the public-site experience has been observed across several surfaces, this section should characterize the official site in product terms:
-
-- Marketing-first vs reference-first
-- Exploration-friendly vs funnel-heavy
-- Comparison-friendly vs comparison-poor
-- Structured vs scattered
-- Student-research-oriented vs prospective-student-conversion-oriented
-
-That characterization will be the clearest statement of what Atlas improves on relative to the student's actual starting point.
-
----
-
-## 12. Atlas implications
-
-**Stub — to be completed after baseline is documented.**
-
-Once the public-site baseline is fully captured, this section should explain how Atlas improves on the official public exploration experience — not just the raw catalog.
-
-The key questions this section will answer:
-- What can a student do in Atlas that they cannot easily do on wgu.edu?
-- What does Atlas make faster or clearer?
-- Where does Atlas provide reference depth that the public site does not offer?
-- How does the Atlas homepage claim need to change once both baselines are understood?
+Do not frame Atlas as "the only way to compare." The more truthful contrast is:
+- WGU helps students compare headline outcomes
+- Atlas helps students compare program structure
 
 ---
 
-## 13. Open questions for next session
+## 9. Official program-detail pages: shared long-form template
 
-- Where do "Business," "Education," "Technology," "Health & Nursing," and "Courses and Certificates" lead from the Online Degrees menu?
-- What does "All Degrees" look like as a surface?
-- What does "Explore Your Options" lead to?
-- How many clicks does it take to reach a specific degree page from the top nav?
-- What does an official WGU degree page contain near the top of the page?
-- Is the full course roster visible on official program pages?
-- Are learning outcomes visible on official program pages?
-- Are program guides easy to find from within a program page?
-- Is there any official compare flow or side-by-side degree comparison on wgu.edu?
-- What is the course-level exploration baseline on the public site?
-- Are official-resource links (guides, accreditation, licensure) surfaced near degree information or buried elsewhere?
+### General characterization
+
+Official WGU degree pages are not shallow. They contain substantial student-useful information. But that information is presented inside long-form, CTA-heavy, conversion-shaped pages.
+
+### Shared scaffold observed across program pages
+
+Across multiple programs, the official template repeatedly includes:
+- global header and nav
+- breadcrumb
+- degree label / program identity
+- hero CTA
+- accreditation/certification logos
+- in-page section nav
+- overview narrative
+- stat cards (time, cost, salary)
+- repeated next-start-date / apply bands
+- course section with program guide link
+- special requirements callout
+- WGU-vs-traditional comparison block
+- Why WGU / value-prop tiles
+- cost/time section
+- flexible schedule section
+- testimonial
+- career outlook / ROI section
+- admissions block
+- transfer block
+- repeated micro-CTAs
+- footer / chat
+
+### Shared product read
+
+The program pages are:
+- individually rich
+- academically more useful than the all-degrees grid or compare page
+- still operationally inefficient for research, because students must scroll through repeated persuasion modules and normalize facts across separate pages manually
+
+**The limitation is not lack of information; it is packaging.** The official site embeds meaningful academic and policy details inside enrollment-oriented long-form pages.
 
 ---
 
-## 14. Session handoff note
+### 9.1 Representative program page: B.S. Computer Science
 
-This doc is intentionally partial.
+#### What it exposes
+- breadcrumb and program identity
+- accreditation signals
+- section anchor nav
+- top-level time/cost/salary metrics
+- grouped course roster
+- program guide link
+- included certifications
+- cost/time model
+- admissions requirements
+- transfer guidance
+- career-outlook content
+- related accelerated path
 
-It captures confirmed observations from the current session (global nav structure, Online Degrees dropdown options, and the existence of the public degree hub at wgu.edu/online-degree-programs.html) and stubs the remaining analysis for the next session.
+#### What makes it important
 
-Next session should continue documenting the official WGU public-site student journey by following the key entry flows and capturing what a student actually encounters.
+This page shows that official program pages do expose real academic inspection material: course categories, program size, program guide, requirements, certifications, admissions rules. A student who works through the page can extract meaningful research information.
 
-Homepage design work should proceed with this baseline in mind. Atlas should ultimately be positioned not only against the raw catalog, but against the full official student research experience — because that is the experience Atlas is actually replacing.
+#### What remains limiting
+
+The useful material is embedded inside a repeated persuasion shell: multiple CTAs, WGU-vs-traditional comparison, "Why WGU?" block, testimonial, employer logos, repeated start/apply bands.
+
+---
+
+### 9.2 Representative program page: Nursing Informatics RN-to-MSN
+
+#### What it adds beyond simpler program pages
+
+This page shows that bridge and licensure-heavy programs include additional structures not present in simpler degree pages:
+- bridge-path explanation
+- BSN + MSN progression logic
+- split undergrad/grad tuition
+- field experiences
+- compliance / safety notice
+- RN-license-based admissions
+- California PHN options
+- state-/licensure-sensitive program context
+- post-baccalaureate certificate / credential-on-the-way logic
+
+#### Why it matters
+
+This confirms that official program pages are not one flat template. They share a scaffold but include program-family-specific additions. Nursing pages foreground licensure, compliance, and pathway complexity far more explicitly than IT pages. This matters for the official-resource-discovery baseline and for how Atlas should handle licensure-linked programs.
+
+---
+
+### 9.3 Representative program page: B.S. Data Analytics
+
+#### Important findings
+- Hero includes cert framing with logos
+- Overview explicitly presents a "three-lever" framing: programming skills, math skills, business influence skills
+- Stat cards include average transfer credits alongside standard time/tuition metrics
+- Course section is detailed and grouped; capstone requirement is visible
+- IT cert section includes third-party certifications, optional certificates, and WGU-issued certificates
+- FAQ section gives explicit policy explanations
+- Advisory board is publicly named
+
+#### What makes this page especially useful
+
+This page shows that some WGU program pages expose:
+- transfer-heavy framing
+- policy rationale via FAQ
+- advisory-board context
+- both third-party certs and WGU certificate layers
+
+#### Important FAQ items (preserved)
+
+The FAQ explicitly answers:
+- what to do if a student cannot meet eligibility requirements
+- why certs/prereqs are required
+- why certs older than five years are not accepted
+- how self-pacing actually works
+- what instructors do without lectures
+
+These are official explanatory resources, not just marketing copy.
+
+#### Advisory board
+
+The page publicly names the Data Analytics Advisory Board. This is an official context layer that may matter later as attached evidence or institutional context.
+
+---
+
+## 10. Official-resource pages for education: licensure and student teaching
+
+Education programs reveal that some official resources are major standalone pages linked from navigation — not just supplemental links buried within a single degree page.
+
+### A. Student Teaching page
+
+A standalone official resource page covering:
+- required in-person clinical experiences and student teaching for education licensure programs
+- minimum 65 hours of early/advanced clinicals
+- full-time supervised student teaching lasting at least 60 days
+- mentor teacher requirements
+- culturally competent practitioner expectations
+- program gateways and application checkpoints
+- list of degree programs requiring student teaching
+- links to related degree pages
+
+**Why it matters:** This is a resource/support/compliance page embedded in the exploration experience. It links policy and compliance information directly to specific degree cards. It is not marketing — it is a real official preparation requirement surface.
+
+### B. Teaching License/Certification page
+
+A standalone explainer and routing page covering:
+- what a teaching license/certification is
+- difference between initial licensure and adding to an existing license
+- who needs licensure
+- grouped degree lists tied to initial licensure or adding to license
+- FAQ covering reciprocity, duration, demand, alternative routes, etc.
+
+**Why it matters:** This is a significant public explanation layer for students trying to understand licensure path types. It combines concept explanation with degree routing.
+
+### C. State Licensure Information page
+
+A state-by-state compliance and disclosure hub covering:
+- state-specific teacher licensure information for all states and territories
+- federal/NC-SARA compliance framing
+- consumer complaint / refund / Title IV links
+- licensure contact email
+- a lighter promotional block linking to "How to Become a Teacher"
+
+**Why it matters:** This is a high-value official-resource page. It is useful, but structurally separate from individual program pages — showing how important public official context may live off to the side rather than attached tightly to a degree entry.
+
+### Product interpretation
+
+Education exploration on the official site is deeply entangled with licensure, state compliance, student teaching, endorsements, and credential-path decisions. The site exposes these resources, but they live across multiple page types rather than in one integrated student research surface.
+
+---
+
+## 11. Official page-type taxonomy
+
+The public site includes substantially more page types than the catalog or a simple degree index.
+
+### Page types now observed
+- top-nav taxonomy / exploration map
+- all-degrees browse surface
+- compare pages
+- official program-detail pages (standard)
+- official program-detail pages (bridge / licensure-heavy)
+- official program-detail pages (accelerated path)
+- guided recommendation quiz
+- alternative-start / intro-term offer pages
+- standalone course / advanced-course product pages
+- licensure / compliance / teaching-preparation pages
+- certification mapping pages
+- program guides (linked academic artifact PDFs)
+
+### Why this matters
+
+The official public-site student experience is heterogeneous. It mixes discovery surfaces, product pages, support/compliance resources, enrollment funnels, and linked academic documents. That breadth helps coverage but contributes to fragmentation — students must move across multiple page types to complete a single research task.
+
+---
+
+## 12. Alternative-start page type: Personalized Start / Single Course Offerings
+
+### What it is
+
+This page is an alternative-start offer page, not a degree-detail page. It presents:
+- intro-term / low-commitment on-ramp framing
+- one or two courses
+- $25 offer framing
+- support features
+- degree-credit carryover
+- single-course catalog list
+- enrollment process
+- federal-aid caveat
+
+### Product interpretation
+
+This is an official lower-risk entry path. It is not a research surface.
+
+### Atlas implication
+
+Atlas probably does not want to emulate this page type directly, but may later want to note it, link to it, or contextualize it as an official on-ramp option. It should not be confused with Atlas's degree or course pages.
+
+---
+
+## 13. Standalone advanced-course product page type: Advanced Accounting Courses
+
+### What it is
+
+A standalone graduate-level non-degree course-product page, separate from the full-degree program pages.
+
+### What it exposes
+- target audience
+- cost
+- term length
+- payment model
+- requirements
+- specific course list
+- CPA-related value framing
+- enrollment process
+
+### Why it matters
+
+This page shows that the public site includes course-marketplace-like offerings and standalone course products alongside full degree programs. This helps explain why the broader WGU public exploration environment can feel heterogeneous: it mixes full programs with alternate educational units and non-degree offerings.
+
+---
+
+## 14. Technology-specific certification mapping page
+
+### What it provides
+
+A degree-to-certification bundle mapping for IT programs, showing:
+- which certs are included in each IT degree
+- which degrees do not include certs
+- accelerated-program cert bundle
+
+### Why it is important
+
+This is a valuable official mapping artifact. Degree pages and compare pages do not always show certifications in a normalized cross-program view.
+
+### Important limitation
+
+The page provides a degree → cert mapping, but does not provide:
+- course → cert mapping
+- sequencing or when the cert is earned
+- whether each cert is tied to a specific course
+- whether certs are required vs optional in a clean structured form
+
+### Atlas implication
+
+This is useful official context, but still incomplete for the cert/course structure Atlas would ideally want to expose.
+
+---
+
+## 15. Accelerated degree pages as a distinct official subtype
+
+Accelerated degree pages are not ordinary single-degree pages. They are structured as:
+- B.S. → M.S. pathways
+- bridge programs
+- fewer courses than separate completion
+- split undergrad/grad tuition
+- staged progression
+- cert bundles spanning the combined path
+
+Accelerated programs are a distinct official page type and program subtype. They should not be flattened into ordinary bachelor's or master's exploration when Atlas references or links them.
+
+---
+
+## 16. Program guides as a major official artifact layer
+
+### Why this matters
+
+Program guides appear to be one of the highest-value official WGU artifacts for Atlas. They may be more structurally useful than public degree pages for academic content.
+
+### What a program guide contains
+
+**A. Program metadata / versioning**
+- version ID
+- document date / effective date
+- stable footer/version anchors
+
+**B. Standard Path table**
+
+This is a high-value structured layer containing:
+- term-by-term sequence
+- course title
+- CUs per course
+- term placement
+- total courses
+- implied total CUs
+- total number of terms
+
+This is the cleanest official source for default sequencing, pacing, program size, and term structure.
+
+**C. Areas of Study section**
+
+This is a second high-value layer containing:
+- area of study / subject grouping
+- course descriptions
+- competency bullets
+- capstone
+- occasional prerequisite mentions
+- occasional certification-prep mentions
+
+This is the cleanest official source for course meaning, conceptual grouping, program-specific competencies, and implicit academic relationships between courses.
+
+**D. Boilerplate sections (low value for parsing)**
+- WGU model explanation
+- transfer policy boilerplate
+- accessibility/services/contact pages
+- generic curriculum-change notices
+
+These can generally be ignored for data extraction.
+
+### Worked example: BSDA program guide
+
+**Guide metadata:**
+- Version ID: BSDA 202309
+- Date: 5/1/23
+- 21 pages
+- clean text extraction
+- Standard Path table extracted well
+- full course descriptions extracted well
+- competency bullets extracted well
+
+**Standard Path findings:**
+- 43 courses
+- 8 terms
+- course/CU/term table is clean and parseable
+- term-by-term sequencing is explicit
+
+**Areas of Study groups observed (BSDA):**
+- Data Analytics
+- Business of IT
+- Scripting and Programming
+- Business Core
+- Data Management
+- Business Management
+- General Education
+- Network and Security
+- Full Stack Engineering
+- Web Development
+- Information Technology Management
+- Software
+- Data Science
+- Computer Science
+- Capstone
+
+**Parseable signals:**
+- area-of-study headers are strong anchors
+- competency bullets follow recognizable patterns
+- certification-prep mentions can appear inline in course prose
+- prerequisites are sometimes embedded in prose
+- page footers/version strings are easy to strip
+
+### Product interpretation
+
+Program guides should be treated as a major official artifact layer for Atlas, not just a linked supplement.
+
+They are:
+- more structured than public degree pages
+- more academic than compare pages
+- likely the best official source for sequence, curriculum, and course meaning at scale
+
+---
+
+## 17. Updated public-site design posture
+
+### More accurate characterization
+
+The official public site is not simply "marketing-first and shallow." It is better described as:
+- broad
+- heavily templated
+- multi-surface
+- conversion-aware
+- partly structured
+- academically richer at the program-guide and program-page layer
+- still fragmented as a student research environment
+
+### Revised synthesis
+
+The site provides many of the pieces a serious student needs, but distributes them across:
+- nav taxonomy
+- mixed browse surfaces
+- narrow compare pages
+- long-form program pages
+- utility/compliance pages
+- linked program guides
+- alternative-entry and non-degree product pages
+
+**Strong summary:** The public site is broad and information-rich in places, but the student still has to do too much manual synthesis. The limitation is not lack of information — it is packaging and fragmentation.
+
+---
+
+## 18. Updated Atlas implications
+
+### What not to claim
+
+Do not frame Atlas as:
+- the first place students can compare degrees (WGU has a real compare surface)
+- the only place students can see courses (official program pages do include rosters)
+- the only place with official context (program guides and utility pages exist)
+- the only place with program information
+
+Those claims are too broad given the official site.
+
+### Stronger and more truthful contrast
+
+Atlas improves on the official public-site experience by making official information:
+- more legible
+- more structurally organized
+- easier to compare at the curriculum level (vs WGU's headline-metrics-only compare)
+- easier to inspect across programs
+- easier to connect across schools and adjacent paths
+- easier to use without scrolling through repeated persuasion shells
+
+### Most important homepage implication
+
+The homepage should not try to imitate WGU's public site by becoming:
+- a giant menu
+- a huge card wall
+- a general-purpose enrollment funnel
+- a heterogeneous marketplace of all offer types
+
+Instead it should prove that Atlas makes official WGU information more usable by:
+- exposing structure
+- clarifying relationships
+- surfacing useful curriculum-level comparisons
+- foregrounding academic composition and official context without enrollment-funnel wrapping
+
+### Strong final framing
+
+WGU's public site already proves that there is a lot of official material. Atlas's opportunity is not to add noise — it is to restructure that material into a clearer student-use guide.
+
+---
+
+## Appendix: official page families and high-value artifacts
+
+### Official page families now observed
+- taxonomy/menu pages
+- browse pages
+- compare pages
+- standard program pages
+- accelerated program pages
+- bridge/licensure-heavy program pages
+- quiz/recommendation pages
+- intro-term offer pages
+- standalone course/certificate pages
+- licensure/compliance pages
+- cert-mapping pages
+- program-guide PDFs
+
+### High-value official artifacts for future harvesting
+- program guides
+- IT cert mapping pages
+- licensure/state-info pages
+- teacher-preparation pages
+- advisory-board sections (on applicable program pages)
+- FAQ/policy explanation sections on program pages
+
+---
+
+## Open questions for future sessions
+
+Questions now answered in this doc:
+- ~~Where does "All Degrees" lead?~~
+- ~~What does "Explore Your Options" lead to?~~
+- ~~Is there any official compare flow on wgu.edu?~~
+- ~~What do official program pages contain?~~
+- ~~Are program guides accessible and parseable?~~
+
+Remaining open questions:
+- Are all school-level pages now documented? (Business, Education, Technology, Health & Nursing each need a dedicated landing-page read)
+- Are learning outcomes / graduate competency statements visible on official program pages, or only in program guides?
+- Are there official program pages for all active programs, or do some lack pages?
+- What does a student see if they navigate from the official site to Atlas for the same program? Is the difference immediately legible?
+- Are course-level pages publicly accessible on wgu.edu?
+- How does the licensure/state-compliance surface differ for IT programs vs Education programs?
+- Are advisory boards listed for programs other than Data Analytics?
+- What is the current scope of programs with accessible program guides?
+
+---
+
+## Session handoff note
+
+This doc has been substantially expanded from its initial baseline.
+
+The following surfaces are now documented with real findings:
+- global nav and Online Degrees taxonomy (§4, §5)
+- Explore Your Options quiz flow (§6)
+- All Degrees browse surface (§7)
+- Official compare flow (§8)
+- Official program-detail page template and three representative examples (§9)
+- Education official-resource pages: student teaching, licensure, state compliance (§10)
+- Official page-type taxonomy (§11)
+- Alternative-start, advanced-course, cert-mapping, and accelerated page types (§12–§15)
+- Program guides as a major official artifact layer with worked BSDA example (§16)
+- Updated product posture and Atlas implications (§17, §18)
+
+The following remain as future work:
+- School-level landing page reads (Business, Education, Technology, Health & Nursing)
+- Course-level discovery baseline on the public site
+- Confirmed outcomes/competency-statement visibility on program pages
+- Atlas-vs-official-site side-by-side comparison for at least one representative program
+
+Homepage design can now proceed from a substantially more complete dual baseline (catalog + public site). The synthesis section in `homepage_design_session_2026-03.md` should be revisited once the remaining school-level and course-discovery gaps are filled.
