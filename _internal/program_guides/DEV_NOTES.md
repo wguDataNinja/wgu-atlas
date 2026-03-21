@@ -2,6 +2,49 @@
 
 ---
 
+## Audit Summary — 2026-03-21
+
+### Production-leaning (38 guides across 3 families)
+
+The following fields are internally production-quality for the 38 parsed guides:
+- **Course descriptions:** 0 empty across all 38 guides. Strongest field in the pipeline.
+- **Competency bullets:** Near-zero empty (2 known PDF artifact cases only).
+- **Cert-prep mentions:** Reliable inline extraction; highest value in cs_ug.
+- **Standard Path course list + CU values:** Reliable for 37/38 (BSITM excluded).
+- **AoS group structure:** Validated across all 38 guides.
+
+The parser's core state machine, section anchor detection, SP format detection (2-col / 3-col / multiline), and metadata extraction (footer + header-line) are all cross-validated and stable.
+
+### Still provisional
+
+- **67% of corpus (77 guides / 16 families) has no content parse.** Do not extrapolate parsed-family results to untouched families.
+- **4 Sped education_ba guides** have 1 missing AoS course each (PDF reordering artifact; parser fix deferred). Flag for downstream users.
+- **BSITM SP data is LOW confidence** (PDF column extraction failure). AoS for BSITM is correct and usable.
+- **Prereq mention extraction** has a known false-positive regex pattern. Use as flag only; do not display raw text.
+- **Endorsement, nursing families, and guides with Field Experience / Practicum / Post-Master sections** are entirely unvalidated. Parser is not known to handle these correctly.
+- **Phase D (site artifact build)** and **Phase E (course-code matching)** are not started. Internal artifacts are not wired to the site.
+
+### What should happen before integration
+
+1. Continue family rollouts — target ≥70 guides (60–70% corpus) before beginning Phase D.
+2. Gate test **graduate_standard** (MBA first — all manifest HIGH, lowest risk). Proceed to full 9-guide rollout if gate passes.
+3. Gate test **mba** family (3 guides, all manifest HIGH).
+4. Gate test **healthcare_grad** (MHA or MPH).
+5. After those (~52 guides, 45%), reassess. Continue with teaching_mat and education_bs (validated patterns from education_ba).
+6. Defer endorsement and nursing families until independent gate tests confirm structure.
+7. Design Phase D build script when ≥70 guides are parsed.
+8. Do not start site integration before Phase D is designed and ≥70% coverage is reached.
+
+### Audit artifacts
+
+Full audit produced in `data/program_guides/audit/`:
+- `program_guide_family_inventory.{json,md}` — all 19 families, rollout status, key structural facts
+- `program_guide_section_matrix.{csv,md}` — section/component analysis across corpus
+- `program_guide_readiness_assessment.{json,md}` — conservative readiness review, concrete next steps
+- `program_guide_atlas_enrichment_recommendations.md` — per-section enrichment priority and risk
+
+---
+
 ## Session 15 (continued) — education_ba Full Rollout (2026-03-21)
 
 ### Full rollout results

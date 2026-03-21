@@ -1,0 +1,124 @@
+{
+  "audit_date": "2026-03-21",
+  "assessment_type": "conservative_readiness_review",
+
+  "corpus_coverage": {
+    "total_guides": 115,
+    "parsed_guides": 38,
+    "parsed_pct": 33.0,
+    "fully_validated_families": ["standard_bs", "cs_ug", "education_ba"],
+    "untouched_families": 16,
+    "untouched_guides": 77
+  },
+
+  "what_is_trustworthy": {
+    "confidence": "HIGH",
+    "scope": "38 guides across 3 completed families",
+    "items": [
+      "Course descriptions: 0 empty across all 38 guides; robust across all structure variants",
+      "Competency bullets: near-zero empty (2 known PDF artifact cases); robust across all structure variants",
+      "Cert-prep inline mention extraction: reliable where present; high-value for cs_ug",
+      "AoS state machine parsing (INTRO → GROUP → COURSE → DESC → COMPETENCIES): validated across 3 structurally different families",
+      "Standard Path 3-column multiline parsing: validated across 24 guides (standard_bs 3-col + cs_ug)",
+      "Standard Path 2-column (no Term) parsing: validated across 3 education_ba teacher licensure guides + BSMES",
+      "Footer metadata parsing: validated across guides with footer format",
+      "Header-line metadata parsing: validated across education_ba (all 11) and many standard_bs guides",
+      "Clinical Experiences and Student Teaching as AoS group labels: validated across BSMES + 3 education_ba teacher licensure guides",
+      "False-positive Capstone detection fix: validated across all 38 guides",
+      "SP_TOTAL_RE break behavior: validated",
+      "Bullet continuation logic: validated with known edge case (Special Education course title absorption)"
+    ]
+  },
+
+  "what_is_trustworthy_for_completed_families_only": {
+    "confidence": "MEDIUM-HIGH",
+    "scope": "38 parsed guides only — do not extrapolate to untouched families",
+    "items": [
+      "SP course count and title list per program",
+      "SP term sequence and CU values (where 3-col format confirmed)",
+      "AoS group count and structure per program",
+      "Prereq mention flags (reliable as flag; false-positive rate documented but not quantified)",
+      "Capstone identification (present/absent is reliable for parsed guides)",
+      "Guide metadata (version, pub_date) for 36 of 38 parsed guides"
+    ]
+  },
+
+  "what_is_promising_but_not_yet_trustworthy": {
+    "confidence": "INSUFFICIENT",
+    "items": [
+      "graduate_standard (9 guides): DEV_NOTES recommends as next target; structurally expected to be similar to standard_bs; manifests 2H/7M; no content parse done",
+      "mba (3 guides): all manifest HIGH; simple structure expected; lowest-risk untouched family",
+      "healthcare_grad (2 guides): manifest 1H/1M; small family; MHA recommended in DEV_NOTES",
+      "cs_grad (5 guides): analogous structure to cs_ug expected; minor graduate-level differences unknown",
+      "data_analytics_grad (3 guides): track variants similar in structure to swe_grad and accounting_ma",
+      "accounting_ma (5 guides): MACC track variants; manifests 0H/5M but simpler structure expected",
+      "education_bs (4 guides): likely similar to education_ba teacher licensure; Clinical/ST confirmed in manifest",
+      "teaching_mat (9 guides): expected to share structure with education_ba; Clinical/ST confirmed in manifest"
+    ]
+  },
+
+  "what_is_too_risky_to_use_yet": {
+    "items": [
+      "BSITM Standard Path data: LOW confidence — PDF column extraction failure garbled first 5 SP titles. AoS is correct and usable.",
+      "BAESSPEE, BAESSPMM, BASPEE, BASPMM AoS completeness: 1 course per guide missing from AoS due to PDF reordering artifact. AoS otherwise complete. Use SP row count as completeness check.",
+      "Any data from 77 untouched guides: no content parse done",
+      "Endorsement family (8 guides): structure unknown; may differ substantially from degree programs",
+      "nursing_msn, nursing_pmc, nursing_rn_msn, nursing_ug (14 guides combined): clinical section handling untested; Post-Master sections silently skipped",
+      "Field Experience content (ENDELL, MAELLP12): parser not run; section format unknown",
+      "Practicum content (MSEDL): parser not run; section format unknown",
+      "Course-code matching (Phase E): not started; titles cannot be linked to Atlas course codes yet",
+      "Site artifact generation (Phase D): not started; no runtime artifacts produced"
+    ]
+  },
+
+  "validations_earned": [
+    "SP format detection (2-col, 3-col, multiline) — tested and confirmed across 38 diverse guides",
+    "AoS state machine robustness — validated across 3 families with different AoS group structures",
+    "Bullet continuation logic — validated; known edge case with Sped course title documented",
+    "Footer metadata parsing — validated across at least 34 guides",
+    "Header-line metadata parsing — validated across ~20+ guides",
+    "False-Capstone-detection fix — validated; no regressions found across 38 guides",
+    "Section anchor detection (Standard Path, Areas of Study, Capstone, Accessibility) — validated",
+    "Per-guide parsed.json / validation.json / manifest_row.json artifact generation — production-ready schema",
+    "Family validation summary artifacts (rollout_summary.json/.md) — useful audit layer"
+  ],
+
+  "validations_still_missing": [
+    "Graduate family SP format behavior (graduate_standard, cs_grad, mba, healthcare_grad, swe_grad, data_analytics_grad, accounting_ma)",
+    "Endorsement structure — may require new section handling or completely different parse path",
+    "Nursing clinical section format — Post-Master, clinical preceptor sections not yet extracted",
+    "Field Experience section handling",
+    "Practicum section handling",
+    "teaching_mat and education_ma full rollout",
+    "education_bs rollout",
+    "SP course list completeness for 4 Sped education_ba guides",
+    "Bullet-continuation heuristic fix for Sped course title false-continuation (deferred)",
+    "Course-code matching (Phase E) — entire downstream matching layer",
+    "Site artifact generation (Phase D) — entire downstream build step"
+  ],
+
+  "recommendation": {
+    "overall_posture": "NOT ready for broad rollout or site integration; ready for continued family rollout with clear gate testing",
+    "what_is_ready_now": "Internal data artifacts for 38 guides across 3 families are production-quality for course descriptions, competency bullets, and cert-prep mentions. These could be wired to a Phase D build step, but doing so now would cover only 33% of programs.",
+    "what_must_happen_before_integration": [
+      "At minimum, complete graduate_standard rollout to validate graduate-format SP parsing",
+      "Gate test MBA or MHA to confirm no new section patterns",
+      "Reach 60-70% corpus coverage (70+ parsed guides) before beginning Phase D site artifact build",
+      "Complete Phase D build script design before site integration",
+      "Document course-code matching approach (Phase E) before wiring descriptions to course pages"
+    ],
+    "next_three_concrete_steps": [
+      "1. Run graduate_standard gate test: parse MBA (all manifest HIGH; simplest graduate structure). If HIGH confidence and no new section patterns, proceed to full graduate_standard rollout (9 guides).",
+      "2. Run mba rollout (3 guides, all manifest HIGH). If clean, these 3 can go straight to full rollout without sampling.",
+      "3. Run healthcare_grad gate test (MHA or MPH). These 2 guides complete the low-risk graduate tier and add 2 more high-confidence guides."
+    ],
+    "after_those_three": "Following graduate_standard + mba + healthcare_grad rollouts, 52 guides (45%) will be parsed. Reassess readiness at that checkpoint. Consider teaching_mat and education_bs next (share validated patterns from education_ba). Defer endorsement and nursing families until structure is confirmed via gate tests.",
+    "site_integration_posture": "Defer site integration (Phase D) until ≥70% corpus coverage. Design Phase D build script now if capacity allows, but do not wire to site until coverage warrants it.",
+    "not_recommended": [
+      "Proceeding directly to site integration now (33% coverage is too low)",
+      "Attempting endorsement or nursing families without gate tests",
+      "Full-corpus --all parse run across all 115 guides (parser not yet ready for nursing/endorsement)",
+      "Course-code matching (Phase E) before Phase D build script is designed"
+    ]
+  }
+}
