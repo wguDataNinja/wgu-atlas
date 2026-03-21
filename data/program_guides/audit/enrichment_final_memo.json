@@ -1,0 +1,61 @@
+{
+  "report_type": "enrichment_final_memo",
+  "date": "2026-03-21",
+  "basis": "Phase C complete — 115/115 guides parsed",
+  "corpus_summary": {
+    "total_guides": 115,
+    "high_confidence": 96,
+    "medium_confidence": 17,
+    "low_confidence": 2,
+    "total_aos_courses": 2593,
+    "descriptions_available": 2593,
+    "competency_sets_available": 2591,
+    "sp_rows": 2568,
+    "sp_eligible_guides": 113,
+    "families_complete": 18,
+    "education_grad_complete": true
+  },
+  "recommended_sequence": [
+    {
+      "phase": "D",
+      "name": "Program-page enrichment",
+      "status": "NOT STARTED",
+      "description": "Build public/data/program_guides/{CODE}.json site-ready artifacts",
+      "quality_gate": "HIGH + MEDIUM guides; SP excluded for BSITM/MSCSUG/MATSPED",
+      "guides_included_AoS": 115,
+      "guides_included_SP": 112,
+      "risk": "low",
+      "steps": [
+        "Design Phase D schema (output format + inclusion/exclusion policy)",
+        "Build scripts/program_guides/build_guide_artifacts.py",
+        "Spot-check 10 sample programs",
+        "Wire to program detail pages (/programs/{code})"
+      ]
+    },
+    {
+      "phase": "E",
+      "name": "Course-page enrichment",
+      "status": "NOT STARTED",
+      "description": "Map guide course titles to Atlas course codes; publish per-course descriptions",
+      "dependency": "Phase D must be live first",
+      "estimated_coverage": "700-900 distinct course codes",
+      "risk": "medium",
+      "steps": [
+        "Build title→code lookup from catalog data",
+        "Fuzzy-match guide titles against catalog titles",
+        "Flag non-matches for manual review",
+        "Dedup descriptions per course code",
+        "Gate test on 10-course sample",
+        "Full-corpus run"
+      ]
+    }
+  ],
+  "risk_summary": [
+    {"risk": "Phase D breaks program pages", "level": "low", "mitigation": "Guide data is additive; catalog data unchanged"},
+    {"risk": "MEDIUM guides producing incorrect content", "level": "low", "mitigation": "All reviewed; issues are structural not content-quality"},
+    {"risk": "Guide descriptions outdated", "level": "medium", "mitigation": "Version fields available for most guides"},
+    {"risk": "Phase E title-matching errors", "level": "medium", "mitigation": "Gate test on sample required"}
+  ],
+  "sp_exclusions_phase_d": ["BSITM", "MSCSUG", "MATSPED"],
+  "all_field_exclusions_reference": "enrichment_no_use_list.json"
+}

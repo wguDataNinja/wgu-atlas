@@ -508,12 +508,7 @@
           "certification_prep_mentions": [
             "CompTIA Security+"
           ]
-        }
-      ]
-    },
-    {
-      "group": "Networks",
-      "courses": [
+        },
         {
           "title": "Networks",
           "description": "Networks introduces skills in configuring networking components and a network infrastructure. Learners will gain skills in optimizing network operations for availability, performance, and security, and in troubleshooting network issues. The course prepares learners for the CompTIA Network+ certification exam. Network and Security - Foundations is a prerequisite for this course.",

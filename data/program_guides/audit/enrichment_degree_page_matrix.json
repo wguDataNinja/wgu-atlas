@@ -1,0 +1,120 @@
+{
+  "report_type": "enrichment_degree_page_matrix",
+  "date": "2026-03-21",
+  "basis": "115/115 guides parsed (Phase C complete)",
+  "summary": {
+    "total_guides": 115,
+    "high_confidence": 96,
+    "medium_confidence": 17,
+    "low_confidence": 2,
+    "total_aos_courses": 2593,
+    "descriptions_available": 2593,
+    "description_coverage_pct": 100.0,
+    "competency_sets_available": 2591,
+    "competency_coverage_pct": 99.9,
+    "sp_rows_total": 2568,
+    "sp_usable_guides": 113,
+    "sp_with_term": 95
+  },
+  "field_readiness": {
+    "course_descriptions": {
+      "json_path": "areas_of_study[*].courses[*].description",
+      "coverage_guides": 115,
+      "coverage_courses": 2593,
+      "quality_gate": "HIGH + MEDIUM",
+      "phase_d_ready": true,
+      "notes": "100% coverage. Strongest field in corpus."
+    },
+    "aos_group_structure": {
+      "json_path": "areas_of_study[*].group",
+      "coverage_guides": 115,
+      "quality_gate": "HIGH + MEDIUM",
+      "phase_d_ready": true,
+      "notes": "All guides have at least 1 group. Useful for program-page organization."
+    },
+    "standard_path_course_list_with_cus": {
+      "json_path": "standard_path[*].{title, cus}",
+      "coverage_guides": 113,
+      "excluded_guides": ["BSITM", "MSCSUG"],
+      "quality_gate": "HIGH + MEDIUM (excluding SP-broken guides)",
+      "phase_d_ready": true,
+      "notes": "BSITM and MSCSUG SP excluded (source PDF failure). All other guides have CU values."
+    },
+    "standard_path_term_numbers": {
+      "json_path": "standard_path[*].term",
+      "coverage_guides": 95,
+      "no_term_families": ["education_bs", "endorsement (7/8)", "teaching_mat (7/9)"],
+      "quality_gate": "Show term-grouped when term present; ordered-list fallback when absent",
+      "phase_d_ready": true,
+      "notes": "Term column not present in 2-col SP format (education_bs, most endorsement, most teaching_mat)."
+    },
+    "competency_bullets": {
+      "json_path": "areas_of_study[*].courses[*].competency_bullets",
+      "coverage_guides": 115,
+      "coverage_courses": 2591,
+      "zero_bullet_exceptions": [
+        {"code": "BSITM", "course": "one course", "reason": "PDF format artifact"},
+        {"code": "BSSWE_C", "course": "one course", "reason": "PDF format artifact"}
+      ],
+      "quality_gate": "HIGH + MEDIUM (suppress 2 zero-bullet exceptions)",
+      "phase_d_ready": true,
+      "render_recommendation": "Progressive disclosure (show/hide) — do not expand by default",
+      "notes": "99.9% coverage. Dense content."
+    },
+    "prereq_mentions": {
+      "json_path": "areas_of_study[*].courses[*].prerequisite_mentions",
+      "quality_gate": "NOT READY — known false-positive risk",
+      "phase_d_ready": false,
+      "notes": "Internal reference only. Needs spot-check validation pass before surface use."
+    },
+    "degree_title": {
+      "json_path": "degree_title",
+      "quality_gate": "Secondary confirmation only — use catalog degree title as primary",
+      "phase_d_ready": false,
+      "notes": "Guide degree titles are cosmetically inconsistent. MSRNN* truncated. Use catalog source."
+    }
+  },
+  "per_family_summary": [
+    {"family": "standard_bs", "guides": 19, "high": 16, "medium": 2, "low": 1, "sp_usable": 18, "sp_has_term": 18, "recommendation": "Include all; exclude BSITM SP"},
+    {"family": "cs_ug", "guides": 8, "high": 4, "medium": 4, "low": 0, "sp_usable": 8, "sp_has_term": 8, "recommendation": "Include all"},
+    {"family": "education_ba", "guides": 11, "high": 5, "medium": 6, "low": 0, "sp_usable": 11, "sp_has_term": 8, "recommendation": "Include all; flat-list for 3 no-term guides"},
+    {"family": "graduate_standard", "guides": 9, "high": 9, "medium": 0, "low": 0, "sp_usable": 9, "sp_has_term": 8, "recommendation": "Include all"},
+    {"family": "mba", "guides": 3, "high": 3, "medium": 0, "low": 0, "sp_usable": 3, "sp_has_term": 3, "recommendation": "Include all"},
+    {"family": "healthcare_grad", "guides": 2, "high": 2, "medium": 0, "low": 0, "sp_usable": 2, "sp_has_term": 2, "recommendation": "Include all"},
+    {"family": "education_bs", "guides": 4, "high": 4, "medium": 0, "low": 0, "sp_usable": 4, "sp_has_term": 0, "recommendation": "Include all; flat ordered-list (no term column)"},
+    {"family": "teaching_mat", "guides": 9, "high": 8, "medium": 1, "low": 0, "sp_usable": 9, "sp_has_term": 2, "recommendation": "Include all; flat-list for 7 no-term guides"},
+    {"family": "cs_grad", "guides": 5, "high": 4, "medium": 0, "low": 1, "sp_usable": 4, "sp_has_term": 5, "recommendation": "Include 4H for SP; AoS for all 5; exclude MSCSUG SP"},
+    {"family": "swe_grad", "guides": 4, "high": 3, "medium": 1, "low": 0, "sp_usable": 4, "sp_has_term": 4, "recommendation": "Include all"},
+    {"family": "data_analytics_grad", "guides": 3, "high": 3, "medium": 0, "low": 0, "sp_usable": 3, "sp_has_term": 3, "recommendation": "Include all"},
+    {"family": "education_ma", "guides": 9, "high": 9, "medium": 0, "low": 0, "sp_usable": 9, "sp_has_term": 9, "recommendation": "Include all"},
+    {"family": "endorsement", "guides": 8, "high": 8, "medium": 0, "low": 0, "sp_usable": 8, "sp_has_term": 1, "recommendation": "Include all; flat-list for 7 no-term guides"},
+    {"family": "nursing_msn", "guides": 5, "high": 5, "medium": 0, "low": 0, "sp_usable": 5, "sp_has_term": 5, "recommendation": "Include all"},
+    {"family": "nursing_pmc", "guides": 4, "high": 4, "medium": 0, "low": 0, "sp_usable": 4, "sp_has_term": 4, "recommendation": "Include all"},
+    {"family": "accounting_ma", "guides": 5, "high": 5, "medium": 0, "low": 0, "sp_usable": 5, "sp_has_term": 5, "recommendation": "Include all"},
+    {"family": "nursing_ug", "guides": 2, "high": 0, "medium": 2, "low": 0, "sp_usable": 2, "sp_has_term": 2, "recommendation": "Include both; BSNU missing metadata; BSPRN dual-track SP caveat"},
+    {"family": "nursing_rn_msn", "guides": 3, "high": 3, "medium": 0, "low": 0, "sp_usable": 3, "sp_has_term": 3, "recommendation": "Include all; degree_title cosmetic truncation"},
+    {"family": "education_grad", "guides": 2, "high": 1, "medium": 1, "low": 0, "sp_usable": 2, "sp_has_term": 2, "recommendation": "Include both; MEDETID capstone partial"}
+  ],
+  "per_guide_exclusions": [
+    {"code": "BSITM", "field": "standard_path", "action": "EXCLUDE", "reason": "Source PDF column extraction failure"},
+    {"code": "MSCSUG", "field": "standard_path", "action": "EXCLUDE", "reason": "Source PDF column extraction failure"},
+    {"code": "BSPRN", "field": "standard_path", "action": "CAVEAT", "reason": "Pre-Nursing track only; 15 Nursing-track courses AoS-only"},
+    {"code": "BSNU", "field": "metadata", "action": "CAVEAT", "reason": "version/pub_date/page_count unavailable (no footer in source PDF)"},
+    {"code": "MSRNNUED", "field": "degree_title", "action": "SUPPRESS", "reason": "Truncated — use catalog title instead"},
+    {"code": "MSRNNULM", "field": "degree_title", "action": "SUPPRESS", "reason": "Truncated — use catalog title instead"},
+    {"code": "MSRNNUNI", "field": "degree_title", "action": "SUPPRESS", "reason": "Truncated — use catalog title instead"},
+    {"code": "MSCSAIML", "field": "degree_title", "action": "SUPPRESS", "reason": "Truncated (cosmetic)"},
+    {"code": "MACCM", "field": "description", "action": "CAVEAT", "reason": "Corporate Financial Analysis: title/first-sentence quality issue (cosmetic)"},
+    {"code": "MEDETID", "field": "capstone", "action": "CAVEAT", "reason": "Only first of 3 capstone courses captured"},
+    {"code": "MAELLP12", "field": "page_count", "action": "SUPPRESS", "reason": "page_count=0 (cosmetic, older format)"},
+    {"code": "BSITM", "field": "competency_bullets", "action": "SUPPRESS", "reason": "1 course with empty bullets (PDF artifact)"},
+    {"code": "BSSWE_C", "field": "competency_bullets", "action": "SUPPRESS", "reason": "1 course with empty bullets (PDF artifact)"}
+  ],
+  "recommended_phase_d_quality_gate": {
+    "AoS_fields": "HIGH + MEDIUM — all 113 non-LOW guides",
+    "SP_fields": "HIGH + MEDIUM, excluding BSITM and MSCSUG",
+    "LOW_guides": "AoS content usable; SP excluded",
+    "total_guides_included_SP": 113,
+    "total_guides_included_AoS": 115
+  }
+}

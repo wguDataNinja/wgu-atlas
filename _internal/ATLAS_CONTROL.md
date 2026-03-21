@@ -26,7 +26,7 @@ If local docs conflict on current progress or next-step sequencing, trust in thi
 
 | Workstream | Status | Current objective | Primary blocker | Next bounded step |
 |---|---|---|---|---|
-| Program guide extraction | Phase C — 110/115 parsed+validation+manifest artifacts on disk (95.7%) | complete targeted family validation and decide conservative Phase D entry | nursing_ug (2 guides: 4-col SP + dual-track) and nursing_rn_msn (3 guides: LOW structural complexity) remain; accounting_ma specialization parser limitation remains | assess Bucket 3 hard cases (nursing_ug 2 + nursing_rn_msn 3) — decide fix-or-exclude, then Phase D schema and inclusion policy |
+| Program guide extraction | Phase C COMPLETE — 115/115 parsed+validation+manifest artifacts on disk (100%) | Phase D schema and inclusion/exclusion policy design | none — corpus closed | design Phase D schema; decide which guides publish to public/data/program_guides/ and at what quality gate |
 | Official resource layer | active, bounded queueing established | continue conservative attachment expansion with provenance clarity | placement model expansion and completeness audits are still incomplete | reconcile regulatory queue vs current placements, then run outcomes/accreditation completeness pass |
 | Continuity review | initialized, lightweight | validate compact review method | first tiny validation batch not created | create 4-card validation batch |
 | Program lineage / degree history | ready, not selected | keep system stable for later export/UI if chosen | export/runtime wiring not implemented | no action unless selected |
@@ -40,23 +40,21 @@ If local docs conflict on current progress or next-step sequencing, trust in thi
 ### 6.0 Program guide extraction
 
 **Status**
-- Phase C — 110/115 guides have parsed + validation + manifest_row artifacts on disk (95.7%).
-- 15 families are rollout-complete; education_grad (MSEDL+MEDETID) now fully complete; `accounting_ma` remains partial.
-- Phase D numeric threshold (≥70%) is crossed. Phase D readiness is NOT automatic.
-- Parser stable with 3 targeted fixes applied in Session 22 (regression-verified against 19 guides).
+- **Phase C COMPLETE** — 115/115 guides have parsed + validation + manifest_row artifacts on disk (100%).
+- 18 families rollout-complete. education_grad complete (MSEDL=HIGH + MEDETID=MEDIUM). 0 partial families.
+- Parser stable with 7 targeted fixes in Session 23 (regression-verified against 20 guides; improvements only).
 
 **Coverage model (three distinct numbers):**
-- Parsed artifact coverage: 110 guides have `*_parsed.json`.
-- Validation artifact coverage: 110 guides have `*_validation.json`.
-- Manifest-row coverage: 110 guides have `*_manifest_row.json`.
+- Parsed artifact coverage: 115/115 guides have `*_parsed.json`.
+- Validation artifact coverage: 115/115 guides have `*_validation.json`.
+- Manifest-row coverage: 115/115 guides have `*_manifest_row.json`.
 - Runtime-published guide artifacts: not yet created in `public/data/program_guides/` (Phase D not started).
 
-**Complete families (15):**
-standard_bs(19), cs_ug(8), education_ba(11), graduate_standard(9), mba(3), healthcare_grad(2), education_bs(4), teaching_mat(9), cs_grad(5), swe_grad(4), data_analytics_grad(3), education_ma(9), endorsement(8), nursing_msn(5), nursing_pmc(4)
-education_grad: fully complete (MSEDL=HIGH + MEDETID=MEDIUM)
+**Complete families (18):**
+standard_bs(19), cs_ug(8), education_ba(11), graduate_standard(9), mba(3), healthcare_grad(2), education_bs(4), teaching_mat(9), cs_grad(5), swe_grad(4), data_analytics_grad(3), education_ma(9), endorsement(8), nursing_msn(5), nursing_pmc(4), accounting_ma(5), nursing_ug(2), nursing_rn_msn(3)
+education_grad: complete (MSEDL=HIGH + MEDETID=MEDIUM)
 
-**Partially validated:**
-- accounting_ma: 5 guides parsed, 3 LOW (specialization guides have looks_like_prose parser limitation). MACC=HIGH, MACCM=MEDIUM usable. Specialization guides deferred.
+**No partial families remaining.**
 
 **Why it matters**
 - Program guides contain the richest per-program content: Standard Path with CUs and term, course descriptions, competency bullets, prereq mentions, cert-prep mentions.
@@ -65,23 +63,27 @@ education_grad: fully complete (MSEDL=HIGH + MEDETID=MEDIUM)
 **Current parser state**
 - `scripts/program_guides/parse_guide.py` — stable, tested, no planned rewrites
 - Session 18 fix: `_is_bullet_continuation` Title Case guard (≥80% capitalized words → not a continuation). Regression-verified.
-- Session 19 fix: `parse_capstone` KeyError — added `prerequisite_mentions` and `certification_prep_mentions` to capstone dict. Regression-verified against 23 guides.
-- Known limitation: `looks_like_prose` fails for short-wrapped description lines (40–50 chars, no terminal punctuation). Affects accounting_ma specialization guides. Fix deferred (verb-presence heuristic proposed but not implemented).
+- Session 19 fix: `parse_capstone` KeyError. Regression-verified.
+- Session 22 fix (3 fixes): SP_CHANGES_RE conditional break, STANDARD_PATH_RE second-table break, Certificate Guidebook title skip.
+- Session 23 fix (7 fixes): `looks_like_prose` 3-heuristic expansion, `_is_bullet_continuation` terminal-punctuation override, `ACCESSIBILITY_RE` typo tolerance, `no_footer_lines_found` combined-program suppression, `sp_row_invalid` "Advanced Standing" silent skip. See DEV_NOTES.md Session 23 for full detail.
 - Known source-artifact outliers (SP unusable, AoS intact): BSITM, MATSPED, MSCSUG
 
 **Known downstream exclusions**
-- BSITM SP, MATSPED SP, MSCSUG SP: source-PDF column extraction failures
+- BSITM SP, MATSPED SP, MSCSUG SP: source-PDF column extraction failures — AoS usable
+- BSPRN SP: Pre-Nursing track only — 15 Nursing-track courses AoS-only (dual-track structural)
+- BSNU: version/pub_date/page_count not recoverable (no footer in source PDF) — content intact
+- MSRNNUED/LM/NI: degree_title truncated (cosmetic — "Bachelor of Science and Post-Baccalaureate Certificate, Nursing +")
 - MSCSAIML degree_title: truncated in parsed output (cosmetic)
-- MACCM Corporate Financial Analysis: title/first-sentence quality issue
-- MACCA, MACCF, MACCT AoS: courses mis-parsed as groups (parser limitation, not source artifact)
+- MACCM Corporate Financial Analysis: title/first-sentence quality issue (cosmetic)
+- MEDETID: capstone field captures only first of 3 courses (multi-capstone structural limitation)
 - MAELLP12: page_count=0 (cosmetic — older guide format, content intact)
 
 **Key files**
 - `_internal/program_guides/DEV_NOTES.md` — session history, parser change log, coverage accounting model
 - `_internal/program_guides/TECHNICAL_READOUT.md` — parser design rationale
-- `data/program_guides/parsed/` — 91 *_parsed.json files
-- `data/program_guides/validation/` — 91 *_validation.json files
-- `data/program_guides/manifest_rows/` — 91 *_manifest_row.json files
+- `data/program_guides/parsed/` — 115 *_parsed.json files
+- `data/program_guides/validation/` — 115 *_validation.json files
+- `data/program_guides/manifest_rows/` — 115 *_manifest_row.json files
 - `data/program_guides/family_validation/` — gate reports and rollout summaries
 - `data/program_guides/audit/` — family inventory, section matrix, readiness assessment
 - `public/data/program_guides/` — not yet created (Phase D)
@@ -89,14 +91,12 @@ education_grad: fully complete (MSEDL=HIGH + MEDETID=MEDIUM)
 **Pipeline phases**
 1. A: Corpus manifest ✓
 2. B: Thin-slice validation ✓
-3. C: Full corpus parsing — **IN PROGRESS** (91/115 artifact coverage)
-4. D: Site artifact build — NOT STARTED (numeric threshold crossed but Phase D readiness requires separate conservative assessment)
+3. C: Full corpus parsing — **COMPLETE** (115/115 artifact coverage)
+4. D: Site artifact build — NOT STARTED (Phase C complete; Phase D design is next)
 5. E: Course code matching — NOT STARTED
 
 **Next artifact**
-- Bucket 3 assessment: nursing_ug (BSNU 4-col SP, BSPRN dual-track) and nursing_rn_msn (MSRNNUED/LM/NI — LOW structural). Assess whether targeted fixes are warranted or explicit Phase D exclusion is the right call.
-- After Bucket 3 assessment: Phase D schema and inclusion/exclusion policy design.
-- accounting_ma specialization fix (MACCA/MACCF/MACCT): verb-presence heuristic for looks_like_prose — separate session; requires full regression proof.
+- Phase D schema and inclusion/exclusion policy design: which guides publish, what schema, what quality gate, what fallback for MEDIUM/SP-failure guides.
 
 ---
 
@@ -253,13 +253,11 @@ These should not be reopened by default.
 
 ## 9. Exact next-session order
 
-Session 22 completed Bucket 2 (nursing_pmc 4 + MEDETID 1 = 5 guides, 3 targeted parser fixes). All nursing_pmc: HIGH. MEDETID: MEDIUM (0 anomalies, 1 structural warning). Artifact coverage: 110/115 (95.7%). Family-validated: 106/115 (92.2%). Regression-verified against 19 guides. See DEV_NOTES.md Session 22 for full detail.
+Session 23 completed the corpus close (accounting_ma 5 + nursing_ug 2 + nursing_rn_msn 3 = 10 guides total including re-parses, 7 targeted parser fixes). Phase C COMPLETE: 115/115 artifact coverage. 18 complete families. Regression-verified against 20 guides (improvements only). See DEV_NOTES.md Session 23 for full detail.
 
-1. **Program guide — Bucket 3 (nursing_ug 2 + nursing_rn_msn 3):** Assess fix-or-exclude. BSNU has 4-column SP (AoS intact); BSPRN is dual-track (MEDIUM, noisy); nursing_rn_msn (3 guides) are LOW with structural running-header and non-course-row complexity. Likely best to explicitly exclude these 5 from Phase D rather than invest in further parser work.
-2. **Program guide — accounting_ma specialization fix:** Design and regression-test `looks_like_prose` verb-presence heuristic against all 91 validated guides. Do not implement without full regression proof.
-3. **Program guide — Phase D schema and inclusion/exclusion policy design:** After Scenario A rollout, define: which guides are published, what schema the output artifact uses, and what the fallback is for MEDIUM guides and SP-failure guides. Do not build Phase D artifacts yet.
-4. **Official resource — bounded next pass:** reconcile regulatory queue against current placements, then run outcomes/accreditation completeness audit.
-5. Run first 4-card continuity-review batch (`_internal/continuity_review/validation_batch_01.md`)
+1. **Program guide — Phase D schema and inclusion/exclusion policy design:** Define which guides publish, what schema the Phase D artifacts use, what the quality gate is, and what the fallback is for MEDIUM guides and SP-failure guides (BSITM/MATSPED/MSCSUG). Do not build Phase D artifacts yet.
+2. **Official resource — bounded next pass:** reconcile regulatory queue against current placements, then run outcomes/accreditation completeness audit.
+3. Run first 4-card continuity-review batch (`_internal/continuity_review/validation_batch_01.md`)
 
 ---
 

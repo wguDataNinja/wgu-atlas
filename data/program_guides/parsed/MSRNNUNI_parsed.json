@@ -1,0 +1,605 @@
+{
+  "program_code": "MSRNNUNI",
+  "version": "202202",
+  "pub_date": "12/15/21",
+  "page_count": 20,
+  "degree_title": "Bachelor of Science and Post-Baccalaureate Certificate, Nursing +",
+  "program_description": "Master of Science, Nursing - Nursing Informatics (RN to MSN) Students enrolled in the RN-to-MSN track will first complete the Bachelor of Science and Post-Baccalaureate Certificate in Nursing (RNMSN track) program, and will have completed the necessary bachelors course work to receive a Bachelor of Science, Nursing degree, as well as the Post-Baccalaureate certificate. Students will progress to selecting and meeting the program requirements of one of WGU's specialty graduate nursing programs. The Master of Science degree in Nursing Informatics (RN to MSN option) degree is a competency-based program that builds on the foundation of previous nursing education at the associate or diploma levels. The BSN portion of the degree focuses on contemporary nursing practice in the developing of skills and competencies using technology-based learning. The master of science portion of the degree prepares graduates for a rewarding career as a specialist in the field of Nursing Informatics. Informatics Nurse Specialists have the knowledge, skills, and expertise to design, develop, implement, and evaluate Health Information Systems that support the delivery of safe, efficient and highquality healthcare services. Students in the WGU Master of Science Nursing Informatics program apply systems-thinking strategies to transform data to wisdom for understanding the determinants and distribution of healthcare needs in diverse populations. This program prepares students to select and use contemporary technologies to collaborate with interprofessional teams for the development and implementation of health education programs, evidence-based practices, and point-of-care policies. Through the integration of nursing science, computer science and information science, students will develop competencies for performing advanced informatics skills to improve health outcomes, such as data capture, management, mining, and analysis. This masters degree program supports students in applying their knowledge and conceptual understanding of nursing informatics to real-world situations where the use of information and communication technologies are essential for delivering and coordinating care across multiple settings. Graduates are prepared to gather, document, and analyze outcome data that will serve as a foundation for data-driven decisions that inform practice processes and the implementation of interventions or strategies to improve healthcare outcomes.",
+  "standard_path": [
+    {
+      "title": "Interprofessional Communication and Leadership in Healthcare",
+      "cus": 2,
+      "term": 1
+    },
+    {
+      "title": "Applied Healthcare Statistics",
+      "cus": 4,
+      "term": 1
+    },
+    {
+      "title": "Composition: Writing with a Strategy",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Anatomy and Physiology I with Lab",
+      "cus": 4,
+      "term": 1
+    },
+    {
+      "title": "Introduction to Communication: Connecting with Others",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Anatomy and Physiology II with Lab",
+      "cus": 4,
+      "term": 2
+    },
+    {
+      "title": "Introduction to Psychology",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Global Arts and Humanities",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Introduction to Sociology",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Microbiology with Lab: A Fundamental Approach",
+      "cus": 4,
+      "term": 3
+    },
+    {
+      "title": "World History: Diverse Cultures and Global Connections",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Human Growth and Development",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Pathophysiology",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "Comprehensive Health Assessment",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "Healthcare Policy and Economics",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "Global and Population Health",
+      "cus": 4,
+      "term": 4
+    },
+    {
+      "title": "Emerging Professional Practice",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "Professional Presence and Influence",
+      "cus": 2,
+      "term": 5
+    },
+    {
+      "title": "Essentials of Advanced Nursing Roles and Interprofessional Practice",
+      "cus": 2,
+      "term": 5
+    },
+    {
+      "title": "Informatics for Transforming Nursing Care",
+      "cus": 3,
+      "term": 5
+    },
+    {
+      "title": "Leadership and Management in Complex Healthcare Systems",
+      "cus": 3,
+      "term": 5
+    },
+    {
+      "title": "Advancing Evidence-Based Innovation in Nursing Practice",
+      "cus": 3,
+      "term": 5
+    },
+    {
+      "title": "Quality Outcomes in a Culture of Value-Based Nursing Care",
+      "cus": 2,
+      "term": 6
+    },
+    {
+      "title": "Advanced Pathopharmacological Foundations",
+      "cus": 3,
+      "term": 6
+    },
+    {
+      "title": "Advanced Health Assessment for Patients and Populations",
+      "cus": 3,
+      "term": 6
+    },
+    {
+      "title": "Foundations in Nursing Informatics",
+      "cus": 2,
+      "term": 7
+    },
+    {
+      "title": "Data Science and Analytics",
+      "cus": 2,
+      "term": 7
+    },
+    {
+      "title": "Data Modeling and Database Management Systems",
+      "cus": 2,
+      "term": 7
+    },
+    {
+      "title": "Informatics System Analysis and Design",
+      "cus": 3,
+      "term": 8
+    },
+    {
+      "title": "Nursing Informatics Field Experience",
+      "cus": 4,
+      "term": 8
+    },
+    {
+      "title": "Nursing Informatics Capstone",
+      "cus": 2,
+      "term": 8
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Advanced Standing for RN License",
+      "courses": [
+        {
+          "title": "Interprofessional Communication and Leadership in Healthcare",
+          "description": "Interprofessional Communication and Leadership in Healthcare is designed to help students prepare for success in the online environment at Western Governors University and beyond. Student success starts with the social support and selfreflective awareness that will prepare them to handle the challenges of all academic programs. In this course, students will participate in group activities and complete several individual assignments. The group activities are aimed at finding support and gaining insight from other students. The assignments are intended to give the student an opportunity to reflect on where they are and where they would like to be. The activities in each group meeting are designed to give students several tools they can use to achieve success. This course is designed as a four-part intensive learning experience. Students will attend six group meetings during the term. At each meeting, students will engage in activities that will help them understand their own educational journey and find support and inspiration in the journey of others. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies mindfulness to promote self-discovery.",
+            "The learner applies mindsets, working styles, and energy dynamics to promote academic and professional success.",
+            "The learner communicates effectively in both oral and written format.",
+            "The learner uses communication strategies to foster a supportive peer community."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Comprehensive Health Assessment",
+          "description": "Comprehensive Health Assessment builds upon students’ existing knowledge of nursing assessment. The course presents current and innovative assessment techniques of the physical, mental, emotional, and spiritual well-being of patients. Use of assessment data and shared decision-making are discussed throughout the course. This course also outlines the concepts of a head-to-toe assessment, providing students with an understanding of how to critically think about the different aspects of the assessment and analyze patient cues to determine the implications of findings. Students will also analyze lifestyle and cultural implications of health. All prior courses in the sequence for this program serve as prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner incorporates enhanced pathophysiological concepts and assessment findings into patient care coordination.",
+            "The learner applies clinical judgment using current and innovative patient assessment techniques that encompass physical, mental, emotional, spiritual well-being and social determinants of health.",
+            "The learner analyzes cultural and lifestyle implications for holistic patient assessment."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Healthcare Policy and Economics",
+          "description": "Healthcare Policy and Economics is a foundational course that introduces the concepts of value-based care and the role of the nurse. This course includes concepts related to financial responsiveness, shared decision-making, preference-sensitive care, leveraging data. In this course, students learn about cost and fee-for-service in terms of value to the client and patient rather than value to the healthcare system. All prior courses in the sequence for this program serve as prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner integrates principles of organizational ethics to improve healthcare quality for individuals, families, and their communities.",
+            "The learner identifies how financial data, business-related data, and information sources inform decisions that influence healthcare.",
+            "The learner compares healthcare financial models to facilitate value-based care and fiscally responsible and equitable patient-centered care.",
+            "The learner analyzes public healthcare policies, federal and state laws, and the resulting impact to patients and healthcare delivery."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Global and Population Health",
+          "description": "Global and Population Health prepares students for the role of the nurse in preserving and promoting health among diverse populations. Additionally, basic principles of epidemiology, social determinants of health (SDOH), and resource allocation through value-based care are outlined. The course introduces planning, organization, and delivery of services for diverse populations in community settings, including illness prevention, disaster preparedness, and environmental health. All prior courses in the sequence for this program serve as prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner distinguishes between global, public, and population health for improved health outcomes.",
+            "The learner identifies social determinants of health (SDOH) and interventions for equitable healthcare improvements.",
+            "The learner identifies epidemiological data sources that inform population health interventions.",
+            "The learner identifies the effect of global health trends on healthcare capacity that inform service modification decisions in healthcare.",
+            "The learner evaluates population health solutions for environmental health effects."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Emerging Professional Practice",
+          "description": "Emerging Professional Practice presents a variety of professional nursing specialty areas. Students explore various practice specialties, including palliative care, genetics and genomics, and others. The course provides pathways to specialized nursing practice. All prior courses in the sequence for this program serve as prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes genetic and genomic influences and risks to plan patient education that recognizes individual attitudes and values.",
+            "The learner explains interprofessional interventions that alleviate suffering, improve quality of life, and empower patients and families who have received life-limiting diagnoses.",
+            "The learner creates a personal five-year professional development plan that includes professional certification or specialized education that facilitates lifelong learning."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "General Education",
+      "courses": [
+        {
+          "title": "Applied Healthcare Statistics",
+          "description": "Applied Healthcare Probability and Statistics is designed to help develop competence in the fundamental concepts of basic mathematics, introductory algebra, and statistics and probability. These concepts include basic arithmetic with fractions and signed numbers; introductory algebra and graphing; descriptive statistics; regression and correlation; and probability. Statistical data and probability are now commonplace in the healthcare field. This course will help candidates make informed decisions about which studies and results are valid, which are not, and how those results affect your decisions. This course will give candidates background in what constitutes sound research design and how to appropriately model phenomena using statistical data. Additionally, this course guides candidates in calculating simple probabilities based on events which occur in the healthcare profession. This course will prepare candidates for studies at WGU, as well as in the healthcare profession.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies the operations, processes, and procedures of basic arithmetic to solve expressions.",
+            "The graduate applies the operations, processes, and procedures of fractions, decimals, and percentages to evaluate quantitative expressions.",
+            "The graduate applies the operations, processes, and procedures of basic algebra to evaluate quantitative expressions, and to solve equations and inequalities.",
+            "The graduate evaluates categorical and quantitative data pertaining to a single variable using appropriate graphical displays and numerical measures.",
+            "The graduate evaluates the relationship between two variables through interpretation of visual displays and numerical measures.",
+            "The graduate evaluates the relationship between two quantitative variables through correlation and regression.",
+            "The graduate applies principles and methods of probability-based mathematics to explain and solve problems."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Composition: Writing with a Strategy",
+          "description": "Welcome to Composition I: Writing with a Strategy! In this course, you will focus on three main topics: writing strategies, writing style, format and grammar, and editing and revising text. This course consists of an introduction and five sections aligned to the three main topics. The sections address understanding purpose and audience, writing strategies and techniques, format, style, structure, and grammar, editing and revision strategies, and constructive feedback. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the five competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The individual writes with purpose for a given context and target audience.",
+            "The individual incorporates writing strategies and techniques for written communication.",
+            "The individual constructs a written document with correct format, style, structure, and grammar.",
+            "The individual formulates a strategy for editing and revising written text",
+            "The individual composes constructive feedback of written texts."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Anatomy and Physiology I with Lab",
+          "description": "This is Anatomy and Physiology I, a six-section, 4 CEU course that enables students to develop an understanding of the relationships between the structures and function of the integumentary, skeletal, muscular, nervous and endocrine systems in the human body. This course will involve laboratory activities, simulated dissections, textbook material, models, and diagrams. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the four competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 40–60 hours on the course content.",
+          "competency_bullets": [
+            "The learner describes the structural and basic functional organization of the human body and the terminology used to describe the orientation of bodily structures.",
+            "The learner describes the structures and physiological functions of the integumentary system and the connections to complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the skeletal system and the connections to complex systems in the human body.",
+            "The learner analyzes the structures and physiological functions of the muscular system and the connections to complex systems in the human body.",
+            "The learner analyzes the structures and physiological functions of the nervous system and sensory organs and the connections to complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the endocrine system and its regulation of complex systems in the human body."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Introduction to Communication: Connecting with Others",
+          "description": "Welcome to Introduction to Communication: Connecting with Others! It may seem like common knowledge that communication skills are important, and that communicating with others is inescapable in our everyday lives. While this may appear simplistic, the study of communication is actually complex, dynamic, and multifaceted. Strong communication skills are invaluable to strengthening a multitude of aspects of life. Specifically, this course will focus on communication in the professional setting, and present material from multiple vantage points, including communicating with others in a variety of contexts, across situations, and with diverse populations. Upon completion, you will have a deeper understanding of both your own and others’ communication behaviors, and a toolbox of effective behaviors to enhance your experience in the workplace.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements appropriate communication styles based on audience and setting.",
+            "The learner uses communication strategies for managing conflict.",
+            "The learner uses communication strategies to influence others."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Anatomy and Physiology II with Lab",
+          "description": "This is Anatomy and Physiology II, a six section, four CEU course that enables students to develop an understanding of the relationships between the structures and functions of the cardiovascular, respiratory, digestive, urinary, reproductive, and lymphatic systems in the human body. This course will involve laboratory activities, simulated dissections, textbook material, models, and diagrams. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the four competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 40–60 hours on the course content.",
+          "competency_bullets": [
+            "The learner describes the structures and physiological functions of the cardiovascular system and the connections to complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the respiratory system and the connections to complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the digestive system and the connections to metabolism and complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the urinary system and the connections to complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the reproductive system and the connections to complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the lymphatic system, immune response, and the connections to complex systems in the human body."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Introduction to Psychology",
+          "description": "In this course, students will develop an understanding of psychology and how it helps them better understand others and themselves. Students will learn general theories about psychological development, the structure of the brain, and how psychologists study behavior. They will gain an understanding of both normal and disordered psychological behaviors, as well as general applications of the science of psychology in society (such as personality typing and counseling).",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate explains the biological perspectives of psychology.",
+            "The graduate explains the theories of learning and memory.",
+            "The graduate explains the concepts of personality development and social psychology.",
+            "The graduate identifies psychological disorders and treatment methods.",
+            "The graduate explains the foundations of psychology."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Global Arts and Humanities",
+          "description": "The Global Arts and Humanities course contains three modules with corresponding lessons. This course is an invitation to see the world through the humanities, examine the humanities during the Information Age, and explore the global origins of music—essentially questioning what makes us human, and how people are connected across culture and time. Each module includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to practice and check learning. With no prior knowledge or experience, a learner can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes diverse voices, ideas, perspectives, and cultural interactions through the lens of the humanities.",
+            "The learner analyzes the humanities during the Information Age.",
+            "The learner analyzes how music shapes and is shaped by diverse cultures and perspectives."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Introduction to Sociology",
+          "description": "This course teaches students to think like sociologists, or, in other words, to see and understand the hidden rules, or norms, by which people live, and how they free or restrain behavior. Students will learn about socializing institutions, such as schools and families, as well as workplace organizations and governments. Participants will also learn how people deviate from the rules by challenging norms and how such behavior may result in social change, either on a large scale or within small groups.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate explains how societies are stratified across various social statuses.",
+            "The graduate explains reciprocal relationships between social institutions and individuals.",
+            "The graduate explains major perspectives and key contributors to the development of sociology.",
+            "The graduate identifies components of culture and socialization as they relate to individuals in society.",
+            "The graduate explains the constructs of conformity to and deviance from social norms."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Microbiology with Lab: A Fundamental Approach",
+          "description": "Microbiology with Lab: A Fundamental Approach explores the science that microorganisms are everywhere, and they have positive and negative effects on the community. The course examines the structure and function of microorganisms, disease transmission and progression, and immune responses and other interventions, and it identifies key global diseases. The course consists of an introduction and four major sections. Each section includes learning opportunities through readings, videos, and other relevant resources. Assessment activities with feedback also provide opportunities for students to check their learning, practice, and show how well they understand course content. To assist students in developing an applied, evidence-based understanding of microbiology, this course integrates several lab experiments to help determine the specific characteristic of an unknown microbial sample and a treatment plan. Because the course is self-paced, students may move through the material as quickly or as slowly as needed to gain proficiency in the four competencies that will be covered in the final assessment. Students who have no prior knowledge of or experience with this topic can expect to spend 48–60 hours on the course content. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes structures and characteristics of microorganisms that inform etiologies of symptoms and diseases.",
+            "The learner analyzes microbial transmission and progression and the care needed based on symptoms and environment",
+            "The learner analyzes methods to prevent and treat infectious diseases and influence positive community outcomes.",
+            "The learner analyzes disease characteristics to inform individuals about etiologies and treatments."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "World History: Diverse Cultures and Global Connections",
+          "description": "This is World History: Diverse Cultures and Global Connections. In this course, you will focus on three main topics—cultural and religious diversity; pandemics; and the relationship of empires and nation states—as well as the skills of identifying root causes, explaining causes and effects, and analyzing complex systems. This course consists of an introduction and four major sections. Each section includes learning opportunities through reading, images, videos, and other relevant resources. Assessment activities with feedback also provide opportunities to practice and check how well you understand the content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the four competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner differentiates among diverse cultural and religious customs and practices.",
+            "The learner analyzes the role of human actions in the spread of disease.",
+            "The learner explains the factors that contributed to the rise and fall of empires.",
+            "The learner explains the factors that contributed to the development of nation states."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Human Growth and Development",
+          "description": "This is Human Growth and Development, a three-module course that examines the entire human lifetime, from conception to death. Presented chronologically, the course focuses on three key areas: physical, cognitive, and psychosocial growth, along with other important issues such as cultural influences, emotions, and resilience. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the four competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains physical, cognitive, and psychosocial development from conception through early childhood.",
+            "The learner explains the influence of emotions and cultural perspectives and practices on psychosocial development and behavior from birth through early childhood.",
+            "The learner explains physical, cognitive, and psychosocial development from middle childhood through adolescence.",
+            "The learner explains the influence of emotions and cultural perspectives and practices on psychosocial development and behavior from middle childhood through adolescence.",
+            "The learner explains physical, cognitive, and psychosocial development from early adulthood to the end of life.",
+            "The learner explains the influence of emotions and cultural perspectives and practices on psychosocial development and behavior from early adulthood to the end of life."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Pathophysiology",
+          "description": "Pathophysiology is an overview of the pathology and treatment of diseases in the human body, tissues, glands and membranes, the integumentary system, the sensory system, skeletal and muscular systems, the digestive system, blood, vessels and circulation, lymphatic system, immunity and disease, heart and respiratory system, nervous, urinary and endocrine systems, and male and female reproductive systems. Prerequisites include all prior courses in this programmatic sequence.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes basic cellular responses and adaptation related to genetics, injury, aging and congenital anomalies.",
+            "The learner describes pathogenesis, manifestations, complications and variations of the muscular, skeletal, and integumentary systems.",
+            "The learner describes pathogenesis, manifestations, complications and variations of the neurologic systems.",
+            "The learner describes pathogenesis, manifestations, complications and variations of the cardiovascular and lymphatic systems.",
+            "The learner describes pathogenesis, manifestations, complications and variations of the respiratory systems.",
+            "The learner describes pathogenesis, manifestations, complications and variations of the gastrointestinal and renal systems.",
+            "The learner describes pathogenesis, manifestations, complications and variations of the endocrine and reproductive systems."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "MSN Core",
+      "courses": [
+        {
+          "title": "Professional Presence and Influence",
+          "description": "Professional Presence and Influence is a masters-level course designed to guide students towards an enhanced state of presence, where therapeutic relationships are built between nurse and patient. Students will learn techniques for self-care practices that result in enhanced mental and physical wellbeing and that ensure ethically-generated patient care. Presence is an intrapersonal and interpersonal quality that allows the nurse to relate to others and to be aware of the world around them. The characteristics of presence, which include holism, intimacy, sensitivity and adaptability, create a heightened sense of awareness that fosters therapeutic relationships between the nurse and patient. Developing a mindful, authentic presence is central to health and spiritual practices in several cultures and a major element of leadership. Students will intentionally develop a focused mindfulness practice that will influence patient outcomes and lead to conditions that create joy in the workplace.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate promotes a healthy work environment by demonstrating a professional presence that includes selfawareness characteristics.",
+            "The graduate develops solutions and strategies that build positive relationships and promote mindfulness in the workplace.",
+            "The graduate recommends social communication strategies and technologies to promote a sense of caring and belonging.",
+            "The graduate applies the principles of improvement science to solve the problem of hostility in the workplace and initiate organizational change designed to promote health and joy in the workplace.",
+            "The graduate implements the principles of academic writing to produce clear, concise, and evidence-based written communications."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Essentials of Advanced Nursing Roles and Interprofessional Practice",
+          "description": "Essentials of Advanced Nursing Roles and Interprofessional Practice explores essential characteristics of the advanced professional nurse in the role of leader, educator, practitioner, or informatics specialist. In this course, students will apply evidence-based strategies to facilitate interprofessional collaboration on teams. Students will explore the role of nurses in advocating for change at the bedside, as well as leading teams to advocate for health policy reform. Students will gather and analyze data to identify patients and populations at risk and recommend policy change to improve health outcomes in the community.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate recommends strategies for practicing lifelong learning skills to encourage the continuous improvement essential for practicing as an advanced nursing professional.",
+            "The graduate recommends legal and regulatory policies that advocate for improved health outcomes in patients and populations.",
+            "The graduate analyzes the roles and interaction of interprofessional team members to assess the resulting impact on healthcare outcomes.",
+            "The graduate analyzes organizational performance data to guide recommendations for improving healthcare outcomes and disseminating results to a professional community."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Informatics for Transforming Nursing Care",
+          "description": "Informatics for Transforming Nursing Care integrates nursing science with multiple information and analytical sciences to identify, define, manage, and communicate data, information, knowledge, and wisdom in nursing practice. Students will acquire knowledge and skills to apply informatics concepts, communications, and data that are critical to facilitating interprofessional data-driven decision-making. It is designed to build competence in the use of patient- and populationbased applications that inform and support the transformation of nursing care delivery toward a future of value-based quality nursing care that improves health outcomes. This course aligns theoretical concepts with practical applications of informatics and is consistent with the functional areas and responsibilities of informatics nurses as defined by American Nurses Association Scope and Standards for nursing informatics.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes the theoretical and conceptual underpinnings of the nursing informatics scope and standards to improve patient experience and health outcomes.",
+            "The graduate determines how technology and informatics can be optimized to improve the patient experience and lower healthcare costs.",
+            "The graduate analyzes core administrative systems to support the management of safe, cost-effective, and high-quality healthcare.",
+            "The graduate analyzes data from population-based systems to mitigate public health threats and decrease incidence of disease.",
+            "The graduate designs data collection tools and processes to capture, analyze, and report health indicators and outcomes.",
+            "The graduate refines data to visually represent, forecast, monitor, and report progress in meeting healthcare outcomes."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Leadership and Management in Complex Healthcare Systems",
+          "description": "Leadership and Management in Complex Healthcare Systems prepares graduate nurses to be thoughtful strategists and informed decision makers who serve as strong leaders in high performing healthcare systems. Students develop competencies for managing diverse teams in complex systems, monitoring and measuring organizational performance, allocating financial and human resources, and leading change towards a transformed healthcare system. Additionally, students acquire the knowledge and skills to become full partners with other healthcare professionals by demonstrating nurse contributions toward high-quality care to patients and populations, while working collaboratively with interprofessional teams.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate determines the effective leadership skills and approaches required to navigate a diverse staff in a changing healthcare environment.",
+            "The graduate creates communication and change management plans to foster a culture of innovation.",
+            "The graduate analyzes data to measure progress in meeting organizational performance indicators in complex healthcare systems.",
+            "The graduate determines system-level factors necessary to support and empower interprofessional teams.",
+            "The graduate validates key performance indicators to measure the impact of nursing care on patient and population outcomes.",
+            "The graduate proposes a strategic business plan to start a nurse-managed practice."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Advancing Evidence-Based Innovation in Nursing Practice",
+          "description": "Advancing Evidence-Based Innovation in Nursing Practice introduces students to the dynamic union of healthcare innovation and evidence. Core competencies and behaviors required to be a nurse innovator are discussed. Strategies for measuring innovation at various system levels are presented, as well as techniques for synthesizing and disseminating evidence to advance innovation in healthcare. The skills needed to appraise the quality of diverse sources of evidence are presented within the framework of evidence-based practice. This course focuses on identifying new and emerging sources of evidence that can inform, translate, and scale the complexity of leading innovation in healthcare organizations. Students will experience building communities of practice for collaboratively developing innovative practices and policies designed to improve the health of populations and enhance the patient experience of care.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes evidence from research, clinical expertise, and patient experiences to contribute to the innovation of healthcare practices and policies",
+            "The graduate incorporates research strategies and processes to search and review relevant evidence from credible sources.",
+            "The graduate evaluates innovative best practices that support outcomes-driven healthcare practices.",
+            "The graduate incorporates new evidence from big data and emerging technologies to design innovative practices.",
+            "The graduate applies the theory of disruption when developing innovative strategies to improve healthcare outcomes.",
+            "The graduate synthesizes credible sources of evidence to propose innovative patient care practice guidelines, organizational goals and strategies, and population-based care policies."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Quality Outcomes in a Culture of Value-Based Nursing Care",
+          "description": "Quality Outcomes in a Culture of Value-Based Nursing Care incorporates current standards of quality and safety within the context of value-based care. In a value-based healthcare system, the benefits are derived from measuring health outcomes against the cost of delivering the outcomes. These benefits are then extended to patients, providers, payers, suppliers, and society as a whole. This course introduces new healthcare delivery models, which stress a team-oriented approach to patient care and sharing of patient data so that care is coordinated, and outcomes can be measured easily. Emphasis is placed on performance and quality improvement methods that underlie value-based nursing care. The nurse in advanced practice today must exemplify the standards of quality and safety and be prepared to lead the delivery of value-based patient-centered care.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes the culture of continuous quality improvement and the provision of value-based care to optimize patient outcomes using a systems-thinking analytic approach.",
+            "The graduate develops a systematic process that incorporates quality measures and benchmarks to assess organizational strengths and vulnerabilities.",
+            "The graduate integrates performance and process improvement methodologies to develop solutions for identified quality and safety gaps in the practice setting.",
+            "The graduate establishes measurable metrics and processes to evaluate the effectiveness of value-based care strategies and initiatives."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Advanced Pathopharmacological Foundations",
+          "description": "Advanced Pathopharmacological Foundations provides advanced practice nurses foundational knowledge in the many pathologies encountered in practice today. Advancing from the cellular to the body system level, this course examines the pathologies of common conditions seen in healthcare today. Consideration is also given to the human affective response to alterations in health. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate assesses alterations in cellular and genetic composition to determine the body's self-defense mechanisms to maintain homeostasis.",
+            "The graduate analyzes the etiology and pathophysiological alterations associated with common conditions across the lifespan to determine appropriate treatment plans.",
+            "Connecting Pathology with Disease Manifestation – The graduate analyzes pathopharmacological concepts and mechanisms of common conditions to guide clinical decision making.",
+            "The graduate assesses developmental, racial, ethnic, and cultural manifestations of pathopharmacology to determine their influence on patient outcomes.",
+            "The graduate distinguishes between relevant and irrelevant assessment findings to minimize pathologies and manage pharmacotherapeutics to promote optimal patient outcomes.",
+            "The graduate traces human responses to disease processes across the lifespan to identify holistic treatment options."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Advanced Health Assessment for Patients and Populations",
+          "description": "Advanced Health Assessment of Patients and Populations builds on prior physical health assessment knowledge and skills acquired during undergraduate studies by focusing on the advanced assessment of biopsychosocial and sociocultural contexts in patients and populations across the life span. This course emphasizes the use of a comprehensive health promotion, disease prevention, and health restoration model to address health concerns in patients and communities. Students will acquire advanced assessment knowledge and skills for clinical interviewing, focused history taking, critical diagnostic reasoning, and clinical decision-making using a problem-focused framework that integrates authentic experiences with practical knowledge of health patterns in patients and communities.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate assesses the physical, biopsychosocial, cultural, spiritual, and environmental elements to improve health in patients and populations.",
+            "The graduate distinguishes comprehensive assessment strategies appropriate to evaluating the health of diverse patients across the life span.",
+            "The graduate analyzes assessment data to create health promotion plans for patients and communities.",
+            "The graduate performs a focused physical examination to identify applicable differential diagnoses based on evidence from the collected data.",
+            "The graduate analyzes epidemiologic methods to assess the health of communities and populations.",
+            "The graduate constructs strategies to develop disease prevention and control interventions."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Nursing Informatics Specialty",
+      "courses": [
+        {
+          "title": "Foundations in Nursing Informatics",
+          "description": "This course addresses the integration of technology to improve and support nursing practice. It provides nurses with a foundational understanding of nursing informatics theory, practice, and applications. Topics include the role of nursing in informatics; use of computer technology for clinical documentation, communication, and workflows; problem identification; project implementation; and best practices.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies information technology concepts, including life cycle, workflow, roles, and project management.",
+            "The graduate applies standardized clinical terminologies, taxonomies, and decision support tools to identify problems, needs, issues, and opportunities for improvement"
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Data Science and Analytics",
+          "description": "This course addresses the interdisciplinary and emerging field of data science in healthcare. Candidates learn to combine tools and techniques from statistics, computer science, data visualization, and the social sciences to solve problems using data. Topics include data analysis; database management; inferential and descriptive statistics; statistical inference; and process improvement.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies the concepts of data, statistics, databases, statistical modeling, and data management to nursing informatics.",
+            "The graduate analyzes data from databases, electronic health records, dashboards, remote monitoring devices, telemedicine, and other technologies to support the provision of high-quality and efficient care.",
+            "The graduate predicts clinical events or likelihoods from current state and/or trend historical data to plan and resource care needs."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Data Modeling and Database Management Systems",
+          "description": "This graduate course is designed to engage the student in planning, analyzing, and designing a relational database management system (DBMS) for use by nurse administrators, clinicians, educators, and informaticists. This experience will provide the knowledge needed to advocate for nursing informatics needs within the field of healthcare.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate proposes database models, including methods and policies for data mining and information retrieval within healthcare organizations.",
+            "The graduate applies constructed data models for communication of clinical documentation across systems, including interoperability considerations.",
+            "The graduate integrates compliance requirements to the informatics system as outlined by government regulations, accreditation, licensing, and certification agencies to mitigate legal risk to healthcare organizations.",
+            "The graduate designs clinically relevant and user-focused informatics projects using informatics systems theory, information processing theory, and national taxonomies to support safe, high quality patient outcomes."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Informatics System Analysis and Design",
+          "description": "In Informatics System Analysis and Design, a broad understanding of data systems is covered to build upon the Foundations in Nursing Informatics course. The importance of effective interoperability, functionality, data access, and user satisfaction are addressed. The student will be analyzing reports and integrating federal regulations, research principles, and principles of environmental health in the construction of a real-world systems analysis and design project. This course will be directly applicable to healthcare settings as electronic records management has become compulsory for healthcare providers. All of the information in this course will be directly tied to the delivery of quality patient care and patient safety. Foundations in Nursing Informatics is recommended as a prerequisite.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate evaluates informatics systems to distinguish effective from ineffective interoperability, functionality, data access, user satisfaction and support of patient care quality and safety.",
+            "The graduate compiles the results of analysis reports to determine impact on healthcare consumers, families, communities, resources, networks, and healthcare organizations.",
+            "The graduate applies research principles to the inclusion of key data elements in systems designs in support of clinical evaluation and clinical processes research.",
+            "The graduate researches federal and other regulation in selecting information systems and projects in practice.",
+            "The graduate evaluates principles of ergonomics and environmental health in the design and implementation of informatics projects in practice."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Nursing Informatics Field Experience",
+          "description": "Nursing Informatics Field Experience requires students to complete clinical/practice experiences while engaging in authentic activities relevant to the role of an informatics nurse. To help students develop competency in this area, this course gives students opportunities to apply methods and solutions to support clinical decisions. They will be prepared to improve health outcomes by analyzing an existing health information system to determine the need for a system optimization that will improve an organization’s ability to measure and report Triple Aim objectives. All MSN Core and Specialty courses, with the exclusion of the Capstone course, are prerequisites to this course and must be completed before taking this course.",
+          "competency_bullets": [
+            "The graduate integrates the latest evidence and technology and the expertise of the interprofessional team to design or refine clinical decision-support tools.",
+            "The graduate designs innovations in data collection and management, in collaboration with the interprofessional team, to effect change in practice and improve health outcomes.",
+            "The graduate designs comprehensive solutions, integrating change and complexity theory concepts, for effective implementation to enhance health outcomes."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Nursing Informatics Capstone",
+          "description": "Nursing Informatics Capstone requires students to complete clinical/practice experiences (CPE) and finalize their system optimization proposal paper, which addresses the Institute of Health’s Triple Aim initiative. During this course, students will plan the final phase of their system development life cycle (SDLC), which consists of proposing the processes, methods, and tasks for monitoring, maintaining, supporting, and evaluating their system optimization. The knowledge and skills that students acquire during the CPE in this course will prepare them to complete their system optimization proposal paper. This is a culminating course that provides students an opportunity to demonstrate the competencies acquired during this program. All MSN Core and Specialty courses, including the Field Experience course, are prerequisites to this course and must be completed before taking this course.",
+          "competency_bullets": [
+            "The graduate integrates and synthesizes competencies from across the degree program and thereby demonstrates the ability to participate in and contribute value to the chosen professional field."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": []
+}

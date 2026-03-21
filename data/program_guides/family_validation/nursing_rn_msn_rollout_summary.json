@@ -1,0 +1,48 @@
+{
+  "report_type": "family_rollout_summary",
+  "family": "nursing_rn_msn",
+  "date": "2026-03-21",
+  "family_size": 3,
+  "rollout_result": "COMPLETE",
+  "guides_rolled_out": ["MSRNNUED", "MSRNNULM", "MSRNNUNI"],
+  "guides_deferred": [],
+  "high_confidence": 3,
+  "medium_confidence": 0,
+  "low_confidence": 0,
+  "total_anomalies": 0,
+  "total_warnings": 0,
+  "total_empty_descriptions": 0,
+  "total_empty_competency_lists": 0,
+  "parser_changes_this_session": [
+    "ACCESSIBILITY_RE typo tolerance — r'^Accessibility and Accomm?odations' (general scope, critical for nursing_rn_msn)",
+    "no_footer_lines_found combined-program suppression — return available metadata when versions found but codes empty (general scope)",
+    "sp_row_invalid 'Advanced Standing' silent skip — block credit placeholder rows dropped without anomaly (general scope)"
+  ],
+  "downstream_exclusions": [],
+  "known_caveats": [
+    "degree_title truncated: extracted as 'Bachelor of Science and Post-Baccalaureate Certificate, Nursing +' for all 3 guides — correct MSN title is in AoS section header",
+    "Combined BS+MSN format: version/pub_date from combined footer (202202 / 12/15/21), not per-program footer",
+    "Advanced Standing for RN License SP row (50 CUs, term=0) silently skipped — individual courses are listed separately in SP at normal term positions"
+  ],
+  "safe_fields": [
+    "standard_path (course_title, cus, term) — all regular courses at correct terms",
+    "areas_of_study (group, courses: title, description, competency_bullets)",
+    "program_code",
+    "version",
+    "pub_date"
+  ],
+  "corpus_status_after_rollout": {
+    "artifact_coverage": 115,
+    "artifact_coverage_pct": 100.0,
+    "family_validated_coverage": 115,
+    "family_validated_pct": 100.0,
+    "complete_families": 18,
+    "complete_families_list": [
+      "standard_bs", "cs_ug", "education_ba", "graduate_standard", "mba",
+      "healthcare_grad", "education_bs", "teaching_mat", "cs_grad",
+      "swe_grad", "data_analytics_grad", "education_ma", "endorsement",
+      "nursing_msn", "nursing_pmc", "accounting_ma", "nursing_ug", "nursing_rn_msn"
+    ],
+    "partial_families": []
+  }
+}

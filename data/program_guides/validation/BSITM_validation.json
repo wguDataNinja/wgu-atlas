@@ -38,38 +38,8 @@
   "empty_competency_lists": [
     "Business - IT Management Portfolio Requirement"
   ],
-  "anomaly_count": 6,
+  "anomaly_count": 1,
   "anomalies": [
-    {
-      "type": "sp_row_invalid",
-      "title": "",
-      "cus": 3,
-      "term": 1
-    },
-    {
-      "type": "sp_row_invalid",
-      "title": "",
-      "cus": 3,
-      "term": 1
-    },
-    {
-      "type": "sp_row_invalid",
-      "title": "",
-      "cus": 3,
-      "term": 1
-    },
-    {
-      "type": "sp_row_invalid",
-      "title": "",
-      "cus": 3,
-      "term": 10
-    },
-    {
-      "type": "sp_row_invalid",
-      "title": "",
-      "cus": 4,
-      "term": 10
-    },
     {
       "type": "sp_incomplete_row_at_eof",
       "title": "Business - IT Management Portfolio Requirement Business - IT Management Capstone Project"

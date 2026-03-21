@@ -146,29 +146,29 @@
           "certification_prep_mentions": []
         },
         {
-          "title": "demand. As the business world continues",
-          "description": "",
-          "competency_bullets": [],
+          "title": "Advanced Financial Accounting I",
+          "description": "Complex accounting skills are in high demand. As the business world continues to expand and broaden, specialized skills are required to accommodate the advanced accounting needs of many industries. Applying financial standards using professional judgment to a variety of business situations is crucial. This course builds the learner’s accounting knowledge by focusing on advanced financial accounting topics such as consolidations, partnership accounting, allocations, adjustments and eliminations.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner prepares consolidated financial statements according to generally accepted accounting principles (GAAP).",
+            "The learner determines required allocations, adjustments, or eliminations according to generally accepted accounting principles (GAAP).",
+            "The learner determines the appropriate accounting treatment for changes in ownership interest and insolvency."
+          ],
           "prerequisite_mentions": [],
           "certification_prep_mentions": []
-        }
-      ]
-    },
-    {
-      "group": "Advanced Financial Accounting I",
-      "courses": [
+        },
         {
-          "title": "taxation of corporations and their shareholders",
-          "description": "",
-          "competency_bullets": [],
+          "title": "Corporate Taxation",
+          "description": "Corporate Taxation describes federal income taxation of corporations and their shareholders with emphasis on the formation of the corporation, capital structure, operational alternatives, distributions, partial and complete liquidations, personal holding companies, and the accumulated earnings tax. This course offers real-life scenario case studies and exercises to better engage learners by applying course concepts in practice. This course involves difficult tax rules and concepts; thus, it is imperative for the learner to study the textbook and complete the assigned problems in the text",
+          "competency_bullets": [
+            "The learner explains the formation, structure, and tax treatment for C corporations.",
+            "The learner calculates the tax effect of C corporation reorganizations, distributions, and liquidations.",
+            "The learner calculates the tax computations and credits for C corporations.",
+            "The learner explains international tax issues for C corporations."
+          ],
           "prerequisite_mentions": [],
           "certification_prep_mentions": []
-        }
-      ]
-    },
-    {
-      "group": "Corporate Taxation",
-      "courses": [
+        },
         {
           "title": "Advanced Financial Accounting II",
           "description": "Advanced Accounting II builds upon the topics covered in Advanced Accounting I. It provides learners with a deeper understanding of advanced financial accounting topics such as foreign currency transactions, hedging, annual and interim reporting, and partnership accounting. This course will equip learners with the necessary skills to prepare essential accounting records for partnerships, translate foreign currency financial statements, and explain reporting requirements for the Securities and Exchange Commission.",
@@ -197,222 +197,5 @@
     }
   ],
   "capstone": null,
-  "anomalies": [
-    {
-      "type": "pending_titles_overflow",
-      "line": 429,
-      "text": "to expand and broaden, specialized skills",
-      "buffer": [
-        "Advanced Financial Accounting I",
-        "Complex accounting skills are in high",
-        "demand. As the business world continues"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 430,
-      "text": "are required to accommodate the",
-      "buffer": [
-        "Advanced Financial Accounting I",
-        "Complex accounting skills are in high",
-        "demand. As the business world continues"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 431,
-      "text": "advanced accounting needs of many",
-      "buffer": [
-        "Advanced Financial Accounting I",
-        "Complex accounting skills are in high",
-        "demand. As the business world continues"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 432,
-      "text": "industries. Applying financial standards",
-      "buffer": [
-        "Advanced Financial Accounting I",
-        "Complex accounting skills are in high",
-        "demand. As the business world continues"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 433,
-      "text": "using professional judgment to a variety of",
-      "buffer": [
-        "Advanced Financial Accounting I",
-        "Complex accounting skills are in high",
-        "demand. As the business world continues"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 434,
-      "text": "business situations is crucial. This course",
-      "buffer": [
-        "Advanced Financial Accounting I",
-        "Complex accounting skills are in high",
-        "demand. As the business world continues"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 435,
-      "text": "builds the learner’s accounting knowledge",
-      "buffer": [
-        "Advanced Financial Accounting I",
-        "Complex accounting skills are in high",
-        "demand. As the business world continues"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 436,
-      "text": "by focusing on advanced financial",
-      "buffer": [
-        "Advanced Financial Accounting I",
-        "Complex accounting skills are in high",
-        "demand. As the business world continues"
-      ]
-    },
-    {
-      "type": "too_many_pending_titles",
-      "titles": [
-        "Advanced Financial Accounting I",
-        "Complex accounting skills are in high",
-        "demand. As the business world continues"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 451,
-      "text": "with emphasis on the formation of the",
-      "buffer": [
-        "Corporate Taxation",
-        "Corporate Taxation describes federal income",
-        "taxation of corporations and their shareholders"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 452,
-      "text": "corporation, capital structure, operational",
-      "buffer": [
-        "Corporate Taxation",
-        "Corporate Taxation describes federal income",
-        "taxation of corporations and their shareholders"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 453,
-      "text": "alternatives, distributions, partial and complete",
-      "buffer": [
-        "Corporate Taxation",
-        "Corporate Taxation describes federal income",
-        "taxation of corporations and their shareholders"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 454,
-      "text": "liquidations, personal holding companies, and",
-      "buffer": [
-        "Corporate Taxation",
-        "Corporate Taxation describes federal income",
-        "taxation of corporations and their shareholders"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 455,
-      "text": "the accumulated earnings tax. This course",
-      "buffer": [
-        "Corporate Taxation",
-        "Corporate Taxation describes federal income",
-        "taxation of corporations and their shareholders"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 456,
-      "text": "offers real-life scenario case studies and",
-      "buffer": [
-        "Corporate Taxation",
-        "Corporate Taxation describes federal income",
-        "taxation of corporations and their shareholders"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 457,
-      "text": "exercises to better engage learners by applying",
-      "buffer": [
-        "Corporate Taxation",
-        "Corporate Taxation describes federal income",
-        "taxation of corporations and their shareholders"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 458,
-      "text": "course concepts in practice. This course",
-      "buffer": [
-        "Corporate Taxation",
-        "Corporate Taxation describes federal income",
-        "taxation of corporations and their shareholders"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 459,
-      "text": "involves difficult tax rules and concepts; thus, it",
-      "buffer": [
-        "Corporate Taxation",
-        "Corporate Taxation describes federal income",
-        "taxation of corporations and their shareholders"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 460,
-      "text": "is imperative for the learner to study the",
-      "buffer": [
-        "Corporate Taxation",
-        "Corporate Taxation describes federal income",
-        "taxation of corporations and their shareholders"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 461,
-      "text": "textbook and complete the assigned problems",
-      "buffer": [
-        "Corporate Taxation",
-        "Corporate Taxation describes federal income",
-        "taxation of corporations and their shareholders"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 462,
-      "text": "in the text",
-      "buffer": [
-        "Corporate Taxation",
-        "Corporate Taxation describes federal income",
-        "taxation of corporations and their shareholders"
-      ]
-    },
-    {
-      "type": "too_many_pending_titles",
-      "titles": [
-        "Corporate Taxation",
-        "Corporate Taxation describes federal income",
-        "taxation of corporations and their shareholders"
-      ]
-    }
-  ]
+  "anomalies": []
 }

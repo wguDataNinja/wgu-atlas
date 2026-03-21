@@ -1,0 +1,43 @@
+{
+  "report_type": "enrichment_course_page_matrix",
+  "date": "2026-03-21",
+  "basis": "115/115 guides parsed (Phase C complete)",
+  "phase_e_required": true,
+  "phase_e_status": "NOT STARTED",
+  "available_content": {
+    "course_descriptions": {
+      "json_path": "areas_of_study[*].courses[*].description",
+      "total_records": 2593,
+      "coverage_pct": 100.0,
+      "phase_e_ready": true,
+      "notes": "100% coverage. Deduplification strategy needed for multi-program courses."
+    },
+    "competency_bullets": {
+      "json_path": "areas_of_study[*].courses[*].competency_bullets",
+      "total_records": 2591,
+      "coverage_pct": 99.9,
+      "phase_e_ready": true,
+      "render_recommendation": "Progressive disclosure",
+      "notes": "Average ~5-6 bullets per course."
+    },
+    "sp_placement": {
+      "json_path": "standard_path[*].{title, cus, term}",
+      "total_rows": 2568,
+      "phase_e_ready": true,
+      "notes": "Shows which programs include a course, at what term, and CU value. Aggregation needed across programs."
+    }
+  },
+  "phase_e_design": {
+    "approach": "title → Atlas course code matching via catalog lookup table",
+    "challenges": ["Title matching (guide title vs catalog code)", "Multi-program dedup", "Non-catalog courses"],
+    "estimated_match_coverage": "70-90% of guide-accessible courses",
+    "recommended_steps": [
+      "Build title → code lookup from catalog data",
+      "Fuzzy-match guide course titles against catalog titles",
+      "Flag non-matches for review or exclusion",
+      "Dedup descriptions per course code",
+      "Gate test on 10-course sample"
+    ]
+  },
+  "pre_phase_e_enrichment": "None — all course-page enrichment from guides requires Phase E matching"
+}

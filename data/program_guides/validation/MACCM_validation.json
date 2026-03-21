@@ -15,25 +15,18 @@
     "Accessibility": 511
   },
   "standard_path_row_count": 10,
-  "aos_group_count": 3,
+  "aos_group_count": 2,
   "aos_course_count": 10,
   "capstone_present": false,
   "title_reconciliation": {
-    "in_both": 9,
-    "sp_only": [
-      "Corporate Financial Analysis"
-    ],
-    "aos_only": [
-      "Corporate Financial Analysis teaches the"
-    ]
+    "in_both": 10,
+    "sp_only": [],
+    "aos_only": []
   },
   "empty_descriptions": [],
   "empty_competency_lists": [],
   "anomaly_count": 0,
   "anomalies": [],
-  "warnings": [
-    "1 SP titles not found in AoS: ['Corporate Financial Analysis']",
-    "1 AoS titles not in SP: ['Corporate Financial Analysis teaches the']"
-  ],
-  "parseability_confidence": "medium"
+  "warnings": [],
+  "parseability_confidence": "high"
 }

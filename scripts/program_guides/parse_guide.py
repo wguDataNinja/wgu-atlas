@@ -67,11 +67,16 @@ FOOTER_LOOSE_RE    = re.compile(r'^([A-Z][A-Z0-9_\-]+)\s+(\d{6})\s+©')
 FOOTER_CODE_ONLY_RE = re.compile(r'^([A-Z][A-Z0-9_\-]+)\s+(\d{6})\s*$')
 # Standalone page number (1–3 digits) emitted on its own line in multi-line footers
 PAGE_NUM_RE = re.compile(r'^\d{1,3}$')
+# Combined-program footer patterns (multi-guide documents)
+# Slash variant: "BSPNTR/BSNPLTR 202303" or "BSPNTR/BSNPLTR 202303 © ..."
+COMBINED_SLASH_FOOTER_RE = re.compile(r'^[A-Z][A-Z0-9_\-]+/[A-Z][A-Z0-9_\-]+\s+\d{6}')
+# Plus variant: "MSRNNUUG + MSNUED 202202"
+COMBINED_PLUS_FOOTER_RE  = re.compile(r'^[A-Z][A-Z0-9_\-]+\s+\+\s+[A-Z][A-Z0-9_\-]+\s+\d{6}')
 
 STANDARD_PATH_RE    = re.compile(r'^Standard Path(\s+for\s+.+)?$')
 AREAS_OF_STUDY_RE   = re.compile(r'^Areas of Study\b')
 CAPSTONE_RE         = re.compile(r'^Capstone$', re.IGNORECASE)
-ACCESSIBILITY_RE    = re.compile(r'^Accessibility and Accommodations')
+ACCESSIBILITY_RE    = re.compile(r'^Accessibility and Accomm?odations')
 
 # SP_HEADER_RE matches both "Course Description" (older) and "Course Title" (newer) column headers
 SP_HEADER_RE       = re.compile(r'^Course\s+(?:Description|Title)\s+CUs?\s+Term', re.IGNORECASE)
@@ -100,6 +105,12 @@ SKIP_CONTENT_RE = re.compile(
     r'^(©|www\.|https?://|Click here|Student Handbook|Mobile Compatibility)',
     re.IGNORECASE,
 )
+# Prose-verb pattern: standalone verb forms that almost never appear in course titles.
+# Used by looks_like_prose() to detect mid-sentence description lines (≥20 chars).
+_PROSE_VERB_RE = re.compile(
+    r'\b(?:is|are|describes|covers|prepares|introduces|examines|explores|'
+    r'builds|teaches|focuses|involves|requires|enables|provides)\b'
+)
 
 
 # ---------------------------------------------------------------------------
@@ -117,6 +128,13 @@ def is_footer(line: str) -> bool:
     # New split format component 3: "© 2019 Western Governors University 8/2/24"
     if line.startswith('©'):
         return True
+    # Combined-program footers (multi-guide documents):
+    # Slash variant: "BSPNTR/BSNPLTR 202303" or "BSPNTR/BSNPLTR 202303 © ..."
+    if COMBINED_SLASH_FOOTER_RE.match(line):
+        return True
+    # Plus variant: "MSRNNUUG + MSNUED 202202"
+    if COMBINED_PLUS_FOOTER_RE.match(line):
+        return True
     return False
 
 
@@ -130,14 +148,36 @@ def clean_bullet(line: str) -> str:
 
 
 def looks_like_prose(line: str) -> bool:
-    """True if line reads like mid-paragraph prose rather than a standalone heading."""
+    """True if line reads like mid-paragraph prose rather than a standalone heading.
+
+    Course titles and group headings are short, Title Case, and end with a noun.
+    This function uses several heuristics to distinguish wrapped description lines:
+    1. Line length > 80 chars — definitely prose
+    2. Ends with sentence punctuation
+    3. Starts with a lowercase letter — continuation of prose (titles are Title Case)
+    4. Ends with a continuation particle — mid-sentence line wrap
+    5. Contains a standalone prose verb — "skills are", "course describes", etc.
+    """
     if len(line) > 80:
         return True
     words = line.split()
     if not words:
         return False
-    # Prose indicators: ends with sentence-like punctuation or is notably long
+    # Prose indicators: ends with sentence-like punctuation
     if line.endswith(('.', ',', ';', ':', '?')):
+        return True
+    # Lowercase start → continuation of a prose paragraph (titles are always Title Case)
+    if words[0][0].islower():
+        return True
+    # Ends with a continuation particle → mid-sentence line wrap
+    _CONTINUATION = {
+        'of', 'to', 'the', 'a', 'an', 'in', 'and', 'or', 'that', 'which',
+        'with', 'from', 'on', 'by', 'at', 'for', 'as', 'this',
+    }
+    if words[-1].lower() in _CONTINUATION:
+        return True
+    # Contains a standalone prose verb (only meaningful for lines ≥ 20 chars)
+    if len(line) >= 20 and _PROSE_VERB_RE.search(line):
         return True
     return False
 
@@ -177,6 +217,29 @@ def extract_metadata(stripped: list) -> dict:
         if not line:
             continue  # blank lines do not reset prev_code_seen
 
+        # Combined slash-footer single-line: "BSPNTR/BSNPLTR 202303 © 2019 ... date page"
+        _cs = re.match(
+            r'^[A-Z][A-Z0-9_\-]+/[A-Z][A-Z0-9_\-]+\s+(\d{6})\s+©\s+\d{4}\s+'
+            r'Western Governors University\s+(\d{1,2}/\d{1,2}/\d{2,4})\s+(\d+)\s*$', line)
+        if _cs:
+            versions.append(_cs.group(1))
+            dates.append(_cs.group(2))
+            pages.append(int(_cs.group(3)))
+            prev_code_seen = False
+            continue
+        # Combined slash-footer multi-line: "BSPNTR/BSNPLTR 202303" (no ©)
+        _cs2 = re.match(r'^[A-Z][A-Z0-9_\-]+/[A-Z][A-Z0-9_\-]+\s+(\d{6})\s*$', line)
+        if _cs2:
+            versions.append(_cs2.group(1))
+            prev_code_seen = True
+            continue
+        # Combined plus-footer multi-line: "MSRNNUUG + MSNUED 202202"
+        _cp = re.match(r'^[A-Z][A-Z0-9_\-]+\s+\+\s+[A-Z][A-Z0-9_\-]+\s+(\d{6})\s*$', line)
+        if _cp:
+            versions.append(_cp.group(1))
+            prev_code_seen = True
+            continue
+
         m = FOOTER_RE.match(line)
         if m:
             codes.append(m.group(1))
@@ -215,6 +278,13 @@ def extract_metadata(stripped: list) -> dict:
             prev_code_seen = False
 
     if not codes:
+        if versions:
+            # Combined-program footer: version extracted but program code not in footer
+            version   = versions[-1]
+            pub_date  = dates[-1] if dates else None
+            page_count = max(pages) if pages else 0
+            return {'program_code': None, 'version': version, 'pub_date': pub_date,
+                    'page_count': page_count, 'anomalies': anomalies}
         anomalies.append({'type': 'no_footer_lines_found', 'note': 'metadata not recoverable'})
         return {'program_code': None, 'version': None, 'pub_date': None,
                 'page_count': 0, 'anomalies': anomalies}
@@ -437,6 +507,11 @@ def parse_standard_path_multiline(stripped: list, sp_start: int, aos_start: int,
         if state == 'BEFORE_TABLE':
             if HEADER_LINE_RE.match(line):
                 state = 'EXPECTING_TITLE'
+            elif SP_CU_ONLY_RE.match(line):
+                # Alternative header trigger: "CUs" alone on a line means the column
+                # headers are split across lines but no "Course Description" header
+                # is present (e.g. BSNU 4-column Option A/Option B table).
+                state = 'EXPECTING_TITLE'
             continue
 
         # Skip column-header words and header labels wherever they appear (repeated at page tops)
@@ -446,6 +521,11 @@ def parse_standard_path_multiline(stripped: list, sp_start: int, aos_start: int,
         if state == 'EXPECTING_TITLE':
             m = INT_RE.match(line)
             if m:
+                if not title_buf:
+                    # Stray integer with no accumulated title — this is a second term
+                    # value from a 4-column table (e.g. BSNU Option A/Option B).
+                    # Skip it; valid CU values only appear after at least one title line.
+                    continue
                 # This integer is the CU value — title accumulation is done
                 cu_val = int(line)
                 if has_term:
@@ -455,6 +535,8 @@ def parse_standard_path_multiline(stripped: list, sp_start: int, aos_start: int,
                     title = ' '.join(title_buf).strip()
                     if title and 1 <= cu_val <= 20:
                         rows.append({'title': title, 'cus': cu_val, 'term': None})
+                    elif title and 'Advanced Standing' in title:
+                        pass  # block credit placeholder — skip silently
                     else:
                         anomalies.append({'type': 'sp_row_invalid',
                                           'title': title, 'cus': cu_val, 'term': None})
@@ -472,6 +554,10 @@ def parse_standard_path_multiline(stripped: list, sp_start: int, aos_start: int,
                 title = ' '.join(title_buf).strip()
                 if title and 1 <= cu_val <= 20 and 1 <= term_val <= 15:
                     rows.append({'title': title, 'cus': cu_val, 'term': term_val})
+                elif title and 'Advanced Standing' in title:
+                    # Block credit placeholder (e.g. "Advanced Standing for RN License", 50 CUs,
+                    # term=0) — individual courses are listed separately in the SP; skip silently.
+                    pass
                 else:
                     anomalies.append({'type': 'sp_row_invalid',
                                       'title': title, 'cus': cu_val, 'term': term_val})
@@ -727,6 +813,12 @@ def parse_areas_of_study(stripped: list, aos_start: int, cap_start: int,
                 break
             if ACCESSIBILITY_RE.match(line):
                 break
+            # Additional section headers that can appear in multi-section guides
+            # (e.g. BSPRN dual-AoS, MSRNN* combined guides): skip them.
+            if AREAS_OF_STUDY_RE.match(line):
+                continue
+            if STANDARD_PATH_RE.match(line):
+                continue
 
             # If we have at least one buffered title and this line looks like prose,
             # the titles are resolved and the description begins now.
@@ -734,6 +826,11 @@ def parse_areas_of_study(stripped: list, aos_start: int, cap_start: int,
                 process_pending_titles()
                 description_buf.append(line)
                 state = 'IN_DESCRIPTION'
+                continue
+
+            # Skip exact duplicate consecutive title candidates — handles double-entry
+            # placeholder blocks (e.g. "Advanced Standing for RN License" ×2 in MSRNN*).
+            if pending_titles and line == pending_titles[-1]:
                 continue
 
             # Standalone short line — buffer as potential group heading or course title.
@@ -785,6 +882,11 @@ def _is_bullet_continuation(line: str, pending: str) -> bool:
         return True
     # If pending ends mid-sentence (no terminal punctuation), check for continuation
     if len(pending) > 20 and pending[-1] not in '.?!':
+        # Lines that END with terminal punctuation are always sentence continuations —
+        # course titles and group headings never end with . ? ! , ; :
+        # This handles multi-line bullets like "...Auditors' (IIA)" + "Framework (IPPF)."
+        if line[-1] in '.?!,:;':
+            return True
         # Longer lines that continue the sentence — but exclude Title Case headings.
         # A line where ≥80% of words start uppercase is almost certainly a course title
         # or group heading, not a sentence continuation.  This catches multi-word course
@@ -795,11 +897,6 @@ def _is_bullet_continuation(line: str, pending: str) -> bool:
             _cap_ratio = sum(1 for w in _words if w[0].isupper()) / max(len(_words), 1)
             if _cap_ratio >= 0.80:
                 return False  # Looks like a Title Case heading, not a continuation
-            return True
-        # Short lines that complete the sentence with terminal punctuation — e.g.
-        # "...accounting principles" + "(GAAP)." or "...Article 2 of the Uniform" + "Commercial Code."
-        # Course titles and group headings never end with . , ; : — so this is safe.
-        if line[-1] in '.,:;':
             return True
         # Parenthetical completions at any length: "...principles" + "(GAAP)."
         if line.startswith('('):

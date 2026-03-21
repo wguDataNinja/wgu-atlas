@@ -2,6 +2,146 @@
 
 ---
 
+## Session 23 — Final corpus close: accounting_ma (5) + nursing_ug (2) + nursing_rn_msn (3); 7 targeted parser fixes (2026-03-21)
+
+### Summary
+
+Final corpus-closing session. 8 remaining/deferred guides resolved. 7 targeted parser fixes applied and regression-verified. **115/115 artifact coverage. 115/115 family-validated coverage. 18 complete families.**
+
+**Results:**
+- accounting_ma (5 guides): all 5 HIGH — `looks_like_prose` and `_is_bullet_continuation` fixes resolved short-wrapped description line misparse
+- nursing_ug (2 guides): BSNU (MEDIUM — no footer metadata), BSPRN (MEDIUM — dual-track structural)
+- nursing_rn_msn (3 guides): all 3 HIGH — ACCESSIBILITY_RE typo fix + `no_footer` combined-program fix + "Advanced Standing" silent skip
+
+Unexpected improvements: MACCM (MEDIUM→HIGH), MATSPED (LOW→MEDIUM from stray-integer skip fix).
+
+### Parser fixes — Session 23
+
+**Fix 1: `looks_like_prose()` lowercase-start heuristic**
+
+- **Affected function:** `looks_like_prose()`
+- **Problem:** Short wrapped description lines (40–50 chars, no terminal punctuation, uppercase start) were not recognized as prose. Caused `looks_like_prose()` to return False for mid-paragraph continuation lines. MACCA/MACCF/MACCT low-confidence root cause.
+- **Fix:** Added `if words[0][0].islower(): return True`. Lines starting with lowercase are always sentence continuations (course titles are always Title Case).
+- **Scope:** General.
+
+**Fix 2: `looks_like_prose()` continuation-particle end heuristic**
+
+- **Affected function:** `looks_like_prose()`
+- **Problem:** Lines ending with particles like "in", "the", "and", "of" are always mid-sentence line wraps. Were not detected.
+- **Fix:** Added continuation particle set check: if `words[-1].lower() in _CONTINUATION: return True`.
+- **Scope:** General.
+
+**Fix 3: `looks_like_prose()` prose-verb heuristic**
+
+- **Affected function:** `looks_like_prose()`
+- **Problem:** Lines containing standalone prose verbs (is, are, describes, covers, prepares, introduces, etc.) are always description lines (course titles don't use these verb forms mid-line). Not detected for lines < 80 chars without punctuation.
+- **Fix:** Added `_PROSE_VERB_RE` regex; if line ≥ 20 chars and matches, return True.
+- **Scope:** General.
+
+**Fix 4: `_is_bullet_continuation()` terminal-punctuation override**
+
+- **Affected function:** `_is_bullet_continuation()`
+- **Problem:** The Title Case guard (Session 18) checked capitalization rate before checking punctuation. Lines ending with `.?!,:;` could pass the Title Case guard and return False, treating a sentence continuation (e.g. "International Professional Practices Framework (IPPF).") as a new title. Caused MACCA and MACCM misparsing.
+- **Fix:** Added `if line[-1] in '.?!,:;': return True` BEFORE the Title Case guard check.
+- **Scope:** General. Course titles and group headings never end with terminal punctuation.
+
+**Fix 5: `ACCESSIBILITY_RE` typo tolerance**
+
+- **Affected function:** regex constant; used in `locate_sections()`, `parse_areas_of_study()`, `parse_capstone()`
+- **Problem:** `ACCESSIBILITY_RE = re.compile(r'^Accessibility and Accommodations')` required correct spelling. Nursing RN-to-MSN guides use "Accessibility and Accomodations" (single-m typo). Section not detected → AoS parser ran past the section boundary and captured "Accessibility and Accomodations" as the last AoS course group (0 competency bullets), producing 2 warnings per guide.
+- **Fix:** `ACCESSIBILITY_RE = re.compile(r'^Accessibility and Accomm?odations')` — matches both spellings.
+- **Scope:** General. Existing guides with correct spelling still match.
+
+**Fix 6: `no_footer_lines_found` combined-program suppression**
+
+- **Affected function:** `extract_metadata()`
+- **Problem:** Combined-program guides (BSPRN "BSPNTR/BSNPLTR 202303", MSRNN* "MSRNNUUG + MSNUED 202202") have footers that provide version but not program code. `extract_metadata` appended `no_footer_lines_found` anomaly when `codes` was empty, even when `versions` was non-empty.
+- **Fix:** When `codes` is empty but `versions` is non-empty, return available metadata (version, pub_date, pages) without the anomaly.
+- **Scope:** General. Standard guides always have `codes` non-empty; no behavior change for them.
+
+**Fix 7: `sp_row_invalid` "Advanced Standing" silent skip**
+
+- **Affected function:** `parse_standard_path_multiline()` — both 2-column and EXPECTING_TERM paths
+- **Problem:** "Advanced Standing for RN License" (50 CUs, term=0) appears in BSNU and MSRNN* SPs as a block-credit summary placeholder. CU value (50) and term value (0) fail the normal validation ranges, generating `sp_row_invalid` anomaly. Individual courses are listed separately in the SP; this row is redundant.
+- **Fix:** Added `elif title and 'Advanced Standing' in title: pass` to silently skip such rows without anomaly.
+- **Scope:** General. "Advanced Standing" in course titles is not a known pattern for any regular course in the corpus.
+
+**Regression verification:** 20 guides from all completed families — zero confidence regressions. Improvements only: MACCA/MACCF/MACCT (LOW→HIGH), MACCM (MEDIUM→HIGH), MATSPED (LOW→MEDIUM).
+
+### Rollout details
+
+**accounting_ma (5 guides) — fully rolled out HIGH**
+
+| Code | SP Rows | AoS Groups | AoS Courses | Version | Pages |
+|------|---------|------------|-------------|---------|-------|
+| MACC | 10 | 4 | 10 | 202409 | 18 |
+| MACCM | 10 | 2 | 10 | 202409 | 11 |
+| MACCA | 10 | 2 | 10 | 202409 | 11 |
+| MACCF | 11 | 2 | 11 | 202409 | 11 |
+| MACCT | 10 | 2 | 10 | 202409 | 11 |
+
+All 5 HIGH. 0 anomalies. 0 warnings. `looks_like_prose` fixes resolved all short-wrapped description issues.
+
+**nursing_ug (2 guides) — both MEDIUM**
+
+| Code | SP Rows | AoS Groups | AoS Courses | Version | Confidence |
+|------|---------|------------|-------------|---------|------------|
+| BSNU | 22 | 2 | 22 | None | MEDIUM (no footer) |
+| BSPRN | 19 | 3 | 34 | 202303 | MEDIUM (dual-track) |
+
+BSNU: 1 anomaly (`no_footer_lines_found` — source PDF has no footer), 0 warnings. SP and AoS clean (22/22 reconciled).
+BSPRN: 0 anomalies, 1 warning (15 Nursing-track courses AoS-only — structural dual-track design). SP covers Pre-Nursing track only.
+
+**nursing_rn_msn (3 guides) — all HIGH**
+
+| Code | SP Rows | AoS Groups | AoS Courses | Version |
+|------|---------|------------|-------------|---------|
+| MSRNNUED | 32 | 4 | 32 | 202202 |
+| MSRNNULM | 32 | 4 | 32 | 202202 |
+| MSRNNUNI | 31 | 4 | 31 | 202202 |
+
+All 3 HIGH. 0 anomalies. 0 warnings. Combined BS+MSN guides with combined-plus footer format.
+degree_title truncated (cosmetic) — shows "Bachelor of Science and Post-Baccalaureate Certificate, Nursing +" for all 3.
+
+### Coverage model after Session 23
+
+| Layer | Count | Notes |
+|-------|-------|-------|
+| **Artifact coverage** | 115 / 115 (100.0%) | +5 from this session (BSNU, BSPRN, MSRNNUED, MSRNNULM, MSRNNUNI) |
+| **Family-validated coverage** | 115 / 115 (100.0%) | +9 newly validated (accounting_ma ×5, nursing_ug ×2, nursing_rn_msn ×3) |
+| **Downstream-usable full** | ~111 / 115 | accounting_ma now all 5 HIGH; MSRNN* all 3 HIGH; BSNU/BSPRN MEDIUM |
+| **Downstream-usable partial** | 4 | BSITM (SP unusable, AoS intact), MATSPED (SP broken, AoS intact), MSCSUG (SP unusable, AoS intact), BSPRN (dual-track SP incomplete) |
+| **Not usable** | 0 | All guides have at minimum usable AoS content |
+
+Complete families (18): standard_bs, cs_ug, education_ba, graduate_standard, mba, healthcare_grad, education_bs, teaching_mat, cs_grad, swe_grad, data_analytics_grad, education_ma, endorsement, nursing_msn, nursing_pmc, accounting_ma, nursing_ug, nursing_rn_msn
+
+education_grad: complete (MSEDL=HIGH + MEDETID=MEDIUM)
+
+No partial families remaining.
+
+### Known downstream exclusions (updated)
+
+- BSITM: SP unusable (source PDF column extraction failure), AoS intact and usable
+- MATSPED: SP broken (source PDF issue — all courses concatenated into one SP title), AoS intact and usable
+- MSCSUG: SP unusable (source PDF column extraction failure), AoS intact and usable
+- BSPRN: SP covers Pre-Nursing track only; 15 Nursing-track courses AoS-only
+- BSNU: version/pub_date/page_count not recoverable (no footer in source PDF)
+- MSRNNUED/LM/NI: degree_title truncated (cosmetic)
+- MEDETID: capstone field captures only first of 3 courses (structural multi-capstone limitation)
+
+### Artifacts produced
+
+- `data/program_guides/parsed/{BSNU,BSPRN,MSRNNUED,MSRNNULM,MSRNNUNI}_parsed.json`
+- `data/program_guides/validation/{same}_validation.json`
+- `data/program_guides/manifest_rows/{same}_manifest_row.json`
+- Re-parsed (improved): `{MACCA,MACCF,MACCT,MACCM,MATSPED}_parsed.json` and matching validation/manifest
+- `data/program_guides/family_validation/accounting_ma_rollout_summary.{json,md}`
+- `data/program_guides/family_validation/nursing_ug_rollout_summary.{json,md}`
+- `data/program_guides/family_validation/nursing_rn_msn_rollout_summary.{json,md}`
+- `scripts/program_guides/parse_guide.py` (7 targeted fixes)
+
+---
+
 ## Session 22 — Bucket 2: nursing_pmc (4) + MEDETID (1); 3 targeted parser fixes (2026-03-21)
 
 ### Summary

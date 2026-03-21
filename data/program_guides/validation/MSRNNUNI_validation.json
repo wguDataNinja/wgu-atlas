@@ -1,25 +1,25 @@
 {
-  "program_code": "MACCA",
-  "degree_title": "Master of Science in Accounting, Auditing Specialization",
-  "version": "202409",
-  "pub_date": "4/12/24",
-  "page_count": 11,
+  "program_code": "MSRNNUNI",
+  "degree_title": "Bachelor of Science and Post-Baccalaureate Certificate, Nursing +",
+  "version": "202202",
+  "pub_date": "12/15/21",
+  "page_count": 20,
   "detected_sections": [
     "Standard Path",
     "Areas of Study",
     "Accessibility"
   ],
   "section_line_indices": {
-    "Standard Path": 211,
-    "Areas of Study": 307,
-    "Accessibility": 504
+    "Standard Path": 243,
+    "Areas of Study": 477,
+    "Accessibility": 1178
   },
-  "standard_path_row_count": 10,
-  "aos_group_count": 2,
-  "aos_course_count": 10,
+  "standard_path_row_count": 31,
+  "aos_group_count": 4,
+  "aos_course_count": 31,
   "capstone_present": false,
   "title_reconciliation": {
-    "in_both": 10,
+    "in_both": 31,
     "sp_only": [],
     "aos_only": []
   },

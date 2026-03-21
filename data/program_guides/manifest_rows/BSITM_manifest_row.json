@@ -48,11 +48,6 @@
     "1 courses with no competency bullets"
   ],
   "irregularities": [
-    "sp_row_invalid",
-    "sp_row_invalid",
-    "sp_row_invalid",
-    "sp_row_invalid",
-    "sp_row_invalid",
     "sp_incomplete_row_at_eof"
   ]
 }

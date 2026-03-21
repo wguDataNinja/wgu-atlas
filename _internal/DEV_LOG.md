@@ -5,6 +5,31 @@ Each entry records what changed, decisions locked, what's blocked, and the next 
 
 ---
 
+## 2026-03-21 (session 23 — corpus close: accounting_ma 5 + nursing_ug 2 + nursing_rn_msn 3; 7 parser fixes)
+
+**Done**
+- Resolved all 8 remaining/deferred guides: MACCA, MACCF, MACCT (LOW→HIGH), MACCM (MEDIUM→HIGH), BSNU (MEDIUM), BSPRN (MEDIUM), MSRNNUED/LM/NI (all HIGH).
+- 7 targeted parser fixes: `looks_like_prose` 3-heuristic expansion, `_is_bullet_continuation` terminal-punctuation override, `ACCESSIBILITY_RE` typo tolerance, `no_footer_lines_found` combined-program suppression, "Advanced Standing" silent skip.
+- 3 family rollout summaries: accounting_ma, nursing_ug, nursing_rn_msn.
+- Updated ATLAS_CONTROL.md, ATLAS_REPO_MEMORY.md, DEV_NOTES.md.
+- **Phase C COMPLETE: 115/115 artifact coverage. 18 complete families. 0 partial families.**
+
+**Unexpected improvements**
+- MACCM: MEDIUM→HIGH (terminal-punctuation fix resolved "IPPF" misparse cascade).
+- MATSPED: LOW→MEDIUM (stray-integer skip resolved 21 empty-title sp_row_invalid anomalies).
+
+**Decisions locked**
+- Phase C is closed. No further corpus-parsing work needed.
+- Phase D design is the next program-guide task.
+
+**What's blocked**
+- Phase D not started (needs schema and inclusion/exclusion policy design first).
+
+**Next starting task**
+- Phase D schema and inclusion/exclusion policy design (which guides publish, quality gate, fallback for MEDIUM/SP-failure guides).
+
+---
+
 ## 2026-03-21 (session 20 — gap analysis: remaining families; Phase D readiness)
 
 **Done**

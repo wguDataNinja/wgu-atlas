@@ -1,0 +1,37 @@
+{
+  "program_code": "BSNU",
+  "degree_title": "Bachelor of Science, Nursing",
+  "version": null,
+  "pub_date": null,
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 202,
+    "Areas of Study": 416,
+    "Accessibility": 814
+  },
+  "standard_path_row_count": 22,
+  "aos_group_count": 2,
+  "aos_course_count": 22,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 22,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 1,
+  "anomalies": [
+    {
+      "type": "no_footer_lines_found",
+      "note": "metadata not recoverable"
+    }
+  ],
+  "warnings": [],
+  "parseability_confidence": "medium"
+}

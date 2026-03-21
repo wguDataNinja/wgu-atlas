@@ -1,0 +1,50 @@
+{
+  "report_type": "family_rollout_summary",
+  "family": "accounting_ma",
+  "date": "2026-03-21",
+  "family_size": 5,
+  "rollout_result": "COMPLETE",
+  "guides_rolled_out": ["MACC", "MACCM", "MACCA", "MACCF", "MACCT"],
+  "guides_deferred": [],
+  "high_confidence": 5,
+  "medium_confidence": 0,
+  "low_confidence": 0,
+  "total_anomalies": 0,
+  "total_warnings": 0,
+  "total_empty_descriptions": 0,
+  "total_empty_competency_lists": 0,
+  "parser_changes_this_session": [
+    "looks_like_prose() lowercase-start heuristic — lines starting with lowercase return True (general scope)",
+    "looks_like_prose() continuation-particle end heuristic — lines ending with 'in','the','and' etc. return True (general scope)",
+    "looks_like_prose() prose-verb heuristic — lines ≥20 chars containing standalone prose verbs return True (general scope)",
+    "_is_bullet_continuation() terminal-punctuation override — lines ending with .?!,:; always return True before Title Case guard (general scope)"
+  ],
+  "downstream_exclusions": [],
+  "known_caveats": [
+    "MACCM Corporate Financial Analysis: title/first-sentence quality issue (cosmetic, content intact)",
+    "MACC has 4 AoS groups vs 2 for each specialization guide — expected structural difference"
+  ],
+  "safe_fields": [
+    "standard_path (course_title, cus, term)",
+    "areas_of_study (group, courses: title, description, competency_bullets)",
+    "degree_title",
+    "program_code",
+    "version",
+    "pub_date",
+    "page_count"
+  ],
+  "corpus_status_after_rollout": {
+    "artifact_coverage": 115,
+    "artifact_coverage_pct": 100.0,
+    "family_validated_coverage": 115,
+    "family_validated_pct": 100.0,
+    "complete_families": 18,
+    "complete_families_list": [
+      "standard_bs", "cs_ug", "education_ba", "graduate_standard", "mba",
+      "healthcare_grad", "education_bs", "teaching_mat", "cs_grad",
+      "swe_grad", "data_analytics_grad", "education_ma", "endorsement",
+      "nursing_msn", "nursing_pmc", "accounting_ma", "nursing_ug", "nursing_rn_msn"
+    ],
+    "partial_families": []
+  }
+}

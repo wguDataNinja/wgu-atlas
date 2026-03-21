@@ -151,17 +151,17 @@
           "certification_prep_mentions": []
         },
         {
-          "title": "demand. As the business world continues",
-          "description": "",
-          "competency_bullets": [],
+          "title": "Advanced Financial Accounting I",
+          "description": "Complex accounting skills are in high demand. As the business world continues to expand and broaden, specialized skills are required to accommodate the advanced accounting needs of many industries. Applying financial standards using professional judgment to a variety of business situations is crucial. This course builds the learner’s accounting knowledge by focusing on advanced financial accounting topics such as consolidations, partnership accounting, allocations, adjustments and eliminations.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner prepares consolidated financial statements according to generally accepted accounting principles (GAAP).",
+            "The learner determines required allocations, adjustments, or eliminations according to generally accepted accounting principles (GAAP).",
+            "The learner determines the appropriate accounting treatment for changes in ownership interest and insolvency."
+          ],
           "prerequisite_mentions": [],
           "certification_prep_mentions": []
-        }
-      ]
-    },
-    {
-      "group": "Advanced Financial Accounting I",
-      "courses": [
+        },
         {
           "title": "Advanced Financial Accounting II",
           "description": "Advanced Accounting II builds upon the topics covered in Advanced Accounting I. It provides learners with a deeper understanding of advanced financial accounting topics such as foreign currency transactions, hedging, annual and interim reporting, and partnership accounting. This course will equip learners with the necessary skills to prepare essential accounting records for partnerships, translate foreign currency financial statements, and explain reporting requirements for the Securities and Exchange Commission.",
@@ -173,15 +173,10 @@
           ],
           "prerequisite_mentions": [],
           "certification_prep_mentions": []
-        }
-      ]
-    },
-    {
-      "group": "Corporate Financial Analysis",
-      "courses": [
+        },
         {
-          "title": "Corporate Financial Analysis teaches the",
-          "description": "analysis of topics in financial management, including financial statement analysis and strategic corporate decision-making related to valuation, risk, capital structure, investment decisions, and performance. In this course, learners develop an understanding of the decisions financial managers/analysts face when making strategic decisions designed to improve an organization’s efficiency.",
+          "title": "Corporate Financial Analysis",
+          "description": "Corporate Financial Analysis teaches the analysis of topics in financial management, including financial statement analysis and strategic corporate decision-making related to valuation, risk, capital structure, investment decisions, and performance. In this course, learners develop an understanding of the decisions financial managers/analysts face when making strategic decisions designed to improve an organization’s efficiency.",
           "competency_bullets": [
             "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
             "The learner assesses how financial statement results and financial information impact value.",
@@ -226,94 +221,5 @@
     }
   ],
   "capstone": null,
-  "anomalies": [
-    {
-      "type": "pending_titles_overflow",
-      "line": 436,
-      "text": "to expand and broaden, specialized skills",
-      "buffer": [
-        "Advanced Financial Accounting I",
-        "Complex accounting skills are in high",
-        "demand. As the business world continues"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 437,
-      "text": "are required to accommodate the",
-      "buffer": [
-        "Advanced Financial Accounting I",
-        "Complex accounting skills are in high",
-        "demand. As the business world continues"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 438,
-      "text": "advanced accounting needs of many",
-      "buffer": [
-        "Advanced Financial Accounting I",
-        "Complex accounting skills are in high",
-        "demand. As the business world continues"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 439,
-      "text": "industries. Applying financial standards",
-      "buffer": [
-        "Advanced Financial Accounting I",
-        "Complex accounting skills are in high",
-        "demand. As the business world continues"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 440,
-      "text": "using professional judgment to a variety of",
-      "buffer": [
-        "Advanced Financial Accounting I",
-        "Complex accounting skills are in high",
-        "demand. As the business world continues"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 441,
-      "text": "business situations is crucial. This course",
-      "buffer": [
-        "Advanced Financial Accounting I",
-        "Complex accounting skills are in high",
-        "demand. As the business world continues"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 442,
-      "text": "builds the learner’s accounting knowledge",
-      "buffer": [
-        "Advanced Financial Accounting I",
-        "Complex accounting skills are in high",
-        "demand. As the business world continues"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 443,
-      "text": "by focusing on advanced financial",
-      "buffer": [
-        "Advanced Financial Accounting I",
-        "Complex accounting skills are in high",
-        "demand. As the business world continues"
-      ]
-    },
-    {
-      "type": "too_many_pending_titles",
-      "titles": [
-        "Advanced Financial Accounting I",
-        "Complex accounting skills are in high",
-        "demand. As the business world continues"
-      ]
-    }
-  ]
+  "anomalies": []
 }

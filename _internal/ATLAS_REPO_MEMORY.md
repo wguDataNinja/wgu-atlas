@@ -36,7 +36,7 @@ This repo is being compressed to a 3-document operating system:
    - active control surface
    - priorities, workstream state, blockers, next steps
 
-2. `docs/ATLAS_REPO_MEMORY.md`
+2. `_internal/ATLAS_REPO_MEMORY.md`
    - stable repo memory
    - runtime architecture, data flow, contracts, durable decisions
 
@@ -394,10 +394,10 @@ Its job is to attach useful official WGU-authored or WGU-owned materials to exis
 
 ### Current status
 
-- module initialized
-- planning is substantially complete
-- first bounded queue artifact still needed
-- likely next major workstream after doc consolidation
+- module initialized and active
+- first bounded regulatory/licensure queue artifact exists (`_internal/official_resource/regulatory_candidate_queue.md`)
+- runtime placements already include selected regulatory/licensure resources in `public/data/official_resource_placements.json`
+- broader attachment expansion and completeness auditing remain in progress
 
 ### Main runtime artifact
 
@@ -542,18 +542,18 @@ This is distinct from the URL-placement system in `official_resource_placements.
 
 ### Status
 
-- **Phase C — 89/115 artifact coverage (77.4%). 12 complete families. 87 family-validated (75.7%).**
-- Phase D numeric threshold (≥70%) crossed. Phase D readiness requires separate conservative assessment (not just numeric).
-- Technical design complete and frozen: `_internal/program_guides/TECHNICAL_READOUT.md`
+- Implemented and in active rollout (not analysis-only).
 - Parser (`scripts/program_guides/parse_guide.py`) is stable and production-quality.
-- Phase D and Phase E not started.
+- **Phase C COMPLETE: 115/115 guides have parsed + validation + manifest_row artifacts on disk.**
+- 18 families rollout-complete. education_grad complete (MSEDL=HIGH + MEDETID=MEDIUM). 0 partial families.
+- Phase D and Phase E are not started; runtime guide artifact publication is not yet live.
+- Current counts and near-term sequence are controlled in `_internal/ATLAS_CONTROL.md`.
 
-**Coverage model (three distinct layers — do not collapse):**
-- Artifact coverage: guides with all 3 artifact files on disk (includes deferred-LOW).
-- Family-validated: guides in families with a rollout summary (or confirmed-complete status). Excludes deferred LOW.
-- Downstream-usable full: family-validated at HIGH/MEDIUM with SP and AoS both intact (~84).
-- Downstream-usable partial: SP unusable, AoS intact (BSITM, MATSPED, MSCSUG = 3).
-- Not usable: AoS broken, deferred (MACCA, MACCF, MACCT = 3).
+**Durable coverage model (do not collapse these states):**
+- Extracted texts: PDF-to-text corpus available for parser input.
+- Parsed guides: structural content extracted into `*_parsed.json`.
+- Validated guides: per-guide QA output in `*_validation.json` with confidence and anomaly accounting.
+- Runtime-published guides: site-facing artifacts in `public/data/program_guides/` (not yet published).
 
 ### BSDA guide structure (confirmed)
 
@@ -580,22 +580,10 @@ Key structural facts:
 | E | Course title → Atlas code matching (separate downstream step) |
 
 ### Validated families and guide counts
-
-| Family | Guides | HIGH | MEDIUM | LOW | Notable |
-|--------|--------|------|--------|-----|---------|
-| standard_bs | 19 | 18 | 0 | 1 | BSITM SP: source-artifact extraction failure |
-| cs_ug | 8 | 4 | 4 | 0 | High cert-prep density |
-| education_ba | 11 | 5 | 6 | 0 | 4 Sped guides: 1 missing AoS course (PDF reordering) |
-| graduate_standard | 9 | 8 | 1 | 0 | MSITM capstone description polluted (typo in source) |
-| mba | 3 | 3 | 0 | 0 | |
-| healthcare_grad | 2 | 2 | 0 | 0 | |
-| education_bs | 4 | 4 | 0 | 0 | |
-| teaching_mat | 9 | 8 | 0 | 1 | MATSPED SP: source-artifact extraction failure |
-| cs_grad | 5 | 4 | 0 | 1 | MSCSUG SP: source-artifact; AoS intact (37 courses) |
-| swe_grad | 4 | 3 | 1 | 0 | MSSWEUG: title hyphen variant in bridge guide |
-| data_analytics_grad | 3 | 3 | 0 | 0 | Cleanest family |
-| education_ma | 9 | 9 | 0 | 0 | Cleanest family to date; 2 guides have capstones (MAMEK6, MAMEMG) |
-| accounting_ma | 5 (partial) | 1 | 1 | 3 | Specialization guides deferred — looks_like_prose limitation |
+Current family-level completion and confidence distributions are execution-state facts and should be read from:
+- `_internal/ATLAS_CONTROL.md` (current snapshot and next sequence)
+- `data/program_guides/family_validation/` (gate and rollout summaries)
+- `_internal/program_guides/DEV_NOTES.md` (session-level change log)
 
 ### Known source-artifact SP failures (SP unusable, AoS intact)
 
@@ -603,7 +591,7 @@ Key structural facts:
 
 ### Known parser limitations (not source artifacts)
 
-- `looks_like_prose()` fails for short-wrapped description lines (40–50 chars, no terminal punctuation). Affects accounting_ma 202409 specialization guides (MACCA, MACCF, MACCT). Fix deferred.
+None outstanding. All identified limitations were resolved in Session 22–23.
 
 ### Parser changes log
 
@@ -612,13 +600,25 @@ Key structural facts:
 | 17 | `extract_metadata()` date regex fix (no-space before date) | General |
 | 18 | `_is_bullet_continuation` Title Case guard (≥80% cap ratio → False) | General |
 | 19 | `parse_capstone` KeyError fix — added `prerequisite_mentions` and `certification_prep_mentions` to capstone dict | General (capstone guides) |
+| 22 | `SP_CHANGES_RE` conditional break — only breaks if table started (not BEFORE_TABLE) | General |
+| 22 | `STANDARD_PATH_RE` second-table break — stops at second "Standard Path for..." heading after table start | General |
+| 22 | `extract_title_and_description` Certificate Guidebook skip | General (PMC guides) |
+| 23 | `looks_like_prose()` lowercase-start heuristic | General |
+| 23 | `looks_like_prose()` continuation-particle end heuristic | General |
+| 23 | `looks_like_prose()` prose-verb heuristic (`_PROSE_VERB_RE`) | General |
+| 23 | `_is_bullet_continuation()` terminal-punctuation override (before Title Case guard) | General |
+| 23 | `ACCESSIBILITY_RE` typo tolerance (`Accomm?odations`) | General |
+| 23 | `extract_metadata()` combined-program `no_footer` suppression | General (combined guides) |
+| 23 | `parse_standard_path_multiline()` "Advanced Standing" silent skip | General |
 
 ### Key files
 
 - `_internal/program_guides/TECHNICAL_READOUT.md` — full design rationale, schemas, pipeline
 - `_internal/program_guides/DEV_NOTES.md` — session history and parser change log
-- `_internal/program_guides/README.md` — workstream control
-- `data/program_guides/parsed/` — 89 *_parsed.json files
+- `_internal/program_guides/README.md` — module orientation
+- `data/program_guides/parsed/` — parser outputs (execution truth for parsed state)
+- `data/program_guides/validation/` — per-guide validation outputs (execution truth for validated state)
+- `data/program_guides/manifest_rows/` — per-guide manifest snapshots for corpus accounting
 - `data/program_guides/family_validation/` — gate reports and rollout summaries
 - `public/data/program_guides/` — not yet created (Phase D)
 
@@ -669,6 +669,15 @@ Text-based design artifacts live in `_internal/page_designs/`. Each file covers 
 ### Purpose
 
 These exist for design and planning work — not for code generation or spec enforcement. They answer "what is actually on this page right now?" without requiring a browser or a code read of every component.
+
+### Durable design conclusions (repo-level)
+
+- Homepage redesign is sequenced later, not abandoned.
+- Homepage direction is proof-first: demonstrate Atlas value, not only navigation.
+- Strongest proof surfaces so far are degree pages and Compare.
+- Additional durable proof surfaces are course connectedness, history/change context, and relevant official resources.
+- Ecosystem/community material is secondary to the core academic-reference story.
+- Detailed visual analysis and route-level evidence remain local to `_internal/page_designs/`.
 
 ### Regeneration
 

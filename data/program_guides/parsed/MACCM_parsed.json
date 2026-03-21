@@ -157,15 +157,10 @@
           ],
           "prerequisite_mentions": [],
           "certification_prep_mentions": []
-        }
-      ]
-    },
-    {
-      "group": "Corporate Financial Analysis",
-      "courses": [
+        },
         {
-          "title": "Corporate Financial Analysis teaches the",
-          "description": "analysis of topics in financial management, including financial statement analysis and strategic corporate decision-making related to valuation, risk, capital structure, investment decisions, and performance. In this course, learners develop an understanding of the decisions financial managers/analysts face when making strategic decisions designed to improve an organization’s efficiency.",
+          "title": "Corporate Financial Analysis",
+          "description": "Corporate Financial Analysis teaches the analysis of topics in financial management, including financial statement analysis and strategic corporate decision-making related to valuation, risk, capital structure, investment decisions, and performance. In this course, learners develop an understanding of the decisions financial managers/analysts face when making strategic decisions designed to improve an organization’s efficiency.",
           "competency_bullets": [
             "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
             "The learner assesses how financial statement results and financial information impact value.",

@@ -1,13 +1,13 @@
 {
-  "source_pdf_filename": "MACCM.pdf",
-  "source_text_filename": "MACCM.txt",
-  "inferred_program_code": "MACCM",
-  "page_count": 11,
+  "source_pdf_filename": "MSRNNUED.pdf",
+  "source_text_filename": "MSRNNUED.txt",
+  "inferred_program_code": "MSRNNUED",
+  "page_count": 20,
   "version_strings": [
-    "202409"
+    "202202"
   ],
   "publication_dates": [
-    "4/12/24"
+    "12/15/21"
   ],
   "has_standard_path": true,
   "has_areas_of_study": true,
@@ -18,9 +18,9 @@
   "has_cu_values": true,
   "has_cert_prep_mentions": false,
   "has_prereq_mentions": true,
-  "standard_path_row_count": 10,
-  "competency_trigger_count": 10,
-  "competency_bullet_count": 48,
+  "standard_path_row_count": 32,
+  "competency_trigger_count": 32,
+  "competency_bullet_count": 178,
   "cert_prep_mention_count": 0,
   "prereq_mention_count": 2,
   "detected_section_headings": [
@@ -29,10 +29,12 @@
     "Accessibility"
   ],
   "inferred_course_groups": [
-    "Management",
-    "Accounting"
+    "Advanced Standing for RN License",
+    "General Education",
+    "MSN Core",
+    "Nursing Education Specialty"
   ],
-  "likely_guide_family": "accounting_ma",
+  "likely_guide_family": "nursing_rn_msn",
   "template_type": "partial",
   "parseability_confidence": "high",
   "warnings": [],

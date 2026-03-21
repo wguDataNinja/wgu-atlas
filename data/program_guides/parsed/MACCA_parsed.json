@@ -171,17 +171,16 @@
           "certification_prep_mentions": []
         },
         {
-          "title": "Internal Auditing I and covers the",
-          "description": "",
-          "competency_bullets": [],
+          "title": "Internal Auditing II",
+          "description": "Internal Auditing II is a continuation of Internal Auditing I and covers the competencies expected of an internal audit professional in the business world. This course is well aligned to the Institute of Internal Auditors’ (IIA) International Professional Practices framework (IPPF) by focusing learner’s attention on four domains: the internal audit activity, planning the engagement, performing the engagement, communicating the engagement, and monitoring progress.",
+          "competency_bullets": [
+            "The learner plans an internal audit engagement",
+            "The learner performs an internal audit engagement through information gathering, analysis, and evaluation.",
+            "The learner communicates internal audit engagement results."
+          ],
           "prerequisite_mentions": [],
           "certification_prep_mentions": []
-        }
-      ]
-    },
-    {
-      "group": "Internal Auditing II",
-      "courses": [
+        },
         {
           "title": "Information Systems for Accounting and Control",
           "description": "Information Systems I is intended to provide learners with an overview of information systems and information system technology used in the world of accounting. The topics will include networks, hardware, data needs, cybersecurity, and government compliance with privacy and personal information. The course covers a range of topics which accountants may experience and be responsible for in professional life. There are three competencies, and each competency will introduce learners to topics designed to prepare them for the high-stakes assessment.",
@@ -200,74 +199,5 @@
     }
   ],
   "capstone": null,
-  "anomalies": [
-    {
-      "type": "pending_titles_overflow",
-      "line": 459,
-      "text": "competencies expected of an internal audit",
-      "buffer": [
-        "Internal Auditing II",
-        "Internal Auditing II is a continuation of",
-        "Internal Auditing I and covers the"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 460,
-      "text": "professional in the business world. This",
-      "buffer": [
-        "Internal Auditing II",
-        "Internal Auditing II is a continuation of",
-        "Internal Auditing I and covers the"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 461,
-      "text": "course is well aligned to the Institute of",
-      "buffer": [
-        "Internal Auditing II",
-        "Internal Auditing II is a continuation of",
-        "Internal Auditing I and covers the"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 462,
-      "text": "Internal Auditors’ (IIA) International",
-      "buffer": [
-        "Internal Auditing II",
-        "Internal Auditing II is a continuation of",
-        "Internal Auditing I and covers the"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 463,
-      "text": "Professional Practices framework (IPPF)",
-      "buffer": [
-        "Internal Auditing II",
-        "Internal Auditing II is a continuation of",
-        "Internal Auditing I and covers the"
-      ]
-    },
-    {
-      "type": "pending_titles_overflow",
-      "line": 464,
-      "text": "by focusing learner’s attention on four",
-      "buffer": [
-        "Internal Auditing II",
-        "Internal Auditing II is a continuation of",
-        "Internal Auditing I and covers the"
-      ]
-    },
-    {
-      "type": "too_many_pending_titles",
-      "titles": [
-        "Internal Auditing II",
-        "Internal Auditing II is a continuation of",
-        "Internal Auditing I and covers the"
-      ]
-    }
-  ]
+  "anomalies": []
 }

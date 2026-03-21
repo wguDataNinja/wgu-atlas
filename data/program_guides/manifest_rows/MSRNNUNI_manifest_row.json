@@ -1,44 +1,41 @@
 {
-  "source_pdf_filename": "MBA.pdf",
-  "source_text_filename": "MBA.txt",
-  "inferred_program_code": "MBA",
-  "page_count": 11,
+  "source_pdf_filename": "MSRNNUNI.pdf",
+  "source_text_filename": "MSRNNUNI.txt",
+  "inferred_program_code": "MSRNNUNI",
+  "page_count": 20,
   "version_strings": [
-    "201404"
+    "202202"
   ],
   "publication_dates": [
-    "9/27/23"
+    "12/15/21"
   ],
   "has_standard_path": true,
   "has_areas_of_study": true,
-  "has_capstone_section": true,
+  "has_capstone_section": false,
   "has_course_descriptions": true,
   "has_competency_bullets": true,
   "has_term_structure": true,
   "has_cu_values": true,
   "has_cert_prep_mentions": false,
   "has_prereq_mentions": false,
-  "standard_path_row_count": 11,
-  "competency_trigger_count": 10,
-  "competency_bullet_count": 61,
+  "standard_path_row_count": 31,
+  "competency_trigger_count": 31,
+  "competency_bullet_count": 168,
   "cert_prep_mention_count": 0,
   "prereq_mention_count": 0,
   "detected_section_headings": [
     "Standard Path",
     "Areas of Study",
-    "Accessibility",
-    "Capstone"
+    "Accessibility"
   ],
   "inferred_course_groups": [
-    "Management",
-    "Accounting",
-    "Leadership",
-    "Finance",
-    "Strategy",
-    "Economics"
+    "Advanced Standing for RN License",
+    "General Education",
+    "MSN Core",
+    "Nursing Informatics Specialty"
   ],
-  "likely_guide_family": "mba",
-  "template_type": "full",
+  "likely_guide_family": "nursing_rn_msn",
+  "template_type": "partial",
   "parseability_confidence": "high",
   "warnings": [],
   "irregularities": []

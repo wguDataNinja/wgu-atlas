@@ -20,7 +20,7 @@
   "has_prereq_mentions": true,
   "standard_path_row_count": 10,
   "competency_trigger_count": 10,
-  "competency_bullet_count": 43,
+  "competency_bullet_count": 46,
   "cert_prep_mention_count": 0,
   "prereq_mention_count": 2,
   "detected_section_headings": [
@@ -30,25 +30,11 @@
   ],
   "inferred_course_groups": [
     "Management",
-    "Accounting",
-    "Internal Auditing II"
+    "Accounting"
   ],
   "likely_guide_family": "accounting_ma",
   "template_type": "partial",
-  "parseability_confidence": "low",
-  "warnings": [
-    "1 SP titles not found in AoS: ['Internal Auditing II']",
-    "1 AoS titles not in SP: ['Internal Auditing I and covers the']",
-    "1 courses with no description",
-    "1 courses with no competency bullets"
-  ],
-  "irregularities": [
-    "pending_titles_overflow",
-    "pending_titles_overflow",
-    "pending_titles_overflow",
-    "pending_titles_overflow",
-    "pending_titles_overflow",
-    "pending_titles_overflow",
-    "too_many_pending_titles"
-  ]
+  "parseability_confidence": "high",
+  "warnings": [],
+  "irregularities": []
 }

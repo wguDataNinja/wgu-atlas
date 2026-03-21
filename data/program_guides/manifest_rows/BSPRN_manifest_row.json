@@ -1,0 +1,43 @@
+{
+  "source_pdf_filename": "BSPRN.pdf",
+  "source_text_filename": "BSPRN.txt",
+  "inferred_program_code": "BSPRN",
+  "page_count": 24,
+  "version_strings": [
+    "202303"
+  ],
+  "publication_dates": [
+    "10/5/22"
+  ],
+  "has_standard_path": true,
+  "has_areas_of_study": true,
+  "has_capstone_section": false,
+  "has_course_descriptions": true,
+  "has_competency_bullets": true,
+  "has_term_structure": true,
+  "has_cu_values": true,
+  "has_cert_prep_mentions": false,
+  "has_prereq_mentions": true,
+  "standard_path_row_count": 19,
+  "competency_trigger_count": 34,
+  "competency_bullet_count": 250,
+  "cert_prep_mention_count": 0,
+  "prereq_mention_count": 12,
+  "detected_section_headings": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "inferred_course_groups": [
+    "General Education",
+    "Prelicensure Nursing",
+    "Nursing Core"
+  ],
+  "likely_guide_family": "nursing_ug",
+  "template_type": "partial",
+  "parseability_confidence": "medium",
+  "warnings": [
+    "15 AoS titles not in SP: ['Adult Health I', 'Adult Health II', 'Adult Health III', 'Advanced Nursing Skills', 'Community Health and Population-Focused Nursing']"
+  ],
+  "irregularities": []
+}

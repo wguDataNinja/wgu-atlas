@@ -1,0 +1,33 @@
+{
+  "report_type": "enrichment_no_use_list",
+  "date": "2026-03-21",
+  "hard_exclusions": [
+    {"code": "BSITM", "field": "standard_path", "reason": "Source PDF column extraction failure — SP unusable", "alternative": "Show AoS content only"},
+    {"code": "MSCSUG", "field": "standard_path", "reason": "Source PDF column extraction failure — SP unusable", "alternative": "Show AoS content only"},
+    {"code": "MATSPED", "field": "standard_path", "reason": "SP broken at source (all courses in one concatenated SP row)", "alternative": "Show AoS content only"},
+    {"all_guides": true, "field": "prerequisite_mentions", "reason": "Known false-positive rate in prereq regex; not spot-check validated", "alternative": "Internal reference only"},
+    {"code": "BSITM", "field": "competency_bullets", "course": "one course", "reason": "Empty bullet set — PDF format artifact", "alternative": "Suppress that course's bullet display"},
+    {"code": "BSSWE_C", "field": "competency_bullets", "course": "one course", "reason": "Empty bullet set — PDF format artifact", "alternative": "Suppress that course's bullet display"},
+    {"codes": ["MSRNNUED", "MSRNNULM", "MSRNNUNI", "MSCSAIML"], "field": "degree_title", "reason": "Truncated in parsed output", "alternative": "Use catalog degree title"}
+  ],
+  "soft_exclusions": [
+    {"code": "BSPRN", "field": "standard_path", "reason": "Pre-Nursing track only; 15 Nursing-track courses AoS-only", "handling": "Label as 'Pre-Nursing Standard Path' if displayed"},
+    {"code": "BSNU", "field": "metadata", "reason": "version/pub_date/page_count unavailable", "handling": "Omit those fields; content intact"},
+    {"code": "MACCM", "field": "description", "reason": "Corporate Financial Analysis title/first-sentence quality issue (cosmetic)", "handling": "Verify display looks acceptable"},
+    {"code": "MEDETID", "field": "capstone", "reason": "Only first of 3 capstone courses captured", "handling": "Surface with partial-coverage caveat"},
+    {"code": "MAELLP12", "field": "page_count", "reason": "page_count=0 (cosmetic)", "handling": "Omit page_count display"}
+  ],
+  "internal_only_artifacts": [
+    {"pattern": "data/program_guides/parsed/*_parsed.json", "reason": "Phase D build will produce site-ready format"},
+    {"pattern": "data/program_guides/validation/*_validation.json", "reason": "Internal QA artifacts"},
+    {"pattern": "data/program_guides/manifest_rows/*_manifest_row.json", "reason": "Internal corpus metadata"},
+    {"pattern": "data/program_guides/family_validation/", "reason": "Internal build history"},
+    {"pattern": "data/program_guides/audit/", "reason": "Internal planning artifacts"}
+  ],
+  "phase_e_blocked": [
+    "Course descriptions on course detail pages",
+    "Competency bullets on course detail pages",
+    "Per-course cert-prep attributes (structured)",
+    "Per-course prereq attributes (structured)"
+  ]
+}
