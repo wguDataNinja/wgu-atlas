@@ -5,6 +5,35 @@ Each entry records what changed, decisions locked, what's blocked, and the next 
 
 ---
 
+## 2026-03-21 (session 20 — gap analysis: remaining families; Phase D readiness)
+
+**Done**
+- Diagnostic parse of all 24 remaining unvalidated guides (artifacts deleted post-diagnosis — not committed).
+- Gap analysis written: `_internal/program_guides/PHASE_D_READINESS_GAP_ANALYSIS.md`
+- Updated ATLAS_CONTROL.md next-session order with revised picture.
+
+**Key findings**
+- endorsement (8) and nursing_msn (5): ZERO parser issues. All HIGH in diagnostic. Phase A "high risk" assessment was unfounded. Immediate rollout candidates.
+- education_grad/MSEDL (1): HIGH. Immediate rollout candidate.
+- nursing_pmc (4): SP=0 rows (page layout puts "Changes to Curriculum" before SP table). AoS intact. degree_title wrong. Targeted fix required.
+- education_grad/MEDETID (1): 3 embedded SP sub-tables (2 specializations). AoS intact (9 courses). SP overcounts and includes sub-table headers as courses. Moderate fix required.
+- nursing_ug/BSNU (1): 4-column SP format (Option A / Option B). SP=0. AoS=22 intact. Non-trivial format work.
+- nursing_ug/BSPRN (1): Dual-track 1783-line guide with embedded catalog refs. MEDIUM. Complex.
+- nursing_rn_msn (3): LOW. Running page headers, non-course SP rows, multi-component structure. Major work for 3 guides.
+
+**Decisions locked**
+- "Risky" family risk was overstated: endorsement and nursing_msn are clean.
+- nursing_rn_msn and nursing_ug (BSNU) are the genuine hard cases, not endorsement/nursing_msn.
+- Phase D sequence: roll out clean 14 first → design schema/policy → build artifacts.
+- Do not start Phase D artifacts before schema and inclusion/exclusion policy are defined.
+
+**No parser changes. No commits (diagnostic only).**
+
+**Next starting task**
+- Gate and roll out endorsement (8) + nursing_msn (5) + MSEDL (1). See gap analysis Scenario A.
+
+---
+
 ## 2026-03-21 (session 19 — education_ma gate/rollout; coverage accounting; capstone bug fix)
 
 **Done**

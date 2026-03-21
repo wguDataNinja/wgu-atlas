@@ -14,14 +14,20 @@ This repo is being compressed to a 3-document system:
 
 No separate long-lived `ATLAS_SPEC.md` or `DECISIONS.md` should be treated as active canon. Both are archived in `_internal/archive/2026-03-final-consolidation/docs/`.
 
+If local docs conflict on current progress or next-step sequencing, trust in this order:
+
+1. on-disk execution artifacts (`data/program_guides/{parsed,validation,manifest_rows}`, `data/program_guides/family_validation/`, runtime artifacts in `public/data/`)
+2. workstream execution log (`_internal/program_guides/DEV_NOTES.md`, module session logs)
+3. module orientation/design docs (`_internal/program_guides/README.md`, `_internal/program_guides/TECHNICAL_READOUT.md`, `_internal/page_designs/*`)
+
 ---
 
 ## 5. Current workstream status
 
 | Workstream | Status | Current objective | Primary blocker | Next bounded step |
 |---|---|---|---|---|
-| Program guide extraction | Phase C — 89/115 artifact coverage (77.4%), 87/115 family-validated (75.7%) | assess Phase D readiness conservatively (numeric threshold crossed; risky families remain) | 26 unvalidated guides include high-risk families (nursing, endorsement, education_grad) | Phase D readiness assessment + accounting_ma specialization fix planning |
-| Official resource layer | initialized, likely next | move from planning to first queue artifact | first bounded queue artifact not built | create regulatory/licensure/disclosure candidate queue |
+| Program guide extraction | Phase C — 91/115 parsed+validation+manifest artifacts on disk (79.1%) | complete targeted family validation and decide conservative Phase D entry | remaining unparsed families are concentrated in higher-risk structures (endorsement, nursing, education_grad); accounting_ma specialization parser limitation remains | lock education_ma rollout summary + run Phase D readiness checkpoint + decide accounting_ma specialization disposition |
+| Official resource layer | active, bounded queueing established | continue conservative attachment expansion with provenance clarity | placement model expansion and completeness audits are still incomplete | reconcile regulatory queue vs current placements, then run outcomes/accreditation completeness pass |
 | Continuity review | initialized, lightweight | validate compact review method | first tiny validation batch not created | create 4-card validation batch |
 | Program lineage / degree history | ready, not selected | keep system stable for later export/UI if chosen | export/runtime wiring not implemented | no action unless selected |
 | Catalog baseline / site runtime | stable | preserve current deterministic site behavior | none immediate | no action |
@@ -34,16 +40,16 @@ No separate long-lived `ATLAS_SPEC.md` or `DECISIONS.md` should be treated as ac
 ### 6.0 Program guide extraction
 
 **Status**
-- Phase C — 89/115 artifact coverage (77.4%). 12 complete families. 87 family-validated (75.7%).
-- Phase D numeric threshold (≥70%) is crossed. Phase D readiness is NOT automatic — see coverage model below.
+- Phase C — 91/115 guides have parsed + validation + manifest_row artifacts on disk (79.1%).
+- 12 families are rollout-complete; `accounting_ma` remains partial (specialization guides deferred).
+- Phase D numeric threshold (≥70%) is crossed. Phase D readiness is NOT automatic.
 - Parser is stable and production-quality. Core state machine validated across 12+ families.
 
 **Coverage model (three distinct numbers):**
-- Artifact coverage: 89 guides have parsed + validation + manifest_row files. Includes deferred-LOW guides.
-- Family-validated coverage: 87 guides in families that completed rollout review. Does not include deferred LOW guides.
-- Downstream-usable full: ~84 guides (HIGH/MEDIUM, SP+AoS both intact). Does not include BSITM, MATSPED, MSCSUG SP.
-- Downstream-usable partial: 3 guides (BSITM, MATSPED, MSCSUG — SP unusable, AoS intact).
-- Not usable: MACCA, MACCF, MACCT (AoS broken, deferred).
+- Parsed artifact coverage: 91 guides have `*_parsed.json`.
+- Validation artifact coverage: 91 guides have `*_validation.json`.
+- Manifest-row coverage: 91 guides have `*_manifest_row.json`.
+- Runtime-published guide artifacts: not yet created in `public/data/program_guides/` (Phase D not started).
 
 **Complete families (12):**
 standard_bs(19), cs_ug(8), education_ba(11), graduate_standard(9), mba(3), healthcare_grad(2), education_bs(4), teaching_mat(9), cs_grad(5), swe_grad(4), data_analytics_grad(3), education_ma(9)
@@ -72,9 +78,9 @@ standard_bs(19), cs_ug(8), education_ba(11), graduate_standard(9), mba(3), healt
 **Key files**
 - `_internal/program_guides/DEV_NOTES.md` — session history, parser change log, coverage accounting model
 - `_internal/program_guides/TECHNICAL_READOUT.md` — parser design rationale
-- `data/program_guides/parsed/` — 89 *_parsed.json files
-- `data/program_guides/validation/` — 89 *_validation.json files
-- `data/program_guides/manifest_rows/` — 89 *_manifest_row.json files
+- `data/program_guides/parsed/` — 91 *_parsed.json files
+- `data/program_guides/validation/` — 91 *_validation.json files
+- `data/program_guides/manifest_rows/` — 91 *_manifest_row.json files
 - `data/program_guides/family_validation/` — gate reports and rollout summaries
 - `data/program_guides/audit/` — family inventory, section matrix, readiness assessment
 - `public/data/program_guides/` — not yet created (Phase D)
@@ -82,23 +88,24 @@ standard_bs(19), cs_ug(8), education_ba(11), graduate_standard(9), mba(3), healt
 **Pipeline phases**
 1. A: Corpus manifest ✓
 2. B: Thin-slice validation ✓
-3. C: Full corpus parsing — **IN PROGRESS** (89 artifact / 87 family-validated)
+3. C: Full corpus parsing — **IN PROGRESS** (91/115 artifact coverage)
 4. D: Site artifact build — NOT STARTED (numeric threshold crossed but Phase D readiness requires separate conservative assessment)
 5. E: Course code matching — NOT STARTED
 
 **Next artifact**
-- Conduct conservative Phase D readiness assessment (numeric threshold is met; must evaluate risky-family coverage and safe-field boundaries before starting)
-- accounting_ma specialization fix: design and regression-test looks_like_prose verb-presence heuristic
+- Lock `education_ma` family rollout summary artifact (reflecting complete family status).
+- Conduct conservative Phase D readiness assessment (coverage and safe-field boundaries, not threshold-only).
+- Decide `accounting_ma` specialization disposition: parser fix with regression proof or explicit exclusion policy.
 
 ---
 
 ### 6.1 Official resource layer
 
 **Status**
-- initialized
-- planning direction is good enough
-- likely next major workstream
-- not yet converted into first real queue artifact
+- initialized and active
+- regulatory/licensure queue artifact exists
+- some regulatory/licensure placements are already present in runtime artifact
+- broader expansion and completeness auditing remain in progress
 
 **Why it matters**
 - This is the clearest next student-facing value layer after catalog facts.
@@ -124,7 +131,7 @@ Priority order:
 - `public/data/official_resource_placements.json`
 
 **Next artifact**
-- `_internal/official_resource/regulatory_candidate_queue.md`
+- outcomes + accreditation completeness audit against sitemap-derived candidates
 
 ---
 
@@ -233,7 +240,7 @@ These should not be reopened by default.
 
 | ID | Question | Default if unresolved |
 |---|---|---|
-| Q-OFF-QUEUE | What is the first clean candidate queue for official-resource work? | start with regulatory/licensure/disclosure |
+| Q-OFF-QUEUE | After regulatory queueing, what is the next bounded official-resource batch to execute? | run outcomes/accreditation completeness audit |
 | Q-OFF-ATTACH | What is the minimum robust attachment model before YouTube expansion? | defer broader YouTube rollout |
 | Q-LIN-012 | Should `PLE-012` be accepted as lineage? | reject history |
 | Q-LIN-023 | Should `PLE-023` be accepted as lineage? | reject history |
@@ -245,10 +252,13 @@ These should not be reopened by default.
 
 ## 9. Exact next-session order
 
-1. **Program guide — Phase D readiness assessment:** education_ma is complete. Numeric threshold (≥70%) is crossed (87/115 family-validated). Assess conservatively: what is the realistic downstream coverage, what families remain untouched and how risky are they, and is it safe to begin Phase D artifact build? Do not start Phase D on numeric threshold alone. Write a short Phase D readiness memo.
-2. **Program guide — accounting_ma specialization fix:** Design and regression-test looks_like_prose verb-presence heuristic (see DEV_NOTES Session 19 for proposed approach). Test against MACCA, MACCF, MACCT. Verify no regressions across all 89 validated guides before deciding whether to implement.
-3. Build `_internal/official_resource/regulatory_candidate_queue.md`
-4. Run first 4-card continuity-review batch (`_internal/continuity_review/validation_batch_01.md`)
+Session 20 was gap analysis only (no parsing, no rollout). Key finding: the two families assumed highest-risk (endorsement, nursing_msn) parse cleanly as HIGH in diagnostic tests. The actual hard cases are nursing_rn_msn (3 guides, structural complexity), nursing_ug (2 guides, non-standard SP format), and accounting_ma specializations (3, known). See `_internal/program_guides/PHASE_D_READINESS_GAP_ANALYSIS.md`.
+
+1. **Program guide — gate and roll out endorsement (8) + nursing_msn (5) + MSEDL (1):** These 14 guides parsed as HIGH in diagnostic tests. Zero parser changes needed. This is the highest-value next move — pushes family-validated to 101/115. Gate one guide per family, review, roll out if clean.
+2. **Program guide — accounting_ma specialization fix:** Design and regression-test `looks_like_prose` verb-presence heuristic against all 91 validated guides. Do not implement without full regression proof.
+3. **Program guide — Phase D schema and inclusion/exclusion policy design:** After Scenario A rollout, define: which guides are published, what schema the output artifact uses, and what the fallback is for MEDIUM guides and SP-failure guides. Do not build Phase D artifacts yet.
+4. **Official resource — bounded next pass:** reconcile regulatory queue against current placements, then run outcomes/accreditation completeness audit.
+5. Run first 4-card continuity-review batch (`_internal/continuity_review/validation_batch_01.md`)
 
 ---
 
@@ -261,7 +271,8 @@ These should not be reopened by default.
 | What changed recently | `_internal/DEV_LOG.md` |
 | Page-state docs, source baseline, homepage design conclusions | `_internal/page_designs/` — see `README.md` for reading order |
 | Program guide extraction — design and pipeline | `_internal/program_guides/TECHNICAL_READOUT.md` |
-| Program guide extraction — workstream control | `_internal/program_guides/README.md` |
+| Program guide extraction — current execution truth | `data/program_guides/{parsed,validation,manifest_rows}/`, `data/program_guides/family_validation/`, `_internal/program_guides/DEV_NOTES.md` |
+| Program guide extraction — module orientation | `_internal/program_guides/README.md` |
 | Official-resource module materials | `_internal/official_resource/` |
 | Continuity-review materials | `_internal/continuity_review/` |
 | Lineage data + decisions | `data/lineage/` |
