@@ -1,0 +1,32 @@
+{
+  "program_code": "BSPH",
+  "degree_title": "Bachelor of Science, Public Health",
+  "version": "202409",
+  "pub_date": "5/6/24",
+  "page_count": 18,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 214,
+    "Areas of Study": 454,
+    "Accessibility": 1008
+  },
+  "standard_path_row_count": 33,
+  "aos_group_count": 6,
+  "aos_course_count": 33,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 33,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

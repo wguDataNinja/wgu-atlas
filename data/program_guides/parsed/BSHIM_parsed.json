@@ -1,0 +1,738 @@
+{
+  "program_code": "BSHIM",
+  "version": "202504",
+  "pub_date": "7/24/2025",
+  "page_count": 0,
+  "degree_title": "Bachelor of Science, Health Information Management",
+  "program_description": "Program Code: BSHIM Catalog Version: 202504 Published Date: 7/24/2025 The Bachelor of Science in Health Information Management provides a solid foundation in healthcare information systems and data management technologies for healthcare organizations including healthcare regulation, project management of health systems, databases, and security. In addition to the health information management content, the degree program includes a broad collegiate education. The program is designed for those who have some technical or clinical knowledge in a health care environment and are ready to move to increased levels of expertise and knowledge in the health information management field. The health information management component of the Bachelor of Science program consists of the following areas of study: Healthcare Data, Health Information Technology, Medical Terminology, Pathophysiology and Pharmacology. There are several other areas of study that students master including Fundamentals of IT in Healthcare, Legal and Ethical Considerations in Healthcare, Leadership and Management, Anatomy and Physiology, Healthcare Compliance and Coding, Project Management, Financial Resource Management, and Healthcare Statistics. There are two professional practice experiences required for the program. At the end of the program, students complete a capstone project.",
+  "standard_path": [
+    {
+      "title": "Learning Strategies in Higher Education",
+      "cus": 4,
+      "term": 1
+    },
+    {
+      "title": "Composition: Writing with a Strategy",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Healthcare Ecosystems",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Foundations in Healthcare Information Management",
+      "cus": 4,
+      "term": 1
+    },
+    {
+      "title": "Critical Thinking: Reason and Evidence",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Introduction to Communication: Connecting with Others",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Introduction to Biology",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Composition: Successful Self-Expression",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Medical Terminology",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Fundamentals of Anatomy and Physiology",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Healthcare System Applications",
+      "cus": 4,
+      "term": 3
+    },
+    {
+      "title": "Introduction to Psychology",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Applied Healthcare Statistics",
+      "cus": 4,
+      "term": 4
+    },
+    {
+      "title": "Data Analytics and Information Governance",
+      "cus": 4,
+      "term": 4
+    },
+    {
+      "title": "Global Arts and Humanities",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "American Politics and the US Constitution",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "Introduction to Healthcare IT Systems",
+      "cus": 4,
+      "term": 5
+    },
+    {
+      "title": "Foundations in Healthcare Data Management",
+      "cus": 3,
+      "term": 5
+    },
+    {
+      "title": "Health Information Law and Regulations",
+      "cus": 4,
+      "term": 5
+    },
+    {
+      "title": "Applied Algebra",
+      "cus": 3,
+      "term": 5
+    },
+    {
+      "title": "Pathophysiology",
+      "cus": 3,
+      "term": 6
+    },
+    {
+      "title": "Introduction to Pharmacology",
+      "cus": 3,
+      "term": 6
+    },
+    {
+      "title": "Quality and Performance Management and Methods",
+      "cus": 4,
+      "term": 6
+    },
+    {
+      "title": "Classification Systems",
+      "cus": 4,
+      "term": 6
+    },
+    {
+      "title": "Foundations in Public Health",
+      "cus": 3,
+      "term": 7
+    },
+    {
+      "title": "Healthcare Compliance",
+      "cus": 3,
+      "term": 7
+    },
+    {
+      "title": "Healthcare Financial Resource Management",
+      "cus": 4,
+      "term": 7
+    },
+    {
+      "title": "Healthcare Reimbursement",
+      "cus": 4,
+      "term": 7
+    },
+    {
+      "title": "Healthcare Statistics and Research",
+      "cus": 3,
+      "term": 8
+    },
+    {
+      "title": "Healthcare Information Systems Management",
+      "cus": 3,
+      "term": 8
+    },
+    {
+      "title": "Professional Practice Experience I: Technical",
+      "cus": 3,
+      "term": 8
+    },
+    {
+      "title": "Healthcare Project Management",
+      "cus": 4,
+      "term": 8
+    },
+    {
+      "title": "Principles of Management in Health Information Management",
+      "cus": 3,
+      "term": 9
+    },
+    {
+      "title": "Organizational Leadership in Healthcare",
+      "cus": 3,
+      "term": 9
+    },
+    {
+      "title": "Professional Practice Experience II: Management",
+      "cus": 4,
+      "term": 9
+    },
+    {
+      "title": "Health Information Management Capstone",
+      "cus": 4,
+      "term": 9
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Foundations of Success",
+      "courses": [
+        {
+          "title": "Learning Strategies in Higher Education",
+          "description": "Learning Strategies in Higher Education provides students with a toolbox of skills that will support student academic growth as they advance in their academic journey. Students will be introduced to the WGU Library; how to use it and best practices for research strategies. Students will learn how to be professional in written communication and how to properly integrate and cite source materials in academic papers. In this course, students also will learn about setting goals, time-management, study strategies, making and keeping appointments, professional decorum, and test-taking skills. Learning these skills, strategies, and methods will establish an academic foundation for students to be successful in higher education. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies critical thinking and cultural awareness in writing.",
+            "The learner applies professionalism to problem-solving strategies in a given context.",
+            "The learner applies research strategies and technology literacy for gathering information from reliable sources.",
+            "The learner applies self-directed strategies to advance organizational skills and lifelong learning."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "General Education",
+      "courses": [
+        {
+          "title": "Composition: Writing with a Strategy",
+          "description": "Welcome to Composition: Writing with a Strategy! In this course, you will focus on three main topics: understanding purpose, context, and audience, writing strategies and techniques, and editing and revising. In addition, the first section, will offer review on core elements of the writing process, cross-cultural communication, as well as working with words and common standards and practices. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the seven competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner composes constructive feedback of written texts.",
+            "The learner constructs a written document with correct format, style, structure, and grammar.",
+            "The learner formulates a strategy for editing and revising written text.",
+            "The learner incorporates writing strategies and techniques for written communication.",
+            "The learner writes with purpose for a given context and target audience."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Critical Thinking: Reason and Evidence",
+          "description": "In this course you will learn key critical thinking concepts and how to apply them in the analysis and evaluation of reasons and evidence. The course examines the basic components of an argument, the credibility of evidence sources, the impact of bias, and how to construct an argument that provides good support for a claim. The course consists of an introduction and four major sections. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the four competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates bias and its impact.",
+            "The learner evaluates evidence based on source credibility.",
+            "The learner evaluates the quality of an argument.",
+            "The learner makes claims based on evidence."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Introduction to Communication: Connecting with Others",
+          "description": "Welcome to Introduction to Communication: Connecting with Others! It may seem like common knowledge that communication skills are important, and that communicating with others is inescapable in our everyday lives. While this may appear simplistic, the study of communication is actually complex, dynamic, and multifaceted. Strong communication skills are invaluable to strengthening a multitude of aspects of life. Specifically, this course will focus on communication in the professional setting, and present material from multiple vantage points, including communicating with others in a variety of contexts, across situations, and with diverse populations. Upon completion, you will have a deeper understanding of both your own and others’ communication behaviors, and a toolbox of effective behaviors to enhance your experience in the workplace.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements appropriate communication styles based on audience and setting.",
+            "The learner uses communication strategies for managing conflict.",
+            "The learner uses communication strategies to influence others."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Introduction to Biology",
+          "description": "This course is a foundational introduction to the biological sciences. The overarching theories of life from biological research are explored as well as the fundamental concepts and principles of the study of living organisms and their interaction with the environment. Key concepts include how living organisms use and produce energy; how life grows, develops, and reproduces; how life responds to the environment to maintain internal stability; and how life evolves and adapts to the environment.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes different types of cells based on their structures and biological functions.",
+            "The graduate analyzes inter-dependencies of organisms and their environments.",
+            "The graduate analyzes the basic chemical composition of cells and the basic processes that happen at the cellular level.",
+            "The graduate analyzes the biological basis for and patterns of heredity and gene expression.",
+            "The graduate analyzes the characteristics and classifications of living organisms."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Composition: Successful Self-Expression",
+          "description": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing research sources. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the seven competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content. You will demonstrate competency through a performance assessment. There is no prerequisite for this course and there is no specific technical knowledge needed.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner composes a written message with language appropriate for cross-cultural communication.",
+            "The learner incorporates research to support a position or idea.",
+            "The learner incorporates self-expression in written communication.",
+            "The learner researches valid and reliable sources.",
+            "The learner writes a message using an effective communication approach for a given situation.",
+            "The learner writes a reference list.",
+            "The learner writes in a professional manner for a given scenario."
+          ],
+          "prerequisite_mentions": [
+            "for this course and there is no specific technical knowledge needed"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Fundamentals of Anatomy and Physiology",
+          "description": "Fundamentals of Anatomy and Physiology provides an overview of the structures and functions of organs and systems of the human body. This course will explore how the parts of the body systems work together to produce movement, transport nutrients, eliminate wastes, protect vital tissues and organs, regulate bodily functions, and support reproduction and growth, through videos, readings, exploratory learning, and practice activities.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes the structures and functions of the endocrine and reproductive systems and their roles in reproduction and maintaining homeostasis within the body.",
+            "The learner describes the structures and functions of the immune system, integumentary system, and special senses and their roles in protecting the body and interacting with the environment.",
+            "The learner describes the structures and functions of the muscular, skeletal, and nervous systems and their roles in movement.",
+            "The learner describes the structures and functions of the respiratory, cardiovascular, urinary, and digestive systems and their roles transporting nutrients and eliminating waste from the body."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Introduction to Psychology",
+          "description": "In this course, students will develop an understanding of psychology and how it helps them better understand others and themselves. Students will learn general theories about psychological development, the structure of the brain, and how psychologists study behavior. They will gain an understanding of both normal and disordered psychological behaviors, as well as general applications of the science of psychology in society (such as personality typing and counseling).",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains the biological perspectives of psychology.",
+            "The learner explains the concepts of personality development and social psychology.",
+            "The learner explains the foundations of psychology.",
+            "The learner explains the theories of learning and memory.",
+            "The learner identifies psychological disorders and treatment methods."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Applied Healthcare Statistics",
+          "description": "Applied Healthcare Probability and Statistics is designed to help develop competence in the fundamental concepts of basic mathematics, introductory algebra, and statistics and probability. These concepts include basic arithmetic with fractions and signed numbers; introductory algebra and graphing; descriptive statistics; regression and correlation; and probability. Statistical data and probability are now commonplace in the healthcare field. This course will help candidates make informed decisions about which studies and results are valid, which are not, and how those results affect your decisions. This course will give candidates background in what constitutes sound research design and how to appropriately model phenomena using statistical data. Additionally, this course guides candidates in calculating simple probabilities based on events which occur in the healthcare profession. This course will prepare candidates for studies at WGU, as well as in the healthcare profession.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies principles and methods of probability-based mathematics to explain and solve problems.",
+            "The graduate applies the operations, processes, and procedures of basic algebra to evaluate quantitative expressions, and to solve equations and inequalities.",
+            "The graduate applies the operations, processes, and procedures of basic arithmetic to solve expressions.",
+            "The graduate applies the operations, processes, and procedures of fractions, decimals, and percentages to evaluate quantitative expressions.",
+            "The graduate evaluates categorical and quantitative data pertaining to a single variable using appropriate graphical displays and numerical measures.",
+            "The graduate evaluates the relationship between two quantitative variables through correlation and regression.",
+            "The graduate evaluates the relationship between two variables through interpretation of visual displays and numerical measures."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Global Arts and Humanities",
+          "description": "This is a Global Arts and Humanities course that contains three modules with corresponding lessons. This course is an invitation to see the world through the humanities, examine the humanities during the Information Age, and explore the global origins of music—essentially questioning what makes us human, and how people are connected across culture and time. Each module includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to practice and check learning. With no prior knowledge or experience, a learner can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes diverse voices, ideas, perspectives, and cultural interactions through the lens of the humanities.",
+            "The learner analyzes how music shapes and is shaped by diverse cultures and perspectives.",
+            "The learner analyzes the humanities during the Information Age."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "American Politics and the US Constitution",
+          "description": "American Politics and the U.S. Constitution examines the evolution of representative government in the United States and the changing interpretations of the civil rights and civil liberties protected by the Constitution. This course will give candidates an understanding of the powers of the branches of the federal government, the continual tensions inherent in a federal system, the shifting relationship between state and federal governments, and the interactions between elected officials and the ever-changing electorate. This course will focus on such topics as the role of a free press in a democracy, the impact of changing demographics on American politics, and the debates over and expansion of civil rights. Upon completion of the course, candidates should be able to explain the basic functions of the federal government, describe the forces that shape American policy and politics, and be better prepared to participate in America’s civic institutions. This course has no prerequisite.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate describes the influence of competing political ideologies on the development of the United States government.",
+            "The graduate examines the influence of political parties, citizens, and non-governmental organizations on elections and other political processes inside a participatory democracy.",
+            "The graduate examines the influence of the media, public opinion, and political discourse on American democracy.",
+            "The graduate examines the struggle to balance individual liberty, public order, and state’s rights.",
+            "The graduate explains how the structure and powers of the United States government interact to form public policy."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Applied Algebra",
+          "description": "Applied Algebra is designed to help you develop competence in working with functions, the algebra of functions, and using some applied properties of functions. You will start learning about how we can apply different kinds of functions to relevant, real-life examples. From there, the algebra of several families of functions will be explored, including linear, polynomial, exponential, and logistic functions. You will also learn about relevant, applicable mathematical properties of each family of functions, including rate of change, concavity, maximizing/minimizing, and asymptotes. These properties will be used to solve problems related to your major and make sense of everyday living problems. Students should complete Applied Probability and Statistics or its equivalent prior to engaging in Applied Algebra.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes graphical depictions of real-world situations using functional properties.",
+            "The learner applies exponential functions and their properties to real-world problems.",
+            "The learner applies linear functions and their properties to real-world problems.",
+            "The learner applies logistic functions and their properties to real-world problems.",
+            "The learner applies polynomial functions and their properties to real-world problems.",
+            "The learner interprets the real-world meaning of various functions based on notation, graphical representations, and data representations.",
+            "The learner verifies the validity of a given model."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Healthcare Management",
+      "courses": [
+        {
+          "title": "Healthcare Ecosystems",
+          "description": "Healthcare Ecosystems examines how the aims and elements of the healthcare ecosystem can affect client and patient outcomes. The course explores the main aims of healthcare access, affordability, and quality and how regulators, providers, producers, and funders (such as payors or purchasers) support those aims. The course also examines insurance regulations and reimbursement procedures that affect healthcare access and affordability and decision-making processes that support affordable, quality care for clients and communities. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies processes for the delivery of efficient and quality healthcare services.",
+            "The learner examines how elements of the healthcare ecosystem relate to accessible, affordable, quality care for clients.",
+            "The learner identifies insurance regulations and reimbursement procedures for affordable quality care."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Medical Terminology",
+          "description": "Medical Terminology focuses on the basic components of medical terminology and how terminology is used when discussing various body structures and systems. Proper use of medical terminology is critical for accurate and clear communication among medical staff, health professionals, and patients. In addition to the systems of the body, this course will discuss immunity, infections, mental health, and cancer.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate accurately identifies medical terms associated with body structure in context with anatomical structures and physiological and pathophysiological functions of the human body.",
+            "The graduate accurately identifies medical terms associated with reproductive systems in context with anatomical structures and physiological and pathophysiological functions of the human body.",
+            "The graduate accurately identifies medical terms associated with the cardiovascular and lymphatic systems in context with anatomical, physiological and pathophysiological functions related to immunity and infections of the human body.",
+            "The graduate accurately identifies medical terms associated with the digestive system in context with anatomical structures and physiological and pathophysiological functions of the human body.",
+            "The graduate accurately identifies medical terms associated with the endocrine and nervous systems in context with anatomical structures and physiological and pathophysiological functions of the human body.",
+            "The graduate accurately identifies medical terms associated with the endocrine and nervous systems in context with anatomical structures and physiological and pathophysiological functions of the human body.",
+            "The graduate accurately identifies medical terms associated with the integumentary system in context with anatomical structures and physiological and pathophysiological functions of the human body.",
+            "The graduate accurately identifies medical terms associated with the musculoskeletal system in context with anatomical structures and physiological and pathophysiological functions of the human body.",
+            "The graduate accurately identifies medical terms associated with the respiratory system in context with anatomical structures and physiological and pathophysiological functions of the human body.",
+            "The graduate accurately identifies medical terms associated with the special senses of the eye and ear in context with anatomical structures and physiological and pathophysiological functions of the human body.",
+            "The graduate accurately identifies medical terms associated with the urinary system in context with anatomical structures and physiological and pathophysiological functions of the human body.",
+            "The graduate accurately identifies primary and secondary word parts and forms of basic medical terms."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Healthcare System Applications",
+          "description": "Healthcare System Applications introduces students to information systems. This course includes important topics related to management of information systems (MIS), such as system development and business continuity. The course also provides an overview of management tools and issue tracking systems. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes the different methods of system development for the purpose of recommending an appropriate method for a project.",
+            "The graduate analyzes the role of management in health information systems and the necessity for security and contingency plans.",
+            "The graduate explains how information systems affect business processes within the healthcare industry.",
+            "The graduate justifies the need for information technology support and ways to manage the support processes in healthcare organizations."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Introduction to Healthcare IT Systems",
+          "description": "Introduction to Healthcare IT Systems introduces students to healthcare information technology as a discipline. Focusing on evaluating health information systems and collecting data, students will learn the various roles and functions of the health information manager in supporting the business of healthcare. This course introduces students to information technology as a discipline. This course also exposes students to the various roles and functions of the health information manager in supporting the business of healthcare. Students will learn through e-text readings, videos, case studies, several modules from LinkedIn Learning, knowledge checks, and unit quizzes. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates privacy and security concerns involved in the use of technology in a healthcare setting.",
+            "The learner examines healthcare information systems and their role in converting data to organizational knowledge.",
+            "The learner examines the implementation of health information exchanges and their integration in a healthcare setting.",
+            "The learner examines the role of different types of healthcare information systems in health information management.",
+            "The learner examines the structure and function of databases in a healthcare setting.",
+            "The learner examines the structure, function, and security associated in a health information management setting.",
+            "The learner recognizes the impact of healthcare IT systems on healthcare infrastructure."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Foundations in Healthcare Data Management",
+          "description": "Foundations in Healthcare Data Management introduces students to the concepts and terminology used in health data and health information management. This course teaches students how to apply data management and governance principles in the healthcare environment. The student will learn about electronic health records (EHR), legal considerations, information governance, data management, health information management (HIM), and secondary data sources. In addition to the e-text and numerous additional articles and video resources, the student will engage with case studies and knowledge checks to assist with learning. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes how health information management professionals manage the components of healthcare records.",
+            "The learner analyzes how healthcare databases and registries are foundational to health data management.",
+            "The learner applies the principles of data and information governance as they support the needs of the organization in managing health information systems and stakeholders' needs",
+            "The learner evaluates data quality standards to meet regulatory requirements in a healthcare setting."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Health Information Law and Regulations",
+          "description": "Health Information Law and Regulations prepares students to manage health information in compliance with legal guidelines and teaches how to respond to questions and challenges when legal issues occur. This course presents the types of situations occurring in health information management that could result in ethical dilemmas and establishes a foundation for work based on legal and ethical guidelines.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes how ethics influence appropriate decision-making processes in healthcare organizations.",
+            "The learner applies common procedural and conceptual aspects of the law relating to health information management in situations that arise within healthcare organizations.",
+            "The learner applies compliance requirements identified by government regulations and by accreditation, licensing, and certification agencies to mitigate legal risk to healthcare organizations.",
+            "The learner evaluates management policies and practices for legal health records by recognizing consequences for healthcare organizations when records are used to substantiate healthcare law.",
+            "The learner evaluates the confluence of quality improvement and risk management practices that support favorable legal outcomes for healthcare organizations."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Quality and Performance Management and Methods",
+          "description": "Quality and Performance Management and Methods examines quality initiatives within healthcare. Quality issues cover human resource management, employee performance, and patient safety. This course focuses on quality improvement initiatives and performance improvement with the health information management perspective.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner develops a quality improvement plan in a healthcare environment in order to promote patient-centered care, build effective work teams, and influence organizational change.",
+            "The learner develops best practices and procedures to engage employees in professional development, promote employee satisfaction, and maintain appropriate disciplinary structures.",
+            "The learner develops management techniques to monitor and promote productivity, teamwork, and regulatory compliance in a health information management environment.",
+            "The learner develops professional skills to prepare for assuming supervisory responsibility.",
+            "The learner evaluates quality improvement projects to ensure they comply with both internal organizational processes and applicable standards established by external agencies."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Classification Systems",
+          "description": "Classification Systems provides a comprehensive approach to learning about medical coding classification, coding audits, and quality standards. Candidates will be exposed to electronic health record systems and leadership principles as they relate to management of ICD and CPT codes. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner determines organizational and departmental readiness for change based on health records documentation requirements set forth by external agencies (e.g, certifications, accreditation, licensing, regulatory).",
+            "The learner evaluates electronic applications that support interoperability, daily audits, and provider technology.",
+            "The learner examines the functions and relationships between healthcare classification systems.",
+            "The learner examines the purpose, content, and structure of SNOMED CT.",
+            "The learner recognizes the impact of coding quality for the maximum reimbursement of a given healthcare organization related to a coding compliance program."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Healthcare Compliance",
+          "description": "Healthcare Compliance examines the role of the coding professional within healthcare information management. The course covers compliance plans, issues that arise with noncompliance, and management of internal and external audits.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the auditing process with internal and external agencies for coding compliance.",
+            "The learner analyzes the components of a compliance plan for implementation in a health information management department.",
+            "The learner analyzes the role of the coding professional within a health information management department.",
+            "The learner designs a basic compliance training program for a health information management department.",
+            "The learner determines how healthcare enforcement agencies or programs require reporting for coding noncompliance.",
+            "The learner develops strategies for maximizing coding productivity and quality standards.",
+            "The learner evaluates candidate qualifications for the purpose of recruiting, hiring, and retaining health information management departmental staff.",
+            "The learner explains how the charge description master (CDM) committee impacts the revenue cycle."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Healthcare Reimbursement",
+          "description": "Healthcare Reimbursement explores financial practices within the healthcare industry as they relate to reimbursement policies. This course identifies how reimbursement systems impact the revenue cycle and a health information manager's role. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes contemporary healthcare reimbursement methodologies and systems used in the United States.",
+            "The graduate analyzes how third-party reimbursement payment calculations impact reimbursement in healthcare organizations.",
+            "The graduate analyzes models of quality reporting systems and how these models link quality to reimbursement.",
+            "The graduate analyzes procedural and ethical guidelines, rules, and regulations for clinical coding within healthcare organizations.",
+            "The graduate analyzes the impact of changes in electronic health records (EHR) reimbursement incentive programs.",
+            "The graduate analyzes the impact of emerging technology on reimbursements.",
+            "The graduate analyzes the impact of government policies on various government-sponsored healthcare programs.",
+            "The graduate assesses the technology used in identifying fraud and abuse in reimbursements."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Healthcare Statistics and Research",
+          "description": "Healthcare Statistics and Research explores the use of statistical data to support process improvement through health information research. Health information management (HIM) professionals use information systems to gather, analyze, and present data in response to administrative and clinical needs. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes ethical guidelines within health information management (HIM) research.",
+            "The learner audits statistical data to support health information management (HIM) department process improvement through data measurement and research.",
+            "The learner evaluates data that is found in health information management (HIM) research to support leadership in improving standards and techniques for electronic health records (EHR) data collection, storage, and protection."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "(HIM) environment.",
+          "description": "● The learner evaluates health information research data for use in process improvements in a health information management Healthcare Information Systems Management Healthcare Information Systems Management provides an overview of many facets of information systems in healthcare. This course explores how information technology (IT) is an organizational resource that must be managed so that it supports or enables healthcare organizational strategy. This course will discuss how decision support and communication are securely facilitated in the healthcare marketplace. This course also explores current and continuously evolving technologies, strategic thinking, and issues at the intersection of health information management and technology.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes the purpose of health information systems in various healthcare settings.",
+            "The graduate applies effective strategies for managing health information technologies.",
+            "The graduate applies effective strategies for systems development and the use of various decision support tools in healthcare information management systems.",
+            "The graduate assesses methods for managing data resources in healthcare information systems.",
+            "The graduate evaluates approaches for managing information security and privacy in healthcare information management systems.",
+            "The graduate evaluates health information technologies and the application of telecommunications, wireless, and the internet in healthcare information systems operations. (mhealth)—impact patient care, safety, and access to data.",
+            "The graduate evaluates how health information exchanges and electronic exchanges—including telehealth and mobile health",
+            "The graduate evaluates the characteristics, functions, and evolution of computer hardware and software in support of healthcare information systems functions."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Healthcare Project Management",
+          "description": "Healthcare Project Management provides students with a comprehensive foundation for project management. The course focuses on project management methodologies, process improvement analysis, business case proposals, and creating project planning documents for health information management (HIM) projects. This course will prepare students to determine project scope and timelines, complete interdepartmental stakeholder analysis, identify project resources, examine constraints and risks, and contribute to positive project communication.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner develops an HIM project plan to implement a process improvement initiative.",
+            "The learner examines multiple project management methodologies to support HIM projects.",
+            "The learner proposes a business case for an HIM process improvement project to meet organizational goals."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Principles of Management in Health Information Management",
+          "description": "Principles of Management in HIM provides an introductory look at the discipline of management and its context within the health information management environment. This course provides an overview of management and leadership, management functions, human resource management, and communication strategies. The course gives students an opportunity to analyze how leadership and management principles are used to achieve department goals. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes how HIM management functions are used to implement strategic goals.",
+            "The learner analyzes how human resource functions are used to achieve HIM department outcomes.",
+            "The learner analyzes theories of leadership and management to facilitate HIM department goals.",
+            "The learner applies communication strategies to achieve HIM department goals."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Organizational Leadership in Healthcare",
+          "description": "Organizational Leadership in Healthcare provides students with an overview of the principles and practices leaders need in healthcare environments. The course focuses on organizational leadership theory, behaviors, culture, and teamwork. This course prepares students to apply leadership theories, principles of organizational culture development, techniques for building and leading teams, and conflict resolution strategies to support organizational goals. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes principles and techniques for building and leading healthcare teams to improve organizational performance.",
+            "The learner applies conflict resolution strategies to achieve organizational success.",
+            "The learner applies leadership theories, methods, and tools to support organizational goals.",
+            "The learner recommends strategies to develop and maintain a positive culture in healthcare organizations."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Health Information Management Capstone",
+          "description": "The Health Information Management Capstone is the culmination of the student's degree program. The course allows students to do an environmental scan focusing specifically on emerging issues and trends in health information management (HIM) and to apply knowledge learned throughout the program to the problems and issues facing HIM professionals. The student will also develop a professional and educational development plan. At the end of the course, the student will complete a RHIA practice exam.",
+          "competency_bullets": [
+            "The learner integrates and synthesizes competencies from across the degree program and thereby demonstrates the ability to participate in and contribute value to the chosen professional field."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Health Information Technology",
+      "courses": [
+        {
+          "title": "Foundations in Healthcare Information Management",
+          "description": "Foundations in Healthcare Information Management applies theories from business, IT, management, medicine, and consumer-centered healthcare skills. Students will learn to evaluate and analyze health information systems for implementation in health information management. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes electronic health records (EHR) applications to support organizational leadership in the planning and implementation of a health information system.",
+            "The graduate applies the principles of project management for project planning and development, launch, and evaluating specific project ideas in healthcare organizations.",
+            "The graduate evaluates a vendor negotiation strategy for the implementation of an electronic health record (EHR).",
+            "The graduate evaluates an organization’s medical practice workflow, functional needs of end-users, data infrastructure, and information technology systems and processes, specifically during adoption phases of health information systems.",
+            "The graduate evaluates various types of healthcare delivery systems to support the diverse requirements of each setting, including acute care, ambulatory care, health information exchanges, and the personal health record for healthcare consumers."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Healthcare Data",
+      "courses": [
+        {
+          "title": "Data Analytics and Information Governance",
+          "description": "Data Analytics and Information Governance explores the structure, methods, and approaches for using health information in the healthcare industry. By focusing on quality data collection, analytics, and industry regulations, students will examine tools that ensure quality data collection as well as to use data to improve quality of care. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner ensures compliance with governing agency policies for health records documentation and storage.",
+            "The learner evaluates health record types and content for compliance with records storage policies.",
+            "The learner integrates key concepts and skills from health information management (HIM) standards and policies to ensure data quality and integrity in an HIM environment.",
+            "The learner organizes healthcare data with the use of data structures and collection tools to support organizational needs."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Healthcare Financial Resource Management",
+          "description": "Healthcare Financial Resource Management examines financial practices within healthcare industries to promote effective management at department and organization levels. Focusing on financial processes associated with facility operations in the healthcare field, this course will analyze the impact of strategic financial planning and regulatory control processes. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes financial statements for profitability and risk in healthcare organizations.",
+            "The learner analyzes how coding and billing cycle processes impact institutional revenue cycles.",
+            "The learner analyzes how sources of operating revenue impact the revenue cycle in healthcare organizations.",
+            "The learner analyzes the financial management control processes in healthcare organizations.",
+            "The learner analyzes the general factors that influence healthcare pricing in healthcare organizations.",
+            "The learner evaluates financial information, organization classification, and financial decision-making processes in the operations of healthcare organizations.",
+            "The learner evaluates policies and procedures in healthcare organizations to ensure compliance with federal laws and regulations.",
+            "The learner reviews the strategic financial process and financial plans for healthcare organizations."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Health Sciences",
+      "courses": [
+        {
+          "title": "Pathophysiology",
+          "description": "Pathophysiology is an overview of the pathology and treatment of diseases in the human body and its systems. This course will explain the processes in the body that result in the signs and symptoms of disease, as well as therapeutic procedures in managing or curing the disease. The content draws on a knowledge of anatomy and physiology to understand how diseases manifest themselves and how they affect the body.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner examines common disorders of the cardiovascular, circulation, lymphatic, and immune systems and associates appropriate diagnostic tests and therapeutic procedures with these disorders.",
+            "The learner examines common disorders of the central nervous system, peripheral nervous system, and sensory organs and associates appropriate diagnostic tests and therapeutic procedures with these disorders.",
+            "The learner examines common disorders of the digestive system and associates appropriate diagnostic tests and therapeutic procedures with these disorders.",
+            "The learner examines common disorders of the musculoskeletal and integumentary systems and associates appropriate diagnostic tests and therapeutic procedures with these disorders.",
+            "The learner examines common disorders of the respiratory system and associates appropriate diagnostic tests and therapeutic procedures with these disorders.",
+            "The learner examines common disorders of the urinary, endocrine and reproductive systems and associates appropriate diagnostic tests and therapeutic procedures with these disorders.",
+            "The learner examines how the organization of the human body and body systems, including tissues, glands and membranes, relates to the physiological functions of the body and impacts disease processes."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": [
+            "aws on"
+          ]
+        },
+        {
+          "title": "Introduction to Pharmacology",
+          "description": "Introduction to Pharmacology will introduce learners to medication and supplement regulations and safety protocols. It provides an overview of the use, benefits, effects, and contraindications of commonly used drugs to treat conditions of the cardiovascular, respiratory, endocrine, nervous, and renal body systems. It also explores the types of anti-infective, antineoplastic, psychotropic drugs, and dietary supplements and their effects on the body.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner examines medication safety protocols and regulations.",
+            "The learner identifies anti-infective drugs, antineoplastic drugs, psychotropic drugs, and .. on the body.",
+            "The learner identifies the common drugs used in the treatment of acute and chronic .. gastrointestinal, endocrine, and renal systems, and their .."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Public Health",
+      "courses": [
+        {
+          "title": "Foundations in Public Health",
+          "description": "Foundations in Public Health introduces learners to the nation’s public health systems including an overview of the core functions of Public Health and the 10 essential public health services. Learners examine a variety of strategies to promote health, prevent disease, and prolong life among populations and communities, including behavioral, population, and policy change, mass media approaches, and community-based interventions. This course also provides learners with a foundational and historical orientation to the field of public health by examining the philosophy, history, purpose, organization, terminology, and function.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner identifies general strategies recommended by public health specialists to promote health, longevity, and disease prevention.",
+            "The learner identifies the basic principles of public health.",
+            "The learner identifies the history and role of public health."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Professional Practice Experience",
+      "courses": [
+        {
+          "title": "Professional Practice Experience I: Technical",
+          "description": "The PPE I: Technical course allows you to use EHRGo, an electronic health record (EHR), to complete 42 structured activities to experience how an HIM professional uses an EHR. The selected activities meet AHIMA's Baccalaureate level competencies and by completing them you will earn 40 PPE hours... Scale Policy for more information.",
+          "competency_bullets": [
+            "The learner applies appropriate basic health informatics and information management skills based on organizational needs within healthcare organizations.",
+            "The learner displays the qualities and demeanor of professionalism, practices reflection, recognizes the need for and adheres professional. to requirements for confidentiality, and engages in ethical behaviors as an independently functioning health informatics",
+            "The learner evaluates how operational components within healthcare organizations demonstrate adherence to government regulatory standards, accreditation guidelines, and quality improvement initiatives."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Professional Practice Experience II: Management",
+          "description": "The PPE II: Management course allows you to experience your future profession at the supervisory level. Any site where health information is used, and you can be mentored by a department or facility manager is appropriate for PPE II. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information.",
+          "competency_bullets": [
+            "The graduate analyzes how the operational management of a healthcare organization adheres to government regulations, accreditation guidelines, and quality improvement initiatives.",
+            "The graduate applies health informatics and information management skills at the managerial level at a healthcare organization.",
+            "The graduate exemplifies high professional standards, upholds confidentiality requirements, promotes guidelines of the American Health Information Management Association Code of Ethics, and demonstrates leadership skills as a health informatics professional at a healthcare organization."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": []
+}

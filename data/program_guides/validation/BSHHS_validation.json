@@ -1,0 +1,34 @@
+{
+  "program_code": "BSHHS",
+  "degree_title": "Bachelor of Science, Health and Human Services",
+  "version": "202411",
+  "pub_date": "8/1/24",
+  "page_count": 19,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Capstone",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 210,
+    "Areas of Study": 462,
+    "Capstone": 1055,
+    "Accessibility": 1074
+  },
+  "standard_path_row_count": 35,
+  "aos_group_count": 9,
+  "aos_course_count": 34,
+  "capstone_present": true,
+  "title_reconciliation": {
+    "in_both": 35,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

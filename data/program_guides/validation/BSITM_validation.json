@@ -1,0 +1,84 @@
+{
+  "program_code": "BSITM",
+  "degree_title": "Bachelor of Science Information Technology Management",
+  "version": "202503",
+  "pub_date": "9/24/2024",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 200,
+    "Areas of Study": 475,
+    "Accessibility": 1121
+  },
+  "standard_path_row_count": 35,
+  "aos_group_count": 9,
+  "aos_course_count": 40,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 33,
+    "sp_only": [
+      "Business Structures and Legal",
+      "Organizational Behavior Fundamentals for Success in Business Information Technology Management Essentials Managing in a Global Business Environment"
+    ],
+    "aos_only": [
+      "Business - IT Management Capstone Project",
+      "Business - IT Management Portfolio Requirement",
+      "Business Environment Applications I: Business Structures and Legal Environment",
+      "Fundamentals for Success in Business",
+      "Information Technology Management Essentials",
+      "Managing in a Global Business Environment",
+      "Organizational Behavior"
+    ]
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [
+    "Business - IT Management Portfolio Requirement"
+  ],
+  "anomaly_count": 6,
+  "anomalies": [
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 3,
+      "term": 10
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 4,
+      "term": 10
+    },
+    {
+      "type": "sp_incomplete_row_at_eof",
+      "title": "Business - IT Management Portfolio Requirement Business - IT Management Capstone Project"
+    }
+  ],
+  "warnings": [
+    "2 SP titles not found in AoS: ['Business Structures and Legal', 'Organizational Behavior Fundamentals for Success in Business Information Technology Management Essentials Managing in a Global Business Environment']",
+    "7 AoS titles not in SP: ['Business - IT Management Capstone Project', 'Business - IT Management Portfolio Requirement', 'Business Environment Applications I: Business Structures and Legal Environment', 'Fundamentals for Success in Business', 'Information Technology Management Essentials']",
+    "1 courses with no competency bullets"
+  ],
+  "parseability_confidence": "low"
+}

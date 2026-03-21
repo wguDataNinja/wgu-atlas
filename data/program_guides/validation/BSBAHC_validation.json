@@ -1,0 +1,34 @@
+{
+  "program_code": "BSBAHC",
+  "degree_title": "Bachelor of Science Business Administration, Healthcare Management",
+  "version": "202203",
+  "pub_date": "3/2/23",
+  "page_count": 22,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Capstone",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 212,
+    "Areas of Study": 501,
+    "Capstone": 1220,
+    "Accessibility": 1241
+  },
+  "standard_path_row_count": 40,
+  "aos_group_count": 7,
+  "aos_course_count": 39,
+  "capstone_present": true,
+  "title_reconciliation": {
+    "in_both": 40,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

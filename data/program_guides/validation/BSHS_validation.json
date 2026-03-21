@@ -1,0 +1,32 @@
+{
+  "program_code": "BSHS",
+  "degree_title": "Bachelor of Science, Health Science",
+  "version": "202406",
+  "pub_date": "1/31/24",
+  "page_count": 17,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 209,
+    "Areas of Study": 413,
+    "Accessibility": 951
+  },
+  "standard_path_row_count": 28,
+  "aos_group_count": 6,
+  "aos_course_count": 28,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 28,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

@@ -1,0 +1,32 @@
+{
+  "program_code": "BSMES",
+  "degree_title": "Bachelor of Science, Mathematics Education (Secondary)",
+  "version": "202603",
+  "pub_date": "12/11/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 199,
+    "Areas of Study": 381,
+    "Accessibility": 1042
+  },
+  "standard_path_row_count": 39,
+  "aos_group_count": 8,
+  "aos_course_count": 39,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 39,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

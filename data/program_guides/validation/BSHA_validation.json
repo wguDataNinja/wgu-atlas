@@ -1,0 +1,32 @@
+{
+  "program_code": "BSHA",
+  "degree_title": "Bachelor of Science, Healthcare Administration",
+  "version": "202509",
+  "pub_date": "6/16/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 191,
+    "Areas of Study": 436,
+    "Accessibility": 994
+  },
+  "standard_path_row_count": 34,
+  "aos_group_count": 7,
+  "aos_course_count": 34,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 34,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

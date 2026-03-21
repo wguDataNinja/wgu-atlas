@@ -255,6 +255,15 @@ def locate_sections(stripped: list) -> dict:
             found['Capstone'] = i
         if ACCESSIBILITY_RE.match(line) and 'Accessibility' not in found:
             found['Accessibility'] = i
+
+    # A real Capstone section always appears after Areas of Study.
+    # If 'Capstone' was detected before 'Areas of Study', it is a course title
+    # in the Standard Path table (e.g. "Communications Applied Learning / Capstone"),
+    # not a section heading — discard it.
+    if 'Capstone' in found and 'Areas of Study' in found:
+        if found['Capstone'] < found['Areas of Study']:
+            del found['Capstone']
+
     return found
 
 
@@ -324,19 +333,39 @@ def detect_sp_multiline(stripped: list, sp_start: int, aos_start: int) -> bool:
     return False
 
 
-def parse_standard_path_multiline(stripped: list, sp_start: int, aos_start: int) -> tuple:
+def detect_sp_has_term(stripped: list, sp_start: int, aos_start: int) -> bool:
     """
-    Parse multi-line SP table where title, CUs, and term each appear on their own line.
+    Return True if the multi-line SP table has a Term column (3-column format).
+    Returns False for 2-column tables (Course Description + CUs only, no Term).
+    Detected by absence of 'Term' as a standalone column header in the header area.
+    """
+    TERM_RE = re.compile(r'^Term\s*$', re.IGNORECASE)
+    for i in range(sp_start, min(sp_start + 80, aos_start)):
+        line = stripped[i]
+        if TERM_RE.match(line):
+            return True
+    return False
 
-    Format example:
-        Course Description     ← column header (one line)
-        CUs                    ← column header (one line)
-        Term                   ← column header (one line)
-        Introduction to IT     ← title line
+
+def parse_standard_path_multiline(stripped: list, sp_start: int, aos_start: int,
+                                    has_term: bool = True) -> tuple:
+    """
+    Parse multi-line SP table where title, CUs, and optionally term each appear on their own line.
+
+    3-column format (has_term=True):
+        Course Description     ← column header
+        CUs                    ← column header
+        Term                   ← column header
+        Introduction to IT     ← title
         3                      ← CU value
         1                      ← term value
-        Next Course Title      ← next title
-        ...
+
+    2-column format (has_term=False, education guides e.g. BSMES):
+        Course Description     ← column header
+        CUs                    ← column header
+        Introduction to IT     ← title
+        3                      ← CU value
+        (no term — row emitted immediately after CU)
 
     Long titles may wrap across 2 lines before the CU value appears.
     Returns: (rows, anomalies)
@@ -392,7 +421,19 @@ def parse_standard_path_multiline(stripped: list, sp_start: int, aos_start: int)
             if m:
                 # This integer is the CU value — title accumulation is done
                 cu_val = int(line)
-                state = 'EXPECTING_TERM'
+                if has_term:
+                    state = 'EXPECTING_TERM'
+                else:
+                    # 2-column format: emit row immediately, no term expected
+                    title = ' '.join(title_buf).strip()
+                    if title and 1 <= cu_val <= 20:
+                        rows.append({'title': title, 'cus': cu_val, 'term': None})
+                    else:
+                        anomalies.append({'type': 'sp_row_invalid',
+                                          'title': title, 'cus': cu_val, 'term': None})
+                    title_buf = []
+                    cu_val = None
+                    state = 'EXPECTING_TITLE'
             else:
                 # Another title line (or wrap)
                 title_buf.append(line)
@@ -707,15 +748,26 @@ def _is_bullet_continuation(line: str, pending: str) -> bool:
     """
     if not line:
         return False
-    # If the pending bullet is very short (< 30 chars) and the line adds to it
-    # with lowercase start or a conjunction, it's continuation
+    # If the pending bullet is empty (lone ● character on previous line),
+    # this line IS the bullet text — always continue.
+    if len(pending) < 5:
+        return True
     first_word = line.split()[0] if line.split() else ''
+    # Lowercase-start lines are nearly always continuations (mid-sentence wrap)
     if first_word.islower():
         return True
-    # If the pending bullet ends mid-sentence (no terminal punctuation) and
-    # line continues, treat as continuation — but only if line is not very short
-    if len(pending) > 20 and not pending[-1] in '.?!':
+    # If pending ends mid-sentence (no terminal punctuation), check for continuation
+    if len(pending) > 20 and pending[-1] not in '.?!':
+        # Longer lines that continue the sentence
         if len(line) > 30:
+            return True
+        # Short lines that complete the sentence with terminal punctuation — e.g.
+        # "...accounting principles" + "(GAAP)." or "...Article 2 of the Uniform" + "Commercial Code."
+        # Course titles and group headings never end with . , ; : — so this is safe.
+        if line[-1] in '.,:;':
+            return True
+        # Parenthetical completions at any length: "...principles" + "(GAAP)."
+        if line.startswith('('):
             return True
     return False
 
@@ -789,6 +841,8 @@ def parse_capstone(stripped: list, cap_start: int, acc_start: int) -> tuple:
             continue
         if is_footer(line):
             continue
+        if PAGE_NUM_RE.match(line):
+            continue  # standalone page number from split-footer format
         if ACCESSIBILITY_RE.match(line):
             break
 
@@ -1064,7 +1118,12 @@ def parse_guide(txt_path: Path, verbose: bool = True) -> dict:
     sp_rows, sp_anomalies = [], []
     if sp_start is not None and aos_start is not None:
         if detect_sp_multiline(stripped, sp_start, aos_start):
-            sp_rows, sp_anomalies = parse_standard_path_multiline(stripped, sp_start, aos_start)
+            sp_has_term = detect_sp_has_term(stripped, sp_start, aos_start)
+            sp_rows, sp_anomalies = parse_standard_path_multiline(
+                stripped, sp_start, aos_start, has_term=sp_has_term
+            )
+            if verbose and not sp_has_term:
+                print("  [INFO] SP table is 2-column (no Term) — education format detected")
         else:
             sp_rows, sp_anomalies = parse_standard_path(stripped, sp_start, aos_start)
     if verbose:

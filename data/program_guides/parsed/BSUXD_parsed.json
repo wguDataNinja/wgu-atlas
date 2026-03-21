@@ -1,0 +1,719 @@
+{
+  "program_code": "BSUXD",
+  "version": "202510",
+  "pub_date": "7/2/2025",
+  "page_count": 0,
+  "degree_title": "Bachelor of Science, User Experience Design",
+  "program_description": "Program Code: BSUXD Catalog Version: 202510 Published Date: 7/2/2025 The Bachelor of Science in User Experience Design is a competency-based program that blends creativity, visual design concepts, and business strategy. The program competencies align with industry-demanded skills applicable to various industries, equipping you to design user-centered products and experiences that solve business problems. Through the program, you will learn design principles and tools for an industry-focused learning experience. The program also develops collaborative skills that involve leveraging diverse perspectives, incorporating feedback, and adeptly navigating complex business problems amidst ambiguity. You will demonstrate competencies through coursework, assessments, peer-to-peer interactions, and visual design activities using industry tools. Over the course of the program, you will create a professional portfolio and personal brand to enhance your marketability. The program concludes with an experiential learning capstone course where you will deliver a design project to a business client to culminate the skills learned through the program.",
+  "standard_path": [
+    {
+      "title": "Organizational Behavior",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Introduction to Communication: Connecting with Others",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Giving, Receiving and Incorporating Feedback",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Emotional and Cultural Intelligence",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Innovative and Strategic Thinking",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Foundations of Design",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Critical Thinking: Reason and Evidence",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Adapting to Ambiguity",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Empathizing, Defining, and Ideating",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Principles of Management",
+      "cus": 4,
+      "term": 3
+    },
+    {
+      "title": "Empathy and Inclusive Collaboration",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Business Environment Applications I: Business Structures and Legal Environment",
+      "cus": 2,
+      "term": 3
+    },
+    {
+      "title": "Fundamentals of Spreadsheets and Data Presentations",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "Introduction to Business Accounting",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "Composition: Writing with a Strategy",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "Navigating Complex Problems",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "Introduction to Systems Thinking and Applications",
+      "cus": 3,
+      "term": 5
+    },
+    {
+      "title": "Introduction to Business Finance",
+      "cus": 3,
+      "term": 5
+    },
+    {
+      "title": "Influential Communication through Visual Design and Storytelling",
+      "cus": 3,
+      "term": 5
+    },
+    {
+      "title": "Design Applications",
+      "cus": 3,
+      "term": 5
+    },
+    {
+      "title": "Business Environment Applications II: Process, Logistics, and Operations",
+      "cus": 2,
+      "term": 6
+    },
+    {
+      "title": "Health, Fitness, and Wellness",
+      "cus": 4,
+      "term": 6
+    },
+    {
+      "title": "Project Management",
+      "cus": 3,
+      "term": 6
+    },
+    {
+      "title": "Change Management",
+      "cus": 3,
+      "term": 6
+    },
+    {
+      "title": "Introduction to Sociology",
+      "cus": 3,
+      "term": 7
+    },
+    {
+      "title": "Concepts in Marketing, Sales, and Customer Contact",
+      "cus": 3,
+      "term": 7
+    },
+    {
+      "title": "Integrated Physical Sciences",
+      "cus": 3,
+      "term": 7
+    },
+    {
+      "title": "Prototyping and Iterating I",
+      "cus": 3,
+      "term": 7
+    },
+    {
+      "title": "Prototyping and Iterating II",
+      "cus": 3,
+      "term": 8
+    },
+    {
+      "title": "Applied Probability and Statistics",
+      "cus": 3,
+      "term": 8
+    },
+    {
+      "title": "World History: Diverse Cultures and Global Connections",
+      "cus": 3,
+      "term": 8
+    },
+    {
+      "title": "Principles of Economics",
+      "cus": 3,
+      "term": 8
+    },
+    {
+      "title": "Functions of Human Resource Management",
+      "cus": 3,
+      "term": 9
+    },
+    {
+      "title": "Leveraging AI and Technology in Design",
+      "cus": 3,
+      "term": 9
+    },
+    {
+      "title": "Managing in a Global Business Environment",
+      "cus": 3,
+      "term": 9
+    },
+    {
+      "title": "Business Simulation",
+      "cus": 4,
+      "term": 9
+    },
+    {
+      "title": "Values-Based Leadership",
+      "cus": 3,
+      "term": 10
+    },
+    {
+      "title": "Design Applied Learning Capstone",
+      "cus": 3,
+      "term": 10
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Business Management",
+      "courses": [
+        {
+          "title": "Organizational Behavior",
+          "description": "Organizational Behavior and Leadership explores how to lead and manage effectively in diverse business environments. Students are asked to demonstrate the ability to apply organizational leadership theories and management strategies in a series of scenario-based problems.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes the culture within an organization to determine how to work effectively within that organization.",
+            "The graduate can analyze leadership theories, methods, and tools in given situations and select the appropriate behavior of the leader.",
+            "The graduate can describe the effects of specified influences on individual behavior.",
+            "The graduate can determine which type of team and team leadership should be used to accomplish a task or project.",
+            "The graduate can develop and recommend how to implement effective performance evaluation processes.",
+            "The graduate can recommend appropriate principles or techniques for guiding the development of a group."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Project Management",
+          "description": "Project Management prepares you to manage projects from start to finish within any organization structure. The course represents a view into different project-management methods and delves into topics such as project profiling and phases, constraints, building the project team, scheduling, and risk. You will be able to grasp the full scope of projects you may work with on in the future, and apply proper management approaches to complete a project. The course features practice in each of the project phases as you learn how to strategically apply project-management tools and techniques to help organizations achieve their goals.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies elements of project planning to prepare key documents of a project plan.",
+            "The learner constructs a project scheduling network diagram including the identification of the critical path.",
+            "The learner describes the project life cycle, including how project constraints will impact a project.",
+            "The learner explains how different types of project-management methods are used.",
+            "The learner explains how project management helps organizations achieve their goals.",
+            "The learner explains key activities for executing, monitoring and controlling, and closing projects.",
+            "The learner explains the criteria and methods used for project selection."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Change Management",
+          "description": "Change Management provides an understanding of change and an overview of successfully managing change using various methods and tools. Emphasizing change theories and various best practices, this course covers how to recognize and implement change using an array of other effective strategies, including those related to innovation and leadership. Other topics include approaches to change, diagnosing and planning for change, implementing change, and sustaining change.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate describes different innovation strategies and the role leaders play in innovation.",
+            "The graduate explains how learning organizations develop and how learning organizations and traditional organizations approach change differently.",
+            "The graduate explains how organizations diagnose the need for change and the approaches for implementing change.",
+            "The graduate explains the strategies, principles, roles, and models for sustaining change.",
+            "The graduate explains the various approaches to implementing change and the roles that leaders and other stakeholders fulfill.",
+            "The graduate summarizes the theories related to change management."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Values-Based Leadership",
+          "description": "Values-Based Leadership guides students to learn by reflection, design, and scenario planning. Through a combination of theory, reflection, value alignment, and practice, the course helps students examine and understand values-based leadership and explore foundations in creating a culture of care. In this course, students are given the opportunity to identify and define their personal values through an assessment and reflection process. Students then evaluate business cases to practice mapping the influence of values on their own leadership. In this course, students also participate in scenario planning, where they can practice implementing their values in their daily routine (i.e., behaviors) and then in a leadership setting. The course illustrates how values-driven leadership is used in goal setting as well as problem-solving at an organizational level. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner demonstrates how their leadership abilities, including active listening, influence, and ethical responsibility, solve problems and deliver results within an organization.",
+            "The learner describes how interpersonal skills are applied to effectively collaborate, communicate, and lead within a team and across an organization.",
+            "The learner explains how the leadership of cultures fosters diversity, inclusion, ethics, and problem-solving.",
+            "The learner identifies their personal values, including honesty, integrity, respect, emotional intelligence, and ethical responsibility, to develop self-awareness through self-assessment."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "General Education",
+      "courses": [
+        {
+          "title": "Introduction to Communication: Connecting with Others",
+          "description": "Welcome to Introduction to Communication: Connecting with Others! It may seem like common knowledge that communication skills are important, and that communicating with others is inescapable in our everyday lives. While this may appear simplistic, the study of communication is actually complex, dynamic, and multifaceted. Strong communication skills are invaluable to strengthening a multitude of aspects of life. Specifically, this course will focus on communication in the professional setting, and present material from multiple vantage points, including communicating with others in a variety of contexts, across situations, and with diverse populations. Upon completion, you will have a deeper understanding of both your own and others’ communication behaviors, and a toolbox of effective behaviors to enhance your experience in the workplace.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements appropriate communication styles based on audience and setting.",
+            "The learner uses communication strategies for managing conflict.",
+            "The learner uses communication strategies to influence others."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Critical Thinking: Reason and Evidence",
+          "description": "In this course you will learn key critical thinking concepts and how to apply them in the analysis and evaluation of reasons and evidence. The course examines the basic components of an argument, the credibility of evidence sources, the impact of bias, and how to construct an argument that provides good support for a claim. The course consists of an introduction and four major sections. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the four competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates bias and its impact.",
+            "The learner evaluates evidence based on source credibility.",
+            "The learner evaluates the quality of an argument.",
+            "The learner makes claims based on evidence."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Composition: Writing with a Strategy",
+          "description": "Welcome to Composition: Writing with a Strategy! In this course, you will focus on three main topics: understanding purpose, context, and audience, writing strategies and techniques, and editing and revising. In addition, the first section, will offer review on core elements of the writing process, cross-cultural communication, as well as working with words and common standards and practices. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the seven competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner composes constructive feedback of written texts.",
+            "The learner constructs a written document with correct format, style, structure, and grammar.",
+            "The learner formulates a strategy for editing and revising written text.",
+            "The learner incorporates writing strategies and techniques for written communication.",
+            "The learner writes with purpose for a given context and target audience."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Introduction to Systems Thinking and Applications",
+          "description": "Introduction to Systems Thinking and Applications provides learners with the skills required to engage in a holistic systems-based approach to analyzing complex problems and solutions. This course introduces the foundational concepts and principles of systems thinking and provides opportunities to use a systems thinking approach to analyze and evaluate real-world case studies. The course will culminate with using systems thinking to develop a solution to an authentic complex problem. This course has no prerequisites, but general education math (C955 or C957) is preferred. Because the course is self-paced, learners may move through the material as quickly or as slowly as needed, with the goal of demonstrating proficiency in the five competencies covered in the final assessment. If learners have no prior knowledge of this material, they can expect to spend 30 to 40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes complex problems and solutions using a systems thinking methodology.",
+            "The learner applies the basic principles and foundational theory of systems thinking to a scenario.",
+            "The learner designs a solution to a complex problem using systems thinking."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Influential Communication through Visual Design and Storytelling",
+          "description": "Influential Communication through Visual Design and Storytelling provides learners with foundational visual design and storytelling techniques to influence and create a lasting impression on audiences. Learners will first explore how human behavior is influenced by visuals and when to apply visual techniques to better communicate with audiences. Next, learners will learn techniques for creating compelling stories that create memorable images within the audience's mind. Ultimately, learners who master these skills will be well-positioned to apply their visual and storytelling techniques to not only better communicate their thoughts and ideas to an audience, but to also influence or motivate them.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner adapts communications to the basic needs and motivations of their audience.",
+            "The learner applies storytelling techniques to motivate, inform, or influence a target audience.",
+            "The learner applies visual design techniques to motivate, inform, or influence a target audience."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Health, Fitness, and Wellness",
+          "description": "Health, Fitness, and Wellness focuses on the importance and foundations of good health and physical fitness—particularly for children and adolescents—addressing health, nutrition, fitness, and substance use and abuse.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate identifies factors that influence mental, emotional, and social wellness.",
+            "The graduate identifies the application of the core competencies of social and emotional learning.",
+            "The graduate identifies the influence of disease, fitness, and lifestyle on the body.",
+            "The graduate identifies the principles of nutrition and the components of a healthy diet."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Introduction to Sociology",
+          "description": "This course teaches students to think like sociologists, or, in other words, to see and understand the hidden rules, or norms, by which people live, and how they free or restrain behavior. Students will learn about socializing institutions, such as schools and families, as well as workplace organizations and governments. Participants will also learn how people deviate from the rules by challenging norms and how such behavior may result in social change, either on a large scale or within small groups.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate explains how societies are stratified across various social statuses.",
+            "The graduate explains major perspectives and key contributors to the development of sociology.",
+            "The graduate explains reciprocal relationships between social institutions and individuals.",
+            "The graduate explains the constructs of conformity to and deviance from social norms.",
+            "The graduate identifies components of culture and socialization as they relate to individuals in society."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Integrated Physical Sciences",
+          "description": "This course provides students with an overview of the basic principles and unifying ideas of the physical sciences: physics, chemistry, and earth sciences. Course materials focus on scientific reasoning and practical, everyday applications of physical science concepts to help students integrate conceptual knowledge with practical skills.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes the nature and process of science.",
+            "The learner describes the underlying organization, interactions, and processes within the Earth system including the Earth's structure and atmosphere, and Earth's interactions within the solar system.",
+            "The learner examines applications of key chemistry concepts including the structure of matter and the behavior and conservation of matter in chemical reactions.",
+            "The learner examines applications of physics including fundamental concepts such as forces, motion, energy, and waves."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Applied Probability and Statistics",
+          "description": "Applied Probability and Statistics is designed to help students develop competence in the fundamental concepts of basic statistics including: introductory algebra and graphing; descriptive statistics; regression and correlation; and probability. Statistical data and probability are often used in everyday life, science, business, information technology, and educational settings to make informed decisions about the validity of studies and the effect of data on decisions. This course discusses what constitutes sound research design and how to appropriately model phenomena using statistical data. Additionally, the content covers simple probability calculations, based on events that occur in the business and IT industries. No prerequisites are required for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies principles and methods of probability-based mathematics to explain and solve problems.",
+            "The graduate applies the operations, processes, and procedures of basic algebra to evaluate quantitative expressions, and to solve equations and inequalities.",
+            "The graduate applies the operations, processes, and procedures of fractions, decimals, and percentages to evaluate quantitative expressions.",
+            "The graduate evaluates categorical and quantitative data pertaining to a single variable using appropriate graphical displays and numerical measures.",
+            "The graduate evaluates the relationship between two quantitative variables through correlation and regression.",
+            "The graduate evaluates the relationship between two variables through interpretation of visual displays and numerical measures."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "World History: Diverse Cultures and Global Connections",
+          "description": "This is World History: Diverse Cultures and Global Connections. In this course, you will focus on three main topics—cultural and religious diversity; pandemics; and the relationship of empires and nation states—as well as the skills of identifying root causes, explaining causes and effects, and analyzing complex systems. This course consists of an introduction and four major sections. Each section includes learning opportunities through reading, images, videos, and other relevant resources. Assessment activities with feedback also provide opportunities to practice and check how well you understand the content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the four competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the role of human actions in the spread of disease.",
+            "The learner differentiates among diverse cultural and religious customs and practices.",
+            "The learner explains the factors that contributed to the development of nation states.",
+            "The learner explains the factors that contributed to the rise and fall of empires."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Power Skills",
+      "courses": [
+        {
+          "title": "Giving, Receiving and Incorporating Feedback",
+          "description": "Giving, Receiving, and Incorporating Feedback introduces students to the skills and strategies used to successfully receive feedback, iterate based on feedback, and provide constructive feedback to others. This course explores personal and professional settings in different contexts, including culturally complex or diverse settings. Students will engage with their peers as they are introduced to self-assessment and reflection as forms of feedback that can help them explore personal interests and preferences as well as professional relationships and networks.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner addresses and incorporates feedback through reflection and iteration.",
+            "The learner demonstrates foundational knowledge of self and career pathways and uses that knowledge to identify potential career goals.",
+            "The learner leverages networking strategies and best practices to build and harness professional connections and relationships.",
+            "The learner provides appropriate and constructive feedback to others."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Adapting to Ambiguity",
+          "description": "Adapting to Ambiguity prepares students to navigate ambiguous situations in uncertain and rapidly changing environments. Students will collaborate with peers as they develop a proactive mindset toward ambiguity and learn how to approach ambiguous situations through adaptability, clarity, and creative problem-solving. This course enables students to apply tools for reframing ambiguous situations, creating a vision for success, planning incremental steps, and adapting to both personal and professional situations as growth opportunities. In addition, students will explore the importance of a professional portfolio and how to curate artifacts for a given purpose and career goal.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates a strategic approach to ambiguous situations to foster forward progression.",
+            "The learner develops the practice of curating artifacts and articulates how those artifacts demonstrate their educational and professional qualifications and accomplishments.",
+            "The learner reframes ambiguous situations as opportunities for innovation or change."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Empathy and Inclusive Collaboration",
+          "description": "Empathy and Inclusive Collaboration guides students toward understanding the value and benefits of culturally diverse groups, identifying their own implicit and explicit biases, and applying strategies to overcome these biases. Students will learn to leverage diverse perspectives, ensure inclusivity, apply empathetic listening strategies, and build collaborative work groups. Students will learn that having multiple perspectives is imperative to being a creative and innovative problem-solver and developing inclusive solutions. Students will develop an awareness of power disparity, an ability to decentralize their own perspectives, and the knowledge of how to seek deeper context on issues rather than act through implicit bias.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates a plan to work with a diversity of identities.",
+            "The learner develops strategies for overcoming their own bias.",
+            "The learner examines how power structures, economic and social disparity, and interdependencies within global structures influence cultural perspective.",
+            "The learner examines their own personal bias and its potential influence when collaborating with others."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Navigating Complex Problems",
+          "description": "Navigating Complex Problems introduces students to problem-solving techniques needed to address organizational challenges and implement solutions for desired results. Students will identify the data required to define complex problems, differentiate between short- and long-term problems, and develop strategies for resolution. Students will focus on root cause analysis, ethics and biases, communications, and the steps to strategically solve problems, while learning how to create an implementation plan for stakeholders.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes data and facts to define a complex problem.",
+            "The learner applies problem-solving techniques to address a complex problem.",
+            "The learner evaluates the effectiveness of problem-solving techniques in a given context."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Business Core",
+      "courses": [
+        {
+          "title": "Emotional and Cultural Intelligence",
+          "description": "Emotional and Cultural Intelligence focuses on key personal awareness skills that businesses request when hiring personnel. Key among those abilities is communication. Students will increase their skills in written, verbal, and nonverbal communication skills. The course then looks at three areas of personal awareness including emotional intelligence (EI), cultural awareness, and ethical self-awareness – building on previously acquired competencies and adding new ones. This course helps start students on a road of self-discovery, cultivating awareness to improve both as a business professional and personally.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies emotional intelligence (EI) to improve intrapersonal and interpersonal interactions.",
+            "The graduate demonstrates cultural intelligence (CI) within multicultural and contemporary business situations."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Innovative and Strategic Thinking",
+          "description": "This course covers an important part of being a business professional: the knowledge and skills used in building and implementing business strategy. The course helps students build on previously acquired competencies in the areas of management, innovative thinking, and risk management while introducing them to the concepts and theories underpinning business strategy as a general business perspective. The course will help students gain skills in analyzing different business environments and in using quantitative literacy and data analysis in business strategy development and implementation. This course helps to provide students with a generalist overview of the area of business strategy.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies appropriate business practices to formulate recommendations that impact organizational effectiveness.",
+            "The graduate identifies the impact of innovation in personal and professional settings.",
+            "The graduate utilizes evidence-based techniques to make strategic decisions."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Principles of Management",
+          "description": "Principles of Management provides students with an introductory look at the discipline of management and its context within the business environment. Students of this course build on previously mastered competencies by taking a more in-depth look at management as a discipline and how it differs from leadership while further exploring the importance of communication within business. This course provides students with a business generalist overview in the areas of strategic planning, total quality, entrepreneurship, conflict and change, human resource management, diversity, and organizational structure.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate can correctly apply principles of human resource management in a given situation.",
+            "The graduate can describe how to establish a total quality management program in a product operation and in a service operation.",
+            "The graduate can describe how to establish and promote an entrepreneurial emphasis within an organization.",
+            "The graduate can explain the strategic planning process.",
+            "The graduate can recommend an organizational structure to match a given organization's situation.",
+            "The graduate can recommend effective techniques for managing conflict and change.",
+            "The graduate responds appropriately to diversity issues in the workplace."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Business Environment Applications I: Business Structures and Legal Environment",
+          "description": "Business Environment Applications 1 provides students with a generalist overview of the business environment and a deeper look at a number of topics that make up the non-discipline areas of business which are required for a business person to be successful within any business environment. The first part of the course focuses on knowledge about organizations and how people operate within organizations, including the areas of organizational theory, structure, and effectiveness. The course then looks at business from a legal perspective with an overview of the legal environment of business. The course will prepare the student to consider specific legal situations and to make legal and ethical decisions related to those situations.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate describes common legal considerations for the creation and operation of a business organization.",
+            "The graduate explains how the structure of an organization impacts its effectiveness in the context of critical circumstances."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Fundamentals of Spreadsheets and Data Presentations",
+          "description": "Fundamentals of Spreadsheets and Data Presentations offers learners an overview of the use of spreadsheet functions and methods for presenting data within spreadsheets. Learners will have the opportunity to explore features and uses of MS Excel and apply the tools to situations they may encounter while studying in their program. They will also be introduced to real world uses and tools to collect, organize and present data.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates a presentation from a spreadsheet dataset.",
+            "The learner performs common spreadsheet tasks requiring basic formatting, formulas, and functions.",
+            "The learner prepares data for analysis."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Introduction to Business Accounting",
+          "description": "Introduction to Business Accounting provides students with an introduction to the discipline of accounting and its context within the business environment. This course will help students gain a fundamental knowledge of the role of financial and managerial accounting and the use of financial statements, budgeting, and managing costs and profits in business. This course is designed for business generalist students. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains how costs and profits are managed in business.",
+            "The learner explains the basic methods of budgeting in business.",
+            "The learner explains the role of financial and managerial accounting in business.",
+            "The learner explains the uses of financial statements in business."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Introduction to Business Finance",
+          "description": "Introduction to Business Finance provides students with an introductory look at the discipline of finance and its context within the business environment. This course will help students gain an understanding of the systems, structure, roles, and impact of finance in business. Students will also gain an understanding of the uses of financial ratios, the application of the time value of money concepts, and capital budgeting in business. This course provides the student a business generalist overview of the field of finance. The prerequisite for this course is Introduction to Business Accounting.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes capital budgeting.",
+            "The learner describes the systems, structure, roles, and impact of finance in business.",
+            "The learner describes the uses of financial ratios to manage a business.",
+            "The learner explains the application of time value of money concepts to business."
+          ],
+          "prerequisite_mentions": [
+            "for this course is Introduction to Business Accounting"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Business Environment Applications II: Process, Logistics, and Operations",
+          "description": "Business Environment II: Logistics, Process, and Operations provides students with a generalist overview of the business environment as they explore themes of ethics, problem-solving, and innovative thinking. This course adds to the students’ business skills and knowledge in a number of professional areas. The first part of the course uncovers a series of business processes like project and risk management. The second part gives an introductory-level look at the specialized areas of operations management, supply chains, and logistics. The course finishes with models of change management and how to use them to overcome barriers in organizations.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies change management models to help an organization achieve its goals.",
+            "The graduate explains how logistics are important to the operations of a successful organization.",
+            "The graduate explains how project management concepts can help an organization achieve its goals."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Concepts in Marketing, Sales, and Customer Contact",
+          "description": "Concepts in Marketing, Sales, and Customer Contact introduces students to the discipline of marketing and its role within the strategic and operational environments of a business. This course covers fundamental knowledge in the area of marketing planning, including the marketing mix, while also describing basic concepts of brand management, digital marketing, customer relationship management, and personal selling and negotiating. All of this helps students identify the role of marketing within an organization. This course provides students with a business generalist overview of the field of marketing and an exploration of the marketing major.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate describes basic elements used in marketing planning.",
+            "The graduate describes how strategic marketing influences the overall success of a business.",
+            "The graduate identifies personal selling and negotiating strategies within the sales management process."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Principles of Economics",
+          "description": "Principles of Economics introduces students to foundational economic theories on markets and market behavior. This information is valuable to students pursuing careers involving decision making and is applicable to any industry. This course has three competencies: The Economic Way of Thinking, Microeconomics, and Macroeconomics. In the first, economics is defined, and fundamental economic principles are introduced. Microeconomics develops the supply and demand model and demonstrates how it is used to understand business interactions and to make public policy decisions. The competency includes supply, demand, elasticity, efficiency, market failure, costs, production, and market structure. Macroeconomics focuses on the measurement and performance of the nation economy. The competency includes macroeconomic variables, aggregate supply, aggregate demand, money, monetary policy, fiscal policy, and international trade.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate explains concepts in macroeconomics used in business and public policy decisions.",
+            "The graduate explains concepts in microeconomics used in business and public policy decisions.",
+            "The graduate explains fundamental economic principles used in microeconomics and macroeconomics."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Managing in a Global Business Environment",
+          "description": "Managing in a Global Business Environment provides students with a generalist overview of business from a global perspective, while also developing basic skills and knowledge to help them make strategic decisions, communicate, and develop personal relationships in a global environment. Business today is by its very nature a global environment, and individuals working in business will experience the global nature of business as they progress through their careers. This course builds on previously acquired competencies by providing an overview of U.S. federal laws in relation to doing business in a global environment.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate compares the effectiveness of business strategies in the global business environment.",
+            "The graduate defines globalization and its major driving forces.",
+            "The graduate describes how financial and operational practices influence global business.",
+            "The graduate describes technologies and trends in the global business environment.",
+            "The graduate describes the regulatory and ethical aspects of global business."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": [
+            "aws in"
+          ]
+        },
+        {
+          "title": "Business Simulation",
+          "description": "This course ties together all the skills and knowledge covered in the business courses and allows the student to prove their mastery of the competencies by applying them in a simulated business environment. This course will help take the student's knowledge and skills from the theoretical to applicable.",
+          "competency_bullets": [
+            "The graduate applies the competencies from across the business core curriculum, demonstrating the ability to lead the implementation of the mission, strategy, and goals of an organization."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Design",
+      "courses": [
+        {
+          "title": "Foundations of Design",
+          "description": "Foundations of Design introduces students to foundational theories and concepts of design. Students will develop a comprehensive knowledge of design thinking and its implications as a problem-solving approach to identifying user needs and solving business problems. Various types of design fields are introduced including product design, experience design, service design, visual and graphic design, and user experience design. Equitable design considerations are explored as students gain knowledge of the design process.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the role of ethics in design.",
+            "The learner explains foundational theories and concepts of design.",
+            "The learner explains the purpose of design."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Empathizing, Defining, and Ideating",
+          "description": "Empathizing, Defining, and Ideating prepares students to incorporate empathy-driven, user-centered design thinking in design solutions. This course focuses on the importance of empathy, research, and interdisciplinary collaboration in equitable design solutions. Students gain experience ideating with diverse workgroups to define the needs of users and stakeholders through research, determine audience segments and personas, and apply ideation strategies to create impactful, and meaningful user experience design concepts.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies ideation strategies to generate potential solutions to user, consumer, and stakeholder needs.",
+            "The learner defines the needs of users and stakeholders using research.",
+            "The learner determines audience segments and user personas for a product or service based on the target audience."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Design Applications",
+          "description": "Design Applications guides students in applying the knowledge and skills gained in Foundations of Design. Students will gain valuable experience in using storyboards to formulate the visual representation of design concepts. The design phase will then evolve into designing a wireframe and low-fidelity prototype using industry-standard visual design tools. Prototype designs will focus on visual composition, interactivity, and usability. Key user-centered design principles will be applied in balance, thematic consistency, visual aesthetics, and ethical considerations. This course provides a hands-on application to the visual and functional design process, producing industry artifacts for students' professional portfolios.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates a digital wireframe by using simple shapes.",
+            "The learner creates a low-fidelity digital prototype by using digital tools and techniques."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Prototyping and Iterating I",
+          "description": "Prototyping and Iterating I focuses on usability testing to create user-centered digital products. Tools and techniques are explored, including planning and conducting a usability study and iterating on a mockup that incorporates visual design principles. Students will collaborate to gather feedback to apply to a mockup for continuous improvement. This course provides hands-on application for producing industry artifacts for the student’s professional portfolio.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner conducts usability testing to gather feedback on a user experience (UX) wireframe.",
+            "The learner creates a user experience (UX) mock-up by incorporating constructive feedback on a UX wireframe."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Prototyping and Iterating II",
+          "description": "Prototyping and Iterating II applies the knowledge and skills gained in Prototyping and Iterating I. Students will collaborate in design critique sessions to gather and incorporate feedback to design a high-fidelity prototype. Visual design principles and accessibility considerations will be applied to ensure functionality and user interaction. This course includes building a prototype for a responsive website as part of the Google UX Design Professional Certificate that can be included in the student’s professional portfolio.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner collaborates with peers in design critique workshops to gather feedback on a user experience (UX) project.",
+            "The learner creates an interactive, high-fidelity prototype by iterating on a peer-critiqued user experience."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Leveraging AI and Technology in Design",
+          "description": "Leveraging AI and Technology in Design provides students with the current landscape of artificial intelligence (AI), how it has evolved, and its impact on design. Students will gain the skills necessary to use AI and other new technologies in ethical and innovative ways, lead teams in devising ethical guidelines for using AI in designing digital products and enhance organizational productivity using design technology.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes ethical implications of artificial intelligence (AI).",
+            "The learner explains how artificial intelligence (AI) can be applied in multiple contexts.",
+            "The learner explains how existing and emerging technology may be leveraged to improve design."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Design Applied Learning Capstone",
+          "description": "Design Applied Learning Capstone provides students with real-world applications to prepare them for the product and experience design industry. In this course, students will integrate and apply skills gained throughout the program by working with an organization on a design project. The capstone lets students apply their visual and technical design knowledge while also reinforcing the power skills of giving, receiving, and incorporating feedback, empathy and inclusive collaboration, planning within ambiguous situations, and navigating a complex problem. Further, students will refine their portfolios and personal brand to enhance their marketability and strategically plan for their future career.",
+          "competency_bullets": [
+            "The learner develops the practice of curating artifacts and articulates how those artifacts demonstrate their educational and professional qualifications and accomplishments.",
+            "The learner effectively narrates the story of their educational and professional accomplishments and articulates their own skills in relation to a professional role.",
+            "The learner engages in experiential learning to build and showcase relevant skills and expertise needed to reach their career goal."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Human Resources",
+      "courses": [
+        {
+          "title": "Functions of Human Resource Management",
+          "description": "This course provides an introduction to the management of human resources, which is the function within an organization that focuses on recruitment, management, and direction for the people who work in the organization. Students will be introduced to topics such as strategic workforce planning and talent acquisition; compensation and benefits; training and development; employee and labor relations; and occupational health, safety, and security.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes direct and indirect monetary and nonmonetary rewards based on employment.",
+            "The learner describes training and development activities that improve employees’ current and future job performance and systems for measuring, evaluating, and influencing employee performance.",
+            "The learner explains applicable federal employment-related regulations and human resources' role in organizational compliance and employee relations.",
+            "The learner explains how the talent acquisition process works to meet the current and future needs of the organization.",
+            "The learner identifies the roles and functions in strategic human resource management."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": []
+}

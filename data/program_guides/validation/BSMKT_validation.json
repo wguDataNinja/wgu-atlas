@@ -1,0 +1,32 @@
+{
+  "program_code": "BSMKT",
+  "degree_title": "Bachelor of Science, Marketing",
+  "version": "202501",
+  "pub_date": "8/27/24",
+  "page_count": 20,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 204,
+    "Areas of Study": 474,
+    "Accessibility": 1140
+  },
+  "standard_path_row_count": 37,
+  "aos_group_count": 5,
+  "aos_course_count": 37,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 37,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

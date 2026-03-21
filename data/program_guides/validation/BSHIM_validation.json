@@ -1,0 +1,39 @@
+{
+  "program_code": "BSHIM",
+  "degree_title": "Bachelor of Science, Health Information Management",
+  "version": "202504",
+  "pub_date": "7/24/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 202,
+    "Areas of Study": 464,
+    "Accessibility": 1096
+  },
+  "standard_path_row_count": 36,
+  "aos_group_count": 8,
+  "aos_course_count": 36,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 35,
+    "sp_only": [
+      "Healthcare Information Systems Management"
+    ],
+    "aos_only": [
+      "(HIM) environment."
+    ]
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [
+    "1 SP titles not found in AoS: ['Healthcare Information Systems Management']",
+    "1 AoS titles not in SP: ['(HIM) environment.']"
+  ],
+  "parseability_confidence": "medium"
+}

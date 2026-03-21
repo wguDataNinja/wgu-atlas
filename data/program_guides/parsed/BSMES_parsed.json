@@ -1,0 +1,743 @@
+{
+  "program_code": "BSMES",
+  "version": "202603",
+  "pub_date": "12/11/2025",
+  "page_count": 0,
+  "degree_title": "Bachelor of Science, Mathematics Education (Secondary)",
+  "program_description": "Program Code: BSMES Catalog Version: 202603 Published Date: 12/11/2025 The Bachelor of Science, Mathematics Education (Secondary) is a competency-based degree program that prepares students with the competencies needed to apply for licensure as a secondary educator. This program consists of online courses which take the learner from general education to educational professional core coursework through Mathematics content, continuing through methods of secondary instruction and assessment, including inclusive practices for all students within the classroom. Candidates develop and refine their teaching skills through a series of sequential experiences beginning with video-based observations and simulations of classroom instruction to prepare candidates for authentic, collaborative, clinical teaching experiences in secondary settings. Clinical experiences include teaching in face-to-face environments and culminate with supervised student teaching in a real classroom. With the successful completion of degree requirements for graduation, including required assessments in the major area of teaching, the student can receive institutional recommendation for licensure in secondary education.",
+  "standard_path": [
+    {
+      "title": "The Professional Educator",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Composition: Writing with a Strategy",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Introduction to Communication: Connecting with Others",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Learners and Learning Science",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Composition: Successful Self-Expression",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Quantitative Literacy",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "College Algebra",
+      "cus": 4,
+      "term": null
+    },
+    {
+      "title": "Personalized Learning for Inclusive Classrooms",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Integrated Physical Sciences",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Creating Positive Learning Environments",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Introduction to Systems Thinking and Applications",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Precalculus",
+      "cus": 4,
+      "term": null
+    },
+    {
+      "title": "Trigonometry",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Planning Instructional Strategies for Meaningful Learning",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Technology and Ethics: Emerging Trends and Society",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Assessing and Monitoring Student Learning",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "General Biology I",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Instructional Technology and Online Pedagogy",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Calculus I",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "American Politics and the US Constitution",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "General Secondary Methods",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Algebra for Secondary Mathematics Teaching",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Calculus II",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Early Clinical in Secondary Education",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Probability and Statistics",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Linear Algebra",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Geometry for Secondary Mathematics Teaching",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Secondary Literacy Methods and Interventions",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Multivariable Calculus",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Differential Equations",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Methods of Teaching Secondary Mathematics",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Advanced Probability and Statistics",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Statistics for Secondary Mathematics Teaching",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Advanced Calculus",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Secondary Mathematics Curriculum",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Secondary Disciplinary Literacy",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Advanced Clinical in Secondary Education",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Student Teaching I in Secondary Education",
+      "cus": 8,
+      "term": null
+    },
+    {
+      "title": "Student Teaching II in Secondary Education",
+      "cus": 8,
+      "term": null
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Professional Core",
+      "courses": [
+        {
+          "title": "The Professional Educator",
+          "description": "The Professional Educator prepares WGU students to excel in the exciting and impactful profession of being an educator. Additionally, the course addresses the importance of continuous professional development and ethical considerations in teaching through the School of Education (SOE) Professional Dispositions and Ethics. Upon completion of the course, WGU students will be equipped with the tools and insights needed to continue their professional journey of becoming effective, inspiring, and adaptive educators, capable of making a significant impact in the lives of their students and the broader educational community. (This is not a transferable course.)",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the impact of professional dispositions and ethics in engaging with others and making decisions.",
+            "The learner examines program requirements, regulations, and the utilization of tools to navigate through the program.",
+            "The learner reflects on professional dispositions and ethics in their own education and career."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Learners and Learning Science",
+          "description": "Learners and Learning Science provides WGU students with a deep understanding of the science behind learning processes. This course covers a broad spectrum of topics pertaining to the science of learning, including cognitive development, learning theories, neuroscience in education, and the impact of developmental milestones on learning. Students will explore how these concepts apply to learning environments and educational levels, from early childhood through adolescence. The course emphasizes evidence-based practices and the practical application of learning science principles, equipping students with strategies to enhance learning outcomes and student engagement. This course aims to empower educators to create more effective, inclusive, and engaging learning experiences for all learners.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner examines how principles of neuroscience are applied in instructional practices.",
+            "The learner examines how theories of learning science and learner growth and development influence educational practices.",
+            "The learner recommends instructional techniques based on principles of learning science that will positively impact learning."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Personalized Learning for Inclusive Classrooms",
+          "description": "Personalized Learning for Inclusive Classrooms empowers educators to create more inclusive and effective learning environments. This course focuses on the principles and strategies of personalized learning, emphasizing the need to value and support the unique needs, interests, and abilities of each learner. The course provides a foundation for learner characteristics of learners with exceptionalities and other unique learning needs. This course helps candidates develop skills for partnering with parents and families to advocate for all students with exceptionalities, including those impacted by provisions of the Individuals with Disabilities Education Act (IDEA) and Section 504 of the Rehabilitation Act. Multitiered systems of support are addressed to prepare candidates for their future classrooms as they seek to select appropriate instructional practices and interventions to best serve their learners. These factors are also addressed in relation to online and hybrid learning environments.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies MTSS to address the needs of all students.",
+            "The learner examines policies, practices, and legal requirements to inform educator practice.",
+            "The learner identifies characteristics of students with various learning needs."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Creating Positive Learning Environments",
+          "description": "Creating Positive Learning Environments delves into the key elements that contribute to creating and maintaining a positive learning atmosphere for educators focused on fostering supportive and productive classroom climates. The course teaches effective communication, classroom norms and routines, and positive behavior supports. Emphasizing the importance of a safe and inclusive environment, the course also explores methods to promote student engagement, collaboration, and mutual respect among all learners. It also addresses the role of mental well-being in learning, exploring trauma-informed and restorative practices, which are addressed in relation to online and hybrid learning environments. Through a blend of theoretical frameworks and practical applications including case studies, Creating Positive Learning Environments teaches learners how to develop and sustain environments that not only enhance academic performance but also support the holistic development of students.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the role of the community of care in creating a learning environment that is sensitive to varied experiences and backgrounds.",
+            "The learner applies classroom engagement strategies to enhance a positive classroom climate.",
+            "The learner plans norms, routines, and classroom expectations to promote a safe, equitable, and productive learning environment."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Planning Instructional Strategies for Meaningful Learning",
+          "description": "Planning Instructional Strategies for Meaningful Learning is a dynamic course designed for educators seeking to deepen their understanding of instructional planning and the execution of educational strategies that foster meaningful learning experiences. This course provides candidates with the knowledge and skills necessary to create engaging and standards-aligned lessons that meet the needs of all students. This course also covers a range of high-leverage instructional practices to increase student learning, engagement, and achievement. Participants will learn to utilize assessments to inform instruction, adapt teaching to accommodate all students, and incorporate technology to enhance learning.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the application of instructional practices to facilitate mastery of standards and objectives for all students.",
+            "The learner analyzes the role of formative and summative assessment in evaluating student learning and planning future instruction.",
+            "The learner applies differentiated instructional strategies to address the needs of all students.",
+            "The learner plans standards-based instruction."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Assessing and Monitoring Student Learning",
+          "description": "Assessing and Monitoring Student Learning is a targeted course crafted for candidates who aim to enhance their skills in evaluating student progress and educational outcomes. This course provides an in-depth exploration of various assessment techniques, including formative and summative assessments, standardized tests, benchmark assessments, progress monitoring, and alternative assessment strategies. Participants will learn how to design effective assessment tools, interpret data to inform instruction, and provide meaningful feedback to students. This course also provides a foundation of data analysis that supports educators’ need to understand data and present data to stakeholders. Candidates will also explore online and digital assessment tools. Assessing and Monitoring Student Learning will prepare learners to align assessments to standards to monitor student learning, assess data, and provide on time and quality feedback.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner aligns standards, objectives, and assessments within their instructional practices.",
+            "The learner analyzes assessment results to determine student learning and inform instructional decisions for a classroom.",
+            "The learner applies various assessment types to monitor progress and actively engage students in their own learning.",
+            "The learner provides appropriate feedback to increase student learning."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Instructional Technology and Online Pedagogy",
+          "description": "Instructional Technology and Online Pedagogy is an innovative course designed to equip students with the skills to effectively integrate technology in their teaching practices. The course also covers best practices for online pedagogy, assessment and feedback, collaborative learning, and the use of multimedia and interactive elements to enhance learning experiences. With a focus on practical application, students will leave the course ready to create and facilitate compelling, high-quality online learning experiences that meet the needs of today's diverse learners. This course also provides a foundation for supporting digital literacy in K–12 education. In addition, this course prepares students to use technology to improve professional productivity and effectiveness in areas like data analysis and data representations.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies instructional technologies to facilitate mastery of standards and objectives for all learners.",
+            "The learner applies online pedagogy to facilitate student learning experiences.",
+            "The learner implements technology solutions to support teacher productivity.",
+            "The learner plans instruction focused on building students' digital literacy skills."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "General Education",
+      "courses": [
+        {
+          "title": "Composition: Writing with a Strategy",
+          "description": "Welcome to Composition: Writing with a Strategy! In this course, you will focus on three main topics: understanding purpose, context, and audience, writing strategies and techniques, and editing and revising. In addition, the first section, will offer review on core elements of the writing process, cross-cultural communication, as well as working with words and common standards and practices. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the seven competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner composes constructive feedback of written texts.",
+            "The learner constructs a written document with correct format, style, structure, and grammar.",
+            "The learner formulates a strategy for editing and revising written text.",
+            "The learner incorporates writing strategies and techniques for written communication.",
+            "The learner writes with purpose for a given context and target audience."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Introduction to Communication: Connecting with Others",
+          "description": "Welcome to Introduction to Communication: Connecting with Others! It may seem like common knowledge that communication skills are important, and that communicating with others is inescapable in our everyday lives. While this may appear simplistic, the study of communication is actually complex, dynamic, and multifaceted. Strong communication skills are invaluable to strengthening a multitude of aspects of life. Specifically, this course will focus on communication in the professional setting, and present material from multiple vantage points, including communicating with others in a variety of contexts, across situations, and with diverse populations. Upon completion, you will have a deeper understanding of both your own and others’ communication behaviors, and a toolbox of effective behaviors to enhance your experience in the workplace.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements appropriate communication styles based on audience and setting.",
+            "The learner uses communication strategies for managing conflict.",
+            "The learner uses communication strategies to influence others."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Composition: Successful Self-Expression",
+          "description": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing research sources. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the seven competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content. You will demonstrate competency through a performance assessment. There is no prerequisite for this course and there is no specific technical knowledge needed.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner composes a written message with language appropriate for cross-cultural communication.",
+            "The learner incorporates research to support a position or idea.",
+            "The learner incorporates self-expression in written communication.",
+            "The learner researches valid and reliable sources.",
+            "The learner writes a message using an effective communication approach for a given situation.",
+            "The learner writes a reference list.",
+            "The learner writes in a professional manner for a given scenario."
+          ],
+          "prerequisite_mentions": [
+            "for this course and there is no specific technical knowledge needed"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Quantitative Literacy",
+          "description": "Quantitative Literacy views real-world problems through the lens of quantitative reasoning. The application of quantitative concepts to topics such as financial decisions is explored. Algebraic models and functions, as well as principles of geometry, are reviewed as fundamental ways to explore real-life scenarios. The use of mathematical concepts as a tool for modeling and understanding everyday problems is leveraged to promote students' thinking of math as a useful and relevant tool for many situations and scenarios. Numeracy and quantitative thinking skills are developed through these applications.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies algebraic models and functions to real-world scenarios.",
+            "The learner applies geometric concepts and calculations to solve practical problems.",
+            "The learner applies quantitative methods to make financial decisions."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "College Algebra",
+          "description": "This course provides further application and analysis of algebraic concepts and functions through mathematical modeling of real-world situations. Topics include: real numbers, algebraic expressions, equations and inequalities, graphs and functions, polynomial and rational functions, exponential and logarithmic functions, and systems of linear equations.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate classifies and performs operations on real numbers; solves linear equations and inequalities; connects a linear equation to its graph; and identifies a function.",
+            "The graduate combines functions, finds inverse functions, solves exponential and logarithmic equations and functions.",
+            "The graduate simplifies and factors polynomial expressions, and solves polynomial equations.",
+            "The graduate simplifies rational, radical, and quadratic expressions, solves corresponding equations, and extends this knowledge to the study of functions.",
+            "The graduate solves systems of linear equations and their related applications."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Integrated Physical Sciences",
+          "description": "This course provides students with an overview of the basic principles and unifying ideas of the physical sciences: physics, chemistry, and earth sciences. Course materials focus on scientific reasoning and practical, everyday applications of physical science concepts to help students integrate conceptual knowledge with practical skills.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes the nature and process of science.",
+            "The learner describes the underlying organization, interactions, and processes within the Earth system including the Earth's structure and atmosphere, and Earth's interactions within the solar system.",
+            "The learner examines applications of key chemistry concepts including the structure of matter and the behavior and conservation of matter in chemical reactions.",
+            "The learner examines applications of physics including fundamental concepts such as forces, motion, energy, and waves."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Introduction to Systems Thinking and Applications",
+          "description": "Introduction to Systems Thinking and Applications provides learners with the skills required to engage in a holistic systems-based approach to analyzing complex problems and solutions. This course introduces the foundational concepts and principles of systems thinking and provides opportunities to use a systems thinking approach to analyze and evaluate real-world case studies. The course will culminate with using systems thinking to develop a solution to an authentic complex problem. This course has no prerequisites, but general education math (C955 or C957) is preferred. Because the course is self-paced, learners may move through the material as quickly or as slowly as needed, with the goal of demonstrating proficiency in the five competencies covered in the final assessment. If learners have no prior knowledge of this material, they can expect to spend 30 to 40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes complex problems and solutions using a systems thinking methodology.",
+            "The learner applies the basic principles and foundational theory of systems thinking to a scenario.",
+            "The learner designs a solution to a complex problem using systems thinking."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Precalculus",
+          "description": "Precalculus builds on previous math courses to provide a deeper understanding of fundamental mathematical concepts and problem-solving skills to prepare students for calculus and professional success. The course will lead students to engage with functions, trigonometry, systems of equations, analytic geometry, and sequences and series. Through interactive learning experiences and real-world applications, precalculus will help students develop a deeper understanding of mathematical principles and their practical significance across diverse fields. Successful completion of a college level algebra course is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies a system of equations or inequalities to solve a problem.",
+            "The learner applies analytic geometry to solve problems.",
+            "The learner applies trigonometric concepts to simplify mathematical expressions.",
+            "The learner evaluates different types of mathematical functions based on behavior and properties.",
+            "The learner identifies patterns in sequences and series."
+          ],
+          "prerequisite_mentions": [
+            "Successful completion of a college level algebra course",
+            "for this course"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Technology and Ethics: Emerging Trends and Society",
+          "description": "Technology and Ethics: Emerging Trends and Society explores the intersection of ethical thinking and technological innovations. A foundational introduction to ethical frameworks is applied to emerging trends in technology, including artificial intelligence, social media, and other forms of digital media. This course examines the impact of technology on our understanding of self, as well as the individual’s role in interacting with others in a globalized society. The course helps students gain the ability to recognize ethical actions within the context of current and newly evolving technological landscapes. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes privacy ethics and identity as related to emerging technologies.",
+            "The learner applies ethical concepts to emerging technology as it relates to society.",
+            "The learner describes ethical decision-making frameworks as applied to technology."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "American Politics and the US Constitution",
+          "description": "American Politics and the U.S. Constitution examines the evolution of representative government in the United States and the changing interpretations of the civil rights and civil liberties protected by the Constitution. This course will give candidates an understanding of the powers of the branches of the federal government, the continual tensions inherent in a federal system, the shifting relationship between state and federal governments, and the interactions between elected officials and the ever-changing electorate. This course will focus on such topics as the role of a free press in a democracy, the impact of changing demographics on American politics, and the debates over and expansion of civil rights. Upon completion of the course, candidates should be able to explain the basic functions of the federal government, describe the forces that shape American policy and politics, and be better prepared to participate in America’s civic institutions. This course has no prerequisite.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate describes the influence of competing political ideologies on the development of the United States government.",
+            "The graduate examines the influence of political parties, citizens, and non-governmental organizations on elections and other political processes inside a participatory democracy.",
+            "The graduate examines the influence of the media, public opinion, and political discourse on American democracy.",
+            "The graduate examines the struggle to balance individual liberty, public order, and state’s rights.",
+            "The graduate explains how the structure and powers of the United States government interact to form public policy."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Mathematics Education",
+      "courses": [
+        {
+          "title": "Trigonometry",
+          "description": "Trigonometry delves into the core concepts and applications of trigonometric functions and identities, critical for advanced mathematics and practical problem-solving. The course starts with foundational topics, including the definition and calculation of sine, cosine, and tangent ratios, and progresses to solving right triangles and applying trigonometric functions to model real-world periodic phenomena. Students will explore the unit circle, derive fundamental identities, and solve complex trigonometric equations, including applications of vectors, parametric, and polar forms. Emphasizing both theoretical understanding and practical application, this course equips students with the skills necessary for higher-level mathematics courses and various professional fields. No prerequisites are required for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together",
+            "The learner applies trigonometric concepts to model and solve real-world problems.",
+            "The learner applies trigonometric functions to analyze and interpret curves represented in parametric and polar forms.",
+            "The learner applies trigonometric principles to solve vector problems in two and three dimensions."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Calculus I",
+          "description": "Calculus I offers a foundational exploration of the essential concepts and applications of calculus, crucial for higher-level mathematics and various scientific fields. This course begins with an overview of calculating limits and continuity of functions, setting the stage for the study of derivatives. Then, students will explore applications of derivatives, including applications to objects in motion, optimization, and related rates. Finally, the course focuses on both definite and indefinite integrals, leading to the mastery of the Fundamental Theorem of Calculus. This course prepares students for advanced mathematical studies and provides the groundwork for advanced calculus topics addressed in Calculus II and Multivariable Calculus.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies rules of differentiation to solve problems involving rates of change, including linear approximations, optimization, and graphs of functions.",
+            "The learner determines limits and continuity of functions to solve problems.",
+            "The learner evaluates definite and indefinite integrals using geometry and the Fundamental Theorem of Calculus."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Algebra for Secondary Mathematics Teaching",
+          "description": "Algebra for Secondary Mathematics Teaching offers an in-depth exploration of advanced algebraic concepts and instructional methodologies tailored for secondary education. The course emphasizes task-based learning, enabling participants to engage deeply with algebra as an extension of number theory, operations, and abstract reasoning. Students will explore key algebraic ideas, including equivalence, patterns of change through covariation, and the integration of multiple representations—such as tables, graphs, equations, and geometric models. The course also examines the historical evolution of algebra and incorporates diverse cultural perspectives. Core topics include variables, functions (including exponential, logarithmic, polynomial, rational, and quadratic functions), and their applications. This course is designed to enhance educators' ability to teach complex algebraic concepts effectively and adapt instructional strategies to meet diverse student needs.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes activities that teach algebra through foundational concepts, addressing common misconceptions, and employing appropriate instructional practices and technologies.",
+            "The learner applies advanced algebraic methods to the secondary classroom, exploring patterns of change, and connecting different representations.",
+            "The learner implements task-based instructional strategies that engage students in the hands-on learning of algebra through tasks that explore key concepts."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Calculus II",
+          "description": "Calculus II builds upon foundational calculus concepts to deepen learners' understanding of integration techniques, sequences, series, and differential equations. The course begins with advanced integration methods, including improper integrals and numerical approximation techniques, crucial for solving complex real-world problems in fields such as physics and engineering. Students will explore sequences and series, applying convergence tests and power series expansions to analyze and represent functions accurately. Additionally, the course covers differential equations, parametric equations, and polar coordinates, providing essential tools for modeling dynamic systems and solving higher-level mathematical problems. Throughout the course, practical applications in various scientific and engineering disciplines are emphasized, ensuring students develop strong analytical and problem-solving skills. This course prepares learners for advanced studies in mathematics and related fields and prepares students for the more complex applications found in Multivariable Calculus.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies sequences, series, and convergence tests in problem-solving.",
+            "The learner applies techniques of integration and numerical approximation.",
+            "The learner applies techniques of separable differential equations, parametric equations, and polar coordinates in problem-solving."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Probability and Statistics",
+          "description": "Probability and Statistics offers candidates a comprehensive introduction to the fundamental principles of probability theory and statistical analysis, specifically designed for educators and aspiring statisticians. Beginning with the basics, students will explore essential concepts such as probability rules, conditional probability, and counting techniques, learning how to apply these in real-world contexts and effectively communicate them to K-12 students. Students will then learn sampling methods and estimation techniques, equipping them with the knowledge to gather, analyze, and interpret representative data for statistical analysis. Finally, students will focus on hypothesis testing and statistical inference, where they will learn to conduct and interpret various tests, including confidence intervals, using statistical software. Through a blend of interactive simulations, scenario-based challenges, and reflective activities, this course prepares students to apply these statistical tools in educational settings and beyond, fostering data-driven decision-making and effective teaching practices.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies basic probability theory to solve problems involving random events.",
+            "The learner conducts sampling and estimation for statistical analysis.",
+            "The learner performs hypothesis testing and statistical analysis to make data-driven decisions."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Linear Algebra",
+          "description": "Linear Algebra delves into the study of linear systems, matrices, and vector spaces, forming a critical foundation for advanced mathematics. Students will begin by mastering matrix operations, including solving linear systems and finding determinants and inverses. As they progress, they will explore vector spaces, linear transformations, and inner product spaces, gaining the skills to work with higher-dimensional systems. The course also covers advanced topics such as eigenvalues, eigenvectors, diagonalization, and sophisticated techniques like the least squares method, linear programming, and singular value decomposition. This course is essential for those preparing for Multivariable Calculus and other advanced mathematical studies.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes vector spaces and linear transformations.",
+            "The learner determines eigenvalues, eigenvectors, and advanced matrices to solve advanced linear algebra problems.",
+            "The learner solves systems of linear equations using multiple methods, including Gaussian elimination and matrix inversion."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Geometry for Secondary Mathematics Teaching",
+          "description": "Geometry for Secondary Mathematics Teaching is a comprehensive course designed to equip future educators with the expertise to teach secondary-level geometry. This course delves into core geometric concepts, including geometric reasoning, transformations, congruence, similarity, and coordinate geometry, while emphasizing the development of critical thinking and problem-solving skills. Students will engage in dynamic instructional strategies and hands-on learning experiences, using tools like GeoGebra and Desmos to create interactive lessons that address common misconceptions and support diverse learners. By the end of the course, students will have the confidence and skills to design, implement, and refine geometry lessons aligned with educational standards and tailored to the needs of a diverse student population, preparing them to inspire and engage the next generation of mathematicians. This methods course will count towards 5 hours of the 50 total clinical hours that learners will gain from their SCED methods courses.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies advanced geometric methods to the secondary classroom, exploring key geometric concepts.",
+            "The learner designs activities and tasks in the classroom that incorporate common resources and technologies and explore key concepts and foster a deep understanding of geometric principles and student thinking.",
+            "The learner implements task-based instructional strategies that engage students in hands-on learning of geometry, addressing misconceptions."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Multivariable Calculus",
+          "description": "Multivariable Calculus provides an advanced exploration of calculus in multiple dimensions. The course begins with vector operations in both two and three dimensions, with emphasis on mastering computations and interpretations of magnitudes, directions, and vector products. Then, it presents partial differentiation and the integration of functions of multiple variables. Finally, the course teaches learners how to analyze applications of vector fields using line, surface, and volume integrals. This course integrates and extends previous calculus concepts, providing students with the opportunity to gain a deep understanding of key mathematical theorems while preparing students for specialized courses and professional applications. Calculus II is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes vector fields and line, surface, and volume integrals.",
+            "The learner applies techniques of differentiation to functions of multiple variables to solve problems.",
+            "The learner applies vector operations in two and three dimensions."
+          ],
+          "prerequisite_mentions": [
+            "Calculus II",
+            "for this course"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Differential Equations",
+          "description": "Differential Equations examines the methods and theory of ordinary differential equations (ODEs), focusing on the classification and solution of initial- and boundary-value problems. The course advances to the analysis and solution of linear and nonlinear differential equations, including systems of equations and higher-order differential equations with both constant and variable coefficients. Emphasis is placed on real-world applications and stability analysis. Students will explore advanced techniques such as matrix exponential, fundamental solution matrices, phase-space analysis, Laplace transforms, and an introduction to partial differential equations (PDEs). This course builds on matrix and vector concepts and prepares students for more advanced mathematics courses.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes linear and nonlinear systems of differential equations and their applications.",
+            "The learner applies advanced techniques in differential equations including matrix exponential, fundamental solution matrix, and phase-space analysis.",
+            "The learner applies theory of ordinary differential equations (ODEs) to solve initial-value and boundary-value problems."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Methods of Teaching Secondary Mathematics",
+          "description": "Methods of Teaching Secondary Mathematics is an in-depth exploration of secondary mathematics content and pedagogy, distinguishing between subject mastery and effective teaching practices. This course will prepare students to teach and reflect on secondary mathematics lessons that emphasize the use of effective teaching practices, including differentiation, questioning techniques, and curriculum development. The course also covers strategies for presenting mathematical material at the appropriate level, utilizing humanizing approaches, co-teaching, Multi-Tiered Systems of Support (MTSS), accommodations, and inclusion. This course does not have any required prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes a recommended curriculum resource and its implementation in a given secondary mathematics setting.",
+            "The learner applies methods of secondary mathematics teaching by developing curriculum, employing effective questioning techniques, and differentiating instruction to meet all student needs.",
+            "The learner reflects on secondary mathematics lessons and their understanding of secondary mathematics content and the specialized knowledge required for teaching it."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Advanced Probability and Statistics",
+          "description": "Advanced Probability and Statistics provides students with advanced knowledge and skills in probability theory and statistical analysis. Students will learn to conduct an analysis of variance (ANOVA), regression analysis, and correlation analysis. Additionally, they will learn to apply R programming language, generate functions, and use modes of stochastic convergence. The course will focus on applying these concepts to real-world scenarios, decision-making processes, and predictive modeling.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies generating functions or modes of stochastic convergence in advanced probabilistic contexts.",
+            "The learner conducts advanced statistical analysis using various techniques and the R programming language.",
+            "The learner models random phenomena using advanced probability concepts."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Statistics for Secondary Mathematics Teaching",
+          "description": "Statistics for Secondary Mathematics Teaching provides a comprehensive exploration of advanced concepts and methodologies in teaching statistics and probability. The course delves into key topics such as summarizing and representing data, study design, sampling, testing claims, drawing conclusions, and probability. Emphasizing a deep understanding of conceptual foundations, including their historical development and perspectives from diverse cultures, the course addresses common misconceptions and students' ways of thinking. The appropriate use of instructional practices is also highlighted. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies advanced statistical and probability methods to the classroom, including the ability to summarize and represent data accurately, test claims, and draw valid conclusions.",
+            "The learner designs a plan of instruction that accurately summarizes and represents data, explains study design and sampling methods, and addresses statistical and probability misconceptions for students' way of thinking.",
+            "The learner implements task-based instructional strategies that engage students in hands-on learning of statistics and probability."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Advanced Calculus",
+          "description": "Advanced Calculus builds on prior calculus concepts to provide a rigorous and comprehensive exploration of advanced topics in calculus and analysis. The course begins with an introduction to writing proofs, using definitions and theorems, to analyze the real number system. The course progresses to using definitions and theorems to analyze the properties of functions, focusing on continuity, differentiability, integrability, and convergence. Then, it examines the rigorous treatment of advanced vector calculus operations, including the differentiation and integration of vector functions, and applies these skills to solve real-world problems in physics and engineering. Finally, students will synthesize and apply advanced integration and topological techniques to solve complex problems. This course solidifies the mathematical foundation needed for specialized and research-focused applications in mathematics and related fields.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes functions of one real variable using precise definitions and theorems to develop an advanced perspective.",
+            "The learner analyzes the real number system using precise definitions and theorems to develop an advanced perspective.",
+            "The learner synthesizes advanced integration and topological techniques to solve complex problems."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Secondary Mathematics Curriculum",
+          "description": "This Secondary Mathematics course is designed to prepare future secondary math educators by focusing on the application of fundamental math concepts, the development of effective teaching strategies, and the alignment of instruction with state content standards. This course teaches key areas including application of number systems, algebraic structures, calculus, geometric reasoning, and probability and statistics in the secondary setting. Additionally, learners will learn to design and evaluate mathematical problems, integrate technology, and differentiate instruction to meet all students’ needs. Learners will also explore how to research and evaluate curricular resources to ensure they align with educational goals and standards. By the end of the course, participants will be equipped with the skills and knowledge necessary to deliver high-quality math instruction in secondary education.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies concepts of number systems, algebraic structures, and calculus principles to solve mathematical problems involving numerical operations, algebraic expressions, and continuous functions.",
+            "The learner applies functional analysis and geometric reasoning to determine relationships between variables, analyze spatial relationships, and solve problems involving shapes and measurements.",
+            "The learner applies statistical methods and probability principles to interpret data, assess variability, and make predictions based on observed patterns."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "General Science Content",
+      "courses": [
+        {
+          "title": "General Biology I",
+          "description": "This course is a foundational introduction to the biological sciences. The overarching theories of life from biological research are explored as well as the fundamental concepts and principles of the study of living organisms and their interaction with the environment. Key concepts include how living organisms use and produce energy; how life grows, develops, and reproduces; how life responds to the environment to maintain internal stability; and how life evolves and adapts to the environment.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes different types of cells based on their structures and biological functions.",
+            "The graduate analyzes inter-dependencies of organisms and their environments.",
+            "The graduate analyzes the basic chemical composition of cells and the basic processes that happen at the cellular level.",
+            "The graduate analyzes the biological basis for and patterns of heredity and gene expression.",
+            "The graduate analyzes the characteristics and classifications of living organisms."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Secondary Education",
+      "courses": [
+        {
+          "title": "General Secondary Methods",
+          "description": "General Secondary Methods prepares students for secondary teaching by equipping them with essential instructional skills and knowledge tailored to adolescent learners. Students will explore how adolescent development influences learning, how secondary school settings influence instructional choices, and how to implement effective teaching strategies in these environments. Through a blend of theory and practical application, students will create and assess lesson plans, focusing on differentiated instruction, formative and summative assessments, and the integration of technology, including AI tools, to promote affective learning in diverse secondary education settings.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements instruction that considers features of secondary learners and characteristics of secondary education to promote impactful learning.",
+            "The learner relates characteristics of secondary education settings to instructional and pedagogical choices.",
+            "The learner relates key characteristics of adolescents to their implications for learning."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Secondary Disciplinary Literacy",
+          "description": "Secondary Disciplinary Literacy is a cutting-edge course designed for candidates seeking to enhance their literacy skills within specific secondary academic disciplines. The course examines the distinct literacy needs of various secondary content areas, focusing on how reading, writing, speaking, and listening function differently in each discipline. Candidates will explore specialized language structures and text features relevant to each field and develop strategies to help students master these complexities. The curriculum integrates the science of reading to support critical engagement with and production of disciplinary texts, while also incorporating technology and digital literacy to aid students in accessing and interpreting discipline-specific information. The course combines research-based evidence with practical, structured literacy activities to equip educators with the skills necessary to improve student achievement and understanding across all subjects. This course is a required component in SCED programs and will be assessed through a performance assessment task for both undergraduate and graduate versions.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner assesses the use of literacy strategies for a discipline.",
+            "The learner designs learning activities that incorporate literacy to increase learning for a discipline.",
+            "The learner plans authentic writing activities to develop an understanding of discipline-specific content."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Clinical Experiences",
+      "courses": [
+        {
+          "title": "Early Clinical in Secondary Education",
+          "description": "Early Clinical Experiences is a pivotal course designed to bridge the gap between theoretical knowledge and practical teaching skills. This course offers aspiring educators an immersive experience in real classroom settings under the mentorship of experienced teachers. Candidates engage in a range of activities, including observation, to develop a deeper understanding of classroom dynamics, student engagement, and effective instructional strategies. Emphasizing reflective practice, the course encourages participants to analyze their experiences, integrate feedback, and adapt their teaching methods accordingly. This experiential learning approach equips future teachers with the confidence and competence necessary to foster a positive and impactful learning environment for their students.",
+          "competency_bullets": [
+            "The learner applies instructional strategies that draw upon knowledge of content and pedagogy.",
+            "The learner reflects on professional dispositions and ethics in their chosen education profession.",
+            "The learner reflects on the Early Clinical teaching experience."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Advanced Clinical in Secondary Education",
+          "description": "Advanced Clinical provides aspiring educators with real-world classroom experience. This course emphasizes the importance of hands-on learning, offering candidates the unique opportunity to observe and participate in classroom environments under the guidance of experienced mentors. The curriculum includes demonstrating reflective practice, classroom engagement techniques, instructional strategies, and effective communication skills with students and colleagues through a pedagogical performance assessment. Through this immersive experience, candidates not only observe the daily responsibilities of a teacher, but also start to develop their own teaching style and philosophy, laying a solid foundation for their future careers in education. This course is taken immediately prior to Student Teaching I as part of an engaging and intensive clinical experience.",
+          "competency_bullets": [
+            "The learner applies knowledge of their students' learning and developmental patterns in their instructional practices.",
+            "The learner demonstrates application of content in the planning, learning, and assessment cycle in a pedagogical performance assessment.",
+            "The learner reflects on growth in professional dispositions and ethics in their chosen education profession.",
+            "The learner reflects on the Advanced Clinical teaching experience."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Pedagogy and Teaching Methods",
+      "courses": [
+        {
+          "title": "Secondary Literacy Methods and Interventions",
+          "description": "Secondary Literacy Methods & Interventions utilizes MTSS to equip educators with evidence-based strategies to address adolescents' reading challenges through the Multi-Tiered System of Supports Model. Candidates learn to identify, monitor, and provide differentiated instruction, integrating screening tools and progress monitoring to enhance comprehension. The course emphasizes the development of personalized intervention plans while utilizing reading assessments for informed instructional decisions. By completion, candidates compile intervention strategies supporting learners across MTSS tiers, fostering inclusive environments for academic success.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies science of reading research methods to literacy instruction to further academic success.",
+            "The learner integrates evidence-based MTSS strategies and assessment tools to improve academic success in literacy."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Student Teaching",
+      "courses": [
+        {
+          "title": "Student Teaching I in Secondary Education",
+          "description": "Student Teaching I is the first part of a two-part series and is a mandatory course for all candidates seeking initial licensure. This course provides a supervised classroom experience in a real-world setting, allowing candidates to demonstrate and reflect upon professional ethics and dispositions, collaborate with experienced teachers, and implement instructional strategies rooted in students' learning and developmental patterns. Building on the responsibilities and skills developed in Advanced Clinical, candidates will receive ongoing feedback through observations and evaluations. Feedback will encourage candidates to reflect on their commitment to professional practices as educators, analyze and adjust teaching methods, and explore new teaching materials and methods that are culturally relevant. Additionally, the course features synchronous learning sessions that delve into communication and collaboration, accepting feedback, creating positive learning environments, and technology and online learning. Candidates must attend the required synchronous learning sessions in addition to their classroom placement.",
+          "competency_bullets": [
+            "The learner demonstrates effective instructional strategies and assessments that draw upon knowledge of content and pedagogy.",
+            "The learner demonstrates effective practices that support professional and instructional improvement through reflection and collaboration.",
+            "The learner demonstrates knowledge of their students' learning and developmental patterns into their instructional practices.",
+            "The learner demonstrates professional dispositions and ethics.",
+            "The learner reflects on their instructional practice."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Student Teaching II in Secondary Education",
+          "description": "Student Teaching II is the final part of a two-part series and is a mandatory course for all candidates seeking initial licensure. The course offers a supervised classroom experience in a real-world setting, allowing candidates to demonstrate professional ethics and dispositions, collaborate with experienced teachers, and implement instructional strategies. Building on the responsibilities and skills developed in Student Teaching I, candidates receive ongoing feedback through observations and a final evaluation. This evaluation assesses activities' relevance and cultural engagement, the effectiveness of teaching each student, the ability to analyze and adjust teaching methods, and the willingness to explore new materials and methods. Successful completion of Student Teaching II is a crucial step in the licensure process, as it determines eligibility for licensure as a professional educator. Additionally, the course features synchronous learning sessions that delve into professional development topics such as professional growth opportunities, ethical decision making, and self-care. Candidates must attend the required synchronous learning sessions in addition to their classroom placement.",
+          "competency_bullets": [
+            "The learner demonstrates an ongoing commitment to effective practices that support professional and instructional improvement through reflection and collaboration.",
+            "The learner implements effective instructional strategies and assessments that draw upon knowledge of content and pedagogy.",
+            "The learner implements knowledge of their students' learning and developmental patterns in their instructional practices.",
+            "The learner implements professional dispositions.",
+            "The learner reflects on their practice to create a professional development plan."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": []
+}

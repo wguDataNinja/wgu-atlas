@@ -1,0 +1,49 @@
+{
+  "program_code": "BSSCOM",
+  "degree_title": "Bachelor of Science, Supply Chain and Operations Management",
+  "version": "202605",
+  "pub_date": "12/29/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 200,
+    "Areas of Study": 459,
+    "Accessibility": 1026
+  },
+  "standard_path_row_count": 35,
+  "aos_group_count": 5,
+  "aos_course_count": 35,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 34,
+    "sp_only": [
+      "21st Century Operations and Supply Chain"
+    ],
+    "aos_only": [
+      "Solutions Design and Visualization Capstone"
+    ]
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 2,
+  "anomalies": [
+    {
+      "type": "sp_incomplete_row_at_eof",
+      "title": "Solutions Design and Visualization Capstone"
+    },
+    {
+      "type": "competency_trigger_unexpected_state",
+      "line": 988,
+      "state": "IN_COMPETENCIES"
+    }
+  ],
+  "warnings": [
+    "1 SP titles not found in AoS: ['21st Century Operations and Supply Chain']",
+    "1 AoS titles not in SP: ['Solutions Design and Visualization Capstone']"
+  ],
+  "parseability_confidence": "medium"
+}

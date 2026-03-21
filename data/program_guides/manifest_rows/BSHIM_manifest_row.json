@@ -1,0 +1,49 @@
+{
+  "source_pdf_filename": "BSHIM.pdf",
+  "source_text_filename": "BSHIM.txt",
+  "inferred_program_code": "BSHIM",
+  "page_count": 0,
+  "version_strings": [
+    "202504"
+  ],
+  "publication_dates": [
+    "7/24/2025"
+  ],
+  "has_standard_path": true,
+  "has_areas_of_study": true,
+  "has_capstone_section": false,
+  "has_course_descriptions": true,
+  "has_competency_bullets": true,
+  "has_term_structure": true,
+  "has_cu_values": true,
+  "has_cert_prep_mentions": true,
+  "has_prereq_mentions": true,
+  "standard_path_row_count": 36,
+  "competency_trigger_count": 36,
+  "competency_bullet_count": 212,
+  "cert_prep_mention_count": 1,
+  "prereq_mention_count": 1,
+  "detected_section_headings": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "inferred_course_groups": [
+    "Foundations of Success",
+    "General Education",
+    "Healthcare Management",
+    "Health Information Technology",
+    "Healthcare Data",
+    "Health Sciences",
+    "Public Health",
+    "Professional Practice Experience"
+  ],
+  "likely_guide_family": "standard_bs",
+  "template_type": "partial",
+  "parseability_confidence": "medium",
+  "warnings": [
+    "1 SP titles not found in AoS: ['Healthcare Information Systems Management']",
+    "1 AoS titles not in SP: ['(HIM) environment.']"
+  ],
+  "irregularities": []
+}

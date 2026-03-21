@@ -1,0 +1,32 @@
+{
+  "program_code": "BSUXD",
+  "degree_title": "Bachelor of Science, User Experience Design",
+  "version": "202510",
+  "pub_date": "7/2/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 193,
+    "Areas of Study": 463,
+    "Accessibility": 1049
+  },
+  "standard_path_row_count": 38,
+  "aos_group_count": 6,
+  "aos_course_count": 38,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 38,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

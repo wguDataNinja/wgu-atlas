@@ -1,0 +1,32 @@
+{
+  "program_code": "BSFIN",
+  "degree_title": "Bachelor of Science, Finance",
+  "version": "202304",
+  "pub_date": "9/27/23",
+  "page_count": 22,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 202,
+    "Areas of Study": 490,
+    "Accessibility": 1237
+  },
+  "standard_path_row_count": 40,
+  "aos_group_count": 6,
+  "aos_course_count": 40,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 40,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

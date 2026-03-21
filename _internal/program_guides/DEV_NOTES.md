@@ -2,6 +2,63 @@
 
 ---
 
+## Session 14 — standard_bs Full Rollout + BSMES Gate (2026-03-20)
+
+### BSMES gate result
+
+BSMES (B.S. Mathematics Education, Secondary) parsed at **HIGH confidence, 0 anomalies, 0 warnings** after one new bug fix.
+
+Key findings:
+- Student Teaching and Clinical Experiences appear as **AoS group labels**, not separate parsed sections. Parser handles them correctly.
+- Standard Path uses **2-column format** (Course Description + CUs, no Term column). Fixed by `detect_sp_has_term()` + `has_term` parameter in multiline SP parser.
+- No new parser branch needed for BSMES within standard_bs.
+
+### Full standard_bs rollout results
+
+All 19 standard_bs guides parsed:
+
+| Confidence | Count | Guides |
+|---|---|---|
+| HIGH | 16 | BSACC, BSBAHC, BSC, BSDA, BSFIN, BSHA, BSHHS, BSHR, BSHS, BSIT, BSMES, BSMGT, BSMKT, BSPH, BSPSY, BSUXD |
+| MEDIUM | 2 | BSHIM, BSSCOM |
+| LOW | 1 | BSITM |
+
+- 0 failures (all 19 parsed)
+- 0 empty descriptions across all guides
+- Cert-prep extraction: 15/19 guides have mentions; prereq: all 19
+
+### 5 additional parser bugs fixed this session
+
+1. `locate_sections()` false Capstone detection — "Capstone" as second line of 2-line SP course title (BSC, BSHIM, BSSCOM) was triggering `CAPSTONE_RE`, cutting off AoS parsing. Fix: discard Capstone entry if it precedes Areas of Study.
+2. `_is_bullet_continuation()` missed short sentence completions — `(GAAP).`, `Commercial Code.` not recognized as in-progress bullet continuations. Fix: if pending ends mid-sentence and line ends with `.,:;`, treat as continuation.
+3. `_is_bullet_continuation()` lone bullet character — `●` alone on a line left empty pending; next line failed continuation check. Fix: if `len(pending) < 5`, treat as continuation unconditionally.
+4. `parse_capstone()` captured page number as title — standalone page number after footer treated as capstone course title. Fix: added `PAGE_NUM_RE` check.
+5. SP 2-column format — `detect_sp_has_term()` + `has_term=False` path added to `parse_standard_path_multiline()` for education guides with no Term column.
+
+### Guides requiring custom handling notes
+
+- **BSITM** (LOW): PDF layout artifact in SP table — first 5 courses have missing titles; 4 titles concatenated mid-table. AoS (40 courses) is correct and usable. SP rows require manual review before downstream use.
+- **BSHIM** (MEDIUM): 1 PDF fragment `(HIM) environment.` captured as course title. Minor; AoS otherwise correct.
+- **BSSCOM** (MEDIUM): Final SP row (2-line capstone course) interrupted by `Total CUs` before Term captured. AoS (35 courses) correct.
+
+### Artifacts produced
+
+All 19 standard_bs guides:
+- `data/program_guides/parsed/{CODE}_parsed.json`
+- `data/program_guides/validation/{CODE}_validation.json`
+- `data/program_guides/manifest_rows/{CODE}_manifest_row.json`
+- `data/program_guides/family_validation/standard_bs_rollout_summary.json`
+- `data/program_guides/family_validation/standard_bs_rollout_summary.md`
+
+### Next steps
+
+standard_bs family is complete. Recommended next family order:
+1. `cs_ug` (8 guides) — BSCS already validated as HIGH; straightforward
+2. `education_ba` (11 guides) — education-specific sections need new handlers
+3. `graduate_standard` (9 guides) — graduate CU/term expectations differ
+
+---
+
 ## Session 13 — standard_bs Family Validation (2026-03-20)
 
 ### Guides sampled
