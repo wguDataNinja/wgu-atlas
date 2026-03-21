@@ -15,6 +15,11 @@ The extracted data includes:
 
 **This is an internal data preparation directory.** Nothing here is currently published to the Atlas site. The next step is building the artifact generator that publishes approved guide content to Atlas degree pages.
 
+**Post-program-guides direction:** The project is now centered on three tracks:
+1. **Degrees** - immediate implementation target using completed guide data
+2. **Courses** - major follow-on opportunity with 751 enriched courses
+3. **Homepage** - sequenced after inner-surface strengthening
+
 ---
 
 ## Current state
