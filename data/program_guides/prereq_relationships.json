@@ -1,0 +1,1264 @@
+{
+  "generated_on": "2026-03-21",
+  "source": "data/program_guides/parsed/*_parsed.json",
+  "total_raw_prereq_mentions": 264,
+  "false_positives_suppressed": 135,
+  "soft_preparedness_suppressed": 12,
+  "unique_prereq_records": 71,
+  "auto_accepted_count": 50,
+  "review_needed_count": 21,
+  "type_distribution": {
+    "explicit-course-prereq": 51,
+    "code-anchored-prereq": 3,
+    "cumulative-sequence-prereq": 16,
+    "inverted-capture": 1
+  },
+  "auto_accepted": [
+    {
+      "prereq_value": "Data Management - Foundations",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Data Management - Foundations",
+      "normalized_prereq_code": "D426",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Data Management - Applications",
+      "target_course_code": "C170",
+      "source_programs": [
+        "BSCS",
+        "BSDA",
+        "BSIT",
+        "BSSWE_C",
+        "BSSWE_Java",
+        "MSCSUG",
+        "MSITUG",
+        "MSSWEUG"
+      ],
+      "source_program_count": 8
+    },
+    {
+      "prereq_value": "for this course is Introduction to Business Accounting",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Introduction to Business Accounting",
+      "normalized_prereq_code": "D774",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "for_this_course_is_pattern",
+      "target_course_title": "Introduction to Business Finance",
+      "target_course_code": "D775",
+      "source_programs": [
+        "BSC",
+        "BSHA",
+        "BSHR",
+        "BSMGT",
+        "BSSCOM",
+        "BSUXD"
+      ],
+      "source_program_count": 6
+    },
+    {
+      "prereq_value": "Network and Security - Foundations",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Network and Security - Foundations",
+      "normalized_prereq_code": "D315",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Networks",
+      "target_course_code": "C480",
+      "source_programs": [
+        "BSCNE",
+        "BSCNEAWS",
+        "BSCNEAZR",
+        "BSCSIA",
+        "BSIT",
+        "MSITUG"
+      ],
+      "source_program_count": 6
+    },
+    {
+      "prereq_value": "Data Management - Foundations",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Data Management - Foundations",
+      "normalized_prereq_code": "D426",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Advanced Data Management",
+      "target_course_code": "D191",
+      "source_programs": [
+        "BSDA",
+        "BSSWE_C",
+        "BSSWE_Java",
+        "MSSWEUG"
+      ],
+      "source_program_count": 4
+    },
+    {
+      "prereq_value": "Data Analytics for Accountants I",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Data Analytics for Accountants I",
+      "normalized_prereq_code": "D552",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Data Analytics for Accountants II",
+      "target_course_code": "D553",
+      "source_programs": [
+        "MACCA",
+        "MACCF",
+        "MACCM",
+        "MACCT"
+      ],
+      "source_program_count": 4
+    },
+    {
+      "prereq_value": "Web Development Foundations",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Web Development Foundations",
+      "normalized_prereq_code": "C779",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Front-End Web Development",
+      "target_course_code": "D277",
+      "source_programs": [
+        "BSSWE_C",
+        "BSSWE_Java",
+        "MSSWEUG"
+      ],
+      "source_program_count": 3
+    },
+    {
+      "prereq_value": "Nursing Leadership and Management Field Experience",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Nursing Leadership and Management Field Experience",
+      "normalized_prereq_code": "C823",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Nursing Leadership and Management Capstone",
+      "target_course_code": "C824",
+      "source_programs": [
+        "MSNULM",
+        "MSRNNULM",
+        "PMCNULM"
+      ],
+      "source_program_count": 3
+    },
+    {
+      "prereq_value": "Research Foundations",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Research Foundations",
+      "normalized_prereq_code": "C224",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Research Questions and Literature Review",
+      "target_course_code": "C225",
+      "source_programs": [
+        "MAELLP12",
+        "MAMEK6",
+        "MAMEMG"
+      ],
+      "source_program_count": 3
+    },
+    {
+      "prereq_value": "Data Preparation and Exploration",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Data Preparation and Exploration",
+      "normalized_prereq_code": "D599",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Statistical Data Mining",
+      "target_course_code": "D600",
+      "source_programs": [
+        "MSDADE",
+        "MSDADPE",
+        "MSDADS"
+      ],
+      "source_program_count": 3
+    },
+    {
+      "prereq_value": "Calculus I",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Calculus I",
+      "normalized_prereq_code": "D890",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Algebra for Secondary Mathematics Teaching",
+      "target_course_code": "D904",
+      "source_programs": [
+        "MAMEMG",
+        "MAMES"
+      ],
+      "source_program_count": 2
+    },
+    {
+      "prereq_value": "for this course is General Physics",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "General Physics",
+      "normalized_prereq_code": "RNT1",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "for_this_course_is_pattern",
+      "target_course_title": "Astronomy",
+      "target_course_code": "D852",
+      "source_programs": [
+        "MASEMG",
+        "MASESE"
+      ],
+      "source_program_count": 2
+    },
+    {
+      "prereq_value": "Discrete Math: Logic, Applied Probability and Statistics, and Applied Algebra",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Discrete Math: Logic",
+      "normalized_prereq_code": "D420",
+      "confidence": "medium",
+      "review_status": "auto-accepted",
+      "notes": "Multi-prereq: 1/4 resolved",
+      "recovery_method": "multi_title_split + catalog_title_match",
+      "target_course_title": "Discrete Math: Functions and Relations",
+      "target_course_code": "D421",
+      "source_programs": [
+        "BSCSIA",
+        "BSDA"
+      ],
+      "source_program_count": 2
+    },
+    {
+      "prereq_value": "Applied Probability and Statistics and Applied Algebra",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Applied Algebra",
+      "normalized_prereq_code": "C957",
+      "confidence": "medium",
+      "review_status": "auto-accepted",
+      "notes": "Multi-prereq: 1/3 resolved",
+      "recovery_method": "multi_title_split + catalog_title_match",
+      "target_course_title": "Discrete Math: Logic",
+      "target_course_code": "D420",
+      "source_programs": [
+        "BSCSIA",
+        "BSDA"
+      ],
+      "source_program_count": 2
+    },
+    {
+      "prereq_value": "Calculus I",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Calculus I",
+      "normalized_prereq_code": "D890",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Discrete Mathematics I",
+      "target_course_code": "C959",
+      "source_programs": [
+        "BSCS",
+        "MSCSUG"
+      ],
+      "source_program_count": 2
+    },
+    {
+      "prereq_value": "Discrete Mathematics I",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Discrete Mathematics I",
+      "normalized_prereq_code": "C959",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Discrete Mathematics II",
+      "target_course_code": "C960",
+      "source_programs": [
+        "BSCS",
+        "MSCSUG"
+      ],
+      "source_program_count": 2
+    },
+    {
+      "prereq_value": "Calculus II",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Calculus II",
+      "normalized_prereq_code": "D891",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Multivariable Calculus",
+      "target_course_code": "D892",
+      "source_programs": [
+        "BAESMES",
+        "BSMES"
+      ],
+      "source_program_count": 2
+    },
+    {
+      "prereq_value": "College Algebra",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "College Algebra",
+      "normalized_prereq_code": "C278",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Trigonometry and Precalculus",
+      "target_course_code": "C646",
+      "source_programs": [
+        "MAMEMG",
+        "MAMES"
+      ],
+      "source_program_count": 2
+    },
+    {
+      "prereq_value": "Linear Algebra",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Linear Algebra",
+      "normalized_prereq_code": "D893",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Abstract Algebra",
+      "target_course_code": "QDT1",
+      "source_programs": [
+        "MAMES"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Cloud Platform Solutions",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Cloud Platform Solutions",
+      "normalized_prereq_code": "D084",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Azure Solutions Architecture",
+      "target_course_code": "E033",
+      "source_programs": [
+        "BSCNEAZR"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "to this course is Financial Accounting",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Financial Accounting",
+      "normalized_prereq_code": "D102",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": "Prereq extracted from 'to this course is X' pattern",
+      "recovery_method": "inversion_pattern_parse",
+      "target_course_title": "Business Law for Accountants",
+      "target_course_code": "C241",
+      "source_programs": [
+        "BSACC"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Precalculus",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Precalculus",
+      "normalized_prereq_code": "D667",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Calculus I",
+      "target_course_code": "D890",
+      "source_programs": [
+        "MAMES"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Calculus I",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Calculus I",
+      "normalized_prereq_code": "D890",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Calculus II",
+      "target_course_code": "D891",
+      "source_programs": [
+        "MAMES"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Calculus II",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Calculus II",
+      "normalized_prereq_code": "D891",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Calculus III",
+      "target_course_code": "C656",
+      "source_programs": [
+        "MAMES"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Designing Curriculum and Instruction I",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Designing Curriculum and Instruction I",
+      "normalized_prereq_code": "D183",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Designing Curriculum and Instruction II",
+      "target_course_code": "D185",
+      "source_programs": [
+        "MSCIN"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Learning Technology",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Learning Technology",
+      "normalized_prereq_code": "D294",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Designing E-Learning Experiences for Adults",
+      "target_course_code": "D297",
+      "source_programs": [
+        "MEDETID"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Learning Technology",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Learning Technology",
+      "normalized_prereq_code": "D294",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Designing and Facilitating E-Learning Experiences for K\u201312 Students",
+      "target_course_code": null,
+      "source_programs": [
+        "MEDETID"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Introduction to Spreadsheets",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Introduction to Spreadsheets",
+      "normalized_prereq_code": "D100",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Discovering Data",
+      "target_course_code": "D468",
+      "source_programs": [
+        "BSSCOM"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Discrete Math Functions and Relations",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "discrete math: functions and relations",
+      "normalized_prereq_code": "D421",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Discrete Math: Algorithms and Cryptography",
+      "target_course_code": "D422",
+      "source_programs": [
+        "BSCSIA"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Data-Informed Practices",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Data-Informed Practices",
+      "normalized_prereq_code": "D179",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Educational Research",
+      "target_course_code": "D180",
+      "source_programs": [
+        "MSCIN"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Computer Architecture and Systems",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Computer Architecture and Systems",
+      "normalized_prereq_code": "D794",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Emerging Computing Systems",
+      "target_course_code": "D798",
+      "source_programs": [
+        "MSCSCS"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Principles of Accounting",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Principles of Accounting",
+      "normalized_prereq_code": "D074",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Financial Accounting",
+      "target_course_code": "D102",
+      "source_programs": [
+        "BSACC"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Concepts in Science",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Concepts in Science",
+      "normalized_prereq_code": "C371",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "General Chemistry I with Lab",
+      "target_course_code": "C373",
+      "source_programs": [
+        "MASESC"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "C672: General Chemistry I for graduates",
+      "prereq_type": "code-anchored-prereq",
+      "normalized_prereq_title": "General Chemistry I with Lab",
+      "normalized_prereq_code": "C672",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": "Code C672 found in catalog",
+      "recovery_method": "code_extraction",
+      "target_course_title": "General Chemistry II with Lab",
+      "target_course_code": "D866",
+      "source_programs": [
+        "MASESC"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "for this course is Geology I: Physical",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Geology I: Physical",
+      "normalized_prereq_code": "C649",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "for_this_course_is_pattern",
+      "target_course_title": "Geology II: Earth Systems",
+      "target_course_code": "C892",
+      "source_programs": [
+        "MASESE"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Calculus I",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Calculus I",
+      "normalized_prereq_code": "D890",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Geometry for Secondary Mathematics Teaching",
+      "target_course_code": "C881",
+      "source_programs": [
+        "MAMES"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "D076: Principles of Finance",
+      "prereq_type": "code-anchored-prereq",
+      "normalized_prereq_title": "Finance Skills for Managers",
+      "normalized_prereq_code": "D076",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": "Code D076 found in catalog",
+      "recovery_method": "code_extraction",
+      "target_course_title": "Innovation in Finance",
+      "target_course_code": "D367",
+      "source_programs": [
+        "BSFIN"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "to this course is Financial Accounting",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Financial Accounting",
+      "normalized_prereq_code": "D102",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": "Prereq extracted from 'to this course is X' pattern",
+      "recovery_method": "inversion_pattern_parse",
+      "target_course_title": "Intermediate Accounting I",
+      "target_course_code": "C248",
+      "source_programs": [
+        "BSACC"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "to this course is Intermediate Accounting I",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Intermediate Accounting I",
+      "normalized_prereq_code": "C248",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": "Prereq extracted from 'to this course is X' pattern",
+      "recovery_method": "inversion_pattern_parse",
+      "target_course_title": "Intermediate Accounting II",
+      "target_course_code": "C249",
+      "source_programs": [
+        "BSACC"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Learning Experience Design Foundations I",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Learning Experience Design Foundations I",
+      "normalized_prereq_code": "D291",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Learning Experience Design Foundations II",
+      "target_course_code": "D292",
+      "source_programs": [
+        "MEDETID"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "College Geometry and Calculus II",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "College Geometry; Calculus II",
+      "normalized_prereq_code": "C281; D891",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": "Multi-prereq: 2/2 resolved",
+      "recovery_method": "multi_title_split + catalog_title_match",
+      "target_course_title": "Linear Algebra",
+      "target_course_code": "D893",
+      "source_programs": [
+        "MAMES"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "for this course is Introduction to Biology",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Introduction to Biology",
+      "normalized_prereq_code": "C190",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "for_this_course_is_pattern",
+      "target_course_title": "Molecular and Cellular Biology",
+      "target_course_code": "C888",
+      "source_programs": [
+        "MASESB"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Designing E-Learning Experiences for Adults",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Designing E-Learning Experiences for Adults",
+      "normalized_prereq_code": "D297",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Quality and Impact of Adult E-Learning Solutions",
+      "target_course_code": "D298",
+      "source_programs": [
+        "MEDETID"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "C955: Applied Probability and Statistics",
+      "prereq_type": "code-anchored-prereq",
+      "normalized_prereq_title": "Applied Probability and Statistics",
+      "normalized_prereq_code": "C955",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": "Code C955 found in catalog",
+      "recovery_method": "code_extraction",
+      "target_course_title": "Quality, Continuous Improvement, and Lean Six Sigma",
+      "target_course_code": "D469",
+      "source_programs": [
+        "BSSCOM"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Research Questions and Literature Review",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Research Questions and Literature Review",
+      "normalized_prereq_code": "C225",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Research Design and Analysis",
+      "target_course_code": "C226",
+      "source_programs": [
+        "MAMEK6"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Research Design and Analysis",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Research Design and Analysis",
+      "normalized_prereq_code": "C226",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Research Proposals",
+      "target_course_code": "C227",
+      "source_programs": [
+        "MAMEK6"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Introduction to Programming in Python",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Introduction to Programming in Python",
+      "normalized_prereq_code": "C859",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Scripting and Programming - Applications",
+      "target_course_code": "C169",
+      "source_programs": [
+        "BSDA"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "for this course is Software I - C#",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "software i \u2013 c#",
+      "normalized_prereq_code": "C968",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "for_this_course_is_pattern",
+      "target_course_title": "Software II \u2013 Advanced C#",
+      "target_course_code": "C969",
+      "source_programs": [
+        "BSSWE_C"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Differentiated Instruction",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Differentiated Instruction",
+      "normalized_prereq_code": "D187",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Standards-Based Assessment",
+      "target_course_code": "D184",
+      "source_programs": [
+        "MSCIN"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Calculus I",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Calculus I",
+      "normalized_prereq_code": "D890",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "catalog_title_match",
+      "target_course_title": "Statistics and Probability for Secondary Mathematics Teaching",
+      "target_course_code": "C883",
+      "source_programs": [
+        "MAMES"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "for this course is Introduction to Biology",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Introduction to Biology",
+      "normalized_prereq_code": "C190",
+      "confidence": "high",
+      "review_status": "auto-accepted",
+      "notes": null,
+      "recovery_method": "for_this_course_is_pattern",
+      "target_course_title": "Zoology",
+      "target_course_code": "C654",
+      "source_programs": [
+        "MASESB"
+      ],
+      "source_program_count": 1
+    }
+  ],
+  "review_needed": [
+    {
+      "prereq_value": "Concepts in Science for graduates",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": null,
+      "normalized_prereq_code": null,
+      "confidence": "low",
+      "review_status": "review-required",
+      "notes": "Could not resolve to catalog code \u2014 may be retired course or wording variation",
+      "recovery_method": "unresolved",
+      "target_course_title": "Chemistry with Lab",
+      "target_course_code": "C832",
+      "source_programs": [
+        "MASEMG",
+        "MASESB",
+        "MASESE",
+        "MASESP"
+      ],
+      "source_program_count": 4
+    },
+    {
+      "prereq_value": "courses are required prior to taking this course: All MSN Core courses and NP Core courses",
+      "prereq_type": "cumulative-sequence-prereq",
+      "normalized_prereq_title": null,
+      "normalized_prereq_code": null,
+      "confidence": "medium",
+      "review_status": "review-required",
+      "notes": "Cumulative sequence prereq: all MSN Core + NP Core courses required",
+      "recovery_method": "template_parse",
+      "target_course_title": "Adult Primary Care for the Advanced Practice Nurse",
+      "target_course_code": "D118",
+      "source_programs": [
+        "MSNUFNP",
+        "PMCNUFNP"
+      ],
+      "source_program_count": 2
+    },
+    {
+      "prereq_value": "for Composition II",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "Composition I",
+      "normalized_prereq_code": null,
+      "confidence": "medium",
+      "review_status": "review-required",
+      "notes": "Extracted as 'for Composition II' \u2014 likely means Composition I is prereq for Composition II",
+      "recovery_method": "pattern_parse",
+      "target_course_title": "English Composition II",
+      "target_course_code": "C456",
+      "source_programs": [
+        "BSBAHC",
+        "BSITM"
+      ],
+      "source_program_count": 2
+    },
+    {
+      "prereq_value": "courses are required prior to taking this course: All MSN Core courses and NP Core courses",
+      "prereq_type": "cumulative-sequence-prereq",
+      "normalized_prereq_title": null,
+      "normalized_prereq_code": null,
+      "confidence": "medium",
+      "review_status": "review-required",
+      "notes": "Cumulative sequence prereq: all MSN Core + NP Core courses required",
+      "recovery_method": "template_parse",
+      "target_course_title": "Pediatric Primary Care for the Advanced Practice Nurse",
+      "target_course_code": "D119",
+      "source_programs": [
+        "MSNUFNP",
+        "PMCNUFNP"
+      ],
+      "source_program_count": 2
+    },
+    {
+      "prereq_value": "courses are required prior to taking this course: All MSN Core courses and NP Core courses",
+      "prereq_type": "cumulative-sequence-prereq",
+      "normalized_prereq_title": null,
+      "normalized_prereq_code": null,
+      "confidence": "medium",
+      "review_status": "review-required",
+      "notes": "Cumulative sequence prereq: all MSN Core + NP Core courses required",
+      "recovery_method": "template_parse",
+      "target_course_title": "Special Populations Primary Care for the Advanced Practice Nurse",
+      "target_course_code": null,
+      "source_programs": [
+        "MSNUFNP",
+        "PMCNUFNP"
+      ],
+      "source_program_count": 2
+    },
+    {
+      "prereq_value": "Courses: All prelicensure nursing curriculum courses from previous terms and D445",
+      "prereq_type": "cumulative-sequence-prereq",
+      "normalized_prereq_title": "Intermediate Nursing Skills",
+      "normalized_prereq_code": "D445",
+      "confidence": "medium",
+      "review_status": "review-required",
+      "notes": "Cumulative sequence prereq; all prior nursing terms required; additional code: D445",
+      "recovery_method": "template_parse + code_extraction",
+      "target_course_title": "Adult Health II",
+      "target_course_code": "D446",
+      "source_programs": [
+        "BSPRN"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Courses: All prelicensure nursing curriculum courses from previous terms",
+      "prereq_type": "cumulative-sequence-prereq",
+      "normalized_prereq_title": null,
+      "normalized_prereq_code": null,
+      "confidence": "medium",
+      "review_status": "review-required",
+      "notes": "Cumulative sequence prereq; all prior nursing terms required",
+      "recovery_method": "template_parse + code_extraction",
+      "target_course_title": "Advanced Nursing Skills",
+      "target_course_code": "D453",
+      "source_programs": [
+        "BSPRN"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Courses: All prelicensure nursing curriculum courses from previous terms and D445",
+      "prereq_type": "cumulative-sequence-prereq",
+      "normalized_prereq_title": "Intermediate Nursing Skills",
+      "normalized_prereq_code": "D445",
+      "confidence": "medium",
+      "review_status": "review-required",
+      "notes": "Cumulative sequence prereq; all prior nursing terms required; additional code: D445",
+      "recovery_method": "template_parse + code_extraction",
+      "target_course_title": "Community Health and Population-Focused Nursing",
+      "target_course_code": "C826",
+      "source_programs": [
+        "BSPRN"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "for Financial Management I is Corporate Finance",
+      "prereq_type": "inverted-capture",
+      "normalized_prereq_title": "Corporate Finance",
+      "normalized_prereq_code": "D362",
+      "confidence": "medium",
+      "review_status": "review-required",
+      "notes": "Inverted capture \u2014 prereq=Corporate Finance, actual target=Financial Management I. Verify direction.",
+      "recovery_method": "sentence_inversion_parse",
+      "target_course_title": "Financial Management I",
+      "target_course_code": "D364",
+      "source_programs": [
+        "BSFIN"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Courses: All prelicensure nursing curriculum courses from previous terms",
+      "prereq_type": "cumulative-sequence-prereq",
+      "normalized_prereq_title": null,
+      "normalized_prereq_code": null,
+      "confidence": "medium",
+      "review_status": "review-required",
+      "notes": "Cumulative sequence prereq; all prior nursing terms required",
+      "recovery_method": "template_parse + code_extraction",
+      "target_course_title": "Foundations of Nursing",
+      "target_course_code": "D439",
+      "source_programs": [
+        "BSPRN"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Courses: All prelicensure nursing curriculum courses from previous terms",
+      "prereq_type": "cumulative-sequence-prereq",
+      "normalized_prereq_title": null,
+      "normalized_prereq_code": null,
+      "confidence": "medium",
+      "review_status": "review-required",
+      "notes": "Cumulative sequence prereq; all prior nursing terms required",
+      "recovery_method": "template_parse + code_extraction",
+      "target_course_title": "Health Assessment",
+      "target_course_code": "C349",
+      "source_programs": [
+        "BSPRN"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "courses are required prior to taking this course: All MSN Core courses and NP Core courses",
+      "prereq_type": "cumulative-sequence-prereq",
+      "normalized_prereq_title": null,
+      "normalized_prereq_code": null,
+      "confidence": "medium",
+      "review_status": "review-required",
+      "notes": "Cumulative sequence prereq: all MSN Core + NP Core courses required",
+      "recovery_method": "template_parse",
+      "target_course_title": "Health Promotion of Patients and Populations Across the Lifespan",
+      "target_course_code": null,
+      "source_programs": [
+        "PMCNUFNP"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Courses: All prelicensure nursing curriculum courses from previous terms",
+      "prereq_type": "cumulative-sequence-prereq",
+      "normalized_prereq_title": null,
+      "normalized_prereq_code": null,
+      "confidence": "medium",
+      "review_status": "review-required",
+      "notes": "Cumulative sequence prereq; all prior nursing terms required",
+      "recovery_method": "template_parse + code_extraction",
+      "target_course_title": "Health and Wellness Through Nutritional Sciences",
+      "target_course_code": "D440",
+      "source_programs": [
+        "BSPRN"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Courses: All prelicensure nursing curriculum courses from previous terms",
+      "prereq_type": "cumulative-sequence-prereq",
+      "normalized_prereq_title": null,
+      "normalized_prereq_code": null,
+      "confidence": "medium",
+      "review_status": "review-required",
+      "notes": "Cumulative sequence prereq; all prior nursing terms required",
+      "recovery_method": "template_parse + code_extraction",
+      "target_course_title": "Intermediate Nursing Skills",
+      "target_course_code": "D445",
+      "source_programs": [
+        "BSPRN"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Courses: All prelicensure nursing curriculum courses from previous terms",
+      "prereq_type": "cumulative-sequence-prereq",
+      "normalized_prereq_title": null,
+      "normalized_prereq_code": null,
+      "confidence": "medium",
+      "review_status": "review-required",
+      "notes": "Cumulative sequence prereq; all prior nursing terms required",
+      "recovery_method": "template_parse + code_extraction",
+      "target_course_title": "Medical Dosage Calculations and Pharmacology",
+      "target_course_code": "D441",
+      "source_programs": [
+        "BSPRN"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "for this course is D017: School Law",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": "D017: School Law",
+      "normalized_prereq_code": null,
+      "confidence": "medium",
+      "review_status": "review-required",
+      "notes": null,
+      "recovery_method": "for_this_course_is_pattern",
+      "target_course_title": "People and Talent in Educational Leadership",
+      "target_course_code": "D022",
+      "source_programs": [
+        "MSEDL"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Courses: All prelicensure nursing curriculum courses from previous terms and D453",
+      "prereq_type": "cumulative-sequence-prereq",
+      "normalized_prereq_title": "Advanced Nursing Skills",
+      "normalized_prereq_code": "D453",
+      "confidence": "medium",
+      "review_status": "review-required",
+      "notes": "Cumulative sequence prereq; all prior nursing terms required; additional code: D453",
+      "recovery_method": "template_parse + code_extraction",
+      "target_course_title": "Professional Nursing Role Transition",
+      "target_course_code": "C490",
+      "source_programs": [
+        "BSPRN"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Courses: All prelicensure nursing curriculum courses from previous terms and D445",
+      "prereq_type": "cumulative-sequence-prereq",
+      "normalized_prereq_title": "Intermediate Nursing Skills",
+      "normalized_prereq_code": "D445",
+      "confidence": "medium",
+      "review_status": "review-required",
+      "notes": "Cumulative sequence prereq; all prior nursing terms required; additional code: D445",
+      "recovery_method": "template_parse + code_extraction",
+      "target_course_title": "Psychiatric and Mental Health Nursing",
+      "target_course_code": "C476",
+      "source_programs": [
+        "BSPRN"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Designing E-Learning Experiences for K\u201312 students",
+      "prereq_type": "explicit-course-prereq",
+      "normalized_prereq_title": null,
+      "normalized_prereq_code": null,
+      "confidence": "low",
+      "review_status": "review-required",
+      "notes": "Could not resolve to catalog code \u2014 may be retired course or wording variation",
+      "recovery_method": "unresolved",
+      "target_course_title": "Quality and Impact of K\u201312 E-Learning Solutions",
+      "target_course_code": "D296",
+      "source_programs": [
+        "MEDETID"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Courses: All prelicensure nursing curriculum courses from previous terms",
+      "prereq_type": "cumulative-sequence-prereq",
+      "normalized_prereq_title": null,
+      "normalized_prereq_code": null,
+      "confidence": "medium",
+      "review_status": "review-required",
+      "notes": "Cumulative sequence prereq; all prior nursing terms required",
+      "recovery_method": "template_parse + code_extraction",
+      "target_course_title": "The following section includes the areas of study in the program, with their associated courses. Your specific",
+      "target_course_code": null,
+      "source_programs": [
+        "BSPRN"
+      ],
+      "source_program_count": 1
+    },
+    {
+      "prereq_value": "Courses: All prelicensure nursing curriculum courses from previous terms and D445",
+      "prereq_type": "cumulative-sequence-prereq",
+      "normalized_prereq_title": "Intermediate Nursing Skills",
+      "normalized_prereq_code": "D445",
+      "confidence": "medium",
+      "review_status": "review-required",
+      "notes": "Cumulative sequence prereq; all prior nursing terms required; additional code: D445",
+      "recovery_method": "template_parse + code_extraction",
+      "target_course_title": "Women's and Children's Nursing",
+      "target_course_code": "D447",
+      "source_programs": [
+        "BSPRN"
+      ],
+      "source_program_count": 1
+    }
+  ],
+  "soft_prep_log": [
+    {
+      "prereq_value": "Successful completion of a college level algebra course",
+      "course_title": "Precalculus",
+      "program_code": "BAESMES"
+    },
+    {
+      "prereq_value": "Successful completion of a college level algebra course",
+      "course_title": "Precalculus",
+      "program_code": "BAESSESC"
+    },
+    {
+      "prereq_value": "Successful completion of a college level algebra course",
+      "course_title": "Precalculus",
+      "program_code": "BAESSESP"
+    },
+    {
+      "prereq_value": "Successful completion of a college level algebra course",
+      "course_title": "Precalculus",
+      "program_code": "BSMES"
+    },
+    {
+      "prereq_value": "Successful completion of a college level algebra course",
+      "course_title": "Precalculus",
+      "program_code": "BSSESC"
+    },
+    {
+      "prereq_value": "Successful completion of a college level algebra course",
+      "course_title": "Precalculus",
+      "program_code": "BSSESP"
+    },
+    {
+      "prereq_value": "Previous coursework in curriculum, instruction, and assessment",
+      "course_title": "Science Methods\u2014Middle Grades General Science",
+      "program_code": "MASEMG"
+    },
+    {
+      "prereq_value": "Previous coursework in curriculum, instruction, and assessment",
+      "course_title": "Science Methods\u2014Secondary Biology",
+      "program_code": "MASESB"
+    },
+    {
+      "prereq_value": "Previous coursework in curriculum, instruction, and assessment",
+      "course_title": "Science Methods\u2014Secondary Chemistry",
+      "program_code": "MASESC"
+    },
+    {
+      "prereq_value": "Previous coursework in curriculum, instruction, and assessment",
+      "course_title": "Science Methods\u2014Secondary Earth Science",
+      "program_code": "MASESE"
+    },
+    {
+      "prereq_value": "Previous coursework in curriculum, instruction, and assessment",
+      "course_title": "Science Methods\u2014Secondary Physics",
+      "program_code": "MASESP"
+    },
+    {
+      "prereq_value": "and should be completed prior to beginning Product Design: Product Strategy",
+      "course_title": "Product Design",
+      "program_code": "MSITPM"
+    }
+  ]
+}

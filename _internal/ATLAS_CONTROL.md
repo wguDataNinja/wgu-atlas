@@ -27,6 +27,9 @@ If local docs conflict on current progress or next-step sequencing, trust in thi
 | Workstream | Status | Current objective | Primary blocker | Next bounded step |
 |---|---|---|---|---|
 | Program guide extraction | **Guide data collection and extraction COMPLETE** — 115 guides parsed, 751 courses with enrichment data, degree-enrichment policy designed | Build Atlas degree-enrichment artifact generator | site wiring intentionally deferred | implement `build_guide_artifacts.py` — reads extracted data, applies policy, emits Atlas-ready degree-page artifacts (no page wiring yet) |
+| Degrees (degree-page enrichment) | **Ready for implementation** — guide-derived degree data and policy complete | Publish guide data to degree pages | degree-enrichment artifact generator not yet built | build `build_guide_artifacts.py` and integrate with degree pages |
+| Courses (course-page enrichment) | **Major opportunity identified** — 751 canonical courses have guide-derived enrichment candidates | Design course-page enrichment strategy | course surfacing decisions not yet productized | plan course enrichment policy and UI integration |
+| Homepage redesign | **Active three-track workstream** | Design comprehensive proof-and-orientation surface showcasing degree, course, and ecosystem value | align with concurrent degree and course workstreams | build homepage modules in parallel with degree/course enrichment |
 | Official resource layer | active, bounded queueing established | continue conservative attachment expansion with provenance clarity | placement model expansion and completeness audits are still incomplete | reconcile regulatory queue vs current placements, then run outcomes/accreditation completeness pass |
 | Continuity review | initialized, lightweight | validate compact review method | first tiny validation batch not created | create 4-card validation batch |
 | Program lineage / degree history | ready, not selected | keep system stable for later export/UI if chosen | export/runtime wiring not implemented | no action unless selected |
@@ -100,10 +103,19 @@ education_grad: complete (MSEDL=HIGH + MEDETID=MEDIUM)
 - Policy and schema for the Atlas degree-enrichment artifact layer fully designed
 - Course-matching audit with explicit records for all ambiguous or unresolvable cases
 
+**Guide targets extraction complete (Session 29, 2026-03-21)**
+- `cert_course_mapping.json` — 9 auto-accepted cert→course mappings, 21 review-needed
+- `prereq_relationships.json` — 50 auto-accepted prereq relationships, 21 review-needed, 71 total
+- `sp_family_classification.json` — 115 programs classified A(72)/B(23)/C(19)/D(1)
+- `sp_families.json` — 7 named family definitions (BSSWE, MACC, MSRNN, BSCNE, PMCNU, MSMK, BAELED)
+- `guide_anomaly_registry.json` — 9 anomaly records
+Scripts: `scripts/program_guides/extract_cert_mapping.py`, `extract_prereq_relationships.py`, `classify_sp_families.py`
+
 **What is next**
 - Build the Atlas **degree-enrichment artifact generator** (`build_guide_artifacts.py`):
   reads extracted guide data, applies the approved policy, and produces Atlas-ready JSON for degree pages.
   Start from `data/program_guides/audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md`.
+- Guide targets outputs (cert mapping, prereq relationships, SP families) unlock cert badges, prereq display, and family surfaces on degree/course pages.
 - Course-page enrichment and college-level enrichment are later decisions, not part of this next step.
 
 ---
@@ -232,7 +244,7 @@ These should not be reopened by default.
 - History/lineage is supporting context, not homepage identity.
 - Program History is a program-page enrichment layer, not a separate product surface.
 - Continuity review is a bounded validation track, not a large feature buildout.
-- Homepage rethink is not the first move.
+- Homepage is an active three-track workstream alongside Degrees and Courses.
 - The official-resource layer is the most likely next major module.
 - Compare is not the first active implementation track; revisit after baseline cleanup settles.
 - Lineage export is not an automatic next move; it remains a defer-or-promote decision.
@@ -267,7 +279,7 @@ The design artifacts for the Atlas degree-enrichment layer live in `data/program
 - `PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md` (start here)
 - `phase_d_publish_policy.{md,json}`, `phase_d_artifact_schema.{md,json}`, `phase_d_build_plan.{md,json}`
 
-1. **Program guide — degree-enrichment artifact generator:** Implement `build_guide_artifacts.py` — reads extracted guide data, applies the approved publish policy, emits Atlas-ready degree-page artifacts for verification. Do not wire runtime pages yet.
+1. **Program guide — degree-enrichment artifact generator:** Implement `build_guide_artifacts.py` — reads extracted guide data, applies the approved publish policy, emits Atlas-ready degree-page artifacts for verification. Do not wire runtime pages yet. Guide targets extraction outputs (cert mapping, prereq relationships, SP families) are now available as inputs to this step.
 2. **Official resource — bounded next pass:** reconcile regulatory queue against current placements, then run outcomes/accreditation completeness audit.
 3. Run first 4-card continuity-review batch (`_internal/continuity_review/validation_batch_01.md`)
 

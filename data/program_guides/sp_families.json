@@ -1,0 +1,182 @@
+{
+  "generated_on": "2026-03-21",
+  "source": "data/program_guides/parsed/*_parsed.json",
+  "total_families": 7,
+  "families": [
+    {
+      "family_code": "BAELED",
+      "family_label": "B.A., Elementary Education",
+      "family_type": "licensure_variant",
+      "declaration_text": null,
+      "declaration_source_program": null,
+      "members": [
+        {
+          "program_code": "BAELED",
+          "track_label": "Licensure variant (advisor-sequenced)"
+        },
+        {
+          "program_code": "BAESELED",
+          "track_label": "Educational Studies non-licensure (term-sequenced)"
+        }
+      ],
+      "member_count": 2,
+      "sp_relationship": "structural_variant",
+      "shared_course_count": 33,
+      "display_recommendation": "show both with explicit labels; SP term status IS the distinguishing signal between licensure and non-licensure"
+    },
+    {
+      "family_code": "BSCNE",
+      "family_label": "B.S. Cloud and Network Engineering",
+      "family_type": "vendor_track",
+      "declaration_text": null,
+      "declaration_source_program": null,
+      "members": [
+        {
+          "program_code": "BSCNE",
+          "track_label": "Vendor-Agnostic Track"
+        },
+        {
+          "program_code": "BSCNEAWS",
+          "track_label": "AWS Track"
+        },
+        {
+          "program_code": "BSCNEAZR",
+          "track_label": "Azure Track"
+        },
+        {
+          "program_code": "BSCNECIS",
+          "track_label": "Cisco Track"
+        }
+      ],
+      "member_count": 4,
+      "sp_relationship": "shared_core_diverging_vendor_track",
+      "shared_course_count": 26,
+      "display_recommendation": "surface family relationship on all four degree pages; note shared core + vendor-specific divergence"
+    },
+    {
+      "family_code": "BSSWE",
+      "family_label": "B.S. Software Engineering",
+      "family_type": "track_specialization",
+      "declaration_text": "in Software Engineering program is designed to meet the growing industry need in the software space while preparing experienced information technology professionals for successful careers as software engineers, designers and developers.The program focuses on software engineering and it is offered in",
+      "declaration_source_program": "BSSWE_C",
+      "members": [
+        {
+          "program_code": "BSSWE_C",
+          "track_label": "C# Track"
+        },
+        {
+          "program_code": "BSSWE_Java",
+          "track_label": "Java Track"
+        }
+      ],
+      "member_count": 2,
+      "sp_relationship": "shared_core_diverging_track",
+      "shared_course_count": 33,
+      "display_recommendation": "surface family relationship on both degree pages; link to each track as variant"
+    },
+    {
+      "family_code": "MACC",
+      "family_label": "Master of Accounting",
+      "family_type": "track_specialization",
+      "declaration_text": "Graduates of the program will obtain substantial knowledge in a wide range of subject matter that can lead to a career in financial accounting, financial analysis, corporate treasury, tax accounting, auditing, and forensic examination, to name a few.After completing five foundational courses, learne",
+      "declaration_source_program": "MACCA",
+      "members": [
+        {
+          "program_code": "MACCA",
+          "track_label": "Auditing Track"
+        },
+        {
+          "program_code": "MACCF",
+          "track_label": "Financial Reporting Track"
+        },
+        {
+          "program_code": "MACCM",
+          "track_label": "Management Accounting Track"
+        },
+        {
+          "program_code": "MACCT",
+          "track_label": "Taxation Track"
+        }
+      ],
+      "member_count": 4,
+      "sp_relationship": "shared_foundation_diverging_track",
+      "shared_course_count": 6,
+      "display_recommendation": "surface family relationship on all four degree pages; shared 5-course foundation identified"
+    },
+    {
+      "family_code": "MSMK",
+      "family_label": "M.S. Marketing",
+      "family_type": "specialization",
+      "declaration_text": null,
+      "declaration_source_program": null,
+      "members": [
+        {
+          "program_code": "MSMK",
+          "track_label": "Digital Marketing Specialization"
+        },
+        {
+          "program_code": "MSMKA",
+          "track_label": "Marketing Analytics Specialization"
+        }
+      ],
+      "member_count": 2,
+      "sp_relationship": "parallel_specialization",
+      "shared_course_count": 8,
+      "display_recommendation": "surface family relationship on both degree pages"
+    },
+    {
+      "family_code": "MSRNN",
+      "family_label": "M.S. Nursing \u2014 RN to MSN",
+      "family_type": "specialization",
+      "declaration_text": "Master of Science, Nursing - Education (RN to MSN track) Students enrolled in the RN-to-MSN track will first complete the Bachelor of Science and Post-Baccalaureate Certificate in Nursing (RNMSN track) program, and will have completed the necessary bachelors course work to receive a Bachelor of Scie",
+      "declaration_source_program": "MSRNNUED",
+      "members": [
+        {
+          "program_code": "MSRNNUED",
+          "track_label": "Education Specialization"
+        },
+        {
+          "program_code": "MSRNNULM",
+          "track_label": "Leadership and Management Specialization"
+        },
+        {
+          "program_code": "MSRNNUNI",
+          "track_label": "Nursing Informatics Specialization"
+        }
+      ],
+      "member_count": 3,
+      "sp_relationship": "shared_core_diverging_specialization",
+      "shared_course_count": 25,
+      "display_recommendation": "surface family relationship on all three degree pages; note degree_title truncation (cosmetic)"
+    },
+    {
+      "family_code": "PMCNU",
+      "family_label": "Post-Master's Certificate, Nursing",
+      "family_type": "specialization",
+      "declaration_text": null,
+      "declaration_source_program": null,
+      "members": [
+        {
+          "program_code": "PMCNUED",
+          "track_label": "Nursing Education"
+        },
+        {
+          "program_code": "PMCNUFNP",
+          "track_label": "Family Nurse Practitioner"
+        },
+        {
+          "program_code": "PMCNULM",
+          "track_label": "Leadership and Management"
+        },
+        {
+          "program_code": "PMCNUPMHNP",
+          "track_label": "Psychiatric Mental Health Nurse Practitioner"
+        }
+      ],
+      "member_count": 4,
+      "sp_relationship": "parallel_specialization_short_sp",
+      "shared_course_count": 0,
+      "display_recommendation": "surface family relationship; each cert is a distinct specialization on the same base credential"
+    }
+  ]
+}

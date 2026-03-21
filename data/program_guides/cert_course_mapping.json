@@ -1,0 +1,436 @@
+{
+  "generated_on": "2026-03-21",
+  "source": "data/program_guides/parsed/*_parsed.json",
+  "total_raw_cert_mentions": 139,
+  "suppressed_aws_noise_count": 51,
+  "noise_bucket_count": 7,
+  "unique_cert_course_pairs": 30,
+  "auto_accepted_count": 9,
+  "review_needed_count": 21,
+  "auto_accepted": [
+    {
+      "normalized_cert": "CompTIA A+",
+      "source_course_title": "IT Applications",
+      "matched_course_code": "C394",
+      "source_programs": [
+        "BSCNE",
+        "BSCNEAWS",
+        "BSCNEAZR",
+        "BSCNECIS",
+        "BSCSIA",
+        "BSIT",
+        "MSITUG"
+      ],
+      "source_program_count": 7,
+      "confidence": "high",
+      "atlas_recommendation": "use"
+    },
+    {
+      "normalized_cert": "CompTIA A+",
+      "source_course_title": "IT Foundations",
+      "matched_course_code": "C393",
+      "source_programs": [
+        "BSCNE",
+        "BSCNEAWS",
+        "BSCNEAZR",
+        "BSCNECIS",
+        "BSCSIA",
+        "BSIT",
+        "MSITUG"
+      ],
+      "source_program_count": 7,
+      "confidence": "high",
+      "atlas_recommendation": "use"
+    },
+    {
+      "normalized_cert": "AWS Certified",
+      "source_course_title": "Cloud Foundations",
+      "matched_course_code": "D282A",
+      "source_programs": [
+        "BSCNEAWS",
+        "BSDA",
+        "BSIT",
+        "BSSWE_C",
+        "BSSWE_Java",
+        "MSITUG"
+      ],
+      "source_program_count": 6,
+      "confidence": "high",
+      "atlas_recommendation": "use"
+    },
+    {
+      "normalized_cert": "CompTIA Network+",
+      "source_course_title": "Networks",
+      "matched_course_code": "C480",
+      "source_programs": [
+        "BSCNE",
+        "BSCNEAWS",
+        "BSCNEAZR",
+        "BSCSIA",
+        "BSIT",
+        "MSITUG"
+      ],
+      "source_program_count": 6,
+      "confidence": "high",
+      "atlas_recommendation": "use"
+    },
+    {
+      "normalized_cert": "CompTIA Project+",
+      "source_course_title": "Business of IT - Project Management",
+      "matched_course_code": "C176",
+      "source_programs": [
+        "BSCSIA",
+        "BSDA",
+        "BSIT",
+        "BSSWE_C",
+        "BSSWE_Java",
+        "MSSWEUG"
+      ],
+      "source_program_count": 6,
+      "confidence": "high",
+      "atlas_recommendation": "use"
+    },
+    {
+      "normalized_cert": "CompTIA Security+",
+      "source_course_title": "Network and Security - Applications",
+      "matched_course_code": "C178",
+      "source_programs": [
+        "BSCNE",
+        "BSCNEAWS",
+        "BSCNEAZR",
+        "BSCSIA",
+        "BSIT",
+        "MSITUG"
+      ],
+      "source_program_count": 6,
+      "confidence": "high",
+      "atlas_recommendation": "use"
+    },
+    {
+      "normalized_cert": "CompTIA Cloud+",
+      "source_course_title": "Cloud Applications",
+      "matched_course_code": "C923",
+      "source_programs": [
+        "BSCNE",
+        "BSCNECIS",
+        "BSIT",
+        "MSITUG"
+      ],
+      "source_program_count": 4,
+      "confidence": "high",
+      "atlas_recommendation": "use"
+    },
+    {
+      "normalized_cert": "Praxis exam",
+      "source_course_title": "Secondary Chemistry Curriculum",
+      "matched_course_code": "D872",
+      "source_programs": [
+        "BAESSESC",
+        "BSSESC",
+        "ENDSESC",
+        "MATSESC"
+      ],
+      "source_program_count": 4,
+      "confidence": "high",
+      "atlas_recommendation": "degree-only"
+    },
+    {
+      "normalized_cert": "Praxis exam",
+      "source_course_title": "Secondary Physics Curriculum",
+      "matched_course_code": "D865",
+      "source_programs": [
+        "BAESSESP",
+        "BSSESP",
+        "ENDSESP",
+        "MATSESP"
+      ],
+      "source_program_count": 4,
+      "confidence": "high",
+      "atlas_recommendation": "degree-only"
+    }
+  ],
+  "review_needed": [
+    {
+      "normalized_cert": "AWS CLI",
+      "source_course_title": "BSCNE-AWS Capstone Project",
+      "matched_course_code": "E030",
+      "source_programs": [
+        "BSCNEAWS"
+      ],
+      "source_program_count": 1,
+      "confidence": "medium",
+      "atlas_recommendation": "use"
+    },
+    {
+      "normalized_cert": "AWS Capstone",
+      "source_course_title": "BSCNE-AWS Capstone Project",
+      "matched_course_code": "E030",
+      "source_programs": [
+        "BSCNEAWS"
+      ],
+      "source_program_count": 1,
+      "confidence": "medium",
+      "atlas_recommendation": "degree-only"
+    },
+    {
+      "normalized_cert": "AWS Certified",
+      "source_course_title": "Machine Learning for Computer Scientists",
+      "matched_course_code": "D801",
+      "source_programs": [
+        "MSCSAIML"
+      ],
+      "source_program_count": 1,
+      "confidence": "medium",
+      "atlas_recommendation": "use"
+    },
+    {
+      "normalized_cert": "AWS Cloud",
+      "source_course_title": "AWS Cloud Architecture",
+      "matched_course_code": "D319",
+      "source_programs": [
+        "BSCNEAWS"
+      ],
+      "source_program_count": 1,
+      "confidence": "medium",
+      "atlas_recommendation": "use"
+    },
+    {
+      "normalized_cert": "AWS Cloud",
+      "source_course_title": "Cloud Deployment and Operations",
+      "matched_course_code": "C924",
+      "source_programs": [
+        "BSCNEAWS"
+      ],
+      "source_program_count": 1,
+      "confidence": "medium",
+      "atlas_recommendation": "use"
+    },
+    {
+      "normalized_cert": "AWS environment",
+      "source_course_title": "BSCNE-AWS Capstone Project",
+      "matched_course_code": "E030",
+      "source_programs": [
+        "BSCNEAWS"
+      ],
+      "source_program_count": 1,
+      "confidence": "medium",
+      "atlas_recommendation": "degree-only"
+    },
+    {
+      "normalized_cert": "AWS platform",
+      "source_course_title": "BSCNE-AWS Capstone Project",
+      "matched_course_code": "E030",
+      "source_programs": [
+        "BSCNEAWS"
+      ],
+      "source_program_count": 1,
+      "confidence": "medium",
+      "atlas_recommendation": "degree-only"
+    },
+    {
+      "normalized_cert": "Azure CLI",
+      "source_course_title": "BSCNE-Azure Capstone Project",
+      "matched_course_code": "E031",
+      "source_programs": [
+        "BSCNEAZR"
+      ],
+      "source_program_count": 1,
+      "confidence": "medium",
+      "atlas_recommendation": "degree-only"
+    },
+    {
+      "normalized_cert": "Azure Fundamentals",
+      "source_course_title": "Azure Fundamentals",
+      "matched_course_code": "D303",
+      "source_programs": [
+        "BSCNEAZR"
+      ],
+      "source_program_count": 1,
+      "confidence": "medium",
+      "atlas_recommendation": "degree-only"
+    },
+    {
+      "normalized_cert": "Azure Solution",
+      "source_course_title": "Azure Solutions Architecture",
+      "matched_course_code": "E033",
+      "source_programs": [
+        "BSCNEAZR"
+      ],
+      "source_program_count": 1,
+      "confidence": "medium",
+      "atlas_recommendation": "degree-only"
+    },
+    {
+      "normalized_cert": "Azure environment",
+      "source_course_title": "BSCNE-Azure Capstone Project",
+      "matched_course_code": "E031",
+      "source_programs": [
+        "BSCNEAZR"
+      ],
+      "source_program_count": 1,
+      "confidence": "medium",
+      "atlas_recommendation": "degree-only"
+    },
+    {
+      "normalized_cert": "Azure platform",
+      "source_course_title": "Azure Solutions Architecture",
+      "matched_course_code": "E033",
+      "source_programs": [
+        "BSCNEAZR"
+      ],
+      "source_program_count": 1,
+      "confidence": "medium",
+      "atlas_recommendation": "degree-only"
+    },
+    {
+      "normalized_cert": "Azure platform",
+      "source_course_title": "BSCNE-Azure Capstone Project",
+      "matched_course_code": "E031",
+      "source_programs": [
+        "BSCNEAZR"
+      ],
+      "source_program_count": 1,
+      "confidence": "medium",
+      "atlas_recommendation": "degree-only"
+    },
+    {
+      "normalized_cert": "Azure services",
+      "source_course_title": "Azure Fundamentals",
+      "matched_course_code": "D303",
+      "source_programs": [
+        "BSCNEAZR"
+      ],
+      "source_program_count": 1,
+      "confidence": "medium",
+      "atlas_recommendation": "degree-only"
+    },
+    {
+      "normalized_cert": "CPA Code",
+      "source_course_title": "Auditing",
+      "matched_course_code": "C240",
+      "source_programs": [
+        "BSACC"
+      ],
+      "source_program_count": 1,
+      "confidence": "medium",
+      "atlas_recommendation": "review-required"
+    },
+    {
+      "normalized_cert": "Cisco Certified",
+      "source_course_title": "Implementing and Administering Networking Solutions",
+      "matched_course_code": "D114",
+      "source_programs": [
+        "BSCNECIS"
+      ],
+      "source_program_count": 1,
+      "confidence": "medium",
+      "atlas_recommendation": "degree-only"
+    },
+    {
+      "normalized_cert": "Cisco Cybersecurity",
+      "source_course_title": "Cyber Operations Fundamentals",
+      "matched_course_code": "D414",
+      "source_programs": [
+        "BSCNECIS"
+      ],
+      "source_program_count": 1,
+      "confidence": "medium",
+      "atlas_recommendation": "degree-only"
+    },
+    {
+      "normalized_cert": "Cisco DevNet",
+      "source_course_title": "DevNet Fundamentals",
+      "matched_course_code": "D416",
+      "source_programs": [
+        "BSCNECIS"
+      ],
+      "source_program_count": 1,
+      "confidence": "medium",
+      "atlas_recommendation": "degree-only"
+    },
+    {
+      "normalized_cert": "CompTIA Cybersecurity",
+      "source_course_title": "Cyber Defense and Countermeasures",
+      "matched_course_code": "C842",
+      "source_programs": [
+        "BSCSIA"
+      ],
+      "source_program_count": 1,
+      "confidence": "medium",
+      "atlas_recommendation": "use"
+    },
+    {
+      "normalized_cert": "Praxis 5039",
+      "source_course_title": "Secondary English Language Arts Curriculum",
+      "matched_course_code": "D841",
+      "source_programs": [
+        "MATEES"
+      ],
+      "source_program_count": 1,
+      "confidence": "medium",
+      "atlas_recommendation": "use"
+    },
+    {
+      "normalized_cert": "Praxis 5081",
+      "source_course_title": "Social Studies Methods I",
+      "matched_course_code": "D835",
+      "source_programs": [
+        "MATSSES"
+      ],
+      "source_program_count": 1,
+      "confidence": "medium",
+      "atlas_recommendation": "use"
+    }
+  ],
+  "noise_log": [
+    {
+      "raw": "Azure cost",
+      "stripped": "Azure cost",
+      "course_title": "Azure Fundamentals",
+      "program_code": "BSCNEAZR",
+      "disposition": "noise"
+    },
+    {
+      "raw": "Azure Capstone",
+      "stripped": "Azure Capstone",
+      "course_title": "BSCNE-Azure Capstone Project",
+      "program_code": "BSCNEAZR",
+      "disposition": "noise"
+    },
+    {
+      "raw": "Cisco Environment.",
+      "stripped": "Cisco Environment",
+      "course_title": "DevNet Fundamentals",
+      "program_code": "BSCNECIS",
+      "disposition": "noise"
+    },
+    {
+      "raw": "Cisco practices",
+      "stripped": "Cisco practices",
+      "course_title": "Cyber Operations Fundamentals",
+      "program_code": "BSCNECIS",
+      "disposition": "noise"
+    },
+    {
+      "raw": "Cisco Capstone",
+      "stripped": "Cisco Capstone",
+      "course_title": "BSCNE-Cisco Capstone Project",
+      "program_code": "BSCNECIS",
+      "disposition": "noise"
+    },
+    {
+      "raw": "Cisco tools",
+      "stripped": "Cisco tools",
+      "course_title": "BSCNE-Cisco Capstone Project",
+      "program_code": "BSCNECIS",
+      "disposition": "noise"
+    },
+    {
+      "raw": "Praxis Social",
+      "stripped": "Praxis Social",
+      "course_title": "Secondary Social Studies Curriculum",
+      "program_code": "MATSSES",
+      "disposition": "noise"
+    }
+  ]
+}

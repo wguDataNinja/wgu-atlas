@@ -632,6 +632,11 @@ None outstanding. All identified limitations were resolved in Session 22–23.
 - `data/program_guides/audit/phase_d_artifact_schema.{md,json}` — output shape and partial-use encoding
 - `data/program_guides/audit/phase_d_degree_course_ownership_matrix.{md,json}` — degree/course ownership decisions
 - `data/program_guides/audit/phase_d_build_plan.{md,json}` — implementation gates and checks
+- `data/program_guides/cert_course_mapping.json` — cert→course mapping output (Phase 1 targets)
+- `data/program_guides/prereq_relationships.json` — prereq relationship output (Phase 2 targets)
+- `data/program_guides/sp_family_classification.json` — SP family classification per program (Phase 3 targets)
+- `data/program_guides/sp_families.json` — named family definitions (Phase 3 targets)
+- `data/program_guides/guide_anomaly_registry.json` — known anomaly types with handling rules (Phase 4 targets)
 - `public/data/program_guides/` — not yet created (Phase D)
 
 ### Important design decisions
@@ -684,7 +689,7 @@ These exist for design and planning work — not for code generation or spec enf
 
 ### Durable design conclusions (repo-level)
 
-- Homepage redesign is sequenced later, not abandoned.
+- Homepage is an active three-track workstream alongside Degrees and Courses.
 - Homepage direction is proof-first: demonstrate Atlas value, not only navigation.
 - Strongest proof surfaces so far are degree pages and Compare.
 - Additional durable proof surfaces are course connectedness, history/change context, and relevant official resources.
@@ -784,6 +789,10 @@ These decisions are wrapped here as stable repo memory and should not be reopene
 - Official resources are the next major value layer after catalog facts.
 - History/lineage is supporting context, not homepage identity.
 - Reddit/community enrichment is deferred behind official-resource work.
+- **Post-program-guides direction:** The project is now centered on three concurrent tracks:
+  1. **Degrees** - immediate implementation target using completed guide data
+  2. **Courses** - major follow-on opportunity with 751 enriched courses
+  3. **Homepage** - active three-track workstream alongside Degrees and Courses
 
 ### Surface-level
 
