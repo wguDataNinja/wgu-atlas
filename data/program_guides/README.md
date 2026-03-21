@@ -1,77 +1,67 @@
 # Program Guides — Data Directory
 
-**Human entry point for the WGU program-guide extraction workstream.**
+**Human entry point for the WGU program-guide data area.**
 
 ---
 
 ## What this directory is
 
-This directory contains all artifacts from extracting structured data out of WGU Program Guidebook PDFs — 115 guides covering every active program. The extracted data includes course descriptions, competency bullets, Standard Path schedules, and course-to-program mappings.
+WGU publishes a Program Guidebook PDF for every active degree. This directory contains everything produced by extracting structured data from those PDFs — 115 guides covering every active program.
 
-This is a **data preparation and internal enrichment** directory. Nothing here is directly served to the site yet. The next step (Phase D) is to build the site artifact generator that publishes approved content to `public/data/program_guides/`.
+The extracted data includes:
+- Course descriptions and competency bullets (per course, per program)
+- Program schedule context (Standard Path: term, credit units)
+- Course-to-program mappings (which courses appear in which programs)
 
----
-
-## Phase status
-
-| Phase | Description | Status |
-|-------|-------------|--------|
-| A | Corpus manifest | Complete |
-| B | Thin-slice validation | Complete |
-| C | Full corpus parsing (115/115) | **Complete** |
-| D | Site artifact build (degree-page payloads) | Not started |
-| E — Roster bridge | 115/115 guides bridged to canonical courses | **Complete** |
-| E — Deterministic resolution | 1,428/1,599 ambiguous rows resolved deterministically | **Complete** |
-| E — LLM adjudication | 163 high + 2 medium of 171 residuals adjudicated | **Complete** |
-| E — Merge | All resolutions merged into bridge; enrichment rerun | **Complete** |
-
-**Scraping/extraction phase is closed.** The guide corpus is fully parsed, validated, bridged, and enriched.
+**This is an internal data preparation directory.** Nothing here is currently published to the Atlas site. The next step is building the artifact generator that publishes approved guide content to Atlas degree pages.
 
 ---
 
-## Current state — numbers that matter
+## Current state
 
-### Corpus
+| Area | Status |
+|------|--------|
+| Guide corpus collected and parsed | **Complete** — 115/115 guides |
+| Per-course descriptions and competency bullets extracted | **Complete** — 2,593 courses covered |
+| Guide courses matched to Atlas catalog codes | **Complete** — 751 courses matched; 542 unmatched (irreducible) |
+| Policy and schema for Atlas degree-page enrichment | **Designed** — not yet built |
+| Guide data published to Atlas site | **Not started** |
 
-- 115/115 guides parsed, validated, and manifest-rowed
-- 111 guides: full-use | 4 guides: partial-use | 0 excluded
-- Confidence: 96 HIGH / 17 MEDIUM / 2 LOW
-- 2,593 AoS course descriptions (100% coverage)
-- 2,591 competency sets
-- 2,568 Standard Path rows
+**Data collection and extraction is closed.** The next work is building the Atlas-facing output layer.
 
-### Course enrichment (post-merge)
+---
 
-- **751 courses** have enrichment data (descriptions + competencies + program context)
-- 730 courses with descriptions, 729 with competencies
-- 723 courses with SP context, 730 with AoS context
-- 542 rows still unmapped (titles not in canonical course database — irreducible)
-- 6 rows unresolvable (both candidates inactive, no decisive signal)
+## Numbers that matter
 
-### Resolution breakdown (1,599 originally ambiguous rows)
+### Guide corpus
 
-| Tier | Count | Status |
-|------|-------|--------|
-| Exact/unique from bridge | ~2,952 | Never ambiguous |
-| Deterministic (multi-signal) | 1,428 | Resolved |
-| LLM adjudication — high | 163 | Auto-accepted |
-| LLM adjudication — medium | 2 | Human-reviewed, accepted |
-| Unresolvable | 6 | Excluded (inactive candidates) |
-| Unmapped | 542 | Not findable in canonical DB |
+- 115/115 guides parsed and validated
+- 111 guides: fully usable | 4 guides: partially usable (caveats apply) | 0 excluded
+- Parse confidence: 96 HIGH / 17 MEDIUM / 2 LOW
+- 2,593 course descriptions extracted (100% of guide courses)
+- 2,591 competency sets; 2,568 program schedule rows
+
+### Course enrichment coverage
+
+- **751 canonical courses** have guide-derived enrichment (descriptions + competency bullets + program context)
+- 730 courses with descriptions; 729 with competency bullets
+- 723 courses with program schedule context; 730 with program group context
+- 542 course titles in guides could not be matched to the Atlas catalog — irreducible without catalog changes
+- 6 course titles matched only to inactive catalog entries with no decisive signal — excluded
 
 ---
 
 ## Where to start reading
 
-**If you want to understand the corpus:** [audit/PROGRAM_GUIDE_CORPUS_MANIFEST.md](audit/PROGRAM_GUIDE_CORPUS_MANIFEST.md)
+**To understand what this corpus covers:** [audit/PROGRAM_GUIDE_CORPUS_MANIFEST.md](audit/PROGRAM_GUIDE_CORPUS_MANIFEST.md)
 
-**If you want to build Phase D:** [audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md](audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md)
+**To build the Atlas degree-enrichment artifact layer:** [audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md](audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md)
 
-**If you want the current enrichment numbers:** [enrichment/course_enrichment_summary.json](enrichment/course_enrichment_summary.json)
+**To see current enrichment numbers:** [enrichment/course_enrichment_summary.json](enrichment/course_enrichment_summary.json)
 
-**If you want to understand what claims are safe to make:** [audit/program_guide_claims_register.md](audit/program_guide_claims_register.md)
+**To understand what claims are safe to make:** [audit/program_guide_claims_register.md](audit/program_guide_claims_register.md)
 
-**If you want the post-merge bridge state:** [bridge/merge_summary.json](bridge/merge_summary.json)
+**To audit course-matching decisions (resolutions, deferred, unresolvable):** [bridge/merge_summary.json](bridge/merge_summary.json)
 
 ---
 
@@ -105,7 +95,7 @@ This is a **data preparation and internal enrichment** directory. Nothing here i
 
 **Status:** Canonical. Source of truth for corpus-level counts.
 
-**Role:** Input to corpus manifest. Used by Phase D build script for inclusion/exclusion policy.
+**Role:** Input to corpus manifest. Used by the Atlas degree-enrichment artifact generator for per-guide inclusion/exclusion decisions.
 
 ---
 
@@ -162,20 +152,20 @@ All 6 are "Health Equity and Social Determinants of Health" for BSHS, BSPH, BSPS
 
 ### `enrichment/` — course enrichment candidates
 
-**What:** The main downstream deliverable of Phase E. For each course that could be unambiguously linked to a guide row, this contains all the guide-derived enrichment: descriptions, competency sets, program context, AoS group context.
+**What:** The primary deliverable of the data extraction phase. For each course that could be confidently matched to a guide row, this contains all guide-derived content: descriptions, competency sets, program context, program group context.
 
 **Key files:**
 
 | File | Role |
 |------|------|
 | `course_enrichment_candidates.json` | Full enrichment data — 751 courses |
-| `course_enrichment_summary.json` | Coverage counts and anchor class distribution |
+| `course_enrichment_summary.json` | Coverage counts and match-tier distribution |
 
-**Status:** Current. Generated by `build_course_enrichment_candidates.py` against `bridge/guides_merged/`.
+**Status:** Current. Generated by `build_course_enrichment_candidates.py` against the final merged course-matching files.
 
-**Coverage:** 751 courses, 730 with descriptions, 729 with competencies.
+**Coverage:** 751 courses, 730 with descriptions, 729 with competency bullets.
 
-**Role:** Input to Phase D (degree pages) and eventually Phase E (course pages).
+**Role:** Input to Atlas degree-page enrichment (the artifact generator, not yet built). Candidate data for future Atlas course-page enrichment. College-level uses also possible later.
 
 ---
 
@@ -190,26 +180,28 @@ The audit directory contains the policy decisions, schemas, assessments, and pla
 | [PROGRAM_GUIDE_CORPUS_MANIFEST.md](audit/PROGRAM_GUIDE_CORPUS_MANIFEST.md) | Canonical corpus facts — 115 guides, counts, coverage, confidence |
 | [program_guide_claims_register.md](audit/program_guide_claims_register.md) | Approved vs disallowed claims about the corpus |
 | [program_guide_adversarial_review.md](audit/program_guide_adversarial_review.md) | Claim stress test — what wording is safe |
-| [PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md](audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md) | Phase D build guide — single entry point for site artifact generation |
+| [PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md](audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md) | Single entry point for building the Atlas degree-enrichment artifact layer — policy, schema, and implementation plan |
 
-#### Bridge and enrichment design
-
-| File | Role |
-|------|------|
-| [program_guide_roster_bridge_assessment.md](audit/program_guide_roster_bridge_assessment.md) | Bridge methodology, coverage model, anchor class definitions |
-| [program_guide_roster_bridge_schema.md](audit/program_guide_roster_bridge_schema.md) | Bridge artifact schema |
-| [course_anchorability_matrix.md](audit/course_anchorability_matrix.md) | Which courses can be anchored and at what confidence |
-| [course_signal_quality_review.md](audit/course_signal_quality_review.md) | Quality of each resolution signal |
-| [course_enrichment_candidate_schema.md](audit/course_enrichment_candidate_schema.md) | Schema for enrichment candidate artifacts |
-| [ambiguous_course_resolution_strategy.md](audit/ambiguous_course_resolution_strategy.md) | Hybrid deterministic + LLM resolution design |
-
-#### Phase D planning pack
+#### Course-matching methodology and enrichment design
 
 | File | Role |
 |------|------|
-| [phase_d_publish_policy.md](audit/phase_d_publish_policy.md) | What gets published, what stays internal |
-| [phase_d_artifact_schema.md](audit/phase_d_artifact_schema.md) | Schema for Phase D site artifacts |
-| [phase_d_degree_course_ownership_matrix.md](audit/phase_d_degree_course_ownership_matrix.md) | Degree/course ownership for publish decisions |
+| [program_guide_roster_bridge_assessment.md](audit/program_guide_roster_bridge_assessment.md) | How guide course titles are matched to catalog codes; coverage model; match-tier definitions |
+| [program_guide_roster_bridge_schema.md](audit/program_guide_roster_bridge_schema.md) | Schema for the course-matching artifact files |
+| [course_anchorability_matrix.md](audit/course_anchorability_matrix.md) | Which courses can be matched and at what confidence |
+| [course_signal_quality_review.md](audit/course_signal_quality_review.md) | Quality assessment of each matching signal |
+| [course_enrichment_candidate_schema.md](audit/course_enrichment_candidate_schema.md) | Schema for the enrichment candidate output files |
+| [ambiguous_course_resolution_strategy.md](audit/ambiguous_course_resolution_strategy.md) | Design of the two-stage (deterministic + LLM) ambiguous title resolution approach |
+
+#### Degree-enrichment artifact layer design
+
+These docs define how extracted guide data will be published to Atlas degree pages. The artifact generator itself has not been built yet.
+
+| File | Role |
+|------|------|
+| [phase_d_publish_policy.md](audit/phase_d_publish_policy.md) | What guide data gets published to degree pages; what stays internal |
+| [phase_d_artifact_schema.md](audit/phase_d_artifact_schema.md) | Schema for the Atlas degree-page artifact files |
+| [phase_d_degree_course_ownership_matrix.md](audit/phase_d_degree_course_ownership_matrix.md) | Degree/course ownership mapping for publish decisions |
 | [phase_d_build_plan.md](audit/phase_d_build_plan.md) | Implementation plan for `build_guide_artifacts.py` |
 
 #### Historical / background
@@ -241,9 +233,9 @@ All scripts live under `scripts/program_guides/`.
 | Category | Examples | Notes |
 |----------|----------|-------|
 | **Canonical — do not modify** | `parsed/`, `validation/`, `manifest_rows/` | Source of truth for guide content |
-| **Canonical — current state** | `bridge/guides_merged/`, `enrichment/`, `bridge/merge_summary.json` | Post-merge final state |
-| **Canonical — audit/policy** | `audit/PROGRAM_GUIDE_CORPUS_MANIFEST.*`, `audit/program_guide_claims_register.*`, `audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md` | Decision record |
-| **Intermediate pipeline stages** | `bridge/guides/`, `bridge/guides_resolved/`, `bridge/resolution_log_deterministic.json`, `bridge/llm_packets/` | Preserved for auditability; not the final state |
+| **Canonical — current state** | `bridge/guides_merged/`, `enrichment/`, `bridge/merge_summary.json` | Final course-matching and enrichment state |
+| **Canonical — decisions** | `audit/PROGRAM_GUIDE_CORPUS_MANIFEST.*`, `audit/program_guide_claims_register.*`, `audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md` | What was decided and why |
+| **Intermediate — pipeline stages** | `bridge/guides/`, `bridge/guides_resolved/`, `bridge/resolution_log_deterministic.json`, `bridge/llm_packets/` | Preserved for auditability; not the final state |
 | **Historical / background** | Most other `audit/` files | Useful reference; not required for ongoing work |
 | **Family validation** | `family_validation/` | Historical rollout record |
 
@@ -263,12 +255,14 @@ All scripts live under `scripts/program_guides/`.
 
 ## What is next
 
-**Phase D** — build the site artifact generator (`build_guide_artifacts.py`) that:
-- reads `parsed/`, `validation/`, `manifest_rows/` + Phase D policy/schema JSON
-- applies include/exclude policy per guide
-- emits schema-valid draft index and per-guide artifacts under `public/data/program_guides/`
-- no runtime wiring yet
+**Build the Atlas degree-enrichment artifact generator** (`build_guide_artifacts.py`):
+- reads the extracted guide data (`parsed/`, `validation/`, `manifest_rows/`) plus the approved policy and schema
+- applies per-guide inclusion/exclusion policy
+- emits Atlas-ready draft artifacts under `public/data/program_guides/`
+- no site wiring yet — this step produces files for verification, not live pages
 
 Start from [audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md](audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md).
 
-Course-page enrichment shipping (Phase E continuation) requires Phase D to be complete first.
+**Later decisions:**
+- How and when course-level enrichment surfaces on Atlas course pages
+- Whether college-level enrichment can be derived from the same guide data

@@ -542,25 +542,23 @@ This is distinct from the URL-placement system in `official_resource_placements.
 
 ### Status
 
-- **Scraping/extraction phase COMPLETE** — Phase C (corpus), Phase D (policy/schema), and Phase E (bridge + resolution + enrichment) are all done.
-- Parser (`scripts/program_guides/parse_guide.py`) is stable and production-quality.
-- **Phase C COMPLETE: 115/115 guides have parsed + validation + manifest_row artifacts on disk.**
-- Family rollout is complete across all 19 families. 0 partial families.
-- **Phase E COMPLETE:** 751 courses with enrichment data (descriptions + competencies + program context). All 1,599 originally-ambiguous bridge rows resolved or explicitly handled.
-- Phase D policy/schema planning is complete; build implementation and runtime publication are not yet live.
-- Human entry point for the full program-guides data area: `data/program_guides/README.md`
-- Current counts and near-term sequence are controlled in `_internal/ATLAS_CONTROL.md`.
-- Canonical reconciled counts and claim boundaries are in `data/program_guides/audit/PROGRAM_GUIDE_CORPUS_MANIFEST.{md,json}` and `data/program_guides/audit/program_guide_claims_register.{md,json}`.
-- Canonical Phase D planning pack is in `data/program_guides/audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md` and `data/program_guides/audit/phase_d_*.{md,json}`.
-- Post-merge bridge state and explicit unresolvable/medium case records: `data/program_guides/bridge/merge_summary.json`.
+- **Guide data collection and extraction is COMPLETE.**
+- All 115 WGU program guidebooks have been parsed and validated. Parser is stable.
+- **751 canonical courses now have guide-derived enrichment data** (descriptions, competency bullets, program context). This data is ready to inform Atlas degree pages and, later, course pages.
+- The design for the Atlas degree-enrichment artifact layer is complete (policy, schema, build plan settled).
+- The artifact generator (`build_guide_artifacts.py`) has not yet been built; no guide data is published to the site yet.
+- Human entry point for the program-guides data area: `data/program_guides/README.md`
+- Canonical counts and claim boundaries: `data/program_guides/audit/PROGRAM_GUIDE_CORPUS_MANIFEST.{md,json}` and `program_guide_claims_register.{md,json}`.
+- Degree-enrichment design pack: `data/program_guides/audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md`.
+- Course-matching audit (resolutions, deferred cases, unresolvables): `data/program_guides/bridge/merge_summary.json`.
 
 **Durable coverage model (do not collapse these states):**
-- Extracted texts: PDF-to-text corpus available for parser input.
-- Parsed guides: structural content extracted into `*_parsed.json`.
-- Validated guides: per-guide QA output in `*_validation.json` with confidence and anomaly accounting.
-- Bridge pipeline: `guides/` (original) → `guides_resolved/` (deterministic) → `guides_merged/` (final — canonical).
-- Course enrichment: 751 courses in `data/program_guides/enrichment/course_enrichment_candidates.json`.
-- Runtime-published guides: site-facing artifacts in `public/data/program_guides/` (not yet published).
+- Extracted texts: PDF-to-text corpus available as parser input.
+- Parsed guides: structural content extracted into `*_parsed.json` (canonical; do not regenerate without a parser fix).
+- Validated guides: per-guide quality report in `*_validation.json` with confidence and anomaly counts.
+- Course title matching: three-stage pipeline — original bridge → deterministic resolution → final merged state (`bridge/guides_merged/`). Final merged state is canonical.
+- Course enrichment candidates: 751 courses in `data/program_guides/enrichment/course_enrichment_candidates.json`.
+- Atlas site artifacts: not yet generated; pending the degree-enrichment artifact generator build.
 
 ### BSDA guide structure (confirmed)
 

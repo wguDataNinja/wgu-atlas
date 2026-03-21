@@ -4,52 +4,54 @@
 
 ## Current Status
 
-- Phase C (parse+validation corpus build) is complete at 115/115 guides.
-- Phase E roster bridge is complete: 115/115 guides bridged to canonical courses.
-- Phase E resolution is complete: all 1,599 originally-ambiguous rows resolved or explicitly handled.
-- Post-merge enrichment extraction is complete: 751 courses with enrichment data.
-- Scraping/extraction phase is **closed**.
-- Phase D policy/schema planning is complete; implementation is not started.
-- No runtime artifacts are published under `public/data/program_guides/`.
+Guide data collection and extraction is **complete**.
+
+- All 115 WGU program guidebooks have been collected, parsed, and validated.
+- Per-course structured data (descriptions, competency bullets, program schedule context) has been extracted for all guides.
+- Guide-derived enrichment data is now available for 751 canonical courses — ready to inform Atlas degree pages and, later, course pages.
+- The next step is building the first Atlas-facing output layer: artifacts that publish approved guide content to degree pages.
+- Nothing is yet published to the site from this data.
 
 ## Human Entry Point
 
 **Start here:** `data/program_guides/README.md`
 
-That README explains the full directory, all subdirectories, key artifacts, and what comes next.
+That README explains the full directory, what each area contains, what is canonical vs internal, and what comes next.
 
 ## Where To Read For Specific Needs
 
 | Need | Go to |
 |------|-------|
 | Full human entry point | `data/program_guides/README.md` |
-| Canonical corpus state | `data/program_guides/audit/PROGRAM_GUIDE_CORPUS_MANIFEST.md` |
-| Phase D decision entry point | `data/program_guides/audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md` |
-| Post-merge enrichment counts | `data/program_guides/enrichment/course_enrichment_summary.json` |
-| Post-merge bridge state | `data/program_guides/bridge/merge_summary.json` |
-| Claims boundaries | `data/program_guides/audit/program_guide_claims_register.md` |
-| Adversarial wording check | `data/program_guides/audit/program_guide_adversarial_review.md` |
+| What the corpus covers (counts, confidence, caveats) | `data/program_guides/audit/PROGRAM_GUIDE_CORPUS_MANIFEST.md` |
+| What claims are safe to make about this data | `data/program_guides/audit/program_guide_claims_register.md` |
+| How to build Atlas degree-page artifacts from this data | `data/program_guides/audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md` |
+| Current enrichment coverage numbers | `data/program_guides/enrichment/course_enrichment_summary.json` |
+| Course-matching audit (which courses resolved, which did not) | `data/program_guides/bridge/merge_summary.json` |
 | Session history | `_internal/program_guides/DEV_NOTES.md` |
 
-## Reconciled Snapshot
+## Corpus Snapshot
 
-- Total guides: 115
-- Full-use: 111
-- Partial-use: 4 (BSITM, MATSPED, MSCSUG, BSPRN)
+- Total guides: 115 (100% of active programs)
+- Fully usable: 111 guides
+- Partially usable: 4 guides (BSITM, MATSPED, MSCSUG, BSPRN — see README for caveats)
 - Excluded: 0
-- Confidence: 96 HIGH / 17 MEDIUM / 2 LOW
-- AoS courses: 2,593; competency sets: 2,591; SP rows: 2,568
+- Parse confidence: 96 HIGH / 17 MEDIUM / 2 LOW
+- Descriptions extracted: 2,593 (100% of guide courses)
+- Competency sets: 2,591
+- Program schedule rows: 2,568
 
-## Post-Merge Enrichment Coverage
+## Course Enrichment Coverage
 
-- 751 courses with enrichment data (descriptions + competencies + program context)
-- 730 courses with descriptions; 729 with competencies
-- 542 rows still unmapped (titles not in canonical course database — irreducible)
-- 6 rows unresolvable (both candidates inactive, no decisive signal)
-- 2 medium-confidence LLM resolutions accepted and tracked (`llm_resolved_medium_reviewed`)
+- **751 canonical courses** now have guide-derived enrichment (descriptions + competency bullets + program context)
+- 730 with descriptions; 729 with competency bullets
+- 542 courses remain unmatched (guide titles not in the canonical course catalog — not resolvable without catalog updates)
+- 6 courses excluded due to ambiguous inactive candidates with no decisive signal
 
-## Next Phase
+## What Is Next
 
-- **Phase D:** Implement `build_guide_artifacts.py` skeleton using the approved policy/schema pack.
-  Start from `data/program_guides/audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md`.
-- No runtime wiring or Phase E course-page shipping yet.
+Build the **Atlas degree-enrichment artifact generator**: a script that reads the extracted guide data, applies the approved inclusion policy, and produces Atlas-ready JSON for degree pages.
+
+- Policy and schema decisions are already settled — see `data/program_guides/audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md`.
+- No runtime wiring or course-page publishing in this next step.
+- College-level uses of this data remain possible later.
