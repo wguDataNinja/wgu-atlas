@@ -1,0 +1,155 @@
+{
+  "program_code": "ENDSESP",
+  "version": "202509",
+  "pub_date": "6/17/2025",
+  "page_count": 0,
+  "degree_title": "Endorsement Preparation Program, Physics",
+  "program_description": "Program Code: ENDSESP Catalog Version: 202509 Published Date: 6/17/2025 The Physics Secondary Endorsement equips licensed secondary science educators with the specialized knowledge and credentials needed to teach Physics at the secondary level. This endorsement is available exclusively to individuals who hold a current professional license in secondary science. Candidates will engage in a carefully designed sequence of learning experiences intended to build their capacity to understand Physics content and effectively plan, deliver, and assess instruction in alignment with secondary education standards.",
+  "standard_path": [
+    {
+      "title": "General Physics I",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Calculus I",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "General Physics II with Lab",
+      "cus": 4,
+      "term": null
+    },
+    {
+      "title": "Electricity and Magnetism",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Astrophysics with Lab",
+      "cus": 4,
+      "term": null
+    },
+    {
+      "title": "Waves, Acoustics, and Sound",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Secondary Physics Curriculum",
+      "cus": 3,
+      "term": null
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "General Science Content",
+      "courses": [
+        {
+          "title": "General Physics I",
+          "description": "This General Physics course covers fundamental concepts, including Newton’s Laws, forces, motion, energy, waves, electricity, and magnetism, with real-world applications and insights into relativity and quantum theory. Learners will study measurement, forces and motion, Newton’s Laws, centrifugal and centripetal forces, friction, gravity, momentum, collisions, vectors, wave motion, energy, thermodynamics, and electromagnetic waves. Skills developed include scientific literacy, physical science application, systems thinking, and scientific reasoning.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies concepts of energy and entropy to describe systems.",
+            "The learner applies concepts of physics to describe forces, motion, and momentum.",
+            "The learner describes electricity, magnetism, and their relationship."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Mathematics Education",
+      "courses": [
+        {
+          "title": "Calculus I",
+          "description": "Calculus I offers a foundational exploration of the essential concepts and applications of calculus, crucial for higher-level mathematics and various scientific fields. This course begins with an overview of calculating limits and continuity of functions, setting the stage for the study of derivatives. Then, students will explore applications of derivatives, including applications to objects in motion, optimization, and related rates. Finally, the course focuses on both definite and indefinite integrals, leading to the mastery of the Fundamental Theorem of Calculus. This course prepares students for advanced mathematical studies and provides the groundwork for advanced calculus topics addressed in Calculus II and Multivariable Calculus.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies rules of differentiation to solve problems involving rates of change, including linear approximations, optimization, and graphs of functions.",
+            "The learner determines limits and continuity of functions to solve problems.",
+            "The learner evaluates definite and indefinite integrals using geometry and the Fundamental Theorem of Calculus."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Science Education",
+      "courses": [
+        {
+          "title": "General Physics II with Lab",
+          "description": "General Physics II with Lab builds on the foundational concepts covered in General Physics I, guiding students through introductory topics in heat and thermodynamics, geometric optics, and the interactions and transformations of energy within atomic and subatomic systems. Students will explore the distinction between heat and temperature, methods of heat transfer, specific heat capacity, the laws of thermodynamics, kinetic theory of gases, and the principles of heat engines and efficiency. The course delves into electromagnetic waves, Snell’s law, total internal reflection, thin film interference, ray tracing for lenses and mirrors, dispersion, polarization, diffraction, and the functioning of optical instruments. Finally, students will analyze Interaction and Transformations of Energy, explore atomic models and structures, atomic spectral absorption and emission, radioactivity and radioactive decay, nuclear processes like fusion and fission, and mass-energy relationships. Throughout the course, students will develop scientific literacy and the ability to apply scientific principles, enhancing their understanding of physical science concepts and their applications.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the interactions and transformations of energy within atomic and subatomic systems.",
+            "The learner applies the principles of light refraction and reflection to understand geometric optics.",
+            "The learner describes the principles of heat and thermodynamics, including laws of thermodynamics and heat transfer methods."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": [
+            "aws of"
+          ]
+        },
+        {
+          "title": "Electricity and Magnetism",
+          "description": "Electricity and Magnetism is a comprehensive exploration of the fundamental principles of electricity and magnetism. This course is designed to help all students be successful in learning the core concepts of electricity and magnetism, and how they can be applied to real world technologies like electronics, motors, and infrastructure. Through a combination of theoretical instruction and experiments, students will build a robust foundation in electricity and magnetism, preparing them for a career as a physics teacher. This course emphasizes critical thinking, problem-solving, and the practical application of scientific principles, equipping students with the knowledge and skills necessary for success in the classroom.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together",
+            "The learner applies principles of electric circuits including voltage, current, and various combinations of resistors and capacitors.",
+            "The learner describes magnetic fields and their effects, as well as the forces acting on moving charged particles in magnetic fields and electromagnetic induction.",
+            "The learner describes the principles of electric phenomena, including electric charges, electric forces, and electric fields."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Astrophysics with Lab",
+          "description": "Explore the vast and fascinating realm of astrophysics with a hands-on approach to learning about celestial objects, the formation of the universe, and the theories that explain their behavior. Through interactive virtual labs and engaging multimedia resources, you will delve into the properties of stars, planets, galaxies, black holes, and the fundamental forces that govern their motion. Analyze cutting-edge theories of general relativity, dark matter, and dark energy while developing critical analytical skills to interpret astronomical data. This course offers a comprehensive understanding of the universe and prepares you to apply astrophysical concepts in real-world contexts.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the theory of general relativity to orbit analysis and gravitational pull.",
+            "The learner analyzes variables that interact with celestial objects in the universe.",
+            "The learner analyzes various properties of celestial objects and their contribution to the formation of the universe."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Waves, Acoustics, and Sound",
+          "description": "Waves, Acoustics, and Sound provides a comprehensive exploration of fundamental wave properties and their interactions with various media. Designed for learners preparing for roles in science education, it delves into the core concepts of wave behavior, including wave characteristics, factors affecting wave propagation, and the effects of interference. Through detailed lessons on wave properties, interactions, and changes in wave behavior, learners will gain the skills needed to analyze and predict wave phenomena. The course emphasizes practical applications, employing interactive simulations and real-world examples to enhance understanding and prepare learners for effective teaching and application of wave concepts in educational settings.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes factors that affect waves, including interactions with different types of waves.",
+            "The learner analyzes how properties of standing waves, sound waves, and their propagation relate to musical instruments and acoustics.",
+            "The learner describes the fundamental properties of waves."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Secondary Physics Curriculum",
+          "description": "Secondary Physics Curriculum. This course offers a comprehensive review for high school physics teachers preparing for the Praxis exam. Explore major scientific discoveries, key engineering innovations, and their societal impacts. Understand ethical issues in scientific research and the principles of effective science communication. Delve into different forms of energy, laws of thermodynamics, and the role of energy and matter in the universe. Study Coulomb's Law, electric circuits, and electromagnetism. Learn how to integrate wave properties, sound waves, and the electromagnetic spectrum into your teaching practice. As this course is focused on Praxis prep, content is conceptual and algebra-based.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the impact of science and engineering on society, including investigation methods, technological advancements, and environmental and societal problems.",
+            "The learner analyzes the relationship between energy and matter using principles of forces and motion.",
+            "The learner analyzes waves, electromagnetic phenomena, and their interactions."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": [
+            "Praxis exam.",
+            "aws of",
+            "Praxis prep,"
+          ]
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": []
+}

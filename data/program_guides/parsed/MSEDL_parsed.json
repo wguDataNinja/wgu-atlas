@@ -1,0 +1,254 @@
+{
+  "program_code": "MSEDL",
+  "version": "202404",
+  "pub_date": "12/12/23",
+  "page_count": 13,
+  "degree_title": "Master of Science, Educational Leadership",
+  "program_description": "The Master of Science in Educational Leadership is a competencybased degree program that prepares qualified K-12 educators to become state-licensed school principals. The foundation of the program's philosophy is to create innovative instructional leaders for today's schools. The program is aligned to the NELP, SPA, and PSEL standards. The candidate learns contemporary theories while engaging in practices related to leading in 21st century schools, applying new learning at local practicum sites. Graduates of this program enter the field having demonstrated competencies in leadership practices and ethics, school law, exceptional child services, leading in inclusive schools with diverse populations, instructional leadership, human resource leadership, school financial management, systems and operations management, strategic planning, data literacy, and educational inquiry. The candidate is guided through the program by qualified program mentors, course instructors, and school leaders. The cumulative program activity consists of a capstone action research project that is conducted in the K-12 school setting.",
+  "standard_path": [
+    {
+      "title": "Leadership Foundations and Ethics",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "School Law",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Leading Inclusive Schools",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Data Literacy and Evidence-Based Practices",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Cultural Competency and Social-Emotional Learning",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Leadership of Curriculum Design and Instruction",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "People and Talent in Educational Leadership",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Practicum in Educational Leadership - Focus on Professional Practices",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "School Financial Leadership",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Systems Management and School Operations",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Practicum in Educational Leadership - Focus on Instruction and Operations",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "Educational Inquiry",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "Educational Leadership Capstone",
+      "cus": 3,
+      "term": 4
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Educational Leadership",
+      "courses": [
+        {
+          "title": "Leadership Foundations and Ethics",
+          "description": "Leadership Foundations and Ethics presents candidates with a variety of leadership theories and strategies used by PK–12 educational leaders to develop, sustain, and evaluate a coherent system of academic and social supports that meet the full range of students' needs. Foundational knowledge addresses the importance of developing mission, vision, and core values in collaboration with faculty, staff, and the school community to advocate for student success. The course also covers communication strategies, interpersonal skills, and using data to build community, influence school culture, and manage change for continuous improvement. In addition, candidates are introduced to the significance of following professional ethical codes and the importance of modeling and advocating ethical behavior with all stakeholders.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate evaluates strategies for establishing and sustaining an inclusive culture for internal and external stakeholders.",
+            "The graduate evaluates professional leadership practices to promote organizational improvement and success of students, teachers, staff, and leaders.",
+            "The graduate evaluates strategies for change management with internal and external stakeholders to promote school success.",
+            "The graduate develops a personal ethics statement that incorporates essential leadership values (e.g., democracy, community, individual freedom, responsibility, equity, social justice, and diversity) for an inclusive and equitable school community."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "School Law",
+          "description": "School Law prepares candidates to understand the appropriate application of laws, rights, policies, and regulations to promote student success. The course emphasizes the importance of understanding the history of and relationship between federal and state laws, legal decisions, local education policies, and practices at the local school level to ensure compliance. The course further focuses on understanding the legal rights and protections provided for all students, including those with disabilities, as well as school staff. It also addresses curriculum and instruction that help stakeholders understand the possible effects these rights may have on administrative decisions. Candidates are also provided the opportunity to demonstrate their capability to evaluate legal consequences of administrative decisions.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate explains how federal law, state law, and case law has impacted American schooling since the 1800s.",
+            "The graduate applies federal law, state law, and case law in decisions related to matters of race, religion, and instruction in public education.",
+            "The graduate applies federal law, state law, case law, and local school policies to protect students and their rights.",
+            "The graduate applies federal law, state law, and case law to ensure the rights and protections of teachers in an educational setting.",
+            "The graduate applies federal law to protect the rights of students with disabilities in an educational setting."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Leadership of Curriculum Design and Instruction",
+          "description": "Leadership of Curriculum Design and Instruction prepares candidates to evaluate and implement curricular programs and instructional methods observed at the school level. Candidates focus on the knowledge and skills needed to develop, align, and implement cohesive systems of curriculum, instruction, and assessment. Importance is placed on responding to student needs, embodying high expectations for student learning, aligning with academic standards within and across grade levels, and promoting students' academic success and social and emotional well-being. This course also covers the selection and use of appropriate technologies to monitor student progress and improve instruction support for assessment, data collection, management, and analysis. Candidates are prepared to build a professional culture of trust and collaboration to ensure they are able to work with school personnel in creating curricular programs and instructional methods that are engaging and challenging and relevant to student needs, experiences, and interests. This course is designed to be taken after successful completion of D017: School Law.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates curricula in order to make recommendations for improvements that will address academic and non-academic gaps.",
+            "The learner creates a plan for curriculum implementation to ensure academic program quality and alignment.",
+            "The learner evaluates academic and non-academic instructional practices and services in order to make recommendations to support equitable access to learning for each student.",
+            "The learner uses data from formative and summative assessments to make recommendations to improve instruction and promote student learning and well-being."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "People and Talent in Educational Leadership",
+          "description": "People and Talent in Educational Leadership prepares candidates to understand and implement practices used to recruit, hire, and prepare school personnel to provide students with an optimal learning environment. Various school professional development practices, such as professional learning communities, collaborative learning communities, beginning teacher induction, and mentor programs, will be covered. Additionally the course covers methods to evaluate school personnel appropriately based on data-driven decisions; providing realistic and actionable feedback to school personnel to continuously drive improvement; engaging all school personnel in the use and evaluation of competing school-wide initiatives; creating and sustaining a professional culture of engagement and commitment by developing workplace conditions that promote employee development, well-being, and professional growth; and continuously supporting school personnel to improve their instructional practices through ongoing professional development. The candidate will also reflect on leadership standards in order to develop a personal professional growth plan. A prerequisite for this course is D017: School Law.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate will apply policies and procedures that reflect best practices for determining the personnel needs of the school and acquiring appropriate people and talent to address the identified needs.",
+            "The graduate evaluates school and individual performance data to create professional growth plans for staff and personal development that promote leadership, well-being, and professional growth to support a school's mission, vision, and values.",
+            "The graduate evaluates faculty and staff performance to create a productive work environment that supports a school’s mission, vision, and values, and adheres to human resource law, policy, and ethical practice.",
+            "The graduate applies best practices for the discipline and end of employment of school staff that adhere to laws, policies, and appropriate labor relations."
+          ],
+          "prerequisite_mentions": [
+            "for this course is D017: School Law"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Practicum in Educational Leadership - Focus on Professional Practices",
+          "description": "Practicum in Educational Leadership - Focus on Professional Practices provides candidates with an authentic, real-world work experience as an educational leader in a K–12 school environment. This is the first of a two-part experience designed to take place under the leadership and supervision of a practicing school principal or assistant principal at an approved practicum school site (K–12). This course includes an emphasis on the application of knowledge and skills to areas directly or indirectly affecting students. Collaboration within the school and local community is a focal point for this course. The course also includes the completion of assigned administrative duties in a K–12 setting, as defined by the candidate's state of residence, under the supervision of the cooperating administrator of the candidate's approved practicum site. Prior to enrolling in this practicum course, the candidate must complete a minimum of 18 CUs.",
+          "competency_bullets": [
+            "The graduate evaluates professional practices to support the school’s mission, promote professional norms, sustain cultural responsiveness, and encourage community collaboration."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "School Financial Leadership",
+          "description": "School Financial Leadership focuses on financial policies, practices, and issues connected to PK–12 school operations. The course describes various sources of school funding, the impact these sources can have on managing school budgets, and the challenges connected to finances that are often encountered by school leaders to ensure equitable financial support for all students. Candidates learn how to analyze different types of school budgets and understand the principal's role in the budgetary process to ensure alignment to the school's mission, vision, and values. This course also identifies and explains various types of commonly used accounting regulations, rules, and professional ethical principles used to create, maintain, and evaluate school budgets to ensure the equitable and ethical use of financial resources. This course is designed to be taken after successful completion of D017: School Law.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies knowledge of school funding sources to support equitable distribution of school funds when managing school resources.",
+            "The graduate analyzes the budgetary processes to ensure alignment with the school’s mission, vision, and core values.",
+            "The graduate analyzes school accounting systems to ensure legal and ethical use of financial resources."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Systems Management and School Operations",
+          "description": "Systems management and school operations instruct candidates on the operational aspects of school leadership that are essential to developing, monitoring, and evaluating school management, school systems, and services that address and support the needs of students and school personnel. Topics presented in this course include systems thinking; development, implementation, and evaluation of data-based strategic planning; and school improvement processes. Candidates will evaluate the use of appropriate operational technology and the development of communications systems that provide actionable information to internal and external stakeholders for use in classroom and school improvement and community engagement. Each of these topics emphasizes the importance of efficiently and effectively managing school resources to build, maintain, and evaluate a cohesive system of academic and organizational supports, services, extracurricular activities, and accommodations to meet the full range of needs for each student. Prerequisites for this course: Leadership Foundations and Ethics and School Law.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies principles of systems thinking to organizational management in preparation for leading a social system.",
+            "The graduate applies principles of strategic planning in a school improvement plan to address an area of academic need within a school setting.",
+            "The graduate integrates operational systems to create a school environment conducive to learning."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Practicum in Educational Leadership - Focus on Instruction and Operations",
+          "description": "Practicum in Educational Leadership - Focus on Instruction and Operations provides candidates with an authentic, realworld work experience as an educational leader in a K–12 school environment. This is the second of a two-part experience designed to take place under the leadership and supervision of a practicing school principal or assistant principal at an approved practicum school site (K–12). This course includes an emphasis on the application of knowledge and skills to areas affecting school operations and school personnel. The course also includes the completion of assigned administrative duties in a K–12 setting, as defined by the candidate's state of residence, under the supervision of the cooperating administrator of the candidate's approved practicum site. Prior to enrolling in this practicum course, the candidate must complete a minimum of 18 CUs.",
+          "competency_bullets": [
+            "The graduate develops leadership strategies to maximize the effectiveness of instructional, operational, and human capital capacities."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Educational Leadership Capstone",
+          "description": "Educational Leadership Capstone serves as the culminating experience of this degree program, uniting content area knowledge with the execution of a problem-based learning project. Under the guidance of program faculty, candidates will apply their data literacy and research skills authentically and to topics appropriate to the candidate's degree program and future career goals. Projects will include action research or program evaluation and the qualitative or quantitative research methods necessitated by the project's purpose. Prerequisites include Data Literacy and Educational Inquiry, as well as all content area courses and field experiences prescribed in one's area of study. This course is designed to be taken after successful completion of all courses with the exception of Educational Inquiry, which may be taken concurrently.",
+          "competency_bullets": [
+            "The graduate produces a research proposal that satisfies laws and policies, codes of ethics, and professional standards appropriate to the chosen field of specialization as dictated by IRB after identifying a research topic intended to advance the learning of P–12 students.",
+            "The graduate writes an introduction, a scholarly literature review, and research methodology chapters for the capstone project that aligns with the approved research question or questions.",
+            "The graduate writes the results, the conclusion, and the recommendation chapters that align with the approved research question or questions after collecting and analyzing the data for the research study.",
+            "The graduate presents the completed research study paper supported by a multimedia and oral presentation, contributing to the body of knowledge in the chosen field of specialization."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Education",
+      "courses": [
+        {
+          "title": "Leading Inclusive Schools",
+          "description": "Leading Inclusive Schools covers a variety of topics that directly affect students who have been assessed and determined to need additional support or services to ensure their academic success and well-being. The course prepares candidates to understand and comply with applicable laws, rights, policies, and regulations as appropriate to address matters of equity, fairness, and student marginalization based on culture and language, disability, or giftedness. These include types of special education classifications and their significance, working with English learners (ELs), working with gifted and talented students, and using Multi-Tiered System of Supports (MTSS) frameworks to ensure optimum learning environments for diverse learners. This course will guide candidates in building a strong repertoire of skills and knowledge related to exceptional students. It will help them ensure that each student has equitable access to effective teachers; learning opportunities; academic, social, and behavioral support; and other resources necessary for success. This course is designed to be taken after successful completion of the School Law course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate describes how instructional strategies and a Multi-Tiered System of Supports (MTSS) framework help ensure that instruction and interventions align to the individual learning needs of students in a variety of placements.",
+            "The graduate describes how Section 504 processes adhere to federal laws to enable students with impairments to receive appropriate accommodations and services to succeed academically in the least restrictive environment (LRE).",
+            "The graduate explains how special education processes adhere to federal laws to enable students with disabilities to receive appropriate services and supports to succeed academically in the least restrictive environment (LRE).",
+            "The graduate analyzes how EL processes adhere to federal and state laws to enable students who are learning English to receive appropriate instruction, accommodations, and services to succeed academically.",
+            "The graduate implements appropriate curriculum and instruction that enables students with exceptionalities to achieve success academically and achieve their potential."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Graduate Core",
+      "courses": [
+        {
+          "title": "Data Literacy and Evidence-Based Practices",
+          "description": "Data Literacy and Evidence-Based Practices focuses on the development of data literacy skills educators need to improve the learning and development opportunities of K–12 students. Candidates will practice identifying educational problems and data types, generating data, analyzing data, making inferences and drawing conclusions, and creating action plans within their educational settings. Candidates will also learn best practices for data literacy, including continuous improvement planning, approaches to professional learning communities, and instructional decision-making processes. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies research sources and data types useful in the graduate's field of specialization to improve learning and development opportunities for all P–12 students.",
+            "The graduate applies data literacy and analysis skills appropriate to the graduate’s field of specialization to enhance learning and development opportunities for all P–12 students.",
+            "The graduate recommends evidence-based practices based on emerging trends in data use appropriate to the field of specialization."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Cultural Competency and Social-Emotional Learning",
+          "description": "Cultural Competency and Social-Emotional Learning focuses on empowering educational leaders with the knowledge and skills necessary to foster cultural competency, deepen their understanding of diverse learner populations, and apply culturally responsive pedagogy. This course places a strong emphasis on promoting social justice, equity, and inclusivity within educational contexts. Students in this course will engage in immersive learning experiences aimed at equipping them with the capacity to lead social-emotional learning initiatives that cater to the social and emotional needs of all learners. The course also empowers students with advocacy strategies to influence positive change in local and global educational environments, ensuring that educational leaders are well prepared to navigate the challenges and opportunities of today's diverse educational landscape. This course is designed to be taken after successful completion of D018: Leading Inclusive Schools.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates a personal leadership philosophy that draws from a critical reflection on personal assumptions, biases, and beliefs.",
+            "The learner recommends appropriate instructional and leadership strategies to promote equity and positive change in the school setting.",
+            "The learner analyzes the role of SEL competencies and character development in promoting a positive school environment that supports student success.",
+            "The learner communicates effectively to build an inclusive school community that facilitates student success."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Educational Inquiry",
+          "description": "Educational Inquiry focuses on practical problem solving. This course teaches candidates to use scholarly literature to inform their own practice. It also teaches candidates to engage in their own action research processes, which empowers educators to recognize opportunities for improvement and to systematically implement and evaluate changes. This course prepares candidates to conduct research for the capstone. Prerequisites for this course: Data Literacy and Evidence-Based Practices.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies the conceptual framework of educational inquiry that aligns with ethical principles adhering to all relevant laws and policies appropriate to the area of study.",
+            "The graduate selects appropriate uses for and applications of quantitative, qualitative, and mixed methods within an action research approach in the area of study appropriate to the content area specialization.",
+            "The graduate produces a research proposal that demonstrates appropriate use of research methodologies to enhance learning and development opportunities in an educational setting."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": []
+}

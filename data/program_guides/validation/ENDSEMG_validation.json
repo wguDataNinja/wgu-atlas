@@ -1,0 +1,32 @@
+{
+  "program_code": "ENDSEMG",
+  "degree_title": "Endorsement Preparation Program, Middle Grades Science",
+  "version": "202509",
+  "pub_date": "6/17/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 194,
+    "Areas of Study": 228,
+    "Accessibility": 275
+  },
+  "standard_path_row_count": 2,
+  "aos_group_count": 1,
+  "aos_course_count": 2,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 2,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

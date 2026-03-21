@@ -1,0 +1,306 @@
+{
+  "program_code": "MSNUED",
+  "version": "202003",
+  "pub_date": "8/4/23",
+  "page_count": 13,
+  "degree_title": "Master of Science, Nursing - Education (BSN to MSN)",
+  "program_description": "The Master of Science in Nursing, Education degree is a competencybased program that prepares graduates to be academic nurse educators in various educational and practice settings. Graduates are prepared to lead collaborative academic-practice partnerships to strengthen nursing practice by developing nurses who will lead and advance health in diverse populations. As academic nurse educators, graduates demonstrate a professional presence by helping nursing students acquire the knowledge, skills and competencies to work effectively in inter-professional teams across a variety of academic and healthcare settings. The WGU Master of Science in Nursing Education content is based on national standards and evidence-based research related to effective teaching, learning, curriculum design and development and nursing role development. It provides the knowledge and skills that enable educators to teach effectively in clinical and lab, online, hybrid, virtual and classroom learning environments. The content, resources, activities, and assessments in this program are consistent with recommendations from American Association of Colleges of Nursing (AACN), The Essentials of Master's Education in Nursing (2011) and the National League for Nursing (NLN), Scope of Practice for Academic Nurse Educators (2012). The hallmarks of our program include: (a) authentic learning experiences, b) evidence-based course preparation, and c) self-paced learning in an asynchronous online learning environment. Developing context-based curriculum, objectives, and learning materials are an essential aspect of an academic educator role. MSN Education graduates will experience theoretical applications and practical perspectives regarding learning styles, the development and socialization of learners, strategies to facilitate learning, and contemporary design and development of highquality courses and assessments.",
+  "standard_path": [
+    {
+      "title": "Professional Presence and Influence",
+      "cus": 2,
+      "term": 1
+    },
+    {
+      "title": "Essentials of Advanced Nursing Roles and Interprofessional Practice",
+      "cus": 2,
+      "term": 1
+    },
+    {
+      "title": "Quality Outcomes in a Culture of Value-Based Nursing Care",
+      "cus": 2,
+      "term": 1
+    },
+    {
+      "title": "Informatics for Transforming Nursing Care",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Leadership and Management in Complex Healthcare Systems",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Advancing Evidence-Based Innovation in Nursing Practice",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Advanced Pathopharmacological Foundations",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Advanced Health Assessment for Patients and Populations",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Evolving Roles of Nurse Educators in Diverse Environments",
+      "cus": 2,
+      "term": 3
+    },
+    {
+      "title": "Facilitation of Context-Based Student-Centered Learning",
+      "cus": 2,
+      "term": 3
+    },
+    {
+      "title": "Contemporary Curriculum Design and Development in Nursing Education",
+      "cus": 2,
+      "term": 3
+    },
+    {
+      "title": "Assessment and Evaluation Strategies for Measuring Student Learning",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "Emerging Trends and Challenges in 21st Century Nursing Education",
+      "cus": 2,
+      "term": 4
+    },
+    {
+      "title": "Nursing Education Field Experience",
+      "cus": 2,
+      "term": 4
+    },
+    {
+      "title": "Nursing Education Capstone",
+      "cus": 2,
+      "term": 4
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "MSN Core",
+      "courses": [
+        {
+          "title": "Professional Presence and Influence",
+          "description": "Professional Presence and Influence is a masters-level course designed to guide students towards an enhanced state of presence, where therapeutic relationships are built between nurse and patient. Students will learn techniques for self-care practices that result in enhanced mental and physical wellbeing and that ensure ethically-generated patient care. Presence is an intrapersonal and interpersonal quality that allows the nurse to relate to others and to be aware of the world around them. The characteristics of presence, which include holism, intimacy, sensitivity and adaptability, create a heightened sense of awareness that fosters therapeutic relationships between the nurse and patient. Developing a mindful, authentic presence is central to health and spiritual practices in several cultures and a major element of leadership. Students will intentionally develop a focused mindfulness practice that will influence patient outcomes and lead to conditions that create joy in the workplace.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner promotes a healthy work environment by demonstrating a professional presence that includes selfawareness characteristics.",
+            "The learner develops solutions and strategies that build positive relationships and promote mindfulness in the workplace.",
+            "The learner recommends social communication strategies and technologies to promote a sense of caring and belonging.",
+            "The learner applies the principles of improvement science to solve the problem of hostility in the workplace and initiate organizational change designed to promote health and joy in the workplace.",
+            "The learner implements the principles of academic writing to produce clear, concise, and evidence-based written communications."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Essentials of Advanced Nursing Roles and Interprofessional Practice",
+          "description": "Essentials of Advanced Nursing Roles and Interprofessional Practice explores essential characteristics of the advanced professional nurse in the role of leader, educator, practitioner, or informatics specialist. In this course, students will apply evidence-based strategies to facilitate interprofessional collaboration on teams. Students will explore the role of nurses in advocating for change at the bedside, as well as leading teams to advocate for health policy reform. Students will gather and analyze data to identify patients and populations at risk and recommend policy change to improve health outcomes in the community.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner recommends strategies for practicing lifelong learning skills to encourage the continuous improvement essential for practicing as an advanced nursing professional",
+            "The learner recommends legal and regulatory policies that advocate for improved health outcomes in patients and populations.",
+            "The learner analyzes the roles and interaction of interprofessional team members to assess the resulting impact on healthcare outcomes.",
+            "The learner analyzes organizational performance data to guide recommendations for improving healthcare outcomes and disseminating results to a professional community."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Quality Outcomes in a Culture of Value-Based Nursing Care",
+          "description": "Quality Outcomes in a Culture of Value-Based Nursing Care incorporates current standards of quality and safety within the context of value-based care. In a value-based healthcare system, the benefits are derived from measuring health outcomes against the cost of delivering the outcomes. These benefits are then extended to patients, providers, payers, suppliers, and society as a whole. This course introduces new healthcare delivery models, which stress a team-oriented approach to patient care and sharing of patient data so that care is coordinated, and outcomes can be measured easily. Emphasis is placed on performance and quality improvement methods that underlie value-based nursing care. The nurse in advanced practice today must exemplify the standards of quality and safety and be prepared to lead the delivery of value-based patient-centered care.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the culture of continuous quality improvement and the provision of value-based care to optimize patient outcomes using a systems-thinking analytic approach.",
+            "The learner develops a systematic process that incorporates quality measures and benchmarks to assess organizational strengths and vulnerabilities.",
+            "The learner integrates performance and process improvement methodologies to develop solutions for identified quality and safety gaps in the practice setting.",
+            "The learner establishes measurable metrics and processes to evaluate the effectiveness of value-based care strategies and initiatives."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Informatics for Transforming Nursing Care",
+          "description": "Informatics for Transforming Nursing Care integrates nursing science with multiple information and analytical sciences to identify, define, manage, and communicate data, information, knowledge, and wisdom in nursing practice. Students will acquire knowledge and skills to apply informatics concepts, communications, and data that are critical to facilitating interprofessional data-driven decision-making. It is designed to build competence in the use of patient- and populationbased applications that inform and support the transformation of nursing care delivery toward a future of value-based quality nursing care that improves health outcomes. This course aligns theoretical concepts with practical applications of informatics and is consistent with the functional areas and responsibilities of informatics nurses as defined by the American Nurses Association Scope and Standards for nursing informatics.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the theoretical and conceptual underpinnings of the nursing informatics scope and standards to improve patient experience and health outcomes.",
+            "The learner determines how technology and informatics can be optimized to improve the patient experience and lower healthcare costs.",
+            "The learner analyzes core administrative systems to support the management of safe, cost-effective, and high-quality healthcare.",
+            "The learner analyzes data from population-based systems to mitigate public health threats and decrease incidence of disease.",
+            "The learner designs data collection tools and processes to capture, analyze, and report health indicators and outcomes.",
+            "The learner refines data to visually represent, forecast, monitor, and report progress in meeting healthcare outcomes."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Leadership and Management in Complex Healthcare Systems",
+          "description": "Leadership and Management in Complex Healthcare Systems prepares graduate nurses to be thoughtful strategists and informed decision-makers who serve as strong leaders in high-performing healthcare systems. Students develop competencies for managing diverse teams in complex systems, monitoring and measuring organizational performance, allocating financial and human resources, and leading change towards a transformed healthcare system. Additionally, students acquire the knowledge and skills to become full partners with other healthcare professionals by demonstrating nurse contributions toward high-quality care to patients and populations, while working collaboratively with interprofessional teams. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner determines the effective leadership skills and approaches required to navigate a diverse staff in a changing healthcare environment.",
+            "The learner creates communication and change management plans to foster a culture of innovation.",
+            "The learner analyzes data to measure progress in meeting organizational performance indicators in complex healthcare systems.",
+            "The learner determines system-level factors necessary to support and empower interprofessional teams.",
+            "The learner validates key performance indicators to measure the impact of nursing care on patient and population outcomes.",
+            "The learner proposes a strategic business plan to start a nurse-managed practice."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Advancing Evidence-Based Innovation in Nursing Practice",
+          "description": "Advancing Evidence-Based Innovation in Nursing Practice introduces students to the dynamic union of healthcare innovation and evidence. Core competencies and behaviors required to be a nurse innovator are discussed. Strategies for measuring innovation at various system levels are presented, as well as techniques for synthesizing and disseminating evidence to advance innovation in healthcare. The skills needed to appraise the quality of diverse sources of evidence are presented within the framework of evidence-based practice. This course focuses on identifying new and emerging sources of evidence that can inform, translate, and scale the complexity of leading innovation in healthcare organizations. Students will experience building communities of practice for collaboratively developing innovative practices and policies designed to improve the health of populations and enhance the patient experience of care.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes evidence from research, clinical expertise, and patient experiences to contribute to the innovation of healthcare practices and policies.",
+            "The learner incorporates research strategies and processes to search and review relevant evidence from credible sources.",
+            "The learner evaluates innovative best practices that support outcomes-driven healthcare practices.",
+            "The learner incorporates new evidence from big data and emerging technologies to design innovative practices.",
+            "The learner applies the theory of disruption when developing innovative strategies to improve healthcare outcomes.",
+            "The learner synthesizes credible sources of evidence to propose innovative patient care practice guidelines, organizational goals and strategies, and population-based care policies."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Advanced Pathopharmacological Foundations",
+          "description": "Advanced Pathopharmacological Foundations provides advanced practice nurses foundational knowledge in the many pathologies encountered in practice today. Advancing from the cellular to the body system level, this course examines the pathologies of common conditions seen in healthcare today. Consideration is also given to the human affective response to alterations in health. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner assesses alterations in cellular and genetic composition to determine the body's self-defense mechanisms to maintain homeostasis.",
+            "The learner analyzes the etiology and pathophysiological alterations associated with common conditions across the lifespan to determine appropriate treatment plans.",
+            "The learner analyzes pathopharmacological concepts and mechanisms of common conditions to guide clinical decision making.",
+            "The learner assesses developmental, racial, ethnic, and cultural manifestations of pathopharmacology to determine their influence on patient outcomes.",
+            "The learner distinguishes between relevant and irrelevant assessment findings to minimize pathologies and manage pharmacotherapeutics to promote optimal patient outcomes.",
+            "The learner traces human responses to disease processes across the lifespan to identify holistic treatment options."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Advanced Health Assessment for Patients and Populations",
+          "description": "Advanced Health Assessment of Patients and Populations builds on prior physical health assessment knowledge and skills acquired during undergraduate studies by focusing on the advanced assessment of biopsychosocial and sociocultural contexts in patients and populations across the life span. This course emphasizes the use of a comprehensive health promotion, disease prevention, and health restoration model to address health concerns in patients and communities. Students will acquire advanced assessment knowledge and skills for clinical interviewing, focused history taking, critical diagnostic reasoning, and clinical decision-making using a problem-focused framework that integrates authentic experiences with practical knowledge of health patterns in patients and communities. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner assesses the physical, biopsychosocial, cultural, spiritual, and environmental elements to improve health in patients and populations.",
+            "The learner distinguishes comprehensive assessment strategies appropriate to evaluating the health of diverse patients across the life span.",
+            "The learner analyzes assessment data to create health promotion plans for patients and communities.",
+            "The learner performs a focused physical examination to identify applicable differential diagnoses based on evidence from the collected data.",
+            "The learner analyzes epidemiologic methods to assess the health of communities and populations.",
+            "The learner develops strategies for disease prevention and outbreak control interventions."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Nursing Education Specialty",
+      "courses": [
+        {
+          "title": "Evolving Roles of Nurse Educators in Diverse Environments",
+          "description": "Evolving Roles of Nurse Educators in Diverse Environments examines the multidimensional roles of a contemporary academic nurse educator. This course explores the roles and responsibilities of the nurse educator as a teacher, leader, change agent, and curriculum innovator. Students will also examine the importance of personal and professional development by developing strategies that promote academic integrity, cultural sensitivity, social justice, and ethical/legal values in diverse environments. The course emphasizes the responsibility of nurse educators to utilize communication, collaboration, and leadership in mitigating challenges in academic nursing education.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates the internal and external forces that promote academic integrity, cultural sensitivity, social justice, and ethical/legal values.",
+            "The learner facilitates effective communication and collaboration to support academic-practice partnerships.",
+            "The learner develops a vision for assuming the role of an academic nurse educator through interprofessional collaboration, self-reflection, and personal goal setting.",
+            "The learner synthesizes contemporary nursing sources to inform changes in nursing education and practice.",
+            "The learner examines the social, economic, pollical, and organizational forces impacting the nurse educator role."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Facilitation of Context-Based Student-Centered Learning",
+          "description": "Facilitation of Context-Based Student-Centered Learning explores how the nurse educator will incorporate authentic experiences into the creation of course plans that facilitate scholarly inquiry, collaboration, and knowledge acquisition in varied educational environments. Emphasis is placed on innovative, transformational, and experiential teaching and learning strategies to facilitate student development of professional, context-based nursing principles, knowledge, skills, and behavior. Evolving Roles of Nurse Educators in Diverse Environments is a prerequisite to this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates learning environments that facilitate the achievement of student-centered outcomes.",
+            "The learner synthesizes information from theoretical, clinical, and professional organizations to support unique students needs and diverse learning styles in solving practice-based problems.",
+            "The learner creates a student-centered learning environment that supports collaboration and teamwork in nursing education.",
+            "The learner designs innovative, transformational, and experiential teaching and learning strategies to facilitate student development of professional behavior and professional context-based nursing principles, knowledge, and skills."
+          ],
+          "prerequisite_mentions": [
+            "to this course"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Contemporary Curriculum Design and Development in Nursing Education",
+          "description": "Contemporary Curriculum Design and Development in Nursing Education analyzes the concepts of creating curriculum based on national nursing accreditation standards and instructional design best practices. Nurse educator students will create course content that supports learning in diverse, real-world environments where nurse educators facilitate learning. Instructional design strategies for delivering course content will reflect the mission of academic institution programs, contemporary trends in nursing education, and the needs of key stakeholders in nursing education and practice. Facilitation of Context-Based Student-Centered Learning is a prerequisite to this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates an environment that is intellectually stimulating, challenging, and encourages student development of contemporary nursing knowledge, skills, and competencies.",
+            "The learner incorporates instructional design models, principles, theories, and continuous improvement methods in the development of high-quality course design in a nursing education environment to promote effective and efficient patient care.",
+            "The learner develops scenario-based learning approaches to support student skill development and encourage reflective practice.",
+            "The learner develops course elements based on contemporary educational principles and evidence-based research that facilitate student-centered learning and achievement of learning outcomes."
+          ],
+          "prerequisite_mentions": [
+            "to this course"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Assessment and Evaluation Strategies for Measuring Student Learning",
+          "description": "Assessment and Evaluation Strategies for Measuring Student Learning addresses the academic nurse educator's role in the design, development, implementation, and evaluation of student achievement outcomes in nursing education programs. This course requires students to integrate best practices from nursing theory and theories of learning to assess student learning in diverse educational settings. Topics include validity, reliability, and practicality of assessments, interpreting item difficulty and discrimination test results, and analyzing student achievement and learning outcomes data. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner validates the theories, concepts, and principles used to assess, evaluate, and measure student learning in various educational settings.",
+            "The learner proposes assessment strategies and implementation plans based on the principles of effective assessment design.",
+            "The learner develops performance-based and objective assessments useful for measuring the knowledge and skills applicable to real-world scenarios.",
+            "The learner evaluates the effectiveness of performance and objective assessments by analyzing student achievement and learning outcomes data.",
+            "The learner recommends nurse educator actions based on student performance measures at the course level."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Emerging Trends and Challenges in 21st Century Nursing Education",
+          "description": "Emerging Trends and Challenges in 21st Century Nursing Education analyzes the emerging trends, technologies, and challenges that academic nurse educators encounter when facilitating learning in diverse healthcare settings. Students will focus on the necessity of interprofessional collaboration and the barriers and facilitators to overcoming the challenges associated with teaching and learning in nursing. Topics include the impact of emerging technology, challenges in nursing practice, and the role of the academic nurse educator as a scholar and a nursing education policy advocate. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner recognizes the impact of trends, significant challenges, and developments in educational technology in higher education in the 21st century.",
+            "The learner proposes strategies for academic nursing education programs to address the current and future challenges faced by nursing practice.",
+            "The learner collaborates with nursing leaders in diverse healthcare settings to initiate change through policy efficacy that strengthens nursing practice and advances the future of healthcare."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Nursing Education Field Experience",
+          "description": "The Nursing Education Field Experience provides the academic nurse educator student an opportunity to work collaboratively with academic mentors and interprofessional stakeholders to analyze the need-gap for a curriculum change, innovation, or improvement. Based on the identified need-gap, the graduate student will design and develop a course that reflects evidence-based instructional design and assessment principles and practices. This course prepares students for the role of an Academic Nurse Educator, as an agent for change and quality improvement in nursing education.",
+          "competency_bullets": [
+            "The graduate creates an environment in diverse academic settings that facilitates student learning and the achievement of desired cognitive, affective, and psychomotor outcomes.",
+            "The graduate synthesizes contemporary theories, concepts, and principles in the development of assessments for student learning outcomes in various educational settings.",
+            "The graduate designs learning objectives and curricula based on programmatic outcomes and utilization of evidence for best practice.",
+            "The graduate creates a plan to pursue professional development related to the academic nurse educator role.",
+            "The graduate creates a preferred future for nursing education and nursing practice by functioning as a change agent and leader."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Nursing Education Capstone",
+          "description": "The Nursing Education Capstone course provides the Nurse Educator student an opportunity to apply previous course work towards the completion of an evidence-based curriculum proposal project. During this course students will build on previous work during their Nursing Education Field Experience course by planning the implementation and evaluation phases of their proposed curriculum change, innovation or improvement. The capstone project represents a synthesis of competencies across the Masters Science of Nursing—Nursing Education degree program, which prepares them to lead, manage, and transform nursing education in diverse and complex settings. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information.",
+          "competency_bullets": [
+            "The learner integrates and synthesizes competencies from across the degree program and thereby demonstrates the ability to participate in and contribute value to the chosen professional field."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": []
+}

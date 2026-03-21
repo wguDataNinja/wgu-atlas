@@ -1,0 +1,55 @@
+{
+  "program_code": "ENDSEMG",
+  "version": "202509",
+  "pub_date": "6/17/2025",
+  "page_count": 0,
+  "degree_title": "Endorsement Preparation Program, Middle Grades Science",
+  "program_description": "Program Code: ENDSEMG Catalog Version: 202509 Published Date: 6/17/2025 The Middle Grades Endorsement is designed to equip Science educators with the skills and competencies necessary to teach middle school students. This endorsement program provides a focused pathway for candidates to meet state licensure requirements in middle grades education. Only individuals who hold a current professional license in secondary science are eligible for this endorsement. It includes online coursework that integrates educational theory, pedagogy, and content specialization relevant to middle school instruction. The curriculum emphasizes effective teaching strategies, assessment methods, and inclusive practices to ensure diverse learners are supported in the classroom. Candidates will progress through a structured series of experiences, starting with virtual simulations and video-based classroom observations. These experiences are followed by real-world clinical practice in middle school environments, where candidates engage in collaborative, hands-on teaching under the supervision of experienced educators. Upon completing all endorsement requirements, candidates will be positioned to be successful and effective middle-level educators.",
+  "standard_path": [
+    {
+      "title": "Middle Grades Methods",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Teaching in Middle School",
+      "cus": 3,
+      "term": null
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Secondary Education",
+      "courses": [
+        {
+          "title": "Middle Grades Methods",
+          "description": "Middle Grades Methods equips future educators with the skills needed to effectively teach students in middle grades. The course covers characteristics of middle school learners, instructional strategies, assessment strategies, classroom management, creating a positive learning environment, and lesson planning tailored to young adolescents' developmental needs. Students will learn to engage diverse learners, integrate technology, and apply culturally responsive teaching practices. Throughout the course, students will practice with pedagogical activities and demonstrate instructional skills, which will develop the ability to create dynamic and supportive middle-grade learning environments that promote both academic and social-emotional growth.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes how a middle school learning environment engages all students in a relevant content area and in the development of positive dispositions.",
+            "The learner leverages reflection to identify opportunities for professional growth in teaching middle school learners.",
+            "The learner plans evidence-based strategies to improve middle grades engagement and learning.",
+            "The learner proposes pedagogical and technology strategies for developing middle school students' meaningful learning in a discipline."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Teaching in Middle School",
+          "description": "Teaching in Middle School prepares students to effectively teach in middle school environments by exploring key roles and responsibilities of middle level educators. The course focuses on understanding and applying ethical standards, creating inclusive and culturally responsive learning environments, and utilizing family and community engagement to support diverse learners. Teaching in Middle School examines how to leverage technology and community resources to enhance teaching practices and foster collaboration. Through the analysis of teacher evaluation feedback and reflective practice, Teaching in Middle School provides strategies for continuous professional growth. By the end of the course, students will be equipped to create supportive, developmentally appropriate, and engaging middle school classrooms that promote academic, social, and emotional growth in learners.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the role of family and community engagement in middle schools for an inclusive and varied learning experience.",
+            "The learner evaluates roles and responsibilities of middle school educators.",
+            "The learner leverages teacher evaluation feedback to enhance teaching practices with a focus on fostering responsive learning environments in middle schools.",
+            "The learner reflects on how structures, organizations, and resources for middle schools foster responsive learning environments."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": []
+}

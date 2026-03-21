@@ -1,0 +1,32 @@
+{
+  "program_code": "MSNUNI",
+  "degree_title": "Master of Science, Nursing - Nursing Informatics (BSN to MSN)",
+  "version": "202003",
+  "pub_date": "8/4/23",
+  "page_count": 13,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 223,
+    "Areas of Study": 344,
+    "Accessibility": 659
+  },
+  "standard_path_row_count": 14,
+  "aos_group_count": 2,
+  "aos_course_count": 14,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 14,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

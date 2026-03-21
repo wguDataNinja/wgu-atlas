@@ -1,0 +1,41 @@
+{
+  "source_pdf_filename": "MSEDL.pdf",
+  "source_text_filename": "MSEDL.txt",
+  "inferred_program_code": "MSEDL",
+  "page_count": 13,
+  "version_strings": [
+    "202404"
+  ],
+  "publication_dates": [
+    "12/12/23"
+  ],
+  "has_standard_path": true,
+  "has_areas_of_study": true,
+  "has_capstone_section": false,
+  "has_course_descriptions": true,
+  "has_competency_bullets": true,
+  "has_term_structure": true,
+  "has_cu_values": true,
+  "has_cert_prep_mentions": false,
+  "has_prereq_mentions": true,
+  "standard_path_row_count": 13,
+  "competency_trigger_count": 13,
+  "competency_bullet_count": 54,
+  "cert_prep_mention_count": 0,
+  "prereq_mention_count": 1,
+  "detected_section_headings": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "inferred_course_groups": [
+    "Educational Leadership",
+    "Education",
+    "Graduate Core"
+  ],
+  "likely_guide_family": "education_grad",
+  "template_type": "partial",
+  "parseability_confidence": "high",
+  "warnings": [],
+  "irregularities": []
+}

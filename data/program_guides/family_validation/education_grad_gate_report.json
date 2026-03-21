@@ -1,0 +1,21 @@
+{
+  "report_type": "family_gate_report",
+  "family": "education_grad",
+  "date": "2026-03-21",
+  "family_size": 2,
+  "gate_guide": "MSEDL",
+  "gate_result": "PARTIAL_PASS",
+  "guides": [
+    {"code": "MSEDL", "degree_title": "Master of Science, Educational Leadership", "confidence": "HIGH", "sp_rows": 13, "aos_groups": 3, "aos_courses": 13, "anomalies": 0, "warnings": 0, "pages": 13, "version": "202404", "status": "ROLLOUT"},
+    {"code": "MEDETID", "degree_title": null, "confidence": "MEDIUM", "sp_rows": 32, "aos_groups": 4, "aos_courses": 9, "anomalies": null, "warnings": null, "pages": null, "version": null, "status": "DEFERRED_BUCKET2", "deferral_reason": "3 embedded SP sub-tables (combined + K-12 + Adult Learner); SP overcounted; AoS intact (4 groups, 9 courses)"}
+  ],
+  "high_confidence": 1,
+  "medium_confidence": 1,
+  "low_confidence": 0,
+  "rollout_notes": [
+    "MSEDL: clean parse, 13/13 reconciliation, 0 anomalies. Phase A Practicum flag was unfounded — Practicum is an ordinary course in AoS.",
+    "MEDETID: deferred to Bucket 2. Multi-path SP structure requires targeted fix before rollout."
+  ],
+  "parser_changes": [],
+  "rollout_decision": "PARTIAL — MSEDL usable downstream; MEDETID deferred to Bucket 2"
+}

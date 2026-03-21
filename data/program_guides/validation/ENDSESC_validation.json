@@ -1,0 +1,32 @@
+{
+  "program_code": "ENDSESC",
+  "degree_title": "Endorsement Preparation Program, Chemistry",
+  "version": "202509",
+  "pub_date": "6/17/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 188,
+    "Areas of Study": 242,
+    "Accessibility": 372
+  },
+  "standard_path_row_count": 7,
+  "aos_group_count": 3,
+  "aos_course_count": 7,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 7,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

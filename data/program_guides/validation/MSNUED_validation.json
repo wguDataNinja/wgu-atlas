@@ -1,0 +1,32 @@
+{
+  "program_code": "MSNUED",
+  "degree_title": "Master of Science, Nursing - Education (BSN to MSN)",
+  "version": "202003",
+  "pub_date": "8/4/23",
+  "page_count": 13,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 225,
+    "Areas of Study": 351,
+    "Accessibility": 692
+  },
+  "standard_path_row_count": 15,
+  "aos_group_count": 2,
+  "aos_course_count": 15,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 15,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

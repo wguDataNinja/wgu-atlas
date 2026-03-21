@@ -1,0 +1,131 @@
+{
+  "program_code": "ENDECE",
+  "version": "202509",
+  "pub_date": "6/17/2025",
+  "page_count": 0,
+  "degree_title": "Endorsement Preparation Program, Early Childhood Education",
+  "program_description": "Program Code: ENDECE Catalog Version: 202509 Published Date: 6/17/2025 The Early Childhood Endorsement is designed to equip educators with the skills and competencies necessary to teach young children in early childhood settings. This endorsement program provides a focused pathway for candidates to meet state licensure requirements in early childhood education. Only prospective candidates holding a current professional license in elementary or special education are eligible for this endorsement. It includes online coursework that integrates educational theory, pedagogy, and content specialization relevant to early childhood instruction. The curriculum emphasizes effective teaching strategies, assessment methods, and inclusive practices to ensure all learners are supported in the classroom. Candidates will progress through a structured series of experiences, starting with virtual simulations and video-based classroom observations. These experiences are followed by real-world clinical practice in early childhood environments, where candidates engage in collaborative, hands-on teaching under the supervision of experienced educators. Upon completing all endorsement requirements, candidates will be positioned to be successful and effective early childhood educators.",
+  "standard_path": [
+    {
+      "title": "Literacy Assessment and Interventions",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Early Literacy Methods",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Early Mathematics Methods and Interventions",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Teaching in Early Childhood Classrooms",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Early Childhood Development and Learning Science",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Early Childhood Clinical",
+      "cus": 3,
+      "term": null
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Elementary Education",
+      "courses": [
+        {
+          "title": "Literacy Assessment and Interventions",
+          "description": "Literacy Assessment and Interventions is an essential course for candidates to enhance their skills in identifying and addressing literacy challenges in all student populations, including students with dyslexia, through Tier1, Tier 2, and Tier 3 multi-tiered systems of support and assessment (MTSS). This course reviews the science of reading associated with a wide range of assessments and techniques used to evaluate reading, writing, speaking, and listening skills. Students learn to administer and interpret assessments, using the data to identify specific literacy needs and learning gaps. A significant focus of the course is on designing and implementing targeted intervention strategies to support student learning in areas, such as phonemic awareness, phonics, fluency, comprehension, and vocabulary development. By exploring and implementing actionable steps to monitor student progress, candidates gain expertise in improving literacy outcomes for all learners.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner assesses literacy skills through various diagnostic tools.",
+            "The learner interprets assessment results to plan interventions for student success in literacy.",
+            "The learner provides feedback and communication on student progress in literacy development."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Early Literacy Methods",
+          "description": "Early Literacy Methods is a specialized course designed for educators and professionals passionate about nurturing literacy skills in young children. This course offers an in-depth exploration of the foundational concepts and practices essential for promoting literacy development in early childhood through the science of reading. Emphasizing the critical development in grades PK to third grade, the curriculum covers topics such as phonemic awareness, language acquisition, and emergent reading and writing skills. Candidates learn how to create stimulating and inclusive literacy environments, use developmentally appropriate materials, and engage with a variety of high-quality core instruction as part of Tier 1 multi-tiered systems of support and assessment (MTSS) suited to the various needs of young learners, including learners with dyslexia. Additionally, the course incorporates the latest research in early childhood literacy focusing on the science of reading and best practices for how children learn to read and write. Through a blend of theoretical knowledge and practical application, this course aims to prepare candidates with the tools to effectively guide and inspire early literacy development in their classrooms.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes components of literacy acquisition and the development progression of those components for grades PK-3.",
+            "The learner analyzes literacy instructional practices at the PK-3 level by designing experiences to meet rigorous learning goals for all learners.",
+            "The learner applies theories and research related to the science of reading to instructional decisions."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Early Mathematics Methods and Interventions",
+          "description": "Early Mathematics Methods and Interventions is a comprehensive course designed for educators focused on advancing mathematics education in the early elementary grades. This course emphasizes innovative and research-based teaching methods for developing mathematical understanding in young children, particularly in the crucial developmental stages in PK through the early elementary grades Participants will explore a variety of instructional strategies to support conceptual understanding and procedural fluency in areas such as number sense, basic operations, and early problem-solving skills. A significant aspect of the course involves identifying and addressing learning needs through targeted interventions, personalized instruction, and the use of manipulatives and digital tools. The curriculum also highlights the importance of creating an engaging and inclusive learning environment that encourages exploration and curiosity in mathematics. By integrating assessment techniques and thoughtful learning experiences, this course aims to provide educators with the skills to effectively nurture early mathematical abilities and lay a strong foundation for future academic success in mathematics.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes interventions and differentiation methods to support learning in mathematics.",
+            "The learner applies the science of math for developing mathematical understanding in students grades PK–3.",
+            "The learner develops learning activities to engage students in mathematical thinking.",
+            "The learner intentionally integrates digital and nondigital resources and manipulatives for enhancing mathematics instruction."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Clinical Experiences",
+      "courses": [
+        {
+          "title": "Teaching in Early Childhood Classrooms",
+          "description": "Teaching in Early Childhood Classrooms equips students with the skills to analyze, apply, and reflect upon key early childhood education standards and strategies. Through a focus on foundational teaching frameworks, students will learn to effectively employ instructional materials aligned with early childhood standards and integrate developmentally appropriate teaching strategies, such as play, centers, engaging classroom environments and small group instruction. Additionally, the course emphasizes the importance of collaboration with the broader community of care, including families and community resources, to foster a holistic learning environment. This preparation will culminate in practical applications aimed at enriching classroom instruction and professional growth.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together",
+            "The learner analyzes early childhood standards and resources to support student learning.",
+            "The learner applies early childhood teaching and learning strategies for student learning.",
+            "The learner explains opportunities for collaborating with the community of care in early childhood education."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Early Childhood Clinical",
+          "description": "Early Childhood Clinical is a critical course designed to bridge the gap between theoretical knowledge and practical teaching skills. It offers aspiring early childhood educators an immersive experience in classroom settings, where candidates engage in activities such as observation and collaboration with mentor teachers. Candidates develop a deeper understanding of classroom dynamics, student engagement, and effective instructional strategies. With a strong emphasis on reflective practice, the course encourages participants to analyze their experiences, integrate feedback, and adapt their teaching methods. This experiential approach equips future teachers with the confidence and competence to foster positive and impactful learning environments for early childhood learners. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "The learner applies instructional strategies in the early childhood education setting.",
+            "The learner reflects on professional dispositions and ethics in the early childhood setting.",
+            "The learner reflects on the early childhood education teaching experience."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Early Childhood Education",
+      "courses": [
+        {
+          "title": "Early Childhood Development and Learning Science",
+          "description": "Early Childhood Development and Learning Science explores key principles of early childhood education, focusing on executive function, language acquisition, and cognitive development. The course emphasizes the integration of social,.. emotional development strategies within early learning environments. Students will examine techniques for fostering cognitive and linguistic development, self-regulation, problem-solving, motor skills, and language-rich play, while promoting social interactions and emotional resilience. This course equips students with the tools to create supportive, inclusive learning experiences that nurture the holistic development of young learners.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies early childhood learning science to support learning and growth.",
+            "The learner applies strategies for early childhood learning environments that support the linguistic and cognitive development of young children.",
+            "The learner applies strategies for early childhood learning environments that support the social, physical, and emotional development of young children."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": []
+}

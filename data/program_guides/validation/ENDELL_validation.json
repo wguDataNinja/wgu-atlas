@@ -1,0 +1,32 @@
+{
+  "program_code": "ENDELL",
+  "degree_title": "Endorsement Preparation Program, English Language Learning",
+  "version": "201112",
+  "pub_date": "5/7/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 181,
+    "Areas of Study": 261,
+    "Accessibility": 406
+  },
+  "standard_path_row_count": 8,
+  "aos_group_count": 1,
+  "aos_course_count": 8,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 8,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

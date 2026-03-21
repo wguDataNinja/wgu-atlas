@@ -26,7 +26,7 @@ If local docs conflict on current progress or next-step sequencing, trust in thi
 
 | Workstream | Status | Current objective | Primary blocker | Next bounded step |
 |---|---|---|---|---|
-| Program guide extraction | Phase C — 91/115 parsed+validation+manifest artifacts on disk (79.1%) | complete targeted family validation and decide conservative Phase D entry | remaining unparsed families are concentrated in higher-risk structures (endorsement, nursing, education_grad); accounting_ma specialization parser limitation remains | lock education_ma rollout summary + run Phase D readiness checkpoint + decide accounting_ma specialization disposition |
+| Program guide extraction | Phase C — 105/115 parsed+validation+manifest artifacts on disk (91.3%) | complete targeted family validation and decide conservative Phase D entry | nursing_pmc SP layout fix + MEDETID multi-path SP fix (Bucket 2); accounting_ma specialization parser limitation remains; nursing_ug/nursing_rn_msn hard cases (Bucket 3) | run Bucket 2 session: nursing_pmc targeted SP fix + MEDETID multi-path SP fix |
 | Official resource layer | active, bounded queueing established | continue conservative attachment expansion with provenance clarity | placement model expansion and completeness audits are still incomplete | reconcile regulatory queue vs current placements, then run outcomes/accreditation completeness pass |
 | Continuity review | initialized, lightweight | validate compact review method | first tiny validation batch not created | create 4-card validation batch |
 | Program lineage / degree history | ready, not selected | keep system stable for later export/UI if chosen | export/runtime wiring not implemented | no action unless selected |
@@ -40,22 +40,23 @@ If local docs conflict on current progress or next-step sequencing, trust in thi
 ### 6.0 Program guide extraction
 
 **Status**
-- Phase C — 91/115 guides have parsed + validation + manifest_row artifacts on disk (79.1%).
-- 12 families are rollout-complete; `accounting_ma` remains partial (specialization guides deferred).
+- Phase C — 105/115 guides have parsed + validation + manifest_row artifacts on disk (91.3%).
+- 14 families are rollout-complete; `accounting_ma` and `education_grad` remain partial.
 - Phase D numeric threshold (≥70%) is crossed. Phase D readiness is NOT automatic.
-- Parser is stable and production-quality. Core state machine validated across 12+ families.
+- Parser is stable and production-quality. Core state machine validated across 14 complete families.
 
 **Coverage model (three distinct numbers):**
-- Parsed artifact coverage: 91 guides have `*_parsed.json`.
-- Validation artifact coverage: 91 guides have `*_validation.json`.
-- Manifest-row coverage: 91 guides have `*_manifest_row.json`.
+- Parsed artifact coverage: 105 guides have `*_parsed.json`.
+- Validation artifact coverage: 105 guides have `*_validation.json`.
+- Manifest-row coverage: 105 guides have `*_manifest_row.json`.
 - Runtime-published guide artifacts: not yet created in `public/data/program_guides/` (Phase D not started).
 
-**Complete families (12):**
-standard_bs(19), cs_ug(8), education_ba(11), graduate_standard(9), mba(3), healthcare_grad(2), education_bs(4), teaching_mat(9), cs_grad(5), swe_grad(4), data_analytics_grad(3), education_ma(9)
+**Complete families (14):**
+standard_bs(19), cs_ug(8), education_ba(11), graduate_standard(9), mba(3), healthcare_grad(2), education_bs(4), teaching_mat(9), cs_grad(5), swe_grad(4), data_analytics_grad(3), education_ma(9), endorsement(8), nursing_msn(5)
 
 **Partially validated:**
 - accounting_ma: 5 guides parsed, 3 LOW (specialization guides have looks_like_prose parser limitation). MACC=HIGH, MACCM=MEDIUM usable. Specialization guides deferred.
+- education_grad: MSEDL (HIGH) done. MEDETID deferred — 3 embedded SP sub-tables; AoS intact.
 
 **Why it matters**
 - Program guides contain the richest per-program content: Standard Path with CUs and term, course descriptions, competency bullets, prereq mentions, cert-prep mentions.
@@ -93,9 +94,9 @@ standard_bs(19), cs_ug(8), education_ba(11), graduate_standard(9), mba(3), healt
 5. E: Course code matching — NOT STARTED
 
 **Next artifact**
-- Lock `education_ma` family rollout summary artifact (reflecting complete family status).
-- Conduct conservative Phase D readiness assessment (coverage and safe-field boundaries, not threshold-only).
-- Decide `accounting_ma` specialization disposition: parser fix with regression proof or explicit exclusion policy.
+- Bucket 2: nursing_pmc targeted SP layout fix (4 guides — SP=0 due to "Changes to Curriculum" before SP table; AoS intact).
+- Bucket 2: MEDETID multi-path SP fix (1 guide — 3 embedded sub-tables, select canonical path or deduplicate).
+- After Bucket 2: Bucket 3 hard cases (nursing_ug 2 + nursing_rn_msn 3), then Phase D schema and inclusion policy design.
 
 ---
 
@@ -252,9 +253,9 @@ These should not be reopened by default.
 
 ## 9. Exact next-session order
 
-Session 20 was gap analysis only (no parsing, no rollout). Key finding: the two families assumed highest-risk (endorsement, nursing_msn) parse cleanly as HIGH in diagnostic tests. The actual hard cases are nursing_rn_msn (3 guides, structural complexity), nursing_ug (2 guides, non-standard SP format), and accounting_ma specializations (3, known). See `_internal/program_guides/PHASE_D_READINESS_GAP_ANALYSIS.md`.
+Session 21 completed Bucket 1 rollout (endorsement 8 + nursing_msn 5 + MSEDL 1 = 14 guides). All 14: HIGH, 0 anomalies, 0 parser changes. Artifact coverage now 105/115 (91.3%). Family-validated now 101/115 (87.8%). See DEV_NOTES.md Session 21 for full detail.
 
-1. **Program guide — gate and roll out endorsement (8) + nursing_msn (5) + MSEDL (1):** These 14 guides parsed as HIGH in diagnostic tests. Zero parser changes needed. This is the highest-value next move — pushes family-validated to 101/115. Gate one guide per family, review, roll out if clean.
+1. **Program guide — Bucket 2 (nursing_pmc SP layout fix + MEDETID multi-path SP fix):** 4 nursing_pmc guides have SP=0 due to "Changes to Curriculum" boilerplate appearing before the SP table. MEDETID has 3 embedded SP sub-tables for 2 specializations. Both are contained anomalies with AoS intact. Targeted fixes required before rollout.
 2. **Program guide — accounting_ma specialization fix:** Design and regression-test `looks_like_prose` verb-presence heuristic against all 91 validated guides. Do not implement without full regression proof.
 3. **Program guide — Phase D schema and inclusion/exclusion policy design:** After Scenario A rollout, define: which guides are published, what schema the output artifact uses, and what the fallback is for MEDIUM guides and SP-failure guides. Do not build Phase D artifacts yet.
 4. **Official resource — bounded next pass:** reconcile regulatory queue against current placements, then run outcomes/accreditation completeness audit.

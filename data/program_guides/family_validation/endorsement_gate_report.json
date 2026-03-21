@@ -1,0 +1,35 @@
+{
+  "report_type": "family_gate_report",
+  "family": "endorsement",
+  "date": "2026-03-21",
+  "family_size": 8,
+  "gate_guide": "ENDECE",
+  "gate_result": "PASS",
+  "guides": [
+    {"code": "ENDECE", "degree_title": "Endorsement Preparation Program, Early Childhood Education", "confidence": "HIGH", "sp_rows": 6, "aos_groups": 3, "aos_courses": 6, "sp_format": "2-column (no Term)", "anomalies": 0, "warnings": 0, "pages": 0, "version": "202509"},
+    {"code": "ENDELL", "degree_title": "Endorsement Preparation Program, English Language Learning", "confidence": "HIGH", "sp_rows": 8, "aos_groups": 1, "aos_courses": 8, "sp_format": "3-column (with Term)", "anomalies": 0, "warnings": 0, "pages": 0, "version": "201112"},
+    {"code": "ENDMEMG", "degree_title": "Endorsement Preparation Program, Middle Grades Math", "confidence": "HIGH", "sp_rows": 2, "aos_groups": 1, "aos_courses": 2, "sp_format": "2-column (no Term)", "anomalies": 0, "warnings": 0, "pages": 0, "version": "202509"},
+    {"code": "ENDSEMG", "degree_title": "Endorsement Preparation Program, Middle Grades Science", "confidence": "HIGH", "sp_rows": 2, "aos_groups": 1, "aos_courses": 2, "sp_format": "2-column (no Term)", "anomalies": 0, "warnings": 0, "pages": 0, "version": "202509"},
+    {"code": "ENDSESB", "degree_title": "Endorsement Preparation Program, Biology", "confidence": "HIGH", "sp_rows": 9, "aos_groups": 2, "aos_courses": 9, "sp_format": "2-column (no Term)", "anomalies": 0, "warnings": 0, "pages": 0, "version": "202509"},
+    {"code": "ENDSESC", "degree_title": "Endorsement Preparation Program, Chemistry", "confidence": "HIGH", "sp_rows": 7, "aos_groups": 3, "aos_courses": 7, "sp_format": "2-column (no Term)", "anomalies": 0, "warnings": 0, "pages": 0, "version": "202509"},
+    {"code": "ENDSESE", "degree_title": "Endorsement Preparation Program, Earth Science", "confidence": "HIGH", "sp_rows": 9, "aos_groups": 4, "aos_courses": 9, "sp_format": "2-column (no Term)", "anomalies": 0, "warnings": 0, "pages": 0, "version": "202509"},
+    {"code": "ENDSESP", "degree_title": "Endorsement Preparation Program, Physics", "confidence": "HIGH", "sp_rows": 7, "aos_groups": 3, "aos_courses": 7, "sp_format": "2-column (no Term)", "anomalies": 0, "warnings": 0, "pages": 0, "version": "202509"}
+  ],
+  "high_confidence": 8,
+  "medium_confidence": 0,
+  "low_confidence": 0,
+  "total_anomalies": 0,
+  "total_warnings": 0,
+  "total_empty_descriptions": 0,
+  "total_empty_competency_lists": 0,
+  "parser_changes": [],
+  "structural_notes": [
+    "7 of 8 guides use 2-column SP format (no Term); ENDELL (version 201112) uses 3-column. Both handled correctly.",
+    "All 8 guides use header-line metadata format; page_count=0 is cosmetic across all 8.",
+    "ENDELL oldest guide (201112); pages=0 cosmetic.",
+    "Clinical Experiences and Field Experience sections appear as ordinary AoS groups — no structural anomaly.",
+    "ENDMEMG and ENDSEMG are smallest guides in corpus (295 lines, 2 SP rows each) — valid by design.",
+    "Phase A manifest high-uncertainty flag was unfounded — all 8 parse cleanly."
+  ],
+  "rollout_decision": "FULL — all 8 guides usable downstream"
+}

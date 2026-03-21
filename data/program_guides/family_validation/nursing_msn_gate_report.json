@@ -1,0 +1,31 @@
+{
+  "report_type": "family_gate_report",
+  "family": "nursing_msn",
+  "date": "2026-03-21",
+  "family_size": 5,
+  "gate_guide": "MSNUED",
+  "gate_result": "PASS",
+  "guides": [
+    {"code": "MSNUED", "degree_title": "Master of Science, Nursing - Education (BSN to MSN)", "confidence": "HIGH", "sp_rows": 15, "aos_groups": 2, "aos_courses": 15, "anomalies": 0, "warnings": 0, "pages": 13, "version": "202003"},
+    {"code": "MSNUFNP", "degree_title": "Master of Science, Nursing - Family Nurse Practitioner (BSN to MSN)", "confidence": "HIGH", "sp_rows": 16, "aos_groups": 3, "aos_courses": 16, "anomalies": 0, "warnings": 0, "pages": 15, "version": "202003"},
+    {"code": "MSNULM", "degree_title": "Master of Science, Nursing - Leadership and Management (BSN to MSN)", "confidence": "HIGH", "sp_rows": 15, "aos_groups": 2, "aos_courses": 15, "anomalies": 0, "warnings": 0, "pages": 14, "version": "202011"},
+    {"code": "MSNUNI", "degree_title": "Master of Science, Nursing - Nursing Informatics (BSN to MSN)", "confidence": "HIGH", "sp_rows": 14, "aos_groups": 2, "aos_courses": 14, "anomalies": 0, "warnings": 0, "pages": 13, "version": "202003"},
+    {"code": "MSNUPMHNP", "degree_title": "Master of Science, Nursing - Psychiatric Mental Health Nurse", "confidence": "HIGH", "sp_rows": 17, "aos_groups": 3, "aos_courses": 17, "anomalies": 0, "warnings": 0, "pages": 15, "version": "202203"}
+  ],
+  "high_confidence": 5,
+  "medium_confidence": 0,
+  "low_confidence": 0,
+  "total_anomalies": 0,
+  "total_warnings": 0,
+  "total_empty_descriptions": 0,
+  "total_empty_competency_lists": 0,
+  "parser_changes": [],
+  "structural_notes": [
+    "All 5 guides use 3-column SP format (with Term) — consistent with graduate-family format",
+    "All 5 guides share an MSN Core group plus specialty groups; FNP and PMHNP have 3 groups (adding Nurse Practitioner Core)",
+    "Clinical/preceptor sections appear as ordinary named courses within AoS groups — not structural anomalies",
+    "Page counts valid: 13-15 pages across all 5 guides",
+    "Phase A manifest MEDIUM classification and clinical concern flag were unfounded"
+  ],
+  "rollout_decision": "FULL — all 5 guides usable downstream"
+}

@@ -2,6 +2,113 @@
 
 ---
 
+## Session 21 — Bucket 1 rollout: endorsement (8) + nursing_msn (5) + MSEDL (1) (2026-03-21)
+
+### Summary
+
+Work Session 1 of 3 in the "finish the corpus" push. All 14 Bucket 1 guides rolled out. No parser changes required or made. All 14 parsed HIGH with 0 anomalies, 0 warnings, 0 empty descriptions, 0 empty competency lists.
+
+### Gate results
+
+| Family | Gate Guide | Gate Result | Family Confidence | Notes |
+|--------|------------|-------------|------------------|-------|
+| endorsement | ENDECE | PASS | 8 HIGH / 0 MEDIUM / 0 LOW | pages=0 cosmetic across all 8 (header-line metadata format) |
+| nursing_msn | MSNUED | PASS | 5 HIGH / 0 MEDIUM / 0 LOW | Cleanest nursing family |
+| education_grad | MSEDL | PARTIAL PASS | 1 HIGH / 0 MEDIUM / 0 LOW | MEDETID deferred — Bucket 2 |
+
+### Rollout details
+
+**endorsement (8 guides) — fully rolled out**
+
+| Code | SP Rows | AoS Groups | AoS Courses | SP Format | Version |
+|------|---------|------------|-------------|-----------|---------|
+| ENDECE | 6 | 3 | 6 | 2-col (no Term) | 202509 |
+| ENDELL | 8 | 1 | 8 | 3-col (with Term) | 201112 |
+| ENDMEMG | 2 | 1 | 2 | 2-col (no Term) | 202509 |
+| ENDSEMG | 2 | 1 | 2 | 2-col (no Term) | 202509 |
+| ENDSESB | 9 | 2 | 9 | 2-col (no Term) | 202509 |
+| ENDSESC | 7 | 3 | 7 | 2-col (no Term) | 202509 |
+| ENDSESE | 9 | 4 | 9 | 2-col (no Term) | 202509 |
+| ENDSESP | 7 | 3 | 7 | 2-col (no Term) | 202509 |
+
+Notes:
+- 7 of 8 use 2-column SP (no Term); ENDELL (oldest, 201112) uses 3-column. Both formats handled correctly.
+- All 8 have pages=0 — endorsement guides use header-line metadata (line 3: "Program Code: ENDECE Catalog Version: ... Published Date: ..."), not footer lines. page_count is not recoverable from this format. Cosmetic.
+- ENDMEMG and ENDSEMG are the smallest guides in the corpus (295 lines, 2 SP rows each).
+- Phase A manifest "HIGH UNCERTAINTY" flag was unfounded. Clinical Experiences and Field Experience sections are ordinary AoS groups.
+
+**nursing_msn (5 guides) — fully rolled out**
+
+| Code | SP Rows | AoS Groups | AoS Courses | Version |
+|------|---------|------------|-------------|---------|
+| MSNUED | 15 | 2 | 15 | 202003 |
+| MSNUFNP | 16 | 3 | 16 | 202003 |
+| MSNULM | 15 | 2 | 15 | 202011 |
+| MSNUNI | 14 | 2 | 14 | 202003 |
+| MSNUPMHNP | 17 | 3 | 17 | 202203 |
+
+Notes:
+- All 5 use 3-column SP format. Page counts valid (13–15). No anomalies.
+- FNP and PMHNP have 3 AoS groups (adding "Nurse Practitioner Core" to MSN Core + Specialty).
+- Clinical/preceptor sections are ordinary named courses within AoS groups — no structural concern.
+- Phase A manifest MEDIUM classification and clinical concern flag were unfounded.
+
+**education_grad (MSEDL only — 1 guide) — partially rolled out**
+
+| Code | SP Rows | AoS Groups | AoS Courses | Version |
+|------|---------|------------|-------------|---------|
+| MSEDL | 13 | 3 | 13 | 202404 |
+
+Notes:
+- MSEDL: HIGH, clean, no issues. Phase A "Practicum section" flag unfounded — Practicum is an ordinary AoS course.
+- MEDETID: deferred to Bucket 2. Has 3 embedded SP sub-tables (combined + K-12 + Adult Learner specializations). Parser concatenates all 3, producing 32 SP rows with duplicates and sub-table headers as course entries. AoS is intact (4 groups, 9 courses). Requires a targeted SP fix to select one canonical path or deduplicate.
+
+### Parser changes this session
+
+None.
+
+### Coverage model after Session 21
+
+| Layer | Count | Notes |
+|-------|-------|-------|
+| **Artifact coverage** | 105 / 115 (91.3%) | 14 new guides added |
+| **Family-validated coverage** | 101 / 115 (87.8%) | endorsement (8) + nursing_msn (5) + MSEDL (1) = 14 newly validated |
+| **Downstream-usable full** | ~98 / 115 | +14 from this session |
+| **Downstream-usable partial** | 3 | BSITM, MATSPED, MSCSUG (unchanged) |
+| **Not usable** | 3 | MACCA, MACCF, MACCT (unchanged) |
+
+Complete families (14): standard_bs, cs_ug, education_ba, graduate_standard, mba, healthcare_grad, education_bs, teaching_mat, cs_grad, swe_grad, data_analytics_grad, education_ma, endorsement, nursing_msn
+
+Partial families:
+- accounting_ma: MACC (HIGH) + MACCM (MEDIUM) usable; MACCA, MACCF, MACCT (LOW) deferred — looks_like_prose limitation
+- education_grad: MSEDL (HIGH) done; MEDETID deferred — Bucket 2
+
+### Artifacts produced
+
+- `data/program_guides/parsed/{ENDECE,ENDELL,ENDMEMG,ENDSEMG,ENDSESB,ENDSESC,ENDSESE,ENDSESP,MSNUED,MSNUFNP,MSNULM,MSNUNI,MSNUPMHNP,MSEDL}_parsed.json`
+- `data/program_guides/validation/{same}_validation.json`
+- `data/program_guides/manifest_rows/{same}_manifest_row.json`
+- `data/program_guides/family_validation/endorsement_gate_report.{json,md}`
+- `data/program_guides/family_validation/endorsement_rollout_summary.{json,md}`
+- `data/program_guides/family_validation/nursing_msn_gate_report.{json,md}`
+- `data/program_guides/family_validation/nursing_msn_rollout_summary.{json,md}`
+- `data/program_guides/family_validation/education_grad_gate_report.{json,md}`
+- `data/program_guides/family_validation/education_grad_rollout_summary.{json,md}`
+
+### Remaining after Session 21
+
+10 guides not yet in artifact coverage:
+- nursing_pmc: PMCNUED, PMCNUFNP, PMCNULM, PMCNUPMHNP (4) — Bucket 2
+- education_grad/MEDETID (1) — Bucket 2
+- nursing_ug: BSNU, BSPRN (2) — Bucket 3
+- nursing_rn_msn: MSRNNUED, MSRNNULM, MSRNNUNI (3) — Bucket 3
+
+### Bucket 2 still the right next session
+
+Yes. Bucket 2 (nursing_pmc SP layout fix + MEDETID multi-path SP fix) remains the correct next move. Both are contained anomaly work with intact AoS — targeted parser fixes, not architectural changes.
+
+---
+
 ## Session 19 — education_ma gate + rollout; coverage accounting clarification (2026-03-21)
 
 ### Coverage accounting model (new — established this session)

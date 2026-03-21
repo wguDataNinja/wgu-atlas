@@ -1,0 +1,178 @@
+{
+  "program_code": "ENDSESB",
+  "version": "202509",
+  "pub_date": "6/17/2025",
+  "page_count": 0,
+  "degree_title": "Endorsement Preparation Program, Biology",
+  "program_description": "Program Code: ENDSESB Catalog Version: 202509 Published Date: 6/17/2025 The Biology Science Secondary Endorsement equips licensed secondary science educators with the specialized knowledge and credentials needed to teach Biology at the secondary level. This endorsement is available exclusively to individuals who hold a current professional license in secondary science. Candidates will engage in a carefully designed sequence of learning experiences intended to build their capacity to understand Biology content and effectively plan, deliver, and assess instruction in alignment with secondary education standards.",
+  "standard_path": [
+    {
+      "title": "Probability and Statistics",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "General Biology II",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Molecular Biology",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "General Ecology",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Cell Biology",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Genetics",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Evolutionary Biology",
+      "cus": 3,
+      "term": null
+    },
+    {
+      "title": "Advanced Zoology and Botany with Lab",
+      "cus": 4,
+      "term": null
+    },
+    {
+      "title": "Secondary Biology Curriculum",
+      "cus": 3,
+      "term": null
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Mathematics Education",
+      "courses": [
+        {
+          "title": "Probability and Statistics",
+          "description": "Probability and Statistics offers candidates a comprehensive introduction to the fundamental principles of probability theory and statistical analysis, specifically designed for educators and aspiring statisticians. Beginning with the basics, students will explore essential concepts such as probability rules, conditional probability, and counting techniques, learning how to apply these in real-world contexts and effectively communicate them to K-12 students. Students will then learn sampling methods and estimation techniques, equipping them with the knowledge to gather, analyze, and interpret representative data for statistical analysis. Finally, students will focus on hypothesis testing and statistical inference, where they will learn to conduct and interpret various tests, including confidence intervals, using statistical software. Through a blend of interactive simulations, scenario-based challenges, and reflective activities, this course prepares students to apply these statistical tools in educational settings and beyond, fostering data-driven decision-making and effective teaching practices.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies basic probability theory to solve problems involving random events.",
+            "The learner conducts sampling and estimation for statistical analysis.",
+            "The learner performs hypothesis testing and statistical analysis to make data-driven decisions."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Biology Content",
+      "courses": [
+        {
+          "title": "General Biology II",
+          "description": "This General Biology II course is designed to prepare learners for teaching biology at the high school level by providing an in-depth understanding of cellular structures, the processes of mitosis and meiosis, and the mechanisms of communication and information processing within organisms. Students will explore the complexities of cell differentiation, the roles of different brain regions, and how organisms respond to environmental stimuli through interactive activities and simulations. The course emphasizes the integration of foundational concepts with real-world applications, helping future educators build a comprehensive knowledge base. By the end of the course, students will be well-equipped to teach key biological processes and understand their significance in the growth, development, and survival of living organisms.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes cellular structures and their functions.",
+            "The learner describes how organisms of diverse complexity process information and communicate in response to their environment.",
+            "The learner describes how the processes of mitosis and meiosis relate to the growth and development of organisms."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Molecular Biology",
+          "description": "Molecular Biology is designed to deepen the understanding of the intricate processes that govern life at the molecular level. This course explores the structure and function of key molecules involved in DNA replication, transcription, translation, and gene regulation. It delves into the mechanisms of cellular transport, differentiation, and regulation, examining how cells maintain their internal environment and respond to external signals. The biochemical pathways essential for metabolism and energy flow, including glycolysis, the citric acid cycle, and oxidative phosphorylation, are thoroughly covered. This course equips educators with the knowledge and skills to effectively teach molecular biology concepts in the classroom, emphasizing evidence-based applications and critical thinking.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes molecular structures and processes of cellular transport, differentiation, regulation, and communication.",
+            "The learner analyzes the molecular structures and processes of biochemical pathways and their roles in metabolism and energy flow within an organism.",
+            "The learner analyzes the structure and function of the molecules and processes involved in DNA replication, transcription, translation, and gene regulation."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "General Ecology",
+          "description": "General Ecology offers an in-depth exploration of how ecosystems function and interact. Candidates will study both biotic and abiotic factors that play crucial roles in sustaining ecological balance. Key topics include the flow of energy through food chains and webs, nutrient cycling, and the dynamics of populations—covering growth models, carrying capacity, and factors influencing population size and structure. The course examines species interactions such as competition, predation, and symbiosis, and explores community structure and biodiversity. Candidates will learn about primary and secondary succession and how these processes shape ecosystems over time. Additionally, the course addresses conservation principles and practices, with a focus on analyzing human impacts on ecosystems and exploring strategies for sustainability. Through this course, candidates will gain a comprehensive understanding of the intricate web of life that sustains our planet.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together",
+            "The learner analyzes changes to ecosystems over time, including the underlying processes and long-term impacts on biodiversity and ecosystem health.",
+            "The learner analyzes conservation of energy and matter as it cycles and flows through ecosystems.",
+            "The learner analyzes population, biodiversity, and ecosystem dynamics and interactions."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Cell Biology",
+          "description": "Cell Biology examines the fundamental principles and techniques that underpin the structure, function, and growth of cells, encompassing cellular components, the cell cycle, and genetic information flow. The course emphasizes the importance of cellular processes and techniques such as microscopy, cell culture, genetic engineering, and bioinformatics, highlighting their relevance in understanding cellular biology's role in health and disease. This course is designed to provide students with a comprehensive understanding of how cells maintain homeostasis, metabolize, and perform specialized functions.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes processes for cell growth, including the cell cycle and its regulation.",
+            "The learner analyzes the structure and function of cellular components for cells to maintain homeostasis, metabolize, and perform specialized functions.",
+            "The learner describes relevant techniques and technologies in cellular biology including their connection to emerging biotechnical applications."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Genetics",
+          "description": "Genetics is an introductory course for undergraduate students seeking licensure or endorsement in secondary or middle grade science education. This course addresses the basic principles of heredity and the function of molecular genetics. Topics include Mendelian and non-Mendelian inheritance, gene regulation, and variation at the individual level. The course examines modern technologies and applications of genetics.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies principles of Mendelian and non-Mendelian genetics to predict genetic outcomes.",
+            "The learner describes relevant genetic techniques and technologies and their connection to emerging biotechnical applications.",
+            "The learner describes the molecular structures and processes of genetic inheritance and sources of genetic variation."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Evolutionary Biology",
+          "description": "Evolutionary Biology provides a comprehensive exploration of key concepts and mechanisms of evolution. Students will learn about the evidence supporting evolution, including fossils and molecular data, the mechanisms driving evolutionary change like natural selection and genetic drift, and the historical and contemporary factors influencing the diversity of life. The course also addresses the importance of biodiversity conservation and equips educators with strategies to effectively teach evolutionary concepts in the classroom, emphasizing evidence-based applications and critical thinking.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes mechanisms that contribute to changes in species over time, the formation of new species, and the development of diversity of life on Earth.",
+            "The learner applies principles of evolution to the history and diversity of life.",
+            "The learner applies various lines of evidence for evolution to construct and support explanations for evolutionary processes and development of life over time."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Advanced Zoology and Botany with Lab",
+          "description": "Advanced Zoology & Botany with Lab is an in-depth exploration of advanced topics in zoology and botany, including the study of animal and plant physiology, ecology, evolution, and taxonomy. This course will engage students in virtual, hands-on laboratory exercises to develop practical skills in virtual or hands-on lab activities, data collection, and analysis. This course builds on concepts from General Biology I and II, and Evolutionary Biology and contains instructional teaching strategies for classroom delivery.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes characteristics and methods for categorizing and organizing the diversity of living organisms.",
+            "The learner analyzes characteristics of the Animal Kingdom.",
+            "The learner analyzes characteristics of the Plant Kingdom.",
+            "The learner analyzes the functions of structures in animals and plants."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Secondary Biology Curriculum",
+          "description": "The Secondary Biology course offers a comprehensive understanding of biological principles and processes, starting from the fundamental cellular structures and functions to the complexities of ecosystem dynamics. Students will delve into key topics such as genetics, evolution, and ecological interactions, gaining insights into the diversity of life and the interconnectedness of biological systems. The course emphasizes critical thinking and problem-solving skills, enabling learners to analyze biological phenomena and apply their knowledge to real-world challenges. Through a blend of theoretical knowledge and practical application, students will engage in hands-on activities, scenarios, and case studies to deepen their understanding. Additionally, the course highlights the impact of environmental changes on ecosystems, fostering an appreciation for conservation and sustainability. By the end of the course, learners will be well-prepared to address various biological challenges and pursue further studies or careers in the field of biology education.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes cellular structures, functions, and processes.",
+            "The learner describes genetic mechanisms and evolutionary processes and how they lead to the diversity of life.",
+            "The learner describes the diversity of life, biological organization, and interdependence of organisms and systems."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": []
+}

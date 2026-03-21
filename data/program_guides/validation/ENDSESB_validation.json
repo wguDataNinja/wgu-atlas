@@ -1,0 +1,32 @@
+{
+  "program_code": "ENDSESB",
+  "degree_title": "Endorsement Preparation Program, Biology",
+  "version": "202509",
+  "pub_date": "6/17/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 188,
+    "Areas of Study": 250,
+    "Accessibility": 404
+  },
+  "standard_path_row_count": 9,
+  "aos_group_count": 2,
+  "aos_course_count": 9,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 9,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

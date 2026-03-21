@@ -1,0 +1,40 @@
+{
+  "source_pdf_filename": "MSNUED.pdf",
+  "source_text_filename": "MSNUED.txt",
+  "inferred_program_code": "MSNUED",
+  "page_count": 13,
+  "version_strings": [
+    "202003"
+  ],
+  "publication_dates": [
+    "8/4/23"
+  ],
+  "has_standard_path": true,
+  "has_areas_of_study": true,
+  "has_capstone_section": false,
+  "has_course_descriptions": true,
+  "has_competency_bullets": true,
+  "has_term_structure": true,
+  "has_cu_values": true,
+  "has_cert_prep_mentions": false,
+  "has_prereq_mentions": true,
+  "standard_path_row_count": 15,
+  "competency_trigger_count": 15,
+  "competency_bullet_count": 83,
+  "cert_prep_mention_count": 0,
+  "prereq_mention_count": 2,
+  "detected_section_headings": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "inferred_course_groups": [
+    "MSN Core",
+    "Nursing Education Specialty"
+  ],
+  "likely_guide_family": "nursing_msn",
+  "template_type": "partial",
+  "parseability_confidence": "high",
+  "warnings": [],
+  "irregularities": []
+}

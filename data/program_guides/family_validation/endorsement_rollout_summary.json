@@ -1,0 +1,50 @@
+{
+  "report_type": "family_rollout_summary",
+  "family": "endorsement",
+  "date": "2026-03-21",
+  "family_size": 8,
+  "rollout_result": "COMPLETE",
+  "guides_rolled_out": ["ENDECE", "ENDELL", "ENDMEMG", "ENDSEMG", "ENDSESB", "ENDSESC", "ENDSESE", "ENDSESP"],
+  "guides_deferred": [],
+  "high_confidence": 8,
+  "medium_confidence": 0,
+  "low_confidence": 0,
+  "total_anomalies": 0,
+  "total_warnings": 0,
+  "total_empty_descriptions": 0,
+  "total_empty_competency_lists": 0,
+  "parser_changes_this_session": [],
+  "downstream_exclusions": [],
+  "known_caveats": [
+    "All 8 guides: page_count=0 (cosmetic — endorsement guides use header-line metadata; page count not available from this format; content intact)",
+    "ENDELL: version=201112 (oldest guide in family); pages=0 same cause",
+    "ENDMEMG and ENDSEMG: smallest guides in corpus (295 lines, 2 SP rows each) — valid by design",
+    "SP format split: 7 of 8 guides use 2-column (no Term); ENDELL uses 3-column — both handled correctly",
+    "Phase A manifest high-uncertainty flag was unfounded — parser handles all 8 correctly without changes"
+  ],
+  "safe_fields": [
+    "standard_path (course_title, cus)",
+    "standard_path (term) — for ENDELL only (3-column format)",
+    "areas_of_study (group, courses: title, description, competency_bullets)",
+    "degree_title",
+    "program_code",
+    "version",
+    "pub_date",
+    "page_count — cosmetic 0 for all 8; do not use as content quality signal"
+  ],
+  "corpus_status_after_rollout": {
+    "artifact_coverage": 99,
+    "artifact_coverage_pct": 86.1,
+    "family_validated_coverage": 95,
+    "family_validated_pct": 82.6,
+    "complete_families": 13,
+    "complete_families_list": [
+      "standard_bs", "cs_ug", "education_ba", "graduate_standard", "mba",
+      "healthcare_grad", "education_bs", "teaching_mat", "cs_grad",
+      "swe_grad", "data_analytics_grad", "education_ma", "endorsement"
+    ],
+    "partial_families": [
+      "accounting_ma (MACC+MACCM only; MACCA, MACCF, MACCT deferred)"
+    ]
+  }
+}
