@@ -1,0 +1,167 @@
+{
+  "program_code": "PMCNUED",
+  "version": "202110",
+  "pub_date": "3/1/23",
+  "page_count": 10,
+  "degree_title": "Post-Master's Certificate, Nursing - Nursing Education (Post-MSN)",
+  "program_description": "The Post-Master's Certificate, Nursing - Nursing Education (Post-MSN) program is a competency-based program that prepares students to be academic nurse educators in various educational and practice settings. Students are prepared to lead collaborative academic-practice partnerships to strengthen nursing practice by developing nurses who will lead and advance health in diverse populations. As academic nurse educators, graduates demonstrate a professional presence by helping nursing students acquire the knowledge, skills and competencies to work effectively in inter-professional teams across a variety of academic and healthcare settings. The WGU Post-Master's Certificate, Nursing Nursing Education (Post-MSN)content is based on national standards and evidence-based research related to effective teaching, learning, curriculum design and development and nursing role development. It provides the knowledge and skills that enable educators to teach effectively in clinical and lab, online, hybrid, virtual and classroom learning environments. The content, resources, activities, and assessments in this program are consistent with recommendations from American Association of Colleges of Nursing (AACN), The Essentials of Master's Education in Nursing, and the National League for Nursing (NLN), Scope of Practice for Academic Nurse Educators. This program builds on the core knowledge developed during the student's prior MSN degree. Areas of focus for this certificate program include: development of the context-based curriculum, learning objectives and outcomes, and learning materials that are an essential aspect of an academic educator role. This program will provide students opportunities to experience the application of nursing and educational theory, practical perspectives regarding learning, the development and socialization of learners, strategies to facilitate learning, and contemporary design and development of high-quality learning modules and assessments.",
+  "standard_path": [
+    {
+      "title": "Essentials of Academic Writing",
+      "cus": 1,
+      "term": 1
+    },
+    {
+      "title": "Facilitation of Context-Based Student-Centered Learning",
+      "cus": 2,
+      "term": 1
+    },
+    {
+      "title": "Contemporary Curriculum Design and Development in Nursing Education",
+      "cus": 2,
+      "term": 2
+    },
+    {
+      "title": "Assessment and Evaluation Strategies for Measuring Student Learning",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Evolving Roles of Nurse Educators in Diverse Environments",
+      "cus": 2,
+      "term": 1
+    },
+    {
+      "title": "Emerging Trends and Challenges in 21st Century Nursing Education",
+      "cus": 2,
+      "term": 2
+    },
+    {
+      "title": "Nursing Education Field Experience",
+      "cus": 2,
+      "term": 2
+    },
+    {
+      "title": "Nursing Education Capstone",
+      "cus": 2,
+      "term": 2
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Nursing Core",
+      "courses": [
+        {
+          "title": "Essentials of Academic Writing",
+          "description": "The learner will explore professional communication by applying the principles of academic writing to their discipline. Learners will incorporate these skills into the development of an evidence-based scholarly paper in their specialty area. As learners develop a scholarly paper, they will acquire a deeper understanding of the research topic selected and analyze whether initiatives and interventions have been effective or ineffective.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner demonstrates the steps of the writing process for integrating evidence into academic papers.",
+            "The learner applies the principles of APA writing to produce clear, concise, and evidence-based written work."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Nursing Education Specialty",
+      "courses": [
+        {
+          "title": "Evolving Roles of Nurse Educators in Diverse Environments",
+          "description": "Evolving Roles of Nurse Educators in Diverse Environments examines the multidimensional roles of a contemporary academic nurse educator. This course explores the roles and responsibilities of the nurse educator as a teacher, leader, change agent, and curriculum innovator. Students will also examine the importance of personal and professional development by developing strategies that promote academic integrity, cultural sensitivity, social justice, and ethical/legal values in diverse environments. The course emphasizes the responsibility of nurse educators to utilize communication, collaboration, and leadership in mitigating challenges in academic nursing education.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates the internal and external forces that promote academic integrity, cultural sensitivity, social justice, and ethical/legal values.",
+            "The learner facilitates effective communication and collaboration to support academic-practice partnerships.",
+            "The learner develops a vision for assuming the role of an academic nurse educator through interprofessional collaboration, self-reflection, and personal goal setting.",
+            "The learner synthesizes contemporary nursing sources to inform changes in nursing education and practice.",
+            "The learner examines the social, economic, pollical, and organizational forces impacting the nurse educator role."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Facilitation of Context-Based Student-Centered Learning",
+          "description": "Facilitation of Context-Based Student-Centered Learning explores how the nurse educator will incorporate authentic experiences into the creation of course plans that facilitate scholarly inquiry, collaboration, and knowledge acquisition in varied educational environments. Emphasis is placed on innovative, transformational, and experiential teaching and learning strategies to facilitate student development of professional, context-based nursing principles, knowledge, skills, and behavior. Evolving Roles of Nurse Educators in Diverse Environments is a prerequisite to this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates learning environments that facilitate the achievement of student-centered outcomes.",
+            "The learner synthesizes information from theoretical, clinical, and professional organizations to support unique students needs and diverse learning styles in solving practice-based problems.",
+            "The learner creates a student-centered learning environment that supports collaboration and teamwork in nursing education.",
+            "The learner designs innovative, transformational, and experiential teaching and learning strategies to facilitate student development of professional behavior and professional context-based nursing principles, knowledge, and skills."
+          ],
+          "prerequisite_mentions": [
+            "to this course"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Contemporary Curriculum Design and Development in Nursing Education",
+          "description": "Contemporary Curriculum Design and Development in Nursing Education analyzes the concepts of creating curriculum based on national nursing accreditation standards and instructional design best practices. Nurse educator students will create course content that supports learning in diverse, real-world environments where nurse educators facilitate learning. Instructional design strategies for delivering course content will reflect the mission of academic institution programs, contemporary trends in nursing education, and the needs of key stakeholders in nursing education and practice. Facilitation of Context-Based Student-Centered Learning is a prerequisite to this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates an environment that is intellectually stimulating, challenging, and encourages student development of contemporary nursing knowledge, skills, and competencies.",
+            "The learner incorporates instructional design models, principles, theories, and continuous improvement methods in the development of high-quality course design in a nursing education environment to promote effective and efficient patient care.",
+            "The learner develops scenario-based learning approaches to support student skill development and encourage reflective practice.",
+            "The learner develops course elements based on contemporary educational principles and evidence-based research that facilitate student-centered learning and achievement of learning outcomes."
+          ],
+          "prerequisite_mentions": [
+            "to this course"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Assessment and Evaluation Strategies for Measuring Student Learning",
+          "description": "Assessment and Evaluation Strategies for Measuring Student Learning addresses the academic nurse educator's role in the design, development, implementation, and evaluation of student achievement outcomes in nursing education programs. This course requires students to integrate best practices from nursing theory and theories of learning to assess student learning in diverse educational settings. Topics include validity, reliability, and practicality of assessments, interpreting item difficulty and discrimination test results, and analyzing student achievement and learning outcomes data. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner validates the theories, concepts, and principles used to assess, evaluate, and measure student learning in various educational settings.",
+            "The learner proposes assessment strategies and implementation plans based on the principles of effective assessment design.",
+            "The learner develops performance-based and objective assessments useful for measuring the knowledge and skills applicable to real-world scenarios.",
+            "The learner evaluates the effectiveness of performance and objective assessments by analyzing student achievement and learning outcomes data.",
+            "The learner recommends nurse educator actions based on student performance measures at the course level."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Emerging Trends and Challenges in 21st Century Nursing Education",
+          "description": "Emerging Trends and Challenges in 21st Century Nursing Education analyzes the emerging trends, technologies, and challenges that academic nurse educators encounter when facilitating learning in diverse healthcare settings. Students will focus on the necessity of interprofessional collaboration and the barriers and facilitators to overcoming the challenges associated with teaching and learning in nursing. Topics include the impact of emerging technology, challenges in nursing practice, and the role of the academic nurse educator as a scholar and a nursing education policy advocate. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner recognizes the impact of trends, significant challenges, and developments in educational technology in higher education in the 21st century.",
+            "The learner proposes strategies for academic nursing education programs to address the current and future challenges faced by nursing practice.",
+            "The learner collaborates with nursing leaders in diverse healthcare settings to initiate change through policy efficacy that strengthens nursing practice and advances the future of healthcare."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Nursing Education Field Experience",
+          "description": "The Nursing Education Field Experience provides the nurse educator student with clinical practice experiences with the opportunity to advance knowledge and expertise in a clinical area of practice and reflect on those experiences as they relate to the nurse educator role. Students demonstrate advanced clinical competence within a selected patient population that connect the four spheres of care identified by AACN The Essentials: Core Competencies for Professional Nursing Education (2021) (e.g., Wellness/Disease Prevention; Chronic Disease Management, Regenerative/ Restorative Care, and Hospice/Palliative Care). Students also analyze the need-gap for a curriculum change, innovation, or improvement. Based on the identified need-gap, the student will begin the design and development of a course module or unit that reflects evidence-based instructional design and assessment principles and practices. This course prepares the nurse educator student with advanced clinical competence which lays the foundation of clinical relevance when they support student learning as a Nurse Educator. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information.",
+          "competency_bullets": [
+            "The learner creates an environment in diverse academic settings that facilitates student learning and the achievement of desired cognitive, affective, and psychomotor outcomes.",
+            "The learner synthesizes contemporary theories, concepts, and principles in the development of assessments for student learning outcomes in various educational settings.",
+            "The learner designs learning objectives and curricula based on programmatic outcomes and utilization of evidence for best practices.",
+            "The learner creates a plan to pursue professional development related to the academic nurse educator role.",
+            "The learner creates a preferred future for nursing education and nursing practice by functioning as a change agent and leader."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Nursing Education Capstone",
+          "description": "The Nursing Education Capstone course provides the Nurse Educator student an opportunity to apply previous course work towards the completion of an evidence-based curriculum proposal project. During this course students will build on previous work during their Nursing Education Field Experience course by planning the implementation and evaluation phases of their proposed curriculum change, innovation or improvement. The capstone project represents a synthesis of competencies across the Masters Science of Nursing—Nursing Education degree program, which prepares them to lead, manage, and transform nursing education in diverse and complex settings. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information.",
+          "competency_bullets": [
+            "The learner integrates and synthesizes competencies from across the degree program and thereby demonstrates the ability to participate in and contribute value to the chosen professional field."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": []
+}

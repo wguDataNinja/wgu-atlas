@@ -1,0 +1,32 @@
+{
+  "program_code": "PMCNUFNP",
+  "degree_title": "Post-Master's Certificate, Nursing - Family Nurse Practitioner (PostMSN)",
+  "version": "202306",
+  "pub_date": "3/3/23",
+  "page_count": 12,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 216,
+    "Areas of Study": 309,
+    "Accessibility": 605
+  },
+  "standard_path_row_count": 10,
+  "aos_group_count": 2,
+  "aos_course_count": 10,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 10,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

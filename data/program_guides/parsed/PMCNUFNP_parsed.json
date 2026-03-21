@@ -1,0 +1,229 @@
+{
+  "program_code": "PMCNUFNP",
+  "version": "202306",
+  "pub_date": "3/3/23",
+  "page_count": 12,
+  "degree_title": "Post-Master's Certificate, Nursing - Family Nurse Practitioner (PostMSN)",
+  "program_description": "The Family Nurse Practitioner Post Masters Certificate program (PMCNUFNP) program is a cutting-edge competency-based graduate program for nurses wishing to become advanced practice registered nurses (APRNs) with the Family Nurse Practitioner (FNP) population focus. FNPs deliver cost-effective, holistic, high-quality primary care to individuals, families, and communities across the lifespan. The PMCNUFNPprogram will prepare graduates to excel in the assessment, diagnostic, prescriptive, and treatment processes of advanced practice primary care, as well as in delivering disease prevention and health promotion. In addition to the clinical skills graduates will develop in thePMCNUFNPprogram, graduates will be prepared to lead interprofessional healthcare teams, shape healthcare policy, and make business decisions in order to more efficiently deliver high-quality, cost-effective care to individuals, families, and communities across care settings. The PMCNUFNP program is a blended offering with the majority of the coursework delivered online, plus hands-on clinical practice experiences occurring in the local community. Graduates of the PMCNUFNP program are eligible to sit for the FNP national certification examination of their choice. Additionally, the certificate will prepare graduates to successfully transition to clinical practice in delivering primary care to individuals, families, and communities.",
+  "standard_path": [
+    {
+      "title": "Advanced Pathophysiology for the Advanced Practice Nurse",
+      "cus": 4,
+      "term": 1
+    },
+    {
+      "title": "Advanced Pharmacology for the Advanced Practice Nurse",
+      "cus": 4,
+      "term": 1
+    },
+    {
+      "title": "Advanced Health Assessment for the Advanced Practice Nurse",
+      "cus": 4,
+      "term": 2
+    },
+    {
+      "title": "Adult Primary Care for the Advanced Practice Nurse",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Pediatric Primary Care for the Advanced Practice Nurse",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Special Populations Primary Care for the Advanced Practice Nurse",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Health Promotion of Patients and Populations Across the Lifespan",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Family Nurse Practitioner Clinical Internship I",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Family Nurse Practitioner Clinical Internship II",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "Family Nurse Practitioner Clinical Internship III",
+      "cus": 3,
+      "term": 4
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Nurse Practitioner Core",
+      "courses": [
+        {
+          "title": "Advanced Pathophysiology for the Advanced Practice Nurse",
+          "description": "Advanced Pathophysiology for the Advanced Practice Nurse prepares the graduate nursing student for the role of an advanced practice nurse with the competencies and skills needed to recognize disease states, identify disease progression, and assess and evaluate symptoms for patients across the lifespan. This course will help the graduate nursing student gain a deeper understanding of pathophysiology from the cellular to the systems level and will provide graduate nursing students with the knowledge and skills to determine the etiology, underlying physiological changes, and the human affective responses to alterations in health. This course will also prepare the graduate nursing student to communicate the pathophysiology of disease processes to providers and patients.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate evaluates foundational concepts of pathophysiology, including the genetic, immunological, and lifestyle factors associated with the development of disease, in order to improve patient education and health outcomes.",
+            "The graduate evaluates the pathophysiology of diseases affecting the HEENT, neurologic, and endocrine systems, as well as the neurobiology of psychiatric disorders, to determine disease management and improve patient education and health outcomes.",
+            "The graduate evaluates the pathophysiology of diseases affecting the reproductive and pulmonary systems to determine disease management and improve patient education and health outcomes.",
+            "The graduate evaluates the pathophysiology of diseases affecting the hematologic, cardiovascular, and lymphatic systems to determine disease management and improve patient education and health outcomes.",
+            "The graduate evaluates the pathophysiology of diseases affecting the renal, urologic, and gastrointestinal systems to determine disease management and improve patient education and health outcomes.",
+            "The graduate evaluates the pathophysiology of diseases affecting the musculoskeletal and integumentary systems to determine disease management and improve patient education and health outcomes."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Advanced Pharmacology for the Advanced Practice Nurse",
+          "description": "Advanced Pharmacology for the Advanced Practice Nurse prepares the graduate nursing student for the role of an advanced practice nurse with the competencies and skills for prescribing and monitoring medication safely and effectively. This course will prepare the graduate nursing student to apply pharmacotherapeutics in primary care settings by utilizing the pivotal basis of pharmacokinetics and pharmacodynamics. This course will also prepare the graduate nursing student to select the correct medication, describe the rationale for that selection to the patient, family, and other providers, and to effectively monitor the patient to promote positive drug outcomes.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate integrates the practice of evidence-based medicine and pharmacology principles to effectively, safely, and responsibly make decisions to improve patient care and address underlying health concerns.",
+            "The graduate analyzes how the nervous system is affected by neuropharmacology to improve quality of life and health outcomes.",
+            "The graduate analyzes how pharmacology affects the pulmonary and cardiovascular systems to inform decisions that improve quality of life and health outcomes.",
+            "The graduate synthesizes pharmacological changes for patients in the transition of care to improve the overall patient experience.",
+            "The graduate analyzes how pharmacology affects wellness, nutrition, and women’s and men’s health to improve quality of life and health outcomes.",
+            "The graduate analyzes how pharmacology affects the gastrointestinal and endocrine systems, as well as obesity, to improve quality of life and health outcomes.",
+            "The graduate analyzes how pharmacology affects infectious diseases, allergies, and musculoskeletal disorders to make evidence-based decisions to improve quality of life and health outcomes."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Advanced Health Assessment for the Advanced Practice Nurse",
+          "description": "Advanced Health Assessment prepares the graduate nursing student to perform the role of an advanced practice nurse with the essential competencies necessary to provide primary health care to patients and families of diverse populations. Students will develop the skills needed for systematically collecting and analyzing subjective and objective patient data. Through simulation and clinical experiences, students will use data to determine current and ongoing patient health status, predict health risks, and identify health-promoting activities for patients across the lifespan. Advanced Health Assessment will prepare the nursing graduate with the critical thinking, clinical reasoning, and advanced diagnostic skills required for advanced practice nursing. Upon completion of Advanced Health Assessment, the graduate will be able to synthesize individual and systems level subjective and objective data to facilitate the differential diagnosis processes. Also, the graduate will be able to clearly describe to patients and providers the pertinent health assessment findings and rationale supporting the diagnostic process.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate generates a comprehensive patient health assessment using subjective and objective data.",
+            "The graduate evaluates the head, eyes, ears, nose, and throat (HEENT), lymphatic, central nervous, and psychiatric systems using a holistic assessment approach to document normal and abnormal findings and incorporate lifespan considerations.",
+            "The graduate evaluates the pulmonary, cardiovascular, and peripheral vascular systems using a holistic assessment approach to document normal and abnormal findings and incorporate lifespan considerations.",
+            "The graduate evaluates the gastrointestinal and urinary systems using a holistic assessment approach to document normal and abnormal findings and incorporate lifespan considerations.",
+            "The graduate evaluates the female and male reproductive systems using a holistic assessment approach to document normal and abnormal findings and incorporate lifespan considerations.",
+            "The graduate evaluates the musculoskeletal, integumentary, and peripheral nervous systems using a holistic assessment approach to document normal and abnormal findings and incorporate lifespan considerations."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Family Nurse Practitioner Specialty",
+      "courses": [
+        {
+          "title": "Adult Primary Care for the Advanced Practice Nurse",
+          "description": "Adult Primary Care for the Advanced Practice Nurse prepares the graduate nursing student to perform the role of an advanced practice nurse with the essential competencies and skills necessary to provide primary healthcare to adult patients and families. This course will prepare the graduate nursing student to demonstrate competence in leading health promotion and disease prevention activities; diagnosing, managing, and coordinating care for patients with acute and chronic conditions; and empowering patients to pursue positive health outcomes. This course will also prepare the graduate nursing student to collaborate with adult patients to develop effective plans of care that build patient self-efficacy in the process of preventing and treating disease. The following prerequisite courses are required prior to taking this course: All MSN Core courses and NP Core courses.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate recommends evidence-based health promotion activities to achieve optimal health outcomes in the care of adults.",
+            "The graduate synthesizes evidence-based management of in-office health emergencies and acute illnesses affecting the eyes, ears, nose, and throat, as well as the respiratory and gastrointestinal systems, in adult patients to achieve optimal health outcomes.",
+            "The graduate synthesizes evidence-based management of acute illnesses affecting the urinary and renal, dermatological, and musculoskeletal systems, as well as infectious diseases, in adult patients to achieve optimal health outcomes.",
+            "The graduate synthesizes evidence-based management of chronic diseases affecting the pulmonary, cardiovascular, and gastrointestinal systems in adult patients to achieve optimal health outcomes.",
+            "The graduate synthesizes evidence-based management of chronic musculoskeletal, rheumatic, and neurologic diseases in adult patients to achieve optimal health outcomes.",
+            "The graduate synthesizes evidence-based management of chronic endocrine, metabolic, hematologic, urinary and renal, and mental health diseases in adult patients to achieve optimal health outcomes."
+          ],
+          "prerequisite_mentions": [
+            "courses are required prior to taking this course: All MSN Core courses and NP Core courses"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Pediatric Primary Care for the Advanced Practice Nurse",
+          "description": "Pediatric Primary Care for the Advanced Practice Nurse prepares the graduate nursing student to perform the role of an advanced practice nurse with the essential competencies and skills necessary to provide primary healthcare to pediatric patients, from infancy through adolescence, and their families in an outpatient setting. This course will prepare the graduate nursing student to demonstrate competence in leading health promotion and disease prevention activities; in diagnosing, managing, and coordinating care for pediatric patients with acute and chronic conditions; and in empowering patients and their families in pursuing positive health outcomes. This course will also prepare the graduate nursing student to collaborate with pediatric patients and their families in developing effective plans of care that build patient and family self-efficacy in the process of preventing and treating disease. The following prerequisite courses are required prior to taking this course: All MSN Core courses and NP Core courses.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate synthesizes age-specific approaches to the evaluation of infant development, including management of abnormal developmental conditions, to achieve optimal health outcomes.",
+            "The graduate synthesizes age-specific approaches to the evaluation of early childhood development, including management of abnormal developmental conditions, to achieve optimal health outcomes.",
+            "The graduate synthesizes age-specific approaches to the evaluation of school-age child development, including management of abnormal developmental conditions, to achieve optimal health outcomes.",
+            "The graduate synthesizes age-specific approaches to the evaluation of adolescent development, including management of abnormal developmental conditions, to achieve optimal health outcomes.",
+            "The graduate analyzes guidelines for healthy environmental conditions, behaviors, and nutrition to promote pediatric wellness.",
+            "The graduate analyzes the roles of self-perception, sexual development, mental health, family relationships, and values to create health promotion plans for pediatric development.",
+            "The graduate synthesizes infectious disease prevention, immunizations, and prescribing guidelines to achieve optimal health outcomes in pediatric patients.",
+            "The graduate analyzes the importance of physical activity and rest in the overall wellness plan of pediatric patients.",
+            "The graduate synthesizes evidence-based care management plans for system-specific pediatric health conditions and disorders."
+          ],
+          "prerequisite_mentions": [
+            "courses are required prior to taking this course: All MSN Core courses and NP Core courses"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Special Populations Primary Care for the Advanced Practice Nurse",
+          "description": "Special Populations Primary Care for the Advanced Practice Nurse prepares the graduate nursing student to perform the role of an advanced practice nurse with the essential competencies and skills necessary to provide primary healthcare to unique patient populations in the outpatient setting. This course will prepare the graduate nursing student to demonstrate competence in leading health promotion and disease prevention activities; in diagnosing, managing, and coordinating care for patients with specific disease processes; and in empowering patients and their families in pursuing positive health outcomes. This course will also prepare the graduate nursing student to collaborate with unique patient populations and their families in developing effective plans of care that build self-efficacy in the process of preventing and treating specific disease processes. The following prerequisite courses are required prior to taking this course: All MSN Core courses and NP Core courses.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate evaluates the social and physical healthcare needs of women, using evidence-based practice to formulate a holistic plan of care.",
+            "The graduate evaluates the healthcare needs of pregnant and postpartum patients, integrating interprofessional collaboration and evidence-based practice to optimize maternal and fetal outcomes.",
+            "The graduate evaluates the social and physical healthcare needs of men, using evidence-based practice to formulate a holistic plan of care.",
+            "The graduate analyzes the physical and socioemotional healthcare needs of LGBTQIA populations to advocate for effective, ethically appropriate, and culturally responsive care.",
+            "The graduate analyzes the needs of older adults and their caregivers to develop a comprehensive plan of geriatric care that maximizes health, minimizes disease burden, and promotes autonomy.",
+            "The graduate evaluates the needs of diverse populations to develop personalized care plans to improve the quality of life for individuals and communities.",
+            "The graduate integrates a systems approach across the healthcare continuum by incorporating evidence-based, multimodal, and interprofessional therapies to promote high-quality patient outcomes.",
+            "The graduate demonstrates advanced practice procedures needed to successfully perform job tasks in the primary care setting."
+          ],
+          "prerequisite_mentions": [
+            "courses are required prior to taking this course: All MSN Core courses and NP Core courses"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Health Promotion of Patients and Populations Across the Lifespan",
+          "description": "Health Promotion of Patients and Populations Across the Lifespan prepares the graduate nursing student to perform the role of an advanced practice nurse with the essential competencies and skills necessary to provide health promotion activities to individuals and populations. This course will prepare the graduate nursing student to incorporate individual characteristics, population factors, and social determinants of health (SDOH) in determining the most efficient use of finite resources in leading health promotion activities. This course will also prepare the graduate nursing student to lead health promotion activities for individuals and specific populations across the lifespan. The following prerequisite courses are required prior to taking this course: All MSN Core courses and NP Core courses.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate assesses health barriers unique to specific individuals and populations, as well as determinants of health, foundations of wellness, and evidence-based lifestyle interventions, to determine health promotion and preventative care solutions.",
+            "The graduate evaluates the role of behavior and lifestyle intervention on wellness to enhance community and population health outcomes.",
+            "The graduate assesses specific areas of need in the population, including the efficacy of existing community support systems, opportunities to better serve vulnerable groups, and the role of the nurse practitioner in identifying solutions.",
+            "The graduate assesses current population health stakeholders, resources, policy, and programs to determine their effect on community health outcomes.",
+            "The graduate proposes novel, evidence-based, collaborative, and patient-centered nursing plans to address community health needs.",
+            "The graduate recommends innovative healthcare solutions for nurse practitioners to enable continuous improvement and address individual and community healthcare needs."
+          ],
+          "prerequisite_mentions": [
+            "courses are required prior to taking this course: All MSN Core courses and NP Core courses"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Family Nurse Practitioner Clinical Internship I",
+          "description": "Family Nurse Practitioner Clinical Internship I prepares the graduate nursing student to perform the role of an advanced practice nurse with the essential competencies and skills necessary to deliver primary care to individuals, families, and groups throughout the life span. Using the precepted clinical setting, this course will provide opportunities for the graduate nursing student to combine competencies developed in preparatory advanced practice coursework to deliver patientcentered healthcare. This course will also provide the graduate nursing student with opportunities to conduct advanced health assessments and use the competencies of advanced pathophysiology, pharmacology, and health promotion for individuals and populations across the life span to build self-efficacy in individuals and groups, determine correct diagnoses, and establish plans of care that include patient and population preferences. All MSN Core Courses, NP Core courses, and FNP Specialty courses must be completed before taking this course. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information.",
+          "competency_bullets": [
+            "The graduate demonstrates advanced health assessment techniques that are comprehensive and focused to gather patient health data in the care of individuals and groups across the lifespan moving from novice to advanced beginner.",
+            "The graduate synthesizes subjective and objective data from across the patient lifespan to provide accurate diagnoses moving from novice to advanced beginner.",
+            "The graduate creates evidence-based and family-centered health plans, including guidelines, clinical expertise, consumer preferences and values, organizational context, and resource limitations moving from novice to advanced beginner.",
+            "The graduate evaluates the effectiveness of patient health plans in order to modify the plan, offer additional education, or refer patients to improve quality outcomes moving from novice to advanced beginner."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Family Nurse Practitioner Clinical Internship II",
+          "description": "Family Nurse Practitioner Clinical Internship II prepares the graduate nursing student to perform the role of an advanced practice nurse with the essential competencies and skills necessary to deliver primary care to individuals, families, and groups throughout the life span. In the precepted clinical setting, the student will combine competencies developed in preparatory advanced practice coursework to deliver consumer-centered healthcare. The student will conduct advanced health assessments and use the competencies of advanced pathophysiology, pharmacology, and health promotion for individuals and populations across the life span to build self-efficacy in individuals and groups, determine correct diagnoses, and establish plans of care that include consumer and population preferences. All MSN Core Courses, NP Core courses, and FNP Specialty courses must be completed before taking this course. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information.",
+          "competency_bullets": [
+            "The graduate demonstrates advanced health assessment techniques that are comprehensive and focused to gather patient health data in the care of individuals and groups across the lifespan as an advanced beginner.",
+            "The graduate synthesizes subjective and objective data from across the patient lifespan to provide accurate diagnoses as an advanced beginner.",
+            "The graduate creates evidence-based and family-centered health plans, including guidelines, clinical expertise, consumer preferences and values, organizational context, and resource limitations as an advanced beginner.",
+            "The graduate evaluates the effectiveness of patient health plans in order to modify the plan, offer additional education, or refer patients to improve quality outcomes as an advanced beginner."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Family Nurse Practitioner Clinical Internship III",
+          "description": "Family Nurse Practitioner Clinical Internship III prepares the graduate nursing student to perform the role of an advanced practice nurse with the essential competencies and skills necessary to deliver primary care to individuals, families, and groups across throughout the lifespan. In the precepted clinical setting, the student will combine competencies developed in preparatory advanced practice coursework to deliver consumer-centered healthcare. Therefore, the graduate will conduct advanced health assessments and utilize the competencies of advanced pathophysiology, pharmacology, and health promotion for individuals and populations across the life span to build self-efficacy in individuals and groups, to determine correct diagnoses, and to establish plans of care that include consumer and population preferences. All MSN Core Courses, NP Core courses, and FNP Specialty courses must be completed before taking this course. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information.",
+          "competency_bullets": [
+            "The graduate demonstrates advanced health assessment techniques that are comprehensive and focused to gather patient health data in the care of individuals and groups across the lifespan as a competent provider.",
+            "The graduate synthesizes subjective and objective data from across the patient lifespan to provide accurate diagnoses as a competent provider.",
+            "The graduate creates evidence-based and family-centered health plans, including guidelines, clinical expertise, consumer preferences and values, organizational context, and resource limitations as a competent provider.",
+            "The graduate evaluates the effectiveness of patient health plans in order to modify the plan, offer additional education, or refer patients to improve quality outcomes as a competent provider."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": []
+}

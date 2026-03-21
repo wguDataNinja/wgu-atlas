@@ -1,0 +1,48 @@
+{
+  "report_type": "family_gate_report",
+  "family": "nursing_pmc",
+  "date": "2026-03-21",
+  "family_size": 4,
+  "gate_guide": "PMCNUED",
+  "gate_result": "PASS",
+  "guides": [
+    {"code": "PMCNUED", "degree_title": "Post-Master's Certificate, Nursing - Nursing Education (Post-MSN)", "confidence": "HIGH", "sp_rows": 8, "aos_groups": 2, "aos_courses": 8, "anomalies": 0, "warnings": 0, "pages": 10, "version": "202110"},
+    {"code": "PMCNUFNP", "degree_title": "Post-Master's Certificate, Nursing - Family Nurse Practitioner (PostMSN)", "confidence": "HIGH", "sp_rows": 10, "aos_groups": 2, "aos_courses": 10, "anomalies": 0, "warnings": 0, "pages": 12, "version": "202306"},
+    {"code": "PMCNULM", "degree_title": "Post-Master's Certificate, Nursing - Leadership and Management (PostMSN)", "confidence": "HIGH", "sp_rows": 8, "aos_groups": 2, "aos_courses": 8, "anomalies": 0, "warnings": 0, "pages": 11, "version": "202110"},
+    {"code": "PMCNUPMHNP", "degree_title": "Post-Master's Certificate, Nursing - Psychiatric Mental Health Nurse", "confidence": "HIGH", "sp_rows": 11, "aos_groups": 2, "aos_courses": 11, "anomalies": 0, "warnings": 0, "pages": 13, "version": "202306"}
+  ],
+  "high_confidence": 4,
+  "medium_confidence": 0,
+  "low_confidence": 0,
+  "total_anomalies": 0,
+  "total_warnings": 0,
+  "total_empty_descriptions": 0,
+  "total_empty_competency_lists": 0,
+  "parser_changes": [
+    {
+      "fix": "SP_CHANGES_RE conditional break",
+      "function": "parse_standard_path_multiline (and parse_standard_path)",
+      "scope": "general",
+      "description": "Changed unconditional break on 'Changes to Curriculum' to break only if state != BEFORE_TABLE. Allows PMC layout where this block precedes the SP table."
+    },
+    {
+      "fix": "Certificate Guidebook title skip",
+      "function": "extract_title_and_description",
+      "scope": "general",
+      "description": "Added 'Certificate Guidebook' to document-type header skip list. Corrects degree_title for PMC guides."
+    },
+    {
+      "fix": "STANDARD_PATH_RE second-table break",
+      "function": "parse_standard_path_multiline (and parse_standard_path)",
+      "scope": "general",
+      "description": "Added break when STANDARD_PATH_RE fires after leaving BEFORE_TABLE state. Stops at first canonical sub-table for MEDETID-style guides. Also applied this session for MEDETID."
+    }
+  ],
+  "structural_notes": [
+    "All 4 guides use multi-line 3-column SP format",
+    "All 4 guides have 2 AoS groups (core + specialty)",
+    "Phase A 'Post-Master' section flag was not a structural anomaly — content appears as ordinary AoS courses",
+    "Metadata valid: page counts 10-13, versions 202110 and 202306"
+  ],
+  "rollout_decision": "FULL — all 4 guides usable downstream"
+}

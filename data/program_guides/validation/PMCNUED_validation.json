@@ -1,0 +1,32 @@
+{
+  "program_code": "PMCNUED",
+  "degree_title": "Post-Master's Certificate, Nursing - Nursing Education (Post-MSN)",
+  "version": "202110",
+  "pub_date": "3/1/23",
+  "page_count": 10,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 222,
+    "Areas of Study": 302,
+    "Accessibility": 472
+  },
+  "standard_path_row_count": 8,
+  "aos_group_count": 2,
+  "aos_course_count": 8,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 8,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

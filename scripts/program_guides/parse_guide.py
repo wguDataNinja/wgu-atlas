@@ -305,7 +305,12 @@ def parse_standard_path(stripped: list, sp_start: int, aos_start: int) -> tuple:
             in_table = True
             continue
         if SP_CHANGES_RE.match(line):
-            break  # "Changes to Curriculum" marks end of SP table
+            if in_table:
+                break  # "Changes to Curriculum" marks end of SP table (normal layout)
+            else:
+                continue  # "Changes to Curriculum" precedes the table (PMC-style layout); keep scanning
+        if STANDARD_PATH_RE.match(line) and in_table:
+            break  # Second SP sub-table header (MEDETID-style); first canonical table is complete
 
         if not in_table:
             continue
@@ -406,7 +411,10 @@ def parse_standard_path_multiline(stripped: list, sp_start: int, aos_start: int,
             prev_was_footer = True
             continue
         if SP_CHANGES_RE.match(line):
-            break
+            if state != 'BEFORE_TABLE':
+                break  # "Changes to Curriculum" marks end of SP table (normal layout)
+            else:
+                continue  # "Changes to Curriculum" precedes the table (PMC-style layout); keep scanning
         if AREAS_OF_STUDY_RE.match(line):
             break
 
@@ -420,6 +428,11 @@ def parse_standard_path_multiline(stripped: list, sp_start: int, aos_start: int,
             continue
 
         prev_was_footer = False
+
+        # Second "Standard Path for..." heading signals a specialization sub-table (MEDETID-style);
+        # the first canonical table has already been extracted — stop here.
+        if STANDARD_PATH_RE.match(line) and state != 'BEFORE_TABLE':
+            break
 
         if state == 'BEFORE_TABLE':
             if HEADER_LINE_RE.match(line):
@@ -939,7 +952,7 @@ def extract_title_and_description(stripped: list, sp_start: int) -> tuple:
             continue
         if is_footer(line):
             continue
-        if i == 0 and line == 'Program Guidebook':
+        if i == 0 and line in ('Program Guidebook', 'Certificate Guidebook'):
             continue
         if degree_title is None:
             degree_title = line

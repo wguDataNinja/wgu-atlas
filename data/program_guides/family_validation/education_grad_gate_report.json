@@ -7,7 +7,7 @@
   "gate_result": "PARTIAL_PASS",
   "guides": [
     {"code": "MSEDL", "degree_title": "Master of Science, Educational Leadership", "confidence": "HIGH", "sp_rows": 13, "aos_groups": 3, "aos_courses": 13, "anomalies": 0, "warnings": 0, "pages": 13, "version": "202404", "status": "ROLLOUT"},
-    {"code": "MEDETID", "degree_title": null, "confidence": "MEDIUM", "sp_rows": 32, "aos_groups": 4, "aos_courses": 9, "anomalies": null, "warnings": null, "pages": null, "version": null, "status": "DEFERRED_BUCKET2", "deferral_reason": "3 embedded SP sub-tables (combined + K-12 + Adult Learner); SP overcounted; AoS intact (4 groups, 9 courses)"}
+    {"code": "MEDETID", "degree_title": "Master of Education, Education Technology and Instructional Design", "confidence": "MEDIUM", "sp_rows": 12, "aos_groups": 4, "aos_courses": 9, "anomalies": 0, "warnings": 1, "pages": 13, "version": "202312", "status": "COMPLETE_BUCKET2", "capstone": true, "warning_detail": "2 SP titles not in AoS: Developing an E-Learning Solution and Research Methodology, Implementing and Evaluating E-Learning Solutions (2nd and 3rd capstone sequence courses — structural, not a data loss)"}
   ],
   "high_confidence": 1,
   "medium_confidence": 1,

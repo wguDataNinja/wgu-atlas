@@ -2,6 +2,108 @@
 
 ---
 
+## Session 22 — Bucket 2: nursing_pmc (4) + MEDETID (1); 3 targeted parser fixes (2026-03-21)
+
+### Summary
+
+Work Session 2 of 3 in the "finish the corpus" push. 5 Bucket 2 guides rolled out. 3 targeted parser fixes applied and regression-verified. No broad redesign.
+
+**Results:**
+- nursing_pmc: all 4 HIGH, 0 anomalies — SP layout fix resolved the pre-table "Changes to Curriculum" issue
+- MEDETID: MEDIUM, 0 anomalies, 1 warning — second-sub-table break resolved the 3-table concatenation; MEDIUM due to 2-of-3 capstone sequence courses unreconciled in AoS
+
+### Gate results
+
+| Family | Gate Guide | Gate Result | Family Confidence | Notes |
+|--------|------------|-------------|------------------|-------|
+| nursing_pmc | PMCNUED | PASS | 4 HIGH / 0 MEDIUM / 0 LOW | SP fix confirmed effective; all 4 HIGH |
+| education_grad | MEDETID | PASS | MEDIUM | 0 anomalies; 1 warning (2 capstone sequence courses in SP not in AoS — structural) |
+
+### Parser fixes — Session 22
+
+**Fix 1: SP_CHANGES_RE conditional break**
+
+- **Affected function:** `parse_standard_path_multiline()` and `parse_standard_path()`
+- **Problem:** `if SP_CHANGES_RE.match(line): break` was unconditional. For nursing_pmc guides, "Changes to Curriculum" boilerplate appears between the bare "Standard Path" intro header and the actual "Standard Path for Post-Master's Certificate..." table. The parser broke before ever finding the table, producing SP=0.
+- **Fix:** Changed to `break if state != 'BEFORE_TABLE' else continue` (multiline) and `break if in_table else continue` (non-multiline). The break only fires once the table has started.
+- **Scope:** General. For all validated guides, "Changes to Curriculum" appears AFTER the table starts — behavior unchanged. Only new behavior: "Changes to Curriculum" before the table is skipped.
+
+**Fix 2: STANDARD_PATH_RE second-table break**
+
+- **Affected function:** `parse_standard_path_multiline()` and `parse_standard_path()`
+- **Problem:** MEDETID has 3 embedded SP sub-tables for 2 specializations. After the first table finished, the next sub-table header ("Standard Path for...") was buffered as a course title continuation, producing a corrupted row at the start of each subsequent table.
+- **Fix:** Added `if STANDARD_PATH_RE.match(line) and state != 'BEFORE_TABLE': break` immediately before the `if state == 'BEFORE_TABLE':` block. When a second "Standard Path for..." heading appears after leaving BEFORE_TABLE state, stop — first canonical table is complete.
+- **Scope:** General. Safe for all validated guides (no "Standard Path for..." heading appears mid-table in any validated guide).
+
+**Fix 3: Certificate Guidebook title skip**
+
+- **Affected function:** `extract_title_and_description()`
+- **Problem:** `if i == 0 and line == 'Program Guidebook': continue` only skipped "Program Guidebook". PMC guides begin with "Certificate Guidebook" on line 0 — this was set as the degree_title.
+- **Fix:** Changed to `if i == 0 and line in ('Program Guidebook', 'Certificate Guidebook'): continue`.
+- **Scope:** General. Only affects guides with "Certificate Guidebook" on line 0 (the 4 PMC guides in this corpus).
+
+**Regression verification:** 19 guides tested from across all completed families (BSCS, MATELED, MAMES, MSHRM, MBA, MSCSIA, MSSWEAIE, MSDADE, MHA, BSSESB, MACC, ENDECE, MSNUED, MSEDL, BSCSIA, BSHHS, MBAITM, BSDA, MACCM). All maintained identical confidence and anomaly counts. BSCSIA and MACCM both maintained MEDIUM with the same warning strings.
+
+### Rollout details
+
+**nursing_pmc (4 guides) — fully rolled out**
+
+| Code | SP Rows | AoS Groups | AoS Courses | Version | Pages |
+|------|---------|------------|-------------|---------|-------|
+| PMCNUED | 8 | 2 | 8 | 202110 | 10 |
+| PMCNUFNP | 10 | 2 | 10 | 202306 | 12 |
+| PMCNULM | 8 | 2 | 8 | 202110 | 11 |
+| PMCNUPMHNP | 11 | 2 | 11 | 202306 | 13 |
+
+Notes:
+- All 4 HIGH, 0 anomalies. Source SP data was correct all along — parser was just stopping too early.
+- "(Post-MSN)" vs "(PostMSN)" in degree titles: source text variant, not a parser issue.
+- Phase A "Post-Master section" flag: content is ordinary AoS courses, not a separate structural section.
+
+**MEDETID — rolled out as MEDIUM**
+
+- SP: 12 rows (first canonical table — K-12 and Adult Learner Specializations, combined path)
+- AoS: 4 groups (Foundations of Learning Design 4c, K-12 Specialty 2c, Adult Learner Specialty 2c, Design Lab 1c) = 9 courses
+- Capstone: first course of 3-course sequence ("Identifying Learner Needs and a Research Problem") — 13 bullets
+- Warning: "Developing an E-Learning Solution and Research Methodology" and "Implementing and Evaluating E-Learning Solutions" are in SP rows (term 3-4) but not resolved in AoS output (they're the 2nd and 3rd capstone courses; only the first is captured by parse_capstone). This is a structural limitation of multi-course capstones, not a data loss.
+- Downstream usable with caveat: SP and AoS content are clean and trustworthy. Capstone field only captures first course.
+
+### Coverage model after Session 22
+
+| Layer | Count | Notes |
+|-------|-------|-------|
+| **Artifact coverage** | 110 / 115 (95.7%) | +5 from this session |
+| **Family-validated coverage** | 106 / 115 (92.2%) | nursing_pmc (4) + MEDETID (1) = +5 newly validated |
+| **Downstream-usable full** | ~103 / 115 | +5 from this session (MEDETID counted as partial-full: AoS clean, capstone partial) |
+| **Downstream-usable partial** | 3 | BSITM, MATSPED, MSCSUG (unchanged) |
+| **Not usable** | 3 | MACCA, MACCF, MACCT (unchanged) |
+
+Complete families (15): standard_bs, cs_ug, education_ba, graduate_standard, mba, healthcare_grad, education_bs, teaching_mat, cs_grad, swe_grad, data_analytics_grad, education_ma, endorsement, nursing_msn, nursing_pmc
+
+Full completions (both guides done): education_grad (MSEDL=HIGH + MEDETID=MEDIUM)
+
+Partial families:
+- accounting_ma: MACC (HIGH) + MACCM (MEDIUM) usable; MACCA, MACCF, MACCT (LOW) deferred
+
+### Remaining after Session 22
+
+5 guides not yet in artifact coverage:
+- nursing_ug: BSNU (4-column SP, AoS intact), BSPRN (dual-track, MEDIUM, noisy SP)
+- nursing_rn_msn: MSRNNUED, MSRNNULM, MSRNNUNI (LOW structural complexity — running headers, non-course SP blocks, multi-component guide)
+
+### Artifacts produced
+
+- `data/program_guides/parsed/{PMCNUED,PMCNUFNP,PMCNULM,PMCNUPMHNP,MEDETID}_parsed.json`
+- `data/program_guides/validation/{same}_validation.json`
+- `data/program_guides/manifest_rows/{same}_manifest_row.json`
+- `data/program_guides/family_validation/nursing_pmc_gate_report.{json,md}`
+- `data/program_guides/family_validation/nursing_pmc_rollout_summary.{json,md}`
+- `data/program_guides/family_validation/education_grad_rollout_summary.{json,md}` (updated — MEDETID now complete)
+- `data/program_guides/family_validation/education_grad_gate_report.{json,md}` (updated — MEDETID result added)
+- `scripts/program_guides/parse_guide.py` (3 targeted fixes)
+
+---
+
 ## Session 21 — Bucket 1 rollout: endorsement (8) + nursing_msn (5) + MSEDL (1) (2026-03-21)
 
 ### Summary

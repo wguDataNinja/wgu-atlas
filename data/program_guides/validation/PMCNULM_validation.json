@@ -1,0 +1,32 @@
+{
+  "program_code": "PMCNULM",
+  "degree_title": "Post-Master's Certificate, Nursing - Leadership and Management (PostMSN)",
+  "version": "202110",
+  "pub_date": "3/1/23",
+  "page_count": 11,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 218,
+    "Areas of Study": 299,
+    "Accessibility": 495
+  },
+  "standard_path_row_count": 8,
+  "aos_group_count": 2,
+  "aos_course_count": 8,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 8,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

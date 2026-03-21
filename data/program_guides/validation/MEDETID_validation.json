@@ -1,0 +1,39 @@
+{
+  "program_code": "MEDETID",
+  "degree_title": "Master of Education, Education Technology and Instructional Design",
+  "version": "202312",
+  "pub_date": "8/23/24",
+  "page_count": 13,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility",
+    "Capstone"
+  ],
+  "section_line_indices": {
+    "Standard Path": 221,
+    "Areas of Study": 473,
+    "Accessibility": 727,
+    "Capstone": 666
+  },
+  "standard_path_row_count": 12,
+  "aos_group_count": 4,
+  "aos_course_count": 9,
+  "capstone_present": true,
+  "title_reconciliation": {
+    "in_both": 10,
+    "sp_only": [
+      "Developing an E-Learning Solution and Research Methodology",
+      "Implementing and Evaluating E-Learning Solutions"
+    ],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [
+    "2 SP titles not found in AoS: ['Developing an E-Learning Solution and Research Methodology', 'Implementing and Evaluating E-Learning Solutions']"
+  ],
+  "parseability_confidence": "medium"
+}

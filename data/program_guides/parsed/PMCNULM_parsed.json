@@ -1,0 +1,167 @@
+{
+  "program_code": "PMCNULM",
+  "version": "202110",
+  "pub_date": "3/1/23",
+  "page_count": 11,
+  "degree_title": "Post-Master's Certificate, Nursing - Leadership and Management (PostMSN)",
+  "program_description": "The Post-Master's Certificate, Nursing - Leadership and Management (Post-MSN) program is a competency-based program that prepares students to be leaders and managers in diverse settings: hospitals, long term care facilities, community service agencies, governmental agencies and facilities, and corporations. Students use their organizational, analytic, strategic planning, financial, human resources, and evaluation skills across healthcare organizations. The WGU PostMaster's Certificate, Nursing - Leadership and Management (PostMSN) program content is evidence-based, drawing on national standards and research related to creating work environments that are collaborative, interdisciplinary, and promote effective functioning in complex nursing and healthcare environments. The certificate program content and processes are consistent with the American Nurses Association (ANA) Standards for Nurse Administrators and the American Organization for Nursing Leadership (AONL) competencies for nursing managers and executives, and the American Association of Colleges of Nursing (AACN) Clinical Nurse Leader (CNL). The PostMaster's Certificate program is focused on the preparation of highly qualified nurse administrators (nurse managers and nurse executives). This program builds on the core knowledge developed during the student's prior MSN degree. Areas of focus for this certificate program include organizational and leadership theories, strategic planning, regulatory standards, risk management, principles of financial management, and concepts of human resource management. Graduates examine organizational, financial, and personnel issues and their resolution. The process for assessment, measurement, evaluation, and use of outcome data for improvement is presented.",
+  "standard_path": [
+    {
+      "title": "Essentials of Academic Writing",
+      "cus": 1,
+      "term": 1
+    },
+    {
+      "title": "Leading with Personal Mastery",
+      "cus": 2,
+      "term": 1
+    },
+    {
+      "title": "Business Case Analysis for Healthcare Improvement",
+      "cus": 2,
+      "term": 1
+    },
+    {
+      "title": "Managing Resources in an Era of Disruption",
+      "cus": 2,
+      "term": 1
+    },
+    {
+      "title": "Strategically Planning the Execution of a Healthcare Improvement Project",
+      "cus": 2,
+      "term": 1
+    },
+    {
+      "title": "Evidence-Based Measures for Evaluating Healthcare Improvements",
+      "cus": 2,
+      "term": 2
+    },
+    {
+      "title": "Nursing Leadership and Management Field Experience",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Nursing Leadership and Management Capstone",
+      "cus": 2,
+      "term": 2
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Nursing Core",
+      "courses": [
+        {
+          "title": "Essentials of Academic Writing",
+          "description": "The learner will explore professional communication by applying the principles of academic writing to their discipline. Learners will incorporate these skills into the development of an evidence-based scholarly paper in their specialty area. As learners develop a scholarly paper, they will acquire a deeper understanding of the research topic selected and analyze whether initiatives and interventions have been effective or ineffective.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner demonstrates the steps of the writing process for integrating evidence into academic papers.",
+            "The learner applies the principles of APA writing to produce clear, concise, and evidence-based written work."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Leadership and Management Specialty",
+      "courses": [
+        {
+          "title": "Leading with Personal Mastery",
+          "description": "Leading with Personal Mastery prepares the advanced professional nurse to demonstrate self-awareness, selfmanagement, executive function, and social awareness skills while leading and managing in diverse healthcare settings. In this course, students will learn how to incorporate these skills when developing personal relationships and building teams. Developing both social and emotional intelligence as a nurse leader will ensure that students have the ability develop strong relationships and make wise decisions when interacting with others. Increasing personal mastery will provide students with a set of tools and strategies to improve healthcare by producing high-quality results. Understanding their strengths and weaknesses, as a leader in healthcare will help students create a vision for success that includes making choices that will help balance their work life more effectively.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner designs pathways to achieve personal mastery for leading and managing individuals and teams in diverse healthcare settings.",
+            "The learner develops a vision for assuming the role of a leader and manager that includes self-awareness, selfmanagemnet, interpersonal communication, executive function, and social awareness.",
+            "The learner applies effective communication and consensus-building strategies when consulting with internal and external stakeholders.",
+            "The learner applies the principles of scholarly writing by producing a clear, concise, and evidence-based paper for the purpose of contributing to the body of nursing knowledge."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Business Case Analysis for Healthcare Improvement",
+          "description": "Business Case Analysis for Healthcare Improvement provides learning experiences that help students develop essential skills for proposing changes that improve and enhance healthcare outcomes. In this course, students will develop a business case during the early stages of a project by assessing the need for the project and the feasibility of initiating a project. Understanding the techniques used to develop a business case will provide students with the skills to obtain buy-in from key stakeholders and determine the best value strategy. Writing a strong business case presents the benefits, challenges, costs, and risks of moving forward with the project or maintaining status quo. It compares the current situation to a future vision so key stakeholders can make data-driven decisions to move forward with the project. During the development of a business case in this course, students will collaborate with internal and external stakeholders to initiate a healthcare improvement project (HIP) that is grounded in project management principles and influenced by stakeholder perspectives. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner examines regulatory and compliance requirements for implementing an improvement project comprising systematic activities and processes that are organized and implemented to improve organizational quality, safety, and performance.",
+            "The learner collaborates with internal and external stakeholders to assess the need and organizational readiness for a healthcare improvement project using improvement science methods and practices.",
+            "The learner describes the four phases of the project management lifecycle that will guide their healthcare improvement project successfully from initiation to closure.",
+            "The learner synthesizes relevant evidence, feasibility results, patient preferences, and interdisciplinary stakeholder perspectives to initiate a healthcare improvement project."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Managing Resources in an Era of Disruption",
+          "description": "Managing Human and Financial Resources in an Era of Disruption examines the main premise of people and fiscal leadership. This includes the promotion of healthy work environments through the development of programs in support of mitigating behavior problems for the betterment of work-life balance. Students will analyze business model budgets, revenue streams, and human and financial resource allocation, develop training programs to evaluate compliance and regulatory requirement, and create team building experiences to promote high performing teams by improving engagement, establishing trust, and achieving common goals. Students will assess an organization’s mission, vision, and values to establish alignment between healthcare improvement and an organization’s principles for management. Changes in healthcare are inevitable, as the business success strategies used in the past are not sufficient for surviving in an era of persistent disruption. This course will help students develop the skills nurse leaders need to become partners in recommending innovative strategies that promote value-based healthcare for the future. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner promotes a healthy work environment by developing programs to mitigate workplace behavior problems and enhance work-life balance.",
+            "The learner designs team-building experiences that promote high-performance teams where members trust each other and have the synergy to work together toward common goals.",
+            "The learner collaborates with key stakeholders to plan for the use of available resources needed to achieve project aims and goals.",
+            "The learner applies human resource principles and practices when developing a project charter that includes planning for adequate human resources for a healthcare improvement project."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Strategically Planning the Execution of a Healthcare Improvement Project",
+          "description": "Strategically Planning the Execution of a Healthcare Improvement Project will help students develop the skills for systems thinking, problem-solving, and data-driven decision-making. In this course, students will plan the implementation of a healthcare improvement project by identifying people, processes, and procedures that need to be in place for implementation. In addition, sociodemographic data on the population that may be affected by the healthcare improvement project will be analyzed to determine risks and opportunities. During this phase, students will perform an assessment of the forces for and against implementing the project. They will also identify short-term objectives and create action plans to align to the vision, mission, and values of the organization where the project will be implemented. Students will also examine the evolution of existing policies, procedures, and processes at the systems level for the purpose of advocating change that will support a healthcare improvement project. During this course, students will plan the implementation of their healthcare improvement project through the use of sociodemographic and health data, strategic planning, and a comprehensive integration of quality and safety concepts. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates existing policies at the systems level that have the potential to influence the implementation of a healthcare improvement project.",
+            "The learner uses sociodemographic and social determinants of health data to describe the target populations that will be affected by a healthcare improvement project.",
+            "The learner examines the structure, processes, and outcomes of an organizational plan that may facilitate or impede the implementation of a healthcare improvement project.",
+            "The learner leads the development of a collaborative implementation plan that includes oversight of the project and the scope of work with specific tasks, timelines, and deliverables."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Evidence-Based Measures for Evaluating Healthcare Improvements",
+          "description": "Evidence-based measures for evaluating healthcare improvements is an essential component of the planning phase of the healthcare improvement project. In this course, students will determine key performance indicators and metrics used to determine the success of a healthcare improvement project (HIP). The student will develop collaborative partnerships and build consensus with stakeholders to determine how specific data will be collected, managed, and analyzed. This is also an opportunity to discuss data issues and technologies needed for the project. To accomplish this phase, students will also determine the parameters, procedures, and technologies needed for data collection, management, analysis, and reporting. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner collaborates with internal and external stakeholders to identify key success indicators for evaluating the effectiveness of a healthcare improvement project.",
+            "The learner determines the most effective technology and data sources for capturing data that will measure the key performance indicators (KPIs) for a health improvement project (HIP).",
+            "The learner creates a data collection plan that includes specific data fields and types, collection frequency, data sources, and data security methods.",
+            "The learner initiates the process of collaboratively developing a healthcare improvement evaluation plan that addresses stakeholder questions and high-priority areas to measure progress over time, and describes contextual issues that may impact the results."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Nursing Leadership and Management Field Experience",
+          "description": "The Nursing Leadership and Management Field Experience course provides an opportunity for students to apply the knowledge and skills they developed in previous courses toward the successful implementation of their healthcare improvement project (HIP). This phase puts into action all the components of project management that were planned and developed while working collaboratively with key stakeholders to establish the need and feasibility of the HIP, analyzing the organizational readiness for change, and planning the implementation and evaluation phases. In this phase, students will develop and implement a training plan for staff, managers, and leaders. They will also implement the communication plan they developed in a previous course. They will also manage the implementation process by applying organizational standards and practices. Students will demonstrate strong leadership skills when meeting with stakeholders to report the status of the implementation phase and collaboratively problem-solve risks. Completion of the specialty courses is a prerequisite for this course. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information.",
+          "competency_bullets": [
+            "The learner utilizes effective communication and relationship-building practices to successfully kick-off the implementation project.",
+            "The learner implements the training plan for the purpose of training staff, managers, and/or leaders regarding the implementation of the health improvement project.",
+            "The learner manages implementation of the healthcare improvement project using organizational standards and practices to problem-solve risks that emerge during implementation.",
+            "The learner leads scheduled meetings with internal and external stakeholders for the purpose of providing status updates regarding the implementation process."
+          ],
+          "prerequisite_mentions": [
+            "Completion of the specialty courses",
+            "for this course"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Nursing Leadership and Management Capstone",
+          "description": "The Nursing Leadership and Management Capstone provides students with an opportunity to evaluate and close their capstone project. This is the final course in the MSN Leadership and Management program. Students will evaluate the success of their healthcare improvement project (HIP) by analyzing results, using the key performance indicators and metrics that were identified while planning the evaluation phase. Students will present the results of the improvement project in a final report and presentation with a focus on lessons learned throughout each of the phases: initiation, planning, implementation, and evaluation. Reflective and analytic thinking are essential aspects of a capstone project, as students reflect and report on the successes and challenges encountered in each phase. Nursing Leadership and Management Field Experience is a prerequisite for this course. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information.",
+          "competency_bullets": [
+            "The learner integrates and synthesizes competencies from across the degree program and thereby demonstrates the ability to participate in and contribute value to the chosen professional field."
+          ],
+          "prerequisite_mentions": [
+            "Nursing Leadership and Management Field Experience",
+            "for this course"
+          ],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": []
+}

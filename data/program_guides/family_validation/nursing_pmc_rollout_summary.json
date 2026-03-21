@@ -1,0 +1,52 @@
+{
+  "report_type": "family_rollout_summary",
+  "family": "nursing_pmc",
+  "date": "2026-03-21",
+  "family_size": 4,
+  "rollout_result": "COMPLETE",
+  "guides_rolled_out": ["PMCNUED", "PMCNUFNP", "PMCNULM", "PMCNUPMHNP"],
+  "guides_deferred": [],
+  "high_confidence": 4,
+  "medium_confidence": 0,
+  "low_confidence": 0,
+  "total_anomalies": 0,
+  "total_warnings": 0,
+  "total_empty_descriptions": 0,
+  "total_empty_competency_lists": 0,
+  "parser_changes_this_session": [
+    "SP_CHANGES_RE conditional break in parse_standard_path_multiline — break only if state != BEFORE_TABLE (general scope)",
+    "STANDARD_PATH_RE second-table break in parse_standard_path_multiline — break if state != BEFORE_TABLE (general scope, applied for MEDETID)",
+    "Certificate Guidebook added to document-type header skip in extract_title_and_description (general scope)"
+  ],
+  "downstream_exclusions": [],
+  "known_caveats": [
+    "SP extraction failure in prior diagnostic parse was a parser limitation, not a source-artifact problem — fixed this session",
+    "Degree title (Post-MSN) vs (PostMSN) variation is a source text inconsistency across guides, not a parser issue"
+  ],
+  "safe_fields": [
+    "standard_path (course_title, cus, term)",
+    "areas_of_study (group, courses: title, description, competency_bullets)",
+    "degree_title",
+    "program_code",
+    "version",
+    "pub_date",
+    "page_count (valid for all 4 guides)"
+  ],
+  "corpus_status_after_rollout": {
+    "artifact_coverage": 110,
+    "artifact_coverage_pct": 95.7,
+    "family_validated_coverage": 106,
+    "family_validated_pct": 92.2,
+    "complete_families": 15,
+    "complete_families_list": [
+      "standard_bs", "cs_ug", "education_ba", "graduate_standard", "mba",
+      "healthcare_grad", "education_bs", "teaching_mat", "cs_grad",
+      "swe_grad", "data_analytics_grad", "education_ma", "endorsement",
+      "nursing_msn", "nursing_pmc"
+    ],
+    "partial_families": [
+      "accounting_ma (MACC+MACCM only; MACCA, MACCF, MACCT deferred)",
+      "education_grad (complete: MSEDL HIGH + MEDETID MEDIUM)"
+    ]
+  }
+}
