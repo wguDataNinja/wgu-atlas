@@ -1,0 +1,84 @@
+{
+  "report_type": "family_gate_test",
+  "family": "healthcare_grad",
+  "date": "2026-03-21",
+  "family_size": 2,
+  "gate_approach": "Both guides parsed (family is only 2 guides — gate test covers full family)",
+  "parser_changes": [],
+
+  "guides": [
+    {
+      "code": "MHA",
+      "degree_title": "Master of Healthcare Administration",
+      "confidence": "high",
+      "version": "202602",
+      "pub_date": "10/2/2025",
+      "page_count": 0,
+      "metadata_format": "header-line",
+      "sp_rows": 10,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 1,
+      "aos_courses": 9,
+      "capstone_present": true,
+      "capstone_title": "MHA Capstone",
+      "capstone_bullets": 3,
+      "reconciliation": "10/10 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0
+    },
+    {
+      "code": "MPH",
+      "degree_title": "Master of Public Health",
+      "confidence": "high",
+      "version": "202408",
+      "pub_date": "11/10/2025",
+      "page_count": 0,
+      "metadata_format": "header-line",
+      "sp_rows": 12,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 1,
+      "aos_courses": 12,
+      "capstone_present": false,
+      "reconciliation": "12/12 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0
+    }
+  ],
+
+  "totals": {
+    "guides_in_family": 2,
+    "parsed_successfully": 2,
+    "failed": 0,
+    "high_confidence": 2,
+    "medium_confidence": 0,
+    "low_confidence": 0
+  },
+
+  "confidence_distribution": {
+    "high": ["MHA", "MPH"],
+    "medium": [],
+    "low": []
+  },
+
+  "structural_notes": [
+    "Both guides use 3-column multiline SP format. No variant needed.",
+    "Both use header-line metadata format (page_count=0 cosmetic gap).",
+    "MHA has explicit Capstone section with 3 competency bullets.",
+    "MPH capstone (Public Health Graduate Capstone) is embedded in AoS, not a separate section.",
+    "Both guides have only 1 AoS group — the entire program is one area. Unusual but correct.",
+    "Low AoS group count (1) reflects that these programs are tightly focused graduate curricula."
+  ],
+
+  "gate_result": "PASS — both guides HIGH confidence, 0 anomalies, 0 warnings",
+
+  "recommendation": {
+    "healthcare_grad_complete": true,
+    "summary": "2/2 parsed, 2 HIGH, 0 MEDIUM, 0 LOW. Family is fully validated in one pass. No parser changes needed.",
+    "next_family_recommendation": "teaching_mat or education_bs",
+    "next_family_rationale": "The low-risk graduate tier (graduate_standard, mba, healthcare_grad) is now complete. Next recommended families are teaching_mat (9 guides) and education_bs (4 guides) — both expected to share validated patterns from education_ba (Clinical Experiences, Student Teaching, 2-col SP format). Gate test either MATELED or BSSESB before full rollout."
+  }
+}

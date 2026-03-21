@@ -1,27 +1,25 @@
 {
-  "program_code": "BSMGT",
-  "degree_title": "Bachelor of Science, Business Management",
-  "version": "202605",
-  "pub_date": "1/12/2026",
+  "program_code": "MSITUG",
+  "degree_title": "Bachelor of Science, Information Technology (BSIT to MSIT)",
+  "version": "202604",
+  "pub_date": "11/20/2025",
   "page_count": 0,
   "detected_sections": [
     "Standard Path",
     "Areas of Study",
-    "Accessibility",
-    "Capstone"
+    "Accessibility"
   ],
   "section_line_indices": {
     "Standard Path": 188,
-    "Areas of Study": 444,
-    "Accessibility": 997,
-    "Capstone": 986
+    "Areas of Study": 435,
+    "Accessibility": 987
   },
-  "standard_path_row_count": 36,
-  "aos_group_count": 5,
+  "standard_path_row_count": 35,
+  "aos_group_count": 12,
   "aos_course_count": 35,
-  "capstone_present": true,
+  "capstone_present": false,
   "title_reconciliation": {
-    "in_both": 36,
+    "in_both": 35,
     "sp_only": [],
     "aos_only": []
   },

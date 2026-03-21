@@ -1,9 +1,9 @@
 {
-  "program_code": "BSDA",
-  "degree_title": "Bachelor of Science, Data Analytics",
-  "version": "202309",
-  "pub_date": "5/1/23",
-  "page_count": 21,
+  "program_code": "MBAHA",
+  "degree_title": "Master of Business Administration, Healthcare Administration",
+  "version": "202507",
+  "pub_date": "3/7/2025",
+  "page_count": 0,
   "detected_sections": [
     "Standard Path",
     "Areas of Study",
@@ -12,16 +12,16 @@
   ],
   "section_line_indices": {
     "Standard Path": 188,
-    "Areas of Study": 254,
-    "Accessibility": 835,
-    "Capstone": 825
+    "Areas of Study": 284,
+    "Accessibility": 474,
+    "Capstone": 463
   },
-  "standard_path_row_count": 42,
-  "aos_group_count": 14,
-  "aos_course_count": 41,
+  "standard_path_row_count": 11,
+  "aos_group_count": 8,
+  "aos_course_count": 10,
   "capstone_present": true,
   "title_reconciliation": {
-    "in_both": 42,
+    "in_both": 11,
     "sp_only": [],
     "aos_only": []
   },

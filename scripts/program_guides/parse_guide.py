@@ -244,25 +244,37 @@ def locate_sections(stripped: list) -> dict:
     """
     Scan the full file for section anchors.
     Returns dict of section_name → line_index (first occurrence unless noted).
+
+    Capstone handling: collect ALL Capstone line indices during the scan, then
+    take the first one that appears after Areas of Study.  Some guides have a
+    bare "Capstone" row in the Standard Path table (triggering a false positive)
+    *and* a real "Capstone" section heading after Areas of Study.  The old
+    first-match-then-delete approach missed the second occurrence; this
+    approach handles both by filtering post-scan.
     """
     found = {}
+    capstone_candidates = []
     for i, line in enumerate(stripped):
         if STANDARD_PATH_RE.match(line) and 'Standard Path' not in found:
             found['Standard Path'] = i
         if AREAS_OF_STUDY_RE.match(line) and 'Areas of Study' not in found:
             found['Areas of Study'] = i
-        if CAPSTONE_RE.match(line) and 'Capstone' not in found:
-            found['Capstone'] = i
+        if CAPSTONE_RE.match(line):
+            capstone_candidates.append(i)
         if ACCESSIBILITY_RE.match(line) and 'Accessibility' not in found:
             found['Accessibility'] = i
 
     # A real Capstone section always appears after Areas of Study.
-    # If 'Capstone' was detected before 'Areas of Study', it is a course title
-    # in the Standard Path table (e.g. "Communications Applied Learning / Capstone"),
-    # not a section heading — discard it.
-    if 'Capstone' in found and 'Areas of Study' in found:
-        if found['Capstone'] < found['Areas of Study']:
-            del found['Capstone']
+    # Filter all Capstone candidates to only those after AoS, then take the first.
+    if capstone_candidates:
+        if 'Areas of Study' in found:
+            post_aos = [c for c in capstone_candidates if c > found['Areas of Study']]
+            if post_aos:
+                found['Capstone'] = post_aos[0]
+            # else: all Capstone matches were before AoS (SP table rows) — no section
+        else:
+            # No AoS found — take first candidate (unusual edge case)
+            found['Capstone'] = capstone_candidates[0]
 
     return found
 

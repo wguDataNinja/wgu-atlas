@@ -1,0 +1,218 @@
+{
+  "program_code": "MSHRM",
+  "version": "202507",
+  "pub_date": "7/3/2025",
+  "page_count": 0,
+  "degree_title": "Master of Science, Human Resource Management",
+  "program_description": "Program Code: MSHRM Catalog Version: 202507 Published Date: 7/3/2025 The Master of Science in Human Resource Management is a competency-based, online, graduate degree program with industry-relevant coursework designed to align with both SHRM (Society for Human Resource Management) and HRCI (HR Certification Institute) curriculum content standards and guidelines. These standards and guidelines help students prepare for either, or both, the SHRM-CP or the HRCI PHR certification exams. This compact program contains 10 courses that combine general business competencies with core human resource (HR) management skills and has a unique capstone experience that embeds the SHRM Inclusive Workplace Culture specialty credential. Along the way to degree completion, students will also earn a WGU certificate in HR Technology and Analytics for Decision Making. Throughout the program, themes of strategic HR decision-making and critical thinking, global HR best practices, and DEI are interspersed within the coursework. The competencies and skills in this program align with a variety of positions such as HR managers and directors, HR business partners, training and development specialists, talent acquisition managers, total rewards specialists, DEI managers, senior-level HR positions such as vice president of HR and chief human resource officer (CHRO), and HR information systems (HRIS) analysts.",
+  "standard_path": [
+    {
+      "title": "Managing Organizations and Leading People",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Managing Human Capital",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Management Communication",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "HR Compliance and Employee Relations",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Business Acumen",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Talent Acquisition and Development",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Data-Driven Decision Making",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "HR Technology and People Analytics",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Future Focused Total Rewards",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Inclusive Workplace Culture Capstone",
+      "cus": 3,
+      "term": 4
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Management",
+      "courses": [
+        {
+          "title": "Managing Organizations and Leading People",
+          "description": "This course covers principles of effective management and leadership that maximize organizational performance. The following topics are included: the role and functions of a manager, analysis of personal leadership styles, approaches to self-awareness and self-assessment, and application of foundational leadership and management skills.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes appropriate methods to improve organizational performance.",
+            "The graduate applies management and leadership theories for long-term global-business success.",
+            "The graduate explains the theoretical bases, current knowledge, best practices, and trends related to the practice of management.",
+            "The graduate uses contemporary theories of leadership to develop personal leadership skills based on a personal leadership philosophy."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Managing Human Capital",
+          "description": "This course focuses on strategies and tools that managers use to maximize employee contribution and create organizational excellence. You will learn talent management strategies to motivate and develop employees as well as best practices to manage performance for added value.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes applicable legal and regulatory requirements to determine whether organizations meet legal responsibilities.",
+            "The graduate determines the strategic impact of human resource management on the organization.",
+            "The graduate evaluates strategies, policies, and procedures for effective human resource management within an organization.",
+            "The graduate manages diverse human resources by applying motivational concepts to enhance organizational performance."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Management Communication",
+          "description": "This course prepares students for the communication challenges in organizations. Topics examined include theories and strategies of communication, persuasion, conflict management, and ethics that enhance communication to various audiences.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies negotiation and conflict management strategies to improve organizational performance.",
+            "The graduate communicates effectively, both in writing and speaking, within an organizational setting.",
+            "The graduate demonstrates best practices to overcome biases that inhibit organizations and teams from communicating effectively.",
+            "The graduate recognizes cultural differences in communication and develops strategies and techniques to effectively communicate with internal and external stakeholders.",
+            "The graduate utilizes appropriate technology and/or social media to communicate effectively."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Human Resources",
+      "courses": [
+        {
+          "title": "HR Compliance and Employee Relations",
+          "description": "HR Compliance and Employee Relations provides students with an in-depth understanding of the relevant laws, regulations, and ethical issues related to human resource (HR) compliance and risk management. It also explores how to resolve and improve employee relations issues to maintain a positive organizational culture in a diverse workplace. Topics include business laws and ethical considerations, employment and labor laws and regulations, and employee relations strategies to build and maintain a positive, healthy, and respectful work environment.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes strategies to maintain positive employee relations.",
+            "The learner evaluates a workplace situation for aspects of HR compliance and regulation.",
+            "The learner explains legal and ethical considerations for business."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": [
+            "aws and"
+          ]
+        },
+        {
+          "title": "Talent Acquisition and Development",
+          "description": "Talent Acquisition and Development provides an in-depth look at the strategies used to attract, retain, and develop qualified talent in an organization. Students discover how to hire the right talent to meet the needs of the organization, how to orient and onboard new employees, and how to ensure employee excellence through learning and development and performance management strategies.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates a strategy for employee performance evaluation that supports leaders and employees.",
+            "The learner creates learning and development programs for employee and organization success.",
+            "The learner defines a strategy to establish and maintain a flow of qualified talent to an organization.",
+            "The learner executes employee orientation and onboarding programs to support an employee’s success within an organization."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "HR Technology and People Analytics",
+          "description": "HR Technology and People Analytics introduces students to the types of human resource information systems (HRISs), applications, and platforms used to capture and manage employee data and the analytics used to make strategic decisions based on that data. Students will discover how to plan for the implementation of new human resource (HR) technology, present the plan to stakeholders to gain buy-in and support for the change, and train employees in the new systems. Students will also gain an understanding of how to pull and use data and people analytics for effective storytelling, decision-making, and leadership influence.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes quantitative and qualitative data within human resource metrics.",
+            "The learner evaluates change management strategies for human resource information systems (HRIS) implementation.",
+            "The Learner examines human resource information systems (HRIS) to address the needs of organizations and their employees."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Future Focused Total Rewards",
+          "description": "Future Focused Total Rewards examines discretionary and legally required approaches to compensation and benefits practices that compose an organization’s total rewards system. Students explore how to develop and communicate the components of a competitive total rewards strategy to prospective and existing employees while adhering to employment laws and aligning to an organization’s strategic goals and culture.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates a competitive total rewards strategy for employees.",
+            "The learner evaluates total reward strategies for organizational competitive advantage."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": [
+            "aws and"
+          ]
+        },
+        {
+          "title": "Inclusive Workplace Culture Capstone",
+          "description": "Inclusive Workplace Culture Capstone provides students with the opportunity to work through the SHRM Inclusive Workplace Culture specialty credential course content, studying and analyzing how human resource (HR) professionals can integrate an inclusive approach to all HR functions such as talent acquisition, training and development, total rewards, and more. Students will complete a capstone project that synthesizes an inclusive approach to strategic HR practices for an organization to create an environment of true belonging for all employees, while simultaneously being prepared to complete the SHRM Inclusive Workplace Culture exam independently to earn a specialty credential and badge from SHRM.",
+          "competency_bullets": [
+            "The learner designs a diversity, equity, and inclusion (DEI) focused approach to HR and workplace functions.",
+            "The learner evaluates methods of creating strategic inclusive workplace culture initiatives to drive lasting change within an organization.",
+            "The learner explains the foundations of diversity, equity, and inclusion (DEI) and its effect on organizations."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Business Acumen",
+      "courses": [
+        {
+          "title": "Business Acumen",
+          "description": "The Business Acumen course introduces you to the operation of the business enterprise and the role of management in directing the activities of the business. You will examine the roles of management in the context of business functions such as marketing, operations, accounting, and finance.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes operations and quality management methods for organizational improvement.",
+            "The graduate analyzes the impact of organizational structure on the effectiveness of the organization.",
+            "The graduate applies economic analysis to solve business problems.",
+            "The graduate applies financial analysis to key business decisions.",
+            "The graduate examines how marketing is used to gain competitive advantage.",
+            "The graduate utilizes accounting information for the effective management of organizational resources.",
+            "The graduate utilizes information systems to improve productivity."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Strategy",
+      "courses": [
+        {
+          "title": "Data-Driven Decision Making",
+          "description": "This course presents critical problem-solving methodologies, including field research and data collection methods that enhance organizational performance. Topics include quantitative analysis, statistical and quality tools. You will improve your ability to use data to make informed decisions.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes data from business intelligence and knowledge management systems to make appropriate decisions.",
+            "The graduate analyzes how work is accomplished and applies quality metrics and tools to increase efficiency, effectiveness, and quality.",
+            "The graduate uses a variety of decision-analysis tools to evaluate alternatives during the decision-making processes.",
+            "The graduate uses appropriate data to improve organizational performance.",
+            "The graduate uses decision-making methods to develop strategies for organizational decision processes.",
+            "The graduate uses quantitative techniques and statistical tools to identify the most appropriate decision alternatives."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": []
+}

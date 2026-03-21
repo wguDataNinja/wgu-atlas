@@ -17,7 +17,7 @@ The parser's core state machine, section anchor detection, SP format detection (
 
 ### Still provisional
 
-- **67% of corpus (77 guides / 16 families) has no content parse.** Do not extrapolate parsed-family results to untouched families.
+- **57% of corpus (65 guides / 13 families) has no content parse** (as of session 16; 50/115 parsed). Do not extrapolate parsed-family results to untouched families.
 - **4 Sped education_ba guides** have 1 missing AoS course each (PDF reordering artifact; parser fix deferred). Flag for downstream users.
 - **BSITM SP data is LOW confidence** (PDF column extraction failure). AoS for BSITM is correct and usable.
 - **Prereq mention extraction** has a known false-positive regex pattern. Use as flag only; do not display raw text.
@@ -42,6 +42,132 @@ Full audit produced in `data/program_guides/audit/`:
 - `program_guide_section_matrix.{csv,md}` — section/component analysis across corpus
 - `program_guide_readiness_assessment.{json,md}` — conservative readiness review, concrete next steps
 - `program_guide_atlas_enrichment_recommendations.md` — per-section enrichment priority and risk
+
+---
+
+## Session 16 — healthcare_grad Gate Test / Full Rollout (2026-03-21)
+
+### Gate result
+
+Both guides parsed (family size = 2; gate covers full family). **2/2 HIGH, 0 MEDIUM, 0 LOW.**
+
+| Code | Degree | Confidence | SP Rows | AoS Groups | AoS Courses | Capstone |
+|------|--------|------------|---------|------------|-------------|---------|
+| MHA | Master of Healthcare Administration | HIGH | 10 | 1 | 9 | ✓ (3 bullets) |
+| MPH | Master of Public Health | HIGH | 12 | 1 | 12 | — (embedded in AoS) |
+
+0 empty descriptions, 0 empty competency lists. Both guides: perfect reconciliation.
+
+### Structural notes
+
+- Both guides use 3-column multiline SP format — consistent with graduate_standard and mba.
+- Both use header-line metadata format.
+- Single AoS group per guide (unusual but valid for tightly focused graduate programs).
+- MHA has explicit Capstone section. MPH capstone is embedded in AoS; capstone_present=false is correct.
+
+### Parser changes
+
+**None.**
+
+### Artifacts produced
+
+- `data/program_guides/parsed/{MHA,MPH}_parsed.json`
+- `data/program_guides/validation/{MHA,MPH}_validation.json`
+- `data/program_guides/manifest_rows/{MHA,MPH}_manifest_row.json`
+- `data/program_guides/family_validation/healthcare_grad_gate_report.{json,md}`
+
+### Corpus status after healthcare_grad
+
+50 / 115 guides parsed (43.5%). 6 families complete (standard_bs=19, cs_ug=8, education_ba=11, graduate_standard=9, mba=3, healthcare_grad=2). Phase D threshold (≥70%) requires 81 guides — 31 guides short.
+
+---
+
+## Session 16 — mba Full Rollout (2026-03-21)
+
+### Results
+
+3/3 guides parsed. **3 HIGH / 0 MEDIUM / 0 LOW.**
+
+| Code | Degree | Confidence | SP Rows | AoS Groups | AoS Courses | Capstone |
+|------|--------|------------|---------|------------|-------------|---------|
+| MBA | M.B.A. | HIGH | 11 | 7 | 10 | ✓ (2 bullets) |
+| MBAHA | M.B.A., Healthcare Administration | HIGH | 11 | 8 | 10 | ✓ (2 bullets) |
+| MBAITM | M.B.A., IT Management | HIGH | 11 | 9 | 10 | ✓ (2 bullets) |
+
+0 empty descriptions, 0 empty competency lists. All 3 guides: 11/11 perfect reconciliation.
+
+### Parser bug fixed — `locate_sections()` Capstone detection
+
+**Bug:** MBAHA has a bare "Capstone" row in the Standard Path table (pre-AoS) AND a real "Capstone" section heading after Areas of Study. Old implementation: `'Capstone' not in found` early-stop guard set `found['Capstone']` on first match (the SP row), then the post-scan filter deleted it (pre-AoS). But the deletion left `'Capstone' not in found` True again — and the real section (line 463) had already been scanned past. Never detected.
+
+**Fix:** Collect all `CAPSTONE_RE` matches into `capstone_candidates[]` during scan (no early-stop guard on Capstone). Post-scan: filter to candidates after AoS, take first. If no candidates after AoS, no Capstone section.
+
+**Regression verified:** BSDA, BSMGT, BSCSIA, MBA — all unchanged after fix. MBAHA re-parsed: HIGH, 0 warnings, 11/11 clean.
+
+**Note:** This same pattern (bare "Capstone" SP row + real Capstone section after AoS) may appear in other families.
+
+### Structural notes
+
+- All 3 MBA guides use 3-column multiline SP format.
+- MBA and MBAITM use old footer format (version 201404, 201408); MBAHA uses header-line.
+- All 3 have Capstone with 2 competency bullets. MBA family capstones include the full competency trigger block (unlike graduate_standard where some capstones had 0 bullets).
+
+### Artifacts produced
+
+- `data/program_guides/parsed/{MBA,MBAHA,MBAITM}_parsed.json`
+- `data/program_guides/validation/{MBA,MBAHA,MBAITM}_validation.json`
+- `data/program_guides/manifest_rows/{MBA,MBAHA,MBAITM}_manifest_row.json`
+- `data/program_guides/family_validation/mba_rollout_summary.{json,md}`
+
+---
+
+## Session 16 — graduate_standard Full Rollout (2026-03-21)
+
+### Gate guide
+
+MBA (all-HIGH manifest; served as gate for graduate_standard). MBA parsed at HIGH confidence, 0 anomalies. Gate passed.
+
+### Full rollout results
+
+9/9 guides parsed. **8 HIGH / 1 MEDIUM / 0 LOW.**
+
+| Code | Degree | Confidence | SP Rows | AoS Groups | AoS Courses | Capstone | Notes |
+|------|--------|------------|---------|------------|-------------|---------|-------|
+| MSCIN | M.S. Curriculum and Instruction | HIGH | 10 | 4 | 10 | — | |
+| MSHRM | M.S. Human Resource Management | HIGH | 10 | 4 | 10 | — | |
+| MSIT | M.S. Information Technology | HIGH | 11 | 2 | 11 | — | |
+| MSITM | M.S. IT Management | **MEDIUM** | 10 | 4 | 9 | ✓ (0 bullets) | capstone desc polluted (see below) |
+| MSITPM | M.S. IT — Product Management | HIGH | 10 | 2 | 10 | — | |
+| MSITUG | B.S. IT (BSIT→MSIT pathway) | HIGH | 35 | 12 | 35 | — | bridge guide; 35 courses |
+| MSMK | M.S. Marketing, Digital Marketing | HIGH | 11 | 2 | 11 | — | |
+| MSMKA | M.S. Marketing, Analytics | HIGH | 11 | 2 | 11 | — | |
+| MSML | M.S. Management and Leadership | HIGH | 10 | 4 | 9 | ✓ (0 bullets) | 0 bullets is source property |
+
+### MEDIUM case — MSITM
+
+Source PDF typo: "Accessibility and Accomodations" (single 'm'). `ACCESSIBILITY_RE` requires double 'm' — no match. Capstone section has no competency trigger block, so parser accumulates `description_buf` to EOF. Capstone title correct; opening description paragraph correct; remainder polluted with accessibility/boilerplate text.
+
+**Impact:** MSITM capstone description unusable. AoS content (9 courses, all descriptions, all competencies) unaffected.
+
+**Parser change:** None. Deferred — fixing `ACCESSIBILITY_RE` broadly carries regression risk; isolated to 1 guide.
+
+### Structural notes
+
+- All 9 guides use 3-column multiline SP format. No variant needed.
+- Graduate capstones in this family may have 0 competency bullets (source-guide property, not parser failure).
+- MSITUG is a BSIT-to-MSIT bridge guide with 35 courses. Parser handles identically.
+- Metadata formats mixed: some header-line, some footer-based.
+
+### Parser changes
+
+**None (mba fix already covered above).**
+
+### Artifacts produced
+
+- `data/program_guides/parsed/{MSCIN,MSHRM,MSIT,MSITM,MSITPM,MSITUG,MSMK,MSMKA,MSML}_parsed.json`
+- `data/program_guides/validation/{same}_validation.json`
+- `data/program_guides/manifest_rows/{same}_manifest_row.json`
+- `data/program_guides/family_validation/graduate_standard_rollout_summary.{json,md}`
 
 ---
 

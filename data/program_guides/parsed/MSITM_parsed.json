@@ -1,0 +1,218 @@
+{
+  "program_code": "MSITM",
+  "version": "201808",
+  "pub_date": "12/15/22",
+  "page_count": 11,
+  "degree_title": "Master of Science, Information Technology Management",
+  "program_description": "The Master of Science in Information Technology Management is a competency-based degree program that represents a path for successful IT professionals to launch their careers and build them to an executive level. The graduate will advance his or her knowledge and skills through a practical, real-world program based on sound principles of Information Technology revolving around three primary themes: communication, technical competence and strategic vision: effective communication as essential to management at all levels, in all areas of human endeavor; and strategic vision that takes individuals and organizations beyond immediate difficulties and successes to a perception of future challenges and preparations to meet those challenges.",
+  "standard_path": [
+    {
+      "title": "Technical Communication",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Information Technology Management",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Power, Influence and Leadership",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Financial Management for IT Professionals",
+      "cus": 2,
+      "term": 2
+    },
+    {
+      "title": "IT Sourcing and Development in a Global Economy",
+      "cus": 2,
+      "term": 2
+    },
+    {
+      "title": "Managing Technology Operations and Innovation",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Technological Globalization",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Project Management",
+      "cus": 4,
+      "term": 3
+    },
+    {
+      "title": "Current and Emerging Technology",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "MS, Information Technology Management Capstone",
+      "cus": 4,
+      "term": 3
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Information Technology Management",
+      "courses": [
+        {
+          "title": "Technical Communication",
+          "description": "This course covers basic elements of technical communication, including professional written communication proficiency; the ability to strategize approaches for different audiences; and technical style, grammar, and syntax proficiency.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate decides the genre that is best suited for a defined audience in order to meet a specific business communication need.",
+            "The graduate generates technical information according to principles of ethics, clarity, and conciseness to ensure content integrity.",
+            "The graduate conducts an audience analysis to plan effective and persuasive communication strategies.",
+            "The graduate creates technical communications incorporating accurate, relevant design principles for ensuring audience comprehension.",
+            "The graduate assesses the effectiveness of the delivered communication for future improvement of communication deliverables."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Information Technology Management",
+          "description": "IT Management introduces the key topics and skills needed to lead next-generation technology organizations. This course explores how common applications and innovation drive value and business needs. Ethical and regulatory compliance issues are discussed, including current practices for risk management, disaster recovery, and cybersecurity. Students will also analyze the key leadership skills and traits necessary to lead responsive, competitive, and innovative organizations. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate articulates the functions of basic computer hardware, software, and networking components in business systems in order to communicate effectively as an IT leader.",
+            "The graduate manages risk management, disaster recovery, and cybersecurity for the protection of all of an organization.",
+            "The graduate implements best practices and innovations for acquiring, developing, and deploying information systems that meet business needs.",
+            "The graduate explains how common applications and information systems provide value to an organization for the purpose of acquiring stakeholder support.",
+            "The graduate analyzes key leadership skills and traits necessary for leading responsive, competitive, and innovative organizations.",
+            "The graduate identifies ethical, legal, and compliant IT practices to safeguard an organization, individuals, and society."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "IT Sourcing and Development in a Global Economy",
+          "description": "IT Sourcing and Development in a Global Economy examines the practice of sourcing and developing global IT projects from a management perspective. In today’s organizations, leaders look for efficient and effective ways to deliver goods and services. This course will allow students to explore the strategic, operational, tactical, and security-related impacts on the organization of sourcing and supporting a global IT project. Students will cultivate a deep understanding of the documents, skills, and stakeholders needed for any given project and develop the ability to leverage these elements to achieve success. This course will also explore the ethical, cultural, and regulatory considerations surrounding sourcing and managing IT projects in a global space. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate determines which stakeholders, documents, tools, or skills are necessary to ensure successful sourcing and support of global IT projects.",
+            "The graduate explains how an adherence to ethics, an understanding of regulations, and a sensitivity to multiculturalism can contribute to the success of global IT projects.",
+            "The graduate proposes appropriate sourcing and operational strategies for global IT projects."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Managing Technology Operations and Innovation",
+          "description": "Managing Technology Operations and Innovation explores the importance of innovation in the processes of operations management and business competition. From the formulation of tactical operations plans to strategic objectives, IT executives need to create partnerships to drive innovation within an organization. This course provides students with the practical knowledge and understanding of operations management concepts, business models, methods, tools, applications, and best practices used by successful organizations to improve their operations. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate creates partnerships with business and IT stakeholders, incorporating innovation into the organization.",
+            "The graduate formulates the alignment of IT operations with an organization's strategic vision and objectives.",
+            "The graduate manages resources and business processes to support an operationally efficient and innovative IT environment.",
+            "The graduate determines the viability of current and new business processes and tools to support technology operations and innovation in the organization."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Technological Globalization",
+          "description": "Technological Globalization explores information and communication technologies used to meet business needs in global markets. IT executives must analyze their organization’s technological needs, develop internationally-capable strategic plans, and mitigate the operational challenges of each of the countries in which the organization does business. This course provides students with the practical knowledge and understanding of how to plan, evaluate, and successfully integrate effective and efficient technical communication solutions in the global business market. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate evaluates the application of technologies when recommending global communications solutions to meet business goals.",
+            "The graduate creates an information and communication globalization plan to address international market opportunities and challenges.",
+            "The graduate evaluates the effects of international standards on the application of technology in global markets.",
+            "The graduate analyzes information technology trends and initiatives in a global context to ensure alignment with an organization’s mission and business goals."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Power, Influence and Leadership",
+      "courses": [
+        {
+          "title": "Power, Influence and Leadership",
+          "description": "Power, Influence, and Leadership focuses on the development of the critical leadership and soft skills necessary for success in information technology leadership and management. The course focuses specifically on skills such as cultivating effective leadership communication, building personal influence, enhancing emotional intelligence (soft skills), generating ideas and encouraging idea generation in others, resolving conflicts, and positioning oneself as an influential change agent within different organizational cultures. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate selects appropriate leadership strategies that produce best possible solutions to effect change or achieve a goal.",
+            "The graduate evaluates the influence of organizational culture on the successful completion of a specified task or project.",
+            "The graduate evaluates verbal and nonverbal message strategies for the extent to which they encourage collaborative communication and problem-solving.",
+            "The graduate selects appropriate strategies that foster engagement and collaboration among a variety of teams.",
+            "The graduate recommends effective strategies for promoting innovative solutions in specified decision-making processes.",
+            "The graduate incorporates strategies that leverage change within an organization’s culture in efforts to build commitment and buy-in for a specified task or project.",
+            "The graduate integrates strategies to address competing sources of power and influence into efforts to overcome obstacles to the successful completion of a specified task or project.",
+            "The graduate justifies the use of specific conflict management strategies as a means of maximizing results for all relevant stakeholders."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "IT Management",
+      "courses": [
+        {
+          "title": "Financial Management for IT Professionals",
+          "description": "Financial Management for IT Professionals develops learners’ skills in financial management, budgeting, and procurement. This course teaches how to leverage financial know-how to improve workplace decision-making. This course also provides learners with the knowledge and skills necessary to spend money on the right projects and equipment, while aligning operating budgets with strategic initiatives. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate creates IT capital and operating budgets that meet an organization’s mission and goals.",
+            "The graduate analyzes how financial information influences organizational decision-making, operational sustainability, and productivity.",
+            "The graduate manages the acquisition and replacement of technology resources for an organization."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Project Management",
+          "description": "Project Management is a thorough exploration of the inputs, tools, techniques, and outputs across the five process groups and 10 knowledge areas identified in the Project Management Body of Knowledge (PMBOK) Guide. The essential concepts and practical scenarios included enable students to build the competencies required to successfully complete the CAPM certification exam. There is no prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate explains the core concepts that make up the Project Management Institute framework and life cycle and the environment in which projects operate.",
+            "The graduate describes the artifacts, inputs, outputs, and processes associated with the Project Procurement Management knowledge area.",
+            "The graduate describes the artifacts, inputs, outputs, and processes associated with the Project Stakeholder Management knowledge area.",
+            "The graduate describes the purpose, activities, and interrelationships of the five project management process groups.",
+            "The graduate examines the competencies, experience, and skills necessary to effectively manage a project.",
+            "The graduate describes the artifacts, inputs, outputs, and processes associated with the Project Integration Management knowledge area.",
+            "The graduate solves problems using the artifacts, inputs, outputs, and processes associated with the Project Scope, Time, and Cost Management knowledge areas.",
+            "The graduate describes the artifacts, inputs, outputs, and processes associated with the Project Quality Management knowledge area.",
+            "The graduate describes the artifacts, inputs, outputs, and processes associated with the Project Resource Management knowledge area.",
+            "The graduate describes the artifacts, inputs, outputs, and processes associated with the Project Communication Management knowledge area.",
+            "The graduate solves problems using the artifacts, inputs, outputs, and processes associated with the Project Risk Management knowledge area."
+          ],
+          "prerequisite_mentions": [
+            "for this course"
+          ],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Current and Emerging Technology",
+      "courses": [
+        {
+          "title": "Current and Emerging Technology",
+          "description": "Current and Emerging Technologies explores organizational leadership trends, practices, processes, and technology in contemporary technology-intensive organizations. IT executives need to stay informed of technological trends to determine their relevance and implementation within an organization. This course requires students to read and evaluate academic literature pertaining to emerging IT topics. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate evaluates current emerging technologies for applicability within an organization.",
+            "The graduate evaluates current trends in organizational leadership for applicability within an organization.",
+            "The graduate evaluates current trends in emerging principles and processes for applicability within an organization."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": {
+    "title": "MS, Information Technology Management Capstone",
+    "description": "MSITM Capstone course challenges students to demonstrate mastery of all the MSITM program outcomes. The capstone challenges students to integrate skills and knowledge from all program domains into one project. Accessibility and Accomodations Western Governors University is committed to providing equal access to its academic programs to all qualified students. WGU’s Accessibility Services team supports this mission by providing support, resources, advocacy, collaboration, and academic accommodations for students with disabilities and other qualifying conditions under the Americans with Disabilities Act (ADA). WGU encourages student to complete the Accommodation Request Form as soon as they become aware of the need for an accommodation. Current and prospective students can reach the Accessibility Services team Monday through Friday 8:00 a.m. to 5:00 p.m. MST at 1-877-HELP-WGU (877-435-7948) x5922 or at ADASupport@wgu.edu. Need More Information? WGU Student Services WGU’s Student Services team is dedicated exclusively to helping you achieve your academic goals. The Student Services office is available during extended hours to assist with general questions and requests. The Student Services team members help you resolve issues, listen to student issues and concerns, and make recommendations for improving policy and practice based on student feedback. Student Services team members also assist with unresolved concerns to find equitable resolutions. To contact the Student Services team, please feel free to call 877-435-7948 or e-mail studentservices@wgu.edu. We are available Monday through Friday from 6:00 a.m. to 10:00 p.m., Saturday from 7:00 a.m. to 7:00 p.m., mountain standard time. Closed Sundays. If you have inquiries or concerns that require technical support, please contact the WGU IT Service Desk. The IT Service Desk is available Monday through Friday, 6:00 a.m. to 10:00 p.m. and Saturday and Sunday, 10:00 a.m. to 7:00 p.m., mountain standard time. To contact the IT Service Desk, please call 1-877-HELP-WGU (877-435-7948) or e-mail servicedesk@wgu.edu. The support teams are generally closed in observance of university holidays. For the most current information regarding WGU support services, please visit “Student Support” on the Student Portal at http://my.wgu.edu.",
+    "competency_bullets": []
+  },
+  "anomalies": []
+}

@@ -1,0 +1,224 @@
+{
+  "program_code": "MPH",
+  "version": "202408",
+  "pub_date": "11/10/2025",
+  "page_count": 0,
+  "degree_title": "Master of Public Health",
+  "program_description": "Program Code: MPH Catalog Version: 202408 Published Date: 11/10/2025 The MPH program will prepare students to develop, implement, and evaluate public health programs. They will demonstrate research methods needed to address public health illness and disease and evaluate the impact social determinants of health have on health outcomes.Responding to the growing public health workforce shortage, students who earn this degree will support their community's health by monitoring the community's health status and needs, promoting disease prevention, strengthening community access to healthcare and public health resources, and creating policies, plans and laws that positively impact the public's health.",
+  "standard_path": [
+    {
+      "title": "Public Health Core Functions and Essential Services",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Environmental Health",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Global Health",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Public Health Leadership and Administration",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Social and Behavioral Determinants of Health",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Public Health Assessment, Program Planning, Intervention, and Evaluation",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Public Health Finance and Funding",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Biostatistics and Analysis",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Principles of Epidemiology",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Public Health Policy and Advocacy",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "Public Health Education and Promotion",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "Public Health Graduate Capstone",
+      "cus": 3,
+      "term": 4
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Public Health",
+      "courses": [
+        {
+          "title": "Public Health Core Functions and Essential Services",
+          "description": "Public Health Core Functions and Essential Services builds foundational knowledge by exploring the ethical dimensions, intervention techniques, and educational strategies crucial for effective public health practice. Participants delve into the historical underpinnings, philosophy, and core values of public health, gaining insights into ethical principles guiding decision-making. The course equips students with the skills to design and implement impactful public health programs, emphasizing strategies tailored for health disparities and equity. The course navigates current issues and trends, providing a forward-looking perspective. Integrating discussions on core functions and the 10 Essential Services, the course fosters a holistic understanding of prevention science across primary, secondary, and tertiary levels in population health, including health promotion and screening. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the impact public health has had on health outcomes.",
+            "The learner examines the core functions and essential services of public health.",
+            "The learner explains the differences between primary, secondary, and tertiary prevention."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Environmental Health",
+          "description": "Environmental Health provides learners with foundational knowledge, covering the relationship people have with their environment, the risk management choices that are made, and the resulting associations that affect the health and physical well-being of individuals, communities, and susceptible populations. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates the impact human activities have on their environment.",
+            "The learner examines how a community can decrease environmental risks and promote health.",
+            "The learner explains the role of government in the environmental protection of various dimensions of environmental problems."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Global Health",
+          "description": "Global Health prepares learners to identify and analyze Global Health as a field. Learners consider how globalization has affected the health of various groups of people throughout the world. Likewise, the learner also looks at how economic and environmental factors have different effects on different groups globally. Finally, the course presents the learner with knowledge of various global initiatives and international organizations that strive to promote health and well-being and reduce health disparities. The learner demonstrates their knowledge and skills by drafting an advocacy statement promoting the successful efforts of a global health organization.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the positive and negative impact globalization has on public health.",
+            "The learner describes how initiatives and agencies address global health issues.",
+            "The learner explains the impact of economic and environmental factors on health outcomes."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Public Health Leadership and Administration",
+          "description": "Public Health Leadership and Administration enables students to apply leadership principles for public health leadership positions. This includes engaging, organizing, and leading diverse groups, as well as addressing ethical issues in the field of public health. Students also apply negotiation and mediation skills to address challenges they may face in the organization or community. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies ethical principles to resolve an ethical dilemma in public health.",
+            "The learner applies leadership principles to address an issue within an organization.",
+            "The learner evaluates negotiation and mediation skills when implementing a policy to address a public health challenge."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Social and Behavioral Determinants of Health",
+          "description": "Social and Behavioral Determinants of Health provides an overview of social and behavioral determinants and their association with health behaviors, health outcomes, and health disparities. Learners examine the strategies to mitigate social determinant barriers and apply public health theories and models to elicit behavior change and to bridge the health disparity gap. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes how social determinants of health (SDOH) affect health behaviors.",
+            "The learner applies a public health model or theory for a positive behavior change.",
+            "The learner explains how to mitigate barriers created by social determinants of health."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Public Health Assessment, Program Planning, Intervention, and Evaluation",
+          "description": "Public Health Assessment, Program Planning, Implementation and Evaluation explores the key components, concepts, and approaches for the public health assessment and planning process. In this course, students will apply evidence-based practices to conduct a community needs assessment, design a health promotion program, and develop implementation and evaluation plans. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes data collected to identify a public health program need.",
+            "The learner develops a program evaluation plan for a program that meets an identified public health need.",
+            "The learner develops an evidence-based program for a community based on a needs analysis.",
+            "The learner develops an implementation plan for a public health program."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Public Health Finance and Funding",
+          "description": "Public Health Finance and Funding offers students a field-specific approach to acquiring the budgetary skills needed to secure funding for public health programs and manage it in prudent ways. Students learn to navigate various funding sources, such as government grants and cooperative agreements, and philanthropic organizations. Students learn to create budgets using government documentation both for managing funds and for persuading funding organizations of the value of projects. Finally, students conduct a variance analysis—the process by which budgets are evaluated for feasibility after programs have launched. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner compares funding resources for public health initiatives.",
+            "The learner develops a budget for a public health initiative using budget principles.",
+            "The learner evaluates the budget to determine budgetary needs for the organization."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Biostatistics and Analysis",
+          "description": "Biostatistics and Analysis introduces learners to the role that biostatistics has in public health, predicting public health outcomes and influencing decisions made with policies. Learners will examine the sources and methods of collecting public health information, analyze and interpret quantitative data in research studies, and make inferences on the effectiveness of health program interventions and policies. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates the implementation of a preventative program or policy using data.",
+            "The learner examines quantitative research to identify health risks.",
+            "The learner recommends data collection methods for a given public health context."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Principles of Epidemiology",
+          "description": "Principles of Epidemiology offers an in-depth exploration of foundational principles and methodologies crucial for discerning and interpreting health and disease patterns in populations. Learners engage with core epidemiological concepts, encompassing measures of disease frequency, study designs, and principles of causation. Emphasizing practical applications, the course equips learners with analytical skills and theoretical foundations essential for conducting epidemiological research and contributing to evidence-based public health practices. Delving into a diverse range of topics, participants cultivate a robust understanding of epidemiological principles and their real-world applications, facilitating a seamless integration of knowledge into public health practices. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes qualitative and quantitative epidemiological data.",
+            "The learner applies epidemiologic methods, concepts, and issues in public health.",
+            "The learner evaluates the effectiveness of disease prevention and control programs."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Public Health Policy and Advocacy",
+          "description": "Public Health Policy and Advocacy prepares learners to approach public health in the political landscape. Policy can affect the health of groups ranging in size from individual organizations to entire nations and even the globe, making this an especially powerful and complex tool for the public health specialist. Learners in this course compare international healthcare systems, describe the policy-making process, evaluate a policy for its impact, and advocate in favor of a public health policy. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner advocates for political, social, or economic policies and programs that improve health in diverse populations.",
+            "The learner compares the organization, structure, and function of healthcare, public health, and regulatory systems across national and international settings.",
+            "The learner conducts a policy analysis for a given public health issue with consideration for professional ethics and evidence.",
+            "The learner evaluates existing policies for their impact on public health and health equity."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Public Health Education and Promotion",
+          "description": "Health Education & Promotion provides learners with a thorough understanding of this multifaceted field, delving into its core concepts, philosophical underpinnings, and fundamental principles. The curriculum explores various teaching methods tailored to the dynamic landscape of health education, equipping learners with versatile tools to effectively communicate health-related information. Learners develop an appreciation for the importance of promoting well-being and preventative measures, recognizing the interconnectedness of physical, mental, and social aspects of health. Through a combination of theoretical exploration and practical applications, this course aims to cultivate not only a strong foundation in health education, but also essential communication skills vital for disseminating health information in diverse contexts. Learners emerge from the course with a comprehensive skill set, ready to engage in the vital work of educating and empowering individuals and communities to make informed decisions for a healthier future. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner develops communication strategies around a public health issue for a diverse population.",
+            "The learner discusses the different types of public health-specific communication and when to use them.",
+            "The learner evaluates the validity of public health information."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Public Health Graduate Capstone",
+          "description": "Public Health Graduate Capstone enables students to investigate a public health issue in their local or home community and recommend new approaches to address that issue. Students practice the skills they have honed over the Master of Public Health program to design one that improves public health through education. Students control the process from research and discovery to program design, ultimately justifying their approach to potential stakeholders.",
+          "competency_bullets": [
+            "The learner analyzes data results from research on a public health need, program, or policy in the community.",
+            "The learner demonstrates the ability to communicate verbal and non-verbal audience-appropriate public health content.",
+            "The learner designs a program using evidence-based solutions to educate a target audience in the community."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": []
+}

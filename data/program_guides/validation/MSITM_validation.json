@@ -1,27 +1,25 @@
 {
-  "program_code": "BSDA",
-  "degree_title": "Bachelor of Science, Data Analytics",
-  "version": "202309",
-  "pub_date": "5/1/23",
-  "page_count": 21,
+  "program_code": "MSITM",
+  "degree_title": "Master of Science, Information Technology Management",
+  "version": "201808",
+  "pub_date": "12/15/22",
+  "page_count": 11,
   "detected_sections": [
     "Standard Path",
     "Areas of Study",
-    "Accessibility",
     "Capstone"
   ],
   "section_line_indices": {
-    "Standard Path": 188,
-    "Areas of Study": 254,
-    "Accessibility": 835,
-    "Capstone": 825
+    "Standard Path": 211,
+    "Areas of Study": 307,
+    "Capstone": 505
   },
-  "standard_path_row_count": 42,
-  "aos_group_count": 14,
-  "aos_course_count": 41,
+  "standard_path_row_count": 10,
+  "aos_group_count": 4,
+  "aos_course_count": 9,
   "capstone_present": true,
   "title_reconciliation": {
-    "in_both": 42,
+    "in_both": 10,
     "sp_only": [],
     "aos_only": []
   },

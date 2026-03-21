@@ -1,0 +1,214 @@
+{
+  "program_code": "MSML",
+  "version": "202007",
+  "pub_date": "9/27/23",
+  "page_count": 11,
+  "degree_title": "Master of Science, Management and Leadership",
+  "program_description": "The Master of Science, Management and Leadership degree program focuses on management and leadership skills that can be applied to multiple settings, including business, government, non-profit, or education. The program prepares you with knowledge and skills to lead through collaboration, team building, interpersonal communication and virtual environments. You will learn applicable leadership skills to foster creativity, innovation and change. The program includes topics such as organizational planning, leadership, conflict resolution and negotiation, communication and other management skills. You will enhance your ability to manage in a dynamic business environment that promotes growth, creativity and innovation. You will demonstrate the essential leadership practices of inspiring a vision, encouraging others to act, data-driven strategic planning, ethical reasoning, negotiation, critical thinking, and complex problem solving, which are all necessary to be successful leaders.",
+  "standard_path": [
+    {
+      "title": "Managing Organizations and Leading People",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Becoming an Effective Leader",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Managing Human Capital",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Business Acumen",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Management Communication",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Ethical Leadership",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Leading Teams",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Change Management and Innovation",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Strategic Management",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Management and Leadership Capstone",
+      "cus": 4,
+      "term": 4
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Management",
+      "courses": [
+        {
+          "title": "Managing Organizations and Leading People",
+          "description": "This course covers principles of effective management and leadership that maximize organizational performance. The following topics are included: the role and functions of a manager, analysis of personal leadership styles, approaches to selfawareness and self-assessment, and application of foundational leadership and management skills.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate explains the theoretical bases, current knowledge, best practices, and trends related to the practice of management.",
+            "The graduate uses contemporary theories of leadership to develop personal leadership skills based on a personal leadership philosophy.",
+            "The graduate applies management and leadership theories for long-term global-business success.",
+            "The graduate analyzes appropriate methods to improve organizational performance."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Managing Human Capital",
+          "description": "This course focuses on strategies and tools that managers use to maximize employee contribution and create organizational excellence. You will learn talent management strategies to motivate and develop employees as well as best practices to manage performance for added value.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes applicable legal and regulatory requirements to determine whether organizations meet legal responsibilities.",
+            "The graduate determines the strategic impact of human resource management on the organization.",
+            "The graduate evaluates strategies, policies, and procedures for effective human resource management within an organization.",
+            "The graduate manages diverse human resources by applying motivational concepts to enhance organizational performance."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Management Communication",
+          "description": "This course prepares students for the communication challenges in organizations. Topics examined include theories and strategies of communication, persuasion, conflict management, and ethics that enhance communication to various audiences.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate communicates effectively, both in writing and speaking, within an organizational setting.",
+            "The graduate demonstrates best practices to overcome biases that inhibit organizations and teams from communicating effectively.",
+            "The graduate recognizes cultural differences in communication and develops strategies and techniques to effectively communicate with internal and external stakeholders.",
+            "The graduate applies negotiation and conflict management strategies to improve organizational performance.",
+            "The graduate utilizes appropriate technology and/or social media to communicate effectively."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Leadership",
+      "courses": [
+        {
+          "title": "Becoming an Effective Leader",
+          "description": "This course explores major theories and approaches to leadership, leadership style evaluation, and personal leadership development while focusing on motivation, development, and achievement of others. You will learn how to influence followers, manage organizational culture, and enhance your effectiveness as a leader.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate evaluates theories of leadership as they relate to personal leadership development and effectiveness.",
+            "The graduate determines how power and influence can be used to achieve organizational goals.",
+            "The graduate demonstrates knowledge of key concepts in leading organizational culture to achieve individual and organizational goals.",
+            "The graduate applies appropriate leadership development and innovation techniques to improve motivation, development, and innovation of others."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Ethical Leadership",
+          "description": "This course examines the ethical issues and dilemmas managers face. This course provides a framework for analysis of management-related ethical issues and decision-making action required for satisfactory resolution of these issues.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate assesses the practical relevance of leading ethical theories and concepts.",
+            "The graduate identifies influences on ethical leadership and analyzes a code of ethics.",
+            "The graduate develops policies, practices, procedures, and programs that foster organizational ethics and socially responsible behavior.",
+            "The graduate analyzes applicable legal and regulatory requirements to determine whether organizations meet legal responsibilities."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Leading Teams",
+          "description": "This course helps students establish team objectives, align the team purpose with organizational goals, build credibility and trust, and develop the talents of individuals to enhance team performance.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate selects an appropriate team structure for a project and proposes strategies for team development.",
+            "The graduate examines the roles and interactions of group and team members.",
+            "The graduate determines how power and influence can be used to achieve team objectives.",
+            "The graduate analyzes team performance and proposes strategies to improve team effectiveness.",
+            "The graduate applies decision-making techniques to find creative solutions and solve problems."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Business Acumen",
+      "courses": [
+        {
+          "title": "Business Acumen",
+          "description": "The Business Acumen course introduces you to the operation of the business enterprise and the role of management in directing the activities of the business. You will examine the roles of management in the context of business functions such as marketing, operations, accounting, and finance.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes the impact of organizational structure on the effectiveness of the organization.",
+            "The graduate examines how marketing is used to gain competitive advantage.",
+            "The graduate analyzes operations and quality management methods for organizational improvement.",
+            "The graduate applies economic analysis to solve business problems.",
+            "The graduate applies financial analysis to key business decisions.",
+            "The graduate utilizes accounting information for the effective management of organizational resources.",
+            "The graduate utilizes information systems to improve productivity."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Strategy",
+      "courses": [
+        {
+          "title": "Change Management and Innovation",
+          "description": "This course provides an overview of change theories and innovation practices. This course will emphasize the role of leadership in influencing and managing change in response to challenges and opportunities facing organizations.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate recommends appropriate strategies and practices for implementing change.",
+            "The graduate develops organizational contingency plans for responding to sudden and rapid environmental changes.",
+            "The graduate recommends new methodologies to enhance organizational efficiency and effectiveness.",
+            "The graduate applies innovative thinking to identify risks and develop plans for an entrepreneurial enterprise.",
+            "The graduate evaluates the types of behaviors and structures that support innovation.",
+            "The graduate analyzes the relationship between management practices, culture, and organizational structures within the context of innovation and change."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Strategic Management",
+          "description": "This course focuses on models and practices of strategic management including developing and implementing both shortand long-term strategy and evaluating performance to achieve strategic goals and objectives.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate identifies the strategic process and the execution of a strategic plan.",
+            "The graduate assesses the fundamental perspectives on strategic decision-making using analytical tools.",
+            "The graduate analyzes generic strategies for winning a competitive advantage and determines how to apply maximum strategic power.",
+            "The graduate assesses the value of competing in international markets, and determines the risks and rewards of diversification strategies",
+            "The graduate analyzes the concepts of ethics, corporate social responsibility, and environmental sustainability and assesses the impact these policies have on strategic decision-making.",
+            "The graduate evaluates the framework necessary to effectively execute strategy."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": {
+    "title": "Management and Leadership Capstone",
+    "description": "This course is the culminating assessment of the MSML curriculum that provides an integrative experience with all competencies and assessment topics throughout the program. Students synthesize concepts from previously completed coursework and demonstrate an understanding of management and leadership development and practices.",
+    "competency_bullets": []
+  },
+  "anomalies": []
+}

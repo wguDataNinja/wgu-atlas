@@ -1,0 +1,123 @@
+{
+  "report_type": "family_full_rollout",
+  "family": "mba",
+  "date": "2026-03-21",
+  "gate_guide": "MBA (served as graduate_standard gate test)",
+  "gate_result": "HIGH confidence, 0 anomalies, 0 warnings",
+  "parser_changes": [
+    "locate_sections() Capstone detection fix: changed from first-match-then-delete approach to collect-all-then-filter. Previously, if 'Capstone' appeared as a bare SP row title (triggering the regex before AoS), the real Capstone section heading after AoS was never detected because the 'already found' guard prevented re-scanning. New implementation collects all Capstone line indices and takes the first one that appears after Areas of Study. Fixes MBAHA capstone detection. No regressions on any previously-validated guide."
+  ],
+
+  "totals": {
+    "guides_in_family": 3,
+    "parsed_successfully": 3,
+    "failed": 0,
+    "high_confidence": 3,
+    "medium_confidence": 0,
+    "low_confidence": 0
+  },
+
+  "guides": [
+    {
+      "code": "MBA",
+      "degree_title": "Master of Business Administration",
+      "confidence": "high",
+      "version": "201404",
+      "pub_date": "9/27/23",
+      "page_count": 11,
+      "metadata_format": "footer (split)",
+      "sp_rows": 11,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 7,
+      "aos_courses": 10,
+      "capstone_present": true,
+      "capstone_title": "MBA Capstone",
+      "capstone_bullets": 2,
+      "reconciliation": "11/11 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0
+    },
+    {
+      "code": "MBAHA",
+      "degree_title": "Master of Business Administration, Healthcare Administration",
+      "confidence": "high",
+      "version": "202507",
+      "pub_date": "3/7/2025",
+      "page_count": 0,
+      "metadata_format": "header-line",
+      "sp_rows": 11,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 8,
+      "aos_courses": 10,
+      "capstone_present": true,
+      "capstone_title": "MBA, Healthcare Management Capstone",
+      "capstone_bullets": 2,
+      "reconciliation": "11/11 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0,
+      "note": "Previously parsed as MEDIUM due to Capstone detection bug. Re-parsed HIGH after locate_sections() fix."
+    },
+    {
+      "code": "MBAITM",
+      "degree_title": "MBA, IT Management",
+      "confidence": "high",
+      "version": "201408",
+      "pub_date": "9/27/23",
+      "page_count": 11,
+      "metadata_format": "footer (split)",
+      "sp_rows": 11,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 9,
+      "aos_courses": 10,
+      "capstone_present": true,
+      "capstone_title": "MBA, Information Technology Management Capstone",
+      "capstone_bullets": 2,
+      "reconciliation": "11/11 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0
+    }
+  ],
+
+  "confidence_distribution": {
+    "high": ["MBA", "MBAHA", "MBAITM"],
+    "medium": [],
+    "low": []
+  },
+
+  "sp_format": "All 3 guides use 3-column multiline format (Course Description / CUs / Term).",
+
+  "capstone_notes": {
+    "present": ["MBA", "MBAHA", "MBAITM"],
+    "capstone_with_bullets": ["MBA", "MBAHA", "MBAITM"],
+    "note": "All 3 MBA family guides have a Capstone section with 2 competency bullets each. MBA family capstones use the full competency trigger block."
+  },
+
+  "quality": {
+    "empty_descriptions": 0,
+    "empty_competency_lists": 0,
+    "perfect_reconciliation_guides": 3,
+    "total_sp_rows": 33,
+    "total_aos_courses": 30
+  },
+
+  "parser_bug_fixed": {
+    "type": "locate_sections_capstone_detection",
+    "description": "When a guide has a bare 'Capstone' row in the Standard Path table AND a real 'Capstone' section heading after Areas of Study, the old first-match-then-delete approach found the SP row first, set found['Capstone'], then deleted it — but never re-scanned for the real Capstone section. The new implementation collects all candidates and filters post-AoS.",
+    "guides_affected": ["MBAHA"],
+    "guides_retroactively_corrected": ["MBAHA — re-parsed from MEDIUM to HIGH after fix"],
+    "regression_verified": "BSDA, BSMGT, BSCSIA, MBA all verified unchanged after fix"
+  },
+
+  "recommendation": {
+    "mba_complete": true,
+    "summary": "3/3 parsed, 0 failures, 3 HIGH / 0 MEDIUM / 0 LOW. All 3 MBA guides parse cleanly with capstone detection correct after parser fix. No parser changes affecting previously-validated guides.",
+    "next_family_recommendation": "healthcare_grad",
+    "next_family_rationale": "healthcare_grad (2 guides: MHA and MPH) is the next low-risk target. These are the final members of the low-risk graduate tier. After healthcare_grad, the low-risk graduate families are complete and rollout should proceed to teaching_mat or education_bs (which share validated education_ba patterns)."
+  }
+}

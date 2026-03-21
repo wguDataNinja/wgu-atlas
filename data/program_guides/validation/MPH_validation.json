@@ -1,0 +1,32 @@
+{
+  "program_code": "MPH",
+  "degree_title": "Master of Public Health",
+  "version": "202408",
+  "pub_date": "11/10/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 187,
+    "Areas of Study": 292,
+    "Accessibility": 465
+  },
+  "standard_path_row_count": 12,
+  "aos_group_count": 1,
+  "aos_course_count": 12,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 12,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

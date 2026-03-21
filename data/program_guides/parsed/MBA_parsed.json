@@ -1,0 +1,252 @@
+{
+  "program_code": "MBA",
+  "version": "201404",
+  "pub_date": "9/27/23",
+  "page_count": 11,
+  "degree_title": "Master of Business Administration",
+  "program_description": "The Master of Business Administration program is specifically designed for experienced business professionals and managers seeking upward career mobility or professionals who want to broaden their business knowledge.",
+  "standard_path": [
+    {
+      "title": "Managing Organizations and Leading People",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Managing Human Capital",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Management Communication",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Marketing",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Accounting for Decision Makers",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Ethical Leadership",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Financial Management",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Data-Driven Decision Making",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Operations Management",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Global Economics for Managers",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "MBA Capstone",
+      "cus": 4,
+      "term": 4
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Management",
+      "courses": [
+        {
+          "title": "Managing Organizations and Leading People",
+          "description": "This course covers principles of effective management and leadership that maximize organizational performance. The following topics are included: the role and functions of a manager, analysis of personal leadership styles, approaches to selfawareness and self-assessment, and application of foundational leadership and management skills.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate explains the theoretical bases, current knowledge, best practices, and trends related to the practice of management.",
+            "The graduate uses contemporary theories of leadership to develop personal leadership skills based on a personal leadership philosophy.",
+            "The graduate applies management and leadership theories for long-term global-business success.",
+            "The graduate analyzes appropriate methods to improve organizational performance."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Managing Human Capital",
+          "description": "This course focuses on strategies and tools that managers use to maximize employee contribution and create organizational excellence. You will learn talent management strategies to motivate and develop employees as well as best practices to manage performance for added value.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes applicable legal and regulatory requirements to determine whether organizations meet legal responsibilities.",
+            "The graduate determines the strategic impact of human resource management on the organization.",
+            "The graduate evaluates strategies, policies, and procedures for effective human resource management within an organization.",
+            "The graduate manages diverse human resources by applying motivational concepts to enhance organizational performance."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Management Communication",
+          "description": "This course prepares students for the communication challenges in organizations. Topics examined include theories and strategies of communication, persuasion, conflict management, and ethics that enhance communication to various audiences.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate communicates effectively, both in writing and speaking, within an organizational setting.",
+            "The graduate demonstrates best practices to overcome biases that inhibit organizations and teams from communicating effectively.",
+            "The graduate recognizes cultural differences in communication and develops strategies and techniques to effectively communicate with internal and external stakeholders.",
+            "The graduate applies negotiation and conflict management strategies to improve organizational performance.",
+            "The graduate utilizes appropriate technology and/or social media to communicate effectively."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Operations Management",
+          "description": "This course focuses on the strategic importance of operations management to overall performance. This course also emphasizes principles of supply chain management relevant to a variety of business operations ranging from manufacturing goods to retail services. You will examine the various planning, control, and decision-making tools and techniques of the operations function.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies quality management methods for continuous improvement in an organization.",
+            "The graduate designs capacity, process, layout, and location strategies.",
+            "The graduate utilizes process and method analysis, measurement techniques, and scheduling concepts to design the work systems design.",
+            "The graduate employs just-in-time and lean systems to improve operating efficiency.",
+            "The graduate organizes the supply chain to create competitive advantage for an organization.",
+            "The graduate applies operations and inventory management requirements and concepts to achieve operating objectives."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Marketing",
+      "courses": [
+        {
+          "title": "Marketing",
+          "description": "Marketing Fundamentals introduces students to principles of the marketing environment, social media, consumer behavior, marketing research, and market segmentation. Students will also explore marketing strategies that are related to products and services, distribution channels, promotions, sales, and pricing.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes the global market to identify opportunities to gain competitive advantage through marketing activities.",
+            "The graduate recommends customer relationship management practices for maximizing customer satisfaction and loyalty.",
+            "The graduate evaluates the feasibility and profitability of new products and services within the organization.",
+            "The graduate designs a strategic marketing plan for a new product or service.",
+            "The graduate identifies risks and opportunities for an entrepreneurial enterprise."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Accounting",
+      "courses": [
+        {
+          "title": "Accounting for Decision Makers",
+          "description": "This course provides you with the accounting knowledge and skills to assess and manage a business. Topics include the accounting cycle, financial statements, taxes, and budgeting. This course will improve students’ ability to understand reports and use accounting information to plan and make sound business decisions.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes financial statements to evaluate company performance and makes recommendations.",
+            "The graduate analyzes internal corporate controls to determine their adequacy and compliance with legal and regulatory requirements.",
+            "The graduate uses economic cost concepts and activity-based costing (ABC) data to make cost-based decisions.",
+            "The graduate uses cost-volume-profit concepts and applies various analytical tools to improve company profit potential.",
+            "The graduate uses budgeting tools for planning and control purposes, including analyzing cash flows to ensure adequacy of funds."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Leadership",
+      "courses": [
+        {
+          "title": "Ethical Leadership",
+          "description": "This course examines the ethical issues and dilemmas managers face. This course provides a framework for analysis of management-related ethical issues and decision-making action required for satisfactory resolution of these issues.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate assesses the practical relevance of leading ethical theories and concepts.",
+            "The graduate identifies influences on ethical leadership and analyzes a code of ethics.",
+            "The graduate develops policies, practices, procedures, and programs that foster organizational ethics and socially responsible behavior.",
+            "The graduate analyzes applicable legal and regulatory requirements to determine whether organizations meet legal responsibilities."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Finance",
+      "courses": [
+        {
+          "title": "Financial Management",
+          "description": "This course covers practical approaches to analysis and decision-making in the administration of corporate funds, including capital budgeting, working capital management, and cost of capital. Topics include financial planning, management of working capital, analysis of investment opportunities, sources of long-term financing, government regulations, and global influences. This course will improve students’ ability to interpret financial statements and manage corporate finances.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate examines the primary risk/return criteria regarding financial management in domestic and global environments.",
+            "The graduate evaluates company performance based on financial statements and other measures in order to provide recommendations.",
+            "The graduate applies valuation skills to evaluate capital investment projects and the overall value of a firm.",
+            "The graduate applies capital market theory in financial decision making.",
+            "The graduate applies long-term investment management concepts to capital budgeting decision making.",
+            "The graduate demonstrates the management of working capital to achieve the appropriate value for the firm.",
+            "The graduate analyzes applicable legal and regulatory requirements to determine whether organizations meet legal responsibilities and act with social responsibility."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Strategy",
+      "courses": [
+        {
+          "title": "Data-Driven Decision Making",
+          "description": "This course presents critical problem-solving methodologies, including field research and data collection methods that enhance organizational performance. Topics include quantitative analysis, statistical and quality tools. You will improve your ability to use data to make informed decisions.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate uses decision-making methods to develop strategies for organizational decision processes.",
+            "The graduate uses a variety of decision-analysis tools to evaluate alternatives during the decision-making processes.",
+            "The graduate uses quantitative techniques and statistical tools to identify the most appropriate decision alternatives.",
+            "The graduate analyzes how work is accomplished and applies quality metrics and tools to increase efficiency, effectiveness, and quality.",
+            "The graduate analyzes data from business intelligence and knowledge management systems to make appropriate decisions.",
+            "The graduate uses appropriate data to improve organizational performance."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Economics",
+      "courses": [
+        {
+          "title": "Global Economics for Managers",
+          "description": "This course examines how economic tools, techniques, and indicators can be used for solving organizational problems related to competitiveness, productivity, and growth. You will explore the management implications of a variety of economic concepts and effective strategies to make decisions within a global context.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes economic forces and operations of global markets in order to improve decision making.",
+            "The graduate analyzes contemporary economic and political forces; their interrelationship; and their impact on the global business environment.",
+            "The graduate applies economic concepts to managerial decision making.",
+            "The graduate explains fundamental economic principles, including supply and demand, scarcity, opportunity cost, price, income and cross-price elasticities, role of government, inflation, and monetary and fiscal policy.",
+            "The graduate describes global economic forces influencing production, consumption, investments, and related policy challenges."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": {
+    "title": "MBA Capstone",
+    "description": "MBA Capstone is the culminating course in the MBA program that provides an integrative experience with all competencies and assessment topics throughout the program. Students synthesize concepts from previously completed coursework and demonstrate an understanding of responsible practices for growing and running a business. This course promotes a meaningful connection between the academic work and career experience.",
+    "competency_bullets": [
+      "The graduate demonstrates the ability to participate and contribute value to the professional field through the integration of competencies from across the degree program.",
+      "The graduate manages a professional identity in order to market the graduate effectively."
+    ]
+  },
+  "anomalies": []
+}

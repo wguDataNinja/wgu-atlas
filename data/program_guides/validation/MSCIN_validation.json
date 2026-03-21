@@ -1,0 +1,32 @@
+{
+  "program_code": "MSCIN",
+  "degree_title": "Master of Science, Curriculum and Instruction",
+  "version": "202404",
+  "pub_date": "6/23/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 186,
+    "Areas of Study": 252,
+    "Accessibility": 429
+  },
+  "standard_path_row_count": 10,
+  "aos_group_count": 4,
+  "aos_course_count": 10,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 10,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

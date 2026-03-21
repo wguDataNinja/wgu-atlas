@@ -1,0 +1,266 @@
+{
+  "program_code": "MBAHA",
+  "version": "202507",
+  "pub_date": "3/7/2025",
+  "page_count": 0,
+  "degree_title": "Master of Business Administration, Healthcare Administration",
+  "program_description": "Program Code: MBAHA Catalog Version: 202507 Published Date: 3/7/2025 The Master of Business Administration, Healthcare Administration is specifically designed for those in an array of leadership roles as well as those transitioning into healthcare from a different industry to develop strong health care leaders by strengthening your analytical and critical thinking skills. The program prepares you for a mid-level to upper-level management position in private and public sectors of the healthcare industry including hospitals, health system management, consulting, physician practices, and government and non-government agencies.",
+  "standard_path": [
+    {
+      "title": "Managing Organizations and Leading People",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Operations Management",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Accreditation Audit",
+      "cus": 4,
+      "term": 1
+    },
+    {
+      "title": "Accounting for Decision Makers",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Financial Management",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Ethical Leadership",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Data-Driven Decision Making",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Marketing",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Service Line Development",
+      "cus": 4,
+      "term": 3
+    },
+    {
+      "title": "Global Economics for Managers",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "MBA, Healthcare Management Capstone",
+      "cus": 4,
+      "term": 4
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Management",
+      "courses": [
+        {
+          "title": "Managing Organizations and Leading People",
+          "description": "This course covers principles of effective management and leadership that maximize organizational performance. The following topics are included: the role and functions of a manager, analysis of personal leadership styles, approaches to self-awareness and self-assessment, and application of foundational leadership and management skills.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes appropriate methods to improve organizational performance.",
+            "The graduate applies management and leadership theories for long-term global-business success.",
+            "The graduate explains the theoretical bases, current knowledge, best practices, and trends related to the practice of management.",
+            "The graduate uses contemporary theories of leadership to develop personal leadership skills based on a personal leadership philosophy."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Operations Management",
+          "description": "This course focuses on the strategic importance of operations management to overall performance. This course also emphasizes principles of supply chain management relevant to a variety of business operations ranging from manufacturing goods to retail services. You will examine the various planning, control, and decision-making tools and techniques of the operations function.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies operations and inventory management requirements and concepts to achieve operating objectives.",
+            "The graduate applies quality management methods for continuous improvement in an organization.",
+            "The graduate designs capacity, process, layout, and location strategies.",
+            "The graduate employs just-in-time and lean systems to improve operating efficiency.",
+            "The graduate organizes the supply chain to create competitive advantage for an organization.",
+            "The graduate utilizes process and method analysis, measurement techniques, and scheduling concepts to design the work systems design."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Healthcare Management",
+      "courses": [
+        {
+          "title": "Accreditation Audit",
+          "description": "Accreditation Audit covers regulatory audits, resource assessment, quality improvement, patient care improvement, organization plans, risk management, effective interaction, and compliance as evidenced during an accreditation audit.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate can effectively interact with physicians, nurses, and other healthcare providers.",
+            "The graduate designs quality improvement programs to enhance the level of patient care in a healthcare organization.",
+            "The graduate develops risk management programs that result in improved quality patient care.",
+            "The graduate ensures a healthcare organization is in compliance with mandatory regulatory audit guidelines pertaining to the organization.",
+            "The graduate identifies and assesses external and internal resources available to a healthcare organization.",
+            "The graduate identifies and helps a healthcare organization comply with applicable healthcare statutes and regulations.",
+            "The graduate interprets quality assessments and prioritizes patient care improvement needs.",
+            "The graduate prepares organizational plans such as disaster plans, contingency plans, or staffing plans."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Service Line Development",
+          "description": "Service Line Development will address how to critically assess the competitive marketplace as well as the internal environment to establish a new line of business. Topics include needs assessment, international healthcare trends, service line management, revenue analysis, costs and productivity, communication, negotiation, health policy, health legislation, and facilities management, which are variables in the evaluation process.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes international healthcare trends and assesses their impact on local health issues to develop strategies for improvement.",
+            "The graduate analyzes strategies that impact health legislation.",
+            "The graduate designs, administers, and evaluates a community health needs assessment.",
+            "The graduate designs, administers, evaluates, and negotiates contracts to minimize the risk and liability for the organization.",
+            "The graduate designs, develops, creates, and communicates a healthcare organization’s marketing strategy to staff and the public.",
+            "The graduate effectively interprets health policy initiatives.",
+            "The graduate effectively manages construction projects and other facilities management projects for a healthcare organization.",
+            "The graduate evaluates and analyzes a healthcare organization’s management of service lines.",
+            "The graduate manages costs and productivity to improve a healthcare organization’s sustainability.",
+            "The graduate performs net revenue analysis to maximize a healthcare organization’s financial performance."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Accounting",
+      "courses": [
+        {
+          "title": "Accounting for Decision Makers",
+          "description": "This course provides you with the accounting knowledge and skills to assess and manage a business. Topics include the accounting cycle, financial statements, taxes, and budgeting. This course will improve students’ ability to understand reports and use accounting information to plan and make sound business decisions.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes financial statements to evaluate company performance and makes recommendations.",
+            "The graduate analyzes internal corporate controls to determine their adequacy and compliance with legal and regulatory requirements.",
+            "The graduate uses budgeting tools for planning and control purposes, including analyzing cash flows to ensure adequacy of funds.",
+            "The graduate uses cost-volume-profit concepts and applies various analytical tools to improve company profit potential.",
+            "The graduate uses economic cost concepts and activity-based costing (ABC) data to make cost-based decisions."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Finance",
+      "courses": [
+        {
+          "title": "Financial Management",
+          "description": "This course covers practical approaches to analysis and decision-making in the administration of corporate funds, including capital budgeting, working capital management, and cost of capital. Topics include financial planning, management of working capital, analysis of investment opportunities, sources of long-term financing, government regulations, and global influences. This course will improve students’ ability to interpret financial statements and manage corporate finances.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes applicable legal and regulatory requirements to determine whether organizations meet legal responsibilities and act with social responsibility.",
+            "The graduate applies capital market theory in financial decision making.",
+            "The graduate applies long-term investment management concepts to capital budgeting decision making.",
+            "The graduate applies valuation skills to evaluate capital investment projects and the overall value of a firm.",
+            "The graduate demonstrates the management of working capital to achieve the appropriate value for the firm.",
+            "The graduate evaluates company performance based on financial statements and other measures in order to provide recommendations.",
+            "The graduate examines the primary risk/return criteria regarding financial management in domestic and global environments."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Leadership",
+      "courses": [
+        {
+          "title": "Ethical Leadership",
+          "description": "This course examines the ethical issues and dilemmas managers face. This course provides a framework for analysis of management-related ethical issues and decision-making action required for satisfactory resolution of these issues.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes applicable legal and regulatory requirements to determine whether organizations meet legal responsibilities.",
+            "The graduate assesses the practical relevance of leading ethical theories and concepts.",
+            "The graduate develops policies, practices, procedures, and programs that foster organizational ethics and socially responsible behavior.",
+            "The graduate identifies influences on ethical leadership and analyzes a code of ethics."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Strategy",
+      "courses": [
+        {
+          "title": "Data-Driven Decision Making",
+          "description": "This course presents critical problem-solving methodologies, including field research and data collection methods that enhance organizational performance. Topics include quantitative analysis, statistical and quality tools. You will improve your ability to use data to make informed decisions.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes data from business intelligence and knowledge management systems to make appropriate decisions.",
+            "The graduate analyzes how work is accomplished and applies quality metrics and tools to increase efficiency, effectiveness, and quality.",
+            "The graduate uses a variety of decision-analysis tools to evaluate alternatives during the decision-making processes.",
+            "The graduate uses appropriate data to improve organizational performance.",
+            "The graduate uses decision-making methods to develop strategies for organizational decision processes.",
+            "The graduate uses quantitative techniques and statistical tools to identify the most appropriate decision alternatives."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Marketing",
+      "courses": [
+        {
+          "title": "Marketing",
+          "description": "Marketing Fundamentals introduces students to principles of the marketing environment, social media, consumer behavior, marketing research, and market segmentation. Students will also explore marketing strategies that are related to products and services, distribution channels, promotions, sales, and pricing.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes the global market to identify opportunities to gain competitive advantage through marketing activities.",
+            "The graduate designs a strategic marketing plan for a new product or service.",
+            "The graduate evaluates the feasibility and profitability of new products and services within the organization.",
+            "The graduate identifies risks and opportunities for an entrepreneurial enterprise.",
+            "The graduate recommends customer relationship management practices for maximizing customer satisfaction and loyalty."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Economics",
+      "courses": [
+        {
+          "title": "Global Economics for Managers",
+          "description": "This course examines how economic tools, techniques, and indicators can be used for solving organizational problems related to competitiveness, productivity, and growth. You will explore the management implications of a variety of economic concepts and effective strategies to make decisions within a global context.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes contemporary economic and political forces; their interrelationship; and their impact on the global business environment.",
+            "The graduate analyzes economic forces and operations of global markets in order to improve decision making.",
+            "The graduate applies economic concepts to managerial decision making.",
+            "The graduate describes global economic forces influencing production, consumption, investments, and related policy challenges.",
+            "The graduate explains fundamental economic principles, including supply and demand, scarcity, opportunity cost, price, income and cross-price elasticities, role of government, inflation, and monetary and fiscal policy."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": {
+    "title": "MBA, Healthcare Management Capstone",
+    "description": "MBA Healthcare Management Capstone is the culminating course in the MBA HCM program that provides an integrative experience with all competencies and assessment topics throughout the program. Students synthesize concepts from previously completed coursework and demonstrate an understanding of responsible practices for growing and running a business. This course promotes a meaningful connection between the academic work and career experience.",
+    "competency_bullets": [
+      "The graduate demonstrates the ability to participate and contribute value to the professional field through the integration of competencies from across the degree program.",
+      "The graduate manages a professional identity in order to market the graduate effectively."
+    ]
+  },
+  "anomalies": []
+}

@@ -1,0 +1,48 @@
+{
+  "source_pdf_filename": "MBAITM.pdf",
+  "source_text_filename": "MBAITM.txt",
+  "inferred_program_code": "MBAITM",
+  "page_count": 11,
+  "version_strings": [
+    "201408"
+  ],
+  "publication_dates": [
+    "9/27/23"
+  ],
+  "has_standard_path": true,
+  "has_areas_of_study": true,
+  "has_capstone_section": true,
+  "has_course_descriptions": true,
+  "has_competency_bullets": true,
+  "has_term_structure": true,
+  "has_cu_values": true,
+  "has_cert_prep_mentions": false,
+  "has_prereq_mentions": false,
+  "standard_path_row_count": 11,
+  "competency_trigger_count": 10,
+  "competency_bullet_count": 66,
+  "cert_prep_mention_count": 0,
+  "prereq_mention_count": 0,
+  "detected_section_headings": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility",
+    "Capstone"
+  ],
+  "inferred_course_groups": [
+    "Management",
+    "Project Management",
+    "Marketing",
+    "Strategic Solutions",
+    "Accounting",
+    "Leadership",
+    "Finance",
+    "Strategy",
+    "Economics"
+  ],
+  "likely_guide_family": "mba",
+  "template_type": "full",
+  "parseability_confidence": "high",
+  "warnings": [],
+  "irregularities": []
+}

@@ -1,0 +1,32 @@
+{
+  "program_code": "MSIT",
+  "degree_title": "Master of Science, Information Technology",
+  "version": "202604",
+  "pub_date": "1/28/2026",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 172,
+    "Areas of Study": 271,
+    "Accessibility": 433
+  },
+  "standard_path_row_count": 11,
+  "aos_group_count": 2,
+  "aos_course_count": 11,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 11,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}
