@@ -1,0 +1,185 @@
+{
+  "document_type": "packet_schema",
+  "prepared_on": "2026-03-21",
+  "purpose": "Context packet and adjudication output schema for LLM adjudication of ~171 ambiguous_residual rows",
+  "input_packet": {
+    "description": "One JSON object per ambiguous_residual row. Self-contained. LLM needs no external lookups.",
+    "fields": {
+      "packet_id": {
+        "type": "string",
+        "format": "{program_code}__{guide_title_normalized}__{surface}",
+        "example": "BAELED__elementary_social_studies_methods__aos"
+      },
+      "program_context": {
+        "type": "object",
+        "fields": {
+          "program_code": "string",
+          "program_code_effective": "string or null",
+          "family": "string",
+          "degree_title": "string",
+          "degree_level": "enum: undergraduate | graduate | unknown",
+          "guide_version": "string (YYYYMM)",
+          "guide_pub_date": "string (MM/DD/YYYY)"
+        }
+      },
+      "row_context": {
+        "type": "object",
+        "fields": {
+          "surface": "enum: aos | sp",
+          "guide_title_raw": "string",
+          "guide_title_normalized": "string",
+          "aos_group": "string or null (AoS rows only)",
+          "sp_term": "integer or null (SP rows only)",
+          "sp_cus": "number or null (SP rows only)"
+        }
+      },
+      "parsed_description": {
+        "type": "string or null",
+        "notes": "From parsed guide AoS section. Include even if empty string. Omit field only if course does not appear in AoS (SP-only row with no AoS description)."
+      },
+      "aos_group_neighbors": {
+        "type": "array of objects",
+        "item_fields": {
+          "guide_title_raw": "string",
+          "resolved_code": "string",
+          "anchor_class": "string"
+        },
+        "max_items": 5,
+        "notes": "Other courses in the same AoS group that have been resolved. Shows the typical code generation for this section."
+      },
+      "candidates": {
+        "type": "array of objects",
+        "item_fields": {
+          "course_code": "string",
+          "canonical_title_current": "string",
+          "canonical_cus": "string",
+          "current_college": "string",
+          "active_current": "boolean",
+          "current_programs": "string (semicolon-delimited)",
+          "historical_programs": "string (semicolon-delimited)",
+          "current_program_count": "integer",
+          "stability_class": "string",
+          "title_variant_class": "string",
+          "first_seen_edition": "string (YYYY-MM)",
+          "last_seen_edition": "string (YYYY-MM)"
+        },
+        "notes": "All candidate course codes with full canonical metadata. Do NOT include cert/prereq mentions or raw observed_titles."
+      },
+      "previously_resolved_in_guide": {
+        "type": "array of objects",
+        "item_fields": {
+          "guide_title_raw": "string",
+          "resolved_code": "string",
+          "anchor_class": "string"
+        },
+        "max_items": 10,
+        "notes": "Sample of resolved rows from anywhere in the same guide. Establishes the code cohort pattern for this guide."
+      },
+      "signals_checked_and_failed": {
+        "type": "array of strings",
+        "valid_values": ["cu_match", "one_active", "a_suffix_cert", "degree_level", "degree_title_overlap"],
+        "notes": "All deterministic signals that were checked and did not resolve this row. Prevents LLM from re-discovering an already-failed signal."
+      }
+    }
+  },
+  "output_adjudication": {
+    "description": "One JSON object per packet. The LLM writes this for each row adjudicated.",
+    "fields": {
+      "packet_id": {
+        "type": "string",
+        "notes": "Must match input packet_id exactly."
+      },
+      "selected_code": {
+        "type": "string or null",
+        "notes": "Canonical course code selected. null if unresolvable."
+      },
+      "confidence": {
+        "type": "enum",
+        "values": ["high", "medium", "low", "unresolvable"],
+        "definitions": {
+          "high": "Clear single answer; confident a reader with full WGU context would agree. Requires at least one named specific evidence point.",
+          "medium": "Likely correct but one or more candidates cannot be fully ruled out.",
+          "low": "Weak evidence; real risk of being wrong. Do not auto-accept.",
+          "unresolvable": "Candidates are genuinely indistinguishable. Do not select."
+        }
+      },
+      "alternative_possible": {
+        "type": "boolean",
+        "notes": "true if an alternative candidate could plausibly be correct with different interpretation of the same evidence. Triggers spot-check even for high confidence."
+      },
+      "rationale": {
+        "type": "string",
+        "notes": "2-5 sentences. Must cite specific evidence (field names, values, edition ranges, program texts). Must explain why alternatives were excluded."
+      },
+      "signal_used": {
+        "type": "string",
+        "valid_values": [
+          "legacy_vs_active_code_pattern",
+          "program_name_fuzzy_match",
+          "college_mismatch",
+          "aos_group_neighbor_cohort",
+          "cu_context_from_description",
+          "edition_range_alignment",
+          "unresolvable_empty_programs_tie",
+          "other"
+        ],
+        "notes": "Primary evidence type. Use 'other' and explain in rationale if none of the named signals apply."
+      },
+      "unresolvable_reason": {
+        "type": "string or null",
+        "notes": "If confidence = unresolvable: brief description of why no selection is possible. null otherwise."
+      },
+      "review_flag": {
+        "type": "boolean",
+        "notes": "true if this adjudication should be manually reviewed regardless of confidence level."
+      }
+    }
+  },
+  "acceptance_policy": {
+    "auto_accept": {
+      "condition": "confidence = high AND alternative_possible = false",
+      "resulting_anchor_class": "llm_resolved_high"
+    },
+    "spot_check": {
+      "condition": "confidence = high AND alternative_possible = true",
+      "resulting_anchor_class": "llm_resolved_high_verified (after review)"
+    },
+    "human_review": {
+      "condition": "confidence = medium",
+      "resulting_anchor_class": "llm_resolved_medium_reviewed (after review)"
+    },
+    "reject": {
+      "condition": "confidence = low",
+      "action": "leave as ambiguous_residual"
+    },
+    "leave_unresolved": {
+      "condition": "confidence = unresolvable",
+      "action": "leave as ambiguous_residual, log unresolvable_reason"
+    }
+  },
+  "batching_strategy": {
+    "group_by": "family",
+    "recommended_order": [
+      "education_ba",
+      "education_mat",
+      "education_grad",
+      "cs_ug",
+      "cs_grad",
+      "standard_bs",
+      "business_grad",
+      "remaining"
+    ],
+    "within_group_order": "AoS rows before SP rows; 2-candidate rows before 3+ candidate rows",
+    "rationale": "Grouping by family allows the LLM to learn the code cohort pattern for a program family and apply it consistently across many similar rows."
+  },
+  "expected_yield": {
+    "total_residual_packets": 171,
+    "high_confidence_auto_accept_estimate": "70-90",
+    "high_confidence_spot_check_estimate": "15-25",
+    "medium_confidence_review_estimate": "25-40",
+    "low_confidence_reject_estimate": "10-20",
+    "unresolvable_estimate": "15-30",
+    "net_auto_accepted": "70-90",
+    "net_accepted_after_review": "95-130"
+  }
+}

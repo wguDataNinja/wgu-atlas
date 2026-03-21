@@ -1,0 +1,216 @@
+{
+  "document_type": "resolution_strategy",
+  "prepared_on": "2026-03-21",
+  "based_on": [
+    "data/program_guides/bridge/index.json",
+    "data/program_guides/bridge/guides/*.json",
+    "data/program_guides/enrichment/course_enrichment_candidates.json",
+    "data/canonical_courses.csv"
+  ],
+  "verdict": {
+    "idea_is_sound": true,
+    "caveat": "Apply LLM adjudication only to the true residual (~171 rows), not the full 1,599. The majority of ambiguous rows are resolvable deterministically.",
+    "missing_step_in_proposal": "Stage A (enhanced deterministic resolver) must precede LLM adjudication. Skipping it wastes inference budget and introduces noise into rows where rules suffice."
+  },
+  "bucket_characterization": {
+    "total_ambiguous_rows": 1599,
+    "aos_rows": 819,
+    "sp_rows": 780,
+    "anchor_class_breakdown": {
+      "ambiguous_current_exact": 1597,
+      "ambiguous_normalized": 2
+    },
+    "distinct_ambiguous_titles": 214,
+    "candidate_set_size_distribution": {
+      "2": 1102,
+      "3": 319,
+      "4": 119,
+      "5": 42,
+      "6": 17
+    },
+    "top_recurring_ambiguous_titles": [
+      {"title": "Integrated Physical Sciences", "guide_count": 28, "candidate_count": 2},
+      {"title": "Secondary Literacy Methods and Interventions", "guide_count": 22, "candidate_count": 2},
+      {"title": "General Secondary Methods", "guide_count": 17, "candidate_count": 2},
+      {"title": "Secondary Disciplinary Literacy", "guide_count": 17, "candidate_count": 5},
+      {"title": "Project Management", "guide_count": 16, "candidate_count": 3},
+      {"title": "Data Management - Foundations", "guide_count": 14, "candidate_count": 3}
+    ]
+  },
+  "deterministic_signal_inventory": {
+    "signal_conflict_rate": 0.0,
+    "multi_signal_rows": 378,
+    "multi_signal_conflicts": 0,
+    "signals": [
+      {
+        "id": "cu_match",
+        "name": "CU Match",
+        "description": "SP row has explicit sp_cus; exactly one candidate matches that CU value in canonical_courses.",
+        "applicable_to": ["sp"],
+        "estimated_rows_resolved": 289,
+        "reliability": "very_high",
+        "implemented_in_bridge": false
+      },
+      {
+        "id": "one_active",
+        "name": "One Active Candidate",
+        "description": "Exactly one candidate has active_current = True in canonical_courses.",
+        "applicable_to": ["aos", "sp"],
+        "estimated_rows_resolved": 595,
+        "reliability": "high",
+        "implemented_in_bridge": false
+      },
+      {
+        "id": "a_suffix_cert",
+        "name": "A-Suffix Certificate Context",
+        "description": "One+ candidates carry A-suffix with contexts_seen=cert; guide is a degree program. Non-cert candidate wins.",
+        "applicable_to": ["aos", "sp"],
+        "estimated_rows_resolved": 88,
+        "reliability": "very_high",
+        "implemented_in_bridge": false
+      },
+      {
+        "id": "degree_level",
+        "name": "Degree-Level Exclusion",
+        "description": "Guide is UG or grad. Candidates exclusively scoped to opposite level are excluded. If exactly one remains, it wins.",
+        "applicable_to": ["aos", "sp"],
+        "estimated_rows_resolved": 291,
+        "reliability": "moderate_high",
+        "implemented_in_bridge": false
+      },
+      {
+        "id": "degree_title_overlap",
+        "name": "Degree-Title in Current Programs",
+        "description": "Exactly one candidate has current_programs or historical_programs containing the guide's degree_title_guide as a substring.",
+        "applicable_to": ["aos", "sp"],
+        "estimated_rows_resolved": 197,
+        "reliability": "high",
+        "implemented_in_bridge": false,
+        "status": "new_signal_not_yet_implemented"
+      }
+    ],
+    "total_deterministically_resolvable": 1428,
+    "deterministic_resolution_rate": 0.893,
+    "true_llm_residual": 171
+  },
+  "true_llm_residual": {
+    "row_count": 171,
+    "by_surface": {"aos": 101, "sp": 70},
+    "by_guide_level": {"undergraduate": 143, "graduate": 28},
+    "candidate_set_size_distribution": {"2": 30, "3": 65, "4": 40, "5": 32, "6": 4},
+    "dominant_pattern": "empty_programs_ghost_code",
+    "dominant_pattern_description": "One or more candidates have current_programs='' and historical_programs=''. Same CU, same college as the correct candidate. Rules cannot distinguish. LLM can infer from program family context, college alignment, legacy vs active code patterns, and parsed description.",
+    "dominant_programs": ["education_ba", "cs_ug"],
+    "example_cases": [
+      {
+        "title": "Elementary Social Studies Methods",
+        "guide": "BAELED",
+        "candidates": ["C104 (3CU, empty programs)", "D674 (3CU, BA Elem Ed programs)", "D681 (2CU, MAT)"],
+        "rule_failure": "Degree-level eliminates D681. C104 vs D674 both 3CU same college — only distinguishable by program text and legacy code pattern.",
+        "llm_expected_decision": "D674",
+        "llm_confidence_expected": "high"
+      },
+      {
+        "title": "Calculus I",
+        "guide": "BAESMES",
+        "candidates": ["C282 (4CU empty)", "C362 (4CU empty)", "C363 (2CU MAT-excl)", "C958 (4CU CS college)", "D890 (3CU BA Sec Math)", "QJT2 (2CU MAT-excl)"],
+        "rule_failure": "Degree-level removes grad candidates. C958 wrong college. C282/C362 still compete with D890 — distinguished only by program text and CU (3 vs 4) where no SP CU is available on AoS rows.",
+        "llm_expected_decision": "D890",
+        "llm_confidence_expected": "medium_high"
+      }
+    ]
+  },
+  "workflow": {
+    "stage_a": {
+      "name": "Enhanced Deterministic Resolver",
+      "script": "scripts/program_guides/resolve_ambiguous_deterministic.py",
+      "inputs": ["data/program_guides/bridge/guides/*.json", "data/canonical_courses.csv"],
+      "outputs": [
+        "data/program_guides/bridge/guides_resolved/*.json",
+        "data/program_guides/bridge/resolution_log_deterministic.json"
+      ],
+      "logic": "Apply signals 1-5 in order. First match wins. If multi-signal agreement: record all. If conflict: flag (should not occur based on current data). If no signal: forward as ambiguous_residual.",
+      "expected_rows_resolved": 1428
+    },
+    "stage_b": {
+      "name": "LLM Packet Builder",
+      "script": "scripts/program_guides/build_ambiguous_resolution_packets.py",
+      "inputs": ["stage_a output", "data/program_guides/parsed/*.json", "data/canonical_courses.csv"],
+      "output": "data/program_guides/bridge/llm_packets/packets.json",
+      "packet_count_expected": 171
+    },
+    "stage_c": {
+      "name": "LLM Adjudication",
+      "method": "claude_code_session_batch",
+      "input": "data/program_guides/bridge/llm_packets/packets.json",
+      "output": "data/program_guides/bridge/llm_packets/adjudication_results.json",
+      "approach": "Process all 171 packets in one or two grouped batches by program family. Group by family to exploit repeated context."
+    },
+    "stage_d": {
+      "name": "Merge and Validate",
+      "script": "scripts/program_guides/merge_resolved_ambiguous.py",
+      "acceptance_policy": {
+        "auto_accept": "confidence = high AND alternative_possible = false",
+        "spot_check": "confidence = high AND alternative_possible = true",
+        "human_review": "confidence = medium",
+        "reject_keep_unresolved": "confidence = low OR confidence = unresolvable"
+      }
+    },
+    "stage_e": {
+      "name": "Rerun Enrichment Extraction",
+      "script": "scripts/program_guides/build_course_enrichment_candidates.py",
+      "expected_course_count": "600-650 (up from 501)"
+    }
+  },
+  "expected_yield": {
+    "current_unique_rows": 2735,
+    "current_unique_rate": 0.542,
+    "after_stage_a_rows": 4163,
+    "after_stage_a_rate": 0.824,
+    "after_stage_c_auto_accept": 4248,
+    "after_stage_c_with_review": 4290,
+    "permanently_unresolved_estimate": 250,
+    "final_coverage_estimate": 0.86
+  },
+  "failure_modes": [
+    {
+      "id": "llm_overconfidence",
+      "description": "LLM assigns high confidence to structurally indistinguishable candidates (same CU, same college, both empty programs).",
+      "mitigation": "Require at least one named evidence signal in rationale for high-confidence label. If rationale cites only 'seems more likely', downgrade to medium."
+    },
+    {
+      "id": "ghost_code_irreducible",
+      "description": "Some empty-programs codes cannot be resolved because the guide may genuinely intend either version.",
+      "mitigation": "Treat unresolvable as a valid, expected output. Do not force a selection."
+    },
+    {
+      "id": "aos_context_thin",
+      "description": "AoS rows have no CU or term context. Parsed guide description may not distinguish versions.",
+      "mitigation": "Always include parsed description AND neighboring resolved titles in AoS packets."
+    },
+    {
+      "id": "stage_a_bugs_cascade",
+      "description": "Deterministic resolver errors propagate to enrichment output.",
+      "mitigation": "Spot-check 20 resolved rows before running Stage E. Validate that resolved codes appear in expected program families."
+    }
+  ],
+  "what_stays_deterministic": [
+    "All rows with existing unique anchor classes (exact_current_unique, exact_observed_variant_unique)",
+    "All unmapped rows (no candidates to choose from)",
+    "All signal-1 CU match rows",
+    "All signal-2 one-active rows",
+    "All signal-3 A-suffix cert rows",
+    "All multi-signal rows where signals agree",
+    "Do not use LLM to double-check deterministic resolutions"
+  ],
+  "recommended_next_session": {
+    "session_number": 26,
+    "title": "Build Enhanced Deterministic Resolver + LLM Packet Builder",
+    "priority_1": "Implement resolve_ambiguous_deterministic.py with all 5 signals",
+    "priority_2": "Validate output: expect ~1,428 resolved, ~171 ambiguous_residual",
+    "priority_3": "Implement build_ambiguous_resolution_packets.py",
+    "priority_4": "Spot-check sample of deterministic resolutions manually",
+    "optional": "Run 171 LLM adjudication packets in same session if time permits",
+    "do_not": "Rerun enrichment extraction until both deterministic and LLM stages complete"
+  }
+}
