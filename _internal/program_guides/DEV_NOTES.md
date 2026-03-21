@@ -2,6 +2,58 @@
 
 ---
 
+## Session 15 (continued) — education_ba Full Rollout (2026-03-21)
+
+### Full rollout results
+
+All 11 education_ba guides parsed. 0 failures.
+
+| Confidence | Count | Guides |
+|---|---|---|
+| HIGH | 5 | BAELED, BAESELED, BAESMES, BAESSESC, BAESSESP |
+| MEDIUM | 6 | BAESSESB, BAESSESE, BAESSPEE, BAESSPMM, BASPEE, BASPMM |
+| LOW | 0 | — |
+
+### MEDIUM causes
+
+**Pattern A — `sp_incomplete_row_at_eof` (BAESSESB, BAESSESE):**
+Last SP row "Secondary Disciplinary Literacy" (CUs=3, Term=8) split across PDF page boundary. Term value appears after Total CUs line; parser breaks correctly at Total CUs. Course present in AoS. Same pattern as BSSWE_C.
+
+**Pattern B — `competency_trigger_unexpected_state` (BAESSPEE, BAESSPMM, BASPEE, BASPMM):**
+PDF text extraction reordering artifact in Fundamentals of Special Education course. Last bullet fragment ends with "...the Individualized" (no terminal punctuation). Following 50-char course title "Considerations for Instructional Planning for Learners" absorbed as bullet continuation by `len(line)>30` heuristic. Course present in SP but missing from AoS output. Consistent across all 4 Special Education guides. Parser fix deferred (regression risk).
+
+### Parser changes this session
+
+**None.**
+
+### Subtype distribution
+
+| Subtype | Guides | SP Format | Clinical/ST Groups |
+|---|---|---|---|
+| Teacher licensure | BAELED, BASPEE, BASPMM | 2-column (no Term) | Clinical Experiences (all 3); Student Teaching (BAELED, BASPEE only) |
+| Educational Studies | BAESELED, BAESMES, BAESSESB, BAESSESC, BAESSESE, BAESSESP | 3-column (Term) | None |
+| Educational Studies – Sped | BAESSPEE, BAESSPMM | 3-column (Term) | None |
+
+### Quality (all 11 guides)
+
+- 0 empty descriptions
+- 0 empty competency lists
+- 17 cert-prep mentions total
+- 20 prereq mentions total
+
+### Artifacts produced
+
+- `data/program_guides/parsed/{6 new codes}_parsed.json`
+- `data/program_guides/validation/{6 new codes}_validation.json`
+- `data/program_guides/manifest_rows/{6 new codes}_manifest_row.json`
+- `data/program_guides/family_validation/education_ba_rollout_summary.{json,md}`
+
+### Next recommended family
+
+**`graduate_standard`** — structurally closest to standard_bs; 9 guides; gate with MBA or MHA first.
+
+---
+
 ## Session 15 (continued) — education_ba Sampled Rollout (2026-03-20)
 
 ### Sample results

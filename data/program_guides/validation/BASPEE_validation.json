@@ -1,0 +1,42 @@
+{
+  "program_code": "BASPEE",
+  "degree_title": "Bachelor of Arts, Special Education and Elementary Education (Dual",
+  "version": "202603",
+  "pub_date": "12/11/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 209,
+    "Areas of Study": 420,
+    "Accessibility": 1198
+  },
+  "standard_path_row_count": 45,
+  "aos_group_count": 7,
+  "aos_course_count": 44,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 44,
+    "sp_only": [
+      "Considerations for Instructional Planning for Learners"
+    ],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 1,
+  "anomalies": [
+    {
+      "type": "competency_trigger_unexpected_state",
+      "line": 801,
+      "state": "IN_COMPETENCIES"
+    }
+  ],
+  "warnings": [
+    "1 SP titles not found in AoS: ['Considerations for Instructional Planning for Learners']"
+  ],
+  "parseability_confidence": "medium"
+}

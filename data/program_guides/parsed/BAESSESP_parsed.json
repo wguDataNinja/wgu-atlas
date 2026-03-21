@@ -1,0 +1,686 @@
+{
+  "program_code": "BAESSESP",
+  "version": "202603",
+  "pub_date": "12/11/2025",
+  "page_count": 0,
+  "degree_title": "Bachelor of Arts, Educational Studies in Secondary Physics Science",
+  "program_description": "Education Program Code: BAESSESP Catalog Version: 202603 Published Date: 12/11/2025 The Bachelor of Arts, Educational Studies in Science Education (Secondary Physics) includes content knowledge related to secondary Physics teaching. This program consists of online courses which take the learner from general education, through methods of instruction, Physics content, assessment, and classroom management to secondary education courses for interacting with secondary-level students. It does not include supervised clinical experiences in a real classroom and does not meet the requirements for initial teacher licensure. This program is for individuals who, for various reasons, want academic knowledge that relates to teaching, but who cannot or do not want to participate in clinical experiences to be eligible to teach as a result of completing the program. This is a non-licensure program and will not, in any state, lead to an institutional recommendation for licensure.",
+  "standard_path": [
+    {
+      "title": "The Professional Educator",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Composition: Writing with a Strategy",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Introduction to Communication: Connecting with Others",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Learners and Learning Science",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Composition: Successful Self-Expression",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "General Earth Science I",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "General Earth Science I Lab",
+      "cus": 1,
+      "term": 2
+    },
+    {
+      "title": "Personalized Learning for Inclusive Classrooms",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Quantitative Literacy",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Creating Positive Learning Environments",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Introduction to Systems Thinking and Applications",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "General Biology I",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "General Biology I Lab",
+      "cus": 1,
+      "term": 3
+    },
+    {
+      "title": "Planning Instructional Strategies for Meaningful Learning",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Technology and Ethics: Emerging Trends and Society",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "Assessing and Monitoring Student Learning",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "College Algebra",
+      "cus": 4,
+      "term": 4
+    },
+    {
+      "title": "Instructional Technology and Online Pedagogy",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "General Chemistry I",
+      "cus": 3,
+      "term": 5
+    },
+    {
+      "title": "General Chemistry I Lab",
+      "cus": 1,
+      "term": 5
+    },
+    {
+      "title": "American Politics and the US Constitution",
+      "cus": 3,
+      "term": 5
+    },
+    {
+      "title": "Precalculus",
+      "cus": 4,
+      "term": 5
+    },
+    {
+      "title": "General Secondary Methods",
+      "cus": 3,
+      "term": 5
+    },
+    {
+      "title": "Three Dimensional Science and Engineering",
+      "cus": 3,
+      "term": 6
+    },
+    {
+      "title": "General Physics I",
+      "cus": 3,
+      "term": 6
+    },
+    {
+      "title": "General Physics I Lab",
+      "cus": 1,
+      "term": 6
+    },
+    {
+      "title": "Calculus I",
+      "cus": 3,
+      "term": 6
+    },
+    {
+      "title": "General Physics II with Lab",
+      "cus": 4,
+      "term": 6
+    },
+    {
+      "title": "Secondary Literacy Methods and Interventions",
+      "cus": 3,
+      "term": 7
+    },
+    {
+      "title": "Electricity and Magnetism",
+      "cus": 3,
+      "term": 7
+    },
+    {
+      "title": "Secondary Science Teaching Methods",
+      "cus": 3,
+      "term": 7
+    },
+    {
+      "title": "Laboratory Safety",
+      "cus": 1,
+      "term": 7
+    },
+    {
+      "title": "Astrophysics with Lab",
+      "cus": 4,
+      "term": 7
+    },
+    {
+      "title": "Waves, Acoustics, and Sound",
+      "cus": 3,
+      "term": 8
+    },
+    {
+      "title": "Secondary Physics Curriculum",
+      "cus": 3,
+      "term": 8
+    },
+    {
+      "title": "Secondary Disciplinary Literacy",
+      "cus": 3,
+      "term": 8
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Professional Core",
+      "courses": [
+        {
+          "title": "The Professional Educator",
+          "description": "The Professional Educator prepares WGU students to excel in the exciting and impactful profession of being an educator. Additionally, the course addresses the importance of continuous professional development and ethical considerations in teaching through the School of Education (SOE) Professional Dispositions and Ethics. Upon completion of the course, WGU students will be equipped with the tools and insights needed to continue their professional journey of becoming effective, inspiring, and adaptive educators, capable of making a significant impact in the lives of their students and the broader educational community. (This is not a transferable course.)",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the impact of professional dispositions and ethics in engaging with others and making decisions.",
+            "The learner examines program requirements, regulations, and the utilization of tools to navigate through the program.",
+            "The learner reflects on professional dispositions and ethics in their own education and career."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Learners and Learning Science",
+          "description": "Learners and Learning Science provides WGU students with a deep understanding of the science behind learning processes. This course covers a broad spectrum of topics pertaining to the science of learning, including cognitive development, learning theories, neuroscience in education, and the impact of developmental milestones on learning. Students will explore how these concepts apply to learning environments and educational levels, from early childhood through adolescence. The course emphasizes evidence-based practices and the practical application of learning science principles, equipping students with strategies to enhance learning outcomes and student engagement. This course aims to empower educators to create more effective, inclusive, and engaging learning experiences for all learners.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner examines how principles of neuroscience are applied in instructional practices.",
+            "The learner examines how theories of learning science and learner growth and development influence educational practices.",
+            "The learner recommends instructional techniques based on principles of learning science that will positively impact learning."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Personalized Learning for Inclusive Classrooms",
+          "description": "Personalized Learning for Inclusive Classrooms empowers educators to create more inclusive and effective learning environments. This course focuses on the principles and strategies of personalized learning, emphasizing the need to value and support the unique needs, interests, and abilities of each learner. The course provides a foundation for learner characteristics of learners with exceptionalities and other unique learning needs. This course helps candidates develop skills for partnering with parents and families to advocate for all students with exceptionalities, including those impacted by provisions of the Individuals with Disabilities Education Act (IDEA) and Section 504 of the Rehabilitation Act. Multitiered systems of support are addressed to prepare candidates for their future classrooms as they seek to select appropriate instructional practices and interventions to best serve their learners. These factors are also addressed in relation to online and hybrid learning environments.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies MTSS to address the needs of all students.",
+            "The learner examines policies, practices, and legal requirements to inform educator practice.",
+            "The learner identifies characteristics of students with various learning needs."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Creating Positive Learning Environments",
+          "description": "Creating Positive Learning Environments delves into the key elements that contribute to creating and maintaining a positive learning atmosphere for educators focused on fostering supportive and productive classroom climates. The course teaches effective communication, classroom norms and routines, and positive behavior supports. Emphasizing the importance of a safe and inclusive environment, the course also explores methods to promote student engagement, collaboration, and mutual respect among all learners. It also addresses the role of mental well-being in learning, exploring trauma-informed and restorative practices, which are addressed in relation to online and hybrid learning environments. Through a blend of theoretical frameworks and practical applications including case studies, Creating Positive Learning Environments teaches learners how to develop and sustain environments that not only enhance academic performance but also support the holistic development of students.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the role of the community of care in creating a learning environment that is sensitive to varied experiences and backgrounds.",
+            "The learner applies classroom engagement strategies to enhance a positive classroom climate.",
+            "The learner plans norms, routines, and classroom expectations to promote a safe, equitable, and productive learning environment."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Planning Instructional Strategies for Meaningful Learning",
+          "description": "Planning Instructional Strategies for Meaningful Learning is a dynamic course designed for educators seeking to deepen their understanding of instructional planning and the execution of educational strategies that foster meaningful learning experiences. This course provides candidates with the knowledge and skills necessary to create engaging and standards-aligned lessons that meet the needs of all students. This course also covers a range of high-leverage instructional practices to increase student learning, engagement, and achievement. Participants will learn to utilize assessments to inform instruction, adapt teaching to accommodate all students, and incorporate technology to enhance learning.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the application of instructional practices to facilitate mastery of standards and objectives for all students.",
+            "The learner analyzes the role of formative and summative assessment in evaluating student learning and planning future instruction.",
+            "The learner applies differentiated instructional strategies to address the needs of all students.",
+            "The learner plans standards-based instruction."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Assessing and Monitoring Student Learning",
+          "description": "Assessing and Monitoring Student Learning is a targeted course crafted for candidates who aim to enhance their skills in evaluating student progress and educational outcomes. This course provides an in-depth exploration of various assessment techniques, including formative and summative assessments, standardized tests, benchmark assessments, progress monitoring, and alternative assessment strategies. Participants will learn how to design effective assessment tools, interpret data to inform instruction, and provide meaningful feedback to students. This course also provides a foundation of data analysis that supports educators’ need to understand data and present data to stakeholders. Candidates will also explore online and digital assessment tools. Assessing and Monitoring Student Learning will prepare learners to align assessments to standards to monitor student learning, assess data, and provide on time and quality feedback.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner aligns standards, objectives, and assessments within their instructional practices.",
+            "The learner analyzes assessment results to determine student learning and inform instructional decisions for a classroom.",
+            "The learner applies various assessment types to monitor progress and actively engage students in their own learning.",
+            "The learner provides appropriate feedback to increase student learning."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Instructional Technology and Online Pedagogy",
+          "description": "Instructional Technology and Online Pedagogy is an innovative course designed to equip students with the skills to effectively integrate technology in their teaching practices. The course also covers best practices for online pedagogy, assessment and feedback, collaborative learning, and the use of multimedia and interactive elements to enhance learning experiences. With a focus on practical application, students will leave the course ready to create and facilitate compelling, high-quality online learning experiences that meet the needs of today's diverse learners. This course also provides a foundation for supporting digital literacy in K–12 education. In addition, this course prepares students to use technology to improve professional productivity and effectiveness in areas like data analysis and data representations.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies instructional technologies to facilitate mastery of standards and objectives for all learners.",
+            "The learner applies online pedagogy to facilitate student learning experiences.",
+            "The learner implements technology solutions to support teacher productivity.",
+            "The learner plans instruction focused on building students' digital literacy skills."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "General Education",
+      "courses": [
+        {
+          "title": "Composition: Writing with a Strategy",
+          "description": "Welcome to Composition: Writing with a Strategy! In this course, you will focus on three main topics: understanding purpose, context, and audience, writing strategies and techniques, and editing and revising. In addition, the first section, will offer review on core elements of the writing process, cross-cultural communication, as well as working with words and common standards and practices. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the seven competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner composes constructive feedback of written texts.",
+            "The learner constructs a written document with correct format, style, structure, and grammar.",
+            "The learner formulates a strategy for editing and revising written text.",
+            "The learner incorporates writing strategies and techniques for written communication.",
+            "The learner writes with purpose for a given context and target audience."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Introduction to Communication: Connecting with Others",
+          "description": "Welcome to Introduction to Communication: Connecting with Others! It may seem like common knowledge that communication skills are important, and that communicating with others is inescapable in our everyday lives. While this may appear simplistic, the study of communication is actually complex, dynamic, and multifaceted. Strong communication skills are invaluable to strengthening a multitude of aspects of life. Specifically, this course will focus on communication in the professional setting, and present material from multiple vantage points, including communicating with others in a variety of contexts, across situations, and with diverse populations. Upon completion, you will have a deeper understanding of both your own and others’ communication behaviors, and a toolbox of effective behaviors to enhance your experience in the workplace.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements appropriate communication styles based on audience and setting.",
+            "The learner uses communication strategies for managing conflict.",
+            "The learner uses communication strategies to influence others."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Composition: Successful Self-Expression",
+          "description": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing research sources. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the seven competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content. You will demonstrate competency through a performance assessment. There is no prerequisite for this course and there is no specific technical knowledge needed.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner composes a written message with language appropriate for cross-cultural communication.",
+            "The learner incorporates research to support a position or idea.",
+            "The learner incorporates self-expression in written communication.",
+            "The learner researches valid and reliable sources.",
+            "The learner writes a message using an effective communication approach for a given situation.",
+            "The learner writes a reference list.",
+            "The learner writes in a professional manner for a given scenario."
+          ],
+          "prerequisite_mentions": [
+            "for this course and there is no specific technical knowledge needed"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Quantitative Literacy",
+          "description": "Quantitative Literacy views real-world problems through the lens of quantitative reasoning. The application of quantitative concepts to topics such as financial decisions is explored. Algebraic models and functions, as well as principles of geometry, are reviewed as fundamental ways to explore real-life scenarios. The use of mathematical concepts as a tool for modeling and understanding everyday problems is leveraged to promote students' thinking of math as a useful and relevant tool for many situations and scenarios. Numeracy and quantitative thinking skills are developed through these applications.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies algebraic models and functions to real-world scenarios.",
+            "The learner applies geometric concepts and calculations to solve practical problems.",
+            "The learner applies quantitative methods to make financial decisions."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Introduction to Systems Thinking and Applications",
+          "description": "Introduction to Systems Thinking and Applications provides learners with the skills required to engage in a holistic systems-based approach to analyzing complex problems and solutions. This course introduces the foundational concepts and principles of systems thinking and provides opportunities to use a systems thinking approach to analyze and evaluate real-world case studies. The course will culminate with using systems thinking to develop a solution to an authentic complex problem. This course has no prerequisites, but general education math (C955 or C957) is preferred. Because the course is self-paced, learners may move through the material as quickly or as slowly as needed, with the goal of demonstrating proficiency in the five competencies covered in the final assessment. If learners have no prior knowledge of this material, they can expect to spend 30 to 40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes complex problems and solutions using a systems thinking methodology.",
+            "The learner applies the basic principles and foundational theory of systems thinking to a scenario.",
+            "The learner designs a solution to a complex problem using systems thinking."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Technology and Ethics: Emerging Trends and Society",
+          "description": "Technology and Ethics: Emerging Trends and Society explores the intersection of ethical thinking and technological innovations. A foundational introduction to ethical frameworks is applied to emerging trends in technology, including artificial intelligence, social media, and other forms of digital media. This course examines the impact of technology on our understanding of self, as well as the individual’s role in interacting with others in a globalized society. The course helps students gain the ability to recognize ethical actions within the context of current and newly evolving technological landscapes. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes privacy ethics and identity as related to emerging technologies.",
+            "The learner applies ethical concepts to emerging technology as it relates to society.",
+            "The learner describes ethical decision-making frameworks as applied to technology."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "College Algebra",
+          "description": "This course provides further application and analysis of algebraic concepts and functions through mathematical modeling of real-world situations. Topics include: real numbers, algebraic expressions, equations and inequalities, graphs and functions, polynomial and rational functions, exponential and logarithmic functions, and systems of linear equations.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate classifies and performs operations on real numbers; solves linear equations and inequalities; connects a linear equation to its graph; and identifies a function.",
+            "The graduate combines functions, finds inverse functions, solves exponential and logarithmic equations and functions.",
+            "The graduate simplifies and factors polynomial expressions, and solves polynomial equations.",
+            "The graduate simplifies rational, radical, and quadratic expressions, solves corresponding equations, and extends this knowledge to the study of functions.",
+            "The graduate solves systems of linear equations and their related applications."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "American Politics and the US Constitution",
+          "description": "American Politics and the U.S. Constitution examines the evolution of representative government in the United States and the changing interpretations of the civil rights and civil liberties protected by the Constitution. This course will give candidates an understanding of the powers of the branches of the federal government, the continual tensions inherent in a federal system, the shifting relationship between state and federal governments, and the interactions between elected officials and the ever-changing electorate. This course will focus on such topics as the role of a free press in a democracy, the impact of changing demographics on American politics, and the debates over and expansion of civil rights. Upon completion of the course, candidates should be able to explain the basic functions of the federal government, describe the forces that shape American policy and politics, and be better prepared to participate in America’s civic institutions. This course has no prerequisite.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate describes the influence of competing political ideologies on the development of the United States government.",
+            "The graduate examines the influence of political parties, citizens, and non-governmental organizations on elections and other political processes inside a participatory democracy.",
+            "The graduate examines the influence of the media, public opinion, and political discourse on American democracy.",
+            "The graduate examines the struggle to balance individual liberty, public order, and state’s rights.",
+            "The graduate explains how the structure and powers of the United States government interact to form public policy."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Precalculus",
+          "description": "Precalculus builds on previous math courses to provide a deeper understanding of fundamental mathematical concepts and problem-solving skills to prepare students for calculus and professional success. The course will lead students to engage with functions, trigonometry, systems of equations, analytic geometry, and sequences and series. Through interactive learning experiences and real-world applications, precalculus will help students develop a deeper understanding of mathematical principles and their practical significance across diverse fields. Successful completion of a college level algebra course is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies a system of equations or inequalities to solve a problem.",
+            "The learner applies analytic geometry to solve problems.",
+            "The learner applies trigonometric concepts to simplify mathematical expressions.",
+            "The learner evaluates different types of mathematical functions based on behavior and properties.",
+            "The learner identifies patterns in sequences and series."
+          ],
+          "prerequisite_mentions": [
+            "Successful completion of a college level algebra course",
+            "for this course"
+          ],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "General Science Content",
+      "courses": [
+        {
+          "title": "General Earth Science I",
+          "description": "This comprehensive survey course provides a foundational understanding of Earth's position in the universe and its dynamic systems. Students will explore Earth's placement within the solar system, including the effects of its orbit, origin, and celestial interactions on tides and seasons. The course delves into Earth's subsystems—geosphere, hydrosphere, biosphere, and atmosphere—focusing on their interactions and impacts on weather, climate, and geological processes like weathering, erosion, and soil formation. Additionally, the course examines natural phenomena such as earthquakes and volcanoes, and the significant influence of human activities on Earth's systems, addressing topics such as resource management, land use, pollution, and sustainability. Through interactive simulations, multimedia resources, and real-life applications, students will engage in interdisciplinary thinking and develop a deep appreciation for the scientific methods, theories, and laws that underpin Earth science.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes how systems and system interactions on Earth create conditions in the biosphere, hydrosphere, atmosphere, and geosphere.",
+            "The learner interprets data related to the impact of human activity on the Earth and the impact of the Earth on human activity.",
+            "The learner relates patterns and processes on Earth to its position in the solar system and universe."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": [
+            "aws that"
+          ]
+        },
+        {
+          "title": "General Earth Science I Lab",
+          "description": "The Earth Science I Lab course equips students with skills to conduct scientific investigations in Earth science. Students will apply the scientific method, design controlled experiments, and follow lab safety protocols. They will gain experience with data collection methods, including field observations, experiments, and virtual simulations of phenomena like erosion. The course emphasizes analyzing weather, climate, and seismic data using basic techniques. It also covers essential aspects of identifying and analyzing the components of a lab report by answering questions related to a simulated lab report. Students will learn to interpret data, draw conclusions, and communicate findings effectively, preparing them for advanced Earth science studies and research.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner conducts scientific investigations to answer questions using experimentation in the field of Earth Science."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "General Biology I",
+          "description": "This course is a foundational introduction to the biological sciences. The overarching theories of life from biological research are explored as well as the fundamental concepts and principles of the study of living organisms and their interaction with the environment. Key concepts include how living organisms use and produce energy; how life grows, develops, and reproduces; how life responds to the environment to maintain internal stability; and how life evolves and adapts to the environment.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes different types of cells based on their structures and biological functions.",
+            "The graduate analyzes inter-dependencies of organisms and their environments.",
+            "The graduate analyzes the basic chemical composition of cells and the basic processes that happen at the cellular level.",
+            "The graduate analyzes the biological basis for and patterns of heredity and gene expression.",
+            "The graduate analyzes the characteristics and classifications of living organisms."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "General Biology I Lab",
+          "description": "This course focuses on developing foundational skills in scientific investigation within the field of biology. It emphasizes the application of the scientific method to answer biological questions through hypothesis-driven experimentation. Students will learn to design, execute, and analyze biological experiments, ensuring adherence to rigorous scientific protocols and ethical standards. The course also covers essential aspects of identifying and analyzing the components of a lab report by answering questions related to a simulated lab report. Throughout the course, students will cultivate critical thinking skills necessary for interpreting data, drawing conclusions, and proposing further research directions in biology.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together",
+            "The learner conducts scientific investigations to answer questions using experimentation in the field of biology."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "General Chemistry I",
+          "description": "General Chemistry I introduces foundational principles of chemistry, starting at the atomic level and expanding to the behavior of elements within the periodic table. This course explores how atoms bond to form molecules and proceeds into chemical reactions, acids and bases, solutions, and nuclear reactions. Students will gain a comprehensive understanding of stability and change in chemical processes. This course highlights the practical aspects of chemistry, providing insights into how chemical principles underpin everyday phenomena and contribute to our understanding of environmental processes.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies concepts of energy and entropy to describe systems.",
+            "The learner describes processes and outputs of nuclear reactions.",
+            "The learner recognizes patterns in the structure and properties of matter based on atomic structure."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "General Chemistry I Lab",
+          "description": "General Chemistry I Lab focuses on developing foundational skills in scientific investigation in chemistry. It emphasizes the application of the scientific method to answer chemistry questions through hypothesis-driven experimentation. Students will learn to design, execute, and analyze chemistry experiments, ensuring adherence to rigorous scientific protocols and ethical standards. The course also covers essential aspects of scientific communication, including writing clear and structured scientific reports and effectively presenting experimental findings. Throughout the course, students will cultivate critical thinking skills necessary for interpreting data and drawing conclusions.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together",
+            "The learner conducts scientific investigations to answer questions using experimentation in the field of chemistry."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "General Physics I",
+          "description": "This General Physics course covers fundamental concepts, including Newton’s Laws, forces, motion, energy, waves, electricity, and magnetism, with real-world applications and insights into relativity and quantum theory. Learners will study measurement, forces and motion, Newton’s Laws, centrifugal and centripetal forces, friction, gravity, momentum, collisions, vectors, wave motion, energy, thermodynamics, and electromagnetic waves. Skills developed include scientific literacy, physical science application, systems thinking, and scientific reasoning.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies concepts of energy and entropy to describe systems.",
+            "The learner applies concepts of physics to describe forces, motion, and momentum.",
+            "The learner describes electricity, magnetism, and their relationship."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "General Physics I Lab",
+          "description": "In this lab that follows the General Physics course, learners will develop the ability to conduct scientific investigations to answer questions using experimentation in the field of physics. The section emphasizes the application of the scientific method to solve problems, analyze data from experiments, and draw conclusions. Students will also learn to accurately summarize their findings and perform tasks with attention to detail. Throughout the lessons, students will engage in activities designed to enhance their scientific reasoning and written communication skills, ensuring they can effectively explain their results. They will practice identifying interconnections within systems. The course provides a foundational understanding of experimental techniques and data analysis, preparing learners to conduct independent investigations and apply their knowledge in real-world contexts.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner conducts scientific investigations to answer questions using experimentation in the field of physics."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Secondary Education",
+      "courses": [
+        {
+          "title": "General Secondary Methods",
+          "description": "General Secondary Methods prepares students for secondary teaching by equipping them with essential instructional skills and knowledge tailored to adolescent learners. Students will explore how adolescent development influences learning, how secondary school settings influence instructional choices, and how to implement effective teaching strategies in these environments. Through a blend of theory and practical application, students will create and assess lesson plans, focusing on differentiated instruction, formative and summative assessments, and the integration of technology, including AI tools, to promote affective learning in diverse secondary education settings.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements instruction that considers features of secondary learners and characteristics of secondary education to promote impactful learning.",
+            "The learner relates characteristics of secondary education settings to instructional and pedagogical choices.",
+            "The learner relates key characteristics of adolescents to their implications for learning."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Laboratory Safety",
+          "description": "The course \"Laboratory Safety\" aims at equipping learners with essential safety knowledge and skills for various learning environments, including laboratories, classrooms, and field settings. Learners in this course will deeply understand safety protocols, legal responsibilities, and effective teaching strategies for safety in educational settings.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner demonstrates knowledge of laboratory safety, potential hazards, and educator responsibilities to ensure a safe learning environment."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Secondary Disciplinary Literacy",
+          "description": "Secondary Disciplinary Literacy is a cutting-edge course designed for candidates seeking to enhance their literacy skills within specific secondary academic disciplines. The course examines the distinct literacy needs of various secondary content areas, focusing on how reading, writing, speaking, and listening function differently in each discipline. Candidates will explore specialized language structures and text features relevant to each field and develop strategies to help students master these complexities. The curriculum integrates the science of reading to support critical engagement with and production of disciplinary texts, while also incorporating technology and digital literacy to aid students in accessing and interpreting discipline-specific information. The course combines research-based evidence with practical, structured literacy activities to equip educators with the skills necessary to improve student achievement and understanding across all subjects. This course is a required component in SCED programs and will be assessed through a performance assessment task for both undergraduate and graduate versions.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner assesses the use of literacy strategies for a discipline.",
+            "The learner designs learning activities that incorporate literacy to increase learning for a discipline.",
+            "The learner plans authentic writing activities to develop an understanding of discipline-specific content."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Science Education",
+      "courses": [
+        {
+          "title": "Three Dimensional Science and Engineering",
+          "description": "Three Dimensional Science and Engineering focuses on developing a comprehensive understanding of science and engineering pedagogical knowledge. This course is the first of three science teaching methods courses and provides a robust foundation in integrating disciplinary core ideas, crosscutting concepts, and science and engineering practices in phenomena-based curriculum and instruction. Candidates will delve into planning learning experiences, designing instructional strategies, and utilizing phenomena-based teaching to promote engagement and understanding. Reflective practices, such as evaluating observed teaching, analyzing personal teaching methods, and reviewing course content, are emphasized to foster continuous improvement. The course will be assessed via an integrated performance assessment task, requiring candidates to demonstrate their instructional skills.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner designs learning experiences that target student development of science and engineering practices and crosscutting concepts.",
+            "The learner plans learning experiences that integrate core ideas in engineering, technology, and science.",
+            "The learner uses phenomena-based teaching pedagogy to promote engagement in science learning."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "General Physics II with Lab",
+          "description": "General Physics II with Lab builds on the foundational concepts covered in General Physics I, guiding students through introductory topics in heat and thermodynamics, geometric optics, and the interactions and transformations of energy within atomic and subatomic systems. Students will explore the distinction between heat and temperature, methods of heat transfer, specific heat capacity, the laws of thermodynamics, kinetic theory of gases, and the principles of heat engines and efficiency. The course delves into electromagnetic waves, Snell’s law, total internal reflection, thin film interference, ray tracing for lenses and mirrors, dispersion, polarization, diffraction, and the functioning of optical instruments. Finally, students will analyze Interaction and Transformations of Energy, explore atomic models and structures, atomic spectral absorption and emission, radioactivity and radioactive decay, nuclear processes like fusion and fission, and mass-energy relationships. Throughout the course, students will develop scientific literacy and the ability to apply scientific principles, enhancing their understanding of physical science concepts and their applications.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the interactions and transformations of energy within atomic and subatomic systems.",
+            "The learner applies the principles of light refraction and reflection to understand geometric optics.",
+            "The learner describes the principles of heat and thermodynamics, including laws of thermodynamics and heat transfer methods."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": [
+            "aws of"
+          ]
+        },
+        {
+          "title": "Electricity and Magnetism",
+          "description": "Electricity and Magnetism is a comprehensive exploration of the fundamental principles of electricity and magnetism. This course is designed to help all students be successful in learning the core concepts of electricity and magnetism, and how they can be applied to real world technologies like electronics, motors, and infrastructure. Through a combination of theoretical instruction and experiments, students will build a robust foundation in electricity and magnetism, preparing them for a career as a physics teacher. This course emphasizes critical thinking, problem-solving, and the practical application of scientific principles, equipping students with the knowledge and skills necessary for success in the classroom.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together",
+            "The learner applies principles of electric circuits including voltage, current, and various combinations of resistors and capacitors.",
+            "The learner describes magnetic fields and their effects, as well as the forces acting on moving charged particles in magnetic fields and electromagnetic induction.",
+            "The learner describes the principles of electric phenomena, including electric charges, electric forces, and electric fields."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Astrophysics with Lab",
+          "description": "Explore the vast and fascinating realm of astrophysics with a hands-on approach to learning about celestial objects, the formation of the universe, and the theories that explain their behavior. Through interactive virtual labs and engaging multimedia resources, you will delve into the properties of stars, planets, galaxies, black holes, and the fundamental forces that govern their motion. Analyze cutting-edge theories of general relativity, dark matter, and dark energy while developing critical analytical skills to interpret astronomical data. This course offers a comprehensive understanding of the universe and prepares you to apply astrophysical concepts in real-world contexts.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the theory of general relativity to orbit analysis and gravitational pull.",
+            "The learner analyzes variables that interact with celestial objects in the universe.",
+            "The learner analyzes various properties of celestial objects and their contribution to the formation of the universe."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Waves, Acoustics, and Sound",
+          "description": "Waves, Acoustics, and Sound provides a comprehensive exploration of fundamental wave properties and their interactions with various media. Designed for learners preparing for roles in science education, it delves into the core concepts of wave behavior, including wave characteristics, factors affecting wave propagation, and the effects of interference. Through detailed lessons on wave properties, interactions, and changes in wave behavior, learners will gain the skills needed to analyze and predict wave phenomena. The course emphasizes practical applications, employing interactive simulations and real-world examples to enhance understanding and prepare learners for effective teaching and application of wave concepts in educational settings.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes factors that affect waves, including interactions with different types of waves.",
+            "The learner analyzes how properties of standing waves, sound waves, and their propagation relate to musical instruments and acoustics.",
+            "The learner describes the fundamental properties of waves."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Secondary Physics Curriculum",
+          "description": "Secondary Physics Curriculum. This course offers a comprehensive review for high school physics teachers preparing for the Praxis exam. Explore major scientific discoveries, key engineering innovations, and their societal impacts. Understand ethical issues in scientific research and the principles of effective science communication. Delve into different forms of energy, laws of thermodynamics, and the role of energy and matter in the universe. Study Coulomb's Law, electric circuits, and electromagnetism. Learn how to integrate wave properties, sound waves, and the electromagnetic spectrum into your teaching practice. As this course is focused on Praxis prep, content is conceptual and algebra-based.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the impact of science and engineering on society, including investigation methods, technological advancements, and environmental and societal problems.",
+            "The learner analyzes the relationship between energy and matter using principles of forces and motion.",
+            "The learner analyzes waves, electromagnetic phenomena, and their interactions."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": [
+            "Praxis exam.",
+            "aws of",
+            "Praxis prep,"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Mathematics Education",
+      "courses": [
+        {
+          "title": "Calculus I",
+          "description": "Calculus I offers a foundational exploration of the essential concepts and applications of calculus, crucial for higher-level mathematics and various scientific fields. This course begins with an overview of calculating limits and continuity of functions, setting the stage for the study of derivatives. Then, students will explore applications of derivatives, including applications to objects in motion, optimization, and related rates. Finally, the course focuses on both definite and indefinite integrals, leading to the mastery of the Fundamental Theorem of Calculus. This course prepares students for advanced mathematical studies and provides the groundwork for advanced calculus topics addressed in Calculus II and Multivariable Calculus.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies rules of differentiation to solve problems involving rates of change, including linear approximations, optimization, and graphs of functions.",
+            "The learner determines limits and continuity of functions to solve problems.",
+            "The learner evaluates definite and indefinite integrals using geometry and the Fundamental Theorem of Calculus."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Pedagogy and Teaching Methods",
+      "courses": [
+        {
+          "title": "Secondary Literacy Methods and Interventions",
+          "description": "Secondary Literacy Methods & Interventions utilizes MTSS to equip educators with evidence-based strategies to address adolescents' reading challenges through the Multi-Tiered System of Supports Model. Candidates learn to identify, monitor, and provide differentiated instruction, integrating screening tools and progress monitoring to enhance comprehension. The course emphasizes the development of personalized intervention plans while utilizing reading assessments for informed instructional decisions. By completion, candidates compile intervention strategies supporting learners across MTSS tiers, fostering inclusive environments for academic success.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies science of reading research methods to literacy instruction to further academic success.",
+            "The learner integrates evidence-based MTSS strategies and assessment tools to improve academic success in literacy."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Science",
+      "courses": [
+        {
+          "title": "Secondary Science Teaching Methods",
+          "description": "This course focuses on equipping secondary science educators with the essential knowledge and skills to effectively teach science through a three-dimensional approach, integrating science and engineering practices, crosscutting concepts, and disciplinary core ideas. Participants will explore general considerations for science instruction, including inquiry-based learning, hands-on activities, and assessment strategies. By building on foundational knowledge in Three-Dimensional Science and Engineering, educators will enhance their ability to engage students in meaningful and authentic scientific learning experiences. This methods course will count towards 7 hours of the 51 total clinical hours that learners will gain from their SCED methods courses.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner designs a learning experience that incorporates instructional materials and strategies to support learners in constructing meaning from scientific experiences.",
+            "The learner implements intentional instructional strategies to develop knowledge in a science discipline.",
+            "The learner plans accessible and meaningful science instruction that aligns to standards and that reflects the dispositions of a science educator."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": []
+}

@@ -1,0 +1,42 @@
+{
+  "program_code": "BASPMM",
+  "degree_title": "Bachelor of Arts, Special Education, Mild to Moderate",
+  "version": "202603",
+  "pub_date": "12/11/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 204,
+    "Areas of Study": 386,
+    "Accessibility": 1043
+  },
+  "standard_path_row_count": 38,
+  "aos_group_count": 6,
+  "aos_course_count": 37,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 37,
+    "sp_only": [
+      "Considerations for Instructional Planning for Learners"
+    ],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 1,
+  "anomalies": [
+    {
+      "type": "competency_trigger_unexpected_state",
+      "line": 767,
+      "state": "IN_COMPETENCIES"
+    }
+  ],
+  "warnings": [
+    "1 SP titles not found in AoS: ['Considerations for Instructional Planning for Learners']"
+  ],
+  "parseability_confidence": "medium"
+}

@@ -1,0 +1,42 @@
+{
+  "program_code": "BAESSPEE",
+  "degree_title": "Bachelor of Arts, Educational Studies in Special and Elementary",
+  "version": "202603",
+  "pub_date": "12/11/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 198,
+    "Areas of Study": 497,
+    "Accessibility": 1205
+  },
+  "standard_path_row_count": 41,
+  "aos_group_count": 5,
+  "aos_course_count": 40,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 40,
+    "sp_only": [
+      "Considerations for Instructional Planning for Learners"
+    ],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 1,
+  "anomalies": [
+    {
+      "type": "competency_trigger_unexpected_state",
+      "line": 878,
+      "state": "IN_COMPETENCIES"
+    }
+  ],
+  "warnings": [
+    "1 SP titles not found in AoS: ['Considerations for Instructional Planning for Learners']"
+  ],
+  "parseability_confidence": "medium"
+}
