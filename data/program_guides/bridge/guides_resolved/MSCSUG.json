@@ -1,0 +1,567 @@
+{
+  "program_code": "MSCSUG",
+  "program_code_effective": "MSCSUG",
+  "family": "cs_grad",
+  "disposition": "partial-use",
+  "sp_status": "unusable",
+  "degree_title_guide": "Bachelor of Science, Computer Science (BSCS to MSCS)",
+  "guide_version": "202504",
+  "guide_pub_date": "2/26/2025",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "School of Technology"
+  ],
+  "program_history_degree_headings": [
+    "Bachelor of Science, Computer Science (BSCS to MSCS)"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 37,
+    "sp_row_count": 0,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 17,
+      "unmapped": 4,
+      "ambiguous_current_exact": 15,
+      "exact_observed_variant_unique": 1
+    },
+    "anchor_class_counts_sp": {}
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Computer Science",
+      "guide_title_normalized": "introduction to computer science",
+      "aos_group": "Computer Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D684"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Formal Languages Overview",
+      "guide_title_normalized": "formal languages overview",
+      "aos_group": "Computer Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D793"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Practical Applications of Prompt",
+      "guide_title_normalized": "practical applications of prompt",
+      "aos_group": "Computer Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D685"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Computer Architecture",
+      "guide_title_normalized": "computer architecture",
+      "aos_group": "Computer Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C952"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Operating Systems for Computer Scientists",
+      "guide_title_normalized": "operating systems for computer scientists",
+      "aos_group": "Computer Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D686"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Applied Algorithms and Reasoning",
+      "guide_title_normalized": "applied algorithms and reasoning",
+      "aos_group": "Computer Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D795"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data Structures and Algorithms II",
+      "guide_title_normalized": "data structures and algorithms ii",
+      "aos_group": "Computer Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C950"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to AI for Computer Scientists",
+      "guide_title_normalized": "introduction to ai for computer scientists",
+      "aos_group": "Computer Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D429"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Artificial Intelligence Optimization for Computer Scientists",
+      "guide_title_normalized": "artificial intelligence optimization for computer scientists",
+      "aos_group": "Computer Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Artificial Intelligence and Machine Learning Foundations",
+      "guide_title_normalized": "artificial intelligence and machine learning foundations",
+      "aos_group": "Computer Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Computer Science Project Development with a Team",
+      "guide_title_normalized": "computer science project development with a team",
+      "aos_group": "Computer Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Applied Probability and Statistics",
+      "guide_title_normalized": "applied probability and statistics",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C955"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Calculus I",
+      "guide_title_normalized": "calculus i",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C282",
+        "C362",
+        "C363",
+        "C958",
+        "D890",
+        "QJT2"
+      ],
+      "resolved_code": "C958",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Systems Thinking and Applications",
+      "guide_title_normalized": "introduction to systems thinking and applications",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Discrete Mathematics I",
+      "guide_title_normalized": "discrete mathematics i",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C959"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Communication: Connecting with Others",
+      "guide_title_normalized": "introduction to communication connecting with others",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D268"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Natural Science Lab",
+      "guide_title_normalized": "natural science lab",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C683"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Discrete Mathematics II",
+      "guide_title_normalized": "discrete mathematics ii",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C960"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Composition: Successful Self-Expression",
+      "guide_title_normalized": "composition successful self expression",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D270"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "American Politics and the US Constitution",
+      "guide_title_normalized": "american politics and the us constitution",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C963"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Ethics in Technology",
+      "guide_title_normalized": "ethics in technology",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C961",
+        "D333"
+      ],
+      "resolved_code": "D333",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Health, Fitness, and Wellness",
+      "guide_title_normalized": "health fitness and wellness",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C458"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Network and Security - Foundations",
+      "guide_title_normalized": "network and security foundations",
+      "aos_group": "Network and Security",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C172",
+        "D315"
+      ],
+      "resolved_code": "D315",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data Management - Foundations",
+      "guide_title_normalized": "data management foundations",
+      "aos_group": "Data Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C175",
+        "D323",
+        "D426"
+      ],
+      "resolved_code": "D426",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data Management - Applications",
+      "guide_title_normalized": "data management applications",
+      "aos_group": "Data Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C170",
+        "D427",
+        "D427A"
+      ],
+      "resolved_code": "D427",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Web Development Foundations",
+      "guide_title_normalized": "web development foundations",
+      "aos_group": "Web Development",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C779",
+        "D276",
+        "D276A"
+      ],
+      "resolved_code": "D276",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Version Control",
+      "guide_title_normalized": "version control",
+      "aos_group": "Full Stack Engineering",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D197",
+        "D197A"
+      ],
+      "resolved_code": "D197",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Scripting and Programming - Applications",
+      "guide_title_normalized": "scripting and programming applications",
+      "aos_group": "Software",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C169",
+        "C867",
+        "D493"
+      ],
+      "resolved_code": "C867",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Java Fundamentals",
+      "guide_title_normalized": "java fundamentals",
+      "aos_group": "Software",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D286",
+        "D286A"
+      ],
+      "resolved_code": "D286",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Java Frameworks",
+      "guide_title_normalized": "java frameworks",
+      "aos_group": "Software",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D287",
+        "D287A"
+      ],
+      "resolved_code": "D287",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Back-End Programming",
+      "guide_title_normalized": "back end programming",
+      "aos_group": "Software",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D288",
+        "D288A"
+      ],
+      "resolved_code": "D288",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Advanced Java",
+      "guide_title_normalized": "advanced java",
+      "aos_group": "Software",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D387"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Software Design and Quality Assurance",
+      "guide_title_normalized": "software design and quality assurance",
+      "aos_group": "Software",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D480"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Linux Foundations",
+      "guide_title_normalized": "linux foundations",
+      "aos_group": "Operating Systems",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C851",
+        "D281",
+        "D281A"
+      ],
+      "resolved_code": "D281",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Fundamentals of Information Security",
+      "guide_title_normalized": "fundamentals of information security",
+      "aos_group": "Secure Systems Analysis & Design",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C836",
+        "D430",
+        "D827"
+      ],
+      "resolved_code": "D430",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Business of IT - Applications",
+      "guide_title_normalized": "business of it applications",
+      "aos_group": "Business of IT",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C179",
+        "C846",
+        "D336"
+      ],
+      "resolved_code": "D336",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Software Engineering",
+      "guide_title_normalized": "software engineering",
+      "aos_group": "Information Technology Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C188",
+        "D284",
+        "D284A"
+      ],
+      "resolved_code": "D284",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    }
+  ]
+}

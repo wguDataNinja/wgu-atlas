@@ -1,0 +1,262 @@
+{
+  "program_code": "MHA",
+  "program_code_effective": "MHA",
+  "family": "healthcare_grad",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Master of Healthcare Administration",
+  "guide_version": "202602",
+  "guide_pub_date": "10/2/2025",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "Leavitt School of Health"
+  ],
+  "program_history_degree_headings": [
+    "Master of Healthcare Administration"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 9,
+    "sp_row_count": 10,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 9
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 10
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Health Services Research",
+      "guide_title_normalized": "health services research",
+      "aos_group": "Healthcare Administration",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D907"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Healthcare Management",
+      "guide_title_normalized": "healthcare management",
+      "aos_group": "Healthcare Administration",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D908"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Healthcare Law and Ethics",
+      "guide_title_normalized": "healthcare law and ethics",
+      "aos_group": "Healthcare Administration",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D909"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data Analysis for Healthcare Decisions",
+      "guide_title_normalized": "data analysis for healthcare decisions",
+      "aos_group": "Healthcare Administration",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D910"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Transforming Healthcare Through Technology",
+      "guide_title_normalized": "transforming healthcare through technology",
+      "aos_group": "Healthcare Administration",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D911"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Healthcare Quality",
+      "guide_title_normalized": "healthcare quality",
+      "aos_group": "Healthcare Administration",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D912"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Risk Management and Compliance",
+      "guide_title_normalized": "risk management and compliance",
+      "aos_group": "Healthcare Administration",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D913"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Healthcare Economics",
+      "guide_title_normalized": "healthcare economics",
+      "aos_group": "Healthcare Administration",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D914"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Resource Management and Performance",
+      "guide_title_normalized": "resource management and performance",
+      "aos_group": "Healthcare Administration",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D915"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Health Services Research",
+      "guide_title_normalized": "health services research",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D907"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Healthcare Management",
+      "guide_title_normalized": "healthcare management",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D908"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Healthcare Law and Ethics",
+      "guide_title_normalized": "healthcare law and ethics",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D909"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Data Analysis for Healthcare Decisions",
+      "guide_title_normalized": "data analysis for healthcare decisions",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D910"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Transforming Healthcare Through Technology",
+      "guide_title_normalized": "transforming healthcare through technology",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D911"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Healthcare Quality",
+      "guide_title_normalized": "healthcare quality",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D912"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Risk Management and Compliance",
+      "guide_title_normalized": "risk management and compliance",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D913"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Healthcare Economics",
+      "guide_title_normalized": "healthcare economics",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D914"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Resource Management and Performance",
+      "guide_title_normalized": "resource management and performance",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D915"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "MHA Capstone",
+      "guide_title_normalized": "mha capstone",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D916"
+      ]
+    }
+  ]
+}

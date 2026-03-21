@@ -1,0 +1,263 @@
+{
+  "program_code": "MSML",
+  "program_code_effective": "MSML",
+  "family": "graduate_standard",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Master of Science, Management and Leadership",
+  "guide_version": "202007",
+  "guide_pub_date": "9/27/23",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "College of Business",
+    "School of Business"
+  ],
+  "program_history_degree_headings": [
+    "Master of Science, Management and Leadership"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 9,
+    "sp_row_count": 10,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 9
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 10
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Managing Organizations and Leading People",
+      "guide_title_normalized": "managing organizations and leading people",
+      "aos_group": "Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C200"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Managing Human Capital",
+      "guide_title_normalized": "managing human capital",
+      "aos_group": "Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C202"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Management Communication",
+      "guide_title_normalized": "management communication",
+      "aos_group": "Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C204"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Becoming an Effective Leader",
+      "guide_title_normalized": "becoming an effective leader",
+      "aos_group": "Leadership",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C203"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Ethical Leadership",
+      "guide_title_normalized": "ethical leadership",
+      "aos_group": "Leadership",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C206"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Leading Teams",
+      "guide_title_normalized": "leading teams",
+      "aos_group": "Leadership",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C205"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Business Acumen",
+      "guide_title_normalized": "business acumen",
+      "aos_group": "Business Acumen",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C201"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Change Management and Innovation",
+      "guide_title_normalized": "change management and innovation",
+      "aos_group": "Strategy",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C208"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Strategic Management",
+      "guide_title_normalized": "strategic management",
+      "aos_group": "Strategy",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C209"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Managing Organizations and Leading People",
+      "guide_title_normalized": "managing organizations and leading people",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C200"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Becoming an Effective Leader",
+      "guide_title_normalized": "becoming an effective leader",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C203"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Managing Human Capital",
+      "guide_title_normalized": "managing human capital",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C202"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Business Acumen",
+      "guide_title_normalized": "business acumen",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C201"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Management Communication",
+      "guide_title_normalized": "management communication",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C204"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Ethical Leadership",
+      "guide_title_normalized": "ethical leadership",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C206"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Leading Teams",
+      "guide_title_normalized": "leading teams",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C205"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Change Management and Innovation",
+      "guide_title_normalized": "change management and innovation",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C208"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Strategic Management",
+      "guide_title_normalized": "strategic management",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C209"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Management and Leadership Capstone",
+      "guide_title_normalized": "management and leadership capstone",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C210"
+      ]
+    }
+  ]
+}

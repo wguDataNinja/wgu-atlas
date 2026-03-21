@@ -1,0 +1,1166 @@
+{
+  "program_code": "BSMES",
+  "program_code_effective": "BSMES",
+  "family": "standard_bs",
+  "disposition": "full-use",
+  "sp_status": "usable-no-term",
+  "degree_title_guide": "Bachelor of Science, Mathematics Education (Secondary)",
+  "guide_version": "202603",
+  "guide_pub_date": "12/11/2025",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "Teachers College",
+    "School of Education"
+  ],
+  "program_history_degree_headings": [
+    "Bachelor of Science, Mathematics Education (Secondary)"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 39,
+    "sp_row_count": 39,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 17,
+      "unmapped": 4,
+      "exact_observed_variant_unique": 1,
+      "ambiguous_current_exact": 17
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 17,
+      "exact_observed_variant_unique": 1,
+      "ambiguous_current_exact": 17,
+      "unmapped": 4
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "The Professional Educator",
+      "guide_title_normalized": "the professional educator",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D663"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Learners and Learning Science",
+      "guide_title_normalized": "learners and learning science",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D664"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Personalized Learning for Inclusive Classrooms",
+      "guide_title_normalized": "personalized learning for inclusive classrooms",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Creating Positive Learning Environments",
+      "guide_title_normalized": "creating positive learning environments",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D661"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Planning Instructional Strategies for Meaningful Learning",
+      "guide_title_normalized": "planning instructional strategies for meaningful learning",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Assessing and Monitoring Student Learning",
+      "guide_title_normalized": "assessing and monitoring student learning",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D659"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Instructional Technology and Online Pedagogy",
+      "guide_title_normalized": "instructional technology and online pedagogy",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D660"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Composition: Writing with a Strategy",
+      "guide_title_normalized": "composition writing with a strategy",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D269"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Communication: Connecting with Others",
+      "guide_title_normalized": "introduction to communication connecting with others",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D268"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Composition: Successful Self-Expression",
+      "guide_title_normalized": "composition successful self expression",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D270"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Quantitative Literacy",
+      "guide_title_normalized": "quantitative literacy",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D771"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "College Algebra",
+      "guide_title_normalized": "college algebra",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C278",
+        "C912"
+      ],
+      "resolved_code": "C278",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Integrated Physical Sciences",
+      "guide_title_normalized": "integrated physical sciences",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C165",
+        "C908"
+      ],
+      "resolved_code": "C165",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Systems Thinking and Applications",
+      "guide_title_normalized": "introduction to systems thinking and applications",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Precalculus",
+      "guide_title_normalized": "precalculus",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D667"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Technology and Ethics: Emerging Trends and Society",
+      "guide_title_normalized": "technology and ethics emerging trends and society",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "American Politics and the US Constitution",
+      "guide_title_normalized": "american politics and the us constitution",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C963"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Trigonometry",
+      "guide_title_normalized": "trigonometry",
+      "aos_group": "Mathematics Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D889"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Calculus I",
+      "guide_title_normalized": "calculus i",
+      "aos_group": "Mathematics Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_residual",
+      "canonical_candidate_codes": [
+        "C282",
+        "C362",
+        "C363",
+        "C958",
+        "D890",
+        "QJT2"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Algebra for Secondary Mathematics Teaching",
+      "guide_title_normalized": "algebra for secondary mathematics teaching",
+      "aos_group": "Mathematics Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_residual",
+      "canonical_candidate_codes": [
+        "C879",
+        "C880",
+        "D898",
+        "D904"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Calculus II",
+      "guide_title_normalized": "calculus ii",
+      "aos_group": "Mathematics Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_residual",
+      "canonical_candidate_codes": [
+        "C283",
+        "CQC2",
+        "D891"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Probability and Statistics",
+      "guide_title_normalized": "probability and statistics",
+      "aos_group": "Mathematics Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D888"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Linear Algebra",
+      "guide_title_normalized": "linear algebra",
+      "aos_group": "Mathematics Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_residual",
+      "canonical_candidate_codes": [
+        "D893",
+        "RKT1",
+        "RKT2"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Geometry for Secondary Mathematics Teaching",
+      "guide_title_normalized": "geometry for secondary mathematics teaching",
+      "aos_group": "Mathematics Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C881"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Multivariable Calculus",
+      "guide_title_normalized": "multivariable calculus",
+      "aos_group": "Mathematics Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D892"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Differential Equations",
+      "guide_title_normalized": "differential equations",
+      "aos_group": "Mathematics Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D896"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Methods of Teaching Secondary Mathematics",
+      "guide_title_normalized": "methods of teaching secondary mathematics",
+      "aos_group": "Mathematics Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D900",
+        "D906"
+      ],
+      "resolved_code": "D900",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Advanced Probability and Statistics",
+      "guide_title_normalized": "advanced probability and statistics",
+      "aos_group": "Mathematics Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D897"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Statistics for Secondary Mathematics Teaching",
+      "guide_title_normalized": "statistics for secondary mathematics teaching",
+      "aos_group": "Mathematics Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D899",
+        "D905"
+      ],
+      "resolved_code": "D899",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Advanced Calculus",
+      "guide_title_normalized": "advanced calculus",
+      "aos_group": "Mathematics Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_residual",
+      "canonical_candidate_codes": [
+        "C885",
+        "C886",
+        "D894"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Secondary Mathematics Curriculum",
+      "guide_title_normalized": "secondary mathematics curriculum",
+      "aos_group": "Mathematics Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D901",
+        "D902"
+      ],
+      "resolved_code": "D901",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "General Biology I",
+      "guide_title_normalized": "general biology i",
+      "aos_group": "General Science Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D849"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "General Secondary Methods",
+      "guide_title_normalized": "general secondary methods",
+      "aos_group": "Secondary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D807",
+        "D808"
+      ],
+      "resolved_code": "D807",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Secondary Disciplinary Literacy",
+      "guide_title_normalized": "secondary disciplinary literacy",
+      "aos_group": "Secondary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_residual",
+      "canonical_candidate_codes": [
+        "C728",
+        "C729",
+        "D162",
+        "D805",
+        "D806"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Early Clinical in Secondary Education",
+      "guide_title_normalized": "early clinical in secondary education",
+      "aos_group": "Clinical Experiences",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D707",
+        "D726"
+      ],
+      "resolved_code": "D707",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Advanced Clinical in Secondary Education",
+      "guide_title_normalized": "advanced clinical in secondary education",
+      "aos_group": "Clinical Experiences",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D709",
+        "D729"
+      ],
+      "resolved_code": "D709",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Secondary Literacy Methods and Interventions",
+      "guide_title_normalized": "secondary literacy methods and interventions",
+      "aos_group": "Pedagogy and Teaching Methods",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D769",
+        "D770"
+      ],
+      "resolved_code": "D769",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Student Teaching I in Secondary Education",
+      "guide_title_normalized": "student teaching i in secondary education",
+      "aos_group": "Student Teaching",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_residual",
+      "canonical_candidate_codes": [
+        "D533",
+        "D534",
+        "D721",
+        "D741"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Student Teaching II in Secondary Education",
+      "guide_title_normalized": "student teaching ii in secondary education",
+      "aos_group": "Student Teaching",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_residual",
+      "canonical_candidate_codes": [
+        "D535",
+        "D536",
+        "D722",
+        "D742"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "The Professional Educator",
+      "guide_title_normalized": "the professional educator",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D663"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Composition: Writing with a Strategy",
+      "guide_title_normalized": "composition writing with a strategy",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D269"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Communication: Connecting with Others",
+      "guide_title_normalized": "introduction to communication connecting with others",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D268"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Learners and Learning Science",
+      "guide_title_normalized": "learners and learning science",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D664"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Composition: Successful Self-Expression",
+      "guide_title_normalized": "composition successful self expression",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D270"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Quantitative Literacy",
+      "guide_title_normalized": "quantitative literacy",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D771"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "College Algebra",
+      "guide_title_normalized": "college algebra",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 4,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C278",
+        "C912"
+      ],
+      "resolved_code": "C278",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Personalized Learning for Inclusive Classrooms",
+      "guide_title_normalized": "personalized learning for inclusive classrooms",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Integrated Physical Sciences",
+      "guide_title_normalized": "integrated physical sciences",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C165",
+        "C908"
+      ],
+      "resolved_code": "C165",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Creating Positive Learning Environments",
+      "guide_title_normalized": "creating positive learning environments",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D661"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Systems Thinking and Applications",
+      "guide_title_normalized": "introduction to systems thinking and applications",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Precalculus",
+      "guide_title_normalized": "precalculus",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D667"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Trigonometry",
+      "guide_title_normalized": "trigonometry",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D889"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Planning Instructional Strategies for Meaningful Learning",
+      "guide_title_normalized": "planning instructional strategies for meaningful learning",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Technology and Ethics: Emerging Trends and Society",
+      "guide_title_normalized": "technology and ethics emerging trends and society",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Assessing and Monitoring Student Learning",
+      "guide_title_normalized": "assessing and monitoring student learning",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D659"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "General Biology I",
+      "guide_title_normalized": "general biology i",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D849"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Instructional Technology and Online Pedagogy",
+      "guide_title_normalized": "instructional technology and online pedagogy",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D660"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Calculus I",
+      "guide_title_normalized": "calculus i",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_cu_match",
+      "canonical_candidate_codes": [
+        "C282",
+        "C362",
+        "C363",
+        "C958",
+        "D890",
+        "QJT2"
+      ],
+      "resolved_code": "D890",
+      "resolution_signals": [
+        "cu_match"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "American Politics and the US Constitution",
+      "guide_title_normalized": "american politics and the us constitution",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C963"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "General Secondary Methods",
+      "guide_title_normalized": "general secondary methods",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D807",
+        "D808"
+      ],
+      "resolved_code": "D807",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Algebra for Secondary Mathematics Teaching",
+      "guide_title_normalized": "algebra for secondary mathematics teaching",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_residual",
+      "canonical_candidate_codes": [
+        "C879",
+        "C880",
+        "D898",
+        "D904"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Calculus II",
+      "guide_title_normalized": "calculus ii",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_cu_match",
+      "canonical_candidate_codes": [
+        "C283",
+        "CQC2",
+        "D891"
+      ],
+      "resolved_code": "D891",
+      "resolution_signals": [
+        "cu_match"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Early Clinical in Secondary Education",
+      "guide_title_normalized": "early clinical in secondary education",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D707",
+        "D726"
+      ],
+      "resolved_code": "D707",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Probability and Statistics",
+      "guide_title_normalized": "probability and statistics",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D888"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Linear Algebra",
+      "guide_title_normalized": "linear algebra",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_residual",
+      "canonical_candidate_codes": [
+        "D893",
+        "RKT1",
+        "RKT2"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Geometry for Secondary Mathematics Teaching",
+      "guide_title_normalized": "geometry for secondary mathematics teaching",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C881"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Secondary Literacy Methods and Interventions",
+      "guide_title_normalized": "secondary literacy methods and interventions",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D769",
+        "D770"
+      ],
+      "resolved_code": "D769",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Multivariable Calculus",
+      "guide_title_normalized": "multivariable calculus",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D892"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Differential Equations",
+      "guide_title_normalized": "differential equations",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D896"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Methods of Teaching Secondary Mathematics",
+      "guide_title_normalized": "methods of teaching secondary mathematics",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D900",
+        "D906"
+      ],
+      "resolved_code": "D900",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Advanced Probability and Statistics",
+      "guide_title_normalized": "advanced probability and statistics",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D897"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Statistics for Secondary Mathematics Teaching",
+      "guide_title_normalized": "statistics for secondary mathematics teaching",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D899",
+        "D905"
+      ],
+      "resolved_code": "D899",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Advanced Calculus",
+      "guide_title_normalized": "advanced calculus",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_residual",
+      "canonical_candidate_codes": [
+        "C885",
+        "C886",
+        "D894"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Secondary Mathematics Curriculum",
+      "guide_title_normalized": "secondary mathematics curriculum",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D901",
+        "D902"
+      ],
+      "resolved_code": "D901",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Secondary Disciplinary Literacy",
+      "guide_title_normalized": "secondary disciplinary literacy",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_residual",
+      "canonical_candidate_codes": [
+        "C728",
+        "C729",
+        "D162",
+        "D805",
+        "D806"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Advanced Clinical in Secondary Education",
+      "guide_title_normalized": "advanced clinical in secondary education",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D709",
+        "D729"
+      ],
+      "resolved_code": "D709",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Student Teaching I in Secondary Education",
+      "guide_title_normalized": "student teaching i in secondary education",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 8,
+      "anchor_class": "deterministic_resolved_cu_match",
+      "canonical_candidate_codes": [
+        "D533",
+        "D534",
+        "D721",
+        "D741"
+      ],
+      "resolved_code": "D721",
+      "resolution_signals": [
+        "cu_match"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Student Teaching II in Secondary Education",
+      "guide_title_normalized": "student teaching ii in secondary education",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 8,
+      "anchor_class": "deterministic_resolved_cu_match",
+      "canonical_candidate_codes": [
+        "D535",
+        "D536",
+        "D722",
+        "D742"
+      ],
+      "resolved_code": "D722",
+      "resolution_signals": [
+        "cu_match"
+      ]
+    }
+  ]
+}

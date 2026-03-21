@@ -1,0 +1,268 @@
+{
+  "program_code": "MSSWEDOE",
+  "program_code_effective": "MSSWEDOE",
+  "family": "swe_grad",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Master of Science, Software Engineering - DevOps Engineering",
+  "guide_version": "202504",
+  "guide_pub_date": "11/5/2024",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "School of Technology"
+  ],
+  "program_history_degree_headings": [
+    "Master of Science, Software Engineering - DevOps Engineering"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 10,
+    "sp_row_count": 10,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 8,
+      "unmapped": 2
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 8,
+      "unmapped": 2
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Real Life Applications of Data Structures",
+      "guide_title_normalized": "real life applications of data structures",
+      "aos_group": "Software",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D777"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Advanced Software Engineering",
+      "guide_title_normalized": "advanced software engineering",
+      "aos_group": "Software",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D778"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Software Product Design and Requirement Engineering",
+      "guide_title_normalized": "software product design and requirement engineering",
+      "aos_group": "Software",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Software Architecture and Design",
+      "guide_title_normalized": "software architecture and design",
+      "aos_group": "Software",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D780"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Software Quality Assurance and Deployment",
+      "guide_title_normalized": "software quality assurance and deployment",
+      "aos_group": "Software",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D781"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Network Architecture and Cloud Computing",
+      "guide_title_normalized": "network architecture and cloud computing",
+      "aos_group": "Software",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D782"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "DevOps Foundations",
+      "guide_title_normalized": "devops foundations",
+      "aos_group": "Software",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D783"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Continuous Integration and Continuous Delivery",
+      "guide_title_normalized": "continuous integration and continuous delivery",
+      "aos_group": "Software",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "DevOps Security",
+      "guide_title_normalized": "devops security",
+      "aos_group": "Software",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D785"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Governance, Risk, and Compliance",
+      "guide_title_normalized": "governance risk and compliance",
+      "aos_group": "Risk Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D486"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Real Life Applications of Data Structures",
+      "guide_title_normalized": "real life applications of data structures",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D777"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Advanced Software Engineering",
+      "guide_title_normalized": "advanced software engineering",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D778"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Software Product Design and Requirement Engineering",
+      "guide_title_normalized": "software product design and requirement engineering",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Software Architecture and Design",
+      "guide_title_normalized": "software architecture and design",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D780"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Software Quality Assurance and Deployment",
+      "guide_title_normalized": "software quality assurance and deployment",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D781"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Governance, Risk, and Compliance",
+      "guide_title_normalized": "governance risk and compliance",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D486"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Network Architecture and Cloud Computing",
+      "guide_title_normalized": "network architecture and cloud computing",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D782"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "DevOps Foundations",
+      "guide_title_normalized": "devops foundations",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D783"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Continuous Integration and Continuous Delivery",
+      "guide_title_normalized": "continuous integration and continuous delivery",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "DevOps Security",
+      "guide_title_normalized": "devops security",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D785"
+      ]
+    }
+  ]
+}

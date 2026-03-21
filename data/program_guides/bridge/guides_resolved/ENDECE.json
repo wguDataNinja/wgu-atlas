@@ -1,0 +1,211 @@
+{
+  "program_code": "ENDECE",
+  "program_code_effective": "ENDECE",
+  "family": "endorsement",
+  "disposition": "full-use",
+  "sp_status": "usable-no-term",
+  "degree_title_guide": "Endorsement Preparation Program, Early Childhood Education",
+  "guide_version": "202509",
+  "guide_pub_date": "6/17/2025",
+  "program_history_status": "RETIRED",
+  "program_history_colleges": [
+    "School of Education"
+  ],
+  "program_history_degree_headings": [
+    "Endorsement Preparation Program, Early Childhood Education"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 6,
+    "sp_row_count": 6,
+    "anchor_class_counts_aos": {
+      "ambiguous_current_exact": 3,
+      "exact_current_unique": 2,
+      "unmapped": 1
+    },
+    "anchor_class_counts_sp": {
+      "ambiguous_current_exact": 3,
+      "exact_current_unique": 2,
+      "unmapped": 1
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Literacy Assessment and Interventions",
+      "guide_title_normalized": "literacy assessment and interventions",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "D689",
+        "D697"
+      ],
+      "resolved_code": "D689",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Early Literacy Methods",
+      "guide_title_normalized": "early literacy methods",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "D669",
+        "D676"
+      ],
+      "resolved_code": "D669",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Early Mathematics Methods and Interventions",
+      "guide_title_normalized": "early mathematics methods and interventions",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "D692",
+        "D700"
+      ],
+      "resolved_code": "D692",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Teaching in Early Childhood Classrooms",
+      "guide_title_normalized": "teaching in early childhood classrooms",
+      "aos_group": "Clinical Experiences",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D917"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Early Childhood Clinical",
+      "guide_title_normalized": "early childhood clinical",
+      "aos_group": "Clinical Experiences",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D919"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Early Childhood Development and Learning Science",
+      "guide_title_normalized": "early childhood development and learning science",
+      "aos_group": "Early Childhood Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Literacy Assessment and Interventions",
+      "guide_title_normalized": "literacy assessment and interventions",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D689",
+        "D697"
+      ],
+      "resolved_code": "D689",
+      "resolution_signals": [
+        "cu_match",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Early Literacy Methods",
+      "guide_title_normalized": "early literacy methods",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D669",
+        "D676"
+      ],
+      "resolved_code": "D669",
+      "resolution_signals": [
+        "cu_match",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Early Mathematics Methods and Interventions",
+      "guide_title_normalized": "early mathematics methods and interventions",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D692",
+        "D700"
+      ],
+      "resolved_code": "D692",
+      "resolution_signals": [
+        "cu_match",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Teaching in Early Childhood Classrooms",
+      "guide_title_normalized": "teaching in early childhood classrooms",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D917"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Early Childhood Development and Learning Science",
+      "guide_title_normalized": "early childhood development and learning science",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Early Childhood Clinical",
+      "guide_title_normalized": "early childhood clinical",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D919"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1039 @@
+{
+  "program_code": "MSITUG",
+  "program_code_effective": "MSITUG",
+  "family": "graduate_standard",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Bachelor of Science, Information Technology (BSIT to MSIT)",
+  "guide_version": "202604",
+  "guide_pub_date": "11/20/2025",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "School of Technology"
+  ],
+  "program_history_degree_headings": [
+    "Bachelor of Science, Information Technology (BSIT to MSIT)"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 35,
+    "sp_row_count": 35,
+    "anchor_class_counts_aos": {
+      "ambiguous_current_exact": 14,
+      "exact_current_unique": 16,
+      "unmapped": 4,
+      "exact_observed_variant_unique": 1
+    },
+    "anchor_class_counts_sp": {
+      "ambiguous_current_exact": 14,
+      "exact_current_unique": 16,
+      "unmapped": 4,
+      "exact_observed_variant_unique": 1
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to IT",
+      "guide_title_normalized": "introduction to it",
+      "aos_group": "IT Fundamentals",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C182",
+        "D322",
+        "E004"
+      ],
+      "resolved_code": "E004",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Business Productivity Software",
+      "guide_title_normalized": "business productivity software",
+      "aos_group": "IT Fundamentals",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E005"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "IT Foundations",
+      "guide_title_normalized": "it foundations",
+      "aos_group": "IT Fundamentals",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C393",
+        "D316"
+      ],
+      "resolved_code": "D316",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Digital Transformation in the Enterprise",
+      "guide_title_normalized": "digital transformation in the enterprise",
+      "aos_group": "IT Fundamentals",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E006"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Agile Methodology",
+      "guide_title_normalized": "agile methodology",
+      "aos_group": "IT Fundamentals",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E007"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "IT Applications",
+      "guide_title_normalized": "it applications",
+      "aos_group": "IT Fundamentals",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C394",
+        "D317"
+      ],
+      "resolved_code": "D317",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Foundations of Programming (Python)",
+      "guide_title_normalized": "foundations of programming python",
+      "aos_group": "IT Fundamentals",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E010"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Influential Communication through Visual Design and Storytelling",
+      "guide_title_normalized": "influential communication through visual design and storytelling",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Health, Fitness, and Wellness",
+      "guide_title_normalized": "health fitness and wellness",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C458"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Technology and Ethics: Emerging Trends and Society",
+      "guide_title_normalized": "technology and ethics emerging trends and society",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Critical Thinking: Reason and Evidence",
+      "guide_title_normalized": "critical thinking reason and evidence",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D265"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Composition: Successful Self-Expression",
+      "guide_title_normalized": "composition successful self expression",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D270"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Systems Thinking and Applications",
+      "guide_title_normalized": "introduction to systems thinking and applications",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Applied Probability and Statistics",
+      "guide_title_normalized": "applied probability and statistics",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C955"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "American Politics and the US Constitution",
+      "guide_title_normalized": "american politics and the us constitution",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C963"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Applied Algebra",
+      "guide_title_normalized": "applied algebra",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C957"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Natural Science Lab",
+      "guide_title_normalized": "natural science lab",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C683"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Global Arts and Humanities",
+      "guide_title_normalized": "global arts and humanities",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D198"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Business of IT - Applications",
+      "guide_title_normalized": "business of it applications",
+      "aos_group": "Business of IT",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C179",
+        "C846",
+        "D336"
+      ],
+      "resolved_code": "D336",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Project Management",
+      "guide_title_normalized": "project management",
+      "aos_group": "Information Technology Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C722",
+        "C783",
+        "E015"
+      ],
+      "resolved_code": "E015",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Information Technology Management and Leadership",
+      "guide_title_normalized": "information technology management and leadership",
+      "aos_group": "Information Technology Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Technical Communication",
+      "guide_title_normalized": "technical communication",
+      "aos_group": "Information Technology Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C768",
+        "C948",
+        "D339",
+        "E011"
+      ],
+      "resolved_code": "E011",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Technology Governance",
+      "guide_title_normalized": "technology governance",
+      "aos_group": "Information Technology Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D822"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Cloud Foundations",
+      "guide_title_normalized": "cloud foundations",
+      "aos_group": "Information Technology Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C849",
+        "D282",
+        "D282A"
+      ],
+      "resolved_code": "D282",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Practical Applications of Prompt",
+      "guide_title_normalized": "practical applications of prompt",
+      "aos_group": "Computer Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D685"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Linux Foundations",
+      "guide_title_normalized": "linux foundations",
+      "aos_group": "Operating Systems",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C851",
+        "D281",
+        "D281A"
+      ],
+      "resolved_code": "D281",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Fundamentals of Spreadsheets and Data Presentations",
+      "guide_title_normalized": "fundamentals of spreadsheets and data presentations",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D388"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Web Design Fundamentals",
+      "guide_title_normalized": "web design fundamentals",
+      "aos_group": "Web Development",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E009"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Network and Security - Foundations",
+      "guide_title_normalized": "network and security foundations",
+      "aos_group": "Network and Security",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C172",
+        "D315"
+      ],
+      "resolved_code": "D315",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Cloud Applications",
+      "guide_title_normalized": "cloud applications",
+      "aos_group": "Network and Security",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C923",
+        "D318"
+      ],
+      "resolved_code": "D318",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Network and Security - Applications",
+      "guide_title_normalized": "network and security applications",
+      "aos_group": "Network and Security",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C178",
+        "D329"
+      ],
+      "resolved_code": "D329",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data Management - Foundations",
+      "guide_title_normalized": "data management foundations",
+      "aos_group": "Data Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C175",
+        "D323",
+        "D426"
+      ],
+      "resolved_code": "D426",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data Management - Applications",
+      "guide_title_normalized": "data management applications",
+      "aos_group": "Data Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C170",
+        "D427",
+        "D427A"
+      ],
+      "resolved_code": "D427",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Networks",
+      "guide_title_normalized": "networks",
+      "aos_group": "Networks",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C480",
+        "D325"
+      ],
+      "resolved_code": "D325",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Python for IT Automation",
+      "guide_title_normalized": "python for it automation",
+      "aos_group": "Networking",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D522"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to IT",
+      "guide_title_normalized": "introduction to it",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C182",
+        "D322",
+        "E004"
+      ],
+      "resolved_code": "E004",
+      "resolution_signals": [
+        "cu_match",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Business Productivity Software",
+      "guide_title_normalized": "business productivity software",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E005"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Influential Communication through Visual Design and Storytelling",
+      "guide_title_normalized": "influential communication through visual design and storytelling",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Health, Fitness, and Wellness",
+      "guide_title_normalized": "health fitness and wellness",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C458"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Technology and Ethics: Emerging Trends and Society",
+      "guide_title_normalized": "technology and ethics emerging trends and society",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Critical Thinking: Reason and Evidence",
+      "guide_title_normalized": "critical thinking reason and evidence",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D265"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Business of IT - Applications",
+      "guide_title_normalized": "business of it applications",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 4,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C179",
+        "C846",
+        "D336"
+      ],
+      "resolved_code": "D336",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Composition: Successful Self-Expression",
+      "guide_title_normalized": "composition successful self expression",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D270"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Systems Thinking and Applications",
+      "guide_title_normalized": "introduction to systems thinking and applications",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Project Management",
+      "guide_title_normalized": "project management",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 4,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C722",
+        "C783",
+        "E015"
+      ],
+      "resolved_code": "E015",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Applied Probability and Statistics",
+      "guide_title_normalized": "applied probability and statistics",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C955"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Practical Applications of Prompt",
+      "guide_title_normalized": "practical applications of prompt",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D685"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Linux Foundations",
+      "guide_title_normalized": "linux foundations",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C851",
+        "D281",
+        "D281A"
+      ],
+      "resolved_code": "D281",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "IT Foundations",
+      "guide_title_normalized": "it foundations",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 4,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C393",
+        "D316"
+      ],
+      "resolved_code": "D316",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "American Politics and the US Constitution",
+      "guide_title_normalized": "american politics and the us constitution",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C963"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Digital Transformation in the Enterprise",
+      "guide_title_normalized": "digital transformation in the enterprise",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E006"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Fundamentals of Spreadsheets and Data Presentations",
+      "guide_title_normalized": "fundamentals of spreadsheets and data presentations",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D388"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Agile Methodology",
+      "guide_title_normalized": "agile methodology",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E007"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "IT Applications",
+      "guide_title_normalized": "it applications",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 4,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C394",
+        "D317"
+      ],
+      "resolved_code": "D317",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Information Technology Management and Leadership",
+      "guide_title_normalized": "information technology management and leadership",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Web Design Fundamentals",
+      "guide_title_normalized": "web design fundamentals",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E009"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Network and Security - Foundations",
+      "guide_title_normalized": "network and security foundations",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C172",
+        "D315"
+      ],
+      "resolved_code": "D315",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Applied Algebra",
+      "guide_title_normalized": "applied algebra",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C957"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Cloud Applications",
+      "guide_title_normalized": "cloud applications",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C923",
+        "D318"
+      ],
+      "resolved_code": "D318",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Data Management - Foundations",
+      "guide_title_normalized": "data management foundations",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C175",
+        "D323",
+        "D426"
+      ],
+      "resolved_code": "D426",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Networks",
+      "guide_title_normalized": "networks",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 4,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C480",
+        "D325"
+      ],
+      "resolved_code": "D325",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Technical Communication",
+      "guide_title_normalized": "technical communication",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C768",
+        "C948",
+        "D339",
+        "E011"
+      ],
+      "resolved_code": "E011",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Natural Science Lab",
+      "guide_title_normalized": "natural science lab",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C683"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Global Arts and Humanities",
+      "guide_title_normalized": "global arts and humanities",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D198"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Network and Security - Applications",
+      "guide_title_normalized": "network and security applications",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 4,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C178",
+        "D329"
+      ],
+      "resolved_code": "D329",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Foundations of Programming (Python)",
+      "guide_title_normalized": "foundations of programming python",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E010"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Technology Governance",
+      "guide_title_normalized": "technology governance",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D822"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Data Management - Applications",
+      "guide_title_normalized": "data management applications",
+      "aos_group": null,
+      "sp_term": 9,
+      "sp_cus": 4,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C170",
+        "D427",
+        "D427A"
+      ],
+      "resolved_code": "D427",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Python for IT Automation",
+      "guide_title_normalized": "python for it automation",
+      "aos_group": null,
+      "sp_term": 9,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D522"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Cloud Foundations",
+      "guide_title_normalized": "cloud foundations",
+      "aos_group": null,
+      "sp_term": 9,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C849",
+        "D282",
+        "D282A"
+      ],
+      "resolved_code": "D282",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    }
+  ]
+}

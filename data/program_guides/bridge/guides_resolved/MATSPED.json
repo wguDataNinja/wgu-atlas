@@ -1,0 +1,451 @@
+{
+  "program_code": "MATSPED",
+  "program_code_effective": "MATSPED",
+  "family": "teaching_mat",
+  "disposition": "partial-use",
+  "sp_status": "unusable",
+  "degree_title_guide": "Master of Arts in Teaching, Special Education",
+  "guide_version": "202412",
+  "guide_pub_date": "10/23/2024",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "Teachers College",
+    "School of Education"
+  ],
+  "program_history_degree_headings": [
+    "Master of Arts in Teaching, Special Education"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 30,
+    "sp_row_count": 0,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 3,
+      "unmapped": 13,
+      "ambiguous_current_exact": 14
+    },
+    "anchor_class_counts_sp": {}
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "The Education Professional",
+      "guide_title_normalized": "the education professional",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D752"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Learner Development and the Science of Learning",
+      "guide_title_normalized": "learner development and the science of learning",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Practices for Inclusive Classrooms",
+      "guide_title_normalized": "practices for inclusive classrooms",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D635"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Establishing Positive and Engaging Learning Environments",
+      "guide_title_normalized": "establishing positive and engaging learning environments",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Curriculum and Instructional Strategies for Meaningful Learning",
+      "guide_title_normalized": "curriculum and instructional strategies for meaningful learning",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Technology for Instruction and Online Pedagogy",
+      "guide_title_normalized": "technology for instruction and online pedagogy",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Monitoring Student Learning Through Assessment",
+      "guide_title_normalized": "monitoring student learning through assessment",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Technology and Ethics: A Look at Emerging Trends and Society",
+      "guide_title_normalized": "technology and ethics a look at emerging trends and society",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Behavioral Intervention Strategies and Applied Behavior Analysis",
+      "guide_title_normalized": "behavioral intervention strategies and applied behavior analysis",
+      "aos_group": "Special Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Special Education Law, Policies and Procedures",
+      "guide_title_normalized": "special education law policies and procedures",
+      "aos_group": "Special Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Assessment for Special Education",
+      "guide_title_normalized": "assessment for special education",
+      "aos_group": "Special Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D755",
+        "D763"
+      ],
+      "resolved_code": "D763",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Individualized Education Plan (IEP) Collaboration and Communication with Parents and School Staff",
+      "guide_title_normalized": "individualized education plan iep collaboration and communication with parents and school staff",
+      "aos_group": "Special Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Special Education Curriculum",
+      "guide_title_normalized": "special education curriculum",
+      "aos_group": "Special Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D757",
+        "D765"
+      ],
+      "resolved_code": "D765",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Considerations for Instructional Planning for Learners",
+      "guide_title_normalized": "considerations for instructional planning for learners",
+      "aos_group": "Special Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Elementary Literacy and Mathematics Strategies and Assistive Technologies",
+      "guide_title_normalized": "elementary literacy and mathematics strategies and assistive technologies",
+      "aos_group": "Special Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Secondary Literacy and Mathematics Strategies and Assistive Technologies",
+      "guide_title_normalized": "secondary literacy and mathematics strategies and assistive technologies",
+      "aos_group": "Special Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Student Teaching I in Special Education",
+      "guide_title_normalized": "student teaching i in special education",
+      "aos_group": "Special Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_residual",
+      "canonical_candidate_codes": [
+        "D529",
+        "D530",
+        "D719",
+        "D739"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Secondary Literacy Methods and Interventions",
+      "guide_title_normalized": "secondary literacy methods and interventions",
+      "aos_group": "Pedagogy and Teaching Methods",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D769",
+        "D770"
+      ],
+      "resolved_code": "D770",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Early Clinical in Special Education",
+      "guide_title_normalized": "early clinical in special education",
+      "aos_group": "Clinical Experiences",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D705",
+        "D725"
+      ],
+      "resolved_code": "D725",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Advanced Clinical in Special Education",
+      "guide_title_normalized": "advanced clinical in special education",
+      "aos_group": "Clinical Experiences",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D723",
+        "D728"
+      ],
+      "resolved_code": "D728",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Education Portfolio",
+      "guide_title_normalized": "education portfolio",
+      "aos_group": "Clinical Experiences",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D743"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Elementary Literacy Curriculum",
+      "guide_title_normalized": "elementary literacy curriculum",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D668",
+        "D677"
+      ],
+      "resolved_code": "D677",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Early Literacy Methods",
+      "guide_title_normalized": "early literacy methods",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D669",
+        "D676"
+      ],
+      "resolved_code": "D676",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Elementary Literacy Methods",
+      "guide_title_normalized": "elementary literacy methods",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D670",
+        "D675"
+      ],
+      "resolved_code": "D675",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Foundations of Literacy Through Literature",
+      "guide_title_normalized": "foundations of literacy through literature",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D688",
+        "D696"
+      ],
+      "resolved_code": "D696",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Literacy Assessment and Interventions",
+      "guide_title_normalized": "literacy assessment and interventions",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D689",
+        "D697"
+      ],
+      "resolved_code": "D697",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Elementary Mathematics Curriculum",
+      "guide_title_normalized": "elementary mathematics curriculum",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D691",
+        "D699"
+      ],
+      "resolved_code": "D699",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Early Mathematics Methods and Interventions",
+      "guide_title_normalized": "early mathematics methods and interventions",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D692",
+        "D700"
+      ],
+      "resolved_code": "D700",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Elementary Mathematics Methods and Interventions",
+      "guide_title_normalized": "elementary mathematics methods and interventions",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Student Teaching II in Special Education",
+      "guide_title_normalized": "student teaching ii in special education",
+      "aos_group": "Student Teaching",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_residual",
+      "canonical_candidate_codes": [
+        "D531",
+        "D532",
+        "D720",
+        "D740"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    }
+  ]
+}

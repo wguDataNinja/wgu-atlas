@@ -1,0 +1,1163 @@
+{
+  "program_code": "BSSESB",
+  "program_code_effective": "BSSESB",
+  "family": "education_bs",
+  "disposition": "full-use",
+  "sp_status": "usable-no-term",
+  "degree_title_guide": "Bachelor of Science, Science Education (Secondary Biological Science)",
+  "guide_version": "202603",
+  "guide_pub_date": "12/12/2025",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "Teachers College",
+    "School of Education"
+  ],
+  "program_history_degree_headings": [
+    "Bachelor of Science, Science Education (Secondary Biological Science)"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 41,
+    "sp_row_count": 41,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 24,
+      "unmapped": 4,
+      "exact_observed_variant_unique": 1,
+      "ambiguous_current_exact": 12
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 24,
+      "exact_observed_variant_unique": 1,
+      "unmapped": 4,
+      "ambiguous_current_exact": 12
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "The Professional Educator",
+      "guide_title_normalized": "the professional educator",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D663"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Learners and Learning Science",
+      "guide_title_normalized": "learners and learning science",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D664"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Personalized Learning for Inclusive Classrooms",
+      "guide_title_normalized": "personalized learning for inclusive classrooms",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Creating Positive Learning Environments",
+      "guide_title_normalized": "creating positive learning environments",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D661"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Planning Instructional Strategies for Meaningful Learning",
+      "guide_title_normalized": "planning instructional strategies for meaningful learning",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Assessing and Monitoring Student Learning",
+      "guide_title_normalized": "assessing and monitoring student learning",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D659"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Instructional Technology and Online Pedagogy",
+      "guide_title_normalized": "instructional technology and online pedagogy",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D660"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Composition: Writing with a Strategy",
+      "guide_title_normalized": "composition writing with a strategy",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D269"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Communication: Connecting with Others",
+      "guide_title_normalized": "introduction to communication connecting with others",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D268"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Composition: Successful Self-Expression",
+      "guide_title_normalized": "composition successful self expression",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D270"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Quantitative Literacy",
+      "guide_title_normalized": "quantitative literacy",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D771"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Systems Thinking and Applications",
+      "guide_title_normalized": "introduction to systems thinking and applications",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Technology and Ethics: Emerging Trends and Society",
+      "guide_title_normalized": "technology and ethics emerging trends and society",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "American Politics and the US Constitution",
+      "guide_title_normalized": "american politics and the us constitution",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C963"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "General Earth Science I",
+      "guide_title_normalized": "general earth science i",
+      "aos_group": "General Science Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D847"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "General Earth Science I Lab",
+      "guide_title_normalized": "general earth science i lab",
+      "aos_group": "General Science Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D848"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "General Biology I",
+      "guide_title_normalized": "general biology i",
+      "aos_group": "General Science Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D849"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "General Biology I Lab",
+      "guide_title_normalized": "general biology i lab",
+      "aos_group": "General Science Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D850"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "General Chemistry I",
+      "guide_title_normalized": "general chemistry i",
+      "aos_group": "General Science Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C288",
+        "D843",
+        "TSC2"
+      ],
+      "resolved_code": "D843",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "General Chemistry I Lab",
+      "guide_title_normalized": "general chemistry i lab",
+      "aos_group": "General Science Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D844"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "General Physics I",
+      "guide_title_normalized": "general physics i",
+      "aos_group": "General Science Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D845"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "General Physics I Lab",
+      "guide_title_normalized": "general physics i lab",
+      "aos_group": "General Science Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D846"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Probability and Statistics",
+      "guide_title_normalized": "probability and statistics",
+      "aos_group": "Mathematics Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D888"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "General Secondary Methods",
+      "guide_title_normalized": "general secondary methods",
+      "aos_group": "Secondary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D807",
+        "D808"
+      ],
+      "resolved_code": "D807",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Laboratory Safety",
+      "guide_title_normalized": "laboratory safety",
+      "aos_group": "Secondary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D873",
+        "D884"
+      ],
+      "resolved_code": "D873",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Secondary Disciplinary Literacy",
+      "guide_title_normalized": "secondary disciplinary literacy",
+      "aos_group": "Secondary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_residual",
+      "canonical_candidate_codes": [
+        "C728",
+        "C729",
+        "D162",
+        "D805",
+        "D806"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Three Dimensional Science and Engineering",
+      "guide_title_normalized": "three dimensional science and engineering",
+      "aos_group": "Science Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D874",
+        "D885"
+      ],
+      "resolved_code": "D874",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Early Clinical in Secondary Education",
+      "guide_title_normalized": "early clinical in secondary education",
+      "aos_group": "Clinical Experiences",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D707",
+        "D726"
+      ],
+      "resolved_code": "D707",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Advanced Clinical in Secondary Education",
+      "guide_title_normalized": "advanced clinical in secondary education",
+      "aos_group": "Clinical Experiences",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D709",
+        "D729"
+      ],
+      "resolved_code": "D709",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "General Biology II",
+      "guide_title_normalized": "general biology ii",
+      "aos_group": "Biology Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D877"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Molecular Biology",
+      "guide_title_normalized": "molecular biology",
+      "aos_group": "Biology Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D887"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "General Ecology",
+      "guide_title_normalized": "general ecology",
+      "aos_group": "Biology Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D878"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Cell Biology",
+      "guide_title_normalized": "cell biology",
+      "aos_group": "Biology Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D876"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Genetics",
+      "guide_title_normalized": "genetics",
+      "aos_group": "Biology Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D879"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Evolutionary Biology",
+      "guide_title_normalized": "evolutionary biology",
+      "aos_group": "Biology Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D880"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Advanced Zoology and Botany with Lab",
+      "guide_title_normalized": "advanced zoology and botany with lab",
+      "aos_group": "Biology Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D881"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Secondary Biology Curriculum",
+      "guide_title_normalized": "secondary biology curriculum",
+      "aos_group": "Biology Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D882",
+        "D883"
+      ],
+      "resolved_code": "D882",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Secondary Literacy Methods and Interventions",
+      "guide_title_normalized": "secondary literacy methods and interventions",
+      "aos_group": "Pedagogy and Teaching Methods",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D769",
+        "D770"
+      ],
+      "resolved_code": "D769",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Secondary Science Teaching Methods",
+      "guide_title_normalized": "secondary science teaching methods",
+      "aos_group": "Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D875",
+        "D886"
+      ],
+      "resolved_code": "D875",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Student Teaching I in Secondary Education",
+      "guide_title_normalized": "student teaching i in secondary education",
+      "aos_group": "Student Teaching",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_residual",
+      "canonical_candidate_codes": [
+        "D533",
+        "D534",
+        "D721",
+        "D741"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Student Teaching II in Secondary Education",
+      "guide_title_normalized": "student teaching ii in secondary education",
+      "aos_group": "Student Teaching",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_residual",
+      "canonical_candidate_codes": [
+        "D535",
+        "D536",
+        "D722",
+        "D742"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "The Professional Educator",
+      "guide_title_normalized": "the professional educator",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D663"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Composition: Writing with a Strategy",
+      "guide_title_normalized": "composition writing with a strategy",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D269"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Communication: Connecting with Others",
+      "guide_title_normalized": "introduction to communication connecting with others",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D268"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Learners and Learning Science",
+      "guide_title_normalized": "learners and learning science",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D664"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Composition: Successful Self-Expression",
+      "guide_title_normalized": "composition successful self expression",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D270"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "General Earth Science I",
+      "guide_title_normalized": "general earth science i",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D847"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "General Earth Science I Lab",
+      "guide_title_normalized": "general earth science i lab",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 1,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D848"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Personalized Learning for Inclusive Classrooms",
+      "guide_title_normalized": "personalized learning for inclusive classrooms",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Quantitative Literacy",
+      "guide_title_normalized": "quantitative literacy",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D771"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Creating Positive Learning Environments",
+      "guide_title_normalized": "creating positive learning environments",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D661"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Systems Thinking and Applications",
+      "guide_title_normalized": "introduction to systems thinking and applications",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "General Biology I",
+      "guide_title_normalized": "general biology i",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D849"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "General Biology I Lab",
+      "guide_title_normalized": "general biology i lab",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 1,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D850"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Planning Instructional Strategies for Meaningful Learning",
+      "guide_title_normalized": "planning instructional strategies for meaningful learning",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Technology and Ethics: Emerging Trends and Society",
+      "guide_title_normalized": "technology and ethics emerging trends and society",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Assessing and Monitoring Student Learning",
+      "guide_title_normalized": "assessing and monitoring student learning",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D659"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Probability and Statistics",
+      "guide_title_normalized": "probability and statistics",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D888"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Instructional Technology and Online Pedagogy",
+      "guide_title_normalized": "instructional technology and online pedagogy",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D660"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "General Chemistry I",
+      "guide_title_normalized": "general chemistry i",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C288",
+        "D843",
+        "TSC2"
+      ],
+      "resolved_code": "D843",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "General Chemistry I Lab",
+      "guide_title_normalized": "general chemistry i lab",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 1,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D844"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "American Politics and the US Constitution",
+      "guide_title_normalized": "american politics and the us constitution",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C963"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "General Secondary Methods",
+      "guide_title_normalized": "general secondary methods",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D807",
+        "D808"
+      ],
+      "resolved_code": "D807",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Three Dimensional Science and Engineering",
+      "guide_title_normalized": "three dimensional science and engineering",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D874",
+        "D885"
+      ],
+      "resolved_code": "D874",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "General Physics I",
+      "guide_title_normalized": "general physics i",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D845"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "General Physics I Lab",
+      "guide_title_normalized": "general physics i lab",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 1,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D846"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Early Clinical in Secondary Education",
+      "guide_title_normalized": "early clinical in secondary education",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D707",
+        "D726"
+      ],
+      "resolved_code": "D707",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "General Biology II",
+      "guide_title_normalized": "general biology ii",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D877"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Secondary Literacy Methods and Interventions",
+      "guide_title_normalized": "secondary literacy methods and interventions",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D769",
+        "D770"
+      ],
+      "resolved_code": "D769",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Molecular Biology",
+      "guide_title_normalized": "molecular biology",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D887"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "General Ecology",
+      "guide_title_normalized": "general ecology",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D878"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Secondary Science Teaching Methods",
+      "guide_title_normalized": "secondary science teaching methods",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D875",
+        "D886"
+      ],
+      "resolved_code": "D875",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Cell Biology",
+      "guide_title_normalized": "cell biology",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D876"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Genetics",
+      "guide_title_normalized": "genetics",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D879"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Laboratory Safety",
+      "guide_title_normalized": "laboratory safety",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 1,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D873",
+        "D884"
+      ],
+      "resolved_code": "D873",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Evolutionary Biology",
+      "guide_title_normalized": "evolutionary biology",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D880"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Advanced Zoology and Botany with Lab",
+      "guide_title_normalized": "advanced zoology and botany with lab",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D881"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Secondary Biology Curriculum",
+      "guide_title_normalized": "secondary biology curriculum",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D882",
+        "D883"
+      ],
+      "resolved_code": "D882",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Secondary Disciplinary Literacy",
+      "guide_title_normalized": "secondary disciplinary literacy",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_residual",
+      "canonical_candidate_codes": [
+        "C728",
+        "C729",
+        "D162",
+        "D805",
+        "D806"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Advanced Clinical in Secondary Education",
+      "guide_title_normalized": "advanced clinical in secondary education",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D709",
+        "D729"
+      ],
+      "resolved_code": "D709",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Student Teaching I in Secondary Education",
+      "guide_title_normalized": "student teaching i in secondary education",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 8,
+      "anchor_class": "deterministic_resolved_cu_match",
+      "canonical_candidate_codes": [
+        "D533",
+        "D534",
+        "D721",
+        "D741"
+      ],
+      "resolved_code": "D721",
+      "resolution_signals": [
+        "cu_match"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Student Teaching II in Secondary Education",
+      "guide_title_normalized": "student teaching ii in secondary education",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 8,
+      "anchor_class": "deterministic_resolved_cu_match",
+      "canonical_candidate_codes": [
+        "D535",
+        "D536",
+        "D722",
+        "D742"
+      ],
+      "resolved_code": "D722",
+      "resolution_signals": [
+        "cu_match"
+      ]
+    }
+  ]
+}

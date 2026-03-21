@@ -1,0 +1,234 @@
+{
+  "program_code": "PMCNUED",
+  "program_code_effective": "PMCNUED",
+  "family": "nursing_pmc",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Post-Master's Certificate, Nursing - Nursing Education (Post-MSN)",
+  "guide_version": "202110",
+  "guide_pub_date": "3/1/23",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "College of Health Professions",
+    "Leavitt School of Health"
+  ],
+  "program_history_degree_headings": [
+    "Post-Master's Certificate, Nursing - Nursing Education (Post-MSN)"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 8,
+    "sp_row_count": 8,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 2,
+      "exact_observed_variant_unique": 2,
+      "unmapped": 3,
+      "ambiguous_current_exact": 1
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 2,
+      "exact_observed_variant_unique": 2,
+      "unmapped": 3,
+      "ambiguous_current_exact": 1
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Essentials of Academic Writing",
+      "guide_title_normalized": "essentials of academic writing",
+      "aos_group": "Nursing Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D314"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Evolving Roles of Nurse Educators in Diverse Environments",
+      "guide_title_normalized": "evolving roles of nurse educators in diverse environments",
+      "aos_group": "Nursing Education Specialty",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "C918"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Facilitation of Context-Based Student-Centered Learning",
+      "guide_title_normalized": "facilitation of context based student centered learning",
+      "aos_group": "Nursing Education Specialty",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "C919"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Contemporary Curriculum Design and Development in Nursing Education",
+      "guide_title_normalized": "contemporary curriculum design and development in nursing education",
+      "aos_group": "Nursing Education Specialty",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Assessment and Evaluation Strategies for Measuring Student Learning",
+      "guide_title_normalized": "assessment and evaluation strategies for measuring student learning",
+      "aos_group": "Nursing Education Specialty",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Emerging Trends and Challenges in 21st Century Nursing Education",
+      "guide_title_normalized": "emerging trends and challenges in 21st century nursing education",
+      "aos_group": "Nursing Education Specialty",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Nursing Education Field Experience",
+      "guide_title_normalized": "nursing education field experience",
+      "aos_group": "Nursing Education Specialty",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C821",
+        "C946"
+      ],
+      "resolved_code": "C946",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Nursing Education Capstone",
+      "guide_title_normalized": "nursing education capstone",
+      "aos_group": "Nursing Education Specialty",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C947"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Essentials of Academic Writing",
+      "guide_title_normalized": "essentials of academic writing",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 1,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D314"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Facilitation of Context-Based Student-Centered Learning",
+      "guide_title_normalized": "facilitation of context based student centered learning",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 2,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "C919"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Contemporary Curriculum Design and Development in Nursing Education",
+      "guide_title_normalized": "contemporary curriculum design and development in nursing education",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Assessment and Evaluation Strategies for Measuring Student Learning",
+      "guide_title_normalized": "assessment and evaluation strategies for measuring student learning",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Evolving Roles of Nurse Educators in Diverse Environments",
+      "guide_title_normalized": "evolving roles of nurse educators in diverse environments",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 2,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "C918"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Emerging Trends and Challenges in 21st Century Nursing Education",
+      "guide_title_normalized": "emerging trends and challenges in 21st century nursing education",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Nursing Education Field Experience",
+      "guide_title_normalized": "nursing education field experience",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C821",
+        "C946"
+      ],
+      "resolved_code": "C946",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Nursing Education Capstone",
+      "guide_title_normalized": "nursing education capstone",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C947"
+      ]
+    }
+  ]
+}
