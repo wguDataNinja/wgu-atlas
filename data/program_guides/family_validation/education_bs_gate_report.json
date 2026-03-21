@@ -1,0 +1,63 @@
+{
+  "report_type": "family_gate_test",
+  "family": "education_bs",
+  "date": "2026-03-21",
+  "family_size": 4,
+  "gate_guide": "BSSESB",
+  "gate_approach": "Single representative guide; full rollout contingent on gate pass",
+  "parser_changes": [],
+
+  "guide": {
+    "code": "BSSESB",
+    "degree_title": "Bachelor of Science, Science Education (Secondary Biological Science)",
+    "confidence": "high",
+    "version": "202603",
+    "pub_date": "12/12/2025",
+    "page_count": 0,
+    "metadata_format": "header-line",
+    "sp_rows": 41,
+    "sp_format": "2-column multiline (no Term)",
+    "aos_groups": 11,
+    "aos_courses": 41,
+    "capstone_present": false,
+    "reconciliation": "41/41 clean",
+    "anomalies": 0,
+    "warnings": 0,
+    "empty_descriptions": 0,
+    "empty_competency_lists": 0
+  },
+
+  "aos_groups": [
+    {"group": "Professional Core", "courses": 7},
+    {"group": "General Education", "courses": 7},
+    {"group": "General Science Content", "courses": 8},
+    {"group": "Mathematics Education", "courses": 1},
+    {"group": "Secondary Education", "courses": 3},
+    {"group": "Science Education", "courses": 1},
+    {"group": "Clinical Experiences", "courses": 2},
+    {"group": "Biology Content", "courses": 8},
+    {"group": "Pedagogy and Teaching Methods", "courses": 1},
+    {"group": "Science", "courses": 1},
+    {"group": "Student Teaching", "courses": 2}
+  ],
+
+  "structural_notes": [
+    "BSSESB uses 2-column multiline SP format (no Term) — identical to education_ba teacher-licensure guides (BAELED, BASPEE, BASPMM). No new handler needed.",
+    "education_bs is an undergraduate family (B.S. degree). SP has no Term column, matching education_ba bachelor's teacher programs.",
+    "Clinical Experiences and Student Teaching appear as AoS group labels — same structural pattern as education_ba. Fully handled.",
+    "Header-line metadata format (page_count=0 cosmetic gap — pre-existing behavior).",
+    "No Capstone section. Handled gracefully.",
+    "41 courses is a large undergraduate guide but the parser handles it identically to smaller guides.",
+    "Subject-specific content group ('Biology Content', 'General Science Content') — structure differs from Elementary (BAELED) but AoS state machine handles it without changes.",
+    "AoS has 11 groups — largest group count yet in an education family guide, but parser handles it cleanly."
+  ],
+
+  "gate_result": "PASS — BSSESB HIGH confidence, 0 anomalies, 0 warnings. 41/41 perfect reconciliation.",
+
+  "recommendation": {
+    "education_bs_gate": "PASS",
+    "proceed_to_rollout": true,
+    "rollout_risk": "very_low",
+    "notes": "BSSESB is a textbook extension of validated education_ba patterns. 2-column SP, Clinical Experiences, Student Teaching — all pre-validated. 4-guide family with predictable structure. Recommend rolling out education_bs before teaching_mat: smaller family, faster to complete, no structural unknowns. Other education_bs guides are likely subject variants (different science discipline, possibly different subject areas) but core structure should be identical."
+  }
+}

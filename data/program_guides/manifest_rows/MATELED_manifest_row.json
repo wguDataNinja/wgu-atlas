@@ -1,0 +1,43 @@
+{
+  "source_pdf_filename": "MATELED.pdf",
+  "source_text_filename": "MATELED.txt",
+  "inferred_program_code": "MATELED",
+  "page_count": 18,
+  "version_strings": [
+    "202411"
+  ],
+  "publication_dates": [
+    "8/16/24"
+  ],
+  "has_standard_path": true,
+  "has_areas_of_study": true,
+  "has_capstone_section": false,
+  "has_course_descriptions": true,
+  "has_competency_bullets": true,
+  "has_term_structure": true,
+  "has_cu_values": true,
+  "has_cert_prep_mentions": false,
+  "has_prereq_mentions": false,
+  "standard_path_row_count": 28,
+  "competency_trigger_count": 28,
+  "competency_bullet_count": 141,
+  "cert_prep_mention_count": 0,
+  "prereq_mention_count": 0,
+  "detected_section_headings": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "inferred_course_groups": [
+    "Professional Core",
+    "General Education",
+    "Elementary Education",
+    "Clinical Experiences",
+    "Student Teaching"
+  ],
+  "likely_guide_family": "teaching_mat",
+  "template_type": "partial",
+  "parseability_confidence": "high",
+  "warnings": [],
+  "irregularities": []
+}

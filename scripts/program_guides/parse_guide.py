@@ -198,9 +198,11 @@ def extract_metadata(stripped: list) -> dict:
             prev_code_seen = True
         elif line.startswith('©') and prev_code_seen:
             # Extract pub date from the © line: "© 2019 Western Governors University 8/2/24"
-            parts = line.rstrip().split()
-            if parts and '/' in parts[-1]:
-                dates.append(parts[-1])
+            # Use regex rather than parts[-1]: some guides omit the space before the date
+            # (e.g. "...University8/16/24") which breaks whitespace splitting.
+            _date_m = re.search(r'(\d{1,2}/\d{1,2}/\d{2,4})', line)
+            if _date_m:
+                dates.append(_date_m.group(1))
             # Don't reset — page number line follows
         elif PAGE_NUM_RE.match(line) and prev_code_seen:
             # Standalone page number in multi-line footer

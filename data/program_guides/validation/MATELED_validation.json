@@ -1,0 +1,32 @@
+{
+  "program_code": "MATELED",
+  "degree_title": "Master of Arts in Teaching, Elementary Education",
+  "version": "202411",
+  "pub_date": "8/16/24",
+  "page_count": 18,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 219,
+    "Areas of Study": 428,
+    "Accessibility": 1008
+  },
+  "standard_path_row_count": 28,
+  "aos_group_count": 5,
+  "aos_course_count": 28,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 28,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

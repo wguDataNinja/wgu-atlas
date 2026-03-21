@@ -1,0 +1,32 @@
+{
+  "program_code": "BSSESB",
+  "degree_title": "Bachelor of Science, Science Education (Secondary Biological Science)",
+  "version": "202603",
+  "pub_date": "12/12/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 194,
+    "Areas of Study": 385,
+    "Accessibility": 1058
+  },
+  "standard_path_row_count": 41,
+  "aos_group_count": 11,
+  "aos_course_count": 41,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 41,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

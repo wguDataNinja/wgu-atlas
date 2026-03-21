@@ -1,0 +1,58 @@
+{
+  "report_type": "family_gate_test",
+  "family": "teaching_mat",
+  "date": "2026-03-21",
+  "family_size": 9,
+  "gate_guide": "MATELED",
+  "gate_approach": "Single representative guide; full rollout contingent on gate pass",
+  "parser_changes": [
+    "extract_metadata() © line date fix: replaced parts[-1] whitespace-split with re.search(r'(\\d{1,2}/\\d{1,2}/\\d{2,4})') to handle source PDFs where the date token is concatenated with the preceding word (no space). Fixed MATELED pub_date extraction from 'University8/16/24' to '8/16/24'. No behavioral change for guides where the date is correctly space-delimited."
+  ],
+
+  "guide": {
+    "code": "MATELED",
+    "degree_title": "Master of Arts in Teaching, Elementary Education",
+    "confidence": "high",
+    "version": "202411",
+    "pub_date": "8/16/24",
+    "page_count": 18,
+    "metadata_format": "footer (split)",
+    "sp_rows": 28,
+    "sp_format": "3-column multiline (with Term)",
+    "aos_groups": 5,
+    "aos_courses": 28,
+    "capstone_present": false,
+    "reconciliation": "28/28 clean",
+    "anomalies": 0,
+    "warnings": 0,
+    "empty_descriptions": 0,
+    "empty_competency_lists": 0
+  },
+
+  "aos_groups": [
+    {"group": "Professional Core", "courses": 7},
+    {"group": "General Education", "courses": 1},
+    {"group": "Elementary Education", "courses": 15},
+    {"group": "Clinical Experiences", "courses": 3},
+    {"group": "Student Teaching", "courses": 2}
+  ],
+
+  "structural_notes": [
+    "MATELED uses 3-column multiline SP format (with Term) — consistent with graduate guides in graduate_standard and mba families.",
+    "teaching_mat is a graduate family (M.A.T. degree). SP has Term column unlike education_ba teacher-licensure guides which are 2-column.",
+    "Clinical Experiences and Student Teaching appear as AoS group labels — identical structural pattern to education_ba (BAELED). No new handler needed.",
+    "Split-footer metadata format (code+version / © line / page number on separate lines). Same format as BSCS, BSPSY validated in prior sessions.",
+    "pub_date extraction had a cosmetic bug: last © line in file had no space before the date ('University8/16/24'). Fixed in extract_metadata().",
+    "No Capstone section. Handled gracefully — consistent with most education family guides.",
+    "18 footer-page passes confirm document is 18 pages."
+  ],
+
+  "gate_result": "PASS — MATELED HIGH confidence, 0 anomalies, 0 warnings. 28/28 perfect reconciliation.",
+
+  "recommendation": {
+    "teaching_mat_gate": "PASS",
+    "proceed_to_rollout": true,
+    "rollout_risk": "low",
+    "notes": "MATELED parsed cleanly with no structural surprises. All patterns are extensions of already-validated education_ba / graduate_standard behavior. Recommend full teaching_mat rollout. Gate the full 9-guide family before committing — watch for: (1) non-Elementary subject variants (Math, Science, Special Ed) may have different AoS group sets; (2) some teaching_mat guides may use 2-column SP if they follow the BA format rather than MA format. Gate result supports proceeding but warrants careful per-guide review during rollout."
+  }
+}

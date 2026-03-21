@@ -45,6 +45,56 @@ Full audit produced in `data/program_guides/audit/`:
 
 ---
 
+## Session 17 — teaching_mat Gate Test (MATELED) + education_bs Gate Test (BSSESB) (2026-03-21)
+
+### Gate results
+
+| Code | Family | Degree | Confidence | SP Format | SP Rows | AoS Groups | AoS Courses | Capstone |
+|------|--------|--------|------------|-----------|---------|------------|-------------|---------|
+| MATELED | teaching_mat | M.A.T., Elementary Education | HIGH | 3-col multiline (with Term) | 28 | 5 | 28 | — |
+| BSSESB | education_bs | B.S., Science Education (Secondary Biological Science) | HIGH | 2-col multiline (no Term) | 41 | 11 | 41 | — |
+
+Both gates: 0 anomalies, 0 warnings, perfect reconciliation.
+
+### Structural findings
+
+**MATELED (teaching_mat):**
+- 3-column SP (with Term) — teaching_mat is a graduate family (M.A.T.). Same format as graduate_standard/mba, unlike education_ba teacher-licensure guides (2-col).
+- Clinical Experiences (3 courses) + Student Teaching (2 courses) as AoS group labels — same pattern as education_ba. No new handler.
+- Split-footer metadata format. 28 courses across 5 groups.
+
+**BSSESB (education_bs):**
+- 2-column SP (no Term) — education_bs is undergraduate. Same format as education_ba teacher-licensure guides (BAELED, BASPEE, BASPMM). No new handler.
+- 11 AoS groups (largest in any education family to date). Parser handled cleanly.
+- Header-line metadata. 41 courses.
+- Subject-specific content groups ("Biology Content", "General Science Content") — different names but identical structural pattern.
+
+### Parser bug fixed — `extract_metadata()` © line date extraction
+
+**Bug:** MATELED's last footer © line (`line 1037`) had no space before the date: `"...University8/16/24"`. The old handler used `parts[-1]` (whitespace split), producing `"University8/16/24"`. Source PDF formatting artifact.
+
+**Fix:** Replaced `parts[-1]` check with `re.search(r'(\d{1,2}/\d{1,2}/\d{2,4})', line)` — extracts date pattern directly regardless of surrounding whitespace. No behavioral change when space is present.
+
+**Regression verified:** BSDA, BSMGT, BSCSIA, MBA, MBAITM, BSCS, BSPSY — all unchanged after fix.
+
+**Scope:** General fix — benefits any guide with this PDF artifact; not family-specific.
+
+### Rollout recommendation
+
+Both families gate-passed cleanly. Recommend:
+1. **education_bs first** — 4-guide family, very low risk, all patterns pre-validated, fast to complete.
+2. **teaching_mat second** — 9 guides, slightly larger, watch for SP format consistency across non-Elementary subject variants.
+
+### Artifacts produced
+
+- `data/program_guides/parsed/{MATELED,BSSESB}_parsed.json`
+- `data/program_guides/validation/{MATELED,BSSESB}_validation.json`
+- `data/program_guides/manifest_rows/{MATELED,BSSESB}_manifest_row.json`
+- `data/program_guides/family_validation/teaching_mat_gate_report.{json,md}`
+- `data/program_guides/family_validation/education_bs_gate_report.{json,md}`
+
+---
+
 ## Session 16 — healthcare_grad Gate Test / Full Rollout (2026-03-21)
 
 ### Gate result
