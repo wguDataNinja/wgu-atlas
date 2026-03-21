@@ -5,6 +5,35 @@ Each entry records what changed, decisions locked, what's blocked, and the next 
 
 ---
 
+## 2026-03-20 (session 12 — Phase A execution + BSDA thin-slice parser)
+
+**Done**
+- Ran `extract_guide_texts.py`: 114 PDFs converted to .txt (1 skipped — BSDA pre-existing), 0 failures
+- Ran `analyze_guide_manifest.py`: produced `guide_manifest.json` (115 rows), `section_presence_matrix.csv`, `manifest_summary.json` — 19 families identified, 29 guides with variant section headings
+- Debugged and fixed 3 bugs in `parse_guide.py` AoS state machine:
+  1. INTRO boilerplate detection: replaced word-count heuristic with `intro_prose_seen` flag + `looks_like_prose()` check
+  2. SEEKING→IN_DESCRIPTION transition: added prose-line detection with `pending_titles` buffer resolve
+  3. `elif in_bullet` fall-through: added `emit_course()` + `state='SEEKING'` so group heading lines aren't silently discarded; fixed `emit_course()` to not overwrite already-flushed descriptions
+- BSDA thin-slice parse: confidence=HIGH, 0 anomalies, 0 warnings; 14 groups, 41 courses, all with descriptions and bullets
+- Created `_internal/program_guides/DEV_NOTES.md` with full session accounting
+
+**Decisions locked**
+- `pdftotext` (poppler) confirmed as extraction tool; output matches pre-existing BSDA.txt exactly
+- `looks_like_prose()` (len > 80 OR ends with sentence punctuation) is the reliable discriminator for intro boilerplate vs group/course headings
+- Pending-titles buffer (1 item = course, 2 items = group+course) is correct; the bug was in missing the IN_DESCRIPTION transition and in the `elif in_bullet` fall-through path
+- `--all` mode should not be run until standard_bs family is validated on 3–5 additional programs
+
+**Blocked / open**
+- Standard_bs family validation: need BSCS, BSITM, BSHA, BSFIN test runs before running `--all`
+- Education/MAT/endorsement/nursing variants: detected in manifest but not yet handled by parser
+- Course-code matching: deferred (Phase E)
+- Site integration: deferred
+
+**Next starting task**
+Run `parse_guide.py --program BSCS` (and 2–3 more standard_bs programs) to validate parser generalizes within the family before broader rollout.
+
+---
+
 ## 2026-03-20 (session 11 — program guide extraction workstream initialized)
 
 **Done**

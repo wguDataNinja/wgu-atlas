@@ -1,0 +1,34 @@
+{
+  "program_code": "BSDA",
+  "degree_title": "Bachelor of Science, Data Analytics",
+  "version": "202309",
+  "pub_date": "5/1/23",
+  "page_count": 21,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Capstone",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 188,
+    "Areas of Study": 254,
+    "Capstone": 825,
+    "Accessibility": 835
+  },
+  "standard_path_row_count": 42,
+  "aos_group_count": 14,
+  "aos_course_count": 41,
+  "capstone_present": true,
+  "title_reconciliation": {
+    "in_both": 42,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

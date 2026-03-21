@@ -1,0 +1,297 @@
+{
+  "total_guides": 115,
+  "by_family": {
+    "standard_bs": 19,
+    "education_ba": 11,
+    "education_ma": 9,
+    "teaching_mat": 9,
+    "graduate_standard": 9,
+    "cs_ug": 8,
+    "endorsement": 8,
+    "accounting_ma": 5,
+    "cs_grad": 5,
+    "nursing_msn": 5,
+    "education_bs": 4,
+    "swe_grad": 4,
+    "nursing_pmc": 4,
+    "mba": 3,
+    "data_analytics_grad": 3,
+    "nursing_rn_msn": 3,
+    "nursing_ug": 2,
+    "education_grad": 2,
+    "healthcare_grad": 2
+  },
+  "by_confidence": {
+    "medium": 97,
+    "high": 18
+  },
+  "universal_sections": {
+    "has_standard_path": true,
+    "has_areas_of_study": true,
+    "has_capstone_section": false,
+    "has_course_descriptions": true,
+    "has_competency_bullets": true,
+    "has_term_structure": false,
+    "has_cu_values": false,
+    "has_cert_prep_mentions": false,
+    "has_prereq_mentions": false,
+    "has_accreditation_section": true,
+    "has_boilerplate_closing": true
+  },
+  "section_coverage": {
+    "has_standard_path": {
+      "present": 115,
+      "absent": 0,
+      "pct": 100.0
+    },
+    "has_areas_of_study": {
+      "present": 115,
+      "absent": 0,
+      "pct": 100.0
+    },
+    "has_capstone_section": {
+      "present": 18,
+      "absent": 97,
+      "pct": 15.7
+    },
+    "has_course_descriptions": {
+      "present": 115,
+      "absent": 0,
+      "pct": 100.0
+    },
+    "has_competency_bullets": {
+      "present": 115,
+      "absent": 0,
+      "pct": 100.0
+    },
+    "has_term_structure": {
+      "present": 1,
+      "absent": 114,
+      "pct": 0.9
+    },
+    "has_cu_values": {
+      "present": 1,
+      "absent": 114,
+      "pct": 0.9
+    },
+    "has_cert_prep_mentions": {
+      "present": 53,
+      "absent": 62,
+      "pct": 46.1
+    },
+    "has_prereq_mentions": {
+      "present": 102,
+      "absent": 13,
+      "pct": 88.7
+    },
+    "has_accreditation_section": {
+      "present": 115,
+      "absent": 0,
+      "pct": 100.0
+    },
+    "has_boilerplate_closing": {
+      "present": 115,
+      "absent": 0,
+      "pct": 100.0
+    }
+  },
+  "common_warnings": {
+    "standard_path_detected_but_no_rows_parsed": 114,
+    "no_capstone_section": 97
+  },
+  "outliers": [],
+  "guides_with_variant_headings": [
+    {
+      "code": "BAELED",
+      "headings": [
+        "Student Teaching",
+        "Clinical Experiences"
+      ]
+    },
+    {
+      "code": "BASPEE",
+      "headings": [
+        "Licensure",
+        "Student Teaching",
+        "Clinical Experiences"
+      ]
+    },
+    {
+      "code": "BASPMM",
+      "headings": [
+        "Student Teaching",
+        "Clinical Experiences"
+      ]
+    },
+    {
+      "code": "BSCSIA",
+      "headings": [
+        "Prerequisites"
+      ]
+    },
+    {
+      "code": "BSFIN",
+      "headings": [
+        "Prerequisites"
+      ]
+    },
+    {
+      "code": "BSMES",
+      "headings": [
+        "Student Teaching",
+        "Clinical Experiences"
+      ]
+    },
+    {
+      "code": "BSPRN",
+      "headings": [
+        "Prerequisites"
+      ]
+    },
+    {
+      "code": "BSSESB",
+      "headings": [
+        "Student Teaching",
+        "Clinical Experiences"
+      ]
+    },
+    {
+      "code": "BSSESC",
+      "headings": [
+        "Student Teaching",
+        "Clinical Experiences"
+      ]
+    },
+    {
+      "code": "BSSESE",
+      "headings": [
+        "Student Teaching",
+        "Clinical Experiences"
+      ]
+    },
+    {
+      "code": "BSSESP",
+      "headings": [
+        "Student Teaching",
+        "Clinical Experiences"
+      ]
+    },
+    {
+      "code": "ENDECE",
+      "headings": [
+        "Clinical Experiences"
+      ]
+    },
+    {
+      "code": "ENDELL",
+      "headings": [
+        "Field Experience"
+      ]
+    },
+    {
+      "code": "MAELLP12",
+      "headings": [
+        "Field Experience"
+      ]
+    },
+    {
+      "code": "MATEES",
+      "headings": [
+        "Student Teaching",
+        "Clinical Experiences"
+      ]
+    },
+    {
+      "code": "MATELED",
+      "headings": [
+        "Student Teaching",
+        "Clinical Experiences"
+      ]
+    },
+    {
+      "code": "MATMES",
+      "headings": [
+        "Student Teaching",
+        "Clinical Experiences"
+      ]
+    },
+    {
+      "code": "MATSESB",
+      "headings": [
+        "Student Teaching",
+        "Clinical Experiences"
+      ]
+    },
+    {
+      "code": "MATSESC",
+      "headings": [
+        "Student Teaching",
+        "Clinical Experiences"
+      ]
+    },
+    {
+      "code": "MATSESE",
+      "headings": [
+        "Student Teaching",
+        "Clinical Experiences"
+      ]
+    },
+    {
+      "code": "MATSESP",
+      "headings": [
+        "Student Teaching",
+        "Clinical Experiences"
+      ]
+    },
+    {
+      "code": "MATSPED",
+      "headings": [
+        "Student Teaching",
+        "Clinical Experiences"
+      ]
+    },
+    {
+      "code": "MATSSES",
+      "headings": [
+        "Student Teaching",
+        "Clinical Experiences"
+      ]
+    },
+    {
+      "code": "MSCSIA",
+      "headings": [
+        "Prerequisites"
+      ]
+    },
+    {
+      "code": "MSEDL",
+      "headings": [
+        "Practicum"
+      ]
+    },
+    {
+      "code": "PMCNUED",
+      "headings": [
+        "Post-Master"
+      ]
+    },
+    {
+      "code": "PMCNUFNP",
+      "headings": [
+        "Post-Master"
+      ]
+    },
+    {
+      "code": "PMCNULM",
+      "headings": [
+        "Post-Master"
+      ]
+    },
+    {
+      "code": "PMCNUPMHNP",
+      "headings": [
+        "Post-Master"
+      ]
+    }
+  ]
+}
