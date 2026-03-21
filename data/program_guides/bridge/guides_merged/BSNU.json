@@ -1,0 +1,589 @@
+{
+  "program_code": "BSNU",
+  "program_code_effective": "BSNU",
+  "family": "nursing_ug",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Bachelor of Science, Nursing",
+  "guide_version": null,
+  "guide_pub_date": null,
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "College of Health Professions",
+    "Leavitt School of Health"
+  ],
+  "program_history_degree_headings": [
+    "Bachelor of Science, Nursing"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "guide_version_missing"
+  },
+  "roster_summary": {
+    "aos_course_count": 22,
+    "sp_row_count": 22,
+    "anchor_class_counts_aos": {
+      "exact_observed_variant_unique": 6,
+      "exact_current_unique": 13,
+      "llm_resolved_high": 2,
+      "deterministic_resolved_degree_title": 1
+    },
+    "anchor_class_counts_sp": {
+      "exact_observed_variant_unique": 6,
+      "exact_current_unique": 13,
+      "deterministic_resolved_degree_title": 1,
+      "llm_resolved_high": 2
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Interprofessional Communication and Leadership in Healthcare",
+      "guide_title_normalized": "interprofessional communication and leadership in healthcare",
+      "aos_group": "Nursing Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D235"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Intrapersonal Leadership and Professional Growth",
+      "guide_title_normalized": "intrapersonal leadership and professional growth",
+      "aos_group": "Nursing Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D218"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Scholarship in Nursing Practice",
+      "guide_title_normalized": "scholarship in nursing practice",
+      "aos_group": "Nursing Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D219"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Information Technology in Nursing Practice",
+      "guide_title_normalized": "information technology in nursing practice",
+      "aos_group": "Nursing Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D220"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Organizational Systems and Healthcare Transformation",
+      "guide_title_normalized": "organizational systems and healthcare transformation",
+      "aos_group": "Nursing Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D221"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Comprehensive Health Assessment",
+      "guide_title_normalized": "comprehensive health assessment",
+      "aos_group": "Nursing Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D222"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Healthcare Policy and Economics",
+      "guide_title_normalized": "healthcare policy and economics",
+      "aos_group": "Nursing Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D223"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Emerging Professional Practice",
+      "guide_title_normalized": "emerging professional practice",
+      "aos_group": "Nursing Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "E225"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Global and Population Health",
+      "guide_title_normalized": "global and population health",
+      "aos_group": "Nursing Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "E224"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "BSNU Capstone",
+      "guide_title_normalized": "bsnu capstone",
+      "aos_group": "Nursing Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D226"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Applied Healthcare Statistics",
+      "guide_title_normalized": "applied healthcare statistics",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C784"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Composition: Writing with a Strategy",
+      "guide_title_normalized": "composition writing with a strategy",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D269"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Anatomy and Physiology I with Lab",
+      "guide_title_normalized": "anatomy and physiology i with lab",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D312"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Communication: Connecting with Others",
+      "guide_title_normalized": "introduction to communication connecting with others",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D268"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Anatomy and Physiology II with Lab",
+      "guide_title_normalized": "anatomy and physiology ii with lab",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D313"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Psychology",
+      "guide_title_normalized": "introduction to psychology",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C180"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Global Arts and Humanities",
+      "guide_title_normalized": "global arts and humanities",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D198"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Sociology",
+      "guide_title_normalized": "introduction to sociology",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C273"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Microbiology with Lab: A Fundamental Approach",
+      "guide_title_normalized": "microbiology with lab a fundamental approach",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D311"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "World History: Diverse Cultures and Global Connections",
+      "guide_title_normalized": "world history diverse cultures and global connections",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D266"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Human Growth and Development",
+      "guide_title_normalized": "human growth and development",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D202"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Pathophysiology",
+      "guide_title_normalized": "pathophysiology",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C805",
+        "D069",
+        "D236"
+      ],
+      "resolved_code": "D236",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Interprofessional Communication and Leadership in Healthcare",
+      "guide_title_normalized": "interprofessional communication and leadership in healthcare",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 2,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D235"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Applied Healthcare Statistics",
+      "guide_title_normalized": "applied healthcare statistics",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C784"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Composition: Writing with a Strategy",
+      "guide_title_normalized": "composition writing with a strategy",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D269"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Anatomy and Physiology I with Lab",
+      "guide_title_normalized": "anatomy and physiology i with lab",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D312"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Communication: Connecting with Others",
+      "guide_title_normalized": "introduction to communication connecting with others",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D268"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Anatomy and Physiology II with Lab",
+      "guide_title_normalized": "anatomy and physiology ii with lab",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D313"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Psychology",
+      "guide_title_normalized": "introduction to psychology",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C180"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Global Arts and Humanities",
+      "guide_title_normalized": "global arts and humanities",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D198"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Sociology",
+      "guide_title_normalized": "introduction to sociology",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C273"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Microbiology with Lab: A Fundamental Approach",
+      "guide_title_normalized": "microbiology with lab a fundamental approach",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 4,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D311"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "World History: Diverse Cultures and Global Connections",
+      "guide_title_normalized": "world history diverse cultures and global connections",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D266"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Human Growth and Development",
+      "guide_title_normalized": "human growth and development",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D202"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Intrapersonal Leadership and Professional Growth",
+      "guide_title_normalized": "intrapersonal leadership and professional growth",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D218"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Scholarship in Nursing Practice",
+      "guide_title_normalized": "scholarship in nursing practice",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D219"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Pathophysiology",
+      "guide_title_normalized": "pathophysiology",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C805",
+        "D069",
+        "D236"
+      ],
+      "resolved_code": "D236",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Information Technology in Nursing Practice",
+      "guide_title_normalized": "information technology in nursing practice",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D220"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Organizational Systems and Healthcare Transformation",
+      "guide_title_normalized": "organizational systems and healthcare transformation",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D221"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Comprehensive Health Assessment",
+      "guide_title_normalized": "comprehensive health assessment",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D222"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Healthcare Policy and Economics",
+      "guide_title_normalized": "healthcare policy and economics",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D223"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Emerging Professional Practice",
+      "guide_title_normalized": "emerging professional practice",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 3,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "E225"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Global and Population Health",
+      "guide_title_normalized": "global and population health",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 4,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "E224"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "BSNU Capstone",
+      "guide_title_normalized": "bsnu capstone",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D226"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,515 @@
+{
+  "program_code": "MASESP",
+  "program_code_effective": "MASESP",
+  "family": "education_ma",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Master of Arts Science Education (Secondary Physics)",
+  "guide_version": "201806",
+  "guide_pub_date": "9/13/23",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "Teachers College",
+    "School of Education"
+  ],
+  "program_history_degree_headings": [
+    "Master of Arts Science Education (Secondary Physics)"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 13,
+    "sp_row_count": 13,
+    "anchor_class_counts_aos": {
+      "deterministic_resolved_multi": 10,
+      "deterministic_resolved_degree_title": 1,
+      "exact_current_unique": 1,
+      "exact_observed_variant_unique": 1
+    },
+    "anchor_class_counts_sp": {
+      "deterministic_resolved_multi": 11,
+      "exact_current_unique": 1,
+      "exact_observed_variant_unique": 1
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Concepts in Science",
+      "guide_title_normalized": "concepts in science",
+      "aos_group": "Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C371",
+        "C670"
+      ],
+      "resolved_code": "C670",
+      "resolution_signals": [
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Integrated Physical Sciences",
+      "guide_title_normalized": "integrated physical sciences",
+      "aos_group": "Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C165",
+        "C908"
+      ],
+      "resolved_code": "C908",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Precalculus and Calculus",
+      "guide_title_normalized": "precalculus and calculus",
+      "aos_group": "Mathematics Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "RXT2"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Conceptual Physics",
+      "guide_title_normalized": "conceptual physics",
+      "aos_group": "Physics Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C659",
+        "C876"
+      ],
+      "resolved_code": "C659",
+      "resolution_signals": [
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Physics: Mechanics",
+      "guide_title_normalized": "physics mechanics",
+      "aos_group": "Physics Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "BYT1",
+        "BYT2"
+      ],
+      "resolved_code": "BYT2",
+      "resolution_signals": [
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Physics: Waves and Optics",
+      "guide_title_normalized": "physics waves and optics",
+      "aos_group": "Physics Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "BZT1",
+        "BZT2"
+      ],
+      "resolved_code": "BZT2",
+      "resolution_signals": [
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Physics: Electricity and Magnetism",
+      "guide_title_normalized": "physics electricity and magnetism",
+      "aos_group": "Physics Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "DPT1",
+        "DPT2"
+      ],
+      "resolved_code": "DPT2",
+      "resolution_signals": [
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Space, Time and Motion",
+      "guide_title_normalized": "space time and motion",
+      "aos_group": "Physics Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C738",
+        "C739"
+      ],
+      "resolved_code": "C739",
+      "resolution_signals": [
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Physics: Content Knowledge",
+      "guide_title_normalized": "physics content knowledge",
+      "aos_group": "Physics Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C297",
+        "C615",
+        "C901",
+        "DAV2"
+      ],
+      "resolved_code": "C615",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Chemistry with Lab",
+      "guide_title_normalized": "chemistry with lab",
+      "aos_group": "Chemistry Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C832",
+        "C833"
+      ],
+      "resolved_code": "C833",
+      "resolution_signals": [
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Science, Technology, and Society",
+      "guide_title_normalized": "science technology and society",
+      "aos_group": "Science Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C388",
+        "C389"
+      ],
+      "resolved_code": "C389",
+      "resolution_signals": [
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Science Methods—Secondary Physics",
+      "guide_title_normalized": "science methodssecondary physics",
+      "aos_group": "Science Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C943",
+        "C979"
+      ],
+      "resolved_code": "C979",
+      "resolution_signals": [
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "MA, Science Education Teacher Performance Assessment",
+      "guide_title_normalized": "ma science education teacher performance assessment",
+      "aos_group": "Teacher Performance Assessment",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "C871"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Concepts in Science",
+      "guide_title_normalized": "concepts in science",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 1,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C371",
+        "C670"
+      ],
+      "resolved_code": "C670",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Integrated Physical Sciences",
+      "guide_title_normalized": "integrated physical sciences",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C165",
+        "C908"
+      ],
+      "resolved_code": "C908",
+      "resolution_signals": [
+        "cu_match",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Precalculus and Calculus",
+      "guide_title_normalized": "precalculus and calculus",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "RXT2"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Conceptual Physics",
+      "guide_title_normalized": "conceptual physics",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C659",
+        "C876"
+      ],
+      "resolved_code": "C659",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Physics: Mechanics",
+      "guide_title_normalized": "physics mechanics",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "BYT1",
+        "BYT2"
+      ],
+      "resolved_code": "BYT2",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Chemistry with Lab",
+      "guide_title_normalized": "chemistry with lab",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C832",
+        "C833"
+      ],
+      "resolved_code": "C833",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Physics: Waves and Optics",
+      "guide_title_normalized": "physics waves and optics",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "BZT1",
+        "BZT2"
+      ],
+      "resolved_code": "BZT2",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Physics: Electricity and Magnetism",
+      "guide_title_normalized": "physics electricity and magnetism",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "DPT1",
+        "DPT2"
+      ],
+      "resolved_code": "DPT2",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Science, Technology, and Society",
+      "guide_title_normalized": "science technology and society",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C388",
+        "C389"
+      ],
+      "resolved_code": "C389",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Space, Time and Motion",
+      "guide_title_normalized": "space time and motion",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C738",
+        "C739"
+      ],
+      "resolved_code": "C739",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Physics: Content Knowledge",
+      "guide_title_normalized": "physics content knowledge",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 1,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C297",
+        "C615",
+        "C901",
+        "DAV2"
+      ],
+      "resolved_code": "C615",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Science Methods—Secondary Physics",
+      "guide_title_normalized": "science methodssecondary physics",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C943",
+        "C979"
+      ],
+      "resolved_code": "C979",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "MA, Science Education Teacher Performance Assessment",
+      "guide_title_normalized": "ma science education teacher performance assessment",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 6,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "C871"
+      ]
+    }
+  ]
+}

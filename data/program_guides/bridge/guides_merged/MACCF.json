@@ -1,0 +1,336 @@
+{
+  "program_code": "MACCF",
+  "program_code_effective": "MACCF",
+  "family": "accounting_ma",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Master of Science in Accounting, Financial Reporting Specialization",
+  "guide_version": "202409",
+  "guide_pub_date": "4/12/24",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "School of Business"
+  ],
+  "program_history_degree_headings": [
+    "Master of Science in Accounting, Financial Reporting Specialization"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_not_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 11,
+    "sp_row_count": 11,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 8,
+      "deterministic_resolved_multi": 3
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 8,
+      "deterministic_resolved_multi": 3
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Management Communication",
+      "guide_title_normalized": "management communication",
+      "aos_group": "Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C204"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Ethics for Accountants",
+      "guide_title_normalized": "ethics for accountants",
+      "aos_group": "Accounting",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D550"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Fraud and Forensic Accounting",
+      "guide_title_normalized": "fraud and forensic accounting",
+      "aos_group": "Accounting",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C254",
+        "D551"
+      ],
+      "resolved_code": "D551",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Accounting Research and Critical Thinking",
+      "guide_title_normalized": "accounting research and critical thinking",
+      "aos_group": "Accounting",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D252"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data Analytics for Accountants I",
+      "guide_title_normalized": "data analytics for accountants i",
+      "aos_group": "Accounting",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D552"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data Analytics for Accountants II",
+      "guide_title_normalized": "data analytics for accountants ii",
+      "aos_group": "Accounting",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D553"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Advanced Financial Accounting I",
+      "guide_title_normalized": "advanced financial accounting i",
+      "aos_group": "Accounting",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D554"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Advanced Financial Accounting II",
+      "guide_title_normalized": "advanced financial accounting ii",
+      "aos_group": "Accounting",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D555"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Corporate Financial Analysis",
+      "guide_title_normalized": "corporate financial analysis",
+      "aos_group": "Accounting",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D556"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Governmental and Nonprofit Accounting",
+      "guide_title_normalized": "governmental and nonprofit accounting",
+      "aos_group": "Accounting",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C252",
+        "D250"
+      ],
+      "resolved_code": "D250",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Advanced Auditing",
+      "guide_title_normalized": "advanced auditing",
+      "aos_group": "Accounting",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C244",
+        "D251"
+      ],
+      "resolved_code": "D251",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Management Communication",
+      "guide_title_normalized": "management communication",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C204"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Ethics for Accountants",
+      "guide_title_normalized": "ethics for accountants",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D550"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Fraud and Forensic Accounting",
+      "guide_title_normalized": "fraud and forensic accounting",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C254",
+        "D551"
+      ],
+      "resolved_code": "D551",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Accounting Research and Critical Thinking",
+      "guide_title_normalized": "accounting research and critical thinking",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D252"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Data Analytics for Accountants I",
+      "guide_title_normalized": "data analytics for accountants i",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D552"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Data Analytics for Accountants II",
+      "guide_title_normalized": "data analytics for accountants ii",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D553"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Advanced Financial Accounting I",
+      "guide_title_normalized": "advanced financial accounting i",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D554"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Advanced Financial Accounting II",
+      "guide_title_normalized": "advanced financial accounting ii",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D555"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Corporate Financial Analysis",
+      "guide_title_normalized": "corporate financial analysis",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D556"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Governmental and Nonprofit Accounting",
+      "guide_title_normalized": "governmental and nonprofit accounting",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C252",
+        "D250"
+      ],
+      "resolved_code": "D250",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Advanced Auditing",
+      "guide_title_normalized": "advanced auditing",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C244",
+        "D251"
+      ],
+      "resolved_code": "D251",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    }
+  ]
+}

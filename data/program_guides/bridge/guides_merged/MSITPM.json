@@ -1,0 +1,296 @@
+{
+  "program_code": "MSITPM",
+  "program_code_effective": "MSITPM",
+  "family": "graduate_standard",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Master of Science, Information Technology - Product Management",
+  "guide_version": "202604",
+  "guide_pub_date": "2/3/2026",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "School of Technology"
+  ],
+  "program_history_degree_headings": [
+    "Master of Science, Information Technology - Product Management"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 10,
+    "sp_row_count": 10,
+    "anchor_class_counts_aos": {
+      "deterministic_resolved_degree_title": 2,
+      "unmapped": 2,
+      "exact_current_unique": 6
+    },
+    "anchor_class_counts_sp": {
+      "deterministic_resolved_degree_title": 2,
+      "unmapped": 2,
+      "exact_current_unique": 6
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Technical Communication",
+      "guide_title_normalized": "technical communication",
+      "aos_group": "Information Technology Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C768",
+        "C948",
+        "D339",
+        "E011"
+      ],
+      "resolved_code": "E011",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Information Technology Management and Leadership",
+      "guide_title_normalized": "information technology management and leadership",
+      "aos_group": "Information Technology Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Project Management",
+      "guide_title_normalized": "project management",
+      "aos_group": "Information Technology Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C722",
+        "C783",
+        "E015"
+      ],
+      "resolved_code": "E015",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Product Strategy",
+      "guide_title_normalized": "product strategy",
+      "aos_group": "Information Technology Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E022"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Product Design",
+      "guide_title_normalized": "product design",
+      "aos_group": "Information Technology Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E023"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Product Launch",
+      "guide_title_normalized": "product launch",
+      "aos_group": "Information Technology Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E024"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Financial Planning for IT Professionals",
+      "guide_title_normalized": "financial planning for it professionals",
+      "aos_group": "IT Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E013"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Problem Solving for Technology Business Problems",
+      "guide_title_normalized": "problem solving for technology business problems",
+      "aos_group": "IT Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Risk Management and Information Technology",
+      "guide_title_normalized": "risk management and information technology",
+      "aos_group": "IT Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E016"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Agile Processes and Culture in Technology",
+      "guide_title_normalized": "agile processes and culture in technology",
+      "aos_group": "IT Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E017"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Technical Communication",
+      "guide_title_normalized": "technical communication",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C768",
+        "C948",
+        "D339",
+        "E011"
+      ],
+      "resolved_code": "E011",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Information Technology Management and Leadership",
+      "guide_title_normalized": "information technology management and leadership",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Financial Planning for IT Professionals",
+      "guide_title_normalized": "financial planning for it professionals",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E013"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Problem Solving for Technology Business Problems",
+      "guide_title_normalized": "problem solving for technology business problems",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Project Management",
+      "guide_title_normalized": "project management",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 4,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C722",
+        "C783",
+        "E015"
+      ],
+      "resolved_code": "E015",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Risk Management and Information Technology",
+      "guide_title_normalized": "risk management and information technology",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E016"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Agile Processes and Culture in Technology",
+      "guide_title_normalized": "agile processes and culture in technology",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E017"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Product Strategy",
+      "guide_title_normalized": "product strategy",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E022"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Product Design",
+      "guide_title_normalized": "product design",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E023"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Product Launch",
+      "guide_title_normalized": "product launch",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E024"
+      ]
+    }
+  ]
+}

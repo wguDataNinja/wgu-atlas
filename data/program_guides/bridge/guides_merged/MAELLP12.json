@@ -1,0 +1,302 @@
+{
+  "program_code": "MAELLP12",
+  "program_code_effective": "MAELLP12",
+  "family": "education_ma",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Master of Arts, English Language Learning",
+  "guide_version": "201501",
+  "guide_pub_date": "5/7/2025",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "Teachers College",
+    "School of Education"
+  ],
+  "program_history_degree_headings": [
+    "Master of Arts, English Language Learning",
+    "Master of Arts, English Language Learning (PreK-12)"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 11,
+    "sp_row_count": 11,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 9,
+      "exact_observed_variant_unique": 2
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 9,
+      "exact_observed_variant_unique": 2
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Culture",
+      "guide_title_normalized": "culture",
+      "aos_group": "English Language Learning",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "CUA1"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Professional Role of the ELL Teacher",
+      "guide_title_normalized": "professional role of the ell teacher",
+      "aos_group": "English Language Learning",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "NMA1"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Language Production, Theory and Acquisition",
+      "guide_title_normalized": "language production theory and acquisition",
+      "aos_group": "English Language Learning",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "LPA1"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Theories of Second Language Acquisition and Grammar",
+      "guide_title_normalized": "theories of second language acquisition and grammar",
+      "aos_group": "English Language Learning",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "SLO1"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Assessment Theory and Practice",
+      "guide_title_normalized": "assessment theory and practice",
+      "aos_group": "English Language Learning",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "ASA1"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Planning, Implementing, Managing Instruction",
+      "guide_title_normalized": "planning implementing managing instruction",
+      "aos_group": "English Language Learning",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "NNA1"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Subject Specific Pedagogy: ELL",
+      "guide_title_normalized": "subject specific pedagogy ell",
+      "aos_group": "English Language Learning",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "ELO1"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Field Experience for ELL",
+      "guide_title_normalized": "field experience for ell",
+      "aos_group": "English Language Learning",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "FEA1"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Research Foundations",
+      "guide_title_normalized": "research foundations",
+      "aos_group": "Research",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C224"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Research Questions and Literature Review",
+      "guide_title_normalized": "research questions and literature review",
+      "aos_group": "Research",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C225"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Teacher Work Sample in English Language Learning",
+      "guide_title_normalized": "teacher work sample in english language learning",
+      "aos_group": "Teacher Work Sample",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "C360"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Culture",
+      "guide_title_normalized": "culture",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "CUA1"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Professional Role of the ELL Teacher",
+      "guide_title_normalized": "professional role of the ell teacher",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "NMA1"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Language Production, Theory and Acquisition",
+      "guide_title_normalized": "language production theory and acquisition",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "LPA1"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Theories of Second Language Acquisition and Grammar",
+      "guide_title_normalized": "theories of second language acquisition and grammar",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "SLO1"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Assessment Theory and Practice",
+      "guide_title_normalized": "assessment theory and practice",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "ASA1"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Planning, Implementing, Managing Instruction",
+      "guide_title_normalized": "planning implementing managing instruction",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "NNA1"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Subject Specific Pedagogy: ELL",
+      "guide_title_normalized": "subject specific pedagogy ell",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "ELO1"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Research Foundations",
+      "guide_title_normalized": "research foundations",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C224"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Research Questions and Literature Review",
+      "guide_title_normalized": "research questions and literature review",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C225"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Field Experience for ELL",
+      "guide_title_normalized": "field experience for ell",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "FEA1"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Teacher Work Sample in English Language Learning",
+      "guide_title_normalized": "teacher work sample in english language learning",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 1,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "C360"
+      ]
+    }
+  ]
+}

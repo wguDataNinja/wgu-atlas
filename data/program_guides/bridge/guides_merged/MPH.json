@@ -1,0 +1,360 @@
+{
+  "program_code": "MPH",
+  "program_code_effective": "MPH",
+  "family": "healthcare_grad",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Master of Public Health",
+  "guide_version": "202408",
+  "guide_pub_date": "11/10/2025",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "Leavitt School of Health"
+  ],
+  "program_history_degree_headings": [
+    "Master of Public Health"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 12,
+    "sp_row_count": 12,
+    "anchor_class_counts_aos": {
+      "exact_observed_variant_unique": 1,
+      "deterministic_resolved_multi": 3,
+      "exact_current_unique": 7,
+      "unmapped": 1
+    },
+    "anchor_class_counts_sp": {
+      "exact_observed_variant_unique": 1,
+      "deterministic_resolved_multi": 3,
+      "exact_current_unique": 7,
+      "unmapped": 1
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Public Health Core Functions and Essential Services",
+      "guide_title_normalized": "public health core functions and essential services",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D617"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Environmental Health",
+      "guide_title_normalized": "environmental health",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D592",
+        "D618"
+      ],
+      "resolved_code": "D618",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Global Health",
+      "guide_title_normalized": "global health",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D593",
+        "D619"
+      ],
+      "resolved_code": "D619",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Public Health Leadership and Administration",
+      "guide_title_normalized": "public health leadership and administration",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D594",
+        "D620"
+      ],
+      "resolved_code": "D620",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Social and Behavioral Determinants of Health",
+      "guide_title_normalized": "social and behavioral determinants of health",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D621"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Public Health Assessment, Program Planning, Intervention, and Evaluation",
+      "guide_title_normalized": "public health assessment program planning intervention and evaluation",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Public Health Finance and Funding",
+      "guide_title_normalized": "public health finance and funding",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D623"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Biostatistics and Analysis",
+      "guide_title_normalized": "biostatistics and analysis",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D624"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Principles of Epidemiology",
+      "guide_title_normalized": "principles of epidemiology",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D625"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Public Health Policy and Advocacy",
+      "guide_title_normalized": "public health policy and advocacy",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D626"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Public Health Education and Promotion",
+      "guide_title_normalized": "public health education and promotion",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D627"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Public Health Graduate Capstone",
+      "guide_title_normalized": "public health graduate capstone",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D628"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Public Health Core Functions and Essential Services",
+      "guide_title_normalized": "public health core functions and essential services",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D617"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Environmental Health",
+      "guide_title_normalized": "environmental health",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D592",
+        "D618"
+      ],
+      "resolved_code": "D618",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Global Health",
+      "guide_title_normalized": "global health",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D593",
+        "D619"
+      ],
+      "resolved_code": "D619",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Public Health Leadership and Administration",
+      "guide_title_normalized": "public health leadership and administration",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D594",
+        "D620"
+      ],
+      "resolved_code": "D620",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Social and Behavioral Determinants of Health",
+      "guide_title_normalized": "social and behavioral determinants of health",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D621"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Public Health Assessment, Program Planning, Intervention, and Evaluation",
+      "guide_title_normalized": "public health assessment program planning intervention and evaluation",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Public Health Finance and Funding",
+      "guide_title_normalized": "public health finance and funding",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D623"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Biostatistics and Analysis",
+      "guide_title_normalized": "biostatistics and analysis",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D624"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Principles of Epidemiology",
+      "guide_title_normalized": "principles of epidemiology",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D625"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Public Health Policy and Advocacy",
+      "guide_title_normalized": "public health policy and advocacy",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D626"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Public Health Education and Promotion",
+      "guide_title_normalized": "public health education and promotion",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D627"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Public Health Graduate Capstone",
+      "guide_title_normalized": "public health graduate capstone",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D628"
+      ]
+    }
+  ]
+}

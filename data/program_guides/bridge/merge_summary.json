@@ -1,0 +1,127 @@
+{
+  "generated_on": "2026-03-21",
+  "source_resolved_guide_dir": "data/program_guides/bridge/guides_resolved",
+  "output_merged_guide_dir": "data/program_guides/bridge/guides_merged",
+  "adjudication_source": "data/program_guides/bridge/llm_packets/adjudication_results.json",
+  "total_guides_processed": 115,
+  "total_rows_processed": 5087,
+  "anchor_class_distribution": {
+    "deterministic_resolved_a_suffix_cert": 3,
+    "deterministic_resolved_cu_match": 21,
+    "deterministic_resolved_degree_level": 4,
+    "deterministic_resolved_degree_title": 198,
+    "deterministic_resolved_multi": 1071,
+    "deterministic_resolved_one_active": 131,
+    "exact_current_unique": 2570,
+    "exact_observed_variant_unique": 382,
+    "llm_resolved_high": 163,
+    "llm_resolved_medium_reviewed": 2,
+    "unmapped": 536,
+    "unresolvable": 6
+  },
+  "llm_applied": {
+    "high_confidence_auto_accepted": 163,
+    "medium_confidence_human_reviewed": 2,
+    "unresolvable_excluded": 6
+  },
+  "policy": {
+    "llm_resolved_high": "auto-accepted; included in unique enrichment extraction",
+    "llm_resolved_medium_reviewed": "medium-confidence LLM result; included with distinct status for auditability",
+    "unresolvable": "both candidates inactive / no decisive signal; excluded from enrichment extraction; original candidates preserved"
+  },
+  "medium_confidence_cases": [
+    {
+      "packet_id": "BSIT__introduction_to_it__aos",
+      "program_code": "BSIT",
+      "surface": "aos",
+      "guide_title_raw": "Introduction to IT",
+      "selected_code": "E004",
+      "original_candidates": [
+        "C182",
+        "D322",
+        "E004"
+      ],
+      "rationale": "E004 is the active 3CU Introduction to IT most consistent with the BSIT guide's IT Fundamentals AoS group. The three other resolved courses in the same AoS group (Business Productivity Software=E005, Digital Transformation in the Enterprise=E006, Agile Methodology=E007) all resolved to E-prefix codes, indicating the BSIT guide adopted the E-prefix cohort for this section. C182 is inactive with zero current_programs (historical in business admin). D322 is active (4CU) but scoped to BSCSIA/SWE — different from BSIT's general IT focus. E004 fits the E-prefix cohort; alternative D322 is possible given neither explicitly lists BSIT in current_programs."
+    },
+    {
+      "packet_id": "BSPRN__community_health_and_population_focused_nursing__aos",
+      "program_code": "BSPRN",
+      "surface": "aos",
+      "guide_title_raw": "Community Health and Population-Focused Nursing",
+      "selected_code": "C826",
+      "original_candidates": [
+        "C228",
+        "C826"
+      ],
+      "rationale": "C826 (inactive, last_seen 2022-12) was historically scoped to Bachelor of Science, Nursing [BSRN], a pre-licensure nursing program analogous to BSPRN (Bachelor of Science, Nursing - Prelicensure). C228 (inactive, last_seen 2021-12) was historically scoped to BSNU (post-licensure BSN) and MSN RN-to-MSN programs — a different clinical context from pre-licensure nursing. Both candidates are now inactive with no current programs; the active D-prefix replacement is resolved elsewhere. C826's BSRN scope is the closer semantic match to BSPRN, but C228 cannot be fully excluded since both served nursing programs and BSPRN students may follow a curriculum that historically drew from BSNU."
+    }
+  ],
+  "unresolvable_cases": [
+    {
+      "packet_id": "BSHS__health_equity_and_social_determinants_of_health__aos",
+      "program_code": "BSHS",
+      "surface": "aos",
+      "guide_title_raw": "Health Equity and Social Determinants of Health",
+      "original_candidates": [
+        "D057",
+        "D397"
+      ],
+      "unresolvable_reason": "Both candidates are inactive with zero current_programs. D057 (last_seen 2022-11) was historically in Bachelor of Science, Health Services Coordination. D397 (last_seen 2024-09) was historically in Bachelor of Science, Health and Human Services. Neither historical program matches the current guide's program family (Health Science, Public Health, or Psychology). No available signal — AoS neighbors resolve to unrelated D-prefix codes (career/psychology), sp_cus is non-unique, and both candidates have identical structure (3CU, moderate stability, inactive, same college implied)."
+    },
+    {
+      "packet_id": "BSHS__health_equity_and_social_determinants_of_health__sp",
+      "program_code": "BSHS",
+      "surface": "sp",
+      "guide_title_raw": "Health Equity and Social Determinants of Health",
+      "original_candidates": [
+        "D057",
+        "D397"
+      ],
+      "unresolvable_reason": "Both candidates are inactive with zero current_programs. D057 (last_seen 2022-11) was historically in Bachelor of Science, Health Services Coordination. D397 (last_seen 2024-09) was historically in Bachelor of Science, Health and Human Services. Neither historical program matches the current guide's program family (Health Science, Public Health, or Psychology). No available signal — AoS neighbors resolve to unrelated D-prefix codes (career/psychology), sp_cus is non-unique, and both candidates have identical structure (3CU, moderate stability, inactive, same college implied)."
+    },
+    {
+      "packet_id": "BSPH__health_equity_and_social_determinants_of_health__aos",
+      "program_code": "BSPH",
+      "surface": "aos",
+      "guide_title_raw": "Health Equity and Social Determinants of Health",
+      "original_candidates": [
+        "D057",
+        "D397"
+      ],
+      "unresolvable_reason": "Both candidates are inactive with zero current_programs. D057 (last_seen 2022-11) was historically in Bachelor of Science, Health Services Coordination. D397 (last_seen 2024-09) was historically in Bachelor of Science, Health and Human Services. Neither historical program matches the current guide's program family (Health Science, Public Health, or Psychology). No available signal — AoS neighbors resolve to unrelated D-prefix codes (career/psychology), sp_cus is non-unique, and both candidates have identical structure (3CU, moderate stability, inactive, same college implied)."
+    },
+    {
+      "packet_id": "BSPH__health_equity_and_social_determinants_of_health__sp",
+      "program_code": "BSPH",
+      "surface": "sp",
+      "guide_title_raw": "Health Equity and Social Determinants of Health",
+      "original_candidates": [
+        "D057",
+        "D397"
+      ],
+      "unresolvable_reason": "Both candidates are inactive with zero current_programs. D057 (last_seen 2022-11) was historically in Bachelor of Science, Health Services Coordination. D397 (last_seen 2024-09) was historically in Bachelor of Science, Health and Human Services. Neither historical program matches the current guide's program family (Health Science, Public Health, or Psychology). No available signal — AoS neighbors resolve to unrelated D-prefix codes (career/psychology), sp_cus is non-unique, and both candidates have identical structure (3CU, moderate stability, inactive, same college implied)."
+    },
+    {
+      "packet_id": "BSPSY__health_equity_and_social_determinants_of_health__aos",
+      "program_code": "BSPSY",
+      "surface": "aos",
+      "guide_title_raw": "Health Equity and Social Determinants of Health",
+      "original_candidates": [
+        "D057",
+        "D397"
+      ],
+      "unresolvable_reason": "Both candidates are inactive with zero current_programs. D057 (last_seen 2022-11) was historically in Bachelor of Science, Health Services Coordination. D397 (last_seen 2024-09) was historically in Bachelor of Science, Health and Human Services. Neither historical program matches the current guide's program family (Health Science, Public Health, or Psychology). No available signal — AoS neighbors resolve to unrelated D-prefix codes (career/psychology), sp_cus is non-unique, and both candidates have identical structure (3CU, moderate stability, inactive, same college implied)."
+    },
+    {
+      "packet_id": "BSPSY__health_equity_and_social_determinants_of_health__sp",
+      "program_code": "BSPSY",
+      "surface": "sp",
+      "guide_title_raw": "Health Equity and Social Determinants of Health",
+      "original_candidates": [
+        "D057",
+        "D397"
+      ],
+      "unresolvable_reason": "Both candidates are inactive with zero current_programs. D057 (last_seen 2022-11) was historically in Bachelor of Science, Health Services Coordination. D397 (last_seen 2024-09) was historically in Bachelor of Science, Health and Human Services. Neither historical program matches the current guide's program family (Health Science, Public Health, or Psychology). No available signal — AoS neighbors resolve to unrelated D-prefix codes (career/psychology), sp_cus is non-unique, and both candidates have identical structure (3CU, moderate stability, inactive, same college implied)."
+    }
+  ]
+}

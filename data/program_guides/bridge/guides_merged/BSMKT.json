@@ -1,0 +1,996 @@
+{
+  "program_code": "BSMKT",
+  "program_code_effective": "BSMKT",
+  "family": "standard_bs",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Bachelor of Science, Marketing",
+  "guide_version": "202501",
+  "guide_pub_date": "8/27/24",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "School of Business"
+  ],
+  "program_history_degree_headings": [
+    "Bachelor of Science, Marketing"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 37,
+    "sp_row_count": 37,
+    "anchor_class_counts_aos": {
+      "deterministic_resolved_multi": 4,
+      "exact_current_unique": 23,
+      "deterministic_resolved_degree_title": 2,
+      "llm_resolved_high": 1,
+      "unmapped": 3,
+      "exact_observed_variant_unique": 4
+    },
+    "anchor_class_counts_sp": {
+      "deterministic_resolved_multi": 5,
+      "llm_resolved_high": 1,
+      "exact_current_unique": 23,
+      "unmapped": 3,
+      "exact_observed_variant_unique": 4,
+      "deterministic_resolved_degree_title": 1
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Organizational Behavior",
+      "guide_title_normalized": "organizational behavior",
+      "aos_group": "Business Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C715",
+        "C715A"
+      ],
+      "resolved_code": "C715",
+      "resolution_signals": [
+        "a_suffix_cert",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Business Communication",
+      "guide_title_normalized": "business communication",
+      "aos_group": "Business Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C716"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Business Management Tasks",
+      "guide_title_normalized": "business management tasks",
+      "aos_group": "Business Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "QHT1"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Quantitative Analysis For Business",
+      "guide_title_normalized": "quantitative analysis for business",
+      "aos_group": "Business Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C723"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Project Management",
+      "guide_title_normalized": "project management",
+      "aos_group": "Business Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C722",
+        "C783",
+        "E015"
+      ],
+      "resolved_code": "C722",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Values-Based Leadership",
+      "guide_title_normalized": "values based leadership",
+      "aos_group": "Business Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D253",
+        "D253A"
+      ],
+      "resolved_code": "D253",
+      "resolution_signals": [
+        "a_suffix_cert",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Fundamentals for Success in Business",
+      "guide_title_normalized": "fundamentals for success in business",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "D072"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Emotional and Cultural Intelligence",
+      "guide_title_normalized": "emotional and cultural intelligence",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D082"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Business Environment Applications I: Business Structures and Legal Environment",
+      "guide_title_normalized": "business environment applications i business structures and legal environment",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Fundamentals of Spreadsheets and Data Presentations",
+      "guide_title_normalized": "fundamentals of spreadsheets and data presentations",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D388"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Innovative and Strategic Thinking",
+      "guide_title_normalized": "innovative and strategic thinking",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D081"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Principles of Financial and Managerial Accounting",
+      "guide_title_normalized": "principles of financial and managerial accounting",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D196"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Business Environment Applications II: Process, Logistics, and Operations",
+      "guide_title_normalized": "business environment applications ii process logistics and operations",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Finance Skills for Managers",
+      "guide_title_normalized": "finance skills for managers",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D076",
+        "D076A"
+      ],
+      "resolved_code": "D076",
+      "resolution_signals": [
+        "a_suffix_cert",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Principles of Management",
+      "guide_title_normalized": "principles of management",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C483"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Principles of Economics",
+      "guide_title_normalized": "principles of economics",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D089"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Managing in a Global Business Environment",
+      "guide_title_normalized": "managing in a global business environment",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D080"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Business Simulation",
+      "guide_title_normalized": "business simulation",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D361"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Composition: Successful Self-Expression",
+      "guide_title_normalized": "composition successful self expression",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D270"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Health, Fitness, and Wellness",
+      "guide_title_normalized": "health fitness and wellness",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C458"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Critical Thinking: Reason and Evidence",
+      "guide_title_normalized": "critical thinking reason and evidence",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D265"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Communication: Connecting with Others",
+      "guide_title_normalized": "introduction to communication connecting with others",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D268"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Sociology",
+      "guide_title_normalized": "introduction to sociology",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C273"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Influential Communication through Visual Design and Storytelling",
+      "guide_title_normalized": "influential communication through visual design and storytelling",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Applied Probability and Statistics",
+      "guide_title_normalized": "applied probability and statistics",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C955"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Integrated Physical Sciences",
+      "guide_title_normalized": "integrated physical sciences",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C165",
+        "C908"
+      ],
+      "resolved_code": "C165",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "World History: Diverse Cultures and Global Connections",
+      "guide_title_normalized": "world history diverse cultures and global connections",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D266"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Global Arts and Humanities",
+      "guide_title_normalized": "global arts and humanities",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D198"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Marketing Management",
+      "guide_title_normalized": "marketing management",
+      "aos_group": "Marketing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D174"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Marketing Applications",
+      "guide_title_normalized": "marketing applications",
+      "aos_group": "Marketing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "VZT1"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Consumer Behavior",
+      "guide_title_normalized": "consumer behavior",
+      "aos_group": "Marketing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "D175",
+        "D616"
+      ],
+      "resolved_code": "D175",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Digital Marketing",
+      "guide_title_normalized": "digital marketing",
+      "aos_group": "Marketing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D098"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Content Marketing",
+      "guide_title_normalized": "content marketing",
+      "aos_group": "Marketing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D176"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Brand Management",
+      "guide_title_normalized": "brand management",
+      "aos_group": "Marketing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D177"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Sales Management",
+      "guide_title_normalized": "sales management",
+      "aos_group": "Marketing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D099"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Marketing Strategy and Analytics",
+      "guide_title_normalized": "marketing strategy and analytics",
+      "aos_group": "Marketing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D178"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Functions of Human Resource Management",
+      "guide_title_normalized": "functions of human resource management",
+      "aos_group": "Human Resources",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D351"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Organizational Behavior",
+      "guide_title_normalized": "organizational behavior",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C715",
+        "C715A"
+      ],
+      "resolved_code": "C715",
+      "resolution_signals": [
+        "a_suffix_cert",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Fundamentals for Success in Business",
+      "guide_title_normalized": "fundamentals for success in business",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "D072"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Emotional and Cultural Intelligence",
+      "guide_title_normalized": "emotional and cultural intelligence",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D082"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Composition: Successful Self-Expression",
+      "guide_title_normalized": "composition successful self expression",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D270"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Health, Fitness, and Wellness",
+      "guide_title_normalized": "health fitness and wellness",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C458"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Marketing Management",
+      "guide_title_normalized": "marketing management",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D174"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Critical Thinking: Reason and Evidence",
+      "guide_title_normalized": "critical thinking reason and evidence",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D265"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Business Environment Applications I: Business Structures and Legal Environment",
+      "guide_title_normalized": "business environment applications i business structures and legal environment",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Communication: Connecting with Others",
+      "guide_title_normalized": "introduction to communication connecting with others",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D268"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Fundamentals of Spreadsheets and Data Presentations",
+      "guide_title_normalized": "fundamentals of spreadsheets and data presentations",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D388"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Marketing Applications",
+      "guide_title_normalized": "marketing applications",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "VZT1"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Business Communication",
+      "guide_title_normalized": "business communication",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C716"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Innovative and Strategic Thinking",
+      "guide_title_normalized": "innovative and strategic thinking",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D081"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Principles of Financial and Managerial Accounting",
+      "guide_title_normalized": "principles of financial and managerial accounting",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D196"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Sociology",
+      "guide_title_normalized": "introduction to sociology",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C273"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Consumer Behavior",
+      "guide_title_normalized": "consumer behavior",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "D175",
+        "D616"
+      ],
+      "resolved_code": "D175",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Business Environment Applications II: Process, Logistics, and Operations",
+      "guide_title_normalized": "business environment applications ii process logistics and operations",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 2,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Finance Skills for Managers",
+      "guide_title_normalized": "finance skills for managers",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D076",
+        "D076A"
+      ],
+      "resolved_code": "D076",
+      "resolution_signals": [
+        "a_suffix_cert",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Principles of Management",
+      "guide_title_normalized": "principles of management",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C483"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Business Management Tasks",
+      "guide_title_normalized": "business management tasks",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "QHT1"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Influential Communication through Visual Design and Storytelling",
+      "guide_title_normalized": "influential communication through visual design and storytelling",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Applied Probability and Statistics",
+      "guide_title_normalized": "applied probability and statistics",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C955"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Principles of Economics",
+      "guide_title_normalized": "principles of economics",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D089"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Digital Marketing",
+      "guide_title_normalized": "digital marketing",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D098"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Content Marketing",
+      "guide_title_normalized": "content marketing",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D176"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Managing in a Global Business Environment",
+      "guide_title_normalized": "managing in a global business environment",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D080"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Integrated Physical Sciences",
+      "guide_title_normalized": "integrated physical sciences",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C165",
+        "C908"
+      ],
+      "resolved_code": "C165",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Brand Management",
+      "guide_title_normalized": "brand management",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D177"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Functions of Human Resource Management",
+      "guide_title_normalized": "functions of human resource management",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D351"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "World History: Diverse Cultures and Global Connections",
+      "guide_title_normalized": "world history diverse cultures and global connections",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D266"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Sales Management",
+      "guide_title_normalized": "sales management",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D099"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Global Arts and Humanities",
+      "guide_title_normalized": "global arts and humanities",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D198"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Quantitative Analysis For Business",
+      "guide_title_normalized": "quantitative analysis for business",
+      "aos_group": null,
+      "sp_term": 9,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C723"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Project Management",
+      "guide_title_normalized": "project management",
+      "aos_group": null,
+      "sp_term": 9,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C722",
+        "C783",
+        "E015"
+      ],
+      "resolved_code": "C722",
+      "resolution_signals": [
+        "cu_match",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Values-Based Leadership",
+      "guide_title_normalized": "values based leadership",
+      "aos_group": null,
+      "sp_term": 9,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D253",
+        "D253A"
+      ],
+      "resolved_code": "D253",
+      "resolution_signals": [
+        "a_suffix_cert",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Business Simulation",
+      "guide_title_normalized": "business simulation",
+      "aos_group": null,
+      "sp_term": 9,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D361"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Marketing Strategy and Analytics",
+      "guide_title_normalized": "marketing strategy and analytics",
+      "aos_group": null,
+      "sp_term": 10,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D178"
+      ]
+    }
+  ]
+}

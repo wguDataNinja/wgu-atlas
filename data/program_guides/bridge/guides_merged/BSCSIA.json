@@ -1,0 +1,1123 @@
+{
+  "program_code": "BSCSIA",
+  "program_code_effective": "BSCSIA",
+  "family": "cs_ug",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Bachelor of Science, Cybersecurity and Information Assurance",
+  "guide_version": "202509",
+  "guide_pub_date": "7/31/2025",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "College of Information Technology",
+    "School of Technology"
+  ],
+  "program_history_degree_headings": [
+    "Bachelor of Science, Cybersecurity and Information Assurance"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 37,
+    "sp_row_count": 38,
+    "anchor_class_counts_aos": {
+      "llm_resolved_high": 5,
+      "deterministic_resolved_one_active": 14,
+      "exact_current_unique": 16,
+      "exact_observed_variant_unique": 1,
+      "deterministic_resolved_multi": 1
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 16,
+      "llm_resolved_high": 5,
+      "deterministic_resolved_one_active": 13,
+      "exact_observed_variant_unique": 1,
+      "deterministic_resolved_multi": 2,
+      "unmapped": 1
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to IT",
+      "guide_title_normalized": "introduction to it",
+      "aos_group": "IT Fundamentals",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "D322"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "IT Applications",
+      "guide_title_normalized": "it applications",
+      "aos_group": "IT Fundamentals",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C394",
+        "D317"
+      ],
+      "resolved_code": "D317",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "IT Foundations",
+      "guide_title_normalized": "it foundations",
+      "aos_group": "IT Fundamentals",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C393",
+        "D316"
+      ],
+      "resolved_code": "D316",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Health, Fitness, and Wellness",
+      "guide_title_normalized": "health fitness and wellness",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C458"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Ethics in Technology",
+      "guide_title_normalized": "ethics in technology",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C961",
+        "D333"
+      ],
+      "resolved_code": "D333",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Composition: Successful Self-Expression",
+      "guide_title_normalized": "composition successful self expression",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D270"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Applied Probability and Statistics",
+      "guide_title_normalized": "applied probability and statistics",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C955"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Applied Algebra",
+      "guide_title_normalized": "applied algebra",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C957"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Critical Thinking: Reason and Evidence",
+      "guide_title_normalized": "critical thinking reason and evidence",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D265"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Communication: Connecting with Others",
+      "guide_title_normalized": "introduction to communication connecting with others",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D268"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Discrete Math: Logic",
+      "guide_title_normalized": "discrete math logic",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D420"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "American Politics and the US Constitution",
+      "guide_title_normalized": "american politics and the us constitution",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C963"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Discrete Math: Functions and Relations",
+      "guide_title_normalized": "discrete math functions and relations",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D421"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Discrete Math: Algorithms and Cryptography",
+      "guide_title_normalized": "discrete math algorithms and cryptography",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D422"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Natural Science Lab",
+      "guide_title_normalized": "natural science lab",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C683"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Scripting and Programming - Foundations",
+      "guide_title_normalized": "scripting and programming foundations",
+      "aos_group": "Scripting and Programming",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C173",
+        "D278",
+        "D278A"
+      ],
+      "resolved_code": "D278",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Fundamentals of Information Security",
+      "guide_title_normalized": "fundamentals of information security",
+      "aos_group": "Secure Systems Analysis & Design",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "D827"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Information Systems Security",
+      "guide_title_normalized": "information systems security",
+      "aos_group": "Secure Systems Analysis & Design",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C845"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Network and Security - Foundations",
+      "guide_title_normalized": "network and security foundations",
+      "aos_group": "Network and Security",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "D315"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Network and Security - Applications",
+      "guide_title_normalized": "network and security applications",
+      "aos_group": "Network and Security",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C178",
+        "D329"
+      ],
+      "resolved_code": "D329",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Networks",
+      "guide_title_normalized": "networks",
+      "aos_group": "Network and Security",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C480",
+        "D325"
+      ],
+      "resolved_code": "D325",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Practical Applications of Prompt",
+      "guide_title_normalized": "practical applications of prompt",
+      "aos_group": "Computer Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D685"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Business of IT - Applications",
+      "guide_title_normalized": "business of it applications",
+      "aos_group": "Business of IT",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "D336"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Business of IT - Project Management",
+      "guide_title_normalized": "business of it project management",
+      "aos_group": "Business of IT",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C176",
+        "D324"
+      ],
+      "resolved_code": "D324",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Digital Forensics in Cybersecurity",
+      "guide_title_normalized": "digital forensics in cybersecurity",
+      "aos_group": "Digital Forensics and Incident Response",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C840",
+        "D431",
+        "D829"
+      ],
+      "resolved_code": "D829",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Legal Issues in Information Security",
+      "guide_title_normalized": "legal issues in information security",
+      "aos_group": "Ethics & Cyber Law",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C841",
+        "D828"
+      ],
+      "resolved_code": "D828",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Cryptography",
+      "guide_title_normalized": "introduction to cryptography",
+      "aos_group": "Information Assurance",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C839",
+        "D334",
+        "D830"
+      ],
+      "resolved_code": "D830",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data Management - Foundations",
+      "guide_title_normalized": "data management foundations",
+      "aos_group": "Data Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "D426"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data Analytics - Applications",
+      "guide_title_normalized": "data analytics applications",
+      "aos_group": "Data Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D492"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Linux Foundations",
+      "guide_title_normalized": "linux foundations",
+      "aos_group": "Operating Systems",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C851",
+        "D281",
+        "D281A"
+      ],
+      "resolved_code": "D281",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Managing Information Security",
+      "guide_title_normalized": "managing information security",
+      "aos_group": "Risk Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C843",
+        "D832"
+      ],
+      "resolved_code": "D832",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Python for IT Automation",
+      "guide_title_normalized": "python for it automation",
+      "aos_group": "Networking",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D522"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Software Security and Testing",
+      "guide_title_normalized": "software security and testing",
+      "aos_group": "Software",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D385"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to AI and Security",
+      "guide_title_normalized": "introduction to ai and security",
+      "aos_group": "Artificial Intelligence",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D831"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Cyber Defense and Countermeasures",
+      "guide_title_normalized": "cyber defense and countermeasures",
+      "aos_group": "Hacking Countermeasures and Techniques",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C842",
+        "D340"
+      ],
+      "resolved_code": "D340",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Managing Cloud Security",
+      "guide_title_normalized": "managing cloud security",
+      "aos_group": "Web and Cloud Security",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C838",
+        "D320"
+      ],
+      "resolved_code": "D320",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Penetration Testing and Vulnerability Analysis",
+      "guide_title_normalized": "penetration testing and vulnerability analysis",
+      "aos_group": "Penetration Testing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "D153",
+        "D332"
+      ],
+      "resolved_code": "D332",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Health, Fitness, and Wellness",
+      "guide_title_normalized": "health fitness and wellness",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C458"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to IT",
+      "guide_title_normalized": "introduction to it",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 4,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "D322"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Natural Science Lab",
+      "guide_title_normalized": "natural science lab",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C683"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Practical Applications of Prompt",
+      "guide_title_normalized": "practical applications of prompt",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D685"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Ethics in Technology",
+      "guide_title_normalized": "ethics in technology",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C961",
+        "D333"
+      ],
+      "resolved_code": "D333",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "IT Foundations",
+      "guide_title_normalized": "it foundations",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 4,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C393",
+        "D316"
+      ],
+      "resolved_code": "D316",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Applied Probability and Statistics",
+      "guide_title_normalized": "applied probability and statistics",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C955"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Composition: Successful Self-Expression",
+      "guide_title_normalized": "composition successful self expression",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D270"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Applied Algebra",
+      "guide_title_normalized": "applied algebra",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C957"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "IT Applications",
+      "guide_title_normalized": "it applications",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 4,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C394",
+        "D317"
+      ],
+      "resolved_code": "D317",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Fundamentals of Information Security",
+      "guide_title_normalized": "fundamentals of information security",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "D827"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Network and Security - Foundations",
+      "guide_title_normalized": "network and security foundations",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "D315"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Critical Thinking: Reason and Evidence",
+      "guide_title_normalized": "critical thinking reason and evidence",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D265"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Networks",
+      "guide_title_normalized": "networks",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 4,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C480",
+        "D325"
+      ],
+      "resolved_code": "D325",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Communication: Connecting with Others",
+      "guide_title_normalized": "introduction to communication connecting with others",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D268"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Business of IT - Applications",
+      "guide_title_normalized": "business of it applications",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 4,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "D336"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "American Politics and the US Constitution",
+      "guide_title_normalized": "american politics and the us constitution",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C963"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Discrete Math: Logic",
+      "guide_title_normalized": "discrete math logic",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 1,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D420"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Network and Security - Applications",
+      "guide_title_normalized": "network and security applications",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 4,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C178",
+        "D329"
+      ],
+      "resolved_code": "D329",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Legal Issues in Information Security",
+      "guide_title_normalized": "legal issues in information security",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 4,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C841",
+        "D828"
+      ],
+      "resolved_code": "D828",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Digital Forensics in Cybersecurity",
+      "guide_title_normalized": "digital forensics in cybersecurity",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 4,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C840",
+        "D431",
+        "D829"
+      ],
+      "resolved_code": "D829",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Information Systems Security",
+      "guide_title_normalized": "information systems security",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C845"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Business of IT - Project Management",
+      "guide_title_normalized": "business of it project management",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 4,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C176",
+        "D324"
+      ],
+      "resolved_code": "D324",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Discrete Math: Functions and Relations",
+      "guide_title_normalized": "discrete math functions and relations",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 1,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D421"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Discrete Math: Algorithms and Cryptography",
+      "guide_title_normalized": "discrete math algorithms and cryptography",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 1,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D422"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Cryptography",
+      "guide_title_normalized": "introduction to cryptography",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 4,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C839",
+        "D334",
+        "D830"
+      ],
+      "resolved_code": "D830",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Managing Information Security",
+      "guide_title_normalized": "managing information security",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C843",
+        "D832"
+      ],
+      "resolved_code": "D832",
+      "resolution_signals": [
+        "cu_match",
+        "one_active"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Scripting and Programming Foundations",
+      "guide_title_normalized": "scripting and programming foundations",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C173",
+        "D278",
+        "D278A"
+      ],
+      "resolved_code": "D278",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Linux Foundations",
+      "guide_title_normalized": "linux foundations",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C851",
+        "D281",
+        "D281A"
+      ],
+      "resolved_code": "D281",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Data Management - Foundations",
+      "guide_title_normalized": "data management foundations",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 3,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "D426"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Python for IT Automation",
+      "guide_title_normalized": "python for it automation",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D522"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Data Analytics - Applications",
+      "guide_title_normalized": "data analytics applications",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D492"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Software Security and Testing",
+      "guide_title_normalized": "software security and testing",
+      "aos_group": null,
+      "sp_term": 9,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D385"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to AI and Security",
+      "guide_title_normalized": "introduction to ai and security",
+      "aos_group": null,
+      "sp_term": 9,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D831"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Cyber Defense and Countermeasures",
+      "guide_title_normalized": "cyber defense and countermeasures",
+      "aos_group": null,
+      "sp_term": 9,
+      "sp_cus": 4,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C842",
+        "D340"
+      ],
+      "resolved_code": "D340",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Managing Cloud Security",
+      "guide_title_normalized": "managing cloud security",
+      "aos_group": null,
+      "sp_term": 9,
+      "sp_cus": 4,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "C838",
+        "D320"
+      ],
+      "resolved_code": "D320",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Penetration Testing and Vulnerability Analysis",
+      "guide_title_normalized": "penetration testing and vulnerability analysis",
+      "aos_group": null,
+      "sp_term": 10,
+      "sp_cus": 4,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "D153",
+        "D332"
+      ],
+      "resolved_code": "D332",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Cybersecurity and Information Assurance Capstone",
+      "guide_title_normalized": "cybersecurity and information assurance capstone",
+      "aos_group": null,
+      "sp_term": 10,
+      "sp_cus": 4,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    }
+  ]
+}

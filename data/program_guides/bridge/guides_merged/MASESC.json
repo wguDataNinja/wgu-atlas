@@ -1,0 +1,555 @@
+{
+  "program_code": "MASESC",
+  "program_code_effective": "MASESC",
+  "family": "education_ma",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Master of Arts Science Education (Secondary Chemistry)",
+  "guide_version": "201806",
+  "guide_pub_date": "9/12/23",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "Teachers College",
+    "School of Education"
+  ],
+  "program_history_degree_headings": [
+    "Master of Arts Science Education (Secondary Chemistry)"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 14,
+    "sp_row_count": 14,
+    "anchor_class_counts_aos": {
+      "deterministic_resolved_multi": 11,
+      "deterministic_resolved_degree_title": 1,
+      "exact_current_unique": 1,
+      "exact_observed_variant_unique": 1
+    },
+    "anchor_class_counts_sp": {
+      "deterministic_resolved_multi": 12,
+      "exact_current_unique": 1,
+      "exact_observed_variant_unique": 1
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Concepts in Science",
+      "guide_title_normalized": "concepts in science",
+      "aos_group": "Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C371",
+        "C670"
+      ],
+      "resolved_code": "C670",
+      "resolution_signals": [
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Integrated Physical Sciences",
+      "guide_title_normalized": "integrated physical sciences",
+      "aos_group": "Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C165",
+        "C908"
+      ],
+      "resolved_code": "C908",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "General Chemistry I with Lab",
+      "guide_title_normalized": "general chemistry i with lab",
+      "aos_group": "Chemistry Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C373",
+        "C672"
+      ],
+      "resolved_code": "C672",
+      "resolution_signals": [
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "General Chemistry II with Lab",
+      "guide_title_normalized": "general chemistry ii with lab",
+      "aos_group": "Chemistry Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C374",
+        "C673",
+        "D866"
+      ],
+      "resolved_code": "C673",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Physical Chemistry",
+      "guide_title_normalized": "physical chemistry",
+      "aos_group": "Chemistry Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "BVT1",
+        "BVT2"
+      ],
+      "resolved_code": "BVT2",
+      "resolution_signals": [
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Inorganic Chemistry",
+      "guide_title_normalized": "inorganic chemistry",
+      "aos_group": "Chemistry Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "BWT1",
+        "BWT2"
+      ],
+      "resolved_code": "BWT2",
+      "resolution_signals": [
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Organic Chemistry",
+      "guide_title_normalized": "organic chemistry",
+      "aos_group": "Chemistry Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "AIT2",
+        "D867",
+        "UQT1"
+      ],
+      "resolved_code": "AIT2",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Biochemistry",
+      "guide_title_normalized": "biochemistry",
+      "aos_group": "Chemistry Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C624",
+        "C625",
+        "C785",
+        "GRT2"
+      ],
+      "resolved_code": "C625",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Climate Change",
+      "guide_title_normalized": "climate change",
+      "aos_group": "Chemistry Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C264",
+        "C267"
+      ],
+      "resolved_code": "C267",
+      "resolution_signals": [
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Chemistry: Content Knowledge",
+      "guide_title_normalized": "chemistry content knowledge",
+      "aos_group": "Chemistry Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C295",
+        "C617",
+        "C915",
+        "DCV2"
+      ],
+      "resolved_code": "C617",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Precalculus and Calculus",
+      "guide_title_normalized": "precalculus and calculus",
+      "aos_group": "Mathematics Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "RXT2"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Science, Technology, and Society",
+      "guide_title_normalized": "science technology and society",
+      "aos_group": "Science Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C388",
+        "C389"
+      ],
+      "resolved_code": "C389",
+      "resolution_signals": [
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Science Methods—Secondary Chemistry",
+      "guide_title_normalized": "science methodssecondary chemistry",
+      "aos_group": "Science Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C941",
+        "C977"
+      ],
+      "resolved_code": "C977",
+      "resolution_signals": [
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "MA, Science Education Teacher Performance Assessment",
+      "guide_title_normalized": "ma science education teacher performance assessment",
+      "aos_group": "Teacher Performance Assessment",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "C871"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Concepts in Science",
+      "guide_title_normalized": "concepts in science",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 1,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C371",
+        "C670"
+      ],
+      "resolved_code": "C670",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Integrated Physical Sciences",
+      "guide_title_normalized": "integrated physical sciences",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C165",
+        "C908"
+      ],
+      "resolved_code": "C908",
+      "resolution_signals": [
+        "cu_match",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "General Chemistry I with Lab",
+      "guide_title_normalized": "general chemistry i with lab",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C373",
+        "C672"
+      ],
+      "resolved_code": "C672",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "General Chemistry II with Lab",
+      "guide_title_normalized": "general chemistry ii with lab",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C374",
+        "C673",
+        "D866"
+      ],
+      "resolved_code": "C673",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Precalculus and Calculus",
+      "guide_title_normalized": "precalculus and calculus",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "RXT2"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Physical Chemistry",
+      "guide_title_normalized": "physical chemistry",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "BVT1",
+        "BVT2"
+      ],
+      "resolved_code": "BVT2",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Inorganic Chemistry",
+      "guide_title_normalized": "inorganic chemistry",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "BWT1",
+        "BWT2"
+      ],
+      "resolved_code": "BWT2",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Science, Technology, and Society",
+      "guide_title_normalized": "science technology and society",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C388",
+        "C389"
+      ],
+      "resolved_code": "C389",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Organic Chemistry",
+      "guide_title_normalized": "organic chemistry",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "AIT2",
+        "D867",
+        "UQT1"
+      ],
+      "resolved_code": "AIT2",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Biochemistry",
+      "guide_title_normalized": "biochemistry",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C624",
+        "C625",
+        "C785",
+        "GRT2"
+      ],
+      "resolved_code": "C625",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Climate Change",
+      "guide_title_normalized": "climate change",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C264",
+        "C267"
+      ],
+      "resolved_code": "C267",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Chemistry: Content Knowledge",
+      "guide_title_normalized": "chemistry content knowledge",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 1,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C295",
+        "C617",
+        "C915",
+        "DCV2"
+      ],
+      "resolved_code": "C617",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Science Methods—Secondary Chemistry",
+      "guide_title_normalized": "science methodssecondary chemistry",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C941",
+        "C977"
+      ],
+      "resolved_code": "C977",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "MA, Science Education Teacher Performance Assessment",
+      "guide_title_normalized": "ma science education teacher performance assessment",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 6,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "C871"
+      ]
+    }
+  ]
+}

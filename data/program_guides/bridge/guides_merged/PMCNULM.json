@@ -1,0 +1,223 @@
+{
+  "program_code": "PMCNULM",
+  "program_code_effective": "PMCNULM",
+  "family": "nursing_pmc",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Post-Master's Certificate, Nursing - Leadership and Management (PostMSN)",
+  "guide_version": "202110",
+  "guide_pub_date": "3/1/23",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "College of Health Professions",
+    "Leavitt School of Health"
+  ],
+  "program_history_degree_headings": [
+    "Post-Master's Certificate, Nursing - Leadership and Management (Post-MSN)"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "no_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 8,
+    "sp_row_count": 8,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 5,
+      "exact_observed_variant_unique": 1,
+      "unmapped": 2
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 5,
+      "exact_observed_variant_unique": 1,
+      "unmapped": 2
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Essentials of Academic Writing",
+      "guide_title_normalized": "essentials of academic writing",
+      "aos_group": "Nursing Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D314"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Leading with Personal Mastery",
+      "guide_title_normalized": "leading with personal mastery",
+      "aos_group": "Leadership and Management Specialty",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D155"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Business Case Analysis for Healthcare Improvement",
+      "guide_title_normalized": "business case analysis for healthcare improvement",
+      "aos_group": "Leadership and Management Specialty",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D156"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Managing Resources in an Era of Disruption",
+      "guide_title_normalized": "managing resources in an era of disruption",
+      "aos_group": "Leadership and Management Specialty",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D157"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Strategically Planning the Execution of a Healthcare Improvement Project",
+      "guide_title_normalized": "strategically planning the execution of a healthcare improvement project",
+      "aos_group": "Leadership and Management Specialty",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Evidence-Based Measures for Evaluating Healthcare Improvements",
+      "guide_title_normalized": "evidence based measures for evaluating healthcare improvements",
+      "aos_group": "Leadership and Management Specialty",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Nursing Leadership and Management Field Experience",
+      "guide_title_normalized": "nursing leadership and management field experience",
+      "aos_group": "Leadership and Management Specialty",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C823"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Nursing Leadership and Management Capstone",
+      "guide_title_normalized": "nursing leadership and management capstone",
+      "aos_group": "Leadership and Management Specialty",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C824"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Essentials of Academic Writing",
+      "guide_title_normalized": "essentials of academic writing",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 1,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D314"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Leading with Personal Mastery",
+      "guide_title_normalized": "leading with personal mastery",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D155"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Business Case Analysis for Healthcare Improvement",
+      "guide_title_normalized": "business case analysis for healthcare improvement",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 2,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D156"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Managing Resources in an Era of Disruption",
+      "guide_title_normalized": "managing resources in an era of disruption",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D157"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Strategically Planning the Execution of a Healthcare Improvement Project",
+      "guide_title_normalized": "strategically planning the execution of a healthcare improvement project",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 2,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Evidence-Based Measures for Evaluating Healthcare Improvements",
+      "guide_title_normalized": "evidence based measures for evaluating healthcare improvements",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Nursing Leadership and Management Field Experience",
+      "guide_title_normalized": "nursing leadership and management field experience",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C823"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Nursing Leadership and Management Capstone",
+      "guide_title_normalized": "nursing leadership and management capstone",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C824"
+      ]
+    }
+  ]
+}

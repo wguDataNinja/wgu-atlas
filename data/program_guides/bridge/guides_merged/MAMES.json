@@ -1,0 +1,699 @@
+{
+  "program_code": "MAMES",
+  "program_code_effective": "MAMES",
+  "family": "education_ma",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Master of Arts in Mathematics Education (Secondary)",
+  "guide_version": "201810",
+  "guide_pub_date": "9/12/23",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "Teachers College",
+    "School of Education"
+  ],
+  "program_history_degree_headings": [
+    "Master of Arts in Mathematics Education (Secondary)"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 18,
+    "sp_row_count": 18,
+    "anchor_class_counts_aos": {
+      "deterministic_resolved_multi": 13,
+      "deterministic_resolved_degree_title": 2,
+      "exact_current_unique": 2,
+      "unmapped": 1
+    },
+    "anchor_class_counts_sp": {
+      "deterministic_resolved_multi": 13,
+      "deterministic_resolved_degree_title": 2,
+      "exact_current_unique": 2,
+      "unmapped": 1
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Trigonometry and Precalculus",
+      "guide_title_normalized": "trigonometry and precalculus",
+      "aos_group": "Mathematics Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C646",
+        "C647"
+      ],
+      "resolved_code": "C647",
+      "resolution_signals": [
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "College Geometry",
+      "guide_title_normalized": "college geometry",
+      "aos_group": "Mathematics Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C281",
+        "C972",
+        "C992",
+        "EXP2"
+      ],
+      "resolved_code": "C992",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Calculus I",
+      "guide_title_normalized": "calculus i",
+      "aos_group": "Mathematics Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C282",
+        "C362",
+        "C363",
+        "C958",
+        "D890",
+        "QJT2"
+      ],
+      "resolved_code": "C363",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Calculus II",
+      "guide_title_normalized": "calculus ii",
+      "aos_group": "Mathematics Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C283",
+        "CQC2",
+        "D891"
+      ],
+      "resolved_code": "CQC2",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Probability and Statistics I",
+      "guide_title_normalized": "probability and statistics i",
+      "aos_group": "Mathematics Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C280",
+        "TOC2"
+      ],
+      "resolved_code": "TOC2",
+      "resolution_signals": [
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Probability and Statistics II",
+      "guide_title_normalized": "probability and statistics ii",
+      "aos_group": "Mathematics Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "TQC1",
+        "TQC2"
+      ],
+      "resolved_code": "TQC2",
+      "resolution_signals": [
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Mathematics: Content Knowledge",
+      "guide_title_normalized": "mathematics content knowledge",
+      "aos_group": "Mathematics Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C287",
+        "C612",
+        "C897",
+        "CXV2"
+      ],
+      "resolved_code": "C612",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Mathematical Modeling and Applications",
+      "guide_title_normalized": "mathematical modeling and applications",
+      "aos_group": "Mathematics Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C877",
+        "C878"
+      ],
+      "resolved_code": "C878",
+      "resolution_signals": [
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Calculus III",
+      "guide_title_normalized": "calculus iii",
+      "aos_group": "Mathematics Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C656",
+        "C657"
+      ],
+      "resolved_code": "C657",
+      "resolution_signals": [
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Linear Algebra",
+      "guide_title_normalized": "linear algebra",
+      "aos_group": "Mathematics Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D893",
+        "RKT1",
+        "RKT2"
+      ],
+      "resolved_code": "RKT2",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Abstract Algebra",
+      "guide_title_normalized": "abstract algebra",
+      "aos_group": "Mathematics Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "QDT1",
+        "QDT2"
+      ],
+      "resolved_code": "QDT2",
+      "resolution_signals": [
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Advanced Calculus",
+      "guide_title_normalized": "advanced calculus",
+      "aos_group": "Mathematics Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C885",
+        "C886",
+        "D894"
+      ],
+      "resolved_code": "C886",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Mathematics Learning and Teaching",
+      "guide_title_normalized": "mathematics learning and teaching",
+      "aos_group": "Mathematics Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C284",
+        "OPT2"
+      ],
+      "resolved_code": "OPT2",
+      "resolution_signals": [
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Algebra for Secondary Mathematics Teaching",
+      "guide_title_normalized": "algebra for secondary mathematics teaching",
+      "aos_group": "Mathematics Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C879",
+        "C880",
+        "D898",
+        "D904"
+      ],
+      "resolved_code": "C880",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Geometry for Secondary Mathematics Teaching",
+      "guide_title_normalized": "geometry for secondary mathematics teaching",
+      "aos_group": "Mathematics Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C881"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Statistics and Probability for Secondary Mathematics Teaching",
+      "guide_title_normalized": "statistics and probability for secondary mathematics teaching",
+      "aos_group": "Mathematics Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C883"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Mathematics History and Technology",
+      "guide_title_normalized": "mathematics history and technology",
+      "aos_group": "Mathematics Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C285",
+        "OOT2"
+      ],
+      "resolved_code": "OOT2",
+      "resolution_signals": [
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "MA, Mathematics Education (5-12) Teacher Performance Assessment",
+      "guide_title_normalized": "ma mathematics education 5 12 teacher performance assessment",
+      "aos_group": "Teacher Work Sample",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Trigonometry and Precalculus",
+      "guide_title_normalized": "trigonometry and precalculus",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C646",
+        "C647"
+      ],
+      "resolved_code": "C647",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "College Geometry",
+      "guide_title_normalized": "college geometry",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C281",
+        "C972",
+        "C992",
+        "EXP2"
+      ],
+      "resolved_code": "C992",
+      "resolution_signals": [
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Calculus I",
+      "guide_title_normalized": "calculus i",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C282",
+        "C362",
+        "C363",
+        "C958",
+        "D890",
+        "QJT2"
+      ],
+      "resolved_code": "C363",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Mathematics Learning and Teaching",
+      "guide_title_normalized": "mathematics learning and teaching",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C284",
+        "OPT2"
+      ],
+      "resolved_code": "OPT2",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Calculus II",
+      "guide_title_normalized": "calculus ii",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C283",
+        "CQC2",
+        "D891"
+      ],
+      "resolved_code": "CQC2",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Probability and Statistics I",
+      "guide_title_normalized": "probability and statistics i",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C280",
+        "TOC2"
+      ],
+      "resolved_code": "TOC2",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Probability and Statistics II",
+      "guide_title_normalized": "probability and statistics ii",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "TQC1",
+        "TQC2"
+      ],
+      "resolved_code": "TQC2",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Algebra for Secondary Mathematics Teaching",
+      "guide_title_normalized": "algebra for secondary mathematics teaching",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C879",
+        "C880",
+        "D898",
+        "D904"
+      ],
+      "resolved_code": "C880",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Geometry for Secondary Mathematics Teaching",
+      "guide_title_normalized": "geometry for secondary mathematics teaching",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C881"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Statistics and Probability for Secondary Mathematics Teaching",
+      "guide_title_normalized": "statistics and probability for secondary mathematics teaching",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C883"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Mathematics History and Technology",
+      "guide_title_normalized": "mathematics history and technology",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C285",
+        "OOT2"
+      ],
+      "resolved_code": "OOT2",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Mathematics: Content Knowledge",
+      "guide_title_normalized": "mathematics content knowledge",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 1,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C287",
+        "C612",
+        "C897",
+        "CXV2"
+      ],
+      "resolved_code": "C612",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Mathematical Modeling and Applications",
+      "guide_title_normalized": "mathematical modeling and applications",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C877",
+        "C878"
+      ],
+      "resolved_code": "C878",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Calculus III",
+      "guide_title_normalized": "calculus iii",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C656",
+        "C657"
+      ],
+      "resolved_code": "C657",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Linear Algebra",
+      "guide_title_normalized": "linear algebra",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D893",
+        "RKT1",
+        "RKT2"
+      ],
+      "resolved_code": "RKT2",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Abstract Algebra",
+      "guide_title_normalized": "abstract algebra",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "QDT1",
+        "QDT2"
+      ],
+      "resolved_code": "QDT2",
+      "resolution_signals": [
+        "cu_match",
+        "one_active",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Advanced Calculus",
+      "guide_title_normalized": "advanced calculus",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C885",
+        "C886",
+        "D894"
+      ],
+      "resolved_code": "C886",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "MA, Mathematics Education (5-12) Teacher Performance Assessment",
+      "guide_title_normalized": "ma mathematics education 5 12 teacher performance assessment",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 6,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    }
+  ]
+}

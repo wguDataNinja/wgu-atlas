@@ -26,7 +26,7 @@ If local docs conflict on current progress or next-step sequencing, trust in thi
 
 | Workstream | Status | Current objective | Primary blocker | Next bounded step |
 |---|---|---|---|---|
-| Program guide extraction | Phase C COMPLETE + Phase D policy/schema planning COMPLETE (implementation pending) + Phase E roster bridge COMPLETE | Build Phase D artifact generator skeleton with policy/schema gates | runtime wiring intentionally deferred | implement `build_guide_artifacts.py` skeleton + tests against manifest anchors (no page integration yet) |
+| Program guide extraction | **Scraping/extraction COMPLETE** — Phase C + Phase D policy/schema + Phase E (bridge + resolution + enrichment) all done | Build Phase D artifact generator skeleton with policy/schema gates | runtime wiring intentionally deferred | implement `build_guide_artifacts.py` skeleton + tests against manifest anchors (no page integration yet) |
 | Official resource layer | active, bounded queueing established | continue conservative attachment expansion with provenance clarity | placement model expansion and completeness audits are still incomplete | reconcile regulatory queue vs current placements, then run outcomes/accreditation completeness pass |
 | Continuity review | initialized, lightweight | validate compact review method | first tiny validation batch not created | create 4-card validation batch |
 | Program lineage / degree history | ready, not selected | keep system stable for later export/UI if chosen | export/runtime wiring not implemented | no action unless selected |
@@ -40,15 +40,18 @@ If local docs conflict on current progress or next-step sequencing, trust in thi
 ### 6.0 Program guide extraction
 
 **Status**
+- **Scraping/extraction phase COMPLETE** — Phase C, Phase D planning, and Phase E (roster bridge + resolution + enrichment) all done.
 - **Phase C COMPLETE** — 115/115 guides have parsed + validation + manifest_row artifacts on disk (100%).
-- Family rollout is complete across all 19 families (14 complete, 5 complete-with-caveats). 0 partial families.
-- Parser stable with 7 targeted fixes in Session 23 (regression-verified against 20 guides; improvements only).
-- Post-close reconciliation is complete. Canonical corpus state and claim boundaries now live in `data/program_guides/audit/PROGRAM_GUIDE_CORPUS_MANIFEST.{md,json}` and `_internal/program_guides/PROGRAM_GUIDE_PROJECT_STATUS.md`.
+- Family rollout is complete across all 19 families. Parser stable. Post-close reconciliation complete.
+- **Phase E COMPLETE** — 751 courses with enrichment data. All 1,599 originally-ambiguous rows resolved or explicitly handled.
+- **Human entry point:** `data/program_guides/README.md`
+- Runtime-published guide artifacts: not yet created in `public/data/program_guides/` (Phase D not started).
 
-**Coverage model (three distinct numbers):**
+**Coverage model:**
 - Parsed artifact coverage: 115/115 guides have `*_parsed.json`.
 - Validation artifact coverage: 115/115 guides have `*_validation.json`.
 - Manifest-row coverage: 115/115 guides have `*_manifest_row.json`.
+- Course enrichment coverage: 751 courses (post-merge); 542 unmapped (irreducible); 6 unresolvable.
 - Runtime-published guide artifacts: not yet created in `public/data/program_guides/` (Phase D not started).
 
 **Complete family coverage (19 total):**
@@ -80,40 +83,29 @@ education_grad: complete (MSEDL=HIGH + MEDETID=MEDIUM)
 - MAELLP12: page_count=0 (cosmetic — older guide format, content intact)
 
 **Key files**
+- `data/program_guides/README.md` — **human entry point** for the full program-guides area
+- `_internal/program_guides/PROGRAM_GUIDE_PROJECT_STATUS.md` — concise operator entry point
 - `_internal/program_guides/DEV_NOTES.md` — session history, parser change log, coverage accounting model
-- `_internal/program_guides/TECHNICAL_READOUT.md` — parser design rationale
-- `data/program_guides/parsed/` — 115 *_parsed.json files
-- `data/program_guides/validation/` — 115 *_validation.json files
-- `data/program_guides/manifest_rows/` — 115 *_manifest_row.json files
-- `data/program_guides/family_validation/` — gate reports and rollout summaries
 - `data/program_guides/audit/PROGRAM_GUIDE_CORPUS_MANIFEST.{md,json}` — canonical reconciled corpus manifest
 - `data/program_guides/audit/program_guide_claims_register.{md,json}` — approved/disallowed claims
-- `data/program_guides/audit/program_guide_adversarial_review.{md,json}` — claim stress test and safe wording
-- `_internal/program_guides/PROGRAM_GUIDE_PROJECT_STATUS.md` — concise operator entry point
+- `data/program_guides/audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md` — Phase D build entry point
+- `data/program_guides/enrichment/course_enrichment_summary.json` — post-merge enrichment counts
+- `data/program_guides/bridge/merge_summary.json` — post-merge bridge state, medium and unresolvable cases
 - `public/data/program_guides/` — not yet created (Phase D)
 
 **Pipeline phases**
 1. A: Corpus manifest ✓
 2. B: Thin-slice validation ✓
 3. C: Full corpus parsing — **COMPLETE** (115/115 artifact coverage)
-4. D: Site artifact build — NOT STARTED (Phase C complete; Phase D design is next)
-5. E: Course code matching — **ROSTER BRIDGE COMPLETE** (2026-03-21)
+4. D: Site artifact build — **NOT STARTED** (policy/schema design complete; implementation is next)
+5. E: Roster bridge + resolution + enrichment — **COMPLETE** (751 courses with enrichment data)
 
-**Phase E — Roster bridge (COMPLETE)**
-- Script: `scripts/program_guides/build_roster_bridge.py`
-- Outputs: `data/program_guides/bridge/program_guide_roster_bridge.json`, `data/program_guides/bridge/index.json`, `data/program_guides/bridge/guides/{code}.json` (115 files)
-- Coverage: 115/115 guides, 0 errors
-- AoS rows: 2593 (57.8% unique-attachable, 31.6% ambiguous, 10.6% unmapped)
-- SP rows: 2494 (58.3% unique-attachable, 31.2% ambiguous, 10.5% unmapped)
-- Each row carries: anchor_class, canonical_candidate_codes, guide_title_raw/normalized, aos_group or sp_term/cus
-- Alias crosswalk embedded: BSSWE_Java→BSSWE, MSRNNUED/LM/UNI→GR variants, BSPRN→null
-- Assessment + schema docs: `data/program_guides/audit/program_guide_roster_bridge_assessment.{md,json}`, `program_guide_roster_bridge_schema.{md,json}`
-
-**What remains for course enrichment (Phase E next steps):**
-1. Ambiguous-title disambiguation (~31%): use family/program/college context to resolve high-frequency titles
-2. Unmapped-title triage (~10%): alias curation for course renames; others stay as unmapped bucket
-3. Enrichment payload extraction: for uniquely-attached rows, lift description + competencies + AoS group context
-4. Cert/prereq hardening: dedicated pass on attached courses only
+**Phase E — COMPLETE**
+- Roster bridge: `data/program_guides/bridge/guides/` (original) → `guides_resolved/` (deterministic) → `guides_merged/` (final)
+- Deterministic resolution: 1,428/1,599 ambiguous rows resolved
+- LLM adjudication: 163 high + 2 medium accepted; 6 unresolvable excluded
+- Enrichment: 751 courses, 730 with descriptions, 729 with competencies
+- See `data/program_guides/bridge/merge_summary.json` for explicit medium/unresolvable records
 
 **Next artifact**
 - Phase D build-script skeleton implementation (policy/schema already settled): read parsed/validation/manifest, apply publish policy, emit schema-valid draft artifacts for verification only.
@@ -296,10 +288,13 @@ Phase D planning pack is complete:
 | How the repo works | `_internal/ATLAS_REPO_MEMORY.md` |
 | What changed recently | `_internal/DEV_LOG.md` |
 | Page-state docs, source baseline, homepage design conclusions | `_internal/page_designs/` — see `README.md` for reading order |
+| **Program guide extraction — human entry point** | **`data/program_guides/README.md`** |
+| Program guide extraction — operator status | `_internal/program_guides/PROGRAM_GUIDE_PROJECT_STATUS.md` |
 | Program guide extraction — design and pipeline | `_internal/program_guides/TECHNICAL_READOUT.md` |
-| Program guide extraction — current execution truth | `data/program_guides/{parsed,validation,manifest_rows}/`, `data/program_guides/family_validation/`, `_internal/program_guides/DEV_NOTES.md` |
-| Program guide extraction — Phase D decision pack | `data/program_guides/audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md`, `data/program_guides/audit/phase_d_{publish_policy,artifact_schema,degree_course_ownership_matrix,build_plan}.{md,json}` |
-| Program guide extraction — module orientation | `_internal/program_guides/README.md` |
+| Program guide extraction — session history | `_internal/program_guides/DEV_NOTES.md` |
+| Program guide extraction — Phase D decision pack | `data/program_guides/audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md` |
+| Program guide extraction — post-merge enrichment | `data/program_guides/enrichment/course_enrichment_summary.json` |
+| Program guide extraction — merge audit | `data/program_guides/bridge/merge_summary.json` |
 | Official-resource module materials | `_internal/official_resource/` |
 | Continuity-review materials | `_internal/continuity_review/` |
 | Lineage data + decisions | `data/lineage/` |

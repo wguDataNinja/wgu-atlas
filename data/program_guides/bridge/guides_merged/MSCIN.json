@@ -1,0 +1,319 @@
+{
+  "program_code": "MSCIN",
+  "program_code_effective": "MSCIN",
+  "family": "graduate_standard",
+  "disposition": "full-use",
+  "sp_status": "usable-no-term",
+  "degree_title_guide": "Master of Science, Curriculum and Instruction",
+  "guide_version": "202404",
+  "guide_pub_date": "6/23/2025",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "Teachers College",
+    "School of Education"
+  ],
+  "program_history_degree_headings": [
+    "Master of Science, Curriculum and Instruction"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 10,
+    "sp_row_count": 10,
+    "anchor_class_counts_aos": {
+      "deterministic_resolved_one_active": 4,
+      "exact_current_unique": 6
+    },
+    "anchor_class_counts_sp": {
+      "deterministic_resolved_one_active": 3,
+      "exact_current_unique": 6,
+      "deterministic_resolved_multi": 1
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Designing Curriculum and Instruction I",
+      "guide_title_normalized": "designing curriculum and instruction i",
+      "aos_group": "Curriculum and Instruction",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "D183",
+        "D630"
+      ],
+      "resolved_code": "D630",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Differentiated Instruction",
+      "guide_title_normalized": "differentiated instruction",
+      "aos_group": "Curriculum and Instruction",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "D187",
+        "KBT2"
+      ],
+      "resolved_code": "D187",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Designing Curriculum and Instruction II",
+      "guide_title_normalized": "designing curriculum and instruction ii",
+      "aos_group": "Curriculum and Instruction",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "D185",
+        "D631"
+      ],
+      "resolved_code": "D631",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Learning as a Science",
+      "guide_title_normalized": "learning as a science",
+      "aos_group": "National Board Professional Teaching Standards Pathway",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D186"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "The Reflective Practitioner",
+      "guide_title_normalized": "the reflective practitioner",
+      "aos_group": "National Board Professional Teaching Standards Pathway",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "D182",
+        "D629"
+      ],
+      "resolved_code": "D629",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "The Collaborative Leader",
+      "guide_title_normalized": "the collaborative leader",
+      "aos_group": "National Board Professional Teaching Standards Pathway",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D188"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Standards-Based Assessment",
+      "guide_title_normalized": "standards based assessment",
+      "aos_group": "Assessment",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D184"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data-Informed Practices",
+      "guide_title_normalized": "data informed practices",
+      "aos_group": "Research",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D179"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Educational Research",
+      "guide_title_normalized": "educational research",
+      "aos_group": "Research",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D180"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "MSCIN Capstone",
+      "guide_title_normalized": "mscin capstone",
+      "aos_group": "Research",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D181"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Designing Curriculum and Instruction I",
+      "guide_title_normalized": "designing curriculum and instruction i",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "D183",
+        "D630"
+      ],
+      "resolved_code": "D630",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Learning as a Science",
+      "guide_title_normalized": "learning as a science",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D186"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "The Reflective Practitioner",
+      "guide_title_normalized": "the reflective practitioner",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "D182",
+        "D629"
+      ],
+      "resolved_code": "D629",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Differentiated Instruction",
+      "guide_title_normalized": "differentiated instruction",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D187",
+        "KBT2"
+      ],
+      "resolved_code": "D187",
+      "resolution_signals": [
+        "cu_match",
+        "one_active"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Standards-Based Assessment",
+      "guide_title_normalized": "standards based assessment",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D184"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Designing Curriculum and Instruction II",
+      "guide_title_normalized": "designing curriculum and instruction ii",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "deterministic_resolved_one_active",
+      "canonical_candidate_codes": [
+        "D185",
+        "D631"
+      ],
+      "resolved_code": "D631",
+      "resolution_signals": [
+        "one_active"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "The Collaborative Leader",
+      "guide_title_normalized": "the collaborative leader",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D188"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Data-Informed Practices",
+      "guide_title_normalized": "data informed practices",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D179"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Educational Research",
+      "guide_title_normalized": "educational research",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D180"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "MSCIN Capstone",
+      "guide_title_normalized": "mscin capstone",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 5,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D181"
+      ]
+    }
+  ]
+}

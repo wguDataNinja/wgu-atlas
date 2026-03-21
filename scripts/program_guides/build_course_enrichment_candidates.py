@@ -1,19 +1,36 @@
 """
 build_course_enrichment_candidates.py
 
-Strict-unique-only extraction pass for course-level enrichment data.
-Reads the pre-built roster bridge and extracts course-level enrichment
-data for every uniquely attachable course occurrence.
+Extraction pass for course-level enrichment data.
+Reads the fully merged roster bridge (guides_merged/) and extracts
+course-level enrichment data for every uniquely and confidently resolved
+course occurrence.
 
 Inputs:
   data/program_guides/bridge/index.json
-  data/program_guides/bridge/guides/{program_code}.json
+  data/program_guides/bridge/guides_merged/{program_code}.json
   data/program_guides/parsed/{program_code}_parsed.json
   data/canonical_courses.csv
 
 Outputs:
   data/program_guides/enrichment/course_enrichment_candidates.json
   data/program_guides/enrichment/course_enrichment_summary.json
+
+Anchor classes included in extraction (unique/resolved tier):
+  exact_current_unique           — original unique match
+  exact_observed_variant_unique  — original variant-unique match
+  deterministic_resolved_multi   — deterministic multi-signal resolver
+  deterministic_resolved_cu_match — deterministic CU-match resolver
+  deterministic_resolved_one_active — deterministic one-active-candidate
+  deterministic_resolved_degree_level — deterministic degree-level signal
+  deterministic_resolved_degree_title — deterministic degree-title signal
+  deterministic_resolved_a_suffix_cert — deterministic A-suffix cert signal
+  llm_resolved_high              — LLM adjudication, high confidence
+  llm_resolved_medium_reviewed   — LLM adjudication, medium confidence, human-reviewed
+
+Excluded:
+  unresolvable                   — no decisive signal; excluded
+  unmapped                       — no canonical match found; excluded
 """
 
 import csv
@@ -28,7 +45,7 @@ from datetime import date
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 CANONICAL_CSV = os.path.join(REPO_ROOT, "data", "canonical_courses.csv")
 BRIDGE_INDEX = os.path.join(REPO_ROOT, "data", "program_guides", "bridge", "index.json")
-BRIDGE_GUIDE_DIR = os.path.join(REPO_ROOT, "data", "program_guides", "bridge", "guides")
+BRIDGE_GUIDE_DIR = os.path.join(REPO_ROOT, "data", "program_guides", "bridge", "guides_merged")
 PARSED_GUIDE_DIR = os.path.join(REPO_ROOT, "data", "program_guides", "parsed")
 ENRICHMENT_DIR = os.path.join(REPO_ROOT, "data", "program_guides", "enrichment")
 
@@ -36,9 +53,20 @@ ENRICHMENT_DIR = os.path.join(REPO_ROOT, "data", "program_guides", "enrichment")
 # Constants
 # ---------------------------------------------------------------------------
 UNIQUE_ANCHOR_CLASSES = {
+    # Original unique-match classes
     "exact_current_unique",
     "exact_observed_variant_unique",
     "normalization_unique",
+    # Deterministic resolver classes
+    "deterministic_resolved_multi",
+    "deterministic_resolved_cu_match",
+    "deterministic_resolved_one_active",
+    "deterministic_resolved_degree_level",
+    "deterministic_resolved_degree_title",
+    "deterministic_resolved_a_suffix_cert",
+    # LLM adjudication classes
+    "llm_resolved_high",
+    "llm_resolved_medium_reviewed",
 }
 
 CANDIDATES_OUT = os.path.join(ENRICHMENT_DIR, "course_enrichment_candidates.json")
@@ -320,7 +348,11 @@ def main():
         c["anchor_classes_seen"] = sorted(c.pop("_anchor_classes_seen"))
         c["programs_in_aos"] = sorted(c["programs_in_aos"], key=lambda x: x["program_code"])
         c["programs_in_sp"] = sorted(c["programs_in_sp"], key=lambda x: x["program_code"])
-        c["coverage_note"] = ["strict_unique_subset_only", "ambiguous_rows_excluded"]
+        c["coverage_note"] = [
+            "unique_and_resolved_tier",
+            "includes_deterministic_and_llm_resolved",
+            "unresolvable_and_unmapped_excluded",
+        ]
 
     # ---- Sort courses by course_code ----
     sorted_courses = dict(sorted(courses.items()))
@@ -328,7 +360,7 @@ def main():
     # ---- Build main output ----
     candidates_out = {
         "generated_on": str(date.today()),
-        "extraction_scope": "strict_unique_only",
+        "extraction_scope": "unique_and_resolved_tier",
         "total_courses_with_enrichment": len(sorted_courses),
         "total_aos_mentions_included": total_aos_included,
         "total_sp_mentions_included": total_sp_included,
@@ -394,7 +426,7 @@ def main():
 
     summary_out = {
         "generated_on": str(date.today()),
-        "extraction_scope": "strict_unique_only",
+        "extraction_scope": "unique_and_resolved_tier",
         "total_courses": len(sorted_courses),
         "courses_with_descriptions": courses_with_descriptions,
         "courses_with_competencies": courses_with_competencies,

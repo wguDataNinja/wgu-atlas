@@ -1,0 +1,286 @@
+{
+  "program_code": "MBAHA",
+  "program_code_effective": "MBAHA",
+  "family": "mba",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Master of Business Administration, Healthcare Administration",
+  "guide_version": "202507",
+  "guide_pub_date": "3/7/2025",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "School of Business"
+  ],
+  "program_history_degree_headings": [
+    "Master of Business Administration, Healthcare Administration"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 10,
+    "sp_row_count": 11,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 10
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 11
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Managing Organizations and Leading People",
+      "guide_title_normalized": "managing organizations and leading people",
+      "aos_group": "Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C200"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Operations Management",
+      "guide_title_normalized": "operations management",
+      "aos_group": "Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C215"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Accreditation Audit",
+      "guide_title_normalized": "accreditation audit",
+      "aos_group": "Healthcare Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "AFT2"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Service Line Development",
+      "guide_title_normalized": "service line development",
+      "aos_group": "Healthcare Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "AMT2"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Accounting for Decision Makers",
+      "guide_title_normalized": "accounting for decision makers",
+      "aos_group": "Accounting",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C213"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Financial Management",
+      "guide_title_normalized": "financial management",
+      "aos_group": "Finance",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C214"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Ethical Leadership",
+      "guide_title_normalized": "ethical leadership",
+      "aos_group": "Leadership",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C206"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data-Driven Decision Making",
+      "guide_title_normalized": "data driven decision making",
+      "aos_group": "Strategy",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C207"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Marketing",
+      "guide_title_normalized": "marketing",
+      "aos_group": "Marketing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C212"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Global Economics for Managers",
+      "guide_title_normalized": "global economics for managers",
+      "aos_group": "Economics",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C211"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Managing Organizations and Leading People",
+      "guide_title_normalized": "managing organizations and leading people",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C200"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Operations Management",
+      "guide_title_normalized": "operations management",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C215"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Accreditation Audit",
+      "guide_title_normalized": "accreditation audit",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "AFT2"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Accounting for Decision Makers",
+      "guide_title_normalized": "accounting for decision makers",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C213"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Financial Management",
+      "guide_title_normalized": "financial management",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C214"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Ethical Leadership",
+      "guide_title_normalized": "ethical leadership",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C206"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Data-Driven Decision Making",
+      "guide_title_normalized": "data driven decision making",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C207"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Marketing",
+      "guide_title_normalized": "marketing",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C212"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Service Line Development",
+      "guide_title_normalized": "service line development",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "AMT2"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Global Economics for Managers",
+      "guide_title_normalized": "global economics for managers",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C211"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "MBA, Healthcare Management Capstone",
+      "guide_title_normalized": "mba healthcare management capstone",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C219"
+      ]
+    }
+  ]
+}

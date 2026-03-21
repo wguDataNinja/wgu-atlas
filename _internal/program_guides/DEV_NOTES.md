@@ -2,6 +2,137 @@
 
 ---
 
+## Session 27 — Ambiguous-resolution merge + enrichment rerun + documentation consolidation (2026-03-21)
+
+### Summary
+
+Scraping/extraction phase closed. Merged all resolved ambiguous rows into bridge, reran course-enrichment extraction, wrote the human-readable `data/program_guides/README.md`, and updated canonical docs to reflect true post-merge state.
+
+### Core output
+
+- `scripts/program_guides/merge_resolved_ambiguous.py` — new script; merges LLM adjudication results into `bridge/guides_merged/`
+- `data/program_guides/bridge/guides_merged/` — 115 final merged per-guide bridge files; no `ambiguous_residual` rows remain
+- `data/program_guides/bridge/merge_summary.json` — post-merge coverage summary with explicit medium and unresolvable case records
+- `data/program_guides/enrichment/course_enrichment_candidates.json` — updated; 751 courses (was 501 before merge)
+- `data/program_guides/enrichment/course_enrichment_summary.json` — updated counts
+- `data/program_guides/README.md` — new human entry point for the entire `data/program_guides/` area
+- `_internal/program_guides/PROGRAM_GUIDE_PROJECT_STATUS.md` — updated to post-merge state
+- `scripts/program_guides/build_course_enrichment_candidates.py` — updated to read from `guides_merged/` and include all resolved anchor classes
+
+### Key decisions
+
+- 163 LLM high-confidence resolutions: applied as `llm_resolved_high`; included in enrichment
+- 2 LLM medium-confidence resolutions: applied as `llm_resolved_medium_reviewed`; included with distinct auditable status
+  - `BSIT__introduction_to_it__aos` → E004
+  - `BSPRN__community_health_and_population_focused_nursing__aos` → C826
+- 6 unresolvable cases: all "Health Equity and Social Determinants of Health" (BSHS/BSPH/BSPSY AoS+SP); status `unresolvable`; candidates preserved; excluded from enrichment
+- `guides_merged/` is the canonical bridge output; `guides/` and `guides_resolved/` are preserved pipeline stages
+
+### Post-merge enrichment counts
+
+- 751 courses with enrichment data (was 501 before merge — +50% gain)
+- 730 with descriptions, 729 with competencies
+- 542 rows unmapped (unchanged — titles not in canonical course database)
+- 6 unresolvable (excluded from enrichment)
+
+### Anchor class vocabulary (post-merge)
+
+| Class | Count | Included in enrichment |
+|-------|-------|----------------------|
+| `exact_current_unique` | 2,570 | Yes |
+| `exact_observed_variant_unique` | 382 | Yes |
+| `deterministic_resolved_multi` | 1,071 | Yes |
+| `deterministic_resolved_one_active` | 131 | Yes |
+| `deterministic_resolved_degree_title` | 198 | Yes |
+| `deterministic_resolved_degree_level` | 4 | Yes |
+| `deterministic_resolved_cu_match` | 21 | Yes |
+| `deterministic_resolved_a_suffix_cert` | 3 | Yes |
+| `llm_resolved_high` | 163 | Yes |
+| `llm_resolved_medium_reviewed` | 2 | Yes |
+| `unmapped` | 536 | No |
+| `unresolvable` | 6 | No |
+
+### Scraping/extraction phase — closed
+
+All work through Phase E (roster bridge, resolution, enrichment extraction) is complete. The phase stops here. Next phase is Phase D artifact generation.
+
+### Next recommended implementation step
+
+**Phase D build-script skeleton:** read `parsed/`, `validation/`, `manifest_rows/` + Phase D policy/schema JSON, apply publish policy, emit schema-valid draft index/per-guide artifacts for verification.
+
+Start from `data/program_guides/audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md`.
+
+---
+
+## Session 25 — Phase D policy/schema planning pack (2026-03-21)
+
+### Summary
+
+Large planning-only session after corpus close. No parser expansion. No runtime integration. No Phase E matching. Produced implementation-ready Phase D policy/schema/build planning artifacts with conservative publish boundaries.
+
+### Core output
+
+- `data/program_guides/audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md` (single human-readable decision entry point)
+- `data/program_guides/audit/phase_d_publish_policy.{md,json}`
+- `data/program_guides/audit/phase_d_artifact_schema.{md,json}`
+- `data/program_guides/audit/phase_d_degree_course_ownership_matrix.{md,json}`
+- `data/program_guides/audit/phase_d_build_plan.{md,json}`
+
+### Key decisions locked
+
+- Phase D v1 publishes guide-derived enrichment to **degree pages only** (program-level payload); no guide-derived course-page fields in Phase D.
+- Partial-use handling is explicit and encoded in artifact schema (`disposition`, `sp_status`, `caveat_flags`) rather than dropping guides.
+- SP unusable guides (`BSITM`, `MATSPED`, `MSCSUG`) are AoS-only publishes.
+- `BSPRN` is SP-partial and must be labeled as Pre-Nursing-only if SP is shown.
+- `MEDETID` capstone is publishable with partial flag.
+- Parsed prerequisite mentions remain internal-only in v1.
+
+### Next recommended implementation step
+
+Build **schema + build-script skeleton only** (no runtime wiring in same session):
+- read parsed/validation/manifest + manifest anchors + phase_d policy/schema JSON
+- enforce hard-fail policy/schema checks
+- emit draft index/per-guide artifacts for verification
+
+---
+
+## Session 24 — Post-close verification and consolidation (2026-03-21)
+
+### Summary
+
+Verification-and-reconciliation pass completed after Phase C close. No new exploratory parser work. No Phase D build work. Consolidated a durable corpus truth source and tightened claim language to avoid overstatement.
+
+### Reconciled corpus counts (filesystem-derived)
+
+- Artifact coverage: 115/115 parsed + 115/115 validation + 115/115 manifest rows
+- Family-validated coverage: 115/115 guides (19 families total)
+- Downstream-usable full: 111
+- Downstream-usable partial: 4 (`BSITM`, `MATSPED`, `MSCSUG`, `BSPRN`)
+- Excluded/not usable: 0
+- Confidence: 96 HIGH / 17 MEDIUM / 2 LOW
+- AoS course descriptions: 2,593/2,593
+- Competency sets: 2,591/2,593
+- Standard Path rows extracted: 2,568
+
+### Inconsistencies corrected
+
+- `family_validation/graduate_standard_rollout_summary.{json,md}` had stale confidence totals (8H/1M). Reconciled to 9H/0M based on current validation artifacts.
+- `family_validation/teaching_mat_rollout_summary.{json,md}` had stale confidence totals (7H/0M/1L). Reconciled to 8H/1M/0L based on current validation artifacts.
+- Enrichment planning artifacts tightened for SP eligibility and exclusions (`BSITM`, `MATSPED`, `MSCSUG`) and for conservative term-availability counts.
+
+### Canonical outputs added
+
+- `data/program_guides/audit/PROGRAM_GUIDE_CORPUS_MANIFEST.{md,json}`
+- `data/program_guides/audit/program_guide_adversarial_review.{md,json}`
+- `data/program_guides/audit/program_guide_claims_register.{md,json}`
+- `_internal/program_guides/PROGRAM_GUIDE_PROJECT_STATUS.md`
+
+### Locked next step
+
+Proceed to **Phase D schema definition + inclusion/exclusion policy only**. Do not start `build_guide_artifacts.py` yet.
+
+---
+
 ## Session 23 — Final corpus close: accounting_ma (5) + nursing_ug (2) + nursing_rn_msn (3); 7 targeted parser fixes (2026-03-21)
 
 ### Summary

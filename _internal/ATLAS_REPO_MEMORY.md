@@ -542,17 +542,24 @@ This is distinct from the URL-placement system in `official_resource_placements.
 
 ### Status
 
-- Implemented and in active rollout (not analysis-only).
+- **Scraping/extraction phase COMPLETE** — Phase C (corpus), Phase D (policy/schema), and Phase E (bridge + resolution + enrichment) are all done.
 - Parser (`scripts/program_guides/parse_guide.py`) is stable and production-quality.
 - **Phase C COMPLETE: 115/115 guides have parsed + validation + manifest_row artifacts on disk.**
-- 18 families rollout-complete. education_grad complete (MSEDL=HIGH + MEDETID=MEDIUM). 0 partial families.
-- Phase D and Phase E are not started; runtime guide artifact publication is not yet live.
+- Family rollout is complete across all 19 families. 0 partial families.
+- **Phase E COMPLETE:** 751 courses with enrichment data (descriptions + competencies + program context). All 1,599 originally-ambiguous bridge rows resolved or explicitly handled.
+- Phase D policy/schema planning is complete; build implementation and runtime publication are not yet live.
+- Human entry point for the full program-guides data area: `data/program_guides/README.md`
 - Current counts and near-term sequence are controlled in `_internal/ATLAS_CONTROL.md`.
+- Canonical reconciled counts and claim boundaries are in `data/program_guides/audit/PROGRAM_GUIDE_CORPUS_MANIFEST.{md,json}` and `data/program_guides/audit/program_guide_claims_register.{md,json}`.
+- Canonical Phase D planning pack is in `data/program_guides/audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md` and `data/program_guides/audit/phase_d_*.{md,json}`.
+- Post-merge bridge state and explicit unresolvable/medium case records: `data/program_guides/bridge/merge_summary.json`.
 
 **Durable coverage model (do not collapse these states):**
 - Extracted texts: PDF-to-text corpus available for parser input.
 - Parsed guides: structural content extracted into `*_parsed.json`.
 - Validated guides: per-guide QA output in `*_validation.json` with confidence and anomaly accounting.
+- Bridge pipeline: `guides/` (original) → `guides_resolved/` (deterministic) → `guides_merged/` (final — canonical).
+- Course enrichment: 751 courses in `data/program_guides/enrichment/course_enrichment_candidates.json`.
 - Runtime-published guides: site-facing artifacts in `public/data/program_guides/` (not yet published).
 
 ### BSDA guide structure (confirmed)
@@ -620,6 +627,13 @@ None outstanding. All identified limitations were resolved in Session 22–23.
 - `data/program_guides/validation/` — per-guide validation outputs (execution truth for validated state)
 - `data/program_guides/manifest_rows/` — per-guide manifest snapshots for corpus accounting
 - `data/program_guides/family_validation/` — gate reports and rollout summaries
+- `data/program_guides/audit/PROGRAM_GUIDE_CORPUS_MANIFEST.{md,json}` — canonical post-close corpus truth
+- `data/program_guides/audit/program_guide_claims_register.{md,json}` — approved/disallowed claims and safe wording
+- `data/program_guides/audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md` — implementation-ready Phase D decision document
+- `data/program_guides/audit/phase_d_publish_policy.{md,json}` — publishability and caveat handling policy
+- `data/program_guides/audit/phase_d_artifact_schema.{md,json}` — output shape and partial-use encoding
+- `data/program_guides/audit/phase_d_degree_course_ownership_matrix.{md,json}` — degree/course ownership decisions
+- `data/program_guides/audit/phase_d_build_plan.{md,json}` — implementation gates and checks
 - `public/data/program_guides/` — not yet created (Phase D)
 
 ### Important design decisions

@@ -1,262 +1,107 @@
 {
-  "report_type": "family_full_rollout",
+  "report_type": "family_rollout_summary_reconciled",
   "family": "graduate_standard",
   "date": "2026-03-21",
-  "gate_guide": "MBA",
-  "gate_result": "HIGH confidence, 0 anomalies, 0 warnings — gate passed",
-  "parser_changes": [],
-
-  "totals": {
-    "guides_in_family": 9,
-    "parsed_successfully": 9,
-    "failed": 0,
-    "high_confidence": 8,
-    "medium_confidence": 1,
-    "low_confidence": 0
-  },
-
+  "reconciled_by": "post_close_verification",
+  "family_size": 9,
+  "rollout_result": "COMPLETE",
+  "high_confidence": 9,
+  "medium_confidence": 0,
+  "low_confidence": 0,
   "guides": [
     {
       "code": "MSCIN",
-      "degree_title": "Master of Science, Curriculum and Instruction",
       "confidence": "high",
       "version": "202404",
       "pub_date": "6/23/2025",
-      "page_count": 0,
-      "metadata_format": "header-line",
-      "sp_rows": 10,
-      "sp_format": "3-column multiline (with Term)",
-      "aos_groups": 4,
-      "aos_courses": 10,
-      "capstone_present": false,
-      "reconciliation": "10/10 clean",
-      "anomalies": 0,
-      "warnings": 0,
-      "empty_descriptions": 0,
-      "empty_competency_lists": 0
+      "standard_path_row_count": 10,
+      "aos_course_count": 10,
+      "anomaly_count": 0,
+      "warning_count": 0
     },
     {
       "code": "MSHRM",
-      "degree_title": "Master of Science, Human Resource Management",
       "confidence": "high",
       "version": "202507",
       "pub_date": "7/3/2025",
-      "page_count": 0,
-      "metadata_format": "header-line",
-      "sp_rows": 10,
-      "sp_format": "3-column multiline (with Term)",
-      "aos_groups": 4,
-      "aos_courses": 10,
-      "capstone_present": false,
-      "reconciliation": "10/10 clean",
-      "anomalies": 0,
-      "warnings": 0,
-      "empty_descriptions": 0,
-      "empty_competency_lists": 0
+      "standard_path_row_count": 10,
+      "aos_course_count": 10,
+      "anomaly_count": 0,
+      "warning_count": 0
     },
     {
       "code": "MSIT",
-      "degree_title": "Master of Science, Information Technology",
       "confidence": "high",
       "version": "202604",
       "pub_date": "1/28/2026",
-      "page_count": 0,
-      "metadata_format": "header-line",
-      "sp_rows": 11,
-      "sp_format": "3-column multiline (with Term)",
-      "aos_groups": 2,
-      "aos_courses": 11,
-      "capstone_present": false,
-      "reconciliation": "11/11 clean",
-      "anomalies": 0,
-      "warnings": 0,
-      "empty_descriptions": 0,
-      "empty_competency_lists": 0
+      "standard_path_row_count": 11,
+      "aos_course_count": 11,
+      "anomaly_count": 0,
+      "warning_count": 0
     },
     {
       "code": "MSITM",
-      "degree_title": "Master of Science, Information Technology Management",
-      "confidence": "medium",
+      "confidence": "high",
       "version": "201808",
       "pub_date": "12/15/22",
-      "page_count": 11,
-      "metadata_format": "footer",
-      "sp_rows": 10,
-      "sp_format": "3-column multiline (with Term)",
-      "aos_groups": 4,
-      "aos_courses": 9,
-      "capstone_present": true,
-      "reconciliation": "10/10 clean",
-      "anomalies": 0,
-      "warnings": 0,
-      "empty_descriptions": 0,
-      "empty_competency_lists": 0,
-      "medium_cause": "capstone_description_polluted_by_accessibility_boilerplate",
-      "medium_detail": "Source PDF has typo 'Accessibility and Accomodations' (single 'm') in the closing section. ACCESSIBILITY_RE requires 'Accommodations' (double 'm') and does not match. Capstone section has no Capstone heading above and no competency trigger, so the parser continues accumulating description_buf past the accessibility boilerplate to EOF. Capstone title and first description paragraph are correct; remaining description is polluted with boilerplate text. AoS content (9 courses, all descriptions, all competencies) is unaffected and clean. Parser confidence from code logic is HIGH (no anomalies, no warnings detected); manually downgraded to MEDIUM due to capstone description quality."
+      "standard_path_row_count": 10,
+      "aos_course_count": 9,
+      "anomaly_count": 0,
+      "warning_count": 0
     },
     {
       "code": "MSITPM",
-      "degree_title": "Master of Science, Information Technology - Product Management",
       "confidence": "high",
       "version": "202604",
       "pub_date": "2/3/2026",
-      "page_count": 0,
-      "metadata_format": "header-line",
-      "sp_rows": 10,
-      "sp_format": "3-column multiline (with Term)",
-      "aos_groups": 2,
-      "aos_courses": 10,
-      "capstone_present": false,
-      "reconciliation": "10/10 clean",
-      "anomalies": 0,
-      "warnings": 0,
-      "empty_descriptions": 0,
-      "empty_competency_lists": 0
+      "standard_path_row_count": 10,
+      "aos_course_count": 10,
+      "anomaly_count": 0,
+      "warning_count": 0
     },
     {
       "code": "MSITUG",
-      "degree_title": "Bachelor of Science, Information Technology (BSIT to MSIT)",
       "confidence": "high",
       "version": "202604",
       "pub_date": "11/20/2025",
-      "page_count": 0,
-      "metadata_format": "header-line",
-      "sp_rows": 35,
-      "sp_format": "3-column multiline (with Term)",
-      "aos_groups": 12,
-      "aos_courses": 35,
-      "capstone_present": false,
-      "reconciliation": "35/35 clean",
-      "anomalies": 0,
-      "warnings": 0,
-      "empty_descriptions": 0,
-      "empty_competency_lists": 0,
-      "note": "Pathway/bridge guide covering BSIT-to-MSIT curriculum. 35 courses is unusually large for a graduate guide — reflects the full combined undergraduate-to-graduate pathway, not just the MSIT courses. Parser handles it correctly. Family classification graduate_standard is accurate for this manifest; structure parses identically."
+      "standard_path_row_count": 35,
+      "aos_course_count": 35,
+      "anomaly_count": 0,
+      "warning_count": 0
     },
     {
       "code": "MSMK",
-      "degree_title": "Master of Science in Marketing, Digital Marketing Specialization",
       "confidence": "high",
       "version": "202301",
       "pub_date": "9/27/23",
-      "page_count": 11,
-      "metadata_format": "footer",
-      "sp_rows": 11,
-      "sp_format": "3-column multiline (with Term)",
-      "aos_groups": 2,
-      "aos_courses": 11,
-      "capstone_present": false,
-      "reconciliation": "11/11 clean",
-      "anomalies": 0,
-      "warnings": 0,
-      "empty_descriptions": 0,
-      "empty_competency_lists": 0
+      "standard_path_row_count": 11,
+      "aos_course_count": 11,
+      "anomaly_count": 0,
+      "warning_count": 0
     },
     {
       "code": "MSMKA",
-      "degree_title": "Master of Science in Marketing, Marketing Analytics Specialization",
       "confidence": "high",
       "version": "202303",
       "pub_date": "9/27/23",
-      "page_count": 11,
-      "metadata_format": "footer",
-      "sp_rows": 11,
-      "sp_format": "3-column multiline (with Term)",
-      "aos_groups": 2,
-      "aos_courses": 11,
-      "capstone_present": false,
-      "reconciliation": "11/11 clean",
-      "anomalies": 0,
-      "warnings": 0,
-      "empty_descriptions": 0,
-      "empty_competency_lists": 0
+      "standard_path_row_count": 11,
+      "aos_course_count": 11,
+      "anomaly_count": 0,
+      "warning_count": 0
     },
     {
       "code": "MSML",
-      "degree_title": "Master of Science, Management and Leadership",
       "confidence": "high",
       "version": "202007",
       "pub_date": "9/27/23",
-      "page_count": 11,
-      "metadata_format": "footer",
-      "sp_rows": 10,
-      "sp_format": "3-column multiline (with Term)",
-      "aos_groups": 4,
-      "aos_courses": 9,
-      "capstone_present": true,
-      "reconciliation": "10/10 clean",
-      "anomalies": 0,
-      "warnings": 0,
-      "empty_descriptions": 0,
-      "empty_competency_lists": 0,
-      "note": "Capstone has 0 competency bullets. No competency trigger in capstone section — this is a property of the source guide (older format that does not include the competency bullet block for capstone). Not a parser failure. Capstone description is clean and correctly bounded."
+      "standard_path_row_count": 10,
+      "aos_course_count": 9,
+      "anomaly_count": 0,
+      "warning_count": 0
     }
   ],
-
-  "confidence_distribution": {
-    "high": ["MSCIN", "MSHRM", "MSIT", "MSITPM", "MSITUG", "MSMK", "MSMKA", "MSML"],
-    "medium": ["MSITM"],
-    "low": []
-  },
-
-  "sp_format": "All 9 guides use 3-column multiline format (Course Description / CUs / Term). No 2-column or single-line format found in this family.",
-
-  "metadata_format_variants": {
-    "header_line": ["MSCIN", "MSHRM", "MSIT", "MSITPM", "MSITUG"],
-    "footer": ["MSITM", "MSMK", "MSMKA", "MSML"],
-    "note": "Both formats already handled by extract_metadata(). No parser changes needed."
-  },
-
-  "capstone_notes": {
-    "present": ["MSITM", "MSML"],
-    "absent": ["MSCIN", "MSHRM", "MSIT", "MSITPM", "MSITUG", "MSMK", "MSMKA"],
-    "zero_bullets": ["MSITM", "MSML"],
-    "note": "Graduate capstone sections in this family do not include the 'This course covers the following competencies:' trigger. This is a source-guide format property, not a parser bug. Capstone descriptions are present but competency lists are empty."
-  },
-
-  "quality": {
-    "empty_descriptions": 0,
-    "empty_competency_lists": 0,
-    "total_sp_rows": 108,
-    "total_aos_courses": 105,
-    "perfect_reconciliation_guides": 9
-  },
-
-  "structural_notes": [
-    "MSITUG is a BSIT-to-MSIT pathway/bridge guide with 35 courses — significantly larger than other graduate guides (10-11 courses). Parser handles it identically. Family classification as graduate_standard is correct for parsing purposes.",
-    "Capstone sections in graduate_standard guides use an older format without the competency trigger block. Only capstone title and description are available; competency bullets are always 0.",
-    "MSITM capstone description is polluted with accessibility boilerplate due to source PDF typo. This is the sole MEDIUM case. AoS content unaffected.",
-    "Graduate Standard Path tables confirm 3-column multiline format uniformly — no format branching needed."
-  ],
-
-  "medium_cause_summary": {
-    "capstone_description_polluted": {
-      "guides": ["MSITM"],
-      "description": "Source PDF typo 'Accomodations' (single m) in closing section prevents ACCESSIBILITY_RE match. No competency trigger in capstone. Parser collects description_buf to EOF, including boilerplate. Capstone title and opening description paragraph are correct; rest is polluted. AoS content unaffected."
-    }
-  },
-
-  "parser_changes_made": [],
-
-  "safe_fields_for_downstream": [
-    "Standard Path course titles (all 9)",
-    "Standard Path CU values (all 9)",
-    "Standard Path term sequence (all 9)",
-    "AoS group structure (all 9)",
-    "Course descriptions (all 9, 0 empty)",
-    "Competency bullets (all 9, 0 empty)",
-    "Guide metadata / version (8/9 reliable; MSITM is older but present)"
-  ],
-
-  "fields_to_exclude": [
-    "MSITM capstone description — polluted with boilerplate text",
-    "Capstone competency bullets for MSITM and MSML — 0 bullets is source-guide format property"
-  ],
-
-  "recommendation": {
-    "graduate_standard_complete": true,
-    "summary": "9/9 parsed, 0 failures, 0 LOW confidence. 8 HIGH / 1 MEDIUM. MEDIUM case (MSITM) is a source PDF typo causing capstone description pollution — AoS content unaffected. No parser changes needed or made.",
-    "next_family_recommendation": "mba",
-    "next_family_rationale": "mba (3 guides: MBA already gate-tested HIGH) is the logical next rollout. All 3 guides have manifest HIGH confidence. MBA is already parsed — add MBAHA and MBAITM."
-  }
+  "notes": [
+    "This reconciled summary supersedes earlier same-day counts that listed MSITM as MEDIUM before parser typo-tolerance fix verification.",
+    "Current artifact truth: 9 HIGH / 0 MEDIUM / 0 LOW."
+  ]
 }

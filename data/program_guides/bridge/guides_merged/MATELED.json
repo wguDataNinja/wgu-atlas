@@ -1,0 +1,876 @@
+{
+  "program_code": "MATELED",
+  "program_code_effective": "MATELED",
+  "family": "teaching_mat",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Master of Arts in Teaching, Elementary Education",
+  "guide_version": "202411",
+  "guide_pub_date": "8/16/24",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "Teachers College",
+    "School of Education"
+  ],
+  "program_history_degree_headings": [
+    "Master of Arts in Teaching, Elementary Education"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 28,
+    "sp_row_count": 28,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 3,
+      "unmapped": 8,
+      "deterministic_resolved_multi": 13,
+      "deterministic_resolved_degree_title": 1,
+      "llm_resolved_high": 3
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 3,
+      "unmapped": 8,
+      "deterministic_resolved_multi": 14,
+      "llm_resolved_high": 3
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "The Education Professional",
+      "guide_title_normalized": "the education professional",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D752"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Learner Development and the Science of Learning",
+      "guide_title_normalized": "learner development and the science of learning",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Practices for Inclusive Classrooms",
+      "guide_title_normalized": "practices for inclusive classrooms",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D635"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Establishing Positive and Engaging Learning Environments",
+      "guide_title_normalized": "establishing positive and engaging learning environments",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Curriculum and Instructional Strategies for Meaningful Learning",
+      "guide_title_normalized": "curriculum and instructional strategies for meaningful learning",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Monitoring Student Learning Through Assessment",
+      "guide_title_normalized": "monitoring student learning through assessment",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Technology for Instruction and Online Pedagogy",
+      "guide_title_normalized": "technology for instruction and online pedagogy",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Technology and Ethics: A Look at Emerging Trends and Society",
+      "guide_title_normalized": "technology and ethics a look at emerging trends and society",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Elementary Literacy Curriculum",
+      "guide_title_normalized": "elementary literacy curriculum",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D668",
+        "D677"
+      ],
+      "resolved_code": "D677",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Early Literacy Methods",
+      "guide_title_normalized": "early literacy methods",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D669",
+        "D676"
+      ],
+      "resolved_code": "D676",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Elementary Literacy Methods",
+      "guide_title_normalized": "elementary literacy methods",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D670",
+        "D675"
+      ],
+      "resolved_code": "D675",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Foundations of Literacy Through Literature",
+      "guide_title_normalized": "foundations of literacy through literature",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D688",
+        "D696"
+      ],
+      "resolved_code": "D696",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Literacy Assessment and Interventions",
+      "guide_title_normalized": "literacy assessment and interventions",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D689",
+        "D697"
+      ],
+      "resolved_code": "D697",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Elementary Mathematics Curriculum",
+      "guide_title_normalized": "elementary mathematics curriculum",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D691",
+        "D699"
+      ],
+      "resolved_code": "D699",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Early Mathematics Methods and Interventions",
+      "guide_title_normalized": "early mathematics methods and interventions",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D692",
+        "D700"
+      ],
+      "resolved_code": "D700",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Elementary Mathematics Methods and Interventions",
+      "guide_title_normalized": "elementary mathematics methods and interventions",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Elementary Science Curriculum",
+      "guide_title_normalized": "elementary science curriculum",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D671",
+        "D678"
+      ],
+      "resolved_code": "D678",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Elementary Science and Engineering Methods",
+      "guide_title_normalized": "elementary science and engineering methods",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D672",
+        "D679"
+      ],
+      "resolved_code": "D679",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Elementary Social Studies Curriculum",
+      "guide_title_normalized": "elementary social studies curriculum",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D673",
+        "D680"
+      ],
+      "resolved_code": "D680",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Elementary Social Studies Methods",
+      "guide_title_normalized": "elementary social studies methods",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_title",
+      "canonical_candidate_codes": [
+        "C104",
+        "D674",
+        "D681"
+      ],
+      "resolved_code": "D681",
+      "resolution_signals": [
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Elementary Health and Physical Education Methods",
+      "guide_title_normalized": "elementary health and physical education methods",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Elementary Fine Arts Methods",
+      "guide_title_normalized": "elementary fine arts methods",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D695",
+        "D703"
+      ],
+      "resolved_code": "D703",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Elementary Disciplinary Literacy",
+      "guide_title_normalized": "elementary disciplinary literacy",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "D698"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Early Clinical in Elementary Education",
+      "guide_title_normalized": "early clinical in elementary education",
+      "aos_group": "Clinical Experiences",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D706",
+        "D724"
+      ],
+      "resolved_code": "D724",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Advanced Clinical in Elementary Education",
+      "guide_title_normalized": "advanced clinical in elementary education",
+      "aos_group": "Clinical Experiences",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D708",
+        "D727"
+      ],
+      "resolved_code": "D727",
+      "resolution_signals": [
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Education Portfolio",
+      "guide_title_normalized": "education portfolio",
+      "aos_group": "Clinical Experiences",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D743"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Student Teaching I in Elementary Education",
+      "guide_title_normalized": "student teaching i in elementary education",
+      "aos_group": "Student Teaching",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "D737"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Student Teaching II in Elementary Education",
+      "guide_title_normalized": "student teaching ii in elementary education",
+      "aos_group": "Student Teaching",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "D738"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "The Education Professional",
+      "guide_title_normalized": "the education professional",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D752"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Learner Development and the Science of Learning",
+      "guide_title_normalized": "learner development and the science of learning",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 2,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Practices for Inclusive Classrooms",
+      "guide_title_normalized": "practices for inclusive classrooms",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D635"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Establishing Positive and Engaging Learning Environments",
+      "guide_title_normalized": "establishing positive and engaging learning environments",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 2,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Technology and Ethics: A Look at Emerging Trends and Society",
+      "guide_title_normalized": "technology and ethics a look at emerging trends and society",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Curriculum and Instructional Strategies for Meaningful Learning",
+      "guide_title_normalized": "curriculum and instructional strategies for meaningful learning",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Monitoring Student Learning Through Assessment",
+      "guide_title_normalized": "monitoring student learning through assessment",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Technology for Instruction and Online Pedagogy",
+      "guide_title_normalized": "technology for instruction and online pedagogy",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Elementary Literacy Curriculum",
+      "guide_title_normalized": "elementary literacy curriculum",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D668",
+        "D677"
+      ],
+      "resolved_code": "D677",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Early Literacy Methods",
+      "guide_title_normalized": "early literacy methods",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D669",
+        "D676"
+      ],
+      "resolved_code": "D676",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Elementary Literacy Methods",
+      "guide_title_normalized": "elementary literacy methods",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D670",
+        "D675"
+      ],
+      "resolved_code": "D675",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Foundations of Literacy Through Literature",
+      "guide_title_normalized": "foundations of literacy through literature",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D688",
+        "D696"
+      ],
+      "resolved_code": "D696",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Literacy Assessment and Interventions",
+      "guide_title_normalized": "literacy assessment and interventions",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D689",
+        "D697"
+      ],
+      "resolved_code": "D697",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Early Clinical in Elementary Education",
+      "guide_title_normalized": "early clinical in elementary education",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D706",
+        "D724"
+      ],
+      "resolved_code": "D724",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Elementary Mathematics Curriculum",
+      "guide_title_normalized": "elementary mathematics curriculum",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D691",
+        "D699"
+      ],
+      "resolved_code": "D699",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Early Mathematics Methods and Interventions",
+      "guide_title_normalized": "early mathematics methods and interventions",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D692",
+        "D700"
+      ],
+      "resolved_code": "D700",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Elementary Mathematics Methods and Interventions",
+      "guide_title_normalized": "elementary mathematics methods and interventions",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 2,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Elementary Science Curriculum",
+      "guide_title_normalized": "elementary science curriculum",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D671",
+        "D678"
+      ],
+      "resolved_code": "D678",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Elementary Science and Engineering Methods",
+      "guide_title_normalized": "elementary science and engineering methods",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D672",
+        "D679"
+      ],
+      "resolved_code": "D679",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Elementary Social Studies Curriculum",
+      "guide_title_normalized": "elementary social studies curriculum",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D673",
+        "D680"
+      ],
+      "resolved_code": "D680",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Elementary Social Studies Methods",
+      "guide_title_normalized": "elementary social studies methods",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "C104",
+        "D674",
+        "D681"
+      ],
+      "resolved_code": "D681",
+      "resolution_signals": [
+        "cu_match",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Elementary Health and Physical Education Methods",
+      "guide_title_normalized": "elementary health and physical education methods",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 2,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Elementary Fine Arts Methods",
+      "guide_title_normalized": "elementary fine arts methods",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D695",
+        "D703"
+      ],
+      "resolved_code": "D703",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Elementary Disciplinary Literacy",
+      "guide_title_normalized": "elementary disciplinary literacy",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 2,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "D698"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Advanced Clinical in Elementary Education",
+      "guide_title_normalized": "advanced clinical in elementary education",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 2,
+      "anchor_class": "deterministic_resolved_multi",
+      "canonical_candidate_codes": [
+        "D708",
+        "D727"
+      ],
+      "resolved_code": "D727",
+      "resolution_signals": [
+        "cu_match",
+        "degree_level",
+        "degree_title"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Student Teaching I in Elementary Education",
+      "guide_title_normalized": "student teaching i in elementary education",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 4,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "D737"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Student Teaching II in Elementary Education",
+      "guide_title_normalized": "student teaching ii in elementary education",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 4,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "D738"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Education Portfolio",
+      "guide_title_normalized": "education portfolio",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 1,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D743"
+      ]
+    }
+  ]
+}

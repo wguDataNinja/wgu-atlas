@@ -1,0 +1,543 @@
+{
+  "program_code": "BSITM",
+  "program_code_effective": "BSITM",
+  "family": "standard_bs",
+  "disposition": "partial-use",
+  "sp_status": "unusable",
+  "degree_title_guide": "Bachelor of Science Information Technology Management",
+  "guide_version": "202503",
+  "guide_pub_date": "9/24/2024",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "School of Business"
+  ],
+  "program_history_degree_headings": [
+    "Bachelor of Science, Information Technology Management"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "partial_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 40,
+    "sp_row_count": 0,
+    "anchor_class_counts_aos": {
+      "deterministic_resolved_a_suffix_cert": 3,
+      "exact_current_unique": 24,
+      "llm_resolved_high": 5,
+      "exact_observed_variant_unique": 5,
+      "unmapped": 2,
+      "deterministic_resolved_degree_level": 1
+    },
+    "anchor_class_counts_sp": {}
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Organizational Behavior",
+      "guide_title_normalized": "organizational behavior",
+      "aos_group": "Business Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_a_suffix_cert",
+      "canonical_candidate_codes": [
+        "C715",
+        "C715A"
+      ],
+      "resolved_code": "C715",
+      "resolution_signals": [
+        "a_suffix_cert"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Operations and Supply Chain Management",
+      "guide_title_normalized": "operations and supply chain management",
+      "aos_group": "Business Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C720"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Project Management",
+      "guide_title_normalized": "project management",
+      "aos_group": "Business Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "C722"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Change Management",
+      "guide_title_normalized": "change management",
+      "aos_group": "Business Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C721"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Values-Based Leadership",
+      "guide_title_normalized": "values based leadership",
+      "aos_group": "Business Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_a_suffix_cert",
+      "canonical_candidate_codes": [
+        "D253",
+        "D253A"
+      ],
+      "resolved_code": "D253",
+      "resolution_signals": [
+        "a_suffix_cert"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Quantitative Analysis For Business",
+      "guide_title_normalized": "quantitative analysis for business",
+      "aos_group": "Business Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C723"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Fundamentals for Success in Business",
+      "guide_title_normalized": "fundamentals for success in business",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "D072"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Information Technology Management Essentials",
+      "guide_title_normalized": "information technology management essentials",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D075"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Principles of Management",
+      "guide_title_normalized": "principles of management",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C483"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Business Environment Applications I: Business Structures and Legal Environment",
+      "guide_title_normalized": "business environment applications i business structures and legal environment",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Principles of Financial and Managerial Accounting",
+      "guide_title_normalized": "principles of financial and managerial accounting",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D196"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Emotional and Cultural Intelligence",
+      "guide_title_normalized": "emotional and cultural intelligence",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D082"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Principles of Economics",
+      "guide_title_normalized": "principles of economics",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D089"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Business Environment Applications II: Process, Logistics, and Operations",
+      "guide_title_normalized": "business environment applications ii process logistics and operations",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Finance Skills for Managers",
+      "guide_title_normalized": "finance skills for managers",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_a_suffix_cert",
+      "canonical_candidate_codes": [
+        "D076",
+        "D076A"
+      ],
+      "resolved_code": "D076",
+      "resolution_signals": [
+        "a_suffix_cert"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Concepts in Marketing, Sales, and Customer Contact",
+      "guide_title_normalized": "concepts in marketing sales and customer contact",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D077"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Managing in a Global Business Environment",
+      "guide_title_normalized": "managing in a global business environment",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D080"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Innovative and Strategic Thinking",
+      "guide_title_normalized": "innovative and strategic thinking",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D081"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Business Simulation",
+      "guide_title_normalized": "business simulation",
+      "aos_group": "Business Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D361"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Critical Thinking and Logic",
+      "guide_title_normalized": "critical thinking and logic",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C168"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "English Composition I",
+      "guide_title_normalized": "english composition i",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C455"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Survey of United States History",
+      "guide_title_normalized": "survey of united states history",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C121"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Communication",
+      "guide_title_normalized": "introduction to communication",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C464"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "English Composition II",
+      "guide_title_normalized": "english composition ii",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C456"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Integrated Physical Sciences",
+      "guide_title_normalized": "integrated physical sciences",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "deterministic_resolved_degree_level",
+      "canonical_candidate_codes": [
+        "C165",
+        "C908"
+      ],
+      "resolved_code": "C165",
+      "resolution_signals": [
+        "degree_level"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Sociology",
+      "guide_title_normalized": "introduction to sociology",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C273"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Applied Probability and Statistics",
+      "guide_title_normalized": "applied probability and statistics",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C955"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Applied Algebra",
+      "guide_title_normalized": "applied algebra",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C957"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Humanities",
+      "guide_title_normalized": "introduction to humanities",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C100"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Information Systems Management",
+      "guide_title_normalized": "information systems management",
+      "aos_group": "IT Fundamentals",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C724"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Spreadsheets",
+      "guide_title_normalized": "introduction to spreadsheets",
+      "aos_group": "IT Fundamentals",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D100"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Business of IT - Applications",
+      "guide_title_normalized": "business of it applications",
+      "aos_group": "Business of IT",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "C179"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Network and Security - Foundations",
+      "guide_title_normalized": "network and security foundations",
+      "aos_group": "Network and Security",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "C172"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Human Resource Management",
+      "guide_title_normalized": "introduction to human resource management",
+      "aos_group": "Human Resources",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C232"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Workforce Planning: Recruitment and Selection",
+      "guide_title_normalized": "workforce planning recruitment and selection",
+      "aos_group": "Human Resources",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "C234"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Compensation and Benefits",
+      "guide_title_normalized": "compensation and benefits",
+      "aos_group": "Human Resources",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C236"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Employment Law",
+      "guide_title_normalized": "employment law",
+      "aos_group": "Human Resources",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C233"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data Management - Foundations",
+      "guide_title_normalized": "data management foundations",
+      "aos_group": "Data Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "llm_resolved_high",
+      "canonical_candidate_codes": [
+        "C175"
+      ],
+      "resolved_code": null,
+      "resolution_signals": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Business - IT Management Portfolio Requirement",
+      "guide_title_normalized": "business it management portfolio requirement",
+      "aos_group": "Capstone and Portfolio",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "PFIT"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Business - IT Management Capstone Project",
+      "guide_title_normalized": "business it management capstone project",
+      "aos_group": "Capstone and Portfolio",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "QFT1"
+      ]
+    }
+  ]
+}

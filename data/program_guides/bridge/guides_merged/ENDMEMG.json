@@ -1,0 +1,82 @@
+{
+  "program_code": "ENDMEMG",
+  "program_code_effective": "ENDMEMG",
+  "family": "endorsement",
+  "disposition": "full-use",
+  "sp_status": "usable-no-term",
+  "degree_title_guide": "Endorsement Preparation Program, Middle Grades Math",
+  "guide_version": "202509",
+  "guide_pub_date": "6/17/2025",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "School of Education"
+  ],
+  "program_history_degree_headings": [
+    "Endorsement Preparation Program, Middle Grades Math"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 2,
+    "sp_row_count": 2,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 2
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 2
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Middle Grades Methods",
+      "guide_title_normalized": "middle grades methods",
+      "aos_group": "Secondary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D922"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Teaching in Middle School",
+      "guide_title_normalized": "teaching in middle school",
+      "aos_group": "Secondary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D923"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Middle Grades Methods",
+      "guide_title_normalized": "middle grades methods",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D922"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Teaching in Middle School",
+      "guide_title_normalized": "teaching in middle school",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D923"
+      ]
+    }
+  ]
+}

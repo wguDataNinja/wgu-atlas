@@ -1,61 +1,76 @@
 {
   "generated_on": "2026-03-21",
-  "extraction_scope": "strict_unique_only",
-  "total_courses": 501,
-  "courses_with_descriptions": 487,
-  "courses_with_competencies": 486,
-  "courses_with_sp_context": 489,
-  "courses_with_aos_context": 487,
-  "courses_with_multiple_description_variants": 37,
-  "courses_with_multiple_competency_variants": 104,
-  "courses_with_multiple_guide_titles": 0,
+  "extraction_scope": "unique_and_resolved_tier",
+  "total_courses": 751,
+  "courses_with_descriptions": 730,
+  "courses_with_competencies": 729,
+  "courses_with_sp_context": 723,
+  "courses_with_aos_context": 730,
+  "courses_with_multiple_description_variants": 74,
+  "courses_with_multiple_competency_variants": 185,
+  "courses_with_multiple_guide_titles": 1,
   "description_variant_distribution": {
-    "0": 14,
-    "1": 450,
-    "2": 35,
-    "3": 2
+    "0": 21,
+    "1": 656,
+    "2": 65,
+    "3": 8,
+    "4": 1
   },
   "competency_variant_distribution": {
-    "0": 15,
-    "1": 382,
-    "2": 87,
-    "3": 13,
-    "4": 3,
-    "5": 1
+    "0": 22,
+    "1": 544,
+    "2": 147,
+    "3": 30,
+    "4": 5,
+    "5": 2,
+    "6": 1
   },
   "guide_title_variant_distribution": {
-    "1": 501
+    "1": 750,
+    "2": 1
   },
-  "sp_cus_conflict_count": 1,
+  "sp_cus_conflict_count": 41,
   "anchor_class_distribution": {
     "exact_current_unique": 446,
-    "exact_observed_variant_unique": 55
+    "deterministic_resolved_degree_title": 34,
+    "deterministic_resolved_multi": 161,
+    "exact_observed_variant_unique": 55,
+    "deterministic_resolved_degree_level": 2,
+    "deterministic_resolved_one_active": 53,
+    "llm_resolved_high": 44,
+    "deterministic_resolved_cu_match": 9,
+    "deterministic_resolved_a_suffix_cert": 3,
+    "llm_resolved_medium_reviewed": 2
   },
-  "rows_skipped_ambiguous": 1599,
-  "rows_skipped_unmapped": 536,
+  "rows_skipped_ambiguous": 0,
+  "rows_skipped_unmapped": 542,
   "multi_description_examples": [
     {
-      "course_code": "C200",
+      "course_code": "AIT2",
       "variant_count": 2
     },
     {
-      "course_code": "C483",
+      "course_code": "C165",
       "variant_count": 2
     },
     {
-      "course_code": "C683",
+      "course_code": "C169",
+      "variant_count": 3
+    },
+    {
+      "course_code": "C172",
       "variant_count": 2
     },
     {
-      "course_code": "C720",
-      "variant_count": 2
-    },
-    {
-      "course_code": "C823",
-      "variant_count": 2
+      "course_code": "C175",
+      "variant_count": 3
     }
   ],
   "multi_competency_examples": [
+    {
+      "course_code": "AIT2",
+      "variant_count": 2
+    },
     {
       "course_code": "C100",
       "variant_count": 2
@@ -65,17 +80,22 @@
       "variant_count": 2
     },
     {
+      "course_code": "C165",
+      "variant_count": 3
+    },
+    {
       "course_code": "C168",
-      "variant_count": 2
-    },
-    {
-      "course_code": "C180",
-      "variant_count": 4
-    },
-    {
-      "course_code": "C200",
       "variant_count": 2
     }
   ],
-  "multi_title_examples": []
+  "multi_title_examples": [
+    {
+      "course_code": "C173",
+      "variant_count": 2,
+      "titles": [
+        "Scripting and Programming - Foundations",
+        "Scripting and Programming Foundations"
+      ]
+    }
+  ]
 }
