@@ -1,0 +1,609 @@
+{
+  "program_code": "MATSPED",
+  "version": "202412",
+  "pub_date": "10/23/2024",
+  "page_count": 0,
+  "degree_title": "Master of Arts in Teaching, Special Education",
+  "program_description": "Program Code: MATSPED Catalog Version: 202412 Published Date: 10/23/2024 The Master of Arts in Teaching, Special Education (MATSPED) is a competency-based program that enables teacher candidates to earn a Master of Arts degree with a concentration in Special Education, Mild to Moderate disabilities which leads to an initial licensure in Special Education (K-12) teaching certificate. The program will be completed online except for preclinical experiences, classroom clinical components, and student teaching. This program will involve an intensive, fast-paced education in fundamental issues, methodology, knowledge, and skills for special education teachers. The Master of Arts in Special Education, Mild to Moderate Exceptionalities program is specifically designed for the preparation of prospective teachers to work with students with mild to moderate disabilities in a variety of educational settings, including inclusion K-12 classrooms and resource classrooms. This program consists of online courses which take the learner educational professional core coursework and continues with specialized courses for special education content and methods of instruction, assessment, and behavioral interventions. Candidates develop and refine their teaching skills through a series of sequential experiences beginning with video-based observations and simulations of classroom instruction to prepar..",
+  "standard_path": [
+    {
+      "title": "The Education Professional",
+      "cus": 2,
+      "term": 1
+    },
+    {
+      "title": "Learner Development and the Science of Learning",
+      "cus": 2,
+      "term": 1
+    },
+    {
+      "title": "Practices for Inclusive Classrooms",
+      "cus": 2,
+      "term": 1
+    },
+    {
+      "title": "Early Clinical in Special Education",
+      "cus": 2,
+      "term": 4
+    },
+    {
+      "title": "Elementary Literacy Curriculum",
+      "cus": 2,
+      "term": 4
+    },
+    {
+      "title": "Early Literacy Methods",
+      "cus": 2,
+      "term": 4
+    },
+    {
+      "title": "Elementary Literacy Methods",
+      "cus": 2,
+      "term": 5
+    },
+    {
+      "title": "Establishing Positive and Engaging Learning Environments Technology and Ethics: A Look at Emerging Trends and Society Behavioral Intervention Strategies and Applied Behavior Analysis Special Education Law, Policies and Procedures Curriculum and Instructional Strategies for Meaningful Learning Technology for Instruction and Online Pedagogy Monitoring Student Learning Through Assessment Assessment for Special Education Individualized Education Plan (IEP) Collaboration and Communication with Parents and School Staff Secondary Literacy Methods and Interventions Foundations of Literacy Through Literature Literacy Assessment and Interventions Elementary Mathematics Curriculum Early Mathematics Methods and Interventions Elementary Mathematics Methods and Interventions Special Education Curriculum Considerations for Instructional Planning for Learners Elementary Literacy and Mathematics Strategies and Assistive Technologies Secondary Literacy and Mathematics Strategies and Assistive Technologies Advanced Clinical in Special Education Student Teaching I in Special Education Student Teaching II in Special Education",
+      "cus": 4,
+      "term": 7
+    },
+    {
+      "title": "Education Portfolio",
+      "cus": 1,
+      "term": 8
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Professional Core",
+      "courses": [
+        {
+          "title": "The Education Professional",
+          "description": "The Education Professional prepares WGU students to excel in the exciting and impactful profession of being an educator. Additionally, the course addresses the importance of continuous professional development and ethical considerations in teaching through the School of Education (SOE) Professional Dispositions and Ethics. Upon completion of the course, WGU students will be equipped with the tools and insights needed to continue their professional journey of becoming effective, inspiring, and adaptive educators, capable of making a significant impact in the lives of their students and the broader educational community. Students will also start a research-based professional portfolio. (This is not a transferable course.)",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the impact of professional dispositions and ethics in engaging with others and making decisions.",
+            "The learner examines program requirements, regulations, and the utilization of tools to navigate through the program.",
+            "The learner reflects on professional dispositions and ethics in their own education and career.",
+            "The learner reflects on their educational journey and their future goals as an educator."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Learner Development and the Science of Learning",
+          "description": "Learner Development and the Science of Learning provides WGU students with a deep understanding of the science behind learning processes. This course covers a broad spectrum of topics pertaining to the science of learning, including cognitive development, learning theories, neuroscience in education, and the impact of developmental milestones on learning. Students will explore how these concepts apply to learning environments and educational levels, from early childhood through adolescence. The course emphasizes evidence-based practices and the practical application of learning science principles, equipping students with strategies to enhance learning outcomes and learner engagement. This course aims to empower educators to create more effective, inclusive, and engaging learning experiences for all learners. Candidates will evaluate science learning theories in classrooms.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates the impact of learning science theories on a classroom scenario.",
+            "The learner examines how principles of neuroscience are applied in instructional practices.",
+            "The learner examines how theories of learning science and learner growth and development influence educational practices.",
+            "The learner recommends instructional techniques based on principles of learning science that will positively impact learning."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Practices for Inclusive Classrooms",
+          "description": "Practices for Inclusive Classrooms empowers educators to create more inclusive and effective learning environments. This course focuses on the principles and strategies of personalized learning, emphasizing the need to value and support the unique needs, interests, and abilities of each learner. The course provides a foundation for learner characteristics of learners with exceptionalities and other unique learning needs. This course helps candidates develop skills for partnering with parents and families, to advocate for all learners with exceptionalities, including those impacted by provisions of the Individuals with Disabilities Education Act (IDEA) and Section 504 of the Rehabilitation Act. Multitiered systems of support are addressed to prepare candidates for their future classrooms as they seek to select appropriate instructional practices and interventions to best serve their learners. These factors are also addressed in relation to online and hybrid learning environments.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies MTSS to address the needs of all students.",
+            "The learner examines activities to connect with students.",
+            "The learner examines policies, practices, and legal requirements to inform educator practice.",
+            "The learner identifies characteristics of students with various learning needs."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Establishing Positive and Engaging Learning Environments",
+          "description": "Establishing Positive and Engaging Learning Environments teaches educators how to foster supportive and productive classroom climates. This course delves into the key elements that contribute to creating and maintaining a positive learning atmosphere, such as effective communication, classroom norms and routines, and positive behavior supports. Emphasizing the importance of a safe and inclusive environment, the course explores methods to promote student engagement, collaboration, and mutual respect among learners. It also addresses the role of mental well-being in learning, exploring trauma-informed and restorative practices. These factors are also addressed in relation to online and hybrid learning environments. Through a blend of theoretical frameworks and practical applications including case studies, Establishing Positive and Engaging Learning Environments teaches learners how to develop and sustain environments that not only enhance academic performance but also support the holistic development of students. Candidates will apply theoretical concepts to analyze a classroom environment.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes a classroom environment for opportunities to foster a healthy classroom climate.",
+            "The learner analyzes the role of the community of care in creating a learning environment that is sensitive to experiences and backgrounds.",
+            "The learner applies classroom engagement strategies to enhance a positive classroom climate.",
+            "The learner plans norms, routines, and classroom expectations to promote a safe, equitable, and productive learning environment."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Curriculum and Instructional Strategies for Meaningful Learning",
+          "description": "Curriculum and Instructional Strategies for Meaningful Learning explores the dynamics of instructional planning and the execution of educational strategies that foster meaningful learning experiences. This course provides students with the knowledge and skills necessary to create engaging and standards-aligned lessons that meet the needs of all learners. This course also covers a range of high-leverage instructional practices to increase learning, engagement, and achievement. Students will learn to utilize assessments to inform instruction, adapt teaching to accommodate diverse learners, and incorporate technology to enhance learning. Students will reflect on research-based instructional practices.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the application of instructional practices to facilitate mastery of standards and objectives for all students.",
+            "The learner analyzes the role of formative and summative assessment in evaluating student learning and planning future instruction.",
+            "The learner applies differentiated instructional strategies to address the needs of all students.",
+            "The learner plans standards-based instruction for a diverse classroom.",
+            "The learner reflects on instructional practice."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Technology for Instruction and Online Pedagogy",
+          "description": "Instructional Technology and Online Pedagogy is an innovative course designed to equip students with the skills to effectively integrate technology in their teaching practices. The course also covers best practices for online pedagogy, assessment and feedback, collaborative learning, and the use of multimedia and interactive elements to enhance learning experiences. With a focus on practical application, students will leave the course ready to create and facilitate compelling, high-quality online learning experiences that meet the needs of today's diverse learners. This course also provides a foundation for supporting digital literacy in K–12 education. In addition, this course prepares students to use technology to improve professional productivity and effectiveness in areas like data analysis and data representations.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner adapts instruction to meet student needs in a blended environment.",
+            "The learner applies instructional technologies to facilitate mastery of standards and objectives for all learners.",
+            "The learner applies online pedagogy to facilitate student learning experiences.",
+            "The learner implements technology solutions to support teacher productivity.",
+            "The learner plans instruction focused on building students' digital literacy skills."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Monitoring Student Learning Through Assessment",
+          "description": "Monitoring Student Learning Through Assessment enhances students’ skills in evaluating learner progress and educational outcomes. This course provides an in-depth exploration of various assessment techniques, including formative and summative assessments, standardized tests, benchmark assessments, progress monitoring, and alternative assessment strategies. This course teaches students to design effective assessment tools, interpret data to inform instruction, and provide meaningful feedback to learners. This course also provides a foundation of data analysis that supports educators’ need to understand data and present data to stakeholders. It also explores online and digital assessment tools. This course requires students to design an assessment based on evidence-based practices.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner aligns standards, objectives, and assessments within their instructional practices.",
+            "The learner analyzes assessment results to determine student learning and inform instructional decisions for a classroom.",
+            "The learner applies various assessment types to monitor progress and actively engage students in their own learning.",
+            "The learner designs an assessment based on desired learning outcomes and activities.",
+            "The learner provides appropriate feedback to increase student learning."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "General Education",
+      "courses": [
+        {
+          "title": "Technology and Ethics: A Look at Emerging Trends and Society",
+          "description": "D842 Technology and Ethics: A Look at Emerging Trends and Society explores the intersection of ethical thinking and technological innovations. A foundational introduction to ethical frameworks is applied to emerging trends in technology including artificial intelligence, social media, and other forms of digital media. This course examines the impact of technology on our understanding of self as well as the individual’s role in interacting with others in a globalized society. Through careful analysis and application, students gain the ability to recognize ethical actions within the context of current and newly evolving technological landscapes. Through the application of ethical frameworks, students gain the ability to evaluate actions taken within the context of current and newly evolving technological landscapes. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes privacy ethics and identity as related to emerging technologies.",
+            "The learner applies ethical concepts to emerging technology as it relates to society.",
+            "The learner describes ethical decision-making frameworks as applied to technology.",
+            "The learner evaluates a contemporary technological case study using multiple ethical theories and frameworks to provide an ethical analysis."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Special Education",
+      "courses": [
+        {
+          "title": "Behavioral Intervention Strategies and Applied Behavior Analysis",
+          "description": "Behavioral Intervention Strategies and Applied Behavior Analysis prepares special education teachers to work effectively with students exhibiting challenging behaviors, with a focus on students with behavioral and emotional exceptionalities. This course provides an overview of behavior disorders and their characteristics, as well as appropriate research-based intervention strategies, including positive behavior intervention and supports, multitiered systems of support (MTSS), applied behavior analysis, replacement behavior, and reinforcement strategies, culturally responsive practices, and data collection and assessment methods. After completing this course, learners emerge prepared to strategize and recommend adjustments to the learning environment that support positive behavior and student success in the classroom and beyond. This course also examines behavioral assessment and analysis, functional behavior assessment (FBA), and the creation and monitoring of behavioral improvement plans (BIP) that can be implemented in an authentic learning environment.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies a range of preventative and responsive evidence-based practices in an ongoing collaboration to support the social, emotional, and educational well-being of students with emotional and behavioral exceptionalities.",
+            "The learner interprets data from a Functional Behavior Assessment (FBA) that assists in the development of a Behavior Improvement Plan (BIP) for the behavioral support of students with various cultural and linguistic backgrounds.",
+            "The learner proposes a curation of preventative approaches and reinforcement techniques to promote desired behaviors."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Special Education Law, Policies and Procedures",
+          "description": "Special Education Law, Policies, and Procedures prepares special education teachers to practice within legal and ethical guidelines as they navigate the Special Education processes, stakeholder interactions, and other complex situations. This course provides an overview of the professional ethics and professional practice standards of the Council for Exceptional Children (CEC), which guides candidates to act in a professionally conscientious manner. Candidates will explore special education legal foundations and case laws to apply legal foundations and ethical practices in special education process compliance.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes opportunities for the application of law and policies in an educational setting.",
+            "The learner applies ethical principles and professional practice standards to manage legal responsibilities when working with individuals with exceptionalities.",
+            "The learner applies laws, key special education cases, and policies to comply with federal level Free and Appropriate Public Education (FAPE) and Least Restrictive Environment (LRE) for individuals with exceptionalities."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": [
+            "aws to"
+          ]
+        },
+        {
+          "title": "Assessment for Special Education",
+          "description": "Assessment for Special Education prepares special education teachers to use multiple methods of assessment and data sources in making educational decisions concerning the student and their learning environment. This course is designed to help provide an understanding of how assessment data is used during screening in multitiered systems of support (MTSS), the eligibility process, the evaluation process, progress monitoring, and data-based instructional decision making.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together",
+            "The learner analyzes a variety of data sources to inform the selection and development of formal, informal, and standardized measures that assess and monitor individuals with possible exceptionalities.",
+            "The learner communicates the results of the student evaluation process related to measurable outcomes.",
+            "The learner designs an implementation plan for an individual with mild to moderate exceptionalities based on assessment data.",
+            "The learner interprets assessment results to inform educational decisions for individuals with exceptionalities."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Individualized Education Plan (IEP) Collaboration and Communication with Parents and School Staff",
+          "description": "Course Description: Individualized Education Plan (IEP) Collaboration and Communication with Parents and School Staff prepares special education teachers to collaborate effectively with parents, school staff, and other professionals to plan programs and access services for students with exceptionalities. This includes applying culturally responsive communication strategies within school, educational settings, and the community. The course introduces ways to enhance parental involvement and family engagement while teaching families and students advocacy throughout the Individualized Education Plan (IEP) and transition planning processes. The learner will create an IEP and then engage in a simulated IEP annual review where they will practice effective communication and collaboration skills key to the program's development and implementation. Candidates will engage in three hours of preclinical experiences that includes a simulated collaborative experience in which skills learned can be applied.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes opportunities for collaboration in an educational setting and the ethical responsibilities involved.",
+            "The learner collaborates with other staff, communities, and parents to create an individualized education Plan (IEP), including the Individual Transition Plan (ITP), for students with exceptionalities.",
+            "The learner communicates with stakeholders in a school setting to build consensus, meet goals, and promote culturally responsive communication.",
+            "The learner coordinates with other professionals and families of students with exceptionalities to foster advocacy, facilitate connection with available resources, and promote culturally responsive communication."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Special Education Curriculum",
+          "description": "Special Education Curriculum is designed for candidates who plan to teach in a special education program at any grade level from kindergarten through grade 12. This course reviews the basic principles of special education and their application in realistic situations. Its focus is on five major content areas: Development and Characteristics of Learners, Planning and the Learning Environment, Instruction, Assessment, and Foundations and Professional Responsibilities which align to CEC Standards",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together",
+            "The learner analyzes and interprets curriculum-based assessments and results to communicate learner needs and how to address technology, support of transition goals, and intervention strategies for at-risk learners. those needs using individualized instructional strategies and techniques to further student success, including assistive",
+            "The learner analyzes characteristics of learners and the factors that impact student development to promote better instruction and success through effective lesson plans, behavior management strategies, and a safe classroom environment.",
+            "The learner applies federal regulations in special education, including referral processes, rights safeguards, and legislation regulating Least Restrictive Environment (LRE), Multi-tiered System of Support (MTSS), and the Individualized Education Plan (IEP).",
+            "The learner identifies the academic and behavioral challenges of a student and designs an intervention plan to address the student’s needs using research-based strategies, including monitoring student progress."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Considerations for Instructional Planning for Learners",
+          "description": "Considerations for Instructional Planning for Learners is designed to introduce special education teachers to a repertoire of evidence-based instructional strategies to advance the learning of students with exceptionalities. The course focuses specifically on strategies for intensifying and individualizing instructional interventions; making instructional decisions based on progress-monitoring data; collaborating with general education teachers and paraprofessionals; teaching to mastery; promoting generalization of learning; and teaching students with exceptionalities how to use self-assessment, problem solving, and other cognitive strategies to organize critical content and meet their needs.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together",
+            "The learner analyzes how data is used in the special education classroom to intensify instructional strategies and interventions for students with mild to moderate exceptionalities.",
+            "The learner applies cognitive strategies that support memory, attention, self-regulation, self-determination, and independence.",
+            "The learner uses research to explain how components of systematic instruction and cognitive strategies apply to the special education classroom.",
+            "The learner uses systematic instruction to apply evidence-based instructional strategies and prompting procedures that enhance instruction and maximize the academic gains of students with exceptionalities."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Elementary Literacy and Mathematics Strategies and Assistive Technologies",
+          "description": "Elementary Literacy and Mathematics Strategies and Assistive Technologies prepares special education teachers to use progress monitoring and evidence-based instructional practices appropriate for elementary students with exceptionalities. The course includes cognitive and metacognitive strategies that elementary students can use to acquire new content knowledge and generalize skills across learning environments. It also provides opportunities for learners to incorporate intensive instructional strategies and practice making accommodations that include assistive technologies to elementary math and English language arts lesson plans based on learner characteristics, performance data, and individualized education program (IEP) goals.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements mathematics strategies and interventions for elementary students with mild to moderate exceptionalities to measure progress toward individualized education plan (IEP) goals and adjust instruction as needed.",
+            "The learner implements reading and writing strategies and interventions for elementary students with mild to moderate exceptionalities to measure progress toward individualized education plan (IEP) goals and adjust instruction as needed.",
+            "The learner integrates assistive technologies for student needs in an elementary setting by researching and selecting a technology, demonstrating how the technology is used, and teaching students how to use the technology.",
+            "The learner uses research to explain how components of systematic instruction and cognitive strategies apply to the special education classroom."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Secondary Literacy and Mathematics Strategies and Assistive Technologies",
+          "description": "Secondary Literacy and Mathematics Strategies and Assistive Technologies prepares special education teachers to use progress monitoring and evidence-based instructional practices appropriate for use with secondary students with exceptionalities. This course focuses on intensive instruction and accommodation that includes assistive technology to secondary lesson plans. Learners will apply strategies to develop student critical thinking and problem-solving skills. Learners will assess and measure student progress towards the Individualized Education Program (IEP) and transition goals for post-secondary and career preparation.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements a new assistive technology approach by analyzing the use of a current assistive technology in a secondary classroom setting.",
+            "The learner implements math strategies and interventions for secondary students with mild to moderate exceptionalities to address targeted deficits and regularly assesses those learned skills to measure progress toward individualized education instruction as needed. plan (IEP) goals, including the individual transition plan (ITP) for moving to post-secondary education, and adjust",
+            "The learner implements reading and writing strategies and interventions for secondary students with mild to moderate education, and adjust instruction as needed. exceptionalities to address targeted deficits and regularly assesses those learned skills to measure progress toward individualized education plan (IEP) goals, including the individual transition plan (ITP) for moving to post-secondary",
+            "The learner integrates assistive technologies for student needs in a secondary setting by researching and selecting a technology, demonstrating how the technology is used, and teaching students how to use the technology."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Student Teaching I in Special Education",
+          "description": "Student Teaching I is the first part of a two-part series and is a mandatory course for all candidates seeking initial licensure. This course provides a supervised classroom experience in a real-world setting, allowing candidates to demonstrate and reflect upon professional ethics and dispositions, collaborate with experienced teachers, and implement instructional strategies rooted in students' learning and developmental patterns. Building on the responsibilities and skills developed in Advanced Clinical, candidates will receive ongoing feedback through observations and evaluations. Feedback will encourage candidates to reflect on their commitment to professional practices as educators, analyze and adjust teaching methods, and explore new teaching materials and methods that are culturally relevant. Additionally, the course features synchronous learning sessions that delve into communication and collaboration, accepting feedback, creating positive learning environments, and technology and online learning. Candidates must attend the required synchronous learning sessions in addition to their classroom placement.",
+          "competency_bullets": [
+            "The learner demonstrates effective instructional strategies and assessments that draw upon knowledge of content and pedagogy.",
+            "The learner demonstrates effective practices that support professional and instructional improvement through reflection and collaboration.",
+            "The learner demonstrates knowledge of their students' learning and developmental patterns in their instructional practices.",
+            "The learner demonstrates professional dispositions and ethics.",
+            "The learner reflects on their instructional practice."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Pedagogy and Teaching Methods",
+      "courses": [
+        {
+          "title": "Secondary Literacy Methods and Interventions",
+          "description": "Secondary Literacy Methods & Interventions utilizes MTSS to equip educators with evidence-based strategies to address adolescents' reading challenges through the Multi-Tiered System of Supports Model. Candidates learn to identify, monitor, and provide differentiated instruction, integrating screening tools and progress monitoring to enhance comprehension. The course emphasizes the development of personalized intervention plans while utilizing reading assessments for informed instructional decisions. By completion, candidates compile intervention strategies supporting learners across MTSS tiers, fostering inclusive environments for academic success.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies science of reading research methods to literacy instruction to further academic success.",
+            "The learner develops a collection of intervention strategies that support secondary learners at all tiers of the MTSS process.",
+            "The learner integrates effective, evidence-based screening tools, intervention strategies, and progress monitoring tools to help students improve academic progress and acquisition of literacy skills."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Clinical Experiences",
+      "courses": [
+        {
+          "title": "Early Clinical in Special Education",
+          "description": "Early Clinical Experiences is a pivotal course designed to bridge the gap between theoretical knowledge and practical teaching skills. This course offers aspiring educators an immersive experience in real classroom settings under the mentorship of experienced teachers. Candidates engage in a range of activities, including observation, to develop a deeper understanding of classroom dynamics, student engagement, and effective instructional strategies. Emphasizing reflective practice, the course encourages participants to analyze their experiences, integrate feedback, and adapt their teaching methods accordingly. This experiential learning approach equips future teachers with the confidence and competence necessary to foster a positive and impactful learning environment for their students.",
+          "competency_bullets": [
+            "The learner applies instructional strategies that draw upon knowledge of content and pedagogy.",
+            "The learner reflects on professional dispositions and ethics in their chosen education profession.",
+            "The learner reflects on the Early Clinical teaching experience."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Advanced Clinical in Special Education",
+          "description": "Advanced Clinical provides aspiring educators with real-world classroom experience. This course emphasizes the importance of hands-on learning, offering candidates the unique opportunity to observe and participate in classroom environments under the guidance of experienced mentors. The curriculum includes demonstrating reflective practice, classroom engagement techniques, instructional strategies, and effective communication skills with students and colleagues through a pedagogical performance assessment. Through this immersive experience, candidates not only observe the daily responsibilities of a teacher, but also start to develop their own teaching style and philosophy, laying a solid foundation for their future careers in education. This course is taken immediately prior to Student Teaching I as part of an engaging and intensive clinical experience.",
+          "competency_bullets": [
+            "The learner applies knowledge of their students' learning and developmental patterns in their instructional practices.",
+            "The learner demonstrates application of content in the planning, learning, and assessment cycle in a pedagogical performance assessment.",
+            "The learner reflects on growth in professional dispositions and ethics in their chosen education profession.",
+            "The learner reflects on the Advanced Clinical teaching experience."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Education Portfolio",
+          "description": "Education Portfolio is an innovative course designed to guide candidates in the creation and development of a comprehensive professional portfolio, specifically tailored for educators. This course emphasizes the importance of documenting and reflecting upon one's educational philosophy, teaching experiences, and professional achievements. Candidates learn how to effectively showcase their skills in curriculum design, classroom management, student assessment, and educational technology. The course also covers strategies for integrating evidence of student learning and feedback into the portfolio. Candidates create a polished and dynamic portfolio that not only highlights their unique educational journey, but also serves as a powerful tool for career advancement and lifelong learning in the field of education.",
+          "competency_bullets": [
+            "The learner justifies how their graduate portfolio aligns to education theory and research."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Elementary Education",
+      "courses": [
+        {
+          "title": "Elementary Literacy Curriculum",
+          "description": "Elementary Literacy Curriculum is a comprehensive course that deepens an educator's knowledge of language acquisition and progressively complex concepts and skills surrounding literacy. This course explores critical elements of the science of reading and writing, including applying key theories and research used to support the development of literacy, evaluating diverse resources, and utilizing purposeful oral, written, and digital communication in elementary curriculum. Candidates delve into the foundational aspects of literacy, including phonological awareness, phonics, word analysis, fluency, and comprehension, while also gaining insights into how these elements shape and influence literacy development. This dynamic course empowers educators to create a solid foundation for students' literacy skills and a lifelong love of reading and writing within diverse learning environments.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes elementary content standards and resources in literacy.",
+            "The learner analyzes elements of literacy critical for communication.",
+            "The learner analyzes the central concepts and structures in writing and the development of effective writing skills.",
+            "The learner analyzes the role of phonological awareness, phonics, word analysis, fluency, and comprehension in literacy development.",
+            "The learner describes key features of texts across genres.",
+            "The learner evaluates literacy resources for alignment to standards and individual student needs."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Early Literacy Methods",
+          "description": "Early Literacy Methods is a specialized course designed for educators and professionals passionate about nurturing literacy skills in young children. This course offers an in-depth exploration of the foundational concepts and practices essential for promoting literacy development in early childhood through the science of reading. Emphasizing the critical development in grades PK to third grade, the curriculum covers topics such as phonemic awareness, language acquisition, and emergent reading and writing skills. Candidates learn how to create stimulating and inclusive literacy environments, use developmentally appropriate materials, and engage with a variety of high-quality core instruction as part of Tier 1 multi-tiered systems of support and assessment (MTSS) suited to the various needs of young learners, including learners with dyslexia. Additionally, the course incorporates the latest research in early childhood literacy focusing on the science of reading and best practices for how children learn to read and write. Through a blend of theoretical knowledge and practical application, this course aims to prepare candidates with the tools to effectively guide and inspire early literacy development in their classrooms.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes components of literacy acquisition and the development progression of those components for grades PK-3.",
+            "The learner analyzes literacy instructional practices at the PK-3 level by designing experiences to meet rigorous learning goals for all learners.",
+            "The learner applies elements of foundational reading techniques for purposeful oral and written literacy instruction.",
+            "The learner applies theories and research related to the science of reading to instructional decisions."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Elementary Literacy Methods",
+          "description": "Elementary Literacy Methods is an engaging and comprehensive course designed for aspiring educators, focusing on the development of effective literacy teaching strategies for elementary-level students. This course reviews the fundamental principles of literacy education through science of reading, but takes a more specialized focus on vocabulary development, reading comprehension, and the deeply complex literacy skills developed in grades 4 to 6. Candidates explore a variety of instructional approaches and materials tailored to support all learners in the elementary classroom, including learners with dyslexia. This exposure will assist candidates in using Tier 1 multi-tiered systems of support and assessment (MTSS) for planning and implementing literacy lessons, selecting appropriate resources, and assessing student progress.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes components of reading acquisition and writing acquisition and the development progression of those components for elementary grades.",
+            "The learner designs strategies for literacy implementation in a K–6 setting.",
+            "The learner plans literacy instruction and assessment at the 4-6 level by designing experiences to meet rigorous learning goals for all individuals."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Foundations of Literacy Through Literature",
+          "description": "Foundations of Literacy through Literature is an enriching course designed for educators and literacy enthusiasts, focusing on the exploration and utilization of literature to foster growth in the skills and concepts necessary for reading. This course delves into the role of varied and age-appropriate literary works in the science of reading to develop reading, writing, speaking, and listening abilities in learners. Students examine a broad range of genres to understand how different texts can be used to enhance vocabulary, comprehension, and critical thinking. This analysis allows the candidate to not only successfully integrate literature into meaningful instruction, but it is designed to cultivate a deep appreciation for reading itself. The curriculum emphasizes interactive and creative teaching strategies to engage learners effectively and integrate culture into their literacy instruction. The candidate is given real-world examples for how to create an inclusive environment that respects and celebrates different perspectives through quality text. By the end of the course, students are prepared with the knowledge and practical skills to use literature as a powerful tool in the development of comprehensive literacy skills.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes key features of varied texts to evaluate text selection.",
+            "The learner demonstrates strategies based on the science of reading to deepen student understanding of varied texts.",
+            "The learner develops learning experiences that integrate children’s literature with various representations.",
+            "The learner uses digital tools to promote literacy."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Literacy Assessment and Interventions",
+          "description": "Literacy Assessment and Interventions is an essential course for candidates to enhance their skills in identifying and addressing literacy challenges in all student populations, including students with dyslexia, through Tier1, Tier 2, and Tier 3 multi-tiered systems of support and assessment (MTSS). This course reviews the science of reading associated with a wide range of assessments and techniques used to evaluate reading, writing, speaking, and listening skills. Students learn to administer and interpret assessments, using the data to identify specific literacy needs and learning gaps. A significant focus of the course is on designing and implementing targeted intervention strategies to support student learning in areas, such as phonemic awareness, phonics, fluency, comprehension, and vocabulary development. By exploring and implementing actionable steps to monitor student progress, candidates gain expertise in improving literacy outcomes for all learners.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner assesses literacy skills through various diagnostic tools.",
+            "The learner interprets assessment results to plan interventions for student success in literacy.",
+            "The learner provides feedback and communication on student progress in literacy development.",
+            "The learner reflects on the role of the teacher in supporting the development of literacy skills for all students."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Elementary Mathematics Curriculum",
+          "description": "Elementary Mathematics Curriculum is a detailed and practical course designed for educators who seek to expand their knowledge of the mathematics curriculum in elementary classrooms. This course provides the essential mathematical concepts suitable for young learners, including numbers, operations, and algebraic thinking, spanning through the domains of geometry, measurement, data, statistics, and probability. Emphasis is placed on engaging with a curriculum that not only aligns with educational standards but also nurtures a love for mathematics. By the end of this course, candidates are provided with the tools and confidence to foster a strong mathematical foundation in their elementary students.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes elementary content standards and resources in mathematics.",
+            "The learner evaluates mathematics resources for alignment to standards and individual student needs.",
+            "The learner explains major concepts in data, statistics, and probability.",
+            "The learner explains major concepts in geometry and measurement.",
+            "The learner explains major concepts in numbers, operations, and algebraic thinking."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Early Mathematics Methods and Interventions",
+          "description": "Early Mathematics Methods and Interventions is a comprehensive course designed for educators focused on advancing mathematics education in the early elementary grades. This course emphasizes innovative and research-based teaching methods for developing mathematical understanding in young children, particularly in the crucial developmental stages in PK through the early elementary grades Participants will explore a variety of instructional strategies to support conceptual understanding and procedural fluency in areas such as number sense, basic operations, and early problem-solving skills. A significant aspect of the course involves identifying and addressing learning needs through targeted interventions, personalized instruction, and the use of manipulatives and digital tools. The curriculum also highlights the importance of creating an engaging and inclusive learning environment that encourages exploration and curiosity in mathematics. By integrating assessment techniques and thoughtful learning experiences, this course aims to provide educators with the skills to effectively nurture early mathematical abilities and lay a strong foundation for future academic success in mathematics.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes interventions and differentiation methods to support learning in mathematics.",
+            "The learner applies the science of math for developing mathematical understanding in students grades PK–3.",
+            "The learner develops learning activities to engage students in mathematical thinking.",
+            "The learner intentionally integrates digital and nondigital resources and manipulatives for enhancing mathematics instruction.",
+            "The learner reflects on the role of the mindset in learning mathematics."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Elementary Mathematics Methods and Interventions",
+          "description": "Elementary Mathematics Methods and Interventions is an engaging course crafted for educators who are dedicated to strengthening and enriching the mathematics education of elementary students. This course focuses on practical, research-supported strategies for teaching essential mathematical concepts, including number operations, geometry, measurement, and data analysis. This course includes resources for all elementary grade levels with a significant focus on grades 3 to 6. Participants learn to identify and assess students' mathematical understanding, create differentiated learning experiences, and implement effective interventions for diverse learner needs. Emphasis is placed on constructing a classroom environment that promotes mathematical curiosity, problem-solving, meaningful discourse, and a growth mindset. Students acquire the skills to build authentic mathematics experiences that caters to the varied needs of all students, setting a firm foundation for their future academic success in mathematics.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes math progress for providing feedback and differentiating learning.",
+            "The learner applies the science of math for developing mathematical understanding in grades K–6.",
+            "The learner designs routines for mathematical instruction implementation in a K-6 setting.",
+            "The learner implements learning activities to engage students in mathematical thinking."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Student Teaching",
+      "courses": [
+        {
+          "title": "Student Teaching II in Special Education",
+          "description": "Student Teaching II is the final part of a two-part series and is a mandatory course for all candidates seeking initial licensure. The course offers a supervised classroom experience in a real-world setting, allowing candidates to demonstrate professional ethics and dispositions, collaborate with experienced teachers, and implement instructional strategies. Building on the responsibilities and skills developed in Student Teaching I, candidates receive ongoing feedback through observations and a final evaluation. This evaluation assesses activities' relevance and cultural engagement, the effectiveness of teaching each student, the ability to analyze and adjust teaching methods, and the willingness to explore new materials and methods. Successful completion of Student Teaching II is a crucial step in the licensure process, as it determines eligibility for licensure as a professional educator. Additionally, the course features synchronous learning sessions that delve into professional development topics such as professional growth opportunities, ethical decision making, and self-care. Candidates must attend the required synchronous learning sessions in addition to their classroom placement.",
+          "competency_bullets": [
+            "The learner demonstrates an ongoing commitment effective practices that support professional and instructional improvement through reflection and collaboration.",
+            "The learner implements effective instructional strategies and assessments that draw upon knowledge of content and pedagogy.",
+            "The learner implements knowledge of their students' learning and developmental patterns in their instructional practices.",
+            "The learner implements professional dispositions.",
+            "The learner reflects on their practice to create a professional development plan."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": [
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 2,
+      "term": 1
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 2,
+      "term": 2
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 2,
+      "term": 2
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 2,
+      "term": 2
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 2,
+      "term": 3
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 2,
+      "term": 3
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 2,
+      "term": 3
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 2,
+      "term": 3
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 2,
+      "term": 4
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 2,
+      "term": 5
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 2,
+      "term": 5
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 2,
+      "term": 5
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 2,
+      "term": 6
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 2,
+      "term": 6
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 2,
+      "term": 6
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 2,
+      "term": 6
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 2,
+      "term": 7
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 2,
+      "term": 7
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 2,
+      "term": 7
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "",
+      "cus": 4,
+      "term": 8
+    }
+  ]
+}

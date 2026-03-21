@@ -1,0 +1,70 @@
+{
+  "source_pdf_filename": "MATSPED.pdf",
+  "source_text_filename": "MATSPED.txt",
+  "inferred_program_code": "MATSPED",
+  "page_count": 0,
+  "version_strings": [
+    "202412"
+  ],
+  "publication_dates": [
+    "10/23/2024"
+  ],
+  "has_standard_path": true,
+  "has_areas_of_study": true,
+  "has_capstone_section": false,
+  "has_course_descriptions": true,
+  "has_competency_bullets": true,
+  "has_term_structure": true,
+  "has_cu_values": true,
+  "has_cert_prep_mentions": true,
+  "has_prereq_mentions": false,
+  "standard_path_row_count": 9,
+  "competency_trigger_count": 30,
+  "competency_bullet_count": 146,
+  "cert_prep_mention_count": 1,
+  "prereq_mention_count": 0,
+  "detected_section_headings": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "inferred_course_groups": [
+    "Professional Core",
+    "General Education",
+    "Special Education",
+    "Pedagogy and Teaching Methods",
+    "Clinical Experiences",
+    "Elementary Education",
+    "Student Teaching"
+  ],
+  "likely_guide_family": "teaching_mat",
+  "template_type": "partial",
+  "parseability_confidence": "low",
+  "warnings": [
+    "1 SP titles not found in AoS: ['Establishing Positive and Engaging Learning Environments Technology and Ethics: A Look at Emerging Trends and Society Behavioral Intervention Strategies and Applied Behavior Analysis Special Education Law, Policies and Procedures Curriculum and Instructional Strategies for Meaningful Learning Technology for Instruction and Online Pedagogy Monitoring Student Learning Through Assessment Assessment for Special Education Individualized Education Plan (IEP) Collaboration and Communication with Parents and School Staff Secondary Literacy Methods and Interventions Foundations of Literacy Through Literature Literacy Assessment and Interventions Elementary Mathematics Curriculum Early Mathematics Methods and Interventions Elementary Mathematics Methods and Interventions Special Education Curriculum Considerations for Instructional Planning for Learners Elementary Literacy and Mathematics Strategies and Assistive Technologies Secondary Literacy and Mathematics Strategies and Assistive Technologies Advanced Clinical in Special Education Student Teaching I in Special Education Student Teaching II in Special Education']",
+    "22 AoS titles not in SP: ['Advanced Clinical in Special Education', 'Assessment for Special Education', 'Behavioral Intervention Strategies and Applied Behavior Analysis', 'Considerations for Instructional Planning for Learners', 'Curriculum and Instructional Strategies for Meaningful Learning']"
+  ],
+  "irregularities": [
+    "sp_row_invalid",
+    "sp_row_invalid",
+    "sp_row_invalid",
+    "sp_row_invalid",
+    "sp_row_invalid",
+    "sp_row_invalid",
+    "sp_row_invalid",
+    "sp_row_invalid",
+    "sp_row_invalid",
+    "sp_row_invalid",
+    "sp_row_invalid",
+    "sp_row_invalid",
+    "sp_row_invalid",
+    "sp_row_invalid",
+    "sp_row_invalid",
+    "sp_row_invalid",
+    "sp_row_invalid",
+    "sp_row_invalid",
+    "sp_row_invalid",
+    "sp_row_invalid",
+    "sp_row_invalid"
+  ]
+}

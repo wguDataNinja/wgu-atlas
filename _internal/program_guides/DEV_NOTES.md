@@ -45,6 +45,71 @@ Full audit produced in `data/program_guides/audit/`:
 
 ---
 
+## Session 17 — teaching_mat Full Rollout + education_bs Full Rollout (2026-03-21)
+
+### education_bs full rollout
+
+4/4 guides parsed. **4 HIGH / 0 MEDIUM / 0 LOW.** No parser changes.
+
+| Code | Degree | Confidence | SP Rows | AoS Groups | AoS Courses |
+|------|--------|------------|---------|------------|-------------|
+| BSSESB | B.S., Science Education (Secondary Biological Science) | HIGH | 41 | 11 | 41 |
+| BSSESC | B.S., Science Education (Secondary Chemistry) | HIGH | 40 | 10 | 40 |
+| BSSESE | B.S., Science Education (Secondary Earth Science) | HIGH | 41 | 11 | 41 |
+| BSSESP | B.S., Science Education (Secondary Physics) | HIGH | 40 | 10 | 40 |
+
+0 empty descriptions, 0 empty competency lists. All 4 guides: perfect reconciliation.
+
+All 4 use 2-col SP (no Term) and header-line metadata. All share: Professional Core (7), General Science Content (8), Clinical Experiences (2), Student Teaching (2). Subject-specific content group name varies (Biology Content, Chemistry Content, etc.) — handled without branching. All version 202603; family was published as a cohort December 2025.
+
+### teaching_mat full rollout
+
+9/9 guides parsed. **7 HIGH / 0 MEDIUM / 1 LOW.** No parser changes.
+
+| Code | Degree | Confidence | SP Format | SP Rows | AoS Courses |
+|------|--------|------------|-----------|---------|-------------|
+| MATELED | M.A.T., Elementary Education | HIGH | 3-col (with Term) | 28 | 28 |
+| MATEES | M.A.T., English Education (Secondary) | HIGH | 2-col (no Term) | 20 | 20 |
+| MATMES | M.A.T., Mathematics Education (Secondary) | HIGH | 2-col (no Term) | 21 | 21 |
+| MATSESB | M.A.T., Science Education (Secondary Biology) | HIGH | 2-col (no Term) | 20 | 20 |
+| MATSESC | M.A.T., Science Education (Secondary Chemistry) | HIGH | 2-col (no Term) | 20 | 20 |
+| MATSESE | M.A.T., Science Education (Secondary Earth Science) | HIGH | 2-col (no Term) | 20 | 20 |
+| MATSESP | M.A.T., Science Education (Secondary Physics) | HIGH | 2-col (no Term) | 20 | 20 |
+| MATSPED | M.A.T., Special Education | **LOW** | 3-col (extraction failure) | 9/30 | 30 |
+| MATSSES | M.A.T., Social Studies Education (Secondary) | HIGH | 2-col (no Term) | 19 | 19 |
+
+0 empty descriptions, 0 empty competency lists across all 9.
+
+**SP format split:** MATELED and MATSPED use 3-col (with Term); all 7 secondary guides use 2-col (no Term). Both formats pre-validated; no branching needed. The gate guide (MATELED) happens to be the only 3-col guide among the 8 parseable guides in the family.
+
+### LOW case — MATSPED (PDF column extraction failure)
+
+Same failure class as BSITM. `pdftotext` extracted course titles and CU/Term values in column order rather than row order. First 3 titles appear in correct interleaved positions; remaining 27 appear in a contiguous block at end of SP section, separated from CU/Term values. Parser recovered 9/30 SP rows.
+
+**Impact:** MATSPED SP data unusable (21 anomalies). AoS (30 courses, all descriptions, all competencies) fully intact.
+
+**Parser change:** None. Source-PDF artifact. Fixing requires PDF re-extraction or post-hoc batch-title matcher — both deferred. Same disposition as BSITM.
+
+### Corpus status after education_bs + teaching_mat
+
+63 / 115 guides parsed (54.8%). 8 families complete: standard_bs(19), cs_ug(8), education_ba(11), graduate_standard(9), mba(3), healthcare_grad(2), education_bs(4), teaching_mat(9).
+
+Phase D threshold (≥70%) requires 81 guides — **18 guides short**.
+
+### Parser changes this session
+
+**None** (gate-test © line fix was committed separately in prior step).
+
+### Artifacts produced
+
+- `data/program_guides/parsed/{BSSESC,BSSESE,BSSESP,MATEES,MATMES,MATSESB,MATSESC,MATSESE,MATSESP,MATSPED,MATSSES}_parsed.json`
+- `data/program_guides/validation/{same}_validation.json`
+- `data/program_guides/manifest_rows/{same}_manifest_row.json`
+- `data/program_guides/family_validation/education_bs_rollout_summary.{json,md}`
+- `data/program_guides/family_validation/teaching_mat_rollout_summary.{json,md}`
+
+---
+
 ## Session 17 — teaching_mat Gate Test (MATELED) + education_bs Gate Test (BSSESB) (2026-03-21)
 
 ### Gate results

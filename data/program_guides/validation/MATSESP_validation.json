@@ -1,0 +1,32 @@
+{
+  "program_code": "MATSESP",
+  "degree_title": "Master of Arts in Teaching, Science Education (Secondary Physics)",
+  "version": "202504",
+  "pub_date": "1/23/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 194,
+    "Areas of Study": 304,
+    "Accessibility": 658
+  },
+  "standard_path_row_count": 20,
+  "aos_group_count": 9,
+  "aos_course_count": 20,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 20,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

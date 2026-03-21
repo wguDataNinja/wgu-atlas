@@ -1,0 +1,32 @@
+{
+  "program_code": "MATSSES",
+  "degree_title": "Master of Arts in Teaching, Social Studies Education (Secondary)",
+  "version": "202504",
+  "pub_date": "1/23/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 194,
+    "Areas of Study": 300,
+    "Accessibility": 650
+  },
+  "standard_path_row_count": 19,
+  "aos_group_count": 7,
+  "aos_course_count": 19,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 19,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

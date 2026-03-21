@@ -1,0 +1,132 @@
+{
+  "report_type": "family_full_rollout",
+  "family": "education_bs",
+  "date": "2026-03-21",
+  "gate_guide": "BSSESB",
+  "gate_result": "HIGH confidence, 0 anomalies, 0 warnings",
+  "parser_changes": [],
+
+  "totals": {
+    "guides_in_family": 4,
+    "parsed_successfully": 4,
+    "failed": 0,
+    "high_confidence": 4,
+    "medium_confidence": 0,
+    "low_confidence": 0
+  },
+
+  "guides": [
+    {
+      "code": "BSSESB",
+      "degree_title": "Bachelor of Science, Science Education (Secondary Biological Science)",
+      "confidence": "high",
+      "version": "202603",
+      "pub_date": "12/12/2025",
+      "page_count": 0,
+      "metadata_format": "header-line",
+      "sp_rows": 41,
+      "sp_format": "2-column multiline (no Term)",
+      "aos_groups": 11,
+      "aos_courses": 41,
+      "capstone_present": false,
+      "reconciliation": "41/41 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0,
+      "subject_content_group": "Biology Content"
+    },
+    {
+      "code": "BSSESC",
+      "degree_title": "Bachelor of Science, Science Education (Secondary Chemistry)",
+      "confidence": "high",
+      "version": "202603",
+      "pub_date": "12/11/2025",
+      "page_count": 0,
+      "metadata_format": "header-line",
+      "sp_rows": 40,
+      "sp_format": "2-column multiline (no Term)",
+      "aos_groups": 10,
+      "aos_courses": 40,
+      "capstone_present": false,
+      "reconciliation": "40/40 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0,
+      "subject_content_group": "Chemistry Content"
+    },
+    {
+      "code": "BSSESE",
+      "degree_title": "Bachelor of Science, Science Education (Secondary Earth Science)",
+      "confidence": "high",
+      "version": "202603",
+      "pub_date": "12/11/2025",
+      "page_count": 0,
+      "metadata_format": "header-line",
+      "sp_rows": 41,
+      "sp_format": "2-column multiline (no Term)",
+      "aos_groups": 11,
+      "aos_courses": 41,
+      "capstone_present": false,
+      "reconciliation": "41/41 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0,
+      "subject_content_group": "varies (Biology Content, Science Education)"
+    },
+    {
+      "code": "BSSESP",
+      "degree_title": "Bachelor of Science, Science Education (Secondary Physics)",
+      "confidence": "high",
+      "version": "202603",
+      "pub_date": "12/11/2025",
+      "page_count": 0,
+      "metadata_format": "header-line",
+      "sp_rows": 40,
+      "sp_format": "2-column multiline (no Term)",
+      "aos_groups": 10,
+      "aos_courses": 40,
+      "capstone_present": false,
+      "reconciliation": "40/40 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0,
+      "subject_content_group": "Physics (via Science Education group)"
+    }
+  ],
+
+  "confidence_distribution": {
+    "high": ["BSSESB", "BSSESC", "BSSESE", "BSSESP"],
+    "medium": [],
+    "low": []
+  },
+
+  "structural_notes": [
+    "All 4 guides use 2-column multiline SP format (no Term) — consistent with education_ba teacher-licensure guides and undergraduate education programs throughout the corpus.",
+    "All 4 guides use header-line metadata format (page_count=0 cosmetic gap — pre-existing).",
+    "All 4 have Clinical Experiences (2 courses) and Student Teaching (2 courses) as AoS group labels — exact same structural pattern as education_ba.",
+    "Professional Core (7 courses) and General Science Content (8 courses) are consistent across all 4 guides.",
+    "Subject-specific content group names vary: 'Biology Content' (BSSESB), 'Chemistry Content' (BSSESC), Earth Science courses distributed across 'Biology Content' and 'Science Education' (BSSESE), Physics courses in 'Science Education' (BSSESP). AoS state machine handles arbitrary group names without branching.",
+    "No Capstone section in any guide. All are teacher-licensure programs.",
+    "Course counts: 40-41 courses per guide. Largest undergraduate education family validated to date.",
+    "All versions 202603 (published December 2025) — family was recently updated as a cohort."
+  ],
+
+  "quality": {
+    "empty_descriptions": 0,
+    "empty_competency_lists": 0,
+    "perfect_reconciliation_guides": 4,
+    "total_sp_rows": 162,
+    "total_aos_courses": 162
+  },
+
+  "recommendation": {
+    "education_bs_complete": true,
+    "summary": "4/4 parsed, 0 failures, 4 HIGH / 0 MEDIUM / 0 LOW. No parser changes. Family is fully validated — a textbook extension of education_ba patterns.",
+    "next_family_recommendation": "teaching_mat",
+    "next_family_rationale": "teaching_mat (9 guides) was co-gate-tested with education_bs. MATELED gated at HIGH confidence. Proceed to full teaching_mat rollout."
+  }
+}

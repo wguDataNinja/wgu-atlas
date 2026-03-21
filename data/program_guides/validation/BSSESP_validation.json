@@ -1,0 +1,32 @@
+{
+  "program_code": "BSSESP",
+  "degree_title": "Bachelor of Science, Science Education (Secondary Physics)",
+  "version": "202603",
+  "pub_date": "12/11/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 200,
+    "Areas of Study": 386,
+    "Accessibility": 1041
+  },
+  "standard_path_row_count": 40,
+  "aos_group_count": 10,
+  "aos_course_count": 40,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 40,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}
