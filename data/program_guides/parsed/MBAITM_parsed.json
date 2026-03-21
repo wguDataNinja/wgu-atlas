@@ -261,7 +261,9 @@
     "competency_bullets": [
       "The graduate demonstrates the ability to participate and contribute value to the professional field through the integration of competencies from across the degree program.",
       "The graduate manages a professional identity in order to market the graduate effectively."
-    ]
+    ],
+    "prerequisite_mentions": [],
+    "certification_prep_mentions": []
   },
   "anomalies": []
 }

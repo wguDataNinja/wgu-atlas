@@ -179,7 +179,9 @@
       "The learner develops a sustainability plan to address an organizational challenge in healthcare.",
       "The learner presents a sustainability plan to address an organizational challenge in healthcare.",
       "The learner proposes a business case to address an organizational challenge in healthcare."
-    ]
+    ],
+    "prerequisite_mentions": [],
+    "certification_prep_mentions": []
   },
   "anomalies": []
 }

@@ -789,7 +789,9 @@
     "description": "This course is the culminating experience and assessment of healthcare business administration. This course requires the student to integrate and synthesize managerial skills with healthcare knowledge, resulting in a high quality final project that demonstrates professional managerial proficiency.",
     "competency_bullets": [
       "The graduate exhibits artifacts that both demonstrate the graduate's competency across all program areas as well as provide evidence of professional growth."
-    ]
+    ],
+    "prerequisite_mentions": [],
+    "certification_prep_mentions": []
   },
   "anomalies": []
 }

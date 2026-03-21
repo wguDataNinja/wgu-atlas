@@ -1,0 +1,305 @@
+{
+  "program_code": "MASESP",
+  "version": "201806",
+  "pub_date": "9/13/23",
+  "page_count": 13,
+  "degree_title": "Master of Arts Science Education (Secondary Physics)",
+  "program_description": "The Master of Arts in Science Education (Secondary Physics) is a competency-based degree program that prepares already licensed teachers for an endorsement in secondary physicsand provides the opportunity to develop skills in science curriculum development, design, and evaluation. All work in this degree program is online and includes Mathematics Content, General Science Content, Physics Content, and Science Education courses. All students complete a culminating Teacher Performance Assessment.",
+  "standard_path": [
+    {
+      "title": "Concepts in Science",
+      "cus": 1,
+      "term": 1
+    },
+    {
+      "title": "Integrated Physical Sciences",
+      "cus": 2,
+      "term": 1
+    },
+    {
+      "title": "Precalculus and Calculus",
+      "cus": 2,
+      "term": 1
+    },
+    {
+      "title": "Conceptual Physics",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Physics: Mechanics",
+      "cus": 2,
+      "term": 2
+    },
+    {
+      "title": "Chemistry with Lab",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Physics: Waves and Optics",
+      "cus": 2,
+      "term": 2
+    },
+    {
+      "title": "Physics: Electricity and Magnetism",
+      "cus": 2,
+      "term": 2
+    },
+    {
+      "title": "Science, Technology, and Society",
+      "cus": 2,
+      "term": 3
+    },
+    {
+      "title": "Space, Time and Motion",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Physics: Content Knowledge",
+      "cus": 1,
+      "term": 3
+    },
+    {
+      "title": "Science Methods—Secondary Physics",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "MA, Science Education Teacher Performance Assessment",
+      "cus": 6,
+      "term": 4
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Science",
+      "courses": [
+        {
+          "title": "Concepts in Science",
+          "description": "Concepts in Science for graduates provides already-licensed teachers seeking an additional license or endorsement in science education with an introduction to essential science themes present within and across all science disciplines, including chemistry, physics, biology, and the geosciences. These themes include comprehending the magnitude of the physical and natural world, analyzing and converting measurements, understanding the basic nature and behavior of matter and energy, examining atomic structure, identifying and naming basic types of chemical bonds, and analyzing and interpreting scientific data. Concepts in Science provides a solid foundation for future, in-depth, scientific studies and should be taken prior to any other science content course. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes a variety of measurements to solve scientific problems.",
+            "The graduate analyzes interactions between matter and energy to explain how they flow within, into, and out of systems.",
+            "The graduate analyzes the composition of atoms and compounds to explain the properties of matter.",
+            "The graduate evaluates experimental data to determine their validity."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Integrated Physical Sciences",
+          "description": "This course provides students with an overview of the basic principles and unifying ideas of the physical sciences: physics, chemistry, and Earth sciences. Course materials focus on scientific reasoning and practical and everyday applications of physical science concepts to help students integrate conceptual knowledge with practical skills.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes the nature and process of science.",
+            "The learner examines applications of physics including fundamental concepts such as forces, motion, energy, and waves.",
+            "The learner examines applications of key chemistry concepts including the structure of matter and the behavior and conservation of matter in chemical reactions.",
+            "The learner describes the underlying organization, interactions, and processes within the Earth system including the Earth's structure and atmosphere, and Earth's interactions within the solar system."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Mathematics Content",
+      "courses": [
+        {
+          "title": "Precalculus and Calculus",
+          "description": "Precalculus and Calculus provides instruction in precalculus and calculus and applies them to examples found in both mathematics and science. Topics in precalculus include principles of trigonometry, mathematical modeling, and logarithmic, exponential, polynomial, and rational functions. Topics in calculus include conceptual knowledge of limit, continuity, differentiability, and integration.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate understands and applies the principles of trigonometry; mathematical modeling; and logarithmic, exponential, polynomial, and rational functions.",
+            "The graduate has a conceptual knowledge of limit, continuity, differentiability, and integration; and applies these concepts to examples in mathematics and the sciences."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Physics Content",
+      "courses": [
+        {
+          "title": "Conceptual Physics",
+          "description": "Conceptual Physics provides a broad, conceptual overview of the main principles of physics, including mechanics, thermodynamics, wave motion, modern physics, and electricity and magnetism. Problem-solving activities and laboratory experiments provide students with opportunities to apply these main principles, creating a strong foundation for future studies in physics. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate has a broad understanding of energy, including mechanics, heat, and electricity and magnetism.",
+            "The graduate has a broad understanding of wave motion and atomic nuclear physics."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Physics: Mechanics",
+          "description": "Physics: Mechanics introduces foundational concepts of mechanics, including motion, gravitation, work and energy, momentum and collisions, rotational motion, static equilibrium, fluids, and oscillation.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies concepts of periodic motion to solve problems.",
+            "The graduate applies vector mathematics to solve motion problems.",
+            "The graduate applies Newton's laws of motion to solve problems involving force.",
+            "The graduate applies the law of gravitation and Kepler's laws to solve problems.",
+            "The graduate applies concepts of work and energy to solve problems.",
+            "The graduate applies concepts of momentum and impulse to solve problems.",
+            "The graduate applies concepts of rotational motion to solve problems involving torque.",
+            "The graduate applies concepts of static and dynamic fluids to solve problems."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Physics: Waves and Optics",
+          "description": "Physics: Waves and Optics addresses foundational topics in the physics of waves and optics. Students will study basic wave motion and then apply that knowledge to the study of sound and light with even further applications to optical instruments. This course will also cover thermodynamics and theories governing the physics of gases.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies models of wave motion to solve mechanical wave problems, including sound waves.",
+            "The graduate applies concepts of temperature and heat to analyze microscopic and macroscopic properties of matter.",
+            "The graduate applies concepts of thermodynamics to solve problems.",
+            "The graduate applies models of light to solve problems and describe the behavior of light.",
+            "The graduate applies the ray model of light to demonstrate how mirrors and lenses are used in optical instruments.",
+            "The graduate applies the wave model of light to demonstrate interference, diffraction, and applications of physical optics."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Physics: Electricity and Magnetism",
+          "description": "Physics: Electricity and Magnetism addresses principles related to the physics of electricity and magnetism. Students will study electric and magnetic forces and then apply that knowledge to the study of circuits with resistors and electromagnetic induction and waves. This course will focus on such topics as electric charge and electric field, electric currents and resistance, magnetism, electromagnetic induction and Faraday's law, and Maxwell's equation and electromagnetic waves.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies concepts of electric fields and Gauss's law to solve problems.",
+            "The graduate applies concepts of electric potential, capacitance, and electric current to solve problems and analyze electric circuits.",
+            "The graduate applies concepts of magnetism and magnetic fields to solve problems.",
+            "The graduate applies principles of electromagnetic induction to demonstrate generators and transformers.",
+            "The graduate demonstrates an understanding of electromagnetic waves and the electromagnetic spectrum."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Space, Time and Motion",
+          "description": "This course begins with a quick tour of discovery and exploration in physics, from the ancient Greek philosophers on to Galileo Galilei, Isaac Newton, and Albert Einstein. Einstein’s work then serves as the departure point for a detailed look at the properties of motion, time, space, matter, and energy. The course considers Einstein’s special theory of relativity, his photon hypothesis, wave-particle duality, his general theory of relativity and its implications for astrophysics and cosmology, as well as his three-decade quest for a unified field theory. It also looks at Einstein as a social and political figure and his contributions as a social and political force. Scientist-authored essays, online interaction, videos, and web resources enable learners to trace this historic path of discovery and explore implications of technology for society, energy production in stars, black holes, the Big Bang, and the role of the scientist in modern society.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate integrates an understanding of the mechanics of motion with how the concepts of momentum, gravity, and motion have evolved from classical mechanics to modern physics.",
+            "The graduate analyzes the concept of time and the special theory of relativity.",
+            "The graduate interprets concepts of space, space-time, and the general theory of relativity.",
+            "The graduate incorporates knowledge of quantum mechanics and wave-particle duality in problem-solving and teaching.",
+            "The graduate evaluates data, research, and theory to draw conclusions about kinetic energy, potential energy, nuclear energy, and relativity.",
+            "The graduate appraises emergent research in superstring theory, dark energy, and the grand unified theory."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Physics: Content Knowledge",
+          "description": "Physics: Content Knowledge covers the advanced content knowledge that a secondary physics teacher is expected to know and understand. Topics include nature and impact of science and engineering, principle and models of matter and energy, mechanics, electricity and magnetism, waves, and science teaching and pedagogy.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate synthesizes concepts and processes from across physics to generate a comprehensive understanding of the field.",
+            "The graduate verifies that they possess the requisite physics knowledge and skills by passing the physics content knowledge test required to become a beginning teacher of secondary school physics."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Chemistry Content",
+      "courses": [
+        {
+          "title": "Chemistry with Lab",
+          "description": "Chemistry with Lab for graduates provides already licensed teachers seeking an additional license or endorsement in middle grades science or secondary physics, biological science, or earth science with an introduction to the field of chemistry. Designed for those not majoring in chemistry education, this course highlights how the topics covered can be applied within various branches of science. This course provides students with opportunities to examine the electronic structure of atoms, study periodic trends, name chemical compounds, write chemical formulas, determine the structure of molecules, balance chemical reactions, and discover the changing states of matter. Laboratory experiences facilitate the study of matter and the application of laboratory safety and maintenance procedures. Concepts in Science for graduates is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate evaluates how chemistry is related to other sciences to understand its relevance within the physical and natural world.",
+            "The graduate conducts safe and effective investigations to test hypotheses and draw conclusions.",
+            "The graduate analyzes the electronic structure of atoms and periodic trends to distinguish properties of various substances.",
+            "The graduate explains how to use the periodic table and IUPAC rules to name chemical compounds.",
+            "The graduate explains how chemical bonds and electron orientation impact the structures and behavior of molecules to understand the composition of matter.",
+            "The graduate balances chemical equations to determine what happens during a chemical reaction.",
+            "The graduate analyzes the relationship between heat and other forms of energy to examine the behavior of heat under various circumstances.",
+            "The graduate examines the physical states of matter to explain their properties and the process by which matter changes state."
+          ],
+          "prerequisite_mentions": [
+            "Concepts in Science for graduates",
+            "for this course"
+          ],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Science Education",
+      "courses": [
+        {
+          "title": "Science, Technology, and Society",
+          "description": "Science, Technology, and Society explores the ways in which science influences and is influenced by society and technology. A humanistic and social endeavor, science serves the needs of ever-changing societies by providing methods for observing, questioning, discovering, and communicating information about the physical and natural world. This course prepares educators to explain the nature and history of science, the various applications of science, and the scientific and engineering processes used to conduct investigations, make decisions, and solve problems. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes the relationships among themes that appear across multiple scientific ideas.",
+            "The graduate analyzes the nature of science, including how science distinguishes itself from other ways of knowing.",
+            "The graduate analyzes the historical development of science, including how scientific knowledge evolves.",
+            "The graduate analyzes the various ways in which science, technology, and society are interrelated.",
+            "The graduate analyzes socially relevant scientific issues to make informed decisions based on data and context.",
+            "The graduate analyzes the principles, processes, and assumptions of investigations in science to engage students in the nature of inquiry.",
+            "The graduate uses technology tools and mathematics to improve investigations and the communication of results.",
+            "The graduate formulates testable hypotheses for scientific investigations.",
+            "The graduate conducts investigations in science to solve open-ended problems using appropriate scientific methods."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Science Methods—Secondary Physics",
+          "description": "Science Methods—Secondary Physics focuses on teaching methods specific to science for graduate students seeking an endorsement in secondary physics. Course content focuses on the design and teaching of standards-based lessons using the three dimensions of science (science and engineering practices, crosscutting concepts, and disciplinary core ideas) and the appropriate integration of technology into those lessons. Students in this course work within their content areas to evaluate, enhance, and plan appropriate science instruction. This course includes laboratory safety training and certification, which includes safe laboratory practices and procedures for science classrooms and the proper use of personal protective equipment. Previous coursework in curriculum, instruction, and assessment is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes connections among the three dimensions of science instruction—disciplinary core ideas, crosscutting concepts, and science and engineering practices—to prepare and plan for instruction.",
+            "The graduate integrates technology into science activities to support student engagement and content mastery.",
+            "The graduate develops assessment strategies that measure three-dimensional science learning to determine the effectiveness of teaching and learning experiences.",
+            "The graduate develops lessons that integrate the three dimensions of science with applicable technologies to connect scientific concepts and phenomena.",
+            "The graduate develops plans for the use, storage, and maintenance of science materials and protective equipment and for the care of living organisms to comply with district, state, and federal safety, ethical, and legal standards for science teachers.",
+            "The graduate establishes an emergency response plan to prepare for potential emergency situations in the science learning environment."
+          ],
+          "prerequisite_mentions": [
+            "Previous coursework in curriculum, instruction, and assessment",
+            "for this course"
+          ],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Teacher Performance Assessment",
+      "courses": [
+        {
+          "title": "MA, Science Education Teacher Performance Assessment",
+          "description": "MA, Science Education Teacher Performance Assessment contains a comprehensive, original, research-based curriculum unit designed to meet an identified educational need. It provides direct evidence of the candidate’s ability to design and implement a multi-week, standards-based unit of instruction, assess student learning, and then reflect on the learning process. The WGU Teacher Performance Assessment requires students to plan and teach a multi-week standards-based instructional unit consisting of seven components: 1) contextual factors, 2) learning goals, 3) assessment, 4) design for instruction, 5) instructional decision-making, 6) analysis of student learning, and 7) self-evaluation and reflection.",
+          "competency_bullets": [
+            "The graduate evaluates the teaching context to accommodate student differences to plan for instruction and assessment.",
+            "The graduate recommends improvements for instruction and professional practice through personal reflection.",
+            "The graduate plans learning environments that support individual learning, collaboration, and positive social interaction.",
+            "The graduate demonstrates ethical responsibilities and appropriate teaching dispositions, including those outlined in the Western Governors University Teachers College Code of Ethics.",
+            "The graduate plans comprehensive learning segments of instruction and assessment that align with standards and the needs of students.",
+            "The graduate applies instructional strategies that promote learning, engage students, and provide differentiated instruction.",
+            "The graduate recommends strategies that support the development of academic language for all students.",
+            "The graduate integrates strategies to develop academic language that facilitates effective student participation and engagement in learning.",
+            "The graduate utilizes assessment data to profile student learning, communicate information about student progress and achievement, and guide and modify instruction.",
+            "The graduate integrates a variety of strategies and resources to differentiate instruction and meet the needs of diverse learners.",
+            "The graduate evaluates teaching experiences including the planning and implementing of curriculum and instruction through ongoing reflection.",
+            "The graduate develops appropriate plans for professional growth in subject matter knowledge and pedagogical skills, including habits and skills of continual inquiry and learning."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": []
+}

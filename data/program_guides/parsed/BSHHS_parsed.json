@@ -672,7 +672,9 @@
       "The learner demonstrates the comprehensive knowledge and skills gained throughout the degree program to use in the health and human services industry.",
       "The learner demonstrates the ability to communicate in a professional manner that supports achieving high-quality, safe client care.",
       "The learner analyzes knowledge and skills necessary for career selection and development within the health and human services industry."
-    ]
+    ],
+    "prerequisite_mentions": [],
+    "certification_prep_mentions": []
   },
   "anomalies": []
 }

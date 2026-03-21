@@ -1,0 +1,293 @@
+{
+  "program_code": "MASESE",
+  "version": "201806",
+  "pub_date": "9/12/23",
+  "page_count": 12,
+  "degree_title": "Master of Arts Science Education (Secondary Earth Science)",
+  "program_description": "The Master of Arts in Science Education (Secondary Earth Science) is a competency-based degree program that prepares already licensed teachers for an endorsement in secondaryearth and space science and provides the opportunity to develop skills in science curriculum development, design, and evaluation. All work in this degree program is online and includes Mathematics Content, General Science Content, Earth Sciences Content, and Science Education courses. All students complete a culminating Teacher Performance Assessment.",
+  "standard_path": [
+    {
+      "title": "Concepts in Science",
+      "cus": 1,
+      "term": 1
+    },
+    {
+      "title": "Chemistry with Lab",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "General Physics",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Geology I: Physical",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Science, Technology, and Society",
+      "cus": 2,
+      "term": 2
+    },
+    {
+      "title": "Geology II: Earth Systems",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Ecology and Environmental Science",
+      "cus": 2,
+      "term": 2
+    },
+    {
+      "title": "Astronomy",
+      "cus": 2,
+      "term": 2
+    },
+    {
+      "title": "The Ocean Systems",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Earth Science: Content Knowledge",
+      "cus": 1,
+      "term": 3
+    },
+    {
+      "title": "Science Methods—Secondary Earth Science",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "MA, Science Education Teacher Performance Assessment",
+      "cus": 6,
+      "term": 3
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Science",
+      "courses": [
+        {
+          "title": "Concepts in Science",
+          "description": "Concepts in Science for graduates provides already-licensed teachers seeking an additional license or endorsement in science education with an introduction to essential science themes present within and across all science disciplines, including chemistry, physics, biology, and the geosciences. These themes include comprehending the magnitude of the physical and natural world, analyzing and converting measurements, understanding the basic nature and behavior of matter and energy, examining atomic structure, identifying and naming basic types of chemical bonds, and analyzing and interpreting scientific data. Concepts in Science provides a solid foundation for future, in-depth, scientific studies and should be taken prior to any other science content course. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes a variety of measurements to solve scientific problems.",
+            "The graduate analyzes interactions between matter and energy to explain how they flow within, into, and out of systems.",
+            "The graduate analyzes the composition of atoms and compounds to explain the properties of matter.",
+            "The graduate evaluates experimental data to determine their validity."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Chemistry Content",
+      "courses": [
+        {
+          "title": "Chemistry with Lab",
+          "description": "Chemistry with Lab for graduates provides already licensed teachers seeking an additional license or endorsement in middle grades science or secondary physics, biological science, or earth science with an introduction to the field of chemistry. Designed for those not majoring in chemistry education, this course highlights how the topics covered can be applied within various branches of science. This course provides students with opportunities to examine the electronic structure of atoms, study periodic trends, name chemical compounds, write chemical formulas, determine the structure of molecules, balance chemical reactions, and discover the changing states of matter. Laboratory experiences facilitate the study of matter and the application of laboratory safety and maintenance procedures. Concepts in Science for graduates is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate evaluates how chemistry is related to other sciences to understand its relevance within the physical and natural world.",
+            "The graduate conducts safe and effective investigations to test hypotheses and draw conclusions.",
+            "The graduate analyzes the electronic structure of atoms and periodic trends to distinguish properties of various substances.",
+            "The graduate explains how to use the periodic table and IUPAC rules to name chemical compounds.",
+            "The graduate explains how chemical bonds and electron orientation impact the structures and behavior of molecules to understand the composition of matter.",
+            "The graduate balances chemical equations to determine what happens during a chemical reaction.",
+            "The graduate analyzes the relationship between heat and other forms of energy to examine the behavior of heat under various circumstances.",
+            "The graduate examines the physical states of matter to explain their properties and the process by which matter changes state."
+          ],
+          "prerequisite_mentions": [
+            "Concepts in Science for graduates",
+            "for this course"
+          ],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "General Science Content",
+      "courses": [
+        {
+          "title": "General Physics",
+          "description": "This course provides a broad overview of the principles of mechanics, thermodynamics, wave motion, modern physics, and electricity and magnetism and invites students to apply them by solving problems, performing labs, and reflecting on concepts and ideas.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate has a broad understanding of energy, including mechanics, heat, and electricity and magnetism.",
+            "The graduate has a broad understanding of wave motion and atomic nuclear physics."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Ecology and Environmental Science",
+          "description": "Ecology and Environmental Science is an introductory course for graduate students seeking initial licensure or endorsement and/or to earn their MA degree in secondary or middle grade science education. The course explores the relationships between organisms and their environment, including population ecology, communities, adaptations, distributions, interactions, and the environmental factors controlling these relationships. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate examines ecosystems to analyze the relationship between populations and the environment.",
+            "The graduate examines the flow of energy in an ecosystem to assess how changes in that flow affect biodiversity.",
+            "The graduate analyzes biogeochemical cycles to explain the importance of these cycles to global processes.",
+            "The graduate researches environmental challenges to discuss potential solutions.",
+            "The graduate assesses the challenges associated with resource management in order to compare potential sustainable solutions."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Geosciences Content",
+      "courses": [
+        {
+          "title": "Geology I: Physical",
+          "description": "Geology I: Physical provides undergraduate students seeking initial licensure or endorsement in secondary science education with an introduction to minerals and rocks, the physical features of the Earth, and the internal and surface processes that shape those features. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate traces Western history of Earth sciences to discuss key concepts and famous scientists in a cultural context.",
+            "The graduate analyzes composition, location, movement, and physical evidence of tectonic plates to distinguish landforms and geologic features.",
+            "The graduate analyzes minerals and rocks for the purpose of identification and classification.",
+            "The graduate examines Earth's internal processes to discuss Earth's magnetic field, convection currents in the mantle, and plate tectonic activity.",
+            "The graduate examines weathering, erosion, and deposition of sediments by gravity, wind, water, and ice to describe landform and geologic features.",
+            "The graduate analyzes topographical and geologic maps to deduce landform and geologic features.",
+            "The graduate examines solar system objects, including composition, properties, location, and origin, to determine Earth’s evolution within the solar system."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Geology II: Earth Systems",
+          "description": "Geology II: Earth Systems provides graduate students seeking licensure or endorsement and/or to earn their MA degree in secondary science education with an examination of the geosphere, atmosphere, hydrosphere, and biosphere and the dynamic equilibrium of these systems over geologic time. This course also examines the history of Earth and its lifeforms, with an emphasis in meteorology. A prerequisite for this course is Geology I: Physical.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate maps the structure and function of Earth's geosphere for soil utility in the environment.",
+            "The graduate examines the structure and composition of Earth's atmosphere to distinguish its current atmosphere from historical and other planetary atmospheres.",
+            "The graduate evaluates physical meteorological principles and processes to predict weather patterns and the movement of air masses.",
+            "The graduate analyzes various factors and influences on climate to anticipate long-term effects.",
+            "The graduate examines the structure and function of Earth's surface water, ice, groundwater, and oceans to explain global water management.",
+            "The graduate discusses Earth's history and life-forms to trace physical and biological evolutionary processes on this planet.",
+            "The graduate analyzes how Earth's systems (i.e., biosphere, geosphere, atmosphere, and hydrosphere) interface and evolve over geologic time to teach biologic, geologic, atmospheric, meteorologic, and hydrologic interaction."
+          ],
+          "prerequisite_mentions": [
+            "for this course is Geology I: Physical"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Astronomy",
+          "description": "Astronomy provides graduate students seeking initial licensure or endorsement and/or to earn their MA degree in secondary or middle grade science education with essential knowledge of astronomy. This course explores Western history and basic physics of astronomy; phases of the moon and seasons; composition and properties of solar system bodies; stellar evolution and remnants; properties and scale of objects and distances within the universe; and introductory cosmology. A prerequisite for this course is General Physics.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate traces Western history of astronomy to place key concepts and famous scientists in cultural context.",
+            "The graduate applies tools and techniques necessary to study astronomical objects and events.",
+            "The graduate evaluates composition and structure of our solar system to describe Earth’s place and evolution.",
+            "The graduate discusses classification and life cycle of stars, such as our sun and its fate, to explain the diversity of celestial objects, including stellar remnants.",
+            "The graduate critiques the structure, composition, and classification of the Milky Way and other galaxies as well as concepts of cosmology and the Doppler effect of light to explain the physical evolution of the universe."
+          ],
+          "prerequisite_mentions": [
+            "for this course is General Physics"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "The Ocean Systems",
+          "description": "This course investigates the complex ocean system by looking at the way its components—atmosphere, biosphere, geosphere, hydrosphere—interact. Specific topics include the origins of Earth’s oceans and the early history of life; physical characteristics and geologic processes of the ocean floor; chemistry of the water molecule; energy flow between air and water and how ocean surface currents and deep circulation patterns affect weather and climate; marine biology and why ecosystems are an integral part of the ocean system; the effects of human activity; and the role of professional educators in teaching about ocean systems.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate demonstrates knowledge of oceans, their formation, and the interconnections between ocean systems, the atmosphere, the biosphere, and the geosphere.",
+            "The graduate analyzes how properties of seawater affect the ocean systems.",
+            "The graduate analyzes ocean currents and how they influence weather and climate.",
+            "The graduate analyzes the interrelationships of life forms, natural systems, and cycles within the ocean environment.",
+            "The graduate utilizes knowledge of ocean systems, environmental challenges, oceanographic and interdisciplinary methods, and pedagogical techniques to effectively teach others about the ocean systems."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Earth Science: Content Knowledge",
+          "description": "This course covers the advanced content knowledge that a secondary earth science teacher is expected to know and understand. Topics include basic scientific principles of earth and space sciences, tectonics and internal earth processes, earth materials and surface processes, history of the Earth and its life-forms, Earth's atmosphere and hydrosphere, and astronomy.",
+          "competency_bullets": [
+            "This competency exists to assess the readiness of students.",
+            "The graduate synthesizes concepts and processes from across the earth and space sciences to generate a comprehensive understanding of the field.",
+            "The graduate verifies that they possess the requisite earth and space sciences knowledge and skills by passing the earth and space sciences content knowledge test required to become a beginning teacher of secondary school earth and space science."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Science Education",
+      "courses": [
+        {
+          "title": "Science, Technology, and Society",
+          "description": "Science, Technology, and Society explores the ways in which science influences and is influenced by society and technology. A humanistic and social endeavor, science serves the needs of ever-changing societies by providing methods for observing, questioning, discovering, and communicating information about the physical and natural world. This course prepares educators to explain the nature and history of science, the various applications of science, and the scientific and engineering processes used to conduct investigations, make decisions, and solve problems. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes the relationships among themes that appear across multiple scientific ideas.",
+            "The graduate analyzes the nature of science, including how science distinguishes itself from other ways of knowing.",
+            "The graduate analyzes the historical development of science, including how scientific knowledge evolves.",
+            "The graduate analyzes the various ways in which science, technology, and society are interrelated.",
+            "The graduate analyzes socially relevant scientific issues to make informed decisions based on data and context.",
+            "The graduate analyzes the principles, processes, and assumptions of investigations in science to engage students in the nature of inquiry.",
+            "The graduate uses technology tools and mathematics to improve investigations and the communication of results.",
+            "The graduate formulates testable hypotheses for scientific investigations.",
+            "The graduate conducts investigations in science to solve open-ended problems using appropriate scientific methods."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Science Methods—Secondary Earth Science",
+          "description": "Science Methods—Secondary Earth Science focuses on teaching methods specific to science for graduate students seeking an endorsement in secondary earth science. Course content focuses on the design and teaching of standardsbased lessons using the three dimensions of science (science and engineering practices, crosscutting concepts, and disciplinary core ideas) and the appropriate integration of technology into those lessons. Students in this course work within their content areas to evaluate, enhance, and plan appropriate science instruction. This course includes laboratory safety training and certification, which includes safe laboratory practices and procedures for science classrooms and the proper use of personal protective equipment. Previous coursework in curriculum, instruction, and assessment is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes connections among the three dimensions of science instruction—disciplinary core ideas, crosscutting concepts, and science and engineering practices—to prepare and plan for instruction.",
+            "The graduate integrates technology into science activities to support student engagement and content mastery.",
+            "The graduate develops assessment strategies that measure three-dimensional science learning to determine the effectiveness of teaching and learning experiences.",
+            "The graduate develops lessons that integrate the three dimensions of science with applicable technologies to connect scientific concepts and phenomena.",
+            "The graduate develops plans for the use, storage, and maintenance of science materials and protective equipment and for the care of living organisms to comply with district, state, and federal safety, ethical, and legal standards for science teachers.",
+            "The graduate establishes an emergency response plan to prepare for potential emergency situations in the science learning environment."
+          ],
+          "prerequisite_mentions": [
+            "Previous coursework in curriculum, instruction, and assessment",
+            "for this course"
+          ],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Teacher Performance Assessment",
+      "courses": [
+        {
+          "title": "MA, Science Education Teacher Performance Assessment",
+          "description": "MA, Science Education Teacher Performance Assessment contains a comprehensive, original, research-based curriculum unit designed to meet an identified educational need. It provides direct evidence of the candidate’s ability to design and implement a multi-week, standards-based unit of instruction, assess student learning, and then reflect on the learning process. The WGU Teacher Performance Assessment requires students to plan and teach a multi-week standards-based instructional unit consisting of seven components: 1) contextual factors, 2) learning goals, 3) assessment, 4) design for instruction, 5) instructional decision-making, 6) analysis of student learning, and 7) self-evaluation and reflection.",
+          "competency_bullets": [
+            "The graduate evaluates the teaching context to accommodate student differences to plan for instruction and assessment.",
+            "The graduate recommends improvements for instruction and professional practice through personal reflection.",
+            "The graduate plans learning environments that support individual learning, collaboration, and positive social interaction.",
+            "The graduate demonstrates ethical responsibilities and appropriate teaching dispositions, including those outlined in the Western Governors University Teachers College Code of Ethics.",
+            "The graduate plans comprehensive learning segments of instruction and assessment that align with standards and the needs of students.",
+            "The graduate applies instructional strategies that promote learning, engage students, and provide differentiated instruction.",
+            "The graduate recommends strategies that support the development of academic language for all students.",
+            "The graduate integrates strategies to develop academic language that facilitates effective student participation and engagement in learning.",
+            "The graduate utilizes assessment data to profile student learning, communicate information about student progress and achievement, and guide and modify instruction.",
+            "The graduate integrates a variety of strategies and resources to differentiate instruction and meet the needs of diverse learners.",
+            "The graduate evaluates teaching experiences including the planning and implementing of curriculum and instruction through ongoing reflection.",
+            "The graduate develops appropriate plans for professional growth in subject matter knowledge and pedagogical skills, including habits and skills of continual inquiry and learning."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": []
+}

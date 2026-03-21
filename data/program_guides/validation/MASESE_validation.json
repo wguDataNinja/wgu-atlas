@@ -1,0 +1,32 @@
+{
+  "program_code": "MASESE",
+  "degree_title": "Master of Arts Science Education (Secondary Earth Science)",
+  "version": "201806",
+  "pub_date": "9/12/23",
+  "page_count": 12,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 205,
+    "Areas of Study": 313,
+    "Accessibility": 592
+  },
+  "standard_path_row_count": 12,
+  "aos_group_count": 6,
+  "aos_course_count": 12,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 12,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

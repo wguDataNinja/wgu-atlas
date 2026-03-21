@@ -542,11 +542,18 @@ This is distinct from the URL-placement system in `official_resource_placements.
 
 ### Status
 
-- **Phase C — 80/115 guides parsed (69.6%).** 11 families fully validated.
-- Phase D threshold: 81 guides. Currently 1 guide short numerically.
+- **Phase C — 89/115 artifact coverage (77.4%). 12 complete families. 87 family-validated (75.7%).**
+- Phase D numeric threshold (≥70%) crossed. Phase D readiness requires separate conservative assessment (not just numeric).
 - Technical design complete and frozen: `_internal/program_guides/TECHNICAL_READOUT.md`
 - Parser (`scripts/program_guides/parse_guide.py`) is stable and production-quality.
 - Phase D and Phase E not started.
+
+**Coverage model (three distinct layers — do not collapse):**
+- Artifact coverage: guides with all 3 artifact files on disk (includes deferred-LOW).
+- Family-validated: guides in families with a rollout summary (or confirmed-complete status). Excludes deferred LOW.
+- Downstream-usable full: family-validated at HIGH/MEDIUM with SP and AoS both intact (~84).
+- Downstream-usable partial: SP unusable, AoS intact (BSITM, MATSPED, MSCSUG = 3).
+- Not usable: AoS broken, deferred (MACCA, MACCF, MACCT = 3).
 
 ### BSDA guide structure (confirmed)
 
@@ -587,6 +594,7 @@ Key structural facts:
 | cs_grad | 5 | 4 | 0 | 1 | MSCSUG SP: source-artifact; AoS intact (37 courses) |
 | swe_grad | 4 | 3 | 1 | 0 | MSSWEUG: title hyphen variant in bridge guide |
 | data_analytics_grad | 3 | 3 | 0 | 0 | Cleanest family |
+| education_ma | 9 | 9 | 0 | 0 | Cleanest family to date; 2 guides have capstones (MAMEK6, MAMEMG) |
 | accounting_ma | 5 (partial) | 1 | 1 | 3 | Specialization guides deferred — looks_like_prose limitation |
 
 ### Known source-artifact SP failures (SP unusable, AoS intact)
@@ -603,13 +611,14 @@ Key structural facts:
 |---------|--------|-------|
 | 17 | `extract_metadata()` date regex fix (no-space before date) | General |
 | 18 | `_is_bullet_continuation` Title Case guard (≥80% cap ratio → False) | General |
+| 19 | `parse_capstone` KeyError fix — added `prerequisite_mentions` and `certification_prep_mentions` to capstone dict | General (capstone guides) |
 
 ### Key files
 
 - `_internal/program_guides/TECHNICAL_READOUT.md` — full design rationale, schemas, pipeline
 - `_internal/program_guides/DEV_NOTES.md` — session history and parser change log
 - `_internal/program_guides/README.md` — workstream control
-- `data/program_guides/parsed/` — 80 *_parsed.json files
+- `data/program_guides/parsed/` — 89 *_parsed.json files
 - `data/program_guides/family_validation/` — gate reports and rollout summaries
 - `public/data/program_guides/` — not yet created (Phase D)
 

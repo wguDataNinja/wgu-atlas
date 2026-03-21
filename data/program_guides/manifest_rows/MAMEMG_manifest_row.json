@@ -1,13 +1,13 @@
 {
-  "source_pdf_filename": "BSHHS.pdf",
-  "source_text_filename": "BSHHS.txt",
-  "inferred_program_code": "BSHHS",
-  "page_count": 19,
+  "source_pdf_filename": "MAMEMG.pdf",
+  "source_text_filename": "MAMEMG.txt",
+  "inferred_program_code": "MAMEMG",
+  "page_count": 13,
   "version_strings": [
-    "202411"
+    "201810"
   ],
   "publication_dates": [
-    "8/1/24"
+    "9/12/23"
   ],
   "has_standard_path": true,
   "has_areas_of_study": true,
@@ -18,11 +18,11 @@
   "has_cu_values": true,
   "has_cert_prep_mentions": false,
   "has_prereq_mentions": true,
-  "standard_path_row_count": 35,
-  "competency_trigger_count": 34,
-  "competency_bullet_count": 162,
+  "standard_path_row_count": 14,
+  "competency_trigger_count": 13,
+  "competency_bullet_count": 81,
   "cert_prep_mention_count": 0,
-  "prereq_mention_count": 1,
+  "prereq_mention_count": 7,
   "detected_section_headings": [
     "Standard Path",
     "Areas of Study",
@@ -30,17 +30,14 @@
     "Capstone"
   ],
   "inferred_course_groups": [
-    "Foundations of Success",
     "General Education",
-    "Health and Human Services",
-    "Healthcare Management",
-    "General Science Content",
-    "Psychology",
-    "Health Sciences",
-    "Leadership and Management Specialty",
-    "Professional Practice Experience"
+    "Mathematics Content",
+    "Mathematics Education",
+    "Education",
+    "Middle School Mathematics Content",
+    "Research"
   ],
-  "likely_guide_family": "standard_bs",
+  "likely_guide_family": "education_ma",
   "template_type": "full",
   "parseability_confidence": "high",
   "warnings": [],

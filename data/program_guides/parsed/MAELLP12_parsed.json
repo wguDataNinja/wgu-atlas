@@ -1,0 +1,240 @@
+{
+  "program_code": "MAELLP12",
+  "version": "201501",
+  "pub_date": "5/7/2025",
+  "page_count": 0,
+  "degree_title": "Master of Arts, English Language Learning",
+  "program_description": "Program Code: MAELLP12 Catalog Version: 201501 Published Date: 5/7/2025 The Master of Arts in English Language Learning (PreK-12) is a competency-based degree program that prepares already licensed teachers both to be licensed to teach in English Language Learning (ELL) settings and to develop significant skills in ELL curriculum development, design, and evaluation. All work in this degree program is online and includes ELL Content and Methodology, Research Fundamentals, and Instructional Design. All students complete a capstone project.",
+  "standard_path": [
+    {
+      "title": "Culture",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Professional Role of the ELL Teacher",
+      "cus": 2,
+      "term": 1
+    },
+    {
+      "title": "Language Production, Theory and Acquisition",
+      "cus": 4,
+      "term": 1
+    },
+    {
+      "title": "Theories of Second Language Acquisition and Grammar",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Assessment Theory and Practice",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Planning, Implementing, Managing Instruction",
+      "cus": 4,
+      "term": 2
+    },
+    {
+      "title": "Subject Specific Pedagogy: ELL",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Research Foundations",
+      "cus": 2,
+      "term": 3
+    },
+    {
+      "title": "Research Questions and Literature Review",
+      "cus": 2,
+      "term": 3
+    },
+    {
+      "title": "Field Experience for ELL",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Teacher Work Sample in English Language Learning",
+      "cus": 1,
+      "term": 4
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "English Language Learning",
+      "courses": [
+        {
+          "title": "Culture",
+          "description": "Focuses on the nature and role of culture and the importance of cultural groups and cultural identity.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate knows, understands, and uses knowledge of how cultural groups and students' cultural identities affect language learning and school achievement."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Professional Role of the ELL Teacher",
+          "description": "The Professional Role of the ELL Teacher focuses on issues of professionalism for the English Language Learning teacher and leader. This includes program development, ethics, engagement in professional organizations, serving as a resource, and ELL advocacy.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate collaborates with and is prepared to serve as a resource to all staff, including paraprofessionals, to improve learning for all ELL students.",
+            "The graduate demonstrates knowledge of design and implementation of ELL programs and models as well as the regulations affecting them.",
+            "The graduate demonstrates knowledge of history, legal decisions, research, and current practice in the field of ELL teaching and applies this knowledge to improve teaching and learning."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Language Production, Theory and Acquisition",
+          "description": "Language Production, Theory and Acquisition focuses on describing and understanding language and the development of language. It includes the study of acquisition theory, error correction strategies, and applied phonology.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate understands and applies concepts, linguistic theories, research, knowledge of the structure of English, and sociolinguistics to facilitate the acquisition of new language in and out of classroom settings.",
+            "The graduate understands language as a system and applies this understanding to help English language learning (ELL) students acquire and use English in listening, speaking, reading, and writing for social and academic purposes."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Theories of Second Language Acquisition and Grammar",
+          "description": "Theories of Second Language Learning Acquisition and Grammar covers content material in applied linguistics, including morphology, syntax, semantics, and grammar. Students will explore the role of dialect in the classroom, the connections between language and culture, and the theories of first and second language acquisition.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate knows, understands, and uses knowledge of how cultural groups and students' cultural identities affect language learning and school achievement.",
+            "The graduate knows, understands, and uses the major concepts, principles, theories, and research related to the nature and role of culture in language development and academic achievement.",
+            "The graduate understands and applies concepts, linguistic theories, research, knowledge of the structure of English, and sociolinguistics to facilitate the acquisition of new language in and out of classroom settings.",
+            "The graduate understands language as a system and applies this understanding to help English language learning (ELL) students acquire and use English in listening, speaking, reading, and writing for social and academic purposes."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Assessment Theory and Practice",
+          "description": "Assessment Theory and Practice focuses on issues central to assessment in the ELL environment, including high-stakes testing, standardized tests, placement and exit assessment, formative and summative assessments, and making adaptations in assessments to meet the needs of ELL students.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate knows and uses a variety of performance-based assessment tools and techniques to inform instruction of ELL students.",
+            "The graduate knows and uses a variety of standards-based language proficiency instruments to inform instruction and understands the use of these instruments for identification, placement, and demonstration of language growth of ELL students.",
+            "The graduate understands various issues of IQ assessment (e.g., cultural and linguistic bias; political, social, and difference between language proficiency and other types of assessment (e.g., standardized achievement tests of overall mastery) as they affect ELL student learning. psychological factors) and special education testing (including gifted and talented); the importance of standards; and the"
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Planning, Implementing, Managing Instruction",
+          "description": "Planning, Implementing, Managing Instruction focuses on a variety of philosophies and grade levels of English Language Learner (ELL) instruction. It includes the study of ELL listening and speaking, ELL reading and writing, specially designed academic instruction in English (SDAIE), and specific issues for various grade level instruction.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate is familiar with a wide range of standards-based materials, resources, and technologies, and chooses, adapts, and can use them in effective ELL and content teaching.",
+            "The graduate knows, develops, manages, and implements a variety of standards-based teaching strategies and techniques for developing and integrating English listening, speaking, reading, and writing, and for accessing the core curriculum.",
+            "The graduate knows, understands, and applies concepts, research, and best practices to plan classroom instruction in a supportive learning environment for English language learner (ELL) students."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Subject Specific Pedagogy: ELL",
+          "description": "Subject Specific Pedagogy: ELL integrates aspects of pedagogy, assessment, and professionalism in English Language Learning (ELL). A student develops and assesses aspects of language curriculum development including second language instruction, methods of second language assessment, and legal policy issues.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate demonstrates knowledge of history, legal decisions, research, and current practice in the field of ELL teaching and applies this knowledge to improve teaching and learning.",
+            "The graduate knows and uses a variety of performance-based assessment tools and techniques to inform instruction of ELL students.",
+            "The graduate knows and uses a variety of standards-based language proficiency instruments to inform instruction and understands the use of these instruments for identification, placement, and demonstration of language growth of ELL students.",
+            "The graduate knows, develops, manages, and implements a variety of standards-based teaching strategies and techniques for developing and integrating English listening, speaking, reading, and writing, and for accessing the core curriculum.",
+            "The graduate knows, understands, and applies concepts, research, and best practices to plan classroom instruction in a supportive learning environment for English language learner (ELL) students.",
+            "The graduate understands the importance of acting as a professional resource, advocating for English language learner (ELL) students, and building partnerships with students' families.",
+            "The graduate understands various issues of IQ assessment (e.g., cultural and linguistic bias; political, social, and difference between language proficiency and other types of assessment (e.g., standardized achievement tests of overall mastery) as they affect ELL student learning. psychological factors) and special education testing (including gifted and talented); the importance of standards; and the"
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Field Experience for ELL",
+          "description": "Field Experience for ELL is the field experience component of the English Language Learning program. In this experience, students are required to complete a minimum of 15 hours of video observations for both elementary and secondary levels. Additionally, a supervised teaching experience that is face-to-face with English language learners (ELL) according to the minimum time requirements of the student's state is required. The purpose of this course is to assess the ability of students, including their engagement in field experience activities, ability to reflect on and then plan standards-based instruction in ELL, and their ability to locate and effectively use resources for teaching ELL to meet the needs of their individual learners.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate knows, develops, manages, and implements a variety of standards-based teaching strategies and techniques for developing and integrating English listening, speaking, reading, and writing, and for accessing the core curriculum.",
+            "The graduate knows, understands, and applies concepts, research, and best practices to plan classroom instruction in a supportive learning environment for English language learner (ELL) students.",
+            "The graduate knows, understands, and uses knowledge of how cultural groups and students' cultural identities affect language learning and school achievement.",
+            "The graduate knows, understands, and uses the major concepts, principles, theories, and research related to the nature and role of culture in language development and academic achievement.",
+            "The graduate understands and applies concepts, linguistic theories, research, knowledge of the structure of English, and sociolinguistics to facilitate the acquisition of new language in and out of classroom settings.",
+            "The graduate understands language as a system and applies this understanding to help English language learning (ELL) students acquire and use English in listening, speaking, reading, and writing for social and academic purposes.",
+            "The graduate understands the importance of acting as a professional resource, advocating for English language learner (ELL) students, and building partnerships with students' families."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Research",
+      "courses": [
+        {
+          "title": "Research Foundations",
+          "description": "The Research Foundations course focuses on the essential concepts in educational research, including quantitative, qualitative, mixed, and action research. This course also teaches students concepts about measurement and assessment, as well as strategies for obtaining warranted research results.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes different measurement scales and differentiates between reliability and validity, and their subtypes, as they relate to assessments.",
+            "The graduate analyzes ethical issues and identifies appropriate procedures for educational research.",
+            "The graduate analyzes the characteristics of research quality and the potential threats to the quality of results in qualitative, quantitative, mixed methods, and action research studies.",
+            "The graduate analyzes the key aspects of action research and characterizes the major approaches to action research.",
+            "The graduate analyzes the key aspects of mixed methods research and characterizes the major approaches to mixed methods research.",
+            "The graduate analyzes the key aspects of qualitative research and characterizes the major approaches to qualitative research.",
+            "The graduate analyzes the key aspects of quantitative research and characterizes the major approaches to quantitative research.",
+            "The graduate applies and justifies appropriate research methods and design in quantitative, qualitative, mixed methods, and action research scenarios to address the research question(s).",
+            "The graduate completes a research proposal.",
+            "The graduate describes the purpose for a literature review and develops an organized literature review relevant to educational research topics, problems, and questions.",
+            "The graduate develops clear research questions that can be investigated and hypotheses that can be tested with empirical data.",
+            "The graduate differentiates among the major methods of data collection, including their strengths and limitations in the selection of an appropriate method of data collection.",
+            "The graduate evaluates and selects appropriate basic data analysis techniques for quantitative, qualitative, mixed methods, and action research scenarios.",
+            "The graduate evaluates the purpose, process, and practice of the generation and justification of knowledge in educational research."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Research Questions and Literature Review",
+          "description": "The Research Questions and Literature Reviews course focuses on how to conduct a thorough literature review that addresses and identifies important educational research topics, problems, and questions, and helps determine the appropriate kind of research and data needed to answer one's research questions and hypotheses. Research Foundations is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate describes the purpose for a literature review and develops an organized literature review relevant to educational research topics, problems, and questions.",
+            "The graduate develops clear research questions that can be investigated and hypotheses that can be tested with empirical data.",
+            "The graduate differentiates among the major methods of data collection, including their strengths and limitations in the selection of an appropriate method of data collection."
+          ],
+          "prerequisite_mentions": [
+            "Research Foundations",
+            "for this course"
+          ],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Teacher Work Sample",
+      "courses": [
+        {
+          "title": "Teacher Work Sample in English Language Learning",
+          "description": "The Teacher Work Sample is a culmination of the wide variety of skills learned during your time in the Teachers College at WGU. In order to be a competent and independent classroom teacher, you will showcase a collection of your content, planning, instructional, and reflective skills in this professional assessment.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies instructional strategies that promote learning, engage students, and provide differentiated instruction.",
+            "The graduate evaluates teaching experiences including the planning and implementing of curriculum and instruction through ongoing reflection.",
+            "The graduate evaluates the teaching context to accommodate student differences to plan for instruction and assessment.",
+            "The graduate integrates strategies to develop academic language that facilitates effective student participation and engagement in learning.",
+            "The graduate plans comprehensive learning segments of instruction and assessment that align with standards and the needs of students.",
+            "The graduate plans learning environments that support individual learning, collaboration, and positive social interaction.",
+            "The graduate utilizes assessment data to profile student learning, communicate information about student progress and achievement, and guide and modify instruction."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": []
+}

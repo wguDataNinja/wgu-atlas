@@ -1,0 +1,32 @@
+{
+  "program_code": "MAMES",
+  "degree_title": "Master of Arts in Mathematics Education (Secondary)",
+  "version": "201810",
+  "pub_date": "9/12/23",
+  "page_count": 14,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 205,
+    "Areas of Study": 349,
+    "Accessibility": 724
+  },
+  "standard_path_row_count": 18,
+  "aos_group_count": 3,
+  "aos_course_count": 18,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 18,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

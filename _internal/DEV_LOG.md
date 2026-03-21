@@ -5,6 +5,39 @@ Each entry records what changed, decisions locked, what's blocked, and the next 
 
 ---
 
+## 2026-03-21 (session 19 — education_ma gate/rollout; coverage accounting; capstone bug fix)
+
+**Done**
+- Established coverage accounting model: artifact coverage vs family-validated vs downstream-usable (full/partial) — see DEV_NOTES Session 19.
+- Gated and rolled out education_ma: 9/9 HIGH, 0 anomalies, 0 warnings. Cleanest family to date.
+- Fixed `parse_capstone` KeyError: capstone dict was missing `prerequisite_mentions`/`certification_prep_mentions` before `_scan_description_mentions()` call. MAMEK6 triggered crash. Regression-verified against 23 guides.
+- Re-parsed 9 previously committed capstone guides (BSBAHC, BSDA, BSHHS, BSMGT, MBAHA, MBAITM, MSCSIA, MSITM, MSML) to apply fix consistently.
+- Proposed looks_like_prose verb-presence heuristic for accounting_ma specializations (not implemented — requires dedicated session).
+
+**Files changed**
+- `scripts/program_guides/parse_guide.py` (capstone fix)
+- `data/program_guides/parsed/{MAMES,MAELLP12,MAMEK6,MAMEMG,MASEMG,MASESB,MASESC,MASESE,MASESP,BSBAHC,BSDA,BSHHS,BSMGT,MBAHA,MBAITM,MSCSIA,MSITM,MSML,MBA,MHA,BSCSIA}_parsed.json`
+- `data/program_guides/validation/{education_ma 9 codes}_validation.json`
+- `data/program_guides/manifest_rows/{education_ma 9 codes}_manifest_row.json`
+- `data/program_guides/family_validation/education_ma_gate_report.{json,md}`
+- `data/program_guides/family_validation/education_ma_rollout_summary.{json,md}`
+- `_internal/program_guides/DEV_NOTES.md`, `_internal/ATLAS_CONTROL.md`, `_internal/ATLAS_REPO_MEMORY.md`
+
+**Decisions locked**
+- Coverage accounting must use three distinct layers. Never cite artifact coverage as validation coverage.
+- education_ma fully rolled out. No exclusions.
+- accounting_ma specializations remain deferred. Fix requires dedicated session with full regression.
+- Phase D numeric threshold is crossed but Phase D readiness requires separate conservative assessment.
+
+**Blocked**
+- Phase D not started (needs readiness assessment).
+- accounting_ma specializations blocked on looks_like_prose fix.
+
+**Next starting task**
+- Phase D readiness assessment memo (conservative — evaluate downstream coverage, risky-family gaps, safe-field boundaries before deciding).
+
+---
+
 ## 2026-03-20 (session 13 — standard_bs family validation)
 
 **Done**

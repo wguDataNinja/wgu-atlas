@@ -208,7 +208,9 @@
   "capstone": {
     "title": "Management and Leadership Capstone",
     "description": "This course is the culminating assessment of the MSML curriculum that provides an integrative experience with all competencies and assessment topics throughout the program. Students synthesize concepts from previously completed coursework and demonstrate an understanding of management and leadership development and practices.",
-    "competency_bullets": []
+    "competency_bullets": [],
+    "prerequisite_mentions": [],
+    "certification_prep_mentions": []
   },
   "anomalies": []
 }

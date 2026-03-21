@@ -689,7 +689,9 @@
     "description": "For the Business Management Capstone Written Project students will integrate and synthesize competencies from across their degree program to demonstrate their ability to participate in and contribute value to their chosen professional field. A comprehensive business plan is developed for a company that plans to sell a product or service in a local market, national market, or on the Internet. The business plan includes a market analysis, financial statements and analysis, and specific strategic actions relevant to the chosen company.",
     "competency_bullets": [
       "The learner integrates and synthesizes competencies from across the degree program and thereby demonstrates the ability to participate in and contribute value to the chosen professional field."
-    ]
+    ],
+    "prerequisite_mentions": [],
+    "certification_prep_mentions": []
   },
   "anomalies": []
 }

@@ -832,7 +832,9 @@
       "The learner creates a project proposal to convince stakeholders to implement the security solution.",
       "The learner creates a technical report for a fully functional system to solve real-world scenarios.",
       "The learner creates an executive summary of a security solution directed to IT and business professionals."
-    ]
+    ],
+    "prerequisite_mentions": [],
+    "certification_prep_mentions": []
   },
   "anomalies": []
 }

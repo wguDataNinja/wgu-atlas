@@ -905,6 +905,8 @@ def parse_capstone(stripped: list, cap_start: int, acc_start: int) -> tuple:
         'title': title,
         'description': ' '.join(description_buf).strip(),
         'competency_bullets': bullets,
+        'prerequisite_mentions': [],
+        'certification_prep_mentions': [],
     }
     _scan_description_mentions(capstone)
     return capstone, anomalies

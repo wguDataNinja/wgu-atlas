@@ -227,7 +227,9 @@
     "description": "The Master of Science in Cybersecurity and Information Assurance (MSCSIA) Capstone project allows learners to demonstrate their capability to establish a durable cybersecurity and information assurance program. The capstone project challenges learners to integrate skills and knowledge from all program domains into one project that addresses a significant real-world cybersecurity problem.",
     "competency_bullets": [
       "The learner integrates and synthesizes competencies from across the degree program, thereby demonstrating the ability to participate in and contribute value to the chosen professional field."
-    ]
+    ],
+    "prerequisite_mentions": [],
+    "certification_prep_mentions": []
   },
   "anomalies": []
 }

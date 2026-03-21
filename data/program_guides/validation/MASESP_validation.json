@@ -1,0 +1,32 @@
+{
+  "program_code": "MASESP",
+  "degree_title": "Master of Arts Science Education (Secondary Physics)",
+  "version": "201806",
+  "pub_date": "9/13/23",
+  "page_count": 13,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 205,
+    "Areas of Study": 319,
+    "Accessibility": 608
+  },
+  "standard_path_row_count": 13,
+  "aos_group_count": 6,
+  "aos_course_count": 13,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 13,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

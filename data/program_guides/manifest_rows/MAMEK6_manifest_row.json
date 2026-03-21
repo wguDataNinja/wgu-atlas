@@ -1,13 +1,13 @@
 {
-  "source_pdf_filename": "BSHHS.pdf",
-  "source_text_filename": "BSHHS.txt",
-  "inferred_program_code": "BSHHS",
-  "page_count": 19,
+  "source_pdf_filename": "MAMEK6.pdf",
+  "source_text_filename": "MAMEK6.txt",
+  "inferred_program_code": "MAMEK6",
+  "page_count": 12,
   "version_strings": [
-    "202411"
+    "201504"
   ],
   "publication_dates": [
-    "8/1/24"
+    "9/12/23"
   ],
   "has_standard_path": true,
   "has_areas_of_study": true,
@@ -18,11 +18,11 @@
   "has_cu_values": true,
   "has_cert_prep_mentions": false,
   "has_prereq_mentions": true,
-  "standard_path_row_count": 35,
-  "competency_trigger_count": 34,
-  "competency_bullet_count": 162,
+  "standard_path_row_count": 10,
+  "competency_trigger_count": 9,
+  "competency_bullet_count": 64,
   "cert_prep_mention_count": 0,
-  "prereq_mention_count": 1,
+  "prereq_mention_count": 6,
   "detected_section_headings": [
     "Standard Path",
     "Areas of Study",
@@ -30,17 +30,10 @@
     "Capstone"
   ],
   "inferred_course_groups": [
-    "Foundations of Success",
-    "General Education",
-    "Health and Human Services",
-    "Healthcare Management",
-    "General Science Content",
-    "Psychology",
-    "Health Sciences",
-    "Leadership and Management Specialty",
-    "Professional Practice Experience"
+    "Mathematics Content",
+    "Research"
   ],
-  "likely_guide_family": "standard_bs",
+  "likely_guide_family": "education_ma",
   "template_type": "full",
   "parseability_confidence": "high",
   "warnings": [],

@@ -7,14 +7,14 @@
   "detected_sections": [
     "Standard Path",
     "Areas of Study",
-    "Capstone",
-    "Accessibility"
+    "Accessibility",
+    "Capstone"
   ],
   "section_line_indices": {
     "Standard Path": 213,
     "Areas of Study": 309,
-    "Capstone": 460,
-    "Accessibility": 478
+    "Accessibility": 478,
+    "Capstone": 460
   },
   "standard_path_row_count": 10,
   "aos_group_count": 4,

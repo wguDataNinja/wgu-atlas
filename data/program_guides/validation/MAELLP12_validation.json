@@ -1,0 +1,32 @@
+{
+  "program_code": "MAELLP12",
+  "degree_title": "Master of Arts, English Language Learning",
+  "version": "201501",
+  "pub_date": "5/7/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 183,
+    "Areas of Study": 282,
+    "Accessibility": 492
+  },
+  "standard_path_row_count": 11,
+  "aos_group_count": 3,
+  "aos_course_count": 11,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 11,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

@@ -1,0 +1,329 @@
+{
+  "program_code": "MAMEMG",
+  "version": "201810",
+  "pub_date": "9/12/23",
+  "page_count": 13,
+  "degree_title": "Master of Arts in Mathematics Education (Middle Grades)",
+  "program_description": "The Master of Arts in Mathematics Education (Middle Grades) is a competency-based degree program that prepares already licensed teachers both to be licensed to teach mathematics in middle grades and to develop significant skills in mathematics curriculum development, design, and evaluation. All work in this degree program is online and includes Mathematics Content, Mathematics Education and Research Fundamentals. All students complete a culminating Teacher Work Sample.",
+  "standard_path": [
+    {
+      "title": "College Algebra",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Finite Mathematics",
+      "cus": 2,
+      "term": 1
+    },
+    {
+      "title": "Trigonometry and Precalculus",
+      "cus": 2,
+      "term": 1
+    },
+    {
+      "title": "Mathematics Learning and Teaching",
+      "cus": 2,
+      "term": 1
+    },
+    {
+      "title": "College Geometry",
+      "cus": 2,
+      "term": 2
+    },
+    {
+      "title": "Teaching in the Middle School",
+      "cus": 2,
+      "term": 2
+    },
+    {
+      "title": "Probability and Statistics I",
+      "cus": 2,
+      "term": 2
+    },
+    {
+      "title": "Middle School Mathematics: Content Knowledge",
+      "cus": 1,
+      "term": 2
+    },
+    {
+      "title": "Calculus I",
+      "cus": 2,
+      "term": 2
+    },
+    {
+      "title": "Algebra for Secondary Mathematics Teaching",
+      "cus": 2,
+      "term": 3
+    },
+    {
+      "title": "Mathematics History and Technology",
+      "cus": 2,
+      "term": 3
+    },
+    {
+      "title": "Research Foundations",
+      "cus": 2,
+      "term": 3
+    },
+    {
+      "title": "Research Questions and Literature Review",
+      "cus": 2,
+      "term": 3
+    },
+    {
+      "title": "MA, Mathematics Education (5-9) Teacher Performance Assessment",
+      "cus": 6,
+      "term": 4
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "General Education",
+      "courses": [
+        {
+          "title": "College Algebra",
+          "description": "This course provides further application and analysis of algebraic concepts and functions through mathematical modeling of real-world situations. Topics include real numbers, algebraic expressions, equations and inequalities, graphs and functions, polynomial and rational functions, exponential and logarithmic functions, and systems of linear equations.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate classifies and performs operations on real numbers; solves linear equations and inequalities; connects a linear equation to its graph; and identifies a function.",
+            "The graduate solves systems of linear equations and their related applications.",
+            "The graduate simplifies and factors polynomial expressions, and solves polynomial equations.",
+            "The graduate simplifies rational, radical, and quadratic expressions, solves corresponding equations, and extends this knowledge to the study of functions.",
+            "The graduate combines functions, finds inverse functions, solves exponential and logarithmic equations and functions."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Mathematics Content",
+      "courses": [
+        {
+          "title": "Finite Mathematics",
+          "description": "Finite Mathematics covers the knowledge and skills necessary to apply discrete mathematics and properties of number systems to model and solve real-life problems. Topics include sets and operations; prime and composite numbers; GCD and LCM; order of operations; ordering numbers; mathematical systems including modular arithmetic, arithmetic and geometric sequences, ratio and proportion, subsets of real numbers, logic and truth tables, graphs, and trees and networks. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies the fundamental ideas of discrete mathematics including logic, set theory, and graph theory in formulating and solving problems.",
+            "The graduate demonstrates computational proficiency with real numbers and recognizes the properties of the real number system and its subsets.",
+            "The graduate represents numbers in different forms, recognizes relationships among numbers and number systems, deduces the meanings of operations, and demonstrates a conceptual understanding of numbers."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Trigonometry and Precalculus",
+          "description": "Trigonometry and Precalculus covers the knowledge and skills necessary to apply trigonometry, complex numbers, systems of equations, vectors and matrices, and sequences and series, and to use appropriate technology to model and solve reallife problems. Topics include degrees; radians and arcs; reference angles and right triangle trigonometry; applying, graphing and transforming trigonometric functions and their inverses; solving trigonometric equations; using and proving trigonometric identities; geometric, rectangular, and polar approaches to complex numbers; DeMoivre's Theorem; systems of linear equations and matrix-vector equations; systems of nonlinear equations; systems of inequalities; and arithmetic and geometric sequences and series. College Algebra is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies trigonometric ratios and triangle formulas to model and solve real-life problems.",
+            "The graduate uses a unit circle to define trigonometric functions and applies these functions to model and solve reallife problems.",
+            "The graduate proves trigonometric identities and solves trigonometric equations.",
+            "The graduate applies various representations of complex numbers to solve problems.",
+            "The graduate uses systems of equations, systems of inequalities, and matrices to model and solve real-life problems.",
+            "The graduate explores arithmetic and geometric sequences and uses them to model and solve real-life problems."
+          ],
+          "prerequisite_mentions": [
+            "College Algebra",
+            "for this course"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "College Geometry",
+          "description": "College Geometry covers the knowledge and skills necessary to use dynamic technology to explore geometry, to use axiomatic reasoning to prove statements about geometry, and to apply geometric models to solve real-life problems. Topics include axiomatic systems, analytic proofs, coordinate geometry, plane and solid Euclidean geometry, non-Euclidean geometries, constructions, transformations, deductive reasoning, and dynamic technology. College Algebra as well as Trigonometry and Precalculus are prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies algebraic language in representing geometric concepts to solve two-dimensional problems.",
+            "The graduate implements geometric construction methods to create objects.",
+            "The graduate applies properties and theorems about circles and circle sectors to solve problems.",
+            "The graduate applies geometric properties to solve problems.",
+            "The graduate examines geometric relationships to analyze congruence, similarity, transformations, and symmetry.",
+            "The graduate analyzes the axiomatic nature of Euclidean and non-Euclidean geometries to reflect on geometric reasoning and formal proof."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Probability and Statistics I",
+          "description": "Probability and Statistics I covers the knowledge and skills necessary to apply basic probability, descriptive statistics, and statistical reasoning and to use appropriate technology to model and solve real-life problems. It provides an introduction to the science of collecting, processing, analyzing, and interpreting data, including representations, constructions, and interpretation of graphical displays (e.g., box plots, histograms, cumulative frequency plots, scatter plots). Topics include creating and interpreting numerical summaries and visual displays of data; regression lines and correlation; evaluating sampling methods and their effect on possible conclusions; designing observational studies, controlled experiments, and surveys; and determining probabilities using simulations, diagrams, and probability rules. College Algebra is a prerequisite to this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate evaluates the relationship between two variables through the creation and interpretation of numerical summaries and visual displays.",
+            "The graduate evaluates the sampling methods used in studies including the effect they have on conclusions that can be made.",
+            "The graduate designs and conducts observational studies, controlled experiments, and surveys to explore population characteristics.",
+            "The graduate determines the probability of events using simulations, diagrams, and probability rules."
+          ],
+          "prerequisite_mentions": [
+            "to this course"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Calculus I",
+          "description": "Calculus I is the study of rates of change in relation to the slope of a curve and covers the knowledge and skills necessary to use differential calculus of one variable and appropriate technology to solve basic problems. Topics include graphing functions and finding their domains and ranges; limits, continuity, differentiability, visual, analytical, and conceptual approaches to the definition of the derivative; the power, chain, and sum rules applied to polynomial and exponential functions, position and velocity; and L'Hopital's Rule. Candidates should have completed a course in Pre-Calculus before engaging in this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate demonstrates a conceptual understanding of limits and finds limits of functions.",
+            "The graduate demonstrates a conceptual understanding of and solves problems involving continuity, and defines the relationship of continuity to differentiability and integrability.",
+            "The graduate demonstrates a conceptual understanding of differentiation and applies differentiation techniques to solve problems and aid in function graphing.",
+            "The graduate applies differentiation in various ways to solve problems.",
+            "The graduate applies integration techniques to solve problems."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Mathematics Education",
+      "courses": [
+        {
+          "title": "Mathematics Learning and Teaching",
+          "description": "Mathematics Learning and Teaching will help students develop the knowledge and skills necessary to become a prospective and practicing educator. This course will help students use a variety of instructional strategies to effectively facilitate the learning of mathematics. It focuses on selecting appropriate resources, using multiple strategies, and instructional planning, with methods based on research and problem solving. A deep understanding of the knowledge, skills, and disposition of mathematics pedagogy is necessary to become an effective secondary mathematics educator. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate integrates principles and models of teaching for understanding into learning activities.",
+            "The graduate integrates problem solving into learning activities to build conceptual understanding.",
+            "The graduate evaluates teaching tools and strategies for the purpose of planning learning activities.",
+            "The graduate evaluates learning activities for alignment with the National Council of Teachers of Mathematics (NCTM) standards.",
+            "The graduate incorporates standards and best practices for the teaching and learning of mathematics for all students into instructional practice.",
+            "The graduate uses multiple assessment strategies to evaluate student understanding and guide instruction.",
+            "The graduate accommodates the needs and abilities of diverse students in the planning of learning activities."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Algebra for Secondary Mathematics Teaching",
+          "description": "Algebra for Secondary Mathematics Teaching explores important conceptual underpinnings, common misconceptions and students’ ways of thinking, appropriate use of technology, and instructional practices to support and assess the learning of algebra. Secondary teachers should have an understanding of the following: algebra as an extension of number, operation, and quantity; various ideas of equivalence as it pertains to algebraic structures; patterns of change as covariation between quantities; connections between representations (tables, graphs, equations, geometric models, context); and the historical development of content and perspectives from diverse cultures. In particular, the course focuses on deeper understanding of rational numbers, ratios and proportions, meaning and use of variables, functions (e.g., exponential, logarithmic, polynomials, rational, quadratic), and inverses. Calculus I is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes historical development, perspectives from diverse cultures, and content knowledge to deepen a student's algebraic understanding.",
+            "The graduate integrates instructional practices to support and assess students' understanding of algebra.",
+            "The graduate integrates technology to support and assess students' learning of algebra.",
+            "The graduate analyzes conceptual algebra underpinnings, common misconceptions, and students' ways of thinking to create opportunities to learn."
+          ],
+          "prerequisite_mentions": [
+            "Calculus I",
+            "for this course"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Mathematics History and Technology",
+          "description": "In Math History and Teaching, students will learn about a variety of technological tools for doing mathematics and develop a broad understanding of the historical development of mathematics. Mathematics is a very human subject that comes from the macro-level sweep of cultural and societal change as well as the micro-level actions of individuals with personal, professional, and philosophical motivations. This course will focus on the historical development of mathematics, including contributions of significant figures and diverse cultures. Students will learn to evaluate and apply technological tools and historical information to create an enriching student-centered mathematical learning environment.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes major historical developments and cultural contributions in number systems, algebra, geometry, calculus, discrete mathematics, statistics and probability, and measurement.",
+            "The graduate analyzes the historical development of methods in mathematics.",
+            "The graduate analyzes the humanistic, social, and political influences on mathematical discoveries and the applications and effect of those discoveries.",
+            "The graduate evaluates technological tools for appropriate use in a variety of situations.",
+            "The graduate utilizes appropriate industry-standard technological tools to solve problems.",
+            "The graduate integrates student-centered technology in the planning of learning activities to build understanding of mathematical concepts and promote creativity.",
+            "The graduate integrates mathematics history into the planning of learning activities to improve student learning."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Education",
+      "courses": [
+        {
+          "title": "Teaching in the Middle School",
+          "description": "Teaching in Middle School examines the guiding principles and best teaching practices for educating middle school students. The course explores the history of middle school; the philosophy, theory, and rationale behind middle school organization; and the differences between elementary, middle, and secondary schools. The course also examines the unique needs of middle school students and teaching methods used to meet the needs of these learners. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate examines the evolution of school structures, theory, and educational philosophy to understand how the middle school environment is different from the elementary, junior high, and high school environments.",
+            "The graduate evaluates various models of middle school organization to determine how each meets the developmental needs of early adolescents.",
+            "The graduate analyzes supportive age-appropriate best teaching practices that move middle school students toward independence and prepare them to be successful lifelong learners."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Middle School Mathematics Content",
+      "courses": [
+        {
+          "title": "Middle School Mathematics: Content Knowledge",
+          "description": "Mathematics: Middle School Content Knowledge is designed to help candidates refine and integrate the mathematics content knowledge and skills necessary to become successful middle school mathematics teachers. A high level of mathematical reasoning skills and the ability to solve problems are necessary to complete this course. Prerequisites for this course are College Geometry, Probability and Statistics I, and Pre-Calculus.",
+          "competency_bullets": [
+            "The graduate synthesizes mathematical concepts and practices essential in middle school mathematics to generate a comprehensive understanding of the discipline.",
+            "The graduate verifies that they possess the requisite middle school mathematics knowledge and skills by passing the middle school mathematics content knowledge test required to become a beginning teacher of middle school mathematics."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Research",
+      "courses": [
+        {
+          "title": "Research Foundations",
+          "description": "The Research Foundations course focuses on the essential concepts in educational research, including quantitative, qualitative, mixed, and action research. This course also teaches students concepts about measurement and assessment, as well as strategies for obtaining warranted research results.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate evaluates the purpose, process, and practice of the generation and justification of knowledge in educational research.",
+            "The graduate describes the purpose for a literature review and develops an organized literature review relevant to educational research topics, problems, and questions.",
+            "The graduate develops clear research questions that can be investigated and hypotheses that can be tested with empirical data.",
+            "The graduate differentiates among the major methods of data collection, including their strengths and limitations in the selection of an appropriate method of data collection.",
+            "The graduate analyzes ethical issues and identifies appropriate procedures for educational research.",
+            "The graduate completes a research proposal.",
+            "The graduate analyzes the key aspects of quantitative research and characterizes the major approaches to quantitative research.",
+            "The graduate analyzes the key aspects of qualitative research and characterizes the major approaches to qualitative research.",
+            "The graduate analyzes the key aspects of mixed methods research and characterizes the major approaches to mixed methods research.",
+            "The graduate analyzes the key aspects of action research and characterizes the major approaches to action research.",
+            "The graduate analyzes different measurement scales and differentiates between reliability and validity, and their subtypes, as they relate to assessments.",
+            "The graduate analyzes the characteristics of research quality and the potential threats to the quality of results in qualitative, quantitative, mixed methods, and action research studies.",
+            "The graduate applies and justifies appropriate research methods and design in quantitative, qualitative, mixed methods, and action research scenarios to address the research question(s).",
+            "The graduate evaluates and selects appropriate basic data analysis techniques for quantitative, qualitative, mixed methods, and action research scenarios."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Research Questions and Literature Review",
+          "description": "The Research Questions and Literature Reviews course focuses on how to conduct a thorough literature review that addresses and identifies important educational research topics, problems, and questions, and helps determine the appropriate kind of research and data needed to answer one's research questions and hypotheses. Research Foundations is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate describes the purpose for a literature review and develops an organized literature review relevant to educational research topics, problems, and questions.",
+            "The graduate develops clear research questions that can be investigated and hypotheses that can be tested with empirical data.",
+            "The graduate differentiates among the major methods of data collection, including their strengths and limitations in the selection of an appropriate method of data collection."
+          ],
+          "prerequisite_mentions": [
+            "Research Foundations",
+            "for this course"
+          ],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": {
+    "title": "MA, Mathematics Education (5-9) Teacher Performance Assessment",
+    "description": "MA, Mathematics Education (5-9) Teacher Performance Assessment contains a comprehensive, original, research based curriculum unit designed to meet an identified educational need. It provides direct evidence of the candidate’s ability to design and implement a multi-week, standards-based unit of instruction, assess student learning, and then reflect on the learning process. The WGU Teacher Performance Assessment requires students to plan and teach a multi-week standardsbased instructional unit consisting of seven components: 1) contextual factors, 2) learning goals, 3) assessment, 4) design for instruction, 5) instructional decision making, 6) analysis of student learning, and 7) self-evaluation and reflection.",
+    "competency_bullets": [
+      "The graduate evaluates the teaching context to accommodate student differences to plan for instruction and assessment.",
+      "The graduate recommends improvements for instruction and professional practice through personal reflection.",
+      "The graduate plans learning environments that support individual learning, collaboration, and positive social interaction.",
+      "The graduate demonstrates ethical responsibilities and appropriate teaching dispositions, including those outlined in the Western Governors University Teachers College Code of Ethics.",
+      "The graduate plans comprehensive learning segments of instruction and assessment that align with standards and the needs of students.",
+      "The graduate applies instructional strategies that promote learning, engage students, and provide differentiated instruction.",
+      "The graduate recommends strategies that support the development of academic language for all students.",
+      "The graduate integrates strategies to develop academic language that facilitates effective student participation and engagement in learning.",
+      "The graduate utilizes assessment data to profile student learning, communicate information about student progress and achievement, and guide and modify instruction.",
+      "The graduate integrates a variety of strategies and resources to differentiate instruction and meet the needs of diverse learners.",
+      "The graduate evaluates teaching experiences including the planning and implementing of curriculum and instruction through ongoing reflection.",
+      "The graduate develops appropriate plans for professional growth in subject matter knowledge and pedagogical skills, including habits and skills of continual inquiry and learning."
+    ],
+    "prerequisite_mentions": [],
+    "certification_prep_mentions": []
+  },
+  "anomalies": []
+}

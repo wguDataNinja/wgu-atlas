@@ -2,6 +2,93 @@
 
 ---
 
+## Session 19 — education_ma gate + rollout; coverage accounting clarification (2026-03-21)
+
+### Coverage accounting model (new — established this session)
+
+Three distinct coverage counts must be tracked separately. Do not collapse them.
+
+| Layer | Definition | Count after Session 19 |
+|-------|-----------|------------------------|
+| **Artifact coverage** | Guides with parsed + validation + manifest_row JSON artifacts on disk | 89 / 115 (77.4%) |
+| **Family-validated coverage** | Guides in families that cleared a rollout review (rollout summary exists); partial families count only validated portion | 87 / 115 (75.7%) |
+| **Downstream-usable full** | Family-validated guides at HIGH or MEDIUM confidence with both SP and AoS intact | ~84 / 115 |
+| **Downstream-usable partial** | Family-validated guides at LOW confidence where AoS is intact but SP is unusable | 3 (BSITM, MATSPED, MSCSUG) |
+| **Not usable** | Parsed guides with broken AoS (deferred LOW) | 3 (MACCA, MACCF, MACCT) |
+
+Rules:
+- LOW confidence does not automatically mean "not usable" — distinguish SP-only failure (AoS intact, partial use) from AoS failure (not usable).
+- Family-validated requires a rollout summary file, not just a gate report. (Note: healthcare_grad has a gate report but no rollout summary file; it is counted as family-validated based on ATLAS_CONTROL status.)
+- Artifact coverage includes all guides with parsed artifacts, including deferred-LOW guides and families not yet through rollout.
+- Do not cite artifact coverage as validation coverage. They are not the same number.
+
+**Discrepancy note:** ATLAS_CONTROL and previous DEV_NOTES stated "80 / 115" as of Session 18. The actual artifact count was 82 (19+8+11+9+3+2+4+9+5+4+3+5 = 82). The stated count of 80 was off by 2. The discrepancy has not been traced to a specific cause. The filesystem count is authoritative; all 82 pre-existing guides are valid artifacts from the same pipeline.
+
+---
+
+### Gate results
+
+| Family | Gate Guide | Gate Result | Family Confidence | Notes |
+|--------|------------|-------------|------------------|-------|
+| education_ma | MAMES | PASS | 9 HIGH / 0 MEDIUM / 0 LOW | Cleanest family to date |
+
+### Rollout status
+
+- **education_ma**: fully rolled out. 9 guides. All HIGH. 0 anomalies, 0 warnings, 0 empty descriptions/bullets across all 9. No exclusions.
+
+### Parser change this session — capstone KeyError fix
+
+**Bug:** `parse_capstone()` built a capstone dict without `prerequisite_mentions` or `certification_prep_mentions` keys. `_scan_description_mentions()` accessed `course['prerequisite_mentions']` directly (not via `.get()`), raising KeyError when the capstone description matched a prereq pattern. MAMEK6 triggered the crash; other guides with capsones (MBA, MHA, BSCSIA, etc.) did not crash because their capstone descriptions did not contain prereq-matching text.
+
+**Fix:** Added `'prerequisite_mentions': []` and `'certification_prep_mentions': []` to the capstone dict in `parse_capstone()` before the `_scan_description_mentions()` call.
+
+**Scope:** General — affects all guides with capstone sections.
+
+**Regression verification:** 23 guides tested including all previously committed capstone guides (BSBAHC, BSDA, BSHHS, BSMGT, MBAHA, MBAITM, MSCSIA, MSITM, MSML, MBA, MHA, BSCSIA). All capstone guides re-parsed and confirmed identical confidence/anomaly counts. All 9 previously-committed capstone guides that lacked the fix were re-parsed to apply it consistently.
+
+### Corpus status after Session 19
+
+**89 / 115 guides with parsed artifacts (77.4%).** 12 complete families. 87 family-validated.
+
+Complete families:
+- standard_bs (19), cs_ug (8), education_ba (11), graduate_standard (9), mba (3), healthcare_grad (2), education_bs (4), teaching_mat (9), cs_grad (5), swe_grad (4), data_analytics_grad (3), education_ma (9)
+
+Partially validated:
+- accounting_ma: 5 guides parsed. MACC (HIGH) + MACCM (MEDIUM) usable. MACCA, MACCF, MACCT (LOW) deferred — looks_like_prose limitation.
+
+### Accounting_ma reassessment (deferred — no fix implemented)
+
+The specialization-guide failure (MACCA, MACCF, MACCT) is isolated to `looks_like_prose()`. The 202409 guides use a narrower PDF column layout producing 40–50 char description lines with no terminal punctuation. The current function requires >80 chars OR terminal punctuation.
+
+**Minimal safe fix strategy (proposed, not implemented):**
+- Extend `looks_like_prose()` with a verb-presence heuristic for short lines (30–65 chars): if the line contains " is ", " are ", " provides ", " covers ", " teaches ", " examines ", " focuses ", " explores ", " introduces ", " develops " as standalone word sequences, classify as prose regardless of length or terminal punctuation.
+- This targets the failure pattern: "Internal Auditing II is a continuation of", "Corporate Financial Analysis teaches the", etc.
+- Group headings ("Accounting", "Mathematics Content", "Teacher Performance Assessment") typically do not contain these verb patterns.
+
+**Regression risks:**
+- Any short heading that happens to contain a listed verb could be misclassified as prose: "What Business Analytics Covers" (hypothetical). Risk is low but must be verified.
+- Need to test all 80+ currently validated guides without confidence regressions.
+- Need to confirm the fix resolves MACCA (1 course), MACCF (2 courses), MACCT (2 courses).
+
+**Decision:** accounting_ma specialization guides remain deferred. A dedicated parser-fix session is required before any attempt at rollout.
+
+### Confidence distribution this session (9 new guides)
+
+- HIGH: MAMES, MAELLP12, MAMEK6, MAMEMG, MASEMG, MASESB, MASESC, MASESE, MASESP = 9 HIGH
+
+### Artifacts produced
+
+- `data/program_guides/parsed/{MAMES,MAELLP12,MAMEK6,MAMEMG,MASEMG,MASESB,MASESC,MASESE,MASESP}_parsed.json`
+- `data/program_guides/validation/{same}_validation.json`
+- `data/program_guides/manifest_rows/{same}_manifest_row.json`
+- `data/program_guides/family_validation/education_ma_gate_report.{json,md}`
+- `data/program_guides/family_validation/education_ma_rollout_summary.{json,md}`
+
+Capstone re-parses (content-consistent updates to existing committed files):
+- `data/program_guides/parsed/{BSBAHC,BSDA,BSHHS,BSMGT,MBAHA,MBAITM,MSCSIA,MSITM,MSML,MBA,MHA,BSCSIA}_parsed.json`
+
+---
+
 ## Session 18 — cs_grad / swe_grad / data_analytics_grad / accounting_ma (2026-03-21)
 
 ### Gate results
