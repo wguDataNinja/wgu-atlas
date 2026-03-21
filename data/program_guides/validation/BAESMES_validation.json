@@ -1,0 +1,32 @@
+{
+  "program_code": "BAESMES",
+  "degree_title": "Bachelor of Arts, Educational Studies in Secondary Mathematics",
+  "version": "202603",
+  "pub_date": "12/11/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 194,
+    "Areas of Study": 448,
+    "Accessibility": 1043
+  },
+  "standard_path_row_count": 35,
+  "aos_group_count": 6,
+  "aos_course_count": 35,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 35,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

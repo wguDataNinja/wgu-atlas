@@ -1,0 +1,100 @@
+{
+  "report_type": "family_sample_rollout",
+  "family": "education_ba",
+  "date": "2026-03-20",
+  "parser_changes": [],
+
+  "guides_parsed": [
+    {
+      "code": "BAELED",
+      "degree_title": "Bachelor of Arts, Elementary Education",
+      "confidence": "high",
+      "sp_rows": 37,
+      "sp_format": "2-column (no Term)",
+      "aos_groups": 5,
+      "aos_courses": 37,
+      "reconciliation": "37/37 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "notes": "Gate program. Teacher licensure. Has Clinical Experiences and Student Teaching as AoS group labels."
+    },
+    {
+      "code": "BAESELED",
+      "degree_title": "Bachelor of Arts, Educational Studies in Elementary Education",
+      "confidence": "high",
+      "sp_rows": 33,
+      "sp_format": "3-column (with Term)",
+      "aos_groups": 3,
+      "aos_courses": 33,
+      "reconciliation": "33/33 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "notes": "Educational Studies (non-licensure). No Clinical Experiences or Student Teaching groups. Standard structure."
+    },
+    {
+      "code": "BAESMES",
+      "degree_title": "Bachelor of Arts, Educational Studies in Secondary Mathematics",
+      "confidence": "high",
+      "sp_rows": 35,
+      "sp_format": "3-column (with Term)",
+      "aos_groups": 6,
+      "aos_courses": 35,
+      "reconciliation": "35/35 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "notes": "Educational Studies secondary. 6 groups including subject-specific content groups."
+    },
+    {
+      "code": "BAESSESB",
+      "degree_title": "Bachelor of Arts, Educational Studies in Secondary Biological Science",
+      "confidence": "medium",
+      "sp_rows": 36,
+      "sp_format": "3-column (with Term)",
+      "aos_groups": 9,
+      "aos_courses": 37,
+      "reconciliation": "36/37 — Secondary Disciplinary Literacy in AoS but SP row truncated",
+      "anomalies": 1,
+      "warnings": 1,
+      "notes": "Source PDF artifact: last SP row (Secondary Disciplinary Literacy, CUs=3, Term=8) was split across page boundary in PDF. Term value '8' appears after 'Total CUs' line in extracted text, after parser's break point. AoS captures the course correctly. Not a parser bug.",
+      "medium_cause": "source_pdf_artifact"
+    },
+    {
+      "code": "BAESSESC",
+      "degree_title": "Bachelor of Arts, Educational Studies in Secondary Chemistry Science",
+      "confidence": "high",
+      "sp_rows": 36,
+      "sp_format": "3-column (with Term)",
+      "aos_groups": 8,
+      "aos_courses": 36,
+      "reconciliation": "36/36 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "notes": "Educational Studies secondary. 8 groups. Structurally similar to BAESSESB but no PDF artifact."
+    }
+  ],
+
+  "summary": {
+    "total_parsed": 5,
+    "high_confidence": 4,
+    "medium_confidence": 1,
+    "low_confidence": 0,
+    "parser_changes": 0,
+    "medium_cause_summary": "BAESSESB: source PDF artifact (last SP term value displaced after Total CUs) — identical in nature to BSSWE_C from cs_ug rollout"
+  },
+
+  "sp_format_findings": {
+    "BAELED": "2-column (no Term) — teacher licensure",
+    "BAESELED": "3-column (with Term) — educational studies",
+    "BAESMES": "3-column (with Term) — educational studies",
+    "BAESSESB": "3-column (with Term) — educational studies",
+    "BAESSESC": "3-column (with Term) — educational studies",
+    "note": "The 2-column/3-column split follows the licensure vs. educational-studies program distinction within education_ba. Both formats already supported. No branching needed."
+  },
+
+  "structural_subtype_note": "education_ba contains two distinct subtypes: (1) teacher licensure programs (BAELED: 2-column SP, Clinical Experiences + Student Teaching AoS groups, no Capstone); (2) educational studies programs (BAES*: 3-column SP with Term, subject-specific AoS group sets, no Clinical/Student Teaching sections). Both subtypes parse correctly with the current parser.",
+
+  "verdict": {
+    "go_nogo": "GO",
+    "rationale": "5/5 guides parsed successfully. 4 HIGH, 1 MEDIUM (source artifact). No parser changes needed. Both education_ba subtypes (licensure and educational studies) handled correctly by existing logic. Safe to proceed to full education_ba rollout."
+  }
+}

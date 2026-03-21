@@ -1,0 +1,41 @@
+{
+  "program_code": "BAESSESB",
+  "degree_title": "Bachelor of Arts, Educational Studies in Secondary Biological Science",
+  "version": "202603",
+  "pub_date": "12/12/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 188,
+    "Areas of Study": 453,
+    "Accessibility": 1058
+  },
+  "standard_path_row_count": 36,
+  "aos_group_count": 9,
+  "aos_course_count": 37,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 36,
+    "sp_only": [],
+    "aos_only": [
+      "Secondary Disciplinary Literacy"
+    ]
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 1,
+  "anomalies": [
+    {
+      "type": "sp_incomplete_row_at_eof",
+      "title": "Secondary Disciplinary Literacy"
+    }
+  ],
+  "warnings": [
+    "1 AoS titles not in SP: ['Secondary Disciplinary Literacy']"
+  ],
+  "parseability_confidence": "medium"
+}

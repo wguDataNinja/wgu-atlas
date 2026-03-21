@@ -1,0 +1,32 @@
+{
+  "program_code": "BAESELED",
+  "degree_title": "Bachelor of Arts, Educational Studies in Elementary Education",
+  "version": "202603",
+  "pub_date": "12/11/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 187,
+    "Areas of Study": 429,
+    "Accessibility": 996
+  },
+  "standard_path_row_count": 33,
+  "aos_group_count": 3,
+  "aos_course_count": 33,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 33,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

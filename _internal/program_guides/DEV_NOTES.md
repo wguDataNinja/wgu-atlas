@@ -2,6 +2,50 @@
 
 ---
 
+## Session 15 (continued) — education_ba Sampled Rollout (2026-03-20)
+
+### Sample results
+
+| Code | Confidence | SP Rows | SP Format | AoS Groups | AoS Courses |
+|---|---|---|---|---|---|
+| BAELED | HIGH | 37 | 2-col (no Term) | 5 | 37 |
+| BAESELED | HIGH | 33 | 3-col (Term) | 3 | 33 |
+| BAESMES | HIGH | 35 | 3-col (Term) | 6 | 35 |
+| BAESSESB | MEDIUM | 36 | 3-col (Term) | 9 | 37 |
+| BAESSESC | HIGH | 36 | 3-col (Term) | 8 | 36 |
+
+**4 HIGH / 1 MEDIUM / 0 LOW. No parser changes.**
+
+### BAESSESB — MEDIUM cause
+
+Source PDF artifact: last SP row (Secondary Disciplinary Literacy, CUs=3, Term=8) split across page boundary in PDF. Term value "8" appears after "Total CUs" line in extracted text — parser correctly breaks at Total CUs and never sees it. Course correctly present in AoS. Identical pattern to BSSWE_C (cs_ug). Not a parser bug.
+
+### Key structural finding: education_ba has two subtypes
+
+| Subtype | Programs | SP Format | AoS notes |
+|---|---|---|---|
+| Teacher licensure | BAELED | 2-column (no Term) | Clinical Experiences + Student Teaching as group labels |
+| Educational Studies | BAESELED, BAESMES, BAESSESB, BAESSESC | 3-column (with Term) | Subject-specific group sets; no clinical sections |
+
+Both subtypes handled by existing parser. No branching needed.
+
+### Parser changes this session
+
+**None.**
+
+### Recommendation
+
+**GO for full education_ba rollout.** All 5 sampled guides parsed correctly. Parser handles both SP formats and all observed AoS group patterns. The 1 MEDIUM case is a source artifact, not a structural issue.
+
+### Artifacts produced
+
+- `data/program_guides/parsed/{BAESELED,BAESMES,BAESSESB,BAESSESC}_parsed.json`
+- `data/program_guides/validation/{BAESELED,BAESMES,BAESSESB,BAESSESC}_validation.json`
+- `data/program_guides/manifest_rows/{BAESELED,BAESMES,BAESSESB,BAESSESC}_manifest_row.json`
+- `data/program_guides/family_validation/education_ba_sample_rollout_summary.{json,md}`
+
+---
+
 ## Session 15 — education_ba Gate Test: BAELED (2026-03-20)
 
 ### Gate result
