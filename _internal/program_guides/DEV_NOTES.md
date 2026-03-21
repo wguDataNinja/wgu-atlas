@@ -2,6 +2,77 @@
 
 ---
 
+## Session 15 — education_ba Gate Test: BAELED (2026-03-20)
+
+### Gate result
+
+BAELED (B.A., Elementary Education) parsed at **HIGH confidence, 0 anomalies, 0 warnings**.
+
+| Metric | Value |
+|---|---|
+| SP rows | 37 |
+| CU sum | 120 |
+| SP format | 2-column multiline (no Term) |
+| AoS groups | 5 |
+| AoS courses | 37 |
+| SP/AoS reconciliation | 37/37 — perfect match |
+| Empty descriptions | 0 |
+| Empty competency bullets | 0 |
+| Parser changes | **none** |
+
+### AoS group structure
+
+| Group | Courses |
+|---|---|
+| Professional Core | 7 |
+| General Education | 11 |
+| Elementary Education | 15 |
+| Clinical Experiences | 2 |
+| Student Teaching | 2 |
+
+### Key structural findings
+
+- **Standard Path**: 2-column multiline (Course Description + CUs, no Term column). Already fully supported from BSMES work.
+- **Clinical Experiences**: Appears as AoS group label with 2 courses (Early Clinical, Advanced Clinical). Same pattern as BSMES "Student Teaching and Clinical Experiences." No new handler needed.
+- **Student Teaching**: Appears as AoS group label with 2 courses (Student Teaching I, Student Teaching II). Same pattern. No new handler needed.
+- **No Capstone**: Absent. Handled gracefully.
+- **State Licensure Requirements**: Appears in boilerplate preamble before Standard Path. Not a parsed section. No structural impact.
+- **Metadata**: Header-line format ("Program Code: BAELED Catalog Version: 202603 Published Date: 12/11/2025"). page_count=0 (no page-break footers). Pre-existing behavior for this metadata type.
+- **Total CUs line**: "Total CUs" on its own line, followed by "120" on a separate line. SP_TOTAL_RE breaks at "Total CUs" line — correct.
+
+### Prereq false positive (pre-existing)
+
+1 prereq mention captured for Composition: Successful Self-Expression. The description says there is no prerequisite needed "for this course" — the regex matched the "is a prerequisite for this course" pattern inverted. Pre-existing regex behavior; not a new bug.
+
+### Parser changes this session
+
+**None.**
+
+### education_ba compatibility assessment
+
+**Go.** The current parser handles all observed `education_ba` structural features without changes:
+- 2-column SP (no Term) ✓
+- Clinical Experiences / Student Teaching as AoS group labels ✓
+- No Capstone ✓
+- Header-line metadata ✓
+
+### Artifacts produced
+
+- `data/program_guides/parsed/BAELED_parsed.json`
+- `data/program_guides/validation/BAELED_validation.json`
+- `data/program_guides/manifest_rows/BAELED_manifest_row.json`
+- `data/program_guides/family_validation/education_ba_gate_report.json`
+- `data/program_guides/family_validation/education_ba_gate_report.md`
+
+### Next recommended steps
+
+Gate passed. Proceed to sampled `education_ba` rollout:
+1. Sample 3–4 more guides: BAESELED, BAESMES, BAESSESB, BAESSESC
+2. Run them individually; check for any SP or AoS deviations
+3. If all sample at HIGH/MEDIUM with no structural surprises, proceed to `education_ba --all`
+
+---
+
 ## Session 14 (continued) — cs_ug Full Rollout (2026-03-20)
 
 ### Full cs_ug rollout results

@@ -1,0 +1,95 @@
+{
+  "report_type": "family_gate_test",
+  "family": "education_ba",
+  "gate_program": "BAELED",
+  "date": "2026-03-20",
+  "parser_version_note": "parse_guide.py — no changes made for this gate",
+
+  "parse_result": {
+    "program_code": "BAELED",
+    "degree_title": "Bachelor of Arts, Elementary Education",
+    "version": "202603",
+    "pub_date": "12/11/2025",
+    "page_count": 0,
+    "parseability_confidence": "high",
+    "anomaly_count": 0,
+    "warning_count": 0
+  },
+
+  "section_boundaries": {
+    "Standard Path": 198,
+    "Areas of Study": 372,
+    "Capstone": null,
+    "Accessibility": 1007
+  },
+
+  "standard_path": {
+    "format": "2-column multiline (Course Description + CUs; no Term column)",
+    "row_count": 37,
+    "cu_sum": 120,
+    "term_column_present": false,
+    "anomalies": []
+  },
+
+  "areas_of_study": {
+    "group_count": 5,
+    "groups": [
+      {"name": "Professional Core", "course_count": 7},
+      {"name": "General Education", "course_count": 11},
+      {"name": "Elementary Education", "course_count": 15},
+      {"name": "Clinical Experiences", "course_count": 2},
+      {"name": "Student Teaching", "course_count": 2}
+    ],
+    "total_courses": 37,
+    "anomalies": []
+  },
+
+  "reconciliation": {
+    "sp_titles": 37,
+    "aos_titles": 37,
+    "in_both": 37,
+    "sp_only": [],
+    "aos_only": [],
+    "result": "CLEAN — perfect match"
+  },
+
+  "quality": {
+    "empty_descriptions": [],
+    "empty_competency_lists": [],
+    "cert_prep_mentions": 0,
+    "prereq_mentions": 1,
+    "prereq_note": "1 false positive — 'for this course and there is no specific technical knowledge needed' matched from 'is a prerequisite for this course' pattern in Composition: Successful Self-Expression description; pre-existing behavior"
+  },
+
+  "structural_elements_evaluated": {
+    "student_teaching_sections": "Parsed correctly as 'Student Teaching' AoS group label with 2 courses underneath — same pattern as BSMES. No new handler needed.",
+    "clinical_experiences_sections": "Parsed correctly as 'Clinical Experiences' AoS group label with 2 courses underneath. No new handler needed.",
+    "licensure_related_sections": "'State Licensure Requirements' appears in boilerplate preamble before Standard Path. Not a parsed section. No structural impact.",
+    "gateway_field_experience_practicum": "No standalone Field Experience or Practicum sections detected. Not applicable to BAELED.",
+    "standard_path_format": "2-column multiline (no Term). Already supported via detect_sp_has_term() + has_term=False path. No change needed.",
+    "areas_of_study_structure": "Standard group > course > description > competencies pattern. 5 groups. Parsed cleanly.",
+    "capstone_terminal_section": "No Capstone section. Handled gracefully — parser already supports missing Capstone.",
+    "closing_section": "'Accessibility and Accommodations' as AoS end-bound works correctly. No deviation."
+  },
+
+  "metadata_format": {
+    "type": "header-line",
+    "example": "Program Code: BAELED Catalog Version: 202603 Published Date: 12/11/2025",
+    "note": "No page-break footers present — page_count=0. Same as other header-line guides (BSIT, BSMGT). Non-blocking."
+  },
+
+  "manifest_row_note": "has_term_structure and has_cu_values both report true because manifest row builder uses standard_path_row_count > 0 as proxy. Cosmetically inaccurate for 2-column education guides — pre-existing behavior, not a blocker.",
+
+  "parser_changes_made": [],
+
+  "anomalies": [],
+  "warnings": [],
+
+  "gate_verdict": {
+    "confidence": "HIGH",
+    "go_nogo": "GO",
+    "rationale": "BAELED parsed with HIGH confidence, 0 anomalies, 0 warnings, perfect SP/AoS reconciliation. All education_ba structural elements (Clinical Experiences, Student Teaching as AoS group labels, 2-column SP, no Capstone) are already handled by the current parser. No new branch or handler is needed.",
+    "education_ba_rollout_safe": true,
+    "caveat": "Sample more education_ba guides before batch rollout. Especially test guides that may have different SP CU totals or additional clinical section variants. The 2-column SP without Term is confirmed stable from BSMES. Confidence is high that the family will parse cleanly."
+  }
+}
