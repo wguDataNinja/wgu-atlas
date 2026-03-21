@@ -1,0 +1,114 @@
+{
+  "program_code": "MACCA",
+  "degree_title": "Master of Science in Accounting, Auditing Specialization",
+  "version": "202409",
+  "pub_date": "4/12/24",
+  "page_count": 11,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 211,
+    "Areas of Study": 307,
+    "Accessibility": 504
+  },
+  "standard_path_row_count": 10,
+  "aos_group_count": 3,
+  "aos_course_count": 10,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 9,
+    "sp_only": [
+      "Internal Auditing II"
+    ],
+    "aos_only": [
+      "Internal Auditing I and covers the"
+    ]
+  },
+  "empty_descriptions": [
+    "Internal Auditing I and covers the"
+  ],
+  "empty_competency_lists": [
+    "Internal Auditing I and covers the"
+  ],
+  "anomaly_count": 7,
+  "anomalies": [
+    {
+      "type": "pending_titles_overflow",
+      "line": 459,
+      "text": "competencies expected of an internal audit",
+      "buffer": [
+        "Internal Auditing II",
+        "Internal Auditing II is a continuation of",
+        "Internal Auditing I and covers the"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 460,
+      "text": "professional in the business world. This",
+      "buffer": [
+        "Internal Auditing II",
+        "Internal Auditing II is a continuation of",
+        "Internal Auditing I and covers the"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 461,
+      "text": "course is well aligned to the Institute of",
+      "buffer": [
+        "Internal Auditing II",
+        "Internal Auditing II is a continuation of",
+        "Internal Auditing I and covers the"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 462,
+      "text": "Internal Auditors’ (IIA) International",
+      "buffer": [
+        "Internal Auditing II",
+        "Internal Auditing II is a continuation of",
+        "Internal Auditing I and covers the"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 463,
+      "text": "Professional Practices framework (IPPF)",
+      "buffer": [
+        "Internal Auditing II",
+        "Internal Auditing II is a continuation of",
+        "Internal Auditing I and covers the"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 464,
+      "text": "by focusing learner’s attention on four",
+      "buffer": [
+        "Internal Auditing II",
+        "Internal Auditing II is a continuation of",
+        "Internal Auditing I and covers the"
+      ]
+    },
+    {
+      "type": "too_many_pending_titles",
+      "titles": [
+        "Internal Auditing II",
+        "Internal Auditing II is a continuation of",
+        "Internal Auditing I and covers the"
+      ]
+    }
+  ],
+  "warnings": [
+    "1 SP titles not found in AoS: ['Internal Auditing II']",
+    "1 AoS titles not in SP: ['Internal Auditing I and covers the']",
+    "1 courses with no description",
+    "1 courses with no competency bullets"
+  ],
+  "parseability_confidence": "low"
+}

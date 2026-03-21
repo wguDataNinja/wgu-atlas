@@ -1,0 +1,138 @@
+{
+  "report_type": "family_gate_test",
+  "family": "swe_grad",
+  "date": "2026-03-21",
+  "family_size": 4,
+  "gate_approach": "MSSWEAIE selected as gate guide (AI Engineering specialization, representative of pure graduate MSSWE format). All 4 guides parsed in same pass.",
+  "parser_changes": [
+    {
+      "description": "_is_bullet_continuation: Title Case threshold guard added",
+      "location": "scripts/program_guides/parse_guide.py — _is_bullet_continuation()",
+      "nature": "general (applies to all guides, not family-specific)",
+      "why": "All 3 pure swe_grad guides had 'Software Quality Assurance and Deployment' missing from AoS. The preceding course ('Software Architecture and Design') had a last bullet that ended without terminal punctuation. The parser's _is_bullet_continuation() function treated the course title 'Software Quality Assurance and Deployment' (80% Title Case, >30 chars) as a bullet continuation of the prior course. The next course's content was then lost.",
+      "fix": "Added a Title Case ratio check before the len(line) > 30 continuation path. If ≥80% of the line's words start uppercase, the line is classified as a Title Case heading and NOT a continuation — returns False. This is a general safety guard that prevents Title Case course titles from being swallowed by preceding bullets that lack terminal punctuation.",
+      "regression_verified": "Re-parsed BSCS, BSCSIA, MBA, MHA, MATELED, BSSESB, BSACC, MSCIN. All returned identical confidence levels and anomaly counts. No regressions detected."
+    }
+  ],
+
+  "initial_parse_confidence": {
+    "MSSWEAIE": "medium (before fix)",
+    "MSSWEDDD": "medium (before fix)",
+    "MSSWEDOE": "medium (before fix)",
+    "MSSWEUG": "medium (before fix)"
+  },
+
+  "guides": [
+    {
+      "code": "MSSWEAIE",
+      "degree_title": "Master of Science, Software Engineering - AI Engineering",
+      "confidence": "high",
+      "version": "202504",
+      "pub_date": "11/5/2024",
+      "page_count": 0,
+      "metadata_format": "header-line",
+      "sp_rows": 10,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 2,
+      "aos_courses": 10,
+      "capstone_present": false,
+      "reconciliation": "10/10 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0
+    },
+    {
+      "code": "MSSWEDDD",
+      "degree_title": "Master of Science, Software Engineering - Domain Driven Design",
+      "confidence": "high",
+      "version": "202504",
+      "pub_date": "11/5/2024",
+      "page_count": 0,
+      "metadata_format": "header-line",
+      "sp_rows": 10,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 2,
+      "aos_courses": 10,
+      "capstone_present": false,
+      "reconciliation": "10/10 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0
+    },
+    {
+      "code": "MSSWEDOE",
+      "degree_title": "Master of Science, Software Engineering - DevOps Engineering",
+      "confidence": "high",
+      "version": "202504",
+      "pub_date": "11/5/2024",
+      "page_count": 0,
+      "metadata_format": "header-line",
+      "sp_rows": 10,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 2,
+      "aos_courses": 10,
+      "capstone_present": false,
+      "reconciliation": "10/10 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0
+    },
+    {
+      "code": "MSSWEUG",
+      "degree_title": "Bachelor of Science, Software Engineering (BSSWE to MSSWE)",
+      "confidence": "medium",
+      "version": "202504",
+      "pub_date": "1/3/2025",
+      "page_count": 0,
+      "metadata_format": "header-line",
+      "sp_rows": 38,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 10,
+      "aos_courses": 38,
+      "capstone_present": false,
+      "reconciliation": "37/38 title match (1 hyphen variant)",
+      "anomalies": 0,
+      "warnings": 2,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0,
+      "medium_cause": "title_hyphen_variant",
+      "medium_detail": "SP has 'Scripting and Programming Foundations'; AoS has 'Scripting and Programming - Foundations' (with em-dash variant). Course IS present in AoS with complete description and competency bullets. The difference is a formatting variant between the SP table title and the AoS section title in the source PDF — both refer to the same course. 0 AoS anomalies, 38/38 courses present, 0 empty descriptions, 0 empty competency lists. MSSWEUG is a bridge guide covering the full BSSWE-to-MSSWE curriculum (38 courses)."
+    }
+  ],
+
+  "totals": {
+    "guides_in_family": 4,
+    "parsed_successfully": 4,
+    "failed": 0,
+    "high_confidence": 3,
+    "medium_confidence": 1,
+    "low_confidence": 0
+  },
+
+  "confidence_distribution": {
+    "high": ["MSSWEAIE", "MSSWEDDD", "MSSWEDOE"],
+    "medium": ["MSSWEUG"],
+    "low": []
+  },
+
+  "structural_notes": [
+    "All 3 pure graduate guides share identical structure: 10 SP rows, 2 AoS groups ([Software]=9, [Risk Management]=1), no capstone.",
+    "MSSWEUG is a BSSWE-to-MSSWE bridge/pathway guide covering 38 courses across 10 groups. Parser handles identically to the pure graduate guides — no branching needed.",
+    "The parser fix (_is_bullet_continuation Title Case guard) was required before the 3 pure graduate guides could reach HIGH confidence. Without the fix, 'Software Quality Assurance and Deployment' was lost from AoS in all 3 guides because the preceding bullet ('The learner justifies the software architecture used in a software system') ended without terminal punctuation.",
+    "After the fix, all 3 pure graduate guides parsed with 0 anomalies and 0 warnings.",
+    "MSSWEUG's MEDIUM is entirely due to a hyphen variant in one title ('Scripting and Programming Foundations' vs '...  - Foundations'). No data loss; the course is present and correct."
+  ],
+
+  "gate_result": "PASS — 3/3 pure graduate guides HIGH confidence after parser fix. 1 MEDIUM (bridge guide, cosmetic title variant). 0 LOW.",
+
+  "recommendation": {
+    "swe_grad_rollout_ready": true,
+    "summary": "4/4 parsed. 3 HIGH / 1 MEDIUM / 0 LOW. Parser fix confirmed safe. Roll out full family.",
+    "parser_change_needed": true,
+    "parser_change_scope": "General — already implemented",
+    "downstream_note": "MSSWEUG: one course has SP title 'Scripting and Programming Foundations' vs AoS title 'Scripting and Programming - Foundations'. Same course; hyphen variant only. Safe to use AoS title in downstream."
+  }
+}

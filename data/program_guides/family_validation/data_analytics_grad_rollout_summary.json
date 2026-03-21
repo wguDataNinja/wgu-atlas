@@ -1,0 +1,132 @@
+{
+  "report_type": "family_full_rollout",
+  "family": "data_analytics_grad",
+  "date": "2026-03-21",
+  "gate_guide": "MSDADE",
+  "gate_result": "HIGH confidence, 0 anomalies, 0 warnings — gate passed",
+  "parser_changes": [],
+
+  "totals": {
+    "guides_in_family": 3,
+    "parsed_successfully": 3,
+    "failed": 0,
+    "high_confidence": 3,
+    "medium_confidence": 0,
+    "low_confidence": 0
+  },
+
+  "guides": [
+    {
+      "code": "MSDADE",
+      "degree_title": "Master of Science, Data Analytics - Data Engineering",
+      "confidence": "high",
+      "version": "202408",
+      "pub_date": "5/15/24",
+      "page_count": 11,
+      "metadata_format": "footer",
+      "sp_rows": 11,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 2,
+      "aos_courses": 11,
+      "capstone_present": false,
+      "reconciliation": "11/11 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0
+    },
+    {
+      "code": "MSDADS",
+      "degree_title": "Master of Science, Data Analytics - Data Science",
+      "confidence": "high",
+      "version": "202408",
+      "pub_date": "5/15/24",
+      "page_count": 11,
+      "metadata_format": "footer",
+      "sp_rows": 11,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 2,
+      "aos_courses": 11,
+      "capstone_present": false,
+      "reconciliation": "11/11 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0
+    },
+    {
+      "code": "MSDADPE",
+      "degree_title": "Master of Science, Data Analytics - Decision Process Engineering",
+      "confidence": "high",
+      "version": "202408",
+      "pub_date": "5/15/24",
+      "page_count": 11,
+      "metadata_format": "footer",
+      "sp_rows": 11,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 3,
+      "aos_courses": 11,
+      "capstone_present": false,
+      "reconciliation": "11/11 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0
+    }
+  ],
+
+  "confidence_distribution": {
+    "high": ["MSDADE", "MSDADS", "MSDADPE"],
+    "medium": [],
+    "low": []
+  },
+
+  "sp_format": "All 3 guides use 3-column multiline format (Course Description / CUs / Term). Consistent with all other validated graduate families.",
+
+  "metadata_format_variants": {
+    "footer": ["MSDADE", "MSDADS", "MSDADPE"],
+    "header_line": [],
+    "note": "All 3 use older footer format (page_count=11). Cohort published version 202408. Footer format already handled by extract_metadata()."
+  },
+
+  "capstone_notes": {
+    "present": [],
+    "absent": ["MSDADE", "MSDADS", "MSDADPE"],
+    "note": "No capstone section in any data_analytics_grad guide. Consistent within the family."
+  },
+
+  "quality": {
+    "empty_descriptions": 0,
+    "empty_competency_lists": 0,
+    "total_sp_rows": 33,
+    "total_aos_courses": 33,
+    "perfect_reconciliation_guides": 3
+  },
+
+  "structural_notes": [
+    "All 3 guides are specialization tracks of the MSDA program. All share a 7-course Data Analytics core ([Data Analytics] group). Specialization content appears as the second or third AoS group.",
+    "MSDADPE has 3 AoS groups (the only one with 3) — [Data Analytics], [IT Management], [Decision Process Engineering]. Still parses identically.",
+    "No new parser logic needed. Graduate 3-column multiline + footer metadata is the pre-validated pattern.",
+    "Footer metadata (page_count=11) produces page_count=11 in parsed output as expected."
+  ],
+
+  "parser_changes_made": [],
+
+  "safe_fields_for_downstream": [
+    "Standard Path course titles (all 3 guides)",
+    "Standard Path CU values (all 3 guides)",
+    "Standard Path term sequence (all 3 guides)",
+    "AoS group structure (all 3 guides)",
+    "Course descriptions (all 3 guides, 0 empty)",
+    "Competency bullets (all 3 guides, 0 empty)",
+    "Guide metadata / version / pub_date (all 3 guides)"
+  ],
+
+  "fields_to_exclude": [],
+
+  "recommendation": {
+    "data_analytics_grad_complete": true,
+    "summary": "3/3 parsed, 0 failures, 0 LOW confidence. 3 HIGH / 0 MEDIUM / 0 LOW. Cleanest graduate family validated to date. No parser changes needed or made.",
+    "downstream_go_nogo": "GO — all fields safe for downstream use. No exclusions."
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "program_code": "MSCSUG",
+  "degree_title": "Bachelor of Science, Computer Science (BSCS to MSCS)",
+  "version": "202504",
+  "pub_date": "2/26/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 183,
+    "Areas of Study": 450,
+    "Accessibility": 1024
+  },
+  "standard_path_row_count": 30,
+  "aos_group_count": 11,
+  "aos_course_count": 37,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 29,
+    "sp_only": [
+      "Scripting and Programming Applications"
+    ],
+    "aos_only": [
+      "Business of IT - Applications",
+      "Computer Science Project Development with a Team",
+      "Discrete Mathematics I",
+      "Health, Fitness, and Wellness",
+      "Java Fundamentals",
+      "Scripting and Programming - Applications",
+      "Software Design and Quality Assurance",
+      "Software Engineering"
+    ]
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 14,
+  "anomalies": [
+    {
+      "type": "sp_row_invalid",
+      "title": "Discrete Mathematics I",
+      "cus": 44,
+      "term": 33
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "Java Fundamentals",
+      "cus": 3,
+      "term": 45
+    },
+    {
+      "type": "sp_expected_term_got_text",
+      "line": 330,
+      "text": "Linux Foundations"
+    },
+    {
+      "type": "sp_expected_term_got_text",
+      "line": 337,
+      "text": "Fundamentals of Information"
+    },
+    {
+      "type": "sp_expected_term_got_text",
+      "line": 345,
+      "text": "Back-End Programming"
+    },
+    {
+      "type": "sp_expected_term_got_text",
+      "line": 358,
+      "text": "Advanced Java"
+    },
+    {
+      "type": "sp_expected_term_got_text",
+      "line": 365,
+      "text": "Ethics in Technology"
+    },
+    {
+      "type": "sp_expected_term_got_text",
+      "line": 372,
+      "text": "Applied Algorithms and Reasoning"
+    },
+    {
+      "type": "sp_expected_term_got_text",
+      "line": 379,
+      "text": "Business of IT - Applications"
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "Business of IT - Applications",
+      "cus": 4,
+      "term": 87
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "Software Engineering",
+      "cus": 4,
+      "term": 87
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "Health, Fitness, and Wellness",
+      "cus": 4,
+      "term": 87
+    },
+    {
+      "type": "sp_row_invalid",
+      "title": "Software Design and Quality Assurance",
+      "cus": 33,
+      "term": 8
+    },
+    {
+      "type": "sp_incomplete_row_at_eof",
+      "title": "Computer Science Project Development with a Team"
+    }
+  ],
+  "warnings": [
+    "1 SP titles not found in AoS: ['Scripting and Programming Applications']",
+    "8 AoS titles not in SP: ['Business of IT - Applications', 'Computer Science Project Development with a Team', 'Discrete Mathematics I', 'Health, Fitness, and Wellness', 'Java Fundamentals']"
+  ],
+  "parseability_confidence": "low"
+}

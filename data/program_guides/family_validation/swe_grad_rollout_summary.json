@@ -1,0 +1,169 @@
+{
+  "report_type": "family_full_rollout",
+  "family": "swe_grad",
+  "date": "2026-03-21",
+  "gate_guide": "MSSWEAIE",
+  "gate_result": "HIGH confidence, 0 anomalies, 0 warnings — gate passed after parser fix",
+  "parser_changes": [
+    {
+      "description": "_is_bullet_continuation: Title Case threshold guard",
+      "scope": "General — applies to all guides",
+      "regression_verified": true
+    }
+  ],
+
+  "totals": {
+    "guides_in_family": 4,
+    "parsed_successfully": 4,
+    "failed": 0,
+    "high_confidence": 3,
+    "medium_confidence": 1,
+    "low_confidence": 0
+  },
+
+  "guides": [
+    {
+      "code": "MSSWEAIE",
+      "degree_title": "Master of Science, Software Engineering - AI Engineering",
+      "confidence": "high",
+      "version": "202504",
+      "pub_date": "11/5/2024",
+      "page_count": 0,
+      "metadata_format": "header-line",
+      "sp_rows": 10,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 2,
+      "aos_courses": 10,
+      "capstone_present": false,
+      "reconciliation": "10/10 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0
+    },
+    {
+      "code": "MSSWEDDD",
+      "degree_title": "Master of Science, Software Engineering - Domain Driven Design",
+      "confidence": "high",
+      "version": "202504",
+      "pub_date": "11/5/2024",
+      "page_count": 0,
+      "metadata_format": "header-line",
+      "sp_rows": 10,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 2,
+      "aos_courses": 10,
+      "capstone_present": false,
+      "reconciliation": "10/10 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0
+    },
+    {
+      "code": "MSSWEDOE",
+      "degree_title": "Master of Science, Software Engineering - DevOps Engineering",
+      "confidence": "high",
+      "version": "202504",
+      "pub_date": "11/5/2024",
+      "page_count": 0,
+      "metadata_format": "header-line",
+      "sp_rows": 10,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 2,
+      "aos_courses": 10,
+      "capstone_present": false,
+      "reconciliation": "10/10 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0
+    },
+    {
+      "code": "MSSWEUG",
+      "degree_title": "Bachelor of Science, Software Engineering (BSSWE to MSSWE)",
+      "confidence": "medium",
+      "version": "202504",
+      "pub_date": "1/3/2025",
+      "page_count": 0,
+      "metadata_format": "header-line",
+      "sp_rows": 38,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 10,
+      "aos_courses": 38,
+      "capstone_present": false,
+      "reconciliation": "37/38 title match — 1 hyphen variant",
+      "anomalies": 0,
+      "warnings": 2,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0,
+      "medium_cause": "title_hyphen_variant",
+      "medium_detail": "SP: 'Scripting and Programming Foundations'; AoS: 'Scripting and Programming - Foundations'. Same course — hyphen variant between SP table label and AoS section heading. 0 AoS anomalies. 38/38 courses present with complete content. Bridge guide covering full BSSWE-to-MSSWE curriculum."
+    }
+  ],
+
+  "confidence_distribution": {
+    "high": ["MSSWEAIE", "MSSWEDDD", "MSSWEDOE"],
+    "medium": ["MSSWEUG"],
+    "low": []
+  },
+
+  "sp_format": "All 4 guides use 3-column multiline format (with Term). No 2-column variants in this family.",
+
+  "metadata_format_variants": {
+    "header_line": ["MSSWEAIE", "MSSWEDDD", "MSSWEDOE", "MSSWEUG"],
+    "footer": [],
+    "note": "All 4 guides use header-line format. All page_count=0."
+  },
+
+  "capstone_notes": {
+    "present": [],
+    "absent": ["MSSWEAIE", "MSSWEDDD", "MSSWEDOE", "MSSWEUG"],
+    "note": "No capstone section in any swe_grad guide."
+  },
+
+  "quality": {
+    "empty_descriptions": 0,
+    "empty_competency_lists": 0,
+    "total_sp_rows": 68,
+    "total_aos_courses": 68,
+    "perfect_reconciliation_guides": 4
+  },
+
+  "structural_notes": [
+    "3 pure graduate guides (MSSWEAIE, MSSWEDDD, MSSWEDOE) are track specializations sharing an identical 10-course structure: [Software]=9, [Risk Management]=1.",
+    "MSSWEUG is a bridge guide analogous to MSITUG (graduate_standard) and MSCSUG (cs_grad). Unlike MSCSUG, MSSWEUG has no SP extraction failure — 38/38 rows clean.",
+    "Parser fix (_is_bullet_continuation Title Case guard) was required to achieve HIGH for the 3 pure graduate guides. The fix is general and safe — regression-verified against 8 previously-validated guides from multiple families.",
+    "MSSWEUG MEDIUM is due to a title hyphenation difference between SP and AoS ('Scripting and Programming Foundations' vs '- Foundations'). Not a parser failure — both titles are present in the source; the SP table uses a slightly different abbreviation than the AoS heading."
+  ],
+
+  "parser_changes_made": [
+    {
+      "function": "_is_bullet_continuation",
+      "change": "Added Title Case ratio guard: if ≥80% of a line's words start uppercase, return False (not a continuation). Prevents Title Case course titles from being swallowed by bullets that lack terminal punctuation.",
+      "scope": "General",
+      "triggered_by": "swe_grad family (consistent SQAD loss across 3 guides)",
+      "regression_verified": "BSCS, BSCSIA, MBA, MHA, MATELED, BSSESB, BSACC, MSCIN — all unchanged"
+    }
+  ],
+
+  "safe_fields_for_downstream": [
+    "SP course titles (all 4 guides)",
+    "SP CU values (all 4 guides)",
+    "SP term sequence (all 4 guides)",
+    "AoS group structure (all 4 guides)",
+    "Course descriptions (all 4 guides, 0 empty)",
+    "Competency bullets (all 4 guides, 0 empty)",
+    "Guide metadata / version (all 4 guides)"
+  ],
+
+  "fields_to_exclude": [
+    "MSSWEUG SP title for 'Scripting and Programming Foundations' — use AoS title ('Scripting and Programming - Foundations') as the canonical form; they refer to the same course"
+  ],
+
+  "recommendation": {
+    "swe_grad_complete": true,
+    "summary": "4/4 parsed, 0 failures, 0 LOW. 3 HIGH / 1 MEDIUM. MEDIUM (MSSWEUG) is a cosmetic title variant in a bridge guide — no data loss. Parser fix implemented and verified. Family structure matched gate expectations throughout.",
+    "downstream_go_nogo": "GO — all fields safe. Minor title variant in MSSWEUG noted above."
+  }
+}

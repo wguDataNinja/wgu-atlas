@@ -772,8 +772,16 @@ def _is_bullet_continuation(line: str, pending: str) -> bool:
         return True
     # If pending ends mid-sentence (no terminal punctuation), check for continuation
     if len(pending) > 20 and pending[-1] not in '.?!':
-        # Longer lines that continue the sentence
+        # Longer lines that continue the sentence — but exclude Title Case headings.
+        # A line where ≥80% of words start uppercase is almost certainly a course title
+        # or group heading, not a sentence continuation.  This catches multi-word course
+        # titles like "Software Quality Assurance and Deployment" that would otherwise be
+        # misidentified as bullet wrap when the preceding bullet lacks terminal punctuation.
         if len(line) > 30:
+            _words = line.split()
+            _cap_ratio = sum(1 for w in _words if w[0].isupper()) / max(len(_words), 1)
+            if _cap_ratio >= 0.80:
+                return False  # Looks like a Title Case heading, not a continuation
             return True
         # Short lines that complete the sentence with terminal punctuation — e.g.
         # "...accounting principles" + "(GAAP)." or "...Article 2 of the Uniform" + "Commercial Code."

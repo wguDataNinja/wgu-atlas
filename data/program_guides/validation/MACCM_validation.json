@@ -1,0 +1,39 @@
+{
+  "program_code": "MACCM",
+  "degree_title": "Master of Science in Accounting, Management Accounting",
+  "version": "202409",
+  "pub_date": "4/12/24",
+  "page_count": 11,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 212,
+    "Areas of Study": 309,
+    "Accessibility": 511
+  },
+  "standard_path_row_count": 10,
+  "aos_group_count": 3,
+  "aos_course_count": 10,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 9,
+    "sp_only": [
+      "Corporate Financial Analysis"
+    ],
+    "aos_only": [
+      "Corporate Financial Analysis teaches the"
+    ]
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [
+    "1 SP titles not found in AoS: ['Corporate Financial Analysis']",
+    "1 AoS titles not in SP: ['Corporate Financial Analysis teaches the']"
+  ],
+  "parseability_confidence": "medium"
+}

@@ -1,0 +1,266 @@
+{
+  "program_code": "MACCT",
+  "degree_title": "Master of Science in Accounting, Taxation Specialization",
+  "version": "202409",
+  "pub_date": "4/12/24",
+  "page_count": 11,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 211,
+    "Areas of Study": 307,
+    "Accessibility": 513
+  },
+  "standard_path_row_count": 10,
+  "aos_group_count": 4,
+  "aos_course_count": 10,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 8,
+    "sp_only": [
+      "Advanced Financial Accounting I",
+      "Corporate Taxation"
+    ],
+    "aos_only": [
+      "demand. As the business world continues",
+      "taxation of corporations and their shareholders"
+    ]
+  },
+  "empty_descriptions": [
+    "demand. As the business world continues",
+    "taxation of corporations and their shareholders"
+  ],
+  "empty_competency_lists": [
+    "demand. As the business world continues",
+    "taxation of corporations and their shareholders"
+  ],
+  "anomaly_count": 22,
+  "anomalies": [
+    {
+      "type": "pending_titles_overflow",
+      "line": 429,
+      "text": "to expand and broaden, specialized skills",
+      "buffer": [
+        "Advanced Financial Accounting I",
+        "Complex accounting skills are in high",
+        "demand. As the business world continues"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 430,
+      "text": "are required to accommodate the",
+      "buffer": [
+        "Advanced Financial Accounting I",
+        "Complex accounting skills are in high",
+        "demand. As the business world continues"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 431,
+      "text": "advanced accounting needs of many",
+      "buffer": [
+        "Advanced Financial Accounting I",
+        "Complex accounting skills are in high",
+        "demand. As the business world continues"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 432,
+      "text": "industries. Applying financial standards",
+      "buffer": [
+        "Advanced Financial Accounting I",
+        "Complex accounting skills are in high",
+        "demand. As the business world continues"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 433,
+      "text": "using professional judgment to a variety of",
+      "buffer": [
+        "Advanced Financial Accounting I",
+        "Complex accounting skills are in high",
+        "demand. As the business world continues"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 434,
+      "text": "business situations is crucial. This course",
+      "buffer": [
+        "Advanced Financial Accounting I",
+        "Complex accounting skills are in high",
+        "demand. As the business world continues"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 435,
+      "text": "builds the learner’s accounting knowledge",
+      "buffer": [
+        "Advanced Financial Accounting I",
+        "Complex accounting skills are in high",
+        "demand. As the business world continues"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 436,
+      "text": "by focusing on advanced financial",
+      "buffer": [
+        "Advanced Financial Accounting I",
+        "Complex accounting skills are in high",
+        "demand. As the business world continues"
+      ]
+    },
+    {
+      "type": "too_many_pending_titles",
+      "titles": [
+        "Advanced Financial Accounting I",
+        "Complex accounting skills are in high",
+        "demand. As the business world continues"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 451,
+      "text": "with emphasis on the formation of the",
+      "buffer": [
+        "Corporate Taxation",
+        "Corporate Taxation describes federal income",
+        "taxation of corporations and their shareholders"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 452,
+      "text": "corporation, capital structure, operational",
+      "buffer": [
+        "Corporate Taxation",
+        "Corporate Taxation describes federal income",
+        "taxation of corporations and their shareholders"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 453,
+      "text": "alternatives, distributions, partial and complete",
+      "buffer": [
+        "Corporate Taxation",
+        "Corporate Taxation describes federal income",
+        "taxation of corporations and their shareholders"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 454,
+      "text": "liquidations, personal holding companies, and",
+      "buffer": [
+        "Corporate Taxation",
+        "Corporate Taxation describes federal income",
+        "taxation of corporations and their shareholders"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 455,
+      "text": "the accumulated earnings tax. This course",
+      "buffer": [
+        "Corporate Taxation",
+        "Corporate Taxation describes federal income",
+        "taxation of corporations and their shareholders"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 456,
+      "text": "offers real-life scenario case studies and",
+      "buffer": [
+        "Corporate Taxation",
+        "Corporate Taxation describes federal income",
+        "taxation of corporations and their shareholders"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 457,
+      "text": "exercises to better engage learners by applying",
+      "buffer": [
+        "Corporate Taxation",
+        "Corporate Taxation describes federal income",
+        "taxation of corporations and their shareholders"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 458,
+      "text": "course concepts in practice. This course",
+      "buffer": [
+        "Corporate Taxation",
+        "Corporate Taxation describes federal income",
+        "taxation of corporations and their shareholders"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 459,
+      "text": "involves difficult tax rules and concepts; thus, it",
+      "buffer": [
+        "Corporate Taxation",
+        "Corporate Taxation describes federal income",
+        "taxation of corporations and their shareholders"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 460,
+      "text": "is imperative for the learner to study the",
+      "buffer": [
+        "Corporate Taxation",
+        "Corporate Taxation describes federal income",
+        "taxation of corporations and their shareholders"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 461,
+      "text": "textbook and complete the assigned problems",
+      "buffer": [
+        "Corporate Taxation",
+        "Corporate Taxation describes federal income",
+        "taxation of corporations and their shareholders"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 462,
+      "text": "in the text",
+      "buffer": [
+        "Corporate Taxation",
+        "Corporate Taxation describes federal income",
+        "taxation of corporations and their shareholders"
+      ]
+    },
+    {
+      "type": "too_many_pending_titles",
+      "titles": [
+        "Corporate Taxation",
+        "Corporate Taxation describes federal income",
+        "taxation of corporations and their shareholders"
+      ]
+    }
+  ],
+  "warnings": [
+    "2 SP titles not found in AoS: ['Advanced Financial Accounting I', 'Corporate Taxation']",
+    "2 AoS titles not in SP: ['demand. As the business world continues', 'taxation of corporations and their shareholders']",
+    "2 courses with no description",
+    "2 courses with no competency bullets"
+  ],
+  "parseability_confidence": "low"
+}

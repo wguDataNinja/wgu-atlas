@@ -1,0 +1,32 @@
+{
+  "program_code": "MSCSCS",
+  "degree_title": "Master of Science, Computer Science, Computing Systems",
+  "version": "202504",
+  "pub_date": "2/26/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 172,
+    "Areas of Study": 262,
+    "Accessibility": 429
+  },
+  "standard_path_row_count": 10,
+  "aos_group_count": 3,
+  "aos_course_count": 10,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 10,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

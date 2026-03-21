@@ -1,0 +1,32 @@
+{
+  "program_code": "MSCSHCI",
+  "degree_title": "Master of Science, Computer Science, Human-Computer Interaction",
+  "version": "202504",
+  "pub_date": "2/26/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 173,
+    "Areas of Study": 263,
+    "Accessibility": 435
+  },
+  "standard_path_row_count": 10,
+  "aos_group_count": 4,
+  "aos_course_count": 10,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 10,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

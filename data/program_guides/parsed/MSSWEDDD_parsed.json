@@ -1,0 +1,209 @@
+{
+  "program_code": "MSSWEDDD",
+  "version": "202504",
+  "pub_date": "11/5/2024",
+  "page_count": 0,
+  "degree_title": "Master of Science, Software Engineering - Domain Driven Design",
+  "program_description": "Program Code: MSSWEDDD Catalog Version: 202504 Published Date: 11/5/2024 The Master of Science, Software Engineering - Domain Driven Design (MSSWEDDD) program involves in-depth training in the principles and practices essential for developing high-quality software systems. Designed to equip students with both theoretical knowledge and hands-on experience, the program covers key areas such as software design, architecture, testing, and project management. Students will learn to apply modern software engineering methodologies and tools to address complex challenges in building scalable, reliable, and maintainable software solutions. MSSWEDDD is a concentration that covers creating detailed domain models that reflect the complexities of specific business processes and practices. Students will learn to structure software systems that align closely with business objectives through the strategic patterns of domain-driven design (DDD), such as bounded contexts and ubiquitous language. This includes covering the skills needed to lead development teams and to integrate DDD principles effectively throughout the software development lifecycle. MSSWEDDD emphasizes aligning software design with business strategies, teaching students to develop solutions that precisely meet business objectives and enhance their value in industries heavily reliant on software. Graduates will be equipped to design, build, and manage sophisticated software systems in a variety of industries as well as bridge the gap between technical teams and business stakeholders, ensuring that software systems are robust and businessrelevant.",
+  "standard_path": [
+    {
+      "title": "Real Life Applications of Data Structures",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Advanced Software Engineering",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Software Product Design and Requirement Engineering",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Software Architecture and Design",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Software Quality Assurance and Deployment",
+      "cus": 4,
+      "term": 2
+    },
+    {
+      "title": "Governance, Risk, and Compliance",
+      "cus": 2,
+      "term": 2
+    },
+    {
+      "title": "Network Architecture and Cloud Computing",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Domain Driven Design",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Scalability and Performance Optimization",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Microservices Design and Architecture",
+      "cus": 3,
+      "term": 4
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Software",
+      "courses": [
+        {
+          "title": "Real Life Applications of Data Structures",
+          "description": "Working Course Description: Real Life Applications of Data Structures covers basic to advanced topics in data structures and their associated algorithms with a focus on real world examples and applications. This course focuses on problem-solving techniques for designing efficient and maintainable software solutions using Python. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the challenges of integrating multiple-data structures into a software product.",
+            "The learner evaluates the performance of data structures and algorithms based on time versus space performance.",
+            "The learner identifies available resources or libraries for the application of algorithms.",
+            "The learner identifies data structures to efficiently meet the software solution needs for a business.",
+            "The learner implements data structures to meet the software solution needs."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Advanced Software Engineering",
+          "description": "Working Course Description: Advanced Software Engineering delves into the intricate processes and methodologies essential for developing sophisticated, scalable software architectures. This course offers an in-depth exploration of the software engineering lifecycle, emphasizing a disciplined approach to navigating the complex challenges of software engineering. Students will explore advanced process frameworks and methodologies, including the Waterfall Model and Agile Development, tailored to large-scale and high-stakes projects.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner demonstrates project management skills through communication, collaboration, problem-solving, setting project goals and managing expectations.",
+            "The learner describes how the development of a project will be monitored using key metrics.",
+            "The learner explains each phase of a software development life cycle.",
+            "The learner justifies the methodology selected based on a project’s scope, complexity, timeline, budget, risks, and expectations."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Software Product Design and Requirement Engineering",
+          "description": "Working Course Description: Software Product Design and Requirement Engineering provides an in-depth exploration into effectively integrating user needs and system requirements into software development. This course covers topics from types of requirements, requirement gathering techniques, prioritization, and documentation.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes the impact new requirements have on software design.",
+            "The learner describes the usability testing they will conduct to evaluate the usability and effectiveness of the project to make recommendations for improvements.",
+            "The learner explains the importance of requirement types based on the specific needs of a project.",
+            "The learner gathers and documents the needs and constraints of stakeholders to ensure that the final product meets their expectations.",
+            "The learner gathers and documents the needs and constraints of stakeholders to ensure that the final product meets their expectations.",
+            "The learner translates requirements into software design."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Software Architecture and Design",
+          "description": "This course covers topics in designing, analyzing, and managing large-scale software systems. Students will learn various architecture types, how to select and implement appropriate design patterns, and how to build well-structured, reliable, and secure software systems.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the different design patterns that relate to software elements in a software system.",
+            "The learner explains which design patterns should be used to address software problems.",
+            "The learner implements a software architecture and design solution to solve a real-world problem.",
+            "The learner justifies the software architecture used in a software system"
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Software Quality Assurance and Deployment",
+          "description": "Working Course Description: This course equips students with the skills and knowledge necessary for ensuring high-quality software development and effective deployment practices. The curriculum covers quality models and metrics, QA methods, automated testing, and the design and implementation of test cases. This course introduces students to Continuous Integration/Continuous Deployment (CI/CD) pipelines and tools, performance testing, and the tools required for assessing software performance. Students will also learn about deployment strategies, rollback procedures, disaster recovery plans, and monitoring and logging practices, crucial for the software's operational integrity in production environments.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates a disaster recovery plan that will enable a business to quickly resume after an unplanned incident.",
+            "The learner creates an outline of a deployment strategy.",
+            "The learner documents the objectives and requirements for automated testing through case studies.",
+            "The learner evaluates and selects deployment strategies based on the specific characteristics of the infrastructure environment.",
+            "The learner identifies the quality model and metrics to use to ensure the software meets the needs and expectations of the business."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Network Architecture and Cloud Computing",
+          "description": "Working Course Description: In this course students are equipped to understand, analyze, and implement cloud computing solutions tailored to diverse business needs. The curriculum offers an in-depth look at state-of-the-art cloud technologies, the underlying business trends fueling cloud adoption, and the foundational systems of modern data center computing. Participants will learn to identify and apply various cloud systems to specificM3:N10 business cases, understand the interplay between network systems to form cloud computing environments, and utilize cloud computing models to address infrastructure challenges. A focus on network security enables learners to assess and enhance network security systems, covering cybersecurity principles, perimeter security, authentication, and the creation of secure networks. The course also delves into scalable distributed systems and programming frameworks that facilitate edge computing, illustrating how cloud-based solutions can resolve real-world business problems.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes network and cloud computing models and how they will be used to solve infrastructure problems.",
+            "The learner describes how the network systems interact and connect to create cloud computing environments.",
+            "The learner develops a cloud-based solution to a business problem.",
+            "The learner evaluates a system for network security to suggest improvements.",
+            "The learner explains the different cloud systems for different general business cases."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Domain Driven Design",
+          "description": "Working Course Description: This course covers key concepts of Domain Driven Design, including bounded context, context mapping, subdomains, entities, value objects, aggregates, aggregate roots, domain events, and their relation to other design patterns. Students will learn practical implementation strategies, collaboration with domain experts, model refinement, documentation, critiques, and case studies.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies domain-specific knowledge to design aggregates that accurately represent the business requirements.",
+            "The learner collaborates with domain experts and stakeholders to gather domain knowledge, validate domain models, and ensure that the software aligns with the needs of the business.",
+            "The learner creates a context map that shows the relationship between different bounded contexts and how the models fit together.",
+            "The learner documents the refinement of the domain model to ensure clarity, maintainability, and scalability.",
+            "The learner explains domain events within the system and their relevance and impact."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Scalability and Performance Optimization",
+          "description": "This course prepares students to learn how to analyze real-world systems to make informed decisions to improve overall design, performance, and reliability. Students will create tests that validate both scalability and reliability as well as apply theoretical to real-world design, performance, and reliability systems.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together",
+            "The learner analyzes the health and performance of a system to identify and document issues.",
+            "The learner applies scalability optimization techniques to ensure a business can handle the increase and decrease of workloads.",
+            "The learner applies theoretical concepts to real-world systems to make informed decisions to improve system design, performance, and reliability.",
+            "The learner creates performance tests to validate system scalability and reliability."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Microservices Design and Architecture",
+          "description": "Working Course Description: In this course, students will demonstrate their knowledge of microservice design and architecture. Students will analyze a business’s needs to find what best matches their software architecture needs. Additionally, students will follow key design principles to create a microservice while explaining why the design pattern is the most efficient for a project. Upon completion of the course, students will create a deployment strategy for efficiency and effectiveness.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together",
+            "The learner creates a deployment strategy to ease the deployment and modifications of a microservice.",
+            "The learner describes the design principles to follow when creating a microservice.",
+            "The learner evaluates the software architecture to be used that best meets the business needs.",
+            "The learner integrates domain-driven design with microservices architecture to enhance system modularity and scalability.",
+            "The learner justifies/explains the microservice design pattern that will create the most efficiency for a project."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Risk Management",
+      "courses": [
+        {
+          "title": "Governance, Risk, and Compliance",
+          "description": "Governance, Risk, and Compliance provides learners with advanced skills and knowledge to authorize and maintain information systems utilizing various risk management frameworks. The course focuses on the strategic and long-term alignment of an organization's information security program to regulatory requirements and organizational policies. Course topics include compliance and regulatory requirements, data classification and prioritization, security and privacy controls, compliance audits and remediation, and risk management plans.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner develops a remediation plan for security and privacy compliance issues.",
+            "The learner evaluates a system security plan in line with business organizational strategy and regulatory compliance requirements..."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": []
+}

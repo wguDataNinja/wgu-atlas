@@ -1,0 +1,136 @@
+{
+  "program_code": "MACCF",
+  "degree_title": "Master of Science in Accounting, Financial Reporting Specialization",
+  "version": "202409",
+  "pub_date": "4/12/24",
+  "page_count": 12,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 211,
+    "Areas of Study": 314,
+    "Accessibility": 555
+  },
+  "standard_path_row_count": 11,
+  "aos_group_count": 4,
+  "aos_course_count": 11,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 9,
+    "sp_only": [
+      "Advanced Financial Accounting I",
+      "Corporate Financial Analysis"
+    ],
+    "aos_only": [
+      "Corporate Financial Analysis teaches the",
+      "demand. As the business world continues"
+    ]
+  },
+  "empty_descriptions": [
+    "demand. As the business world continues"
+  ],
+  "empty_competency_lists": [
+    "demand. As the business world continues"
+  ],
+  "anomaly_count": 9,
+  "anomalies": [
+    {
+      "type": "pending_titles_overflow",
+      "line": 436,
+      "text": "to expand and broaden, specialized skills",
+      "buffer": [
+        "Advanced Financial Accounting I",
+        "Complex accounting skills are in high",
+        "demand. As the business world continues"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 437,
+      "text": "are required to accommodate the",
+      "buffer": [
+        "Advanced Financial Accounting I",
+        "Complex accounting skills are in high",
+        "demand. As the business world continues"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 438,
+      "text": "advanced accounting needs of many",
+      "buffer": [
+        "Advanced Financial Accounting I",
+        "Complex accounting skills are in high",
+        "demand. As the business world continues"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 439,
+      "text": "industries. Applying financial standards",
+      "buffer": [
+        "Advanced Financial Accounting I",
+        "Complex accounting skills are in high",
+        "demand. As the business world continues"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 440,
+      "text": "using professional judgment to a variety of",
+      "buffer": [
+        "Advanced Financial Accounting I",
+        "Complex accounting skills are in high",
+        "demand. As the business world continues"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 441,
+      "text": "business situations is crucial. This course",
+      "buffer": [
+        "Advanced Financial Accounting I",
+        "Complex accounting skills are in high",
+        "demand. As the business world continues"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 442,
+      "text": "builds the learner’s accounting knowledge",
+      "buffer": [
+        "Advanced Financial Accounting I",
+        "Complex accounting skills are in high",
+        "demand. As the business world continues"
+      ]
+    },
+    {
+      "type": "pending_titles_overflow",
+      "line": 443,
+      "text": "by focusing on advanced financial",
+      "buffer": [
+        "Advanced Financial Accounting I",
+        "Complex accounting skills are in high",
+        "demand. As the business world continues"
+      ]
+    },
+    {
+      "type": "too_many_pending_titles",
+      "titles": [
+        "Advanced Financial Accounting I",
+        "Complex accounting skills are in high",
+        "demand. As the business world continues"
+      ]
+    }
+  ],
+  "warnings": [
+    "2 SP titles not found in AoS: ['Advanced Financial Accounting I', 'Corporate Financial Analysis']",
+    "2 AoS titles not in SP: ['Corporate Financial Analysis teaches the', 'demand. As the business world continues']",
+    "1 courses with no description",
+    "1 courses with no competency bullets"
+  ],
+  "parseability_confidence": "low"
+}

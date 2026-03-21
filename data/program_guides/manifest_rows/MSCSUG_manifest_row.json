@@ -1,0 +1,67 @@
+{
+  "source_pdf_filename": "MSCSUG.pdf",
+  "source_text_filename": "MSCSUG.txt",
+  "inferred_program_code": "MSCSUG",
+  "page_count": 0,
+  "version_strings": [
+    "202504"
+  ],
+  "publication_dates": [
+    "2/26/2025"
+  ],
+  "has_standard_path": true,
+  "has_areas_of_study": true,
+  "has_capstone_section": false,
+  "has_course_descriptions": true,
+  "has_competency_bullets": true,
+  "has_term_structure": true,
+  "has_cu_values": true,
+  "has_cert_prep_mentions": false,
+  "has_prereq_mentions": true,
+  "standard_path_row_count": 30,
+  "competency_trigger_count": 37,
+  "competency_bullet_count": 181,
+  "cert_prep_mention_count": 0,
+  "prereq_mention_count": 7,
+  "detected_section_headings": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "inferred_course_groups": [
+    "Computer Science",
+    "General Education",
+    "Network and Security",
+    "Data Management",
+    "Web Development",
+    "Full Stack Engineering",
+    "Software",
+    "Operating Systems",
+    "Secure Systems Analysis & Design",
+    "Business of IT",
+    "Information Technology Management"
+  ],
+  "likely_guide_family": "cs_grad",
+  "template_type": "partial",
+  "parseability_confidence": "low",
+  "warnings": [
+    "1 SP titles not found in AoS: ['Scripting and Programming Applications']",
+    "8 AoS titles not in SP: ['Business of IT - Applications', 'Computer Science Project Development with a Team', 'Discrete Mathematics I', 'Health, Fitness, and Wellness', 'Java Fundamentals']"
+  ],
+  "irregularities": [
+    "sp_row_invalid",
+    "sp_row_invalid",
+    "sp_expected_term_got_text",
+    "sp_expected_term_got_text",
+    "sp_expected_term_got_text",
+    "sp_expected_term_got_text",
+    "sp_expected_term_got_text",
+    "sp_expected_term_got_text",
+    "sp_expected_term_got_text",
+    "sp_row_invalid",
+    "sp_row_invalid",
+    "sp_row_invalid",
+    "sp_row_invalid",
+    "sp_incomplete_row_at_eof"
+  ]
+}

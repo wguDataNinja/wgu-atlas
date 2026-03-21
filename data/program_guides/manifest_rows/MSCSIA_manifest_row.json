@@ -1,0 +1,48 @@
+{
+  "source_pdf_filename": "MSCSIA.pdf",
+  "source_text_filename": "MSCSIA.txt",
+  "inferred_program_code": "MSCSIA",
+  "page_count": 0,
+  "version_strings": [
+    "202306"
+  ],
+  "publication_dates": [
+    "2/6/2025"
+  ],
+  "has_standard_path": true,
+  "has_areas_of_study": true,
+  "has_capstone_section": true,
+  "has_course_descriptions": true,
+  "has_competency_bullets": true,
+  "has_term_structure": true,
+  "has_cu_values": true,
+  "has_cert_prep_mentions": true,
+  "has_prereq_mentions": false,
+  "standard_path_row_count": 10,
+  "competency_trigger_count": 9,
+  "competency_bullet_count": 42,
+  "cert_prep_mention_count": 2,
+  "prereq_mention_count": 0,
+  "detected_section_headings": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility",
+    "Capstone"
+  ],
+  "inferred_course_groups": [
+    "Security",
+    "Network Design and Management",
+    "Software",
+    "Hacking Countermeasures and Techniques",
+    "Web and Cloud Security",
+    "Penetration Testing",
+    "Secure Systems Analysis & Design",
+    "Risk Management",
+    "Cybersecurity Management"
+  ],
+  "likely_guide_family": "cs_grad",
+  "template_type": "full",
+  "parseability_confidence": "high",
+  "warnings": [],
+  "irregularities": []
+}

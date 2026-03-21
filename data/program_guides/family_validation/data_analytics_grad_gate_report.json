@@ -1,0 +1,104 @@
+{
+  "report_type": "family_gate_test",
+  "family": "data_analytics_grad",
+  "date": "2026-03-21",
+  "family_size": 3,
+  "gate_approach": "MSDADE selected as gate guide (base Data Engineering specialization). All 3 guides parsed in one pass — family size is small enough to gate the full family.",
+  "parser_changes": [],
+
+  "guides": [
+    {
+      "code": "MSDADE",
+      "degree_title": "Master of Science, Data Analytics - Data Engineering",
+      "confidence": "high",
+      "version": "202408",
+      "pub_date": "5/15/24",
+      "page_count": 11,
+      "metadata_format": "footer",
+      "sp_rows": 11,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 2,
+      "aos_courses": 11,
+      "capstone_present": false,
+      "reconciliation": "11/11 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0
+    },
+    {
+      "code": "MSDADS",
+      "degree_title": "Master of Science, Data Analytics - Data Science",
+      "confidence": "high",
+      "version": "202408",
+      "pub_date": "5/15/24",
+      "page_count": 11,
+      "metadata_format": "footer",
+      "sp_rows": 11,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 2,
+      "aos_courses": 11,
+      "capstone_present": false,
+      "reconciliation": "11/11 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0
+    },
+    {
+      "code": "MSDADPE",
+      "degree_title": "Master of Science, Data Analytics - Decision Process Engineering",
+      "confidence": "high",
+      "version": "202408",
+      "pub_date": "5/15/24",
+      "page_count": 11,
+      "metadata_format": "footer",
+      "sp_rows": 11,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 3,
+      "aos_courses": 11,
+      "capstone_present": false,
+      "reconciliation": "11/11 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0
+    }
+  ],
+
+  "totals": {
+    "guides_in_family": 3,
+    "parsed_successfully": 3,
+    "failed": 0,
+    "high_confidence": 3,
+    "medium_confidence": 0,
+    "low_confidence": 0
+  },
+
+  "confidence_distribution": {
+    "high": ["MSDADE", "MSDADS", "MSDADPE"],
+    "medium": [],
+    "low": []
+  },
+
+  "structural_notes": [
+    "All 3 guides use 3-column multiline SP format (with Term). Consistent with other graduate families.",
+    "All 3 guides use footer metadata format (page_count=11). Cohort published version 202408.",
+    "No capstone section in any guide. Not a parser gap — absent from source.",
+    "All guides are track/specialization variants of the MSDA program sharing a 7-course Data Analytics core. Specialization differentiators appear as the second AoS group.",
+    "MSDADE: [Data Analytics]=7, [Data Engineering]=4.",
+    "MSDADS: [Data Analytics]=7, [Data Science]=4.",
+    "MSDADPE: [Data Analytics]=7, [IT Management]=1, [Decision Process Engineering]=3.",
+    "The shared 7-course Data Analytics core is structurally consistent across all 3 guides."
+  ],
+
+  "gate_result": "PASS — all 3 guides HIGH confidence, 0 anomalies, 0 warnings, perfect reconciliation",
+
+  "recommendation": {
+    "data_analytics_grad_complete": true,
+    "summary": "3/3 parsed, 3 HIGH, 0 MEDIUM, 0 LOW. Family fully validated. No parser changes needed.",
+    "rollout_recommendation": "Roll out all 3 guides immediately.",
+    "next_family_recommendation": "cs_grad",
+    "next_family_rationale": "cs_grad is the natural next target in the graduate tier."
+  }
+}

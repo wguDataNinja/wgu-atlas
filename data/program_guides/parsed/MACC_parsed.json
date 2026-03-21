@@ -1,0 +1,230 @@
+{
+  "program_code": "MACC",
+  "version": "202202",
+  "pub_date": "9/27/23",
+  "page_count": 11,
+  "degree_title": "Master of Science, Accounting",
+  "program_description": "The Master of Science in Accounting (MAcc) degree provides the advanced accounting knowledge and skills that you need for a successful career as a professional accountant in public accounting, industry, government and non-profit organizations. A primary objective of the masters program is to build on the knowledge gained in an undergraduate accounting program and help prepare you to sit for the CPA (Certified Public Accountant) exam*, the Certified Management Accounting (CMA) exam, and the Certified Internal Auditor (CIA) exam. This program focuses not only on the technical and analytical skills necessary for accounting positions, but also incorporates critical communication and strategic skills required in todays fast changing world. You will learn to assess complex transactions and determine the proper treatment of those transactions in conformance with generally accepted accounting principles (GAAP). You will also learn advanced auditing skills to be able to enhance internal controls of an organization and identify material weaknesses in those controls. You will develop and be able to apply advanced managerial accounting techniques in real-world situations as well as become familiar with the accounting for governmental and nonprofit organizations. At the end of this program, you will have gained necessary analytical skills to address complex financial information and make appropriate recommendations to management. * Students may need to meet additional state-specific requirements to be eligible to sit for the CPA exam.",
+  "standard_path": [
+    {
+      "title": "Fraud and Forensic Accounting",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Advanced Auditing",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Advanced Managerial Accounting",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Financial Management",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Strategic Management",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Advanced Financial Accounting",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Accounting Research and Critical Thinking",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Governmental and Nonprofit Accounting",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Management Communication",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Advanced Tax Concepts",
+      "cus": 3,
+      "term": 4
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Accounting",
+      "courses": [
+        {
+          "title": "Fraud and Forensic Accounting",
+          "description": "This course provides a framework for detecting and preventing financial statement fraud. Topics include the profession’s focus and legislation of fraud, revenue- and inventory-related fraud, and liability, asset, and inadequate disclosure fraud.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate explains the ethical responsibility of providing accurate financial information.",
+            "The graduate explains financial statement auditing standards and legislation.",
+            "The graduate identifies fraud risk factors and assesses the risk of financial statement fraud in the organization.",
+            "The graduate identifies effective ways to deter fraud."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Advanced Auditing",
+          "description": "Advanced Auditing reviews basic auditing concepts, including (1) planning the audit: identifying, assessing, and responding to the risk of material misstatement; (2) specialized audit tools: attributes sampling, monetary unit sampling, and data analytic tools; (3) completing a quality audit; and (4) reporting on financial statement audits. The second part of the course dives into an application of auditing through (1) understanding how to audit an acquisition and payment cycle and (2) applying the knowledge learned through the acquisition and payment cycle to the revenue cycle in a performance assessment.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes materiality, sampling, and data analytic methods as used in auditing.",
+            "The learner explains how to complete an audit of a company’s financial statements.",
+            "The learner explains the appropriate audit and internal control reports that apply to the results of a financial statement audit.",
+            "The learner reports on the acquisition and payment cycles during an audit of a company's financial statements.",
+            "The learner reports on an audit of the revenue cycle during an audit of a company's financial statements."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Advanced Managerial Accounting",
+          "description": "This course introduces the complexity and functionality of managerial accounting systems within an organization. It covers the topics of product costing (including activity-based costing), decision-making (including capital budgeting), profitability analysis, budgeting, performance evaluation, and reporting related to managerial decision-making. This course provides the opportunity for a detailed study of how managerial accounting information supports the operational and strategic needs of an organization and how managers use accounting information for decision-making, planning, and controlling activities within organizations.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes product cost data using both job-order and process costing systems.",
+            "The graduate identifies situations in which the use of activity-based costing (ABC) yields the best data for the allocation of overhead costs.",
+            "The graduate prepares variable and absorption costing income statements and reconciles the differences between the two income statements.",
+            "The graduate uses the concept of fixed and variable costs to analyze cost data in order to make strategic business decisions.",
+            "The graduate uses the concept of relevant and irrelevant costs to make strategic business decisions.",
+            "The graduate uses various time value of money techniques including discounted cash flows and the Internal Rate of Return to make long-term strategic business decisions.",
+            "The graduate uses the master budget, financial budgets, and operational budgets in planning, controlling, and evaluating operations in the short term.",
+            "The graduate uses revenue and cost variances in evaluating operating performance."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Advanced Financial Accounting",
+          "description": "This course builds upon your accounting knowledge by focusing on advanced financial accounting topics such as consolidations, partnership accounting, and international accounting.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies generally accepted accounting principles (GAAP) as they relate to business combinations and parent/subsidiary relationships.",
+            "The graduate accounts for partnerships, including formation, operations, and liquidations.",
+            "The graduate can account for hedging for foreign currency transactions and translate foreign currency financial statements.",
+            "The graduate explains reporting requirements for SEC, segment, and interim reporting."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Accounting Research and Critical Thinking",
+          "description": "Accounting Research and Critical Thinking provides learners the skills and knowledge to research and add validity to accounting reports, resolution of issues, and procedural arguments: critical thinking, communication, research strategies, and database resources.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains primary and secondary sources of professional research as used in the accounting field.",
+            "The learner applies critical thinking and effective writing skills for the professional accountant.",
+            "The learner researches financial accounting issues with appropriate tools, including research question development, source validation, and sorted and validated data from public databases."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Governmental and Nonprofit Accounting",
+          "description": "Governmental and Nonprofit Accounting provides learners with the skills and knowledge required to practice accounting for governmental and nonprofit entities: analyzing and recording transactions, financial statement preparation in accordance with Governmental Accounting Standards Board (GASB) standards, and communication.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains the government and nonprofit accounting environment, in accordance with the Financial Accounting Standards Board (FASB) and the Governmental Accounting Standards Board (GASB).",
+            "The learner records revenues and expenditures in governmental funds in accordance with generally accepted accounting principles (GAAP) in government-wide statement of activities through the application of the accrual basis of accounting and the modified accrual basis of accounting.",
+            "The learner accounts for capital assets and long-term obligations in accordance with the Governmental Accounting Standards Board (GASB) through state and local government financial statement calculation and journal entry preparation.",
+            "The learner explains the accounting for business-type activities, pensions, fiduciary activities, and net position balances, including the three basic statements of proprietary fund accounting, in accordance with the Governmental Accounting Standards Board (GASB).",
+            "Explains Financial Reporting for Governments - The learner explains government financial reporting, disclosure, and compliance reporting requirements, including the Annual Comprehensive Financial Report (ACFR) and government fiscal condition assessment.",
+            "The learner describes accounting for a nonprofit organization."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Advanced Tax Concepts",
+          "description": "This course is designed to enhance awareness of the complexities and sources of tax law and to measure and analyze the effect of various tax options. This course provides an overview of income taxes on individuals, corporations, associations, and corporate distributions, while emphasizing the role of taxes in business decisions and business strategy. Also examined will be federal tax laws applicable to individuals and corporations (and shareholders), including tax research, tax compliance, and tax planning. *Retired",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies knowledge of tax laws for planning and compliance purposes.",
+            "The graduate analyzes the impact of multijurisdictional taxation including federal, state, local, and international taxes.",
+            "The graduate uses tax research to interpret and evaluate recent developments in tax concepts.",
+            "The graduate determines the proper tax treatment for business transactions such as capital gains, the sale of a residence, and gifts.",
+            "The graduate determines the proper tax treatment amount for corporate transactions including formation, reorganization, distribution, and liquidation.",
+            "The graduate prepares federal tax returns with IRS forms, schedules, and related reporting requirements."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": [
+            "aws applicable"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Finance",
+      "courses": [
+        {
+          "title": "Financial Management",
+          "description": "This course covers practical approaches to analysis and decision-making in the administration of corporate funds, including capital budgeting, working capital management, and cost of capital. Topics include financial planning, management of working capital, analysis of investment opportunities, sources of long-term financing, government regulations, and global influences. This course will improve students’ ability to interpret financial statements and manage corporate finances.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate examines the primary risk/return criteria regarding financial management in domestic and global environments.",
+            "The graduate evaluates company performance based on financial statements and other measures in order to provide recommendations.",
+            "The graduate applies valuation skills to evaluate capital investment projects and the overall value of a firm.",
+            "The graduate applies capital market theory in financial decision making.",
+            "The graduate applies long-term investment management concepts to capital budgeting decision making.",
+            "The graduate demonstrates the management of working capital to achieve the appropriate value for the firm.",
+            "The graduate analyzes applicable legal and regulatory requirements to determine whether organizations meet legal responsibilities and act with social responsibility."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Strategy",
+      "courses": [
+        {
+          "title": "Strategic Management",
+          "description": "This course focuses on models and practices of strategic management including developing and implementing both shortand long-term strategy and evaluating performance to achieve strategic goals and objectives.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate identifies the strategic process and the execution of a strategic plan.",
+            "The graduate assesses the fundamental perspectives on strategic decision-making using analytical tools.",
+            "The graduate analyzes generic strategies for winning a competitive advantage and determines how to apply maximum strategic power.",
+            "The graduate assesses the value of competing in international markets, and determines the risks and rewards of diversification strategies",
+            "The graduate analyzes the concepts of ethics, corporate social responsibility, and environmental sustainability and assesses the impact these policies have on strategic decision-making.",
+            "The graduate evaluates the framework necessary to effectively execute strategy."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Management",
+      "courses": [
+        {
+          "title": "Management Communication",
+          "description": "This course prepares students for the communication challenges in organizations. Topics examined include theories and strategies of communication, persuasion, conflict management, and ethics that enhance communication to various audiences.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate communicates effectively, both in writing and speaking, within an organizational setting.",
+            "The graduate demonstrates best practices to overcome biases that inhibit organizations and teams from communicating effectively.",
+            "The graduate recognizes cultural differences in communication and develops strategies and techniques to effectively communicate with internal and external stakeholders.",
+            "The graduate applies negotiation and conflict management strategies to improve organizational performance.",
+            "The graduate utilizes appropriate technology and/or social media to communicate effectively."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": []
+}

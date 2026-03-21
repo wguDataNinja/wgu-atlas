@@ -1,0 +1,211 @@
+{
+  "program_code": "MSSWEDOE",
+  "version": "202504",
+  "pub_date": "11/5/2024",
+  "page_count": 0,
+  "degree_title": "Master of Science, Software Engineering - DevOps Engineering",
+  "program_description": "Program Code: MSSWEDOE Catalog Version: 202504 Published Date: 11/5/2024 The Master of Science, Software Engineering - DevOps Engineering (MSSWEDOE) program involves in-depth training in the principles and practices essential for developing high-quality software systems. Designed to equip students with both theoretical knowledge and hands-on experience, the program covers key areas such as software design, architecture, testing, and project management. Students will learn to apply modern software engineering methodologies and tools to address complex challenges in building scalable, reliable, and maintainable software solutions. MSSWEDOE is a concentration that contains comprehensive training in DevOps culture and practices, emphasizing collaboration, automation, and continuous improvement in the development and operations lifecycle. Students will learn to implement continuous integration and continuous delivery (CI/CD) processes, automating the integration of code changes and deployment to shared repositories. The program also focuses on infrastructure as code (IaC), enabling the management and provisioning of infrastructure through automation and supporting the deployment, scaling, and maintenance of application systems with greater predictability and scalability. Additionally, MSSWEDOE covers implementing monitoring solutions to track and analyze application performance and health, teaching students to use this data to optimize system performance and reliability. By the end of the program, graduates will be well-equipped to design, build, and manage sophisticated software systems in a variety of industries as well as to lead DevOps initiatives, driving efficiency and collaboration across development teams.",
+  "standard_path": [
+    {
+      "title": "Real Life Applications of Data Structures",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Advanced Software Engineering",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Software Product Design and Requirement Engineering",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Software Architecture and Design",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Software Quality Assurance and Deployment",
+      "cus": 4,
+      "term": 2
+    },
+    {
+      "title": "Governance, Risk, and Compliance",
+      "cus": 2,
+      "term": 2
+    },
+    {
+      "title": "Network Architecture and Cloud Computing",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "DevOps Foundations",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Continuous Integration and Continuous Delivery",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "DevOps Security",
+      "cus": 3,
+      "term": 4
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Software",
+      "courses": [
+        {
+          "title": "Real Life Applications of Data Structures",
+          "description": "Working Course Description: Real Life Applications of Data Structures covers basic to advanced topics in data structures and their associated algorithms with a focus on real world examples and applications. This course focuses on problem-solving techniques for designing efficient and maintainable software solutions using Python. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the challenges of integrating multiple-data structures into a software product.",
+            "The learner evaluates the performance of data structures and algorithms based on time versus space performance.",
+            "The learner identifies available resources or libraries for the application of algorithms.",
+            "The learner identifies data structures to efficiently meet the software solution needs for a business.",
+            "The learner implements data structures to meet the software solution needs."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Advanced Software Engineering",
+          "description": "Working Course Description: Advanced Software Engineering delves into the intricate processes and methodologies essential for developing sophisticated, scalable software architectures. This course offers an in-depth exploration of the software engineering lifecycle, emphasizing a disciplined approach to navigating the complex challenges of software engineering. Students will explore advanced process frameworks and methodologies, including the Waterfall Model and Agile Development, tailored to large-scale and high-stakes projects.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner demonstrates project management skills through communication, collaboration, problem-solving, setting project goals and managing expectations.",
+            "The learner describes how the development of a project will be monitored using key metrics.",
+            "The learner explains each phase of a software development life cycle.",
+            "The learner justifies the methodology selected based on a project’s scope, complexity, timeline, budget, risks, and expectations."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Software Product Design and Requirement Engineering",
+          "description": "Working Course Description: Software Product Design and Requirement Engineering provides an in-depth exploration into effectively integrating user needs and system requirements into software development. This course covers topics from types of requirements, requirement gathering techniques, prioritization, and documentation.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes the impact new requirements have on software design.",
+            "The learner describes the usability testing they will conduct to evaluate the usability and effectiveness of the project to make recommendations for improvements.",
+            "The learner explains the importance of requirement types based on the specific needs of a project.",
+            "The learner gathers and documents the needs and constraints of stakeholders to ensure that the final product meets their expectations.",
+            "The learner gathers and documents the needs and constraints of stakeholders to ensure that the final product meets their expectations.",
+            "The learner translates requirements into software design."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Software Architecture and Design",
+          "description": "This course covers topics in designing, analyzing, and managing large-scale software systems. Students will learn various architecture types, how to select and implement appropriate design patterns, and how to build well-structured, reliable, and secure software systems.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the different design patterns that relate to software elements in a software system.",
+            "The learner explains which design patterns should be used to address software problems.",
+            "The learner implements a software architecture and design solution to solve a real-world problem.",
+            "The learner justifies the software architecture used in a software system"
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Software Quality Assurance and Deployment",
+          "description": "Working Course Description: This course equips students with the skills and knowledge necessary for ensuring high-quality software development and effective deployment practices. The curriculum covers quality models and metrics, QA methods, automated testing, and the design and implementation of test cases. This course introduces students to Continuous Integration/Continuous Deployment (CI/CD) pipelines and tools, performance testing, and the tools required for assessing software performance. Students will also learn about deployment strategies, rollback procedures, disaster recovery plans, and monitoring and logging practices, crucial for the software's operational integrity in production environments.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates a disaster recovery plan that will enable a business to quickly resume after an unplanned incident.",
+            "The learner creates an outline of a deployment strategy.",
+            "The learner documents the objectives and requirements for automated testing through case studies.",
+            "The learner evaluates and selects deployment strategies based on the specific characteristics of the infrastructure environment.",
+            "The learner identifies the quality model and metrics to use to ensure the software meets the needs and expectations of the business."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Network Architecture and Cloud Computing",
+          "description": "Working Course Description: In this course students are equipped to understand, analyze, and implement cloud computing solutions tailored to diverse business needs. The curriculum offers an in-depth look at state-of-the-art cloud technologies, the underlying business trends fueling cloud adoption, and the foundational systems of modern data center computing. Participants will learn to identify and apply various cloud systems to specificM3:N10 business cases, understand the interplay between network systems to form cloud computing environments, and utilize cloud computing models to address infrastructure challenges. A focus on network security enables learners to assess and enhance network security systems, covering cybersecurity principles, perimeter security, authentication, and the creation of secure networks. The course also delves into scalable distributed systems and programming frameworks that facilitate edge computing, illustrating how cloud-based solutions can resolve real-world business problems.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes network and cloud computing models and how they will be used to solve infrastructure problems.",
+            "The learner describes how the network systems interact and connect to create cloud computing environments.",
+            "The learner develops a cloud-based solution to a business problem.",
+            "The learner evaluates a system for network security to suggest improvements.",
+            "The learner explains the different cloud systems for different general business cases."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "DevOps Foundations",
+          "description": "Working Course Description: The DevOps Foundations course will provide our students with a comprehensive introduction to the core principles and practices of DevOps, focusing on infrastructure, configuration, software engineering/operations, and the cultural shifts necessary for successful implementation. Students will understand the history, principles, and business benefits of DevOps, along with practical skills in utilizing basic toolchains and implementing automation and continuous processes throughout the DevOps lifecycle.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner collaborates with cross-functional teams to streamline development processes.",
+            "The learner describes how they will monitor production to proactively identify and address issues throughout the DevOps life cycle.",
+            "The learner explains how testing will be used to ensure efficient development and high-quality production releases.",
+            "The learner explains the evolution of DevOps methodologies and how a business can benefit from them.",
+            "The learner utilizes artifact management tools for efficient storage and version control."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Continuous Integration and Continuous Delivery",
+          "description": "In this course, students will learn advanced DevOps practices essential for modern software development environments. Students will master container orchestration techniques to enhance application scalability, resilience, and high availability. They will learn to configure build servers using automated scripts, integrating robust integration testing and quality checks seamlessly into the development pipeline. Students will develop comprehensive release management plans designed to ensure smooth and reliable software releases with minimal downtime. They will explore the implementation of automated deployment pipelines, enabling continuous delivery and facilitating rapid, incremental releases of software updates. Students will gain insights into analyzing performance indicators to optimize software development and delivery processes continuously.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes performance indicators to optimize software development and delivery processes.",
+            "The learner configures build servers with automated scripts that includes integration testing and quality checks.",
+            "The learner creates a release management plan to include seamless and reliable software releases with minimal downtime.",
+            "The learner implements automated deployment pipelines to achieve continuous delivery and rapid, incremental releases.",
+            "The learner utilizes container orchestration to ensure application scalability, resilience, and high availability."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "DevOps Security",
+          "description": "In the DevOps Security courses students will explore tools to continuously monitor for security risks. By utilizing industry best practices, learners fortify code repositories through robust access control, encryption, monitoring, and vulnerability management strategies. Students will learn about secure access control mechanisms vital for safeguarding build and deployment environments against unauthorized access, data breaches, and malicious activities. Students will analyze advanced techniques to enhance monitoring and reporting processes, empowering effective risk management and informed decision-making. They will gain the techniques needed to quickly identify and resolve incidents, ensuring uninterrupted service and minimizing business impact.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together",
+            "The learner analyzes incidents while maintaining normal service and minimizing impact to the business.",
+            "The learner analyzes techniques to improve monitoring and reporting processes for better risk management and decision-making.",
+            "The learner applies industry best practices to secure code repositories through effective access control, encryption, monitoring, and vulnerability management",
+            "The learner applies industry best practices to secure code repositories through effective access control, encryption, monitoring, and vulnerability management",
+            "The learner describes secure access control mechanisms to safeguard build and deployment environments against unauthorized access, data breaches, and malicious activities.",
+            "The learner monitors for security risks throughout the DevOps Lifecycle."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Risk Management",
+      "courses": [
+        {
+          "title": "Governance, Risk, and Compliance",
+          "description": "Governance, Risk, and Compliance provides learners with advanced skills and knowledge to authorize and maintain information systems utilizing various risk management frameworks. The course focuses on the strategic and long-term alignment of an organization's information security program to regulatory requirements and organizational policies. Course topics include compliance and regulatory requirements, data classification and prioritization, security and privacy controls, compliance audits and remediation, and risk management plans.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner develops a remediation plan for security and privacy compliance issues.",
+            "The learner evaluates a system security plan in line with business organizational strategy and regulatory compliance requirements..."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": []
+}

@@ -1,0 +1,32 @@
+{
+  "program_code": "MSSWEAIE",
+  "degree_title": "Master of Science, Software Engineering - AI Engineering",
+  "version": "202504",
+  "pub_date": "11/5/2024",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 188,
+    "Areas of Study": 282,
+    "Accessibility": 443
+  },
+  "standard_path_row_count": 10,
+  "aos_group_count": 2,
+  "aos_course_count": 10,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 10,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

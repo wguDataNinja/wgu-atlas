@@ -1,0 +1,39 @@
+{
+  "program_code": "MSSWEUG",
+  "degree_title": "Bachelor of Science, Software Engineering (BSSWE to MSSWE)",
+  "version": "202504",
+  "pub_date": "1/3/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 190,
+    "Areas of Study": 455,
+    "Accessibility": 1005
+  },
+  "standard_path_row_count": 38,
+  "aos_group_count": 10,
+  "aos_course_count": 38,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 37,
+    "sp_only": [
+      "Scripting and Programming Foundations"
+    ],
+    "aos_only": [
+      "Scripting and Programming - Foundations"
+    ]
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [
+    "1 SP titles not found in AoS: ['Scripting and Programming Foundations']",
+    "1 AoS titles not in SP: ['Scripting and Programming - Foundations']"
+  ],
+  "parseability_confidence": "medium"
+}

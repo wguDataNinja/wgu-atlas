@@ -1,0 +1,54 @@
+{
+  "source_pdf_filename": "MACCA.pdf",
+  "source_text_filename": "MACCA.txt",
+  "inferred_program_code": "MACCA",
+  "page_count": 11,
+  "version_strings": [
+    "202409"
+  ],
+  "publication_dates": [
+    "4/12/24"
+  ],
+  "has_standard_path": true,
+  "has_areas_of_study": true,
+  "has_capstone_section": false,
+  "has_course_descriptions": true,
+  "has_competency_bullets": true,
+  "has_term_structure": true,
+  "has_cu_values": true,
+  "has_cert_prep_mentions": false,
+  "has_prereq_mentions": true,
+  "standard_path_row_count": 10,
+  "competency_trigger_count": 10,
+  "competency_bullet_count": 43,
+  "cert_prep_mention_count": 0,
+  "prereq_mention_count": 2,
+  "detected_section_headings": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "inferred_course_groups": [
+    "Management",
+    "Accounting",
+    "Internal Auditing II"
+  ],
+  "likely_guide_family": "accounting_ma",
+  "template_type": "partial",
+  "parseability_confidence": "low",
+  "warnings": [
+    "1 SP titles not found in AoS: ['Internal Auditing II']",
+    "1 AoS titles not in SP: ['Internal Auditing I and covers the']",
+    "1 courses with no description",
+    "1 courses with no competency bullets"
+  ],
+  "irregularities": [
+    "pending_titles_overflow",
+    "pending_titles_overflow",
+    "pending_titles_overflow",
+    "pending_titles_overflow",
+    "pending_titles_overflow",
+    "pending_titles_overflow",
+    "too_many_pending_titles"
+  ]
+}

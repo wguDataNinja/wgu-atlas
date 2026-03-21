@@ -1,0 +1,149 @@
+{
+  "report_type": "family_gate_test",
+  "family": "accounting_ma",
+  "date": "2026-03-21",
+  "family_size": 5,
+  "gate_approach": "MACC selected as gate guide (base MAcc, oldest version). All 5 guides parsed to characterize the full family before gate decision.",
+  "parser_changes": [],
+
+  "guides": [
+    {
+      "code": "MACC",
+      "degree_title": "Master of Science, Accounting",
+      "confidence": "high",
+      "version": "202202",
+      "pub_date": "9/27/23",
+      "page_count": 11,
+      "metadata_format": "footer",
+      "sp_rows": 10,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 4,
+      "aos_courses": 10,
+      "capstone_present": false,
+      "reconciliation": "10/10 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0
+    },
+    {
+      "code": "MACCM",
+      "degree_title": "Master of Science in Accounting, Management Accounting Specialization",
+      "confidence": "medium",
+      "version": "202409",
+      "pub_date": "4/12/24",
+      "page_count": 11,
+      "metadata_format": "footer",
+      "sp_rows": 10,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 3,
+      "aos_courses": 10,
+      "capstone_present": false,
+      "reconciliation": "9/10 title match (1 title quality issue)",
+      "anomalies": 0,
+      "warnings": 2,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0,
+      "medium_cause": "specialization_course_title_quality",
+      "medium_detail": "SP has 'Corporate Financial Analysis'; AoS has 'Corporate Financial Analysis teaches the'. The first sentence of the course description ('Corporate Financial Analysis teaches the analysis of topics...') was partially incorporated into the course title. Description starts mid-sentence ('analysis of topics in financial management...'). 6 competency bullets for this course are correct and unaffected. Root cause: looks_like_prose() does not recognize short-wrapped description lines (42–47 chars, no terminal punctuation) as prose. The course IS present in AoS (10/10 count matches) — title and first-sentence are impure."
+    },
+    {
+      "code": "MACCA",
+      "degree_title": "Master of Science in Accounting, Auditing Specialization",
+      "confidence": "low",
+      "version": "202409",
+      "pub_date": "4/12/24",
+      "page_count": 11,
+      "metadata_format": "footer",
+      "sp_rows": 10,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 3,
+      "aos_courses": 10,
+      "capstone_present": false,
+      "reconciliation": "FAILED — 1 course misidentified as group",
+      "anomalies": 7,
+      "warnings": 4,
+      "empty_descriptions": 1,
+      "empty_competency_lists": 1,
+      "low_cause": "specialization_course_parsed_as_group",
+      "low_detail": "AoS: 'Internal Auditing II' parsed as a GROUP NAME; 'Internal Auditing I and covers the' parsed as a COURSE TITLE (description fragment). Description of Internal Auditing II starts with 'Internal Auditing II is a continuation of\nInternal Auditing I and covers the\n...' — lines that look_like_prose() classifies as non-prose (42 chars, no terminal punctuation). The parser buffers them as pending_titles instead of starting a description. This produces: wrong group label, description fragment as course title, empty description, empty bullets. SP data is clean (10 rows, 0 anomalies). AoS for the 9 correctly-parsed courses is intact."
+    },
+    {
+      "code": "MACCF",
+      "degree_title": "Master of Science in Accounting, Financial Reporting Specialization",
+      "confidence": "low",
+      "version": "202409",
+      "pub_date": "4/12/24",
+      "page_count": 12,
+      "metadata_format": "footer",
+      "sp_rows": 11,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 4,
+      "aos_courses": 11,
+      "capstone_present": false,
+      "reconciliation": "FAILED — 2 courses misidentified as groups",
+      "anomalies": 9,
+      "warnings": 4,
+      "empty_descriptions": 1,
+      "empty_competency_lists": 1,
+      "low_cause": "specialization_course_parsed_as_group",
+      "low_detail": "Same failure class as MACCA. 'Advanced Financial Accounting I' and 'Corporate Financial Analysis' both parsed as GROUP NAMES. Description fragments ('Corporate Financial Analysis teaches the', 'demand. As the business world continues') parsed as course titles. Affected courses have empty descriptions and empty competency bullets. SP data clean (11 rows, 0 anomalies). AoS for 9 correctly-parsed courses is intact."
+    },
+    {
+      "code": "MACCT",
+      "degree_title": "Master of Science in Accounting, Taxation Specialization",
+      "confidence": "low",
+      "version": "202409",
+      "pub_date": "4/12/24",
+      "page_count": 11,
+      "metadata_format": "footer",
+      "sp_rows": 10,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 4,
+      "aos_courses": 10,
+      "capstone_present": false,
+      "reconciliation": "FAILED — 2 courses misidentified as groups",
+      "anomalies": 22,
+      "warnings": 4,
+      "empty_descriptions": 2,
+      "empty_competency_lists": 2,
+      "low_cause": "specialization_course_parsed_as_group",
+      "low_detail": "Most severe case. 'Advanced Financial Accounting I' and 'Corporate Taxation' both parsed as group names. Description fragments ('demand. As the business world continues', 'taxation of corporations and their shareholders') parsed as course titles. 22 anomalies (highest count in family). SP clean (10 rows, 0 anomalies). AoS for other courses intact."
+    }
+  ],
+
+  "totals": {
+    "guides_in_family": 5,
+    "parsed_successfully": 5,
+    "failed": 0,
+    "high_confidence": 1,
+    "medium_confidence": 1,
+    "low_confidence": 3
+  },
+
+  "confidence_distribution": {
+    "high": ["MACC"],
+    "medium": ["MACCM"],
+    "low": ["MACCA", "MACCF", "MACCT"]
+  },
+
+  "structural_notes": [
+    "MACC (202202, version 3 years older than specialization guides) parses cleanly. Its course descriptions likely have longer or differently-wrapped lines that trigger looks_like_prose correctly.",
+    "All 4 specialization guides (202409) have a consistent failure pattern for specialization-specific courses: short-wrapped description lines (40–50 chars, no terminal punctuation) are not recognized as prose by looks_like_prose(). The pending_titles buffer accumulates description text instead of starting a description.",
+    "Failure severity varies: MACCM (1 course impure but present), MACCA (1 course structurally misidentified), MACCF (2 courses), MACCT (2 courses, 22 anomalies).",
+    "This is a parser limitation (looks_like_prose too narrow), not a PDF extraction failure. The text IS extractable — MACC proves the parser works for older format. The 202409 specialization guides use a narrower text column layout in the PDF, producing shorter wrapped lines.",
+    "SP data is clean for all 5 guides (0 SP anomalies). The parser failure is confined to the AoS section.",
+    "No fix was implemented this session. A looks_like_prose improvement would need to reliably distinguish short description lines from short group headings without introducing regressions across the 63+ already-validated guides."
+  ],
+
+  "gate_result": "PARTIAL PASS — MACC gates cleanly (HIGH). 4 specialization guides have consistent parser quality failures. Family rollout deferred for specialization guides.",
+
+  "recommendation": {
+    "macc_validated": true,
+    "specialization_guides_deferred": true,
+    "summary": "MACC is HIGH confidence and safe for downstream use. MACCM is MEDIUM (1 course with title/description impurity; 6 bullets intact). MACCA, MACCF, MACCT are LOW — specialization-specific courses are parsed as group names, producing wrong titles, empty descriptions, empty competency lists for those courses. No rollout summary produced for this family. Specialization guides require parser improvement before they can be trusted.",
+    "parser_change_needed": true,
+    "parser_change_description": "looks_like_prose() needs to recognize short description lines (40–60 chars) that are clearly mid-sentence prose but lack the >80 char or terminal-punctuation markers the current function requires. A robust fix must not misidentify short group headings (e.g., 'Accounting', 'Software') as prose. The 'Corporate Financial Analysis teaches the' pattern suggests verb presence as a distinguishing signal, but a general verb-based heuristic needs careful evaluation and regression testing.",
+    "next_session_recommendation": "Gate education_ma first (expected low-risk, similar to education_ba/education_bs pattern). After education_ma, consider a targeted looks_like_prose improvement using the accounting_ma specialization guides as test cases."
+  }
+}

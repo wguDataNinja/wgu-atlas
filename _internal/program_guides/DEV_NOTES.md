@@ -2,6 +2,75 @@
 
 ---
 
+## Session 18 — cs_grad / swe_grad / data_analytics_grad / accounting_ma (2026-03-21)
+
+### Gate results
+
+| Family | Gate Guide | Gate Result | Family Confidence | Notes |
+|--------|------------|-------------|------------------|-------|
+| cs_grad | MSCSIA | PASS | 4 HIGH / 0 MEDIUM / 1 LOW | MSCSUG LOW = SP column extraction failure (source artifact, same class as BSITM/MATSPED) |
+| swe_grad | MSSWEAIE | PASS (after fix) | 3 HIGH / 1 MEDIUM / 0 LOW | Parser fix required (see below); MSSWEUG MEDIUM = title hyphen variant in bridge guide |
+| data_analytics_grad | MSDADE | PASS | 3 HIGH / 0 MEDIUM / 0 LOW | Cleanest family this session |
+| accounting_ma | MACC | PARTIAL PASS | 1 HIGH / 1 MEDIUM / 3 LOW | Specialization guides (202409) have systematic looks_like_prose failure; deferred |
+
+### Rollout status
+
+- **cs_grad**: fully rolled out. 5 guides. MSCSUG SP excluded (source artifact); AoS usable.
+- **swe_grad**: fully rolled out. 4 guides. Parser fix required and verified.
+- **data_analytics_grad**: fully rolled out. 3 guides. All HIGH, no exclusions.
+- **accounting_ma**: NOT fully rolled out. MACC (HIGH) is safe. MACCM (MEDIUM, 1 title quality issue) is parseable. MACCA/MACCF/MACCT (LOW) deferred — parser limitation. 5 guides parsed, family not complete.
+
+### Parser change this session — `_is_bullet_continuation` Title Case guard
+
+**Bug:** `_is_bullet_continuation()` was treating Title Case course titles (≥80% capitalized words, >30 chars) as bullet continuations when the preceding bullet lacked terminal punctuation. All 3 pure swe_grad guides had "Software Quality Assurance and Deployment" silently lost from AoS because "The learner justifies the software architecture used in a software system" (no period) triggered the continuation path for the next line.
+
+**Fix:** Added a Title Case ratio check before the `len(line) > 30` continuation branch. If ≥80% of a line's words start uppercase, the function returns False (not a continuation).
+
+**Scope:** General — applies to all guides, not swe_grad-specific.
+
+**Regression verification:** BSCS, BSCSIA, MBA, MHA, MATELED, BSSESB, BSACC, MSCIN — all returned identical confidence and anomaly counts after fix.
+
+### Known parser limitation — `looks_like_prose` (accounting_ma, not fixed)
+
+The `looks_like_prose()` function requires lines to be >80 chars OR end with terminal punctuation. The 202409 accounting specialization guides (MACCA, MACCF, MACCT) use a narrower PDF column layout, producing description lines of 40–50 chars without terminal punctuation. These are not recognized as prose, causing description text to be buffered as pending_titles. The result: specialization-specific courses become group names; description fragments become course titles; affected courses have empty descriptions and 0 bullets.
+
+This is a parser limitation (not PDF extraction corruption). SP data for all accounting guides is clean. No fix was attempted this session — a robust `looks_like_prose` extension requires careful evaluation and regression testing.
+
+### Corpus status after Session 18
+
+**80 / 115 guides parsed (69.6%).** 11 families complete or partially validated.
+
+Complete families:
+- standard_bs (19), cs_ug (8), education_ba (11), graduate_standard (9), mba (3), healthcare_grad (2), education_bs (4), teaching_mat (9), cs_grad (5), swe_grad (4), data_analytics_grad (3)
+
+Partially validated (not complete):
+- accounting_ma: 5 guides parsed, 3 LOW — specialization guides deferred
+
+**Phase D threshold: 81 guides (≥70%).** We are at 80 — **1 guide short** of the numeric threshold.
+
+Note: the remaining 35 unprocessed guides are concentrated in high-risk or unvalidated families (endorsement, nursing, education_grad, education_ma). Crossing the numeric threshold alone is insufficient for Phase D reassessment — risky family coverage and safe-field boundaries must also be understood.
+
+### Confidence distribution this session (17 new guides)
+
+- HIGH: MSCSIA, MSCSCS, MSCSAIML, MSCSHCI, MSSWEAIE, MSSWEDDD, MSSWEDOE, MSDADE, MSDADS, MSDADPE, MACC = 11 HIGH
+- MEDIUM: MSSWEUG, MACCM = 2 MEDIUM
+- LOW: MSCSUG (source artifact), MACCA, MACCF, MACCT (parser limitation) = 4 LOW
+
+### Artifacts produced
+
+- `data/program_guides/parsed/{MSCSIA,MSCSCS,MSCSAIML,MSCSHCI,MSCSUG,MSSWEAIE,MSSWEDDD,MSSWEDOE,MSSWEUG,MSDADE,MSDADS,MSDADPE,MACC,MACCA,MACCF,MACCM,MACCT}_parsed.json`
+- `data/program_guides/validation/{same}_validation.json`
+- `data/program_guides/manifest_rows/{same}_manifest_row.json`
+- `data/program_guides/family_validation/cs_grad_gate_report.{json,md}`
+- `data/program_guides/family_validation/cs_grad_rollout_summary.{json,md}`
+- `data/program_guides/family_validation/swe_grad_gate_report.{json,md}`
+- `data/program_guides/family_validation/swe_grad_rollout_summary.{json,md}`
+- `data/program_guides/family_validation/data_analytics_grad_gate_report.{json,md}`
+- `data/program_guides/family_validation/data_analytics_grad_rollout_summary.{json,md}`
+- `data/program_guides/family_validation/accounting_ma_gate_report.{json,md}`
+
+---
+
 ## Audit Summary — 2026-03-21
 
 ### Production-leaning (38 guides across 3 families)

@@ -1,0 +1,189 @@
+{
+  "report_type": "family_full_rollout",
+  "family": "cs_grad",
+  "date": "2026-03-21",
+  "gate_guide": "MSCSIA",
+  "gate_result": "HIGH confidence, 0 anomalies, 0 warnings — gate passed",
+  "parser_changes": [],
+
+  "totals": {
+    "guides_in_family": 5,
+    "parsed_successfully": 5,
+    "failed": 0,
+    "high_confidence": 4,
+    "medium_confidence": 0,
+    "low_confidence": 1
+  },
+
+  "guides": [
+    {
+      "code": "MSCSIA",
+      "degree_title": "Master of Science, Cybersecurity and Information Assurance",
+      "confidence": "high",
+      "version": "202306",
+      "pub_date": "2/6/2025",
+      "page_count": 0,
+      "metadata_format": "header-line",
+      "sp_rows": 10,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 9,
+      "aos_courses": 9,
+      "capstone_present": true,
+      "capstone_title": "Cybersecurity Graduate Capstone",
+      "capstone_bullets": 1,
+      "reconciliation": "10/10 clean (9 AoS + 1 capstone)",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0,
+      "note": "1-course-per-group structure. Capstone present with 1 competency bullet. Older version (202306) vs 202504 for the other 3 guides."
+    },
+    {
+      "code": "MSCSCS",
+      "degree_title": "Master of Science, Computer Science, Computing Systems",
+      "confidence": "high",
+      "version": "202504",
+      "pub_date": "2/26/2025",
+      "page_count": 0,
+      "metadata_format": "header-line",
+      "sp_rows": 10,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 3,
+      "aos_courses": 10,
+      "capstone_present": false,
+      "reconciliation": "10/10 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0
+    },
+    {
+      "code": "MSCSAIML",
+      "degree_title": "Master of Science, Computer Science, Artificial Intelligence and Machine Learning",
+      "confidence": "high",
+      "version": "202504",
+      "pub_date": "2/26/2025",
+      "page_count": 0,
+      "metadata_format": "header-line",
+      "sp_rows": 10,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 2,
+      "aos_courses": 10,
+      "capstone_present": false,
+      "reconciliation": "10/10 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0,
+      "note": "Degree title in parsed metadata is truncated due to multi-line AoS header wrapping ('...Artificial Intelligence and'). Full title is available from source. Cosmetic only."
+    },
+    {
+      "code": "MSCSHCI",
+      "degree_title": "Master of Science, Computer Science, Human-Computer Interaction",
+      "confidence": "high",
+      "version": "202504",
+      "pub_date": "2/26/2025",
+      "page_count": 0,
+      "metadata_format": "header-line",
+      "sp_rows": 10,
+      "sp_format": "3-column multiline (with Term)",
+      "aos_groups": 4,
+      "aos_courses": 10,
+      "capstone_present": false,
+      "reconciliation": "10/10 clean",
+      "anomalies": 0,
+      "warnings": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0
+    },
+    {
+      "code": "MSCSUG",
+      "degree_title": "Bachelor of Science, Computer Science (BSCS to MSCS)",
+      "confidence": "low",
+      "version": "202504",
+      "pub_date": "2/26/2025",
+      "page_count": 0,
+      "metadata_format": "header-line",
+      "sp_rows": 30,
+      "sp_format": "3-column — extraction failure",
+      "aos_groups": 11,
+      "aos_courses": 37,
+      "capstone_present": false,
+      "reconciliation": "FAILED — column extraction artifact",
+      "anomalies": 14,
+      "warnings": 2,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0,
+      "low_cause": "sp_column_extraction_failure",
+      "low_detail": "SP table column ordering failure — same class as BSITM and MATSPED. Parser recovered 30 rows but many have impossible CU/Term values. 8 sp_expected_term_got_text + 4 sp_row_invalid + 1 sp_incomplete_row_at_eof + 1 sp_row_invalid title-match failure. AoS content fully intact: 11 groups, 37 courses, 0 AoS anomalies. SP data must be excluded from downstream use. AoS is safe."
+    }
+  ],
+
+  "confidence_distribution": {
+    "high": ["MSCSIA", "MSCSCS", "MSCSAIML", "MSCSHCI"],
+    "medium": [],
+    "low": ["MSCSUG"]
+  },
+
+  "sp_format": "All 5 guides nominally 3-column multiline (with Term). MSCSUG SP table has column extraction failure; format detection is correct but source columns are interleaved incorrectly. 4 pure MSCS guides parse cleanly.",
+
+  "metadata_format_variants": {
+    "header_line": ["MSCSIA", "MSCSCS", "MSCSAIML", "MSCSHCI", "MSCSUG"],
+    "footer": [],
+    "note": "All 5 guides use header-line metadata format. All page_count=0 (expected for this format)."
+  },
+
+  "capstone_notes": {
+    "present": ["MSCSIA"],
+    "absent": ["MSCSCS", "MSCSAIML", "MSCSHCI", "MSCSUG"],
+    "note": "Only MSCSIA has an explicit Capstone section. Capstone has 1 competency bullet. No competency trigger-based block — single bullet present. This is consistent with some graduate capstone formats (e.g., MSML in graduate_standard also had minimal capstone bullets)."
+  },
+
+  "quality": {
+    "empty_descriptions": 0,
+    "empty_competency_lists": 0,
+    "total_sp_rows_high_conf": 40,
+    "total_aos_courses_high_conf": 39,
+    "total_sp_rows_all": 70,
+    "total_aos_courses_all": 76,
+    "perfect_reconciliation_guides": 4
+  },
+
+  "structural_notes": [
+    "MSCSIA is an older version (202306) vs the cohort of 3 guides at 202504. Different version, same parser behavior.",
+    "MSCSIA's 1-course-per-group structure is structurally unique within this family but parses identically to standard AoS parsing.",
+    "MSCSUG is a BSCS-to-MSCS bridge guide covering 37 courses — analogous to MSITUG in graduate_standard (35 courses). Unlike MSITUG, MSCSUG has SP column extraction failure. The large AoS parse (37 courses, 11 groups) is correct and useful.",
+    "The MSCSAIML title truncation ('...Artificial Intelligence and') affects only the degree_title field in the parsed JSON. SP, AoS, and metadata are all correct."
+  ],
+
+  "low_cause_summary": {
+    "sp_column_extraction_failure": {
+      "guides": ["MSCSUG"],
+      "description": "Source PDF column ordering failure during pdftotext extraction. Same failure class as BSITM and MATSPED. SP data is unusable. AoS content is intact and fully usable. No parser fix possible — source artifact."
+    }
+  },
+
+  "parser_changes_made": [],
+
+  "safe_fields_for_downstream": [
+    "SP course titles (MSCSIA, MSCSCS, MSCSAIML, MSCSHCI)",
+    "SP CU values (MSCSIA, MSCSCS, MSCSAIML, MSCSHCI)",
+    "SP term sequence (MSCSIA, MSCSCS, MSCSAIML, MSCSHCI)",
+    "AoS group structure (all 5 guides)",
+    "Course descriptions (all 5 guides, 0 empty)",
+    "Competency bullets (all 5 guides, 0 empty)",
+    "Capstone title and bullets (MSCSIA only)",
+    "Guide metadata / version (all 5 guides)"
+  ],
+
+  "fields_to_exclude": [
+    "MSCSUG SP data — column extraction failure, invalid CU/Term values",
+    "MSCSAIML degree_title field — truncated by multi-line AoS header wrapping"
+  ],
+
+  "recommendation": {
+    "cs_grad_complete": true,
+    "summary": "5/5 parsed, 0 failures. 4 HIGH / 0 MEDIUM / 1 LOW. LOW case (MSCSUG) is a source-artifact SP extraction failure — AoS content intact. No parser changes needed or made. Family structure matched gate expectations throughout.",
+    "downstream_go_nogo": "GO with exclusions — SP data for MSCSUG excluded; MSCSAIML degree_title field excluded. All AoS content safe for all 5 guides."
+  }
+}

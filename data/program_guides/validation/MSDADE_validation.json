@@ -1,0 +1,32 @@
+{
+  "program_code": "MSDADE",
+  "degree_title": "Master of Science, Data Analytics - Data Engineering",
+  "version": "202408",
+  "pub_date": "5/15/24",
+  "page_count": 11,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 212,
+    "Areas of Study": 314,
+    "Accessibility": 494
+  },
+  "standard_path_row_count": 11,
+  "aos_group_count": 2,
+  "aos_course_count": 11,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 11,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

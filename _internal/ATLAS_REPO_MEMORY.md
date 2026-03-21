@@ -1,6 +1,6 @@
 # ATLAS Repo Memory
 
-Last updated: 2026-03-20  
+Last updated: 2026-03-21
 Role: stable repo memory, runtime facts, durable decisions  
 Use this file for repo orientation, architecture, contracts, and design rationale.  
 This is the long-lived reference companion to `_internal/ATLAS_CONTROL.md`.
@@ -542,10 +542,11 @@ This is distinct from the URL-placement system in `official_resource_placements.
 
 ### Status
 
-- Initialized — analysis phase only as of 2026-03-20
-- Technical design complete: `_internal/program_guides/TECHNICAL_READOUT.md`
-- 1 of 115 guide texts extracted (BSDA)
-- No scripts written; no data artifacts yet
+- **Phase C — 80/115 guides parsed (69.6%).** 11 families fully validated.
+- Phase D threshold: 81 guides. Currently 1 guide short numerically.
+- Technical design complete and frozen: `_internal/program_guides/TECHNICAL_READOUT.md`
+- Parser (`scripts/program_guides/parse_guide.py`) is stable and production-quality.
+- Phase D and Phase E not started.
 
 ### BSDA guide structure (confirmed)
 
@@ -571,12 +572,46 @@ Key structural facts:
 | D | Site artifact build: `public/data/program_guides/{code}.json` |
 | E | Course title → Atlas code matching (separate downstream step) |
 
+### Validated families and guide counts
+
+| Family | Guides | HIGH | MEDIUM | LOW | Notable |
+|--------|--------|------|--------|-----|---------|
+| standard_bs | 19 | 18 | 0 | 1 | BSITM SP: source-artifact extraction failure |
+| cs_ug | 8 | 4 | 4 | 0 | High cert-prep density |
+| education_ba | 11 | 5 | 6 | 0 | 4 Sped guides: 1 missing AoS course (PDF reordering) |
+| graduate_standard | 9 | 8 | 1 | 0 | MSITM capstone description polluted (typo in source) |
+| mba | 3 | 3 | 0 | 0 | |
+| healthcare_grad | 2 | 2 | 0 | 0 | |
+| education_bs | 4 | 4 | 0 | 0 | |
+| teaching_mat | 9 | 8 | 0 | 1 | MATSPED SP: source-artifact extraction failure |
+| cs_grad | 5 | 4 | 0 | 1 | MSCSUG SP: source-artifact; AoS intact (37 courses) |
+| swe_grad | 4 | 3 | 1 | 0 | MSSWEUG: title hyphen variant in bridge guide |
+| data_analytics_grad | 3 | 3 | 0 | 0 | Cleanest family |
+| accounting_ma | 5 (partial) | 1 | 1 | 3 | Specialization guides deferred — looks_like_prose limitation |
+
+### Known source-artifact SP failures (SP unusable, AoS intact)
+
+- BSITM, MATSPED, MSCSUG — column ordering failure in pdftotext extraction
+
+### Known parser limitations (not source artifacts)
+
+- `looks_like_prose()` fails for short-wrapped description lines (40–50 chars, no terminal punctuation). Affects accounting_ma 202409 specialization guides (MACCA, MACCF, MACCT). Fix deferred.
+
+### Parser changes log
+
+| Session | Change | Scope |
+|---------|--------|-------|
+| 17 | `extract_metadata()` date regex fix (no-space before date) | General |
+| 18 | `_is_bullet_continuation` Title Case guard (≥80% cap ratio → False) | General |
+
 ### Key files
 
 - `_internal/program_guides/TECHNICAL_READOUT.md` — full design rationale, schemas, pipeline
+- `_internal/program_guides/DEV_NOTES.md` — session history and parser change log
 - `_internal/program_guides/README.md` — workstream control
-- `data/program_guides/` (planned)
-- `public/data/program_guides/` (planned)
+- `data/program_guides/parsed/` — 80 *_parsed.json files
+- `data/program_guides/family_validation/` — gate reports and rollout summaries
+- `public/data/program_guides/` — not yet created (Phase D)
 
 ### Important design decisions
 

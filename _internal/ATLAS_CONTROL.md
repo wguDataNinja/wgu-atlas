@@ -20,7 +20,7 @@ No separate long-lived `ATLAS_SPEC.md` or `DECISIONS.md` should be treated as ac
 
 | Workstream | Status | Current objective | Primary blocker | Next bounded step |
 |---|---|---|---|---|
-| Program guide extraction | initialized — analysis only | extract content from 115 program guide PDFs | 114 guide texts not yet extracted; no scripts yet | extract all PDFs to text; write `analyze_guide_manifest.py` |
+| Program guide extraction | Phase C — 80/115 parsed (69.6%) | reach Phase D threshold (81 guides, ≥70%) and validate remaining low-risk families | 35 remaining guides include risky families (nursing, endorsement) | gate education_ma next session |
 | Official resource layer | initialized, likely next | move from planning to first queue artifact | first bounded queue artifact not built | create regulatory/licensure/disclosure candidate queue |
 | Continuity review | initialized, lightweight | validate compact review method | first tiny validation batch not created | create 4-card validation batch |
 | Program lineage / degree history | ready, not selected | keep system stable for later export/UI if chosen | export/runtime wiring not implemented | no action unless selected |
@@ -34,37 +34,52 @@ No separate long-lived `ATLAS_SPEC.md` or `DECISIONS.md` should be treated as ac
 ### 6.0 Program guide extraction
 
 **Status**
-- initialized — analysis phase only
-- technical readout complete
-- no scripts written; no data artifacts yet
-- 1 of 115 guide texts extracted (BSDA)
+- Phase C — 80/115 guides parsed (69.6%). 11 families complete or partially validated.
+- Phase D threshold: 81 guides (≥70%). **1 guide short numerically.**
+- Parser is stable and production-quality. Core state machine validated across 11+ families.
+
+**Complete families (11):**
+standard_bs(19), cs_ug(8), education_ba(11), graduate_standard(9), mba(3), healthcare_grad(2), education_bs(4), teaching_mat(9), cs_grad(5), swe_grad(4), data_analytics_grad(3)
+
+**Partially validated:**
+- accounting_ma: 5 guides parsed, 3 LOW (specialization guides have looks_like_prose parser limitation). MACC=HIGH, MACCM=MEDIUM usable. Specialization guides deferred.
 
 **Why it matters**
-- Program guides contain the richest per-program content available from WGU: Standard Path tables with CUs and term, course descriptions, competency bullets, prereq mentions, cert-prep mentions.
-- Extracting this content enables Atlas to show course-level detail that the main catalog does not provide in accessible form.
-- 115 guides cover all active programs. Coverage is broader than the current enrichment layer.
+- Program guides contain the richest per-program content: Standard Path with CUs and term, course descriptions, competency bullets, prereq mentions, cert-prep mentions.
+- 0 empty course descriptions across all parsed guides. Strongest field in the pipeline.
 
-**Locked direction**
-- Manifest-first: characterize all 115 guides before writing a content parser
-- BSDA is the thin-slice validation case
-- Course title → Atlas code matching is a separate downstream step
-- No implementation until Phase A (corpus manifest) is complete
+**Current parser state**
+- `scripts/program_guides/parse_guide.py` — stable, tested, no planned rewrites
+- Session 18 fix: `_is_bullet_continuation` Title Case guard (≥80% capitalized words → not a continuation). Regression-verified.
+- Known limitation: `looks_like_prose` fails for short-wrapped description lines (40–50 chars, no terminal punctuation). Affects accounting_ma specialization guides. Fix deferred.
+- Known source-artifact outliers (SP unusable, AoS intact): BSITM, MATSPED, MSCSUG
+
+**Known downstream exclusions**
+- BSITM SP, MATSPED SP, MSCSUG SP: source-PDF column extraction failures
+- MSCSAIML degree_title: truncated in parsed output (cosmetic)
+- MACCM Corporate Financial Analysis: title/first-sentence quality issue
+- MACCA, MACCF, MACCT AoS: courses mis-parsed as groups (parser limitation, not source artifact)
 
 **Key files**
-- `_internal/program_guides/README.md`
-- `_internal/program_guides/TECHNICAL_READOUT.md`
-- `data/program_guides/` (planned — not yet created)
-- `public/data/program_guides/` (planned — not yet created)
+- `_internal/program_guides/DEV_NOTES.md` — session history and parser change log
+- `_internal/program_guides/TECHNICAL_READOUT.md` — parser design rationale
+- `data/program_guides/parsed/` — 80 *_parsed.json files
+- `data/program_guides/validation/` — 80 *_validation.json files
+- `data/program_guides/manifest_rows/` — 80 *_manifest_row.json files
+- `data/program_guides/family_validation/` — gate reports and rollout summaries
+- `data/program_guides/audit/` — family inventory, section matrix, readiness assessment
+- `public/data/program_guides/` — not yet created (Phase D)
 
 **Pipeline phases**
-1. A: Extract 114 remaining PDFs to text; run `analyze_guide_manifest.py`; produce manifest + section presence matrix
-2. B: Thin-slice BSDA parser; validate output
-3. C: Full corpus parser with family branching
-4. D: Site artifact build
-5. E: Course code matching
+1. A: Corpus manifest ✓
+2. B: Thin-slice validation ✓
+3. C: Full corpus parsing — **IN PROGRESS** (80/115)
+4. D: Site artifact build — NOT STARTED (threshold not yet reached)
+5. E: Course code matching — NOT STARTED
 
 **Next artifact**
-- Extract all 115 PDFs to text; then write `analyze_guide_manifest.py`
+- Gate education_ma (expected: similar to education_ba/education_bs, low risk)
+- Then assess Phase D readiness conservatively
 
 ---
 
@@ -221,13 +236,11 @@ These should not be reopened by default.
 
 ## 9. Exact next-session order
 
-1. Commit pending data reorg (`data/site/`, `data/lineage/`, `data/enrichment/`) and pending src changes
-2. **Program guide Phase A:** Extract all 115 guide PDFs to text; commit to `raw_texts/`; write `analyze_guide_manifest.py`; produce `guide_manifest.json` and `section_presence_matrix.csv`
-3. **Program guide Phase A continued:** Review manifest outputs; write `guide_family_classification.md` and `irregularities_report.md`
+1. **Program guide — gate education_ma:** Expected low-risk (similar to education_ba/education_bs). Gate one guide, review structure, roll out if clean. This one guide would push corpus to 81+ (≥70% numeric threshold).
+2. **Program guide — Phase D readiness assessment:** After education_ma, assess conservatively: is coverage high enough AND are known risks understood? Do not start Phase D on numeric threshold alone.
+3. **Program guide — accounting_ma specialization fix (deferred):** Investigate looks_like_prose improvement for short-wrapped description lines. Test against accounting_ma specialization guides without regressions.
 4. Build `_internal/official_resource/regulatory_candidate_queue.md`
 5. Run first 4-card continuity-review batch (`_internal/continuity_review/validation_batch_01.md`)
-6. Outcomes audit: identify which of the 40 empty-outcome programs can actually be populated
-7. Resolve 6 programs missing guide placements in `public/data/official_resource_placements.json`
 
 ---
 
