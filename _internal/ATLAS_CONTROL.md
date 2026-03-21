@@ -111,11 +111,23 @@ education_grad: complete (MSEDL=HIGH + MEDETID=MEDIUM)
 - `guide_anomaly_registry.json` — 9 anomaly records
 Scripts: `scripts/program_guides/extract_cert_mapping.py`, `extract_prereq_relationships.py`, `classify_sp_families.py`
 
+**Guide product handoff complete (Session 30, 2026-03-21)**
+- `_internal/program_guides/GUIDE_ARTIFACTS_PRODUCT_HANDOFF.md` — comprehensive product handoff doc for build/design sessions.
+- Covers: executive state, full artifact inventory, product payload by surface, degree/course/family shape families, what is not yet cleanly extracted (NCLEX, CPA Exam, variant selection policy, CU conflicts, education sub-families), merge-to-product planning bridge, concrete examples.
+- Guide enrichment extraction workstream is COMPLETE through artifact production. Remaining work: build artifact generator, resolve signal gaps (NCLEX, CPA), establish variant selection policy, then merge to product surfaces.
+
+**Known gaps identified in Session 30 handoff**
+- NCLEX (nursing programs): present in program description text only; not in cert_course_mapping.json; requires a program-description pass.
+- CPA Exam (BSACC): thin capture (review-required); richer in program description; needs targeted recovery before surfacing.
+- Multi-description/competency variant selection: 74 courses with multiple description variants, 185 with multiple competency variants — no policy decision yet.
+- SP CU conflicts: 41 cases across programs — recommend defaulting to catalog CU value.
+
 **What is next**
 - Build the Atlas **degree-enrichment artifact generator** (`build_guide_artifacts.py`):
   reads extracted guide data, applies the approved policy, and produces Atlas-ready JSON for degree pages.
   Start from `data/program_guides/audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md`.
 - Guide targets outputs (cert mapping, prereq relationships, SP families) unlock cert badges, prereq display, and family surfaces on degree/course pages.
+- Before surfacing cert signals on nursing or accounting degree pages: resolve NCLEX and CPA Exam gaps.
 - Course-page enrichment and college-level enrichment are later decisions, not part of this next step.
 
 ---

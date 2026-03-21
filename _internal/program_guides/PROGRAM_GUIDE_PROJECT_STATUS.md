@@ -76,11 +76,41 @@ That README explains the full directory, what each area contains, what is canoni
 
 **SP families:** BSSWE (2 tracks, 33 shared courses), MACC (4 tracks, 6 shared), MSRNN (3 specializations, 25 shared), BSCNE (4 vendor tracks, 26 shared), PMCNU (4 specializations, 0 shared), MSMK (2 specializations, 8 shared), BAELED (licensure variant, 33 shared).
 
+## Session 30 Completion (2026-03-21)
+
+Session 30 produced the primary product handoff document for the guide artifact layer.
+
+**Produced:**
+- `_internal/program_guides/GUIDE_ARTIFACTS_PRODUCT_HANDOFF.md` — full product handoff doc for future build and design sessions. Covers executive state, artifact inventory, product payload by surface, degree/course/family shape families, what is not yet cleanly extracted, merge-to-product planning bridge, and concrete examples.
+
+**Key findings documented in handoff doc:**
+- NCLEX signal for nursing is absent from cert_course_mapping.json entirely — needs a program-description pass.
+- CPA Exam signal for BSACC is thin (review-required in cert artifact) — needs targeted recovery.
+- 74 courses have multiple description variants and 185 have multiple competency variants — variant selection policy is not yet decided.
+- 41 SP CU conflicts across programs — recommend defaulting to catalog CU values.
+- Education content-area sub-families (e.g., Secondary Chemistry across degree levels) are not yet captured as named families.
+- BSCNE and MSMK family declarations are inferred, not guide-declared — Atlas display should not imply explicit guide declaration.
+- MEDETID multi-capstone (ANOM-007) remains partial — suppress or label pending fix.
+
+**Current artifact inventory summary (all guide targets artifacts now complete):**
+
+| Artifact | Rows / Records | Status |
+|---|---|---|
+| `cert_course_mapping.json` | 9 auto-accepted, 21 review | Complete |
+| `prereq_relationships.json` | 50 auto-accepted, 21 review | Complete |
+| `sp_family_classification.json` | 115 programs classified | Complete |
+| `sp_families.json` | 7 family definitions | Complete |
+| `guide_anomaly_registry.json` | 9 anomaly records | Complete |
+| `enrichment/course_enrichment_candidates.json` | 751 courses | Complete |
+
 ## What Is Next
 
 Build the **Atlas degree-enrichment artifact generator**: a script that reads the extracted guide data, applies the approved inclusion policy, and produces Atlas-ready JSON for degree pages.
 
 - Policy and schema decisions are already settled — see `data/program_guides/audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md`.
 - Guide targets extraction outputs (cert mapping, prereq relationships, SP families) unlock cert badges, prereq display, and family relationship surfaces on degree and course pages.
-- No runtime wiring or course-page publishing in this next step.
+- Start with degree pages first: AoS descriptions + competency bullets, SP term structure, cert badge block, family relationship panel, guide provenance badge.
+- Course-page enrichment (prereq badges, cert badges, guide descriptions) is a later decision after degree pages are working.
+- No runtime wiring or course-page publishing in this next step — artifact generator produces verification files only.
 - College-level uses of this data remain possible later.
+- Before surfacing cert signals: resolve NCLEX (program-description pass for nursing) and CPA Exam (BSACC targeted recovery) for completeness on those degree pages.

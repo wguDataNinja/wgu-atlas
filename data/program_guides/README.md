@@ -29,6 +29,10 @@ The extracted data includes:
 | Guide corpus collected and parsed | **Complete** — 115/115 guides |
 | Per-course descriptions and competency bullets extracted | **Complete** — 2,593 courses covered |
 | Guide courses matched to Atlas catalog codes | **Complete** — 751 courses matched; 542 unmatched (irreducible) |
+| Cert → course mapping artifact | **Complete** — 9 auto-accepted, 21 review-needed |
+| Prereq relationship artifact | **Complete** — 50 auto-accepted, 21 review-needed |
+| SP family classification artifact | **Complete** — 115 programs, 7 named families |
+| Anomaly registry | **Complete** — 9 records with handling rules |
 | Policy and schema for Atlas degree-page enrichment | **Designed** — not yet built |
 | Guide data published to Atlas site | **Not started** |
 
@@ -67,6 +71,36 @@ The extracted data includes:
 **To understand what claims are safe to make:** [audit/program_guide_claims_register.md](audit/program_guide_claims_register.md)
 
 **To audit course-matching decisions (resolutions, deferred, unresolvable):** [bridge/merge_summary.json](bridge/merge_summary.json)
+
+**To understand what cert→course mappings exist:** [cert_course_mapping.json](cert_course_mapping.json)
+
+**To understand what prereq relationships exist:** [prereq_relationships.json](prereq_relationships.json)
+
+**To understand how each program's SP is categorized:** [sp_family_classification.json](sp_family_classification.json)
+
+**To understand the 7 named program families:** [sp_families.json](sp_families.json)
+
+**To understand known extraction anomalies and handling rules:** [guide_anomaly_registry.json](guide_anomaly_registry.json)
+
+**For the full product handoff (surface-by-surface payload, shape families, merge planning):** [_internal/program_guides/GUIDE_ARTIFACTS_PRODUCT_HANDOFF.md](../../_internal/program_guides/GUIDE_ARTIFACTS_PRODUCT_HANDOFF.md)
+
+---
+
+## Top-level guide target artifacts
+
+Five JSON files live directly in this directory (not in a subdirectory). These are the Session 29 target extraction outputs.
+
+| File | Contents | Status |
+|------|----------|--------|
+| `cert_course_mapping.json` | Cert→course mappings: 9 auto-accepted (high confidence, 3+ programs), 21 review-needed (medium, single-program or fragment) | Complete |
+| `prereq_relationships.json` | Prereq relationships: 50 auto-accepted, 21 review-needed, 71 total. Types: explicit-course, code-anchored, cumulative-sequence, inverted-capture | Complete |
+| `sp_family_classification.json` | Per-program SP classification (A/B/C/D) for all 115 programs | Complete |
+| `sp_families.json` | 7 named family definitions: BSSWE, MACC, MSRNN, BSCNE, PMCNU, MSMK, BAELED | Complete |
+| `guide_anomaly_registry.json` | 9 anomaly records with detection method, source-side vs extraction-side, and Atlas handling rules | Complete |
+
+**Also present:** `guide_manifest.json` — earlier-phase guide structure manifest (pre-extraction-targets, covers guide presence flags and structural counts per guide).
+
+For the full product-facing payload reference including merge planning, shape families, and known gaps, see `_internal/program_guides/GUIDE_ARTIFACTS_PRODUCT_HANDOFF.md`.
 
 ---
 

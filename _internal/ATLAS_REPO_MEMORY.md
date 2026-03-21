@@ -542,15 +542,24 @@ This is distinct from the URL-placement system in `official_resource_placements.
 
 ### Status
 
-- **Guide data collection and extraction is COMPLETE.**
+- **Guide data collection, extraction, and target artifact production is COMPLETE.**
 - All 115 WGU program guidebooks have been parsed and validated. Parser is stable.
 - **751 canonical courses now have guide-derived enrichment data** (descriptions, competency bullets, program context). This data is ready to inform Atlas degree pages and, later, course pages.
 - The design for the Atlas degree-enrichment artifact layer is complete (policy, schema, build plan settled).
+- **Guide target artifacts (Sessions 29–30):** cert_course_mapping, prereq_relationships, sp_family_classification, sp_families, guide_anomaly_registry — all complete. See key files below.
+- **Product handoff document (Session 30):** `_internal/program_guides/GUIDE_ARTIFACTS_PRODUCT_HANDOFF.md` — comprehensive surface-by-surface payload reference for build and design sessions.
 - The artifact generator (`build_guide_artifacts.py`) has not yet been built; no guide data is published to the site yet.
 - Human entry point for the program-guides data area: `data/program_guides/README.md`
 - Canonical counts and claim boundaries: `data/program_guides/audit/PROGRAM_GUIDE_CORPUS_MANIFEST.{md,json}` and `program_guide_claims_register.{md,json}`.
 - Degree-enrichment design pack: `data/program_guides/audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md`.
 - Course-matching audit (resolutions, deferred cases, unresolvables): `data/program_guides/bridge/merge_summary.json`.
+
+**Known signal gaps (documented in GUIDE_ARTIFACTS_PRODUCT_HANDOFF.md Section 5):**
+- NCLEX (nursing programs) — not in cert artifact; needs program-description pass.
+- CPA Exam (BSACC) — thin extraction (review-required); richer in program description.
+- Multi-description/competency variant selection — 74/185 courses affected; no policy yet.
+- SP CU conflicts — 41 cases; recommend catalog CU as display value.
+- Education content-area sub-families — not yet captured as named families.
 
 **Durable coverage model (do not collapse these states):**
 - Extracted texts: PDF-to-text corpus available as parser input.
@@ -618,6 +627,7 @@ None outstanding. All identified limitations were resolved in Session 22–23.
 
 ### Key files
 
+- `_internal/program_guides/GUIDE_ARTIFACTS_PRODUCT_HANDOFF.md` — **product handoff doc** (Session 30): surface-by-surface payload reference, shape families, gaps, merge planning, concrete examples
 - `_internal/program_guides/TECHNICAL_READOUT.md` — full design rationale, schemas, pipeline
 - `_internal/program_guides/DEV_NOTES.md` — session history and parser change log
 - `_internal/program_guides/README.md` — module orientation
