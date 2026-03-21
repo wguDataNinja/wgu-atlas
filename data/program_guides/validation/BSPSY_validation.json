@@ -1,0 +1,32 @@
+{
+  "program_code": "BSPSY",
+  "degree_title": "Bachelor of Science in Psychology",
+  "version": "202404",
+  "pub_date": "2/16/24",
+  "page_count": 19,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 216,
+    "Areas of Study": 462,
+    "Accessibility": 1054
+  },
+  "standard_path_row_count": 34,
+  "aos_group_count": 4,
+  "aos_course_count": 34,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 34,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

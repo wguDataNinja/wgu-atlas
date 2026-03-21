@@ -5,6 +5,38 @@ Each entry records what changed, decisions locked, what's blocked, and the next 
 
 ---
 
+## 2026-03-20 (session 13 — standard_bs family validation)
+
+**Done**
+- Ran parse_guide.py on BSCS, BSIT, BSMGT, BSPSY (4 new guides + BSDA baseline = 5 total)
+- Found and fixed 5 parser bugs across two root-cause groups: SP table format assumptions and footer detection
+  1. Multi-line SP format (BSCS/BSIT/BSMGT/BSPSY): added `parse_standard_path_multiline()` with `detect_sp_multiline()` format routing
+  2. Split-footer format: added `FOOTER_CODE_ONLY_RE`, updated `is_footer()` to catch "CODE YYYYMM" lines and "©..." lines
+  3. Header-line metadata format (BSIT/BSMGT): added `HEADER_META_RE` in `extract_metadata()`
+  4. `PAGE_NUM_RE` was skipping CU/term values in multi-line SP parser: removed from SP parser, kept for AoS only
+  5. Page number after footer consumed as CU value: added `prev_was_footer` flag
+  6. "Total CUs 110" treated as title: added `SP_TOTAL_RE` terminator
+  7. Column header repeated at page tops: added `HEADER_LINE_RE` mid-table skip
+- Final results: all 5 guides at HIGH confidence, 0 anomalies, 0 warnings
+- Created `data/program_guides/family_validation/standard_bs_validation_summary.json` and `.md`
+- Updated `_internal/program_guides/DEV_NOTES.md` with session 13 section
+
+**Decisions locked**
+- standard_bs family READY for `--all` rollout
+- Multi-line SP and split-footer format handling is now the default path; single-line (BSDA) is the legacy exception
+- `prev_was_footer` flag is the correct mechanism for distinguishing page numbers from data values in the SP parser
+- Do not run `--all` until BSMES is specifically validated (it has Student Teaching / Clinical Experiences variant sections)
+
+**Blocked / open**
+- BSMES specific validation (standard_bs with education-style variant sections) — run before `--all`
+- Page count extraction for header-line format guides returns 0 — cosmetic, non-blocking
+- SP/AoS title reconciliation uses exact string match — may surface minor mismatches in batch
+
+**Next starting task**
+Run `parse_guide.py --program BSMES`, inspect for education-variant section handling, then run `--all` for standard_bs family (or full corpus if BSMES is clean).
+
+---
+
 ## 2026-03-20 (session 12 — Phase A execution + BSDA thin-slice parser)
 
 **Done**

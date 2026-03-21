@@ -1,0 +1,50 @@
+{
+  "source_pdf_filename": "BSCS.pdf",
+  "source_text_filename": "BSCS.txt",
+  "inferred_program_code": "BSCS",
+  "page_count": 20,
+  "version_strings": [
+    "202412"
+  ],
+  "publication_dates": [
+    "8/2/24"
+  ],
+  "has_standard_path": true,
+  "has_areas_of_study": true,
+  "has_capstone_section": false,
+  "has_course_descriptions": true,
+  "has_competency_bullets": true,
+  "has_term_structure": true,
+  "has_cu_values": true,
+  "has_cert_prep_mentions": false,
+  "has_prereq_mentions": true,
+  "standard_path_row_count": 37,
+  "competency_trigger_count": 37,
+  "competency_bullet_count": 178,
+  "cert_prep_mention_count": 0,
+  "prereq_mention_count": 7,
+  "detected_section_headings": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "inferred_course_groups": [
+    "Computer Science",
+    "General Education",
+    "Scripting and Programming",
+    "Data Management",
+    "Network and Security",
+    "Web Development",
+    "Full Stack Engineering",
+    "Software",
+    "Operating Systems",
+    "Secure Systems Analysis & Design",
+    "Information Technology Management",
+    "Business of IT"
+  ],
+  "likely_guide_family": "cs_ug",
+  "template_type": "partial",
+  "parseability_confidence": "high",
+  "warnings": [],
+  "irregularities": []
+}

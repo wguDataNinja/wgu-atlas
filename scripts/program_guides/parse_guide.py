@@ -62,14 +62,21 @@ FOOTER_RE = re.compile(
     r'^([A-Z][A-Z0-9_\-]+)\s+(\d{6})\s+©\s+\d{4}\s+Western Governors University\s+'
     r'(\d{1,2}/\d{1,2}/\d{2,4})\s+(\d+)\s*$'
 )
-FOOTER_LOOSE_RE = re.compile(r'^([A-Z][A-Z0-9_\-]+)\s+(\d{6})\s+©')
+FOOTER_LOOSE_RE    = re.compile(r'^([A-Z][A-Z0-9_\-]+)\s+(\d{6})\s+©')
+# Multi-line footer format: "BSCS 202412" on its own line (code + version only)
+FOOTER_CODE_ONLY_RE = re.compile(r'^([A-Z][A-Z0-9_\-]+)\s+(\d{6})\s*$')
+# Standalone page number (1–3 digits) emitted on its own line in multi-line footers
+PAGE_NUM_RE = re.compile(r'^\d{1,3}$')
 
 STANDARD_PATH_RE    = re.compile(r'^Standard Path(\s+for\s+.+)?$')
 AREAS_OF_STUDY_RE   = re.compile(r'^Areas of Study\b')
 CAPSTONE_RE         = re.compile(r'^Capstone$', re.IGNORECASE)
 ACCESSIBILITY_RE    = re.compile(r'^Accessibility and Accommodations')
 
-SP_HEADER_RE  = re.compile(r'^Course\s+Description\s+CUs?\s+Term', re.IGNORECASE)
+# SP_HEADER_RE matches both "Course Description" (older) and "Course Title" (newer) column headers
+SP_HEADER_RE       = re.compile(r'^Course\s+(?:Description|Title)\s+CUs?\s+Term', re.IGNORECASE)
+# Multi-line SP header: "CUs" or "CU" alone on a line signals multi-line table format
+SP_CU_ONLY_RE      = re.compile(r'^CUs?\s*$', re.IGNORECASE)
 SP_ROW_RE     = re.compile(r'^(.+?)\s+(\d{1,2})\s+(\d{1,2})\s*$')
 SP_CHANGES_RE = re.compile(r'^Changes to Curriculum')
 
@@ -100,7 +107,17 @@ SKIP_CONTENT_RE = re.compile(
 # ---------------------------------------------------------------------------
 
 def is_footer(line: str) -> bool:
-    return bool(FOOTER_LOOSE_RE.match(line) and '©' in line)
+    """True for any line that is a footer/page-header component and should be skipped."""
+    # Old single-line format: "BSDA 202309 © 2019 Western Governors University 5/1/23 7"
+    if FOOTER_LOOSE_RE.match(line) and '©' in line:
+        return True
+    # New split format component 1: "BSCS 202412" (code + version only, no ©)
+    if FOOTER_CODE_ONLY_RE.match(line):
+        return True
+    # New split format component 3: "© 2019 Western Governors University 8/2/24"
+    if line.startswith('©'):
+        return True
+    return False
 
 
 def is_bullet(line: str) -> bool:
@@ -138,18 +155,62 @@ def extract_metadata(stripped: list) -> dict:
     codes, versions, dates, pages = [], [], [], []
     anomalies = []
 
+    # New guide format: "Program Code: BSIT Catalog Version: 202604 Published Date: 11/20/2025"
+    HEADER_META_RE = re.compile(
+        r'Program Code:\s*([A-Z][A-Z0-9_\-]+)\s+Catalog Version:\s*(\d{6})'
+        r'(?:\s+Published Date:\s*(\S+))?',
+        re.IGNORECASE,
+    )
+
+    prev_code_seen = False
     for line in stripped:
+        # Check new header-line metadata format (typically line 3 of modern guides)
+        hm = HEADER_META_RE.search(line)
+        if hm:
+            codes.append(hm.group(1))
+            versions.append(hm.group(2))
+            if hm.group(3):
+                dates.append(hm.group(3))
+            prev_code_seen = False
+            continue
+
+        if not line:
+            continue  # blank lines do not reset prev_code_seen
+
         m = FOOTER_RE.match(line)
         if m:
             codes.append(m.group(1))
             versions.append(m.group(2))
             dates.append(m.group(3))
             pages.append(int(m.group(4)))
+            prev_code_seen = False
         elif FOOTER_LOOSE_RE.match(line):
             parts = line.split()
             if len(parts) >= 2:
                 codes.append(parts[0])
                 versions.append(parts[1])
+            prev_code_seen = False
+        elif FOOTER_CODE_ONLY_RE.match(line):
+            # Multi-line footer: "BSCS 202412" on its own line
+            m2 = FOOTER_CODE_ONLY_RE.match(line)
+            codes.append(m2.group(1))
+            versions.append(m2.group(2))
+            prev_code_seen = True
+        elif line.startswith('©') and prev_code_seen:
+            # Extract pub date from the © line: "© 2019 Western Governors University 8/2/24"
+            parts = line.rstrip().split()
+            if parts and '/' in parts[-1]:
+                dates.append(parts[-1])
+            # Don't reset — page number line follows
+        elif PAGE_NUM_RE.match(line) and prev_code_seen:
+            # Standalone page number in multi-line footer
+            try:
+                pages.append(int(line.strip()))
+            except ValueError:
+                pass
+            prev_code_seen = False
+        else:
+            prev_code_seen = False
 
     if not codes:
         anomalies.append({'type': 'no_footer_lines_found', 'note': 'metadata not recoverable'})
@@ -244,6 +305,124 @@ def parse_standard_path(stripped: list, sp_start: int, aos_start: int) -> tuple:
                 if rows and not SP_ROW_RE.match(line) and len(line.split()) <= 8:
                     rows[-1]['title'] = rows[-1]['title'] + ' ' + line
                     anomalies.append({'type': 'sp_title_continuation', 'line': i, 'text': line})
+
+    if not rows:
+        anomalies.append({'type': 'sp_no_rows_extracted', 'sp_start': sp_start})
+
+    return rows, anomalies
+
+
+def detect_sp_multiline(stripped: list, sp_start: int, aos_start: int) -> bool:
+    """
+    Return True if the SP table uses multi-line format (title, CUs, term on separate lines).
+    Detected by presence of 'CUs' alone on a line within the SP section.
+    """
+    for i in range(sp_start, min(sp_start + 80, aos_start)):
+        line = stripped[i]
+        if SP_CU_ONLY_RE.match(line):
+            return True
+    return False
+
+
+def parse_standard_path_multiline(stripped: list, sp_start: int, aos_start: int) -> tuple:
+    """
+    Parse multi-line SP table where title, CUs, and term each appear on their own line.
+
+    Format example:
+        Course Description     ← column header (one line)
+        CUs                    ← column header (one line)
+        Term                   ← column header (one line)
+        Introduction to IT     ← title line
+        3                      ← CU value
+        1                      ← term value
+        Next Course Title      ← next title
+        ...
+
+    Long titles may wrap across 2 lines before the CU value appears.
+    Returns: (rows, anomalies)
+    """
+    rows = []
+    anomalies = []
+
+    HEADER_LINE_RE  = re.compile(r'^Course\s+(?:Description|Title)\s*$', re.IGNORECASE)
+    COLUMN_WORD_RE  = re.compile(r'^(?:CUs?|Term)\s*$', re.IGNORECASE)
+    SP_TOTAL_RE     = re.compile(r'^Total\s+CUs?\b', re.IGNORECASE)
+    INT_RE          = re.compile(r'^\d{1,2}$')
+
+    # States: BEFORE_TABLE, EXPECTING_TITLE, EXPECTING_TERM
+    state = 'BEFORE_TABLE'
+    title_buf = []
+    cu_val = None
+    prev_was_footer = False  # track footer proximity to distinguish page nums from CU/term values
+
+    for i in range(sp_start, aos_start):
+        line = stripped[i]
+        if not line:
+            continue  # blanks don't reset prev_was_footer
+        if is_footer(line):
+            prev_was_footer = True
+            continue
+        if SP_CHANGES_RE.match(line):
+            break
+        if AREAS_OF_STUDY_RE.match(line):
+            break
+
+        # "Total CUs N" line marks end of SP table
+        if SP_TOTAL_RE.match(line):
+            break
+
+        # Skip standalone page numbers that follow footer lines (blanks between are ok)
+        if prev_was_footer and PAGE_NUM_RE.match(line):
+            prev_was_footer = False
+            continue
+
+        prev_was_footer = False
+
+        if state == 'BEFORE_TABLE':
+            if HEADER_LINE_RE.match(line):
+                state = 'EXPECTING_TITLE'
+            continue
+
+        # Skip column-header words and header labels wherever they appear (repeated at page tops)
+        if COLUMN_WORD_RE.match(line) or HEADER_LINE_RE.match(line):
+            continue
+
+        if state == 'EXPECTING_TITLE':
+            m = INT_RE.match(line)
+            if m:
+                # This integer is the CU value — title accumulation is done
+                cu_val = int(line)
+                state = 'EXPECTING_TERM'
+            else:
+                # Another title line (or wrap)
+                title_buf.append(line)
+
+        elif state == 'EXPECTING_TERM':
+            m = INT_RE.match(line)
+            if m:
+                term_val = int(line)
+                title = ' '.join(title_buf).strip()
+                if title and 1 <= cu_val <= 20 and 1 <= term_val <= 15:
+                    rows.append({'title': title, 'cus': cu_val, 'term': term_val})
+                else:
+                    anomalies.append({'type': 'sp_row_invalid',
+                                      'title': title, 'cus': cu_val, 'term': term_val})
+                title_buf = []
+                cu_val = None
+                state = 'EXPECTING_TITLE'
+            else:
+                # Expected term number but got text — title of next course?
+                anomalies.append({'type': 'sp_expected_term_got_text', 'line': i, 'text': line})
+                # Treat as start of next title; flush current incomplete row
+                if title_buf:
+                    anomalies.append({'type': 'sp_incomplete_row',
+                                      'title': ' '.join(title_buf), 'cu': cu_val})
+                title_buf = [line]
+                cu_val = None
+                state = 'EXPECTING_TITLE'
+
+    if title_buf:
+        anomalies.append({'type': 'sp_incomplete_row_at_eof', 'title': ' '.join(title_buf)})
 
     if not rows:
         anomalies.append({'type': 'sp_no_rows_extracted', 'sp_start': sp_start})
@@ -383,8 +562,12 @@ def parse_areas_of_study(stripped: list, aos_start: int, cap_start: int,
         if not line:
             continue
 
-        # Skip footer lines everywhere
+        # Skip footer lines everywhere (includes split-format "CODE YYYYMM" and "©..." lines)
         if is_footer(line):
+            continue
+
+        # Skip standalone page numbers emitted by the multi-line footer format
+        if PAGE_NUM_RE.match(line):
             continue
 
         # The "for" line after the AoS header
@@ -877,10 +1060,13 @@ def parse_guide(txt_path: Path, verbose: bool = True) -> dict:
     if aos_start is None:
         print("  [WARN] Areas of Study not found")
 
-    # Pass 2: Standard Path
+    # Pass 2: Standard Path — detect format and route to appropriate parser
     sp_rows, sp_anomalies = [], []
     if sp_start is not None and aos_start is not None:
-        sp_rows, sp_anomalies = parse_standard_path(stripped, sp_start, aos_start)
+        if detect_sp_multiline(stripped, sp_start, aos_start):
+            sp_rows, sp_anomalies = parse_standard_path_multiline(stripped, sp_start, aos_start)
+        else:
+            sp_rows, sp_anomalies = parse_standard_path(stripped, sp_start, aos_start)
     if verbose:
         print(f"  Standard Path: {len(sp_rows)} rows  anomalies={len(sp_anomalies)}")
 

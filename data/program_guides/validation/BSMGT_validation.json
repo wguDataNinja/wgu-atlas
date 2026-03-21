@@ -1,0 +1,34 @@
+{
+  "program_code": "BSMGT",
+  "degree_title": "Bachelor of Science, Business Management",
+  "version": "202605",
+  "pub_date": "1/12/2026",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Capstone",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 188,
+    "Areas of Study": 444,
+    "Capstone": 986,
+    "Accessibility": 997
+  },
+  "standard_path_row_count": 36,
+  "aos_group_count": 5,
+  "aos_course_count": 35,
+  "capstone_present": true,
+  "title_reconciliation": {
+    "in_both": 36,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

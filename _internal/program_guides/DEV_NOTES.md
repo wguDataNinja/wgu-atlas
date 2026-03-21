@@ -1,6 +1,66 @@
-# Program Guide Extraction — Phase A + BSDA Thin-Slice DEV NOTES
+# Program Guide Extraction — DEV NOTES
 
-Session: 2026-03-20 (session 12)
+---
+
+## Session 13 — standard_bs Family Validation (2026-03-20)
+
+### Guides sampled
+BSDA (thin-slice baseline), BSCS (cs_ug stretch), BSIT, BSMGT, BSPSY — all at HIGH confidence, 0 anomalies, 0 warnings after parser fixes.
+
+### Whether BSDA assumptions generalized
+
+Most AoS assumptions held. The pending-titles buffer, looks_like_prose(), and state machine (INTRO → SEEKING → IN_DESCRIPTION → IN_COMPETENCIES) worked correctly across all 5 guides without any changes.
+
+The Standard Path parser required significant extension:
+- BSDA's single-line SP row format is not universal. 4/5 sampled guides use multi-line format (title, CUs, term each on separate lines). Added `parse_standard_path_multiline()` with format detection.
+- Column headers across guides: "Course Description" (BSDA/BSCS/BSMGT) vs "Course Title" (BSIT).
+
+Footer/metadata format also varies:
+- BSDA: single-line `"CODE YYYYMM © Western Governors University date page"`
+- BSCS/BSPSY: split-footer — code+version on one line, © on another, page number on a third
+- BSIT/BSMGT: header-line metadata on document line 3: `"Program Code: X Catalog Version: Y Published Date: Z"`
+
+### Newly discovered structural variants
+
+| Variant | Guides | Impact |
+|---------|--------|--------|
+| Multi-line SP table format | BSCS, BSIT, BSMGT, BSPSY | Required new SP parser |
+| Split footer (code + © + page number on separate lines) | BSCS, BSPSY | Required FOOTER_CODE_ONLY_RE, is_footer() update |
+| Header-line metadata (line 3 of document) | BSIT, BSMGT | Required HEADER_META_RE in extract_metadata |
+| Column header "Course Title" instead of "Course Description" | BSIT | Required SP_HEADER_RE update |
+| No Capstone section | BSCS, BSIT, BSPSY | Already handled gracefully |
+| Page numbers between footer lines (split format) | BSCS | Required prev_was_footer flag in SP parser |
+| "Total CUs N" at end of SP table | BSIT, BSMGT | Required SP_TOTAL_RE break |
+| Column headers repeated at top of new pages | BSCS | Required HEADER_LINE_RE mid-table skip |
+
+### 5 parser bugs fixed during family validation
+
+1. `PAGE_NUM_RE` skipping CU/term values in multi-line SP parser — removed from SP parser
+2. `"Course Description"` mid-table treated as title — added HEADER_LINE_RE skip
+3. Page number after footer consumed as CU value — added `prev_was_footer` tracking
+4. `"Total CUs 110"` (3 digits) treated as title — added SP_TOTAL_RE break
+5. Blank lines reset footer-proximity in metadata extractor — fixed by not resetting on blank lines
+
+### Recommendation: READY for standard_bs `--all`
+
+All 5 sampled guides: HIGH confidence, 0 anomalies, 0 warnings. Both SP formats handled. All 3 footer formats handled. AoS state machine robust across 4–14 groups and 34–42 courses.
+
+**Open items before `--all`:**
+- BSMES (standard_bs with Student Teaching / Clinical Experiences) — run specifically before batch
+- Page count extraction for header-line format guides returns 0 — cosmetic, non-blocking
+- SP/AoS title reconciliation uses exact string match — minor differences may appear in batch output
+
+### Artifacts produced
+
+- `data/program_guides/parsed/BSCS_parsed.json` + BSIT, BSMGT, BSPSY
+- `data/program_guides/validation/BSCS_validation.json` + BSIT, BSMGT, BSPSY (all HIGH)
+- `data/program_guides/manifest_rows/BSCS_manifest_row.json` + BSIT, BSMGT, BSPSY
+- `data/program_guides/family_validation/standard_bs_validation_summary.json`
+- `data/program_guides/family_validation/standard_bs_validation_summary.md`
+
+---
+
+## Session 12 — Phase A + BSDA Thin-Slice DEV NOTES (2026-03-20)
 
 ---
 

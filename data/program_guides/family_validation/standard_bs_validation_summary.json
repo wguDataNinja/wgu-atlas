@@ -1,0 +1,199 @@
+{
+  "family": "standard_bs",
+  "sampled_guides": [
+    "BSDA",
+    "BSCS",
+    "BSIT",
+    "BSMGT",
+    "BSPSY"
+  ],
+  "sample_size": 5,
+  "all_high_confidence": true,
+  "any_anomalies": false,
+  "any_warnings": false,
+  "all_descriptions_populated": true,
+  "all_competencies_populated": true,
+  "structural_variants_found": {
+    "footer_format": [
+      "single_line_footer (BSDA)",
+      "split_footer (BSCS, BSPSY)",
+      "header_line (BSIT, BSMGT)"
+    ],
+    "sp_table_format": [
+      "single_line_row (BSDA)",
+      "multi_line_row (BSCS, BSIT, BSMGT, BSPSY)"
+    ],
+    "capstone_section": "present in BSDA and BSMGT; absent in BSCS, BSIT, BSPSY",
+    "metadata_line_3": "present in BSIT and BSMGT; absent in BSDA, BSCS, BSPSY"
+  },
+  "assumptions_held": [
+    "Standard Path section always present and locatable",
+    "Areas of Study section always present with group > course > description > competencies structure",
+    "Footer lines (all formats) reliably skippable",
+    "Competency trigger string universal across all 5 guides",
+    "Pending-titles buffer (1=course, 2=group+course) correctly disambiguates all AoS headings",
+    "looks_like_prose() reliably distinguishes INTRO boilerplate from first group heading",
+    "Cert-prep and prereq extraction functional (mentions found in 4/5 guides)"
+  ],
+  "assumptions_failed": [
+    "BSDA single-line SP format is NOT universal \u2014 4/5 non-BSDA guides use multi-line format",
+    "BSDA single-line footer is NOT universal \u2014 split footer (BSCS) and header-line (BSIT/BSMGT) formats exist",
+    "SP table column header \"Course Description\" is NOT universal \u2014 BSIT uses \"Course Title\"",
+    "Capstone section NOT universal \u2014 absent in 3/5 sampled guides",
+    "Page numbers in multi-line format appear between footer lines and must be tracked by footer proximity"
+  ],
+  "parser_bugs_fixed_during_validation": [
+    "PAGE_NUM_RE was skipping CU/term values in multi-line SP parser (removed from SP parser; kept for AoS)",
+    "\"Course Description\" repeated at page tops caused sp_expected_term_got_text (added HEADER_LINE_RE skip mid-table)",
+    "Page number after footer consumed as CU value (added prev_was_footer flag)",
+    "\"Total CUs 110\" treated as title (added SP_TOTAL_RE break)",
+    "Blank lines reset footer-proximity tracking (changed to not reset prev_code_seen on blank lines in metadata extractor)"
+  ],
+  "rollout_recommendation": "READY for standard_bs --all",
+  "rollout_conditions": [
+    "All 5 sampled guides parse at HIGH confidence with 0 anomalies and 0 warnings",
+    "Both SP table formats (single-line and multi-line) handled",
+    "All 3 footer/metadata formats handled",
+    "AoS state machine robust across 4-14 groups and 34-42 courses per guide",
+    "No structural edge cases remain unhandled in the sample"
+  ],
+  "caveats": [
+    "BSMES (standard_bs with Student Teaching / Clinical Experiences variant) not sampled \u2014 treat as open item",
+    "SP/AoS title reconciliation is approximate (title strings may differ slightly between SP and AoS sections)",
+    "Page count extraction not yet working for header-line metadata format guides (pages=0)"
+  ],
+  "guide_entries": [
+    {
+      "code": "BSDA",
+      "declared_family": "standard_bs",
+      "version": "202309",
+      "pub_date": "5/1/23",
+      "metadata_format": "single_line_footer",
+      "sections_detected": [
+        "Standard Path",
+        "Areas of Study",
+        "Capstone",
+        "Accessibility"
+      ],
+      "capstone_present": true,
+      "sp_rows": 42,
+      "aos_groups": 14,
+      "aos_courses": 41,
+      "sp_aos_row_delta": 1,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0,
+      "cert_prep_mentions": 4,
+      "prereq_mentions": 7,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "parseability_confidence": "high",
+      "anomalies": [],
+      "warnings": []
+    },
+    {
+      "code": "BSCS",
+      "declared_family": "cs_ug",
+      "version": "202412",
+      "pub_date": "8/2/24",
+      "metadata_format": "split_footer",
+      "sections_detected": [
+        "Standard Path",
+        "Areas of Study",
+        "Accessibility"
+      ],
+      "capstone_present": false,
+      "sp_rows": 37,
+      "aos_groups": 12,
+      "aos_courses": 37,
+      "sp_aos_row_delta": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0,
+      "cert_prep_mentions": 0,
+      "prereq_mentions": 7,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "parseability_confidence": "high",
+      "anomalies": [],
+      "warnings": []
+    },
+    {
+      "code": "BSIT",
+      "declared_family": "standard_bs",
+      "version": "202604",
+      "pub_date": "11/20/2025",
+      "metadata_format": "header_line",
+      "sections_detected": [
+        "Standard Path",
+        "Areas of Study",
+        "Accessibility"
+      ],
+      "capstone_present": false,
+      "sp_rows": 35,
+      "aos_groups": 12,
+      "aos_courses": 35,
+      "sp_aos_row_delta": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0,
+      "cert_prep_mentions": 8,
+      "prereq_mentions": 4,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "parseability_confidence": "high",
+      "anomalies": [],
+      "warnings": []
+    },
+    {
+      "code": "BSMGT",
+      "declared_family": "standard_bs",
+      "version": "202605",
+      "pub_date": "1/12/2026",
+      "metadata_format": "header_line",
+      "sections_detected": [
+        "Standard Path",
+        "Areas of Study",
+        "Capstone",
+        "Accessibility"
+      ],
+      "capstone_present": true,
+      "sp_rows": 36,
+      "aos_groups": 5,
+      "aos_courses": 35,
+      "sp_aos_row_delta": 1,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0,
+      "cert_prep_mentions": 2,
+      "prereq_mentions": 2,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "parseability_confidence": "high",
+      "anomalies": [],
+      "warnings": []
+    },
+    {
+      "code": "BSPSY",
+      "declared_family": "standard_bs",
+      "version": "202404",
+      "pub_date": "2/16/24",
+      "metadata_format": "split_footer",
+      "sections_detected": [
+        "Standard Path",
+        "Areas of Study",
+        "Accessibility"
+      ],
+      "capstone_present": false,
+      "sp_rows": 34,
+      "aos_groups": 4,
+      "aos_courses": 34,
+      "sp_aos_row_delta": 0,
+      "empty_descriptions": 0,
+      "empty_competency_lists": 0,
+      "cert_prep_mentions": 1,
+      "prereq_mentions": 3,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "parseability_confidence": "high",
+      "anomalies": [],
+      "warnings": []
+    }
+  ]
+}

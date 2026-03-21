@@ -1,0 +1,32 @@
+{
+  "program_code": "BSCS",
+  "degree_title": "Bachelor of Science, Computer Science",
+  "version": "202412",
+  "pub_date": "8/2/24",
+  "page_count": 20,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 206,
+    "Areas of Study": 476,
+    "Accessibility": 1108
+  },
+  "standard_path_row_count": 37,
+  "aos_group_count": 12,
+  "aos_course_count": 37,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 37,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}
