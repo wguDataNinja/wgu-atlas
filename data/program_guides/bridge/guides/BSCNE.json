@@ -1,0 +1,888 @@
+{
+  "program_code": "BSCNE",
+  "program_code_effective": "BSCNE",
+  "family": "cs_ug",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Bachelor of Science, Cloud and Network Engineering",
+  "guide_version": "202510",
+  "guide_pub_date": "1/27/2026",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "School of Technology"
+  ],
+  "program_history_degree_headings": [
+    "Bachelor of Science, Cloud and Network Engineering"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 34,
+    "sp_row_count": 34,
+    "anchor_class_counts_aos": {
+      "ambiguous_current_exact": 15,
+      "exact_current_unique": 17,
+      "unmapped": 2
+    },
+    "anchor_class_counts_sp": {
+      "ambiguous_current_exact": 15,
+      "exact_current_unique": 17,
+      "unmapped": 2
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to IT",
+      "guide_title_normalized": "introduction to it",
+      "aos_group": "IT Fundamentals",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C182",
+        "D322",
+        "E004"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "IT Applications",
+      "guide_title_normalized": "it applications",
+      "aos_group": "IT Fundamentals",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C394",
+        "D317"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "IT Foundations",
+      "guide_title_normalized": "it foundations",
+      "aos_group": "IT Fundamentals",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C393",
+        "D316"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Foundations of Programming (Python)",
+      "guide_title_normalized": "foundations of programming python",
+      "aos_group": "IT Fundamentals",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E010"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Technical Communication",
+      "guide_title_normalized": "technical communication",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C768",
+        "C948",
+        "D339",
+        "E011"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Composition: Successful Self-Expression",
+      "guide_title_normalized": "composition successful self expression",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D270"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Health, Fitness, and Wellness",
+      "guide_title_normalized": "health fitness and wellness",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C458"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Ethics in Technology",
+      "guide_title_normalized": "ethics in technology",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C961",
+        "D333"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Applied Probability and Statistics",
+      "guide_title_normalized": "applied probability and statistics",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C955"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Integrated Physical Sciences",
+      "guide_title_normalized": "integrated physical sciences",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C165",
+        "C908"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Systems Thinking and Applications",
+      "guide_title_normalized": "introduction to systems thinking and applications",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "US History: Stories of American Democracy",
+      "guide_title_normalized": "us history stories of american democracy",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D267"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Applied Algebra",
+      "guide_title_normalized": "applied algebra",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C957"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Influential Communication through Visual Design and Storytelling",
+      "guide_title_normalized": "influential communication through visual design and storytelling",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Linux Foundations",
+      "guide_title_normalized": "linux foundations",
+      "aos_group": "Operating Systems",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C851",
+        "D281",
+        "D281A"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Network and Security - Foundations",
+      "guide_title_normalized": "network and security foundations",
+      "aos_group": "Network and Security",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C172",
+        "D315"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Network and Security - Applications",
+      "guide_title_normalized": "network and security applications",
+      "aos_group": "Network and Security",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C178",
+        "D329"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Cloud Applications",
+      "guide_title_normalized": "cloud applications",
+      "aos_group": "Network and Security",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C923",
+        "D318"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Networks",
+      "guide_title_normalized": "networks",
+      "aos_group": "Networks",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C480",
+        "D325"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Network Analytics and Troubleshooting",
+      "guide_title_normalized": "network analytics and troubleshooting",
+      "aos_group": "Networking",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D412"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Telecomm and Wireless Communications",
+      "guide_title_normalized": "telecomm and wireless communications",
+      "aos_group": "Networking",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D413"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Python for IT Automation",
+      "guide_title_normalized": "python for it automation",
+      "aos_group": "Networking",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D522"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Software Defined Networking",
+      "guide_title_normalized": "software defined networking",
+      "aos_group": "Networking",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D415"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Network Automation and Deployment",
+      "guide_title_normalized": "network automation and deployment",
+      "aos_group": "Networking",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D417"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Version Control",
+      "guide_title_normalized": "version control",
+      "aos_group": "Full Stack Engineering",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D197",
+        "D197A"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data Management - Foundations",
+      "guide_title_normalized": "data management foundations",
+      "aos_group": "Data Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C175",
+        "D323",
+        "D426"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Cloud and Network Security Models",
+      "guide_title_normalized": "cloud and network security models",
+      "aos_group": "Web and Cloud Security",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E025"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "AI for IT Automation and Security",
+      "guide_title_normalized": "ai for it automation and security",
+      "aos_group": "Web and Cloud Security",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E026"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Virtualization and IaaS",
+      "guide_title_normalized": "virtualization and iaas",
+      "aos_group": "Cloud and Virtualization",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E027"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "BSCNE Capstone Project",
+      "guide_title_normalized": "bscne capstone project",
+      "aos_group": "Cloud and Virtualization",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E029"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Internet of Things (IoT) and Infrastructure",
+      "guide_title_normalized": "internet of things iot and infrastructure",
+      "aos_group": "Information Technology Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D337"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Business of IT - Applications",
+      "guide_title_normalized": "business of it applications",
+      "aos_group": "Business of IT",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C179",
+        "C846",
+        "D336"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "IT Leadership Foundations",
+      "guide_title_normalized": "it leadership foundations",
+      "aos_group": "Business of IT",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D194",
+        "D370"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Hybrid Cloud Infrastructure and Orchestration",
+      "guide_title_normalized": "hybrid cloud infrastructure and orchestration",
+      "aos_group": "Cloud Technologies",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E028"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to IT",
+      "guide_title_normalized": "introduction to it",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C182",
+        "D322",
+        "E004"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "IT Applications",
+      "guide_title_normalized": "it applications",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 4,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C394",
+        "D317"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Technical Communication",
+      "guide_title_normalized": "technical communication",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C768",
+        "C948",
+        "D339",
+        "E011"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Composition: Successful Self-Expression",
+      "guide_title_normalized": "composition successful self expression",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D270"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Linux Foundations",
+      "guide_title_normalized": "linux foundations",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C851",
+        "D281",
+        "D281A"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "IT Foundations",
+      "guide_title_normalized": "it foundations",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 4,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C393",
+        "D316"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Health, Fitness, and Wellness",
+      "guide_title_normalized": "health fitness and wellness",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C458"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Ethics in Technology",
+      "guide_title_normalized": "ethics in technology",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C961",
+        "D333"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Network and Security - Foundations",
+      "guide_title_normalized": "network and security foundations",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C172",
+        "D315"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Networks",
+      "guide_title_normalized": "networks",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 4,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C480",
+        "D325"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Network Analytics and Troubleshooting",
+      "guide_title_normalized": "network analytics and troubleshooting",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D412"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Telecomm and Wireless Communications",
+      "guide_title_normalized": "telecomm and wireless communications",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D413"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Version Control",
+      "guide_title_normalized": "version control",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 1,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D197",
+        "D197A"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Foundations of Programming (Python)",
+      "guide_title_normalized": "foundations of programming python",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E010"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Python for IT Automation",
+      "guide_title_normalized": "python for it automation",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D522"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Software Defined Networking",
+      "guide_title_normalized": "software defined networking",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D415"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Network Automation and Deployment",
+      "guide_title_normalized": "network automation and deployment",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D417"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Data Management - Foundations",
+      "guide_title_normalized": "data management foundations",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C175",
+        "D323",
+        "D426"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Network and Security - Applications",
+      "guide_title_normalized": "network and security applications",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 4,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C178",
+        "D329"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Cloud and Network Security Models",
+      "guide_title_normalized": "cloud and network security models",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E025"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "AI for IT Automation and Security",
+      "guide_title_normalized": "ai for it automation and security",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E026"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Virtualization and IaaS",
+      "guide_title_normalized": "virtualization and iaas",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E027"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Cloud Applications",
+      "guide_title_normalized": "cloud applications",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C923",
+        "D318"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Internet of Things (IoT) and Infrastructure",
+      "guide_title_normalized": "internet of things iot and infrastructure",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D337"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Applied Probability and Statistics",
+      "guide_title_normalized": "applied probability and statistics",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C955"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Integrated Physical Sciences",
+      "guide_title_normalized": "integrated physical sciences",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C165",
+        "C908"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Systems Thinking and Applications",
+      "guide_title_normalized": "introduction to systems thinking and applications",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Business of IT - Applications",
+      "guide_title_normalized": "business of it applications",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 4,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C179",
+        "C846",
+        "D336"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Hybrid Cloud Infrastructure and Orchestration",
+      "guide_title_normalized": "hybrid cloud infrastructure and orchestration",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E028"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "US History: Stories of American Democracy",
+      "guide_title_normalized": "us history stories of american democracy",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D267"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Applied Algebra",
+      "guide_title_normalized": "applied algebra",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C957"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Influential Communication through Visual Design and Storytelling",
+      "guide_title_normalized": "influential communication through visual design and storytelling",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "IT Leadership Foundations",
+      "guide_title_normalized": "it leadership foundations",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D194",
+        "D370"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "BSCNE Capstone Project",
+      "guide_title_normalized": "bscne capstone project",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E029"
+      ]
+    }
+  ]
+}

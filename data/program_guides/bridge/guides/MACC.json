@@ -1,0 +1,285 @@
+{
+  "program_code": "MACC",
+  "program_code_effective": "MACC",
+  "family": "accounting_ma",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Master of Science, Accounting",
+  "guide_version": "202202",
+  "guide_pub_date": "9/27/23",
+  "program_history_status": "RETIRED",
+  "program_history_colleges": [
+    "College of Business",
+    "School of Business"
+  ],
+  "program_history_degree_headings": [
+    "Master of Science, Accounting"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 10,
+    "sp_row_count": 10,
+    "anchor_class_counts_aos": {
+      "ambiguous_current_exact": 4,
+      "exact_current_unique": 6
+    },
+    "anchor_class_counts_sp": {
+      "ambiguous_current_exact": 4,
+      "exact_current_unique": 6
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Fraud and Forensic Accounting",
+      "guide_title_normalized": "fraud and forensic accounting",
+      "aos_group": "Accounting",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C254",
+        "D551"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Advanced Auditing",
+      "guide_title_normalized": "advanced auditing",
+      "aos_group": "Accounting",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C244",
+        "D251"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Advanced Managerial Accounting",
+      "guide_title_normalized": "advanced managerial accounting",
+      "aos_group": "Accounting",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C253",
+        "D559"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Advanced Financial Accounting",
+      "guide_title_normalized": "advanced financial accounting",
+      "aos_group": "Accounting",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C243"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Accounting Research and Critical Thinking",
+      "guide_title_normalized": "accounting research and critical thinking",
+      "aos_group": "Accounting",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D252"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Governmental and Nonprofit Accounting",
+      "guide_title_normalized": "governmental and nonprofit accounting",
+      "aos_group": "Accounting",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C252",
+        "D250"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Advanced Tax Concepts",
+      "guide_title_normalized": "advanced tax concepts",
+      "aos_group": "Accounting",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C239"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Financial Management",
+      "guide_title_normalized": "financial management",
+      "aos_group": "Finance",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C214"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Strategic Management",
+      "guide_title_normalized": "strategic management",
+      "aos_group": "Strategy",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C209"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Management Communication",
+      "guide_title_normalized": "management communication",
+      "aos_group": "Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C204"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Fraud and Forensic Accounting",
+      "guide_title_normalized": "fraud and forensic accounting",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C254",
+        "D551"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Advanced Auditing",
+      "guide_title_normalized": "advanced auditing",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C244",
+        "D251"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Advanced Managerial Accounting",
+      "guide_title_normalized": "advanced managerial accounting",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C253",
+        "D559"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Financial Management",
+      "guide_title_normalized": "financial management",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C214"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Strategic Management",
+      "guide_title_normalized": "strategic management",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C209"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Advanced Financial Accounting",
+      "guide_title_normalized": "advanced financial accounting",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C243"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Accounting Research and Critical Thinking",
+      "guide_title_normalized": "accounting research and critical thinking",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D252"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Governmental and Nonprofit Accounting",
+      "guide_title_normalized": "governmental and nonprofit accounting",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C252",
+        "D250"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Management Communication",
+      "guide_title_normalized": "management communication",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C204"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Advanced Tax Concepts",
+      "guide_title_normalized": "advanced tax concepts",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C239"
+      ]
+    }
+  ]
+}

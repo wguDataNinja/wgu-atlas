@@ -1,0 +1,216 @@
+{
+  "program_code": "ENDSESP",
+  "program_code_effective": "ENDSESP",
+  "family": "endorsement",
+  "disposition": "full-use",
+  "sp_status": "usable-no-term",
+  "degree_title_guide": "Endorsement Preparation Program, Physics",
+  "guide_version": "202509",
+  "guide_pub_date": "6/17/2025",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "School of Education"
+  ],
+  "program_history_degree_headings": [
+    "Endorsement Preparation Program, Physics"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 7,
+    "sp_row_count": 7,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 5,
+      "ambiguous_current_exact": 2
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 5,
+      "ambiguous_current_exact": 2
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "General Physics I",
+      "guide_title_normalized": "general physics i",
+      "aos_group": "General Science Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D845"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Calculus I",
+      "guide_title_normalized": "calculus i",
+      "aos_group": "Mathematics Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C282",
+        "C362",
+        "C363",
+        "C958",
+        "D890",
+        "QJT2"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "General Physics II with Lab",
+      "guide_title_normalized": "general physics ii with lab",
+      "aos_group": "Science Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D860"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Electricity and Magnetism",
+      "guide_title_normalized": "electricity and magnetism",
+      "aos_group": "Science Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D861"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Astrophysics with Lab",
+      "guide_title_normalized": "astrophysics with lab",
+      "aos_group": "Science Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D862"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Waves, Acoustics, and Sound",
+      "guide_title_normalized": "waves acoustics and sound",
+      "aos_group": "Science Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D863"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Secondary Physics Curriculum",
+      "guide_title_normalized": "secondary physics curriculum",
+      "aos_group": "Science Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D864",
+        "D865"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "General Physics I",
+      "guide_title_normalized": "general physics i",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D845"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Calculus I",
+      "guide_title_normalized": "calculus i",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C282",
+        "C362",
+        "C363",
+        "C958",
+        "D890",
+        "QJT2"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "General Physics II with Lab",
+      "guide_title_normalized": "general physics ii with lab",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D860"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Electricity and Magnetism",
+      "guide_title_normalized": "electricity and magnetism",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D861"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Astrophysics with Lab",
+      "guide_title_normalized": "astrophysics with lab",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D862"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Waves, Acoustics, and Sound",
+      "guide_title_normalized": "waves acoustics and sound",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D863"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Secondary Physics Curriculum",
+      "guide_title_normalized": "secondary physics curriculum",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D864",
+        "D865"
+      ]
+    }
+  ]
+}

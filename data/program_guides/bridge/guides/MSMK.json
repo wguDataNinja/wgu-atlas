@@ -1,0 +1,305 @@
+{
+  "program_code": "MSMK",
+  "program_code_effective": "MSMK",
+  "family": "graduate_standard",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Master of Science in Marketing, Digital Marketing Specialization",
+  "guide_version": "202301",
+  "guide_pub_date": "9/27/23",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "College of Business",
+    "School of Business"
+  ],
+  "program_history_degree_headings": [
+    "Master of Science in Marketing, Digital Marketing Specialization"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 11,
+    "sp_row_count": 11,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 9,
+      "ambiguous_current_exact": 2
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 9,
+      "ambiguous_current_exact": 2
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Managing Organizations and Leading People",
+      "guide_title_normalized": "managing organizations and leading people",
+      "aos_group": "Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C200"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Frameworks for Strategic Decision-Making",
+      "guide_title_normalized": "frameworks for strategic decision making",
+      "aos_group": "Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D263"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Marketing in the Digital Era",
+      "guide_title_normalized": "marketing in the digital era",
+      "aos_group": "Marketing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D373",
+        "D373A"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Market Research",
+      "guide_title_normalized": "market research",
+      "aos_group": "Marketing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D374"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Marketing Communications and Storytelling",
+      "guide_title_normalized": "marketing communications and storytelling",
+      "aos_group": "Marketing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D375"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Product, Price, and Customer Experience",
+      "guide_title_normalized": "product price and customer experience",
+      "aos_group": "Marketing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D376"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Digital Marketing Foundations",
+      "guide_title_normalized": "digital marketing foundations",
+      "aos_group": "Marketing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D377"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Social Media Marketing",
+      "guide_title_normalized": "social media marketing",
+      "aos_group": "Marketing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D379"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Email Marketing",
+      "guide_title_normalized": "email marketing",
+      "aos_group": "Marketing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D380"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "E-Commerce and Marketing Analytics",
+      "guide_title_normalized": "e commerce and marketing analytics",
+      "aos_group": "Marketing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D381",
+        "D381A"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Marketing Experiential Capstone",
+      "guide_title_normalized": "marketing experiential capstone",
+      "aos_group": "Marketing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D384"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Managing Organizations and Leading People",
+      "guide_title_normalized": "managing organizations and leading people",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C200"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Frameworks for Strategic Decision-Making",
+      "guide_title_normalized": "frameworks for strategic decision making",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D263"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Marketing in the Digital Era",
+      "guide_title_normalized": "marketing in the digital era",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D373",
+        "D373A"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Market Research",
+      "guide_title_normalized": "market research",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D374"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Marketing Communications and Storytelling",
+      "guide_title_normalized": "marketing communications and storytelling",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D375"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Product, Price, and Customer Experience",
+      "guide_title_normalized": "product price and customer experience",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D376"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Digital Marketing Foundations",
+      "guide_title_normalized": "digital marketing foundations",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D377"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Social Media Marketing",
+      "guide_title_normalized": "social media marketing",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D379"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Email Marketing",
+      "guide_title_normalized": "email marketing",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D380"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "E-Commerce and Marketing Analytics",
+      "guide_title_normalized": "e commerce and marketing analytics",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D381",
+        "D381A"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Marketing Experiential Capstone",
+      "guide_title_normalized": "marketing experiential capstone",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D384"
+      ]
+    }
+  ]
+}

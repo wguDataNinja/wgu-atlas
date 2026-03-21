@@ -1,0 +1,940 @@
+{
+  "program_code": "BASPMM",
+  "program_code_effective": "BASPMM",
+  "family": "education_ba",
+  "disposition": "full-use",
+  "sp_status": "usable-no-term",
+  "degree_title_guide": "Bachelor of Arts, Special Education, Mild to Moderate",
+  "guide_version": "202603",
+  "guide_pub_date": "12/11/2025",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "Teachers College",
+    "School of Education"
+  ],
+  "program_history_degree_headings": [
+    "Bachelor of Arts, Special Education Mild to Moderate",
+    "Bachelor of Arts, Special Education, Mild to Moderate"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 37,
+    "sp_row_count": 38,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 10,
+      "unmapped": 10,
+      "exact_observed_variant_unique": 1,
+      "ambiguous_current_exact": 16
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 10,
+      "exact_observed_variant_unique": 1,
+      "ambiguous_current_exact": 16,
+      "unmapped": 11
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "The Professional Educator",
+      "guide_title_normalized": "the professional educator",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D663"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Learners and Learning Science",
+      "guide_title_normalized": "learners and learning science",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D664"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Personalized Learning for Inclusive Classrooms",
+      "guide_title_normalized": "personalized learning for inclusive classrooms",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Creating Positive Learning Environments",
+      "guide_title_normalized": "creating positive learning environments",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D661"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Planning Instructional Strategies for Meaningful Learning",
+      "guide_title_normalized": "planning instructional strategies for meaningful learning",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Assessing and Monitoring Student Learning",
+      "guide_title_normalized": "assessing and monitoring student learning",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D659"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Instructional Technology and Online Pedagogy",
+      "guide_title_normalized": "instructional technology and online pedagogy",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D660"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Composition: Writing with a Strategy",
+      "guide_title_normalized": "composition writing with a strategy",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D269"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Communication: Connecting with Others",
+      "guide_title_normalized": "introduction to communication connecting with others",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D268"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Composition: Successful Self-Expression",
+      "guide_title_normalized": "composition successful self expression",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D270"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Integrated Physical Sciences",
+      "guide_title_normalized": "integrated physical sciences",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C165",
+        "C908"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Systems Thinking and Applications",
+      "guide_title_normalized": "introduction to systems thinking and applications",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Quantitative Literacy",
+      "guide_title_normalized": "quantitative literacy",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D771"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Technology and Ethics: Emerging Trends and Society",
+      "guide_title_normalized": "technology and ethics emerging trends and society",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Biology",
+      "guide_title_normalized": "introduction to biology",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C190",
+        "C907"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "American Politics and the US Constitution",
+      "guide_title_normalized": "american politics and the us constitution",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C963"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Statistical Data Literacy",
+      "guide_title_normalized": "statistical data literacy",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D772"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Behavioral Intervention Strategies and Applied Behavior Analysis",
+      "guide_title_normalized": "behavioral intervention strategies and applied behavior analysis",
+      "aos_group": "Special Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Special Education Law, Policies and Procedures",
+      "guide_title_normalized": "special education law policies and procedures",
+      "aos_group": "Special Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Assessment for Special Education",
+      "guide_title_normalized": "assessment for special education",
+      "aos_group": "Special Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D755",
+        "D763"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Individualized Education Plan (IEP) Collaboration and Communication with Parents and School Staff",
+      "guide_title_normalized": "individualized education plan iep collaboration and communication with parents and school staff",
+      "aos_group": "Special Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Special Education Curriculum",
+      "guide_title_normalized": "special education curriculum",
+      "aos_group": "Special Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D757",
+        "D765"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Elementary Literacy and Mathematics Strategies and Assistive Technologies",
+      "guide_title_normalized": "elementary literacy and mathematics strategies and assistive technologies",
+      "aos_group": "Special Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Secondary Literacy and Mathematics Strategies and Assistive Technologies",
+      "guide_title_normalized": "secondary literacy and mathematics strategies and assistive technologies",
+      "aos_group": "Special Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Student Teaching I in Special Education",
+      "guide_title_normalized": "student teaching i in special education",
+      "aos_group": "Special Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D529",
+        "D530",
+        "D719",
+        "D739"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Student Teaching II in Special Education",
+      "guide_title_normalized": "student teaching ii in special education",
+      "aos_group": "Special Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D531",
+        "D532",
+        "D720",
+        "D740"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Elementary Literacy Curriculum",
+      "guide_title_normalized": "elementary literacy curriculum",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D668",
+        "D677"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Early Literacy Methods",
+      "guide_title_normalized": "early literacy methods",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D669",
+        "D676"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Elementary Literacy Methods",
+      "guide_title_normalized": "elementary literacy methods",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D670",
+        "D675"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Foundations of Literacy Through Literature",
+      "guide_title_normalized": "foundations of literacy through literature",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D688",
+        "D696"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Literacy Assessment and Interventions",
+      "guide_title_normalized": "literacy assessment and interventions",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D689",
+        "D697"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Elementary Mathematics Curriculum",
+      "guide_title_normalized": "elementary mathematics curriculum",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D691",
+        "D699"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Early Mathematics Methods and Interventions",
+      "guide_title_normalized": "early mathematics methods and interventions",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D692",
+        "D700"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Elementary Mathematics Methods and Interventions",
+      "guide_title_normalized": "elementary mathematics methods and interventions",
+      "aos_group": "Elementary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Secondary Literacy Methods and Interventions",
+      "guide_title_normalized": "secondary literacy methods and interventions",
+      "aos_group": "Pedagogy and Teaching Methods",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D769",
+        "D770"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Early Clinical in Special Education",
+      "guide_title_normalized": "early clinical in special education",
+      "aos_group": "Clinical Experiences",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D705",
+        "D725"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Advanced Clinical in Special Education",
+      "guide_title_normalized": "advanced clinical in special education",
+      "aos_group": "Clinical Experiences",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D723",
+        "D728"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "The Professional Educator",
+      "guide_title_normalized": "the professional educator",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D663"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Composition: Writing with a Strategy",
+      "guide_title_normalized": "composition writing with a strategy",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D269"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Communication: Connecting with Others",
+      "guide_title_normalized": "introduction to communication connecting with others",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D268"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Learners and Learning Science",
+      "guide_title_normalized": "learners and learning science",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D664"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Composition: Successful Self-Expression",
+      "guide_title_normalized": "composition successful self expression",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D270"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Integrated Physical Sciences",
+      "guide_title_normalized": "integrated physical sciences",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C165",
+        "C908"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Systems Thinking and Applications",
+      "guide_title_normalized": "introduction to systems thinking and applications",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Personalized Learning for Inclusive Classrooms",
+      "guide_title_normalized": "personalized learning for inclusive classrooms",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Creating Positive Learning Environments",
+      "guide_title_normalized": "creating positive learning environments",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D661"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Quantitative Literacy",
+      "guide_title_normalized": "quantitative literacy",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D771"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Technology and Ethics: Emerging Trends and Society",
+      "guide_title_normalized": "technology and ethics emerging trends and society",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Planning Instructional Strategies for Meaningful Learning",
+      "guide_title_normalized": "planning instructional strategies for meaningful learning",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Assessing and Monitoring Student Learning",
+      "guide_title_normalized": "assessing and monitoring student learning",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D659"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Biology",
+      "guide_title_normalized": "introduction to biology",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C190",
+        "C907"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Behavioral Intervention Strategies and Applied Behavior Analysis",
+      "guide_title_normalized": "behavioral intervention strategies and applied behavior analysis",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 4,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Special Education Law, Policies and Procedures",
+      "guide_title_normalized": "special education law policies and procedures",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "American Politics and the US Constitution",
+      "guide_title_normalized": "american politics and the us constitution",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C963"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Statistical Data Literacy",
+      "guide_title_normalized": "statistical data literacy",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D772"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Instructional Technology and Online Pedagogy",
+      "guide_title_normalized": "instructional technology and online pedagogy",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D660"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Assessment for Special Education",
+      "guide_title_normalized": "assessment for special education",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D755",
+        "D763"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Individualized Education Plan (IEP) Collaboration and Communication with Parents and School Staff",
+      "guide_title_normalized": "individualized education plan iep collaboration and communication with parents and school staff",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Elementary Literacy Curriculum",
+      "guide_title_normalized": "elementary literacy curriculum",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D668",
+        "D677"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Early Literacy Methods",
+      "guide_title_normalized": "early literacy methods",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D669",
+        "D676"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Elementary Literacy Methods",
+      "guide_title_normalized": "elementary literacy methods",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D670",
+        "D675"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Foundations of Literacy Through Literature",
+      "guide_title_normalized": "foundations of literacy through literature",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D688",
+        "D696"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Literacy Assessment and Interventions",
+      "guide_title_normalized": "literacy assessment and interventions",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D689",
+        "D697"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Secondary Literacy Methods and Interventions",
+      "guide_title_normalized": "secondary literacy methods and interventions",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D769",
+        "D770"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Early Clinical in Special Education",
+      "guide_title_normalized": "early clinical in special education",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D705",
+        "D725"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Elementary Mathematics Curriculum",
+      "guide_title_normalized": "elementary mathematics curriculum",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D691",
+        "D699"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Early Mathematics Methods and Interventions",
+      "guide_title_normalized": "early mathematics methods and interventions",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D692",
+        "D700"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Elementary Mathematics Methods and Interventions",
+      "guide_title_normalized": "elementary mathematics methods and interventions",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Special Education Curriculum",
+      "guide_title_normalized": "special education curriculum",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D757",
+        "D765"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Considerations for Instructional Planning for Learners",
+      "guide_title_normalized": "considerations for instructional planning for learners",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Elementary Literacy and Mathematics Strategies and Assistive Technologies",
+      "guide_title_normalized": "elementary literacy and mathematics strategies and assistive technologies",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Secondary Literacy and Mathematics Strategies and Assistive Technologies",
+      "guide_title_normalized": "secondary literacy and mathematics strategies and assistive technologies",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Advanced Clinical in Special Education",
+      "guide_title_normalized": "advanced clinical in special education",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D723",
+        "D728"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Student Teaching I in Special Education",
+      "guide_title_normalized": "student teaching i in special education",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 8,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D529",
+        "D530",
+        "D719",
+        "D739"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Student Teaching II in Special Education",
+      "guide_title_normalized": "student teaching ii in special education",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 8,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D531",
+        "D532",
+        "D720",
+        "D740"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "program_code": "MEDETID",
+  "program_code_effective": "MEDETID",
+  "family": "education_grad",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Master of Education, Education Technology and Instructional Design",
+  "guide_version": "202312",
+  "guide_pub_date": "8/23/24",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "School of Education"
+  ],
+  "program_history_degree_headings": [
+    "Master of Education, Education Technology and Instructional Design"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 9,
+    "sp_row_count": 12,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 6,
+      "unmapped": 1,
+      "exact_observed_variant_unique": 2
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 6,
+      "unmapped": 1,
+      "exact_observed_variant_unique": 5
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Learning Technology",
+      "guide_title_normalized": "learning technology",
+      "aos_group": "Foundations of Learning Design",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D294"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Assessment and Learning Analytics",
+      "guide_title_normalized": "assessment and learning analytics",
+      "aos_group": "Foundations of Learning Design",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D293"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Learning Experience Design Foundations I",
+      "guide_title_normalized": "learning experience design foundations i",
+      "aos_group": "Foundations of Learning Design",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D291"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Learning Experience Design Foundations II",
+      "guide_title_normalized": "learning experience design foundations ii",
+      "aos_group": "Foundations of Learning Design",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D292"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Designing and Facilitating E-Learning Experiences for K–12 Students",
+      "guide_title_normalized": "designing and facilitating e learning experiences for k12 students",
+      "aos_group": "K-12 Specialty",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Quality and Impact of K–12 E-Learning Solutions",
+      "guide_title_normalized": "quality and impact of k12 e learning solutions",
+      "aos_group": "K-12 Specialty",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D296"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Designing E-Learning Experiences for Adults",
+      "guide_title_normalized": "designing e learning experiences for adults",
+      "aos_group": "Adult Learner Specialty",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D297"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Quality and Impact of Adult E-Learning Solutions",
+      "guide_title_normalized": "quality and impact of adult e learning solutions",
+      "aos_group": "Adult Learner Specialty",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D298"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Learning Experience Design Lab",
+      "guide_title_normalized": "learning experience design lab",
+      "aos_group": "Design Lab",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D299"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Learning Technology",
+      "guide_title_normalized": "learning technology",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D294"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Assessment and Learning Analytics",
+      "guide_title_normalized": "assessment and learning analytics",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D293"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Learning Experience Design Foundations I",
+      "guide_title_normalized": "learning experience design foundations i",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D291"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Learning Experience Design Foundations II",
+      "guide_title_normalized": "learning experience design foundations ii",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D292"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Designing and Facilitating E-Learning Experiences for K–12 Students",
+      "guide_title_normalized": "designing and facilitating e learning experiences for k12 students",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Quality and Impact of K–12 E-Learning Solutions",
+      "guide_title_normalized": "quality and impact of k12 e learning solutions",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D296"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Designing E-Learning Experiences for Adults",
+      "guide_title_normalized": "designing e learning experiences for adults",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D297"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Quality and Impact of Adult E-Learning Solutions",
+      "guide_title_normalized": "quality and impact of adult e learning solutions",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D298"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Learning Experience Design Lab",
+      "guide_title_normalized": "learning experience design lab",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D299"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Identifying Learner Needs and a Research Problem",
+      "guide_title_normalized": "identifying learner needs and a research problem",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D300"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Developing an E-Learning Solution and Research Methodology",
+      "guide_title_normalized": "developing an e learning solution and research methodology",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D301"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Implementing and Evaluating E-Learning Solutions",
+      "guide_title_normalized": "implementing and evaluating e learning solutions",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 5,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D302"
+      ]
+    }
+  ]
+}

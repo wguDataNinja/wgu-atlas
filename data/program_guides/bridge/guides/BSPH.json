@@ -1,0 +1,840 @@
+{
+  "program_code": "BSPH",
+  "program_code_effective": "BSPH",
+  "family": "standard_bs",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Bachelor of Science, Public Health",
+  "guide_version": "202409",
+  "guide_pub_date": "5/6/24",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "Leavitt School of Health"
+  ],
+  "program_history_degree_headings": [
+    "Bachelor of Science, Public Health"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 33,
+    "sp_row_count": 33,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 26,
+      "exact_observed_variant_unique": 2,
+      "ambiguous_current_exact": 5
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 26,
+      "exact_observed_variant_unique": 2,
+      "ambiguous_current_exact": 5
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Learning Strategies in Higher Education",
+      "guide_title_normalized": "learning strategies in higher education",
+      "aos_group": "Foundations of Success",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D389"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Composition: Writing with a Strategy",
+      "guide_title_normalized": "composition writing with a strategy",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D269"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Communication: Connecting with Others",
+      "guide_title_normalized": "introduction to communication connecting with others",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D268"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Critical Thinking: Reason and Evidence",
+      "guide_title_normalized": "critical thinking reason and evidence",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D265"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Health, Fitness, and Wellness",
+      "guide_title_normalized": "health fitness and wellness",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C458"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "World History: Diverse Cultures and Global Connections",
+      "guide_title_normalized": "world history diverse cultures and global connections",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D266"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Sociology",
+      "guide_title_normalized": "introduction to sociology",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C273"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Human Growth and Development",
+      "guide_title_normalized": "human growth and development",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D202"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Psychology",
+      "guide_title_normalized": "introduction to psychology",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C180"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Fundamentals of Anatomy and Physiology",
+      "guide_title_normalized": "fundamentals of anatomy and physiology",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D203"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Applied Healthcare Statistics",
+      "guide_title_normalized": "applied healthcare statistics",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C784"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Research Methods",
+      "guide_title_normalized": "introduction to research methods",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D581"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Foundations in Public Health",
+      "guide_title_normalized": "foundations in public health",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D583"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Program Planning and Implementation",
+      "guide_title_normalized": "program planning and implementation",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D584"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Program Evaluation",
+      "guide_title_normalized": "program evaluation",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D585"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Public Health Policy",
+      "guide_title_normalized": "public health policy",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D586"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Gender and Health",
+      "guide_title_normalized": "gender and health",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D587"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Human Sexuality",
+      "guide_title_normalized": "human sexuality",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D588"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Chronic and Infectious Diseases",
+      "guide_title_normalized": "chronic and infectious diseases",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D589"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Public Health Administration",
+      "guide_title_normalized": "public health administration",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D590"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Grant Writing",
+      "guide_title_normalized": "grant writing",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D591"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Environmental Health",
+      "guide_title_normalized": "environmental health",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D592",
+        "D618"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Global Health",
+      "guide_title_normalized": "global health",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D593",
+        "D619"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Public Health Leadership and Administration",
+      "guide_title_normalized": "public health leadership and administration",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D594",
+        "D620"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Public Health Capstone",
+      "guide_title_normalized": "public health capstone",
+      "aos_group": "Public Health",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D595"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Biology",
+      "guide_title_normalized": "introduction to biology",
+      "aos_group": "General Science Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C190",
+        "C907"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Health Equity and Social Determinants of Health",
+      "guide_title_normalized": "health equity and social determinants of health",
+      "aos_group": "Psychology",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D057",
+        "D397"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Understanding Substance Abuse & Addiction",
+      "guide_title_normalized": "understanding substance abuse addiction",
+      "aos_group": "Psychology",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D573"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Team Dynamics",
+      "guide_title_normalized": "team dynamics",
+      "aos_group": "Psychology",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D577"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Mental Health Awareness and Education",
+      "guide_title_normalized": "mental health awareness and education",
+      "aos_group": "Psychology",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D579"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Career and Lifelong Learning",
+      "guide_title_normalized": "career and lifelong learning",
+      "aos_group": "Psychology",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D572"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Community and Public Health",
+      "guide_title_normalized": "community and public health",
+      "aos_group": "Health and Human Services",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D402"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Epidemiology",
+      "guide_title_normalized": "introduction to epidemiology",
+      "aos_group": "Health and Human Services",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D401"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Learning Strategies in Higher Education",
+      "guide_title_normalized": "learning strategies in higher education",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D389"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Composition: Writing with a Strategy",
+      "guide_title_normalized": "composition writing with a strategy",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D269"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Communication: Connecting with Others",
+      "guide_title_normalized": "introduction to communication connecting with others",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D268"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Foundations in Public Health",
+      "guide_title_normalized": "foundations in public health",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D583"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Critical Thinking: Reason and Evidence",
+      "guide_title_normalized": "critical thinking reason and evidence",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D265"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Health, Fitness, and Wellness",
+      "guide_title_normalized": "health fitness and wellness",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C458"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Biology",
+      "guide_title_normalized": "introduction to biology",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C190",
+        "C907"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "World History: Diverse Cultures and Global Connections",
+      "guide_title_normalized": "world history diverse cultures and global connections",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D266"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Sociology",
+      "guide_title_normalized": "introduction to sociology",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C273"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Human Growth and Development",
+      "guide_title_normalized": "human growth and development",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D202"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Psychology",
+      "guide_title_normalized": "introduction to psychology",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C180"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Health Equity and Social Determinants of Health",
+      "guide_title_normalized": "health equity and social determinants of health",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D057",
+        "D397"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Fundamentals of Anatomy and Physiology",
+      "guide_title_normalized": "fundamentals of anatomy and physiology",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D203"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Applied Healthcare Statistics",
+      "guide_title_normalized": "applied healthcare statistics",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C784"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Research Methods",
+      "guide_title_normalized": "introduction to research methods",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D581"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Community and Public Health",
+      "guide_title_normalized": "community and public health",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D402"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Program Planning and Implementation",
+      "guide_title_normalized": "program planning and implementation",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D584"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Program Evaluation",
+      "guide_title_normalized": "program evaluation",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D585"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Public Health Policy",
+      "guide_title_normalized": "public health policy",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D586"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Understanding Substance Abuse & Addiction",
+      "guide_title_normalized": "understanding substance abuse addiction",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D573"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Team Dynamics",
+      "guide_title_normalized": "team dynamics",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D577"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Gender and Health",
+      "guide_title_normalized": "gender and health",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D587"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Human Sexuality",
+      "guide_title_normalized": "human sexuality",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D588"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Chronic and Infectious Diseases",
+      "guide_title_normalized": "chronic and infectious diseases",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D589"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Epidemiology",
+      "guide_title_normalized": "introduction to epidemiology",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D401"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Mental Health Awareness and Education",
+      "guide_title_normalized": "mental health awareness and education",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D579"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Public Health Administration",
+      "guide_title_normalized": "public health administration",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D590"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Career and Lifelong Learning",
+      "guide_title_normalized": "career and lifelong learning",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D572"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Grant Writing",
+      "guide_title_normalized": "grant writing",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D591"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Environmental Health",
+      "guide_title_normalized": "environmental health",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D592",
+        "D618"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Global Health",
+      "guide_title_normalized": "global health",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D593",
+        "D619"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Public Health Leadership and Administration",
+      "guide_title_normalized": "public health leadership and administration",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D594",
+        "D620"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Public Health Capstone",
+      "guide_title_normalized": "public health capstone",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D595"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3011 @@
+{
+  "generated_at": "2026-03-21",
+  "source_of_truth_priority": [
+    "filesystem artifacts under data/program_guides",
+    "data/program_guides/audit/*",
+    "_internal/program_guides/DEV_NOTES.md",
+    "_internal/program_guides/TECHNICAL_READOUT.md",
+    "_internal/program_guides/README.md"
+  ],
+  "executive_summary": "Phase C is closed at full artifact coverage (115/115). Data quality is not uniform: 111 guides are full-use, 4 are partial-use, and 0 are excluded. AoS content is complete and strongest; SP content is usable for 111 guides, partial for 1, unusable for 3 due to source extraction artifacts.",
+  "reconciled_counts": {
+    "total_guides": 115,
+    "artifact_coverage": {
+      "parsed": 115,
+      "validation": 115,
+      "manifest_rows": 115,
+      "pct": 100.0
+    },
+    "family_validated_coverage": {
+      "guides": 115,
+      "families": 19,
+      "pct": 100.0
+    },
+    "downstream_usable_full": 111,
+    "downstream_usable_partial": 4,
+    "excluded_not_usable": 0,
+    "confidence_distribution": {
+      "high": 96,
+      "medium": 17,
+      "low": 2
+    },
+    "total_parsed_course_descriptions": 2593,
+    "total_competency_sets": 2591,
+    "total_standard_path_rows": 2568,
+    "standard_path_usability": {
+      "usable": 111,
+      "partial": 1,
+      "unusable": 3
+    },
+    "aos_usability": {
+      "usable": 115,
+      "unusable": 0
+    },
+    "complete_families": 14,
+    "complete_with_caveats_families": 5,
+    "partial_families": 0,
+    "deferred_families": 0
+  },
+  "family_summary": [
+    {
+      "family": "accounting_ma",
+      "guide_count": 5,
+      "status": "complete",
+      "confidence_distribution": {
+        "high": 5,
+        "medium": 0,
+        "low": 0
+      },
+      "full_use_count": 5,
+      "partial_use_count": 0,
+      "excluded_count": 0,
+      "caveat_guides": []
+    },
+    {
+      "family": "cs_grad",
+      "guide_count": 5,
+      "status": "complete-with-caveats",
+      "confidence_distribution": {
+        "high": 4,
+        "medium": 0,
+        "low": 1
+      },
+      "full_use_count": 4,
+      "partial_use_count": 1,
+      "excluded_count": 0,
+      "caveat_guides": [
+        "MSCSUG"
+      ]
+    },
+    {
+      "family": "cs_ug",
+      "guide_count": 8,
+      "status": "complete",
+      "confidence_distribution": {
+        "high": 4,
+        "medium": 4,
+        "low": 0
+      },
+      "full_use_count": 8,
+      "partial_use_count": 0,
+      "excluded_count": 0,
+      "caveat_guides": []
+    },
+    {
+      "family": "data_analytics_grad",
+      "guide_count": 3,
+      "status": "complete",
+      "confidence_distribution": {
+        "high": 3,
+        "medium": 0,
+        "low": 0
+      },
+      "full_use_count": 3,
+      "partial_use_count": 0,
+      "excluded_count": 0,
+      "caveat_guides": []
+    },
+    {
+      "family": "education_ba",
+      "guide_count": 11,
+      "status": "complete",
+      "confidence_distribution": {
+        "high": 5,
+        "medium": 6,
+        "low": 0
+      },
+      "full_use_count": 11,
+      "partial_use_count": 0,
+      "excluded_count": 0,
+      "caveat_guides": []
+    },
+    {
+      "family": "education_bs",
+      "guide_count": 4,
+      "status": "complete",
+      "confidence_distribution": {
+        "high": 4,
+        "medium": 0,
+        "low": 0
+      },
+      "full_use_count": 4,
+      "partial_use_count": 0,
+      "excluded_count": 0,
+      "caveat_guides": []
+    },
+    {
+      "family": "education_grad",
+      "guide_count": 2,
+      "status": "complete-with-caveats",
+      "confidence_distribution": {
+        "high": 1,
+        "medium": 1,
+        "low": 0
+      },
+      "full_use_count": 2,
+      "partial_use_count": 0,
+      "excluded_count": 0,
+      "caveat_guides": [
+        "MEDETID"
+      ]
+    },
+    {
+      "family": "education_ma",
+      "guide_count": 9,
+      "status": "complete",
+      "confidence_distribution": {
+        "high": 9,
+        "medium": 0,
+        "low": 0
+      },
+      "full_use_count": 9,
+      "partial_use_count": 0,
+      "excluded_count": 0,
+      "caveat_guides": []
+    },
+    {
+      "family": "endorsement",
+      "guide_count": 8,
+      "status": "complete",
+      "confidence_distribution": {
+        "high": 8,
+        "medium": 0,
+        "low": 0
+      },
+      "full_use_count": 8,
+      "partial_use_count": 0,
+      "excluded_count": 0,
+      "caveat_guides": []
+    },
+    {
+      "family": "graduate_standard",
+      "guide_count": 9,
+      "status": "complete",
+      "confidence_distribution": {
+        "high": 9,
+        "medium": 0,
+        "low": 0
+      },
+      "full_use_count": 9,
+      "partial_use_count": 0,
+      "excluded_count": 0,
+      "caveat_guides": []
+    },
+    {
+      "family": "healthcare_grad",
+      "guide_count": 2,
+      "status": "complete",
+      "confidence_distribution": {
+        "high": 2,
+        "medium": 0,
+        "low": 0
+      },
+      "full_use_count": 2,
+      "partial_use_count": 0,
+      "excluded_count": 0,
+      "caveat_guides": []
+    },
+    {
+      "family": "mba",
+      "guide_count": 3,
+      "status": "complete",
+      "confidence_distribution": {
+        "high": 3,
+        "medium": 0,
+        "low": 0
+      },
+      "full_use_count": 3,
+      "partial_use_count": 0,
+      "excluded_count": 0,
+      "caveat_guides": []
+    },
+    {
+      "family": "nursing_msn",
+      "guide_count": 5,
+      "status": "complete",
+      "confidence_distribution": {
+        "high": 5,
+        "medium": 0,
+        "low": 0
+      },
+      "full_use_count": 5,
+      "partial_use_count": 0,
+      "excluded_count": 0,
+      "caveat_guides": []
+    },
+    {
+      "family": "nursing_pmc",
+      "guide_count": 4,
+      "status": "complete",
+      "confidence_distribution": {
+        "high": 4,
+        "medium": 0,
+        "low": 0
+      },
+      "full_use_count": 4,
+      "partial_use_count": 0,
+      "excluded_count": 0,
+      "caveat_guides": []
+    },
+    {
+      "family": "nursing_rn_msn",
+      "guide_count": 3,
+      "status": "complete",
+      "confidence_distribution": {
+        "high": 3,
+        "medium": 0,
+        "low": 0
+      },
+      "full_use_count": 3,
+      "partial_use_count": 0,
+      "excluded_count": 0,
+      "caveat_guides": []
+    },
+    {
+      "family": "nursing_ug",
+      "guide_count": 2,
+      "status": "complete-with-caveats",
+      "confidence_distribution": {
+        "high": 0,
+        "medium": 2,
+        "low": 0
+      },
+      "full_use_count": 1,
+      "partial_use_count": 1,
+      "excluded_count": 0,
+      "caveat_guides": [
+        "BSPRN"
+      ]
+    },
+    {
+      "family": "standard_bs",
+      "guide_count": 19,
+      "status": "complete-with-caveats",
+      "confidence_distribution": {
+        "high": 16,
+        "medium": 2,
+        "low": 1
+      },
+      "full_use_count": 18,
+      "partial_use_count": 1,
+      "excluded_count": 0,
+      "caveat_guides": [
+        "BSITM"
+      ]
+    },
+    {
+      "family": "swe_grad",
+      "guide_count": 4,
+      "status": "complete",
+      "confidence_distribution": {
+        "high": 3,
+        "medium": 1,
+        "low": 0
+      },
+      "full_use_count": 4,
+      "partial_use_count": 0,
+      "excluded_count": 0,
+      "caveat_guides": []
+    },
+    {
+      "family": "teaching_mat",
+      "guide_count": 9,
+      "status": "complete-with-caveats",
+      "confidence_distribution": {
+        "high": 8,
+        "medium": 1,
+        "low": 0
+      },
+      "full_use_count": 8,
+      "partial_use_count": 1,
+      "excluded_count": 0,
+      "caveat_guides": [
+        "MATSPED"
+      ]
+    }
+  ],
+  "guide_manifest": [
+    {
+      "program_code": "BAELED",
+      "family": "education_ba",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-no-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202603",
+      "pub_date": "12/11/2025",
+      "page_count": 0,
+      "standard_path_row_count": 37,
+      "aos_group_count": 5,
+      "aos_course_count": 37,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BAELED_parsed.json",
+        "validation_json": "data/program_guides/validation/BAELED_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BAELED_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BAESELED",
+      "family": "education_ba",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202603",
+      "pub_date": "12/11/2025",
+      "page_count": 0,
+      "standard_path_row_count": 33,
+      "aos_group_count": 3,
+      "aos_course_count": 33,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BAESELED_parsed.json",
+        "validation_json": "data/program_guides/validation/BAESELED_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BAESELED_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BAESMES",
+      "family": "education_ba",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202603",
+      "pub_date": "12/11/2025",
+      "page_count": 0,
+      "standard_path_row_count": 35,
+      "aos_group_count": 6,
+      "aos_course_count": 35,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BAESMES_parsed.json",
+        "validation_json": "data/program_guides/validation/BAESMES_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BAESMES_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BAESSESB",
+      "family": "education_ba",
+      "confidence": "medium",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": "1 AoS titles not in SP: ['Secondary Disciplinary Literacy']",
+      "version": "202603",
+      "pub_date": "12/12/2025",
+      "page_count": 0,
+      "standard_path_row_count": 36,
+      "aos_group_count": 9,
+      "aos_course_count": 37,
+      "anomaly_count": 1,
+      "warning_count": 1,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BAESSESB_parsed.json",
+        "validation_json": "data/program_guides/validation/BAESSESB_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BAESSESB_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BAESSESC",
+      "family": "education_ba",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202603",
+      "pub_date": "12/11/2025",
+      "page_count": 0,
+      "standard_path_row_count": 36,
+      "aos_group_count": 8,
+      "aos_course_count": 36,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BAESSESC_parsed.json",
+        "validation_json": "data/program_guides/validation/BAESSESC_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BAESSESC_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BAESSESE",
+      "family": "education_ba",
+      "confidence": "medium",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": "1 AoS titles not in SP: ['Secondary Disciplinary Literacy']",
+      "version": "202603",
+      "pub_date": "12/11/2025",
+      "page_count": 0,
+      "standard_path_row_count": 36,
+      "aos_group_count": 9,
+      "aos_course_count": 37,
+      "anomaly_count": 1,
+      "warning_count": 1,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BAESSESE_parsed.json",
+        "validation_json": "data/program_guides/validation/BAESSESE_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BAESSESE_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BAESSESP",
+      "family": "education_ba",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202603",
+      "pub_date": "12/11/2025",
+      "page_count": 0,
+      "standard_path_row_count": 36,
+      "aos_group_count": 8,
+      "aos_course_count": 36,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BAESSESP_parsed.json",
+        "validation_json": "data/program_guides/validation/BAESSESP_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BAESSESP_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BAESSPEE",
+      "family": "education_ba",
+      "confidence": "medium",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": "1 SP titles not found in AoS: ['Considerations for Instructional Planning for Learners']",
+      "version": "202603",
+      "pub_date": "12/11/2025",
+      "page_count": 0,
+      "standard_path_row_count": 41,
+      "aos_group_count": 5,
+      "aos_course_count": 40,
+      "anomaly_count": 1,
+      "warning_count": 1,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BAESSPEE_parsed.json",
+        "validation_json": "data/program_guides/validation/BAESSPEE_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BAESSPEE_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BAESSPMM",
+      "family": "education_ba",
+      "confidence": "medium",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": "1 SP titles not found in AoS: ['Considerations for Instructional Planning for Learners']",
+      "version": "202603",
+      "pub_date": "12/11/2025",
+      "page_count": 0,
+      "standard_path_row_count": 34,
+      "aos_group_count": 5,
+      "aos_course_count": 33,
+      "anomaly_count": 1,
+      "warning_count": 1,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BAESSPMM_parsed.json",
+        "validation_json": "data/program_guides/validation/BAESSPMM_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BAESSPMM_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BASPEE",
+      "family": "education_ba",
+      "confidence": "medium",
+      "disposition": "full-use",
+      "standard_path_status": "usable-no-term",
+      "aos_status": "usable",
+      "major_caveat": "1 SP titles not found in AoS: ['Considerations for Instructional Planning for Learners']",
+      "version": "202603",
+      "pub_date": "12/11/2025",
+      "page_count": 0,
+      "standard_path_row_count": 45,
+      "aos_group_count": 7,
+      "aos_course_count": 44,
+      "anomaly_count": 1,
+      "warning_count": 1,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BASPEE_parsed.json",
+        "validation_json": "data/program_guides/validation/BASPEE_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BASPEE_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BASPMM",
+      "family": "education_ba",
+      "confidence": "medium",
+      "disposition": "full-use",
+      "standard_path_status": "usable-no-term",
+      "aos_status": "usable",
+      "major_caveat": "1 SP titles not found in AoS: ['Considerations for Instructional Planning for Learners']",
+      "version": "202603",
+      "pub_date": "12/11/2025",
+      "page_count": 0,
+      "standard_path_row_count": 38,
+      "aos_group_count": 6,
+      "aos_course_count": 37,
+      "anomaly_count": 1,
+      "warning_count": 1,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BASPMM_parsed.json",
+        "validation_json": "data/program_guides/validation/BASPMM_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BASPMM_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSACC",
+      "family": "standard_bs",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202503",
+      "pub_date": "8/12/24",
+      "page_count": 22,
+      "standard_path_row_count": 40,
+      "aos_group_count": 4,
+      "aos_course_count": 40,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSACC_parsed.json",
+        "validation_json": "data/program_guides/validation/BSACC_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSACC_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSBAHC",
+      "family": "standard_bs",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202203",
+      "pub_date": "3/2/23",
+      "page_count": 22,
+      "standard_path_row_count": 40,
+      "aos_group_count": 7,
+      "aos_course_count": 39,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSBAHC_parsed.json",
+        "validation_json": "data/program_guides/validation/BSBAHC_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSBAHC_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSC",
+      "family": "standard_bs",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202510",
+      "pub_date": "7/3/2025",
+      "page_count": 0,
+      "standard_path_row_count": 38,
+      "aos_group_count": 6,
+      "aos_course_count": 38,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSC_parsed.json",
+        "validation_json": "data/program_guides/validation/BSC_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSC_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSCNE",
+      "family": "cs_ug",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202510",
+      "pub_date": "1/27/2026",
+      "page_count": 0,
+      "standard_path_row_count": 34,
+      "aos_group_count": 13,
+      "aos_course_count": 34,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSCNE_parsed.json",
+        "validation_json": "data/program_guides/validation/BSCNE_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSCNE_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSCNEAWS",
+      "family": "cs_ug",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202510",
+      "pub_date": "1/27/2026",
+      "page_count": 0,
+      "standard_path_row_count": 35,
+      "aos_group_count": 13,
+      "aos_course_count": 35,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSCNEAWS_parsed.json",
+        "validation_json": "data/program_guides/validation/BSCNEAWS_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSCNEAWS_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSCNEAZR",
+      "family": "cs_ug",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202510",
+      "pub_date": "1/27/2026",
+      "page_count": 0,
+      "standard_path_row_count": 35,
+      "aos_group_count": 13,
+      "aos_course_count": 35,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSCNEAZR_parsed.json",
+        "validation_json": "data/program_guides/validation/BSCNEAZR_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSCNEAZR_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSCNECIS",
+      "family": "cs_ug",
+      "confidence": "medium",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": "1 SP titles not found in AoS: ['Hybrid Cloud Infrastructure and and Orchestration']",
+      "version": "202510",
+      "pub_date": "1/27/2026",
+      "page_count": 0,
+      "standard_path_row_count": 32,
+      "aos_group_count": 11,
+      "aos_course_count": 32,
+      "anomaly_count": 0,
+      "warning_count": 2,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSCNECIS_parsed.json",
+        "validation_json": "data/program_guides/validation/BSCNECIS_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSCNECIS_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSCS",
+      "family": "cs_ug",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202412",
+      "pub_date": "8/2/24",
+      "page_count": 20,
+      "standard_path_row_count": 37,
+      "aos_group_count": 12,
+      "aos_course_count": 37,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSCS_parsed.json",
+        "validation_json": "data/program_guides/validation/BSCS_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSCS_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSCSIA",
+      "family": "cs_ug",
+      "confidence": "medium",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": "1 SP titles not found in AoS: ['Scripting and Programming Foundations']",
+      "version": "202509",
+      "pub_date": "7/31/2025",
+      "page_count": 0,
+      "standard_path_row_count": 38,
+      "aos_group_count": 20,
+      "aos_course_count": 37,
+      "anomaly_count": 0,
+      "warning_count": 2,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSCSIA_parsed.json",
+        "validation_json": "data/program_guides/validation/BSCSIA_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSCSIA_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSDA",
+      "family": "standard_bs",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202309",
+      "pub_date": "5/1/23",
+      "page_count": 21,
+      "standard_path_row_count": 42,
+      "aos_group_count": 14,
+      "aos_course_count": 41,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSDA_parsed.json",
+        "validation_json": "data/program_guides/validation/BSDA_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSDA_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSFIN",
+      "family": "standard_bs",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202304",
+      "pub_date": "9/27/23",
+      "page_count": 22,
+      "standard_path_row_count": 40,
+      "aos_group_count": 6,
+      "aos_course_count": 40,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSFIN_parsed.json",
+        "validation_json": "data/program_guides/validation/BSFIN_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSFIN_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSHA",
+      "family": "standard_bs",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202509",
+      "pub_date": "6/16/2025",
+      "page_count": 0,
+      "standard_path_row_count": 34,
+      "aos_group_count": 7,
+      "aos_course_count": 34,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSHA_parsed.json",
+        "validation_json": "data/program_guides/validation/BSHA_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSHA_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSHHS",
+      "family": "standard_bs",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202411",
+      "pub_date": "8/1/24",
+      "page_count": 19,
+      "standard_path_row_count": 35,
+      "aos_group_count": 9,
+      "aos_course_count": 34,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSHHS_parsed.json",
+        "validation_json": "data/program_guides/validation/BSHHS_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSHHS_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSHIM",
+      "family": "standard_bs",
+      "confidence": "medium",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": "1 SP titles not found in AoS: ['Healthcare Information Systems Management']",
+      "version": "202504",
+      "pub_date": "7/24/2025",
+      "page_count": 0,
+      "standard_path_row_count": 36,
+      "aos_group_count": 8,
+      "aos_course_count": 36,
+      "anomaly_count": 0,
+      "warning_count": 2,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSHIM_parsed.json",
+        "validation_json": "data/program_guides/validation/BSHIM_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSHIM_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSHR",
+      "family": "standard_bs",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202509",
+      "pub_date": "6/16/2025",
+      "page_count": 0,
+      "standard_path_row_count": 39,
+      "aos_group_count": 4,
+      "aos_course_count": 39,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSHR_parsed.json",
+        "validation_json": "data/program_guides/validation/BSHR_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSHR_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSHS",
+      "family": "standard_bs",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202406",
+      "pub_date": "1/31/24",
+      "page_count": 17,
+      "standard_path_row_count": 28,
+      "aos_group_count": 6,
+      "aos_course_count": 28,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSHS_parsed.json",
+        "validation_json": "data/program_guides/validation/BSHS_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSHS_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSIT",
+      "family": "standard_bs",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202604",
+      "pub_date": "11/20/2025",
+      "page_count": 0,
+      "standard_path_row_count": 35,
+      "aos_group_count": 12,
+      "aos_course_count": 35,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSIT_parsed.json",
+        "validation_json": "data/program_guides/validation/BSIT_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSIT_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSITM",
+      "family": "standard_bs",
+      "confidence": "low",
+      "disposition": "partial-use",
+      "standard_path_status": "unusable",
+      "aos_status": "usable",
+      "major_caveat": "Standard Path unusable due to source PDF column extraction failure; AoS usable.",
+      "version": "202503",
+      "pub_date": "9/24/2024",
+      "page_count": 0,
+      "standard_path_row_count": 35,
+      "aos_group_count": 9,
+      "aos_course_count": 40,
+      "anomaly_count": 1,
+      "warning_count": 3,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSITM_parsed.json",
+        "validation_json": "data/program_guides/validation/BSITM_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSITM_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSMES",
+      "family": "standard_bs",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-no-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202603",
+      "pub_date": "12/11/2025",
+      "page_count": 0,
+      "standard_path_row_count": 39,
+      "aos_group_count": 8,
+      "aos_course_count": 39,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSMES_parsed.json",
+        "validation_json": "data/program_guides/validation/BSMES_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSMES_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSMGT",
+      "family": "standard_bs",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202605",
+      "pub_date": "1/12/2026",
+      "page_count": 0,
+      "standard_path_row_count": 36,
+      "aos_group_count": 5,
+      "aos_course_count": 35,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSMGT_parsed.json",
+        "validation_json": "data/program_guides/validation/BSMGT_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSMGT_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSMKT",
+      "family": "standard_bs",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202501",
+      "pub_date": "8/27/24",
+      "page_count": 20,
+      "standard_path_row_count": 37,
+      "aos_group_count": 5,
+      "aos_course_count": 37,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSMKT_parsed.json",
+        "validation_json": "data/program_guides/validation/BSMKT_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSMKT_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSNU",
+      "family": "nursing_ug",
+      "confidence": "medium",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": "version/pub_date/page_count missing due to no footer lines in source text.",
+      "version": null,
+      "pub_date": null,
+      "page_count": 0,
+      "standard_path_row_count": 22,
+      "aos_group_count": 2,
+      "aos_course_count": 22,
+      "anomaly_count": 1,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSNU_parsed.json",
+        "validation_json": "data/program_guides/validation/BSNU_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSNU_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSPH",
+      "family": "standard_bs",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202409",
+      "pub_date": "5/6/24",
+      "page_count": 18,
+      "standard_path_row_count": 33,
+      "aos_group_count": 6,
+      "aos_course_count": 33,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSPH_parsed.json",
+        "validation_json": "data/program_guides/validation/BSPH_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSPH_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSPRN",
+      "family": "nursing_ug",
+      "confidence": "medium",
+      "disposition": "partial-use",
+      "standard_path_status": "partial",
+      "aos_status": "usable",
+      "major_caveat": "Standard Path covers Pre-Nursing track only; 15 Nursing-track courses are AoS-only.",
+      "version": "202303",
+      "pub_date": "10/5/22",
+      "page_count": 24,
+      "standard_path_row_count": 19,
+      "aos_group_count": 3,
+      "aos_course_count": 34,
+      "anomaly_count": 0,
+      "warning_count": 1,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSPRN_parsed.json",
+        "validation_json": "data/program_guides/validation/BSPRN_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSPRN_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSPSY",
+      "family": "standard_bs",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202404",
+      "pub_date": "2/16/24",
+      "page_count": 19,
+      "standard_path_row_count": 34,
+      "aos_group_count": 4,
+      "aos_course_count": 34,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSPSY_parsed.json",
+        "validation_json": "data/program_guides/validation/BSPSY_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSPSY_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSSCOM",
+      "family": "standard_bs",
+      "confidence": "medium",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": "1 SP titles not found in AoS: ['21st Century Operations and Supply Chain']",
+      "version": "202605",
+      "pub_date": "12/29/2025",
+      "page_count": 0,
+      "standard_path_row_count": 35,
+      "aos_group_count": 5,
+      "aos_course_count": 35,
+      "anomaly_count": 2,
+      "warning_count": 2,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSSCOM_parsed.json",
+        "validation_json": "data/program_guides/validation/BSSCOM_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSSCOM_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSSESB",
+      "family": "education_bs",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-no-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202603",
+      "pub_date": "12/12/2025",
+      "page_count": 0,
+      "standard_path_row_count": 41,
+      "aos_group_count": 11,
+      "aos_course_count": 41,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSSESB_parsed.json",
+        "validation_json": "data/program_guides/validation/BSSESB_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSSESB_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSSESC",
+      "family": "education_bs",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-no-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202603",
+      "pub_date": "12/11/2025",
+      "page_count": 0,
+      "standard_path_row_count": 40,
+      "aos_group_count": 10,
+      "aos_course_count": 40,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSSESC_parsed.json",
+        "validation_json": "data/program_guides/validation/BSSESC_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSSESC_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSSESE",
+      "family": "education_bs",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-no-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202603",
+      "pub_date": "12/11/2025",
+      "page_count": 0,
+      "standard_path_row_count": 41,
+      "aos_group_count": 11,
+      "aos_course_count": 41,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSSESE_parsed.json",
+        "validation_json": "data/program_guides/validation/BSSESE_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSSESE_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSSESP",
+      "family": "education_bs",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-no-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202603",
+      "pub_date": "12/11/2025",
+      "page_count": 0,
+      "standard_path_row_count": 40,
+      "aos_group_count": 10,
+      "aos_course_count": 40,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSSESP_parsed.json",
+        "validation_json": "data/program_guides/validation/BSSESP_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSSESP_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSSWE_C",
+      "family": "cs_ug",
+      "confidence": "medium",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": "One course has empty competency bullets (source-format artifact).",
+      "version": null,
+      "pub_date": null,
+      "page_count": 0,
+      "standard_path_row_count": 38,
+      "aos_group_count": 12,
+      "aos_course_count": 36,
+      "anomaly_count": 1,
+      "warning_count": 1,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSSWE_C_parsed.json",
+        "validation_json": "data/program_guides/validation/BSSWE_C_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSSWE_C_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSSWE_Java",
+      "family": "cs_ug",
+      "confidence": "medium",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": null,
+      "pub_date": null,
+      "page_count": 0,
+      "standard_path_row_count": 40,
+      "aos_group_count": 12,
+      "aos_course_count": 38,
+      "anomaly_count": 1,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSSWE_Java_parsed.json",
+        "validation_json": "data/program_guides/validation/BSSWE_Java_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSSWE_Java_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "BSUXD",
+      "family": "standard_bs",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202510",
+      "pub_date": "7/2/2025",
+      "page_count": 0,
+      "standard_path_row_count": 38,
+      "aos_group_count": 6,
+      "aos_course_count": 38,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/BSUXD_parsed.json",
+        "validation_json": "data/program_guides/validation/BSUXD_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/BSUXD_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "ENDECE",
+      "family": "endorsement",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-no-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202509",
+      "pub_date": "6/17/2025",
+      "page_count": 0,
+      "standard_path_row_count": 6,
+      "aos_group_count": 3,
+      "aos_course_count": 6,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/ENDECE_parsed.json",
+        "validation_json": "data/program_guides/validation/ENDECE_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/ENDECE_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "ENDELL",
+      "family": "endorsement",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "201112",
+      "pub_date": "5/7/2025",
+      "page_count": 0,
+      "standard_path_row_count": 8,
+      "aos_group_count": 1,
+      "aos_course_count": 8,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/ENDELL_parsed.json",
+        "validation_json": "data/program_guides/validation/ENDELL_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/ENDELL_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "ENDMEMG",
+      "family": "endorsement",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-no-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202509",
+      "pub_date": "6/17/2025",
+      "page_count": 0,
+      "standard_path_row_count": 2,
+      "aos_group_count": 1,
+      "aos_course_count": 2,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/ENDMEMG_parsed.json",
+        "validation_json": "data/program_guides/validation/ENDMEMG_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/ENDMEMG_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "ENDSEMG",
+      "family": "endorsement",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-no-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202509",
+      "pub_date": "6/17/2025",
+      "page_count": 0,
+      "standard_path_row_count": 2,
+      "aos_group_count": 1,
+      "aos_course_count": 2,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/ENDSEMG_parsed.json",
+        "validation_json": "data/program_guides/validation/ENDSEMG_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/ENDSEMG_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "ENDSESB",
+      "family": "endorsement",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-no-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202509",
+      "pub_date": "6/17/2025",
+      "page_count": 0,
+      "standard_path_row_count": 9,
+      "aos_group_count": 2,
+      "aos_course_count": 9,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/ENDSESB_parsed.json",
+        "validation_json": "data/program_guides/validation/ENDSESB_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/ENDSESB_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "ENDSESC",
+      "family": "endorsement",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-no-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202509",
+      "pub_date": "6/17/2025",
+      "page_count": 0,
+      "standard_path_row_count": 7,
+      "aos_group_count": 3,
+      "aos_course_count": 7,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/ENDSESC_parsed.json",
+        "validation_json": "data/program_guides/validation/ENDSESC_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/ENDSESC_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "ENDSESE",
+      "family": "endorsement",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-no-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202509",
+      "pub_date": "6/17/2025",
+      "page_count": 0,
+      "standard_path_row_count": 9,
+      "aos_group_count": 4,
+      "aos_course_count": 9,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/ENDSESE_parsed.json",
+        "validation_json": "data/program_guides/validation/ENDSESE_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/ENDSESE_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "ENDSESP",
+      "family": "endorsement",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-no-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202509",
+      "pub_date": "6/17/2025",
+      "page_count": 0,
+      "standard_path_row_count": 7,
+      "aos_group_count": 3,
+      "aos_course_count": 7,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/ENDSESP_parsed.json",
+        "validation_json": "data/program_guides/validation/ENDSESP_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/ENDSESP_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MACC",
+      "family": "accounting_ma",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202202",
+      "pub_date": "9/27/23",
+      "page_count": 11,
+      "standard_path_row_count": 10,
+      "aos_group_count": 4,
+      "aos_course_count": 10,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MACC_parsed.json",
+        "validation_json": "data/program_guides/validation/MACC_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MACC_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MACCA",
+      "family": "accounting_ma",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202409",
+      "pub_date": "4/12/24",
+      "page_count": 11,
+      "standard_path_row_count": 10,
+      "aos_group_count": 2,
+      "aos_course_count": 10,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MACCA_parsed.json",
+        "validation_json": "data/program_guides/validation/MACCA_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MACCA_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MACCF",
+      "family": "accounting_ma",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202409",
+      "pub_date": "4/12/24",
+      "page_count": 12,
+      "standard_path_row_count": 11,
+      "aos_group_count": 2,
+      "aos_course_count": 11,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MACCF_parsed.json",
+        "validation_json": "data/program_guides/validation/MACCF_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MACCF_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MACCM",
+      "family": "accounting_ma",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": "Corporate Financial Analysis title/first-sentence quality issue (cosmetic).",
+      "version": "202409",
+      "pub_date": "4/12/24",
+      "page_count": 11,
+      "standard_path_row_count": 10,
+      "aos_group_count": 2,
+      "aos_course_count": 10,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MACCM_parsed.json",
+        "validation_json": "data/program_guides/validation/MACCM_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MACCM_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MACCT",
+      "family": "accounting_ma",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202409",
+      "pub_date": "4/12/24",
+      "page_count": 11,
+      "standard_path_row_count": 10,
+      "aos_group_count": 2,
+      "aos_course_count": 10,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MACCT_parsed.json",
+        "validation_json": "data/program_guides/validation/MACCT_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MACCT_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MAELLP12",
+      "family": "education_ma",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": "page_count=0 in metadata (cosmetic).",
+      "version": "201501",
+      "pub_date": "5/7/2025",
+      "page_count": 0,
+      "standard_path_row_count": 11,
+      "aos_group_count": 3,
+      "aos_course_count": 11,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MAELLP12_parsed.json",
+        "validation_json": "data/program_guides/validation/MAELLP12_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MAELLP12_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MAMEK6",
+      "family": "education_ma",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "201504",
+      "pub_date": "9/12/23",
+      "page_count": 12,
+      "standard_path_row_count": 10,
+      "aos_group_count": 2,
+      "aos_course_count": 9,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MAMEK6_parsed.json",
+        "validation_json": "data/program_guides/validation/MAMEK6_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MAMEK6_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MAMEMG",
+      "family": "education_ma",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "201810",
+      "pub_date": "9/12/23",
+      "page_count": 13,
+      "standard_path_row_count": 14,
+      "aos_group_count": 6,
+      "aos_course_count": 13,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MAMEMG_parsed.json",
+        "validation_json": "data/program_guides/validation/MAMEMG_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MAMEMG_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MAMES",
+      "family": "education_ma",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "201810",
+      "pub_date": "9/12/23",
+      "page_count": 14,
+      "standard_path_row_count": 18,
+      "aos_group_count": 3,
+      "aos_course_count": 18,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MAMES_parsed.json",
+        "validation_json": "data/program_guides/validation/MAMES_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MAMES_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MASEMG",
+      "family": "education_ma",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "201806",
+      "pub_date": "9/12/23",
+      "page_count": 13,
+      "standard_path_row_count": 14,
+      "aos_group_count": 9,
+      "aos_course_count": 14,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MASEMG_parsed.json",
+        "validation_json": "data/program_guides/validation/MASEMG_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MASEMG_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MASESB",
+      "family": "education_ma",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "201806",
+      "pub_date": "9/13/23",
+      "page_count": 13,
+      "standard_path_row_count": 13,
+      "aos_group_count": 7,
+      "aos_course_count": 13,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MASESB_parsed.json",
+        "validation_json": "data/program_guides/validation/MASESB_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MASESB_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MASESC",
+      "family": "education_ma",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "201806",
+      "pub_date": "9/12/23",
+      "page_count": 13,
+      "standard_path_row_count": 14,
+      "aos_group_count": 5,
+      "aos_course_count": 14,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MASESC_parsed.json",
+        "validation_json": "data/program_guides/validation/MASESC_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MASESC_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MASESE",
+      "family": "education_ma",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "201806",
+      "pub_date": "9/12/23",
+      "page_count": 12,
+      "standard_path_row_count": 12,
+      "aos_group_count": 6,
+      "aos_course_count": 12,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MASESE_parsed.json",
+        "validation_json": "data/program_guides/validation/MASESE_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MASESE_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MASESP",
+      "family": "education_ma",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "201806",
+      "pub_date": "9/13/23",
+      "page_count": 13,
+      "standard_path_row_count": 13,
+      "aos_group_count": 6,
+      "aos_course_count": 13,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MASESP_parsed.json",
+        "validation_json": "data/program_guides/validation/MASESP_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MASESP_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MATEES",
+      "family": "teaching_mat",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-no-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202504",
+      "pub_date": "1/23/2025",
+      "page_count": 0,
+      "standard_path_row_count": 20,
+      "aos_group_count": 8,
+      "aos_course_count": 20,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MATEES_parsed.json",
+        "validation_json": "data/program_guides/validation/MATEES_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MATEES_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MATELED",
+      "family": "teaching_mat",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202411",
+      "pub_date": "8/16/24",
+      "page_count": 18,
+      "standard_path_row_count": 28,
+      "aos_group_count": 5,
+      "aos_course_count": 28,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MATELED_parsed.json",
+        "validation_json": "data/program_guides/validation/MATELED_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MATELED_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MATMES",
+      "family": "teaching_mat",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-no-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202504",
+      "pub_date": "1/23/2025",
+      "page_count": 0,
+      "standard_path_row_count": 21,
+      "aos_group_count": 8,
+      "aos_course_count": 21,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MATMES_parsed.json",
+        "validation_json": "data/program_guides/validation/MATMES_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MATMES_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MATSESB",
+      "family": "teaching_mat",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-no-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202504",
+      "pub_date": "1/23/2025",
+      "page_count": 0,
+      "standard_path_row_count": 20,
+      "aos_group_count": 10,
+      "aos_course_count": 20,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MATSESB_parsed.json",
+        "validation_json": "data/program_guides/validation/MATSESB_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MATSESB_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MATSESC",
+      "family": "teaching_mat",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-no-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202504",
+      "pub_date": "1/23/2025",
+      "page_count": 0,
+      "standard_path_row_count": 20,
+      "aos_group_count": 9,
+      "aos_course_count": 20,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MATSESC_parsed.json",
+        "validation_json": "data/program_guides/validation/MATSESC_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MATSESC_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MATSESE",
+      "family": "teaching_mat",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-no-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202504",
+      "pub_date": "1/23/2025",
+      "page_count": 0,
+      "standard_path_row_count": 20,
+      "aos_group_count": 9,
+      "aos_course_count": 20,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MATSESE_parsed.json",
+        "validation_json": "data/program_guides/validation/MATSESE_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MATSESE_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MATSESP",
+      "family": "teaching_mat",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-no-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202504",
+      "pub_date": "1/23/2025",
+      "page_count": 0,
+      "standard_path_row_count": 20,
+      "aos_group_count": 9,
+      "aos_course_count": 20,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MATSESP_parsed.json",
+        "validation_json": "data/program_guides/validation/MATSESP_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MATSESP_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MATSPED",
+      "family": "teaching_mat",
+      "confidence": "medium",
+      "disposition": "partial-use",
+      "standard_path_status": "unusable",
+      "aos_status": "usable",
+      "major_caveat": "Standard Path unusable due to source PDF column extraction failure; AoS usable.",
+      "version": "202412",
+      "pub_date": "10/23/2024",
+      "page_count": 0,
+      "standard_path_row_count": 9,
+      "aos_group_count": 7,
+      "aos_course_count": 30,
+      "anomaly_count": 0,
+      "warning_count": 2,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MATSPED_parsed.json",
+        "validation_json": "data/program_guides/validation/MATSPED_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MATSPED_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MATSSES",
+      "family": "teaching_mat",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-no-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202504",
+      "pub_date": "1/23/2025",
+      "page_count": 0,
+      "standard_path_row_count": 19,
+      "aos_group_count": 7,
+      "aos_course_count": 19,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MATSSES_parsed.json",
+        "validation_json": "data/program_guides/validation/MATSSES_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MATSSES_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MBA",
+      "family": "mba",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "201404",
+      "pub_date": "9/27/23",
+      "page_count": 11,
+      "standard_path_row_count": 11,
+      "aos_group_count": 6,
+      "aos_course_count": 10,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MBA_parsed.json",
+        "validation_json": "data/program_guides/validation/MBA_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MBA_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MBAHA",
+      "family": "mba",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202507",
+      "pub_date": "3/7/2025",
+      "page_count": 0,
+      "standard_path_row_count": 11,
+      "aos_group_count": 8,
+      "aos_course_count": 10,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MBAHA_parsed.json",
+        "validation_json": "data/program_guides/validation/MBAHA_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MBAHA_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MBAITM",
+      "family": "mba",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "201408",
+      "pub_date": "9/27/23",
+      "page_count": 11,
+      "standard_path_row_count": 11,
+      "aos_group_count": 9,
+      "aos_course_count": 10,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MBAITM_parsed.json",
+        "validation_json": "data/program_guides/validation/MBAITM_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MBAITM_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MEDETID",
+      "family": "education_grad",
+      "confidence": "medium",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": "Capstone field captures first of three capstone-sequence courses (structural limitation).",
+      "version": "202312",
+      "pub_date": "8/23/24",
+      "page_count": 13,
+      "standard_path_row_count": 12,
+      "aos_group_count": 4,
+      "aos_course_count": 9,
+      "anomaly_count": 0,
+      "warning_count": 1,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MEDETID_parsed.json",
+        "validation_json": "data/program_guides/validation/MEDETID_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MEDETID_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MHA",
+      "family": "healthcare_grad",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202602",
+      "pub_date": "10/2/2025",
+      "page_count": 0,
+      "standard_path_row_count": 10,
+      "aos_group_count": 1,
+      "aos_course_count": 9,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MHA_parsed.json",
+        "validation_json": "data/program_guides/validation/MHA_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MHA_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MPH",
+      "family": "healthcare_grad",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202408",
+      "pub_date": "11/10/2025",
+      "page_count": 0,
+      "standard_path_row_count": 12,
+      "aos_group_count": 1,
+      "aos_course_count": 12,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MPH_parsed.json",
+        "validation_json": "data/program_guides/validation/MPH_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MPH_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSCIN",
+      "family": "graduate_standard",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-no-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202404",
+      "pub_date": "6/23/2025",
+      "page_count": 0,
+      "standard_path_row_count": 10,
+      "aos_group_count": 4,
+      "aos_course_count": 10,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSCIN_parsed.json",
+        "validation_json": "data/program_guides/validation/MSCIN_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSCIN_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSCSAIML",
+      "family": "cs_grad",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": "degree_title is truncated in parsed output (cosmetic; use catalog title).",
+      "version": "202504",
+      "pub_date": "2/26/2025",
+      "page_count": 0,
+      "standard_path_row_count": 10,
+      "aos_group_count": 2,
+      "aos_course_count": 10,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSCSAIML_parsed.json",
+        "validation_json": "data/program_guides/validation/MSCSAIML_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSCSAIML_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSCSCS",
+      "family": "cs_grad",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202504",
+      "pub_date": "2/26/2025",
+      "page_count": 0,
+      "standard_path_row_count": 10,
+      "aos_group_count": 3,
+      "aos_course_count": 10,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSCSCS_parsed.json",
+        "validation_json": "data/program_guides/validation/MSCSCS_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSCSCS_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSCSHCI",
+      "family": "cs_grad",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202504",
+      "pub_date": "2/26/2025",
+      "page_count": 0,
+      "standard_path_row_count": 10,
+      "aos_group_count": 4,
+      "aos_course_count": 10,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSCSHCI_parsed.json",
+        "validation_json": "data/program_guides/validation/MSCSHCI_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSCSHCI_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSCSIA",
+      "family": "cs_grad",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202306",
+      "pub_date": "2/6/2025",
+      "page_count": 0,
+      "standard_path_row_count": 10,
+      "aos_group_count": 9,
+      "aos_course_count": 9,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSCSIA_parsed.json",
+        "validation_json": "data/program_guides/validation/MSCSIA_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSCSIA_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSCSUG",
+      "family": "cs_grad",
+      "confidence": "low",
+      "disposition": "partial-use",
+      "standard_path_status": "unusable",
+      "aos_status": "usable",
+      "major_caveat": "Standard Path unusable due to source PDF column extraction failure; AoS usable.",
+      "version": "202504",
+      "pub_date": "2/26/2025",
+      "page_count": 0,
+      "standard_path_row_count": 30,
+      "aos_group_count": 11,
+      "aos_course_count": 37,
+      "anomaly_count": 14,
+      "warning_count": 2,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSCSUG_parsed.json",
+        "validation_json": "data/program_guides/validation/MSCSUG_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSCSUG_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSDADE",
+      "family": "data_analytics_grad",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202408",
+      "pub_date": "5/15/24",
+      "page_count": 11,
+      "standard_path_row_count": 11,
+      "aos_group_count": 2,
+      "aos_course_count": 11,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSDADE_parsed.json",
+        "validation_json": "data/program_guides/validation/MSDADE_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSDADE_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSDADPE",
+      "family": "data_analytics_grad",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202408",
+      "pub_date": "5/15/24",
+      "page_count": 11,
+      "standard_path_row_count": 11,
+      "aos_group_count": 3,
+      "aos_course_count": 11,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSDADPE_parsed.json",
+        "validation_json": "data/program_guides/validation/MSDADPE_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSDADPE_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSDADS",
+      "family": "data_analytics_grad",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202408",
+      "pub_date": "5/15/24",
+      "page_count": 11,
+      "standard_path_row_count": 11,
+      "aos_group_count": 2,
+      "aos_course_count": 11,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSDADS_parsed.json",
+        "validation_json": "data/program_guides/validation/MSDADS_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSDADS_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSEDL",
+      "family": "education_grad",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202404",
+      "pub_date": "12/12/23",
+      "page_count": 13,
+      "standard_path_row_count": 13,
+      "aos_group_count": 3,
+      "aos_course_count": 13,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSEDL_parsed.json",
+        "validation_json": "data/program_guides/validation/MSEDL_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSEDL_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSHRM",
+      "family": "graduate_standard",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202507",
+      "pub_date": "7/3/2025",
+      "page_count": 0,
+      "standard_path_row_count": 10,
+      "aos_group_count": 3,
+      "aos_course_count": 10,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSHRM_parsed.json",
+        "validation_json": "data/program_guides/validation/MSHRM_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSHRM_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSIT",
+      "family": "graduate_standard",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202604",
+      "pub_date": "1/28/2026",
+      "page_count": 0,
+      "standard_path_row_count": 11,
+      "aos_group_count": 2,
+      "aos_course_count": 11,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSIT_parsed.json",
+        "validation_json": "data/program_guides/validation/MSIT_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSIT_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSITM",
+      "family": "graduate_standard",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "201808",
+      "pub_date": "12/15/22",
+      "page_count": 11,
+      "standard_path_row_count": 10,
+      "aos_group_count": 4,
+      "aos_course_count": 9,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSITM_parsed.json",
+        "validation_json": "data/program_guides/validation/MSITM_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSITM_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSITPM",
+      "family": "graduate_standard",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202604",
+      "pub_date": "2/3/2026",
+      "page_count": 0,
+      "standard_path_row_count": 10,
+      "aos_group_count": 2,
+      "aos_course_count": 10,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSITPM_parsed.json",
+        "validation_json": "data/program_guides/validation/MSITPM_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSITPM_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSITUG",
+      "family": "graduate_standard",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202604",
+      "pub_date": "11/20/2025",
+      "page_count": 0,
+      "standard_path_row_count": 35,
+      "aos_group_count": 12,
+      "aos_course_count": 35,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSITUG_parsed.json",
+        "validation_json": "data/program_guides/validation/MSITUG_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSITUG_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSMK",
+      "family": "graduate_standard",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202301",
+      "pub_date": "9/27/23",
+      "page_count": 11,
+      "standard_path_row_count": 11,
+      "aos_group_count": 2,
+      "aos_course_count": 11,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSMK_parsed.json",
+        "validation_json": "data/program_guides/validation/MSMK_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSMK_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSMKA",
+      "family": "graduate_standard",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202303",
+      "pub_date": "9/27/23",
+      "page_count": 11,
+      "standard_path_row_count": 11,
+      "aos_group_count": 2,
+      "aos_course_count": 11,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSMKA_parsed.json",
+        "validation_json": "data/program_guides/validation/MSMKA_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSMKA_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSML",
+      "family": "graduate_standard",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202007",
+      "pub_date": "9/27/23",
+      "page_count": 11,
+      "standard_path_row_count": 10,
+      "aos_group_count": 4,
+      "aos_course_count": 9,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSML_parsed.json",
+        "validation_json": "data/program_guides/validation/MSML_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSML_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSNUED",
+      "family": "nursing_msn",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202003",
+      "pub_date": "8/4/23",
+      "page_count": 13,
+      "standard_path_row_count": 15,
+      "aos_group_count": 2,
+      "aos_course_count": 15,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSNUED_parsed.json",
+        "validation_json": "data/program_guides/validation/MSNUED_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSNUED_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSNUFNP",
+      "family": "nursing_msn",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202003",
+      "pub_date": "8/4/23",
+      "page_count": 15,
+      "standard_path_row_count": 16,
+      "aos_group_count": 3,
+      "aos_course_count": 16,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSNUFNP_parsed.json",
+        "validation_json": "data/program_guides/validation/MSNUFNP_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSNUFNP_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSNULM",
+      "family": "nursing_msn",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202011",
+      "pub_date": "8/4/23",
+      "page_count": 14,
+      "standard_path_row_count": 15,
+      "aos_group_count": 2,
+      "aos_course_count": 15,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSNULM_parsed.json",
+        "validation_json": "data/program_guides/validation/MSNULM_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSNULM_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSNUNI",
+      "family": "nursing_msn",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202003",
+      "pub_date": "8/4/23",
+      "page_count": 13,
+      "standard_path_row_count": 14,
+      "aos_group_count": 2,
+      "aos_course_count": 14,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSNUNI_parsed.json",
+        "validation_json": "data/program_guides/validation/MSNUNI_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSNUNI_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSNUPMHNP",
+      "family": "nursing_msn",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202203",
+      "pub_date": "8/4/23",
+      "page_count": 15,
+      "standard_path_row_count": 17,
+      "aos_group_count": 3,
+      "aos_course_count": 17,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSNUPMHNP_parsed.json",
+        "validation_json": "data/program_guides/validation/MSNUPMHNP_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSNUPMHNP_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSRNNUED",
+      "family": "nursing_rn_msn",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": "degree_title is truncated in parsed output (cosmetic; use catalog title).",
+      "version": "202202",
+      "pub_date": "12/15/21",
+      "page_count": 20,
+      "standard_path_row_count": 32,
+      "aos_group_count": 4,
+      "aos_course_count": 32,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSRNNUED_parsed.json",
+        "validation_json": "data/program_guides/validation/MSRNNUED_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSRNNUED_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSRNNULM",
+      "family": "nursing_rn_msn",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": "degree_title is truncated in parsed output (cosmetic; use catalog title).",
+      "version": "202202",
+      "pub_date": "12/15/21",
+      "page_count": 21,
+      "standard_path_row_count": 32,
+      "aos_group_count": 4,
+      "aos_course_count": 32,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSRNNULM_parsed.json",
+        "validation_json": "data/program_guides/validation/MSRNNULM_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSRNNULM_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSRNNUNI",
+      "family": "nursing_rn_msn",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": "degree_title is truncated in parsed output (cosmetic; use catalog title).",
+      "version": "202202",
+      "pub_date": "12/15/21",
+      "page_count": 20,
+      "standard_path_row_count": 31,
+      "aos_group_count": 4,
+      "aos_course_count": 31,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSRNNUNI_parsed.json",
+        "validation_json": "data/program_guides/validation/MSRNNUNI_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSRNNUNI_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSSWEAIE",
+      "family": "swe_grad",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202504",
+      "pub_date": "11/5/2024",
+      "page_count": 0,
+      "standard_path_row_count": 10,
+      "aos_group_count": 2,
+      "aos_course_count": 10,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSSWEAIE_parsed.json",
+        "validation_json": "data/program_guides/validation/MSSWEAIE_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSSWEAIE_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSSWEDDD",
+      "family": "swe_grad",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202504",
+      "pub_date": "11/5/2024",
+      "page_count": 0,
+      "standard_path_row_count": 10,
+      "aos_group_count": 2,
+      "aos_course_count": 10,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSSWEDDD_parsed.json",
+        "validation_json": "data/program_guides/validation/MSSWEDDD_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSSWEDDD_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSSWEDOE",
+      "family": "swe_grad",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202504",
+      "pub_date": "11/5/2024",
+      "page_count": 0,
+      "standard_path_row_count": 10,
+      "aos_group_count": 2,
+      "aos_course_count": 10,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSSWEDOE_parsed.json",
+        "validation_json": "data/program_guides/validation/MSSWEDOE_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSSWEDOE_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "MSSWEUG",
+      "family": "swe_grad",
+      "confidence": "medium",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": "1 SP titles not found in AoS: ['Scripting and Programming Foundations']",
+      "version": "202504",
+      "pub_date": "1/3/2025",
+      "page_count": 0,
+      "standard_path_row_count": 38,
+      "aos_group_count": 10,
+      "aos_course_count": 38,
+      "anomaly_count": 0,
+      "warning_count": 2,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/MSSWEUG_parsed.json",
+        "validation_json": "data/program_guides/validation/MSSWEUG_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/MSSWEUG_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "PMCNUED",
+      "family": "nursing_pmc",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202110",
+      "pub_date": "3/1/23",
+      "page_count": 10,
+      "standard_path_row_count": 8,
+      "aos_group_count": 2,
+      "aos_course_count": 8,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/PMCNUED_parsed.json",
+        "validation_json": "data/program_guides/validation/PMCNUED_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/PMCNUED_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "PMCNUFNP",
+      "family": "nursing_pmc",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202306",
+      "pub_date": "3/3/23",
+      "page_count": 12,
+      "standard_path_row_count": 10,
+      "aos_group_count": 2,
+      "aos_course_count": 10,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/PMCNUFNP_parsed.json",
+        "validation_json": "data/program_guides/validation/PMCNUFNP_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/PMCNUFNP_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "PMCNULM",
+      "family": "nursing_pmc",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202110",
+      "pub_date": "3/1/23",
+      "page_count": 11,
+      "standard_path_row_count": 8,
+      "aos_group_count": 2,
+      "aos_course_count": 8,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/PMCNULM_parsed.json",
+        "validation_json": "data/program_guides/validation/PMCNULM_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/PMCNULM_manifest_row.json"
+      }
+    },
+    {
+      "program_code": "PMCNUPMHNP",
+      "family": "nursing_pmc",
+      "confidence": "high",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "aos_status": "usable",
+      "major_caveat": null,
+      "version": "202306",
+      "pub_date": "3/27/23",
+      "page_count": 13,
+      "standard_path_row_count": 11,
+      "aos_group_count": 2,
+      "aos_course_count": 11,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "artifact_presence": {
+        "parsed_json": "data/program_guides/parsed/PMCNUPMHNP_parsed.json",
+        "validation_json": "data/program_guides/validation/PMCNUPMHNP_validation.json",
+        "manifest_row_json": "data/program_guides/manifest_rows/PMCNUPMHNP_manifest_row.json"
+      }
+    }
+  ],
+  "known_issue_register": [
+    {
+      "code": "BSITM",
+      "severity": "major",
+      "status": "open-known",
+      "impact": "SP unusable; AoS usable",
+      "handling": "Use AoS only; exclude SP."
+    },
+    {
+      "code": "MATSPED",
+      "severity": "major",
+      "status": "open-known",
+      "impact": "SP unusable; AoS usable",
+      "handling": "Use AoS only; exclude SP."
+    },
+    {
+      "code": "MSCSUG",
+      "severity": "major",
+      "status": "open-known",
+      "impact": "SP unusable; AoS usable",
+      "handling": "Use AoS only; exclude SP."
+    },
+    {
+      "code": "BSPRN",
+      "severity": "major",
+      "status": "open-known",
+      "impact": "SP is Pre-Nursing-only; Nursing track AoS-only",
+      "handling": "Label SP as Pre-Nursing-only or suppress SP."
+    },
+    {
+      "code": "MEDETID",
+      "severity": "moderate",
+      "status": "open-known",
+      "impact": "capstone field captures first of 3 sequence courses",
+      "handling": "Use AoS/SP normally; treat capstone as partial."
+    },
+    {
+      "code": "BSNU",
+      "severity": "moderate",
+      "status": "open-known",
+      "impact": "version/pub_date/page_count unavailable",
+      "handling": "Do not require metadata fields for inclusion."
+    },
+    {
+      "code": "MSRNNUED,MSRNNULM,MSRNNUNI,MSCSAIML",
+      "severity": "low",
+      "status": "open-known",
+      "impact": "degree_title truncated in parsed output",
+      "handling": "Use catalog degree title as display title."
+    },
+    {
+      "code": "BSSWE_C",
+      "severity": "low",
+      "status": "open-known",
+      "impact": "one course has empty competency bullets",
+      "handling": "Suppress bullets for that single course."
+    },
+    {
+      "code": "MACCM",
+      "severity": "low",
+      "status": "open-known",
+      "impact": "cosmetic description/title quality issue",
+      "handling": "Allow with note or minor editorial cleanup at render time."
+    },
+    {
+      "code": "MAELLP12",
+      "severity": "low",
+      "status": "open-known",
+      "impact": "page_count=0 cosmetic metadata gap",
+      "handling": "Omit page count display for this guide."
+    }
+  ],
+  "safe_field_inventory": {
+    "safe_for_all_115_aos": [
+      "areas_of_study[].group",
+      "areas_of_study[].courses[].title",
+      "areas_of_study[].courses[].description"
+    ],
+    "safe_for_113_of_115_with_two_known_empty_competency_sets": [
+      "areas_of_study[].courses[].competency_bullets"
+    ],
+    "safe_for_112_of_115_guides": [
+      "standard_path[].title",
+      "standard_path[].cus"
+    ],
+    "safe_for_89_of_115_guides": [
+      "standard_path[].term"
+    ],
+    "not_safe_without_additional_work": [
+      "prerequisite_mentions as a structured public field",
+      "raw parsed degree_title for known truncated guides"
+    ]
+  },
+  "atlas_usable_summary": {
+    "v1_position": "Corpus is complete and validated for Phase C. Program-guide data is ready for schema design and policy gating, but not yet published to runtime artifacts.",
+    "what_is_ready_now": [
+      "Program-level AoS descriptions across all 115 guides",
+      "Program-level competency bullets with two known empty-course exceptions",
+      "Program-level Standard Path for 112 guides (plus 1 partial-SP guide)"
+    ],
+    "what_is_not_built_yet": [
+      "Phase D site artifact schema/build output in public/data/program_guides/",
+      "Phase E course-code matching"
+    ]
+  },
+  "artifact_map": {
+    "source_artifacts": {
+      "parsed": "data/program_guides/parsed/*_parsed.json",
+      "validation": "data/program_guides/validation/*_validation.json",
+      "manifest_rows": "data/program_guides/manifest_rows/*_manifest_row.json",
+      "family_validation": "data/program_guides/family_validation/*_rollout_summary.{json,md}",
+      "audit": "data/program_guides/audit/*"
+    },
+    "new_consolidation_artifacts": [
+      "data/program_guides/audit/PROGRAM_GUIDE_CORPUS_MANIFEST.md",
+      "data/program_guides/audit/PROGRAM_GUIDE_CORPUS_MANIFEST.json",
+      "data/program_guides/audit/program_guide_adversarial_review.md",
+      "data/program_guides/audit/program_guide_adversarial_review.json",
+      "data/program_guides/audit/program_guide_claims_register.md",
+      "data/program_guides/audit/program_guide_claims_register.json",
+      "_internal/program_guides/PROGRAM_GUIDE_PROJECT_STATUS.md"
+    ]
+  },
+  "chronology": [
+    {
+      "date": "2026-03-20",
+      "milestone": "Phase A/B groundwork and early family rollouts established manifest-first workflow and gate-test discipline."
+    },
+    {
+      "date": "2026-03-21",
+      "milestone": "Families were completed through staged gate + rollout sessions, including parser fixes for multiline/SP/bullet-edge cases."
+    },
+    {
+      "date": "2026-03-21",
+      "milestone": "Session 23 closed corpus artifact coverage to 115/115 and family-validated coverage to 115/115."
+    },
+    {
+      "date": "2026-03-21",
+      "milestone": "Enrichment planning artifacts were created (degree/course matrices, no-use list, final memo)."
+    },
+    {
+      "date": "2026-03-21",
+      "milestone": "Post-close verification reconciled counts, corrected overclaims, and produced a durable claims register + corpus manifest."
+    }
+  ],
+  "corrections_made": [
+    "Standard Path usable-guide count reconciled to 112 (not 113) because MATSPED SP is unusable.",
+    "Term-available guide count reconciled to 89 of 112 SP-usable guides (not 95 of 113).",
+    "teaching_mat rollout confidence corrected to 8 HIGH / 1 MEDIUM / 0 LOW.",
+    "graduate_standard rollout confidence corrected to 9 HIGH / 0 MEDIUM / 0 LOW.",
+    "Stale audit docs that still claim 38/115 are now superseded by this manifest."
+  ]
+}

@@ -1,0 +1,515 @@
+{
+  "program_code": "MATEES",
+  "program_code_effective": "MATEES",
+  "family": "teaching_mat",
+  "disposition": "full-use",
+  "sp_status": "usable-no-term",
+  "degree_title_guide": "Master of Arts in Teaching, English Education (Secondary)",
+  "guide_version": "202504",
+  "guide_pub_date": "1/23/2025",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "Teachers College",
+    "School of Education"
+  ],
+  "program_history_degree_headings": [
+    "Master of Arts in Teaching, English Education (Secondary)"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 20,
+    "sp_row_count": 20,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 5,
+      "unmapped": 8,
+      "ambiguous_current_exact": 7
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 5,
+      "unmapped": 8,
+      "ambiguous_current_exact": 7
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "The Education Professional",
+      "guide_title_normalized": "the education professional",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D752"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Learner Development and the Science of Learning",
+      "guide_title_normalized": "learner development and the science of learning",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Practices for Inclusive Classrooms",
+      "guide_title_normalized": "practices for inclusive classrooms",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D635"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Establishing Positive and Engaging Learning Environments",
+      "guide_title_normalized": "establishing positive and engaging learning environments",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Curriculum and Instructional Strategies for Meaningful Learning",
+      "guide_title_normalized": "curriculum and instructional strategies for meaningful learning",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Monitoring Student Learning Through Assessment",
+      "guide_title_normalized": "monitoring student learning through assessment",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Technology for Instruction and Online Pedagogy",
+      "guide_title_normalized": "technology for instruction and online pedagogy",
+      "aos_group": "Professional Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Technology and Ethics: A Look at Emerging Trends and Society",
+      "guide_title_normalized": "technology and ethics a look at emerging trends and society",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "General Secondary Methods",
+      "guide_title_normalized": "general secondary methods",
+      "aos_group": "Secondary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D807",
+        "D808"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Secondary English Language Arts Curriculum",
+      "guide_title_normalized": "secondary english language arts curriculum",
+      "aos_group": "Secondary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D841"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Teaching Adolescent Literature in Secondary Schools",
+      "guide_title_normalized": "teaching adolescent literature in secondary schools",
+      "aos_group": "Secondary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Teaching Writing in Secondary Schools",
+      "guide_title_normalized": "teaching writing in secondary schools",
+      "aos_group": "Secondary Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D839"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Early Clinical in Secondary Education",
+      "guide_title_normalized": "early clinical in secondary education",
+      "aos_group": "Clinical Experiences",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D707",
+        "D726"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Advanced Clinical in Secondary Education",
+      "guide_title_normalized": "advanced clinical in secondary education",
+      "aos_group": "Clinical Experiences",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D709",
+        "D729"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Education Portfolio",
+      "guide_title_normalized": "education portfolio",
+      "aos_group": "Clinical Experiences",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D743"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Secondary Literacy Methods and Interventions",
+      "guide_title_normalized": "secondary literacy methods and interventions",
+      "aos_group": "Pedagogy and Teaching Methods",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D769",
+        "D770"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Teaching English Language Arts in Secondary Schools",
+      "guide_title_normalized": "teaching english language arts in secondary schools",
+      "aos_group": "English Language Learning",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Secondary Disciplinary Literacy",
+      "guide_title_normalized": "secondary disciplinary literacy",
+      "aos_group": "Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C728",
+        "C729",
+        "D162",
+        "D805",
+        "D806"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Student Teaching I in Secondary Education",
+      "guide_title_normalized": "student teaching i in secondary education",
+      "aos_group": "Student Teaching",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D533",
+        "D534",
+        "D721",
+        "D741"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Student Teaching II in Secondary Education",
+      "guide_title_normalized": "student teaching ii in secondary education",
+      "aos_group": "Student Teaching",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D535",
+        "D536",
+        "D722",
+        "D742"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "The Education Professional",
+      "guide_title_normalized": "the education professional",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D752"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Learner Development and the Science of Learning",
+      "guide_title_normalized": "learner development and the science of learning",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 2,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Practices for Inclusive Classrooms",
+      "guide_title_normalized": "practices for inclusive classrooms",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D635"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Establishing Positive and Engaging Learning Environments",
+      "guide_title_normalized": "establishing positive and engaging learning environments",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 2,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Technology and Ethics: A Look at Emerging Trends and Society",
+      "guide_title_normalized": "technology and ethics a look at emerging trends and society",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 2,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Curriculum and Instructional Strategies for Meaningful Learning",
+      "guide_title_normalized": "curriculum and instructional strategies for meaningful learning",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 2,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Monitoring Student Learning Through Assessment",
+      "guide_title_normalized": "monitoring student learning through assessment",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 2,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Technology for Instruction and Online Pedagogy",
+      "guide_title_normalized": "technology for instruction and online pedagogy",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 2,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "General Secondary Methods",
+      "guide_title_normalized": "general secondary methods",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 2,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D807",
+        "D808"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Secondary English Language Arts Curriculum",
+      "guide_title_normalized": "secondary english language arts curriculum",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D841"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Teaching Adolescent Literature in Secondary Schools",
+      "guide_title_normalized": "teaching adolescent literature in secondary schools",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 2,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Early Clinical in Secondary Education",
+      "guide_title_normalized": "early clinical in secondary education",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 2,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D707",
+        "D726"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Secondary Literacy Methods and Interventions",
+      "guide_title_normalized": "secondary literacy methods and interventions",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 2,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D769",
+        "D770"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Teaching Writing in Secondary Schools",
+      "guide_title_normalized": "teaching writing in secondary schools",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D839"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Teaching English Language Arts in Secondary Schools",
+      "guide_title_normalized": "teaching english language arts in secondary schools",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 2,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Secondary Disciplinary Literacy",
+      "guide_title_normalized": "secondary disciplinary literacy",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 2,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C728",
+        "C729",
+        "D162",
+        "D805",
+        "D806"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Advanced Clinical in Secondary Education",
+      "guide_title_normalized": "advanced clinical in secondary education",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 2,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D709",
+        "D729"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Student Teaching I in Secondary Education",
+      "guide_title_normalized": "student teaching i in secondary education",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 4,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D533",
+        "D534",
+        "D721",
+        "D741"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Student Teaching II in Secondary Education",
+      "guide_title_normalized": "student teaching ii in secondary education",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 4,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D535",
+        "D536",
+        "D722",
+        "D742"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Education Portfolio",
+      "guide_title_normalized": "education portfolio",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 1,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D743"
+      ]
+    }
+  ]
+}

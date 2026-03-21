@@ -1,7 +1,7 @@
 {
   "report_type": "enrichment_final_memo",
   "date": "2026-03-21",
-  "basis": "Phase C complete — 115/115 guides parsed",
+  "basis": "Phase C complete \u2014 115/115 guides parsed",
   "corpus_summary": {
     "total_guides": 115,
     "high_confidence": 96,
@@ -11,8 +11,8 @@
     "descriptions_available": 2593,
     "competency_sets_available": 2591,
     "sp_rows": 2568,
-    "sp_eligible_guides": 113,
-    "families_complete": 18,
+    "sp_eligible_guides": 112,
+    "families_complete": 19,
     "education_grad_complete": true
   },
   "recommended_sequence": [
@@ -41,7 +41,7 @@
       "estimated_coverage": "700-900 distinct course codes",
       "risk": "medium",
       "steps": [
-        "Build title→code lookup from catalog data",
+        "Build title\u2192code lookup from catalog data",
         "Fuzzy-match guide titles against catalog titles",
         "Flag non-matches for manual review",
         "Dedup descriptions per course code",
@@ -51,11 +51,31 @@
     }
   ],
   "risk_summary": [
-    {"risk": "Phase D breaks program pages", "level": "low", "mitigation": "Guide data is additive; catalog data unchanged"},
-    {"risk": "MEDIUM guides producing incorrect content", "level": "low", "mitigation": "All reviewed; issues are structural not content-quality"},
-    {"risk": "Guide descriptions outdated", "level": "medium", "mitigation": "Version fields available for most guides"},
-    {"risk": "Phase E title-matching errors", "level": "medium", "mitigation": "Gate test on sample required"}
+    {
+      "risk": "Phase D breaks program pages",
+      "level": "low",
+      "mitigation": "Guide data is additive; catalog data unchanged"
+    },
+    {
+      "risk": "MEDIUM guides producing incorrect content",
+      "level": "low",
+      "mitigation": "All reviewed; issues are structural not content-quality"
+    },
+    {
+      "risk": "Guide descriptions outdated",
+      "level": "medium",
+      "mitigation": "Version fields available for most guides"
+    },
+    {
+      "risk": "Phase E title-matching errors",
+      "level": "medium",
+      "mitigation": "Gate test on sample required"
+    }
   ],
-  "sp_exclusions_phase_d": ["BSITM", "MSCSUG", "MATSPED"],
+  "sp_exclusions_phase_d": [
+    "BSITM",
+    "MSCSUG",
+    "MATSPED"
+  ],
   "all_field_exclusions_reference": "enrichment_no_use_list.json"
 }

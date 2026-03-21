@@ -1,0 +1,291 @@
+{
+  "generated_on": "2026-03-21",
+  "sample_size": 11,
+  "selection_rationale": "Preliminary breadth sample across schools/colleges, UG+grad, cert-heavy+non-cert programs, and partial-use caveats. Suitable for reconnaissance, not full-corpus uniformity claims.",
+  "coverage_checks": {
+    "includes_cert_heavy": true,
+    "includes_business": true,
+    "includes_health_or_nursing": true,
+    "includes_education": true,
+    "includes_graduate": true,
+    "includes_undergraduate": true,
+    "includes_partial_use": true
+  },
+  "sampled_guides": [
+    {
+      "program_code": "BSCSIA",
+      "degree_title": "Bachelor of Science, Cybersecurity and Information Assurance",
+      "family": "cs_ug",
+      "college_or_school": "College of Information Technology | School of Technology",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "confidence": "medium",
+      "why_selected": "UG School of Technology cert-heavy cybersecurity baseline with explicit cert exam language.",
+      "major_course_information_surfaces": [
+        "standard_path",
+        "areas_of_study groups + courses",
+        "course descriptions",
+        "competency bullets",
+        "capstone section"
+      ],
+      "cert_signal": {
+        "courses_with_cert_mentions": 8,
+        "cert_mentions": 10
+      },
+      "prereq_signal": {
+        "courses_with_prereq_mentions": 5,
+        "prereq_mentions": 7
+      }
+    },
+    {
+      "program_code": "BSCNEAWS",
+      "degree_title": "Bachelor of Science, Cloud and Network Engineering - Amazon Web",
+      "family": "cs_ug",
+      "college_or_school": "School of Technology",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "confidence": "high",
+      "why_selected": "UG School of Technology cert-heavy cloud/network track with AWS-specific course cluster.",
+      "major_course_information_surfaces": [
+        "standard_path",
+        "areas_of_study groups + courses",
+        "course descriptions",
+        "competency bullets",
+        "capstone section (not present)"
+      ],
+      "cert_signal": {
+        "courses_with_cert_mentions": 8,
+        "cert_mentions": 11
+      },
+      "prereq_signal": {
+        "courses_with_prereq_mentions": 2,
+        "prereq_mentions": 3
+      }
+    },
+    {
+      "program_code": "MSCSIA",
+      "degree_title": "Master of Science, Cybersecurity and Information Assurance",
+      "family": "cs_grad",
+      "college_or_school": "College of Information Technology | School of Technology",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "confidence": "high",
+      "why_selected": "Graduate School of Technology cybersecurity variant to compare cert signals vs UG guides.",
+      "major_course_information_surfaces": [
+        "standard_path",
+        "areas_of_study groups + courses",
+        "course descriptions",
+        "competency bullets",
+        "capstone section"
+      ],
+      "cert_signal": {
+        "courses_with_cert_mentions": 2,
+        "cert_mentions": 2
+      },
+      "prereq_signal": {
+        "courses_with_prereq_mentions": 0,
+        "prereq_mentions": 0
+      }
+    },
+    {
+      "program_code": "MSIT",
+      "degree_title": "Master of Science, Information Technology",
+      "family": "graduate_standard",
+      "college_or_school": "School of Technology",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "confidence": "high",
+      "why_selected": "Graduate School of Technology non-cert-heavy IT guide for contrast in course enrichment surfaces.",
+      "major_course_information_surfaces": [
+        "standard_path",
+        "areas_of_study groups + courses",
+        "course descriptions",
+        "competency bullets",
+        "capstone section (not present)"
+      ],
+      "cert_signal": {
+        "courses_with_cert_mentions": 0,
+        "cert_mentions": 0
+      },
+      "prereq_signal": {
+        "courses_with_prereq_mentions": 1,
+        "prereq_mentions": 1
+      }
+    },
+    {
+      "program_code": "BSACC",
+      "degree_title": "Bachelor of Science, Accounting",
+      "family": "standard_bs",
+      "college_or_school": "School of Business",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "confidence": "high",
+      "why_selected": "UG School of Business core business program to test non-IT cert/prereq noise and AoS quality.",
+      "major_course_information_surfaces": [
+        "standard_path",
+        "areas_of_study groups + courses",
+        "course descriptions",
+        "competency bullets",
+        "capstone section (not present)"
+      ],
+      "cert_signal": {
+        "courses_with_cert_mentions": 2,
+        "cert_mentions": 2
+      },
+      "prereq_signal": {
+        "courses_with_prereq_mentions": 5,
+        "prereq_mentions": 6
+      }
+    },
+    {
+      "program_code": "MBA",
+      "degree_title": "Master of Business Administration",
+      "family": "mba",
+      "college_or_school": "College of Business | School of Business",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "confidence": "high",
+      "why_selected": "Graduate School/College of Business guide with capstone section and clean AoS structure.",
+      "major_course_information_surfaces": [
+        "standard_path",
+        "areas_of_study groups + courses",
+        "course descriptions",
+        "competency bullets",
+        "capstone section"
+      ],
+      "cert_signal": {
+        "courses_with_cert_mentions": 0,
+        "cert_mentions": 0
+      },
+      "prereq_signal": {
+        "courses_with_prereq_mentions": 0,
+        "prereq_mentions": 0
+      }
+    },
+    {
+      "program_code": "BSNU",
+      "degree_title": "Bachelor of Science, Nursing",
+      "family": "nursing_ug",
+      "college_or_school": "College of Health Professions | Leavitt School of Health",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "confidence": "medium",
+      "why_selected": "UG Leavitt School of Health nursing program with strong course descriptions and competency bullets.",
+      "major_course_information_surfaces": [
+        "standard_path",
+        "areas_of_study groups + courses",
+        "course descriptions",
+        "competency bullets",
+        "capstone section (not present)"
+      ],
+      "cert_signal": {
+        "courses_with_cert_mentions": 0,
+        "cert_mentions": 0
+      },
+      "prereq_signal": {
+        "courses_with_prereq_mentions": 0,
+        "prereq_mentions": 0
+      }
+    },
+    {
+      "program_code": "BSPRN",
+      "degree_title": "Bachelor of Science, Nursing - Prelicensure (Pre-Nursing/Nursing)",
+      "family": "nursing_ug",
+      "college_or_school": "UNKNOWN (not present in program_history.csv row set)",
+      "disposition": "partial-use",
+      "standard_path_status": "partial",
+      "confidence": "medium",
+      "why_selected": "UG nursing partial-use caveat guide (SP partial by dual-track design), useful for limit analysis.",
+      "major_course_information_surfaces": [
+        "standard_path",
+        "areas_of_study groups + courses",
+        "course descriptions",
+        "competency bullets",
+        "capstone section (not present)"
+      ],
+      "cert_signal": {
+        "courses_with_cert_mentions": 0,
+        "cert_mentions": 0
+      },
+      "prereq_signal": {
+        "courses_with_prereq_mentions": 12,
+        "prereq_mentions": 12
+      }
+    },
+    {
+      "program_code": "MHA",
+      "degree_title": "Master of Healthcare Administration",
+      "family": "healthcare_grad",
+      "college_or_school": "Leavitt School of Health",
+      "disposition": "full-use",
+      "standard_path_status": "usable-with-term",
+      "confidence": "high",
+      "why_selected": "Graduate Leavitt School of Health program with capstone and compact AoS profile.",
+      "major_course_information_surfaces": [
+        "standard_path",
+        "areas_of_study groups + courses",
+        "course descriptions",
+        "competency bullets",
+        "capstone section"
+      ],
+      "cert_signal": {
+        "courses_with_cert_mentions": 0,
+        "cert_mentions": 0
+      },
+      "prereq_signal": {
+        "courses_with_prereq_mentions": 0,
+        "prereq_mentions": 0
+      }
+    },
+    {
+      "program_code": "BAELED",
+      "degree_title": "Bachelor of Arts, Elementary Education",
+      "family": "education_ba",
+      "college_or_school": "Teachers College | School of Education",
+      "disposition": "full-use",
+      "standard_path_status": "usable-no-term",
+      "confidence": "high",
+      "why_selected": "UG Teachers College/School of Education guide with no-term SP and rich clinical/student-teaching AoS groups.",
+      "major_course_information_surfaces": [
+        "standard_path",
+        "areas_of_study groups + courses",
+        "course descriptions",
+        "competency bullets",
+        "capstone section (not present)"
+      ],
+      "cert_signal": {
+        "courses_with_cert_mentions": 0,
+        "cert_mentions": 0
+      },
+      "prereq_signal": {
+        "courses_with_prereq_mentions": 1,
+        "prereq_mentions": 1
+      }
+    },
+    {
+      "program_code": "MATSPED",
+      "degree_title": "Master of Arts in Teaching, Special Education",
+      "family": "teaching_mat",
+      "college_or_school": "Teachers College | School of Education",
+      "disposition": "partial-use",
+      "standard_path_status": "unusable",
+      "confidence": "medium",
+      "why_selected": "Graduate Teachers College/School of Education partial-use guide (SP unusable, AoS usable) for caveat boundaries.",
+      "major_course_information_surfaces": [
+        "standard_path",
+        "areas_of_study groups + courses",
+        "course descriptions",
+        "competency bullets",
+        "capstone section (not present)"
+      ],
+      "cert_signal": {
+        "courses_with_cert_mentions": 1,
+        "cert_mentions": 1
+      },
+      "prereq_signal": {
+        "courses_with_prereq_mentions": 0,
+        "prereq_mentions": 0
+      }
+    }
+  ]
+}

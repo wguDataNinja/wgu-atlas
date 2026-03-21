@@ -1,0 +1,341 @@
+{
+  "program_code": "MSEDL",
+  "program_code_effective": "MSEDL",
+  "family": "education_grad",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Master of Science, Educational Leadership",
+  "guide_version": "202404",
+  "guide_pub_date": "12/12/23",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "Teachers College",
+    "School of Education"
+  ],
+  "program_history_degree_headings": [
+    "Master of Science, Educational Leadership"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 13,
+    "sp_row_count": 13,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 11,
+      "unmapped": 2
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 11,
+      "unmapped": 2
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Leadership Foundations and Ethics",
+      "guide_title_normalized": "leadership foundations and ethics",
+      "aos_group": "Educational Leadership",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D016"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "School Law",
+      "guide_title_normalized": "school law",
+      "aos_group": "Educational Leadership",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D017"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Leadership of Curriculum Design and Instruction",
+      "guide_title_normalized": "leadership of curriculum design and instruction",
+      "aos_group": "Educational Leadership",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D021"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "People and Talent in Educational Leadership",
+      "guide_title_normalized": "people and talent in educational leadership",
+      "aos_group": "Educational Leadership",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D022"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Practicum in Educational Leadership - Focus on Professional Practices",
+      "guide_title_normalized": "practicum in educational leadership focus on professional practices",
+      "aos_group": "Educational Leadership",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "School Financial Leadership",
+      "guide_title_normalized": "school financial leadership",
+      "aos_group": "Educational Leadership",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D023"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Systems Management and School Operations",
+      "guide_title_normalized": "systems management and school operations",
+      "aos_group": "Educational Leadership",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D034"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Practicum in Educational Leadership - Focus on Instruction and Operations",
+      "guide_title_normalized": "practicum in educational leadership focus on instruction and operations",
+      "aos_group": "Educational Leadership",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Educational Leadership Capstone",
+      "guide_title_normalized": "educational leadership capstone",
+      "aos_group": "Educational Leadership",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D038"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Leading Inclusive Schools",
+      "guide_title_normalized": "leading inclusive schools",
+      "aos_group": "Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D018"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data Literacy and Evidence-Based Practices",
+      "guide_title_normalized": "data literacy and evidence based practices",
+      "aos_group": "Graduate Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D019"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Cultural Competency and Social-Emotional Learning",
+      "guide_title_normalized": "cultural competency and social emotional learning",
+      "aos_group": "Graduate Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D020"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Educational Inquiry",
+      "guide_title_normalized": "educational inquiry",
+      "aos_group": "Graduate Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D035"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Leadership Foundations and Ethics",
+      "guide_title_normalized": "leadership foundations and ethics",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D016"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "School Law",
+      "guide_title_normalized": "school law",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D017"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Leading Inclusive Schools",
+      "guide_title_normalized": "leading inclusive schools",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D018"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Data Literacy and Evidence-Based Practices",
+      "guide_title_normalized": "data literacy and evidence based practices",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D019"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Cultural Competency and Social-Emotional Learning",
+      "guide_title_normalized": "cultural competency and social emotional learning",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D020"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Leadership of Curriculum Design and Instruction",
+      "guide_title_normalized": "leadership of curriculum design and instruction",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D021"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "People and Talent in Educational Leadership",
+      "guide_title_normalized": "people and talent in educational leadership",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D022"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Practicum in Educational Leadership - Focus on Professional Practices",
+      "guide_title_normalized": "practicum in educational leadership focus on professional practices",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "School Financial Leadership",
+      "guide_title_normalized": "school financial leadership",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D023"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Systems Management and School Operations",
+      "guide_title_normalized": "systems management and school operations",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D034"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Practicum in Educational Leadership - Focus on Instruction and Operations",
+      "guide_title_normalized": "practicum in educational leadership focus on instruction and operations",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Educational Inquiry",
+      "guide_title_normalized": "educational inquiry",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D035"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Educational Leadership Capstone",
+      "guide_title_normalized": "educational leadership capstone",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D038"
+      ]
+    }
+  ]
+}

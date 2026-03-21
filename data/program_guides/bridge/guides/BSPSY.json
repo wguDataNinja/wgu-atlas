@@ -1,0 +1,858 @@
+{
+  "program_code": "BSPSY",
+  "program_code_effective": "BSPSY",
+  "family": "standard_bs",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Bachelor of Science in Psychology",
+  "guide_version": "202404",
+  "guide_pub_date": "2/16/24",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "Leavitt School of Health"
+  ],
+  "program_history_degree_headings": [
+    "Bachelor of Science in Psychology"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 34,
+    "sp_row_count": 34,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 27,
+      "exact_observed_variant_unique": 3,
+      "unmapped": 1,
+      "ambiguous_current_exact": 3
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 27,
+      "exact_observed_variant_unique": 3,
+      "ambiguous_current_exact": 3,
+      "unmapped": 1
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Learning Strategies in Higher Education",
+      "guide_title_normalized": "learning strategies in higher education",
+      "aos_group": "Foundations of Success",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D389"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Composition: Writing with a Strategy",
+      "guide_title_normalized": "composition writing with a strategy",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D269"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Psychology",
+      "guide_title_normalized": "introduction to psychology",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C180"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Critical Thinking: Reason and Evidence",
+      "guide_title_normalized": "critical thinking reason and evidence",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D265"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Communication: Connecting with Others",
+      "guide_title_normalized": "introduction to communication connecting with others",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D268"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Human Growth and Development",
+      "guide_title_normalized": "human growth and development",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D202"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Applied Probability and Statistics",
+      "guide_title_normalized": "applied probability and statistics",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C955"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Sociology",
+      "guide_title_normalized": "introduction to sociology",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C273"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Composition: Successful Self-Expression",
+      "guide_title_normalized": "composition successful self expression",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D270"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Physical and Human Geography",
+      "guide_title_normalized": "introduction to physical and human geography",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D199"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Research Methods",
+      "guide_title_normalized": "introduction to research methods",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D581"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Statistics for Research",
+      "guide_title_normalized": "introduction to statistics for research",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D582"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Health, Fitness, and Wellness",
+      "guide_title_normalized": "health fitness and wellness",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C458"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Fundamentals of Anatomy and Physiology",
+      "guide_title_normalized": "fundamentals of anatomy and physiology",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D203"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Influential Communication through Visual Design and Storytelling",
+      "guide_title_normalized": "influential communication through visual design and storytelling",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "World History: Diverse Cultures and Global Connections",
+      "guide_title_normalized": "world history diverse cultures and global connections",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D266"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Theories of Personality",
+      "guide_title_normalized": "theories of personality",
+      "aos_group": "Psychology",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D564"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Cultural Awareness and Ethics",
+      "guide_title_normalized": "cultural awareness and ethics",
+      "aos_group": "Psychology",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D565"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Psychology of Learning",
+      "guide_title_normalized": "psychology of learning",
+      "aos_group": "Psychology",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D566"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Social Psychology",
+      "guide_title_normalized": "social psychology",
+      "aos_group": "Psychology",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D567"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Health Equity and Social Determinants of Health",
+      "guide_title_normalized": "health equity and social determinants of health",
+      "aos_group": "Psychology",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D057",
+        "D397"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Adult Psychology",
+      "guide_title_normalized": "adult psychology",
+      "aos_group": "Psychology",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D569"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Cognitive Psychology",
+      "guide_title_normalized": "cognitive psychology",
+      "aos_group": "Psychology",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D570"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Psychopathology",
+      "guide_title_normalized": "psychopathology",
+      "aos_group": "Psychology",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D571"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Career and Lifelong Learning",
+      "guide_title_normalized": "career and lifelong learning",
+      "aos_group": "Psychology",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D572"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Understanding Substance Abuse & Addiction",
+      "guide_title_normalized": "understanding substance abuse addiction",
+      "aos_group": "Psychology",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D573"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Health Psychology",
+      "guide_title_normalized": "health psychology",
+      "aos_group": "Psychology",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D575"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Neuropsychology",
+      "guide_title_normalized": "neuropsychology",
+      "aos_group": "Psychology",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D574"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Mental Health Awareness and Education",
+      "guide_title_normalized": "mental health awareness and education",
+      "aos_group": "Psychology",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D579"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Consumer Behavior",
+      "guide_title_normalized": "consumer behavior",
+      "aos_group": "Psychology",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D175",
+        "D616"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Industrial and Organizational Psychology",
+      "guide_title_normalized": "industrial and organizational psychology",
+      "aos_group": "Psychology",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D576"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Team Dynamics",
+      "guide_title_normalized": "team dynamics",
+      "aos_group": "Psychology",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D577"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Capstone in Psychology",
+      "guide_title_normalized": "capstone in psychology",
+      "aos_group": "Psychology",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D578"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Biology",
+      "guide_title_normalized": "introduction to biology",
+      "aos_group": "General Science Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C190",
+        "C907"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Learning Strategies in Higher Education",
+      "guide_title_normalized": "learning strategies in higher education",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D389"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Composition: Writing with a Strategy",
+      "guide_title_normalized": "composition writing with a strategy",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D269"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Psychology",
+      "guide_title_normalized": "introduction to psychology",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C180"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Critical Thinking: Reason and Evidence",
+      "guide_title_normalized": "critical thinking reason and evidence",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D265"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Communication: Connecting with Others",
+      "guide_title_normalized": "introduction to communication connecting with others",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D268"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Human Growth and Development",
+      "guide_title_normalized": "human growth and development",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D202"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Applied Probability and Statistics",
+      "guide_title_normalized": "applied probability and statistics",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C955"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Sociology",
+      "guide_title_normalized": "introduction to sociology",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C273"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Composition: Successful Self-Expression",
+      "guide_title_normalized": "composition successful self expression",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D270"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Theories of Personality",
+      "guide_title_normalized": "theories of personality",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D564"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Cultural Awareness and Ethics",
+      "guide_title_normalized": "cultural awareness and ethics",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D565"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Physical and Human Geography",
+      "guide_title_normalized": "introduction to physical and human geography",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D199"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Psychology of Learning",
+      "guide_title_normalized": "psychology of learning",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D566"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Social Psychology",
+      "guide_title_normalized": "social psychology",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D567"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Research Methods",
+      "guide_title_normalized": "introduction to research methods",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D581"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Biology",
+      "guide_title_normalized": "introduction to biology",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C190",
+        "C907"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Health Equity and Social Determinants of Health",
+      "guide_title_normalized": "health equity and social determinants of health",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D057",
+        "D397"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Adult Psychology",
+      "guide_title_normalized": "adult psychology",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D569"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Statistics for Research",
+      "guide_title_normalized": "introduction to statistics for research",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D582"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Cognitive Psychology",
+      "guide_title_normalized": "cognitive psychology",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D570"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Health, Fitness, and Wellness",
+      "guide_title_normalized": "health fitness and wellness",
+      "aos_group": null,
+      "sp_term": 5,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C458"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Psychopathology",
+      "guide_title_normalized": "psychopathology",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D571"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Career and Lifelong Learning",
+      "guide_title_normalized": "career and lifelong learning",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D572"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Fundamentals of Anatomy and Physiology",
+      "guide_title_normalized": "fundamentals of anatomy and physiology",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D203"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Understanding Substance Abuse & Addiction",
+      "guide_title_normalized": "understanding substance abuse addiction",
+      "aos_group": null,
+      "sp_term": 6,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D573"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Influential Communication through Visual Design and Storytelling",
+      "guide_title_normalized": "influential communication through visual design and storytelling",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Health Psychology",
+      "guide_title_normalized": "health psychology",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D575"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "World History: Diverse Cultures and Global Connections",
+      "guide_title_normalized": "world history diverse cultures and global connections",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D266"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Neuropsychology",
+      "guide_title_normalized": "neuropsychology",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D574"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Mental Health Awareness and Education",
+      "guide_title_normalized": "mental health awareness and education",
+      "aos_group": null,
+      "sp_term": 7,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D579"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Consumer Behavior",
+      "guide_title_normalized": "consumer behavior",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D175",
+        "D616"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Industrial and Organizational Psychology",
+      "guide_title_normalized": "industrial and organizational psychology",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D576"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Team Dynamics",
+      "guide_title_normalized": "team dynamics",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D577"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Capstone in Psychology",
+      "guide_title_normalized": "capstone in psychology",
+      "aos_group": null,
+      "sp_term": 8,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D578"
+      ]
+    }
+  ]
+}

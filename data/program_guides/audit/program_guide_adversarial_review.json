@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-03-21",
+  "objective": "Stress-test project claims against filesystem evidence and known caveats.",
+  "summary": {
+    "justified": 3,
+    "partially_justified": 1,
+    "overstated": 3
+  },
+  "claims": [
+    {
+      "claim": "We scraped all the program guides.",
+      "status": "justified",
+      "evidence": "115 parsed + 115 validation + 115 manifest_row artifacts exist on disk.",
+      "safe_wording": "We have complete on-disk extraction artifacts for all 115 guides in the current corpus."
+    },
+    {
+      "claim": "We know what is in them all.",
+      "status": "partially_justified",
+      "evidence": "AoS content is complete, but 4 guides are partial-use and 3 have unusable SP content.",
+      "safe_wording": "We have full AoS coverage across all 115 guides, with known SP limitations in 3 guides and one dual-track SP partial."
+    },
+    {
+      "claim": "We validated the corpus.",
+      "status": "justified_with_scope",
+      "evidence": "Family validation rollouts and per-guide validation files exist for all 115 guides.",
+      "safe_wording": "All 115 guides have validation artifacts and family-level rollout records; validation caveats are documented per guide."
+    },
+    {
+      "claim": "We can use the guides for Atlas enrichment.",
+      "status": "justified_with_constraints",
+      "evidence": "111 full-use + 4 partial-use; no excluded guides.",
+      "safe_wording": "The corpus is usable for Atlas enrichment planning now: 111 full-use guides and 4 partial-use guides with explicit exclusions."
+    },
+    {
+      "claim": "We present the most useful guide-derived information where relevant.",
+      "status": "overstated_currently",
+      "evidence": "Phase D build and runtime wiring are not yet implemented.",
+      "safe_wording": "We have identified and validated the most useful guide-derived fields; live product presentation is pending Phase D build and integration."
+    },
+    {
+      "claim": "Standard Path is available for all guides.",
+      "status": "overstated",
+      "evidence": "SP unusable for BSITM, MATSPED, MSCSUG; BSPRN SP is partial by track design.",
+      "safe_wording": "Standard Path is usable for 111 guides, partial for BSPRN, and unusable for 3 guides due to source extraction artifacts."
+    },
+    {
+      "claim": "Guide metadata is complete everywhere.",
+      "status": "overstated",
+      "evidence": "BSNU, BSSWE_C, BSSWE_Java lack version/pub_date.",
+      "safe_wording": "Most guides include version/pub_date metadata; known metadata gaps are documented and non-blocking for AoS use."
+    }
+  ],
+  "hard_caveats": [
+    "BSITM SP unusable",
+    "MATSPED SP unusable",
+    "MSCSUG SP unusable",
+    "BSPRN SP partial (dual-track)",
+    "MEDETID capstone partial"
+  ],
+  "recommended_public_boundary": "Do not imply live site integration. Say parsed+validated corpus is complete and ready for Phase D schema/build work."
+}

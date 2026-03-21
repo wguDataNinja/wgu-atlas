@@ -1,0 +1,679 @@
+{
+  "program_code": "BSPRN",
+  "program_code_effective": null,
+  "family": "nursing_ug",
+  "disposition": "partial-use",
+  "sp_status": "partial",
+  "degree_title_guide": "Bachelor of Science, Nursing - Prelicensure (Pre-Nursing/Nursing)",
+  "guide_version": "202303",
+  "guide_pub_date": "10/5/22",
+  "program_history_status": null,
+  "program_history_colleges": [],
+  "program_history_degree_headings": [],
+  "alignment": {
+    "program_history_exists": false,
+    "degree_heading_match_class": "missing_program_history",
+    "version_alignment_class": "missing_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 34,
+    "sp_row_count": 19,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 20,
+      "ambiguous_current_exact": 6,
+      "exact_observed_variant_unique": 7,
+      "unmapped": 1
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 12,
+      "ambiguous_current_exact": 2,
+      "exact_observed_variant_unique": 5
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Critical Thinking: Reason and Evidence",
+      "guide_title_normalized": "critical thinking reason and evidence",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D265"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Composition: Writing with a Strategy",
+      "guide_title_normalized": "composition writing with a strategy",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D269"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Integrated Physical Sciences",
+      "guide_title_normalized": "integrated physical sciences",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C165",
+        "C908"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Communication: Connecting with Others",
+      "guide_title_normalized": "introduction to communication connecting with others",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D268"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Global Arts and Humanities",
+      "guide_title_normalized": "global arts and humanities",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D198"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Chemistry",
+      "guide_title_normalized": "introduction to chemistry",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D425"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Anatomy and Physiology I with Lab",
+      "guide_title_normalized": "anatomy and physiology i with lab",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D312"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Psychology",
+      "guide_title_normalized": "introduction to psychology",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C180"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "World History: Diverse Cultures and Global Connections",
+      "guide_title_normalized": "world history diverse cultures and global connections",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D266"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Applied Healthcare Statistics",
+      "guide_title_normalized": "applied healthcare statistics",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C784"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Anatomy and Physiology II with Lab",
+      "guide_title_normalized": "anatomy and physiology ii with lab",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D313"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Microbiology with Lab: A Fundamental Approach",
+      "guide_title_normalized": "microbiology with lab a fundamental approach",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D311"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Introduction to Sociology",
+      "guide_title_normalized": "introduction to sociology",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C273"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Applied Algebra",
+      "guide_title_normalized": "applied algebra",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C957"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Human Growth and Development",
+      "guide_title_normalized": "human growth and development",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D202"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Pathophysiology",
+      "guide_title_normalized": "pathophysiology",
+      "aos_group": "General Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C805",
+        "D069",
+        "D236"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Health and Wellness Through Nutritional Sciences",
+      "guide_title_normalized": "health and wellness through nutritional sciences",
+      "aos_group": "Prelicensure Nursing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D440"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Medical Dosage Calculations and Pharmacology",
+      "guide_title_normalized": "medical dosage calculations and pharmacology",
+      "aos_group": "Prelicensure Nursing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D441"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Foundations of Nursing",
+      "guide_title_normalized": "foundations of nursing",
+      "aos_group": "Prelicensure Nursing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D439"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "The following section includes the areas of study in the program, with their associated courses. Your specific",
+      "guide_title_normalized": "the following section includes the areas of study in the program with their associated courses your specific",
+      "aos_group": "Prelicensure Nursing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Health Assessment",
+      "guide_title_normalized": "health assessment",
+      "aos_group": "Prelicensure Nursing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C349",
+        "D443"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Adult Health I",
+      "guide_title_normalized": "adult health i",
+      "aos_group": "Prelicensure Nursing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D444"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Intermediate Nursing Skills",
+      "guide_title_normalized": "intermediate nursing skills",
+      "aos_group": "Prelicensure Nursing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D445"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Adult Health II",
+      "guide_title_normalized": "adult health ii",
+      "aos_group": "Prelicensure Nursing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D446"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Women's and Children's Nursing",
+      "guide_title_normalized": "women s and children s nursing",
+      "aos_group": "Prelicensure Nursing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D447"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Psychiatric and Mental Health Nursing",
+      "guide_title_normalized": "psychiatric and mental health nursing",
+      "aos_group": "Prelicensure Nursing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C476",
+        "D449"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Community Health and Population-Focused Nursing",
+      "guide_title_normalized": "community health and population focused nursing",
+      "aos_group": "Prelicensure Nursing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C228",
+        "C826"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Advanced Nursing Skills",
+      "guide_title_normalized": "advanced nursing skills",
+      "aos_group": "Prelicensure Nursing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D453"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Adult Health III",
+      "guide_title_normalized": "adult health iii",
+      "aos_group": "Prelicensure Nursing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D454"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Professional Nursing Role Transition",
+      "guide_title_normalized": "professional nursing role transition",
+      "aos_group": "Prelicensure Nursing",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C490",
+        "D455"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Information Technology in Nursing Practice",
+      "guide_title_normalized": "information technology in nursing practice",
+      "aos_group": "Nursing Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D220"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Intrapersonal Leadership and Professional Growth",
+      "guide_title_normalized": "intrapersonal leadership and professional growth",
+      "aos_group": "Nursing Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D218"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Organizational Systems and Healthcare Transformation",
+      "guide_title_normalized": "organizational systems and healthcare transformation",
+      "aos_group": "Nursing Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D221"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Scholarship in Nursing Practice",
+      "guide_title_normalized": "scholarship in nursing practice",
+      "aos_group": "Nursing Core",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D219"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Critical Thinking: Reason and Evidence",
+      "guide_title_normalized": "critical thinking reason and evidence",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D265"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Composition: Writing with a Strategy",
+      "guide_title_normalized": "composition writing with a strategy",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D269"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Integrated Physical Sciences",
+      "guide_title_normalized": "integrated physical sciences",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C165",
+        "C908"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Communication: Connecting with Others",
+      "guide_title_normalized": "introduction to communication connecting with others",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D268"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Global Arts and Humanities",
+      "guide_title_normalized": "global arts and humanities",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D198"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Chemistry",
+      "guide_title_normalized": "introduction to chemistry",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D425"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Anatomy and Physiology I with Lab",
+      "guide_title_normalized": "anatomy and physiology i with lab",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D312"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Psychology",
+      "guide_title_normalized": "introduction to psychology",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C180"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "World History: Diverse Cultures and Global Connections",
+      "guide_title_normalized": "world history diverse cultures and global connections",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D266"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Applied Healthcare Statistics",
+      "guide_title_normalized": "applied healthcare statistics",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C784"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Anatomy and Physiology II with Lab",
+      "guide_title_normalized": "anatomy and physiology ii with lab",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D313"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Microbiology with Lab: A Fundamental Approach",
+      "guide_title_normalized": "microbiology with lab a fundamental approach",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 4,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D311"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Introduction to Sociology",
+      "guide_title_normalized": "introduction to sociology",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C273"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Health and Wellness Through Nutritional Sciences",
+      "guide_title_normalized": "health and wellness through nutritional sciences",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D440"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Applied Algebra",
+      "guide_title_normalized": "applied algebra",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "C957"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Human Growth and Development",
+      "guide_title_normalized": "human growth and development",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D202"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Pathophysiology",
+      "guide_title_normalized": "pathophysiology",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C805",
+        "D069",
+        "D236"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Medical Dosage Calculations and Pharmacology",
+      "guide_title_normalized": "medical dosage calculations and pharmacology",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D441"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Foundations of Nursing",
+      "guide_title_normalized": "foundations of nursing",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D439"
+      ]
+    }
+  ]
+}

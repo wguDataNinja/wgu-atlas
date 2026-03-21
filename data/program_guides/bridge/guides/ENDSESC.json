@@ -1,0 +1,218 @@
+{
+  "program_code": "ENDSESC",
+  "program_code_effective": "ENDSESC",
+  "family": "endorsement",
+  "disposition": "full-use",
+  "sp_status": "usable-no-term",
+  "degree_title_guide": "Endorsement Preparation Program, Chemistry",
+  "guide_version": "202509",
+  "guide_pub_date": "6/17/2025",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "School of Education"
+  ],
+  "program_history_degree_headings": [
+    "Endorsement Preparation Program, Chemistry"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 7,
+    "sp_row_count": 7,
+    "anchor_class_counts_aos": {
+      "ambiguous_current_exact": 4,
+      "exact_current_unique": 3
+    },
+    "anchor_class_counts_sp": {
+      "ambiguous_current_exact": 4,
+      "exact_current_unique": 3
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "General Chemistry I",
+      "guide_title_normalized": "general chemistry i",
+      "aos_group": "General Science Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C288",
+        "D843",
+        "TSC2"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "General Chemistry II with Lab",
+      "guide_title_normalized": "general chemistry ii with lab",
+      "aos_group": "Chemistry Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C374",
+        "C673",
+        "D866"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Analytical Chemistry with Lab",
+      "guide_title_normalized": "analytical chemistry with lab",
+      "aos_group": "Chemistry Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D868"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Physical Chemistry I",
+      "guide_title_normalized": "physical chemistry i",
+      "aos_group": "Chemistry Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D870"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Organic Chemistry",
+      "guide_title_normalized": "organic chemistry",
+      "aos_group": "Chemistry Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "AIT2",
+        "D867",
+        "UQT1"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Biochemistry I",
+      "guide_title_normalized": "biochemistry i",
+      "aos_group": "Chemistry Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D869"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Secondary Chemistry Curriculum",
+      "guide_title_normalized": "secondary chemistry curriculum",
+      "aos_group": "Science Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D871",
+        "D872"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "General Chemistry I",
+      "guide_title_normalized": "general chemistry i",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C288",
+        "D843",
+        "TSC2"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "General Chemistry II with Lab",
+      "guide_title_normalized": "general chemistry ii with lab",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 4,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C374",
+        "C673",
+        "D866"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Analytical Chemistry with Lab",
+      "guide_title_normalized": "analytical chemistry with lab",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D868"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Physical Chemistry I",
+      "guide_title_normalized": "physical chemistry i",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D870"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Organic Chemistry",
+      "guide_title_normalized": "organic chemistry",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "AIT2",
+        "D867",
+        "UQT1"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Biochemistry I",
+      "guide_title_normalized": "biochemistry i",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D869"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Secondary Chemistry Curriculum",
+      "guide_title_normalized": "secondary chemistry curriculum",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D871",
+        "D872"
+      ]
+    }
+  ]
+}

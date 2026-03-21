@@ -1,0 +1,51 @@
+{
+  "version": "phase_d_build_plan_v1",
+  "date": "2026-03-21",
+  "inputs": [
+    "data/program_guides/parsed/*_parsed.json",
+    "data/program_guides/validation/*_validation.json",
+    "data/program_guides/manifest_rows/*_manifest_row.json",
+    "data/program_guides/audit/PROGRAM_GUIDE_CORPUS_MANIFEST.json",
+    "data/program_guides/audit/phase_d_publish_policy.json",
+    "data/program_guides/audit/phase_d_artifact_schema.json"
+  ],
+  "transform": [
+    "Join parsed+validation+manifest row by program_code.",
+    "Assign disposition and caveat flags per policy.",
+    "Build UI-safe payload by excluding internal-only fields and applying caveat-specific SP handling.",
+    "Emit index + per-guide artifacts with provenance metadata."
+  ],
+  "outputs": [
+    "public/data/program_guides/index.json",
+    "public/data/program_guides/guides/{program_code}.json"
+  ],
+  "validation_checks": {
+    "hard_fail": [
+      "Input artifact count mismatch (not 115/115/115).",
+      "Any output guide missing required identity/provenance/quality fields.",
+      "Policy violation: SP rows emitted for guides with sp_unusable flag.",
+      "Output guide count differs from manifest total (115).",
+      "Hash/version mismatch against referenced schema/policy versions."
+    ],
+    "warn_only": [
+      "Known expected caveat flags present (BSITM/MATSPED/MSCSUG/BSPRN/MEDETID/BSNU).",
+      "Missing optional metadata fields (e.g., BSNU).",
+      "Known empty competency-bullet course exceptions."
+    ]
+  },
+  "tests": [
+    "Unit: policy classifier for disposition/sp_status/caveat flags.",
+    "Unit: serializer enforces schema-required keys.",
+    "Integration: full corpus build produces 115 guide records and expected count anchors.",
+    "Regression: compare counts against PROGRAM_GUIDE_CORPUS_MANIFEST.json anchors."
+  ],
+  "gating_decision": {
+    "recommended_next_step": "schema + build-script skeleton",
+    "reason": "Policy/schema are now settled; skeleton allows safe implementation kickoff without shipping runtime integration in same session.",
+    "not_recommended_now": [
+      "full runtime integration",
+      "Phase E course-code matching",
+      "parser expansion"
+    ]
+  }
+}

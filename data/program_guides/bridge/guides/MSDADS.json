@@ -1,0 +1,308 @@
+{
+  "program_code": "MSDADS",
+  "program_code_effective": "MSDADS",
+  "family": "data_analytics_grad",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Master of Science, Data Analytics - Data Science",
+  "guide_version": "202408",
+  "guide_pub_date": "5/15/24",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "School of Technology"
+  ],
+  "program_history_degree_headings": [
+    "Master of Science, Data Analytics - Data Science"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 11,
+    "sp_row_count": 11,
+    "anchor_class_counts_aos": {
+      "ambiguous_current_exact": 2,
+      "exact_current_unique": 8,
+      "exact_observed_variant_unique": 1
+    },
+    "anchor_class_counts_sp": {
+      "ambiguous_current_exact": 2,
+      "exact_current_unique": 8,
+      "exact_observed_variant_unique": 1
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "The Data Analytics Journey",
+      "guide_title_normalized": "the data analytics journey",
+      "aos_group": "Data Analytics",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D204",
+        "D596"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data Management",
+      "guide_title_normalized": "data management",
+      "aos_group": "Data Analytics",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D597"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Analytics Programming",
+      "guide_title_normalized": "analytics programming",
+      "aos_group": "Data Analytics",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D598"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data Preparation and Exploration",
+      "guide_title_normalized": "data preparation and exploration",
+      "aos_group": "Data Analytics",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D599"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Statistical Data Mining",
+      "guide_title_normalized": "statistical data mining",
+      "aos_group": "Data Analytics",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D600"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data Storytelling for Diverse Audiences",
+      "guide_title_normalized": "data storytelling for diverse audiences",
+      "aos_group": "Data Analytics",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D601"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Deployment",
+      "guide_title_normalized": "deployment",
+      "aos_group": "Data Analytics",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D602"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Machine Learning",
+      "guide_title_normalized": "machine learning",
+      "aos_group": "Data Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C753",
+        "D499",
+        "D603"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Advanced Analytics",
+      "guide_title_normalized": "advanced analytics",
+      "aos_group": "Data Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D604"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Optimization",
+      "guide_title_normalized": "optimization",
+      "aos_group": "Data Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D605"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data Science Capstone",
+      "guide_title_normalized": "data science capstone",
+      "aos_group": "Data Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D606"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "The Data Analytics Journey",
+      "guide_title_normalized": "the data analytics journey",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 2,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D204",
+        "D596"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Data Management",
+      "guide_title_normalized": "data management",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D597"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Analytics Programming",
+      "guide_title_normalized": "analytics programming",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D598"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Data Preparation and Exploration",
+      "guide_title_normalized": "data preparation and exploration",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D599"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Statistical Data Mining",
+      "guide_title_normalized": "statistical data mining",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D600"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Data Storytelling for Diverse Audiences",
+      "guide_title_normalized": "data storytelling for diverse audiences",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D601"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Deployment",
+      "guide_title_normalized": "deployment",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D602"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Machine Learning",
+      "guide_title_normalized": "machine learning",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C753",
+        "D499",
+        "D603"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Advanced Analytics",
+      "guide_title_normalized": "advanced analytics",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D604"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Optimization",
+      "guide_title_normalized": "optimization",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D605"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Data Science Capstone",
+      "guide_title_normalized": "data science capstone",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D606"
+      ]
+    }
+  ]
+}

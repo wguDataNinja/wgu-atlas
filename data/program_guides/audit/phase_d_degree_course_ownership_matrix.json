@@ -1,0 +1,72 @@
+{
+  "version": "phase_d_ownership_v1",
+  "date": "2026-03-21",
+  "rows": [
+    {
+      "field": "Standard Path course order",
+      "ownership": "Degree only",
+      "rationale": "Core degree sequencing value; not independently trustworthy on course pages without program context."
+    },
+    {
+      "field": "Standard Path CUs",
+      "ownership": "Degree only",
+      "rationale": "Degree plan context; course pages already have catalog CU concepts and may differ by program context."
+    },
+    {
+      "field": "Standard Path term values",
+      "ownership": "Degree only",
+      "rationale": "Term meaning is program-sequence specific."
+    },
+    {
+      "field": "AoS groups",
+      "ownership": "Degree only",
+      "rationale": "Program-structure context, not course identity."
+    },
+    {
+      "field": "Guide course descriptions",
+      "ownership": "Degree now, Course later",
+      "rationale": "High-value narrative; course-page use blocked until Phase E matching."
+    },
+    {
+      "field": "Competency bullets",
+      "ownership": "Degree now, Course later",
+      "rationale": "Useful outcomes detail; dense, should be collapsible. Course-page use blocked until Phase E."
+    },
+    {
+      "field": "Capstone identification/details",
+      "ownership": "Degree only",
+      "rationale": "Program-completion context, not standalone course canonicality."
+    },
+    {
+      "field": "Guide version/pub metadata",
+      "ownership": "Degree internal-facing optional",
+      "rationale": "Trust/provenance marker; low direct student value."
+    },
+    {
+      "field": "Prerequisite mentions (parsed)",
+      "ownership": "Internal only",
+      "rationale": "Known false-positive risk."
+    },
+    {
+      "field": "Certification-prep mentions (structured)",
+      "ownership": "Internal only for v1",
+      "rationale": "No stable structured field yet; defer extraction pass."
+    },
+    {
+      "field": "Course role within degree (derived)",
+      "ownership": "Degree only",
+      "rationale": "Strong student value for degree navigation."
+    },
+    {
+      "field": "Cross-program appearance context from guides",
+      "ownership": "Internal only in Phase D",
+      "rationale": "Requires normalized course matching; Phase E+ concern."
+    },
+    {
+      "field": "Family-specific specialty sections",
+      "ownership": "Internal only in Phase D",
+      "rationale": "Too variant-heavy for conservative first publish."
+    }
+  ],
+  "course_page_v1_policy": "No new guide-derived course-page fields in Phase D; defer to Phase E matching."
+}

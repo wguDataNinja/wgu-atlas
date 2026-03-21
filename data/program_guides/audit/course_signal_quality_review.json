@@ -1,0 +1,1463 @@
+{
+  "generated_on": "2026-03-21",
+  "scope": {
+    "guides_included": 115,
+    "surface": "AoS parsed fields `certification_prep_mentions` and `prerequisite_mentions`",
+    "method": "Conservative rule-based classification using mention text and local course description context."
+  },
+  "certification_signals": {
+    "mention_count_total": 139,
+    "mention_class_counts": {
+      "false_positive_parser_noise": 52,
+      "explicit_prep_claim": 53,
+      "explicit_alignment_or_associated_cert": 16,
+      "unclear": 17,
+      "adjacent_mention_only": 1
+    },
+    "mention_class_rates_percent": {
+      "false_positive_parser_noise": 37.41,
+      "explicit_prep_claim": 38.13,
+      "explicit_alignment_or_associated_cert": 11.51,
+      "unclear": 12.23,
+      "adjacent_mention_only": 0.72
+    },
+    "course_count_with_any_cert_mentions": 112,
+    "course_count_with_non_noise_cert_signal": 58,
+    "course_level_class_counts": {
+      "false_positive_parser_noise": 46,
+      "explicit_prep_claim": 45,
+      "explicit_alignment_or_associated_cert": 12,
+      "unclear": 8,
+      "adjacent_mention_only": 1
+    },
+    "examples_by_class": {
+      "false_positive_parser_noise": [
+        {
+          "program_code": "MSCSIA",
+          "degree_title": "Master of Science, Cybersecurity and Information Assurance",
+          "group": "Hacking Countermeasures and Techniques",
+          "course_title": "Security Operations",
+          "mention": "aws and",
+          "class": "false_positive_parser_noise",
+          "description_snippet": "Security Operations provides learners with the fundamental skills to handle and respond to computer security incidents in an information system. The course addresses various underlying principles and techniques for detecting and responding to current and emerg"
+        },
+        {
+          "program_code": "MSCSIA",
+          "degree_title": "Master of Science, Cybersecurity and Information Assurance",
+          "group": "Cybersecurity Management",
+          "course_title": "Cybersecurity Management",
+          "mention": "aws and",
+          "class": "false_positive_parser_noise",
+          "description_snippet": "Cybersecurity Management prepares learners to develop organizational information security programs and policies that follow recognized standards, comply with all governing laws and regulations, and meet the needs of the company culture and management organizat"
+        },
+        {
+          "program_code": "BAESSPMM",
+          "degree_title": "Bachelor of Arts, Educational Studies in Mild to Moderate",
+          "group": "Special Education",
+          "course_title": "Special Education Law, Policies and Procedures",
+          "mention": "aws to",
+          "class": "false_positive_parser_noise",
+          "description_snippet": "Special Education Law, Policies, and Procedures prepares special education teachers to practice within legal and ethical guidelines as they navigate the Special Education processes, stakeholder interactions, and other complex situations. This course provides a"
+        },
+        {
+          "program_code": "BSSESB",
+          "degree_title": "Bachelor of Science, Science Education (Secondary Biological Science)",
+          "group": "General Science Content",
+          "course_title": "General Earth Science I",
+          "mention": "aws that",
+          "class": "false_positive_parser_noise",
+          "description_snippet": "This comprehensive survey course provides a foundational understanding of Earth's position in the universe and its dynamic systems. Students will explore Earth's placement within the solar system, including the effects of its orbit, origin, and celestial inter"
+        },
+        {
+          "program_code": "BSHIM",
+          "degree_title": "Bachelor of Science, Health Information Management",
+          "group": "Health Sciences",
+          "course_title": "Pathophysiology",
+          "mention": "aws on",
+          "class": "false_positive_parser_noise",
+          "description_snippet": "Pathophysiology is an overview of the pathology and treatment of diseases in the human body and its systems. This course will explain the processes in the body that result in the signs and symptoms of disease, as well as therapeutic procedures in managing or c"
+        },
+        {
+          "program_code": "BSCSIA",
+          "degree_title": "Bachelor of Science, Cybersecurity and Information Assurance",
+          "group": "Secure Systems Analysis & Design",
+          "course_title": "Information Systems Security",
+          "mention": "aws and",
+          "class": "false_positive_parser_noise",
+          "description_snippet": "IT security professionals must be prepared for the operational demands and responsibilities of security practitioners including authentication, security testing, intrusion detection and prevention, incident response and recovery, attacks and countermeasures, c"
+        },
+        {
+          "program_code": "BSCSIA",
+          "degree_title": "Bachelor of Science, Cybersecurity and Information Assurance",
+          "group": "Ethics & Cyber Law",
+          "course_title": "Legal Issues in Information Security",
+          "mention": "aws and",
+          "class": "false_positive_parser_noise",
+          "description_snippet": "Legal Issues in Information Security provides students with exposure to the laws and ethical issues of cybersecurity and the importance of compliance. Students explore the fundamental standards, frameworks, and best practices of data privacy and data privacy p"
+        },
+        {
+          "program_code": "BSCSIA",
+          "degree_title": "Bachelor of Science, Cybersecurity and Information Assurance",
+          "group": "Hacking Countermeasures and Techniques",
+          "course_title": "Cyber Defense and Countermeasures",
+          "mention": "aws and",
+          "class": "false_positive_parser_noise",
+          "description_snippet": "Traditional defenses\u2014such as firewalls, security protocols, and encryption\u2014sometimes fail to stop attackers determined to access and compromise data. This course provides the fundamental skills to handle and respond to computer security incidents in an informa"
+        },
+        {
+          "program_code": "BSFIN",
+          "degree_title": "Bachelor of Science, Finance",
+          "group": "Business Core",
+          "course_title": "Managing in a Global Business Environment",
+          "mention": "aws in",
+          "class": "false_positive_parser_noise",
+          "description_snippet": "Managing in a Global Business Environment provides students with a generalist overview of business from a global perspective, while also developing basic skills and knowledge to help them make strategic decisions, communicate, and develop personal relationship"
+        },
+        {
+          "program_code": "BSFIN",
+          "degree_title": "Bachelor of Science, Finance",
+          "group": "Human Resources",
+          "course_title": "Employment and Labor Law",
+          "mention": "aws affecting",
+          "class": "false_positive_parser_noise",
+          "description_snippet": "Employment and Labor Law reviews the legal and regulatory framework surrounding employment, including recruitment, termination, and discrimination law. The course topics include employment-at-will, EEO, ADA, OSHA, and other laws affecting the workplace. Studen"
+        },
+        {
+          "program_code": "BSDA",
+          "degree_title": "Bachelor of Science, Data Analytics",
+          "group": "General Education",
+          "course_title": "Design Thinking for Business",
+          "mention": "aws upon",
+          "class": "false_positive_parser_noise",
+          "description_snippet": "Design Thinking for Business examines the design thinking methodology for solving complex problems. This course introduces students to design thinking as a human-centered approach to problem-solving and innovation that draws upon empathy and creativity to deve"
+        },
+        {
+          "program_code": "BSUXD",
+          "degree_title": "Bachelor of Science, User Experience Design",
+          "group": "Business Core",
+          "course_title": "Managing in a Global Business Environment",
+          "mention": "aws in",
+          "class": "false_positive_parser_noise",
+          "description_snippet": "Managing in a Global Business Environment provides students with a generalist overview of business from a global perspective, while also developing basic skills and knowledge to help them make strategic decisions, communicate, and develop personal relationship"
+        },
+        {
+          "program_code": "ENDSESE",
+          "degree_title": "Endorsement Preparation Program, Earth Science",
+          "group": "Science Education",
+          "course_title": "Astronomy",
+          "mention": "aws are",
+          "class": "false_positive_parser_noise",
+          "description_snippet": "Astronomy explores the fundamental principles of the universe, focusing on the lifecycle of stars, the structure of our solar system, and the dynamics of the Sun-Earth-Moon system. In this course, students learn about the analysis of starlight spectra and brig"
+        },
+        {
+          "program_code": "BSMGT",
+          "degree_title": "Bachelor of Science, Business Management",
+          "group": "Business Core",
+          "course_title": "Managing in a Global Business Environment",
+          "mention": "aws in",
+          "class": "false_positive_parser_noise",
+          "description_snippet": "Managing in a Global Business Environment provides students with a generalist overview of business from a global perspective, while also developing basic skills and knowledge to help them make strategic decisions, communicate, and develop personal relationship"
+        },
+        {
+          "program_code": "BSMGT",
+          "degree_title": "Bachelor of Science, Business Management",
+          "group": "General Education",
+          "course_title": "Design Thinking for Business",
+          "mention": "aws upon",
+          "class": "false_positive_parser_noise",
+          "description_snippet": "Design Thinking for Business examines the design thinking methodology for solving complex problems. This course introduces students to design thinking as a human-centered approach to problem-solving and innovation that draws upon empathy and creativity to deve"
+        },
+        {
+          "program_code": "MATSPED",
+          "degree_title": "Master of Arts in Teaching, Special Education",
+          "group": "Special Education",
+          "course_title": "Special Education Law, Policies and Procedures",
+          "mention": "aws to",
+          "class": "false_positive_parser_noise",
+          "description_snippet": "Special Education Law, Policies, and Procedures prepares special education teachers to practice within legal and ethical guidelines as they navigate the Special Education processes, stakeholder interactions, and other complex situations. This course provides a"
+        },
+        {
+          "program_code": "BAESSPEE",
+          "degree_title": "Bachelor of Arts, Educational Studies in Special and Elementary",
+          "group": "Special Education",
+          "course_title": "Special Education Law, Policies and Procedures",
+          "mention": "aws to",
+          "class": "false_positive_parser_noise",
+          "description_snippet": "Special Education Law, Policies, and Procedures prepares special education teachers to practice within legal and ethical guidelines as they navigate the Special Education processes, stakeholder interactions, and other complex situations. This course provides a"
+        },
+        {
+          "program_code": "BSITM",
+          "degree_title": "Bachelor of Science Information Technology Management",
+          "group": "Business Core",
+          "course_title": "Managing in a Global Business Environment",
+          "mention": "aws in",
+          "class": "false_positive_parser_noise",
+          "description_snippet": "Managing in a Global Business Environment provides students with a generalist overview of business from a global perspective, while also developing basic skills and knowledge to help them make strategic decisions, communicate, and develop personal relationship"
+        },
+        {
+          "program_code": "BSITM",
+          "degree_title": "Bachelor of Science Information Technology Management",
+          "group": "Human Resources",
+          "course_title": "Employment Law",
+          "mention": "aws affecting",
+          "class": "false_positive_parser_noise",
+          "description_snippet": "This course reviews the legal and regulatory framework surrounding employment, including recruitment, termination, and discrimination law. The course topics include employment-at-will, EEO, ADA, OSHA, and other laws affecting the workplace. This course covers "
+        },
+        {
+          "program_code": "BSHR",
+          "degree_title": "Bachelor of Science, Human Resource Management",
+          "group": "Business Core",
+          "course_title": "Managing in a Global Business Environment",
+          "mention": "aws in",
+          "class": "false_positive_parser_noise",
+          "description_snippet": "Managing in a Global Business Environment provides students with a generalist overview of business from a global perspective, while also developing basic skills and knowledge to help them make strategic decisions, communicate, and develop personal relationship"
+        }
+      ],
+      "explicit_prep_claim": [
+        {
+          "program_code": "BSSWE_Java",
+          "degree_title": "Bachelor of Science, Software Engineering",
+          "group": "Business of IT",
+          "course_title": "Business of IT - Project Management",
+          "mention": "CompTIA Project+",
+          "class": "explicit_prep_claim",
+          "description_snippet": "In this course, students will build on industry standard concepts, techniques, and processes to develop a comprehensive foundation for project management activities. During a project's life cycle, students will develop the critical skills necessary to initiate"
+        },
+        {
+          "program_code": "BSSWE_Java",
+          "degree_title": "Bachelor of Science, Software Engineering",
+          "group": "Business of IT",
+          "course_title": "Business of IT - Project Management",
+          "mention": "CompTIA Project+.",
+          "class": "explicit_prep_claim",
+          "description_snippet": "In this course, students will build on industry standard concepts, techniques, and processes to develop a comprehensive foundation for project management activities. During a project's life cycle, students will develop the critical skills necessary to initiate"
+        },
+        {
+          "program_code": "BSSWE_Java",
+          "degree_title": "Bachelor of Science, Software Engineering",
+          "group": "Information Technology Management",
+          "course_title": "Cloud Foundations",
+          "mention": "AWS Certified",
+          "class": "explicit_prep_claim",
+          "description_snippet": "Cloud Foundations introduces learners to real-world issues and practical solutions to cloud computing. This course covers the business value of cloud computing, examining cloud types, the steps to successful cloud adoption, and the effect cloud adoption has on"
+        },
+        {
+          "program_code": "MSSWEUG",
+          "degree_title": "Bachelor of Science, Software Engineering (BSSWE to MSSWE)",
+          "group": "Business of IT",
+          "course_title": "Business of IT - Project Management",
+          "mention": "CompTIA Project+",
+          "class": "explicit_prep_claim",
+          "description_snippet": "In this course, students will build on industry standard concepts, techniques, and processes to develop a comprehensive foundation for project management activities. During a project's life cycle, students will develop the critical skills necessary to initiate"
+        },
+        {
+          "program_code": "MSSWEUG",
+          "degree_title": "Bachelor of Science, Software Engineering (BSSWE to MSSWE)",
+          "group": "Business of IT",
+          "course_title": "Business of IT - Project Management",
+          "mention": "CompTIA Project+.",
+          "class": "explicit_prep_claim",
+          "description_snippet": "In this course, students will build on industry standard concepts, techniques, and processes to develop a comprehensive foundation for project management activities. During a project's life cycle, students will develop the critical skills necessary to initiate"
+        },
+        {
+          "program_code": "BSCNE",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering",
+          "group": "IT Fundamentals",
+          "course_title": "IT Applications",
+          "mention": "CompTIA A+",
+          "class": "explicit_prep_claim",
+          "description_snippet": "IT Applications introduces skills in identifying operating systems and their configurations and in implementing security principles across devices and networks. Learners will also gain skills in troubleshooting software, security, and malware issues, and in im"
+        },
+        {
+          "program_code": "BSCNE",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering",
+          "group": "IT Fundamentals",
+          "course_title": "IT Foundations",
+          "mention": "CompTIA A+",
+          "class": "explicit_prep_claim",
+          "description_snippet": "IT Foundations provides learners with an understanding of personal computer components and their functions in a desktop system; a knowledge of computer data storage and retrieval; and skills in classifying, installing, configuring, optimizing, upgrading, and t"
+        },
+        {
+          "program_code": "BSCNE",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering",
+          "group": "Network and Security",
+          "course_title": "Network and Security - Applications",
+          "mention": "CompTIA Security+",
+          "class": "explicit_prep_claim",
+          "description_snippet": "Network and Security - Applications prepares learners for the CompTIA Security+ certification exam. The course introduces learners to skills in identifying threats, attacks, and vulnerabilities to organizational security. The learner will also gain skills in d"
+        },
+        {
+          "program_code": "BSCNE",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering",
+          "group": "Network and Security",
+          "course_title": "Cloud Applications",
+          "mention": "CompTIA Cloud+",
+          "class": "explicit_prep_claim",
+          "description_snippet": "Cloud Applications prepares learners for the CompTIA Cloud+ certification exam. Learners will gain skills in designing cloud infrastructure and services and in recommending cloud security solutions, policies, and procedures. The course will also introduce skil"
+        },
+        {
+          "program_code": "BSCNE",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering",
+          "group": "Networks",
+          "course_title": "Networks",
+          "mention": "CompTIA Network+",
+          "class": "explicit_prep_claim",
+          "description_snippet": "Networks introduces skills in configuring networking components and a network infrastructure. Learners will gain skills in optimizing network operations for availability, performance, and security, and in troubleshooting network issues. The course prepares lea"
+        },
+        {
+          "program_code": "BSCSIA",
+          "degree_title": "Bachelor of Science, Cybersecurity and Information Assurance",
+          "group": "IT Fundamentals",
+          "course_title": "IT Applications",
+          "mention": "CompTIA A+",
+          "class": "explicit_prep_claim",
+          "description_snippet": "IT Applications introduces skills in identifying operating systems and their configurations and in implementing security principles across devices and networks. Learners will also gain skills in troubleshooting software, security, and malware issues, and in im"
+        },
+        {
+          "program_code": "BSCSIA",
+          "degree_title": "Bachelor of Science, Cybersecurity and Information Assurance",
+          "group": "IT Fundamentals",
+          "course_title": "IT Foundations",
+          "mention": "CompTIA A+",
+          "class": "explicit_prep_claim",
+          "description_snippet": "IT Foundations provides learners with an understanding of personal computer components and their functions in a desktop system; a knowledge of computer data storage and retrieval; and skills in classifying, installing, configuring, optimizing, upgrading, and t"
+        },
+        {
+          "program_code": "BSCSIA",
+          "degree_title": "Bachelor of Science, Cybersecurity and Information Assurance",
+          "group": "Network and Security",
+          "course_title": "Network and Security - Applications",
+          "mention": "CompTIA Security+",
+          "class": "explicit_prep_claim",
+          "description_snippet": "Network and Security - Applications prepares learners for the CompTIA Security+ certification exam. The course introduces learners to skills in identifying threats, attacks, and vulnerabilities to organizational security. The learner will also gain skills in d"
+        },
+        {
+          "program_code": "BSCSIA",
+          "degree_title": "Bachelor of Science, Cybersecurity and Information Assurance",
+          "group": "Network and Security",
+          "course_title": "Networks",
+          "mention": "CompTIA Network+",
+          "class": "explicit_prep_claim",
+          "description_snippet": "Networks introduces skills in configuring networking components and a network infrastructure. Learners will gain skills in optimizing network operations for availability, performance, and security, and in troubleshooting network issues. The course prepares lea"
+        },
+        {
+          "program_code": "BSCSIA",
+          "degree_title": "Bachelor of Science, Cybersecurity and Information Assurance",
+          "group": "Business of IT",
+          "course_title": "Business of IT - Project Management",
+          "mention": "CompTIA Project+",
+          "class": "explicit_prep_claim",
+          "description_snippet": "In this course, students will build on industry standard concepts, techniques, and processes to develop a comprehensive foundation for project management activities. During a project's life cycle, students will develop the critical skills necessary to initiate"
+        },
+        {
+          "program_code": "BSCSIA",
+          "degree_title": "Bachelor of Science, Cybersecurity and Information Assurance",
+          "group": "Business of IT",
+          "course_title": "Business of IT - Project Management",
+          "mention": "CompTIA Project+.",
+          "class": "explicit_prep_claim",
+          "description_snippet": "In this course, students will build on industry standard concepts, techniques, and processes to develop a comprehensive foundation for project management activities. During a project's life cycle, students will develop the critical skills necessary to initiate"
+        },
+        {
+          "program_code": "BSCSIA",
+          "degree_title": "Bachelor of Science, Cybersecurity and Information Assurance",
+          "group": "Hacking Countermeasures and Techniques",
+          "course_title": "Cyber Defense and Countermeasures",
+          "mention": "CompTIA Cybersecurity",
+          "class": "explicit_prep_claim",
+          "description_snippet": "Traditional defenses\u2014such as firewalls, security protocols, and encryption\u2014sometimes fail to stop attackers determined to access and compromise data. This course provides the fundamental skills to handle and respond to computer security incidents in an informa"
+        },
+        {
+          "program_code": "BSDA",
+          "degree_title": "Bachelor of Science, Data Analytics",
+          "group": "Business of IT",
+          "course_title": "Business of IT - Project Management",
+          "mention": "CompTIA Project+",
+          "class": "explicit_prep_claim",
+          "description_snippet": "In this course, students will build on industry standard concepts, techniques, and processes to develop a comprehensive foundation for project management activities. During a project's life cycle, students will develop the critical skills necessary to initiate"
+        },
+        {
+          "program_code": "BSDA",
+          "degree_title": "Bachelor of Science, Data Analytics",
+          "group": "Business of IT",
+          "course_title": "Business of IT - Project Management",
+          "mention": "CompTIA Project+.",
+          "class": "explicit_prep_claim",
+          "description_snippet": "In this course, students will build on industry standard concepts, techniques, and processes to develop a comprehensive foundation for project management activities. During a project's life cycle, students will develop the critical skills necessary to initiate"
+        },
+        {
+          "program_code": "BSDA",
+          "degree_title": "Bachelor of Science, Data Analytics",
+          "group": "Information Technology Management",
+          "course_title": "Cloud Foundations",
+          "mention": "AWS Certified",
+          "class": "explicit_prep_claim",
+          "description_snippet": "Cloud Foundations introduces learners to real-world issues and practical solutions to cloud computing. This course covers the business value of cloud computing, examining cloud types, the steps to successful cloud adoption, and the effect cloud adoption has on"
+        }
+      ],
+      "explicit_alignment_or_associated_cert": [
+        {
+          "program_code": "MSCSAIML",
+          "degree_title": "Master of Science, Computer Science, Artificial Intelligence and",
+          "group": "Computer Science",
+          "course_title": "Machine Learning for Computer Scientists",
+          "mention": "AWS Certified",
+          "class": "explicit_alignment_or_associated_cert",
+          "description_snippet": "Machine Learning for Computer Scientists provides a comprehensive introduction to foundational machine learning algorithms and their applications, aligned with the AWS Certified Machine Learning\u2014Specialty (MLS-C01). The course covers supervised learning techni"
+        },
+        {
+          "program_code": "ENDSESP",
+          "degree_title": "Endorsement Preparation Program, Physics",
+          "group": "Science Education",
+          "course_title": "Secondary Physics Curriculum",
+          "mention": "Praxis exam.",
+          "class": "explicit_alignment_or_associated_cert",
+          "description_snippet": "Secondary Physics Curriculum. This course offers a comprehensive review for high school physics teachers preparing for the Praxis exam. Explore major scientific discoveries, key engineering innovations, and their societal impacts. Understand ethical issues in "
+        },
+        {
+          "program_code": "ENDSESP",
+          "degree_title": "Endorsement Preparation Program, Physics",
+          "group": "Science Education",
+          "course_title": "Secondary Physics Curriculum",
+          "mention": "Praxis prep,",
+          "class": "explicit_alignment_or_associated_cert",
+          "description_snippet": "Secondary Physics Curriculum. This course offers a comprehensive review for high school physics teachers preparing for the Praxis exam. Explore major scientific discoveries, key engineering innovations, and their societal impacts. Understand ethical issues in "
+        },
+        {
+          "program_code": "MATSESP",
+          "degree_title": "Master of Arts in Teaching, Science Education (Secondary Physics)",
+          "group": "Science Education",
+          "course_title": "Secondary Physics Curriculum",
+          "mention": "Praxis exam.",
+          "class": "explicit_alignment_or_associated_cert",
+          "description_snippet": "MAT Secondary Physics Curriculum This course offers a comprehensive review for high school physics teachers preparing for the Praxis exam. Explore major scientific discoveries, key engineering innovations, and their societal impacts. Understand ethical issues "
+        },
+        {
+          "program_code": "MATSESP",
+          "degree_title": "Master of Arts in Teaching, Science Education (Secondary Physics)",
+          "group": "Science Education",
+          "course_title": "Secondary Physics Curriculum",
+          "mention": "Praxis prep,",
+          "class": "explicit_alignment_or_associated_cert",
+          "description_snippet": "MAT Secondary Physics Curriculum This course offers a comprehensive review for high school physics teachers preparing for the Praxis exam. Explore major scientific discoveries, key engineering innovations, and their societal impacts. Understand ethical issues "
+        },
+        {
+          "program_code": "MATEES",
+          "degree_title": "Master of Arts in Teaching, English Education (Secondary)",
+          "group": "Secondary Education",
+          "course_title": "Secondary English Language Arts Curriculum",
+          "mention": "Praxis 5039",
+          "class": "explicit_alignment_or_associated_cert",
+          "description_snippet": "Secondary English Language Arts Curriculum explores the integration of literary analysis, language development, and curriculum design to prepare candidates for teaching in secondary ELA classrooms and for the Praxis 5039 English Language Arts exam. This course"
+        },
+        {
+          "program_code": "ENDSESC",
+          "degree_title": "Endorsement Preparation Program, Chemistry",
+          "group": "Science Education",
+          "course_title": "Secondary Chemistry Curriculum",
+          "mention": "Praxis exam,",
+          "class": "explicit_alignment_or_associated_cert",
+          "description_snippet": "Secondary Chemistry Curriculum synthesizes the core content of the Secondary Chemistry Program, preparing candidates to apply education theory and teaching approaches to the chemistry content areas. This course aligns with the areas covered by the Chemistry Pr"
+        },
+        {
+          "program_code": "MATSESC",
+          "degree_title": "Master of Arts in Teaching, Science Education (Secondary Chemistry)",
+          "group": "Science Education",
+          "course_title": "Secondary Chemistry Curriculum",
+          "mention": "Praxis exam,",
+          "class": "explicit_alignment_or_associated_cert",
+          "description_snippet": "Secondary Chemistry Curriculum synthesizes the core content of the Secondary Chemistry Program, preparing candidates to apply education theory and teaching approaches to the chemistry content areas. This course aligns with the areas covered by the Chemistry Pr"
+        },
+        {
+          "program_code": "BSSESC",
+          "degree_title": "Bachelor of Science, Science Education (Secondary Chemistry)",
+          "group": "Science Education",
+          "course_title": "Secondary Chemistry Curriculum",
+          "mention": "Praxis exam,",
+          "class": "explicit_alignment_or_associated_cert",
+          "description_snippet": "Secondary Chemistry Curriculum synthesizes the core content of the Secondary Chemistry Program, preparing candidates to apply education theory and teaching approaches to the chemistry content areas. This course aligns with the areas covered by the Chemistry Pr"
+        },
+        {
+          "program_code": "MATSSES",
+          "degree_title": "Master of Arts in Teaching, Social Studies Education (Secondary)",
+          "group": "Secondary Education",
+          "course_title": "Secondary Social Studies Curriculum",
+          "mention": "Praxis Social",
+          "class": "explicit_alignment_or_associated_cert",
+          "description_snippet": "Secondary Social Studies Curriculum explores the key concepts of U.S. history, world history, economics, government, geography, and social sciences. Designed for aspiring social studies educators, this course will refresh and deepen the candidates' understandi"
+        },
+        {
+          "program_code": "MATSSES",
+          "degree_title": "Master of Arts in Teaching, Social Studies Education (Secondary)",
+          "group": "Secondary Education",
+          "course_title": "Social Studies Methods I",
+          "mention": "Praxis 5081",
+          "class": "explicit_alignment_or_associated_cert",
+          "description_snippet": "Social Studies Methods I prepares teacher candidates to effectively teach social studies in secondary education settings, focusing on grades 7\u20139, while aligning with the Praxis 5081 Social Studies Content Knowledge test. The course emphasizes developing compre"
+        },
+        {
+          "program_code": "BSSESP",
+          "degree_title": "Bachelor of Science, Science Education (Secondary Physics)",
+          "group": "Science Education",
+          "course_title": "Secondary Physics Curriculum",
+          "mention": "Praxis exam.",
+          "class": "explicit_alignment_or_associated_cert",
+          "description_snippet": "Secondary Physics Curriculum. This course offers a comprehensive review for high school physics teachers preparing for the Praxis exam. Explore major scientific discoveries, key engineering innovations, and their societal impacts. Understand ethical issues in "
+        },
+        {
+          "program_code": "BSSESP",
+          "degree_title": "Bachelor of Science, Science Education (Secondary Physics)",
+          "group": "Science Education",
+          "course_title": "Secondary Physics Curriculum",
+          "mention": "Praxis prep,",
+          "class": "explicit_alignment_or_associated_cert",
+          "description_snippet": "Secondary Physics Curriculum. This course offers a comprehensive review for high school physics teachers preparing for the Praxis exam. Explore major scientific discoveries, key engineering innovations, and their societal impacts. Understand ethical issues in "
+        },
+        {
+          "program_code": "BAESSESC",
+          "degree_title": "Bachelor of Arts, Educational Studies in Secondary Chemistry Science",
+          "group": "Science Education",
+          "course_title": "Secondary Chemistry Curriculum",
+          "mention": "Praxis exam,",
+          "class": "explicit_alignment_or_associated_cert",
+          "description_snippet": "Secondary Chemistry Curriculum synthesizes the core content of the Secondary Chemistry Program, preparing candidates to apply education theory and teaching approaches to the chemistry content areas. This course aligns with the areas covered by the Chemistry Pr"
+        },
+        {
+          "program_code": "BAESSESP",
+          "degree_title": "Bachelor of Arts, Educational Studies in Secondary Physics Science",
+          "group": "Science Education",
+          "course_title": "Secondary Physics Curriculum",
+          "mention": "Praxis exam.",
+          "class": "explicit_alignment_or_associated_cert",
+          "description_snippet": "Secondary Physics Curriculum. This course offers a comprehensive review for high school physics teachers preparing for the Praxis exam. Explore major scientific discoveries, key engineering innovations, and their societal impacts. Understand ethical issues in "
+        },
+        {
+          "program_code": "BAESSESP",
+          "degree_title": "Bachelor of Arts, Educational Studies in Secondary Physics Science",
+          "group": "Science Education",
+          "course_title": "Secondary Physics Curriculum",
+          "mention": "Praxis prep,",
+          "class": "explicit_alignment_or_associated_cert",
+          "description_snippet": "Secondary Physics Curriculum. This course offers a comprehensive review for high school physics teachers preparing for the Praxis exam. Explore major scientific discoveries, key engineering innovations, and their societal impacts. Understand ethical issues in "
+        }
+      ],
+      "unclear": [
+        {
+          "program_code": "BSCNECIS",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering - Cisco",
+          "group": "Networking",
+          "course_title": "DevNet Fundamentals",
+          "mention": "Cisco Environment.",
+          "class": "unclear",
+          "description_snippet": "The DevNet Fundamentals course teaches students how to automate and deploy network solutions in the Cisco Environment. This course includes APIs, Scripting, Python programming, and software version control. This course prepares students for the Cisco DevNet As"
+        },
+        {
+          "program_code": "BSCNECIS",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering - Cisco",
+          "group": "Networking",
+          "course_title": "DevNet Fundamentals",
+          "mention": "Cisco DevNet",
+          "class": "unclear",
+          "description_snippet": "The DevNet Fundamentals course teaches students how to automate and deploy network solutions in the Cisco Environment. This course includes APIs, Scripting, Python programming, and software version control. This course prepares students for the Cisco DevNet As"
+        },
+        {
+          "program_code": "BSCNECIS",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering - Cisco",
+          "group": "Networking",
+          "course_title": "Cyber Operations Fundamentals",
+          "mention": "Cisco practices",
+          "class": "unclear",
+          "description_snippet": "In Cyber Operations Fundamentals, students will learn security concepts, security monitoring, host-based analysis, network intrusion analysis, and security policies and procedures using Cisco practices and technologies. This course prepares students for the Un"
+        },
+        {
+          "program_code": "BSCNECIS",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering - Cisco",
+          "group": "Networking",
+          "course_title": "Cyber Operations Fundamentals",
+          "mention": "Cisco Cybersecurity",
+          "class": "unclear",
+          "description_snippet": "In Cyber Operations Fundamentals, students will learn security concepts, security monitoring, host-based analysis, network intrusion analysis, and security policies and procedures using Cisco practices and technologies. This course prepares students for the Un"
+        },
+        {
+          "program_code": "BSCNECIS",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering - Cisco",
+          "group": "Cloud and Virtualization",
+          "course_title": "BSCNE-Cisco Capstone Project",
+          "mention": "Cisco Capstone",
+          "class": "unclear",
+          "description_snippet": "In the BSCNE-Cisco Capstone Project, students choose from a fixed set of tasks that they might encounter in the workplace. Examples might include configuring network components, applying security policies to a set of cloud resources, or automating a network de"
+        },
+        {
+          "program_code": "BSCNECIS",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering - Cisco",
+          "group": "Cloud and Virtualization",
+          "course_title": "BSCNE-Cisco Capstone Project",
+          "mention": "Cisco tools",
+          "class": "unclear",
+          "description_snippet": "In the BSCNE-Cisco Capstone Project, students choose from a fixed set of tasks that they might encounter in the workplace. Examples might include configuring network components, applying security policies to a set of cloud resources, or automating a network de"
+        },
+        {
+          "program_code": "BSCNEAZR",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering - Microsoft Azure",
+          "group": "Cloud and Virtualization",
+          "course_title": "Azure Solutions Architecture",
+          "mention": "Azure Solution",
+          "class": "unclear",
+          "description_snippet": "Azure Solution Architecture explores the design and implementation of scalable, secure, and efficient solutions within the Azure platform. This course examines key principles of identity management, governance, monitoring, business continuity, data storage, an"
+        },
+        {
+          "program_code": "BSCNEAZR",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering - Microsoft Azure",
+          "group": "Cloud and Virtualization",
+          "course_title": "Azure Solutions Architecture",
+          "mention": "Azure platform.",
+          "class": "unclear",
+          "description_snippet": "Azure Solution Architecture explores the design and implementation of scalable, secure, and efficient solutions within the Azure platform. This course examines key principles of identity management, governance, monitoring, business continuity, data storage, an"
+        },
+        {
+          "program_code": "BSCNEAZR",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering - Microsoft Azure",
+          "group": "Cloud and Virtualization",
+          "course_title": "BSCNE-Azure Capstone Project",
+          "mention": "Azure Capstone",
+          "class": "unclear",
+          "description_snippet": "In the BSCNE-Azure Capstone Project, students choose from a fixed set of tasks that they might encounter in the workplace. Examples might include configuring network components, applying security policies to a set of cloud resources, or automating a network de"
+        },
+        {
+          "program_code": "BSCNEAZR",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering - Microsoft Azure",
+          "group": "Cloud and Virtualization",
+          "course_title": "BSCNE-Azure Capstone Project",
+          "mention": "Azure environment",
+          "class": "unclear",
+          "description_snippet": "In the BSCNE-Azure Capstone Project, students choose from a fixed set of tasks that they might encounter in the workplace. Examples might include configuring network components, applying security policies to a set of cloud resources, or automating a network de"
+        },
+        {
+          "program_code": "BSCNEAZR",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering - Microsoft Azure",
+          "group": "Cloud and Virtualization",
+          "course_title": "BSCNE-Azure Capstone Project",
+          "mention": "Azure CLI",
+          "class": "unclear",
+          "description_snippet": "In the BSCNE-Azure Capstone Project, students choose from a fixed set of tasks that they might encounter in the workplace. Examples might include configuring network components, applying security policies to a set of cloud resources, or automating a network de"
+        },
+        {
+          "program_code": "BSCNEAZR",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering - Microsoft Azure",
+          "group": "Cloud and Virtualization",
+          "course_title": "BSCNE-Azure Capstone Project",
+          "mention": "Azure platform",
+          "class": "unclear",
+          "description_snippet": "In the BSCNE-Azure Capstone Project, students choose from a fixed set of tasks that they might encounter in the workplace. Examples might include configuring network components, applying security policies to a set of cloud resources, or automating a network de"
+        },
+        {
+          "program_code": "BSCNEAWS",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering - Amazon Web",
+          "group": "Cloud and Virtualization",
+          "course_title": "AWS Cloud Architecture",
+          "mention": "AWS Cloud",
+          "class": "unclear",
+          "description_snippet": "AWS Cloud Architecture examines the skills and knowledge needed to effectively design structured cloud environments. Through practical application, students will gain experience in designing control measures for resilient architectures with cloud solutions and"
+        },
+        {
+          "program_code": "BSCNEAWS",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering - Amazon Web",
+          "group": "Cloud and Virtualization",
+          "course_title": "Cloud Deployment and Operations",
+          "mention": "AWS Cloud",
+          "class": "unclear",
+          "description_snippet": "Cloud Deployment and Operations provides students with technical skills in the deployment, management, and operations of cloud services. This course allows students to examine stability and scalability, backup and recovery processes, and deployment best practi"
+        },
+        {
+          "program_code": "BSCNEAWS",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering - Amazon Web",
+          "group": "Cloud and Virtualization",
+          "course_title": "BSCNE-AWS Capstone Project",
+          "mention": "AWS environment",
+          "class": "unclear",
+          "description_snippet": "In the BSCNE-AWS Capstone Project, students choose from a fixed set of tasks that they might encounter in the workplace. Examples might include configuring network components, applying security policies to a set of cloud resources, or automating a network depl"
+        },
+        {
+          "program_code": "BSCNEAWS",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering - Amazon Web",
+          "group": "Cloud and Virtualization",
+          "course_title": "BSCNE-AWS Capstone Project",
+          "mention": "AWS CLI",
+          "class": "unclear",
+          "description_snippet": "In the BSCNE-AWS Capstone Project, students choose from a fixed set of tasks that they might encounter in the workplace. Examples might include configuring network components, applying security policies to a set of cloud resources, or automating a network depl"
+        },
+        {
+          "program_code": "BSCNEAWS",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering - Amazon Web",
+          "group": "Cloud and Virtualization",
+          "course_title": "BSCNE-AWS Capstone Project",
+          "mention": "AWS platform",
+          "class": "unclear",
+          "description_snippet": "In the BSCNE-AWS Capstone Project, students choose from a fixed set of tasks that they might encounter in the workplace. Examples might include configuring network components, applying security policies to a set of cloud resources, or automating a network depl"
+        }
+      ],
+      "adjacent_mention_only": [
+        {
+          "program_code": "BSACC",
+          "degree_title": "Bachelor of Science, Accounting",
+          "group": "Accounting",
+          "course_title": "Auditing",
+          "mention": "CPA Code",
+          "class": "adjacent_mention_only",
+          "description_snippet": "Auditing covers the entire auditing process. This course will help students gain an understanding of the different assurance services, the AICPA Code of Professional Conduct, and the conceptual framework for members in public practice. The course will teach st"
+        }
+      ]
+    },
+    "conclusion": "Promising but needs policy/extractor tightening. Explicit prep/alignment exists, but parser-noise cert tokens remain substantial."
+  },
+  "prerequisite_signals": {
+    "mention_count_total": 264,
+    "mention_class_counts": {
+      "parser_artifact_or_weak": 56,
+      "internal_only_dependency_bundle": 19,
+      "explicit_prerequisite_dependency": 162,
+      "sequencing_or_context_clue": 27
+    },
+    "mention_class_rates_percent": {
+      "parser_artifact_or_weak": 21.21,
+      "internal_only_dependency_bundle": 7.2,
+      "explicit_prerequisite_dependency": 61.36,
+      "sequencing_or_context_clue": 10.23
+    },
+    "course_count_with_any_prereq_mentions": 187,
+    "course_count_with_explicit_or_internal_dependency": 104,
+    "course_level_class_counts": {
+      "parser_artifact_or_weak": 56,
+      "internal_only_dependency_bundle": 19,
+      "explicit_prerequisite_dependency": 85,
+      "sequencing_or_context_clue": 27
+    },
+    "examples_by_class": {
+      "parser_artifact_or_weak": [
+        {
+          "program_code": "BAESSPMM",
+          "degree_title": "Bachelor of Arts, Educational Studies in Mild to Moderate",
+          "group": "General Education",
+          "course_title": "Composition: Successful Self-Expression",
+          "mention": "for this course and there is no specific technical knowledge needed",
+          "class": "parser_artifact_or_weak",
+          "description_snippet": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing res"
+        },
+        {
+          "program_code": "BSSWE_Java",
+          "degree_title": "Bachelor of Science, Software Engineering",
+          "group": "General Education",
+          "course_title": "Composition: Successful Self-Expression",
+          "mention": "for this course and there is no specific technical knowledge needed",
+          "class": "parser_artifact_or_weak",
+          "description_snippet": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing res"
+        },
+        {
+          "program_code": "MSSWEUG",
+          "degree_title": "Bachelor of Science, Software Engineering (BSSWE to MSSWE)",
+          "group": "General Education",
+          "course_title": "Composition: Successful Self-Expression",
+          "mention": "for this course and there is no specific technical knowledge needed",
+          "class": "parser_artifact_or_weak",
+          "description_snippet": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing res"
+        },
+        {
+          "program_code": "BSCNE",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering",
+          "group": "General Education",
+          "course_title": "Composition: Successful Self-Expression",
+          "mention": "for this course and there is no specific technical knowledge needed",
+          "class": "parser_artifact_or_weak",
+          "description_snippet": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing res"
+        },
+        {
+          "program_code": "BSSESB",
+          "degree_title": "Bachelor of Science, Science Education (Secondary Biological Science)",
+          "group": "General Education",
+          "course_title": "Composition: Successful Self-Expression",
+          "mention": "for this course and there is no specific technical knowledge needed",
+          "class": "parser_artifact_or_weak",
+          "description_snippet": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing res"
+        },
+        {
+          "program_code": "BSHIM",
+          "degree_title": "Bachelor of Science, Health Information Management",
+          "group": "General Education",
+          "course_title": "Composition: Successful Self-Expression",
+          "mention": "for this course and there is no specific technical knowledge needed",
+          "class": "parser_artifact_or_weak",
+          "description_snippet": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing res"
+        },
+        {
+          "program_code": "BSMES",
+          "degree_title": "Bachelor of Science, Mathematics Education (Secondary)",
+          "group": "General Education",
+          "course_title": "Composition: Successful Self-Expression",
+          "mention": "for this course and there is no specific technical knowledge needed",
+          "class": "parser_artifact_or_weak",
+          "description_snippet": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing res"
+        },
+        {
+          "program_code": "MSITM",
+          "degree_title": "Master of Science, Information Technology Management",
+          "group": "IT Management",
+          "course_title": "Project Management",
+          "mention": "for this course",
+          "class": "parser_artifact_or_weak",
+          "description_snippet": "Project Management is a thorough exploration of the inputs, tools, techniques, and outputs across the five process groups and 10 knowledge areas identified in the Project Management Body of Knowledge (PMBOK) Guide. The essential concepts and practical scenario"
+        },
+        {
+          "program_code": "BSCSIA",
+          "degree_title": "Bachelor of Science, Cybersecurity and Information Assurance",
+          "group": "General Education",
+          "course_title": "Composition: Successful Self-Expression",
+          "mention": "for this course and there is no specific technical knowledge needed",
+          "class": "parser_artifact_or_weak",
+          "description_snippet": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing res"
+        },
+        {
+          "program_code": "MSIT",
+          "degree_title": "Master of Science, Information Technology",
+          "group": "IT Management",
+          "course_title": "Leading a Technology Transformation",
+          "mention": "for this course",
+          "class": "parser_artifact_or_weak",
+          "description_snippet": "Leading a Technology Transformation will have the student act as a technology leader who is helping an organization navigate through a digital transformation. The student will assess the technological needs of the organization, roadmap its technology change, a"
+        },
+        {
+          "program_code": "BSIT",
+          "degree_title": "Bachelor of Science, Information Technology",
+          "group": "General Education",
+          "course_title": "Composition: Successful Self-Expression",
+          "mention": "for this course and there is no specific technical knowledge needed",
+          "class": "parser_artifact_or_weak",
+          "description_snippet": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing res"
+        },
+        {
+          "program_code": "BSMGT",
+          "degree_title": "Bachelor of Science, Business Management",
+          "group": "General Education",
+          "course_title": "Composition: Successful Self-Expression",
+          "mention": "for this course and there is no specific technical knowledge needed",
+          "class": "parser_artifact_or_weak",
+          "description_snippet": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing res"
+        },
+        {
+          "program_code": "BAELED",
+          "degree_title": "Bachelor of Arts, Elementary Education",
+          "group": "General Education",
+          "course_title": "Composition: Successful Self-Expression",
+          "mention": "for this course and there is no specific technical knowledge needed",
+          "class": "parser_artifact_or_weak",
+          "description_snippet": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing res"
+        },
+        {
+          "program_code": "BAESMES",
+          "degree_title": "Bachelor of Arts, Educational Studies in Secondary Mathematics",
+          "group": "General Education",
+          "course_title": "Composition: Successful Self-Expression",
+          "mention": "for this course and there is no specific technical knowledge needed",
+          "class": "parser_artifact_or_weak",
+          "description_snippet": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing res"
+        },
+        {
+          "program_code": "BAESSPEE",
+          "degree_title": "Bachelor of Arts, Educational Studies in Special and Elementary",
+          "group": "General Education",
+          "course_title": "Composition: Successful Self-Expression",
+          "mention": "for this course and there is no specific technical knowledge needed",
+          "class": "parser_artifact_or_weak",
+          "description_snippet": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing res"
+        },
+        {
+          "program_code": "BSITM",
+          "degree_title": "Bachelor of Science Information Technology Management",
+          "group": "General Education",
+          "course_title": "English Composition II",
+          "mention": "for Composition II",
+          "class": "parser_artifact_or_weak",
+          "description_snippet": "English Composition II introduces candidates to the types of research and writing that are valued in college and beyond. Candidates will practice writing, with emphasis placed on research, writing, and revising an academic argument. Instruction and exercises i"
+        },
+        {
+          "program_code": "PMCNUED",
+          "degree_title": "Post-Master's Certificate, Nursing - Nursing Education (Post-MSN)",
+          "group": "Nursing Education Specialty",
+          "course_title": "Facilitation of Context-Based Student-Centered Learning",
+          "mention": "to this course",
+          "class": "parser_artifact_or_weak",
+          "description_snippet": "Facilitation of Context-Based Student-Centered Learning explores how the nurse educator will incorporate authentic experiences into the creation of course plans that facilitate scholarly inquiry, collaboration, and knowledge acquisition in varied educational e"
+        },
+        {
+          "program_code": "PMCNUED",
+          "degree_title": "Post-Master's Certificate, Nursing - Nursing Education (Post-MSN)",
+          "group": "Nursing Education Specialty",
+          "course_title": "Contemporary Curriculum Design and Development in Nursing Education",
+          "mention": "to this course",
+          "class": "parser_artifact_or_weak",
+          "description_snippet": "Contemporary Curriculum Design and Development in Nursing Education analyzes the concepts of creating curriculum based on national nursing accreditation standards and instructional design best practices. Nurse educator students will create course content that "
+        },
+        {
+          "program_code": "BSHR",
+          "degree_title": "Bachelor of Science, Human Resource Management",
+          "group": "General Education",
+          "course_title": "Composition: Successful Self-Expression",
+          "mention": "for this course and there is no specific technical knowledge needed",
+          "class": "parser_artifact_or_weak",
+          "description_snippet": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing res"
+        },
+        {
+          "program_code": "BAESELED",
+          "degree_title": "Bachelor of Arts, Educational Studies in Elementary Education",
+          "group": "General Education",
+          "course_title": "Composition: Successful Self-Expression",
+          "mention": "for this course and there is no specific technical knowledge needed",
+          "class": "parser_artifact_or_weak",
+          "description_snippet": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing res"
+        }
+      ],
+      "internal_only_dependency_bundle": [
+        {
+          "program_code": "MSNUFNP",
+          "degree_title": "Master of Science, Nursing - Family Nurse Practitioner (BSN to MSN)",
+          "group": "Family Nurse Practitioner Specialty",
+          "course_title": "Adult Primary Care for the Advanced Practice Nurse",
+          "mention": "courses are required prior to taking this course: All MSN Core courses and NP Core courses",
+          "class": "internal_only_dependency_bundle",
+          "description_snippet": "Adult Primary Care for the Advanced Practice Nurse prepares the graduate nursing student to perform the role of an advanced practice nurse with the essential competencies and skills necessary to provide primary healthcare to adult patients and families. This c"
+        },
+        {
+          "program_code": "MSNUFNP",
+          "degree_title": "Master of Science, Nursing - Family Nurse Practitioner (BSN to MSN)",
+          "group": "Family Nurse Practitioner Specialty",
+          "course_title": "Pediatric Primary Care for the Advanced Practice Nurse",
+          "mention": "courses are required prior to taking this course: All MSN Core courses and NP Core courses",
+          "class": "internal_only_dependency_bundle",
+          "description_snippet": "Pediatric Primary Care for the Advanced Practice Nurse prepares the graduate nursing student to perform the role of an advanced practice nurse with the essential competencies and skills necessary to provide primary healthcare to pediatric patients, from infanc"
+        },
+        {
+          "program_code": "MSNUFNP",
+          "degree_title": "Master of Science, Nursing - Family Nurse Practitioner (BSN to MSN)",
+          "group": "Family Nurse Practitioner Specialty",
+          "course_title": "Special Populations Primary Care for the Advanced Practice Nurse",
+          "mention": "courses are required prior to taking this course: All MSN Core courses and NP Core courses",
+          "class": "internal_only_dependency_bundle",
+          "description_snippet": "Special Populations Primary Care for the Advanced Practice Nurse prepares the graduate nursing student to perform the role of an advanced practice nurse with the essential competencies and skills necessary to provide primary healthcare to unique patient popula"
+        },
+        {
+          "program_code": "PMCNUFNP",
+          "degree_title": "Post-Master's Certificate, Nursing - Family Nurse Practitioner (PostMSN)",
+          "group": "Family Nurse Practitioner Specialty",
+          "course_title": "Adult Primary Care for the Advanced Practice Nurse",
+          "mention": "courses are required prior to taking this course: All MSN Core courses and NP Core courses",
+          "class": "internal_only_dependency_bundle",
+          "description_snippet": "Adult Primary Care for the Advanced Practice Nurse prepares the graduate nursing student to perform the role of an advanced practice nurse with the essential competencies and skills necessary to provide primary healthcare to adult patients and families. This c"
+        },
+        {
+          "program_code": "PMCNUFNP",
+          "degree_title": "Post-Master's Certificate, Nursing - Family Nurse Practitioner (PostMSN)",
+          "group": "Family Nurse Practitioner Specialty",
+          "course_title": "Pediatric Primary Care for the Advanced Practice Nurse",
+          "mention": "courses are required prior to taking this course: All MSN Core courses and NP Core courses",
+          "class": "internal_only_dependency_bundle",
+          "description_snippet": "Pediatric Primary Care for the Advanced Practice Nurse prepares the graduate nursing student to perform the role of an advanced practice nurse with the essential competencies and skills necessary to provide primary healthcare to pediatric patients, from infanc"
+        },
+        {
+          "program_code": "PMCNUFNP",
+          "degree_title": "Post-Master's Certificate, Nursing - Family Nurse Practitioner (PostMSN)",
+          "group": "Family Nurse Practitioner Specialty",
+          "course_title": "Special Populations Primary Care for the Advanced Practice Nurse",
+          "mention": "courses are required prior to taking this course: All MSN Core courses and NP Core courses",
+          "class": "internal_only_dependency_bundle",
+          "description_snippet": "Special Populations Primary Care for the Advanced Practice Nurse prepares the graduate nursing student to perform the role of an advanced practice nurse with the essential competencies and skills necessary to provide primary healthcare to unique patient popula"
+        },
+        {
+          "program_code": "PMCNUFNP",
+          "degree_title": "Post-Master's Certificate, Nursing - Family Nurse Practitioner (PostMSN)",
+          "group": "Family Nurse Practitioner Specialty",
+          "course_title": "Health Promotion of Patients and Populations Across the Lifespan",
+          "mention": "courses are required prior to taking this course: All MSN Core courses and NP Core courses",
+          "class": "internal_only_dependency_bundle",
+          "description_snippet": "Health Promotion of Patients and Populations Across the Lifespan prepares the graduate nursing student to perform the role of an advanced practice nurse with the essential competencies and skills necessary to provide health promotion activities to individuals "
+        },
+        {
+          "program_code": "BSPRN",
+          "degree_title": "Bachelor of Science, Nursing - Prelicensure (Pre-Nursing/Nursing)",
+          "group": "Prelicensure Nursing",
+          "course_title": "Health and Wellness Through Nutritional Sciences",
+          "mention": "Courses: All prelicensure nursing curriculum courses from previous terms",
+          "class": "internal_only_dependency_bundle",
+          "description_snippet": "The Health and Wellness Through Nutritional Science course prepares nursing students to learn the basic principles of nutrition, nutrition throughout the life cycle, nutrition related to weight management and physical health, and nutrition related to patient c"
+        },
+        {
+          "program_code": "BSPRN",
+          "degree_title": "Bachelor of Science, Nursing - Prelicensure (Pre-Nursing/Nursing)",
+          "group": "Prelicensure Nursing",
+          "course_title": "Medical Dosage Calculations and Pharmacology",
+          "mention": "Courses: All prelicensure nursing curriculum courses from previous terms",
+          "class": "internal_only_dependency_bundle",
+          "description_snippet": "Medical Dosage Calculations and Pharmacology introduces an in-depth nursing approach to medication administration concepts, legal & ethical principles, pharmacological principles, variety of drug classifications, complementary & alternative therapies needed to"
+        },
+        {
+          "program_code": "BSPRN",
+          "degree_title": "Bachelor of Science, Nursing - Prelicensure (Pre-Nursing/Nursing)",
+          "group": "Prelicensure Nursing",
+          "course_title": "Foundations of Nursing",
+          "mention": "Courses: All prelicensure nursing curriculum courses from previous terms",
+          "class": "internal_only_dependency_bundle",
+          "description_snippet": "Foundations of Nursing introduces students to the nursing process, scope of practice, clinical judgment model and fundamental concepts of holistic nursing practice that will serve the needs of diverse adult patients across the lifespan. The course will focus o"
+        },
+        {
+          "program_code": "BSPRN",
+          "degree_title": "Bachelor of Science, Nursing - Prelicensure (Pre-Nursing/Nursing)",
+          "group": "Prelicensure Nursing",
+          "course_title": "The following section includes the areas of study in the program, with their associated courses. Your specific",
+          "mention": "Courses: All prelicensure nursing curriculum courses from previous terms",
+          "class": "internal_only_dependency_bundle",
+          "description_snippet": "learning resources and level of instructional support will vary based on the individual competencies you bring to the program and your confidence in developing the knowledge, skills, and abilities required in each area of the degree. The Degree Plan and learni"
+        },
+        {
+          "program_code": "BSPRN",
+          "degree_title": "Bachelor of Science, Nursing - Prelicensure (Pre-Nursing/Nursing)",
+          "group": "Prelicensure Nursing",
+          "course_title": "Health Assessment",
+          "mention": "Courses: All prelicensure nursing curriculum courses from previous terms",
+          "class": "internal_only_dependency_bundle",
+          "description_snippet": "The Health Assessment course focuses on concepts and skills necessary to collect a comprehensive health history and perform a head-to-toe and focused assessments on diverse patients across the lifespan. The emphasis will be to differentiate between normal and "
+        },
+        {
+          "program_code": "BSPRN",
+          "degree_title": "Bachelor of Science, Nursing - Prelicensure (Pre-Nursing/Nursing)",
+          "group": "Prelicensure Nursing",
+          "course_title": "Intermediate Nursing Skills",
+          "mention": "Courses: All prelicensure nursing curriculum courses from previous terms",
+          "class": "internal_only_dependency_bundle",
+          "description_snippet": "Intermediate Nursing Skills will build on basic nursing skill concepts to develop intermediate medical surgical nursing practice, including peripheral intravenous access, blood administration, airway management, perioperative and postoperative care, and wound "
+        },
+        {
+          "program_code": "BSPRN",
+          "degree_title": "Bachelor of Science, Nursing - Prelicensure (Pre-Nursing/Nursing)",
+          "group": "Prelicensure Nursing",
+          "course_title": "Adult Health II",
+          "mention": "Courses: All prelicensure nursing curriculum courses from previous terms and D445",
+          "class": "internal_only_dependency_bundle",
+          "description_snippet": "Adult Health II prepares students to provide safe, equitable, high quality medical surgical nursing care for diverse adult populations across the lifespan in various health care settings. This includes health promotion and management of both acute and chronic "
+        },
+        {
+          "program_code": "BSPRN",
+          "degree_title": "Bachelor of Science, Nursing - Prelicensure (Pre-Nursing/Nursing)",
+          "group": "Prelicensure Nursing",
+          "course_title": "Women's and Children's Nursing",
+          "mention": "Courses: All prelicensure nursing curriculum courses from previous terms and D445",
+          "class": "internal_only_dependency_bundle",
+          "description_snippet": "Womens and Childrens Nursing prepares students to provide safe, equitable, high-quality nursing care, pharmacological care, and emotional support for diverse women and pediatric populations. This course focuses on antepartum, intrapartum, postpartum, neonatal "
+        },
+        {
+          "program_code": "BSPRN",
+          "degree_title": "Bachelor of Science, Nursing - Prelicensure (Pre-Nursing/Nursing)",
+          "group": "Prelicensure Nursing",
+          "course_title": "Psychiatric and Mental Health Nursing",
+          "mention": "Courses: All prelicensure nursing curriculum courses from previous terms and D445",
+          "class": "internal_only_dependency_bundle",
+          "description_snippet": "Psychiatric and Mental Health Nursing prepares students to provide safe, equitable, high-quality care using modern concepts of psychiatric and mental health nursing. The student will utilize therapeutic communication to a diverse population of patients includi"
+        },
+        {
+          "program_code": "BSPRN",
+          "degree_title": "Bachelor of Science, Nursing - Prelicensure (Pre-Nursing/Nursing)",
+          "group": "Prelicensure Nursing",
+          "course_title": "Community Health and Population-Focused Nursing",
+          "mention": "Courses: All prelicensure nursing curriculum courses from previous terms and D445",
+          "class": "internal_only_dependency_bundle",
+          "description_snippet": "Community health and population focused nursing concentrates on the theory and concepts of community, public and global health nursing that impact diverse communities. Students learn the role of the community health nurse, learn to assess the community\u2019s healt"
+        },
+        {
+          "program_code": "BSPRN",
+          "degree_title": "Bachelor of Science, Nursing - Prelicensure (Pre-Nursing/Nursing)",
+          "group": "Prelicensure Nursing",
+          "course_title": "Advanced Nursing Skills",
+          "mention": "Courses: All prelicensure nursing curriculum courses from previous terms",
+          "class": "internal_only_dependency_bundle",
+          "description_snippet": "Advanced Nursing Skills will build on intermediate skills and focus on advanced skills related to critical care nursing practice, including closed chest drainage systems, electrocardiograms (EKGs), palliative care, ventilators, disaster management and transiti"
+        },
+        {
+          "program_code": "BSPRN",
+          "degree_title": "Bachelor of Science, Nursing - Prelicensure (Pre-Nursing/Nursing)",
+          "group": "Prelicensure Nursing",
+          "course_title": "Professional Nursing Role Transition",
+          "mention": "Courses: All prelicensure nursing curriculum courses from previous terms and D453",
+          "class": "internal_only_dependency_bundle",
+          "description_snippet": "The Professional Nursing Role Transition course builds on the previous knowledge gained in all other nursing courses. The emphasis of this course is placed on the personal and professional strategies needed to make the transition from student to graduate nurse"
+        }
+      ],
+      "explicit_prerequisite_dependency": [
+        {
+          "program_code": "MACCM",
+          "degree_title": "Master of Science in Accounting, Management Accounting",
+          "group": "Accounting",
+          "course_title": "Data Analytics for Accountants II",
+          "mention": "Data Analytics for Accountants I",
+          "class": "explicit_prerequisite_dependency",
+          "description_snippet": "Accountants are no longer confined to being the chroniclers of an organization\u2019s profits and expenses\u2014they now leverage the power of data to predict the future and advise leaders on appropriate actions. Data Analytics for Accountants II equips learners with th"
+        },
+        {
+          "program_code": "MACCM",
+          "degree_title": "Master of Science in Accounting, Management Accounting",
+          "group": "Accounting",
+          "course_title": "Data Analytics for Accountants II",
+          "mention": "for this course",
+          "class": "explicit_prerequisite_dependency",
+          "description_snippet": "Accountants are no longer confined to being the chroniclers of an organization\u2019s profits and expenses\u2014they now leverage the power of data to predict the future and advise leaders on appropriate actions. Data Analytics for Accountants II equips learners with th"
+        },
+        {
+          "program_code": "BSSWE_Java",
+          "degree_title": "Bachelor of Science, Software Engineering",
+          "group": "Web Development",
+          "course_title": "Front-End Web Development",
+          "mention": "Web Development Foundations",
+          "class": "explicit_prerequisite_dependency",
+          "description_snippet": "Front-End Web Development builds upon web design and development skills to teach students how to organize websites with navigational schemes and create reactive user web interfaces using cascading style sheets (CSS). In this course, students will implement dat"
+        },
+        {
+          "program_code": "BSSWE_Java",
+          "degree_title": "Bachelor of Science, Software Engineering",
+          "group": "Web Development",
+          "course_title": "Front-End Web Development",
+          "mention": "for this course",
+          "class": "explicit_prerequisite_dependency",
+          "description_snippet": "Front-End Web Development builds upon web design and development skills to teach students how to organize websites with navigational schemes and create reactive user web interfaces using cascading style sheets (CSS). In this course, students will implement dat"
+        },
+        {
+          "program_code": "BSSWE_Java",
+          "degree_title": "Bachelor of Science, Software Engineering",
+          "group": "Data Management",
+          "course_title": "Advanced Data Management",
+          "mention": "Data Management - Foundations",
+          "class": "explicit_prerequisite_dependency",
+          "description_snippet": "Advanced Data Management enables learners to extract and analyze raw data. Skillful data management allows organizations to discover and explore data in ways that uncover trends, issues, and their root causes. In turn, businesses are better equipped to capital"
+        },
+        {
+          "program_code": "BSSWE_Java",
+          "degree_title": "Bachelor of Science, Software Engineering",
+          "group": "Data Management",
+          "course_title": "Advanced Data Management",
+          "mention": "for this course",
+          "class": "explicit_prerequisite_dependency",
+          "description_snippet": "Advanced Data Management enables learners to extract and analyze raw data. Skillful data management allows organizations to discover and explore data in ways that uncover trends, issues, and their root causes. In turn, businesses are better equipped to capital"
+        },
+        {
+          "program_code": "MSSWEUG",
+          "degree_title": "Bachelor of Science, Software Engineering (BSSWE to MSSWE)",
+          "group": "Web Development",
+          "course_title": "Front-End Web Development",
+          "mention": "Web Development Foundations",
+          "class": "explicit_prerequisite_dependency",
+          "description_snippet": "Front-End Web Development builds upon web design and development skills to teach students how to organize websites with navigational schemes and create reactive user web interfaces using cascading style sheets (CSS). In this course, students will implement dat"
+        },
+        {
+          "program_code": "MSSWEUG",
+          "degree_title": "Bachelor of Science, Software Engineering (BSSWE to MSSWE)",
+          "group": "Web Development",
+          "course_title": "Front-End Web Development",
+          "mention": "for this course",
+          "class": "explicit_prerequisite_dependency",
+          "description_snippet": "Front-End Web Development builds upon web design and development skills to teach students how to organize websites with navigational schemes and create reactive user web interfaces using cascading style sheets (CSS). In this course, students will implement dat"
+        },
+        {
+          "program_code": "MSSWEUG",
+          "degree_title": "Bachelor of Science, Software Engineering (BSSWE to MSSWE)",
+          "group": "Data Management",
+          "course_title": "Advanced Data Management",
+          "mention": "Data Management - Foundations",
+          "class": "explicit_prerequisite_dependency",
+          "description_snippet": "Advanced Data Management enables learners to extract and analyze raw data. Skillful data management allows organizations to discover and explore data in ways that uncover trends, issues, and their root causes. In turn, businesses are better equipped to capital"
+        },
+        {
+          "program_code": "MSSWEUG",
+          "degree_title": "Bachelor of Science, Software Engineering (BSSWE to MSSWE)",
+          "group": "Data Management",
+          "course_title": "Advanced Data Management",
+          "mention": "for this course",
+          "class": "explicit_prerequisite_dependency",
+          "description_snippet": "Advanced Data Management enables learners to extract and analyze raw data. Skillful data management allows organizations to discover and explore data in ways that uncover trends, issues, and their root causes. In turn, businesses are better equipped to capital"
+        },
+        {
+          "program_code": "BSCNE",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering",
+          "group": "Networks",
+          "course_title": "Networks",
+          "mention": "Network and Security - Foundations",
+          "class": "explicit_prerequisite_dependency",
+          "description_snippet": "Networks introduces skills in configuring networking components and a network infrastructure. Learners will gain skills in optimizing network operations for availability, performance, and security, and in troubleshooting network issues. The course prepares lea"
+        },
+        {
+          "program_code": "BSCNE",
+          "degree_title": "Bachelor of Science, Cloud and Network Engineering",
+          "group": "Networks",
+          "course_title": "Networks",
+          "mention": "for this course",
+          "class": "explicit_prerequisite_dependency",
+          "description_snippet": "Networks introduces skills in configuring networking components and a network infrastructure. Learners will gain skills in optimizing network operations for availability, performance, and security, and in troubleshooting network issues. The course prepares lea"
+        },
+        {
+          "program_code": "BSMES",
+          "degree_title": "Bachelor of Science, Mathematics Education (Secondary)",
+          "group": "General Education",
+          "course_title": "Precalculus",
+          "mention": "Successful completion of a college level algebra course",
+          "class": "explicit_prerequisite_dependency",
+          "description_snippet": "Precalculus builds on previous math courses to provide a deeper understanding of fundamental mathematical concepts and problem-solving skills to prepare students for calculus and professional success. The course will lead students to engage with functions, tri"
+        },
+        {
+          "program_code": "BSMES",
+          "degree_title": "Bachelor of Science, Mathematics Education (Secondary)",
+          "group": "General Education",
+          "course_title": "Precalculus",
+          "mention": "for this course",
+          "class": "explicit_prerequisite_dependency",
+          "description_snippet": "Precalculus builds on previous math courses to provide a deeper understanding of fundamental mathematical concepts and problem-solving skills to prepare students for calculus and professional success. The course will lead students to engage with functions, tri"
+        },
+        {
+          "program_code": "BSMES",
+          "degree_title": "Bachelor of Science, Mathematics Education (Secondary)",
+          "group": "Mathematics Education",
+          "course_title": "Multivariable Calculus",
+          "mention": "Calculus II",
+          "class": "explicit_prerequisite_dependency",
+          "description_snippet": "Multivariable Calculus provides an advanced exploration of calculus in multiple dimensions. The course begins with vector operations in both two and three dimensions, with emphasis on mastering computations and interpretations of magnitudes, directions, and ve"
+        },
+        {
+          "program_code": "BSMES",
+          "degree_title": "Bachelor of Science, Mathematics Education (Secondary)",
+          "group": "Mathematics Education",
+          "course_title": "Multivariable Calculus",
+          "mention": "for this course",
+          "class": "explicit_prerequisite_dependency",
+          "description_snippet": "Multivariable Calculus provides an advanced exploration of calculus in multiple dimensions. The course begins with vector operations in both two and three dimensions, with emphasis on mastering computations and interpretations of magnitudes, directions, and ve"
+        },
+        {
+          "program_code": "MACCA",
+          "degree_title": "Master of Science in Accounting, Auditing Specialization",
+          "group": "Accounting",
+          "course_title": "Data Analytics for Accountants II",
+          "mention": "Data Analytics for Accountants I",
+          "class": "explicit_prerequisite_dependency",
+          "description_snippet": "Accountants are no longer confined to being the chroniclers of an organization\u2019s profits and expenses\u2014they now leverage the power of data to predict the future and advise leaders on appropriate actions. Data Analytics for Accountants II equips learners with th"
+        },
+        {
+          "program_code": "MACCA",
+          "degree_title": "Master of Science in Accounting, Auditing Specialization",
+          "group": "Accounting",
+          "course_title": "Data Analytics for Accountants II",
+          "mention": "for this course",
+          "class": "explicit_prerequisite_dependency",
+          "description_snippet": "Accountants are no longer confined to being the chroniclers of an organization\u2019s profits and expenses\u2014they now leverage the power of data to predict the future and advise leaders on appropriate actions. Data Analytics for Accountants II equips learners with th"
+        },
+        {
+          "program_code": "BSCSIA",
+          "degree_title": "Bachelor of Science, Cybersecurity and Information Assurance",
+          "group": "General Education",
+          "course_title": "Discrete Math: Logic",
+          "mention": "Applied Probability and Statistics and Applied Algebra",
+          "class": "explicit_prerequisite_dependency",
+          "description_snippet": "Discrete Math-Logic is designed to help students develop competence in the use of logic and proofs and Boolean Algebra and Boolean functions. Applied Probability and Statistics and Applied Algebra are prerequisites for this course."
+        },
+        {
+          "program_code": "BSCSIA",
+          "degree_title": "Bachelor of Science, Cybersecurity and Information Assurance",
+          "group": "General Education",
+          "course_title": "Discrete Math: Functions and Relations",
+          "mention": "Discrete Math: Logic, Applied Probability and Statistics, and Applied Algebra",
+          "class": "explicit_prerequisite_dependency",
+          "description_snippet": "Discrete Math: Functions and Relations is designed to help students develop competence in the use of abstract discrete structures fundamental to systems networking. In particular, this course will introduce students to set theory, finite sequences, series, and"
+        }
+      ],
+      "sequencing_or_context_clue": [
+        {
+          "program_code": "BSSWE_Java",
+          "degree_title": "Bachelor of Science, Software Engineering",
+          "group": "Data Management",
+          "course_title": "Data Management - Applications",
+          "mention": "Data Management - Foundations",
+          "class": "sequencing_or_context_clue",
+          "description_snippet": "Data Management - Applications covers conceptual data modeling and introduces MySQL. Students will learn how to create simple to complex SELECT queries, including subqueries and joins, and how to use SQL to update and delete data. Topics covered in this course"
+        },
+        {
+          "program_code": "MSSWEUG",
+          "degree_title": "Bachelor of Science, Software Engineering (BSSWE to MSSWE)",
+          "group": "Data Management",
+          "course_title": "Data Management - Applications",
+          "mention": "Data Management - Foundations",
+          "class": "sequencing_or_context_clue",
+          "description_snippet": "Data Management - Applications covers conceptual data modeling and introduces MySQL. Students will learn how to create simple to complex SELECT queries, including subqueries and joins, and how to use SQL to update and delete data. Topics covered in this course"
+        },
+        {
+          "program_code": "BSFIN",
+          "degree_title": "Bachelor of Science, Finance",
+          "group": "Finance",
+          "course_title": "Financial Management I",
+          "mention": "for Financial Management I is Corporate Finance",
+          "class": "sequencing_or_context_clue",
+          "description_snippet": "This course covers basic financial management principles primarily targeted to the operations part of a business. The learner gains an understanding about the basic finance organization in an enterprise in support of the company's primary goal to increase corp"
+        },
+        {
+          "program_code": "BSDA",
+          "degree_title": "Bachelor of Science, Data Analytics",
+          "group": "Data Management",
+          "course_title": "Data Management - Applications",
+          "mention": "Data Management - Foundations",
+          "class": "sequencing_or_context_clue",
+          "description_snippet": "Data Management - Applications covers conceptual data modeling and introduces MySQL. Students will learn how to create simple to complex SELECT queries, including subqueries and joins, and how to use SQL to update and delete data. Topics covered in this course"
+        },
+        {
+          "program_code": "BSUXD",
+          "degree_title": "Bachelor of Science, User Experience Design",
+          "group": "Business Core",
+          "course_title": "Introduction to Business Finance",
+          "mention": "for this course is Introduction to Business Accounting",
+          "class": "sequencing_or_context_clue",
+          "description_snippet": "Introduction to Business Finance provides students with an introductory look at the discipline of finance and its context within the business environment. This course will help students gain an understanding of the systems, structure, roles, and impact of fina"
+        },
+        {
+          "program_code": "BSIT",
+          "degree_title": "Bachelor of Science, Information Technology",
+          "group": "Data Management",
+          "course_title": "Data Management - Applications",
+          "mention": "Data Management - Foundations",
+          "class": "sequencing_or_context_clue",
+          "description_snippet": "Data Management - Applications covers conceptual data modeling and introduces MySQL. Students will learn how to create simple to complex SELECT queries, including subqueries and joins, and how to use SQL to update and delete data. Topics covered in this course"
+        },
+        {
+          "program_code": "BSMGT",
+          "degree_title": "Bachelor of Science, Business Management",
+          "group": "Business Core",
+          "course_title": "Introduction to Business Finance",
+          "mention": "for this course is Introduction to Business Accounting",
+          "class": "sequencing_or_context_clue",
+          "description_snippet": "Introduction to Business Finance provides students with an introductory look at the discipline of finance and its context within the business environment. This course will help students gain an understanding of the systems, structure, roles, and impact of fina"
+        },
+        {
+          "program_code": "MASEMG",
+          "degree_title": "Master of Arts Science Education (Middle Grades)",
+          "group": "Geosciences Content",
+          "course_title": "Astronomy",
+          "mention": "for this course is General Physics",
+          "class": "sequencing_or_context_clue",
+          "description_snippet": "Astronomy provides graduate students seeking initial licensure or endorsement and/or to earn their MA degree in secondary or middle grade science education with essential knowledge of astronomy. This course explores Western history and basic physics of astrono"
+        },
+        {
+          "program_code": "MASESB",
+          "degree_title": "Master of Arts Science Education (Secondary Biological Science)",
+          "group": "Biology Content",
+          "course_title": "Molecular and Cellular Biology",
+          "mention": "for this course is Introduction to Biology",
+          "class": "sequencing_or_context_clue",
+          "description_snippet": "Molecular and Cellular Biology provides graduate students seeking initial licensure or endorsement and/or to earn their MA degree in secondary science education with an introduction to the area of molecular and cellular biology. This course examines the cell a"
+        },
+        {
+          "program_code": "MASESB",
+          "degree_title": "Master of Arts Science Education (Secondary Biological Science)",
+          "group": "Biology Content",
+          "course_title": "Zoology",
+          "mention": "for this course is Introduction to Biology",
+          "class": "sequencing_or_context_clue",
+          "description_snippet": "Zoology provides graduate students seeking licensure or endorsement and/or their MA degree in secondary science education with an introduction to the field of zoology. Zoology includes the study of major animal phyla emphasizing characteristics, variations in "
+        },
+        {
+          "program_code": "BSHR",
+          "degree_title": "Bachelor of Science, Human Resource Management",
+          "group": "Business Core",
+          "course_title": "Introduction to Business Finance",
+          "mention": "for this course is Introduction to Business Accounting",
+          "class": "sequencing_or_context_clue",
+          "description_snippet": "Introduction to Business Finance provides students with an introductory look at the discipline of finance and its context within the business environment. This course will help students gain an understanding of the systems, structure, roles, and impact of fina"
+        },
+        {
+          "program_code": "BSC",
+          "degree_title": "Bachelor of Science, Communications",
+          "group": "Business Core",
+          "course_title": "Introduction to Business Finance",
+          "mention": "for this course is Introduction to Business Accounting",
+          "class": "sequencing_or_context_clue",
+          "description_snippet": "Introduction to Business Finance provides students with an introductory look at the discipline of finance and its context within the business environment. This course will help students gain an understanding of the systems, structure, roles, and impact of fina"
+        },
+        {
+          "program_code": "MSITPM",
+          "degree_title": "Master of Science, Information Technology - Product Management",
+          "group": "Information Technology Management",
+          "course_title": "Product Design",
+          "mention": "and should be completed prior to beginning Product Design: Product Strategy",
+          "class": "sequencing_or_context_clue",
+          "description_snippet": "Product Design teaches students how to design a technical solution to a business problem, create a low-fidelity prototype of the technical solution, and then conduct a very limited user test using a created prototype. The course covers skills in functional kno"
+        },
+        {
+          "program_code": "BSSCOM",
+          "degree_title": "Bachelor of Science, Supply Chain and Operations Management",
+          "group": "Business Core",
+          "course_title": "Introduction to Business Finance",
+          "mention": "for this course is Introduction to Business Accounting",
+          "class": "sequencing_or_context_clue",
+          "description_snippet": "Introduction to Business Finance provides students with an introductory look at the discipline of finance and its context within the business environment. This course will help students gain an understanding of the systems, structure, roles, and impact of fina"
+        },
+        {
+          "program_code": "BSHA",
+          "degree_title": "Bachelor of Science, Healthcare Administration",
+          "group": "Business Core",
+          "course_title": "Introduction to Business Finance",
+          "mention": "for this course is Introduction to Business Accounting",
+          "class": "sequencing_or_context_clue",
+          "description_snippet": "Introduction to Business Finance provides students with an introductory look at the discipline of finance and its context within the business environment. This course will help students gain an understanding of the systems, structure, roles, and impact of fina"
+        },
+        {
+          "program_code": "MSDADPE",
+          "degree_title": "Master of Science, Data Analytics - Decision Process Engineering",
+          "group": "Data Analytics",
+          "course_title": "Statistical Data Mining",
+          "mention": "Data Preparation and Exploration",
+          "class": "sequencing_or_context_clue",
+          "description_snippet": "Statistical Data Mining focuses on concepts in data preparation and supervised and unsupervised machine learning techniques. The course helps students gain basic knowledge in statistics, data preparation, regression, and dimensional reduction. Learners impleme"
+        },
+        {
+          "program_code": "MSCSUG",
+          "degree_title": "Bachelor of Science, Computer Science (BSCS to MSCS)",
+          "group": "Data Management",
+          "course_title": "Data Management - Applications",
+          "mention": "Data Management - Foundations",
+          "class": "sequencing_or_context_clue",
+          "description_snippet": "Data Management - Applications covers conceptual data modeling and introduces MySQL. Students will learn how to create simple to complex SELECT queries, including subqueries and joins, and how to use SQL to update and delete data. Topics covered in this course"
+        },
+        {
+          "program_code": "BSCS",
+          "degree_title": "Bachelor of Science, Computer Science",
+          "group": "Data Management",
+          "course_title": "Data Management - Applications",
+          "mention": "Data Management - Foundations",
+          "class": "sequencing_or_context_clue",
+          "description_snippet": "Data Management - Applications covers conceptual data modeling and introduces MySQL. Students will learn how to create simple to complex SELECT queries, including subqueries and joins, and how to use SQL to update and delete data. Topics covered in this course"
+        },
+        {
+          "program_code": "MSDADE",
+          "degree_title": "Master of Science, Data Analytics - Data Engineering",
+          "group": "Data Analytics",
+          "course_title": "Statistical Data Mining",
+          "mention": "Data Preparation and Exploration",
+          "class": "sequencing_or_context_clue",
+          "description_snippet": "Statistical Data Mining focuses on concepts in data preparation and supervised and unsupervised machine learning techniques. The course helps students gain basic knowledge in statistics, data preparation, regression, and dimensional reduction. Learners impleme"
+        },
+        {
+          "program_code": "BSSWE_C",
+          "degree_title": "Bachelor of Science, Software Engineering",
+          "group": "Data Management",
+          "course_title": "Data Management - Applications",
+          "mention": "Data Management - Foundations",
+          "class": "sequencing_or_context_clue",
+          "description_snippet": "Data Management - Applications covers conceptual data modeling and introduces MySQL. Students will learn how to create simple to complex SELECT queries, including subqueries and joins, and how to use SQL to update and delete data. Topics covered in this course"
+        }
+      ]
+    },
+    "conclusion": "Useful as internal signal; not publish-safe as-is due extracted fragments and context-dependent dependency language."
+  },
+  "assessment": {
+    "cert_publishability_now": "promising_but_needs_policy_or_extractor_tightening",
+    "prereq_publishability_now": "internal_only_for_now",
+    "notes": "Certification has true value in cert-heavy IT lanes but needs noise suppression and explicit-claim gating. Prerequisite signal should remain internal until a dedicated extractor/model pass."
+  }
+}

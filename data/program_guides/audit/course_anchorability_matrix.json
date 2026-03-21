@@ -1,0 +1,760 @@
+{
+  "generated_on": "2026-03-21",
+  "scope": {
+    "guides_included": 115,
+    "surfaces": [
+      "areas_of_study (primary)",
+      "standard_path rows for usable/partial guides (secondary)"
+    ],
+    "why_this_scope": "Full parsed corpus gives attachability rates that are materially stronger than a small sample while staying bounded to course-anchorability analysis.",
+    "method": "Strict title matching only: exact current title, exact observed title variant, normalization-only exact, ambiguous, unmapped, non-course/noise. No fuzzy matching."
+  },
+  "classes": {
+    "exact_current_unique": "Guide title matches one canonical current title and one course_code.",
+    "exact_observed_variant_unique": "Guide title matches one observed title variant and one course_code.",
+    "normalization_unique": "After conservative normalization, one canonical course_code remains (0 observed in this run).",
+    "ambiguous_*": "Title matches multiple canonical course codes.",
+    "unmapped": "No canonical title/variant match found.",
+    "non_course_noise": "Extracted text appears to be non-course content."
+  },
+  "results": {
+    "aos": {
+      "total_occurrences": 2593,
+      "class_counts": {
+        "exact_current_unique": 1307,
+        "ambiguous_current_exact": 819,
+        "unmapped": 274,
+        "exact_observed_variant_unique": 192,
+        "non_course_noise": 1
+      },
+      "class_rates_percent": {
+        "exact_current_unique": 50.4,
+        "ambiguous_current_exact": 31.59,
+        "unmapped": 10.57,
+        "exact_observed_variant_unique": 7.4,
+        "non_course_noise": 0.04
+      },
+      "attachable_unique_count": 1499,
+      "attachable_unique_rate_percent_of_total": 57.81,
+      "attachable_unique_rate_percent_excluding_non_course_noise": 57.83,
+      "ambiguous_count": 819,
+      "ambiguous_rate_percent": 31.59,
+      "unmapped_count": 274,
+      "unmapped_rate_percent": 10.57
+    },
+    "sp": {
+      "total_occurrences": 2494,
+      "class_counts": {
+        "exact_current_unique": 1263,
+        "ambiguous_current_exact": 778,
+        "unmapped": 263,
+        "exact_observed_variant_unique": 190
+      },
+      "class_rates_percent": {
+        "exact_current_unique": 50.64,
+        "ambiguous_current_exact": 31.19,
+        "unmapped": 10.55,
+        "exact_observed_variant_unique": 7.62
+      },
+      "attachable_unique_count": 1453,
+      "attachable_unique_rate_percent_of_total": 58.26,
+      "attachable_unique_rate_percent_excluding_non_course_noise": 58.26,
+      "ambiguous_count": 778,
+      "ambiguous_rate_percent": 31.19,
+      "unmapped_count": 263,
+      "unmapped_rate_percent": 10.55
+    }
+  },
+  "family_pattern_notes": {
+    "lowest_attachability_families": [
+      {
+        "family": "teaching_mat",
+        "attachable_rate_ex_noise": 0.1667,
+        "aos_total": 198,
+        "ambiguous": 100,
+        "unmapped": 65
+      },
+      {
+        "family": "education_ma",
+        "attachable_rate_ex_noise": 0.265,
+        "aos_total": 117,
+        "ambiguous": 85,
+        "unmapped": 1
+      },
+      {
+        "family": "education_ba",
+        "attachable_rate_ex_noise": 0.4395,
+        "aos_total": 405,
+        "ambiguous": 149,
+        "unmapped": 78
+      },
+      {
+        "family": "cs_ug",
+        "attachable_rate_ex_noise": 0.4754,
+        "aos_total": 284,
+        "ambiguous": 138,
+        "unmapped": 11
+      },
+      {
+        "family": "education_bs",
+        "attachable_rate_ex_noise": 0.5679,
+        "aos_total": 162,
+        "ambiguous": 54,
+        "unmapped": 16
+      }
+    ],
+    "highest_attachability_families": [
+      {
+        "family": "mba",
+        "attachable_rate_ex_noise": 1.0,
+        "aos_total": 30,
+        "ambiguous": 0,
+        "unmapped": 0
+      },
+      {
+        "family": "education_grad",
+        "attachable_rate_ex_noise": 0.8636,
+        "aos_total": 22,
+        "ambiguous": 0,
+        "unmapped": 3
+      },
+      {
+        "family": "nursing_ug",
+        "attachable_rate_ex_noise": 0.8364,
+        "aos_total": 56,
+        "ambiguous": 9,
+        "unmapped": 0
+      },
+      {
+        "family": "healthcare_grad",
+        "attachable_rate_ex_noise": 0.8095,
+        "aos_total": 21,
+        "ambiguous": 3,
+        "unmapped": 1
+      },
+      {
+        "family": "nursing_rn_msn",
+        "attachable_rate_ex_noise": 0.7579,
+        "aos_total": 95,
+        "ambiguous": 15,
+        "unmapped": 8
+      }
+    ]
+  },
+  "examples": {
+    "by_class": {
+      "exact_current_unique": [
+        {
+          "program_code": "MSCSIA",
+          "family": "cs_grad",
+          "disposition": "full-use",
+          "surface": "aos",
+          "group": "Security",
+          "title": "Security Foundations",
+          "class": "exact_current_unique",
+          "candidate_codes": [
+            "D481"
+          ]
+        },
+        {
+          "program_code": "MSCSIA",
+          "family": "cs_grad",
+          "disposition": "full-use",
+          "surface": "aos",
+          "group": "Hacking Countermeasures and Techniques",
+          "title": "Security Operations",
+          "class": "exact_current_unique",
+          "candidate_codes": [
+            "D483"
+          ]
+        },
+        {
+          "program_code": "MSCSIA",
+          "family": "cs_grad",
+          "disposition": "full-use",
+          "surface": "aos",
+          "group": "Web and Cloud Security",
+          "title": "Cloud Security",
+          "class": "exact_current_unique",
+          "candidate_codes": [
+            "D485"
+          ]
+        },
+        {
+          "program_code": "MSCSIA",
+          "family": "cs_grad",
+          "disposition": "full-use",
+          "surface": "aos",
+          "group": "Penetration Testing",
+          "title": "Penetration Testing",
+          "class": "exact_current_unique",
+          "candidate_codes": [
+            "D484"
+          ]
+        },
+        {
+          "program_code": "MSCSIA",
+          "family": "cs_grad",
+          "disposition": "full-use",
+          "surface": "aos",
+          "group": "Risk Management",
+          "title": "Governance, Risk, and Compliance",
+          "class": "exact_current_unique",
+          "candidate_codes": [
+            "D486"
+          ]
+        },
+        {
+          "program_code": "MSCSIA",
+          "family": "cs_grad",
+          "disposition": "full-use",
+          "surface": "aos",
+          "group": "Cybersecurity Management",
+          "title": "Cybersecurity Management",
+          "class": "exact_current_unique",
+          "candidate_codes": [
+            "D489"
+          ]
+        },
+        {
+          "program_code": "MSCSIA",
+          "family": "cs_grad",
+          "disposition": "full-use",
+          "surface": "sp",
+          "group": null,
+          "title": "Security Foundations",
+          "class": "exact_current_unique",
+          "candidate_codes": [
+            "D481"
+          ]
+        },
+        {
+          "program_code": "MSCSIA",
+          "family": "cs_grad",
+          "disposition": "full-use",
+          "surface": "sp",
+          "group": null,
+          "title": "Security Operations",
+          "class": "exact_current_unique",
+          "candidate_codes": [
+            "D483"
+          ]
+        }
+      ],
+      "exact_observed_variant_unique": [
+        {
+          "program_code": "BAESSPMM",
+          "family": "education_ba",
+          "disposition": "full-use",
+          "surface": "aos",
+          "group": "General Education",
+          "title": "Introduction to Communication: Connecting with Others",
+          "class": "exact_observed_variant_unique",
+          "candidate_codes": [
+            "D268"
+          ]
+        },
+        {
+          "program_code": "BAESSPMM",
+          "family": "education_ba",
+          "disposition": "full-use",
+          "surface": "sp",
+          "group": null,
+          "title": "Introduction to Communication: Connecting with Others",
+          "class": "exact_observed_variant_unique",
+          "candidate_codes": [
+            "D268"
+          ]
+        },
+        {
+          "program_code": "MSNUFNP",
+          "family": "nursing_msn",
+          "disposition": "full-use",
+          "surface": "aos",
+          "group": "MSN Core",
+          "title": "Quality Outcomes in a Culture of Value-Based Nursing Care",
+          "class": "exact_observed_variant_unique",
+          "candidate_codes": [
+            "D026"
+          ]
+        },
+        {
+          "program_code": "MSNUFNP",
+          "family": "nursing_msn",
+          "disposition": "full-use",
+          "surface": "aos",
+          "group": "MSN Core",
+          "title": "Leadership and Management in Complex Healthcare Systems",
+          "class": "exact_observed_variant_unique",
+          "candidate_codes": [
+            "D030"
+          ]
+        },
+        {
+          "program_code": "MSNUFNP",
+          "family": "nursing_msn",
+          "disposition": "full-use",
+          "surface": "aos",
+          "group": "MSN Core",
+          "title": "Advancing Evidence-Based Innovation in Nursing Practice",
+          "class": "exact_observed_variant_unique",
+          "candidate_codes": [
+            "D031"
+          ]
+        },
+        {
+          "program_code": "MSNUFNP",
+          "family": "nursing_msn",
+          "disposition": "full-use",
+          "surface": "aos",
+          "group": "Nurse Practitioner Core",
+          "title": "Advanced Pathophysiology for the Advanced Practice Nurse",
+          "class": "exact_observed_variant_unique",
+          "candidate_codes": [
+            "D115"
+          ]
+        },
+        {
+          "program_code": "MSNUFNP",
+          "family": "nursing_msn",
+          "disposition": "full-use",
+          "surface": "aos",
+          "group": "Nurse Practitioner Core",
+          "title": "Advanced Pharmacology for the Advanced Practice Nurse",
+          "class": "exact_observed_variant_unique",
+          "candidate_codes": [
+            "D116"
+          ]
+        },
+        {
+          "program_code": "MSNUFNP",
+          "family": "nursing_msn",
+          "disposition": "full-use",
+          "surface": "aos",
+          "group": "Nurse Practitioner Core",
+          "title": "Advanced Health Assessment for the Advanced Practice Nurse",
+          "class": "exact_observed_variant_unique",
+          "candidate_codes": [
+            "D117"
+          ]
+        }
+      ],
+      "normalization_unique": [],
+      "ambiguous_current_exact": [
+        {
+          "program_code": "MSCSIA",
+          "family": "cs_grad",
+          "disposition": "full-use",
+          "surface": "aos",
+          "group": "Network Design and Management",
+          "title": "Secure Network Design",
+          "class": "ambiguous_current_exact",
+          "candidate_codes": [
+            "C700",
+            "D482"
+          ]
+        },
+        {
+          "program_code": "MSCSIA",
+          "family": "cs_grad",
+          "disposition": "full-use",
+          "surface": "aos",
+          "group": "Software",
+          "title": "Secure Software Design",
+          "class": "ambiguous_current_exact",
+          "candidate_codes": [
+            "C706",
+            "D487"
+          ]
+        },
+        {
+          "program_code": "MSCSIA",
+          "family": "cs_grad",
+          "disposition": "full-use",
+          "surface": "aos",
+          "group": "Secure Systems Analysis & Design",
+          "title": "Cybersecurity Architecture and Engineering",
+          "class": "ambiguous_current_exact",
+          "candidate_codes": [
+            "C726",
+            "D488"
+          ]
+        },
+        {
+          "program_code": "MSCSIA",
+          "family": "cs_grad",
+          "disposition": "full-use",
+          "surface": "sp",
+          "group": null,
+          "title": "Secure Network Design",
+          "class": "ambiguous_current_exact",
+          "candidate_codes": [
+            "C700",
+            "D482"
+          ]
+        },
+        {
+          "program_code": "MSCSIA",
+          "family": "cs_grad",
+          "disposition": "full-use",
+          "surface": "sp",
+          "group": null,
+          "title": "Secure Software Design",
+          "class": "ambiguous_current_exact",
+          "candidate_codes": [
+            "C706",
+            "D487"
+          ]
+        },
+        {
+          "program_code": "MSCSIA",
+          "family": "cs_grad",
+          "disposition": "full-use",
+          "surface": "sp",
+          "group": null,
+          "title": "Cybersecurity Architecture and Engineering",
+          "class": "ambiguous_current_exact",
+          "candidate_codes": [
+            "C726",
+            "D488"
+          ]
+        },
+        {
+          "program_code": "MSCSIA",
+          "family": "cs_grad",
+          "disposition": "full-use",
+          "surface": "sp",
+          "group": null,
+          "title": "Cybersecurity Graduate Capstone",
+          "class": "ambiguous_current_exact",
+          "candidate_codes": [
+            "C796",
+            "D490"
+          ]
+        },
+        {
+          "program_code": "BAESSPMM",
+          "family": "education_ba",
+          "disposition": "full-use",
+          "surface": "aos",
+          "group": "General Education",
+          "title": "Integrated Physical Sciences",
+          "class": "ambiguous_current_exact",
+          "candidate_codes": [
+            "C165",
+            "C908"
+          ]
+        }
+      ],
+      "ambiguous_observed_exact": [],
+      "ambiguous_normalized": [],
+      "unmapped": [
+        {
+          "program_code": "MSSWEDOE",
+          "family": "swe_grad",
+          "disposition": "full-use",
+          "surface": "aos",
+          "group": "Software",
+          "title": "Software Product Design and Requirement Engineering",
+          "class": "unmapped",
+          "candidate_codes": []
+        },
+        {
+          "program_code": "MSSWEDOE",
+          "family": "swe_grad",
+          "disposition": "full-use",
+          "surface": "aos",
+          "group": "Software",
+          "title": "Continuous Integration and Continuous Delivery",
+          "class": "unmapped",
+          "candidate_codes": []
+        },
+        {
+          "program_code": "MSSWEDOE",
+          "family": "swe_grad",
+          "disposition": "full-use",
+          "surface": "sp",
+          "group": null,
+          "title": "Software Product Design and Requirement Engineering",
+          "class": "unmapped",
+          "candidate_codes": []
+        },
+        {
+          "program_code": "MSSWEDOE",
+          "family": "swe_grad",
+          "disposition": "full-use",
+          "surface": "sp",
+          "group": null,
+          "title": "Continuous Integration and Continuous Delivery",
+          "class": "unmapped",
+          "candidate_codes": []
+        },
+        {
+          "program_code": "BAESSPMM",
+          "family": "education_ba",
+          "disposition": "full-use",
+          "surface": "aos",
+          "group": "Professional Core",
+          "title": "Personalized Learning for Inclusive Classrooms",
+          "class": "unmapped",
+          "candidate_codes": []
+        },
+        {
+          "program_code": "BAESSPMM",
+          "family": "education_ba",
+          "disposition": "full-use",
+          "surface": "aos",
+          "group": "Professional Core",
+          "title": "Planning Instructional Strategies for Meaningful Learning",
+          "class": "unmapped",
+          "candidate_codes": []
+        },
+        {
+          "program_code": "BAESSPMM",
+          "family": "education_ba",
+          "disposition": "full-use",
+          "surface": "aos",
+          "group": "General Education",
+          "title": "Introduction to Systems Thinking and Applications",
+          "class": "unmapped",
+          "candidate_codes": []
+        },
+        {
+          "program_code": "BAESSPMM",
+          "family": "education_ba",
+          "disposition": "full-use",
+          "surface": "aos",
+          "group": "General Education",
+          "title": "Technology and Ethics: Emerging Trends and Society",
+          "class": "unmapped",
+          "candidate_codes": []
+        }
+      ],
+      "non_course_noise": [
+        {
+          "program_code": "BSPRN",
+          "family": "nursing_ug",
+          "disposition": "partial-use",
+          "surface": "aos",
+          "group": "Prelicensure Nursing",
+          "title": "The following section includes the areas of study in the program, with their associated courses. Your specific",
+          "class": "non_course_noise",
+          "candidate_codes": []
+        }
+      ]
+    },
+    "ambiguous_title_examples": [
+      {
+        "title": "Calculus I",
+        "candidate_codes": [
+          "C282",
+          "C362",
+          "C363",
+          "C958",
+          "D890",
+          "QJT2"
+        ],
+        "candidate_count": 6
+      },
+      {
+        "title": "Secondary Disciplinary Literacy",
+        "candidate_codes": [
+          "C728",
+          "C729",
+          "D162",
+          "D805",
+          "D806"
+        ],
+        "candidate_count": 5
+      },
+      {
+        "title": "Elementary Disciplinary Literacy",
+        "candidate_codes": [
+          "C732",
+          "C733",
+          "D164",
+          "D690",
+          "D698"
+        ],
+        "candidate_count": 5
+      },
+      {
+        "title": "Technical Communication",
+        "candidate_codes": [
+          "C768",
+          "C948",
+          "D339",
+          "E011"
+        ],
+        "candidate_count": 4
+      },
+      {
+        "title": "Student Teaching I in Secondary Education",
+        "candidate_codes": [
+          "D533",
+          "D534",
+          "D721",
+          "D741"
+        ],
+        "candidate_count": 4
+      },
+      {
+        "title": "Student Teaching II in Secondary Education",
+        "candidate_codes": [
+          "D535",
+          "D536",
+          "D722",
+          "D742"
+        ],
+        "candidate_count": 4
+      },
+      {
+        "title": "Algebra for Secondary Mathematics Teaching",
+        "candidate_codes": [
+          "C879",
+          "C880",
+          "D898",
+          "D904"
+        ],
+        "candidate_count": 4
+      },
+      {
+        "title": "Enterprise Risk Management",
+        "candidate_codes": [
+          "C418",
+          "C986",
+          "D368",
+          "D515"
+        ],
+        "candidate_count": 4
+      },
+      {
+        "title": "Data Visualization",
+        "candidate_codes": [
+          "C752",
+          "C939",
+          "D500",
+          "DCDV"
+        ],
+        "candidate_count": 4
+      },
+      {
+        "title": "Student Teaching I in Special Education",
+        "candidate_codes": [
+          "D529",
+          "D530",
+          "D719",
+          "D739"
+        ],
+        "candidate_count": 4
+      },
+      {
+        "title": "Student Teaching II in Special Education",
+        "candidate_codes": [
+          "D531",
+          "D532",
+          "D720",
+          "D740"
+        ],
+        "candidate_count": 4
+      },
+      {
+        "title": "Student Teaching I in Elementary Education",
+        "candidate_codes": [
+          "D523",
+          "D524",
+          "D717",
+          "D737"
+        ],
+        "candidate_count": 4
+      },
+      {
+        "title": "Student Teaching II in Elementary Education",
+        "candidate_codes": [
+          "D525",
+          "D526",
+          "D718",
+          "D738"
+        ],
+        "candidate_count": 4
+      },
+      {
+        "title": "Middle School Science: Content Knowledge",
+        "candidate_codes": [
+          "C293",
+          "C616",
+          "C902",
+          "DBV2"
+        ],
+        "candidate_count": 4
+      },
+      {
+        "title": "Biology: Content Knowledge",
+        "candidate_codes": [
+          "C294",
+          "C614",
+          "C900",
+          "CZV2"
+        ],
+        "candidate_count": 4
+      },
+      {
+        "title": "Biochemistry",
+        "candidate_codes": [
+          "C624",
+          "C625",
+          "C785",
+          "GRT2"
+        ],
+        "candidate_count": 4
+      },
+      {
+        "title": "Chemistry: Content Knowledge",
+        "candidate_codes": [
+          "C295",
+          "C617",
+          "C915",
+          "DCV2"
+        ],
+        "candidate_count": 4
+      },
+      {
+        "title": "Physics: Content Knowledge",
+        "candidate_codes": [
+          "C297",
+          "C615",
+          "C901",
+          "DAV2"
+        ],
+        "candidate_count": 4
+      },
+      {
+        "title": "College Geometry",
+        "candidate_codes": [
+          "C281",
+          "C972",
+          "C992",
+          "EXP2"
+        ],
+        "candidate_count": 4
+      },
+      {
+        "title": "Earth Science: Content Knowledge",
+        "candidate_codes": [
+          "C296",
+          "C618",
+          "C898",
+          "DDV2"
+        ],
+        "candidate_count": 4
+      }
+    ]
+  },
+  "assessment": {
+    "attachment_strength": "moderate",
+    "why": "About 58% of AoS/SP occurrences are safely unique-attachable with strict matching; most remaining volume is ambiguity (~32%) rather than total unmapped failure (~10-11%), which indicates a tractable but not solved disambiguation problem.",
+    "realistically_attachable_now_percent": 57.83,
+    "realistically_attachable_now_definition": "Unique strict matches only (exact current + exact observed variant + normalization unique)."
+  },
+  "tractability_conclusion": "Tractable with conservative scope: publish-safe attachment can start on unique matches now; ambiguous titles need deterministic disambiguation policy before inclusion."
+}

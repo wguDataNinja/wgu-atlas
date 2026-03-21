@@ -1,0 +1,3026 @@
+{
+  "generated_on": "2026-03-21",
+  "sources": [
+    "data/canonical_courses.csv",
+    "data/program_history.csv",
+    "data/program_guides/parsed/*_parsed.json",
+    "data/program_guides/audit/PROGRAM_GUIDE_CORPUS_MANIFEST.json"
+  ],
+  "program_code_alias_crosswalk": {
+    "BSSWE_Java": "BSSWE",
+    "MSRNNUED": "MSRNNUEDGR",
+    "MSRNNULM": "MSRNNULMGR",
+    "MSRNNUNI": "MSRNNUNIGR",
+    "BSPRN": null
+  },
+  "summary": {
+    "guide_count": 115,
+    "total_aos_rows": 2593,
+    "total_sp_rows": 2494,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 1307,
+      "unmapped": 275,
+      "exact_observed_variant_unique": 192,
+      "ambiguous_current_exact": 819
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 1263,
+      "exact_observed_variant_unique": 190,
+      "ambiguous_current_exact": 778,
+      "unmapped": 261,
+      "ambiguous_normalized": 2
+    },
+    "aos_unique_attachable_rate": 0.5781,
+    "sp_unique_attachable_rate": 0.5826
+  },
+  "errors": [],
+  "guide_index": [
+    {
+      "program_code": "BAELED",
+      "program_code_effective": "BAELED",
+      "family": "education_ba",
+      "disposition": "full-use",
+      "sp_status": "usable-no-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 37,
+        "sp_row_count": 37,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 11,
+          "unmapped": 6,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 19
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 11,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 19,
+          "unmapped": 6
+        }
+      }
+    },
+    {
+      "program_code": "BAESELED",
+      "program_code_effective": "BAESELED",
+      "family": "education_ba",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 33,
+        "sp_row_count": 33,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 11,
+          "unmapped": 6,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 15
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 11,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 15,
+          "unmapped": 6
+        }
+      }
+    },
+    {
+      "program_code": "BAESMES",
+      "program_code_effective": "BAESMES",
+      "family": "education_ba",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "partial_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 35,
+        "sp_row_count": 35,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 17,
+          "unmapped": 4,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 13
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 17,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 13,
+          "unmapped": 4
+        }
+      }
+    },
+    {
+      "program_code": "BAESSESB",
+      "program_code_effective": "BAESSESB",
+      "family": "education_ba",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "partial_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 37,
+        "sp_row_count": 36,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 24,
+          "unmapped": 4,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 8
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 24,
+          "exact_observed_variant_unique": 1,
+          "unmapped": 4,
+          "ambiguous_current_exact": 7
+        }
+      }
+    },
+    {
+      "program_code": "BAESSESC",
+      "program_code_effective": "BAESSESC",
+      "family": "education_ba",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "partial_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 36,
+        "sp_row_count": 36,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 20,
+          "unmapped": 4,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 11
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 20,
+          "exact_observed_variant_unique": 1,
+          "unmapped": 4,
+          "ambiguous_current_exact": 11
+        }
+      }
+    },
+    {
+      "program_code": "BAESSESE",
+      "program_code_effective": "BAESSESE",
+      "family": "education_ba",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "partial_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 37,
+        "sp_row_count": 36,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 23,
+          "unmapped": 4,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 9
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 23,
+          "exact_observed_variant_unique": 1,
+          "unmapped": 4,
+          "ambiguous_current_exact": 8
+        }
+      }
+    },
+    {
+      "program_code": "BAESSESP",
+      "program_code_effective": "BAESSESP",
+      "family": "education_ba",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "partial_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 36,
+        "sp_row_count": 36,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 21,
+          "unmapped": 4,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 10
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 21,
+          "exact_observed_variant_unique": 1,
+          "unmapped": 4,
+          "ambiguous_current_exact": 10
+        }
+      }
+    },
+    {
+      "program_code": "BAESSPEE",
+      "program_code_effective": "BAESSPEE",
+      "family": "education_ba",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "partial_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 40,
+        "sp_row_count": 41,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 10,
+          "unmapped": 11,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 18
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 10,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 18,
+          "unmapped": 12
+        }
+      }
+    },
+    {
+      "program_code": "BAESSPMM",
+      "program_code_effective": "BAESSPMM",
+      "family": "education_ba",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "partial_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 33,
+        "sp_row_count": 34,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 10,
+          "unmapped": 10,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 12
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 10,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 12,
+          "unmapped": 11
+        }
+      }
+    },
+    {
+      "program_code": "BASPEE",
+      "program_code_effective": "BASPEE",
+      "family": "education_ba",
+      "disposition": "full-use",
+      "sp_status": "usable-no-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "partial_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 44,
+        "sp_row_count": 45,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 10,
+          "unmapped": 15,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 18
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 10,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 18,
+          "unmapped": 16
+        }
+      }
+    },
+    {
+      "program_code": "BASPMM",
+      "program_code_effective": "BASPMM",
+      "family": "education_ba",
+      "disposition": "full-use",
+      "sp_status": "usable-no-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 37,
+        "sp_row_count": 38,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 10,
+          "unmapped": 10,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 16
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 10,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 16,
+          "unmapped": 11
+        }
+      }
+    },
+    {
+      "program_code": "BSACC",
+      "program_code_effective": "BSACC",
+      "family": "standard_bs",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 40,
+        "sp_row_count": 40,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 13,
+          "exact_current_unique": 21,
+          "exact_observed_variant_unique": 4,
+          "unmapped": 2
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 13,
+          "exact_observed_variant_unique": 4,
+          "exact_current_unique": 21,
+          "unmapped": 2
+        }
+      }
+    },
+    {
+      "program_code": "BSBAHC",
+      "program_code_effective": "BSBAHC",
+      "family": "standard_bs",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 39,
+        "sp_row_count": 40,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 8,
+          "exact_current_unique": 28,
+          "unmapped": 1,
+          "exact_observed_variant_unique": 2
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 8,
+          "exact_current_unique": 29,
+          "unmapped": 1,
+          "exact_observed_variant_unique": 2
+        }
+      }
+    },
+    {
+      "program_code": "BSC",
+      "program_code_effective": "BSC",
+      "family": "standard_bs",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 38,
+        "sp_row_count": 38,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 4,
+          "exact_current_unique": 24,
+          "exact_observed_variant_unique": 4,
+          "unmapped": 6
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 4,
+          "exact_observed_variant_unique": 4,
+          "exact_current_unique": 24,
+          "unmapped": 6
+        }
+      }
+    },
+    {
+      "program_code": "BSCNE",
+      "program_code_effective": "BSCNE",
+      "family": "cs_ug",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 34,
+        "sp_row_count": 34,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 15,
+          "exact_current_unique": 17,
+          "unmapped": 2
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 15,
+          "exact_current_unique": 17,
+          "unmapped": 2
+        }
+      }
+    },
+    {
+      "program_code": "BSCNEAWS",
+      "program_code_effective": "BSCNEAWS",
+      "family": "cs_ug",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "partial_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 35,
+        "sp_row_count": 35,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 16,
+          "exact_current_unique": 17,
+          "unmapped": 2
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 16,
+          "exact_current_unique": 17,
+          "unmapped": 2
+        }
+      }
+    },
+    {
+      "program_code": "BSCNEAZR",
+      "program_code_effective": "BSCNEAZR",
+      "family": "cs_ug",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 35,
+        "sp_row_count": 35,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 15,
+          "exact_current_unique": 18,
+          "unmapped": 2
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 15,
+          "exact_current_unique": 18,
+          "unmapped": 2
+        }
+      }
+    },
+    {
+      "program_code": "BSCNECIS",
+      "program_code_effective": "BSCNECIS",
+      "family": "cs_ug",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 32,
+        "sp_row_count": 32,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 12,
+          "exact_current_unique": 18,
+          "unmapped": 2
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 12,
+          "exact_current_unique": 17,
+          "unmapped": 3
+        }
+      }
+    },
+    {
+      "program_code": "BSCS",
+      "program_code_effective": "BSCS",
+      "family": "cs_ug",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 37,
+        "sp_row_count": 37,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 17,
+          "unmapped": 3,
+          "ambiguous_current_exact": 16,
+          "exact_observed_variant_unique": 1
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 17,
+          "ambiguous_current_exact": 16,
+          "unmapped": 3,
+          "exact_observed_variant_unique": 1
+        }
+      }
+    },
+    {
+      "program_code": "BSCSIA",
+      "program_code_effective": "BSCSIA",
+      "family": "cs_ug",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 37,
+        "sp_row_count": 38,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 20,
+          "exact_current_unique": 16,
+          "exact_observed_variant_unique": 1
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 16,
+          "ambiguous_current_exact": 19,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_normalized": 1,
+          "unmapped": 1
+        }
+      }
+    },
+    {
+      "program_code": "BSDA",
+      "program_code_effective": "BSDA",
+      "family": "standard_bs",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 41,
+        "sp_row_count": 42,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 18,
+          "ambiguous_current_exact": 19,
+          "exact_observed_variant_unique": 3,
+          "unmapped": 1
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 19,
+          "ambiguous_current_exact": 19,
+          "exact_observed_variant_unique": 3,
+          "unmapped": 1
+        }
+      }
+    },
+    {
+      "program_code": "BSFIN",
+      "program_code_effective": "BSFIN",
+      "family": "standard_bs",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 40,
+        "sp_row_count": 40,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 8,
+          "exact_current_unique": 25,
+          "exact_observed_variant_unique": 5,
+          "unmapped": 2
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 8,
+          "exact_current_unique": 25,
+          "exact_observed_variant_unique": 5,
+          "unmapped": 2
+        }
+      }
+    },
+    {
+      "program_code": "BSHA",
+      "program_code_effective": "BSHA",
+      "family": "standard_bs",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 34,
+        "sp_row_count": 34,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 5,
+          "exact_current_unique": 22,
+          "exact_observed_variant_unique": 7
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 5,
+          "exact_current_unique": 22,
+          "exact_observed_variant_unique": 7
+        }
+      }
+    },
+    {
+      "program_code": "BSHHS",
+      "program_code_effective": "BSHHS",
+      "family": "standard_bs",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 34,
+        "sp_row_count": 35,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 20,
+          "exact_observed_variant_unique": 3,
+          "ambiguous_current_exact": 10,
+          "unmapped": 1
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 20,
+          "exact_observed_variant_unique": 4,
+          "ambiguous_current_exact": 10,
+          "unmapped": 1
+        }
+      }
+    },
+    {
+      "program_code": "BSHIM",
+      "program_code_effective": "BSHIM",
+      "family": "standard_bs",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 36,
+        "sp_row_count": 36,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 21,
+          "exact_observed_variant_unique": 5,
+          "ambiguous_current_exact": 9,
+          "unmapped": 1
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 21,
+          "ambiguous_current_exact": 10,
+          "exact_observed_variant_unique": 5
+        }
+      }
+    },
+    {
+      "program_code": "BSHR",
+      "program_code_effective": "BSHR",
+      "family": "standard_bs",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 39,
+        "sp_row_count": 39,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 5,
+          "exact_current_unique": 28,
+          "unmapped": 2,
+          "exact_observed_variant_unique": 4
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 5,
+          "exact_current_unique": 28,
+          "unmapped": 2,
+          "exact_observed_variant_unique": 4
+        }
+      }
+    },
+    {
+      "program_code": "BSHS",
+      "program_code_effective": "BSHS",
+      "family": "standard_bs",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 28,
+        "sp_row_count": 28,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 22,
+          "ambiguous_current_exact": 3,
+          "exact_observed_variant_unique": 3
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 22,
+          "ambiguous_current_exact": 3,
+          "exact_observed_variant_unique": 3
+        }
+      }
+    },
+    {
+      "program_code": "BSIT",
+      "program_code_effective": "BSIT",
+      "family": "standard_bs",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 35,
+        "sp_row_count": 35,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 14,
+          "exact_current_unique": 17,
+          "unmapped": 3,
+          "exact_observed_variant_unique": 1
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 14,
+          "exact_current_unique": 17,
+          "unmapped": 3,
+          "exact_observed_variant_unique": 1
+        }
+      }
+    },
+    {
+      "program_code": "BSITM",
+      "program_code_effective": "BSITM",
+      "family": "standard_bs",
+      "disposition": "partial-use",
+      "sp_status": "unusable",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "partial_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 40,
+        "sp_row_count": 0,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 9,
+          "exact_current_unique": 24,
+          "exact_observed_variant_unique": 5,
+          "unmapped": 2
+        },
+        "anchor_class_counts_sp": {}
+      }
+    },
+    {
+      "program_code": "BSMES",
+      "program_code_effective": "BSMES",
+      "family": "standard_bs",
+      "disposition": "full-use",
+      "sp_status": "usable-no-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 39,
+        "sp_row_count": 39,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 17,
+          "unmapped": 4,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 17
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 17,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 17,
+          "unmapped": 4
+        }
+      }
+    },
+    {
+      "program_code": "BSMGT",
+      "program_code_effective": "BSMGT",
+      "family": "standard_bs",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 35,
+        "sp_row_count": 36,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 6,
+          "exact_current_unique": 23,
+          "unmapped": 2,
+          "exact_observed_variant_unique": 4
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 6,
+          "exact_current_unique": 23,
+          "unmapped": 2,
+          "exact_observed_variant_unique": 5
+        }
+      }
+    },
+    {
+      "program_code": "BSMKT",
+      "program_code_effective": "BSMKT",
+      "family": "standard_bs",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 37,
+        "sp_row_count": 37,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 7,
+          "exact_current_unique": 23,
+          "unmapped": 3,
+          "exact_observed_variant_unique": 4
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 7,
+          "exact_current_unique": 23,
+          "unmapped": 3,
+          "exact_observed_variant_unique": 4
+        }
+      }
+    },
+    {
+      "program_code": "BSNU",
+      "program_code_effective": "BSNU",
+      "family": "nursing_ug",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "guide_version_missing"
+      },
+      "roster_summary": {
+        "aos_course_count": 22,
+        "sp_row_count": 22,
+        "anchor_class_counts_aos": {
+          "exact_observed_variant_unique": 6,
+          "exact_current_unique": 13,
+          "ambiguous_current_exact": 3
+        },
+        "anchor_class_counts_sp": {
+          "exact_observed_variant_unique": 6,
+          "exact_current_unique": 13,
+          "ambiguous_current_exact": 3
+        }
+      }
+    },
+    {
+      "program_code": "BSPH",
+      "program_code_effective": "BSPH",
+      "family": "standard_bs",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 33,
+        "sp_row_count": 33,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 26,
+          "exact_observed_variant_unique": 2,
+          "ambiguous_current_exact": 5
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 26,
+          "exact_observed_variant_unique": 2,
+          "ambiguous_current_exact": 5
+        }
+      }
+    },
+    {
+      "program_code": "BSPRN",
+      "program_code_effective": null,
+      "family": "nursing_ug",
+      "disposition": "partial-use",
+      "sp_status": "partial",
+      "alignment_summary": {
+        "program_history_exists": false,
+        "degree_heading_match_class": "missing_program_history",
+        "version_alignment_class": "missing_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 34,
+        "sp_row_count": 19,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 20,
+          "ambiguous_current_exact": 6,
+          "exact_observed_variant_unique": 7,
+          "unmapped": 1
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 12,
+          "ambiguous_current_exact": 2,
+          "exact_observed_variant_unique": 5
+        }
+      }
+    },
+    {
+      "program_code": "BSPSY",
+      "program_code_effective": "BSPSY",
+      "family": "standard_bs",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 34,
+        "sp_row_count": 34,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 27,
+          "exact_observed_variant_unique": 3,
+          "unmapped": 1,
+          "ambiguous_current_exact": 3
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 27,
+          "exact_observed_variant_unique": 3,
+          "ambiguous_current_exact": 3,
+          "unmapped": 1
+        }
+      }
+    },
+    {
+      "program_code": "BSSCOM",
+      "program_code_effective": "BSSCOM",
+      "family": "standard_bs",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 35,
+        "sp_row_count": 35,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 7,
+          "exact_current_unique": 22,
+          "exact_observed_variant_unique": 5,
+          "unmapped": 1
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 8,
+          "exact_current_unique": 21,
+          "exact_observed_variant_unique": 5,
+          "unmapped": 1
+        }
+      }
+    },
+    {
+      "program_code": "BSSESB",
+      "program_code_effective": "BSSESB",
+      "family": "education_bs",
+      "disposition": "full-use",
+      "sp_status": "usable-no-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 41,
+        "sp_row_count": 41,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 24,
+          "unmapped": 4,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 12
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 24,
+          "exact_observed_variant_unique": 1,
+          "unmapped": 4,
+          "ambiguous_current_exact": 12
+        }
+      }
+    },
+    {
+      "program_code": "BSSESC",
+      "program_code_effective": "BSSESC",
+      "family": "education_bs",
+      "disposition": "full-use",
+      "sp_status": "usable-no-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 40,
+        "sp_row_count": 40,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 20,
+          "unmapped": 4,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 15
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 20,
+          "exact_observed_variant_unique": 1,
+          "unmapped": 4,
+          "ambiguous_current_exact": 15
+        }
+      }
+    },
+    {
+      "program_code": "BSSESE",
+      "program_code_effective": "BSSESE",
+      "family": "education_bs",
+      "disposition": "full-use",
+      "sp_status": "usable-no-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 41,
+        "sp_row_count": 41,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 23,
+          "unmapped": 4,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 13
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 23,
+          "exact_observed_variant_unique": 1,
+          "unmapped": 4,
+          "ambiguous_current_exact": 13
+        }
+      }
+    },
+    {
+      "program_code": "BSSESP",
+      "program_code_effective": "BSSESP",
+      "family": "education_bs",
+      "disposition": "full-use",
+      "sp_status": "usable-no-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 40,
+        "sp_row_count": 40,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 21,
+          "unmapped": 4,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 14
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 21,
+          "exact_observed_variant_unique": 1,
+          "unmapped": 4,
+          "ambiguous_current_exact": 14
+        }
+      }
+    },
+    {
+      "program_code": "BSSWE_C",
+      "program_code_effective": "BSSWE_C",
+      "family": "cs_ug",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "guide_version_missing"
+      },
+      "roster_summary": {
+        "aos_course_count": 36,
+        "sp_row_count": 38,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 20,
+          "exact_current_unique": 15,
+          "exact_observed_variant_unique": 1
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 21,
+          "exact_current_unique": 16,
+          "exact_observed_variant_unique": 1
+        }
+      }
+    },
+    {
+      "program_code": "BSSWE_Java",
+      "program_code_effective": "BSSWE",
+      "family": "cs_ug",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "guide_version_missing"
+      },
+      "roster_summary": {
+        "aos_course_count": 38,
+        "sp_row_count": 40,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 24,
+          "exact_current_unique": 13,
+          "exact_observed_variant_unique": 1
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 25,
+          "exact_current_unique": 14,
+          "exact_observed_variant_unique": 1
+        }
+      }
+    },
+    {
+      "program_code": "BSUXD",
+      "program_code_effective": "BSUXD",
+      "family": "standard_bs",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 38,
+        "sp_row_count": 38,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 4,
+          "exact_current_unique": 26,
+          "exact_observed_variant_unique": 4,
+          "unmapped": 4
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 4,
+          "exact_observed_variant_unique": 4,
+          "exact_current_unique": 26,
+          "unmapped": 4
+        }
+      }
+    },
+    {
+      "program_code": "ENDECE",
+      "program_code_effective": "ENDECE",
+      "family": "endorsement",
+      "disposition": "full-use",
+      "sp_status": "usable-no-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 6,
+        "sp_row_count": 6,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 3,
+          "exact_current_unique": 2,
+          "unmapped": 1
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 3,
+          "exact_current_unique": 2,
+          "unmapped": 1
+        }
+      }
+    },
+    {
+      "program_code": "ENDELL",
+      "program_code_effective": "ENDELL",
+      "family": "endorsement",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 8,
+        "sp_row_count": 8,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 7,
+          "exact_observed_variant_unique": 1
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 7,
+          "exact_observed_variant_unique": 1
+        }
+      }
+    },
+    {
+      "program_code": "ENDMEMG",
+      "program_code_effective": "ENDMEMG",
+      "family": "endorsement",
+      "disposition": "full-use",
+      "sp_status": "usable-no-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 2,
+        "sp_row_count": 2,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 2
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 2
+        }
+      }
+    },
+    {
+      "program_code": "ENDSEMG",
+      "program_code_effective": "ENDSEMG",
+      "family": "endorsement",
+      "disposition": "full-use",
+      "sp_status": "usable-no-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 2,
+        "sp_row_count": 2,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 2
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 2
+        }
+      }
+    },
+    {
+      "program_code": "ENDSESB",
+      "program_code_effective": "ENDSESB",
+      "family": "endorsement",
+      "disposition": "full-use",
+      "sp_status": "usable-no-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 9,
+        "sp_row_count": 9,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 8,
+          "ambiguous_current_exact": 1
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 8,
+          "ambiguous_current_exact": 1
+        }
+      }
+    },
+    {
+      "program_code": "ENDSESC",
+      "program_code_effective": "ENDSESC",
+      "family": "endorsement",
+      "disposition": "full-use",
+      "sp_status": "usable-no-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 7,
+        "sp_row_count": 7,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 4,
+          "exact_current_unique": 3
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 4,
+          "exact_current_unique": 3
+        }
+      }
+    },
+    {
+      "program_code": "ENDSESE",
+      "program_code_effective": "ENDSESE",
+      "family": "endorsement",
+      "disposition": "full-use",
+      "sp_status": "usable-no-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 9,
+        "sp_row_count": 9,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 7,
+          "ambiguous_current_exact": 2
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 7,
+          "ambiguous_current_exact": 2
+        }
+      }
+    },
+    {
+      "program_code": "ENDSESP",
+      "program_code_effective": "ENDSESP",
+      "family": "endorsement",
+      "disposition": "full-use",
+      "sp_status": "usable-no-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 7,
+        "sp_row_count": 7,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 5,
+          "ambiguous_current_exact": 2
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 5,
+          "ambiguous_current_exact": 2
+        }
+      }
+    },
+    {
+      "program_code": "MACC",
+      "program_code_effective": "MACC",
+      "family": "accounting_ma",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 10,
+        "sp_row_count": 10,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 4,
+          "exact_current_unique": 6
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 4,
+          "exact_current_unique": 6
+        }
+      }
+    },
+    {
+      "program_code": "MACCA",
+      "program_code_effective": "MACCA",
+      "family": "accounting_ma",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_not_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 10,
+        "sp_row_count": 10,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 7,
+          "ambiguous_current_exact": 2,
+          "unmapped": 1
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 7,
+          "ambiguous_current_exact": 2,
+          "unmapped": 1
+        }
+      }
+    },
+    {
+      "program_code": "MACCF",
+      "program_code_effective": "MACCF",
+      "family": "accounting_ma",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_not_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 11,
+        "sp_row_count": 11,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 8,
+          "ambiguous_current_exact": 3
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 8,
+          "ambiguous_current_exact": 3
+        }
+      }
+    },
+    {
+      "program_code": "MACCM",
+      "program_code_effective": "MACCM",
+      "family": "accounting_ma",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "partial_heading_match",
+        "version_alignment_class": "version_not_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 10,
+        "sp_row_count": 10,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 7,
+          "ambiguous_current_exact": 2,
+          "unmapped": 1
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 7,
+          "ambiguous_current_exact": 2,
+          "unmapped": 1
+        }
+      }
+    },
+    {
+      "program_code": "MACCT",
+      "program_code_effective": "MACCT",
+      "family": "accounting_ma",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_not_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 10,
+        "sp_row_count": 10,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 9,
+          "ambiguous_current_exact": 1
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 9,
+          "ambiguous_current_exact": 1
+        }
+      }
+    },
+    {
+      "program_code": "MAELLP12",
+      "program_code_effective": "MAELLP12",
+      "family": "education_ma",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 11,
+        "sp_row_count": 11,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 9,
+          "exact_observed_variant_unique": 2
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 9,
+          "exact_observed_variant_unique": 2
+        }
+      }
+    },
+    {
+      "program_code": "MAMEK6",
+      "program_code_effective": "MAMEK6",
+      "family": "education_ma",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 9,
+        "sp_row_count": 10,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 7,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 1
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 8,
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 1
+        }
+      }
+    },
+    {
+      "program_code": "MAMEMG",
+      "program_code_effective": "MAMEMG",
+      "family": "education_ma",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 13,
+        "sp_row_count": 14,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 11,
+          "exact_current_unique": 2
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 11,
+          "exact_current_unique": 2,
+          "unmapped": 1
+        }
+      }
+    },
+    {
+      "program_code": "MAMES",
+      "program_code_effective": "MAMES",
+      "family": "education_ma",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 18,
+        "sp_row_count": 18,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 15,
+          "exact_current_unique": 2,
+          "unmapped": 1
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 15,
+          "exact_current_unique": 2,
+          "unmapped": 1
+        }
+      }
+    },
+    {
+      "program_code": "MASEMG",
+      "program_code_effective": "MASEMG",
+      "family": "education_ma",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 14,
+        "sp_row_count": 14,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 12,
+          "exact_current_unique": 1,
+          "exact_observed_variant_unique": 1
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 12,
+          "exact_current_unique": 1,
+          "exact_observed_variant_unique": 1
+        }
+      }
+    },
+    {
+      "program_code": "MASESB",
+      "program_code_effective": "MASESB",
+      "family": "education_ma",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 13,
+        "sp_row_count": 13,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 12,
+          "exact_observed_variant_unique": 1
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 12,
+          "exact_observed_variant_unique": 1
+        }
+      }
+    },
+    {
+      "program_code": "MASESC",
+      "program_code_effective": "MASESC",
+      "family": "education_ma",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 14,
+        "sp_row_count": 14,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 12,
+          "exact_current_unique": 1,
+          "exact_observed_variant_unique": 1
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 12,
+          "exact_current_unique": 1,
+          "exact_observed_variant_unique": 1
+        }
+      }
+    },
+    {
+      "program_code": "MASESE",
+      "program_code_effective": "MASESE",
+      "family": "education_ma",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 12,
+        "sp_row_count": 12,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 11,
+          "exact_observed_variant_unique": 1
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 11,
+          "exact_observed_variant_unique": 1
+        }
+      }
+    },
+    {
+      "program_code": "MASESP",
+      "program_code_effective": "MASESP",
+      "family": "education_ma",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 13,
+        "sp_row_count": 13,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 11,
+          "exact_current_unique": 1,
+          "exact_observed_variant_unique": 1
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 11,
+          "exact_current_unique": 1,
+          "exact_observed_variant_unique": 1
+        }
+      }
+    },
+    {
+      "program_code": "MATEES",
+      "program_code_effective": "MATEES",
+      "family": "teaching_mat",
+      "disposition": "full-use",
+      "sp_status": "usable-no-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 20,
+        "sp_row_count": 20,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 5,
+          "unmapped": 8,
+          "ambiguous_current_exact": 7
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 5,
+          "unmapped": 8,
+          "ambiguous_current_exact": 7
+        }
+      }
+    },
+    {
+      "program_code": "MATELED",
+      "program_code_effective": "MATELED",
+      "family": "teaching_mat",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 28,
+        "sp_row_count": 28,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 3,
+          "unmapped": 8,
+          "ambiguous_current_exact": 17
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 3,
+          "unmapped": 8,
+          "ambiguous_current_exact": 17
+        }
+      }
+    },
+    {
+      "program_code": "MATMES",
+      "program_code_effective": "MATMES",
+      "family": "teaching_mat",
+      "disposition": "full-use",
+      "sp_status": "usable-no-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 21,
+        "sp_row_count": 21,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 4,
+          "unmapped": 6,
+          "ambiguous_current_exact": 11
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 4,
+          "unmapped": 6,
+          "ambiguous_current_exact": 11
+        }
+      }
+    },
+    {
+      "program_code": "MATSESB",
+      "program_code_effective": "MATSESB",
+      "family": "teaching_mat",
+      "disposition": "full-use",
+      "sp_status": "usable-no-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 20,
+        "sp_row_count": 20,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 3,
+          "unmapped": 6,
+          "ambiguous_current_exact": 11
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 3,
+          "unmapped": 6,
+          "ambiguous_current_exact": 11
+        }
+      }
+    },
+    {
+      "program_code": "MATSESC",
+      "program_code_effective": "MATSESC",
+      "family": "teaching_mat",
+      "disposition": "full-use",
+      "sp_status": "usable-no-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 20,
+        "sp_row_count": 20,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 3,
+          "unmapped": 6,
+          "ambiguous_current_exact": 11
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 3,
+          "unmapped": 6,
+          "ambiguous_current_exact": 11
+        }
+      }
+    },
+    {
+      "program_code": "MATSESE",
+      "program_code_effective": "MATSESE",
+      "family": "teaching_mat",
+      "disposition": "full-use",
+      "sp_status": "usable-no-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "partial_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 20,
+        "sp_row_count": 20,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 3,
+          "unmapped": 6,
+          "ambiguous_current_exact": 11
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 3,
+          "unmapped": 6,
+          "ambiguous_current_exact": 11
+        }
+      }
+    },
+    {
+      "program_code": "MATSESP",
+      "program_code_effective": "MATSESP",
+      "family": "teaching_mat",
+      "disposition": "full-use",
+      "sp_status": "usable-no-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 20,
+        "sp_row_count": 20,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 3,
+          "unmapped": 6,
+          "ambiguous_current_exact": 11
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 3,
+          "unmapped": 6,
+          "ambiguous_current_exact": 11
+        }
+      }
+    },
+    {
+      "program_code": "MATSPED",
+      "program_code_effective": "MATSPED",
+      "family": "teaching_mat",
+      "disposition": "partial-use",
+      "sp_status": "unusable",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 30,
+        "sp_row_count": 0,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 3,
+          "unmapped": 13,
+          "ambiguous_current_exact": 14
+        },
+        "anchor_class_counts_sp": {}
+      }
+    },
+    {
+      "program_code": "MATSSES",
+      "program_code_effective": "MATSSES",
+      "family": "teaching_mat",
+      "disposition": "full-use",
+      "sp_status": "usable-no-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 19,
+        "sp_row_count": 19,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 6,
+          "unmapped": 6,
+          "ambiguous_current_exact": 7
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 6,
+          "unmapped": 6,
+          "ambiguous_current_exact": 7
+        }
+      }
+    },
+    {
+      "program_code": "MBA",
+      "program_code_effective": "MBA",
+      "family": "mba",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 10,
+        "sp_row_count": 11,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 10
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 11
+        }
+      }
+    },
+    {
+      "program_code": "MBAHA",
+      "program_code_effective": "MBAHA",
+      "family": "mba",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 10,
+        "sp_row_count": 11,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 10
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 11
+        }
+      }
+    },
+    {
+      "program_code": "MBAITM",
+      "program_code_effective": "MBAITM",
+      "family": "mba",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 10,
+        "sp_row_count": 11,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 10
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 10,
+          "exact_observed_variant_unique": 1
+        }
+      }
+    },
+    {
+      "program_code": "MEDETID",
+      "program_code_effective": "MEDETID",
+      "family": "education_grad",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 9,
+        "sp_row_count": 12,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 6,
+          "unmapped": 1,
+          "exact_observed_variant_unique": 2
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 6,
+          "unmapped": 1,
+          "exact_observed_variant_unique": 5
+        }
+      }
+    },
+    {
+      "program_code": "MHA",
+      "program_code_effective": "MHA",
+      "family": "healthcare_grad",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 9,
+        "sp_row_count": 10,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 9
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 10
+        }
+      }
+    },
+    {
+      "program_code": "MPH",
+      "program_code_effective": "MPH",
+      "family": "healthcare_grad",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 12,
+        "sp_row_count": 12,
+        "anchor_class_counts_aos": {
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 3,
+          "exact_current_unique": 7,
+          "unmapped": 1
+        },
+        "anchor_class_counts_sp": {
+          "exact_observed_variant_unique": 1,
+          "ambiguous_current_exact": 3,
+          "exact_current_unique": 7,
+          "unmapped": 1
+        }
+      }
+    },
+    {
+      "program_code": "MSCIN",
+      "program_code_effective": "MSCIN",
+      "family": "graduate_standard",
+      "disposition": "full-use",
+      "sp_status": "usable-no-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 10,
+        "sp_row_count": 10,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 4,
+          "exact_current_unique": 6
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 4,
+          "exact_current_unique": 6
+        }
+      }
+    },
+    {
+      "program_code": "MSCSAIML",
+      "program_code_effective": "MSCSAIML",
+      "family": "cs_grad",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "partial_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 10,
+        "sp_row_count": 10,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 9,
+          "unmapped": 1
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 9,
+          "unmapped": 1
+        }
+      }
+    },
+    {
+      "program_code": "MSCSCS",
+      "program_code_effective": "MSCSCS",
+      "family": "cs_grad",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 10,
+        "sp_row_count": 10,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 9,
+          "unmapped": 1
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 9,
+          "unmapped": 1
+        }
+      }
+    },
+    {
+      "program_code": "MSCSHCI",
+      "program_code_effective": "MSCSHCI",
+      "family": "cs_grad",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 10,
+        "sp_row_count": 10,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 9,
+          "unmapped": 1
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 9,
+          "unmapped": 1
+        }
+      }
+    },
+    {
+      "program_code": "MSCSIA",
+      "program_code_effective": "MSCSIA",
+      "family": "cs_grad",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 9,
+        "sp_row_count": 10,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 6,
+          "ambiguous_current_exact": 3
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 6,
+          "ambiguous_current_exact": 4
+        }
+      }
+    },
+    {
+      "program_code": "MSCSUG",
+      "program_code_effective": "MSCSUG",
+      "family": "cs_grad",
+      "disposition": "partial-use",
+      "sp_status": "unusable",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 37,
+        "sp_row_count": 0,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 17,
+          "unmapped": 4,
+          "ambiguous_current_exact": 15,
+          "exact_observed_variant_unique": 1
+        },
+        "anchor_class_counts_sp": {}
+      }
+    },
+    {
+      "program_code": "MSDADE",
+      "program_code_effective": "MSDADE",
+      "family": "data_analytics_grad",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 11,
+        "sp_row_count": 11,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 4,
+          "exact_current_unique": 6,
+          "exact_observed_variant_unique": 1
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 4,
+          "exact_current_unique": 6,
+          "exact_observed_variant_unique": 1
+        }
+      }
+    },
+    {
+      "program_code": "MSDADPE",
+      "program_code_effective": "MSDADPE",
+      "family": "data_analytics_grad",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 11,
+        "sp_row_count": 11,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 2,
+          "exact_current_unique": 8,
+          "exact_observed_variant_unique": 1
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 2,
+          "exact_current_unique": 8,
+          "exact_observed_variant_unique": 1
+        }
+      }
+    },
+    {
+      "program_code": "MSDADS",
+      "program_code_effective": "MSDADS",
+      "family": "data_analytics_grad",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 11,
+        "sp_row_count": 11,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 2,
+          "exact_current_unique": 8,
+          "exact_observed_variant_unique": 1
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 2,
+          "exact_current_unique": 8,
+          "exact_observed_variant_unique": 1
+        }
+      }
+    },
+    {
+      "program_code": "MSEDL",
+      "program_code_effective": "MSEDL",
+      "family": "education_grad",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 13,
+        "sp_row_count": 13,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 11,
+          "unmapped": 2
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 11,
+          "unmapped": 2
+        }
+      }
+    },
+    {
+      "program_code": "MSHRM",
+      "program_code_effective": "MSHRM",
+      "family": "graduate_standard",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_not_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 10,
+        "sp_row_count": 10,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 10
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 10
+        }
+      }
+    },
+    {
+      "program_code": "MSIT",
+      "program_code_effective": "MSIT",
+      "family": "graduate_standard",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 11,
+        "sp_row_count": 11,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 2,
+          "unmapped": 2,
+          "exact_current_unique": 7
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 2,
+          "unmapped": 2,
+          "exact_current_unique": 7
+        }
+      }
+    },
+    {
+      "program_code": "MSITM",
+      "program_code_effective": "MSITM",
+      "family": "graduate_standard",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 9,
+        "sp_row_count": 10,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 3,
+          "exact_current_unique": 6
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 3,
+          "exact_current_unique": 7
+        }
+      }
+    },
+    {
+      "program_code": "MSITPM",
+      "program_code_effective": "MSITPM",
+      "family": "graduate_standard",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 10,
+        "sp_row_count": 10,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 2,
+          "unmapped": 2,
+          "exact_current_unique": 6
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 2,
+          "unmapped": 2,
+          "exact_current_unique": 6
+        }
+      }
+    },
+    {
+      "program_code": "MSITUG",
+      "program_code_effective": "MSITUG",
+      "family": "graduate_standard",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 35,
+        "sp_row_count": 35,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 14,
+          "exact_current_unique": 16,
+          "unmapped": 4,
+          "exact_observed_variant_unique": 1
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 14,
+          "exact_current_unique": 16,
+          "unmapped": 4,
+          "exact_observed_variant_unique": 1
+        }
+      }
+    },
+    {
+      "program_code": "MSMK",
+      "program_code_effective": "MSMK",
+      "family": "graduate_standard",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 11,
+        "sp_row_count": 11,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 9,
+          "ambiguous_current_exact": 2
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 9,
+          "ambiguous_current_exact": 2
+        }
+      }
+    },
+    {
+      "program_code": "MSMKA",
+      "program_code_effective": "MSMKA",
+      "family": "graduate_standard",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 11,
+        "sp_row_count": 11,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 8,
+          "ambiguous_current_exact": 3
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 8,
+          "ambiguous_current_exact": 3
+        }
+      }
+    },
+    {
+      "program_code": "MSML",
+      "program_code_effective": "MSML",
+      "family": "graduate_standard",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 9,
+        "sp_row_count": 10,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 9
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 10
+        }
+      }
+    },
+    {
+      "program_code": "MSNUED",
+      "program_code_effective": "MSNUED",
+      "family": "nursing_msn",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 15,
+        "sp_row_count": 15,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 2,
+          "unmapped": 4,
+          "exact_observed_variant_unique": 6,
+          "exact_current_unique": 3
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 2,
+          "unmapped": 4,
+          "exact_observed_variant_unique": 6,
+          "exact_current_unique": 3
+        }
+      }
+    },
+    {
+      "program_code": "MSNUFNP",
+      "program_code_effective": "MSNUFNP",
+      "family": "nursing_msn",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 16,
+        "sp_row_count": 16,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 1,
+          "unmapped": 3,
+          "exact_observed_variant_unique": 8,
+          "exact_current_unique": 4
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 1,
+          "exact_observed_variant_unique": 8,
+          "unmapped": 3,
+          "exact_current_unique": 4
+        }
+      }
+    },
+    {
+      "program_code": "MSNULM",
+      "program_code_effective": "MSNULM",
+      "family": "nursing_msn",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 15,
+        "sp_row_count": 15,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 1,
+          "unmapped": 3,
+          "exact_observed_variant_unique": 5,
+          "exact_current_unique": 6
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 1,
+          "unmapped": 3,
+          "exact_observed_variant_unique": 5,
+          "exact_current_unique": 6
+        }
+      }
+    },
+    {
+      "program_code": "MSNUNI",
+      "program_code_effective": "MSNUNI",
+      "family": "nursing_msn",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 14,
+        "sp_row_count": 14,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 3,
+          "exact_current_unique": 5,
+          "unmapped": 1,
+          "exact_observed_variant_unique": 5
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 3,
+          "exact_current_unique": 5,
+          "unmapped": 1,
+          "exact_observed_variant_unique": 5
+        }
+      }
+    },
+    {
+      "program_code": "MSNUPMHNP",
+      "program_code_effective": "MSNUPMHNP",
+      "family": "nursing_msn",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "partial_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 17,
+        "sp_row_count": 17,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 1,
+          "unmapped": 7,
+          "exact_observed_variant_unique": 8,
+          "exact_current_unique": 1
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_current_exact": 1,
+          "exact_observed_variant_unique": 8,
+          "unmapped": 7,
+          "exact_current_unique": 1
+        }
+      }
+    },
+    {
+      "program_code": "MSRNNUED",
+      "program_code_effective": "MSRNNUEDGR",
+      "family": "nursing_rn_msn",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "no_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 32,
+        "sp_row_count": 32,
+        "anchor_class_counts_aos": {
+          "exact_observed_variant_unique": 10,
+          "exact_current_unique": 13,
+          "ambiguous_current_exact": 5,
+          "unmapped": 4
+        },
+        "anchor_class_counts_sp": {
+          "exact_observed_variant_unique": 10,
+          "exact_current_unique": 13,
+          "ambiguous_current_exact": 5,
+          "unmapped": 4
+        }
+      }
+    },
+    {
+      "program_code": "MSRNNULM",
+      "program_code_effective": "MSRNNULMGR",
+      "family": "nursing_rn_msn",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "no_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 32,
+        "sp_row_count": 32,
+        "anchor_class_counts_aos": {
+          "exact_observed_variant_unique": 9,
+          "exact_current_unique": 16,
+          "ambiguous_current_exact": 4,
+          "unmapped": 3
+        },
+        "anchor_class_counts_sp": {
+          "exact_observed_variant_unique": 9,
+          "exact_current_unique": 16,
+          "ambiguous_current_exact": 4,
+          "unmapped": 3
+        }
+      }
+    },
+    {
+      "program_code": "MSRNNUNI",
+      "program_code_effective": "MSRNNUNIGR",
+      "family": "nursing_rn_msn",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "no_heading_match",
+        "version_alignment_class": "version_not_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 31,
+        "sp_row_count": 31,
+        "anchor_class_counts_aos": {
+          "exact_observed_variant_unique": 9,
+          "exact_current_unique": 15,
+          "ambiguous_current_exact": 6,
+          "unmapped": 1
+        },
+        "anchor_class_counts_sp": {
+          "exact_observed_variant_unique": 9,
+          "exact_current_unique": 15,
+          "ambiguous_current_exact": 6,
+          "unmapped": 1
+        }
+      }
+    },
+    {
+      "program_code": "MSSWEAIE",
+      "program_code_effective": "MSSWEAIE",
+      "family": "swe_grad",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 10,
+        "sp_row_count": 10,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 7,
+          "unmapped": 3
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 7,
+          "unmapped": 3
+        }
+      }
+    },
+    {
+      "program_code": "MSSWEDDD",
+      "program_code_effective": "MSSWEDDD",
+      "family": "swe_grad",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 10,
+        "sp_row_count": 10,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 9,
+          "unmapped": 1
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 9,
+          "unmapped": 1
+        }
+      }
+    },
+    {
+      "program_code": "MSSWEDOE",
+      "program_code_effective": "MSSWEDOE",
+      "family": "swe_grad",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 10,
+        "sp_row_count": 10,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 8,
+          "unmapped": 2
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 8,
+          "unmapped": 2
+        }
+      }
+    },
+    {
+      "program_code": "MSSWEUG",
+      "program_code_effective": "MSSWEUG",
+      "family": "swe_grad",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 38,
+        "sp_row_count": 38,
+        "anchor_class_counts_aos": {
+          "ambiguous_current_exact": 21,
+          "exact_current_unique": 16,
+          "exact_observed_variant_unique": 1
+        },
+        "anchor_class_counts_sp": {
+          "ambiguous_normalized": 1,
+          "ambiguous_current_exact": 20,
+          "exact_current_unique": 16,
+          "exact_observed_variant_unique": 1
+        }
+      }
+    },
+    {
+      "program_code": "PMCNUED",
+      "program_code_effective": "PMCNUED",
+      "family": "nursing_pmc",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "exact_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 8,
+        "sp_row_count": 8,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 2,
+          "exact_observed_variant_unique": 2,
+          "unmapped": 3,
+          "ambiguous_current_exact": 1
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 2,
+          "exact_observed_variant_unique": 2,
+          "unmapped": 3,
+          "ambiguous_current_exact": 1
+        }
+      }
+    },
+    {
+      "program_code": "PMCNUFNP",
+      "program_code_effective": "PMCNUFNP",
+      "family": "nursing_pmc",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "no_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 10,
+        "sp_row_count": 10,
+        "anchor_class_counts_aos": {
+          "exact_observed_variant_unique": 5,
+          "unmapped": 2,
+          "exact_current_unique": 3
+        },
+        "anchor_class_counts_sp": {
+          "exact_observed_variant_unique": 5,
+          "unmapped": 2,
+          "exact_current_unique": 3
+        }
+      }
+    },
+    {
+      "program_code": "PMCNULM",
+      "program_code_effective": "PMCNULM",
+      "family": "nursing_pmc",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "no_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 8,
+        "sp_row_count": 8,
+        "anchor_class_counts_aos": {
+          "exact_current_unique": 5,
+          "exact_observed_variant_unique": 1,
+          "unmapped": 2
+        },
+        "anchor_class_counts_sp": {
+          "exact_current_unique": 5,
+          "exact_observed_variant_unique": 1,
+          "unmapped": 2
+        }
+      }
+    },
+    {
+      "program_code": "PMCNUPMHNP",
+      "program_code_effective": "PMCNUPMHNP",
+      "family": "nursing_pmc",
+      "disposition": "full-use",
+      "sp_status": "usable-with-term",
+      "alignment_summary": {
+        "program_history_exists": true,
+        "degree_heading_match_class": "partial_heading_match",
+        "version_alignment_class": "version_present_in_program_history"
+      },
+      "roster_summary": {
+        "aos_course_count": 11,
+        "sp_row_count": 11,
+        "anchor_class_counts_aos": {
+          "exact_observed_variant_unique": 5,
+          "unmapped": 6
+        },
+        "anchor_class_counts_sp": {
+          "exact_observed_variant_unique": 5,
+          "unmapped": 6
+        }
+      }
+    }
+  ]
+}

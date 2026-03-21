@@ -1,0 +1,272 @@
+{
+  "program_code": "MSCSHCI",
+  "program_code_effective": "MSCSHCI",
+  "family": "cs_grad",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Master of Science, Computer Science, Human-Computer Interaction",
+  "guide_version": "202504",
+  "guide_pub_date": "2/26/2025",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "School of Technology"
+  ],
+  "program_history_degree_headings": [
+    "Master of Science, Computer Science, Human-Computer Interaction"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 10,
+    "sp_row_count": 10,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 9,
+      "unmapped": 1
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 9,
+      "unmapped": 1
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Formal Languages Overview",
+      "guide_title_normalized": "formal languages overview",
+      "aos_group": "Computer Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D793"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Computer Architecture and Systems",
+      "guide_title_normalized": "computer architecture and systems",
+      "aos_group": "Computer Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D794"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Applied Algorithms and Reasoning",
+      "guide_title_normalized": "applied algorithms and reasoning",
+      "aos_group": "Computer Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D795"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Unix and Linux",
+      "guide_title_normalized": "unix and linux",
+      "aos_group": "Computer Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D796"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Artificial Intelligence and Machine Learning Foundations",
+      "guide_title_normalized": "artificial intelligence and machine learning foundations",
+      "aos_group": "Computer Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Human-Computer Interaction",
+      "guide_title_normalized": "human computer interaction",
+      "aos_group": "Computer Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D800"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Mobile and Ubiquitous Design",
+      "guide_title_normalized": "mobile and ubiquitous design",
+      "aos_group": "Computer Science",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D799"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Governance, Risk, and Compliance",
+      "guide_title_normalized": "governance risk and compliance",
+      "aos_group": "Risk Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D486"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Software Architecture and Design",
+      "guide_title_normalized": "software architecture and design",
+      "aos_group": "Software",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D780"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Learning Technology",
+      "guide_title_normalized": "learning technology",
+      "aos_group": "Foundations of Learning Design",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D294"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Formal Languages Overview",
+      "guide_title_normalized": "formal languages overview",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D793"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Computer Architecture and Systems",
+      "guide_title_normalized": "computer architecture and systems",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D794"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Applied Algorithms and Reasoning",
+      "guide_title_normalized": "applied algorithms and reasoning",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D795"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Unix and Linux",
+      "guide_title_normalized": "unix and linux",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D796"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Artificial Intelligence and Machine Learning Foundations",
+      "guide_title_normalized": "artificial intelligence and machine learning foundations",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Governance, Risk, and Compliance",
+      "guide_title_normalized": "governance risk and compliance",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D486"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Human-Computer Interaction",
+      "guide_title_normalized": "human computer interaction",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D800"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Mobile and Ubiquitous Design",
+      "guide_title_normalized": "mobile and ubiquitous design",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D799"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Software Architecture and Design",
+      "guide_title_normalized": "software architecture and design",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D780"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Learning Technology",
+      "guide_title_normalized": "learning technology",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D294"
+      ]
+    }
+  ]
+}

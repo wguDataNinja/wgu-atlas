@@ -1,0 +1,177 @@
+{
+  "version": "phase_d_policy_v1",
+  "date": "2026-03-21",
+  "source_of_truth": "data/program_guides/audit/PROGRAM_GUIDE_CORPUS_MANIFEST.json",
+  "state_gate": {
+    "publish_full": "guide disposition == full-use",
+    "publish_partial": "guide disposition == partial-use and caveat class has explicit safe payload",
+    "internal_only": "fields flagged internal-only or guides with no safe payload (none currently)"
+  },
+  "field_policy": {
+    "standard_path_list": {
+      "v1": "publish",
+      "surface": "degree page",
+      "conditions": "sp_status in {usable, partial with explicit label}",
+      "notes": "Exclude completely for sp_unusable guides."
+    },
+    "standard_path_cus": {
+      "v1": "publish",
+      "surface": "degree page",
+      "conditions": "same as standard_path_list"
+    },
+    "standard_path_term": {
+      "v1": "publish_when_present",
+      "surface": "degree page",
+      "conditions": "if any term is non-null; else render ordered list without terms"
+    },
+    "aos_groups": {
+      "v1": "publish",
+      "surface": "degree page",
+      "conditions": "all guides"
+    },
+    "course_descriptions": {
+      "v1": "publish",
+      "surface": "degree page",
+      "conditions": "all guides"
+    },
+    "competency_bullets": {
+      "v1": "publish_conditional",
+      "surface": "degree page",
+      "conditions": "publish except known empty-list courses; collapse by default in UI"
+    },
+    "capstone": {
+      "v1": "publish_conditional",
+      "surface": "degree page",
+      "conditions": "publish if present; include caveat flag for MEDETID"
+    },
+    "version_pub_metadata": {
+      "v1": "publish_optional",
+      "surface": "degree page",
+      "conditions": "publish when present; omission is acceptable"
+    },
+    "prerequisite_mentions": {
+      "v1": "internal_only",
+      "surface": "none",
+      "conditions": "regex false-positive risk"
+    },
+    "cert_prep_mentions": {
+      "v1": "internal_only_pending_structuring",
+      "surface": "none",
+      "conditions": "currently inline text only; no stable structured extractor yet"
+    },
+    "family_specific_sections": {
+      "v1": "internal_only",
+      "surface": "none",
+      "conditions": "defer until explicit product requirement"
+    },
+    "degree_structure_context": {
+      "v1": "publish",
+      "surface": "degree page",
+      "conditions": "derived from AoS groups + SP availability flags"
+    }
+  },
+  "public_claim_boundary": [
+    "Allowed: Atlas has complete extraction artifacts for 115 guides with documented caveats.",
+    "Allowed: Atlas can publish guide-derived degree structure where source quality supports it.",
+    "Disallowed: Atlas already surfaces all guide-derived data live.",
+    "Disallowed: all guide-derived fields are equally reliable."
+  ],
+  "deferred_to_later": [
+    "Course-page enrichment via course-code matching (Phase E).",
+    "Structured prerequisite and certification attributes.",
+    "Family-specific specialty sections beyond core AoS/SP/capstone payload."
+  ],
+  "caveat_guides": {
+    "BSITM": {
+      "status": "partial-use",
+      "allow": [
+        "AoS groups",
+        "AoS course descriptions",
+        "AoS competency bullets (except one known empty)",
+        "metadata when present"
+      ],
+      "disallow": [
+        "Standard Path list",
+        "Standard Path CU",
+        "Standard Path term"
+      ],
+      "ui_caveat": "Show generic note: \"Program map shown from Areas of Study; standard sequence unavailable from source guide formatting.\"",
+      "internal_caveat": "sp_unusable_source_extraction_failure"
+    },
+    "MATSPED": {
+      "status": "partial-use",
+      "allow": [
+        "AoS groups",
+        "AoS course descriptions",
+        "AoS competency bullets",
+        "metadata"
+      ],
+      "disallow": [
+        "Standard Path list",
+        "Standard Path CU",
+        "Standard Path term"
+      ],
+      "ui_caveat": "Same student-facing caveat as BSITM (sequence unavailable).",
+      "internal_caveat": "sp_unusable_source_extraction_failure"
+    },
+    "MSCSUG": {
+      "status": "partial-use",
+      "allow": [
+        "AoS groups",
+        "AoS course descriptions",
+        "AoS competency bullets",
+        "metadata"
+      ],
+      "disallow": [
+        "Standard Path list",
+        "Standard Path CU",
+        "Standard Path term"
+      ],
+      "ui_caveat": "Same student-facing caveat as BSITM (sequence unavailable).",
+      "internal_caveat": "sp_unusable_source_extraction_failure"
+    },
+    "BSPRN": {
+      "status": "partial-use",
+      "allow": [
+        "AoS groups",
+        "AoS course descriptions",
+        "AoS competency bullets",
+        "SP labeled as Pre-Nursing only"
+      ],
+      "disallow": [
+        "Any claim that SP covers full program"
+      ],
+      "ui_caveat": "Show explicit label: \"Pre-Nursing Standard Path\" and a short note that nursing-track sequencing is AoS-only.",
+      "internal_caveat": "sp_partial_dual_track"
+    },
+    "MEDETID": {
+      "status": "full-use-with-capstone-caveat",
+      "allow": [
+        "AoS groups",
+        "AoS course descriptions",
+        "AoS competency bullets",
+        "SP list/CU/term",
+        "capstone title and first sequence entry"
+      ],
+      "disallow": [
+        "Any claim that capstone extraction is complete for all 3 sequence courses"
+      ],
+      "ui_caveat": "Optional subtle note in capstone block only; do not block publication.",
+      "internal_caveat": "capstone_partial_sequence"
+    },
+    "BSNU": {
+      "status": "full-use-with-metadata-caveat",
+      "allow": [
+        "AoS groups",
+        "AoS course descriptions",
+        "AoS competency bullets",
+        "SP list/CU/term"
+      ],
+      "disallow": [
+        "Required display of version/pub_date/page_count"
+      ],
+      "ui_caveat": "No required user-facing caveat; treat missing metadata as silent omission.",
+      "internal_caveat": "metadata_missing_no_footer"
+    }
+  }
+}

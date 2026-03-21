@@ -1,0 +1,254 @@
+{
+  "program_code": "ENDSESB",
+  "program_code_effective": "ENDSESB",
+  "family": "endorsement",
+  "disposition": "full-use",
+  "sp_status": "usable-no-term",
+  "degree_title_guide": "Endorsement Preparation Program, Biology",
+  "guide_version": "202509",
+  "guide_pub_date": "6/17/2025",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "School of Education"
+  ],
+  "program_history_degree_headings": [
+    "Endorsement Preparation Program, Biology"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 9,
+    "sp_row_count": 9,
+    "anchor_class_counts_aos": {
+      "exact_current_unique": 8,
+      "ambiguous_current_exact": 1
+    },
+    "anchor_class_counts_sp": {
+      "exact_current_unique": 8,
+      "ambiguous_current_exact": 1
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Probability and Statistics",
+      "guide_title_normalized": "probability and statistics",
+      "aos_group": "Mathematics Education",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D888"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "General Biology II",
+      "guide_title_normalized": "general biology ii",
+      "aos_group": "Biology Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D877"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Molecular Biology",
+      "guide_title_normalized": "molecular biology",
+      "aos_group": "Biology Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D887"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "General Ecology",
+      "guide_title_normalized": "general ecology",
+      "aos_group": "Biology Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D878"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Cell Biology",
+      "guide_title_normalized": "cell biology",
+      "aos_group": "Biology Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D876"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Genetics",
+      "guide_title_normalized": "genetics",
+      "aos_group": "Biology Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D879"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Evolutionary Biology",
+      "guide_title_normalized": "evolutionary biology",
+      "aos_group": "Biology Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D880"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Advanced Zoology and Botany with Lab",
+      "guide_title_normalized": "advanced zoology and botany with lab",
+      "aos_group": "Biology Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D881"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Secondary Biology Curriculum",
+      "guide_title_normalized": "secondary biology curriculum",
+      "aos_group": "Biology Content",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D882",
+        "D883"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Probability and Statistics",
+      "guide_title_normalized": "probability and statistics",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D888"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "General Biology II",
+      "guide_title_normalized": "general biology ii",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D877"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Molecular Biology",
+      "guide_title_normalized": "molecular biology",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D887"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "General Ecology",
+      "guide_title_normalized": "general ecology",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D878"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Cell Biology",
+      "guide_title_normalized": "cell biology",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D876"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Genetics",
+      "guide_title_normalized": "genetics",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D879"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Evolutionary Biology",
+      "guide_title_normalized": "evolutionary biology",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D880"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Advanced Zoology and Botany with Lab",
+      "guide_title_normalized": "advanced zoology and botany with lab",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 4,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D881"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Secondary Biology Curriculum",
+      "guide_title_normalized": "secondary biology curriculum",
+      "aos_group": null,
+      "sp_term": null,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D882",
+        "D883"
+      ]
+    }
+  ]
+}

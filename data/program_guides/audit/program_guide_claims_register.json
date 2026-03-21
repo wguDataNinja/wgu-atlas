@@ -1,0 +1,97 @@
+{
+  "generated_at": "2026-03-21",
+  "counts_anchor": {
+    "total_guides": 115,
+    "artifact_coverage": {
+      "parsed": 115,
+      "validation": 115,
+      "manifest_rows": 115,
+      "pct": 100.0
+    },
+    "family_validated_coverage": {
+      "guides": 115,
+      "families": 19,
+      "pct": 100.0
+    },
+    "downstream_usable_full": 111,
+    "downstream_usable_partial": 4,
+    "excluded_not_usable": 0,
+    "confidence_distribution": {
+      "high": 96,
+      "medium": 17,
+      "low": 2
+    },
+    "total_parsed_course_descriptions": 2593,
+    "total_competency_sets": 2591,
+    "total_standard_path_rows": 2568,
+    "standard_path_usability": {
+      "usable": 111,
+      "partial": 1,
+      "unusable": 3
+    },
+    "aos_usability": {
+      "usable": 115,
+      "unusable": 0
+    },
+    "complete_families": 14,
+    "complete_with_caveats_families": 5,
+    "partial_families": 0,
+    "deferred_families": 0
+  },
+  "register": [
+    {
+      "id": "PG-CLAIM-001",
+      "audience": "public",
+      "approved": true,
+      "statement": "Atlas has complete extraction artifacts for all 115 program guides in the current corpus.",
+      "conditions": [
+        "Scope is current corpus only."
+      ]
+    },
+    {
+      "id": "PG-CLAIM-002",
+      "audience": "public",
+      "approved": true,
+      "statement": "Guide-derived AoS descriptions are available across all 115 guides, with competency coverage at 2,591/2,593 courses.",
+      "conditions": [
+        "Two known empty-competency exceptions remain."
+      ]
+    },
+    {
+      "id": "PG-CLAIM-003",
+      "audience": "public",
+      "approved": true,
+      "statement": "Standard Path data is usable for most guides, with explicit exclusions for known source-artifact failures.",
+      "conditions": [
+        "Use numeric form when possible: 111 usable, 1 partial, 3 unusable."
+      ]
+    },
+    {
+      "id": "PG-CLAIM-004",
+      "audience": "internal",
+      "approved": true,
+      "statement": "Corpus validation is complete at per-guide and family levels (115/115 guides).",
+      "conditions": [
+        "Keep caveat registry linked."
+      ]
+    },
+    {
+      "id": "PG-CLAIM-005",
+      "audience": "public",
+      "approved": false,
+      "statement": "Atlas already surfaces this guide data across the site.",
+      "conditions": [
+        "Not true until Phase D artifacts and wiring are complete."
+      ]
+    },
+    {
+      "id": "PG-CLAIM-006",
+      "audience": "public",
+      "approved": false,
+      "statement": "All guide fields are equally trustworthy.",
+      "conditions": [
+        "Overclaim; trust varies by field and guide."
+      ]
+    }
+  ]
+}

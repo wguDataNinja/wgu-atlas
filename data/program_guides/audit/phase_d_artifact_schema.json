@@ -1,0 +1,179 @@
+{
+  "version": "phase_d_schema_v1",
+  "date": "2026-03-21",
+  "output_strategy": {
+    "root": "public/data/program_guides/",
+    "artifacts": [
+      "public/data/program_guides/index.json",
+      "public/data/program_guides/guides/{program_code}.json"
+    ],
+    "rationale": "Per-guide files keep page fetches scoped; index enables directory-level listing and integrity checks."
+  },
+  "index_schema": {
+    "fields": [
+      "schema_version",
+      "generated_at",
+      "source_manifest_hash",
+      "guide_count",
+      "counts",
+      "guides[]"
+    ],
+    "guide_entry_fields": [
+      "program_code",
+      "family",
+      "disposition",
+      "confidence",
+      "sp_status",
+      "aos_course_count",
+      "artifact_path",
+      "caveat_flags[]"
+    ]
+  },
+  "guide_schema": {
+    "identity": [
+      "program_code",
+      "family",
+      "degree_title_display",
+      "source_degree_title",
+      "confidence",
+      "disposition"
+    ],
+    "provenance": [
+      "schema_version",
+      "generated_at",
+      "source_paths",
+      "source_version",
+      "source_pub_date",
+      "source_page_count"
+    ],
+    "quality": [
+      "sp_status",
+      "aos_status",
+      "caveat_flags[]",
+      "caveat_messages_internal[]",
+      "caveat_messages_ui[]"
+    ],
+    "payload": {
+      "standard_path": "{available:boolean, partial:boolean, label:string|null, rows:[{title,cus,term}]}",
+      "areas_of_study": "[{group, courses:[{title, description, competency_bullets, competency_available:boolean}]}]",
+      "capstone": "{present:boolean, partial:boolean, title, description, competency_bullets}|null"
+    }
+  },
+  "partial_use_representation": {
+    "rule": "Never omit the whole guide when AoS is safe; encode partiality via sp_status/disposition/caveat_flags.",
+    "examples": [
+      {
+        "code": "BSITM",
+        "shape": "disposition=partial-use; standard_path.available=false; areas_of_study populated; caveat_flags includes sp_unusable_source_extraction_failure"
+      },
+      {
+        "code": "BSPRN",
+        "shape": "disposition=partial-use; standard_path.available=true; standard_path.partial=true; standard_path.label=\"Pre-Nursing Standard Path\""
+      }
+    ]
+  },
+  "examples": {
+    "full_use_normal": {
+      "program_code": "BSCS",
+      "disposition": "full-use",
+      "sp_status": "usable",
+      "standard_path": {
+        "available": true,
+        "partial": false,
+        "label": null,
+        "rows": [
+          {
+            "title": "Data Structures and Algorithms I",
+            "cus": 4,
+            "term": 3
+          }
+        ]
+      },
+      "areas_of_study": [
+        {
+          "group": "Computer Science Core",
+          "courses": [
+            {
+              "title": "Data Structures and Algorithms I",
+              "description": "...",
+              "competency_bullets": [
+                "..."
+              ],
+              "competency_available": true
+            }
+          ]
+        }
+      ],
+      "capstone": null,
+      "caveat_flags": []
+    },
+    "partial_use_dual_track": {
+      "program_code": "BSPRN",
+      "disposition": "partial-use",
+      "sp_status": "partial",
+      "standard_path": {
+        "available": true,
+        "partial": true,
+        "label": "Pre-Nursing Standard Path",
+        "rows": [
+          {
+            "title": "Biochemistry",
+            "cus": 3,
+            "term": 2
+          }
+        ]
+      },
+      "caveat_flags": [
+        "sp_partial_dual_track"
+      ],
+      "caveat_messages_ui": [
+        "Standard sequence shown for Pre-Nursing segment; nursing-track sequencing is reflected in Areas of Study."
+      ]
+    },
+    "capstone_caveat": {
+      "program_code": "MEDETID",
+      "disposition": "full-use",
+      "capstone": {
+        "present": true,
+        "partial": true,
+        "title": "Identifying Learner Needs and a Research Problem",
+        "description": "...",
+        "competency_bullets": [
+          "..."
+        ]
+      },
+      "caveat_flags": [
+        "capstone_partial_sequence"
+      ]
+    },
+    "sp_unusable_but_aos_usable": {
+      "program_code": "MSCSUG",
+      "disposition": "partial-use",
+      "sp_status": "unusable",
+      "standard_path": {
+        "available": false,
+        "partial": false,
+        "label": null,
+        "rows": []
+      },
+      "areas_of_study": [
+        {
+          "group": "Core",
+          "courses": [
+            {
+              "title": "Advanced Secure Systems",
+              "description": "...",
+              "competency_bullets": [
+                "..."
+              ],
+              "competency_available": true
+            }
+          ]
+        }
+      ],
+      "caveat_flags": [
+        "sp_unusable_source_extraction_failure"
+      ]
+    }
+  }
+}

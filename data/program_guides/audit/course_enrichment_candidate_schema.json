@@ -1,0 +1,64 @@
+{
+  "generated_on": "2026-03-21",
+  "status": "candidate_only_not_for_shipping",
+  "design_principles": [
+    "Only include high-confidence attachable fields for v0 course enrichment.",
+    "Require canonical anchor via unique strict match class before any publish candidate is emitted.",
+    "Keep risky fields internal until extractor quality and policy are tightened."
+  ],
+  "candidate_payload": {
+    "required": {
+      "course_code": "canonical Atlas course code (e.g., D481).",
+      "anchor_provenance": {
+        "anchor_class_allowed": [
+          "exact_current_unique",
+          "exact_observed_variant_unique",
+          "normalization_unique"
+        ],
+        "source_program_code": "program where occurrence was observed",
+        "source_surface": "aos (primary); sp role context optional",
+        "source_title": "guide course title used for match"
+      }
+    },
+    "publishable_now": {
+      "guide_description_candidates": "List of guide descriptions from uniquely anchored occurrences.",
+      "guide_competency_bullets": "List of competency bullets from uniquely anchored occurrences.",
+      "aos_role_context": "AoS group labels and per-program role context where course appears.",
+      "program_appearance_context": "Program/family appearance metadata for anchored occurrences."
+    },
+    "publish_later_or_internal": {
+      "sp_sequence_context": "Useful but degree-context-heavy; keep optional and explicitly contextualized.",
+      "certification_relationships": "Internal or gated-only until cert noise filtering + claim policy are finalized.",
+      "prerequisite_relationships": "Internal-only until dedicated dependency extraction and validation pass."
+    }
+  },
+  "gating_rules": [
+    "Do not emit course payload for ambiguous or unmapped anchor classes.",
+    "Suppress non-course/noise occurrences.",
+    "Treat dual-track and SP-caveat guides according to existing partial-use policy.",
+    "Do not emit raw cert/prereq strings to public payload."
+  ],
+  "deferred_or_excluded_fields": [
+    {
+      "field": "public_cert_claims",
+      "status": "defer",
+      "reason": "mixed signal quality and parser-noise contamination"
+    },
+    {
+      "field": "public_prerequisite_graph",
+      "status": "defer",
+      "reason": "fragmentary extracted text and context dependence"
+    },
+    {
+      "field": "course-level SP term/CU as canonical attributes",
+      "status": "exclude_from_course_payload",
+      "reason": "degree-sequence context, not course identity"
+    }
+  ],
+  "additional_work_before_course_page_implementation": [
+    "Deterministic disambiguation policy for ambiguous titles (program/family context rules).",
+    "Unmapped-title triage and canonical alias curation where appropriate.",
+    "Certification claim policy + extractor hardening to isolate explicit prep/alignment statements.",
+    "Prerequisite extractor redesign if public dependency display is desired."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "generated_on": "2026-03-21",
+  "status": "proposed_schema_for_prep_build_session",
+  "artifact_paths": {
+    "single_file": "data/program_guides/bridge/program_guide_roster_bridge.json",
+    "split_files": {
+      "index": "data/program_guides/bridge/index.json",
+      "per_guide": "data/program_guides/bridge/guides/{program_code}.json"
+    }
+  },
+  "top_level_shape": {
+    "generated_on": "string-date",
+    "sources": [
+      "program_history.csv",
+      "canonical_courses.csv",
+      "parsed guide artifacts",
+      "corpus manifest"
+    ],
+    "guide_count": "integer",
+    "program_code_alias_crosswalk": "object {guide_program_code -> effective_program_code}",
+    "guides": "array<GuideRosterRecord>"
+  },
+  "GuideRosterRecord": {
+    "program_code": "string",
+    "program_code_effective": "string",
+    "family": "string",
+    "disposition": "full-use|partial-use",
+    "sp_status": "usable-with-term|usable-no-term|partial|unusable",
+    "degree_title_guide": "string",
+    "guide_version": "string|null",
+    "guide_pub_date": "string|null",
+    "program_history_status": "ACTIVE|RETIRED|null",
+    "program_history_colleges": "array<string>",
+    "program_history_degree_headings": "array<string>",
+    "alignment": {
+      "program_history_exists": "boolean",
+      "degree_heading_match_class": "exact_heading_match|partial_heading_match|no_heading_match|missing_program_history",
+      "version_alignment_class": "version_present_in_program_history|version_not_in_program_history|guide_version_missing|missing_program_history"
+    },
+    "roster_summary": {
+      "aos_course_count": "integer",
+      "sp_row_count": "integer",
+      "anchor_class_counts_aos": "object",
+      "anchor_class_counts_sp": "object"
+    },
+    "roster_rows": "array<RosterRow>"
+  },
+  "RosterRow": {
+    "surface": "aos|sp",
+    "guide_title_raw": "string",
+    "guide_title_normalized": "string",
+    "aos_group": "string|null",
+    "sp_term": "integer|null",
+    "sp_cus": "number|null",
+    "anchor_class": "exact_current_unique|exact_observed_variant_unique|normalization_unique|ambiguous_current_exact|ambiguous_observed_exact|ambiguous_normalized|unmapped|non_course_noise",
+    "canonical_candidate_codes": "array<string>"
+  },
+  "build_notes": [
+    "Do not collapse ambiguous rows during bridge build; preserve candidate sets.",
+    "Include alias crosswalk explicitly so downstream stages can trace source-to-effective code mapping.",
+    "Keep cert/prereq fields out of initial bridge row payload unless explicitly needed by downstream stage."
+  ]
+}

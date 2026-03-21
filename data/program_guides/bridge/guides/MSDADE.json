@@ -1,0 +1,310 @@
+{
+  "program_code": "MSDADE",
+  "program_code_effective": "MSDADE",
+  "family": "data_analytics_grad",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Master of Science, Data Analytics - Data Engineering",
+  "guide_version": "202408",
+  "guide_pub_date": "5/15/24",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "School of Technology"
+  ],
+  "program_history_degree_headings": [
+    "Master of Science, Data Analytics - Data Engineering"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 11,
+    "sp_row_count": 11,
+    "anchor_class_counts_aos": {
+      "ambiguous_current_exact": 4,
+      "exact_current_unique": 6,
+      "exact_observed_variant_unique": 1
+    },
+    "anchor_class_counts_sp": {
+      "ambiguous_current_exact": 4,
+      "exact_current_unique": 6,
+      "exact_observed_variant_unique": 1
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "The Data Analytics Journey",
+      "guide_title_normalized": "the data analytics journey",
+      "aos_group": "Data Analytics",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D204",
+        "D596"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data Management",
+      "guide_title_normalized": "data management",
+      "aos_group": "Data Analytics",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D597"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Analytics Programming",
+      "guide_title_normalized": "analytics programming",
+      "aos_group": "Data Analytics",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D598"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data Preparation and Exploration",
+      "guide_title_normalized": "data preparation and exploration",
+      "aos_group": "Data Analytics",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D599"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Statistical Data Mining",
+      "guide_title_normalized": "statistical data mining",
+      "aos_group": "Data Analytics",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D600"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data Storytelling for Diverse Audiences",
+      "guide_title_normalized": "data storytelling for diverse audiences",
+      "aos_group": "Data Analytics",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D601"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Deployment",
+      "guide_title_normalized": "deployment",
+      "aos_group": "Data Analytics",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D602"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Cloud Databases",
+      "guide_title_normalized": "cloud databases",
+      "aos_group": "Data Engineering",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D607",
+        "D607A"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data Processing",
+      "guide_title_normalized": "data processing",
+      "aos_group": "Data Engineering",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D608",
+        "D608A"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data Analytics at Scale",
+      "guide_title_normalized": "data analytics at scale",
+      "aos_group": "Data Engineering",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D609",
+        "D609A"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data Engineering Capstone",
+      "guide_title_normalized": "data engineering capstone",
+      "aos_group": "Data Engineering",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D610"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "The Data Analytics Journey",
+      "guide_title_normalized": "the data analytics journey",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 2,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D204",
+        "D596"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Data Management",
+      "guide_title_normalized": "data management",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D597"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Analytics Programming",
+      "guide_title_normalized": "analytics programming",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D598"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Data Preparation and Exploration",
+      "guide_title_normalized": "data preparation and exploration",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D599"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Statistical Data Mining",
+      "guide_title_normalized": "statistical data mining",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D600"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Data Storytelling for Diverse Audiences",
+      "guide_title_normalized": "data storytelling for diverse audiences",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_observed_variant_unique",
+      "canonical_candidate_codes": [
+        "D601"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Deployment",
+      "guide_title_normalized": "deployment",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D602"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Cloud Databases",
+      "guide_title_normalized": "cloud databases",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D607",
+        "D607A"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Data Processing",
+      "guide_title_normalized": "data processing",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D608",
+        "D608A"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Data Analytics at Scale",
+      "guide_title_normalized": "data analytics at scale",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "D609",
+        "D609A"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Data Engineering Capstone",
+      "guide_title_normalized": "data engineering capstone",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "D610"
+      ]
+    }
+  ]
+}

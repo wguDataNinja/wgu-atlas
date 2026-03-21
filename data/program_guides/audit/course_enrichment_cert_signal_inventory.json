@@ -1,0 +1,236 @@
+{
+  "generated_on": "2026-03-21",
+  "scope": "sampled guides only",
+  "method": "parsed course certification_prep_mentions field review",
+  "programs": [
+    {
+      "program_code": "BSCSIA",
+      "degree_title": "Bachelor of Science, Cybersecurity and Information Assurance",
+      "rows": [
+        {
+          "course_title": "IT Applications",
+          "course_code": null,
+          "anchor_status": "ambiguous",
+          "mentions": [
+            "CompTIA A+"
+          ],
+          "signal_class": "alignment_or_exam_token"
+        },
+        {
+          "course_title": "IT Foundations",
+          "course_code": null,
+          "anchor_status": "ambiguous",
+          "mentions": [
+            "CompTIA A+"
+          ],
+          "signal_class": "alignment_or_exam_token"
+        },
+        {
+          "course_title": "Information Systems Security",
+          "course_code": "C845",
+          "anchor_status": "unique",
+          "mentions": [
+            "aws and"
+          ],
+          "signal_class": "parser_noise_likely"
+        },
+        {
+          "course_title": "Network and Security - Applications",
+          "course_code": null,
+          "anchor_status": "ambiguous",
+          "mentions": [
+            "CompTIA Security+"
+          ],
+          "signal_class": "alignment_or_exam_token"
+        },
+        {
+          "course_title": "Networks",
+          "course_code": null,
+          "anchor_status": "ambiguous",
+          "mentions": [
+            "CompTIA Network+"
+          ],
+          "signal_class": "alignment_or_exam_token"
+        },
+        {
+          "course_title": "Business of IT - Project Management",
+          "course_code": null,
+          "anchor_status": "ambiguous",
+          "mentions": [
+            "CompTIA Project+",
+            "CompTIA Project+."
+          ],
+          "signal_class": "alignment_or_exam_token"
+        },
+        {
+          "course_title": "Legal Issues in Information Security",
+          "course_code": null,
+          "anchor_status": "ambiguous",
+          "mentions": [
+            "aws and"
+          ],
+          "signal_class": "parser_noise_likely"
+        },
+        {
+          "course_title": "Cyber Defense and Countermeasures",
+          "course_code": null,
+          "anchor_status": "ambiguous",
+          "mentions": [
+            "aws and",
+            "CompTIA Cybersecurity"
+          ],
+          "signal_class": "alignment_or_exam_token"
+        }
+      ]
+    },
+    {
+      "program_code": "BSCNEAWS",
+      "degree_title": "Bachelor of Science, Cloud and Network Engineering - Amazon Web",
+      "rows": [
+        {
+          "course_title": "IT Applications",
+          "course_code": null,
+          "anchor_status": "ambiguous",
+          "mentions": [
+            "CompTIA A+"
+          ],
+          "signal_class": "alignment_or_exam_token"
+        },
+        {
+          "course_title": "IT Foundations",
+          "course_code": null,
+          "anchor_status": "ambiguous",
+          "mentions": [
+            "CompTIA A+"
+          ],
+          "signal_class": "alignment_or_exam_token"
+        },
+        {
+          "course_title": "Network and Security - Applications",
+          "course_code": null,
+          "anchor_status": "ambiguous",
+          "mentions": [
+            "CompTIA Security+"
+          ],
+          "signal_class": "alignment_or_exam_token"
+        },
+        {
+          "course_title": "Networks",
+          "course_code": null,
+          "anchor_status": "ambiguous",
+          "mentions": [
+            "CompTIA Network+"
+          ],
+          "signal_class": "alignment_or_exam_token"
+        },
+        {
+          "course_title": "Cloud Foundations",
+          "course_code": null,
+          "anchor_status": "ambiguous",
+          "mentions": [
+            "AWS Certified"
+          ],
+          "signal_class": "alignment_or_exam_token"
+        },
+        {
+          "course_title": "AWS Cloud Architecture",
+          "course_code": "D319",
+          "anchor_status": "unique",
+          "mentions": [
+            "AWS Cloud"
+          ],
+          "signal_class": "parser_noise_likely"
+        },
+        {
+          "course_title": "Cloud Deployment and Operations",
+          "course_code": null,
+          "anchor_status": "ambiguous",
+          "mentions": [
+            "AWS Cloud"
+          ],
+          "signal_class": "parser_noise_likely"
+        },
+        {
+          "course_title": "BSCNE-AWS Capstone Project",
+          "course_code": "E030",
+          "anchor_status": "unique",
+          "mentions": [
+            "AWS Capstone",
+            "AWS environment",
+            "AWS CLI",
+            "AWS platform"
+          ],
+          "signal_class": "parser_noise_likely"
+        }
+      ]
+    },
+    {
+      "program_code": "MSCSIA",
+      "degree_title": "Master of Science, Cybersecurity and Information Assurance",
+      "rows": [
+        {
+          "course_title": "Security Operations",
+          "course_code": "D483",
+          "anchor_status": "unique",
+          "mentions": [
+            "aws and"
+          ],
+          "signal_class": "parser_noise_likely"
+        },
+        {
+          "course_title": "Cybersecurity Management",
+          "course_code": "D489",
+          "anchor_status": "unique",
+          "mentions": [
+            "aws and"
+          ],
+          "signal_class": "parser_noise_likely"
+        }
+      ]
+    },
+    {
+      "program_code": "BSACC",
+      "degree_title": "Bachelor of Science, Accounting",
+      "rows": [
+        {
+          "course_title": "Managing in a Global Business Environment",
+          "course_code": "D080",
+          "anchor_status": "unique",
+          "mentions": [
+            "aws in"
+          ],
+          "signal_class": "parser_noise_likely"
+        },
+        {
+          "course_title": "Auditing",
+          "course_code": null,
+          "anchor_status": "ambiguous",
+          "mentions": [
+            "CPA Code"
+          ],
+          "signal_class": "adjacent_professional_standard"
+        }
+      ]
+    },
+    {
+      "program_code": "MATSPED",
+      "degree_title": "Master of Arts in Teaching, Special Education",
+      "rows": [
+        {
+          "course_title": "Special Education Law, Policies and Procedures",
+          "course_code": null,
+          "anchor_status": "unmapped",
+          "mentions": [
+            "aws to"
+          ],
+          "signal_class": "parser_noise_likely"
+        }
+      ]
+    }
+  ],
+  "cross_sample_observations": [
+    "Strong explicit prep language appears in several IT/network/security courses (e.g., CompTIA Security+, Network+, AWS Certified Practitioner exam references).",
+    "A large subset of extracted cert mentions are parser-noise fragments around the token \"aws\" (e.g., \"aws and\", \"aws in\").",
+    "Some non-cert professional references are present (e.g., AICPA code mention in accounting) but do not imply exam-prep mapping by themselves."
+  ]
+}

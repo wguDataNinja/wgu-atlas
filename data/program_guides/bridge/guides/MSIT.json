@@ -1,0 +1,304 @@
+{
+  "program_code": "MSIT",
+  "program_code_effective": "MSIT",
+  "family": "graduate_standard",
+  "disposition": "full-use",
+  "sp_status": "usable-with-term",
+  "degree_title_guide": "Master of Science, Information Technology",
+  "guide_version": "202604",
+  "guide_pub_date": "1/28/2026",
+  "program_history_status": "ACTIVE",
+  "program_history_colleges": [
+    "School of Technology"
+  ],
+  "program_history_degree_headings": [
+    "Master of Science, Information Technology"
+  ],
+  "alignment": {
+    "program_history_exists": true,
+    "degree_heading_match_class": "exact_heading_match",
+    "version_alignment_class": "version_present_in_program_history"
+  },
+  "roster_summary": {
+    "aos_course_count": 11,
+    "sp_row_count": 11,
+    "anchor_class_counts_aos": {
+      "ambiguous_current_exact": 2,
+      "unmapped": 2,
+      "exact_current_unique": 7
+    },
+    "anchor_class_counts_sp": {
+      "ambiguous_current_exact": 2,
+      "unmapped": 2,
+      "exact_current_unique": 7
+    }
+  },
+  "roster_rows": [
+    {
+      "surface": "aos",
+      "guide_title_raw": "Technical Communication",
+      "guide_title_normalized": "technical communication",
+      "aos_group": "Information Technology Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C768",
+        "C948",
+        "D339",
+        "E011"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Information Technology Management and Leadership",
+      "guide_title_normalized": "information technology management and leadership",
+      "aos_group": "Information Technology Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Project Management",
+      "guide_title_normalized": "project management",
+      "aos_group": "Information Technology Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C722",
+        "C783",
+        "E015"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Financial Planning for IT Professionals",
+      "guide_title_normalized": "financial planning for it professionals",
+      "aos_group": "IT Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E013"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Problem Solving for Technology Business Problems",
+      "guide_title_normalized": "problem solving for technology business problems",
+      "aos_group": "IT Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Risk Management and Information Technology",
+      "guide_title_normalized": "risk management and information technology",
+      "aos_group": "IT Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E016"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Agile Processes and Culture in Technology",
+      "guide_title_normalized": "agile processes and culture in technology",
+      "aos_group": "IT Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E017"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Cloud Strategy",
+      "guide_title_normalized": "cloud strategy",
+      "aos_group": "IT Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E018"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Cybersecurity Strategy",
+      "guide_title_normalized": "cybersecurity strategy",
+      "aos_group": "IT Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E019"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Data and AI Strategy",
+      "guide_title_normalized": "data and ai strategy",
+      "aos_group": "IT Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E020"
+      ]
+    },
+    {
+      "surface": "aos",
+      "guide_title_raw": "Leading a Technology Transformation",
+      "guide_title_normalized": "leading a technology transformation",
+      "aos_group": "IT Management",
+      "sp_term": null,
+      "sp_cus": null,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E021"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Technical Communication",
+      "guide_title_normalized": "technical communication",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C768",
+        "C948",
+        "D339",
+        "E011"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Information Technology Management and Leadership",
+      "guide_title_normalized": "information technology management and leadership",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Financial Planning for IT Professionals",
+      "guide_title_normalized": "financial planning for it professionals",
+      "aos_group": null,
+      "sp_term": 1,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E013"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Problem Solving for Technology Business Problems",
+      "guide_title_normalized": "problem solving for technology business problems",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 2,
+      "anchor_class": "unmapped",
+      "canonical_candidate_codes": []
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Project Management",
+      "guide_title_normalized": "project management",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 4,
+      "anchor_class": "ambiguous_current_exact",
+      "canonical_candidate_codes": [
+        "C722",
+        "C783",
+        "E015"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Risk Management and Information Technology",
+      "guide_title_normalized": "risk management and information technology",
+      "aos_group": null,
+      "sp_term": 2,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E016"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Agile Processes and Culture in Technology",
+      "guide_title_normalized": "agile processes and culture in technology",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E017"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Cloud Strategy",
+      "guide_title_normalized": "cloud strategy",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E018"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Cybersecurity Strategy",
+      "guide_title_normalized": "cybersecurity strategy",
+      "aos_group": null,
+      "sp_term": 3,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E019"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Data and AI Strategy",
+      "guide_title_normalized": "data and ai strategy",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 2,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E020"
+      ]
+    },
+    {
+      "surface": "sp",
+      "guide_title_raw": "Leading a Technology Transformation",
+      "guide_title_normalized": "leading a technology transformation",
+      "aos_group": null,
+      "sp_term": 4,
+      "sp_cus": 3,
+      "anchor_class": "exact_current_unique",
+      "canonical_candidate_codes": [
+        "E021"
+      ]
+    }
+  ]
+}
