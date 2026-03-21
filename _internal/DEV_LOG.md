@@ -5,6 +5,44 @@ Each entry records what changed, decisions locked, what's blocked, and the next 
 
 ---
 
+## 2026-03-20 (session 11 — program guide extraction workstream initialized)
+
+**Done**
+- Read `parse_catalog_v11.py` in full (all 742 lines), including `lib/anchors.py` and `lib/config.py`
+- Read BSDA.txt in full (860 lines) to confirm actual guide document structure
+- Produced full technical readout: `_internal/program_guides/TECHNICAL_READOUT.md`
+  - What `parse_catalog_v11.py` does step by step (era detection, 4 passes, 3 downstream steps, output artifacts)
+  - Catalog-specific logic to not reuse (12 items)
+  - Reusable patterns (10 items: footer metadata, section anchors, state machine, anomaly collection, JSON style, etc.)
+  - Proposed parser design: `analyze_guide_manifest.py`, `parse_guide.py`, `build_guide_site_data.py`, `match_guide_courses.py`
+  - Manifest-first corpus analysis plan with 30-field manifest schema
+  - 15 guide family hypotheses based on filename patterns
+  - Recommended artifacts for analysis phase (8 artifacts)
+  - Full pipeline shape: Phase A through E
+  - BSDA thin-slice first milestone with target JSON schemas
+  - Key structural notes: no course codes, boilerplate skip zones, multi-page table handling, Areas of Study header variant, Capstone as section boundary, closing boilerplate as end anchor
+- Created `_internal/program_guides/README.md` — workstream control doc
+- Updated `_internal/ATLAS_CONTROL.md`: added program guide extraction workstream to §5 table, full §6.0 snapshot, updated next-session order, updated artifact map
+- Updated `_internal/ATLAS_REPO_MEMORY.md`: added §12a Program guide extraction system
+
+**Decisions locked**
+- Manifest-first approach: analyze all 115 guides before writing a content parser
+- BSDA is the thin-slice validation case for Phase B
+- Course title → Atlas code matching is a separate downstream step (Phase E), not part of structural parsing
+- Guide family classification drives parser branching; do not assume one parser fits all 115 guides
+- Reuse `parse_catalog_v11.py` patterns: footer metadata, section anchor scan, state machine, anomaly collection; do NOT reuse: era detection, multi-edition structures, Total CUs terminator, index/body reconcile
+
+**Blocked / open**
+- 114 of 115 guide PDFs not yet extracted to text
+- No parsing scripts exist yet
+- Guide family structure is hypothetical pending manifest analysis
+- Correct runtime attachment model for parsed guide content on program pages not yet decided
+
+**Next starting task**
+Extract all 115 PDFs to text using pdftotext or equivalent; commit all texts; write `analyze_guide_manifest.py`.
+
+---
+
 ## 2026-03-20 (session 10 — public site baseline expanded)
 
 **Done**

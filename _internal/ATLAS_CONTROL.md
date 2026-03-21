@@ -20,6 +20,7 @@ No separate long-lived `ATLAS_SPEC.md` or `DECISIONS.md` should be treated as ac
 
 | Workstream | Status | Current objective | Primary blocker | Next bounded step |
 |---|---|---|---|---|
+| Program guide extraction | initialized — analysis only | extract content from 115 program guide PDFs | 114 guide texts not yet extracted; no scripts yet | extract all PDFs to text; write `analyze_guide_manifest.py` |
 | Official resource layer | initialized, likely next | move from planning to first queue artifact | first bounded queue artifact not built | create regulatory/licensure/disclosure candidate queue |
 | Continuity review | initialized, lightweight | validate compact review method | first tiny validation batch not created | create 4-card validation batch |
 | Program lineage / degree history | ready, not selected | keep system stable for later export/UI if chosen | export/runtime wiring not implemented | no action unless selected |
@@ -29,6 +30,43 @@ No separate long-lived `ATLAS_SPEC.md` or `DECISIONS.md` should be treated as ac
 ---
 
 ## 6. Current module snapshots
+
+### 6.0 Program guide extraction
+
+**Status**
+- initialized — analysis phase only
+- technical readout complete
+- no scripts written; no data artifacts yet
+- 1 of 115 guide texts extracted (BSDA)
+
+**Why it matters**
+- Program guides contain the richest per-program content available from WGU: Standard Path tables with CUs and term, course descriptions, competency bullets, prereq mentions, cert-prep mentions.
+- Extracting this content enables Atlas to show course-level detail that the main catalog does not provide in accessible form.
+- 115 guides cover all active programs. Coverage is broader than the current enrichment layer.
+
+**Locked direction**
+- Manifest-first: characterize all 115 guides before writing a content parser
+- BSDA is the thin-slice validation case
+- Course title → Atlas code matching is a separate downstream step
+- No implementation until Phase A (corpus manifest) is complete
+
+**Key files**
+- `_internal/program_guides/README.md`
+- `_internal/program_guides/TECHNICAL_READOUT.md`
+- `data/program_guides/` (planned — not yet created)
+- `public/data/program_guides/` (planned — not yet created)
+
+**Pipeline phases**
+1. A: Extract 114 remaining PDFs to text; run `analyze_guide_manifest.py`; produce manifest + section presence matrix
+2. B: Thin-slice BSDA parser; validate output
+3. C: Full corpus parser with family branching
+4. D: Site artifact build
+5. E: Course code matching
+
+**Next artifact**
+- Extract all 115 PDFs to text; then write `analyze_guide_manifest.py`
+
+---
 
 ### 6.1 Official resource layer
 
@@ -184,10 +222,12 @@ These should not be reopened by default.
 ## 9. Exact next-session order
 
 1. Commit pending data reorg (`data/site/`, `data/lineage/`, `data/enrichment/`) and pending src changes
-2. Build `_internal/official_resource/regulatory_candidate_queue.md`
-3. Run first 4-card continuity-review batch (`_internal/continuity_review/validation_batch_01.md`)
-4. Outcomes audit: identify which of the 40 empty-outcome programs can actually be populated
-5. Resolve 6 programs missing guide placements in `public/data/official_resource_placements.json`
+2. **Program guide Phase A:** Extract all 115 guide PDFs to text; commit to `raw_texts/`; write `analyze_guide_manifest.py`; produce `guide_manifest.json` and `section_presence_matrix.csv`
+3. **Program guide Phase A continued:** Review manifest outputs; write `guide_family_classification.md` and `irregularities_report.md`
+4. Build `_internal/official_resource/regulatory_candidate_queue.md`
+5. Run first 4-card continuity-review batch (`_internal/continuity_review/validation_batch_01.md`)
+6. Outcomes audit: identify which of the 40 empty-outcome programs can actually be populated
+7. Resolve 6 programs missing guide placements in `public/data/official_resource_placements.json`
 
 ---
 
@@ -199,6 +239,8 @@ These should not be reopened by default.
 | How the repo works | `_internal/ATLAS_REPO_MEMORY.md` |
 | What changed recently | `_internal/DEV_LOG.md` |
 | Page-state docs, source baseline, homepage design conclusions | `_internal/page_designs/` — see `README.md` for reading order |
+| Program guide extraction — design and pipeline | `_internal/program_guides/TECHNICAL_READOUT.md` |
+| Program guide extraction — workstream control | `_internal/program_guides/README.md` |
 | Official-resource module materials | `_internal/official_resource/` |
 | Continuity-review materials | `_internal/continuity_review/` |
 | Lineage data + decisions | `data/lineage/` |

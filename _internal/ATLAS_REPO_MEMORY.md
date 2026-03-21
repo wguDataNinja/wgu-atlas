@@ -532,6 +532,62 @@ Lineage should help explain meaningful continuity when it exists, while resistin
 
 ---
 
+## 12a. Program guide extraction system
+
+### Purpose
+
+Extract structured content from WGU program guide PDFs (115 guides, one per active program) and make it available as parsed runtime artifacts.
+
+This is distinct from the URL-placement system in `official_resource_placements.json`. That layer already links guide URLs as sidebar resources. This system extracts the guide content itself.
+
+### Status
+
+- Initialized — analysis phase only as of 2026-03-20
+- Technical design complete: `_internal/program_guides/TECHNICAL_READOUT.md`
+- 1 of 115 guide texts extracted (BSDA)
+- No scripts written; no data artifacts yet
+
+### BSDA guide structure (confirmed)
+
+Document order: title block → program description → boilerplate intro (CBE, accreditation, degree plan, faculty, orientation, transfer, SAP, courses, learning resources) → **Standard Path table** → Changes to Curriculum → **Areas of Study** (groups > courses > descriptions > competency bullets) → **Capstone** → closing boilerplate
+
+Footer format (page break marker): `CODE YYYYMM © [copyright text] DATE PAGE`
+- Yields: program_code, version, pub_date, page_count
+
+Key structural facts:
+- No course codes in guides — courses are title-only in both Standard Path and Areas of Study
+- Standard Path rows: `[Title] [CUs] [Term]` — simpler than catalog rows
+- Areas of Study: group heading → course title → description → "This course covers the following competencies:" → bullet list
+- Capstone is a named section, last before closing boilerplate
+- `"Accessibility and Accommodations"` is a reliable end-of-content marker
+
+### Pipeline phases (planned)
+
+| Phase | Purpose |
+|---|---|
+| A | Corpus manifest: scan all 115 guide texts, emit `guide_manifest.json` + `section_presence_matrix.csv` |
+| B | Thin-slice parser: BSDA → `BSDA_parsed.json` + `BSDA_validation.json` |
+| C | Full corpus parser with family branching |
+| D | Site artifact build: `public/data/program_guides/{code}.json` |
+| E | Course title → Atlas code matching (separate downstream step) |
+
+### Key files
+
+- `_internal/program_guides/TECHNICAL_READOUT.md` — full design rationale, schemas, pipeline
+- `_internal/program_guides/README.md` — workstream control
+- `data/program_guides/` (planned)
+- `public/data/program_guides/` (planned)
+
+### Important design decisions
+
+- Manifest-first: characterize the full corpus before writing a content parser
+- Course code matching is a separate phase, not part of structural parsing
+- Guide family classification (standard_ug, education, endorsement, nursing, graduate, etc.) drives parser branching
+- Reusable from `parse_catalog_v11.py`: footer-as-metadata pattern, section anchor scanning, state machine approach, typed anomaly collection, verbose progress reporting
+- Not reusable: era detection, multi-edition loop, program index parsing, Total CUs as block terminator, sections_index / degree_snapshots structures
+
+---
+
 ## 13. Build and script pipeline
 
 ### Core site-data pipeline
