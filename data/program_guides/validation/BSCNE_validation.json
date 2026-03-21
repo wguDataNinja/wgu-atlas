@@ -1,0 +1,32 @@
+{
+  "program_code": "BSCNE",
+  "degree_title": "Bachelor of Science, Cloud and Network Engineering",
+  "version": "202510",
+  "pub_date": "1/27/2026",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 174,
+    "Areas of Study": 414,
+    "Accessibility": 917
+  },
+  "standard_path_row_count": 34,
+  "aos_group_count": 13,
+  "aos_course_count": 34,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 34,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

@@ -1,0 +1,743 @@
+{
+  "program_code": "BSSWE_C",
+  "version": null,
+  "pub_date": null,
+  "page_count": 0,
+  "degree_title": "Bachelor of Science, Software Engineering",
+  "program_description": "The B.S. in Software Engineering program is designed to meet the growing industry need in the software space while preparing experienced information technology professionals for successful careers as software engineers, designers and developers.The program focuses on software engineering and it is offered in two tracks that utilize either Java or C# to achieve similar objectives.",
+  "standard_path": [
+    {
+      "title": "Scripting and Programming - Foundations",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Introduction to Programming in Python",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "IT Leadership Foundations",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Web Development Foundations",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Version Control",
+      "cus": 1,
+      "term": 2
+    },
+    {
+      "title": "Front-End Web Development",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Applied Probability and Statistics",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Introduction to IT",
+      "cus": 4,
+      "term": 2
+    },
+    {
+      "title": "Natural Science Lab",
+      "cus": 2,
+      "term": 2
+    },
+    {
+      "title": "Applied Algebra",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Data Structures and Algorithms I",
+      "cus": 4,
+      "term": 3
+    },
+    {
+      "title": "Introduction to Systems Thinking",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Data Management - Foundations",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Data Management - Applications",
+      "cus": 4,
+      "term": 4
+    },
+    {
+      "title": "JavaScript Programming",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "Ethics in Technology",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "Network and Security - Foundations",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "Advanced Data Management",
+      "cus": 3,
+      "term": 5
+    },
+    {
+      "title": "User Interface Design",
+      "cus": 3,
+      "term": 5
+    },
+    {
+      "title": "User Experience Design",
+      "cus": 3,
+      "term": 5
+    },
+    {
+      "title": "Health, Fitness, and Wellness",
+      "cus": 4,
+      "term": 5
+    },
+    {
+      "title": "Software I – C#",
+      "cus": 6,
+      "term": 6
+    },
+    {
+      "title": "Cloud Foundations",
+      "cus": 3,
+      "term": 6
+    },
+    {
+      "title": "Hardware and Operating Systems Essentials",
+      "cus": 3,
+      "term": 6
+    },
+    {
+      "title": "Business of IT - Project Management",
+      "cus": 4,
+      "term": 7
+    },
+    {
+      "title": "Software II – Advanced C#",
+      "cus": 6,
+      "term": 7
+    },
+    {
+      "title": "Business of IT - Applications",
+      "cus": 4,
+      "term": 7
+    },
+    {
+      "title": "Introduction to Physical and Human Geography",
+      "cus": 3,
+      "term": 8
+    },
+    {
+      "title": "Composition: Successful Self-Expression",
+      "cus": 3,
+      "term": 8
+    },
+    {
+      "title": "Software Security and Testing",
+      "cus": 3,
+      "term": 8
+    },
+    {
+      "title": "Technical Communication",
+      "cus": 3,
+      "term": 8
+    },
+    {
+      "title": "Software Design and Quality Assurance",
+      "cus": 3,
+      "term": 8
+    },
+    {
+      "title": "American Politics and the US Constitution",
+      "cus": 3,
+      "term": 9
+    },
+    {
+      "title": "Software Engineering",
+      "cus": 4,
+      "term": 9
+    },
+    {
+      "title": "American Politics and the US Constitution",
+      "cus": 3,
+      "term": 9
+    },
+    {
+      "title": "Software Engineering",
+      "cus": 4,
+      "term": 9
+    },
+    {
+      "title": "Mobile Application Development Using C#",
+      "cus": 3,
+      "term": 9
+    },
+    {
+      "title": "Software Engineering Capstone",
+      "cus": 4,
+      "term": 9
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "Scripting and Programming",
+      "courses": [
+        {
+          "title": "Scripting and Programming - Foundations",
+          "description": "Scripting and Programming - Foundations introduces programming basics such as variables, data types, flow control, and design concepts. The course is language-agnostic in nature, ending in a survey of languages, and introduces the distinction between interpreted and compiled languages. Learners will gain skills in identifying scripts for computer program requirements and in using fundamental programming elements as part of common computer programming tasks. Learners will also gain an understanding of the logic and outcome of simple algorithms.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains the logic and outcome of simple algorithms.",
+            "The learner identifies scripts for computer program requirements.",
+            "The learner uses fundamental programming elements as part of common computer programming tasks."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Introduction to Programming in Python",
+          "description": "Introduction to Programming in Python introduces skills in creating Python scripts with basic programming concepts. Learners will be able to create control flow with functions and loops, and to implement code with packages, modules, and libraries.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates control flow with functions and loops.",
+            "The learner creates python scripts with basic programming concepts.",
+            "The learner implements code with packages, modules, and libraries."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Business of IT",
+      "courses": [
+        {
+          "title": "IT Leadership Foundations",
+          "description": "IT Leadership Foundations is an introductory course that provides students with an overview of organizational structures, communication, and leadership styles specific to information technology in organizations. It also introduces students to some of the power skills that help make successful IT professionals, including time management, problem solving, and emotional intelligence. Students in this course explore their own strengths and passions in relation to the field. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner communicates ideas, opinions, and information suitable for various professional settings.",
+            "The learner recommends strategies for decision-making in team environments.",
+            "The learner reflects on the emotional reactions of self and others in a variety of professional situations.",
+            "The learner selects appropriate influential leadership strategies for workplace situations."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Business of IT - Project Management",
+          "description": "In this course, students will build on industry standard concepts, techniques, and processes to develop a comprehensive foundation for project management activities. During a project's life cycle, students will develop the critical skills necessary to initiate, plan, execute, monitor, control, and close a project. Students will apply best practices in areas such as scope management, resource allocation, project planning, project scheduling, quality control, risk management, performance measurement, and project reporting. This course prepares students for the following certification exam: CompTIA Project+.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies communication methods and change control processes within a project.",
+            "The learner determines requirements of a project management plan.",
+            "The learner identifies project factors, constraints, and risk strategies."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": [
+            "CompTIA Project+",
+            "CompTIA Project+."
+          ]
+        },
+        {
+          "title": "Business of IT - Applications",
+          "description": "Business of IT - Applications examines Information Technology Infrastructure Library (ITIL®) terminology, structure, policies, and concepts. Focusing on the management of information technology (IT) infrastructure, development, and operations, learners will explore the core principles of ITIL practices for service management to prepare them for careers as IT professionals, business managers, and business process owners. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies Information Technology Infrastructure Library (ITIL) concepts, core components, principles, and models of service management.",
+            "The learner applies the Information Technology Infrastructure Library (ITIL) six activities of the service value chain."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Web Development",
+      "courses": [
+        {
+          "title": "Web Development Foundations",
+          "description": "Web Development Foundations introduces students to web design and development using HTML, XML, and Cascading Style Sheets (CSS), the foundational languages of the web. This course also covers how to troubleshoot problems using developer tools and integrated development environments commonly employed in web development. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates the structure of basic web documents using HTML and XML.",
+            "The learner implements web page formatting and interface aesthetics using CSS",
+            "The learner resolves software problems in web development environments with debugging tools."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Front-End Web Development",
+          "description": "Front-End Web Development builds upon web design and development skills to teach students how to organize websites with navigational schemes and create reactive user web interfaces using cascading style sheets (CSS). In this course, students will implement data entry and data storage capabilities in a web design, as well as implement best practices in design, including user-centered design and usability. Web Development Foundations is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner develops reactive user web interfaces using CSS.",
+            "The learner implements data entry and data storage capabilities in a web environment.",
+            "The learner implements navigational schemes in websites.",
+            "The learner implements user-centered solutions from multiple perspectives emphasizing usability and functional page layouts."
+          ],
+          "prerequisite_mentions": [
+            "Web Development Foundations",
+            "for this course"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "User Interface Design",
+          "description": "This course covers tools and techniques employed in user interface design, including web and mobile applications. Concepts of clarity, usability, and detectability are included in this course, as well as other design elements such as color schemes, typography, and layout. Techniques like wireframing, usability testing, and SEO optimization are also covered.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner builds wireframes, mockups and prototypes for the user interface that address customer needs.",
+            "The learner designs user interface that addresses user needs and functional requirements development efforts.",
+            "The learner determines the purpose and technical requirements of webpages."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Full Stack Engineering",
+      "courses": [
+        {
+          "title": "Version Control",
+          "description": "Version control is critical to maintaining software and enabling scalability solutions. A best practice for any programming project that requires multiple files uses version control. Version control enables teams to have collaborative workflows and enhances the software development lifecycle. This course introduces students to the basics of publishing, retrieving, branching, and cloning. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements version control processes and solutions that maintains source code."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "General Education",
+      "courses": [
+        {
+          "title": "Applied Probability and Statistics",
+          "description": "Applied Probability and Statistics is designed to help students develop competence in the fundamental concepts of basic statistics including: introductory algebra and graphing; descriptive statistics; regression and correlation; and probability. Statistical data and probability are often used in everyday life, science, business, information technology, and educational settings to make informed decisions about the validity of studies and the effect of data on decisions. This course discusses what constitutes sound research design and how to appropriately model phenomena using statistical data. Additionally, the content covers simple probability calculations, based on events that occur in the business and IT industries. No prerequisites are required for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies principles and methods of probability-based mathematics to explain and solve problems.",
+            "The graduate applies the operations, processes, and procedures of basic algebra to evaluate quantitative expressions, and to solve equations and inequalities.",
+            "The graduate applies the operations, processes, and procedures of fractions, decimals, and percentages to evaluate quantitative expressions.",
+            "The graduate evaluates categorical and quantitative data pertaining to a single variable using appropriate graphical displays and numerical measures.",
+            "The graduate evaluates the relationship between two quantitative variables through correlation and regression.",
+            "The graduate evaluates the relationship between two variables through interpretation of visual displays and numerical measures."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Natural Science Lab",
+          "description": "This course provides students an introduction to using the scientific method and engaging in scientific research to reach conclusions about the natural world. Students will design and carry out an experiment to investigate a hypothesis by gathering quantitative data. They will also research a specific ecosystem using academic sources and draw conclusions from their findings.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate accurately executes the process of scientific inquiry through experimentation in the natural world.",
+            "The graduate draws conclusions based on academic research and scientific inquiry.",
+            "The graduate evaluates academic sources for their credibility and relevance to a chosen research topic on a natural world phenomenon."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Applied Algebra",
+          "description": "Applied Algebra is designed to help you develop competence in working with functions, the algebra of functions, and using some applied properties of functions. You will start learning about how we can apply different kinds of functions to relevant, real-life examples. From there, the algebra of several families of functions will be explored, including linear, polynomial, exponential, and logistic functions. You will also learn about relevant, applicable mathematical properties of each family of functions, including rate of change, concavity, maximizing/minimizing, and asymptotes. These properties will be used to solve problems related to your major and make sense of everyday living problems. Students should complete Applied Probability and Statistics or its equivalent prior to engaging in Applied Algebra.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes graphical depictions of real-world situations using functional properties.",
+            "The learner applies exponential functions and their properties to real-world problems.",
+            "The learner applies linear functions and their properties to real-world problems.",
+            "The learner applies logistic functions and their properties to real-world problems.",
+            "The learner applies polynomial functions and their properties to real-world problems.",
+            "The learner interprets the real-world meaning of various functions based on notation, graphical representations, and data representations.",
+            "The learner verifies the validity of a given model."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Introduction to Systems Thinking",
+          "description": "Introduction to Systems Thinking provides learners with the skills required to engage in a holistic systems-based approach to analyzing complex problems and solutions. This course introduces the foundational concepts and principles of systems thinking and provides opportunities to use a systems thinking approach to analyze and evaluate real-world case studies. The course will culminate with using systems thinking to develop a solution to an authentic complex problem. This course has no prerequisites, but general education math (C955 or C957) is preferred. Because the course is self-paced, learners may move through the material as quickly or as slowly as needed, with the goal of demonstrating proficiency in the five competencies covered in the final assessment. If learners have no prior knowledge of this material, they can expect to spend 30 to 40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes complex problems and solutions using a systems thinking methodology.",
+            "The learner applies the basic principles and foundational theory of systems thinking to a scenario.",
+            "The learner designs a solution to a complex problem using systems thinking."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Ethics in Technology",
+          "description": "Ethics in Technology examines the ethical considerations of technology use in the 21st century and introduces students to a decision-making process informed by ethical frameworks. Students will study specific cases related to important topics such as surveillance, social media, hacking, data manipulation, plagiarism and piracy, artificial intelligence, responsible innovation, and the digital divide. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes ethical issues regarding data privacy, accuracy, access, and security.",
+            "The learner explains professional ethical codes and their role in guiding professional behavior.",
+            "The learner identifies interventions for personal bias and related legal concerns.",
+            "The learner implements ethical decision-making frameworks in the information age."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Health, Fitness, and Wellness",
+          "description": "Health, Fitness, and Wellness focuses on the importance and foundations of good health and physical fitness—particularly for children and adolescents—addressing health, nutrition, fitness, and substance use and abuse.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate identifies factors that influence mental, emotional, and social wellness.",
+            "The graduate identifies the application of the core competencies of social and emotional learning.",
+            "The graduate identifies the influence of disease, fitness, and lifestyle on the body.",
+            "The graduate identifies the principles of nutrition and the components of a healthy diet."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Introduction to Physical and Human Geography",
+          "description": "This is Introduction to Physical and Human Geography, a three-module course that addresses the question of what geography really is in today's complex world; how migration affects—and has been affected by—geography; and one of the biggest present problems related to geography: climate change. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the five competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 30–40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the connections among the various factors contributing to climate change.",
+            "The learner analyzes the message of a data visualization for a specific purpose.",
+            "The learner analyzes the various causes and effects of human migration.",
+            "The learner applies logical reasoning to the analysis of climate change.",
+            "The learner interprets complex global systems through the lenses of physical and human geography."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Composition: Successful Self-Expression",
+          "description": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing research sources. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the seven competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content. You will demonstrate competency through a performance assessment. There is no prerequisite for this course and there is no specific technical knowledge needed.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner composes a written message with language appropriate for cross-cultural communication.",
+            "The learner incorporates research to support a position or idea.",
+            "The learner incorporates self-expression in written communication.",
+            "The learner researches valid and reliable sources.",
+            "The learner writes a message using an effective communication approach for a given situation.",
+            "The learner writes a reference list.",
+            "The learner writes in a professional manner for a given scenario."
+          ],
+          "prerequisite_mentions": [
+            "for this course and there is no specific technical knowledge needed"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Technical Communication",
+          "description": "Technical Communication introduces skills in editing professional communications, evaluating the impact of professional etiquette in digital environments, and in creating artifacts that are persuasive, informational, and research-based. The course also introduces skills in delivering multimedia presentations using professional verbal communication skills.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates technical artifacts that are persuasive, informational, and research based.",
+            "The learner delivers presentations with professional verbal communication skills and multimedia.",
+            "The learner edits corporate communications for proper grammar and punctuation.",
+            "The learner evaluates the impact of business etiquette and communication in digital environments."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "American Politics and the US Constitution",
+          "description": "American Politics and the U.S. Constitution examines the evolution of representative government in the United States and the changing interpretations of the civil rights and civil liberties protected by the Constitution. This course will give candidates an understanding of the powers of the branches of the federal government, the continual tensions inherent in a federal system, the shifting relationship between state and federal governments, and the interactions between elected officials and the ever-changing electorate. This course will focus on such topics as the role of a free press in a democracy, the impact of changing demographics on American politics, and the debates over and expansion of civil rights. Upon completion of the course, candidates should be able to explain the basic functions of the federal government, describe the forces that shape American policy and politics, and be better prepared to participate in America’s civic institutions. This course has no prerequisite.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate describes the influence of competing political ideologies on the development of the United States government.",
+            "The graduate examines the influence of political parties, citizens, and non-governmental organizations on elections and other political processes inside a participatory democracy.",
+            "The graduate examines the influence of the media, public opinion, and political discourse on American democracy.",
+            "The graduate examines the struggle to balance individual liberty, public order, and state’s rights.",
+            "The graduate explains how the structure and powers of the United States government interact to form public policy."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "IT Fundamentals",
+      "courses": [
+        {
+          "title": "Introduction to IT",
+          "description": "Introduction to IT examines information technology as a discipline and the various roles and functions of the IT department as business support. Students are presented with various IT disciplines, including systems and services, network and security, scripting and programming, data management, and business of IT, with a survey of technologies in every area and how they relate to each other and to the business.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes fundamental data management functions in databases.",
+            "The learner describes the basics of programming languages in software development.",
+            "The learner describes the role of the IT department in IT infrastructure management, disaster recovery, and business continuity processes.",
+            "The learner describes the structure, function, and security associated with networks.",
+            "The learner evaluates ethical concerns in information technology.",
+            "The learner explains different computer hardware and networking technologies and their developments.",
+            "The learner identifies components of software and its relation to operating systems.",
+            "The learner identifies computer hardware components."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Computer Science",
+      "courses": [
+        {
+          "title": "Data Structures and Algorithms I",
+          "description": "Data Structures and Algorithms I covers the fundamentals of dynamic data structures, such as bags, lists, stacks, queues, trees, and hash tables with their associated algorithms. This course discusses object-oriented design and abstract data types as design paradigms. The course emphasizes problem-solving and techniques for designing efficient, maintainable software applications. Students will implement simple applications using the techniques learned.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies algorithms that address a desired outcome based on space and time complexity in big-O notation.",
+            "The learner determines how data structure types impact operations within application, service, or data stores.",
+            "The learner explains the use, logic, and structure of algorithms."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Software Engineering Capstone",
+          "description": "The capstone challenges students to integrate skills and knowledge from all program domains into one project.",
+          "competency_bullets": [
+            "The learner deploys software applications with scripts and containers on a cloud platform.",
+            "The learner develops full stack software engineering documentation and applications.",
+            "The learner executes documentation, unit testing, and revision of software applications."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Data Management",
+      "courses": [
+        {
+          "title": "Data Management - Foundations",
+          "description": "Data Management Foundations offers an introduction in creating conceptual, logical and physical data models. Students gain skills in creating databases and tables in SQL-enabled database management systems, as well as skills in normalizing databases. No prerequisites are required for this course",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner defines primary and foreign keys in data normalization.",
+            "The learner determines how to run queries for creation and manipulation of data in relational databases.",
+            "The learner explains attributes of databases, database tables, and structured and associated query language (SQL) commands."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Data Management - Applications",
+          "description": "Data Management - Applications covers conceptual data modeling and introduces MySQL. Students will learn how to create simple to complex SELECT queries, including subqueries and joins, and how to use SQL to update and delete data. Topics covered in this course include exposure to MySQL; creating and modifying databases, tables, views, foreign keys and primary keys (FKs and PKs), and indexes; populating tables; and developing simple Select-From-Where (SFW) queries to complex 3+ table join queries. The following course is a prerequisite: Data Management - Foundations.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates DML statements that insert, update, and delete data in data tables.",
+            "The learner implements joins and aggregate functions in SQL queries.",
+            "The learner queries database tables and views with SQL code.",
+            "The learner recommends databases and database management systems to meet organizational needs."
+          ],
+          "prerequisite_mentions": [
+            "Data Management - Foundations"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Advanced Data Management",
+          "description": "Advanced Data Management enables learners to extract and analyze raw data. Skillful data management allows organizations to discover and explore data in ways that uncover trends, issues, and their root causes. In turn, businesses are better equipped to capitalize on opportunities and more accurately plan for the future. As organizations continue to extract larger and more detailed volumes of data, the need is rapidly growing for IT professionals who possess data management skills. The skills gained in this course include performing advanced relational data modeling as well as designing data marts, lakes, and warehouses. This course will empower learners with the skills to build business logic at the database layer to employ more stability and higher data-processing speeds. Learners will gain the ability to automate common tasks to summarize and integrate data as they prepare it for analysis. Data Management - Foundations is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner configures data extraction, transformation, and loading tasks for automated data integration.",
+            "The learner writes complex Structured Query Language (SQL) statements for data analysis and manipulation."
+          ],
+          "prerequisite_mentions": [
+            "Data Management - Foundations",
+            "for this course"
+          ],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Software Development",
+      "courses": [
+        {
+          "title": "JavaScript Programming",
+          "description": "JavaScript Programming introduces students to programming with JavaScript, including how to use JavaScript to enhance a website. This course covers how to use existing frameworks, assets, and web content to enhance website functionality, as well as how to use application programming interfaces (APIs) and web services to add data capabilities to web applications.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner adds data capabilities to web applications with application programming interfaces (APIs) and web services.",
+            "The learner uses existing frameworks, assets, and web content that address stakeholder preferences and enhance website functionality.",
+            "The learner writes basic scripts to accomplish tasks with JavaScript."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Mobile Application Development Using C#",
+          "description": "Mobile Application Development Using C# introduces students to programming for mobile devices. Building on students’ previous programming knowledge in C#, this course explores a broad range of topics, including mobile user interface design and development; building applications that adapt to different mobile devices and platforms; managing data using a local database; and consuming REST-based web services. In this course, students will focus on developing skills using the latest framework designed to provide a more modern and streamlined development experience. This framework will help students design and code cross-platform applications that work on a range of mobile devices. There are several prerequisites for this course: Software I and II, and UI Design.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate creates solutions to store, retrieve, and transmit mobile application data.",
+            "The graduate develops a simple mobile application using an integrated development environment (IDE).",
+            "The graduate develops a user interface for a mobile application.",
+            "The graduate develops an application that accounts for different platforms and device conditions."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Network and Security",
+      "courses": [
+        {
+          "title": "Network and Security - Foundations",
+          "description": "Network and Security - Foundations introduces learners to the basic network systems and concepts related to networking technologies. Learners will gain skills in applying network security concepts for business continuity, data access, and confidentiality, and in identifying solutions for compliance with security guidance.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies network security concepts for business continuity, data access, and confidentiality.",
+            "The learner identifies basic network systems and concepts related to networking technologies.",
+            "The learner identifies solutions for compliance with security guidance."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Software",
+      "courses": [
+        {
+          "title": "User Experience Design",
+          "description": "User Experience Design explores multiple tools and techniques used in user experience design. Students are presented with an in-depth view of activities involved in the design of user experience and have the opportunity to create several deliverables including persona profiles, information architectures, and prototypes of different levels of fidelity. In addition, the course also covers usability testing and the evaluation of quantitative and qualitative data derived from these and other experiments.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner conducts formal and informal usability testing as part of application design prototyping.",
+            "The learner designs application wireframes and prototypes using industry standard tools and techniques.",
+            "The learner establishes timeframes for user experience projects based on business requirements.",
+            "The learner updates application designs based on user testing analysis results."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Software I – C#",
+          "description": "Software I - C# builds object-oriented programming expertise and introduces powerful new tools for C# application development. You will learn about and put into action: class design, exception handling, and other object-oriented principles and constructs to develop software that meets business requirements. This course requires foundational knowledge of object-oriented programming.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate designs software solutions with appropriate classes, objects, methods, and interfaces to achieve specific goals.",
+            "The graduate develops user interfaces to meet project requirements.",
+            "The graduate implements object-oriented design principles (e.g., inheritance, encapsulation, and abstraction) in developing applications for ensuring the application’s scalability.",
+            "The graduate incorporates simple exception handling in application development for improving user experience and application stability.",
+            "The graduate produces applications using high-level programming language constructs to meet business requirements."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Hardware and Operating Systems Essentials",
+          "description": "Hardware and Operating Systems prepares learners for concepts in software engineering by providing a foundation of understanding in computer architecture, the history of computing architectures, and operating systems. Additional topics covered include hardware and software stacks and how to choose appropriate hardware and software solutions to meet both functional and non-functional business requirements.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner develops topologies for hardware and software solutions that address both functional and non-functional requirements of business solutions.",
+            "The learner explains design decisions based on the history and foundations of technology stacks.",
+            "The learner explains the configuration and deployment of software applications."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Software II – Advanced C#",
+          "description": "Software II - Advanced C# refines object-oriented programming expertise and builds database and file server application development skills. You will learn about and put into action lambda expressions, collections, and input/output to develop software with C# that meets business requirements. This course requires intermediate expertise in object-oriented programming and the C# language. The prerequisite for this course is Software I - C#.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies application programming interfaces (APIs) in application development to support end users in various geographic regions.",
+            "The graduate incorporates advanced exception control mechanisms in application development for improving user experience and application stability.",
+            "The graduate incorporates lambda expressions in application development to meet business requirements more efficiently.",
+            "The graduate incorporates nongeneric collections and generic collections in application development to manipulate data more efficiently.",
+            "The graduate produces database and file server applications using advanced constructs in a high-level programming language to meet business requirements."
+          ],
+          "prerequisite_mentions": [
+            "for this course is Software I - C#"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Software Security and Testing",
+          "description": "This course prepares you to recognize security vulnerabilities in software, to plan interventions to address security vulnerabilities where they exist, and to develop and test these interventions. The course covers topics in Web security, permissions, and identity security; debugging; log file analysis; API security; and encryption and cryptography concepts.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner configures security authentication for representational state transfer (REST) and application programming interfaces (APIs).",
+            "The learner develops mitigation solutions for security vulnerabilities.",
+            "The learner evaluates application and network logs for performance, availability, and security vulnerabilities."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Software Design and Quality Assurance",
+          "description": "Software Design and Quality Assurance applies a QA focus to every phase of the software development life cycle. This course investigates best practices for quality analysis, quality planning, and testing strategies as they pertain to the everyday practice of software development. Students will come to understand how their work fits into the bigger picture: how QA, testing, and code-writing practices interact within specific process models; the potential impact of new code on existing code or on other applications; the importance of usability and the influence users have on the ultimate success of an application. Students will explore test plans, test cases, unit tests, integration tests, regression tests, usability tests, and test and review tools.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner defines plans for development tasks and environments based on desired quality outcomes.",
+            "The learner determines the impact of business requirements on software design patterns and software systems.",
+            "The learner identifies goals and potential roadblocks as part of software development plans.",
+            "The learner recommends tools and services to address functional and non-functional testing outcomes."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Information Technology Management",
+      "courses": [
+        {
+          "title": "Cloud Foundations",
+          "description": "Cloud Foundations introduces learners to real-world issues and practical solutions to cloud computing. This course covers the business value of cloud computing, examining cloud types, the steps to successful cloud adoption, and the effect cloud adoption has on IT service management, as well as the risks and consequences of implementing cloud solutions. This course prepares learners for the AWS Certified Practitioner certification exam. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner articulates the value proposition of cloud solutions in business scenarios.",
+            "The learner defines cloud security and compliance.",
+            "The learner determines the best-fit solution for a project based on the cost and support structures.",
+            "The learner identifies cloud technology solutions in IaaS, PaaS, and SaaS models."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": [
+            "AWS Certified"
+          ]
+        },
+        {
+          "title": "Software Engineering",
+          "description": "Software Engineering introduces the concepts of software engineering to students who have completed the core courses in programming and project management. The principles build on previously acquired concepts, switching the emphasis from programming simple routines to engineering robust and scalable software solutions. This course does not cover programming, but it provides an overview of software engineering processes and their challenging nature, focusing on the need for a disciplined approach to software engineering. A generic process framework provides the groundwork for formal process models. Prescriptive process models such as the Waterfall Model and Agile Development are included. This course also introduces the elements and phases of software engineering, including requirements engineering, design concepts, and software quality. There",
+          "competency_bullets": [],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": [
+    {
+      "type": "no_footer_lines_found",
+      "note": "metadata not recoverable"
+    }
+  ]
+}

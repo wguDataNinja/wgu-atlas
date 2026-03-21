@@ -1,0 +1,662 @@
+{
+  "program_code": "BSCNECIS",
+  "version": "202510",
+  "pub_date": "1/27/2026",
+  "page_count": 0,
+  "degree_title": "Bachelor of Science, Cloud and Network Engineering - Cisco",
+  "program_description": "Program Code: BSCNECIS Catalog Version: 202510 Published Date: 1/27/2026 The BS in Cloud and Network Engineering, Cisco (BSCNECIS) program prepares IT professionals to apply knowledge and experience in network/cloud design, engineering, troubleshooting, automation, and security to manage network infrastructure and secure data through effective IT policies and procedures. Courses deliver proven methods for network administration and operations to ensure uptime, performance, availability, and security of networks to meet the needs of the organization. The program builds upon a core IT curriculum: systems and services, networking and security, scripting and programming, data management, and business of IT. Students seeking the BS in Cloud and Network Engineering degree demonstrate additional competencies in this area by taking and passing specific industry certification exams that are vendor agnostic. It gives students foundational and associate level certifications from Cisco and vendor agnostic certifications such as CompTIA, Linux, and ITIL.",
+  "standard_path": [
+    {
+      "title": "Introduction to IT",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "IT Applications",
+      "cus": 4,
+      "term": 1
+    },
+    {
+      "title": "Technical Communication",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Composition: Successful Self-Expression",
+      "cus": 3,
+      "term": 1
+    },
+    {
+      "title": "Linux Foundations",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "IT Foundations",
+      "cus": 4,
+      "term": 2
+    },
+    {
+      "title": "Health, Fitness, and Wellness",
+      "cus": 4,
+      "term": 2
+    },
+    {
+      "title": "Ethics in Technology",
+      "cus": 3,
+      "term": 2
+    },
+    {
+      "title": "Network and Security - Foundations",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Implementing and Administering Networking Solutions",
+      "cus": 6,
+      "term": 3
+    },
+    {
+      "title": "Network Analytics and Troubleshooting",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Telecomm and Wireless Communications",
+      "cus": 3,
+      "term": 3
+    },
+    {
+      "title": "Foundations of Programming (Python)",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "Python for IT Automation",
+      "cus": 3,
+      "term": 4
+    },
+    {
+      "title": "DevNet Fundamentals",
+      "cus": 6,
+      "term": 4
+    },
+    {
+      "title": "Data Management - Foundations",
+      "cus": 3,
+      "term": 5
+    },
+    {
+      "title": "Cyber Operations Fundamentals",
+      "cus": 6,
+      "term": 5
+    },
+    {
+      "title": "Cloud and Network Security Models",
+      "cus": 4,
+      "term": 5
+    },
+    {
+      "title": "AI for IT Automation and Security",
+      "cus": 3,
+      "term": 5
+    },
+    {
+      "title": "Virtualization and IaaS",
+      "cus": 3,
+      "term": 6
+    },
+    {
+      "title": "Cloud Applications",
+      "cus": 3,
+      "term": 6
+    },
+    {
+      "title": "Internet of Things (IoT) and Infrastructure",
+      "cus": 3,
+      "term": 6
+    },
+    {
+      "title": "Applied Probability and Statistics",
+      "cus": 3,
+      "term": 6
+    },
+    {
+      "title": "Integrated Physical Sciences",
+      "cus": 3,
+      "term": 7
+    },
+    {
+      "title": "Introduction to Systems Thinking and Applications",
+      "cus": 3,
+      "term": 7
+    },
+    {
+      "title": "Business of IT - Applications",
+      "cus": 4,
+      "term": 7
+    },
+    {
+      "title": "Hybrid Cloud Infrastructure and and Orchestration",
+      "cus": 4,
+      "term": 7
+    },
+    {
+      "title": "US History: Stories of American Democracy",
+      "cus": 3,
+      "term": 8
+    },
+    {
+      "title": "Applied Algebra",
+      "cus": 3,
+      "term": 8
+    },
+    {
+      "title": "Influential Communication through Visual Design and Storytelling",
+      "cus": 3,
+      "term": 8
+    },
+    {
+      "title": "IT Leadership Foundations",
+      "cus": 3,
+      "term": 9
+    },
+    {
+      "title": "BSCNE-Cisco Capstone Project",
+      "cus": 4,
+      "term": 9
+    }
+  ],
+  "areas_of_study": [
+    {
+      "group": "IT Fundamentals",
+      "courses": [
+        {
+          "title": "Introduction to IT",
+          "description": "Introduction to IT introduces the fundamental concepts, structures, and roles of information technology (IT) within an organization. The course is structured to provide a comprehensive understanding of the various aspects of IT, including networking, database management, cybersecurity, artificial intelligence (AI), and software development. This course also explores the essential components of the typical technology infrastructure for various types of organizations, the role and interaction of each component, and the evolving nature of technology and its implications for business practices. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes a company’s technology infrastructure and the role of each component.",
+            "The learner describes the areas of IT and their functions within an organization.",
+            "The learner explains the evolving nature of technology and its implications for business and IT practices."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "IT Applications",
+          "description": "IT Applications introduces skills in identifying operating systems and their configurations and in implementing security principles across devices and networks. Learners will also gain skills in troubleshooting software, security, and malware issues, and in implementing basic operational procedures in documentation, change management, compliance, and communication. The course will introduce basic disaster recovery and business continuity procedures, scripting basics, and remote access technology solutions. The course prepares learners for the CompTIA A+ Core 2 certification exam.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner identifies operating systems and their configurations.",
+            "The learner identifies remote access technology solutions.",
+            "The learner identifies scripting basics.",
+            "The learner implements basic disaster recovery and business continuity procedures.",
+            "The learner implements basic operational procedures in documentation, change management, compliance, and communication.",
+            "The learner implements security principles across devices and networks.",
+            "The learner troubleshoots software, security, and malware issues."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": [
+            "CompTIA A+"
+          ]
+        },
+        {
+          "title": "IT Foundations",
+          "description": "IT Foundations provides learners with an understanding of personal computer components and their functions in a desktop system; a knowledge of computer data storage and retrieval; and skills in classifying, installing, configuring, optimizing, upgrading, and troubleshooting printers, laptops, portable devices, operating systems, networks, and system security. This course also gives learners the ability to recommend appropriate tools, diagnostic procedures, preventative maintenance, and troubleshooting techniques for personal computer components in a desktop system; strategies for identifying, preventing, and reporting safety hazards and environmental or human accidents in technological environments; and effective communication skills for interacting with colleagues and clients, including job-related professional behavior. The course prepares learners for the CompTIA A+ Core 1 certification exam.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner configures common hardware and software components of mobile devices.",
+            "The learner configures common hardware in computer systems.",
+            "The learner configures wired and wireless networks.",
+            "The learner creates client-side virtualization with cloud computing components.",
+            "The learner troubleshoots hardware, software, and network issues with best practice methodologies."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": [
+            "CompTIA A+"
+          ]
+        },
+        {
+          "title": "Foundations of Programming (Python)",
+          "description": "Foundations of Programming (Python) introduces students to the fundamental principles of programming using Python. This course is designed to equip students with the essential skills needed to write, troubleshoot, and debug simple Python programs. Students will explore the syntax and structure of Python, develop an understanding of variables, loops, and conditional statements, and learn to work within different development environments, including integrated development environments (IDEs) and text editors. By the end of the course, students will be able to create functional Python programs, manipulate data structures, and apply debugging techniques across various platforms. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates functional programs by writing and debugging code.",
+            "The learner executes Python code in different development environments.",
+            "The learner identifies basic Python programming constructs to create simple functions.",
+            "The learner manipulates data structures to effectively store, retrieve, and process data."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "General Education",
+      "courses": [
+        {
+          "title": "Technical Communication",
+          "description": "Technical Communication introduces skills in editing professional communications, evaluating the impact of professional etiquette in digital environments, and in creating artifacts that are persuasive, informational, and research-based. The course also introduces skills in delivering multimedia presentations using professional verbal communication skills.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates technical artifacts that are persuasive, informational, and research based.",
+            "The learner delivers presentations with professional verbal communication skills and multimedia.",
+            "The learner edits corporate communications for proper grammar and punctuation.",
+            "The learner evaluates the impact of business etiquette and communication in digital environments."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Composition: Successful Self-Expression",
+          "description": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing research sources. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the seven competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content. You will demonstrate competency through a performance assessment. There is no prerequisite for this course and there is no specific technical knowledge needed.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner composes a written message with language appropriate for cross-cultural communication.",
+            "The learner incorporates research to support a position or idea.",
+            "The learner incorporates self-expression in written communication.",
+            "The learner researches valid and reliable sources.",
+            "The learner writes a message using an effective communication approach for a given situation.",
+            "The learner writes a reference list.",
+            "The learner writes in a professional manner for a given scenario."
+          ],
+          "prerequisite_mentions": [
+            "for this course and there is no specific technical knowledge needed"
+          ],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Health, Fitness, and Wellness",
+          "description": "Health, Fitness, and Wellness focuses on the importance and foundations of good health and physical fitness—particularly for children and adolescents—addressing health, nutrition, fitness, and substance use and abuse.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate identifies factors that influence mental, emotional, and social wellness.",
+            "The graduate identifies the application of the core competencies of social and emotional learning.",
+            "The graduate identifies the influence of disease, fitness, and lifestyle on the body.",
+            "The graduate identifies the principles of nutrition and the components of a healthy diet."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Ethics in Technology",
+          "description": "Ethics in Technology examines the ethical considerations of technology use in the 21st century and introduces students to a decision-making process informed by ethical frameworks. Students will study specific cases related to important topics such as surveillance, social media, hacking, data manipulation, plagiarism and piracy, artificial intelligence, responsible innovation, and the digital divide. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes ethical issues regarding data privacy, accuracy, access, and security.",
+            "The learner explains professional ethical codes and their role in guiding professional behavior.",
+            "The learner identifies interventions for personal bias and related legal concerns.",
+            "The learner implements ethical decision-making frameworks in the information age."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Applied Probability and Statistics",
+          "description": "Applied Probability and Statistics is designed to help students develop competence in the fundamental concepts of basic statistics including: introductory algebra and graphing; descriptive statistics; regression and correlation; and probability. Statistical data and probability are often used in everyday life, science, business, information technology, and educational settings to make informed decisions about the validity of studies and the effect of data on decisions. This course discusses what constitutes sound research design and how to appropriately model phenomena using statistical data. Additionally, the content covers simple probability calculations, based on events that occur in the business and IT industries. No prerequisites are required for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies principles and methods of probability-based mathematics to explain and solve problems.",
+            "The graduate applies the operations, processes, and procedures of basic algebra to evaluate quantitative expressions, and to solve equations and inequalities.",
+            "The graduate applies the operations, processes, and procedures of fractions, decimals, and percentages to evaluate quantitative expressions.",
+            "The graduate evaluates categorical and quantitative data pertaining to a single variable using appropriate graphical displays and numerical measures.",
+            "The graduate evaluates the relationship between two quantitative variables through correlation and regression.",
+            "The graduate evaluates the relationship between two variables through interpretation of visual displays and numerical measures.",
+            "The graduate evaluates the relationship between two variables through interpretation of visual displays and numerical measures."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Integrated Physical Sciences",
+          "description": "This course provides students with an overview of the basic principles and unifying ideas of the physical sciences: physics, chemistry, and earth sciences. Course materials focus on scientific reasoning and practical, everyday applications of physical science concepts to help students integrate conceptual knowledge with practical skills.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes the nature and process of science.",
+            "The learner describes the underlying organization, interactions, and processes within the Earth system including the Earth's structure and atmosphere, and Earth's interactions within the solar system.",
+            "The learner examines applications of key chemistry concepts including the structure of matter and the behavior and conservation of matter in chemical reactions.",
+            "The learner examines applications of physics including fundamental concepts such as forces, motion, energy, and waves."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Introduction to Systems Thinking and Applications",
+          "description": "Introduction to Systems Thinking and Applications provides learners with the skills required to engage in a holistic systems-based approach to analyzing complex problems and solutions. This course introduces the foundational concepts and principles of systems thinking and provides opportunities to use a systems thinking approach to analyze and evaluate real-world case studies. The course will culminate with using systems thinking to develop a solution to an authentic complex problem. This course has no prerequisites, but general education math (C955 or C957) is preferred. Because the course is self-paced, learners may move through the material as quickly or as slowly as needed, with the goal of demonstrating proficiency in the five competencies covered in the final assessment. If learners have no prior knowledge of this material, they can expect to spend 30 to 40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes complex problems and solutions using a systems thinking methodology.",
+            "The learner applies the basic principles and foundational theory of systems thinking to a scenario.",
+            "The learner designs a solution to a complex problem using systems thinking."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "US History: Stories of American Democracy",
+          "description": "This course presents a broad survey of U.S. history from early colonization to the mid-twentieth century. The course explores how historical events and major themes in American history have affected diverse populations, influenced changes in policy an established the American definition of democracy. This course consists of an introduction and five major sections. Each section includes learning opportunities through reading, images, videos, and other relevant resources. Assessment activities with feedback also provide opportunities to practice and check how well you understand the content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the five competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes primary sources to understand events or processes in American history.",
+            "The learner analyzes secondary sources to understand events and processes in American History.",
+            "The learner describes how economic, political, and social factors affect communities",
+            "The learner explains the effect of institutions on society.",
+            "The learner explains the effect of the actions of individuals in U.S. History."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Applied Algebra",
+          "description": "Applied Algebra is designed to help you develop competence in working with functions, the algebra of functions, and using some applied properties of functions. You will start learning about how we can apply different kinds of functions to relevant, real-life examples. From there, the algebra of several families of functions will be explored, including linear, polynomial, exponential, and logistic functions. You will also learn about relevant, applicable mathematical properties of each family of functions, including rate of change, concavity, maximizing/minimizing, and asymptotes. These properties will be used to solve problems related to your major and make sense of everyday living problems. Students should complete Applied Probability and Statistics or its equivalent prior to engaging in Applied Algebra.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes graphical depictions of real-world situations using functional properties.",
+            "The learner applies exponential functions and their properties to real-world problems.",
+            "The learner applies linear functions and their properties to real-world problems.",
+            "The learner applies logistic functions and their properties to real-world problems.",
+            "The learner applies polynomial functions and their properties to real-world problems.",
+            "The learner interprets the real-world meaning of various functions based on notation, graphical representations, and data representations.",
+            "The learner verifies the validity of a given model."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Influential Communication through Visual Design and Storytelling",
+          "description": "Influential Communication through Visual Design and Storytelling provides learners with foundational visual design and storytelling techniques to influence and create a lasting impression on audiences. Learners will first explore how human behavior is influenced by visuals and when to apply visual techniques to better communicate with audiences. Next, learners will learn techniques for creating compelling stories that create memorable images within the audience's mind. Ultimately, learners who master these skills will be well-positioned to apply their visual and storytelling techniques to not only better communicate their thoughts and ideas to an audience, but to also influence or motivate them.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner adapts communications to the basic needs and motivations of their audience.",
+            "The learner applies storytelling techniques to motivate, inform, or influence a target audience.",
+            "The learner applies visual design techniques to motivate, inform, or influence a target audience."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Operating Systems",
+      "courses": [
+        {
+          "title": "Linux Foundations",
+          "description": "Linux Foundations prepares learners for the LPI Linux Essentials certification, and is an introduction to Linux as an operating system as well as an introduction to open-source concepts and the basics of the Linux command line. Learners will gain skills in identifying the fundamentals of open-source software and to develop resources for data access and security.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner develops resources for data access and security.",
+            "The learner identifies the fundamentals of open-source software."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Network and Security",
+      "courses": [
+        {
+          "title": "Network and Security - Foundations",
+          "description": "Network and Security - Foundations introduces learners to the basic network systems and concepts related to networking technologies. Learners will gain skills in applying network security concepts for business continuity, data access, and confidentiality, and in identifying solutions for compliance with security guidance.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies network security concepts for business continuity, data access, and confidentiality.",
+            "The learner identifies basic network systems and concepts related to networking technologies.",
+            "The learner identifies solutions for compliance with security guidance."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Cloud Applications",
+          "description": "Cloud Applications prepares learners for the CompTIA Cloud+ certification exam. Learners will gain skills in designing cloud infrastructure and services and in recommending cloud security solutions, policies, and procedures. The course will also introduce skills in deploying cloud solutions for storage, networking, and security, and in managing cloud operations with processes, procedures, and improvements. Learners will also gain skills in troubleshooting cloud services issues in networking, security, and performance.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner deploys cloud solutions for storage, networking, and security.",
+            "The learner designs cloud infrastructure and services.",
+            "The learner manages cloud operations with processes, procedures, and improvements.",
+            "The learner recommends cloud security solutions, policies, and procedures.",
+            "The learner troubleshoots cloud services issues in networking, security, and performance."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": [
+            "CompTIA Cloud+"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Networking",
+      "courses": [
+        {
+          "title": "Implementing and Administering Networking Solutions",
+          "description": "Implementing and Administering Networking Solutions expands on basic networking concepts and covers advanced network engineering skills including: Switch and router configuration, trouble shooting and maintenance on wired and wireless networks, Security, network automation and introduces Software Defined Networking. This course prepares students for the Cisco Certified Network Associate (CCNA) certification exam CCNA-200-301.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner configures network access and management for secure operations.",
+            "The learner configures routers, switches, firewalls, and network security devices.",
+            "The learner implements automated solutions for infrastructure configuration and management.",
+            "The learner implements network infrastructures."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": [
+            "Cisco Certified"
+          ]
+        },
+        {
+          "title": "Network Analytics and Troubleshooting",
+          "description": "Network Analytics and Troubleshooting teaches students to use network monitoring and analytics tools and practices that are common in the workplace in order to troubleshoot and fix complex computer networks. Students will follow a customer service model in identifying, classifying, investigating, and repairing network outages or problems. This course is designed as a hands-on experience where students will implement these techniques in a virtual space in order to produce a secure and functional deployed network.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner identifies network problems with telemetry, software, and equipment.",
+            "The learner performs network troubleshooting.",
+            "The learner provides customer support in resolution of network issues."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Telecomm and Wireless Communications",
+          "description": "Telecomm and Wireless Communications explores the science, technologies, and standards that enable wired and wireless data to be transmitted across different media. Topics include data encoding and decoding, and analog and digital transmissions via wired, fiber, wireless, cellular, and satellite technologies.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner designs wired and wireless network infrastructures in alignment with telecommunication standards.",
+            "The learner determines how to transmit data securely across multiple mediums."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "Python for IT Automation",
+          "description": "Python for IT Automation covers the fundamentals of the Python language and its features to control program flow, inform decisions, and automate IT tasks and processes. The course emphasizes a systematic approach to solving problems and the application of programming logic to administer secure, scalable, and resilient IT networks and systems.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies Python principles and syntax to manage variables, data structures, and operators and to perform IT tasks.",
+            "The learner creates Python scripts using control structures to automate system tasks.",
+            "The learner integrates Python scripts, modules, packages, and libraries to automate networking tasks and processes."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "DevNet Fundamentals",
+          "description": "The DevNet Fundamentals course teaches students how to automate and deploy network solutions in the Cisco Environment. This course includes APIs, Scripting, Python programming, and software version control. This course prepares students for the Cisco DevNet Associate (DevNet) 200-901 exam.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner determines how to deploy automated solutions with scripting, APIs, and web application services for continuous integration.",
+            "The learner determines how to secure networks with firewalls, system monitoring, and vulnerability analysis.",
+            "The learner determines how to use industry standard tools for automation."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": [
+            "Cisco Environment.",
+            "Cisco DevNet"
+          ]
+        },
+        {
+          "title": "Cyber Operations Fundamentals",
+          "description": "In Cyber Operations Fundamentals, students will learn security concepts, security monitoring, host-based analysis, network intrusion analysis, and security policies and procedures using Cisco practices and technologies. This course prepares students for the Understanding Cisco Cybersecurity Operations Fundamentals (CBROPS) 200-201 exam.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner determines how to maintain network security throughout the security lifecycle.",
+            "The learner determines how to secure networks with firewalls, system monitoring, and vulnerability analysis.",
+            "The learner develops firewall solutions for system and data security.",
+            "The learner implements prevention, intrusion detection systems, and remediation processes for hosts on the network."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": [
+            "Cisco practices",
+            "Cisco Cybersecurity"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Data Management",
+      "courses": [
+        {
+          "title": "Data Management - Foundations",
+          "description": "Data Management Foundations offers an introduction in creating conceptual, logical and physical data models. Students gain skills in creating databases and tables in SQL-enabled database management systems, as well as skills in normalizing databases. No prerequisites are required for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner defines primary and foreign keys in data normalization.",
+            "The learner determines how to run queries for creation and manipulation of data in relational databases.",
+            "The learner explains attributes of databases, database tables, and structured and associated query language (SQL) commands."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Web and Cloud Security",
+      "courses": [
+        {
+          "title": "Cloud and Network Security Models",
+          "description": "Cloud and Network Security Models guides learners through the intricacies of cloud and hybrid network security, covering fundamental principles, emerging threats, cutting-edge tools, advanced defense techniques and best practices for fortifying network security and mitigating risks.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes architecture and security frameworks in cloud and hybrid environments.",
+            "The learner describes key concepts and principles of cloud and hybrid network security.",
+            "The learner implements architectures for securing frameworks used in hybrid networks."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "AI for IT Automation and Security",
+          "description": "AI for IT Automation and Security explores the intersection of AI and network security. It emphasizes how AI techniques can enhance security practices, automate tasks, optimize a network, and improve threat detection and response.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies AI enhanced security practices for threat prevention, detection, and remediation in a network.",
+            "The learner evaluates the output of an AI tool against the automation and optimization needs of a network.",
+            "The learner performs network modeling and scalability using AI tools."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Cloud and Virtualization",
+      "courses": [
+        {
+          "title": "Virtualization and IaaS",
+          "description": "Virtualization and Infrastructure as a Service (IaaS) explores the foundational principles and benefits of virtualization technologies and their application in IaaS environments. This course examines the role of virtualization in modern IT infrastructure, emphasizing its practical implementation and contribution to scalable, efficient, and cost-effective solutions.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner configures a virtual environment with various tools and technologies.",
+            "The learner evaluates virtualization technologies for various types of IT deployments.",
+            "The learner proposes an IaaS solution to solve a business problem."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "BSCNE-Cisco Capstone Project",
+          "description": "In the BSCNE-Cisco Capstone Project, students choose from a fixed set of tasks that they might encounter in the workplace. Examples might include configuring network components, applying security policies to a set of cloud resources, or automating a network deployment using orchestration tools. Students will submit their tasks for evaluation in a working, deployed environment where an evaluator can check their results by inspecting configurations or logging into machines or services to test functionality. All tasks will be completed integrating with Cisco tools and technologies.",
+          "competency_bullets": [
+            "The learner deploys a hybrid network environment that incorporates both a traditional on-premises network and a cloud-based network using Cisco technologies.",
+            "The learner designs a hybrid network environment that incorporates both a traditional on-premises network and a cloud-based network using Cisco technologies.",
+            "The learner troubleshoots connectivity within a hybrid network environment using Cisco technologies."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": [
+            "Cisco Capstone",
+            "Cisco tools"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Information Technology Management",
+      "courses": [
+        {
+          "title": "Internet of Things (IoT) and Infrastructure",
+          "description": "Internet of Things (IoT) and Infrastructure introduces students to emerging technologies connecting the internet to a variety of physical objects. The course reviews the business requirements for sensors and securely.. processing the data they generate. As new use cases emerge, ethical and privacy issues become relevant aspects of business development. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner defines requirements and parameters for Internet of Things (IOT) ethics, access, and privacy issues.",
+            "The learner describes Internet of Things (IOT) security solutions.",
+            "The learner determines business requirements for data collection and analysis for the Internet of Things (IoT).",
+            "The learner identifies emerging Internet of Things (IOT) use cases within organizations, marketplaces, and industries.",
+            "The learner identifies Internet of Things (IoT) network and cloud architectures."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Business of IT",
+      "courses": [
+        {
+          "title": "Business of IT - Applications",
+          "description": "Business of IT - Applications examines Information Technology Infrastructure Library (ITIL®) terminology, structure, policies, and concepts. Focusing on the management of information technology (IT) infrastructure, development, and operations, learners will explore the core principles of ITIL practices for service management to prepare them for careers as IT professionals, business managers, and business process owners. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies Information Technology Infrastructure Library (ITIL) concepts, core components, principles, and models of service management.",
+            "The learner applies the Information Technology Infrastructure Library (ITIL) six activities of the service value chain."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        },
+        {
+          "title": "IT Leadership Foundations",
+          "description": "IT Leadership Foundations is an introductory course that provides students with an overview of organizational structures, communication, and leadership styles specific to information technology in organizations. It also introduces students to some of the power skills that help make successful IT professionals, including time management, problem solving, and emotional intelligence. Students in this course explore their own strengths and passions in relation to the field. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner communicates ideas, opinions, and information suitable for various professional settings.",
+            "The learner recommends strategies for decision-making in team environments.",
+            "The learner reflects on the emotional reactions of self and others in a variety of professional situations.",
+            "The learner selects appropriate influential leadership strategies for workplace situations."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    },
+    {
+      "group": "Cloud Technologies",
+      "courses": [
+        {
+          "title": "Hybrid Cloud Infrastructure and Orchestration",
+          "description": "Hybrid Cloud Infrastructure and Orchestration delves into the design, implementation, and management of hybrid cloud environments. It covers the integration of on-premises infrastructure, private cloud, public cloud, and edge computing to create a hybrid cloud ecosystem.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner configures networks and security measures for a hybrid cloud environment.",
+            "The learner describes considerations of implementing a hybrid cloud environment that could include integrations of on-prem infrastructure, private cloud, public cloud, and edge computing.",
+            "The learner manages the workflows of a hybrid cloud environment using orchestration tools."
+          ],
+          "prerequisite_mentions": [],
+          "certification_prep_mentions": []
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "anomalies": []
+}

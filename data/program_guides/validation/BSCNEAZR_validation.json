@@ -1,0 +1,32 @@
+{
+  "program_code": "BSCNEAZR",
+  "degree_title": "Bachelor of Science, Cloud and Network Engineering - Microsoft Azure",
+  "version": "202510",
+  "pub_date": "1/27/2026",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 175,
+    "Areas of Study": 421,
+    "Accessibility": 952
+  },
+  "standard_path_row_count": 35,
+  "aos_group_count": 13,
+  "aos_course_count": 35,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 35,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [],
+  "parseability_confidence": "high"
+}

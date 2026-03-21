@@ -2,6 +2,48 @@
 
 ---
 
+## Session 14 (continued) — cs_ug Full Rollout (2026-03-20)
+
+### Full cs_ug rollout results
+
+All 8 cs_ug guides parsed. No parser bugs found or fixed.
+
+| Confidence | Count | Guides |
+|---|---|---|
+| HIGH | 4 | BSCS, BSCNE, BSCNEAWS, BSCNEAZR |
+| MEDIUM | 4 | BSCNECIS, BSCSIA, BSSWE_C, BSSWE_Java |
+| LOW | 0 | — |
+
+All MEDIUM cases are source-data quality issues:
+- **BSCNECIS**: double-word typo in SP table ("and and" vs "and") — source guide error
+- **BSCSIA**: hyphen variant between SP ("Scripting and Programming Foundations") and AoS ("Scripting and Programming - Foundations")
+- **BSSWE_C / BSSWE_Java**: old guide format with no footer metadata; version/pub_date unknown. BSSWE_C has 1 truncated last course with no competency bullets.
+
+### Key structural findings
+
+- All 8 guides use multi-line 3-column SP format — no variant needed
+- "Prerequisites" manifest flag on BSCSIA was a false positive (inline description text only)
+- Capstone present only in BSCSIA; correctly detected
+- Track variants (BSCNE/AWS/AZR/CIS, BSSWE C#/Java) share identical structure; parser handles all tracks without branching
+- High cert-prep density: BSCNEAZR=13, BSCNEAWS=11, BSCSIA=10, BSCNECIS=10
+- Parser changes this session: **none**
+
+### Artifacts produced
+
+- `data/program_guides/parsed/{CODE}_parsed.json` — 7 new files (BSCNE, BSCNEAWS, BSCNEAZR, BSCNECIS, BSCSIA, BSSWE_C, BSSWE_Java)
+- `data/program_guides/validation/{CODE}_validation.json` — 7 new files
+- `data/program_guides/manifest_rows/{CODE}_manifest_row.json` — 7 new files
+- `data/program_guides/family_validation/cs_ug_rollout_summary.{json,md}`
+
+### Next recommended steps
+
+cs_ug complete. Candidate next families:
+1. `education_ba` (11 guides) — needs gate test (BAELED) before rollout; likely new section handlers
+2. `graduate_standard` (9 guides) — structurally similar to standard_bs
+3. `teaching_mat` (9 guides) — may share structure with education_ba
+
+---
+
 ## Session 14 — standard_bs Full Rollout + BSMES Gate (2026-03-20)
 
 ### BSMES gate result

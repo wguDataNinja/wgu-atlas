@@ -1,0 +1,41 @@
+{
+  "program_code": "BSCSIA",
+  "degree_title": "Bachelor of Science, Cybersecurity and Information Assurance",
+  "version": "202509",
+  "pub_date": "7/31/2025",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Capstone",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 214,
+    "Areas of Study": 559,
+    "Capstone": 1152,
+    "Accessibility": 1164
+  },
+  "standard_path_row_count": 38,
+  "aos_group_count": 21,
+  "aos_course_count": 37,
+  "capstone_present": true,
+  "title_reconciliation": {
+    "in_both": 37,
+    "sp_only": [
+      "Scripting and Programming Foundations"
+    ],
+    "aos_only": [
+      "Scripting and Programming - Foundations"
+    ]
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [
+    "1 SP titles not found in AoS: ['Scripting and Programming Foundations']",
+    "1 AoS titles not in SP: ['Scripting and Programming - Foundations']"
+  ],
+  "parseability_confidence": "medium"
+}

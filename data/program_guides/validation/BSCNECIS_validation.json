@@ -1,0 +1,39 @@
+{
+  "program_code": "BSCNECIS",
+  "degree_title": "Bachelor of Science, Cloud and Network Engineering - Cisco",
+  "version": "202510",
+  "pub_date": "1/27/2026",
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 175,
+    "Areas of Study": 404,
+    "Accessibility": 878
+  },
+  "standard_path_row_count": 32,
+  "aos_group_count": 11,
+  "aos_course_count": 32,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 31,
+    "sp_only": [
+      "Hybrid Cloud Infrastructure and and Orchestration"
+    ],
+    "aos_only": [
+      "Hybrid Cloud Infrastructure and Orchestration"
+    ]
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [],
+  "anomaly_count": 0,
+  "anomalies": [],
+  "warnings": [
+    "1 SP titles not found in AoS: ['Hybrid Cloud Infrastructure and and Orchestration']",
+    "1 AoS titles not in SP: ['Hybrid Cloud Infrastructure and Orchestration']"
+  ],
+  "parseability_confidence": "medium"
+}

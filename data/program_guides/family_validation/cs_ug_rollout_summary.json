@@ -1,0 +1,250 @@
+{
+  "date": "2026-03-20",
+  "family": "cs_ug",
+  "total_guides": 8,
+  "confidence_summary": {
+    "high": 4,
+    "medium": 4
+  },
+  "parsed_successfully": 8,
+  "parsed_with_warnings": 3,
+  "failed": 0,
+  "guides_with_capstone": 1,
+  "guides_with_footer_metadata": 6,
+  "guides_without_footer": [
+    "BSSWE_C",
+    "BSSWE_Java"
+  ],
+  "guides_with_sp_aos_mismatch": 2,
+  "guides_with_empty_descriptions": 0,
+  "guides_with_empty_competencies": 1,
+  "guides_with_cert_prep": 7,
+  "guides_with_prereq": 8,
+  "medium_confidence_guides": [
+    "BSCNECIS",
+    "BSCSIA",
+    "BSSWE_C",
+    "BSSWE_Java"
+  ],
+  "low_confidence_guides": [],
+  "parser_bugs_fixed_this_session": [],
+  "custom_handling_notes": {
+    "BSCNECIS": "MEDIUM — double-word typo in SP table: \"Hybrid Cloud Infrastructure and and Orchestration\" (source guide typo). AoS has correct title. 1-course reconciliation mismatch; content otherwise complete.",
+    "BSCSIA": "MEDIUM — minor punctuation variant: SP has \"Scripting and Programming Foundations\", AoS has \"Scripting and Programming - Foundations\" (hyphen). Source guide inconsistency. Content correct.",
+    "BSSWE_C": "MEDIUM — old guide format with no footer metadata (version/pub_date unknown). Last AoS course (Software Engineering) has no competency bullets due to description truncation in old PDF format.",
+    "BSSWE_Java": "MEDIUM — old guide format with no footer metadata (version/pub_date unknown). Content parse (40 SP rows, 38 unique AoS courses) is correct. 2 SP rows are course repeats across terms."
+  },
+  "sp_format_variants": {
+    "all_guides": "multi-line 3-column (Course Description / CUs / Term)",
+    "notes": "No 2-column or single-line SP format in this family. All guides use standard multi-line format."
+  },
+  "section_heading_variants": {
+    "Prerequisites_note": "Manifest flagged BSCSIA with a Prerequisites variant heading. Investigation confirms this is inline description text only (\"No prerequisites are required for this course.\"), not a standalone section heading. No parser changes needed.",
+    "Capstone": "Present only in BSCSIA. Correctly detected after AoS (line 1152 > AoS line 559)."
+  },
+  "track_structure_note": "BSCNE family (BSCNE, BSCNEAWS, BSCNEAZR, BSCNECIS) are cloud/network engineering track variants. BSSWE_C and BSSWE_Java are software engineering track variants (C# and Java tracks). Parser handles all tracks identically. Track variants differ in AoS course selection; structure is identical.",
+  "per_guide": [
+    {
+      "code": "BSCS",
+      "degree_title": "Bachelor of Science, Computer Science",
+      "version": "202412",
+      "pub_date": "8/2/24",
+      "confidence": "high",
+      "sp_row_count": 37,
+      "aos_group_count": 12,
+      "aos_course_count": 37,
+      "capstone_present": false,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "warnings": [],
+      "sp_aos_title_mismatch": false,
+      "sp_only_titles": [],
+      "aos_only_titles": [],
+      "empty_description_count": 0,
+      "empty_competency_count": 0,
+      "empty_competency_courses": [],
+      "cert_prep_mention_count": 0,
+      "prereq_mention_count": 7,
+      "has_footer_metadata": true
+    },
+    {
+      "code": "BSCNE",
+      "degree_title": "Bachelor of Science, Cloud and Network Engineering",
+      "version": "202510",
+      "pub_date": "1/27/2026",
+      "confidence": "high",
+      "sp_row_count": 34,
+      "aos_group_count": 13,
+      "aos_course_count": 34,
+      "capstone_present": false,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "warnings": [],
+      "sp_aos_title_mismatch": false,
+      "sp_only_titles": [],
+      "aos_only_titles": [],
+      "empty_description_count": 0,
+      "empty_competency_count": 0,
+      "empty_competency_courses": [],
+      "cert_prep_mention_count": 5,
+      "prereq_mention_count": 3,
+      "has_footer_metadata": true
+    },
+    {
+      "code": "BSCNEAWS",
+      "degree_title": "Bachelor of Science, Cloud and Network Engineering - Amazon Web",
+      "version": "202510",
+      "pub_date": "1/27/2026",
+      "confidence": "high",
+      "sp_row_count": 35,
+      "aos_group_count": 13,
+      "aos_course_count": 35,
+      "capstone_present": false,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "warnings": [],
+      "sp_aos_title_mismatch": false,
+      "sp_only_titles": [],
+      "aos_only_titles": [],
+      "empty_description_count": 0,
+      "empty_competency_count": 0,
+      "empty_competency_courses": [],
+      "cert_prep_mention_count": 11,
+      "prereq_mention_count": 3,
+      "has_footer_metadata": true
+    },
+    {
+      "code": "BSCNEAZR",
+      "degree_title": "Bachelor of Science, Cloud and Network Engineering - Microsoft Azure",
+      "version": "202510",
+      "pub_date": "1/27/2026",
+      "confidence": "high",
+      "sp_row_count": 35,
+      "aos_group_count": 13,
+      "aos_course_count": 35,
+      "capstone_present": false,
+      "anomaly_count": 0,
+      "warning_count": 0,
+      "warnings": [],
+      "sp_aos_title_mismatch": false,
+      "sp_only_titles": [],
+      "aos_only_titles": [],
+      "empty_description_count": 0,
+      "empty_competency_count": 0,
+      "empty_competency_courses": [],
+      "cert_prep_mention_count": 13,
+      "prereq_mention_count": 5,
+      "has_footer_metadata": true
+    },
+    {
+      "code": "BSCNECIS",
+      "degree_title": "Bachelor of Science, Cloud and Network Engineering - Cisco",
+      "version": "202510",
+      "pub_date": "1/27/2026",
+      "confidence": "medium",
+      "sp_row_count": 32,
+      "aos_group_count": 11,
+      "aos_course_count": 32,
+      "capstone_present": false,
+      "anomaly_count": 0,
+      "warning_count": 2,
+      "warnings": [
+        "1 SP titles not found in AoS: ['Hybrid Cloud Infrastructure and and Orchestration']",
+        "1 AoS titles not in SP: ['Hybrid Cloud Infrastructure and Orchestration']"
+      ],
+      "sp_aos_title_mismatch": true,
+      "sp_only_titles": [
+        "Hybrid Cloud Infrastructure and and Orchestration"
+      ],
+      "aos_only_titles": [
+        "Hybrid Cloud Infrastructure and Orchestration"
+      ],
+      "empty_description_count": 0,
+      "empty_competency_count": 0,
+      "empty_competency_courses": [],
+      "cert_prep_mention_count": 10,
+      "prereq_mention_count": 1,
+      "has_footer_metadata": true
+    },
+    {
+      "code": "BSCSIA",
+      "degree_title": "Bachelor of Science, Cybersecurity and Information Assurance",
+      "version": "202509",
+      "pub_date": "7/31/2025",
+      "confidence": "medium",
+      "sp_row_count": 38,
+      "aos_group_count": 21,
+      "aos_course_count": 37,
+      "capstone_present": true,
+      "anomaly_count": 0,
+      "warning_count": 2,
+      "warnings": [
+        "1 SP titles not found in AoS: ['Scripting and Programming Foundations']",
+        "1 AoS titles not in SP: ['Scripting and Programming - Foundations']"
+      ],
+      "sp_aos_title_mismatch": true,
+      "sp_only_titles": [
+        "Scripting and Programming Foundations"
+      ],
+      "aos_only_titles": [
+        "Scripting and Programming - Foundations"
+      ],
+      "empty_description_count": 0,
+      "empty_competency_count": 0,
+      "empty_competency_courses": [],
+      "cert_prep_mention_count": 10,
+      "prereq_mention_count": 7,
+      "has_footer_metadata": true
+    },
+    {
+      "code": "BSSWE_C",
+      "degree_title": "Bachelor of Science, Software Engineering",
+      "version": null,
+      "pub_date": null,
+      "confidence": "medium",
+      "sp_row_count": 38,
+      "aos_group_count": 12,
+      "aos_course_count": 36,
+      "capstone_present": false,
+      "anomaly_count": 1,
+      "warning_count": 1,
+      "warnings": [
+        "1 courses with no competency bullets"
+      ],
+      "sp_aos_title_mismatch": false,
+      "sp_only_titles": [],
+      "aos_only_titles": [],
+      "empty_description_count": 0,
+      "empty_competency_count": 1,
+      "empty_competency_courses": [
+        "Software Engineering"
+      ],
+      "cert_prep_mention_count": 3,
+      "prereq_mention_count": 7,
+      "has_footer_metadata": false
+    },
+    {
+      "code": "BSSWE_Java",
+      "degree_title": "Bachelor of Science, Software Engineering",
+      "version": null,
+      "pub_date": null,
+      "confidence": "medium",
+      "sp_row_count": 40,
+      "aos_group_count": 12,
+      "aos_course_count": 38,
+      "capstone_present": false,
+      "anomaly_count": 1,
+      "warning_count": 0,
+      "warnings": [],
+      "sp_aos_title_mismatch": false,
+      "sp_only_titles": [],
+      "aos_only_titles": [],
+      "empty_description_count": 0,
+      "empty_competency_count": 0,
+      "empty_competency_courses": [],
+      "cert_prep_mention_count": 3,
+      "prereq_mention_count": 6,
+      "has_footer_metadata": false
+    }
+  ]
+}

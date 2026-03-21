@@ -1,0 +1,63 @@
+{
+  "source_pdf_filename": "BSCSIA.pdf",
+  "source_text_filename": "BSCSIA.txt",
+  "inferred_program_code": "BSCSIA",
+  "page_count": 0,
+  "version_strings": [
+    "202509"
+  ],
+  "publication_dates": [
+    "7/31/2025"
+  ],
+  "has_standard_path": true,
+  "has_areas_of_study": true,
+  "has_capstone_section": true,
+  "has_course_descriptions": true,
+  "has_competency_bullets": true,
+  "has_term_structure": true,
+  "has_cu_values": true,
+  "has_cert_prep_mentions": true,
+  "has_prereq_mentions": true,
+  "standard_path_row_count": 38,
+  "competency_trigger_count": 37,
+  "competency_bullet_count": 195,
+  "cert_prep_mention_count": 10,
+  "prereq_mention_count": 7,
+  "detected_section_headings": [
+    "Standard Path",
+    "Areas of Study",
+    "Capstone",
+    "Accessibility"
+  ],
+  "inferred_course_groups": [
+    "IT Fundamentals",
+    "General Education",
+    "Scripting and Programming",
+    "Secure Systems Analysis & Design",
+    "Network and Security",
+    "Networks",
+    "Computer Science",
+    "Business of IT",
+    "Digital Forensics and Incident Response",
+    "Ethics & Cyber Law",
+    "Information Assurance",
+    "Data Management",
+    "Data Science",
+    "Operating Systems",
+    "Risk Management",
+    "Networking",
+    "Software",
+    "Artificial Intelligence",
+    "Hacking Countermeasures and Techniques",
+    "Web and Cloud Security",
+    "Penetration Testing"
+  ],
+  "likely_guide_family": "cs_ug",
+  "template_type": "full",
+  "parseability_confidence": "medium",
+  "warnings": [
+    "1 SP titles not found in AoS: ['Scripting and Programming Foundations']",
+    "1 AoS titles not in SP: ['Scripting and Programming - Foundations']"
+  ],
+  "irregularities": []
+}

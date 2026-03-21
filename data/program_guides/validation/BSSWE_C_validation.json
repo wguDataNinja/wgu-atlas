@@ -1,0 +1,41 @@
+{
+  "program_code": "BSSWE_C",
+  "degree_title": "Bachelor of Science, Software Engineering",
+  "version": null,
+  "pub_date": null,
+  "page_count": 0,
+  "detected_sections": [
+    "Standard Path",
+    "Areas of Study",
+    "Accessibility"
+  ],
+  "section_line_indices": {
+    "Standard Path": 194,
+    "Areas of Study": 446,
+    "Accessibility": 975
+  },
+  "standard_path_row_count": 38,
+  "aos_group_count": 12,
+  "aos_course_count": 36,
+  "capstone_present": false,
+  "title_reconciliation": {
+    "in_both": 36,
+    "sp_only": [],
+    "aos_only": []
+  },
+  "empty_descriptions": [],
+  "empty_competency_lists": [
+    "Software Engineering"
+  ],
+  "anomaly_count": 1,
+  "anomalies": [
+    {
+      "type": "no_footer_lines_found",
+      "note": "metadata not recoverable"
+    }
+  ],
+  "warnings": [
+    "1 courses with no competency bullets"
+  ],
+  "parseability_confidence": "medium"
+}
