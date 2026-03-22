@@ -97,8 +97,14 @@ See `_internal/page_designs/README.md` for reading order and maintenance notes.
 
 ### Experimental/prototype surfaces
 
-- `/proto/courses`
-- `/proto/compare`
+- `/proto/courses` — course browse/filter UI variants
+- `/proto/compare` — degree comparison layout variants
+- `/proto/course-preview` — Session 2 enriched course-page cohort preview (10 courses)
+  - Index: `/proto/course-preview`
+  - Per-course: `/proto/course-preview/[code]` — C178, C480, C169, C165, D426, C170, C176, C824, D118, C216
+  - Data loader: `src/lib/coursePreviewData.ts` (reads from `data/program_guides/` at build time)
+  - Rendering component: `src/components/proto/CourseEnrichmentPreview.tsx`
+  - Content map for review: `_internal/course_pages/content_maps/session2_cohort_preview.txt`
 
 These are explicitly experimental and not the production UI.
 
@@ -712,7 +718,9 @@ Publish guide-derived content — descriptions, competency bullets, cert signals
 
 - `_internal/course_pages/COURSE_PAGE_ENRICHMENT_SESSION_1_ARTIFACT.md` — full planning inputs, current page structure, 10-course design cohort
 - `_internal/course_pages/WORK_LOG.md` — session history
-- Implementation target: `src/app/courses/[code]/page.tsx`
+- `_internal/course_pages/content_maps/session2_cohort_preview.txt` — Session 2 content map for all 10 cohort preview pages
+- Prototype surface: `src/app/proto/course-preview/` and `src/components/proto/CourseEnrichmentPreview.tsx`
+- Implementation target (production, not yet modified): `src/app/courses/[code]/page.tsx`
 
 ### Important principle
 

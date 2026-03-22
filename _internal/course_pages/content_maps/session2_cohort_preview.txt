@@ -1,0 +1,640 @@
+WGU ATLAS — COURSE-PAGE ENRICHMENT PROTOTYPE
+Session 2 Cohort Preview — Content Map
+Generated: 2026-03-21
+Route: /proto/course-preview/[code]
+Purpose: Design review. Shows section order, visible content, and policy signals for each
+         of the 10 cohort preview pages. Use this to discuss layout without opening the browser.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SHARED PAGE ANATOMY (all 10 pages follow this section order)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Breadcrumb:  Cohort Preview  ›  {CODE}  [PROTOTYPE badge]
+
+  1. HEADER
+     - Code badge (blue monospace), CU count badge, Active/Retired badge
+     - Shape badge (amber monospace) — prototype-only shape label
+     - H1: canonical title
+     - College subtext
+
+  2. COMPACT FACTS BAR (slate background box)
+     - First in catalog / Status / Current degrees / Total appearances
+     - Guide enrichment: {N}d / {N}c  (descriptions / competency sets count — prototype-only)
+
+  3. HIGH-SIGNAL BLOCKS (shown only if applicable)
+     a. CAPSTONE CALLOUT (indigo box)  — if capstoneSignal present
+        - "explicit": states course integrates degree-wide competencies
+        - "title-only": notes it's title-inferred, flags [title-only inference]
+     b. CERTIFICATION PREP (emerald box)  — if cert found in auto-accepted mapping
+        - Names cert, confirms source programs
+     c. REQUIRES (slate box)  — if forward prereq found
+        - Links to prereq course (if code resolved)
+        - For cumulative-sequence: amber box with note + raw guide value shown
+
+  4. SPARSE FALLBACK NOTICE (slate box) — if no enrichment found at all
+
+  5. COURSE OVERVIEW (guide-derived)
+     - 1 description: blockquote + source programs footnote
+     - 2 near-identical descriptions: blockquote + [2 variants — collapsed as cosmetically identical]
+     - 2+ distinct variants: stacked "Variant N of M" panels with source programs per variant
+
+  6. WHAT YOU'LL LEARN (guide-derived competency bullets)
+     - 1 set (or all identical): plain bulleted list + source footnote
+     - Multiple distinct sets: stacked "Variant N of M" panels with source programs per set
+
+  7. PROGRAM CONTEXT NOTES (only if multi-variant in descriptions or competencies)
+     - Shape label, variant counts, total unique program contexts
+
+  8. PREREQUISITE FOR (violet accent) — if reverse prereqs found
+     - Linked list of courses this course unlocks, with source programs
+
+  9. ABOUT THIS COURSE (WGU Catalog 2026-03 — existing catalog text)
+     - Slightly muted styling vs guide overview to signal it's secondary
+
+  10. INCLUDED IN CURRENT DEGREES
+  11. PREVIOUSLY APPEARED IN RETIRED DEGREES
+  12. ALSO KNOWN AS (title variants, if any)
+  13. NOTES (amber box, if course has notes field)
+
+  Footer:  ← Back to Cohort Index   |   View production page →
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+C178 — Network and Security - Applications
+Shape: stable enriched + cert
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  HEADER
+    C178  |  4 CUs  |  Active  |  [stable enriched + cert]
+    Network and Security - Applications
+    College of Information Technology
+
+  COMPACT FACTS BAR
+    First in catalog: [edition]  Status: Active  Current degrees: N
+    Total appearances: N  Guide enrichment: 1d / 1c
+
+  [CERTIFICATION PREP — emerald box]
+    Certification Preparation — CompTIA Security+
+    "This course includes preparation for the CompTIA Security+ certification exam."
+    Confirmed across 6 degree programs · BSCNE, BSCNEAWS, BSCNEAZR, BSCSIA, BSIT, MSITUG
+
+  [COURSE OVERVIEW — blockquote]
+    Source: BSCNE, BSCNEAWS, BSCNEAZR +3 more
+    Description covers: threat identification, attack types, vulnerabilities, security tools,
+    incident response, compliance requirements. Explicit Security+ preparation framing.
+
+  [WHAT YOU'LL LEARN — bulleted list]
+    Source: same program set
+    6 competency bullets (security-focused content)
+
+  [ABOUT THIS COURSE — WGU Catalog 2026-03]
+    Catalog description if available.
+
+  [INCLUDED IN CURRENT DEGREES]
+    6+ active degree programs listed and linked
+
+  DESIGN OBSERVATIONS FOR C178:
+    - Cleanest case: stable single description, single competency set, confirmed cert
+    - Cert block renders well in emerald at top — easy to spot
+    - No variant policy pressure — simplest possible enriched layout
+    - Sets the baseline. Everything else should be evaluated against this
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+C480 — Networks
+Shape: stable enriched + cert + prereq
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  HEADER
+    C480  |  4 CUs  |  Active  |  [stable enriched + cert + prereq]
+    Networks
+    College of Information Technology
+
+  COMPACT FACTS BAR
+    First in catalog: [edition]  Status: Active  Current degrees: N
+    Total appearances: N  Guide enrichment: 1d / 1c
+
+  [CERTIFICATION PREP — emerald box]
+    Certification Preparation — CompTIA Network+
+    "This course includes preparation for the CompTIA Network+ certification exam."
+    Confirmed across 6 degree programs · BSCNE, BSCNEAWS, BSCNEAZR, BSCSIA, BSIT, MSITUG
+
+  [REQUIRES — slate box]
+    → Requires
+    Network and Security - Foundations  (D315)
+    Confirmed across 6 programs · BSCNE, BSCNEAWS, BSCNEAZR +3 more
+
+  [COURSE OVERVIEW — blockquote]
+    Source: same program set
+    Description covers: configuring networking components and infrastructure,
+    optimizing network operations, CompTIA Network+ preparation, prerequisite noted.
+
+  [WHAT YOU'LL LEARN — bulleted list]
+    6 competency bullets: network infrastructure, networking components, security
+    techniques, network operations optimization, troubleshooting
+
+  [ABOUT THIS COURSE — WGU Catalog 2026-03]
+    Catalog text if available.
+
+  [INCLUDED IN CURRENT DEGREES]
+    Listed and linked.
+
+  DESIGN OBSERVATIONS FOR C480:
+    - Cert + prereq together: emerald cert block, then slate prereq block, then guide content
+    - Ordering of the two blocks matters: cert is higher-stakes discovery, prereq is gating info
+    - Current order (cert first, prereq second) may be wrong — prereq is arguably more urgent
+    - The guide description mentions the prereq explicitly — so prereq info appears twice
+      (once in Requires block, once in description text). Policy question: worth noting.
+    - Overall: clean page, good test of two high-signal blocks coexisting
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+C169 — Scripting and Programming - Applications
+Shape: meaningful multi-variant (KEY VARIANT-POLICY TEST CASE)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  HEADER
+    C169  |  4 CUs  |  Active  |  [meaningful multi-variant]
+    Scripting and Programming - Applications
+    College of Information Technology
+
+  COMPACT FACTS BAR
+    Guide enrichment: 3d / 3c
+
+  [REQUIRES — slate box]
+    → Requires
+    Introduction to Programming in Python  (C859)
+    Confirmed across 1 program · BSDA
+    Note: This prereq appears only in the BSDA context. The BSCS/MSCSUG variants
+    do not have a resolved prereq. [source: auto-accepted]
+
+  [COURSE OVERVIEW — "3 variants — guide-derived"]
+    ┌ Variant 1 of 3 ── Programs: BSCS
+    │ [C++ framing: scripting and programming in C++, object-oriented principles,
+    │  application development tasks]
+    └
+
+    ┌ Variant 2 of 3 ── Programs: BSDA
+    │ [Python framing: scripting in Python, data manipulation, automation tasks]
+    └
+
+    ┌ Variant 3 of 3 ── Programs: MSCSUG
+    │ [C++ framing, graduate-level version — similar to Variant 1 with different emphasis]
+    └
+
+    Footnote: "Multiple guide descriptions found. Over-showing all variants for design
+    review. Collapse/merge policy not yet resolved."
+
+  [WHAT YOU'LL LEARN — "3 competency variants — guide-derived"]
+    ┌ Variant 1 of 3 ── Programs: BSCS
+    │ 8 bullets (C++ competencies)
+    └
+
+    ┌ Variant 2 of 3 ── Programs: BSDA
+    │ 4 bullets (Python competencies)
+    └
+
+    ┌ Variant 3 of 3 ── Programs: MSCSUG
+    │ 8 bullets (C++ graduate competencies)
+    └
+
+    Footnote: "Multiple competency sets found. Over-showing all variants for design
+    review. Program-specific collapse policy not yet resolved."
+
+  [PROGRAM CONTEXT NOTES]
+    Shape: meaningful multi-variant
+    Description variants: 3 — may reflect different program-specific framings
+    Competency variants: 3 — may reflect different emphasis or bullet-set versions
+    Total programs covered: 3 unique program contexts
+
+  [ABOUT THIS COURSE — WGU Catalog 2026-03]
+    Catalog text (single, program-agnostic).
+
+  [INCLUDED IN CURRENT DEGREES]
+    BSCS, BSDA, MSCSUG and others listed.
+
+  DESIGN OBSERVATIONS FOR C169:
+    - This is the key multi-variant stress test. The page is noticeably busy.
+    - The 3+3 panel layout (3 description variants + 3 competency panels) = 6 content panels
+      stacked in the enrichment zone. That's a lot before reaching catalog history.
+    - C++ vs Python framing is a genuinely meaningful difference — this is NOT a cosmetic
+      variant. The over-show strategy is correct here.
+    - Prereq only exists in one program context (BSDA). Showing it globally may mislead
+      students in BSCS/MSCSUG who don't have that prereq. This is the clearest example
+      of program-context gap in the prereq data.
+    - The BSDA prereq attribution in the Requires block helps, but the question is whether
+      students will read the fine print.
+    - Likely needs a "In your program" / context filter in production — or at minimum a
+      "varies by program" warning on the prereq block.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+C165 — Integrated Physical Sciences
+Shape: cosmetic multi-variant (COLLAPSE TEST CASE)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  HEADER
+    C165  |  3 CUs  |  Active  |  [cosmetic multi-variant]
+    Integrated Physical Sciences
+    Leavitt School of Health; School of Business; School of Education; School of Technology
+
+  COMPACT FACTS BAR
+    Current degrees: 28+  Total appearances: N  Guide enrichment: 2d / 3c
+
+  [COURSE OVERVIEW — collapsed to 1, badge "2 variants — guide-derived"]
+    Source: [programs from first variant]  [2 variants — collapsed as cosmetically identical]
+    "This course provides students with an overview of the basic principles and unifying
+    ideas of the physical sciences: physics, chemistry, and earth sciences. Course materials
+    focus on scientific reasoning and practical, everyday applications of physical science
+    concepts to help students integrate conceptual knowledge with practical skills."
+
+  [WHAT YOU'LL LEARN]
+    - Whether this collapses or shows 3 panels depends on how similar the bullet sets are.
+    - If the 3 competency sets have meaningfully different bullets, they'll show as 3 panels.
+    - If they're near-identical, they'll collapse to 1 with a count badge.
+
+  [PROGRAM CONTEXT NOTES]
+    Shape: cosmetic multi-variant
+    Description variants: 2 — [if collapsed, the note still appears]
+    Total programs covered: 28+ unique program contexts
+
+  [ABOUT THIS COURSE — WGU Catalog 2026-03]
+    Catalog description.
+
+  [INCLUDED IN CURRENT DEGREES]
+    28+ programs across 4 colleges listed and linked.
+
+  DESIGN OBSERVATIONS FOR C165:
+    - The cosmetic collapse logic (85% word overlap heuristic) kicks in for the 2 descriptions
+    - With 28+ programs in 4 colleges, the "Current Degrees" section is very long
+    - The 4-college listing in the header/college field is itself messy
+    - This course tests: does collapsing cosmetically similar descriptions feel like
+      the right call, or does it hide something important? Hard to tell without reading both.
+    - The 3 competency variants are the real question here — do they differ meaningfully?
+    - If competency bullets differ even slightly, the prototype will show 3 panels, which
+      may surprise reviewers who expect this to be the "simple" collapse case.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+D426 — Data Management - Foundations
+Shape: reverse-prereq provider
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  HEADER
+    D426  |  3 CUs  |  Active  |  [reverse-prereq provider]
+    Data Management - Foundations
+    School of Technology (current_college field)
+
+  COMPACT FACTS BAR
+    Guide enrichment: 2d / 2c (or similar — near-identical variants)
+
+  [COURSE OVERVIEW — collapsed or 2-variant]
+    Description: Introduction to creating conceptual, logical, and physical data models.
+    SQL-enabled database management systems, database normalization.
+    "No prerequisites required."
+
+  [WHAT YOU'LL LEARN]
+    4 bullets: databases/DBMSs, SQL commands, query creation/manipulation,
+    primary/foreign key definitions
+
+  [PREREQUISITE FOR — violet accent]
+    "Completing this course satisfies the prerequisite requirement for:"
+    ┌ Data Management - Applications  (C170)  ──  BSCS, BSDA, BSIT +5 more ┐
+    └ Advanced Data Management        (D191)  ──  BSDA, BSSWE_C, BSSWE_Java +1 more ┘
+
+  [ABOUT THIS COURSE — WGU Catalog 2026-03]
+    Catalog text.
+
+  [INCLUDED IN CURRENT DEGREES]
+    Listed programs.
+
+  DESIGN OBSERVATIONS FOR D426:
+    - The "Prerequisite For" block (violet) is the novel element here
+    - Positioning it AFTER guide content and BEFORE catalog description feels right —
+      it's discovery info, not gating info
+    - Two entries in the reverse-prereq list: C170 and D191. Small, clean.
+    - "No prerequisites required" appears in the description text — slightly odd since
+      there IS no prereq block above it, but the statement is still useful orientation
+    - The description mentions no prereqs, which is actually positive framing for
+      students worried about readiness
+    - The violet accent for "Prerequisite For" vs blue for other headers: worth reviewing
+      whether that color distinction reads clearly
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+C170 — Data Management - Applications
+Shape: prereq-bearing downstream
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  HEADER
+    C170  |  4 CUs  |  Active  |  [prereq-bearing downstream]
+    Data Management - Applications
+    College of Information Technology
+
+  COMPACT FACTS BAR
+    Guide enrichment: 1d / 3c
+
+  [REQUIRES — slate box]
+    → Requires
+    Data Management - Foundations  (D426)  [linked]
+    Confirmed across 8 programs · BSCS, BSDA, BSIT +5 more
+
+  [COURSE OVERVIEW — blockquote, single description]
+    Source: 8 programs
+    Covers MySQL, SELECT queries, subqueries, joins, data manipulation, transactions.
+    Note: description text itself may contain "prerequisite is [D426]" — redundant with
+    the Requires block above.
+
+  [WHAT YOU'LL LEARN — 3 competency variants]
+    ┌ Variant 1 of 3 ── Programs: [set A]
+    │ 5 bullets: database recommendations, SQL queries, DML statements,
+    │ joins and aggregate functions, [etc.]
+    └
+    ┌ Variant 2 of 3 ── Programs: [set B]
+    │ [different bullet set or same bullets different ordering]
+    └
+    ┌ Variant 3 of 3 ── Programs: [set C]
+    │ [third variant]
+    └
+
+  [PROGRAM CONTEXT NOTES]
+    Competency variants: 3  Total programs: 8
+
+  [ABOUT THIS COURSE — WGU Catalog 2026-03]
+    Catalog text.
+
+  [INCLUDED IN CURRENT DEGREES]
+    7+ programs listed.
+
+  DESIGN OBSERVATIONS FOR C170:
+    - 1 description + 3 competency sets: the description is clean but competencies show
+      3 panels — this is the typical "stable desc / variable competencies" pattern
+    - Together with D426, these two form a clear paired set: D426 shows "prereq for C170",
+      C170 shows "requires D426". If both are on screen, they're navigable via links.
+    - Whether the 3 competency sets are meaningfully different is the key question.
+      If they're nearly identical, the 3-panel display may feel like noise.
+    - Prereq in description text + Requires block = double-mention. Worth noting for policy.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+C176 — Business of IT - Project Management
+Shape: cert-mapped + slight competency variance
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  HEADER
+    C176  |  4 CUs  |  Active  |  [cert-mapped + slight competency variance]
+    Business of IT - Project Management
+    [College — note: current_college shows "College of Health Professions" which may be
+     a data error; this is an IT course. Worth flagging in review.]
+
+  COMPACT FACTS BAR
+    Guide enrichment: 1d / 2c
+
+  [CERTIFICATION PREP — emerald box]
+    Certification Preparation — CompTIA Project+
+    Confirmed across 6 programs · BSCSIA, BSDA, BSIT, BSSWE_C, BSSWE_Java, MSSWEUG
+
+  [COURSE OVERVIEW — blockquote, single description]
+    Source: same programs
+    Industry-standard project management concepts: initiation, planning, execution,
+    monitoring, control, close phases. Prepares for CompTIA Project+ certification.
+
+  [WHAT YOU'LL LEARN]
+    - 2 competency sets: if their bullets differ, shows 2 panels; if identical, collapses.
+    - Likely 2 panels given "slight competency variance" designation.
+
+  [ABOUT THIS COURSE — WGU Catalog 2026-03]
+    Catalog text.
+
+  [INCLUDED IN CURRENT DEGREES]
+    Listed programs.
+
+  DESIGN OBSERVATIONS FOR C176:
+    - Similar to C178 but with 2 competency variants instead of 1
+    - Clean cert case with one hitch: the college field shows "College of Health Professions"
+      which appears to be an anomaly in the data (C176 is an IT course). This will be
+      visible in the header on the prototype page. Useful to see it surface.
+    - 2 competency panels vs 1 cert block: ratio feels right — cert is prominent,
+      competencies show variance without being overwhelming
+    - Good second cert-page example to compare against C178
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+C824 — Nursing Leadership and Management Capstone
+Shape: capstone + prereq
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  HEADER
+    C824  |  2 CUs  |  Active  |  [capstone + prereq]
+    Nursing Leadership and Management Capstone
+    College of Health Professions
+
+  COMPACT FACTS BAR
+    Guide enrichment: 2d / 1c
+
+  [CAPSTONE CALLOUT — indigo box, explicit signal]
+    ⬛ Capstone Course
+    "This is a program capstone. Students integrate and synthesize competencies from
+    across the degree program."
+
+  [REQUIRES — slate box]
+    → Requires
+    Nursing Leadership and Management Field Experience  (C823)  [linked]
+    Confirmed across 3 programs · MSNULM, MSRNNULM, PMCNULM
+
+  [COURSE OVERVIEW]
+    2 near-identical descriptions → likely collapsed to 1 (cosmetically similar test):
+    "Final course in MSN Leadership and Management program. Students evaluate their
+    healthcare improvement project (HIP) through analysis of results, KPIs, and metrics."
+    [2 variants — collapsed as cosmetically identical] notation if collapse triggers
+
+  [WHAT YOU'LL LEARN — 1 stable competency]
+    ▸ The learner integrates and synthesizes competencies from across the degree program
+      and thereby demonstrates the ability to participate in and contribute value to the
+      chosen professional field.
+
+  [ABOUT THIS COURSE — WGU Catalog 2026-03]
+    Catalog text.
+
+  [INCLUDED IN CURRENT DEGREES]
+    MSNULM, MSRNNULM, PMCNULM listed.
+
+  DESIGN OBSERVATIONS FOR C824:
+    - The capstone + prereq combination near the top reads clearly: indigo callout,
+      then slate prereq box — both are concise
+    - With 2 CUs and a clinical/practicum nature, this is a tightly-scoped course
+    - The single competency bullet is the most sparse competency case in the cohort
+      — it's the "integration" meta-competency language that nursing capstones use
+    - The 2 description variants collapsing to 1 is appropriate here: near-identical
+      descriptions that differ only in minor wording
+    - Capstone callout at the very top (before cert, prereq) is the right priority order
+    - Good test of the capstone/prereq pair layout — neither block is oversized
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+D118 — Adult Primary Care for the Advanced Practice Nurse
+Shape: cumulative-sequence nursing (AWKWARD CASE — SURFACE HONESTLY)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  HEADER
+    D118  |  3 CUs  |  Active  |  [cumulative-sequence nursing]
+    Adult Primary Care for the Advanced Practice Nurse
+    Leavitt School of Health
+
+  COMPACT FACTS BAR
+    Guide enrichment: 1d / 1c (likely — single FNP program context)
+
+  [REQUIRES — amber box, cumulative-sequence treatment]
+    → Prerequisite Sequence Required
+    "Cumulative sequence prereq: all MSN Core + NP Core courses required"
+    "This prerequisite is a cumulative sequence — it cannot be resolved to a single
+    course code."  [cumulative-sequence — review-required]
+    Raw value from guide: "courses are required prior to taking this course:
+    All MSN Core courses and NP Core courses"
+
+  [COURSE OVERVIEW — blockquote]
+    "Prepares graduate nursing students for advanced practice nurse role. Covers health
+    promotion, disease prevention, acute and chronic condition management, patient
+    empowerment across the lifespan."
+    Source: MSNUFNP, PMCNUFNP
+
+  [WHAT YOU'LL LEARN — 7 bullets]
+    ▸ Health promotion activities across the lifespan
+    ▸ Evidence-based management of acute conditions
+    ▸ Evidence-based management of chronic conditions
+    ▸ [additional clinical competency bullets]
+
+  [ABOUT THIS COURSE — WGU Catalog 2026-03]
+    Catalog text.
+
+  [INCLUDED IN CURRENT DEGREES]
+    MSNUFNP, PMCNUFNP listed.
+
+  DESIGN OBSERVATIONS FOR D118:
+    - The amber cumulative-sequence block is intentionally awkward-looking — it is
+      meant to surface the problem, not hide it.
+    - Raw guide text is shown ("All MSN Core courses and NP Core courses") so reviewers
+      can see exactly what the guide said and why it can't be resolved.
+    - This is the right behavior for a prototype: expose the limitation visibly rather
+      than suppress it or pretend it's a normal prereq.
+    - Key policy question this page surfaces: what DO we show here in production?
+      Options: (a) suppress the prereq entirely, (b) show "See program guide for
+      prerequisite sequence", (c) show the raw sequence note as-is.
+    - The 7 competency bullets are clinical and content-rich — this is a substantial
+      course with real enrichment even if the prereq is unresolvable.
+    - The course otherwise has a clean, normal enriched layout — the sequence block
+      is the only anomaly.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+C216 — MBA Capstone
+Shape: sparse / no guide payload (FALLBACK TEST CASE)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  HEADER
+    C216  |  4 CUs  |  Active  |  [sparse / no guide payload]
+    MBA Capstone
+    School of Business
+
+  COMPACT FACTS BAR
+    Guide enrichment: 0d / 0c
+
+  [CAPSTONE CALLOUT — indigo box, title-only signal]
+    ⬛ Capstone Course
+    "Title suggests a capstone course ('MBA Capstone'), but no guide-derived capstone
+    context was found."  [title-only inference]
+
+  [SPARSE FALLBACK NOTICE — slate box]
+    No guide enrichment found
+    "This course has no guide-derived description or competency data. The page falls
+    back to catalog facts and degree history only."  [sparse fallback layout]
+
+  [ABOUT THIS COURSE — WGU Catalog 2026-03]
+    Catalog text (if available — may also be absent for this course).
+
+  [INCLUDED IN CURRENT DEGREES]
+    MBA programs listed.
+
+  DESIGN OBSERVATIONS FOR C216:
+    - Near-total fallback to current page layout — just adds the capstone callout
+    - The title-only capstone inference flag is the right call: it surfaces the signal
+      without overclaiming
+    - The sparse fallback notice makes the absence of enrichment explicit — reviewers
+      can see what they're NOT getting, which is useful for setting expectations
+    - This page asks: is the current production page sufficient for this course?
+      If the catalog description is also absent, the page is very thin.
+    - Key policy question: for sparse courses, should we still push them through the
+      enriched route, or route them explicitly to a "minimal" template?
+    - The title-only capstone callout may become a standard pattern for capstones
+      without guide payload — worth deciding whether to keep it or suppress it.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CROSS-COHORT DESIGN OBSERVATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECTION ORDERING
+  The high-signal blocks (capstone → cert → prereq) at the top work well individually.
+  When multiple are present (e.g., C824 capstone + prereq), the stack feels justified.
+  When only one is present (e.g., C178 cert, D426 no top blocks), the page opens cleanly.
+
+VARIANT DISPLAY POLICY (NOT YET RESOLVED)
+  The prototype over-shows all variants. For C169 (3+3 panels), this creates a long,
+  complex page. For C165 (description collapsed, competencies may still be 3 panels),
+  the result may feel inconsistent.
+  Questions to resolve:
+    - When should descriptions collapse vs. show?
+    - When should competencies collapse vs. show?
+    - Should "collapse" be a UI toggle (show more) or a data-normalization decision?
+    - Is "cosmetically identical" the right criterion, or should it be "same source programs"?
+
+PREREQ REDUNDANCY IN DESCRIPTIONS
+  For C480 and C170, the guide description text itself mentions the prerequisite.
+  Showing a Requires block AND having the prereq in the description text creates
+  duplication. Options: (a) strip prereq language from description display, (b) note
+  "see above", (c) leave as-is (reviewable duplicate).
+
+PROGRAM-CONTEXT GAP IN PREREQS
+  C169's BSDA prereq (C859) does not apply to BSCS/MSCSUG students.
+  Displaying the prereq without program context is potentially misleading.
+  This is the clearest argument for program-context framing in prereq blocks.
+
+CERT BLOCKS
+  All three cert cases (C178, C480, C176) use the emerald block.
+  The emerald is distinctive and high-signal. No concern about over-prominence.
+  The cert confirmation footnote (N programs, source program list) is useful provenance.
+
+REVERSE PREREQ BLOCK
+  D426's violet "Prerequisite For" block is the only instance in the cohort.
+  It's a clean, useful piece of navigation. Whether violet vs. blue distinction
+  is meaningful needs review.
+
+SPARSE FALLBACK (C216)
+  The fallback notice is explicit and honest. The capstone callout (title-only)
+  adds minimal value but surfaces the inference transparently.
+  The most important question for C216: is the catalog description adequate? If yes,
+  the production page is fine. If the catalog desc is also thin, a different approach
+  is needed.
+
+COLLEGE FIELD ANOMALY
+  C176 shows "College of Health Professions" which appears incorrect for this IT course.
+  This anomaly is visible in the prototype header. The prototype is correctly surfacing
+  data quality issues that would exist in production too.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OPEN POLICY QUESTIONS SURFACED BY THIS COHORT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  1. Multi-variant description: collapse (cosmetic) vs. show-all (meaningful) — where
+     is the line? The current heuristic (85% word overlap) may not be robust.
+
+  2. Multi-variant competency: same question. Are 3 bullet sets for C170 all worth showing?
+
+  3. Prereq with program context: C169's prereq only applies in BSDA. How to signal that?
+
+  4. Prereq–description redundancy: C480 and C170 both state prereq in description.
+     Should the Requires block suppress that text, or leave it?
+
+  5. Cumulative-sequence prereqs (D118): suppress vs. surface. Current: surface with
+     amber warning block and raw text. Is that the right display mode?
+
+  6. Title-only capstone inference (C216): show vs. suppress. Currently shown with
+     explicit label. Does that add value or add noise for a sparse course?
+
+  7. High-signal block order: capstone → cert → prereq. Is prereq more urgent than cert
+     for gate-checking students? Should it come first?
+
+  8. Sparse courses: does C216 need a special template, or is the fallback notice enough?
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+END OF CONTENT MAP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
