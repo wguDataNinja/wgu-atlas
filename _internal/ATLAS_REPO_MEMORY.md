@@ -706,19 +706,21 @@ Publish guide-derived content — descriptions, competency bullets, cert signals
 | Cumulative-sequence | nursing "all prior terms + code" prereq — not a standard prereq |
 | Sparse | 0 descriptions and 0 competency sets |
 
-### Open design decisions (not yet resolved)
+### Design conclusions (Sessions 1–2, closed out 2026-03-22)
 
-- Multi-variant description policy (meaningful vs. cosmetic)
-- Multi-variant competency policy
-- Capstone publication rule (guide signal only, or title-only inference)
-- Cumulative-sequence nursing prereq handling (defer or descriptive note)
-- Prereq/description redundancy (guide descriptions sometimes embed the prereq text)
+The course-page design/prototype phase is complete. Key conclusions:
+
+- The block/component system works. Most enrichment elements (cert, prereq, reverse-prereq, capstone, sparse fallback) are straightforward optional-display choices — show if present, omit if absent.
+- The main remaining challenge is same-type multi-variant guide content (description or competency set with multiple guide-derived versions from different programs).
+- Preferred direction: show one primary view by default; provide toggle/disclosure for alternate variants. Collapse only when variants are truly duplicate or cosmetic. Preserve materially distinct variants.
+- Capstone display: use strong course-level evidence (title, catalog); do not foreground internal sourcing gaps to the reader.
+- Cumulative-sequence prereqs: surface the structure honestly; do not flatten into a fake single-course prereq. Wording to be polished at implementation time.
+- Prereq/description redundancy: display-order and wording cleanup at implementation time, not a structural blocker.
 
 ### Working area
 
-- `_internal/course_pages/COURSE_PAGE_ENRICHMENT_SESSION_1_ARTIFACT.md` — full planning inputs, current page structure, 10-course design cohort
-- `_internal/course_pages/WORK_LOG.md` — session history
-- `_internal/course_pages/content_maps/session2_cohort_preview.txt` — Session 2 content map for all 10 cohort preview pages
+- `_internal/course_pages/WORK_LOG.md` — full session history and conclusions
+- `_internal/course_pages/content_maps/session2_cohort_preview.txt` — Session 2 content map
 - Prototype surface: `src/app/proto/course-preview/` and `src/components/proto/CourseEnrichmentPreview.tsx`
 - Implementation target (production, not yet modified): `src/app/courses/[code]/page.tsx`
 

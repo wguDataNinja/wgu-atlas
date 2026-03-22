@@ -93,3 +93,42 @@ C178, C480, C169, C165, D426, C170, C176, C824, D118, C216
 
 **Next step:**
 Review cohort previews in browser. Use content map to discuss policy questions. Produce a shape-disposition / display-policy artifact answering the open questions before production implementation begins.
+
+---
+
+## Session 2 Closeout — 2026-03-22
+
+**Status: CLOSED OUT**
+
+Session 2 succeeded. The prototype pass was the right approach. Building actual preview pages produced more clarity than any amount of abstract planning would have.
+
+**Overall conclusions:**
+
+The course-page problem is narrower than expected going in. For most elements — cert block, prereq block, reverse-prereq block, capstone callout, sparse fallback — the design task is simply: show it if present, omit it if absent, decide placement by comparing cohort pages. That is not a hard structural problem. The cohort pages confirmed this across all 10 shapes.
+
+The shared block/component system works. The prototype proved that enriched course pages are viable and that the block vocabulary covers the real variation in the data.
+
+**The main remaining challenge is same-type variant handling** — specifically when the same field (description or competency set) has multiple guide-derived versions from different programs. This is a GUI/presentation problem, not a data problem.
+
+**Policy conclusions reached:**
+
+- Multi-variant descriptions and competencies: show one primary/current view by default; provide a small toggle or disclosure to reveal alternate guide-derived variants. Do not throw variants away. Collapse only when variants are truly duplicate or cosmetic.
+- Meaningful differences (e.g., C169's C++ vs. Python framing) must remain accessible somehow. The prototype confirmed this is manageable through UI.
+- Do not pick the shortest variant arbitrarily. Source variants with materially distinct content should be preserved.
+- Capstone display: if a course is clearly a capstone from strong course-level evidence (title, catalog description), show it as a capstone plainly. Internal sourcing distinctions do not need to be foregrounded to the reader.
+- Cumulative-sequence prereqs (D118): the prototype behavior was correct — identify the case, do not flatten it into a fake single-course prereq, surface the structure. Wording will be polished later; the behavior is right.
+- Prereq/description redundancy (C480, C170): a wording and display-order cleanup issue, not a structural blocker.
+
+**Per-course conclusions:**
+
+- C178/C176: default enriched layout works cleanly
+- C480/C170: prereq + guide description mention the same thing; cleanup issue, not a blocker
+- D426: reverse-prereq block is useful and clean
+- C824: capstone callout near the top works well
+- D118: cumulative-sequence handling was a successful result
+- C216: sparse fallback works; title-inferred capstone should just be shown as capstone, no "not confirmed in guide" hedging needed
+
+**What this session resolved:**
+Most of the open questions from Session 1 are now answered. Remaining work is wording polish, variant-toggle UI design, and eventual production implementation decisions. The major unknowns have been substantially reduced.
+
+**Workstream status after this session:** CLOSED OUT at design/prototype phase. No further planning docs needed. When course-page implementation resumes, start from the prototype surface and the conclusions above.
