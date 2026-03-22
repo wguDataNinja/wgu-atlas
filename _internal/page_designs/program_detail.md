@@ -1,8 +1,11 @@
 # Program Detail Page — `/programs/[code]`
 
+> **STALE — DO NOT USE AS CURRENT REFERENCE**
+> Last updated: 2026-03-20 (pre-guide wiring). Guide-derived sections (GuideProvenance, GuideCertBlock, GuideFamilyPanel, GuideAreasOfStudy, GuideCapstone) were added in Sessions 29–35 and are not reflected here. Section order was revised again in Degree-page Session 2 (2026-03-22): AoS now appears before Course Roster. For the authoritative live section inventory see `_internal/ATLAS_REPO_MEMORY.md` section 8 or read `src/app/programs/[code]/page.tsx` directly.
+
 Route: `/programs/[code]`
 Example: `/programs/BSCS` — Bachelor of Science, Computer Science
-Last updated: 2026-03-20
+Last updated: 2026-03-20 (stale)
 Sources: `src/app/programs/[code]/page.tsx` · `src/app/programs/[code]/LearningOutcomes.tsx` · `src/components/resources/RelevantResources.tsx` · `public/data/program_enriched.json` · `public/data/official_resource_placements.json` · `public/data/programs.json`
 
 BSCS was chosen as the reference example because it has all enrichment layers active:

@@ -26,7 +26,8 @@ If local docs conflict on current progress or next-step sequencing, trust in thi
 
 | Workstream | Status | Current objective | Primary blocker | Next bounded step |
 |---|---|---|---|---|
-| Program guides / degree pages | **CLOSED OUT** — extraction complete, artifacts built, degree pages wired (Sessions 29–35). Guide-derived content is live. | No active objective — narrow follow-ups exist (cert review queue, course-page prereqs, variant policy) but are not the active track | none | see `data/program_guides/README.md` for follow-up list |
+| **Degree pages — review/improvement** | **CLOSED** — Sessions 1–2 complete (2026-03-22); all priority fixes implemented and live | No active objective | none | see `_internal/degree_pages/WORK_LOG.md` for deferred follow-ups |
+| Program guides / degree pages (wiring) | **CLOSED OUT** — extraction complete, artifacts built, degree pages wired (Sessions 29–35). Guide-derived content is live. | No active objective — narrow follow-ups exist (cert review queue, course-page prereqs, variant policy) but are not the active track | none | see `data/program_guides/README.md` for follow-up list |
 | Courses (course-page enrichment) | **CLOSED OUT at design/prototype phase** — Sessions 1–2 complete; prototype surface built and reviewed; design conclusions recorded in `_internal/course_pages/WORK_LOG.md` | No active objective — implementation resumes when selected | none | when ready: start from prototype surface and recorded conclusions; main remaining work is variant-toggle UI and production wiring |
 | Homepage redesign | **Active three-track workstream** | Design comprehensive proof-and-orientation surface showcasing degree, course, and ecosystem value | align with concurrent degree and course workstreams | build homepage modules in parallel with degree/course enrichment |
 | Official resource layer | active, bounded queueing established | continue conservative attachment expansion with provenance clarity | placement model expansion and completeness audits are still incomplete | reconcile regulatory queue vs current placements, then run outcomes/accreditation completeness pass |
@@ -257,6 +258,29 @@ Priority order:
 
 ---
 
+### 6.4 Degree pages — review/improvement
+
+**Status:** CLOSED — Sessions 1–2 complete (2026-03-22)
+
+**What shipped (Session 2):**
+- AoS moved above Course Roster on all degree pages
+- AoS course entries now link to `/courses/{code}` where a confident title match exists against the program's catalog roster
+- Missing outcomes shows a fallback placeholder ("Program learning outcomes are not available in the current catalog edition.") instead of silent absence
+- Advisor-guided banner copy improved to explain sequencing vs. fixed-term
+- Suppressed roster block updated to reference AoS above as the primary program map
+- Degraded-quality warning block (amber callout) added for low-confidence or caveat-bearing pages; replaces the less-visible inline chip
+- Duplicate caveat messaging resolved: `GuideProvenance` pill suppressed when degraded block handles it; `GuideCapstone` partial note suppressed when caveats already covered
+- Capstone discovery hint added for programs where `capstone.present=false` but AoS contains a capstone group
+- Section label normalized to "Program Learning Outcomes"
+
+**Key files:**
+- `_internal/degree_pages/WORK_LOG.md` — session log including Session 2 cohort validation
+- Production page: `src/app/programs/[code]/page.tsx`
+- Guide components: `src/components/programs/Guide{Provenance,AreasOfStudy,Capstone}.tsx`
+- Learning outcomes: `src/app/programs/[code]/LearningOutcomes.tsx`
+
+---
+
 ## 7. Locked decisions
 
 These should not be reopened by default.
@@ -296,8 +320,6 @@ These should not be reopened by default.
 
 ## 9. Exact next-session order
 
-Program guide work is closed out. Guide-derived content is live on degree pages. The active focus moves elsewhere.
-
 1. **Course-page enrichment — shape-disposition artifact:** answer the open design questions (variant policy, capstone rule, cumulative-sequence handling) and produce the display-policy artifact. Working area: `_internal/course_pages/`. Session 1 artifact and work log are live.
 2. **Official resource — bounded next pass:** reconcile regulatory queue against current placements, then run outcomes/accreditation completeness audit. Working area: `_internal/official_resource/`.
 3. **Continuity review first batch:** run first 4-card batch (`_internal/continuity_review/validation_batch_01.md`). Low priority relative to items 1–2.
@@ -315,6 +337,7 @@ Program guide work is closed out. Guide-derived content is live on degree pages.
 | What matters now | `_internal/ATLAS_CONTROL.md` |
 | How the repo works | `_internal/ATLAS_REPO_MEMORY.md` |
 | What changed recently | `_internal/DEV_LOG.md` |
+| **Degree pages — review/improvement** | **`_internal/degree_pages/`** — artifact, work log, content maps |
 | Page-state docs, source baseline, homepage design conclusions | `_internal/page_designs/` — see `README.md` for reading order |
 | **Program guide extraction — human entry point** | **`data/program_guides/README.md`** |
 | Program guide extraction — operator status | `_internal/program_guides/PROGRAM_GUIDE_PROJECT_STATUS.md` |

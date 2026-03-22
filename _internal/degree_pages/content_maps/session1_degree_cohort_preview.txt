@@ -1,0 +1,834 @@
+======================================================================
+  DEGREE-PAGE REVIEW COHORT — SESSION 1
+  Generated: 2026-03-22
+  Prototype surface: /proto/degree-preview
+  Production: /programs/[code]
+  Purpose: Paste into GPT for discussion without opening browser
+======================================================================
+
+COHORT MEMBERS
+
+  1. BSCS     — plain baseline
+  2. BSSWE    — family + professional cert (medium confidence)
+  3. BSSESC   — advisor-guided + licensure cert (no outcomes)
+  4. MATSPED  — suppressed SP + anomaly (only suppressed in dataset)
+  5. BSDA     — capstone + professional cert (high confidence)
+  6. MEDETID  — caveat capstone + anomaly
+  7. BSITM    — low confidence + anomaly
+
+SHARED PAGE ANATOMY (all cohort members)
+
+  Every degree page renders in this section order:
+  1.  Breadcrumb: Degrees › {code}
+  2.  Header line: {code} · Current|Retired · N CUs
+  3.  H1: canonical_name
+  4.  School link (or plain text)
+  5.  Retired notice (if retired)
+  6.  GuideProvenance badge (if guide artifact exists)
+  7.  About This Degree (if enriched.description exists)
+  8.  Degree History (always present)
+  9.  Learning Outcomes (if enriched.outcomes present)
+  10. Licensure Preparation (if cert_signals has licensure entries)
+  11. Industry Certifications (if cert_signals has professional_cert entries)
+  12. Related Programs (if family present)
+  13. Course Roster — normal OR suppressed block (if enriched.roster present)
+  14. Areas of Study (if guide artifact has areas_of_study)
+  15. Capstone (if capstone.present = true)
+  16. Back link / footer nav
+
+  Data sources:
+  - Header/history/school: public/data/programs.json
+  - Description/outcomes/roster: public/data/program_enriched.json
+  - All guide blocks: data/program_guides/degree_artifacts/{code}_degree_artifact.json
+  - Resources sidebar: public/data/official_resource_placements.json
+
+======================================================================
+  1. BSCS — Bachelor of Science, Computer Science
+  Shape: PLAIN BASELINE
+  Route (prototype): /proto/degree-preview/BSCS
+  Route (production): /programs/BSCS
+======================================================================
+
+  Status: ACTIVE | 123 CUs (catalog) | First offered: 2018-05
+  School: School of Technology
+
+  [1] Breadcrumb
+      Degrees › BSCS
+
+  [2] Header
+      BSCS · Current · 123 CUs
+      H1: Bachelor of Science, Computer Science
+      School: [School of Technology] (linked to /schools/technology)
+
+  [3] GuideProvenance badge
+      Source: WGU Program Guide · v202412 · 8/2/24
+      Confidence: HIGH — no badge indicator, no caveat pill
+      Anomaly flags: none
+
+  [4] About This Degree
+      Source badge: WGU Catalog 2026-03
+      Description (opening): "The Bachelor of Science in Computer Science prepares students
+        for a career in the high demand field of Computer Science. Upon program completion,
+        students will apply their learned knowledge and skills..."
+      Attribution: "Official catalog text — WGU-authored."
+
+  [5] Degree History
+      First offered: 2018-05 | Status: Current | CUs (latest): 123 (was 117)
+      College name history: College of Information Technology → School of Technology
+        [pill: College of Information Technology] → [pill: School of Technology (current, blue)]
+
+  [6] Learning Outcomes
+      Source badge: WGU Catalog 2026-03
+      Count: 6 outcomes (3 visible by default, "Show 3 more ▾" button)
+      Sample:
+        • The graduate applies core information technology skills in IT systems,
+          operating systems, networking, security, scripting...
+        • The graduate will be able to solve computing problems using critical
+          thinking and mathematical reasoning.
+      [Show 3 more ▾]
+
+  [7] NO Licensure Preparation — no licensure cert signals
+  [8] NO Industry Certifications — no cert signals
+  [9] NO Related Programs — no family
+
+  [10] Course Roster
+      H2: Course Roster (37 courses)
+      Source badge: WGU Catalog 2026-03
+      NO advisor-guided banner
+      9 terms (Term 1 through Term 9)
+      Table per term: Code (linked to /courses/{code}) | Title | CUs
+      Sample terms:
+        Term 1: Introduction to Computer Science (C949, 4 CU), Applied Probability
+          and Statistics (C955, 3 CU), Scripting and Programming Foundations (C859, 3 CU),
+          Data Management Foundations (D426, 3 CU)
+        [... 8 more terms ...]
+      Footer: "Total: 117 CUs across 37 courses. Degree total per catalog: 123 CUs."
+      NOTE: roster CU sum (117) differs from catalog total (123)
+
+  [11] Areas of Study
+      H2: Areas of Study
+      Badge: 12 groups · 37 courses
+      Note: "Course groups from the WGU Program Guide. Expand each group to see
+        course descriptions and competencies."
+      Groups (all collapsed by default, chevron expand):
+        ▾ Computer Science          (9 courses)
+        ▾ General Education         (5 courses)
+        ▾ Scripting and Programming (3 courses)
+        ▾ Data Management           (3 courses)
+        ▾ Network and Security      (2 courses)
+        ▾ Web Development           (2 courses)
+        ▾ Full Stack Engineering    (2 courses)
+        ▾ Software                  (6 courses)
+        ▾ Operating Systems         (1 course)
+        ▾ Secure Systems Analysis & Design (1 course)
+        ▾ Information Technology Management (2 courses)
+        ▾ Business of IT            (1 course)
+      On expand: course title, description paragraph, competency bullets (– prefix)
+      NOTE: course titles are plain text — NO link to /courses/{code}
+
+  [12] NO Capstone — capstone is null
+
+  [13] Footer
+      ← Back to Degrees
+
+  SHAPE NOTES:
+  - Cleanest full-stack page: description + outcomes + 9-term roster + 12-group AoS
+  - AoS appears after all 37 courses (9 terms of tables) — richest content is buried
+  - No guide extra blocks (no cert, family, capstone) — baseline template
+  - College rename history is present (CIT → School of Technology)
+  - CU discrepancy: roster 117, catalog 123 (6 CU gap shown in footer)
+
+----------------------------------------------------------------------
+
+======================================================================
+  2. BSSWE — Bachelor of Science, Software Engineering
+  Shape: FAMILY + PROFESSIONAL CERT (medium confidence)
+  Artifact loaded via alias: BSSWE → BSSWE_Java_degree_artifact.json
+  Route (prototype): /proto/degree-preview/BSSWE
+  Route (production): /programs/BSSWE
+======================================================================
+
+  Status: ACTIVE | 119 CUs | First offered: 2023-01
+  School: School of Technology
+
+  [1] Breadcrumb
+      Degrees › BSSWE
+
+  [2] Header
+      BSSWE · Current · 119 CUs
+      H1: Bachelor of Science, Software Engineering
+      School: [School of Technology] (linked)
+
+  [3] GuideProvenance badge
+      Source: WGU Program Guide
+      NOTE: no version label, no pub date (artifact source_version=null, source_pub_date=null)
+      Confidence: MEDIUM — amber "· medium confidence" shown in badge
+      Caveat: none (no caveat pill)
+      Anomaly flags: none
+
+  [4] About This Degree
+      Source badge: WGU Catalog 2026-03
+      Description (opening): "The B.S. in Software Engineering program is designed to meet
+        the growing industry need in the software space while preparing experienced
+        information technology professionals for successful careers as..."
+      Attribution: "Official catalog text — WGU-authored."
+      NOTE: description comes from enriched['BSSWE'], not from the BSSWE_Java artifact
+        (which has no description entry). Two different sources for same page.
+
+  [5] Degree History
+      First offered: 2023-01 | Status: Current | CUs: 119 (unchanged, no change note)
+      College name history: College of Information Technology → School of Technology
+
+  [6] Learning Outcomes
+      Count: 9 outcomes (3 visible, "Show 6 more ▾")
+      Sample:
+        • The graduate produces applications using high-level programming language
+          constructs to meet business requirements.
+        • The graduate develops user interfaces to meet project requirements.
+
+  [7] NO Licensure Preparation
+
+  [8] Industry Certifications  [EMERALD BLOCK]
+      H2: Industry Certifications
+      "This program includes coursework aligned with:"
+        [AWS Certified]  via Cloud Foundations (D282A)
+          (link: /courses/D282A)
+        [CompTIA Project+]  via Business of IT - Project Management (C176)
+          (link: /courses/C176)
+      "Cert alignment is informational — preparation depends on individual
+        coursework and study."
+
+  [9] Related Programs  [VIOLET BLOCK]
+      H2: Related Programs
+      "B.S. Software Engineering"
+      This track: Java Track
+      "Shares a common core sequence with sibling tracks"
+      Other tracks in this family:
+        [BSSWE_C — C# Track]  (link: /programs/BSSWE_C)
+
+  [10] Course Roster
+      H2: Course Roster (38 courses)
+      Source badge: WGU Catalog 2026-03
+      NO advisor-guided banner (sp_display_mode=null for BSSWE_Java)
+      10 terms
+      Footer: "Total: 119 CUs across 38 courses. Degree total per catalog: 119 CUs."
+
+  [11] Areas of Study
+      H2: Areas of Study
+      Badge: 12 groups · 38 courses
+      Groups:
+        ▾ Scripting and Programming  (4 courses)
+        ▾ Business of IT             (2 courses)
+        ▾ Web Development            (4 courses)
+        ▾ Full Stack Engineering     (3 courses)
+        ▾ General Education          (5 courses)
+        ▾ IT Fundamentals            (1 course)
+        ▾ Computer Science           (3 courses)
+        ▾ Data Management            (3 courses)
+        ▾ Software Development       (5 courses)
+        ▾ Network and Security       (2 courses)
+        ▾ Software                   (4 courses)
+        ▾ Information Technology Management (2 courses)
+
+  [12] NO Capstone
+
+  [13] Footer
+      ← Back to Degrees | View production page →
+
+  SHAPE NOTES:
+  - Family panel (violet) + cert block (emerald) appear between Learning Outcomes
+    and Course Roster — two guide extra blocks stacked
+  - Medium confidence shows amber indicator in badge but NO caveat pill —
+    medium confidence alone does not trigger the pill
+  - Artifact has no source version/date (BSSWE_Java source guide lacked metadata)
+  - Description and outcomes come from enriched['BSSWE'] (catalog);
+    cert/family/AoS come from BSSWE_Java artifact — two sources, one page
+  - BSSWE_C sibling link works correctly (links to /programs/BSSWE_C)
+
+----------------------------------------------------------------------
+
+======================================================================
+  3. BSSESC — B.S., Science Education (Secondary Chemistry)
+  Shape: ADVISOR-GUIDED + LICENSURE CERT (no outcomes)
+  Route (prototype): /proto/degree-preview/BSSESC
+  Route (production): /programs/BSSESC
+======================================================================
+
+  Status: ACTIVE | 129 CUs (catalog) | First offered: 2018-05
+  School: School of Education
+
+  [1] Breadcrumb
+      Degrees › BSSESC
+
+  [2] Header
+      BSSESC · Current · 129 CUs
+      H1: Bachelor of Science, Science Education (Secondary Chemistry)
+      School: [School of Education] (linked to /schools/education)
+
+  [3] GuideProvenance badge
+      Source: WGU Program Guide · v202603 · 12/11/2025
+      Confidence: HIGH — no badge indicator, no caveat pill
+      Anomaly flags: none
+
+  [4] About This Degree
+      Source badge: WGU Catalog 2026-03
+      Description (opening): "The Bachelor of Science, Science Education (Secondary
+        Chemistry) is a competency-based degree program that prepares students with
+        the competencies needed to apply for licensure as a secondary educator..."
+
+  [5] Degree History
+      First offered: 2018-05 | Status: Current | CUs (latest): 129 (was 124)
+      College name history: Teachers College → School of Education
+
+  [6] NO Learning Outcomes
+      [SECTION ABSENT — enriched['BSSESC'].outcomes is null/empty]
+      Page moves directly from Degree History to Licensure Preparation
+      No fallback message, no explanation of why outcomes are absent
+
+  [7] Licensure Preparation  [BLUE BLOCK]
+      H2: Licensure Preparation
+      [Praxis exam]  This program prepares graduates to sit for this examination.
+      NOTE: Praxis exam is categorized as "licensure" — different from professional cert block
+        via course: Secondary Chemistry Curriculum (D872) — NOT shown in licensure block
+        (licensure block shows only cert name + fixed sentence, no course link)
+
+  [8] NO Industry Certifications
+
+  [9] NO Related Programs
+
+  [10] Course Roster  [AMBER BANNER ACTIVE]
+      H2: Course Roster (40 courses)
+      Source badge: WGU Catalog 2026-03
+      [AMBER BANNER]: "Advisor-sequenced — individual pacing varies."
+      9 terms
+      Footer: "Total: 124 CUs across 40 courses. Degree total per catalog: 129 CUs."
+      NOTE: roster total (124) differs from catalog (129)
+
+  [11] Areas of Study
+      H2: Areas of Study
+      Badge: 10 groups · 40 courses
+      Groups:
+        ▾ Professional Core          (9 courses)
+        ▾ General Education          (5 courses)
+        ▾ General Science Content    (4 courses)
+        ▾ Secondary Education        (4 courses)
+        ▾ Science Education          (5 courses)
+        ▾ Clinical Experiences       (3 courses)
+        ▾ Chemistry Content          (4 courses)
+        ▾ Pedagogy and Teaching Methods (3 courses)
+        ▾ Science                    (1 course)
+        ▾ Student Teaching           (2 courses)
+
+  [12] NO Capstone
+
+  [13] Footer nav
+
+  SHAPE NOTES:
+  - Outcomes section completely absent — no placeholder — page jumps from
+    Degree History directly to Licensure Preparation
+  - Advisor-guided banner is one amber line; no explanation of what
+    advisor-sequenced means vs. a normal sequential program
+  - Licensure Preparation block (blue) vs. Industry Certifications (emerald)
+    are visually distinct — this page only has Licensure (blue)
+  - Praxis exam via course link NOT shown in licensure block (by design —
+    licensure block omits course links; only professional cert block links courses)
+  - 40-course roster (9 terms) precedes 10-group AoS — same burial issue
+
+----------------------------------------------------------------------
+
+======================================================================
+  4. MATSPED — Master of Arts in Teaching, Special Education
+  Shape: SUPPRESSED SP + ANOMALY
+  Only suppressed SP in the 115-artifact dataset
+  Route (prototype): /proto/degree-preview/MATSPED
+  Route (production): /programs/MATSPED
+======================================================================
+
+  Status: ACTIVE | 64 CUs | First offered: 2020-11
+  School: School of Education
+
+  [1] Breadcrumb
+      Degrees › MATSPED
+
+  [2] Header
+      MATSPED · Current · 64 CUs
+      H1: Master of Arts in Teaching, Special Education
+      School: [School of Education] (linked)
+
+  [3] GuideProvenance badge
+      Source: WGU Program Guide · v202412 · 10/23/2024 · medium confidence
+      [⚠ AMBER PILL]: "Program map shown from Areas of Study; standard sequence
+        unavailable from source guide formatting."
+      Anomaly flags: ANOM-001
+
+  [4] About This Degree
+      Source badge: WGU Catalog 2026-03
+      Description (opening): "The Master of Arts in Teaching, Special Education (MATSPED)
+        is a competency-based program that enables teacher candidates to earn a Master of
+        Arts degree with a concentration in Special Education, Mil..."
+
+  [5] Degree History
+      First offered: 2020-11 | Status: Current | CUs (latest): 64 (was 52)
+      College name history: Teachers College → School of Education
+
+  [6] Learning Outcomes
+      Count: 5 outcomes (3 visible, "Show 2 more ▾")
+      Sample:
+        • The graduate demonstrates an advanced and continuous commitment to
+          synthesizing the science of learning into instruction...
+        • The graduate demonstrates a thorough comprehension and critically
+          evaluates foundational special education subject matter...
+
+  [7] NO Licensure Preparation
+  [8] NO Industry Certifications
+  [9] NO Related Programs
+
+  [10] Course Roster — SUPPRESSED BLOCK
+      H2: Course Roster (30 courses)
+      Source badge: WGU Catalog 2026-03
+      [GREY BOX]: "Program map shown from Areas of Study; standard sequence
+        unavailable from source guide formatting."
+      NO table. NO term grouping.
+      Footer: "Total: 64 CUs across 30 courses (course list available below
+        in Areas of Study). Degree total per catalog: 64 CUs."
+
+  [11] Areas of Study  [PRIMARY CONTENT LAYER]
+      H2: Areas of Study
+      Badge: 7 groups · 30 courses
+      NOTE: This is where the actual course list lives — users must expand
+        AoS groups to see what courses are in this program
+      Groups:
+        ▾ Professional Core          (5 courses)
+        ▾ General Education          (2 courses)
+        ▾ Special Education          (7 courses)
+        ▾ Pedagogy and Teaching Methods (4 courses)
+        ▾ Clinical Experiences       (4 courses)
+        ▾ Elementary Education       (4 courses)
+        ▾ Student Teaching           (4 courses)
+
+  [12] NO Capstone
+
+  [13] Footer nav
+
+  SHAPE NOTES:
+  - This is the STRUCTURAL INVERSE of the normal page: AoS IS the course catalog,
+    not supplemental context. The roster section suppression means the user cannot
+    see the course list without clicking into AoS groups.
+  - GuideProvenance shows both medium confidence AND a caveat pill — two signals
+  - The suppressed roster block's grey box text matches the caveat pill exactly —
+    same message repeated in two different places
+  - Biggest usability question: does a student understand that "expand AoS groups
+    to see courses" means the same as a normal course roster?
+  - The roster footer line says "course list available below in Areas of Study" —
+    that's the only signal pointing to AoS as a substitute course listing
+
+----------------------------------------------------------------------
+
+======================================================================
+  5. BSDA — Bachelor of Science, Data Analytics
+  Shape: CAPSTONE + PROFESSIONAL CERT (high confidence, clean)
+  Route (prototype): /proto/degree-preview/BSDA
+  Route (production): /programs/BSDA
+======================================================================
+
+  Status: ACTIVE | 122 CUs | First offered: 2023-08
+  School: School of Technology
+
+  [1] Breadcrumb
+      Degrees › BSDA
+
+  [2] Header
+      BSDA · Current · 122 CUs
+      H1: Bachelor of Science, Data Analytics
+      School: [School of Technology] (linked)
+
+  [3] GuideProvenance badge
+      Source: WGU Program Guide · v202309 · 5/1/23
+      Confidence: HIGH — no badge indicator, no caveat pill
+      Anomaly flags: none
+
+  [4] About This Degree
+      Source badge: WGU Catalog 2026-03
+      Description (opening): "The B.S. in Data Analytics is designed to equip data
+        analytics professionals with the necessary skills to design data systems,
+        acquire and wrangle data, analyze and predict outcomes, and operationalize..."
+
+  [5] Degree History
+      First offered: 2023-08 | Status: Current | CUs: 122 (unchanged)
+      College name history: College of Information Technology → School of Technology
+
+  [6] Learning Outcomes
+      Count: 6 outcomes (3 visible, "Show 3 more ▾")
+      Sample:
+        • The graduate identifies an appropriate data architecture according
+          to organizational needs.
+        • The graduate applies data wrangling techniques to investigate data sets.
+
+  [7] NO Licensure Preparation
+
+  [8] Industry Certifications  [EMERALD BLOCK]
+      H2: Industry Certifications
+      "This program includes coursework aligned with:"
+        [AWS Certified]      via Cloud Foundations (D282A)
+        [CompTIA Project+]   via Business of IT - Project Management (C176)
+      "Cert alignment is informational — preparation depends on individual
+        coursework and study."
+
+  [9] NO Related Programs
+
+  [10] Course Roster
+      H2: Course Roster (42 courses)
+      Source badge: WGU Catalog 2026-03
+      NO advisor-guided banner
+      10 terms
+      Footer: "Total: 122 CUs across 42 courses. Degree total per catalog: 122 CUs."
+
+  [11] Areas of Study
+      H2: Areas of Study
+      Badge: 14 groups · 41 courses
+      NOTE: largest AoS set in the cohort (14 groups)
+      NOTE: 42 roster courses vs 41 AoS courses — 1 course appears in roster but
+        not in AoS (or vice versa — likely capstone included in one but not other)
+      Groups:
+        ▾ Data Analytics             (9 courses)
+        ▾ Business of IT             (2 courses)
+        ▾ Scripting and Programming  (3 courses)
+        ▾ Business Core              (3 courses)
+        ▾ Data Management            (3 courses)
+        ▾ Business Management        (2 courses)
+        ▾ General Education          (5 courses)
+        ▾ Network and Security       (2 courses)
+        ▾ Full Stack Engineering     (2 courses)
+        ▾ Web Development            (2 courses)
+        ▾ Information Technology Management (2 courses)
+        ▾ Software                   (2 courses)
+        ▾ Data Science               (2 courses)
+        ▾ Computer Science           (2 courses)
+
+  [12] Capstone  [AMBER BLOCK]
+      H2: Capstone
+      "Data Analytics Capstone"
+      NO partial note (partial=false)
+      Description: "The Data Analytics Undergraduate Capstone challenges students
+        to demonstrate competencies supporting all BSDA program ou..."
+      Competency bullets (first 4):
+        • [competency bullets from artifact]
+
+  [13] Footer nav
+
+  SHAPE NOTES:
+  - GuideCapstone appears AFTER Areas of Study (14 groups, 41 courses)
+    — capstone is at the very bottom of an already-long page
+  - Cert block (emerald) appears before the 42-course roster
+  - 14-group AoS is the most complex in the cohort — this page is long
+  - Clean high-confidence case: no caveats, no anomalies — capstone renders
+    without any qualification
+
+----------------------------------------------------------------------
+
+======================================================================
+  6. MEDETID — M.Ed., Education Technology and Instructional Design
+  Shape: CAVEAT CAPSTONE + ANOMALY (partial capstone, double warning)
+  Route (prototype): /proto/degree-preview/MEDETID
+  Route (production): /programs/MEDETID
+======================================================================
+
+  Status: ACTIVE | 38 CUs | First offered: 2023-11
+  School: School of Education
+
+  [1] Breadcrumb
+      Degrees › MEDETID
+
+  [2] Header
+      MEDETID · Current · 38 CUs
+      H1: Master of Education, Education Technology and Instructional Design
+      School: [School of Education] (linked)
+
+  [3] GuideProvenance badge
+      Source: WGU Program Guide · v202312 · 8/23/24 · medium confidence
+      [⚠ AMBER PILL]: "Capstone shown is the first of a multi-course capstone
+        sequence; full sequence not available from this guide."
+      Anomaly flags: ANOM-007
+
+  [4] About This Degree
+      Source badge: WGU Catalog 2026-03
+      Description (opening): "The Master of Education, Education Technology and
+        Instructional Design is a competency-based degree program designed for
+        professionals looking to create experiences that enable learners to achieve..."
+
+  [5] Degree History
+      First offered: 2023-11 | Status: Current | CUs: 38 (unchanged)
+      College name history: School of Education only (no rename — single-college history)
+
+  [6] Learning Outcomes
+      Count: 5 outcomes (3 visible, "Show 2 more ▾")
+      Sample:
+        • The graduate designs collaborative e-learning experiences to improve
+          learning for K–12 students.
+        • The graduate designs opportunities for assessment and feedback in
+          e-learning experiences for K–12 students.
+
+  [7] NO Licensure Preparation
+  [8] NO Industry Certifications
+  [9] NO Related Programs
+
+  [10] Course Roster
+      H2: Course Roster (12 courses)
+      Source badge: WGU Catalog 2026-03
+      NO advisor-guided banner
+      4 terms (Term 1 through Term 4)
+      NOTE: smallest roster in cohort — 12 courses, 4 terms
+      Footer: "Total: 38 CUs across 12 courses. Degree total per catalog: 38 CUs."
+
+  [11] Areas of Study
+      H2: Areas of Study
+      Badge: 4 groups · 9 courses
+      NOTE: smallest AoS in cohort — 4 groups, 9 courses
+      NOTE: 12 roster courses vs 9 AoS courses — 3 courses not in AoS
+        (likely includes the capstone courses that are referenced in the guide caveat)
+      Groups:
+        ▾ Foundations of Learning Design  (3 courses)
+        ▾ K-12 Specialty                  (2 courses)
+        ▾ Adult Learner Specialty         (2 courses)
+        ▾ Design Lab                      (2 courses)
+
+  [12] Capstone  [AMBER BLOCK + PARTIAL NOTE]
+      H2: Capstone
+      "Identifying Learner Needs and a Research Problem"
+      [PARTIAL NOTE]: "Part of a multi-course capstone sequence."
+      Description: "Identifying Learner Needs and a Research Problem is the
+        first of three capstone courses in the program. This course prov..."
+      Competency bullets (first 4): [from artifact]
+
+  [13] Footer nav
+
+  SHAPE NOTES:
+  - DOUBLE MENTION of the capstone incompleteness:
+      (A) GuideProvenance amber pill (header): "Capstone shown is the first of
+          a multi-course capstone sequence; full sequence not available..."
+      (B) GuideCapstone block (bottom): "Part of a multi-course capstone sequence."
+    Same warning in header and at the very end of the page — different framing
+  - This is the smallest program in the cohort (38 CUs, 12 courses, 4 terms)
+    — the short roster makes the capstone more prominent relative to page length
+  - College history shows no rename (School of Education throughout) —
+    no history chain rendered
+  - Medium confidence + anomaly + caveat: three quality signals active
+  - 3 capstone courses exist in the full program; only the first is in the artifact
+
+----------------------------------------------------------------------
+
+======================================================================
+  7. BSITM — Bachelor of Science, Information Technology Management
+  Shape: LOW CONFIDENCE + ANOMALY (partial roster, red badge)
+  Only low-confidence artifact in the 115-artifact dataset
+  Route (prototype): /proto/degree-preview/BSITM
+  Route (production): /programs/BSITM
+======================================================================
+
+  Status: ACTIVE | 120 CUs (catalog) | First offered: 2025-01
+  School: School of Business
+
+  [1] Breadcrumb
+      Degrees › BSITM
+
+  [2] Header
+      BSITM · Current · 120 CUs
+      H1: Bachelor of Science, Information Technology Management
+      School: [School of Business] (linked to /schools/business)
+
+  [3] GuideProvenance badge
+      Source: WGU Program Guide · v202503 · 9/24/2024 · LOW CONFIDENCE
+      [RED TEXT]: "· low confidence" shown in the badge (text-red-600)
+      [⚠ AMBER PILL]: "One course sequence entry is unavailable due to a guide
+        format limitation; remaining terms shown."
+      Anomaly flags: ANOM-002
+      NOTE: This is the only program in the entire dataset with a low-confidence
+        guide artifact. The red label is the only red text in any cohort member.
+
+  [4] About This Degree
+      Source badge: WGU Catalog 2026-03
+      Description (opening): "The Bachelor of Science in Information Technology
+        Management is a competency-based program that prepares graduates for careers
+        in a variety of businesses involving the management of information techno..."
+
+  [5] Degree History
+      First offered: 2025-01 | Status: Current | CUs: 120 (unchanged)
+      College name history: School of Business only (no rename — launched 2025-01)
+
+  [6] Learning Outcomes
+      Count: 6 outcomes (3 visible, "Show 3 more ▾")
+      Sample:
+        • The graduate explains how IT enables business operations.
+        • The graduate explains how different types of project-management
+          methods are used.
+
+  [7] NO Licensure Preparation
+  [8] NO Industry Certifications
+  [9] NO Related Programs
+
+  [10] Course Roster
+      H2: Course Roster (38 courses)
+      Source badge: WGU Catalog 2026-03
+      NO advisor-guided banner
+      10 terms
+      NOTE: Guide SP has a gap (ANOM-002 — column extraction failure for one
+        course entry). The roster displayed comes from enriched.roster, not the
+        guide SP. The enriched roster has all 38 courses with real catalog CUs.
+        The guide gap is noted in the caveat but does NOT affect the display
+        of the catalog-sourced roster table.
+      Footer: "Total: 113 CUs across 38 courses. Degree total per catalog: 120 CUs."
+      NOTE: roster total (113) differs from catalog (120) — 7 CU gap
+
+  [11] Areas of Study
+      H2: Areas of Study
+      Badge: 9 groups · 40 courses
+      NOTE: AoS has 40 courses vs roster 38 — guide AoS and catalog roster differ
+      NOTE: "Capstone and Portfolio" group exists in AoS but capstone.present=false
+        — the capstone is accessible only by expanding the AoS group; GuideCapstone
+        block does NOT appear on this page
+      Groups:
+        ▾ Business Management        (5 courses)
+        ▾ Business Core              (6 courses)
+        ▾ General Education          (5 courses)
+        ▾ IT Fundamentals            (5 courses)
+        ▾ Business of IT             (5 courses)
+        ▾ Network and Security       (4 courses)
+        ▾ Human Resources            (2 courses)
+        ▾ Data Management            (5 courses)
+        ▾ Capstone and Portfolio     (3 courses)  ← capstone info here only
+
+  [12] NO Capstone block
+      [GuideCapstone does not render — capstone.present=false]
+      The capstone courses ARE available within the "Capstone and Portfolio" AoS group,
+      but a student must know to look there.
+
+  [13] Footer nav
+
+  SHAPE NOTES:
+  - Red "low confidence" label in GuideProvenance — only red quality signal
+    in any cohort member
+  - Caveat is about a guide format limitation (partial SP) but the displayed
+    roster comes from the catalog enriched data — the caveat may confuse
+    students who see a complete-looking course table
+  - "Capstone and Portfolio" AoS group exists but GuideCapstone block absent —
+    AoS is the only place the capstone appears on this page
+  - CU gap: 113 roster vs 120 catalog (7 CU difference)
+  - No college history chain (School of Business only, launched 2025-01)
+  - No cert, family, or family block — otherwise structurally similar to BSCS
+
+======================================================================
+  CROSS-COHORT OBSERVATIONS
+======================================================================
+
+  1. AOS PLACEMENT IS CONSISTENTLY LATE
+     On every full-roster program (BSCS, BSSWE, BSSESC, BSDA, BSITM), Areas of
+     Study appears after the full course roster. Roster length ranges from 38–42
+     courses / 9–10 terms. AoS — the richest guide content with descriptions and
+     competency bullets — is at or near the bottom of a long page.
+     Exception: MEDETID (12 courses, 4 terms) where AoS is near the top relatively.
+     Exception: MATSPED where AoS IS the primary content (roster suppressed).
+
+  2. AOS COURSE TITLES HAVE NO /COURSES/{CODE} LINKS
+     Course Roster links every code (font-mono blue, /courses/{code}).
+     Areas of Study shows only title + description + competency bullets — no code,
+     no link. A student who sees "Introduction to Computer Science" in AoS cannot
+     click to the course page. Inconsistent with the roster.
+
+  3. MISSING OUTCOMES IS SILENT
+     BSSESC has no outcomes in enriched data. The Learning Outcomes section does
+     not appear. No placeholder, no explanation. The page moves from Degree History
+     directly to Licensure Preparation. A student has no way to know if outcomes
+     were omitted due to a data gap, or if outcomes are simply not published for
+     this program type.
+
+  4. CAVEAT PROMINENCE VARIES
+     - MATSPED, MEDETID: amber pill in header (most visible)
+     - BSITM: red text in badge + amber pill — two signals but badge is small
+     - BSSWE: amber "medium confidence" in badge only — no pill — quietest signal
+     Only the amber pill (present for MATSPED, MEDETID, BSITM) is likely to be
+     noticed by a skimming reader.
+
+  5. ADVISOR-GUIDED FRAMING IS THIN (BSSESC)
+     The amber banner "Advisor-sequenced — individual pacing varies." is one line.
+     It explains nothing about what advisor-sequenced means for a student's actual
+     experience vs. a term-sequenced program.
+
+  6. SUPPRESSED ROSTER (MATSPED) INVERTS THE PAGE
+     MATSPED's suppressed block tells users the course list is "available below in
+     Areas of Study." But Areas of Study groups don't behave like a course roster —
+     they're collapsed accordions with descriptions and bullets. The user has to
+     expand each of 7 groups to find all 30 courses. No aggregate view.
+
+  7. CAPSTONE DOUBLE-MENTION (MEDETID)
+     The capstone caveat appears twice: in the GuideProvenance header pill AND in
+     the GuideCapstone block at the bottom. Both say the capstone is partial.
+     Different wording, same substance — currently no attempt to deduplicate.
+
+  8. BSITM CAPSTONE GAP
+     "Capstone and Portfolio" exists as an AoS group (3 courses), but
+     capstone.present=false so GuideCapstone block doesn't render. The capstone
+     information is only accessible by expanding that specific AoS group.
+     A student who doesn't open AoS won't know this program has a capstone.
+
+  9. CU TOTALS OFTEN DIFFER BETWEEN ROSTER AND CATALOG
+     Programs seen: BSCS (117 vs 123), BSSESC (124 vs 129), BSITM (113 vs 120).
+     The page footer shows both and explains the difference, but this may be
+     confusing to students who see "117 CUs" in the roster and "123 CUs" in
+     the header badge.
+
+  10. COLLEGE HISTORY IS PRESENT ON MOST BUT NOT ALL
+     BSCS, BSSWE, BSSESC, MATSPED, BSDA: have rename chain (e.g., CIT → SoT)
+     MEDETID, BSITM: single-college history, no chain rendered
+     The chain renders as pill badges with arrows — clean, but without date ranges.
+
+======================================================================
+  OPEN DESIGN / POLICY QUESTIONS FOR SESSION 2
+======================================================================
+
+  Q1. AOS ORDER: Should Areas of Study move above the Course Roster?
+      Arguments for: AoS has richer content; students researching what they'll
+        learn should hit descriptions before a CU table.
+      Arguments against: Course sequence (roster) is what students primarily want;
+        AoS is supplemental enrichment; current order puts facts first.
+      Current order: roster → AoS on all programs except MATSPED (suppressed).
+
+  Q2. AOS COURSE LINKS: Should AoS course titles link to /courses/{code}?
+      Arguments for: Roster links courses; AoS should too; students can navigate
+        from description to full course page.
+      Arguments against: AoS titles may not always match catalog codes exactly
+        (they come from guide text, not catalog); linking requires code resolution.
+      Current: no links in AoS.
+
+  Q3. MISSING OUTCOMES: Should absent outcomes trigger a placeholder?
+      E.g., "Program learning outcomes not yet available in this catalog edition."
+      Affects: education programs (BSSESC and others) where outcomes are absent.
+
+  Q4. ADVISOR-GUIDED FRAMING: Is the single amber line enough?
+      Should advisor-guided programs have more explanation of what sequencing
+      means vs. a self-paced term structure?
+
+  Q5. PROVENANCE BADGE PROMINENCE: Is the small badge sufficient for quality signals?
+      BSITM's red "low confidence" is the only red element — but it's in a tiny
+      badge in the header. Should degraded-quality programs get a more prominent
+      notice block?
+
+  Q6. SUPPRESSED ROSTER NAVIGATION: Does MATSPED's page communicate clearly that
+      AoS is the course catalog substitute?
+      The footer says "see Areas of Study below" but AoS is collapsed by default.
+      Should the suppressed block have a direct call-to-action or auto-expand?
+
+  Q7. CAPSTONE DOUBLE-MENTION (MEDETID): Should the GuideCapstone block suppress
+      the partial note when the same content appears in GuideProvenance? Or is
+      redundancy acceptable for this edge case?
+
+  Q8. CAPSTONE DISCOVERY (BSITM): Should programs with "capstone" in an AoS group
+      but capstone.present=false get any visible capstone signal?
+      Currently: nothing. The student must expand "Capstone and Portfolio" AoS group.
+
+  Q9. ROSTER SOURCE LABEL: The roster badge says "WGU Catalog 2026-03" and AoS
+      is labeled "WGU Program Guide." Should these source differences be more
+      clearly explained so students understand which content is from which source?
+
+======================================================================
+  END OF CONTENT MAP
+======================================================================

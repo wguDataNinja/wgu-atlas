@@ -2,9 +2,10 @@ import type { GuideArtifact } from "@/lib/types";
 
 type Props = {
   capstone: GuideArtifact["capstone"];
+  suppressPartialNote?: boolean;
 };
 
-export default function GuideCapstone({ capstone }: Props) {
+export default function GuideCapstone({ capstone, suppressPartialNote }: Props) {
   if (!capstone || !capstone.present) return null;
 
   return (
@@ -15,7 +16,7 @@ export default function GuideCapstone({ capstone }: Props) {
       </div>
       <div className="border border-amber-200 bg-amber-50 rounded-lg px-4 py-3">
         <p className="text-sm font-semibold text-slate-800 mb-1">{capstone.title}</p>
-        {capstone.partial && (
+        {capstone.partial && !suppressPartialNote && (
           <p className="text-xs text-amber-700 mb-2">
             Part of a multi-course capstone sequence.
           </p>

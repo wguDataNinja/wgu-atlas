@@ -4,9 +4,10 @@ type Props = {
   provenance: GuideArtifact["guide_provenance"];
   quality: GuideArtifact["quality"];
   anomalyFlags: string[];
+  suppressCaveatPill?: boolean;
 };
 
-export default function GuideProvenance({ provenance, quality, anomalyFlags }: Props) {
+export default function GuideProvenance({ provenance, quality, anomalyFlags, suppressCaveatPill }: Props) {
   const hasCaveats =
     quality.caveat_messages_ui.length > 0 || anomalyFlags.length > 0;
 
@@ -44,7 +45,7 @@ export default function GuideProvenance({ provenance, quality, anomalyFlags }: P
           </>
         )}
       </span>
-      {hasCaveats && (
+      {hasCaveats && !suppressCaveatPill && (
         <span className="inline-flex items-center gap-1 text-xs text-amber-700 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded">
           <span>⚠</span>
           <span>

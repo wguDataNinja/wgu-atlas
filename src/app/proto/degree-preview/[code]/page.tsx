@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import {
   getProgramDetail,
-  getAllProgramCodes,
   getProgramEnrichedByCode,
   getOfficialResourcePlacementsForSurface,
   getSchools,
@@ -11,32 +10,41 @@ import {
 } from "@/lib/data";
 import type { RosterCourse } from "@/lib/types";
 import RelevantResources from "@/components/resources/RelevantResources";
-import LearningOutcomes from "./LearningOutcomes";
+import LearningOutcomes from "@/app/programs/[code]/LearningOutcomes";
 import GuideProvenance from "@/components/programs/GuideProvenance";
 import GuideCertBlock from "@/components/programs/GuideCertBlock";
 import GuideFamilyPanel from "@/components/programs/GuideFamilyPanel";
 import GuideAreasOfStudy from "@/components/programs/GuideAreasOfStudy";
 import GuideCapstone from "@/components/programs/GuideCapstone";
+import {
+  DEGREE_COHORT_CODES,
+  DEGREE_COHORT_META,
+  type DegreeCohortCode,
+} from "@/lib/degreePreviewData";
 
 type Props = { params: Promise<{ code: string }> };
 
-export async function generateStaticParams() {
-  return getAllProgramCodes().map((code) => ({ code }));
+export function generateStaticParams() {
+  return DEGREE_COHORT_CODES.map((code) => ({ code }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { code } = await params;
   const program = getProgramDetail(code);
-  if (!program) return { title: "Degree Not Found" };
-  const statusLabel = program.status === "ACTIVE" ? "" : " (Retired)";
   return {
-    title: `${program.canonical_name}${statusLabel}`,
-    description: `WGU degree: ${program.canonical_name}. First offered ${program.first_seen}.`,
+    title: `${code} — Degree Preview (Prototype)`,
+    description: `Prototype review page for ${program?.canonical_name ?? code}. Session 2 design cohort.`,
   };
 }
 
-export default async function ProgramDetailPage({ params }: Props) {
+export default async function DegreePreviewDetailPage({ params }: Props) {
   const { code } = await params;
+
+  // Only serve cohort codes
+  if (!DEGREE_COHORT_CODES.includes(code as DegreeCohortCode)) {
+    notFound();
+  }
+
   const program = getProgramDetail(code);
   if (!program) notFound();
 
@@ -44,8 +52,7 @@ export default async function ProgramDetailPage({ params }: Props) {
   const guideArtifact = getDegreeGuideByCode(code);
   const schools = getSchools();
   const hasRelevantResources =
-    getOfficialResourcePlacementsForSurface("program_detail", program.program_code)
-      .length > 0;
+    getOfficialResourcePlacementsForSurface("program_detail", program.program_code).length > 0;
 
   const isActive = program.status === "ACTIVE";
   const latestCus =
@@ -54,7 +61,6 @@ export default async function ProgramDetailPage({ params }: Props) {
       : null;
   const cusChanged = program.cus_values.length > 1;
 
-  // Find the school slug for the school link
   const schoolRecord = schools.find(
     (s) =>
       s.canonical_key === program.school ||
@@ -73,7 +79,6 @@ export default async function ProgramDetailPage({ params }: Props) {
     .map(Number)
     .sort((a, b) => a - b);
 
-  // Guide artifact SP display mode — drives roster presentation
   const spDisplayMode = guideArtifact?.standard_path?.sp_display_mode ?? null;
   const spSuppressed = spDisplayMode === "suppressed";
   const spAdvisorGuided = spDisplayMode === "advisor-guided";
@@ -97,10 +102,27 @@ export default async function ProgramDetailPage({ params }: Props) {
   const rosterForAos =
     enriched?.roster?.map((c) => ({ code: c.code, title: c.title })) ?? [];
 
+  const cohortMeta = DEGREE_COHORT_META[code as DegreeCohortCode];
+
   return (
     <div
       className={`${hasRelevantResources ? "max-w-6xl" : "max-w-4xl"} mx-auto px-4 py-10`}
     >
+      {/* Prototype breadcrumb */}
+      <nav className="text-sm text-slate-400 mb-6 flex items-center gap-1.5">
+        <Link href="/proto/degree-preview" className="hover:text-blue-600">
+          Cohort Preview
+        </Link>
+        <span>›</span>
+        <span className="text-slate-600">{code}</span>
+        <span className="ml-2 bg-amber-100 text-amber-700 text-xs font-mono px-1.5 py-0.5 rounded">
+          PROTOTYPE
+        </span>
+        <span className="ml-1 text-xs bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">
+          {cohortMeta.shape}
+        </span>
+      </nav>
+
       <div
         className={
           hasRelevantResources
@@ -109,15 +131,6 @@ export default async function ProgramDetailPage({ params }: Props) {
         }
       >
         <main className={hasRelevantResources ? "min-w-0" : ""}>
-          {/* Breadcrumb */}
-          <nav className="text-sm text-slate-400 mb-6">
-            <Link href="/programs" className="hover:text-blue-600">
-              Degrees
-            </Link>
-            <span className="mx-2">›</span>
-            <span className="text-slate-600">{code}</span>
-          </nav>
-
           {/* Header */}
           <div className="mb-6">
             <p className="text-sm text-slate-500 mb-2">
@@ -151,11 +164,7 @@ export default async function ProgramDetailPage({ params }: Props) {
             )}
           </div>
 
-          {/* ============================================================
-              DEGRADED QUALITY WARNING
-              Shown for low-confidence or caveat-bearing guide artifacts.
-              Replaces the inline amber pill so the warning is prominent.
-              ============================================================ */}
+          {/* Degraded quality warning */}
           {isDegraded && (
             <div className="mb-8 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3">
               <div className="flex items-start gap-2">
@@ -174,9 +183,7 @@ export default async function ProgramDetailPage({ params }: Props) {
             </div>
           )}
 
-          {/* ============================================================
-              ABOUT THIS DEGREE
-              ============================================================ */}
+          {/* About This Degree */}
           {enriched?.description && (
             <section className="mb-8">
               <div className="flex items-center gap-2 mb-3">
@@ -195,9 +202,7 @@ export default async function ProgramDetailPage({ params }: Props) {
             </section>
           )}
 
-          {/* ============================================================
-              DEGREE HISTORY
-              ============================================================ */}
+          {/* Degree History */}
           <section className="mb-8">
             <div className="flex items-center gap-2 mb-3">
               <div className="w-1 h-5 bg-slate-300 rounded" />
@@ -234,7 +239,6 @@ export default async function ProgramDetailPage({ params }: Props) {
                 </span>
               )}
             </div>
-            {/* College name history — only show if there were actual name changes */}
             {program.colleges.length > 1 && (
               <div className="mt-3">
                 <dt className="text-xs text-slate-400 mb-1.5">College name history</dt>
@@ -260,12 +264,7 @@ export default async function ProgramDetailPage({ params }: Props) {
             )}
           </section>
 
-          {/* ============================================================
-              PROGRAM LEARNING OUTCOMES
-              Falls back to a placeholder when outcomes are absent but the
-              program has enriched data (i.e., the gap is likely a data
-              omission, not a missing enrichment).
-              ============================================================ */}
+          {/* Program Learning Outcomes */}
           {enriched && (
             enriched.outcomes && enriched.outcomes.length > 0 ? (
               <LearningOutcomes
@@ -285,16 +284,12 @@ export default async function ProgramDetailPage({ params }: Props) {
             )
           )}
 
-          {/* ============================================================
-              GUIDE: CERT SIGNALS
-              ============================================================ */}
+          {/* Guide: Cert Signals */}
           {guideArtifact && guideArtifact.cert_signals.length > 0 && (
             <GuideCertBlock certSignals={guideArtifact.cert_signals} />
           )}
 
-          {/* ============================================================
-              GUIDE: FAMILY / RELATED PROGRAMS
-              ============================================================ */}
+          {/* Guide: Family */}
           {guideArtifact && guideArtifact.family && (
             <GuideFamilyPanel
               family={guideArtifact.family}
@@ -302,13 +297,7 @@ export default async function ProgramDetailPage({ params }: Props) {
             />
           )}
 
-          {/* ============================================================
-              GUIDE: AREAS OF STUDY
-              Moved above the Course Roster so the richest explanatory
-              content (descriptions, competencies) is visible before the
-              term-by-term CU table. For suppressed-roster programs this
-              section IS the primary course map.
-              ============================================================ */}
+          {/* Guide: Areas of Study (moved above Course Roster) */}
           {guideArtifact && guideArtifact.areas_of_study.length > 0 && (
             <GuideAreasOfStudy
               areasOfStudy={guideArtifact.areas_of_study}
@@ -316,9 +305,7 @@ export default async function ProgramDetailPage({ params }: Props) {
             />
           )}
 
-          {/* ============================================================
-              COURSE ROSTER (normal)
-              ============================================================ */}
+          {/* Course Roster (normal) */}
           {enriched?.roster && enriched.roster.length > 0 && !spSuppressed && (
             <section className="mb-8">
               <div className="flex items-center gap-2 mb-3">
@@ -345,15 +332,9 @@ export default async function ProgramDetailPage({ params }: Props) {
                       <table className="w-full text-sm">
                         <thead className="bg-slate-50 border-b border-slate-200">
                           <tr>
-                            <th className="text-left px-3 py-2 text-xs font-medium text-slate-500">
-                              Code
-                            </th>
-                            <th className="text-left px-3 py-2 text-xs font-medium text-slate-500">
-                              Title
-                            </th>
-                            <th className="text-right px-3 py-2 text-xs font-medium text-slate-500">
-                              CUs
-                            </th>
+                            <th className="text-left px-3 py-2 text-xs font-medium text-slate-500">Code</th>
+                            <th className="text-left px-3 py-2 text-xs font-medium text-slate-500">Title</th>
+                            <th className="text-right px-3 py-2 text-xs font-medium text-slate-500">CUs</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -372,12 +353,8 @@ export default async function ProgramDetailPage({ params }: Props) {
                                   {course.code}
                                 </Link>
                               </td>
-                              <td className="px-3 py-1.5 text-slate-700">
-                                {course.title}
-                              </td>
-                              <td className="px-3 py-1.5 text-slate-500 text-xs text-right">
-                                {course.cus}
-                              </td>
+                              <td className="px-3 py-1.5 text-slate-700">{course.title}</td>
+                              <td className="px-3 py-1.5 text-slate-500 text-xs text-right">{course.cus}</td>
                             </tr>
                           ))}
                         </tbody>
@@ -394,11 +371,7 @@ export default async function ProgramDetailPage({ params }: Props) {
             </section>
           )}
 
-          {/* ============================================================
-              COURSE ROSTER — SUPPRESSED
-              Shown when the guide has no usable term sequence. AoS above
-              is the primary course map for these programs.
-              ============================================================ */}
+          {/* Course Roster (suppressed) */}
           {spSuppressed && enriched?.roster && enriched.roster.length > 0 && (
             <section className="mb-8">
               <div className="flex items-center gap-2 mb-3">
@@ -421,11 +394,7 @@ export default async function ProgramDetailPage({ params }: Props) {
             </section>
           )}
 
-          {/* ============================================================
-              GUIDE: CAPSTONE
-              suppressPartialNote when page-level caveat block already
-              covers the partial-sequence warning.
-              ============================================================ */}
+          {/* Guide: Capstone */}
           {guideArtifact && guideArtifact.capstone && (
             <GuideCapstone
               capstone={guideArtifact.capstone}
@@ -433,22 +402,23 @@ export default async function ProgramDetailPage({ params }: Props) {
             />
           )}
 
-          {/* ============================================================
-              CAPSTONE DISCOVERY HINT
-              For programs where capstone content is only accessible inside
-              an AoS group (capstone.present = false but AoS has a capstone
-              group). Lets students know to look in Areas of Study above.
-              ============================================================ */}
+          {/* Capstone discovery hint for AoS-only capstone programs */}
           {showCapstoneAosHint && (
             <p className="text-xs text-slate-400 mb-8">
               This program includes a capstone sequence — see the capstone group in Areas of Study above for details.
             </p>
           )}
 
-          {/* Back */}
-          <div className="border-t border-slate-100 pt-6">
-            <Link href="/programs" className="text-sm text-blue-600 hover:underline">
-              ← Back to Degrees
+          {/* Footer nav */}
+          <div className="border-t border-slate-100 pt-6 flex items-center gap-6">
+            <Link href="/proto/degree-preview" className="text-sm text-blue-600 hover:underline">
+              ← Back to Cohort Index
+            </Link>
+            <Link
+              href={`/programs/${code}`}
+              className="text-sm text-slate-400 hover:text-slate-600 hover:underline"
+            >
+              View production page →
             </Link>
           </div>
         </main>

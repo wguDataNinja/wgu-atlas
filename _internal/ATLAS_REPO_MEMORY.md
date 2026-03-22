@@ -105,6 +105,13 @@ See `_internal/page_designs/README.md` for reading order and maintenance notes.
   - Data loader: `src/lib/coursePreviewData.ts` (reads from `data/program_guides/` at build time)
   - Rendering component: `src/components/proto/CourseEnrichmentPreview.tsx`
   - Content map for review: `_internal/course_pages/content_maps/session2_cohort_preview.txt`
+- `/proto/degree-preview` — Degree-page Sessions 1–2 cohort review surface (7 programs; CLOSED workstream)
+  - Index: `/proto/degree-preview`
+  - Per-degree: `/proto/degree-preview/[code]` — BSCS, BSSWE, BSSESC, MATSPED, BSDA, MEDETID, BSITM
+  - Data loader: `src/lib/degreePreviewData.ts` (cohort codes + shape metadata; uses production loaders)
+  - Mirrors production `/programs/[code]` exactly; cohort-gated with proto banner
+  - Content map: `_internal/degree_pages/content_maps/session1_degree_cohort_preview.txt`
+  - Tracking: `_internal/degree_pages/WORK_LOG.md` — Sessions 1–2 complete
 
 These are explicitly experimental and not the production UI.
 
@@ -274,6 +281,36 @@ Program detail role:
 - roster entries are grouped by term and contain course references
 - outcomes are an active production surface, not a placeholder concept
 - learning outcomes already have dedicated rendering logic
+
+### Guide-derived layers (live as of Sessions 29–35, refined Session 38 / Degree-page Session 2)
+
+Program detail pages also consume per-program guide artifacts from `data/program_guides/degree_artifacts/`. These drive:
+- `GuideProvenance` badge — source version, pub date, confidence, caveat pill
+- `GuideCertBlock` — Licensure Preparation (blue) and Industry Certifications (emerald) blocks
+- `GuideFamilyPanel` — Related Programs / track panel (violet)
+- `GuideAreasOfStudy` — expandable course-group accordion with descriptions and competency bullets; course titles linked to `/courses/{code}` where a confident title match against the catalog roster exists
+- `GuideCapstone` — capstone callout (amber)
+
+**Current live section order (as of Degree-page Session 2, 2026-03-22):**
+1. Breadcrumb
+2. Header (code · status · CUs; H1; school; GuideProvenance badge)
+3. Degraded quality warning block (amber callout — shown for low confidence or caveat-bearing artifacts; replaces inline chip)
+4. About This Degree
+5. Degree History
+6. Program Learning Outcomes (or fallback placeholder if absent)
+7. GuideCertBlock (licensure + industry certs)
+8. GuideFamilyPanel (related programs)
+9. GuideAreasOfStudy (moved above roster — richest guide content before the CU table)
+10. Course Roster (normal) or Suppressed roster block
+11. GuideCapstone
+12. Capstone-in-AoS discovery hint (if capstone only accessible via AoS group)
+13. Back link
+
+**Key behavioral notes:**
+- When `quality.caveat_messages_ui.length > 0`, the GuideProvenance caveat pill is suppressed and the degraded warning block (which shows all caveat messages) appears instead.
+- `GuideCapstone` suppresses the "Part of a multi-course capstone sequence." note when caveats are present (the degraded block already covers it).
+- Suppressed-roster programs (MATSPED): AoS appears above the suppressed block, which tells users to expand AoS groups for the complete course listing.
+- Missing outcomes: renders a lightweight placeholder rather than silently omitting the section.
 
 ### Important program principle
 
