@@ -27,7 +27,7 @@ If local docs conflict on current progress or next-step sequencing, trust in thi
 | Workstream | Status | Current objective | Primary blocker | Next bounded step |
 |---|---|---|---|---|
 | Program guides / degree pages | **CLOSED OUT** — extraction complete, artifacts built, degree pages wired (Sessions 29–35). Guide-derived content is live. | No active objective — narrow follow-ups exist (cert review queue, course-page prereqs, variant policy) but are not the active track | none | see `data/program_guides/README.md` for follow-up list |
-| Courses (course-page enrichment) | **Major opportunity identified** — 751 canonical courses have guide-derived enrichment candidates | Design course-page enrichment strategy | course surfacing decisions not yet productized | plan course enrichment policy and UI integration |
+| Courses (course-page enrichment) | **Active — Session 1 planning complete** — starting artifact and design cohort created under `_internal/course_pages/` | Produce shape-disposition / display-policy artifact before implementation planning | multi-variant policy and cumulative-sequence handling unresolved | write shape-disposition artifact answering open design questions |
 | Homepage redesign | **Active three-track workstream** | Design comprehensive proof-and-orientation surface showcasing degree, course, and ecosystem value | align with concurrent degree and course workstreams | build homepage modules in parallel with degree/course enrichment |
 | Official resource layer | active, bounded queueing established | continue conservative attachment expansion with provenance clarity | placement model expansion and completeness audits are still incomplete | reconcile regulatory queue vs current placements, then run outcomes/accreditation completeness pass |
 | Continuity review | initialized, lightweight | validate compact review method | first tiny validation batch not created | create 4-card validation batch |
@@ -298,8 +298,8 @@ These should not be reopened by default.
 
 Program guide work is closed out. Guide-derived content is live on degree pages. The active focus moves elsewhere.
 
-1. **Official resource — bounded next pass:** reconcile regulatory queue against current placements, then run outcomes/accreditation completeness audit. Working area: `_internal/official_resource/`.
-2. **Course-page enrichment planning:** design the course-page enrichment strategy using the 751 enriched courses already in `data/program_guides/enrichment/course_enrichment_candidates.json`. Start with the variant selection policy decision, then plan the course-page wiring. Working area: `src/app/courses/[code]/`.
+1. **Course-page enrichment — shape-disposition artifact:** answer the open design questions (variant policy, capstone rule, cumulative-sequence handling) and produce the display-policy artifact. Working area: `_internal/course_pages/`. Session 1 artifact and work log are live.
+2. **Official resource — bounded next pass:** reconcile regulatory queue against current placements, then run outcomes/accreditation completeness audit. Working area: `_internal/official_resource/`.
 3. **Continuity review first batch:** run first 4-card batch (`_internal/continuity_review/validation_batch_01.md`). Low priority relative to items 1–2.
 
 **Guide-adjacent items that can be picked up any time without blocking other work:**

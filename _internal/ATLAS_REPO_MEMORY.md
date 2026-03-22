@@ -658,6 +658,68 @@ None outstanding. All identified limitations were resolved in Session 22–23.
 
 ---
 
+## 12b. Course-page enrichment system
+
+### Purpose
+
+Publish guide-derived content — descriptions, competency bullets, cert signals, prereq relationships, capstone signals — to `/courses/[code]` pages. This is the next major surface improvement after degree-page guide enrichment.
+
+### Status
+
+**Active — Session 1 planning complete (2026-03-21).** Starting artifact and design cohort created. No implementation started. Shape-disposition / display-policy artifact is the next required step before implementation planning.
+
+### Available inputs (from closed program-guides workstream)
+
+| Artifact | What it provides | Ready |
+|---|---|---|
+| `data/program_guides/enrichment/course_enrichment_candidates.json` | 751 courses with guide descriptions and competency bullets | yes |
+| `data/program_guides/cert_course_mapping.json` | 9 auto-accepted cert→course mappings | yes |
+| `data/program_guides/prereq_relationships.json` | 50 auto-accepted prereq relationships | yes |
+| `data/program_guides/parsed/*_parsed.json` | full per-program guide content | yes (reference) |
+
+### Coverage numbers
+
+- 751 canonical courses have guide-derived enrichment data
+- 730 with at least one description; 729 with at least one competency set
+- 74 with multiple description variants; 185 with multiple competency variants
+- 21 with zero descriptions (sparse)
+- 9 cert mappings ready; 21 in review queue
+- 50 prereq relationships ready; 16 cumulative-sequence nursing rows deferred
+
+### Course shapes (design-relevant)
+
+| Shape | Key characteristic |
+|---|---|
+| Stable enriched | 1 description, 1 competency set |
+| Meaningful multi-variant | 2–4 descriptions with real content difference |
+| Cosmetic multi-variant | 2–4 descriptions differing only superficially |
+| Cert-mapped | auto-accepted cert→course mapping present |
+| Prereq-bearing | explicit course-to-course prereq |
+| Reverse-prereq | this course is listed as prereq for downstream courses |
+| Capstone | capstone signal from guide |
+| Cumulative-sequence | nursing "all prior terms + code" prereq — not a standard prereq |
+| Sparse | 0 descriptions and 0 competency sets |
+
+### Open design decisions (not yet resolved)
+
+- Multi-variant description policy (meaningful vs. cosmetic)
+- Multi-variant competency policy
+- Capstone publication rule (guide signal only, or title-only inference)
+- Cumulative-sequence nursing prereq handling (defer or descriptive note)
+- Prereq/description redundancy (guide descriptions sometimes embed the prereq text)
+
+### Working area
+
+- `_internal/course_pages/COURSE_PAGE_ENRICHMENT_SESSION_1_ARTIFACT.md` — full planning inputs, current page structure, 10-course design cohort
+- `_internal/course_pages/WORK_LOG.md` — session history
+- Implementation target: `src/app/courses/[code]/page.tsx`
+
+### Important principle
+
+Guide-derived content must be labeled with guide provenance (source, version/date). Catalog description remains authoritative; guide description is supplementary context. Never surface guide content without attribution.
+
+---
+
 ## 13. Build and script pipeline
 
 ### Core site-data pipeline
@@ -908,6 +970,8 @@ When returning to the repo after time away:
 | Where is compare logic? | `src/components/compare/`, `src/lib/compareUtils.ts`, `src/lib/families.ts` |
 | Where do official resources attach? | `public/data/official_resource_placements.json` and `_internal/official_resource/` |
 | Where does lineage live? | `data/lineage/` plus related lineage artifacts in `data/` |
+| Where does course-page enrichment planning live? | `_internal/course_pages/` |
+| Where is the guide enrichment data for course pages? | `data/program_guides/enrichment/`, `cert_course_mapping.json`, `prereq_relationships.json` |
 | How is deployment configured? | `next.config.ts`, `package.json`, `.github/workflows/` |
 | What does a specific page look/do? | `_internal/page_designs/{route}.md` |
 
