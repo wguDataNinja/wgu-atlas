@@ -4,7 +4,7 @@
   "disposition": "full-use",
   "guide_provenance": {
     "schema_version": "phase_d_v1",
-    "generated_at": "2026-03-22T00:47:01.730222Z",
+    "generated_at": "2026-03-22T01:25:28.819478Z",
     "source_version": "202409",
     "source_pub_date": "4/12/24",
     "source_page_count": 11,
@@ -202,7 +202,16 @@
     }
   ],
   "capstone": null,
-  "cert_signals": [],
+  "cert_signals": [
+    {
+      "normalized_cert": "CPA Exam",
+      "via_course_title": null,
+      "via_course_code": null,
+      "confidence": "high",
+      "atlas_recommendation": "degree-only",
+      "source_type": "program_description"
+    }
+  ],
   "family": {
     "family_code": "MACC",
     "family_label": "Master of Accounting",

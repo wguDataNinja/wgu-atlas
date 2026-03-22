@@ -41,6 +41,7 @@ OUTPUT_DIR = os.path.join(BASE, "data/program_guides/degree_artifacts")
 SP_FAMILY_CLASSIFICATION = os.path.join(BASE, "data/program_guides/sp_family_classification.json")
 SP_FAMILIES = os.path.join(BASE, "data/program_guides/sp_families.json")
 CERT_COURSE_MAPPING = os.path.join(BASE, "data/program_guides/cert_course_mapping.json")
+DEGREE_LEVEL_CERT_SIGNALS = os.path.join(BASE, "data/program_guides/degree_level_cert_signals.json")
 PREREQ_RELATIONSHIPS = os.path.join(BASE, "data/program_guides/prereq_relationships.json")
 ANOMALY_REGISTRY = os.path.join(BASE, "data/program_guides/guide_anomaly_registry.json")
 
@@ -100,6 +101,17 @@ def load_cert_mapping():
     """Return list of auto_accepted cert rows only."""
     data = load_json(CERT_COURSE_MAPPING)
     return data.get("auto_accepted", [])
+
+
+def load_degree_level_cert_signals():
+    """Return list of degree-level cert signal rows, keyed by program for fast lookup."""
+    rows = load_json(DEGREE_LEVEL_CERT_SIGNALS)
+    # Build a dict: program_code -> list of degree-level signal rows
+    by_program = defaultdict(list)
+    for row in rows:
+        for prog in row.get("source_programs", []):
+            by_program[prog].append(row)
+    return by_program
 
 
 def load_anomaly_registry():
@@ -289,11 +301,12 @@ def build_areas_of_study(parsed):
 
 # ─── cert signals builder ─────────────────────────────────────────────────────
 
-def build_cert_signals(program_code, parsed, cert_mapping_rows):
+def build_cert_signals(program_code, parsed, cert_mapping_rows, degree_signals_by_program):
     """
-    Build cert_signals from auto_accepted cert rows only.
-    Cert is included if this program_code appears in source_programs of the cert row.
-    Returns list of {normalized_cert, via_course_title, via_course_code, confidence, atlas_recommendation}.
+    Build cert_signals from auto_accepted cert rows (course-level) and degree-level signals.
+    Course-level: cert is included if this program_code appears in source_programs of the cert row.
+    Degree-level: cert is included if this program_code appears in source_programs of a degree signal row.
+    Returns list of {normalized_cert, via_course_title, via_course_code, confidence, atlas_recommendation, source_type}.
     """
     signals = []
     for row in cert_mapping_rows:
@@ -303,8 +316,18 @@ def build_cert_signals(program_code, parsed, cert_mapping_rows):
                 "via_course_title": row.get("source_course_title"),
                 "via_course_code": row.get("matched_course_code"),
                 "confidence": row.get("confidence"),
-                "atlas_recommendation": row.get("atlas_recommendation")
+                "atlas_recommendation": row.get("atlas_recommendation"),
+                "source_type": "course_mention"
             })
+    for row in degree_signals_by_program.get(program_code, []):
+        signals.append({
+            "normalized_cert": row.get("normalized_cert"),
+            "via_course_title": None,
+            "via_course_code": None,
+            "confidence": row.get("confidence"),
+            "atlas_recommendation": row.get("atlas_recommendation"),
+            "source_type": "program_description"
+        })
     return signals
 
 
@@ -403,7 +426,7 @@ def build_anomaly_flags(program_code, anomalies_by_program):
 # ─── main artifact builder ────────────────────────────────────────────────────
 
 def build_artifact(program_code, parsed, validation, classification, families_by_code,
-                   cert_mapping_rows, anomalies_by_program):
+                   cert_mapping_rows, degree_signals_by_program, anomalies_by_program):
     """
     Build the full degree artifact for a program.
     """
@@ -421,7 +444,7 @@ def build_artifact(program_code, parsed, validation, classification, families_by
 
     areas_of_study = build_areas_of_study(parsed)
 
-    cert_signals = build_cert_signals(program_code, parsed, cert_mapping_rows)
+    cert_signals = build_cert_signals(program_code, parsed, cert_mapping_rows, degree_signals_by_program)
 
     family = build_family(program_code, classification, families_by_code)
 
@@ -632,6 +655,10 @@ def main():
     cert_mapping_rows = load_cert_mapping()
     print(f"      Loaded {len(cert_mapping_rows)} auto-accepted cert rows")
 
+    print("[5b] Loading degree-level cert signals...")
+    degree_signals_by_program = load_degree_level_cert_signals()
+    print(f"      Loaded degree-level signals for programs: {sorted(degree_signals_by_program.keys())}")
+
     print("[6/7] Loading anomaly registry...")
     anomalies_by_program = load_anomaly_registry()
     print(f"      Loaded anomalies for programs: {sorted(anomalies_by_program.keys())}")
@@ -662,7 +689,7 @@ def main():
 
             artifact = build_artifact(
                 program_code, parsed, validation, classification,
-                families_by_code, cert_mapping_rows, anomalies_by_program
+                families_by_code, cert_mapping_rows, degree_signals_by_program, anomalies_by_program
             )
             artifacts[program_code] = artifact
 

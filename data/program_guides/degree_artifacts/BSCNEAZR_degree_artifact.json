@@ -4,7 +4,7 @@
   "disposition": "full-use",
   "guide_provenance": {
     "schema_version": "phase_d_v1",
-    "generated_at": "2026-03-22T00:47:01.729534Z",
+    "generated_at": "2026-03-22T01:25:28.818710Z",
     "source_version": "202510",
     "source_pub_date": "1/27/2026",
     "source_page_count": 0,
@@ -692,28 +692,32 @@
       "via_course_title": "IT Applications",
       "via_course_code": "C394",
       "confidence": "high",
-      "atlas_recommendation": "use"
+      "atlas_recommendation": "use",
+      "source_type": "course_mention"
     },
     {
       "normalized_cert": "CompTIA A+",
       "via_course_title": "IT Foundations",
       "via_course_code": "C393",
       "confidence": "high",
-      "atlas_recommendation": "use"
+      "atlas_recommendation": "use",
+      "source_type": "course_mention"
     },
     {
       "normalized_cert": "CompTIA Network+",
       "via_course_title": "Networks",
       "via_course_code": "C480",
       "confidence": "high",
-      "atlas_recommendation": "use"
+      "atlas_recommendation": "use",
+      "source_type": "course_mention"
     },
     {
       "normalized_cert": "CompTIA Security+",
       "via_course_title": "Network and Security - Applications",
       "via_course_code": "C178",
       "confidence": "high",
-      "atlas_recommendation": "use"
+      "atlas_recommendation": "use",
+      "source_type": "course_mention"
     }
   ],
   "family": {

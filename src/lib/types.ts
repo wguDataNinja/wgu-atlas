@@ -276,10 +276,11 @@ export interface GuideCapstone {
 
 export interface GuideCertSignal {
   normalized_cert: string;
-  via_course_title: string;
+  via_course_title: string | null;
   via_course_code: string | null;
   confidence: string;
   atlas_recommendation: string;
+  source_type?: string;
 }
 
 export interface GuideFamilySibling {
