@@ -4,7 +4,7 @@
   "disposition": "full-use",
   "guide_provenance": {
     "schema_version": "phase_d_v1",
-    "generated_at": "2026-03-22T01:25:28.818730Z",
+    "generated_at": "2026-03-22T02:03:02.843943Z",
     "source_version": "202510",
     "source_pub_date": "1/27/2026",
     "source_page_count": 0,
@@ -632,7 +632,8 @@
       "via_course_code": "C394",
       "confidence": "high",
       "atlas_recommendation": "use",
-      "source_type": "course_mention"
+      "source_type": "course_mention",
+      "cert_category": "professional_cert"
     },
     {
       "normalized_cert": "CompTIA A+",
@@ -640,7 +641,8 @@
       "via_course_code": "C393",
       "confidence": "high",
       "atlas_recommendation": "use",
-      "source_type": "course_mention"
+      "source_type": "course_mention",
+      "cert_category": "professional_cert"
     },
     {
       "normalized_cert": "CompTIA Cloud+",
@@ -648,7 +650,8 @@
       "via_course_code": "C923",
       "confidence": "high",
       "atlas_recommendation": "use",
-      "source_type": "course_mention"
+      "source_type": "course_mention",
+      "cert_category": "professional_cert"
     }
   ],
   "family": {

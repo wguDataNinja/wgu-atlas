@@ -281,6 +281,7 @@ export interface GuideCertSignal {
   confidence: string;
   atlas_recommendation: string;
   source_type?: string;
+  cert_category?: "licensure" | "professional_cert";
 }
 
 export interface GuideFamilySibling {

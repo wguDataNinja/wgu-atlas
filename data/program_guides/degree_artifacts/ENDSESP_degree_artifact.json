@@ -4,7 +4,7 @@
   "disposition": "full-use",
   "guide_provenance": {
     "schema_version": "phase_d_v1",
-    "generated_at": "2026-03-22T01:25:28.819426Z",
+    "generated_at": "2026-03-22T02:03:02.844561Z",
     "source_version": "202509",
     "source_pub_date": "6/17/2025",
     "source_page_count": 0,
@@ -164,7 +164,8 @@
       "via_course_code": "D865",
       "confidence": "high",
       "atlas_recommendation": "degree-only",
-      "source_type": "course_mention"
+      "source_type": "course_mention",
+      "cert_category": "licensure"
     }
   ],
   "family": null,

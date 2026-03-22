@@ -4,19 +4,27 @@
     "level": "degree",
     "source_type": "program_description",
     "source_excerpt": "The prelicensure BSN degree program prepares graduates to sit for the national registered nurses licensing examination (NCLEX) and to practice as a Registered Nurse. Graduates are eligible to apply to take the NCLEX-RN exam for state licensure.",
-    "source_programs": ["BSPRN"],
+    "source_programs": [
+      "BSPRN"
+    ],
     "confidence": "high",
     "atlas_recommendation": "degree-only",
-    "notes": "BSPRN is a prelicensure program explicitly preparing students to sit for NCLEX-RN. BSNU (RN-to-BSN) is excluded — it is a completion program for already-licensed RNs; its description references prior licensure programs historically, not NCLEX prep. MSRNN* programs are excluded — graduate-level programs for practicing nurses, no NCLEX prep language."
+    "notes": "BSPRN is a prelicensure program explicitly preparing students to sit for NCLEX-RN. BSNU (RN-to-BSN) is excluded \u2014 it is a completion program for already-licensed RNs; its description references prior licensure programs historically, not NCLEX prep. MSRNN* programs are excluded \u2014 graduate-level programs for practicing nurses, no NCLEX prep language."
   },
   {
-    "normalized_cert": "CPA Exam",
+    "normalized_cert": "Certified Public Accountant (CPA) Exam",
     "level": "degree",
     "source_type": "program_description",
     "source_excerpt": "A primary objective of the masters program is to build on the knowledge gained in an undergraduate accounting program and help prepare you to sit for the CPA (Certified Public Accountant) exam.",
-    "source_programs": ["MACC", "MACCA", "MACCF", "MACCM", "MACCT"],
+    "source_programs": [
+      "MACC",
+      "MACCA",
+      "MACCF",
+      "MACCM",
+      "MACCT"
+    ],
     "confidence": "high",
     "atlas_recommendation": "degree-only",
-    "notes": "MACC explicitly states CPA exam prep as a primary objective. MACCA/MACCF/MACCM/MACCT share identical description language: tracks 'designed to prepare learners to sit for one or more of the following: the Certified Public Accountant (CPA) Evolution exam'. BSACC is excluded — its description mentions only career roles (staff accountant, auditor) with no CPA exam prep language."
+    "notes": "MACC explicitly states CPA exam prep as a primary objective. MACCA/MACCF/MACCM/MACCT share identical description language: tracks 'designed to prepare learners to sit for one or more of the following: the Certified Public Accountant (CPA) Evolution exam'. BSACC is excluded \u2014 its description mentions only career roles (staff accountant, auditor) with no CPA exam prep language."
   }
 ]

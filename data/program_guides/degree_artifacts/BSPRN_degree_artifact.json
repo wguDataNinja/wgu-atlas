@@ -4,7 +4,7 @@
   "disposition": "partial-use",
   "guide_provenance": {
     "schema_version": "phase_d_v1",
-    "generated_at": "2026-03-22T01:25:28.819124Z",
+    "generated_at": "2026-03-22T02:03:02.844309Z",
     "source_version": "202303",
     "source_pub_date": "10/5/22",
     "source_page_count": 24,
@@ -637,7 +637,8 @@
       "via_course_code": null,
       "confidence": "high",
       "atlas_recommendation": "degree-only",
-      "source_type": "program_description"
+      "source_type": "program_description",
+      "cert_category": "licensure"
     }
   ],
   "family": null,

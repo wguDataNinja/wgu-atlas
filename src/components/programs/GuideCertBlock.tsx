@@ -11,9 +11,13 @@ export default function GuideCertBlock({ certSignals }: Props) {
   );
   if (usable.length === 0) return null;
 
-  // Group by cert name, collecting all course links per cert.
+  // Partition into licensure exams and professional certs.
+  const licensure = usable.filter((s) => s.cert_category === "licensure");
+  const professional = usable.filter((s) => s.cert_category !== "licensure");
+
+  // Group professional certs by name, collecting all course links per cert.
   const byCert = new Map<string, { code: string | null; title: string | null; degreeOnly: boolean }[]>();
-  for (const signal of usable) {
+  for (const signal of professional) {
     if (!byCert.has(signal.normalized_cert)) byCert.set(signal.normalized_cert, []);
     byCert.get(signal.normalized_cert)!.push({
       code: signal.via_course_code,
@@ -22,53 +26,85 @@ export default function GuideCertBlock({ certSignals }: Props) {
     });
   }
 
+  // Deduplicate licensure cert names for the licensure block.
+  const licensureNames = Array.from(new Set(licensure.map((s) => s.normalized_cert)));
+
   return (
-    <section className="mb-8">
-      <div className="flex items-center gap-2 mb-3">
-        <div className="w-1 h-5 bg-emerald-500 rounded shrink-0" />
-        <h2 className="text-lg font-bold text-slate-800">Industry Certifications</h2>
-      </div>
-      <div className="bg-emerald-50 border border-emerald-200 rounded-lg px-4 py-3">
-        <p className="text-sm font-medium text-slate-700 mb-2">
-          This program includes coursework aligned with:
-        </p>
-        <ul className="space-y-1.5">
-          {Array.from(byCert.entries()).map(([cert, courses]) => (
-            <li key={cert} className="flex items-baseline gap-2 flex-wrap">
-              <span className="inline-block bg-white border border-emerald-300 text-emerald-800 text-xs font-semibold px-2 py-0.5 rounded shrink-0">
-                {cert}
-              </span>
-              {courses.every((c) => c.degreeOnly) ? (
-                <span className="text-xs text-slate-500">Degree-level preparation</span>
-              ) : (
-                <span className="text-xs text-slate-500">
-                  via{" "}
-                  {courses
-                    .filter((c) => !c.degreeOnly)
-                    .map((c, i, arr) => (
-                      <span key={c.title ?? i}>
-                        {c.code ? (
-                          <Link
-                            href={`/courses/${c.code}`}
-                            className="text-blue-600 hover:underline"
-                          >
-                            {c.title}
-                          </Link>
-                        ) : (
-                          c.title
-                        )}
-                        {i < arr.length - 1 && ", "}
-                      </span>
-                    ))}
-                </span>
-              )}
-            </li>
-          ))}
-        </ul>
-        <p className="text-xs text-slate-400 mt-2">
-          Cert alignment is informational — preparation depends on individual coursework and study.
-        </p>
-      </div>
-    </section>
+    <>
+      {/* Licensure block — separate heading, no disclaimer */}
+      {licensureNames.length > 0 && (
+        <section className="mb-8">
+          <div className="flex items-center gap-2 mb-3">
+            <div className="w-1 h-5 bg-blue-600 rounded shrink-0" />
+            <h2 className="text-lg font-bold text-slate-800">Licensure Preparation</h2>
+          </div>
+          <div className="bg-blue-50 border border-blue-200 rounded-lg px-4 py-3">
+            <ul className="space-y-1.5">
+              {licensureNames.map((name) => (
+                <li key={name} className="flex items-center gap-2">
+                  <span className="inline-block bg-white border border-blue-300 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">
+                    {name}
+                  </span>
+                  <span className="text-sm text-slate-700">
+                    This program prepares graduates to sit for this examination.
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
+      {/* Professional cert block — industry cert heading + disclaimer */}
+      {byCert.size > 0 && (
+        <section className="mb-8">
+          <div className="flex items-center gap-2 mb-3">
+            <div className="w-1 h-5 bg-emerald-500 rounded shrink-0" />
+            <h2 className="text-lg font-bold text-slate-800">Industry Certifications</h2>
+          </div>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-lg px-4 py-3">
+            <p className="text-sm font-medium text-slate-700 mb-2">
+              This program includes coursework aligned with:
+            </p>
+            <ul className="space-y-1.5">
+              {Array.from(byCert.entries()).map(([cert, courses]) => (
+                <li key={cert} className="flex items-baseline gap-2 flex-wrap">
+                  <span className="inline-block bg-white border border-emerald-300 text-emerald-800 text-xs font-semibold px-2 py-0.5 rounded shrink-0">
+                    {cert}
+                  </span>
+                  {courses.every((c) => c.degreeOnly) ? (
+                    <span className="text-xs text-slate-500">Degree-level preparation</span>
+                  ) : (
+                    <span className="text-xs text-slate-500">
+                      via{" "}
+                      {courses
+                        .filter((c) => !c.degreeOnly)
+                        .map((c, i, arr) => (
+                          <span key={c.title ?? i}>
+                            {c.code ? (
+                              <Link
+                                href={`/courses/${c.code}`}
+                                className="text-blue-600 hover:underline"
+                              >
+                                {c.title}
+                              </Link>
+                            ) : (
+                              c.title
+                            )}
+                            {i < arr.length - 1 && ", "}
+                          </span>
+                        ))}
+                    </span>
+                  )}
+                </li>
+              ))}
+            </ul>
+            <p className="text-xs text-slate-400 mt-2">
+              Cert alignment is informational — preparation depends on individual coursework and study.
+            </p>
+          </div>
+        </section>
+      )}
+    </>
   );
 }

@@ -4,7 +4,7 @@
   "disposition": "full-use",
   "guide_provenance": {
     "schema_version": "phase_d_v1",
-    "generated_at": "2026-03-22T01:25:28.819435Z",
+    "generated_at": "2026-03-22T02:03:02.844570Z",
     "source_version": "202202",
     "source_pub_date": "9/27/23",
     "source_page_count": 11,
@@ -234,12 +234,13 @@
   "capstone": null,
   "cert_signals": [
     {
-      "normalized_cert": "CPA Exam",
+      "normalized_cert": "Certified Public Accountant (CPA) Exam",
       "via_course_title": null,
       "via_course_code": null,
       "confidence": "high",
       "atlas_recommendation": "degree-only",
-      "source_type": "program_description"
+      "source_type": "program_description",
+      "cert_category": "professional_cert"
     }
   ],
   "family": null,

@@ -4,7 +4,7 @@
   "disposition": "full-use",
   "guide_provenance": {
     "schema_version": "phase_d_v1",
-    "generated_at": "2026-03-22T01:25:28.819298Z",
+    "generated_at": "2026-03-22T02:03:02.844455Z",
     "source_version": null,
     "source_pub_date": null,
     "source_page_count": 0,
@@ -706,7 +706,8 @@
       "via_course_code": "D282A",
       "confidence": "high",
       "atlas_recommendation": "use",
-      "source_type": "course_mention"
+      "source_type": "course_mention",
+      "cert_category": "professional_cert"
     },
     {
       "normalized_cert": "CompTIA Project+",
@@ -714,7 +715,8 @@
       "via_course_code": "C176",
       "confidence": "high",
       "atlas_recommendation": "use",
-      "source_type": "course_mention"
+      "source_type": "course_mention",
+      "cert_category": "professional_cert"
     }
   ],
   "family": {

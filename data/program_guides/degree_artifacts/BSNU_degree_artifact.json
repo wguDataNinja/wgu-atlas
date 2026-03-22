@@ -4,7 +4,7 @@
   "disposition": "full-use",
   "guide_provenance": {
     "schema_version": "phase_d_v1",
-    "generated_at": "2026-03-22T01:25:28.819089Z",
+    "generated_at": "2026-03-22T02:03:02.844274Z",
     "source_version": null,
     "source_pub_date": null,
     "source_page_count": 0,
@@ -18,7 +18,9 @@
     "caveat_flags": [
       "metadata_missing_no_footer"
     ],
-    "caveat_messages_ui": []
+    "caveat_messages_ui": [
+      "Guide version information unavailable for this program."
+    ]
   },
   "standard_path": {
     "available": true,

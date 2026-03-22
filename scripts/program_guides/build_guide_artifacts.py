@@ -155,6 +155,9 @@ def classify_disposition(program_code, sp_category, parsed):
         # ANOM-002: suppress single bad entry, rest usable — Category A with one suppressed entry
         sp_status = "usable"
         caveat_flags.append("sp_entry_suppressed_concatenation")
+        caveat_messages_ui.append(
+            "One course sequence entry is unavailable due to a guide format limitation; remaining terms shown."
+        )
         return disposition, sp_status, caveat_flags, caveat_messages_ui, sp_display_mode, sp_suppression_reason, sp_label
 
     if program_code == "MSCSUG":
@@ -162,6 +165,9 @@ def classify_disposition(program_code, sp_category, parsed):
         sp_status = "usable"
         sp_label = "Accelerated B.S./M.S. pathway — term sequence spans both degree levels."
         caveat_flags.append("sp_bridge_program_semantics")
+        caveat_messages_ui.append(
+            "Accelerated B.S./M.S. pathway — term sequence spans both degree levels."
+        )
         return disposition, sp_status, caveat_flags, caveat_messages_ui, sp_display_mode, sp_suppression_reason, sp_label
 
     if program_code == "BSPRN":
@@ -178,12 +184,18 @@ def classify_disposition(program_code, sp_category, parsed):
         disposition = "full-use"
         sp_status = "usable"
         caveat_flags.append("capstone_partial_sequence")
+        caveat_messages_ui.append(
+            "Capstone shown is the first of a multi-course capstone sequence; full sequence not available from this guide."
+        )
         return disposition, sp_status, caveat_flags, caveat_messages_ui, sp_display_mode, sp_suppression_reason, sp_label
 
     if program_code == "BSNU":
         disposition = "full-use"
         sp_status = "usable"
         caveat_flags.append("metadata_missing_no_footer")
+        caveat_messages_ui.append(
+            "Guide version information unavailable for this program."
+        )
         return disposition, sp_status, caveat_flags, caveat_messages_ui, sp_display_mode, sp_suppression_reason, sp_label
 
     # Category D (should be just MATSPED, handled above, but defensive)
@@ -301,32 +313,46 @@ def build_areas_of_study(parsed):
 
 # ─── cert signals builder ─────────────────────────────────────────────────────
 
+LICENSURE_CERTS = {"NCLEX-RN", "NCLEX-PN", "Praxis exam", "Praxis 5039", "Praxis 5081"}
+
+
+def _cert_category(normalized_cert):
+    if normalized_cert in LICENSURE_CERTS:
+        return "licensure"
+    return "professional_cert"
+
+
 def build_cert_signals(program_code, parsed, cert_mapping_rows, degree_signals_by_program):
     """
     Build cert_signals from auto_accepted cert rows (course-level) and degree-level signals.
     Course-level: cert is included if this program_code appears in source_programs of the cert row.
     Degree-level: cert is included if this program_code appears in source_programs of a degree signal row.
-    Returns list of {normalized_cert, via_course_title, via_course_code, confidence, atlas_recommendation, source_type}.
+    Returns list of {normalized_cert, via_course_title, via_course_code, confidence,
+                     atlas_recommendation, source_type, cert_category}.
     """
     signals = []
     for row in cert_mapping_rows:
         if program_code in row.get("source_programs", []):
+            cert = row.get("normalized_cert")
             signals.append({
-                "normalized_cert": row.get("normalized_cert"),
+                "normalized_cert": cert,
                 "via_course_title": row.get("source_course_title"),
                 "via_course_code": row.get("matched_course_code"),
                 "confidence": row.get("confidence"),
                 "atlas_recommendation": row.get("atlas_recommendation"),
-                "source_type": "course_mention"
+                "source_type": "course_mention",
+                "cert_category": _cert_category(cert),
             })
     for row in degree_signals_by_program.get(program_code, []):
+        cert = row.get("normalized_cert")
         signals.append({
-            "normalized_cert": row.get("normalized_cert"),
+            "normalized_cert": cert,
             "via_course_title": None,
             "via_course_code": None,
             "confidence": row.get("confidence"),
             "atlas_recommendation": row.get("atlas_recommendation"),
-            "source_type": "program_description"
+            "source_type": "program_description",
+            "cert_category": _cert_category(cert),
         })
     return signals
 

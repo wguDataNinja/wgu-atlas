@@ -4,7 +4,7 @@
   "disposition": "partial-use",
   "guide_provenance": {
     "schema_version": "phase_d_v1",
-    "generated_at": "2026-03-22T01:25:28.818997Z",
+    "generated_at": "2026-03-22T02:03:02.844194Z",
     "source_version": "202503",
     "source_pub_date": "9/24/2024",
     "source_page_count": 0,
@@ -18,7 +18,9 @@
     "caveat_flags": [
       "sp_entry_suppressed_concatenation"
     ],
-    "caveat_messages_ui": []
+    "caveat_messages_ui": [
+      "One course sequence entry is unavailable due to a guide format limitation; remaining terms shown."
+    ]
   },
   "standard_path": {
     "available": true,
