@@ -542,24 +542,22 @@ This is distinct from the URL-placement system in `official_resource_placements.
 
 ### Status
 
-- **Guide data collection, extraction, and target artifact production is COMPLETE.**
-- All 115 WGU program guidebooks have been parsed and validated. Parser is stable.
-- **751 canonical courses now have guide-derived enrichment data** (descriptions, competency bullets, program context). This data is ready to inform Atlas degree pages and, later, course pages.
-- The design for the Atlas degree-enrichment artifact layer is complete (policy, schema, build plan settled).
-- **Guide target artifacts (Sessions 29–30):** cert_course_mapping, prereq_relationships, sp_family_classification, sp_families, guide_anomaly_registry — all complete. See key files below.
-- **Product handoff document (Session 30):** `_internal/program_guides/GUIDE_ARTIFACTS_PRODUCT_HANDOFF.md` — comprehensive surface-by-surface payload reference for build and design sessions.
-- The artifact generator (`build_guide_artifacts.py`) has not yet been built; no guide data is published to the site yet.
-- Human entry point for the program-guides data area: `data/program_guides/README.md`
-- Canonical counts and claim boundaries: `data/program_guides/audit/PROGRAM_GUIDE_CORPUS_MANIFEST.{md,json}` and `program_guide_claims_register.{md,json}`.
-- Degree-enrichment design pack: `data/program_guides/audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md`.
-- Course-matching audit (resolutions, deferred cases, unresolvables): `data/program_guides/bridge/merge_summary.json`.
+**CLOSED OUT (Sessions 29–35).** Guide-derived content is live on Atlas degree pages. This section is a reference record.
 
-**Known signal gaps (documented in GUIDE_ARTIFACTS_PRODUCT_HANDOFF.md Section 5):**
-- NCLEX (nursing programs) — not in cert artifact; needs program-description pass.
-- CPA Exam (BSACC) — thin extraction (review-required); richer in program description.
-- Multi-description/competency variant selection — 74/185 courses affected; no policy yet.
-- SP CU conflicts — 41 cases; recommend catalog CU as display value.
-- Education content-area sub-families — not yet captured as named families.
+- All 115 guidebooks parsed, validated, and built into degree artifacts. Parser stable.
+- **`build_guide_artifacts.py` is built and run** — 115 per-program artifacts in `data/program_guides/degree_artifacts/`.
+- **Guide data is live on degree pages** — Licensure Preparation block, Industry Certifications block, Family/track panel, Areas of Study, Capstone callout, Guide provenance badge, Caveat banners, Advisor-sequenced label.
+- NCLEX-RN (BSPRN), Certified Public Accountant (CPA) Exam (MAcc family), and Praxis exam (8 education programs) extracted from program descriptions and live with correct licensure framing.
+- 751 canonical courses have guide-derived enrichment data — descriptions, competency bullets, program context. Not yet on course pages.
+- Human entry point: `data/program_guides/README.md`
+- Canonical counts and claim boundaries: `data/program_guides/audit/PROGRAM_GUIDE_CORPUS_MANIFEST.{md,json}` and `program_guide_claims_register.{md,json}`.
+- Full product handoff: `_internal/program_guides/GUIDE_ARTIFACTS_PRODUCT_HANDOFF.md`.
+
+**Remaining follow-ups (not active — non-blocking):**
+- Cert review queue: 21 rows needing editorial judgment before surfacing.
+- Prereq display on course pages: 50 auto-accepted relationships ready; course-page component not built.
+- Multi-description/competency variant selection: 74/185 courses need a policy decision before course-page use.
+- Education content-area sub-families: not captured as named families.
 
 **Durable coverage model (do not collapse these states):**
 - Extracted texts: PDF-to-text corpus available as parser input.
@@ -642,12 +640,13 @@ None outstanding. All identified limitations were resolved in Session 22–23.
 - `data/program_guides/audit/phase_d_artifact_schema.{md,json}` — output shape and partial-use encoding
 - `data/program_guides/audit/phase_d_degree_course_ownership_matrix.{md,json}` — degree/course ownership decisions
 - `data/program_guides/audit/phase_d_build_plan.{md,json}` — implementation gates and checks
-- `data/program_guides/cert_course_mapping.json` — cert→course mapping output (Phase 1 targets)
-- `data/program_guides/prereq_relationships.json` — prereq relationship output (Phase 2 targets)
-- `data/program_guides/sp_family_classification.json` — SP family classification per program (Phase 3 targets)
-- `data/program_guides/sp_families.json` — named family definitions (Phase 3 targets)
-- `data/program_guides/guide_anomaly_registry.json` — known anomaly types with handling rules (Phase 4 targets)
-- `public/data/program_guides/` — not yet created (Phase D)
+- `data/program_guides/cert_course_mapping.json` — cert→course mapping (9 auto-accepted, 21 review-needed)
+- `data/program_guides/prereq_relationships.json` — prereq relationships (50 auto-accepted, 21 review-needed)
+- `data/program_guides/sp_family_classification.json` — SP classification per program (A/B/C/D)
+- `data/program_guides/sp_families.json` — 7 named family definitions
+- `data/program_guides/guide_anomaly_registry.json` — 9 anomaly records with Atlas handling rules
+- `data/program_guides/degree_level_cert_signals.json` — degree-level cert signals (NCLEX-RN, CPA Exam)
+- `data/program_guides/degree_artifacts/` — **115 live per-program degree artifacts** (wired to degree pages)
 
 ### Important design decisions
 

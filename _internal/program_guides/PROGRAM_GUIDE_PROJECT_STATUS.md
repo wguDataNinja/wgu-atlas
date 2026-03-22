@@ -1,23 +1,23 @@
 # Program Guide Project Status
 
-**Date:** 2026-03-21
+**Date:** 2026-03-21 | **Closed out:** 2026-03-21 (Sessions 29–35)
 
 ## Current Status
 
-Guide data collection and extraction is **complete**.
+**CLOSED OUT. Guide-derived content is live on Atlas degree pages.**
 
-- All 115 WGU program guidebooks have been collected, parsed, and validated.
-- Per-course structured data (descriptions, competency bullets, program schedule context) has been extracted for all guides.
-- Guide-derived enrichment data is now available for 751 canonical courses — ready to inform Atlas degree pages and, later, course pages.
-- The next step is building the first Atlas-facing output layer: artifacts that publish approved guide content to degree pages.
-- Nothing is yet published to the site from this data.
+- All 115 guidebooks parsed, validated, and built into degree artifacts.
+- `build_guide_artifacts.py` built and run — 115 per-program artifacts in `data/program_guides/degree_artifacts/`.
+- Guide data wired to degree pages (Sessions 32–35): cert blocks, family panels, Areas of Study, capstone callout, provenance badge, caveat banners, advisor-sequenced label.
+- NCLEX-RN, CPA Exam, and Praxis exam signals extracted from program descriptions and live with correct licensure framing.
+- `data/program_guides/` is no longer the active working directory.
+- Next major work: official-resource layer and course-page enrichment (`_internal/official_resource/`, `src/app/courses/[code]/`).
 
-**Post-program-guides direction:** The project is now centered on three tracks:
-1. **Degrees** - immediate implementation target using completed guide data
-2. **Courses** - major follow-on opportunity with 751 enriched courses
-3. **Homepage** - sequenced after inner-surface strengthening
-
-**Guide targets extraction complete (2026-03-21):** Cert mapping, prereq relationships, SP family classification, and anomaly registry are all produced. See new artifacts below.
+**Remaining follow-ups (non-blocking — see `data/program_guides/README.md`):**
+- Cert review queue: 21 rows
+- Prereq display on course pages: 50 auto-accepted rows ready
+- Multi-description variant policy: needed before course-page enrichment
+- Nursing cumulative prereq display design
 
 ## Human Entry Point
 

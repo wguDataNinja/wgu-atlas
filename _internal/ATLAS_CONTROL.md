@@ -26,8 +26,7 @@ If local docs conflict on current progress or next-step sequencing, trust in thi
 
 | Workstream | Status | Current objective | Primary blocker | Next bounded step |
 |---|---|---|---|---|
-| Program guide extraction | **Guide data collection and extraction COMPLETE** — 115 guides parsed, 751 courses with enrichment data, degree-enrichment policy designed | Build Atlas degree-enrichment artifact generator | site wiring intentionally deferred | implement `build_guide_artifacts.py` — reads extracted data, applies policy, emits Atlas-ready degree-page artifacts (no page wiring yet) |
-| Degrees (degree-page enrichment) | **Ready for implementation** — guide-derived degree data and policy complete | Publish guide data to degree pages | degree-enrichment artifact generator not yet built | build `build_guide_artifacts.py` and integrate with degree pages |
+| Program guides / degree pages | **CLOSED OUT** — extraction complete, artifacts built, degree pages wired (Sessions 29–35). Guide-derived content is live. | No active objective — narrow follow-ups exist (cert review queue, course-page prereqs, variant policy) but are not the active track | none | see `data/program_guides/README.md` for follow-up list |
 | Courses (course-page enrichment) | **Major opportunity identified** — 751 canonical courses have guide-derived enrichment candidates | Design course-page enrichment strategy | course surfacing decisions not yet productized | plan course enrichment policy and UI integration |
 | Homepage redesign | **Active three-track workstream** | Design comprehensive proof-and-orientation surface showcasing degree, course, and ecosystem value | align with concurrent degree and course workstreams | build homepage modules in parallel with degree/course enrichment |
 | Official resource layer | active, bounded queueing established | continue conservative attachment expansion with provenance clarity | placement model expansion and completeness audits are still incomplete | reconcile regulatory queue vs current placements, then run outcomes/accreditation completeness pass |
@@ -122,13 +121,25 @@ Scripts: `scripts/program_guides/extract_cert_mapping.py`, `extract_prereq_relat
 - Multi-description/competency variant selection: 74 courses with multiple description variants, 185 with multiple competency variants — no policy decision yet.
 - SP CU conflicts: 41 cases across programs — recommend defaulting to catalog CU value.
 
-**What is next**
-- Build the Atlas **degree-enrichment artifact generator** (`build_guide_artifacts.py`):
-  reads extracted guide data, applies the approved policy, and produces Atlas-ready JSON for degree pages.
-  Start from `data/program_guides/audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md`.
-- Guide targets outputs (cert mapping, prereq relationships, SP families) unlock cert badges, prereq display, and family surfaces on degree/course pages.
-- Before surfacing cert signals on nursing or accounting degree pages: resolve NCLEX and CPA Exam gaps.
-- Course-page enrichment and college-level enrichment are later decisions, not part of this next step.
+**Workstream closed out — Sessions 29–35**
+
+All guide extraction, artifact generation, and degree-page wiring is complete. Guide-derived content is live on Atlas degree pages. This section is now a reference record, not an active task queue.
+
+**What shipped:**
+- `build_guide_artifacts.py` built and run — 115 per-program degree artifacts in `degree_artifacts/`
+- Degree pages wired: Licensure Preparation block, Industry Certifications block, Family/track panel, Areas of Study, Capstone callout, Guide provenance badge, Caveat banners, Advisor-sequenced label
+- NCLEX-RN and CPA Exam degree-level signals extracted and live
+- Praxis signals surfaced with correct licensure framing (not "industry cert")
+- All anomaly programs have specific caveat messages (BSITM, MSCSUG, MEDETID, BSNU, MATSPED, BSPRN)
+- BSSWE catalog code aliased to BSSWE_Java artifact
+
+**Known follow-ups (not active — see `data/program_guides/README.md`):**
+- Cert review queue: 21 rows needing editorial judgment
+- Prereq display on course pages: 50 auto-accepted rows ready, component not built
+- Multi-description variant policy: one decision unblocks course-page enrichment
+- Nursing cumulative prereq display design
+
+**Next major work is outside `data/program_guides/` — see section 9.**
 
 ---
 
@@ -285,15 +296,15 @@ These should not be reopened by default.
 
 ## 9. Exact next-session order
 
-Guide data collection and extraction is complete. 115 guidebooks parsed, 751 courses with enrichment data, all course-matching resolved or explicitly recorded. The degree-enrichment artifact layer design (policy, schema, build plan) is also complete.
+Program guide work is closed out. Guide-derived content is live on degree pages. The active focus moves elsewhere.
 
-The design artifacts for the Atlas degree-enrichment layer live in `data/program_guides/audit/` — specifically:
-- `PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md` (start here)
-- `phase_d_publish_policy.{md,json}`, `phase_d_artifact_schema.{md,json}`, `phase_d_build_plan.{md,json}`
+1. **Official resource — bounded next pass:** reconcile regulatory queue against current placements, then run outcomes/accreditation completeness audit. Working area: `_internal/official_resource/`.
+2. **Course-page enrichment planning:** design the course-page enrichment strategy using the 751 enriched courses already in `data/program_guides/enrichment/course_enrichment_candidates.json`. Start with the variant selection policy decision, then plan the course-page wiring. Working area: `src/app/courses/[code]/`.
+3. **Continuity review first batch:** run first 4-card batch (`_internal/continuity_review/validation_batch_01.md`). Low priority relative to items 1–2.
 
-1. **Program guide — degree-enrichment artifact generator:** Implement `build_guide_artifacts.py` — reads extracted guide data, applies the approved publish policy, emits Atlas-ready degree-page artifacts for verification. Do not wire runtime pages yet. Guide targets extraction outputs (cert mapping, prereq relationships, SP families) are now available as inputs to this step.
-2. **Official resource — bounded next pass:** reconcile regulatory queue against current placements, then run outcomes/accreditation completeness audit.
-3. Run first 4-card continuity-review batch (`_internal/continuity_review/validation_batch_01.md`)
+**Guide-adjacent items that can be picked up any time without blocking other work:**
+- Cert review queue (21 rows) — editorial judgment against source text
+- Prereq display component for course pages — 50 auto-accepted rows ready
 
 ---
 
