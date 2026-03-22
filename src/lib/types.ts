@@ -216,6 +216,102 @@ export interface CourseDescription {
 }
 
 // ---------------------------------------------------------------------------
+// Guide artifact — from data/program_guides/degree_artifacts/{CODE}_degree_artifact.json
+// One file per program, loaded on demand at build time.
+// ---------------------------------------------------------------------------
+
+export interface GuideProvenance {
+  schema_version: string;
+  generated_at: string;
+  source_version: string | null;
+  source_pub_date: string | null;
+  source_page_count: number;
+  confidence: string;
+}
+
+export interface GuideQuality {
+  sp_status: string;
+  sp_category: string;
+  aos_status: string;
+  aos_course_count: number;
+  caveat_flags: string[];
+  caveat_messages_ui: string[];
+}
+
+export interface GuideStandardPathRow {
+  title: string;
+  cus: number;
+  term: number | null;
+}
+
+export interface GuideStandardPath {
+  available: boolean;
+  partial: boolean;
+  label: string | null;
+  sp_display_mode?: string;
+  sp_suppression_reason?: string | null;
+  rows: GuideStandardPathRow[];
+}
+
+export interface GuideCourse {
+  title: string;
+  description: string | null;
+  competency_bullets: string[];
+  competency_available: boolean;
+}
+
+export interface GuideAreaOfStudy {
+  group: string;
+  courses: GuideCourse[];
+}
+
+export interface GuideCapstone {
+  present: boolean;
+  partial: boolean;
+  title: string;
+  description: string | null;
+  competency_bullets: string[];
+  competency_available: boolean;
+}
+
+export interface GuideCertSignal {
+  normalized_cert: string;
+  via_course_title: string;
+  via_course_code: string | null;
+  confidence: string;
+  atlas_recommendation: string;
+}
+
+export interface GuideFamilySibling {
+  program_code: string;
+  track_label: string | null;
+}
+
+export interface GuideFamily {
+  family_code: string;
+  family_label: string;
+  family_type: string;
+  sp_relationship: string;
+  track_label: string | null;
+  display_recommendation: string;
+  siblings: GuideFamilySibling[];
+}
+
+export interface GuideArtifact {
+  program_code: string;
+  source_degree_title: string;
+  disposition: string;
+  guide_provenance: GuideProvenance;
+  quality: GuideQuality;
+  standard_path: GuideStandardPath;
+  areas_of_study: GuideAreaOfStudy[];
+  capstone: GuideCapstone | null;
+  cert_signals: GuideCertSignal[];
+  family: GuideFamily | null;
+  anomaly_flags: string[];
+}
+
+// ---------------------------------------------------------------------------
 // Official resource placements — from public/data/official_resource_placements.json
 // ---------------------------------------------------------------------------
 export type ResourceSurface = "program_detail" | "school_detail";

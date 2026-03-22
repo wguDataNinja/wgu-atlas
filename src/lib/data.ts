@@ -5,6 +5,7 @@ import type {
   CourseDescription,
   CourseDetail,
   CatalogEvent,
+  GuideArtifact,
   HomepageSummary,
   OfficialResourcePlacement,
   ProgramRecord,
@@ -297,6 +298,31 @@ export function getOfficialResourcePlacementsForSurface(
       }
       return a.resource_title.localeCompare(b.resource_title);
     });
+}
+
+// ---------------------------------------------------------------------------
+// Guide artifacts — from data/program_guides/degree_artifacts/{CODE}_degree_artifact.json
+// Loaded on demand (one per page render). Cache keyed by program code.
+// ---------------------------------------------------------------------------
+
+const _degreeGuideCache: Record<string, GuideArtifact | null> = {};
+
+export function getDegreeGuideByCode(code: string): GuideArtifact | null {
+  if (code in _degreeGuideCache) return _degreeGuideCache[code];
+  const filePath = path.join(
+    process.cwd(),
+    "data",
+    "program_guides",
+    "degree_artifacts",
+    `${code}_degree_artifact.json`
+  );
+  try {
+    const raw = fs.readFileSync(filePath, "utf-8");
+    _degreeGuideCache[code] = JSON.parse(raw) as GuideArtifact;
+  } catch {
+    _degreeGuideCache[code] = null;
+  }
+  return _degreeGuideCache[code];
 }
 
 // ---------------------------------------------------------------------------

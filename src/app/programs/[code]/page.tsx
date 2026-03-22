@@ -7,10 +7,16 @@ import {
   getProgramEnrichedByCode,
   getOfficialResourcePlacementsForSurface,
   getSchools,
+  getDegreeGuideByCode,
 } from "@/lib/data";
 import type { RosterCourse } from "@/lib/types";
 import RelevantResources from "@/components/resources/RelevantResources";
 import LearningOutcomes from "./LearningOutcomes";
+import GuideProvenance from "@/components/programs/GuideProvenance";
+import GuideCertBlock from "@/components/programs/GuideCertBlock";
+import GuideFamilyPanel from "@/components/programs/GuideFamilyPanel";
+import GuideAreasOfStudy from "@/components/programs/GuideAreasOfStudy";
+import GuideCapstone from "@/components/programs/GuideCapstone";
 
 type Props = { params: Promise<{ code: string }> };
 
@@ -35,6 +41,7 @@ export default async function ProgramDetailPage({ params }: Props) {
   if (!program) notFound();
 
   const enriched = getProgramEnrichedByCode(code);
+  const guideArtifact = getDegreeGuideByCode(code);
   const schools = getSchools();
   const hasRelevantResources =
     getOfficialResourcePlacementsForSurface("program_detail", program.program_code)
@@ -65,6 +72,13 @@ export default async function ProgramDetailPage({ params }: Props) {
   const terms = Object.keys(rosterByTerm)
     .map(Number)
     .sort((a, b) => a - b);
+
+  // Guide artifact SP display mode — drives roster presentation
+  const spDisplayMode = guideArtifact?.standard_path?.sp_display_mode ?? null;
+  const spSuppressed = spDisplayMode === "suppressed";
+  const spAdvisorGuided = spDisplayMode === "advisor-guided";
+  const spCaveatMessage =
+    guideArtifact?.quality?.caveat_messages_ui?.[0] ?? null;
 
   return (
     <div
@@ -109,6 +123,13 @@ export default async function ProgramDetailPage({ params }: Props) {
               <p className="text-sm text-slate-400 mt-1">
                 Retired — last seen: {program.last_seen}
               </p>
+            )}
+            {guideArtifact && (
+              <GuideProvenance
+                provenance={guideArtifact.guide_provenance}
+                quality={guideArtifact.quality}
+                anomalyFlags={guideArtifact.anomaly_flags}
+              />
             )}
           </div>
 
@@ -209,9 +230,26 @@ export default async function ProgramDetailPage({ params }: Props) {
           )}
 
           {/* ============================================================
+              GUIDE: CERT SIGNALS (after Learning Outcomes)
+              ============================================================ */}
+          {guideArtifact && guideArtifact.cert_signals.length > 0 && (
+            <GuideCertBlock certSignals={guideArtifact.cert_signals} />
+          )}
+
+          {/* ============================================================
+              GUIDE: FAMILY / RELATED PROGRAMS
+              ============================================================ */}
+          {guideArtifact && guideArtifact.family && (
+            <GuideFamilyPanel
+              family={guideArtifact.family}
+              currentCode={code}
+            />
+          )}
+
+          {/* ============================================================
               COURSE ROSTER
               ============================================================ */}
-          {enriched?.roster && enriched.roster.length > 0 && (
+          {enriched?.roster && enriched.roster.length > 0 && !spSuppressed && (
             <section className="mb-8">
               <div className="flex items-center gap-2 mb-3">
                 <div className="w-1 h-5 bg-blue-600 rounded" />
@@ -222,6 +260,11 @@ export default async function ProgramDetailPage({ params }: Props) {
                   {enriched.roster_source}
                 </span>
               </div>
+              {spAdvisorGuided && (
+                <p className="text-sm text-amber-700 bg-amber-50 border border-amber-200 rounded px-3 py-2 mb-3">
+                  Advisor-sequenced — individual pacing varies.
+                </p>
+              )}
               <div className="space-y-4">
                 {terms.map((term) => (
                   <div key={term}>
@@ -279,6 +322,47 @@ export default async function ProgramDetailPage({ params }: Props) {
                 {latestCus != null && ` Degree total per catalog: ${latestCus} CUs.`}
               </p>
             </section>
+          )}
+
+          {/* ============================================================
+              GUIDE: SUPPRESSED SP CAVEAT (replaces roster section)
+              ============================================================ */}
+          {spSuppressed && enriched?.roster && enriched.roster.length > 0 && (
+            <section className="mb-8">
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-1 h-5 bg-slate-300 rounded" />
+                <h2 className="text-lg font-bold text-slate-800">
+                  Course Roster ({enriched.roster.length} courses)
+                </h2>
+                <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
+                  {enriched.roster_source}
+                </span>
+              </div>
+              <div className="bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-sm text-slate-600">
+                {spCaveatMessage
+                  ? spCaveatMessage
+                  : "Standard sequence data is not available for this program. See Areas of Study below for program content."}
+              </div>
+              <p className="text-xs text-slate-400 mt-3">
+                Total: {enriched.roster.reduce((sum, c) => sum + c.cus, 0)} CUs across{" "}
+                {enriched.roster.length} courses (course list available below in Areas of Study).
+                {latestCus != null && ` Degree total per catalog: ${latestCus} CUs.`}
+              </p>
+            </section>
+          )}
+
+          {/* ============================================================
+              GUIDE: AREAS OF STUDY
+              ============================================================ */}
+          {guideArtifact && guideArtifact.areas_of_study.length > 0 && (
+            <GuideAreasOfStudy areasOfStudy={guideArtifact.areas_of_study} />
+          )}
+
+          {/* ============================================================
+              GUIDE: CAPSTONE
+              ============================================================ */}
+          {guideArtifact && guideArtifact.capstone && (
+            <GuideCapstone capstone={guideArtifact.capstone} />
           )}
 
           {/* Back */}
