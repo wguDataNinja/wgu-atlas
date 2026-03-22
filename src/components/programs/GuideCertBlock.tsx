@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { GuideArtifact } from "@/lib/types";
 
 type Props = {
@@ -5,18 +6,17 @@ type Props = {
 };
 
 export default function GuideCertBlock({ certSignals }: Props) {
-  // Filter to only recommended signals
   const usable = certSignals.filter((s) => s.atlas_recommendation === "use");
   if (usable.length === 0) return null;
 
-  // Deduplicate by cert name, preserving insertion order
-  const seen = new Set<string>();
-  const uniqueCerts: string[] = [];
+  // Group by cert name, collecting all course links per cert.
+  const byCert = new Map<string, { code: string | null; title: string }[]>();
   for (const signal of usable) {
-    if (!seen.has(signal.normalized_cert)) {
-      seen.add(signal.normalized_cert);
-      uniqueCerts.push(signal.normalized_cert);
-    }
+    if (!byCert.has(signal.normalized_cert)) byCert.set(signal.normalized_cert, []);
+    byCert.get(signal.normalized_cert)!.push({
+      code: signal.via_course_code,
+      title: signal.via_course_title,
+    });
   }
 
   return (
@@ -26,17 +26,36 @@ export default function GuideCertBlock({ certSignals }: Props) {
         <h2 className="text-lg font-bold text-slate-800">Industry Certifications</h2>
       </div>
       <div className="bg-emerald-50 border border-emerald-200 rounded-lg px-4 py-3">
-        <p className="text-sm text-slate-700">
-          <span className="font-medium">This program includes coursework aligned with:</span>{" "}
-          {uniqueCerts.map((cert, i) => (
-            <span key={cert}>
-              <span className="inline-block bg-white border border-emerald-300 text-emerald-800 text-xs font-medium px-2 py-0.5 rounded mx-0.5">
+        <p className="text-sm font-medium text-slate-700 mb-2">
+          This program includes coursework aligned with:
+        </p>
+        <ul className="space-y-1.5">
+          {Array.from(byCert.entries()).map(([cert, courses]) => (
+            <li key={cert} className="flex items-baseline gap-2 flex-wrap">
+              <span className="inline-block bg-white border border-emerald-300 text-emerald-800 text-xs font-semibold px-2 py-0.5 rounded shrink-0">
                 {cert}
               </span>
-              {i < uniqueCerts.length - 1 && " "}
-            </span>
+              <span className="text-xs text-slate-500">
+                via{" "}
+                {courses.map((c, i) => (
+                  <span key={c.title}>
+                    {c.code ? (
+                      <Link
+                        href={`/courses/${c.code}`}
+                        className="text-blue-600 hover:underline"
+                      >
+                        {c.title}
+                      </Link>
+                    ) : (
+                      c.title
+                    )}
+                    {i < courses.length - 1 && ", "}
+                  </span>
+                ))}
+              </span>
+            </li>
           ))}
-        </p>
+        </ul>
         <p className="text-xs text-slate-400 mt-2">
           Cert alignment is informational — preparation depends on individual coursework and study.
         </p>

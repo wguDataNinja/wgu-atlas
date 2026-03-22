@@ -307,14 +307,21 @@ export function getOfficialResourcePlacementsForSurface(
 
 const _degreeGuideCache: Record<string, GuideArtifact | null> = {};
 
+// Catalog code → artifact file code aliases.
+// BSSWE in the catalog is the Java track; the artifact was generated as BSSWE_Java.
+const GUIDE_CODE_ALIASES: Record<string, string> = {
+  BSSWE: "BSSWE_Java",
+};
+
 export function getDegreeGuideByCode(code: string): GuideArtifact | null {
   if (code in _degreeGuideCache) return _degreeGuideCache[code];
+  const artifactCode = GUIDE_CODE_ALIASES[code] ?? code;
   const filePath = path.join(
     process.cwd(),
     "data",
     "program_guides",
     "degree_artifacts",
-    `${code}_degree_artifact.json`
+    `${artifactCode}_degree_artifact.json`
   );
   try {
     const raw = fs.readFileSync(filePath, "utf-8");
