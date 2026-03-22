@@ -1,0 +1,244 @@
+{
+  "program_code": "MEDETID",
+  "source_degree_title": "Master of Education, Education Technology and Instructional Design",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.730502Z",
+    "source_version": "202312",
+    "source_pub_date": "8/23/24",
+    "source_page_count": 13,
+    "confidence": "medium"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "A",
+    "aos_status": "usable",
+    "aos_course_count": 9,
+    "caveat_flags": [
+      "capstone_partial_sequence"
+    ],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "Learning Technology",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Assessment and Learning Analytics",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Learning Experience Design Foundations I",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Learning Experience Design Foundations II",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Designing and Facilitating E-Learning Experiences for K–12 Students",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Quality and Impact of K–12 E-Learning Solutions",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Designing E-Learning Experiences for Adults",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Quality and Impact of Adult E-Learning Solutions",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Learning Experience Design Lab",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Identifying Learner Needs and a Research Problem",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Developing an E-Learning Solution and Research Methodology",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Implementing and Evaluating E-Learning Solutions",
+        "cus": 5,
+        "term": 4
+      }
+    ]
+  },
+  "areas_of_study": [
+    {
+      "group": "Foundations of Learning Design",
+      "courses": [
+        {
+          "title": "Learning Technology",
+          "description": "Learning Technology provides opportunities for learners to research emerging learning technologies and see how they are changing current teaching and learning practices. This course also teaches strategies for evaluating learning technologies and their ability to facilitate deep learning and help learners achieve their learning goals, as well as their ability to accommodate learner differences and ensure access for all learners. This course covers techniques that learning experience designers can use to implement technology safely, legally, and ethically in a variety of environments. Additionally, this course explores the types of learning analytics that various technologies generate and the ways in which they can be used to better understand learner progress and optimize the learning experience.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes trends and impacts of emerging learning technologies discussed in current professional literature and professional learning networks.",
+            "The learner evaluates the ability of learning technologies to facilitate the achievement of learning goals, foster deep learning, accommodate individual learning differences, and integrate with learning management systems.",
+            "The learner analyzes potential safety, legal, and ethical issues when implementing and using learning technologies.",
+            "The learner analyzes the learning analytics capabilities of learning technologies in order to optimize learning."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Assessment and Learning Analytics",
+          "description": "Assessment and Learning Analytics focuses specifically on applying assessment and learning analytics practices to gauge learner progress through e-learning products. This course is an introduction to assessment models, including competency and skills-based methods, as well as culturally responsive and Universal Design for Learning (UDL) approaches in assessment, rubric, and feedback design. Finally, this course introduces learning analytics, specifically how they can add an additional layer of validation and visibility on learner progress.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates the alignment between assessment strategies and methods and intended learning goals and objectives.",
+            "The learner determines how learning analytics can be used to understand and optimize learning and the environments in which it occurs.",
+            "The learner evaluates the quality of feedback learners receive when completing online assessment activities.",
+            "The learner recommends assessment modifications that ensure accessibility, remove barriers to fairness, and minimize bias."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Learning Experience Design Foundations I",
+          "description": "Learning Experience Design Foundations I provides an introduction to the field of learning experience design (LxD) and the role of the learning experience designer, which combines best practices from the fields of instructional design and user experience design, with the goal of creating human centered, goal-oriented learning experiences. This first of two foundational courses introduces Design Thinking and instructional design models, processes, and approaches. This course demonstrates how learning theories and instructional frameworks can be applied to facilitate deep learning, motivation, and engagement. This course also teaches the process for analyzing learners and their needs, as well as defining the instructional problem and goals. There are no prerequisites for this learning experience design course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains standard instructional design process models and how incorporating Design Thinking activities into those models can result in more meaningful, human-centered learning experiences.",
+            "The learner examines various approaches to learning, the learning theories that inform those approaches, and the instructional frameworks that can be used to facilitate those approaches.",
+            "The learner conducts a learner analysis that demonstrates empathy for targeted learners and their backgrounds, experiences, and learning levels.",
+            "The learner conducts a needs analysis that defines the instructional problem, the goal of the instruction, existing gaps in knowledge and skills, and a list of learning objectives."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Learning Experience Design Foundations II",
+          "description": "Learning Experience Design Foundations II is the second of two foundational courses that provide the foundational knowledge and skills learning experience designers need to create human-centered, goal-oriented learning experiences. Continuing to the third, fourth, and final phases of the Design Thinking Process, this course teaches the process and importance of ideation as well as rapid prototyping. It includes techniques for creating e-learning storyboards, which communicate content plans and instructional design strategies and “look and feel” mockups, which incorporate visual design principles and usability best practices. Finally, this course introduces usability testing methods and provides guidelines for planning usability tests for e-learning solutions. Learning Experience Design Foundations I is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner ideates solutions to an instructional problem using Design Thinking and practical application of learning theories.",
+            "The learner creates a storyboard that communicates the intended instructional design strategy and content for an elearning solution.",
+            "The learner creates a low-fidelity mockup of an e-learning module that incorporates visual design principles and usability best practices.",
+            "The learner plans a usability test that details how data will be collected and analyzed and how the usability of an instructional solution will be evaluated prior to deployment."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "K-12 Specialty",
+      "courses": [
+        {
+          "title": "Designing and Facilitating E-Learning Experiences for K–12 Students",
+          "description": "Designing and Facilitating E-Learning Experiences for K–12 Students is the first of two courses in the K-12 Learning Designer pathway. This course teaches skills needed to plan units of study that leverage virtual settings and achieve academic standards while promoting digital citizenship. This course provides strategies for explaining essential concepts and demonstrating examples for students in K–12 virtual settings. It also provides strategies for using technology to facilitate meaningful collaboration among K–12 students. Finally, this course explains how to design effective practice and assessment opportunities for K–12 students in virtual settings and provides strategies for ensuring students get the feedback they need to improve learning. Learning Technology is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner plans e-learning units of study informed by technology standards that achieve learning goals while promoting digital citizenship for K–12 students.",
+            "The learner designs e-learning experiences for K–12 students in which essential concepts are explained and examples are demonstrated.",
+            "The learner designs collaborative e-learning experiences to improve learning for K–12 students.",
+            "The learner designs opportunities for assessment and feedback in e-learning experiences for K–12 students."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Quality and Impact of K–12 E-Learning Solutions",
+          "description": "Quality and Impact of K–12 E-Learning Solutions is the second of two courses in the K–12 Learning Designer pathway. This course provides an introduction to the challenges K–12 students face in e-learning environments. It also directs learners to professional and academic resources where they can find current research related to issues and innovations learning experience designers implement to solve challenges to K–12 students in e-learning environments. This course also outlines a quality framework for evaluating e-learning solutions for K–12 students and provides opportunities for learners to apply that framework. Lastly, this course provides examples of how learning analytics can be used to determine the impact of elearning for K–12 students. Through this course, learners will analyze data about K–12 learners to determine the impact an e-learning solution has had on engagement, effort, and learning. This course teaches learners how insights gained from data about K–12 learners can be used to optimize e-learning. Designing E-Learning Experiences for K–12 students is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner recommends solutions to challenges K–12 students experience in e-learning environments.",
+            "The learner plans e-learning solutions for K–12 students that adhere to quality standards for online courses.",
+            "The learner measures the impact of e-learning solutions for K–12 learners based on data about learners’ interactions and the environment in which learning occurs."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Adult Learner Specialty",
+      "courses": [
+        {
+          "title": "Designing E-Learning Experiences for Adults",
+          "description": "Designing E-Learning Experiences for Adults is the first of two courses in the adult learning designer pathway. This course teaches best practices for supporting adult learners as they acquire knowledge and learn new skills and dispositions. This course explains effective approaches to designing learning experiences for adult learners that are collaborative, experiential, and transformative in nature. This course also explores problem-based and competency-based approaches to designing learning experiences for adults. Each evidence-based approach is defined and supported by theory and research. The course also includes best practices for designing each type of learning experience and provides real examples of each approach. Learning Technology is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner designs inclusive collaborative e-learning experiences for adults.",
+            "The learner designs inclusive experiential and transformative e-learning experiences for adults.",
+            "The learner designs inclusive problem-based e-learning experiences for adults.",
+            "The learner designs inclusive competency based, self-directed e-learning experiences for adults."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Quality and Impact of Adult E-Learning Solutions",
+          "description": "Quality and Impact of Adult E-Learning Solutions is the second of two courses in the Adult Learning Designer pathway. This course introduces the issues learning experience designers often encounter when designing e-learning experiences for adults. It also directs learners to resources about current research related to issues and innovations in designing online learning experiences for adults. This course also outlines a quality framework for evaluating e-learning solutions for adults and provides opportunities for learners to apply that framework. Lastly, this course provides examples of how learning analytics can be used to determine the impact of e-learning solutions for adults. Learners will analyze dashboard data and determine the impact an e-learning solution has had on learner engagement, effort, and learning and how insights gained from data about learners and the learning experience can be used to optimize learning and the environments in which it occurs. Designing E-Learning Experiences for Adults is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner recommends solutions to challenges adult learners experience in e-learning environments.",
+            "The learner plans adult e-learning solutions that adhere to quality standards for online courses.",
+            "The learner measures the impact of e-learning solutions for adult learners based on data about adult learners' interactions and the environment in which learning occurs."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Design Lab",
+      "courses": [
+        {
+          "title": "Learning Experience Design Lab",
+          "description": "Learning Experience Design Lab requires learners to apply foundational learning experience design strategies to create an instructional solution in the form of an e-learning module. In the course, learners will identify an instructional problem and then design and develop a functional prototype of an e-learning solution. Learning Experience Design Lab provides an environment for learners to apply foundational knowledge and skills, experiment with various e-learning design tools and techniques, provide helpful quality feedback to peers, and receive quality feedback from peers about their own e-learning module. Finally, Learning Experience Design Lab teaches the importance of obtaining user feedback and incorporating that feedback to continuously improve the learning experience. Degree-seeking learners must complete the Learning Experience Design foundations series and two pathway courses prior to completing this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates an e-learning experience that addresses a specific instructional problem.",
+            "The learner provides quality feedback and recommendations for improving an e-learning experience based on peer evaluation.",
+            "The learner plans how to implement feedback and recommendations to improve an e-learning experience."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": {
+    "present": true,
+    "partial": true,
+    "title": "Identifying Learner Needs and a Research Problem",
+    "description": "Identifying Learner Needs and a Research Problem is the first of three capstone courses in the program. This course provides an introduction to design-based research and focuses specifically on the first two phases of the design-based research process: identifying and analyzing the learning problem and reviewing the literature. This course also requires that learners continue applying Design Thinking as they empathize with learners and define the instructional problem that their research will help them understand and address. Finally, this course teaches learners how to conduct a literature review to determine what research has already been done and what is unknown about their research topic. Learning Experience Design Lab is a prerequisite for this course.",
+    "competency_bullets": [
+      "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+      "The learner defines an instructional problem based on learner analysis.",
+      "The learner defines the purpose of research and the questions the research sets out to answer.",
+      "The learner conducts a literature review to inform potential learning solutions for an instructional problem.",
+      "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+      "The learner ideates multiple potential solutions to an instructional problem.",
+      "The learner creates a fully functional e-learning module that addresses an instructional problem.",
+      "The learner plans the research methodology that will be used to evaluate the effectiveness of a learning solution.",
+      "The learner plans how to ethically collect data about learners that will inform design decisions.",
+      "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+      "The learner plans how to improve a Design-Based Research methodology.",
+      "The learner analyzes data collected during their research study.",
+      "The learner discusses research findings, contributions, and recommendations after conducting a design-based action research study."
+    ],
+    "competency_available": true
+  },
+  "cert_signals": [],
+  "family": null,
+  "anomaly_flags": [
+    "ANOM-007"
+  ]
+}

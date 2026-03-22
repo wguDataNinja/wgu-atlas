@@ -1,0 +1,665 @@
+{
+  "program_code": "BSHHS",
+  "source_degree_title": "Bachelor of Science, Health and Human Services",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.729698Z",
+    "source_version": "202411",
+    "source_pub_date": "8/1/24",
+    "source_page_count": 19,
+    "confidence": "high"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "A",
+    "aos_status": "usable",
+    "aos_course_count": 34,
+    "caveat_flags": [],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "Learning Strategies in Higher Education",
+        "cus": 4,
+        "term": 1
+      },
+      {
+        "title": "Composition: Writing with a Strategy",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Introduction to Communication: Connecting with Others",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Health, Fitness, and Wellness",
+        "cus": 4,
+        "term": 1
+      },
+      {
+        "title": "Introduction to Systems Thinking for Health Professionals",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Introduction to Health and Human Services",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Healthcare Ecosystems",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Introduction to Biology",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Critical Thinking: Reason and Evidence",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Team Dynamics",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Introduction to Psychology",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Human Growth and Development",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Applied Healthcare Statistics",
+        "cus": 4,
+        "term": 4
+      },
+      {
+        "title": "History of Healthcare in America",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Care for Individuals and Families",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Fundamentals of Anatomy and Physiology",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Medical Terminology",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Cultural Awareness and Ethics",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Evidence-Based Practice for Health and Human Services",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Health Equity and Social Determinants of Health",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Introduction to Pharmacology",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Introduction to Gerontology",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "End-of-Life Care",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Career and Lifelong Learning",
+        "cus": 4,
+        "term": 6
+      },
+      {
+        "title": "Introduction to Epidemiology",
+        "cus": 3,
+        "term": 7
+      },
+      {
+        "title": "Community and Public Health",
+        "cus": 4,
+        "term": 7
+      },
+      {
+        "title": "Understanding Substance Abuse & Addiction",
+        "cus": 3,
+        "term": 7
+      },
+      {
+        "title": "Healthcare Values and Ethics",
+        "cus": 3,
+        "term": 7
+      },
+      {
+        "title": "Mental Health Awareness and Education",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Financial Resource Management and Healthcare Reimbursement",
+        "cus": 4,
+        "term": 8
+      },
+      {
+        "title": "Health Literacy for the Client and Family",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Models of Care and Healthcare Trends",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Community Relations and Leadership",
+        "cus": 3,
+        "term": 9
+      },
+      {
+        "title": "Health and Human Services Professional Field Experience",
+        "cus": 3,
+        "term": 9
+      },
+      {
+        "title": "Health & Human Services Professional Capstone",
+        "cus": 3,
+        "term": 9
+      }
+    ]
+  },
+  "areas_of_study": [
+    {
+      "group": "Foundations of Success",
+      "courses": [
+        {
+          "title": "Learning Strategies in Higher Education",
+          "description": "Learning Strategies in Higher Education provides students with a toolbox of skills that will support student academic growth as they advance in their academic journey. Students will be introduced to the WGU Library; how to use it and best practices for research strategies. Students will learn how to be professional in written communication and how to correctly use current APA format. In this course, students also will learn about setting goals, time-management, study strategies, making and keeping appointments, professional decorum, and test-taking skills. Learning these skills, strategies, and methods will establish an academic foundation for students to be successful in higher education. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies self-directed strategies to advance organizational skills and lifelong learning.",
+            "The learner applies research strategies and technology literacy for gathering information from reliable sources.",
+            "The learner applies critical thinking and cultural awareness in writing.",
+            "The learner applies professionalism to problem-solving strategies in a given context."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "General Education",
+      "courses": [
+        {
+          "title": "Composition: Writing with a Strategy",
+          "description": "Welcome to Composition: Writing with a Strategy! In this course, you will focus on three main topics: understanding purpose, context, and audience, writing strategies and techniques, and editing and revising. In addition, the first section, will offer review on core elements of the writing process, cross-cultural communication, as well as working with words and common standards and practices. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the seven competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner writes with purpose for a given context and target audience.",
+            "The learner incorporates writing strategies and techniques for written communication.",
+            "The learner constructs a written document with correct format, style, structure, and grammar.",
+            "The learner formulates a strategy for editing and revising written text.",
+            "The learner composes constructive feedback of written texts."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Communication: Connecting with Others",
+          "description": "Welcome to Introduction to Communication: Connecting with Others! It may seem like common knowledge that communication skills are important, and that communicating with others is inescapable in our everyday lives. While this may appear simplistic, the study of communication is actually complex, dynamic, and multifaceted. Strong communication skills are invaluable to strengthening a multitude of aspects of life. Specifically, this course will focus on communication in the professional setting, and present material from multiple vantage points, including communicating with others in a variety of contexts, across situations, and with diverse populations. Upon completion, you will have a deeper understanding of both your own and others’ communication behaviors, and a toolbox of effective behaviors to enhance your experience in the workplace.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements appropriate communication styles based on audience and setting.",
+            "The learner uses communication strategies for managing conflict.",
+            "The learner uses communication strategies to influence others."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Health, Fitness, and Wellness",
+          "description": "Health, Fitness, and Wellness focuses on the importance and foundations of good health and physical fitness—particularly for children and adolescents—addressing health, nutrition, fitness, and substance use and abuse.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate identifies the influence of disease, fitness, and lifestyle on the body.",
+            "The graduate identifies the principles of nutrition and the components of a healthy diet.",
+            "The graduate identifies factors that influence mental, emotional, and social wellness.",
+            "The graduate identifies the application of the core competencies of social and emotional learning."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Systems Thinking for Health Professionals",
+          "description": "Introduction to Systems Thinking for Health Professionals provides learners with the skills required to engage in a holistic systems-based approach to analyzing complex problems and solutions. This course introduces the foundational concepts and principles of systems thinking and provides opportunities to use a systems thinking approach to analyze and evaluate real-world case studies. The course will culminate with using systems thinking to develop a solution to an authentic complex problem. This course has no prerequisites, but general education math (C955 or C957) is preferred. Because the course is self-paced, learners may move through the material as quickly or as slowly as needed, with the goal of demonstrating proficiency in the five competencies covered in the final assessment. If learners have no prior knowledge of this material, they can expect to spend 30 to 40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies the basic principles and foundational theory of systems thinking to a scenario.",
+            "The learner analyzes complex problems and solutions using a systems thinking methodology.",
+            "The learner designs a solution to a complex problem using systems thinking."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Critical Thinking: Reason and Evidence",
+          "description": "In this course you will learn key critical thinking concepts and how to apply them in the analysis and evaluation of reasons and evidence. The course examines the basic components of an argument, the credibility of evidence sources, the impact of bias, and how to construct an argument that provides good support for a claim. The course consists of an introduction and four major sections. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the four competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates the quality of an argument.",
+            "The learner evaluates evidence based on source credibility.",
+            "The learner evaluates bias and its impact.",
+            "The learner makes claims based on evidence."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Psychology",
+          "description": "In this course, students will develop an understanding of psychology and how it helps them better understand others and themselves. Students will learn general theories about psychological development, the structure of the brain, and how psychologists study behavior. They will gain an understanding of both normal and disordered psychological behaviors, as well as general applications of the science of psychology in society (such as personality typing and counseling).",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains the biological perspectives of psychology.",
+            "The learner explains the theories of learning and memory.",
+            "The learner explains the concepts of personality development and social psychology.",
+            "The learner identifies psychological disorders and treatment methods.",
+            "The learner explains the foundations of psychology."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Human Growth and Development",
+          "description": "This is Human Growth and Development, a three-module course that examines the entire human lifetime, from conception to death. Presented chronologically, the course focuses on three key areas: physical, cognitive, and psychosocial growth, along with other important issues such as cultural influences, emotions, and resilience. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the four competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains physical, cognitive, and psychosocial development from conception through early childhood.",
+            "The learner explains the influence of emotions and cultural perspectives and practices on psychosocial development and behavior from birth through early childhood.",
+            "The learner explains physical, cognitive, and psychosocial development from middle childhood through adolescence.",
+            "The learner explains the influence of emotions on psychosocial development and behavior from middle childhood through adolescence.",
+            "The learner explains physical, cognitive, and psychosocial development from early adulthood to the end of life.",
+            "The learner explains the influence of emotions on psychosocial development and behavior from early adulthood to the end of life."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Applied Healthcare Statistics",
+          "description": "Applied Healthcare Probability and Statistics is designed to help develop competence in the fundamental concepts of basic mathematics, introductory algebra, and statistics and probability. These concepts include basic arithmetic with fractions and signed numbers; introductory algebra and graphing; descriptive statistics; regression and correlation; and probability. Statistical data and probability are now commonplace in the healthcare field. This course will help candidates make informed decisions about which studies and results are valid, which are not, and how those results affect your decisions. This course will give candidates background in what constitutes sound research design and how to appropriately model phenomena using statistical data. Additionally, this course guides candidates in calculating simple probabilities based on events which occur in the healthcare profession. This course will prepare candidates for studies at WGU, as well as in the healthcare profession.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies the operations, processes, and procedures of basic arithmetic to solve expressions.",
+            "The graduate applies the operations, processes, and procedures of fractions, decimals, and percentages to evaluate quantitative expressions.",
+            "The graduate applies the operations, processes, and procedures of basic algebra to evaluate quantitative expressions, and to solve equations and inequalities.",
+            "The graduate evaluates categorical and quantitative data pertaining to a single variable using appropriate graphical displays and numerical measures.",
+            "The graduate evaluates the relationship between two variables through interpretation of visual displays and numerical measures.",
+            "The graduate evaluates the relationship between two quantitative variables through correlation and regression.",
+            "The graduate applies principles and methods of probability-based mathematics to explain and solve problems."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Fundamentals of Anatomy and Physiology",
+          "description": "Fundamentals of Anatomy and Physiology provides an overview of the structures and functions of organs and systems of the human body. This course will explore how the parts of the body systems work together to produce movement, transport nutrients, eliminate wastes, protect vital tissues and organs, regulate bodily functions, and support reproduction and growth, through videos, readings, exploratory learning, and practice activities.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes the structures and functions of the muscular, skeletal, and nervous systems and their roles in movement.",
+            "The learner describes the structures and functions of the respiratory, cardiovascular, urinary, and digestive systems and their roles transporting nutrients and eliminating waste from the body.",
+            "The learner describes the structures and functions of the immune system, integumentary system, and special senses and their roles in protecting the body and interacting with the environment.",
+            "The learner describes the structures and functions of the endocrine and reproductive systems and their roles in reproduction and maintaining homeostasis within the body."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Health and Human Services",
+      "courses": [
+        {
+          "title": "Introduction to Health and Human Services",
+          "description": "Introduction to Health and Human Services explores representative roles and responsibilities of health and human service professionals and key governmental entities involved in Health and Human Services delivery. The course also examines the importance of understanding clients’ illnesses and disabilities, building trust with clients, and engagement models that promote client outcomes. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains the roles and responsibilities of health and human service delivery.",
+            "The learner examines examples of acute and chronic illness and types of disability.",
+            "The learner analyzes relationship-building techniques for establishing trust with a client.",
+            "The learner applies engagement models for motivating clients and families toward shared decision-making."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "History of Healthcare in America",
+          "description": "History of Healthcare in America will examine individuals such as Henrietta Lacks, Ryan White, Clara Barton, and Katie Beckett, who influenced healthcare in the United States, from its inception to the present day. This course examines how specific individuals and their contributions influenced healthcare delivery and the continued evolution of healthcare, teaching from a system or a value-based care perspective. The course also focuses on the way healthcare interacted with culture, politics, and society throughout U.S. history and evaluates current challenges we face in the U.S. healthcare system today. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner examines the historical evolution of access to quality healthcare in the United States.",
+            "The learner examines how individuals and historical events influenced advancements in healthcare.",
+            "The learner examines historical challenges in healthcare and their impact to quality healthcare today."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Evidence-Based Practice for Health and Human Services",
+          "description": "Evidence-Based Practice for Health and Human Services prepares the learner to apply evidence-based practice (EBP) to inform healthcare recommendations in out-patient, organizational, and other public health settings. Learners will be introduced to an EBP framework to guide them through the steps of EBP using real world scenarios. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner identifies foundational components of evidence-based practice to enhance the health and wellbeing of a population.",
+            "The learner analyzes reliable evidence to inform decisions to achieve healthcare goals.",
+            "The learner applies evidence-based practice (EBP) to inform recommendations to achieve healthcare goals."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Gerontology",
+          "description": "Introduction to Gerontology will introduce learners to health issues that are typically associated with the older adult population so they can become familiar with health challenges this population may face. The learners will gain an understanding of the effects that policy and legislation have on the older adult population. Emphasis is placed on the importance of maintaining the dignity of older adults by focusing on cultural and communication needs, and by collaborating on care with older adults, families, and caregivers. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner identifies the healthcare needs of older adults for appropriate care and desired outcomes.",
+            "The learner applies personalized communication techniques for the older adult population.",
+            "The learner examines the policy and legislative impact on older adults in healthcare systems."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "End-of-Life Care",
+          "description": "End-of-Life Care focuses on the Connected Care model as it applies to the final stage of life. This course will explore ethnic and cultural factors that affect an individual’s response to death and dying. This course will cover planning and implementing ideal interventions to help individuals, families, and groups cope and agree on a common care goal. This course will also discuss empathy and compassion in healthcare. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner discusses components of end-of-life care with clients, patients, and families.",
+            "The learner analyzes models and interventions for end-of-life care.",
+            "The learner demonstrates compassion and empathy in the administration of health and human services."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Epidemiology",
+          "description": "Introduction to Epidemiology provides an overview of the determinants of communicable, viral, and chronic diseases. Students also will study various other conditions and the impact to public health. Using problem-based inquiry, students will analyze real-world public health problems by examining the distribution and patterns of data, selecting the methods to gather evidence, interpreting the information, and analyzing the trends to support decision making. There are no prerequisites to this course, but students are highly encouraged to adhere to the standard path, whose content is scaffolded to enhance the learning experience of this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains the determinants of diseases and conditions and their implications among individuals, groups, and communities from an epidemiological perspective.",
+            "The learner applies logical reasoning for collecting evidence to solve epidemiological problems.",
+            "The learner analyzes disease outbreaks and the impact on public health."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Community and Public Health",
+          "description": "Community and Public Health provides learners with an understanding of the benefits community health offers individuals and families. The course also will identify barriers that will impact health and healthcare access, leading to improved community health. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner identifies aspects of Community and Public Health.",
+            "The learner evaluates barriers to accessing health supports.",
+            "The learner evaluates resources for addressing a community health issue."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Healthcare Management",
+      "courses": [
+        {
+          "title": "Healthcare Ecosystems",
+          "description": "Healthcare Ecosystems examines how the aims and elements of the healthcare ecosystem can affect client and patient outcomes. The course explores the main aims of healthcare access, affordability, and quality and how regulators, providers, producers, and funders (such as payors or purchasers) support those aims. The course also examines insurance regulations and reimbursement procedures that affect healthcare access and affordability and decision-making processes that support affordable, quality care for clients and communities. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner examines how elements of the healthcare ecosystem relate to accessible, affordable, quality care for clients.",
+            "The learner identifies insurance regulations and reimbursement procedures for affordable quality care.",
+            "The learner applies processes for the delivery of efficient and quality healthcare services."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Care for Individuals and Families",
+          "description": "Care for Individuals and Families focuses on the holistic care of individuals, families, and populations with multifaceted healthcare needs. This course improves critical thinking and interdisciplinary communication skills to provide information to individuals or groups in a variety of settings. The focus of the course is on managing the transition of an individual, family, or group through a variety of healthcare settings, which can include acute care hospitals, extended stay facilities, ambulatory care clinics, home care, outreach, or wellness. This course helps students develop effective professional communication skills and appropriate behaviors to ensure an individual, family, or group is successful in meeting its healthcare goals. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner examines the dimensions of wellness in individuals and families for improved health outcomes.",
+            "The learner advocates for individuals and families using ethical standards.",
+            "The learner plans for the coordination of services for clients."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Medical Terminology",
+          "description": "Medical Terminology focuses on the basic components of medical terminology and how terminology is used when discussing various body structures and systems. Proper use of medical terminology is critical for accurate and clear communication among medical staff, health professionals, and patients. In addition to the systems of the body, this course will discuss immunity, infections, mental health, and cancer.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate accurately identifies primary and secondary word parts and forms of basic medical terms.",
+            "The graduate accurately identifies medical terms associated with the urinary system in context with anatomical structures and physiological and pathophysiological functions of the human body.",
+            "The graduate accurately identifies medical terms associated with reproductive systems in context with anatomical structures and physiological and pathophysiological functions of the human body.",
+            "The graduate accurately identifies medical terms associated with body structure in context with anatomical structures and physiological and pathophysiological functions of the human body.",
+            "The graduate accurately identifies medical terms associated with the integumentary system in context with anatomical structures and physiological and pathophysiological functions of the human body.",
+            "The graduate accurately identifies medical terms associated with the special senses of the eye and ear in context with anatomical structures and physiological and pathophysiological functions of the human body.",
+            "The graduate accurately identifies medical terms associated with the musculoskeletal system in context with anatomical structures and physiological and pathophysiological functions of the human body.",
+            "The graduate accurately identifies medical terms associated with the digestive system in context with anatomical structures and physiological and pathophysiological functions of the human body.",
+            "The graduate accurately identifies medical terms associated with the cardiovascular and lymphatic systems in context with anatomical, physiological and pathophysiological functions related to immunity and infections of the human body.",
+            "The graduate accurately identifies medical terms associated with the respiratory system in context with anatomical structures and physiological and pathophysiological functions of the human body.",
+            "The graduate accurately identifies medical terms associated with the endocrine and nervous systems in context with anatomical structures and physiological and pathophysiological functions of the human body."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Healthcare Values and Ethics",
+          "description": "Healthcare Values and Ethics requires students to synthesize an interdisciplinary approach to decision-making as it applies to health and human services. This course explores the contemporary issues facing health professionals, which include ethics, regulations and compliance, and handling protected healthcare information. In this course, learners will develop their ability to make ethical decisions in collaborative care environments and working within a team. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies ethical principles when making decisions in a collaborative care environment.",
+            "The learner applies ethical decision-making strategies to support a compliant and safe work environment.",
+            "The learner identifies Health Information Portability and Accountability Act (HIPAA) compliant actions regarding Protected Health Information (PHI)."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Financial Resource Management and Healthcare Reimbursement",
+          "description": "Financial Resource Management and Healthcare Reimbursement examines financial practices and reimbursement types within the healthcare industry. This course covers the analysis of regulations required for health reimbursements. This course also covers the evaluation of effective revenue cycle management, focusing on the organization’s financial stability. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner discusses components of managing affordable quality care with stakeholders.",
+            "The learner analyzes organizational cost and financial issues for healthcare reimbursement.",
+            "The learner analyzes financial management processes and revenue cycle management."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Health Literacy for the Client and Family",
+          "description": "Health Literacy for the Client and Family helps students recognize the importance of health literacy in overcoming healthcare barriers and creating patient-focused changes through family and patient empowerment. This course demonstrates how education, research, and technology all integrate and serve as a foundation for students as they create effective resources to improve health literacy for patients and families. This course helps students become advocates for their patients and their patients’ families. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner identifies health literacy issues for diverse populations.",
+            "The learner identifies the rights and community health needs of individuals and groups.",
+            "The learner applies strategies to support clients in self-advocacy to make health-related decisions."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "General Science Content",
+      "courses": [
+        {
+          "title": "Introduction to Biology",
+          "description": "This course is a foundational introduction to the biological sciences. The overarching theories of life from biological research are explored as well as the fundamental concepts and principles of the study of living organisms and their interaction with the environment. Key concepts include how living organisms use and produce energy; how life grows, develops, and reproduces; how life responds to the environment to maintain internal stability; and how life evolves and adapts to the environment.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes the characteristics and classifications of living organisms.",
+            "The graduate analyzes the basic chemical composition of cells and the basic processes that happen at the cellular level.",
+            "The graduate analyzes different types of cells based on their structures and biological functions.",
+            "The graduate analyzes the biological basis for and patterns of heredity and gene expression.",
+            "The graduate analyzes inter-dependencies of organisms and their environments."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Psychology",
+      "courses": [
+        {
+          "title": "Team Dynamics",
+          "description": "Team Dynamics explores interpersonal communication strategies, collaborative team interactions methods, and problemsolving techniques to promote effective communication and improve quality outcomes in a professional environment. In this course, students will apply psychologically-sound approaches for resolving conflicts, allowing them to navigate challenging workplace disagreements and personalities. Students in this course will apply their skills to various situations. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies strategies that influence team dynamics and improve outcomes.",
+            "The learner applies interpersonal communication skills for effective communication within a team environment.",
+            "The learner applies conflict resolution and problem-solving strategies for improved team collaboration."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Cultural Awareness and Ethics",
+          "description": "Cultural Awareness and Ethics provides students with the understanding of what it means to have personal, explicit and implicit cultural biases and how these can affect interpersonal interactions. The course will explore strategies for responding to personal biases and for promoting cultural awareness and ethical actions. Through critical readings, videos, and interactive activities, the student will gain knowledge in these essential subjects. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the impact of explicit and implicit biases.",
+            "The learner applies ethical strategies for responding to personal biases.",
+            "The learner proposes strategies for promoting cultural awareness and ethical responsibility."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Health Equity and Social Determinants of Health",
+          "description": "Health Equity and Social Determinants of Health examines the social determinants of health (SDOH) as underlying factors that contribute to health inequity in populations and communities and their effect on health outcomes. This course will help students understand the evidence-based strategies and approaches that promote health equity. D581 Introduction to Research Methods is a prerequisite to this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains the social determinants of health that contribute to health disparities.",
+            "The learner analyzes how social determinants of health impact health outcomes of a population.",
+            "The learner analyzes strategies to improve health equity for a population."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Career and Lifelong Learning",
+          "description": "Career and Lifelong Learning supports students in taking their first steps in a lifelong journey of development as a professional. Students will explore career pathways, plan how best to achieve their desired professional future, and take tangible steps toward that future by creating career growth materials that adhere to today’s best practices. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner demonstrates foundational knowledge of self and of career pathways and uses that knowledge to identify potential career goals.",
+            "The learner uses specific career goal research, academic planning, and a self-analysis of their own candidacy in relation to that goal to build a career action plan that serves as a pathway to that goal.",
+            "The learner creates materials for the job application process.",
+            "The learner demonstrates their professional identity through practice for professional interactions."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Understanding Substance Abuse & Addiction",
+          "description": "Understanding Substance Abuse and Addiction provides an overview of substance abuse causes, impact, prevention, and treatment. Students will understand the signs and symptoms of substance abuse and addiction and its impact on individuals, groups, and the community. Students will analyze relevant factors that initiate and reinforce substance abuse and addiction and describe evidence-based strategies for prevention, intervention, and treatment. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes substance abuse and its impact on individuals and communities.",
+            "The learner analyzes factors relevant to the initiation and reinforcement of substance abuse and addiction.",
+            "The learner describes evidence-based strategies for substance abuse prevention, intervention, and treatment."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Mental Health Awareness and Education",
+          "description": "Mental Health Awareness and Education is designed to help students recognize mental disorders, improve access to mental health services, support recovery, and lower the rate of death, disease, and disability among those with mental illnesses. Topics include mental health education programs, mental health stigmas, cultural diversity in mental health, and barriers to mental health care and strategies to overcome those barriers. Students will analyze these topics from the vantage point of a community mental health perspective. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the relationship between mental health and society.",
+            "The learner recommends an evidence-based strategy to provide mental health education services.",
+            "The learner proposes a pathway to equitable access to mental health care."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Health Sciences",
+      "courses": [
+        {
+          "title": "Introduction to Pharmacology",
+          "description": "Introduction to Pharmacology will introduce learners to medication and supplement regulations and safety protocols. It provides an overview of the use, benefits, effects, and contraindications of commonly used drugs to treat conditions of the cardiovascular, respiratory, endocrine, nervous, and renal body systems. It also explores the types of anti-infective, antineoplastic, psychotropic drugs, and dietary supplements and their effects on the body.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner examines medication safety protocols and regulations.",
+            "The learner identifies the common drugs used in the treatment of acute and chronic conditions of cardiac, respiratory, gastrointestinal, endocrine, and renal systems, and their effects.",
+            "The learner identifies anti-infective drugs, antineoplastic drugs, psychotropic drugs, and supplements, and their effects on the body."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Leadership and Management Specialty",
+      "courses": [
+        {
+          "title": "Models of Care and Healthcare Trends",
+          "description": "Models of Care and Healthcare Trends is a course for health professionals in a variety of roles in the health and human services industry, which examines the unique characteristics of healthcare models in the United States and emerging trends created by social and political drivers. The course explores the evolution of healthcare models from fragmented systems to cohesive, quality-centric, and client-focused systems. The course also focuses on innovative trends, such as access to care, telemedicine, and subsequent shifts in the continuum of care as it relates to patient or client outcomes. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner examines how current trends and models have transformed healthcare in the United States.",
+            "The learner analyzes client-focused health and human service models and trends.",
+            "The learner evaluates solutions for current healthcare-related issues within client focused systems."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Community Relations and Leadership",
+          "description": "Community Relations and Leadership focuses on analyzing community health and human services’ needs to create change. As emerging leaders, students will learn to engage in collaborative approaches with various stakeholders to achieve positive outcomes. This course helps students develop their abilities to interpret community health needs assessments, make decisions, and bring stakeholders together to advance access to health and human services. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates community services and resources for positive health and human services outcomes.",
+            "The learner demonstrates problem solving and decision-making in a given context.",
+            "The learner develops initiatives with stakeholders to advance access to health and human services."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Professional Practice Experience",
+      "courses": [
+        {
+          "title": "Health and Human Services Professional Field Experience",
+          "description": "The Health and Human Services Professional Field Experience course provides students with real-world experiences as a health services professional via the virtual world of simulation. The course allows students to conduct their field experience in a variety of different contexts they will find themselves, depending on their professional career choices in the health services’ industry. All program coursework leads to this course. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information.",
+          "competency_bullets": [
+            "The learner collaborates with healthcare team members, clients, and family members for achieving mutually acceptable care plan goals.",
+            "The learner develops a plan for achieving goals.",
+            "The learner demonstrates problem solving skills using empathy with clients or patients."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": {
+    "present": true,
+    "partial": false,
+    "title": "Health & Human Services Professional Capstone",
+    "description": "Health Services Professional Capstone will provide learners the opportunity to demonstrate their ability to communicate in a professional manner that supports high quality, safe client services. Learners will also engage in career and professional development within the health and human services industry. All program coursework leads to this course.",
+    "competency_bullets": [
+      "The learner demonstrates the comprehensive knowledge and skills gained throughout the degree program to use in the health and human services industry.",
+      "The learner demonstrates the ability to communicate in a professional manner that supports achieving high-quality, safe client care.",
+      "The learner analyzes knowledge and skills necessary for career selection and development within the health and human services industry."
+    ],
+    "competency_available": true
+  },
+  "cert_signals": [],
+  "family": null,
+  "anomaly_flags": []
+}

@@ -1,0 +1,199 @@
+{
+  "program_code": "MHA",
+  "source_degree_title": "Master of Healthcare Administration",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.730511Z",
+    "source_version": "202602",
+    "source_pub_date": "10/2/2025",
+    "source_page_count": 0,
+    "confidence": "high"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "A",
+    "aos_status": "usable",
+    "aos_course_count": 9,
+    "caveat_flags": [],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "Health Services Research",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Healthcare Management",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Healthcare Law and Ethics",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Data Analysis for Healthcare Decisions",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Transforming Healthcare Through Technology",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Healthcare Quality",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Risk Management and Compliance",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Healthcare Economics",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Resource Management and Performance",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "MHA Capstone",
+        "cus": 4,
+        "term": 4
+      }
+    ]
+  },
+  "areas_of_study": [
+    {
+      "group": "Healthcare Administration",
+      "courses": [
+        {
+          "title": "Health Services Research",
+          "description": "Health Services Research provides an in-depth introduction to the field of healthcare research focusing on the systematic investigation of how healthcare services are accessed, the quality of care provided, and the outcomes of care. It is designed to equip learners with the knowledge and skills needed to critically evaluate healthcare systems, policies, and practices that inform health services delivery and policy decisions.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner compiles reputable research regarding contemporary trends in healthcare.",
+            "The learner evaluates the current healthcare landscape for future trends, opportunities, and challenges.",
+            "The learner synthesizes research to inform an audience about the challenges, trends, and opportunities in healthcare."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Healthcare Management",
+          "description": "Healthcare Management explores the function, structure, and behavior of a wide variety of healthcare organizations (nonprofit, start-up hospitals, ACHE, etc.). It covers strategic planning, change management, corporate responsibility and broad managerial skill (critical thinking, adaptability, and decision-making) development within the context of healthcare. The course will focus on how organizations function and how people function within organizations (roles in the healthcare field, culture). This course prepares students to apply organizational leadership and behavior, principles of organizational culture development, techniques for building and leading teams, and conflict resolution strategies to support organizational goals. As learners are introduced to the skills and behaviors needed to lead a healthcare organization, they will consider how they can cultivate an organizational leadership style that influences an inclusive organizational culture and fosters innovation. There are no prerequisites to the course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies collaborative approaches to align the mission, vision, and goals to improve organizational outcomes.",
+            "The learner evaluates the characteristics of effective organizational leadership strategies.",
+            "The learner evaluates the components of a strategic plan."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Healthcare Law and Ethics",
+          "description": "Healthcare Law and Ethics provides learners with a comprehensive understanding of the legal and ethical principles that govern the healthcare industry. This course explores the complex interplay between law, ethics, and healthcare practices. Learners will gain knowledge and analytical skills needed to navigate legal and ethical challenges in various healthcare settings. Learners will be prepared to address real-world issues related to patient rights, healthcare policy, professional conduct, and the legal responsibilities of healthcare providers and organizations. Learners will complete an ethics case study as a summative project. There are no prerequisites to the course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes ethical principles in healthcare.",
+            "The learner assesses implications of healthcare laws and ethics on healthcare policy.",
+            "The learner examines various aspects of healthcare law and the regulatory framework that governs the healthcare industry."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Data Analysis for Healthcare Decisions",
+          "description": "Data Analysis for Healthcare Decisions is designed to introduce learners to the fundamental principles and techniques of data analysis within the context of healthcare decision-making. This course aims to prepare learners to analyze healthcare data, interpret findings, and apply these insights to improve patient outcomes, optimize healthcare operations, and inform evidence-based decision-making. There are no prerequisites to the course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies the concepts of data, statistics, databases, statistical modeling, and data management to healthcare management.",
+            "The learner forecasts the likelihood from current state or historical data to plan and inform evidence-based decision-making.",
+            "The learner uses appropriate tools and technologies to analyze data to support the provision of high-quality and efficient care."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Transforming Healthcare Through Technology",
+          "description": "Transforming Healthcare Through Technology explores how information technology (IT) is utilized in healthcare settings to improve patient care, operational efficiency, and decision-making processes. The course includes the integration of IT systems with healthcare management principles to support organizational goals and regulatory requirements (compliance with HIPAA). Topics also include electronic health records (EHR), mobile applications, and digital health technologies. Healthcare cybersecurity, including threats and vulnerabilities specific to healthcare IT systems, will be emphasized. Learners also explore emerging technologies such as artificial intelligence (AI), machine learning, blockchain, and their applications in healthcare. There are no prerequisites to the course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes health information technologies and applications.",
+            "The learner applies healthcare management principles to integrate HIT systems that support organizational goals and regulatory requirements.",
+            "The learner evaluates a healthcare information technology strategy to improve patient care, operational efficiency, and decision-making processes."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Healthcare Quality",
+          "description": "The Healthcare Quality course equips learners with the knowledge and skills necessary to evaluate, measure, and enhance the quality of healthcare services. By combining theoretical foundations with practical applications, the course prepares learners to lead impactful quality improvement initiatives, analyze healthcare outcomes, and implement strategies that promote patient safety, satisfaction, and overall care excellence. Through the use of performance metrics, learners will design a comprehensive quality improvement project tailored to a healthcare organization's quality improvement plan. This course fosters critical thinking and leadership, enabling participants to drive meaningful change in healthcare quality and patient outcomes.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies quality tools to healthcare reimbursement and reporting data.",
+            "The learner designs a quality improvement project for a healthcare organization that includes engaging stakeholders, measuring outcomes, and communicating results.",
+            "The learner explores different methods used to improve quality outcomes."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Risk Management and Compliance",
+          "description": "Risk Management and Compliance examines risk exposure, response, and risk mitigation within healthcare organizations. Students will explore the regulatory environment, risk assessment methodologies, and strategies for mitigating risk. Topics should include healthcare policy, patient satisfaction, legislation, and regulations. Applying risk management and compliance frameworks, students will conduct a risk assessment and develop sustainable corrective action plans to maintain compliance with regulatory requirements. There are no prerequisites to the course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes healthcare organizational adverse events.",
+            "The learner creates a corrective action plan.",
+            "The learner evaluates a healthcare organization’s survey readiness."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Healthcare Economics",
+          "description": "Healthcare Economics, Finance, and Reimbursement provides learners with a comprehensive understanding of the economic principles, financial management strategies, and reimbursement mechanisms that underpin the healthcare industry. Learners will develop the skills and knowledge necessary to analyze healthcare markets, make informed financial decisions, and understand the complex payment systems that influence healthcare delivery and policy. There are no prerequisites to the course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes healthcare payment models to evaluate the financial implications of decisions.",
+            "The learner critiques the healthcare organization’s viability using fiscal management tools, principles, and strategies.",
+            "The learner examines healthcare economics and healthcare payment models."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Resource Management and Performance",
+          "description": "Resource Management and Performance explores the management of human (internal and external) and physical to promote effective management at the department and organization levels. This course encompasses: effective utilization of resources, coordination of personnel and responsibilities, stakeholder identification (both individuals and entities. Students will also gain an understanding of healthcare performance measurement (key performance indicators (KPIs) in healthcare and their significance), techniques for measuring and benchmarking healthcare performance, and using data analysis to assess the performance of people/team, vendors, and the site (operational). There are no prerequisites to the course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes organizational performance metrics.",
+            "The learner demonstrates resource management for a healthcare organization.",
+            "The learner proposes a recommendation to improve organizational performance."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": {
+    "present": true,
+    "partial": false,
+    "title": "MHA Capstone",
+    "description": "Capstone is the culminating course in the MHA program that provides an integrative experience with all competencies and assessment topics throughout the program. Students synthesize concepts from previously completed coursework and demonstrate an understanding of responsible practices to promote quality, optimization, and innovation within healthcare organizations. The capstone includes a student-designed project intended to illustrate your ability to envision the future and effect change within a healthcare organization. Students are required to use data and research to identify opportunities for improvement or change for a healthcare organization and then visually present a solution to implement. In addition, the capstone encourages work in the healthcare industry that will be showcased in the student’s collection of work and help solidify professional relationships in the industry. There are no prerequisites to the course.",
+    "competency_bullets": [
+      "The learner develops a sustainability plan to address an organizational challenge in healthcare.",
+      "The learner presents a sustainability plan to address an organizational challenge in healthcare.",
+      "The learner proposes a business case to address an organizational challenge in healthcare."
+    ],
+    "competency_available": true
+  },
+  "cert_signals": [],
+  "family": null,
+  "anomaly_flags": []
+}

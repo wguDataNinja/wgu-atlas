@@ -1,0 +1,208 @@
+{
+  "program_code": "MSCSAIML",
+  "source_degree_title": "Master of Science, Computer Science, Artificial Intelligence and",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.730535Z",
+    "source_version": "202504",
+    "source_pub_date": "2/26/2025",
+    "source_page_count": 0,
+    "confidence": "high"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "A",
+    "aos_status": "usable",
+    "aos_course_count": 10,
+    "caveat_flags": [],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "Formal Languages Overview",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Computer Architecture and Systems",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Applied Algorithms and Reasoning",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Unix and Linux",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Artificial Intelligence and Machine Learning Foundations",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Governance, Risk, and Compliance",
+        "cus": 2,
+        "term": 2
+      },
+      {
+        "title": "Machine Learning for Computer Scientists",
+        "cus": 4,
+        "term": 3
+      },
+      {
+        "title": "Deep Learning",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Natural Language Processing",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Advanced AI for Computer Scientists",
+        "cus": 4,
+        "term": 4
+      }
+    ]
+  },
+  "areas_of_study": [
+    {
+      "group": "Computer Science",
+      "courses": [
+        {
+          "title": "Formal Languages Overview",
+          "description": "Formal Languages Overview introduces students to programming language design and theory, focusing on formal semantics and type systems. It covers imperative, functional, and parallel languages, emphasizing techniques for proving language properties and verifying program specifications. Students will differentiate between functional and procedural languages, and explore compiled, interpreted, query, and assembly languages. The course also examines the structure and features of programming languages, including object-oriented programming principles. Learners will understand program correctness, testing, and verification, addressing type correctness. This course prepares students to assess programming languages against business requirements, enhancing software reliability and efficiency. Aimed at those interested in the theoretical underpinnings of programming languages, it equips students with knowledge to make informed decisions in software development and application.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies techniques for proving language properties and verifying program specifications to enhance the reliability and efficiency of software.",
+            "The learner explains the history, formal semantics, and type systems for different programming language types."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Computer Architecture and Systems",
+          "description": "Computer Architecture and Systems offers a comprehensive examination of the design and development of computer systems. Students will explore the evolution of computer architecture, understanding how computers have advanced and changed over time. The course covers different layouts and designs used in both hardware and software solutions, helping students to grasp the complex structures of computer systems. Students will learn how to develop detailed plans for implementing computing solutions that work across various platforms. The course likewise covers how to integrate various devices to ensure they operate and communicate smoothly with each other.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the evolution of computer architecture and systems.",
+            "The learner designs system architectures that integrate hardware and software components.",
+            "The learner recommends hardware/software solutions that operate seamlessly across multiple device platforms."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Applied Algorithms and Reasoning",
+          "description": "This course builds on foundational knowledge of algorithm design and optimization for efficient resource utilization. It emphasizes benchmarking algorithms, reasoning, and applying Big O notation for performance evaluation. This course will cover how to design, analyze, and implement algorithms to solve complex computational problems, focusing on optimizing performance and enhancing system efficiency. The practical applications in this course involve testing data structures, developing algorithmic solutions, and optimizing algorithm performance through critical analysis and implementation. By integrating computational thinking and engineering principles, this course will present the skills students need to develop and optimize algorithms for real-world software, using benchmarking and profiling tools to measure and enhance performance.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner designs algorithms to optimize performance and resource utilization for various computational tasks.",
+            "The learner implements diverse algorithmic techniques to solve complex computational problems.",
+            "The learner optimizes algorithm performance through analysis and implementation enhancements."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Unix and Linux",
+          "description": "Unix and Linux offers a comprehensive introduction to these operating systems, focusing on essential skills used in system administration and development roles. This course equips students with the ability to employ the most common commands, navigate the Unix/Linux shell, manage files and directories, configure the shell environment, and create shell scripts to automate routine tasks. This hands-on approach prepares students to competently manage and maintain Unix and Linux systems in real-world applications. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies Unix commands for common tasks.",
+            "The learner creates shell scripts to automate routine tasks.",
+            "The learner describes how to navigate and manage files and directories within the Unix shell.",
+            "The learner evaluates ways to manage and configure the Unix shell environment."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Artificial Intelligence and Machine Learning Foundations",
+          "description": "Artificial Intelligence and Machine Learning Foundations explores foundational concepts and practical applications of artificial intelligence (AI) and machine learning (ML). It provides students with an understanding of the historical context and evolution of AI and the subsequent growth phases of AI technologies. This course will investigate the computational theories and logical frameworks that have shaped the AI landscape, examining how advancements in hardware have enabled the leap from basic ML to the complexities of deep learning. The course emphasizes the practicalities of AI and ML and gives insights into the critical role of data integrity and the techniques for data wrangling to feed into ML algorithms effectively. In addition to the technical skills, the course incorporates the societal implications of AI and ML, discussing current ethical considerations. This course aims to create a nuanced understanding of AI and ML, preparing students to thoughtfully consider the broader impacts of these technologies. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes artificial intelligence and machine learning capabilities.",
+            "The learner applies artificial intelligence and machine learning algorithms to solve diverse real-world problems.",
+            "The learner evaluates the ethical implications of artificial intelligence and machine learning technologies.",
+            "The learner optimizes artificial intelligence systems for enhanced performance and efficiency.",
+            "The learner prepares data for use in machine learning."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Machine Learning for Computer Scientists",
+          "description": "Machine Learning for Computer Scientists provides a comprehensive introduction to foundational machine learning algorithms and their applications, aligned with the AWS Certified Machine Learning—Specialty (MLS-C01). The course covers supervised learning techniques such as linear regression, logistic regression, decision trees, and support vector machines, as well as unsupervised learning methods like clustering and dimensionality reduction. Essential concepts in model evaluation, selection, and optimization are also covered, including cross validation, hyperparameter tuning, and ensemble methods. Designed specifically for computer scientists, this course sets the groundwork for advanced studies in deep learning and natural language processing. This course teaches students machine learning (ML) techniques of supervised and unsupervised ML methods using Python programming language.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies machine learning techniques to solve complex problems.",
+            "The learner evaluates machine learning models, applying criteria for model selection and optimization.",
+            "The learner implements machine learning models for predictions and decision-making."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Deep Learning",
+          "description": "Deep Learning delves into the fundamental principles, underlying mathematics, and implementation details of deep learning. The curriculum is designed to provide a robust understanding of the core concepts and methodologies essential for optimizing highly parameterized models. Key topics include gradient descent, backpropagation, and the broader framework of computation graphs. The course explores the essential modules that constitute deep learning models, such as linear, convolution, and pooling layers, along with various activation functions. The course also covers common neural network architectures, including convolutional neural networks (CNNs) and recurrent neural networks (RNNs), equipping students with the skills needed to design, implement, and optimize advanced deep learning systems. Through hands-on projects and practical applications, the course prepares students to gain the expertise to tackle real-world challenges using deep learning techniques.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together",
+            "The learner analyzes the performance of deep learning models.",
+            "The learner applies neural network architectures for deep learning.",
+            "The learner applies techniques to optimize deep learning models."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Natural Language Processing",
+          "description": "Natural Language Processing offers an in-depth exploration of modern data-driven techniques for natural language processing (NLP). The course progresses from basic text preprocessing methods to advanced machine-learning (ML) models specifically tailored for NLP tasks. Topics include sentiment analysis, named entity recognition, machine translation, and the use of advanced neural network architectures such as recurrent neural networks (RNNs), long short-term memory (LSTM), and transformers. Industry-standard tools and frameworks are covered for practical applications and project-based learning. For successful completion of this course, learners should take AI and ML Foundations, Machine Learning for Computer Scientists, and Deep Learning prior to this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies natural language processing techniques for text analysis and generation tasks.",
+            "The learner implements natural language processing techniques to analyze and process text data.",
+            "The learner optimizes natural language models."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Advanced AI for Computer Scientists",
+          "description": "Advanced AI for Computer Scientists synthesizes principles of artificial intelligence (AI) and machine learning (ML) to equip students with the skills needed to design sophisticated AI systems that address real-world problems. The course explores cutting-edge techniques such as meta-learning, zero-shot and few-shot learning, and advanced ensemble methods. The course also covers state-of-the-art deep-learning architectures, reinforcement-learning strategies, and probabilistic-reasoning models. Additionally, the course prepares students to critically evaluate AI systems for performance, efficiency, sustainability, and ethical considerations, ensuring a comprehensive understanding of advanced AI applications.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies probabilistic reasoning and AI techniques for enhanced problem-solving capabilities.",
+            "The learner critically evaluates AI systems to improve performance, efficiency, and sustainability.",
+            "The learner prepares data for use in AI model training.",
+            "The learner synthesizes principles of artificial intelligence and machine learning to design systems that solve real-world problems.",
+            "The learner synthesizes principles of artificial intelligence and machine learning to design systems that solve real-world problems."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Risk Management",
+      "courses": [
+        {
+          "title": "Governance, Risk, and Compliance",
+          "description": "Governance, Risk, and Compliance provides learners with advanced skills and knowledge to authorize and maintain information systems utilizing various risk management frameworks. The course focuses on the strategic and long-term alignment of an organization's information security program to regulatory requirements and organizational policies. Course topics include compliance and regulatory requirements, data classification and prioritization, security and privacy controls, compliance audits and remediation, and risk management plans.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner develops a remediation plan for security and privacy compliance issues.",
+            "The learner evaluates a system security plan in line with business organizational strategy and regulatory compliance requirements..."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "cert_signals": [],
+  "family": null,
+  "anomaly_flags": []
+}

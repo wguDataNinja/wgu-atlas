@@ -1,0 +1,548 @@
+{
+  "program_code": "BSHS",
+  "source_degree_title": "Bachelor of Science, Health Science",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.729756Z",
+    "source_version": "202406",
+    "source_pub_date": "1/31/24",
+    "source_page_count": 17,
+    "confidence": "high"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "A",
+    "aos_status": "usable",
+    "aos_course_count": 28,
+    "caveat_flags": [],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "Learning Strategies in Higher Education",
+        "cus": 4,
+        "term": 1
+      },
+      {
+        "title": "Critical Thinking: Reason and Evidence",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Composition: Writing with a Strategy",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Integrated Physical Sciences",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Introduction to Communication: Connecting with Others",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Global Arts and Humanities",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Introduction to Chemistry",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Anatomy and Physiology I with Lab",
+        "cus": 4,
+        "term": 2
+      },
+      {
+        "title": "Introduction to Psychology",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "World History: Diverse Cultures and Global Connections",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Applied Healthcare Statistics",
+        "cus": 4,
+        "term": 3
+      },
+      {
+        "title": "Anatomy and Physiology II with Lab",
+        "cus": 4,
+        "term": 3
+      },
+      {
+        "title": "Microbiology with Lab: A Fundamental Approach",
+        "cus": 4,
+        "term": 4
+      },
+      {
+        "title": "Introduction to Sociology",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Applied Algebra",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Human Growth and Development",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Pathophysiology",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Career and Lifelong Learning",
+        "cus": 4,
+        "term": 5
+      },
+      {
+        "title": "Introduction to Research Methods",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Health, Fitness, and Wellness",
+        "cus": 4,
+        "term": 5
+      },
+      {
+        "title": "Understanding Substance Abuse & Addiction",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Cognitive Psychology",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Cultural Awareness and Ethics",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Health Psychology",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Foundations in Public Health",
+        "cus": 3,
+        "term": 7
+      },
+      {
+        "title": "Health Equity and Social Determinants of Health",
+        "cus": 3,
+        "term": 7
+      },
+      {
+        "title": "Introduction to Epidemiology",
+        "cus": 3,
+        "term": 7
+      },
+      {
+        "title": "Health Sciences Capstone",
+        "cus": 3,
+        "term": 7
+      }
+    ]
+  },
+  "areas_of_study": [
+    {
+      "group": "Foundations of Success",
+      "courses": [
+        {
+          "title": "Learning Strategies in Higher Education",
+          "description": "Learning Strategies in Higher Education provides students with a toolbox of skills that will support student academic growth as they advance in their academic journey. Students will be introduced to the WGU Library; how to use it and best practices for research strategies. Students will learn how to be professional in written communication and how to correctly use current APA format. In this course, students also will learn about setting goals, time-management, study strategies, making and keeping appointments, professional decorum, and test-taking skills. Learning these skills, strategies, and methods will establish an academic foundation for students to be successful in higher education. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies self-directed strategies to advance organizational skills and lifelong learning.",
+            "The learner applies research strategies and technology literacy for gathering information from reliable sources.",
+            "The learner applies critical thinking and cultural awareness in writing.",
+            "The learner applies professionalism to problem-solving strategies in a given context."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "General Education",
+      "courses": [
+        {
+          "title": "Critical Thinking: Reason and Evidence",
+          "description": "In this course you will learn key critical thinking concepts and how to apply them in the analysis and evaluation of reasons and evidence. The course examines the basic components of an argument, the credibility of evidence sources, the impact of bias, and how to construct an argument that provides good support for a claim. The course consists of an introduction and four major sections. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the four competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates the quality of an argument.",
+            "The learner evaluates evidence based on source credibility.",
+            "The learner evaluates bias and its impact.",
+            "The learner makes claims based on evidence."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Composition: Writing with a Strategy",
+          "description": "Welcome to Composition: Writing with a Strategy! In this course, you will focus on three main topics: understanding purpose, context, and audience, writing strategies and techniques, and editing and revising. In addition, the first section, will offer review on core elements of the writing process, cross-cultural communication, as well as working with words and common standards and practices. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the seven competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner writes with purpose for a given context and target audience.",
+            "The learner incorporates writing strategies and techniques for written communication.",
+            "The learner constructs a written document with correct format, style, structure, and grammar.",
+            "The learner formulates a strategy for editing and revising written text.",
+            "The learner composes constructive feedback of written texts."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Integrated Physical Sciences",
+          "description": "This course provides students with an overview of the basic principles and unifying ideas of the physical sciences: physics, chemistry, and earth sciences. Course materials focus on scientific reasoning and practical, everyday applications of physical science concepts to help students integrate conceptual knowledge with practical skills.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes the nature and process of science.",
+            "The learner examines applications of physics including fundamental concepts such as forces, motion, energy, and waves.",
+            "The learner examines applications of key chemistry concepts including the structure of matter and the behavior and conservation of matter in chemical reactions.",
+            "The learner describes the underlying organization, interactions, and processes within the Earth system including the Earth's structure and atmosphere, and Earth's interactions within the solar system."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Communication: Connecting with Others",
+          "description": "Welcome to Introduction to Communication: Connecting with Others! It may seem like common knowledge that communication skills are important, and that communicating with others is inescapable in our everyday lives. While this may appear simplistic, the study of communication is actually complex, dynamic, and multifaceted. Strong communication skills are invaluable to strengthening a multitude of aspects of life. Specifically, this course will focus on communication in the professional setting, and present material from multiple vantage points, including communicating with others in a variety of contexts, across situations, and with diverse populations. Upon completion, you will have a deeper understanding of both your own and others’ communication behaviors, and a toolbox of effective behaviors to enhance your experience in the workplace.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements appropriate communication styles based on audience and setting.",
+            "The learner uses communication strategies for managing conflict.",
+            "The learner uses communication strategies to influence others."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Global Arts and Humanities",
+          "description": "This is a Global Arts and Humanities course that contains three modules with corresponding lessons. This course is an invitation to see the world through the humanities, examine the humanities during the Information Age, and explore the global origins of music—essentially questioning what makes us human, and how people are connected across culture and time. Each module includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to practice and check learning. With no prior knowledge or experience, a learner can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes diverse voices, ideas, perspectives, and cultural interactions through the lens of the humanities.",
+            "The learner analyzes the humanities during the Information Age.",
+            "The learner analyzes how music shapes and is shaped by diverse cultures and perspectives."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Chemistry",
+          "description": "In Introduction to Chemistry, learners will discover the impact of chemistry on everyday life. They’ll learn about the structure of the atom, study periodic trends, analyze the structure of molecules and their properties, and describe the importance of common functional groups within the periodic table. They’ll identify balanced chemical equations, describe types of chemical reactions and predict their products, and examine intermolecular forces and describe their impact on the properties of substances. Finally, they’ll study the properties of acids, bases, and buffer systems, and properties unique to liquids and gases.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner records measured numbers following scientific standards.",
+            "The learner describes the arrangement of the periodic table and the electronic structure of atoms.",
+            "The learner explains how chemical bonds are formed.",
+            "The learner calculates quantities associated with a balanced chemical equation.",
+            "The learner estimates the quantitative properties of solutions and gases.",
+            "The learner describes the behavior of acids, bases, and gases."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Anatomy and Physiology I with Lab",
+          "description": "This is Anatomy and Physiology I, a six-section, 4 CU course that enables students to develop an understanding of the relationships between the structures and function of the integumentary, skeletal, muscular, nervous and endocrine systems in the human body. This course will involve laboratory activities, simulated dissections, textbook material, models, and diagrams. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the four competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 40–60 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes the structural and basic functional organization of the human body and the terminology used to describe the orientation of bodily structures.",
+            "The learner describes the structures and physiological functions of the integumentary system and the connections to complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the skeletal system and the connections to complex systems in the human body.",
+            "The learner analyzes the structures and physiological functions of the muscular system and the connections to complex systems in the human body.",
+            "The learner analyzes the structures and physiological functions of the nervous system and sensory organs and the connections to complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the endocrine system and its regulation of complex systems in the human body."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Psychology",
+          "description": "In this course, students will develop an understanding of psychology and how it helps them better understand others and themselves. Students will learn general theories about psychological development, the structure of the brain, and how psychologists study behavior. They will gain an understanding of both normal and disordered psychological behaviors, as well as general applications of the science of psychology in society (such as personality typing and counseling).",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate explains the biological perspectives of psychology.",
+            "The graduate explains the theories of learning and memory.",
+            "The graduate explains the concepts of personality development and social psychology.",
+            "The graduate identifies psychological disorders and treatment methods.",
+            "The graduate explains the foundations of psychology."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "World History: Diverse Cultures and Global Connections",
+          "description": "This is World History: Diverse Cultures and Global Connections. In this course, you will focus on three main topics—cultural and religious diversity; pandemics; and the relationship of empires and nation states—as well as the skills of identifying root causes, explaining causes and effects, and analyzing complex systems. This course consists of an introduction and four major sections. Each section includes learning opportunities through reading, images, videos, and other relevant resources. Assessment activities with feedback also provide opportunities to practice and check how well you understand the content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the four competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner differentiates among diverse cultural and religious customs and practices.",
+            "The learner analyzes the role of human actions in the spread of disease.",
+            "The learner explains the factors that contributed to the rise and fall of empires.",
+            "The learner explains the factors that contributed to the development of nation states."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Applied Healthcare Statistics",
+          "description": "Applied Healthcare Probability and Statistics is designed to help develop competence in the fundamental concepts of basic mathematics, introductory algebra, and statistics and probability. These concepts include basic arithmetic with fractions and signed numbers; introductory algebra and graphing; descriptive statistics; regression and correlation; and probability. Statistical data and probability are now commonplace in the healthcare field. This course will help candidates make informed decisions about which studies and results are valid, which are not, and how those results affect your decisions. This course will give candidates background in what constitutes sound research design and how to appropriately model phenomena using statistical data. Additionally, this course guides candidates in calculating simple probabilities based on events which occur in the healthcare profession. This course will prepare candidates for studies at WGU, as well as in the healthcare profession.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies the operations, processes, and procedures of basic arithmetic to solve expressions.",
+            "The graduate applies the operations, processes, and procedures of fractions, decimals, and percentages to evaluate quantitative expressions.",
+            "The graduate applies the operations, processes, and procedures of basic algebra to evaluate quantitative expressions, and to solve equations and inequalities.",
+            "The graduate evaluates categorical and quantitative data pertaining to a single variable using appropriate graphical displays and numerical measures.",
+            "The graduate evaluates the relationship between two variables through interpretation of visual displays and numerical measures.",
+            "The graduate evaluates the relationship between two quantitative variables through correlation and regression.",
+            "The graduate applies principles and methods of probability-based mathematics to explain and solve problems."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Anatomy and Physiology II with Lab",
+          "description": "This is Anatomy and Physiology II, a six section, four CEU course that enables students to develop an understanding of the relationships between the structures and functions of the cardiovascular, respiratory, digestive, urinary, reproductive, and lymphatic systems in the human body. This course will involve laboratory activities, simulated dissections, textbook material, models, and diagrams. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the four competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 40–60 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes the structures and physiological functions of the cardiovascular system and the connections to complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the respiratory system and the connections to complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the digestive system and the connections to metabolism and complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the urinary system and the connections to complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the reproductive system and the connections to complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the lymphatic system, immune response, and the connections to complex systems in the human body."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Microbiology with Lab: A Fundamental Approach",
+          "description": "Microbiology with Lab: A Fundamental Approach explores the science that microorganisms are everywhere, and they have positive and negative effects on the community. The course examines the structure and function of microorganisms, disease transmission and progression, and immune responses and other interventions, and it identifies key global diseases. The course consists of an introduction and four major sections. Each section includes learning opportunities through readings, videos, and other relevant resources. Assessment activities with feedback also provide opportunities for students to check their learning, practice, and show how well they understand course content. To assist students in developing an applied, evidence-based understanding of microbiology, this course integrates several lab experiments to help determine the specific characteristic of an unknown microbial sample and a treatment plan. Because the course is self-paced, students may move through the material as quickly or as slowly as needed to gain proficiency in the four competencies that will be covered in the final assessment. Students who have no prior knowledge of or experience with this topic can expect to spend 48–60 hours on the course content. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes structures and characteristics of microorganisms that inform etiologies of symptoms and diseases.",
+            "The learner analyzes microbial transmission and progression and the care needed based on symptoms and environment.",
+            "The learner analyzes methods to prevent and treat infectious diseases and influence positive community outcomes.",
+            "The learner analyzes disease characteristics to inform individuals about etiologies and treatments."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Sociology",
+          "description": "This course teaches students to think like sociologists, or, in other words, to see and understand the hidden rules, or norms, by which people live, and how they free or restrain behavior. Students will learn about socializing institutions, such as schools and families, as well as workplace organizations and governments. Participants will also learn how people deviate from the rules by challenging norms and how such behavior may result in social change, either on a large scale or within small groups.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate explains how societies are stratified across various social statuses.",
+            "The graduate explains reciprocal relationships between social institutions and individuals.",
+            "The graduate explains major perspectives and key contributors to the development of sociology.",
+            "The graduate identifies components of culture and socialization as they relate to individuals in society.",
+            "The graduate explains the constructs of conformity to and deviance from social norms."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Applied Algebra",
+          "description": "Applied Algebra is designed to help you develop competence in working with functions, the algebra of functions, and using some applied properties of functions. You will start learning about how we can apply different kinds of functions to relevant, real-life examples. From there, the algebra of several families of functions will be explored, including linear, polynomial, exponential, and logistic functions. You will also learn about relevant, applicable mathematical properties of each family of functions, including rate of change, concavity, maximizing/minimizing, and asymptotes. These properties will be used to solve problems related to your major and make sense of everyday living problems. Students should complete Applied Probability and Statistics or its equivalent prior to engaging in Applied Algebra.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner interprets the real-world meaning of various functions based on notation, graphical representations, and data representations.",
+            "The learner applies linear functions and their properties to real-world problems.",
+            "The learner applies polynomial functions and their properties to real-world problems.",
+            "The learner applies exponential functions and their properties to real-world problems.",
+            "The learner applies logistic functions and their properties to real-world problems.",
+            "The learner analyzes graphical depictions of real-world situations using functional properties.",
+            "The learner verifies the validity of a given model."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Human Growth and Development",
+          "description": "This is Human Growth and Development, a three-module course that examines the entire human lifetime, from conception to death. Presented chronologically, the course focuses on three key areas: physical, cognitive, and psychosocial growth, along with other important issues such as cultural influences, emotions, and resilience. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the four competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains physical, cognitive, and psychosocial development from conception through early childhood.",
+            "The learner explains the influence of emotions and cultural perspectives and practices on psychosocial development and behavior from birth through early childhood.",
+            "The learner explains physical, cognitive, and psychosocial development from middle childhood through adolescence.",
+            "The learner explains the influence of emotions on psychosocial development and behavior from middle childhood through adolescence.",
+            "The learner explains physical, cognitive, and psychosocial development from early adulthood to the end of life.",
+            "The learner explains the influence of emotions on psychosocial development and behavior from early adulthood to the end of life."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Pathophysiology",
+          "description": "Pathophysiology is an overview of the pathology and treatment of diseases in the human body, tissues, glands and membranes, the integumentary system, the sensory system, skeletal and muscular systems, the digestive system, blood, vessels and circulation, lymphatic system, immunity and disease, heart and respiratory system, nervous, urinary and endocrine systems, and male and female reproductive systems. Prerequisites include all prior courses in this programmatic sequence.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes basic cellular responses and adaptation related to genetics, injury, aging and congenital anomalies.",
+            "The learner describes pathogenesis, manifestations, complications and variations of the muscular, skeletal, and integumentary systems.",
+            "The learner describes pathogenesis, manifestations, complications and variations of the neurologic systems.",
+            "The learner describes pathogenesis, manifestations, complications and variations of the cardiovascular and lymphatic systems.",
+            "The learner describes pathogenesis, manifestations, complications and variations of the respiratory systems.",
+            "The learner describes pathogenesis, manifestations, complications and variations of the gastrointestinal and renal systems.",
+            "The learner describes pathogenesis, manifestations, complications and variations of the endocrine and reproductive systems."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Research Methods",
+          "description": "Introduction to Research Methods familiarizes learners with the foundations of research, walking learners through selecting topics, forming research questions, engaging relevant and reliable literature, and how to design a research project. This course provides an overview of how researchers form questions and hypotheses, what different types of methodologies can be used to address these questions, and how existing literature and data are used to support or reject hypotheses. The methods presented in this course can be applied to many fields and disciplines and provide a baseline for learners to use in their chosen area of study and future work.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes empirical studies related to a research topic.",
+            "The learner identifies ethical and sociocultural considerations in research practices.",
+            "The learner applies knowledge of research methods to design a research project."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Health, Fitness, and Wellness",
+          "description": "Health, Fitness, and Wellness focuses on the importance and foundations of good health and physical fitness—particularly for children and adolescents—addressing health, nutrition, fitness, and substance use and abuse.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate identifies the influence of disease, fitness, and lifestyle on the body.",
+            "The graduate identifies the principles of nutrition and the components of a healthy diet.",
+            "The graduate identifies factors that influence mental, emotional, and social wellness.",
+            "The graduate identifies the application of the core competencies of social and emotional learning."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Psychology",
+      "courses": [
+        {
+          "title": "Career and Lifelong Learning",
+          "description": "Career and Lifelong Learning supports students in taking their first steps in a lifelong journey of development as a professional. Students will explore career pathways, plan how best to achieve their desired professional future, and take tangible steps toward that future by creating career growth materials that adhere to today’s best practices. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner demonstrates foundational knowledge of self and of career pathways and uses that knowledge to identify potential career goals.",
+            "The learner uses specific career goal research, academic planning, and a self-analysis of their own candidacy in relation to that goal to build a career action plan that serves as a pathway to that goal.",
+            "The learner creates materials for the job application process.",
+            "The learner demonstrates their professional identity through practice for professional interactions."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Understanding Substance Abuse & Addiction",
+          "description": "Understanding Substance Abuse and Addiction provides an overview of substance abuse causes, impact, prevention, and treatment. Students will understand the signs and symptoms of substance abuse and addiction and its impact on individuals, groups, and the community. Students will analyze relevant factors that initiate and reinforce substance abuse and addiction and describe evidence-based strategies for prevention, intervention, and treatment. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes substance abuse and its impact on individuals and communities.",
+            "The learner analyzes factors relevant to the initiation and reinforcement of substance abuse and addiction.",
+            "The learner describes evidence-based strategies for substance abuse prevention, intervention, and treatment"
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Cognitive Psychology",
+          "description": "Cognitive Psychology examines human mental processes, including how humans sense, interpret, think about and respond to information, and integrate new information with prior experience. This course examines mental operations, attention, pattern recognition and other perceptual processes, memory, problem-solving and decision-making, categorization and concept formation, language acquisition and use, and contextual interpretation.There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner identifies basic components of human cognition, mental imagery, concepts, and language.",
+            "The learner describes basic states of consciousness.",
+            "The learner analyzes the major processes involved in attention, problem-solving, and decision-making.",
+            "The learner applies memory models and theories."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Cultural Awareness and Ethics",
+          "description": "Cultural Awareness and Ethics provides students with the understanding of what it means to have personal, explicit and implicit cultural biases and how these can affect interpersonal interactions. The course will explore strategies for responding to personal biases and for promoting cultural awareness and ethical actions. Through critical readings, videos, and interactive activities, the student will gain knowledge in these essential subjects. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the impact of explicit and implicit biases.",
+            "The learner applies ethical strategies for responding to personal biases.",
+            "The learner proposes strategies for promoting cultural awareness and ethical responsibility."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Health Psychology",
+          "description": "Health Psychology provides a basic overview of the biopsychosocial model of health and other holistic models of wellness. The course draws from diverse cultural perspectives as well as the theory and practice of human health behavior change to explore the relationship between psychosocial experiences and health. Topics include the impact of social and cultural factors on health, the relationship between stress and physical health and disease, the psychological experience of illness, and how lifestyle patterns and behavior influence chronic disease. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates a personalized statement of health drawn from community and empirical sources.",
+            "The learner applies a framework to assess factors impacting individual well-being.",
+            "The learner applies principles of health psychology to a behavior change project."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Health Equity and Social Determinants of Health",
+          "description": "Health Equity and Social Determinants of Health examines the social determinants of health (SDOH) as underlying factors that contribute to health inequity in populations and communities and their effect on health outcomes. This course will help students understand the evidence-based strategies and approaches that promote health equity. D581 Introduction to Research Methods is a prerequisite to this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains the social determinants of health that contribute to health disparities.",
+            "The learner analyzes how social determinants of health impact health outcomes of a population.",
+            "The learner analyzes strategies to improve health equity for a population."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Public Health",
+      "courses": [
+        {
+          "title": "Foundations in Public Health",
+          "description": "Foundations of Public Health introduces learners to the nation’s public health systems including an overview of the core functions of Public Health and the 10 essential public health services. Learners examine a variety of strategies to promote health, prevent disease, and prolong life among populations and communities, including behavioral, population, and policy change, mass media approaches, and community-based interventions. This course also provides learners with a foundational and historical orientation to the field of public health by examining the philosophy, history, purpose, organization, terminology, and function.",
+          "competency_bullets": [
+            "The learner identifies the history and role of public health.",
+            "The learner identifies the basic principles of public health.",
+            "The learner identifies general strategies public health specialists recommend to promote health, longevity, and disease prevention."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Health and Human Services",
+      "courses": [
+        {
+          "title": "Introduction to Epidemiology",
+          "description": "Introduction to Epidemiology provides an overview of the determinants of communicable, viral, and chronic diseases. Students also will study various other conditions and the impact to public health. Using problem-based inquiry, students will analyze real-world public health problems by examining the distribution and patterns of data, selecting the methods to gather evidence, interpreting the information, and analyzing the trends to support decision making. There are no prerequisites to this course, but students are highly encouraged to adhere to the standard path, whose content is scaffolded to enhance the learning experience of this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains the determinants of diseases and conditions and their implications among individuals, groups, and communities from an epidemiological perspective.",
+            "The learner applies logical reasoning for collecting evidence to solve epidemiological problems.",
+            "The learner analyzes disease outbreaks and the impact on public health."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Health Sciences",
+      "courses": [
+        {
+          "title": "Health Sciences Capstone",
+          "description": "The Health Sciences Capstone is a culminating experience for the BS in Health Sciences program. In this project-based course, students will apply their skills obtained through the program to an issue of personal interest in the health sciences. This course requires students to think deeply and use their creative problem-solving skills and understanding of diverse perspectives to identify a research topic and conduct research on it. Upon completion of the capstone, students will have proposed an evidence-based strategy to address a real-world issue related to the health sciences. Students must complete all other courses in this program before attempting the capstone.",
+          "competency_bullets": [
+            "The learner identifies a real-world issue related to health sciences and connects this issue to their personal or professional interests.",
+            "The learner evaluates literature to inform potential solutions related to a research topic.",
+            "The learner proposes a research-based solution to a real-world problem."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "cert_signals": [],
+  "family": null,
+  "anomaly_flags": []
+}

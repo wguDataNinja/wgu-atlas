@@ -1,0 +1,631 @@
+{
+  "program_code": "BSPSY",
+  "source_degree_title": "Bachelor of Science in Psychology",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.729935Z",
+    "source_version": "202404",
+    "source_pub_date": "2/16/24",
+    "source_page_count": 19,
+    "confidence": "high"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "A",
+    "aos_status": "usable",
+    "aos_course_count": 34,
+    "caveat_flags": [],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "Learning Strategies in Higher Education",
+        "cus": 4,
+        "term": 1
+      },
+      {
+        "title": "Composition: Writing with a Strategy",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Introduction to Psychology",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Critical Thinking: Reason and Evidence",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Introduction to Communication: Connecting with Others",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Human Growth and Development",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Applied Probability and Statistics",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Introduction to Sociology",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Composition: Successful Self-Expression",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Theories of Personality",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Cultural Awareness and Ethics",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Introduction to Physical and Human Geography",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Psychology of Learning",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Social Psychology",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Introduction to Research Methods",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Introduction to Biology",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Health Equity and Social Determinants of Health",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Adult Psychology",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Introduction to Statistics for Research",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Cognitive Psychology",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Health, Fitness, and Wellness",
+        "cus": 4,
+        "term": 5
+      },
+      {
+        "title": "Psychopathology",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Career and Lifelong Learning",
+        "cus": 4,
+        "term": 6
+      },
+      {
+        "title": "Fundamentals of Anatomy and Physiology",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Understanding Substance Abuse & Addiction",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Influential Communication through Visual Design and Storytelling",
+        "cus": 3,
+        "term": 7
+      },
+      {
+        "title": "Health Psychology",
+        "cus": 3,
+        "term": 7
+      },
+      {
+        "title": "World History: Diverse Cultures and Global Connections",
+        "cus": 3,
+        "term": 7
+      },
+      {
+        "title": "Neuropsychology",
+        "cus": 3,
+        "term": 7
+      },
+      {
+        "title": "Mental Health Awareness and Education",
+        "cus": 3,
+        "term": 7
+      },
+      {
+        "title": "Consumer Behavior",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Industrial and Organizational Psychology",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Team Dynamics",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Capstone in Psychology",
+        "cus": 4,
+        "term": 8
+      }
+    ]
+  },
+  "areas_of_study": [
+    {
+      "group": "Foundations of Success",
+      "courses": [
+        {
+          "title": "Learning Strategies in Higher Education",
+          "description": "Learning Strategies in Higher Education provides students with a toolbox of skills that will support student academic growth as they advance in their academic journey. Students will be introduced to the WGU Library; how to use it and best practices for research strategies. Students will learn how to be professional in written communication and how to correctly use current APA format. In this course, students also will learn about setting goals, time-management, study strategies, making and keeping appointments, professional decorum, and test-taking skills. Learning these skills, strategies, and methods will establish an academic foundation for students to be successful in higher education. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies self-directed strategies to advance organizational skills and lifelong learning.",
+            "The learner applies research strategies and technology literacy for gathering information from reliable sources.",
+            "The learner applies critical thinking and cultural awareness in writing.",
+            "The learner applies professionalism to problem-solving strategies in a given context."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "General Education",
+      "courses": [
+        {
+          "title": "Composition: Writing with a Strategy",
+          "description": "Welcome to Composition: Writing with a Strategy! In this course, you will focus on three main topics: understanding purpose, context, and audience, writing strategies and techniques, and editing and revising. In addition, the first section, will offer review on core elements of the writing process, cross-cultural communication, as well as working with words and common standards and practices. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the seven competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner writes with purpose for a given context and target audience.",
+            "The learner incorporates writing strategies and techniques for written communication.",
+            "The learner constructs a written document with correct format, style, structure, and grammar.",
+            "The learner formulates a strategy for editing and revising written text.",
+            "The learner composes constructive feedback of written texts."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Psychology",
+          "description": "In this course, students will develop an understanding of psychology and how it helps them better understand others and themselves. Students will learn general theories about psychological development, the structure of the brain, and how psychologists study behavior. They will gain an understanding of both normal and disordered psychological behaviors, as well as general applications of the science of psychology in society (such as personality typing and counseling).",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains the biological perspectives of psychology.",
+            "The learner explains the theories of learning and memory.",
+            "The learner explains the concepts of personality development and social psychology.",
+            "The learner identifies psychological disorders and treatment methods.",
+            "The learner explains the foundations of psychology."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Critical Thinking: Reason and Evidence",
+          "description": "In this course you will learn key critical thinking concepts and how to apply them in the analysis and evaluation of reasons and evidence. The course examines the basic components of an argument, the credibility of evidence sources, the impact of bias, and how to construct an argument that provides good support for a claim. The course consists of an introduction and four major sections. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the four competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates the quality of an argument.",
+            "The learner evaluates evidence based on source credibility.",
+            "The learner evaluates bias and its impact.",
+            "The learner makes claims based on evidence."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Communication: Connecting with Others",
+          "description": "Welcome to Introduction to Communication: Connecting with Others! It may seem like common knowledge that communication skills are important, and that communicating with others is inescapable in our everyday lives. While this may appear simplistic, the study of communication is actually complex, dynamic, and multifaceted. Strong communication skills are invaluable to strengthening a multitude of aspects of life. Specifically, this course will focus on communication in the professional setting, and present material from multiple vantage points, including communicating with others in a variety of contexts, across situations, and with diverse populations. Upon completion, you will have a deeper understanding of both your own and others’ communication behaviors, and a toolbox of effective behaviors to enhance your experience in the workplace.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements appropriate communication styles based on audience and setting.",
+            "The learner uses communication strategies for managing conflict.",
+            "The learner uses communication strategies to influence others."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Human Growth and Development",
+          "description": "This is Human Growth and Development, a three-module course that examines the entire human lifetime, from conception to death. Presented chronologically, the course focuses on three key areas: physical, cognitive, and psychosocial growth, along with other important issues such as cultural influences, emotions, and resilience. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the four competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains physical, cognitive, and psychosocial development from conception through early childhood.",
+            "The learner explains the influence of emotions and cultural perspectives and practices on psychosocial development and behavior from birth through early childhood.",
+            "The learner explains physical, cognitive, and psychosocial development from middle childhood through adolescence.",
+            "The learner explains the influence of emotions on psychosocial development and behavior from middle childhood through adolescence.",
+            "The learner explains physical, cognitive, and psychosocial development from early adulthood to the end of life.",
+            "The learner explains the influence of emotions on psychosocial development and behavior from early adulthood to the end of life."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Applied Probability and Statistics",
+          "description": "Applied Probability and Statistics is designed to help students develop competence in the fundamental concepts of basic statistics including: introductory algebra and graphing; descriptive statistics; regression and correlation; and probability. Statistical data and probability are often used in everyday life, science, business, information technology, and educational settings to make informed decisions about the validity of studies and the effect of data on decisions. This course discusses what constitutes sound research design and how to appropriately model phenomena using statistical data. Additionally, the content covers simple probability calculations, based on events that occur in the business and IT industries. No prerequisites are required for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies the operations, processes, and procedures of fractions, decimals, and percentages to evaluate quantitative expressions.",
+            "The graduate applies the operations, processes, and procedures of basic algebra to evaluate quantitative expressions, and to solve equations and inequalities.",
+            "The graduate evaluates categorical and quantitative data pertaining to a single variable using appropriate graphical displays and numerical measures.",
+            "The graduate evaluates the relationship between two variables through interpretation of visual displays and numerical measures.",
+            "The graduate evaluates the relationship between two quantitative variables through correlation and regression.",
+            "The graduate applies principles and methods of probability-based mathematics to explain and solve problems."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Sociology",
+          "description": "This course teaches students to think like sociologists, or, in other words, to see and understand the hidden rules, or norms, by which people live, and how they free or restrain behavior. Students will learn about socializing institutions, such as schools and families, as well as workplace organizations and governments. Participants will also learn how people deviate from the rules by challenging norms and how such behavior may result in social change, either on a large scale or within small groups.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate explains how societies are stratified across various social statuses.",
+            "The graduate explains reciprocal relationships between social institutions and individuals.",
+            "The graduate explains major perspectives and key contributors to the development of sociology.",
+            "The graduate identifies components of culture and socialization as they relate to individuals in society.",
+            "The graduate explains the constructs of conformity to and deviance from social norms."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Composition: Successful Self-Expression",
+          "description": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing research sources. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the seven competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content. You will demonstrate competency through a performance assessment. There is no prerequisite for this course and there is no specific technical knowledge needed.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner composes a written message with language appropriate for cross-cultural communication.",
+            "The learner writes in a professional manner for a given scenario.",
+            "The learner researches valid and reliable sources.",
+            "The learner writes a reference list.",
+            "The learner incorporates research to support a position or idea.",
+            "The learner writes a message using an effective communication approach for a given situation.",
+            "The learner incorporates self-expression in written communication."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Physical and Human Geography",
+          "description": "This is Introduction to Physical and Human Geography, a three-module course that addresses the question of what geography really is in today's complex world; how migration affects—and has been affected by—geography; and one of the biggest present problems related to geography: climate change. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the five competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 30–40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the message of a data visualization for a specific purpose.",
+            "The learner interprets complex global systems through the lenses of physical and human geography.",
+            "The learner analyzes the various causes and effects of human migration.",
+            "The learner analyzes the connections among the various factors contributing to climate change.",
+            "The learner applies logical reasoning to the analysis of climate change."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Research Methods",
+          "description": "Introduction to Research Methods familiarizes learners with the foundations of research, walking learners through selecting topics, forming research questions, engaging relevant and reliable literature, and how to design a research project. This course provides an overview of how researchers form questions and hypotheses, what different types of methodologies can be used to address these questions, and how existing literature and data are used to support or reject hypotheses. The methods presented in this course can be applied to many fields and disciplines and provide a baseline for learners to use in their chosen area of study and future work.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes empirical studies related to a research topic.",
+            "The learner identifies ethical and sociocultural considerations in research practices.",
+            "The learner applies knowledge of research methods to design a research project."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Statistics for Research",
+          "description": "Introduction to Statistics for Research covers descriptive and inferential statistics used to address research questions. Levels of measurement, central tendency and variability, probability, distributions, correlation, hypothesis testing, t-tests, analysis of variance, linear regression, and chi-square tests are examined, with a focus on their implications for research. Reading and interpreting graphically presented statistical data is included. Before taking this course, students should complete C955 Applied Probability and Statistics or an equivalent course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner recognizes how data characteristics influence choice of descriptive statistical analysis.",
+            "The learner interprets bivariate inferential statistical test results.",
+            "The learner interprets bivariate inferential statistical test results."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Health, Fitness, and Wellness",
+          "description": "Health, Fitness, and Wellness focuses on the importance and foundations of good health and physical fitness—particularly for children and adolescents—addressing health, nutrition, fitness, and substance use and abuse.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate identifies the influence of disease, fitness, and lifestyle on the body.",
+            "The graduate identifies the principles of nutrition and the components of a healthy diet.",
+            "The graduate identifies factors that influence mental, emotional, and social wellness.",
+            "The graduate identifies the application of the core competencies of social and emotional learning."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Fundamentals of Anatomy and Physiology",
+          "description": "Fundamentals of Anatomy and Physiology provides an overview of the structures and functions of organs and systems of the human body. This course will explore how the parts of the body systems work together to produce movement, transport nutrients, eliminate wastes, protect vital tissues and organs, regulate bodily functions, and support reproduction and growth, through videos, readings, exploratory learning, and practice activities.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes the structures and functions of the muscular, skeletal, and nervous systems and their roles in movement.",
+            "The learner describes the structures and functions of the respiratory, cardiovascular, urinary, and digestive systems and their roles transporting nutrients and eliminating waste from the body.",
+            "The learner describes the structures and functions of the immune system, integumentary system, and special senses and their roles in protecting the body and interacting with the environment.",
+            "The learner describes the structures and functions of the endocrine and reproductive systems and their roles in reproduction and maintaining homeostasis within the body."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Influential Communication through Visual Design and Storytelling",
+          "description": "Influential Communication through Visual Design and Storytelling provides learners with foundational visual design and storytelling techniques to influence and create a lasting impression on audiences. Learners will first explore how human behavior is influenced by visuals and when to apply visual techniques to better communicate with audiences. Next, learners will learn techniques for creating compelling stories that create memorable images within the audience's mind. Ultimately, learners who master these skills will be well-positioned to apply their visual and storytelling techniques to not only better communicate their thoughts and ideas to an audience, but to also influence or motivate them.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner adapts communications to the basic needs and motivations of their audience.",
+            "The learner applies storytelling techniques to motivate, inform, or influence a target audience.",
+            "The learner applies visual design techniques to motivate, inform, or influence a target audience."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "World History: Diverse Cultures and Global Connections",
+          "description": "This is World History: Diverse Cultures and Global Connections. In this course, you will focus on three main topics—cultural and religious diversity; pandemics; and the relationship of empires and nation states—as well as the skills of identifying root causes, explaining causes and effects, and analyzing complex systems. This course consists of an introduction and four major sections. Each section includes learning opportunities through reading, images, videos, and other relevant resources. Assessment activities with feedback also provide opportunities to practice and check how well you understand the content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the four competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner differentiates among diverse cultural and religious customs and practices.",
+            "The learner analyzes the role of human actions in the spread of disease.",
+            "The learner explains the factors that contributed to the rise and fall of empires.",
+            "The learner explains the factors that contributed to the development of nation states."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Psychology",
+      "courses": [
+        {
+          "title": "Theories of Personality",
+          "description": "Theories of Personality describes the concepts and assumptions of significant theories of personality. The course assesses the strengths and weaknesses of each major personality theory, describes and defines the research methodology frequently used by psychologists in the study of personality, and identifies the contributions of theory and empirical research to our contemporary understanding of personality. Cultural impacts on personality are also discussed. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner recognizes considerations related to the study of personality.",
+            "The learner identifies the key concepts and assumptions of the psychodynamic lens.",
+            "The learner identifies the key concepts and assumptions of the humanistic perspective.",
+            "The learner identifies the key concepts and assumptions of the social-cognitive lens.",
+            "The learner identifies the key concepts, principles, and assumptions of trait theories, biological theories, and behavioral theories."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Cultural Awareness and Ethics",
+          "description": "Cultural Awareness and Ethics provides students with the understanding of what it means to have personal, explicit and implicit cultural biases and how these can affect interpersonal interactions. The course will explore strategies for responding to personal biases and for promoting cultural awareness and ethical actions. Through critical readings, videos, and interactive activities, the student will gain knowledge in these essential subjects. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the impact of explicit and implicit biases.",
+            "The learner applies ethical strategies for responding to personal biases.",
+            "The learner proposes strategies for promoting cultural awareness and ethical responsibility."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Psychology of Learning",
+          "description": "Psychology of Learning focuses on applying research on learning, emotion, and motivation to positively impact influence human behavior. The course presents a study of key research and theories in the areas related to learning, with a focus on applications to promote acquisition, retention, and transfer of knowledge. Students will explore evidence-based strategies to promote learning and analyze how individual and group characteristics can impact affect learning. This course will improve students' understanding of the emotional, social, and environmental factors which that shape human learning and humans' capacity for development. Introduction to Psychology is a prerequisite to this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies knowledge of learning processes to explain human behavior.",
+            "The learner applies major theories of learning to promote the acquisition, retention, and transfer of knowledge.",
+            "The learner analyzes how individual and group characteristics impact learning and the capacity for development.",
+            "The learner applies knowledge of physiological needs, motivation, and emotion to positively impact learning."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Social Psychology",
+          "description": "Social Psychology presents major theories in the field related to how the thoughts, emotions, and behaviors of an individual both influence and are influenced by groups, communities, and society. Topics include the social factors that influence the choices people make, the role cultural expectations play in directing behavior, and how to analyze the roots of your own assumptions. Learners will perform self-reflections and analyze case studies of social behaviors.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies major theories, approaches, and concepts in the field of social psychology.",
+            "The learner analyzes the factors that contribute to the development of individual attitudes and beliefs.",
+            "The learner analyzes group behavior using knowledge of key concepts and research in social psychology."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Health Equity and Social Determinants of Health",
+          "description": "Health Equity and Social Determinants of Health examines the social determinants of health (SDOH) as underlying factors that contribute to health inequity in populations and communities and their effect on health outcomes. This course will help students understand the evidence-based strategies and approaches that promote health equity. D581 Introduction to Research Methods is a prerequisite to this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains the social determinants of health that contribute to health disparities.",
+            "The learner analyzes how social determinants of health impact health outcomes of a population.",
+            "The learner analyzes strategies to improve health equity for a population."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Adult Psychology",
+          "description": "Adult Psychology provides an in-depth study of adult development. The student explores and applies major theories of adult development. The student analyzes how individual characteristics and experiences, sociocultural factors, and structural contexts contribute to adult development. Focus on current evidence-based science is included, along with an emphasis on observation, recognition, and application to individuals. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes how the biopsychosocial model explains adult development.",
+            "The learner applies a theory of adult development to an individual adult.",
+            "The learner creates a plan for sustaining and promoting well-being in later life."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Cognitive Psychology",
+          "description": "Cognitive Psychology examines human mental processes, including how humans sense, interpret, think about and respond to information, and integrate new information with prior experience. This course examines mental operations, attention, pattern recognition and other perceptual processes, memory, problem-solving and decision-making, categorization and concept formation, language acquisition and use, and contextual interpretation.There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner identifies basic components of human cognition, mental imagery, concepts, and language.",
+            "The learner describes basic states of consciousness.",
+            "The learner analyzes the major processes involved in attention, problem-solving, and decision-making.",
+            "The learner applies memory models and theories."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Psychopathology",
+          "description": "Psychopathology examines historical and contemporary views and issues of abnormal behavior. Students are provided with an overview of the ways mental health practitioners explain, diagnose, and treat behavioral disorders. Sociocultural impacts on abnormal behavior, including the manifestation, categorization, and treatment of mental illness, are explored. Biases and popular depictions of mental health and mental illness are analyzed. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies knowledge of historical and cultural perspectives to current definitions of abnormal behavior.",
+            "The learner analyzes depictions of neurodevelopmental, psychotic, and mood disorders.",
+            "The learner critically analyzes depictions of anxiety, feeding and eating, and personality disorders."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Career and Lifelong Learning",
+          "description": "Career and Lifelong Learning supports students in taking their first steps in a lifelong journey of development as a professional. Students will explore career pathways, plan how best to achieve their desired professional future, and take tangible steps toward that future by creating career growth materials that adhere to today’s best practices. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner demonstrates foundational knowledge of self and of career pathways and uses that knowledge to identify potential career goals.",
+            "The learner uses specific career goal research, academic planning, and a self-analysis of their own candidacy in relation to that goal to build a career action plan that serves as a pathway to that goal.",
+            "The learner creates materials for the job application process.",
+            "The learner demonstrates their professional identity through practice for professional interactions."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Understanding Substance Abuse & Addiction",
+          "description": "Understanding Substance Abuse and Addiction provides an overview of substance abuse causes, impact, prevention, and treatment. Students will understand the signs and symptoms of substance abuse and addiction and its impact on individuals, groups, and the community. Students will analyze relevant factors that initiate and reinforce substance abuse and addiction and describe evidence-based strategies for prevention, intervention, and treatment. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes substance abuse and its impact on individuals and communities.",
+            "The learner analyzes factors relevant to the initiation and reinforcement of substance abuse and addiction.",
+            "The learner describes evidence-based strategies for substance abuse prevention, intervention, and treatment"
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Health Psychology",
+          "description": "Health Psychology provides a basic overview of the biopsychosocial model of health and other holistic models of wellness. The course draws from diverse cultural perspectives as well as the theory and practice of human health behavior change to explore the relationship between psychosocial experiences and health. Topics include the impact of social and cultural factors on health, the relationship between stress and physical health and disease, the psychological experience of illness, and how lifestyle patterns and behavior influence chronic disease. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates a personalized statement of health drawn from community and empirical sources.",
+            "The learner applies a framework to assess factors impacting individual well-being.",
+            "The learner applies principles of health psychology to a behavior change project."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Neuropsychology",
+          "description": "Neuropsychology covers how brain processes relate to human cognition and behavior. Students will understand typical cognitive function in a person’s everyday life, major cognitive processes and neurophysiology involved in human sensation and perception, and insights from social neurobiology on the interaction between brain processes and social behaviors. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the neural anatomy of the brain.",
+            "The learner describes the major cognitive processes and neurophysiology involved in human sensation, perception, and movement.",
+            "The learner distinguishes between normal and atypical cognitive function."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Mental Health Awareness and Education",
+          "description": "Mental Health Awareness and Education is designed to help students recognize mental disorders, improve access to mental health services, support recovery, and lower the rate of death, disease, and disability among those with mental illnesses. Topics include mental health education programs, mental health stigmas, cultural diversity in mental health, and barriers to mental health care and strategies to overcome those barriers. Students will analyze these topics from the vantage point of a community mental health perspective. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the relationship between mental health and society.",
+            "The learner recommends an evidence-based strategy to provide mental health education services.",
+            "The learner proposes a pathway to equitable access to mental health care."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Consumer Behavior",
+          "description": "Consumer Behavior examines the buying behavior of consumers in the marketplace. Students will gain knowledge of consumer behavior theories and an understanding of how consumer behavior concepts apply to the consumer decisionmaking process. Students will learn how consumer insights are gained through the exploration of external social and cultural influences such as reference groups, family, and culture, as well as consumer influences such as needs, motivation, personality, and learning. The course also provides an interdisciplinary perspective, including psychology, sociology, anthropology, and economics, to better evaluate and predict consumer behavior. There are no prerequisites to this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate describes the role of consumer behavior in meeting consumer needs to achieve organizational goals.",
+            "The graduate applies knowledge of external influences on consumer behavior in developing marketing strategies for a target market.",
+            "The graduate applies knowledge of internal influences on consumer behavior in developing marketing strategies for a target market."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Industrial and Organizational Psychology",
+          "description": "Industrial and Organizational Psychology introduces students to the ways that businesses and other organizations use psychological theories and models to recruit and train new talent, improve overall productivity, and enhance the motivation, resilience, and team dynamics of employees. Students will consider both how to apply these strategies to themselves and how to use them to lead others. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies industrial and organizational psychological concepts and theories to job analysis, recruitment, and employee selection.",
+            "The learner applies principles of industrial and organizational psychology to promote employee learning, performance, and development.",
+            "The learner applies industrial and organizational psychological concepts and theories to promote employee satisfaction and motivation.",
+            "The learner applies industrial and organizational psychological concepts and theories and leadership skills to optimize communication and promote team cohesion.",
+            "The learner determines appropriate strategies for organization development and stress management."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Team Dynamics",
+          "description": "Team Dynamics explores interpersonal communication strategies, collaborative team interactions methods, and problemsolving techniques to promote effective communication and improve quality outcomes in a professional environment. In this course, students will apply psychologically-sound approaches for resolving conflicts, allowing them to navigate challenging workplace disagreements and personalities. Students in this course will apply their skills to various situations. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies strategies that influence team dynamics and improve outcomes.",
+            "The learner applies interpersonal communication skills for effective communication within a team environment.",
+            "The learner applies conflict resolution and problem-solving strategies for improved team collaboration."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Capstone in Psychology",
+          "description": "The Capstone in Psychology is a culminating experience for the BS in Psychology program. In this project-based course, students will apply their skills and psychological expertise obtained through the program to an issue of personal interest. Students will think deeply and use their creative problem-solving skills and understanding of diverse perspectives. Upon completion of the capstone, students will have proposed an evidence-based strategy to address a real-world psychosocial issue. The tasks for this course could be used as artifacts for a professional portfolio. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner connects a real-world psychosocial issue to their personal or professional interests.",
+            "The learner summarizes data relevant to a real-world psychosocial issue.",
+            "The learner connects a real-world psychosocial issue to psychological concepts or theories.",
+            "The learner proposes a strategy to address a real-world psychosocial issue."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "General Science Content",
+      "courses": [
+        {
+          "title": "Introduction to Biology",
+          "description": "This course is a foundational introduction to the biological sciences. The overarching theories of life from biological research are explored as well as the fundamental concepts and principles of the study of living organisms and their interaction with the environment. Key concepts include how living organisms use and produce energy; how life grows, develops, and reproduces; how life responds to the environment to maintain internal stability; and how life evolves and adapts to the environment.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes the characteristics and classifications of living organisms.",
+            "The graduate analyzes the basic chemical composition of cells and the basic processes that happen at the cellular level.",
+            "The graduate analyzes different types of cells based on their structures and biological functions.",
+            "The graduate analyzes the biological basis for and patterns of heredity and gene expression.",
+            "The graduate analyzes inter-dependencies of organisms and their environments."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "cert_signals": [],
+  "family": null,
+  "anomaly_flags": []
+}

@@ -1,0 +1,716 @@
+{
+  "program_code": "BSCS",
+  "source_degree_title": "Bachelor of Science, Computer Science",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.729572Z",
+    "source_version": "202412",
+    "source_pub_date": "8/2/24",
+    "source_page_count": 20,
+    "confidence": "high"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "A",
+    "aos_status": "usable",
+    "aos_course_count": 37,
+    "caveat_flags": [],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "Introduction to Computer Science",
+        "cus": 4,
+        "term": 1
+      },
+      {
+        "title": "Applied Probability and Statistics",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Scripting and Programming - Foundations",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Data Management - Foundations",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Network and Security - Foundations",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Calculus I",
+        "cus": 4,
+        "term": 2
+      },
+      {
+        "title": "Web Development Foundations",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Data Management - Applications",
+        "cus": 4,
+        "term": 2
+      },
+      {
+        "title": "Version Control",
+        "cus": 1,
+        "term": 3
+      },
+      {
+        "title": "Practical Applications of Prompt",
+        "cus": 2,
+        "term": 3
+      },
+      {
+        "title": "Scripting and Programming - Applications",
+        "cus": 4,
+        "term": 3
+      },
+      {
+        "title": "Introduction to Systems Thinking and Applications",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Discrete Mathematics I",
+        "cus": 4,
+        "term": 3
+      },
+      {
+        "title": "Introduction to Communication: Connecting with Others",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Computer Architecture",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Natural Science Lab",
+        "cus": 2,
+        "term": 4
+      },
+      {
+        "title": "Java Fundamentals",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Discrete Mathematics II",
+        "cus": 4,
+        "term": 4
+      },
+      {
+        "title": "Composition: Successful Self-Expression",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "American Politics and the US Constitution",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Java Frameworks",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Linux Foundations",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Fundamentals of Information Security",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Back-End Programming",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Operating Systems for Computer Scientists",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Advanced Java",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Ethics in Technology",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Data Structures and Algorithms I",
+        "cus": 4,
+        "term": 6
+      },
+      {
+        "title": "Business of IT - Applications",
+        "cus": 4,
+        "term": 7
+      },
+      {
+        "title": "Software Engineering",
+        "cus": 4,
+        "term": 7
+      },
+      {
+        "title": "Health, Fitness, and Wellness",
+        "cus": 4,
+        "term": 7
+      },
+      {
+        "title": "Data Structures and Algorithms II",
+        "cus": 4,
+        "term": 7
+      },
+      {
+        "title": "Software Design and Quality Assurance",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Introduction to AI for Computer Scientists",
+        "cus": 2,
+        "term": 8
+      },
+      {
+        "title": "Artificial Intelligence Optimization for Computer Scientists",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Advanced AI and ML",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Computer Science Project Development with a Team",
+        "cus": 3,
+        "term": 8
+      }
+    ]
+  },
+  "areas_of_study": [
+    {
+      "group": "Computer Science",
+      "courses": [
+        {
+          "title": "Introduction to Computer Science",
+          "description": "Introduction to Computer Science introduces learners to the field of computer science and its essential concepts. In this course students will explore, among other topics, programming basics through language-agnostic pseudocode, computational thinking and problem-solving, algorithms, hardware, and social and ethical considerations in the field. This course is designed for beginners to gain a solid understanding of computer science principles and their applications and prepare students for further study in the field. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner identifies common programming constructs, variables, data types, functions, and operators.",
+            "The learner applies computer science principles to real-world scenarios, using scientific inquiry and higher-order critical thinking skills to solve problems.",
+            "The learner explains pseudocode and the mathematics representation of simple algorithms to provide a comprehensive understanding of the computational processes involved.",
+            "The learner identifies the components of different operating systems.",
+            "The learner identifies the computer architectures and components encompassing a broad range of devices beyond traditional PCs."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Practical Applications of Prompt",
+          "description": "The Practical Applications of Prompt course introduces learners to generative artificial intelligence (AI). This course aims to allow learners to gain skills for writing effective prompts and develop more effective conversations with artificial intelligence. Practical Applications of Prompt will lead learners to explore why prompt engineering is necessary. The course also aims to help learners, regardless of background, increase prompt fluency, which is fluency in using prompt effectively. The course teaches learners how to create effective prompts to elicit information with consideration of scope, specificity, and context; additionally, it teaches learners to evaluate the medium of the prompt and adjust prompts to output relevant results. The last section of the course focuses on ways to evaluate the efficacy of prompts and improve the depth and quality of analytical investigations. This approach prepares students to navigate the complexities of working with generative AI and use these skills effectively throughout their careers.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "Learners explain why prompt engineering is necessary.",
+            "Learners create effective prompts with the consideration of scope, specificity, and context to elicit targeted information.",
+            "Learners evaluate the images, texts, and sound of the prompt and adjust prompts to output relevant results.",
+            "Learners evaluate the efficacy of writing different prompts on research outcomes and improve the depth and quality of their analytical investigations."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Computer Architecture",
+          "description": "Computer Architecture introduces students to concepts and characteristics of organization and architecture applied to modern computer systems including performance, processor, memory, input/output, and multiprocessors to optimize system design, performance, and efficiency.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate evaluates performance of hardware and software interaction to maximize system capabilities.",
+            "The graduate evaluates characteristics of computer architecture to meet business objectives.",
+            "The graduate analyzes computer architecture choices affecting information system solutions in order to effectively communicate and apply design considerations within an organization.",
+            "The graduate analyzes the purpose and function of the operating system and how it interacts with the computer architecture.",
+            "The graduate assesses the impacts of hardware and software design choices (i.e., cost, performance, optimization techniques, power consumption, size, compatibility, etc.) to improve quality and capabilities."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Data Structures and Algorithms I",
+          "description": "Data Structures and Algorithms I covers the fundamentals of dynamic data structures, such as bags, lists, stacks, queues, trees, and hash tables with their associated algorithms. This course discusses object-oriented design and abstract data types as design paradigms. The course emphasizes problem-solving and techniques for designing efficient, maintainable software applications. Students will implement simple applications using the techniques learned.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains the use, logic, and structure of algorithms.",
+            "The learner determines how data structure types impact operations within application, service, or data stores.",
+            "The learner applies algorithms that address a desired outcome based on space and time complexity in big-O notation."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Data Structures and Algorithms II",
+          "description": "Data Structures and Algorithms II explores the analysis and implementation of high-performance data structures and supporting algorithms, including graphs, hashing, self-adjusting data structures, set representations, and dynamic programming. The course also introduces students to NP-complete problems. The course discusses how to use Python techniques to implement software solutions for problems of memory management and data compression. This course has two prerequisites: Data Structures and Algorithms I and Discrete Math II.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate creates software applications that incorporate non-linear data structures for efficient and maintainable software.",
+            "The graduate writes code using hashing techniques within an application to perform searching operations.",
+            "The graduate incorporates dictionaries and sets in order to organize data into key-value pairs.",
+            "The graduate evaluates the space and time complexity of self-adjusting data structures using big-O notation to improve the performance of applications.",
+            "The graduate writes code using self-adjusting heuristics to improve the performance of applications.",
+            "The graduate evaluates computational complexity theories in order to apply models to specific scenarios."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to AI for Computer Scientists",
+          "description": "Introduction to AI for Computer Scientists provides an overview of critical terminology and key concepts for artificial intelligence (AI). The course explores the history and evolution of AI, elements of code, and the process for understanding algorithmic approaches to AI. The course presents topics of bias, ethical issues, and security concerns. Contextualized examples offer students an opportunity to see these concepts in professional scenarios; identifying issues within code, understanding the steps within an AI design, and understanding the different features, limitations, and benefits for a multitude of AI applications.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes types of artificial intelligence for decision-making in real-world applications.",
+            "The learner identifies the difference between reasoning and knowledge through a step-by-step representation in AI.",
+            "The learner identifies suitable data sources and explains the techniques of data collection, data wrangling, and data cleaning to implement the AI/ML data model."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Artificial Intelligence Optimization for Computer Scientists",
+          "description": "Artificial Intelligence Optimization for Computer Scientists guides students through the implementation and optimization of artificial intelligence (AI) solutions for various applications. Through extensive research, students will explore different AI approaches and determine the most applicable solutions for specific scenarios. Practical, hands-on exercises will enable students to implement and rigorously test AI solutions, thus honing their skills in optimizing AI models for enhanced performance and efficiency. Additionally, this course delves into creating data assumptions and interpretations that are crucial for predictive analytics and future data forecasting. Finally, students will adapt and extend AI solutions to address diverse application scenarios, ensuring their readiness to tackle real-world challenges in AI optimization and deployment. Introduction to Artificial Intelligence for Computer Scientists is a prerequisite to this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements and tests artificial intelligence (AI) solutions.",
+            "The learner optimizes artificial intelligence (AI) solutions.",
+            "The learner creates assumptions and interpretations of data to assist in the future prediction of data.",
+            "The learner adapts an AI-optimized solution for additional applications."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Advanced AI and ML",
+          "description": "Advanced AI and ML provides an opportunity for students to exercise their knowledge and skills in the design and development of artificial intelligence (AI) and machine learning (ML) solutions for real-world business problems. Through a hands-on project, students delve into the design and execution planning stages. The course culminates with the development of a fully functional AI/ ML product.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes which type of analytic method will be used to meet a defined project’s purpose and goals.",
+            "The learner creates a design, development, and execution plan for an ML/AI project.",
+            "The learner designs and develops a fully functional ML/AI product that addresses the needs of a business problem or organizational need."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Computer Science Project Development with a Team",
+          "description": "Computer Science Project Development with a Team has students prepare a prior project for submission to a mock technical and executive leadership team. This course expands on the coding work done in a previous course, asking students to submit three artifacts. The final artifact is a business proposal aimed at convincing stakeholders to implement the project, which includes an executive summary of product requirements directed at the IT audience, as well as a technical report of the fully functional data product intended to solve a real-world problem. Artifacts are evaluated by peer team members prior to submission, and students practice giving, receiving, and integrating feedback into their work process.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates a project proposal to convince stakeholders to implement the system.",
+            "The learner creates an executive summary of product requirements directed to IT professionals.",
+            "The learner creates a technical report for a fully functional data product to solve real-world scenarios."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "General Education",
+      "courses": [
+        {
+          "title": "Applied Probability and Statistics",
+          "description": "Applied Probability and Statistics is designed to help students develop competence in the fundamental concepts of basic statistics including: introductory algebra and graphing; descriptive statistics; regression and correlation; and probability. Statistical data and probability are often used in everyday life, science, business, information technology, and educational settings to make informed decisions about the validity of studies and the effect of data on decisions. This course discusses what constitutes sound research design and how to appropriately model phenomena using statistical data. Additionally, the content covers simple probability calculations, based on events that occur in the business and IT industries. No prerequisites are required for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies the operations, processes, and procedures of fractions, decimals, and percentages to evaluate quantitative expressions.",
+            "The graduate applies the operations, processes, and procedures of basic algebra to evaluate quantitative expressions, and to solve equations and inequalities.",
+            "The graduate evaluates categorical and quantitative data pertaining to a single variable using appropriate graphical displays and numerical measures.",
+            "The graduate evaluates the relationship between two variables through interpretation of visual displays and numerical measures.",
+            "The graduate evaluates the relationship between two quantitative variables through correlation and regression.",
+            "The graduate applies principles and methods of probability-based mathematics to explain and solve problems."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Calculus I",
+          "description": "This course guides candidates to apply theoretical concepts of calculus to real-world situations, demonstrating a developing mathematical mindset. This course focuses on limits, derivatives, integrals, and differential equations; it also prepares students for Discrete Mathematics. Prerequisites may include an entrance exam that assesses pre-calculus skills, or readiness; alternatively, completion of pre-calculus within the past 3 – 5 years.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate determines a limit numerically, algebraically, and graphically.",
+            "The graduate analyzes derivatives and their properties.",
+            "The graduate analyzes integrals and their properties.",
+            "The graduate solves differential equations."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Systems Thinking and Applications",
+          "description": "Introduction to Systems Thinking and Applications provides learners with the skills required to engage in a holistic systemsbased approach to analyzing complex problems and solutions. This course introduces the foundational concepts and principles of systems thinking and provides opportunities to use a systems thinking approach to analyze and evaluate realworld case studies. The course will culminate with using systems thinking to develop a solution to an authentic complex problem. This course has no prerequisites, but general education math (C955 or C957) is preferred. Because the course is self-paced, learners may move through the material as quickly or as slowly as needed, with the goal of demonstrating proficiency in the five competencies covered in the final assessment. If learners have no prior knowledge of this material, they can expect to spend 30 to 40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies the basic principles and foundational theory of systems thinking to a scenario.",
+            "The learner analyzes complex problems and solutions using a systems thinking methodology.",
+            "The learner designs a solution to a complex problem using systems thinking."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Discrete Mathematics I",
+          "description": "Discrete Mathematics I helps candidates develop competence in the use of abstract, discrete structures fundamental to computer science. In particular, this course will introduce candidates to logic and proofs; Boolean algebra and functions; set theory; finite and infinite sequences and series; and relations, graphs, and trees. The course emphasizes applications in computer science. Calculus I is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate evaluates the truth of statements using proofs and the principles of deductive logic.",
+            "The graduate analyzes relationships between sets and functions.",
+            "The graduate minimizes circuits using Boolean algebra and Boolean functions.",
+            "The graduate performs matrix operations.",
+            "The graduate analyzes finite and infinite series.",
+            "The graduate analyzes mathematical problems using relations.",
+            "The graduate analyzes graphs, trees, and the associated data point connections."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Communication: Connecting with Others",
+          "description": "Welcome to Introduction to Communication: Connecting with Others! It may seem like common knowledge that communication skills are important, and that communicating with others is inescapable in our everyday lives. While this may appear simplistic, the study of communication is actually complex, dynamic, and multifaceted. Strong communication skills are invaluable to strengthening a multitude of aspects of life. Specifically, this course will focus on communication in the professional setting, and present material from multiple vantage points, including communicating with others in a variety of contexts, across situations, and with diverse populations. Upon completion, you will have a deeper understanding of both your own and others’ communication behaviors, and a toolbox of effective behaviors to enhance your experience in the workplace.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements appropriate communication styles based on audience and setting.",
+            "The learner uses communication strategies for managing conflict.",
+            "The learner uses communication strategies to influence others."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Natural Science Lab",
+          "description": "This course provides students an introduction to using the scientific method and engaging in scientific research to reach conclusions about the natural world. Students will design and carry out an experiment to investigate a hypothesis by gathering quantitative data. They will also research a specific ecosystem using academic sources and draw conclusions from their findings.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate evaluates academic sources for their credibility and relevance to a chosen research topic on a natural world phenomenon.",
+            "The graduate accurately executes the process of scientific inquiry through experimentation in the natural world.",
+            "The graduate draws conclusions based on academic research and scientific inquiry."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Discrete Mathematics II",
+          "description": "Discrete Mathematics II addresses abstract, discrete, computational methods used in computer science. In particular, this class introduces searching and sorting algorithms; big-O estimates; number theory and cryptography; recursion and induction; counting and advanced counting techniques; discrete probability; and modeling computation. This course emphasizes applications in computer science. Discrete Mathematics I is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes linear algorithms and associated big-O estimates.",
+            "The graduate analyzes the use of number theory in cryptography.",
+            "The graduate analyzes recursive elements of algorithms, using applicable induction principles.",
+            "The graduate solves problems using counting principles.",
+            "The graduate analyzes mathematical problems using discrete probability or Bayesian methods.",
+            "The graduate determines computational models using deterministic and nondeterministic finite-state machines."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Composition: Successful Self-Expression",
+          "description": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing research sources. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the seven competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content. You will demonstrate competency through a performance assessment. There is no prerequisite for this course and there is no specific technical knowledge needed.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner composes a written message with language appropriate for cross-cultural communication.",
+            "The learner writes in a professional manner for a given scenario.",
+            "The learner researches valid and reliable sources.",
+            "The learner writes a reference list.",
+            "The learner incorporates research to support a position or idea.",
+            "The learner writes a message using an effective communication approach for a given situation.",
+            "The learner incorporates self-expression in written communication."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "American Politics and the US Constitution",
+          "description": "American Politics and the U.S. Constitution examines the evolution of representative government in the United States and the changing interpretations of the civil rights and civil liberties protected by the Constitution. This course will give candidates an understanding of the powers of the branches of the federal government, the continual tensions inherent in a federal system, the shifting relationship between state and federal governments, and the interactions between elected officials and the ever-changing electorate. This course will focus on such topics as the role of a free press in a democracy, the impact of changing demographics on American politics, and the debates over and expansion of civil rights. Upon completion of the course, candidates should be able to explain the basic functions of the federal government, describe the forces that shape American policy and politics, and be better prepared to participate in America’s civic institutions. This course has no prerequisite.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate describes the influence of competing political ideologies on the development of the United States government.",
+            "The graduate explains how the structure and powers of the United States government interact to form public policy.",
+            "The graduate examines the influence of political parties, citizens, and non-governmental organizations on elections and other political processes inside a participatory democracy.",
+            "The graduate examines the struggle to balance individual liberty, public order, and state’s rights.",
+            "The graduate examines the influence of the media, public opinion, and political discourse on American democracy."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Ethics in Technology",
+          "description": "Ethics in Technology examines the ethical considerations of technology use in the 21st century and introduces students to a decision-making process informed by ethical frameworks. Students will study specific cases related to important topics such as surveillance, social media, hacking, data manipulation, plagiarism and piracy, artificial intelligence, responsible innovation, and the digital divide. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements ethical decision-making frameworks in the information age.",
+            "The learner describes ethical issues regarding data privacy, accuracy, access, and security.",
+            "The learner explains professional ethical codes and their role in guiding professional behavior.",
+            "The learner identifies interventions for personal bias and related legal concerns."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Health, Fitness, and Wellness",
+          "description": "Health, Fitness, and Wellness focuses on the importance and foundations of good health and physical fitness—particularly for children and adolescents—addressing health, nutrition, fitness, and substance use and abuse.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate identifies the influence of disease, fitness, and lifestyle on the body.",
+            "The graduate identifies the principles of nutrition and the components of a healthy diet.",
+            "The graduate identifies factors that influence mental, emotional, and social wellness.",
+            "The graduate identifies the application of the core competencies of social and emotional learning."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Scripting and Programming",
+      "courses": [
+        {
+          "title": "Scripting and Programming - Foundations",
+          "description": "Scripting and Programming - Foundations introduces programming basics such as variables, data types, flow control, and design concepts. The course is language-agnostic in nature, ending in a survey of languages, and introduces the distinction between interpreted and compiled languages. Learners will gain skills in identifying scripts for computer program requirements and in using fundamental programming elements as part of common computer programming tasks. Learners will also gain an understanding of the logic and outcome of simple algorithms.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner identifies scripts for computer program requirements.",
+            "The learner uses fundamental programming elements as part of common computer programming tasks.",
+            "The learner explains the logic and outcome of simple algorithms."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Data Management",
+      "courses": [
+        {
+          "title": "Data Management - Foundations",
+          "description": "Data Management Foundations offers an introduction in creating conceptual, logical and physical data models. Students gain skills in creating databases and tables in SQL-enabled database management systems, as well as skills in normalizing databases. No prerequisites are required for this course",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains attributes of databases, database tables, and structured and associated query language (SQL) commands.",
+            "The learner determines how to run queries for creation and manipulation of data in relational databases.",
+            "The learner defines primary and foreign keys in data normalization."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Data Management - Applications",
+          "description": "Data Management - Applications covers conceptual data modeling and introduces MySQL. Students will learn how to create simple to complex SELECT queries, including subqueries and joins, and how to use SQL to update and delete data. Topics covered in this course include exposure to MySQL; creating and modifying databases, tables, views, foreign keys and primary keys (FKs and PKs), and indexes; populating tables; and developing simple Select-From-Where (SFW) queries to complex 3+ table join queries. The following course is a prerequisite: Data Management - Foundations.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner recommends databases and database management systems to meet organizational needs.",
+            "The learner queries database tables and views with SQL code.",
+            "The learner creates DML statements that insert, update, and delete data in data tables.",
+            "The learner implements joins and aggregate functions in SQL queries."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Network and Security",
+      "courses": [
+        {
+          "title": "Network and Security - Foundations",
+          "description": "Network and Security - Foundations introduces learners to the basic network systems and concepts related to networking technologies. Learners will gain skills in applying network security concepts for business continuity, data access, and confidentiality, and in identifying solutions for compliance with security guidance.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner identifies basic network systems and concepts related to networking technologies.",
+            "The learner applies network security concepts for business continuity, data access, and confidentiality.",
+            "The learner identifies solutions for compliance with security guidance."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Web Development",
+      "courses": [
+        {
+          "title": "Web Development Foundations",
+          "description": "Web Development Foundations introduces students to web design and development using HTML, XML, and Cascading Style Sheets (CSS), the foundational languages of the web. This course also covers how to troubleshoot problems using developer tools and integrated development environments commonly employed in web development. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates the structure of basic web documents using HTML and XML.",
+            "The learner implements web page formatting and interface aesthetics using CSS",
+            "The learner resolves software problems in web development environments with debugging tools."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Full Stack Engineering",
+      "courses": [
+        {
+          "title": "Version Control",
+          "description": "Version control is critical to maintaining software and enabling scalability solutions. A best practice for any programming project that requires multiple files uses version control. Version control enables teams to have collaborative workflows and enhances the software development lifecycle. This course introduces students to the basics of publishing, retrieving, branching, and cloning. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements version control processes and solutions that maintains source code."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Software",
+      "courses": [
+        {
+          "title": "Scripting and Programming - Applications",
+          "description": "Scripting and Programming - Applications for undergraduates explores the various aspects of the C++ programming language by examining its syntax, the development environment, and tools and techniques to solve some real-world problems.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies fundamental programming concepts in a specific programming environment.",
+            "The graduate prepares code which declares, initializes, and assigns values to variables of appropriate types as part of the application development process.",
+            "The graduate writes code that implements decision and loop constructs to control the flow of a program.",
+            "The graduate creates arrays in order to solve complex problems.",
+            "The graduate applies pointers to solve complex problems.",
+            "The graduate writes code that creates and manipulates functions and files.",
+            "The graduate applies object-oriented programming concepts in order to create a basic application."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Java Fundamentals",
+          "description": "Java Fundamentals introduces you to object-oriented programming in the Java language. You will create and call methods, design Java classes, and other object-oriented principles and constructs to develop software that meets business requirements. This course requires foundational knowledge of programming including variables, type, program flow and debugging.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates object-oriented programs.",
+            "The learner creates methods in Java."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Java Frameworks",
+          "description": "Java Frameworks builds object-oriented programming expertise and introduces powerful new tools for Java application development. Students will execute exception handling, Java frameworks, and other object-oriented principles and constructs to develop a complete application including a user interface. This course requires foundational knowledge of object-oriented programming and the Java language.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements user interfaces.",
+            "The learner implements object-oriented programming frameworks."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Back-End Programming",
+          "description": "Back-End Programming introduces students to creating back-end components of a web application with the support of framework packages. This course also teaches students how to implement database functionality in a web application and how to create web services. This course requires intermediate expertise in object-oriented programming and the Java language.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner develops object-oriented applications that can be integrated with relational databases.",
+            "The learner writes code for object-oriented applications using Spring framework.",
+            "The learner implements design patterns for object-oriented applications."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Advanced Java",
+          "description": "Advanced Java refines object-oriented programming expertise and skills. You will implement multithreaded, object-oriented code with the features of Java necessary to develop software that meets business requirements. Additionally, you will determine how to deploy software applications using cloud services. This course requires intermediate expertise in objectoriented programming and the Java language.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner writes multithreaded, object-oriented code using Java frameworks.",
+            "The learner determines how to deploy software applications using cloud services."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Software Design and Quality Assurance",
+          "description": "Software Design and Quality Assurance applies a QA focus to every phase of the software development life cycle. This course investigates best practices for quality analysis, quality planning, and testing strategies as they pertain to the everyday practice of software development. Students will come to understand how their work fits into the bigger picture: how QA, testing, and code-writing practices interact within specific process models; the potential impact of new code on existing code or on other applications; the importance of usability and the influence users have on the ultimate success of an application. Students will explore test plans, test cases, unit tests, integration tests, regression tests, usability tests, and test and review tools.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner determines the impact of business requirements on software design patterns and software systems.",
+            "The learner identifies goals and potential roadblocks as part of software development plans.",
+            "The learner defines plans for development tasks and environments based on desired quality outcomes.",
+            "The learner recommends tools and services to address functional and non-functional testing outcomes."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Operating Systems",
+      "courses": [
+        {
+          "title": "Linux Foundations",
+          "description": "Linux Foundations prepares learners for the LPI Linux Essentials certification, and is an introduction to Linux as an operating system as well as an introduction to open-source concepts and the basics of the Linux command line. Learners will gain skills in identifying the fundamentals of open-source software and to develop resources for data access and security.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner identifies the fundamentals of open-source software.",
+            "The learner develops resources for data access and security."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Secure Systems Analysis & Design",
+      "courses": [
+        {
+          "title": "Fundamentals of Information Security",
+          "description": "This course lays the foundation for understanding terminology, principles, processes, and best practices of information security at local and global levels. It further provides an overview of basic security vulnerabilities and countermeasures for protecting information assets through planning and administrative controls within an organization. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner identifies security principles, policies, practices, and methods for asset protection and cyber defense.",
+            "The learner identifies security requirements based on principles of confidentiality, integrity, and availability.",
+            "The learner identifies cybersecurity guidelines in privacy and compliance."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Information Technology Management",
+      "courses": [
+        {
+          "title": "Operating Systems for Computer Scientists",
+          "description": "Operating Systems for Computer Scientists focuses on the intricacies of operating systems. This comprehensive course for computer science students covers core principles such as processes, threads, memory management, and file systems, providing students with insights into CPU scheduling algorithms, deadlock handling, and system performance optimization. Additionally, the course delves into security mechanisms, addressing common threats and preventative measures. Through a blend of theoretical concepts and practical applications, students emerge equipped to adeptly navigate operating system features and prepared for real-world challenges in computer science.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes operating systems, their functions, and their structure.",
+            "The learner describes processes and threads and their relationship to multithreading and parallel programming.",
+            "The learner explains the different approaches to memory management and how they affect CPU utilization.",
+            "The learner describes different file systems and I/O algorithms.",
+            "The learner describes mechanisms used by the operating system for protection and security and how they relate to software applications."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Software Engineering",
+          "description": "Software Engineering introduces the concepts of software engineering to students who have completed the core courses in programming and project management. The principles build on previously acquired concepts, switching the emphasis from programming simple routines to engineering robust and scalable software solutions. This course does not cover programming, but it provides an overview of software engineering processes and their challenging nature, focusing on the need for a disciplined approach to software engineering. A generic process framework provides the groundwork for formal process models. Prescriptive process models such as the Waterfall Model and Agile Development are included. This course also introduces the elements and phases of software engineering, including requirements engineering, design concepts, and software quality. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the objectives, scope, and organizational impact of software systems.",
+            "The learner identifies the costs and impact of design changes to software systems.",
+            "The learner determines optimal software design for given requirements.",
+            "The learner creates test cases for quality assurance as part of software development processes."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Business of IT",
+      "courses": [
+        {
+          "title": "Business of IT - Applications",
+          "description": "Business of IT - Applications examines Information Technology Infrastructure Library (ITIL®) terminology, structure, policies, and concepts. Focusing on the management of information technology (IT) infrastructure, development, and operations, learners will explore the core principles of ITIL practices for service management to prepare them for careers as IT professionals, business managers, and business process owners. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies Information Technology Infrastructure Library (ITIL) concepts, core components, principles, and models of service management.",
+            "The learner applies the Information Technology Infrastructure Library (ITIL) six activities of the service value chain."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "cert_signals": [],
+  "family": null,
+  "anomaly_flags": []
+}

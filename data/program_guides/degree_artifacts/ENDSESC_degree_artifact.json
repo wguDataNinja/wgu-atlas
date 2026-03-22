@@ -1,0 +1,173 @@
+{
+  "program_code": "ENDSESC",
+  "source_degree_title": "Endorsement Preparation Program, Chemistry",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.730164Z",
+    "source_version": "202509",
+    "source_pub_date": "6/17/2025",
+    "source_page_count": 0,
+    "confidence": "high"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "B",
+    "aos_status": "usable",
+    "aos_course_count": 7,
+    "caveat_flags": [],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "General Chemistry I",
+        "cus": 3,
+        "term": null
+      },
+      {
+        "title": "General Chemistry II with Lab",
+        "cus": 4,
+        "term": null
+      },
+      {
+        "title": "Analytical Chemistry with Lab",
+        "cus": 4,
+        "term": null
+      },
+      {
+        "title": "Physical Chemistry I",
+        "cus": 3,
+        "term": null
+      },
+      {
+        "title": "Organic Chemistry",
+        "cus": 3,
+        "term": null
+      },
+      {
+        "title": "Biochemistry I",
+        "cus": 3,
+        "term": null
+      },
+      {
+        "title": "Secondary Chemistry Curriculum",
+        "cus": 3,
+        "term": null
+      }
+    ],
+    "sp_display_mode": "advisor-guided"
+  },
+  "areas_of_study": [
+    {
+      "group": "General Science Content",
+      "courses": [
+        {
+          "title": "General Chemistry I",
+          "description": "General Chemistry I introduces foundational principles of chemistry, starting at the atomic level and expanding to the behavior of elements within the periodic table. This course explores how atoms bond to form molecules and proceeds into chemical reactions, acids and bases, solutions, and nuclear reactions. Students will gain a comprehensive understanding of stability and change in chemical processes. This course highlights the practical aspects of chemistry, providing insights into how chemical principles underpin everyday phenomena and contribute to our understanding of environmental processes.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies concepts of energy and entropy to describe systems.",
+            "The learner describes processes and outputs of nuclear reactions.",
+            "The learner recognizes patterns in the structure and properties of matter based on atomic structure."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Chemistry Content",
+      "courses": [
+        {
+          "title": "General Chemistry II with Lab",
+          "description": "Chemistry II with Lab course is designed to equip students with a comprehensive understanding of advanced chemical principles and their real-world applications. Covering a wide range of topics from energy transfer during physical and chemical processes to the recognition and naming of compounds, the course emphasizes critical thinking and practical skills. Students will delve into quantitative relationships in chemical reactions, gaining proficiency in stoichiometry, solution concentration, and reaction predictions. Through scientific inquiry, students will learn to design experiments, collect and analyze data, and apply their knowledge to solve environmental and industrial problems. The course also includes extensive practice in communicating scientific findings effectively, both in written reports and oral presentations. With a blend of theoretical knowledge and hands-on laboratory experience, this course prepares students for success in advanced studies and professional applications of chemistry.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes chemical processes in real-world contexts using scientific investigation techniques.",
+            "The learner analyzes quantitative relationships based on predictions of chemical processes.",
+            "The learner analyzes the transfer of energy during physical and chemical processes.",
+            "The learner recognizes the names of compounds, chemical formulas, and depictions of molecular structures using the periodic table."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Analytical Chemistry with Lab",
+          "description": "In \"Analytical Chemistry with Lab,\" students will deepen their understanding of chemistry through the scientific method, data analysis, and data visualization. This course aligns with Utah Competency Areas C2.1.A and C2.1.B, focusing on questioning, methods, argumentation, models, data, and analysis. Students will gain hands-on experience with classical, optical, chromatographic, mass spectrometric, and electrochemical techniques. Prerequisites include a solid foundation in mathematics and prior chemistry courses. Students will critically evaluate experiments, learning to design effective methods and present their data clearly. This course prepares students to gather, process, and communicate chemical data, emphasizing its application in teaching and real-world scenarios. This course helps prepare students in chemistry and related fields.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies the scientific method and logical arguments to a testable scientific question.",
+            "The learner evaluates a problem in chemistry using data analysis.",
+            "The learner presents findings from an experiment showing chemical information such as properties and reactions through appropriate visual models and diagrams."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Physical Chemistry I",
+          "description": "Physical Chemistry I provides an exploration of the intersection of physics and chemistry to understand the fundamental principles that govern chemical reactions and matter. This course covers key topics such as atomic and molecular structure, thermodynamics, and kinetics, emphasizing real-world applications and practical problem-solving. Through a blend of virtual labs and interactive activities, learners will develop a deep understanding of energy changes, reaction mechanisms, and the behavior of matter in various states. This course emphasizes engagement with complex concepts, enhancement of analytical skills, and application of theoretical knowledge to practical scenarios.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together",
+            "The learner analyzes how the principles of physics cause and explain behavior in a chemical reaction.",
+            "The learner analyzes the structure of matter and its relationship to key properties.",
+            "The learner analyzes the thermodynamics of chemical and physical changes."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Organic Chemistry",
+          "description": "This Organic Chemistry course prepares teacher candidates to understand and apply foundational concepts in carbon-based chemistry. You will learn to describe molecular structures using proper nomenclature, analyze chemical processes, and apply instrumental methods of analysis to determine molecular structures. The course emphasizes practical skills, including the use of modeling kits and spectroscopic techniques to synthesize and analyze organic compounds. By the end of this course, you will be equipped to teach these concepts effectively to your students.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the chemical processes of carbon-based molecules.",
+            "The learner applies instrumental methods of analysis to determine the structure of simple organic compounds.",
+            "The learner describes carbon-based molecules, their properties, and their 3-dimensional structure using nomenclature and visual representations."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Biochemistry I",
+          "description": "This course delves into the critical role of macromolecules and chemical reactions in living organisms, with a focus on molecular interactions, metabolic pathways, and the regulatory mechanisms that underpin biological processes. The student will start by analyzing macromolecules in organisms and study information on the structure, function, and interactions of key biological macromolecules including carbohydrates, lipids, proteins, and nucleic acids, emphasizing their roles in cellular functions and intercellular interactions. The course then builds to analyzing macromolecules in organisms by building on this foundation, examining the interactions between these macromolecules and the forces driving these interactions, such as intermolecular forces and solubility principles. Finally, the student will explore chemical reactions in organisms through enzyme function and inhibition, metabolic pathways, like glycolysis and the citric acid cycle, and the electron transport chain, as well as the regulation of these pathways and the impact of metabolic disorders. Throughout the course, students will engage in activities and analyses that deepen their understanding of these biochemical processes and their relevance to the functioning of living organisms.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes chemical reactions within a living organism, the results of those reactions, and phenomena that can affect those reactions.",
+            "The learner analyzes chemical reactions within a living organism, the results of those reactions, and phenomena that can affect those reactions.",
+            "The learner analyzes the interactions between macromolecules within a living organism and the forces that cause those interactions.",
+            "The learner explains the fundamental structures within a living organism at the atomic and molecular level using standard approaches and visual representations."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Science Education",
+      "courses": [
+        {
+          "title": "Secondary Chemistry Curriculum",
+          "description": "Secondary Chemistry Curriculum synthesizes the core content of the Secondary Chemistry Program, preparing candidates to apply education theory and teaching approaches to the chemistry content areas. This course aligns with the areas covered by the Chemistry Praxis exam, ensuring candidates demonstrate both a deep understanding of the subject matter and the ability to effectively deliver content in a secondary classroom setting. Topics include atomic structure, chemical bonding, energy relationships, chemical reactions, solutions, and the role of science and engineering in society. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes chemical reactions, periodicity, solutions, kinetics, equilibrium, and acid-base systems.",
+            "The learner describes the principles and models of matter and energy, and chemical composition, bonding, and structure of molecules.",
+            "The learner explains the impact of science and engineering on society and the environment."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "cert_signals": [
+    {
+      "normalized_cert": "Praxis exam",
+      "via_course_title": "Secondary Chemistry Curriculum",
+      "via_course_code": "D872",
+      "confidence": "high",
+      "atlas_recommendation": "degree-only"
+    }
+  ],
+  "family": null,
+  "anomaly_flags": []
+}

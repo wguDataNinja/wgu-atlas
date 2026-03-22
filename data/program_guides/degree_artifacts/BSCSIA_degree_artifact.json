@@ -1,0 +1,825 @@
+{
+  "program_code": "BSCSIA",
+  "source_degree_title": "Bachelor of Science, Cybersecurity and Information Assurance",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.729601Z",
+    "source_version": "202509",
+    "source_pub_date": "7/31/2025",
+    "source_page_count": 0,
+    "confidence": "medium"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "A",
+    "aos_status": "usable",
+    "aos_course_count": 37,
+    "caveat_flags": [],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "Health, Fitness, and Wellness",
+        "cus": 4,
+        "term": 1
+      },
+      {
+        "title": "Introduction to IT",
+        "cus": 4,
+        "term": 1
+      },
+      {
+        "title": "Natural Science Lab",
+        "cus": 2,
+        "term": 1
+      },
+      {
+        "title": "Practical Applications of Prompt",
+        "cus": 2,
+        "term": 1
+      },
+      {
+        "title": "Ethics in Technology",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "IT Foundations",
+        "cus": 4,
+        "term": 2
+      },
+      {
+        "title": "Applied Probability and Statistics",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Composition: Successful Self-Expression",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Applied Algebra",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "IT Applications",
+        "cus": 4,
+        "term": 3
+      },
+      {
+        "title": "Fundamentals of Information Security",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Network and Security - Foundations",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Critical Thinking: Reason and Evidence",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Networks",
+        "cus": 4,
+        "term": 4
+      },
+      {
+        "title": "Introduction to Communication: Connecting with Others",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Business of IT - Applications",
+        "cus": 4,
+        "term": 4
+      },
+      {
+        "title": "American Politics and the US Constitution",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Discrete Math: Logic",
+        "cus": 1,
+        "term": 5
+      },
+      {
+        "title": "Network and Security - Applications",
+        "cus": 4,
+        "term": 5
+      },
+      {
+        "title": "Legal Issues in Information Security",
+        "cus": 4,
+        "term": 5
+      },
+      {
+        "title": "Digital Forensics in Cybersecurity",
+        "cus": 4,
+        "term": 6
+      },
+      {
+        "title": "Information Systems Security",
+        "cus": 4,
+        "term": 6
+      },
+      {
+        "title": "Business of IT - Project Management",
+        "cus": 4,
+        "term": 6
+      },
+      {
+        "title": "Discrete Math: Functions and Relations",
+        "cus": 1,
+        "term": 7
+      },
+      {
+        "title": "Discrete Math: Algorithms and Cryptography",
+        "cus": 1,
+        "term": 7
+      },
+      {
+        "title": "Introduction to Cryptography",
+        "cus": 4,
+        "term": 7
+      },
+      {
+        "title": "Managing Information Security",
+        "cus": 3,
+        "term": 7
+      },
+      {
+        "title": "Scripting and Programming Foundations",
+        "cus": 3,
+        "term": 7
+      },
+      {
+        "title": "Linux Foundations",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Data Management - Foundations",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Python for IT Automation",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Data Analytics - Applications",
+        "cus": 4,
+        "term": 8
+      },
+      {
+        "title": "Software Security and Testing",
+        "cus": 3,
+        "term": 9
+      },
+      {
+        "title": "Introduction to AI and Security",
+        "cus": 2,
+        "term": 9
+      },
+      {
+        "title": "Cyber Defense and Countermeasures",
+        "cus": 4,
+        "term": 9
+      },
+      {
+        "title": "Managing Cloud Security",
+        "cus": 4,
+        "term": 9
+      },
+      {
+        "title": "Penetration Testing and Vulnerability Analysis",
+        "cus": 4,
+        "term": 10
+      },
+      {
+        "title": "Cybersecurity and Information Assurance Capstone",
+        "cus": 4,
+        "term": 10
+      }
+    ]
+  },
+  "areas_of_study": [
+    {
+      "group": "IT Fundamentals",
+      "courses": [
+        {
+          "title": "Introduction to IT",
+          "description": "Introduction to IT examines information technology as a discipline and the various roles and functions of the IT department as business support. Students are presented with various IT disciplines, including systems and services, network and security, scripting and programming, data management, and business of IT, with a survey of technologies in every area and how they relate to each other and to the business.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes fundamental data management functions in databases.",
+            "The learner describes the basics of programming languages in software development.",
+            "The learner describes the role of the IT department in IT infrastructure management, disaster recovery, and business continuity processes.",
+            "The learner describes the structure, function, and security associated with networks.",
+            "The learner evaluates ethical concerns in information technology.",
+            "The learner explains different computer hardware and networking technologies and their developments.",
+            "The learner identifies components of software and its relation to operating systems.",
+            "The learner identifies computer hardware components."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "IT Applications",
+          "description": "IT Applications introduces skills in identifying operating systems and their configurations and in implementing security principles across devices and networks. Learners will also gain skills in troubleshooting software, security, and malware issues, and in implementing basic operational procedures in documentation, change management, compliance, and communication. The course will introduce basic disaster recovery and business continuity procedures, scripting basics, and remote access technology solutions. The course prepares learners for the CompTIA A+ Core 2 certification exam.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner identifies operating systems and their configurations.",
+            "The learner identifies remote access technology solutions.",
+            "The learner identifies scripting basics.",
+            "The learner implements basic disaster recovery and business continuity procedures.",
+            "The learner implements basic operational procedures in documentation, change management, compliance, and communication.",
+            "The learner implements security principles across devices and networks.",
+            "The learner troubleshoots software, security, and malware issues."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "IT Foundations",
+          "description": "IT Foundations provides learners with an understanding of personal computer components and their functions in a desktop system; a knowledge of computer data storage and retrieval; and skills in classifying, installing, configuring, optimizing, upgrading, and troubleshooting printers, laptops, portable devices, operating systems, networks, and system security. This course also gives learners the ability to recommend appropriate tools, diagnostic procedures, preventative maintenance, and troubleshooting techniques for personal computer components in a desktop system; strategies for identifying, preventing, and reporting safety hazards and environmental or human accidents in technological environments; and effective communication skills for interacting with colleagues and clients, including job-related professional behavior. The course prepares learners for the CompTIA A+ Core 1 certification exam.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner configures common hardware and software components of mobile devices.",
+            "The learner configures common hardware in computer systems.",
+            "The learner configures wired and wireless networks.",
+            "The learner creates client-side virtualization with cloud computing components.",
+            "The learner troubleshoots hardware, software, and network issues with best practice methodologies."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "General Education",
+      "courses": [
+        {
+          "title": "Health, Fitness, and Wellness",
+          "description": "Health, Fitness, and Wellness focuses on the importance and foundations of good health and physical fitness—particularly for children and adolescents—addressing health, nutrition, fitness, and substance use and abuse.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate identifies factors that influence mental, emotional, and social wellness.",
+            "The graduate identifies the application of the core competencies of social and emotional learning.",
+            "The graduate identifies the influence of disease, fitness, and lifestyle on the body.",
+            "The graduate identifies the principles of nutrition and the components of a healthy diet."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Ethics in Technology",
+          "description": "Ethics in Technology examines the ethical considerations of technology use in the 21st century and introduces students to a decision-making process informed by ethical frameworks. Students will study specific cases related to important topics such as surveillance, social media, hacking, data manipulation, plagiarism and piracy, artificial intelligence, responsible innovation, and the digital divide. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes ethical issues regarding data privacy, accuracy, access, and security.",
+            "The learner explains professional ethical codes and their role in guiding professional behavior.",
+            "The learner identifies interventions for personal bias and related legal concerns.",
+            "The learner implements ethical decision-making frameworks in the information age."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Composition: Successful Self-Expression",
+          "description": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing research sources. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the seven competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content. You will demonstrate competency through a performance assessment. There is no prerequisite for this course and there is no specific technical knowledge needed.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner composes a written message with language appropriate for cross-cultural communication.",
+            "The learner incorporates research to support a position or idea.",
+            "The learner incorporates self-expression in written communication.",
+            "The learner researches valid and reliable sources.",
+            "The learner writes a message using an effective communication approach for a given situation.",
+            "The learner writes a reference list.",
+            "The learner writes in a professional manner for a given scenario."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Applied Probability and Statistics",
+          "description": "Applied Probability and Statistics is designed to help students develop competence in the fundamental concepts of basic statistics including: introductory algebra and graphing; descriptive statistics; regression and correlation; and probability. Statistical data and probability are often used in everyday life, science, business, information technology, and educational settings to make informed decisions about the validity of studies and the effect of data on decisions. This course discusses what constitutes sound research design and how to appropriately model phenomena using statistical data. Additionally, the content covers simple probability calculations, based on events that occur in the business and IT industries. No prerequisites are required for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies principles and methods of probability-based mathematics to explain and solve problems.",
+            "The graduate applies the operations, processes, and procedures of basic algebra to evaluate quantitative expressions, and to solve equations and inequalities.",
+            "The graduate applies the operations, processes, and procedures of fractions, decimals, and percentages to evaluate quantitative expressions.",
+            "The graduate evaluates categorical and quantitative data pertaining to a single variable using appropriate graphical displays and numerical measures.",
+            "The graduate evaluates the relationship between two quantitative variables through correlation and regression.",
+            "The graduate evaluates the relationship between two variables through interpretation of visual displays and numerical measures."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Applied Algebra",
+          "description": "Applied Algebra is designed to help you develop competence in working with functions, the algebra of functions, and using some applied properties of functions. You will start learning about how we can apply different kinds of functions to relevant, real-life examples. From there, the algebra of several families of functions will be explored, including linear, polynomial, exponential, and logistic functions. You will also learn about relevant, applicable mathematical properties of each family of functions, including rate of change, concavity, maximizing/minimizing, and asymptotes. These properties will be used to solve problems related to your major and make sense of everyday living problems. Students should complete Applied Probability and Statistics or its equivalent prior to engaging in Applied Algebra.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes graphical depictions of real-world situations using functional properties.",
+            "The learner applies exponential functions and their properties to real-world problems.",
+            "The learner applies linear functions and their properties to real-world problems.",
+            "The learner applies logistic functions and their properties to real-world problems.",
+            "The learner applies polynomial functions and their properties to real-world problems.",
+            "The learner interprets the real-world meaning of various functions based on notation, graphical representations, and data representations.",
+            "The learner verifies the validity of a given model."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Critical Thinking: Reason and Evidence",
+          "description": "In this course you will learn key critical thinking concepts and how to apply them in the analysis and evaluation of reasons and evidence. The course examines the basic components of an argument, the credibility of evidence sources, the impact of bias, and how to construct an argument that provides good support for a claim. The course consists of an introduction and four major sections. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the four competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates bias and its impact.",
+            "The learner evaluates evidence based on source credibility.",
+            "The learner evaluates the quality of an argument.",
+            "The learner makes claims based on evidence."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Communication: Connecting with Others",
+          "description": "Welcome to Introduction to Communication: Connecting with Others! It may seem like common knowledge that communication skills are important, and that communicating with others is inescapable in our everyday lives. While this may appear simplistic, the study of communication is actually complex, dynamic, and multifaceted. Strong communication skills are invaluable to strengthening a multitude of aspects of life. Specifically, this course will focus on communication in the professional setting, and present material from multiple vantage points, including communicating with others in a variety of contexts, across situations, and with diverse populations. Upon completion, you will have a deeper understanding of both your own and others’ communication behaviors, and a toolbox of effective behaviors to enhance your experience in the workplace.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements appropriate communication styles based on audience and setting.",
+            "The learner uses communication strategies for managing conflict.",
+            "The learner uses communication strategies to influence others."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Discrete Math: Logic",
+          "description": "Discrete Math-Logic is designed to help students develop competence in the use of logic and proofs and Boolean Algebra and Boolean functions. Applied Probability and Statistics and Applied Algebra are prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates the truth of statements using proofs and the principles of deductive logic.",
+            "The learner minimizes circuits using Boolean algebra and Boolean functions."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "American Politics and the US Constitution",
+          "description": "American Politics and the U.S. Constitution examines the evolution of representative government in the United States and the changing interpretations of the civil rights and civil liberties protected by the Constitution. This course will give candidates an understanding of the powers of the branches of the federal government, the continual tensions inherent in a federal system, the shifting relationship between state and federal governments, and the interactions between elected officials and the ever-changing electorate. This course will focus on such topics as the role of a free press in a democracy, the impact of changing demographics on American politics, and the debates over and expansion of civil rights. Upon completion of the course, candidates should be able to explain the basic functions of the federal government, describe the forces that shape American policy and politics, and be better prepared to participate in America’s civic institutions. This course has no prerequisite.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate describes the influence of competing political ideologies on the development of the United States government.",
+            "The graduate examines the influence of political parties, citizens, and non-governmental organizations on elections and other political processes inside a participatory democracy.",
+            "The graduate examines the influence of the media, public opinion, and political discourse on American democracy.",
+            "The graduate examines the struggle to balance individual liberty, public order, and state’s rights.",
+            "The graduate explains how the structure and powers of the United States government interact to form public policy."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Discrete Math: Functions and Relations",
+          "description": "Discrete Math: Functions and Relations is designed to help students develop competence in the use of abstract discrete structures fundamental to systems networking. In particular, this course will introduce students to set theory, finite sequences, series, and relations. Discrete Math: Logic, Applied Probability and Statistics, and Applied Algebra are prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes mathematical problems using relations and directed graphs.",
+            "The learner analyzes relationships between sets and functions."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Discrete Math: Algorithms and Cryptography",
+          "description": "Discrete Math: Algorithms and Cryptography addresses discrete computational methods, including searching and sorting algorithms, big-O estimates, and number theory and cryptography. Discrete Math Functions and Relations is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes linear algorithms and associated big-O estimates.",
+            "The learner analyzes the use of number theory in cryptography."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Natural Science Lab",
+          "description": "This course provides students an introduction to using the scientific method and engaging in scientific research to reach conclusions about the natural world. Students will design and carry out an experiment to investigate a hypothesis by gathering quantitative data. They will also research a specific ecosystem using academic sources and draw conclusions from their findings.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate accurately executes the process of scientific inquiry through experimentation in the natural world.",
+            "The graduate draws conclusions based on academic research and scientific inquiry.",
+            "The graduate evaluates academic sources for their credibility and relevance to a chosen research topic on a natural world phenomenon."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Scripting and Programming",
+      "courses": [
+        {
+          "title": "Scripting and Programming - Foundations",
+          "description": "Scripting and Programming - Foundations introduces programming basics such as variables, data types, flow control, and design concepts. The course is language-agnostic in nature, ending in a survey of languages, and introduces the distinction between interpreted and compiled languages. Learners will gain skills in identifying scripts for computer program requirements and in using fundamental programming elements as part of common computer programming tasks. Learners will also gain an understanding of the logic and outcome of simple algorithms.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains the logic and outcome of simple algorithms.",
+            "The learner identifies scripts for computer program requirements.",
+            "The learner uses fundamental programming elements as part of common computer programming tasks."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Secure Systems Analysis & Design",
+      "courses": [
+        {
+          "title": "Fundamentals of Information Security",
+          "description": "Fundamentals of Information Security lays the foundation for understanding terminology, principles, processes, and best practices of information security at local and global levels. It further provides an overview of basic security vulnerabilities and countermeasures for protecting information assets through planning and administrative controls within an organization.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains how human, organizational, and societal factors impact cybersecurity.",
+            "The learner identifies the threats, principles, standards, and industry best practices related to connection and system security.",
+            "The learner identifies the threats, principles, standards, and industry best practices related to data security.",
+            "The learner identifies the threats, principles, standards, and industry best practices related to software and component security."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Information Systems Security",
+          "description": "IT security professionals must be prepared for the operational demands and responsibilities of security practitioners including authentication, security testing, intrusion detection and prevention, incident response and recovery, attacks and countermeasures, cryptography, and malicious code countermeasures. This course provides a comprehensive, up-to-date global body of knowledge that ensures students have the right information, security knowledge, and skills to be successful in IT operational roles to mitigate security concerns and guard against the impact of malicious activity. Students demonstrate how to manage and restrict access control systems; administer policies, procedures, and guidelines that are ethical and compliant with laws and regulations; implement risk management and incident handling processes; execute cryptographic systems to protect data; manage network security; and analyze common attack vectors and countermeasures to assure information integrity and confidentiality in various systems. This course prepares students for the Systems Security Certified Practitioner (ISC2 SSCP) certification exam.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate defends the security of a network by maintaining the confidentiality, integrity, and availability (CIA) of the information transmitted over communication networks.",
+            "The graduate evaluates cryptographic systems and operations to protect data security.",
+            "The graduate evaluates security concerns with countermeasures to guard against the impact of malicious activity to end-point device security, virtualization, cloud, and large-scale distributed systems.",
+            "The graduate evaluates security incident handling plans to protect and preserve organization assets and data.",
+            "The graduate evaluates security operations concepts, and policies to ensure the confidentiality, integrity, and availability of information assets is applied.",
+            "The graduate manages control access to privileged, confidential, or proprietary resources.",
+            "The graduate proposes security risks mitigations processes to identify, evaluate, prioritize, and prevent potential security threats."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Network and Security",
+      "courses": [
+        {
+          "title": "Network and Security - Foundations",
+          "description": "Network and Security - Foundations introduces learners to the basic network systems and concepts related to networking technologies. Learners will gain skills in applying network security concepts for business continuity, data access, and confidentiality, and in identifying solutions for compliance with security guidance.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies network security concepts for business continuity, data access, and confidentiality.",
+            "The learner identifies basic network systems and concepts related to networking technologies.",
+            "The learner identifies solutions for compliance with security guidance."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Network and Security - Applications",
+          "description": "Network and Security - Applications prepares learners for the CompTIA Security+ certification exam. The course introduces learners to skills in identifying threats, attacks, and vulnerabilities to organizational security. The learner will also gain skills in designing security solutions for enterprise infrastructures and architectures, as well as in implementing security solutions across hardware, applications, and network services. Learners will be able to execute operations and incident response with tools, policies, forensics, and mitigation techniques, and to analyze information security controls, governance, risk, and compliance.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes information security controls, governance, risk, and compliance.",
+            "The learner designs security solutions for enterprise infrastructures and architectures.",
+            "The learner executes operations and incident response with tools, policies, forensics, and mitigation techniques.",
+            "The learner identifies threats, attacks, and vulnerabilities to organizational security.",
+            "The learner implements security solutions across hardware, applications, and network services."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Networks",
+          "description": "Networks introduces skills in configuring networking components and a network infrastructure. Learners will gain skills in optimizing network operations for availability, performance, and security, and in troubleshooting network issues. The course prepares learners for the CompTIA Network+ certification exam. Network and Security - Foundations is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner configures a network infrastructure.",
+            "The learner configures networking components.",
+            "The learner implements network security techniques.",
+            "The learner optimizes network operations for availability, performance, and security.",
+            "The learner troubleshoots network issues."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Computer Science",
+      "courses": [
+        {
+          "title": "Practical Applications of Prompt",
+          "description": "The Practical Applications of Prompt course introduces learners to generative artificial intelligence (AI). This course aims to allow learners to gain skills for writing effective prompts and develop more effective conversations with artificial intelligence. Practical Applications of Prompt will lead learners to explore why prompt engineering is necessary. The course also aims to help learners, regardless of background, increase prompt fluency, which is fluency in using prompt effectively. The course teaches learners how to create effective prompts to elicit information with consideration of scope, specificity, and context; additionally, it teaches learners to evaluate the medium of the prompt and adjust prompts to output relevant results. The last section of the course focuses on ways to evaluate the efficacy of prompts and improve the depth and quality of analytical investigations. This approach prepares students to navigate the complexities of working with generative AI and use these skills effectively throughout their careers.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "Learners create effective prompts with the consideration of scope, specificity, and context to elicit targeted information.",
+            "Learners evaluate the efficacy of writing different prompts on research outcomes and improve the depth and quality of their analytical investigations.",
+            "Learners evaluate the images, texts, and sound of the prompt and adjust prompts to output relevant results.",
+            "Learners explain why prompt engineering is necessary."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Business of IT",
+      "courses": [
+        {
+          "title": "Business of IT - Applications",
+          "description": "Business of IT - Applications examines Information Technology Infrastructure Library (ITIL®) terminology, structure, policies, and concepts. Focusing on the management of information technology (IT) infrastructure, development, and operations, learners will explore the core principles of ITIL practices for service management to prepare them for careers as IT professionals, business managers, and business process owners. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies Information Technology Infrastructure Library (ITIL) concepts, core components, principles, and models of service management.",
+            "The learner applies the Information Technology Infrastructure Library (ITIL) six activities of the service value chain."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Business of IT - Project Management",
+          "description": "In this course, students will build on industry standard concepts, techniques, and processes to develop a comprehensive foundation for project management activities. During a project's life cycle, students will develop the critical skills necessary to initiate, plan, execute, monitor, control, and close a project. Students will apply best practices in areas such as scope management, resource allocation, project planning, project scheduling, quality control, risk management, performance measurement, and project reporting. This course prepares students for the following certification exam: CompTIA Project+.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies communication methods and change control processes within a project.",
+            "The learner determines requirements of a project management plan.",
+            "The learner identifies project factors, constraints, and risk strategies."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Digital Forensics and Incident Response",
+      "courses": [
+        {
+          "title": "Digital Forensics in Cybersecurity",
+          "description": "Digital Forensics in Cybersecurity examines the specialized field of digital forensics within the context of computer security. This course focuses on the techniques, tools, and processes used to investigate cybercrimes and security breaches, analyzing digital evidence to report findings in preparation for a possible legal action. It bridges the gap between theoretical knowledge and practical skills, preparing students to tackle real-world security challenges through the lens of digital forensics.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes gathered evidence with forensic tools in alignment with investigation processes.",
+            "The learner collects forensic evidence from deleted files and artifacts.",
+            "The learner creates incident reports communicating the conclusions of a forensic investigation to organizational stakeholders.",
+            "The learner identifies laws, rules, standards, policies, and best practices related to digital forensics."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Ethics & Cyber Law",
+      "courses": [
+        {
+          "title": "Legal Issues in Information Security",
+          "description": "Legal Issues in Information Security provides students with exposure to the laws and ethical issues of cybersecurity and the importance of compliance. Students explore the fundamental standards, frameworks, and best practices of data privacy and data privacy protection. Students analyze legal requirements and best practices for protecting organizations from security incidents and understand the training and education necessary for creating employee awareness.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together",
+            "The learner analyzes applicable regional, national, international, and industry legal requirements and system security best practices to proactively protect an organization against security incidents.",
+            "The learner discusses the implications of ethical issues for specific cybersecurity actions within an organization.",
+            "The learner explains the fundamental standards, frameworks, and practices of data privacy and data privacy protection.",
+            "The learner outlines a security awareness training and education (SATE) program to raise employee awareness on relevant cybersecurity legislation."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Information Assurance",
+      "courses": [
+        {
+          "title": "Introduction to Cryptography",
+          "description": "Introduction to Cryptography introduces students to foundational cryptography concepts and explore implementing encryption methods with symmetric and asymmetric algorithms. Students analyze principles and operations of cryptographic algorithms and protocols in secure systems. Students use cryptography frameworks and standards in alignment with organizational and information security guidelines.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes principles and operations of cryptographic algorithms and protocols to enhance an organization’s ability to design and evaluate secure systems.",
+            "The learner explains foundational cryptography concepts and the elements of a cryptographic system.",
+            "The learner explains how cryptography frameworks inform alignment of organizational and information security guidelines.",
+            "The learner implements encryption methods with symmetric and asymmetric algorithms."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Data Management",
+      "courses": [
+        {
+          "title": "Data Management - Foundations",
+          "description": "Data Management Foundations offers an introduction in creating conceptual, logical and physical data models. Students gain skills in creating databases and tables in SQL-enabled database management systems, as well as skills in normalizing databases. No prerequisites are required for this course",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner defines primary and foreign keys in data normalization.",
+            "The learner determines how to run queries for creation and manipulation of data in relational databases.",
+            "The learner explains attributes of databases, database tables, and structured and associated query language (SQL) commands."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Data Science",
+      "courses": [
+        {
+          "title": "Data Analytics - Applications",
+          "description": "Data Analytics Applications covers advanced concepts across the various phases of the data product lifecycle. You will learn to choose and apply appropriate techniques for data management and data manipulation, statistical analysis, visualization, and data governance concepts to satisfy business needs.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies appropriate data acquisition and manipulation techniques to address businesses' data requirements for analysis.",
+            "The learner applies basic concepts to analyze data types and data structures.",
+            "The learner applies data analysis techniques and tools to address a business need.",
+            "The learner applies data management concepts to ensure the accuracy and quality of data.",
+            "The learner applies data visualization techniques to communicate a business need.",
+            "The learner selects the data visualization technique to communicate a business requirement."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Operating Systems",
+      "courses": [
+        {
+          "title": "Linux Foundations",
+          "description": "Linux Foundations prepares learners for the LPI Linux Essentials certification, and is an introduction to Linux as an operating system as well as an introduction to open-source concepts and the basics of the Linux command line. Learners will gain skills in identifying the fundamentals of open-source software and to develop resources for data access and security.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner develops resources for data access and security.",
+            "The learner identifies the fundamentals of open-source software."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Risk Management",
+      "courses": [
+        {
+          "title": "Managing Information Security",
+          "description": "Managing Information Security provides an in-depth analysis of the relationship between an information security program and broader business goals and objectives. Students apply best practices including information security governance frameworks, compliance requirements, and security strategies to minimize risk to an organization.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner develops security incident response plans that align to an organization’s security goals and objectives and maintain business continuity.",
+            "The learner recommends changes to established security management programs in response to a cyber-related incident on an organization.",
+            "The learner recommends modifications to established information security governance to increase information assurance levels within an organization.",
+            "The learner recommends risk mitigation strategies relevant to an organization’s information security program.",
+            "The learner recommends strategies for meeting regulatory compliance within an organization."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Networking",
+      "courses": [
+        {
+          "title": "Python for IT Automation",
+          "description": "Python for IT Automation covers the fundamentals of the Python language and its features to control program flow, inform decisions, and automate IT tasks and processes. The course emphasizes a systematic approach to solving problems and the application of programming logic to administer secure, scalable, and resilient IT networks and systems.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies Python principles and syntax to manage variables, data structures, and operators and to perform IT tasks.",
+            "The learner creates Python scripts using control structures to automate system tasks.",
+            "The learner integrates Python scripts, modules, packages, and libraries to automate networking tasks and processes."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Software",
+      "courses": [
+        {
+          "title": "Software Security and Testing",
+          "description": "This course prepares you to recognize security vulnerabilities in software, to plan interventions to address security vulnerabilities where they exist, and to develop and test these interventions. The course covers topics in Web security, permissions, and identity security; debugging; log file analysis; API security; and encryption and cryptography concepts.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner configures security authentication for representational state transfer (REST) and application programming interfaces (APIs).",
+            "The learner develops mitigation solutions for security vulnerabilities.",
+            "The learner evaluates application and network logs for performance, availability, and security vulnerabilities."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Artificial Intelligence",
+      "courses": [
+        {
+          "title": "Introduction to AI and Security",
+          "description": "Introduction to AI and Security provides an overview of critical terminology and key concepts for artificial intelligence (AI). Students explore the history, development, and evolution of AI along with its limitations and ethical issues. Students further explore best practices for securing AI within professional environments. Contextualized examples offer students an opportunity explore how AI is used in security operations.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes the types of artificial intelligence for decision-making in real-world applications.",
+            "The learner explains best practices for managing secure AI systems within an organization.",
+            "The learner explains how the collection, wrangling, and cleaning of data impacts AI/ML models."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Hacking Countermeasures and Techniques",
+      "courses": [
+        {
+          "title": "Cyber Defense and Countermeasures",
+          "description": "Traditional defenses—such as firewalls, security protocols, and encryption—sometimes fail to stop attackers determined to access and compromise data. This course provides the fundamental skills to handle and respond to computer security incidents in an information system. The course addresses various underlying principles and techniques for detecting and responding to current and emerging computer security threats. Students learn how to leverage intelligence and threat detection techniques; analyze and interpret data; identify and address vulnerabilities; suggest preventative measures; effectively respond to and recover from incidents; and handle various types of incidents, risk assessment methodologies, and various laws and policies related to incident handling. This course prepares students for the CompTIA Cybersecurity Analyst (CySA+) certification exam. The following courses are prerequisites: Networks and Network and Security – Applications.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies controls and procedures for software and system security.",
+            "The learner applies improvement techniques and automation based on system monitoring and threat hunting.",
+            "The learner applies incident response procedures based on digital forensic analysis.",
+            "The learner applies security concepts to risk mitigation with regards to privacy and protection.",
+            "The learner manages security testing and response in defense of organizational threats and vulnerabilities."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Web and Cloud Security",
+      "courses": [
+        {
+          "title": "Managing Cloud Security",
+          "description": "Managing Cloud Security prepares learners to safeguard cloud data with identity and access management and to implement secure solutions in cloud service models. Learners will be introduced to skills in identifying security policies and procedures for cloud applications and in implementing operational capabilities, procedures, and training in relation to organizational needs. Learners will also gain skills in conducting risk analysis and risk management in alignment with disaster recovery and business continuity plans and in identifying legal, compliance, and ethical concerns.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner conducts risk analysis and risk management in alignment with disaster recovery and business continuity plans.",
+            "The learner identifies legal, compliance, and ethical concerns within a cloud environment.",
+            "The learner identifies security policies and procedures for cloud applications.",
+            "The learner implements operational capabilities, procedures, and training in relation to organizational needs.",
+            "The learner implements secure solutions in cloud service models.",
+            "The learner safeguards cloud data with identity and access management."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Penetration Testing",
+      "courses": [
+        {
+          "title": "Penetration Testing and Vulnerability Analysis",
+          "description": "Penetration Testing and Vulnerability Analysis introduces learners to the skills necessary to perform penetration testing and vulnerability management within an organization. Learners will gain skills in defining the scope and planning for procurement of penetration testing engagements and in performing cyber reconnaissance for information gathering and vulnerability identification. Learners will also gain skills in developing penetration testing techniques in exploitation of physical, digital, and social vulnerabilities, and to simulate attacks and responses on an organization's security infrastructure. Lastly, learners will gain skills in reporting the results of cybersecurity assessments with recommended actions.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner defines the scope and planning for procurement of penetration testing engagements.",
+            "The learner develops penetration testing techniques in exploitation of physical, digital, and social vulnerabilities.",
+            "The learner performs cyber reconnaissance techniques for information gathering and vulnerability identification.",
+            "The learner reports the results of cybersecurity assessments with recommended actions.",
+            "The learner simulates attacks and responses on an organization's security infrastructure."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": {
+    "present": true,
+    "partial": false,
+    "title": "Cybersecurity and Information Assurance Capstone",
+    "description": "Cybersecurity and Information Assurance Capstone’s project allows students to demonstrate their competency in implementing a cybersecurity solution. Expanding on the cybersecurity competencies gained throughout the program, students create a proposal for an information security solution aimed at convincing stakeholders to implement the project. Students provide an executive summary and ultimately create a technical report that utilizes feedback from their peers. Artifacts are evaluated by peer team members prior to submission, and students practice giving, receiving, and integrating feedback into their work process.",
+    "competency_bullets": [
+      "The learner creates a project proposal to convince stakeholders to implement the security solution.",
+      "The learner creates a technical report for a fully functional system to solve real-world scenarios.",
+      "The learner creates an executive summary of a security solution directed to IT and business professionals."
+    ],
+    "competency_available": true
+  },
+  "cert_signals": [
+    {
+      "normalized_cert": "CompTIA A+",
+      "via_course_title": "IT Applications",
+      "via_course_code": "C394",
+      "confidence": "high",
+      "atlas_recommendation": "use"
+    },
+    {
+      "normalized_cert": "CompTIA A+",
+      "via_course_title": "IT Foundations",
+      "via_course_code": "C393",
+      "confidence": "high",
+      "atlas_recommendation": "use"
+    },
+    {
+      "normalized_cert": "CompTIA Network+",
+      "via_course_title": "Networks",
+      "via_course_code": "C480",
+      "confidence": "high",
+      "atlas_recommendation": "use"
+    },
+    {
+      "normalized_cert": "CompTIA Project+",
+      "via_course_title": "Business of IT - Project Management",
+      "via_course_code": "C176",
+      "confidence": "high",
+      "atlas_recommendation": "use"
+    },
+    {
+      "normalized_cert": "CompTIA Security+",
+      "via_course_title": "Network and Security - Applications",
+      "via_course_code": "C178",
+      "confidence": "high",
+      "atlas_recommendation": "use"
+    }
+  ],
+  "family": null,
+  "anomaly_flags": []
+}

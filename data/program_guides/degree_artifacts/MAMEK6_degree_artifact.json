@@ -1,0 +1,230 @@
+{
+  "program_code": "MAMEK6",
+  "source_degree_title": "Master of Arts, Mathematics Education (K-6)",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.730237Z",
+    "source_version": "201504",
+    "source_pub_date": "9/12/23",
+    "source_page_count": 12,
+    "confidence": "high"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "A",
+    "aos_status": "usable",
+    "aos_course_count": 9,
+    "caveat_flags": [],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "Number Sense and Functions",
+        "cus": 4,
+        "term": 1
+      },
+      {
+        "title": "Graphing, Proportional Reasoning and Equations/Inequalities",
+        "cus": 4,
+        "term": 1
+      },
+      {
+        "title": "Geometry and Statistics",
+        "cus": 4,
+        "term": 2
+      },
+      {
+        "title": "Mathematics (K-6) Portfolio Oral Defense",
+        "cus": 2,
+        "term": 2
+      },
+      {
+        "title": "Finite Mathematics",
+        "cus": 2,
+        "term": 2
+      },
+      {
+        "title": "Research Foundations",
+        "cus": 2,
+        "term": 3
+      },
+      {
+        "title": "Research Questions and Literature Review",
+        "cus": 2,
+        "term": 3
+      },
+      {
+        "title": "Research Design and Analysis",
+        "cus": 2,
+        "term": 3
+      },
+      {
+        "title": "Research Proposals",
+        "cus": 2,
+        "term": 3
+      },
+      {
+        "title": "MA, Mathematics Education (K-6) Capstone",
+        "cus": 6,
+        "term": 4
+      }
+    ]
+  },
+  "areas_of_study": [
+    {
+      "group": "Mathematics Content",
+      "courses": [
+        {
+          "title": "Number Sense and Functions",
+          "description": "Number Sense and Functions is a performance-based assessment that evaluates a student's portfolio of work. This portfolio includes the student's responses to various prompts and an original lesson plan for each of the mathematics modules such as number sense, patterns and functions, integers and order of operations, fractions, decimals, and percentages.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate understands integers and the order of operations, and performs the four basic operations of addition, subtraction, multiplication and division, including mental arithmetic and estimation, using integers.",
+            "The graduate understands whole numbers and performs the four basic arithmetic operations of addition, subtraction, multiplication and division, including mental calculations and estimation using whole numbers.",
+            "The graduate understands fractions, decimals and percentages and uses this knowledge to perform the basic arithmetic algorithms, estimate, and decide upon the equivalence of rational numbers.",
+            "The graduate understands the nature of both growing and repeating patterns; and understands functions, tables, rules and equations and how they are related.",
+            "The graduate analyzes, critiques, modifies, develops and evaluates lessons and instructional strategies concerning patterns and functions, analyzes common student errors and misunderstandings, and determines necessary prerequisite skills required for students to complete given activities concerning patterns and functions.",
+            "The graduate analyzes, critiques, modifies, develops and evaluates lessons and instructional strategies concerning fractions, decimals and percentages, analyzes common student errors and misunderstandings, and determines necessary prerequisite skills required for students to complete given activities concerning fractions, decimals and percentages.",
+            "The graduate analyzes, critiques, modifies, develops and evaluates lessons and instructional strategies concerning number sense, analyzes common student errors and misunderstandings, and determines necessary prerequisite skills required for students to complete given activities concerning number sense.",
+            "The graduate analyzes, critiques, modifies, develops and evaluates lessons and instructional strategies concerning integers and order of operations, analyzes common student errors and misunderstandings, and determines necessary prerequisite skills required for students to complete given activities concerning integers and order of operations."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Graphing, Proportional Reasoning and Equations/Inequalities",
+          "description": "Graphing, Proportional Reasoning and Equations/Inequalities is a performance-based assessment that evaluates a student's portfolio of work. This portfolio includes the student's responses to various prompts and an original lesson plan for each of the mathematics modules such as coordinate pairs and graphing, ratios and proportional reasoning, and equations and inequalities.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate understands rations, proportions, and rates and uses this understanding to model and solve nonalgebraic as well as algebraic problems.",
+            "The graduate understands ordered pairs, and graphing points and lines in a Cartesian coordinate system, including the following key concepts: slope, intercepts, quadrants, coordinate plane, vertical and horizontal lines, function, and the relationship of ordered pairs to other areas of mathematics and allied fields.",
+            "The graduate understands how to solve linear and quadratic equations and linear inequalities and uses this knowledge to model and solve problems.",
+            "The graduate analyzes, critiques, modifies, develops and evaluates lessons and instructional strategies concerning coordinate pairs and graphing, analyzes common student errors and misunderstandings, and determines necessary prerequisite skills required for students to complete given activities concerning graphing.",
+            "The graduate analyzes, critiques, modifies, develops and evaluates lessons and instructional strategies concerning ratios and proportional reasoning, analyzes common student errors and misunderstandings, and determines necessary prerequisite skills required for students to complete given activities concerning ratios and proportionality.",
+            "The graduate analyzes, critiques, modifies, develops and evaluates lessons and instructional strategies involving equations and inequalities, analyzes common student errors and misunderstandings, and determines necessary prerequisite skills required for students to complete given activities involving equations and inequalities."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Geometry and Statistics",
+          "description": "Geometry and Statistics is a performance-based assessment that evaluates a student's portfolio of work. This portfolio includes the student's responses to various prompts and an original lesson plan for each of the mathematics modules such as geometry and measurement, statistics and probability.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate demonstrates plane geometric and three-dimensional reasoning, concepts and principles and locates, develops and solves real world problems using important geometric and measurement principles.",
+            "The graduate describes the theory of probability, including the fundamental counting principle, and its relationship to sampling, statistical inference, and how to make and evaluate predictions.",
+            "The graduate analyzes, critiques, modifies, develops and evaluates lessons and instructional strategies involving probability and statistics, analyzes common student errors and misunderstandings, and determines necessary prerequisite skills required for students to complete given activities involving probability, statistics and the evaluation of predictions.",
+            "The graduate analyzes, critiques, modifies, develops and evaluates lessons and instructional strategies involving geometry and measurement, analyzes common student errors and misunderstandings, and determines necessary prerequisite skills required for students to complete given activities involving geometry and measurement."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Mathematics (K-6) Portfolio Oral Defense",
+          "description": "Mathematics (K-6) Portfolio Oral Defense: Mathematics (K-6) Portfolio Defense focuses on a formal presentation. The student will present an overview of their teacher work sample (TWS) portfolio discussing the challenges they faced and how they determined whether their goals were accomplished. They will explain the process they went through to develop the TWS portfolio and reflect on the methodologies and outcomes of the strategies discussed in the TWS portfolio. Additionally, they will discuss the strengths and weaknesses of those strategies and how they can apply what they learned from the TWS portfolio in their professional work environment.",
+          "competency_bullets": [
+            "The learner integrates and synthesizes competencies from across the degree program and thereby demonstrates the ability to participate in and contribute value to the chosen professional field."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Finite Mathematics",
+          "description": "Finite Mathematics covers the knowledge and skills necessary to apply discrete mathematics and properties of number systems to model and solve real-life problems. Topics include sets and operations; prime and composite numbers; GCD and LCM; order of operations; ordering numbers; mathematical systems including modular arithmetic, arithmetic and geometric sequences, ratio and proportion, subsets of real numbers, logic and truth tables, graphs, and trees and networks. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies the fundamental ideas of discrete mathematics including logic, set theory, and graph theory in formulating and solving problems.",
+            "The graduate demonstrates computational proficiency with real numbers and recognizes the properties of the real number system and its subsets.",
+            "The graduate represents numbers in different forms, recognizes relationships among numbers and number systems, deduces the meanings of operations, and demonstrates a conceptual understanding of numbers."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Research",
+      "courses": [
+        {
+          "title": "Research Foundations",
+          "description": "The Research Foundations course focuses on the essential concepts in educational research, including quantitative, qualitative, mixed, and action research. This course also teaches students concepts about measurement and assessment, as well as strategies for obtaining warranted research results.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate evaluates the purpose, process, and practice of the generation and justification of knowledge in educational research.",
+            "The graduate describes the purpose for a literature review and develops an organized literature review relevant to educational research topics, problems, and questions.",
+            "The graduate develops clear research questions that can be investigated and hypotheses that can be tested with empirical data.",
+            "The graduate differentiates among the major methods of data collection, including their strengths and limitations in the selection of an appropriate method of data collection.",
+            "The graduate analyzes ethical issues and identifies appropriate procedures for educational research.",
+            "The graduate completes a research proposal.",
+            "The graduate analyzes the key aspects of quantitative research and characterizes the major approaches to quantitative research.",
+            "The graduate analyzes the key aspects of qualitative research and characterizes the major approaches to qualitative research.",
+            "The graduate analyzes the key aspects of mixed methods research and characterizes the major approaches to mixed methods research.",
+            "The graduate analyzes the key aspects of action research and characterizes the major approaches to action research.",
+            "The graduate analyzes different measurement scales and differentiates between reliability and validity, and their subtypes, as they relate to assessments.",
+            "The graduate analyzes the characteristics of research quality and the potential threats to the quality of results in qualitative, quantitative, mixed methods, and action research studies.",
+            "The graduate applies and justifies appropriate research methods and design in quantitative, qualitative, mixed methods, and action research scenarios to address the research question(s).",
+            "The graduate evaluates and selects appropriate basic data analysis techniques for quantitative, qualitative, mixed methods, and action research scenarios."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Research Questions and Literature Review",
+          "description": "The Research Questions and Literature Reviews course focuses on how to conduct a thorough literature review that addresses and identifies important educational research topics, problems, and questions, and helps determine the appropriate kind of research and data needed to answer one's research questions and hypotheses. Research Foundations is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate describes the purpose for a literature review and develops an organized literature review relevant to educational research topics, problems, and questions.",
+            "The graduate develops clear research questions that can be investigated and hypotheses that can be tested with empirical data.",
+            "The graduate differentiates among the major methods of data collection, including their strengths and limitations in the selection of an appropriate method of data collection."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Research Design and Analysis",
+          "description": "The Research Design and Analysis course focuses on applying strategies for effective design of empirical research studies. Particular emphasis is placed on selecting or constructing the design that will provide the most valid results, analyzing the kind of data that would be obtained, and making defensible interpretations and drawing appropriate conclusions based on the data. Research Questions and Literature Review is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate differentiates among the major methods of data collection, including their strengths and limitations in the selection of an appropriate method of data collection.",
+            "The graduate analyzes ethical issues and identifies appropriate procedures for educational research.",
+            "The graduate analyzes the key aspects of quantitative research and characterizes the major approaches to quantitative research.",
+            "The graduate analyzes the key aspects of qualitative research and characterizes the major approaches to qualitative research.",
+            "The graduate analyzes the key aspects of mixed methods research and characterizes the major approaches to mixed methods research.",
+            "The graduate analyzes the key aspects of action research and characterizes the major approaches to action research.",
+            "The graduate analyzes different measurement scales and differentiates between reliability and validity, and their subtypes, as they relate to assessments.",
+            "The graduate analyzes the characteristics of research quality and the potential threats to the quality of results in qualitative, quantitative, mixed methods, and action research studies.",
+            "The graduate applies and justifies appropriate research methods and design in quantitative, qualitative, mixed methods, and action research scenarios to address the research question(s).",
+            "The graduate evaluates and selects appropriate basic data analysis techniques for quantitative, qualitative, mixed methods, and action research scenarios."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Research Proposals",
+          "description": "Research Proposals focuses on planning and writing a well-organized and complete research proposal. The relationship of the sections in a research proposal to the sections in a research report will be highlighted. Research Design and Analysis is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate describes the purpose for a literature review and develops an organized literature review relevant to educational research topics, problems, and questions.",
+            "The graduate develops clear research questions that can be investigated and hypotheses that can be tested with empirical data.",
+            "The graduate differentiates among the major methods of data collection, including their strengths and limitations in the selection of an appropriate method of data collection.",
+            "The graduate analyzes ethical issues and identifies appropriate procedures for educational research.",
+            "The graduate completes a research proposal.",
+            "The graduate applies and justifies appropriate research methods and design in quantitative, qualitative, mixed methods, and action research scenarios to address the research question(s).",
+            "The graduate evaluates and selects appropriate basic data analysis techniques for quantitative, qualitative, mixed methods, and action research scenarios."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": {
+    "present": true,
+    "partial": false,
+    "title": "MA, Mathematics Education (K-6) Capstone",
+    "description": "MA, Mathematics Education (K-6) Capstone Written Project takes the student through the steps of planning and conducting research on a topic or issue related to the students' practice setting. The result is expected to be a significant piece of research, culminating in a written research report, including sections describing a literature review, methodology, and detailed analysis and reporting of results. Prerequisite Courses: Research Foundations (C224), Research Questions and Literature Review (C225), Research Design and Analysis (C226), and Research Proposals (C227) or permission of a faculty manager. Additionally, students wishing to add the Capstone with fewer than eight weeks remaining in the term must receive permission of the faculty manager.",
+    "competency_bullets": [
+      "The learner integrates and synthesizes competencies from across the degree program and thereby demonstrates the ability to participate in and contribute value to the chosen professional field."
+    ],
+    "competency_available": true
+  },
+  "cert_signals": [],
+  "family": null,
+  "anomaly_flags": []
+}

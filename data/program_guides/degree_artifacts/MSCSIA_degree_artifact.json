@@ -1,0 +1,243 @@
+{
+  "program_code": "MSCSIA",
+  "source_degree_title": "Master of Science, Cybersecurity and Information Assurance",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.730561Z",
+    "source_version": "202306",
+    "source_pub_date": "2/6/2025",
+    "source_page_count": 0,
+    "confidence": "high"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "A",
+    "aos_status": "usable",
+    "aos_course_count": 9,
+    "caveat_flags": [],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "Security Foundations",
+        "cus": 2,
+        "term": 1
+      },
+      {
+        "title": "Secure Network Design",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Secure Software Design",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Security Operations",
+        "cus": 4,
+        "term": 2
+      },
+      {
+        "title": "Cloud Security",
+        "cus": 4,
+        "term": 2
+      },
+      {
+        "title": "Penetration Testing",
+        "cus": 4,
+        "term": 3
+      },
+      {
+        "title": "Cybersecurity Architecture and Engineering",
+        "cus": 4,
+        "term": 3
+      },
+      {
+        "title": "Governance, Risk, and Compliance",
+        "cus": 2,
+        "term": 4
+      },
+      {
+        "title": "Cybersecurity Management",
+        "cus": 4,
+        "term": 4
+      },
+      {
+        "title": "Cybersecurity Graduate Capstone",
+        "cus": 4,
+        "term": 4
+      }
+    ]
+  },
+  "areas_of_study": [
+    {
+      "group": "Security",
+      "courses": [
+        {
+          "title": "Security Foundations",
+          "description": "Security Foundations lays the foundation for understanding terminology, principles, processes, and information security best practices at local and global levels. This course further provides an overview of networking components, network security vulnerabilities, and countermeasures for protecting information assets through planning and administrative controls within an organization.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner identifies fundamental networking infrastructure and protocols to support an organization.",
+            "The learner identifies information assurance principles to ensure network security of an organization.",
+            "The learner identifies network security operation principles, design principles, and best practices to protect an organization’s assets."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Network Design and Management",
+      "courses": [
+        {
+          "title": "Secure Network Design",
+          "description": "Secure Network Design provides the foundational knowledge and skills to design secure physical and logical network architectures for wired and wireless networks. Course topics include the characteristics of a secure network, techniques to securely configure network devices, network segmentation strategies, root cause analysis, and mitigation approaches based on industry best practices. The course also offers hands-on experience in network vulnerability analysis and network configuration.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner aligns secure network architectures with industry best practices and the principles of secure network design.",
+            "The learner assesses business and technology needs, network security vulnerabilities, and security strategies.",
+            "The learner recommends network security and vulnerability solutions."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Software",
+      "courses": [
+        {
+          "title": "Secure Software Design",
+          "description": "Secure Software Design focuses on the variety of elements needed to address and implement secure software acquisition and development throughout the software development life cycle (SDLC). The course addresses people, technology, tools, and processes to design and develop consistently secure applications from start to finish. Additionally, it underscores the importance and value of the Defense in Depth principle across the entire SDLC. The course also introduces techniques to adapt common security activities to modern software development practices such as Agile and DevSecOps.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner assesses software requirements and risks to ensure threats are addressed.",
+            "The learner evaluates software security test plan documentation and implementation strategies.",
+            "The learner evaluates the effectiveness of software testing and deployment to ensure security and privacy issues are addressed.",
+            "The learner examines security principles, standards, and methods within the software development life cycle (SDLC)."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Hacking Countermeasures and Techniques",
+      "courses": [
+        {
+          "title": "Security Operations",
+          "description": "Security Operations provides learners with the fundamental skills to handle and respond to computer security incidents in an information system. The course addresses various underlying principles and techniques for detecting and responding to current and emerging computer security threats. The course also helps learners explore strategies to leverage intelligence and threat detection techniques, analyze and interpret data, identify and address vulnerabilities, and suggest preventative measures. Methods are introduced to effectively respond to and recover from cybersecurity incidents, evaluate risk assessment methodologies, and apply incident handling laws and policies.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies improvement techniques and automation based on system monitoring and threat hunting.",
+            "The learner applies incident response procedures based on digital forensic analysis.",
+            "The learner applies security concepts to risk mitigation with regards to privacy and protection.",
+            "The learner applies software and system security controls and procedures for data protection.",
+            "The learner manages security testing and response in defense of organizational threats and vulnerabilities.",
+            "The learner recommends solutions to respond to a detected cybersecurity incident."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Web and Cloud Security",
+      "courses": [
+        {
+          "title": "Cloud Security",
+          "description": "Cloud Security prepares learners to design solutions for cloud-based platforms and operations that maintain data availability while protecting the confidentiality and integrity of information. Course topics include cloud service models, deployment methods, identity and access management (IAM) strategies, auditing and monitoring strategies, assessing and mitigating common cloud security threats, and managing compliance and regulation requirements. The course also offers hands-on experience deploying and assessing IAM controls in a cloud environment.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes a risk management plan for threat mitigation countermeasures in the cloud.",
+            "The learner designs secure cloud solutions for data protection.",
+            "The learner implements secure identity and access management cloud solutions for data protection."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Penetration Testing",
+      "courses": [
+        {
+          "title": "Penetration Testing",
+          "description": "Penetration Testing introduces learners to the skills necessary to perform penetration testing and vulnerability management within an organization. The course covers widely used penetration testing techniques and tools that focus on planning and scoping, information gathering, vulnerability identification, and attacks and exploits. In addition, it offers hands-on experience and a focus on penetration testing engagement plans.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner defines the scope and planning for procurement of penetration testing engagements.",
+            "The learner develops penetration testing techniques in exploitation of physical, digital, and social vulnerabilities.",
+            "The learner evaluates a penetration testing engagement plan.",
+            "The learner performs cyber reconnaissance techniques for information gathering and vulnerability identification.",
+            "The learner reports the results of cybersecurity assessments with recommended actions.",
+            "The learner simulates attacks and responses on an organization's security infrastructure."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Secure Systems Analysis & Design",
+      "courses": [
+        {
+          "title": "Cybersecurity Architecture and Engineering",
+          "description": "Cybersecurity Architecture and Engineering provides learners with advanced skills and knowledge to design secure enterprise architecture solutions. The course focuses on assessing cybersecurity readiness and implementing enterprise-wide solutions to protect data and comply with an organization's policies and frameworks. Course topics include integrating software applications, applying enterprise data security controls, evaluating cloud and virtualization solutions, analyzing threats and vulnerabilities, and responding to incidents.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner designs secure network architecture solutions for the enterprise.",
+            "The learner designs technical integration of cybersecurity solutions to protect enterprises.",
+            "The learner develops secure architecture to comply with organizational governance, risk, and compliance strategies.",
+            "The learner implements secure solutions to manage cybersecurity risks."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Risk Management",
+      "courses": [
+        {
+          "title": "Governance, Risk, and Compliance",
+          "description": "Governance, Risk, and Compliance provides learners with advanced skills and knowledge to authorize and maintain information systems utilizing various risk management frameworks. The course focuses on the strategic and long-term alignment of an organization's information security program to regulatory requirements and organizational policies. Course topics include compliance and regulatory requirements, data classification and prioritization, security and privacy controls, compliance audits and remediation, and risk management plans.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner develops a remediation plan for security and privacy compliance issues.",
+            "The learner evaluates a system security plan in line with business organizational strategy and regulatory compliance requirements."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Cybersecurity Management",
+      "courses": [
+        {
+          "title": "Cybersecurity Management",
+          "description": "Cybersecurity Management prepares learners to develop organizational information security programs and policies that follow recognized standards, comply with all governing laws and regulations, and meet the needs of the company culture and management organization. The course covers how to perform risk management institutionally, how to manage compliance to information security requirements, and how to delegate compliance, risk, and security functions to specific roles within the organization. It also helps learners apply strategic decision-making as companies adapt to new technologies, processes, and people practices related to processing, managing, and protecting information resources.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes the risks, standards, and roles that inform a company’s information security policy.",
+            "The learner develops security policy, standards, procedures, and guidelines to strategically secure an organization’s assets."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": {
+    "present": true,
+    "partial": false,
+    "title": "Cybersecurity Graduate Capstone",
+    "description": "The Master of Science in Cybersecurity and Information Assurance (MSCSIA) Capstone project allows learners to demonstrate their capability to establish a durable cybersecurity and information assurance program. The capstone project challenges learners to integrate skills and knowledge from all program domains into one project that addresses a significant real-world cybersecurity problem.",
+    "competency_bullets": [
+      "The learner integrates and synthesizes competencies from across the degree program, thereby demonstrating the ability to participate in and contribute value to the chosen professional field."
+    ],
+    "competency_available": true
+  },
+  "cert_signals": [],
+  "family": null,
+  "anomaly_flags": []
+}

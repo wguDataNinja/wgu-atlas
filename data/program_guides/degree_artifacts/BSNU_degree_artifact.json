@@ -1,0 +1,437 @@
+{
+  "program_code": "BSNU",
+  "source_degree_title": "Bachelor of Science, Nursing",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.729888Z",
+    "source_version": null,
+    "source_pub_date": null,
+    "source_page_count": 0,
+    "confidence": "medium"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "A",
+    "aos_status": "usable",
+    "aos_course_count": 22,
+    "caveat_flags": [
+      "metadata_missing_no_footer"
+    ],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "Interprofessional Communication and Leadership in Healthcare",
+        "cus": 2,
+        "term": 1
+      },
+      {
+        "title": "Applied Healthcare Statistics",
+        "cus": 4,
+        "term": 1
+      },
+      {
+        "title": "Composition: Writing with a Strategy",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Anatomy and Physiology I with Lab",
+        "cus": 4,
+        "term": 1
+      },
+      {
+        "title": "Introduction to Communication: Connecting with Others",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Anatomy and Physiology II with Lab",
+        "cus": 4,
+        "term": 2
+      },
+      {
+        "title": "Introduction to Psychology",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Global Arts and Humanities",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Introduction to Sociology",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Microbiology with Lab: A Fundamental Approach",
+        "cus": 4,
+        "term": 3
+      },
+      {
+        "title": "World History: Diverse Cultures and Global Connections",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Human Growth and Development",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Intrapersonal Leadership and Professional Growth",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Scholarship in Nursing Practice",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Pathophysiology",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Information Technology in Nursing Practice",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Organizational Systems and Healthcare Transformation",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Comprehensive Health Assessment",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Healthcare Policy and Economics",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Emerging Professional Practice",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Global and Population Health",
+        "cus": 4,
+        "term": 6
+      },
+      {
+        "title": "BSNU Capstone",
+        "cus": 3,
+        "term": 6
+      }
+    ]
+  },
+  "areas_of_study": [
+    {
+      "group": "Nursing Core",
+      "courses": [
+        {
+          "title": "Interprofessional Communication and Leadership in Healthcare",
+          "description": "Interprofessional Communication and Leadership in Healthcare is designed to help students prepare for success in the online environment at Western Governors University and beyond. Student success starts with the social support and self-reflective awareness that will prepare them to handle the challenges of all academic programs. In this course, students will complete several individual assignments that are intended to give the student an opportunity to reflect on where they are and where they would like to be. The activities in the course are designed to give students several tools they can use to achieve success. This course is designed as a four-part intensive learning experience. Students will engage in activities that will help them understand their own educational journey and find support and inspiration in the journey of others. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "The learner applies mindfulness to promote self-discovery.",
+            "The learner applies mindsets, working styles, and energy dynamics to promote academic and professional success.",
+            "The learner communicates effectively in both oral and written format.",
+            "The learner uses communication strategies to foster a supportive peer community."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Intrapersonal Leadership and Professional Growth",
+          "description": "Intrapersonal Leadership and Professional Growth fosters the development of professional identity. Building on the knowledge, skills, and attitudes gained through nursing practice, students in this course will explore the relationship of theories, professional competencies, standards of leadership, education, and professionalism. The course content will cover development of a nurse as a leader who is proficient in asserting control, influence, and power in professional and personal contexts.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner adopts strategies to increase resilience and self-care for the nurse in personal and professional situations.",
+            "The learner applies leadership skills to influence professional practice in a healthcare environment.",
+            "The learner creates a personal development plan that fosters professional engagement and personal growth.",
+            "The learner differentiates between nursing leadership and management principles across the healthcare environment for quality care delivery.",
+            "The learner explores leadership mindset including cultural competence, diversity, equity, and inclusion to positively influence patient care outcomes."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Scholarship in Nursing Practice",
+          "description": "Scholarship in Nursing Practice teaches students how to design and conduct research to answer important questions about improving nursing practice and patient care delivery outcomes. This course introduces the basics of evidence-based practice, which students are expected to implement throughout their clinical experiences. Students of this course will graduate with more competence and confidence to become leaders in the healing environment.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner demonstrates an understanding of the ethics of nursing research particularly human subjects' protections, informed consent, and alignment with patient and family values and preferences.",
+            "The learner demonstrates knowledge of the process and outcomes of conducting a literature review.",
+            "The learner describes the process of data collection, analysis, and implementation of evidence that can improve clinical practice from an interprofessional perspective.",
+            "The learner differentiates between quality improvement processes, evidence-based practice, and research.",
+            "The learner discriminates between evidence-based standards of practice and conventional practices to improve patient outcomes."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Information Technology in Nursing Practice",
+          "description": "Information Technology in Nursing Practice provides a basic overview of information technology as it relates to the baccalaureate-prepared nurse. It is a foundational overview of nursing informatics with an emphasis on developing basic competency. This course teaches students that nursing informatics synthesizes nursing science, information science, and computer science through health applications to support decision-making in a dynamic healthcare environment. All prior courses in the sequence for this program serve as prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes the legal and ethical implications related to informatics in the healthcare environment.",
+            "The learner differentiates among health information systems and technologies that support decision-making.",
+            "The learner evaluates health information technology data in nursing practice to monitor and improve patient outcomes.",
+            "The learner explains how data factors into decision-making to promote high-quality patient healthcare.",
+            "The learner identifies barriers to the use of informatics to improve patient outcomes and advance health literacy."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Organizational Systems and Healthcare Transformation",
+          "description": "Course Description Organizational Systems and Healthcare Transformation covers foundational knowledge, skills, and attitudes toward organizational leadership within healthcare systems that can help students be successful. This course focuses on the concepts of patient safety, improvement science, fiscal responsiveness, quality of care, value-based care, and patient-centered care. Additional topics of quality science and innovation, systems redesign, and interprofessional roles assist the student in building necessary skills for healthcare transformation. All prior courses in the sequence for this program serve as prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner compares current practice with patient safety standards to promote optimal patient outcomes.",
+            "The learner compares healthcare delivery models to facilitate value-based care, shared decision-making, and equitable patient-centered care.",
+            "The learner describes evidence-based continuous improvement strategies that improve patient care.",
+            "The learner examines systems design in a high-reliability organization."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Comprehensive Health Assessment",
+          "description": "Comprehensive Health Assessment builds upon students’ existing knowledge of nursing assessment. The course presents current and innovative assessment techniques of the physical, mental, emotional, and spiritual well-being of patients. Use of assessment data and shared decision-making are discussed throughout the course. This course also outlines the concepts of a head-to-toe assessment, providing students with an understanding of how to critically think about the different aspects of the assessment and analyze patient cues to determine the implications of findings. Students will also analyze lifestyle and cultural implications of health. All prior courses in the sequence for this program serve as prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes cultural and lifestyle implications for holistic patient assessment.",
+            "The learner applies clinical judgment using current and innovative patient assessment techniques that encompass physical, mental, emotional, spiritual well-being and social determinants of health.",
+            "The learner incorporates enhanced pathophysiological concepts and assessment findings into patient care coordination."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Healthcare Policy and Economics",
+          "description": "Healthcare Policy and Economics is a foundational course that introduces the concepts of value-based care and the role of the nurse. This course includes concepts related to financial responsiveness, shared decision-making, preference-sensitive care, leveraging data. In this course, students learn about cost and fee-for-service in terms of value to the client and patient rather than value to the healthcare system. All prior courses in the sequence for this program serve as prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes public healthcare policies, federal and state laws, and the resulting impact to patients and healthcare delivery.",
+            "The learner compares healthcare financial models to facilitate value-based care and fiscally responsible and equitable patient-centered care.",
+            "The learner identifies how financial data, business-related data, and information sources inform decisions that influence healthcare.",
+            "The learner integrates principles of organizational ethics to improve healthcare quality for individuals, families, and their communities."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Emerging Professional Practice",
+          "description": "Emerging Professional Practice presents a variety of professional nursing specialty areas. Students explore various practice specialties, including palliative care, genetics and genomics, and others. The course provides pathways to specialized nursing practice. All prior courses in the sequence for this program serve as prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes genetic and genomic influences and risks to plan patient education that recognizes individual attitudes and values.",
+            "The learner creates a personal five-year professional development plan that includes professional certification or specialized education that facilitates lifelong learning.",
+            "The learner explains interprofessional interventions that alleviate suffering, improve quality of life, and empower patients and families who have received life-limiting diagnoses."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Global and Population Health",
+          "description": "Global and Population Health prepares students for the role of the nurse in preserving and promoting health among diverse populations. Additionally, basic principles of epidemiology, social determinants of health (SDOH), and resource allocation through value-based care are outlined. The course introduces planning, organization, and delivery of services for diverse populations in community settings, including illness prevention, disaster preparedness, and environmental health. All prior courses in the sequence for this program serve as prerequisites for this course. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner distinguishes between global, public, and population health for improved health outcomes.",
+            "The learner distinguishes the use of one or more spheres of care to improve health outcomes for diverse populations across the lifespan.",
+            "The learner evaluates population health solutions for environmental health effects.",
+            "The learner identifies epidemiological data sources that inform population health interventions.",
+            "The learner identifies social determinants of health (SDOH) and interventions for equitable healthcare improvements.",
+            "The learner identifies the effect of global health trends on healthcare capacity that inform service modification decisions in healthcare."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "BSNU Capstone",
+          "description": "The BSNU capstone is a synthesis of previously acquired knowledge, skills, and attitudes and requires students to demonstrate competency in the program outcomes. Emphasis is placed on change facilitation in a healthcare setting, based in evidence and incorporating value-based care. This course provides students with an opportunity to engage in a project that is actionable, relevant, highly collaborative, and based on innovative thinking.",
+          "competency_bullets": [
+            "The leaner applies interpersonal skills to influence compassionate excellence in value-based healthcare.",
+            "The learner collaborates with interprofessional teams, patients, families, and communities to optimize value-based healthcare.",
+            "The learner integrates informatics knowledge and skills into the planning process to promote innovative, safe, healthcare improvements.",
+            "The learner participates in continuous quality improvement to promote innovative, ethical, value-based healthcare supported by evidence.",
+            "The learner proposes a change within the healthcare environment that incorporates clinical expertise and individual values."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "General Education",
+      "courses": [
+        {
+          "title": "Applied Healthcare Statistics",
+          "description": "Applied Healthcare Probability and Statistics is designed to help develop competence in the fundamental concepts of basic mathematics, introductory algebra, and statistics and probability. These concepts include basic arithmetic with fractions and signed numbers; introductory algebra and graphing; descriptive statistics; regression and correlation; and probability. Statistical data and probability are now commonplace in the healthcare field. This course will help candidates make informed decisions about which studies and results are valid, which are not, and how those results affect your decisions. This course will give candidates background in what constitutes sound research design and how to appropriately model phenomena using statistical data. Additionally, this course guides candidates in calculating simple probabilities based on events which occur in the healthcare profession. This course will prepare candidates for studies at WGU, as well as in the healthcare profession.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies principles and methods of probability-based mathematics to explain and solve problems.",
+            "The graduate applies the operations, processes, and procedures of basic algebra to evaluate quantitative expressions, and to solve equations and inequalities.",
+            "The graduate applies the operations, processes, and procedures of basic arithmetic to solve expressions.",
+            "The graduate applies the operations, processes, and procedures of fractions, decimals, and percentages to evaluate quantitative expressions.",
+            "The graduate evaluates categorical and quantitative data pertaining to a single variable using appropriate graphical displays and numerical measures.",
+            "The graduate evaluates the relationship between two quantitative variables through correlation and regression.",
+            "The graduate evaluates the relationship between two variables through interpretation of visual displays and numerical measures."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Composition: Writing with a Strategy",
+          "description": "Welcome to Composition: Writing with a Strategy! In this course, you will focus on three main topics: understanding purpose, context, and audience, writing strategies and techniques, and editing and revising. In addition, the first section, will offer review on core elements of the writing process, cross-cultural communication, as well as working with words and common standards and practices. .. resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the seven competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner composes constructive feedback of written texts.",
+            "The learner constructs a written document with correct format, style, structure, and grammar.",
+            "The learner formulates a strategy for editing and revising written text.",
+            "The learner incorporates writing strategies and techniques for written communication.",
+            "The learner writes with purpose for a given context and target audience."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Anatomy and Physiology I with Lab",
+          "description": "This is Anatomy and Physiology I, a six-section, 4 CU course that enables students to develop an understanding of the relationships between the structures and function of the integumentary, skeletal, muscular, nervous and endocrine systems in the human body. This course will involve laboratory activities, simulated dissections, textbook material, models, and diagrams. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the four competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 40–60 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the structures and physiological functions of the muscular system and the connections to complex systems in the human body.",
+            "The learner analyzes the structures and physiological functions of the nervous system and sensory organs and the connections to complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the endocrine system and its regulation of complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the integumentary system and the connections to complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the skeletal system and the connections to complex systems in the human body.",
+            "The learner describes the structural and basic functional organization of the human body and the terminology used to describe the orientation of bodily structures."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Communication: Connecting with Others",
+          "description": "Welcome to Introduction to Communication: Connecting with Others! It may seem like common knowledge that communication skills are important, and that communicating with others is inescapable in our everyday lives. While this may appear simplistic, the study of communication is actually complex, dynamic, and multifaceted. Strong communication skills are invaluable to strengthening a multitude of aspects of life. Specifically, this course will focus on communication in the professional setting, and present material from multiple vantage points, including communicating with others in a variety of contexts, across situations, and with diverse populations. Upon completion, you will have a deeper understanding of both your own and others’ communication behaviors, and a toolbox of effective behaviors to enhance your experience in the workplace.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements appropriate communication styles based on audience and setting.",
+            "The learner uses communication strategies for managing conflict.",
+            "The learner uses communication strategies to influence others."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Anatomy and Physiology II with Lab",
+          "description": "This is Anatomy and Physiology II, a six section, four CEU course that enables students to develop an understanding of the relationships between the structures and functions of the cardiovascular, respiratory, digestive, urinary, reproductive, and lymphatic systems in the human body. This course will involve laboratory activities, simulated dissections, textbook material, models, and diagrams. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the four competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 40–60 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes the structures and physiological functions of the cardiovascular system and the connections to complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the digestive system and the connections to metabolism and complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the lymphatic system, immune response, and the connections to complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the reproductive system and the connections to complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the respiratory system and the connections to complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the urinary system and the connections to complex systems in the human body."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Psychology",
+          "description": "In this course, students will develop an understanding of psychology and how it helps them better understand others and themselves. Students will learn general theories about psychological development, the structure of the brain, and how psychologists study behavior. They will gain an understanding of both normal and disordered psychological behaviors, as well as general applications of the science of psychology in society (such as personality typing and counseling).",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains the biological perspectives of psychology.",
+            "The learner explains the concepts of personality development and social psychology.",
+            "The learner explains the foundations of psychology.",
+            "The learner explains the theories of learning and memory.",
+            "The learner identifies psychological disorders and treatment methods."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Global Arts and Humanities",
+          "description": "This is a Global Arts and Humanities course that contains three modules with corresponding lessons. This course is an invitation to see the world through the humanities, examine the humanities during the Information Age, and explore the global origins of music—essentially questioning what makes us human, and how people are connected across culture and time. Each module includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to practice and check learning. With no prior knowledge or experience, a learner can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes diverse voices, ideas, perspectives, and cultural interactions through the lens of the humanities.",
+            "The learner analyzes how music shapes and is shaped by diverse cultures and perspectives.",
+            "The learner analyzes the humanities during the Information Age."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Sociology",
+          "description": "This course teaches students to think like sociologists, or, in other words, to see and understand the hidden rules, or norms, by which people live, and how they free or restrain behavior. Students will learn about socializing institutions, such as schools and families, as well as workplace organizations and governments. Participants will also learn how people deviate from the rules by challenging norms and how such behavior may result in social change, either on a large scale or within small groups.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate explains how societies are stratified across various social statuses.",
+            "The graduate explains major perspectives and key contributors to the development of sociology.",
+            "The graduate explains reciprocal relationships between social institutions and individuals.",
+            "The graduate explains the constructs of conformity to and deviance from social norms.",
+            "The graduate identifies components of culture and socialization as they relate to individuals in society."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Microbiology with Lab: A Fundamental Approach",
+          "description": "Microbiology with Lab: A Fundamental Approach explores the science that microorganisms are everywhere, and they have positive and negative effects on the community. The course examines the structure and function of microorganisms, disease transmission and progression, and immune responses and other interventions, and it identifies key global diseases. The course consists of an introduction and four major sections. Each section includes learning opportunities through readings, videos, and other relevant resources. Assessment activities with feedback also provide opportunities for students to check their learning, practice, and show how well they understand course content. To assist students in developing an applied, evidence-based understanding of microbiology, this course integrates several lab experiments to help determine the specific characteristic of an unknown microbial sample and a treatment plan. Because the course is self-paced, students may move through the material as quickly or as slowly as needed to gain proficiency in the four competencies that will be covered in the final assessment. Students who have no prior knowledge of or experience with this topic can expect to spend 48–60 hours on the course content. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes disease characteristics to inform individuals about etiologies and treatments.",
+            "The learner analyzes methods to prevent and treat infectious diseases and influence positive community outcomes.",
+            "The learner analyzes microbial transmission and progression and the care needed based on symptoms and environment.",
+            "The learner analyzes structures and characteristics of microorganisms that inform etiologies of symptoms and diseases."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "World History: Diverse Cultures and Global Connections",
+          "description": "This is World History: Diverse Cultures and Global Connections. In this course, you will focus on three main topics—cultural and religious diversity; pandemics; and the relationship of empires and nation states—as well as the skills of identifying root causes, explaining causes and effects, and analyzing complex systems. This course consists of an introduction and four major sections. Each section includes learning opportunities through reading, images, videos, and other relevant resources. Assessment activities with feedback also provide opportunities to practice and check how well you understand the content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the four competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the role of human actions in the spread of disease.",
+            "The learner differentiates among diverse cultural and religious customs and practices.",
+            "The learner explains the factors that contributed to the development of nation states.",
+            "The learner explains the factors that contributed to the rise and fall of empires."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Human Growth and Development",
+          "description": "This is Human Growth and Development, a three-module course that examines the entire human lifetime, from conception to death. Presented chronologically, the course focuses on three key areas: physical, cognitive, and psychosocial growth, along with other important issues such as cultural influences, emotions, and resilience. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the four competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains physical, cognitive, and psychosocial development from conception through early childhood.",
+            "The learner explains physical, cognitive, and psychosocial development from early adulthood to the end of life.",
+            "The learner explains physical, cognitive, and psychosocial development from middle childhood through adolescence.",
+            "The learner explains the influence of emotions and cultural perspectives and practices on psychosocial development and behavior from birth through early childhood.",
+            "The learner explains the influence of emotions on psychosocial development and behavior from early adulthood to the end of life.",
+            "The learner explains the influence of emotions on psychosocial development and behavior from middle childhood through adolescence."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Pathophysiology",
+          "description": "Pathophysiology is a course designed for nursing students, providing an overview of the pathology and treatment of diseases in the human body, tissues, glands and membranes, the integumentary system, the sensory system, skeletal and muscular systems, the digestive system, blood, vessels and circulation, lymphatic system, immunity and disease, heart and respiratory system, nervous, urinary and endocrine systems, and male and female reproductive systems. Prerequisites include all prior courses in this programmatic sequence.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes basic cellular responses and adaptation related to genetics, injury, aging and congenital anomalies.",
+            "The learner describes pathogenesis, manifestations, complications and variations of the cardiovascular and lymphatic systems.",
+            "The learner describes pathogenesis, manifestations, complications and variations of the endocrine and reproductive systems.",
+            "The learner describes pathogenesis, manifestations, complications and variations of the gastrointestinal and renal systems.",
+            "The learner describes pathogenesis, manifestations, complications and variations of the muscular, skeletal, and integumentary systems.",
+            "The learner describes pathogenesis, manifestations, complications and variations of the neurologic systems.",
+            "The learner describes pathogenesis, manifestations, complications and variations of the respiratory systems."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "cert_signals": [],
+  "family": null,
+  "anomaly_flags": [
+    "ANOM-006"
+  ]
+}

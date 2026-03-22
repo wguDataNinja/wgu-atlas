@@ -1,0 +1,774 @@
+{
+  "program_code": "BSACC",
+  "source_degree_title": "Bachelor of Science, Accounting",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.729414Z",
+    "source_version": "202503",
+    "source_pub_date": "8/12/24",
+    "source_page_count": 22,
+    "confidence": "high"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "A",
+    "aos_status": "usable",
+    "aos_course_count": 40,
+    "caveat_flags": [],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "Organizational Behavior",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Fundamentals for Success in Business",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Principles of Financial and Managerial Accounting",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Composition: Successful Self-Expression",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Emotional and Cultural Intelligence",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Applied Probability and Statistics",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Critical Thinking: Reason and Evidence",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Business Ethics",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Global Arts and Humanities",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Financial Accounting",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Applied Algebra",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Principles of Management",
+        "cus": 4,
+        "term": 3
+      },
+      {
+        "title": "Fundamentals of Spreadsheets and Data Presentations",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Taxation I",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Innovative and Strategic Thinking",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Quantitative Analysis For Business",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Introduction to Communication: Connecting with Others",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Business Environment Applications I: Business Structures and Legal Environment",
+        "cus": 2,
+        "term": 5
+      },
+      {
+        "title": "Finance Skills for Managers",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Health, Fitness, and Wellness",
+        "cus": 4,
+        "term": 5
+      },
+      {
+        "title": "US History: Stories of American Democracy",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Cost and Managerial Accounting",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Business Law for Accountants",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Values-Based Leadership",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Business Communication",
+        "cus": 3,
+        "term": 7
+      },
+      {
+        "title": "Principles of Economics",
+        "cus": 3,
+        "term": 7
+      },
+      {
+        "title": "Intermediate Accounting I",
+        "cus": 3,
+        "term": 7
+      },
+      {
+        "title": "Introduction to Sociology",
+        "cus": 3,
+        "term": 7
+      },
+      {
+        "title": "Concepts in Marketing, Sales, and Customer Contact",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Intermediate Accounting II",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Accounting Information Systems",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Integrated Physical Sciences",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Operations and Supply Chain Management",
+        "cus": 3,
+        "term": 9
+      },
+      {
+        "title": "Intermediate Accounting III",
+        "cus": 3,
+        "term": 9
+      },
+      {
+        "title": "Change Management",
+        "cus": 3,
+        "term": 9
+      },
+      {
+        "title": "Project Management",
+        "cus": 3,
+        "term": 9
+      },
+      {
+        "title": "Business Environment Applications II: Process, Logistics, and Operations",
+        "cus": 2,
+        "term": 10
+      },
+      {
+        "title": "Business Simulation",
+        "cus": 4,
+        "term": 10
+      },
+      {
+        "title": "Managing in a Global Business Environment",
+        "cus": 3,
+        "term": 10
+      },
+      {
+        "title": "Auditing",
+        "cus": 3,
+        "term": 10
+      }
+    ]
+  },
+  "areas_of_study": [
+    {
+      "group": "Business Management",
+      "courses": [
+        {
+          "title": "Organizational Behavior",
+          "description": "Organizational Behavior and Leadership explores how to lead and manage effectively in diverse business environments. Students are asked to demonstrate the ability to apply organizational leadership theories and management strategies in a series of scenario-based problems.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate can describe the effects of specified influences on individual behavior.",
+            "The graduate can recommend appropriate principles or techniques for guiding the development of a group.",
+            "The graduate can determine which type of team and team leadership should be used to accomplish a task or project.",
+            "The graduate analyzes the culture within an organization to determine how to work effectively within that organization.",
+            "The graduate can analyze leadership theories, methods, and tools in given situations and select the appropriate behavior of the leader.",
+            "The graduate can develop and recommend how to implement effective performance evaluation processes."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Business Ethics",
+          "description": "Business Ethics is designed to enable students to identify the ethical and socially responsible courses of action available through the exploration of various scenarios in business. Students will also learn to develop appropriate ethics guidelines for a business. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes ethical and socially responsible courses of action in a given business situation.",
+            "The graduate analyzes ethical considerations that shape business leadership.",
+            "The graduate applies ethical principles to employment.",
+            "The graduate applies ethical principles to environmental concerns confronting business.",
+            "The graduate applies ethical principles to international business.",
+            "The graduate evaluates ethical policies in a given business scenario."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Quantitative Analysis For Business",
+          "description": "Quantitative Analysis for Business explores various decision-making models, including expected value models, linear programming models, and inventory models. This course helps student learn to analyze data by using a variety of analytic tools and techniques to make better business decisions. In addition, it covers developing project schedules using the Critical Path Method. Other topics include calculating and evaluating formulas, measures of uncertainty, crash costs, and visual representation of decision-making models using electronic spreadsheets and graphs. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate describes common business analytical purposes for quantitative analysis methods.",
+            "The graduate analyzes data through numerical and graphical methods and techniques.",
+            "The graduate uses expected value methods as a decision-making tool.",
+            "The graduate analyzes projects using the critical path to schedule and control project costs.",
+            "The graduate uses linear programming, inventory economic ordering optimization models, and graphical representations to make informed decisions."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Values-Based Leadership",
+          "description": "Values-Based Leadership guides students to learn by reflection, design, and scenario planning. Through a combination of theory, reflection, value alignment, and practice, the course helps students examine and understand values-based leadership and explore foundations in creating a culture of care. In this course, students are given the opportunity to identify and define their personal values through an assessment and reflection process. Students then evaluate business cases to practice mapping the influence of values on their own leadership. In this course, students also participate in scenario planning, where they can practice implementing their values in their daily routine (i.e., behaviors) and then in a leadership setting. The course illustrates how values-driven leadership is used in goal setting as well as problem-solving at an organizational level. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner identifies their personal values, including honesty, integrity, respect, emotional intelligence, and ethical responsibility, to develop self-awareness through self-assessment.",
+            "The learner describes how interpersonal skills are applied to effectively collaborate, communicate, and lead within a team and across an organization.",
+            "The learner demonstrates how their leadership abilities, including active listening, influence, and ethical responsibility, solve problems and deliver results within an organization.",
+            "The learner explains how the leadership of cultures fosters diversity, inclusion, ethics, and problem-solving."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Business Communication",
+          "description": "Business Communication is a survey course of communication skills needed in the business environment. Course content includes writing messages, reports, and résumés and delivering oral presentations. The course emphasizes communication processes, writing skills, message types, and presentation of data. The development of these skills is integrated with the use of technology.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies effective communication techniques and principles to business environments.",
+            "The graduate applies the principles of business writing to communicate in a business environment.",
+            "The graduate creates messages using technology and/or social media to communicate in a business environment.",
+            "The graduate composes multiple types of business messages in response to scenarios.",
+            "The graduate applies business research and writing skills to present information in a business environment.",
+            "The graduate creates professional communication documents for employment and career advancement opportunities."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Operations and Supply Chain Management",
+          "description": "Operations and Supply Chain Management provides a streamlined introduction to how organizations efficiently produce goods and services, determine supply chain management strategies, and measure performance. Emphasis is placed on integrative topics essential for managers in all disciplines, such as supply chain management, product development, and capacity planning. This course guides students in analyzing processes, managing quality for both services and products, and measuring performance while creating value along the supply chain in a global environment. Topics include forecasting, product and service design, process design and location analysis, capacity planning, management of quality and quality control, inventory management, scheduling, supply chain management, and performance measurement.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains appropriate quality management strategies for continuous improvement in an organization.",
+            "The learner analyzes factors involved in the decision-making for process design, capacity planning, and location analysis.",
+            "The learner analyzes forecasting models, measurement techniques, and scheduling methods.",
+            "The learner analyzes how just-in-time, Toyota Production System (TPS), and lean systems improve operating efficiency.",
+            "The learner analyzes the supply chain for competitive advantage.",
+            "The learner explains how a business achieves organizational goals and competitive advantage through operations management and inventory management."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Change Management",
+          "description": "Change Management provides an understanding of change and an overview of successfully managing change using various methods and tools. Emphasizing change theories and various best practices, this course covers how to recognize and implement change using an array of other effective strategies, including those related to innovation and leadership. Other topics include approaches to change, diagnosing and planning for change, implementing change, and sustaining change.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate summarizes the theories related to change management.",
+            "The graduate explains how organizations diagnose the need for change and the approaches for implementing change.",
+            "The graduate describes different innovation strategies and the role leaders play in innovation.",
+            "The graduate explains the various approaches to implementing change and the roles that leaders and other stakeholders fulfill.",
+            "The graduate explains the strategies, principles, roles, and models for sustaining change.",
+            "The graduate explains how learning organizations develop and how learning organizations and traditional organizations approach change differently."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Project Management",
+          "description": "Project Management prepares you to manage projects from start to finish within any organization structure. The course represents a view into different project-management methods and delves into topics such as project profiling and phases, constraints, building the project team, scheduling, and risk. You will be able to grasp the full scope of projects you may work with on in the future, and apply proper management approaches to complete a project. The course features practice in each of the project phases as you learn how to strategically apply project-management tools and techniques to help organizations achieve their goals.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate explains how project management helps organizations achieve their goals.",
+            "The graduate describes the project life cycle, including how project constraints will impact a project.",
+            "The graduate explains the criteria and methods used for project selection.",
+            "The graduate explains how different types of project-management methods are used.",
+            "The graduate applies elements of project planning to prepare key documents of a project plan.",
+            "The graduate constructs a project scheduling network diagram including the identification of the critical path.",
+            "The graduate explains key activities for executing, monitoring and controlling, and closing projects."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Business Core",
+      "courses": [
+        {
+          "title": "Fundamentals for Success in Business",
+          "description": "This introductory course provides students with an overview of the field of business and a basic understanding of how management, organizational structure, communication, and leadership styles affect the business environment. It also introduces them to some of the power skills that help make successful business professionals, including time management, problem solving, emotional intelligence and innovation; while also teaching them the importance of ethics. This course gives students an opportunity to begin to explore their own strengths and passions in relation to the field while also acclimating them to the online competency-based environment.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner identifies common ethical issues that individuals face within organizations.",
+            "The learner recognizes common organizational functions and values in order to collaborate within them.",
+            "The learner communicates ideas, opinions, and information suitable for a professional setting.",
+            "The learner recognizes the emotional reactions of self and others in a variety of professional situations.",
+            "The learner identifies leadership opportunities to enhance organizational performance."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Principles of Financial and Managerial Accounting",
+          "description": "Principles of Financial and Managerial Accounting provides students with an introduction to the discipline of accounting and its context within the business environment. In this course, students will learn to differentiate between financial, cost, and managerial accounting and where these accounting types fit into the business environment. This course will help students gain a fundamental knowledge of the budgeting process, how to analyze basic financial statements, and how to use spreadsheets to analyze data. This course provides students with a business generalist overview of the field of accounting and acts as a preview course for the accounting major.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate identifies the role of accounting information and the purpose of the accounting cycle in decision-making.",
+            "The graduate explains how financial statements assist decision-making.",
+            "The graduate determines the elements and processes involved in managing a company’s cash flows and operating cycle.",
+            "The graduate explains how controlling costs and profits affects an organization.",
+            "The graduate explains how managerial cost information assists internal decision-making.",
+            "The graduate explains how various costing methodologies assist internal decision-making."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Emotional and Cultural Intelligence",
+          "description": "Emotional and Cultural Intelligence focuses on key personal awareness skills that businesses request when hiring personnel. Key among those abilities is communication. Students will increase their skills in written, verbal, and nonverbal communication skills. The course then looks at three areas of personal awareness including emotional intelligence (EI), cultural awareness, and ethical self-awareness – building on previously acquired competencies and adding new ones. This course helps start students on a road of self-discovery, cultivating awareness to improve both as a business professional and personally.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies emotional intelligence (EI) to improve intrapersonal and interpersonal interactions.",
+            "The graduate demonstrates cultural intelligence (CI) within multicultural and contemporary business situations."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Principles of Management",
+          "description": "Principles of Management provides students with an introductory look at the discipline of management and its context within the business environment. Students of this course build on previously mastered competencies by taking a more in-depth look at management as a discipline and how it differs from leadership while further exploring the importance of communication within business. This course provides students with a business generalist overview in the areas of strategic planning, total quality, entrepreneurship, conflict and change, human resource management, diversity, and organizational structure.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate can explain the strategic planning process.",
+            "The graduate can describe how to establish a total quality management program in a product operation and in a service operation.",
+            "The graduate can describe how to establish and promote an entrepreneurial emphasis within an organization.",
+            "The graduate can recommend effective techniques for managing conflict and change.",
+            "The graduate can correctly apply principles of human resource management in a given situation.",
+            "The graduate responds appropriately to diversity issues in the workplace.",
+            "The graduate can recommend an organizational structure to match a given organization's situation."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Fundamentals of Spreadsheets and Data Presentations",
+          "description": "Fundamentals of Spreadsheets and Data Presentations offers learners an overview of the use of spreadsheet functions and methods for presenting data within spreadsheets. Learners will have the opportunity to explore features and uses of MS Excel and apply the tools to situations they may encounter while studying in their program. They will also be introduced to real world uses and tools to collect, organize and present data.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner performs common spreadsheet tasks requiring basic formatting, formulas, and functions.",
+            "The learner prepares data for analysis.",
+            "The learner creates a presentation from a spreadsheet dataset."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Innovative and Strategic Thinking",
+          "description": "This course covers an important part of being a business professional: the knowledge and skills used in building and implementing business strategy. The course helps students build on previously acquired competencies in the areas of management, innovative thinking, and risk management while introducing them to the concepts and theories underpinning business strategy as a general business perspective. The course will help students gain skills in analyzing different business environments and in using quantitative literacy and data analysis in business strategy development and implementation. This course helps to provide students with a generalist overview of the area of business strategy.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate identifies the impact of innovation in personal and professional settings.",
+            "The graduate utilizes evidence-based techniques to make strategic decisions.",
+            "The graduate applies appropriate business practices to formulate recommendations that impact organizational effectiveness."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Business Environment Applications I: Business Structures and Legal Environment",
+          "description": "Business Environment Applications 1 provides students with a generalist overview of the business environment and a deeper look at a number of topics that make up the non-discipline areas of business which are required for a business person to be successful within any business environment. The first part of the course focuses on knowledge about organizations and how people operate within organizations, including the areas of organizational theory, structure, and effectiveness. The course then looks at business from a legal perspective with an overview of the legal environment of business. The course will prepare the student to consider specific legal situations and to make legal and ethical decisions related to those situations.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate explains how the structure of an organization impacts its effectiveness in the context of critical circumstances.",
+            "The graduate describes common legal considerations for the creation and operation of a business organization."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Finance Skills for Managers",
+          "description": "This course provides students with an introductory look at the discipline of finance and its context within the business environment. Students gain the knowledge to differentiate between personal and business finance and how they may overlap in a business environment. Students also gain a fundamental knowledge of financial forecasting and budgeting, statement analysis, and decision making. This course provides the student a business generalist overview of the field of finance and builds on previous acquired competencies related to using spreadsheets.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate identifies the systems, structure, roles, and impact of finance in the business environment.",
+            "The graduate utilizes interest rates, time value of money, and risk and return principles to inform financial business decisions.",
+            "The graduate uses financial statements to determine the health of a business organization.",
+            "The graduate identifies how financial forecasting and budgeting helps individuals and organizations plan for future financial needs.",
+            "The graduate utilizes the appropriate financial tools and techniques to inform limited financial investment decisions."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Principles of Economics",
+          "description": "Principles of Economics provides students with the knowledge they need to be successful managers, including basic economic theories related to markets and how markets function. This course starts by defining economics, differentiating between microeconomics and macroeconomics, and explaining the fundamental economic principles of each. It then looks at microeconomics and how it is used to make business and public policy decisions, including the principles of supply, demand, and elasticity, market efficiency, cost of production, and different market structures. The course finishes by looking at macroeconomics and how it is used to make business and public policy decisions, including measurement of macroeconomic variables, aggregate supply and demand, the concepts of an open economy, and how trade policies influence domestic and international markets.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate explains fundamental economic principles used in microeconomics and macroeconomics.",
+            "The graduate explains concepts in microeconomics used in business and public policy decisions.",
+            "The graduate explains concepts in macroeconomics used in business and public policy decisions."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Concepts in Marketing, Sales, and Customer Contact",
+          "description": "Concepts in Marketing, Sales, and Customer Contact introduces students to the discipline of marketing and its role within the strategic and operational environments of a business. This course covers fundamental knowledge in the area of marketing planning, including the marketing mix, while also describing basic concepts of brand management, digital marketing, customer relationship management, and personal selling and negotiating. All of this helps students identify the role of marketing within an organization. This course provides students with a business generalist overview of the field of marketing and an exploration of the marketing major.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate describes basic elements used in marketing planning.",
+            "The graduate describes how strategic marketing influences the overall success of a business.",
+            "The graduate identifies personal selling and negotiating strategies within the sales management process."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Business Environment Applications II: Process, Logistics, and Operations",
+          "description": "Business Environment II: Logistics, Process, and Operations provides students with a generalist overview of the business environment as they explore themes of ethics, problem-solving, and innovative thinking. This course adds to the students’ business skills and knowledge in a number of professional areas. The first part of the course uncovers a series of business processes like project and risk management. The second part gives an introductory-level look at the specialized areas of operations management, supply chains, and logistics. The course finishes with models of change management and how to use them to overcome barriers in organizations.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate explains how project management concepts can help an organization achieve its goals.",
+            "The graduate explains how logistics are important to the operations of a successful organization.",
+            "The graduate applies change management models to help an organization achieve its goals."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Business Simulation",
+          "description": "This course ties together all the skills and knowledge covered in the business courses and allows the student to prove their mastery of the competencies by applying them in a simulated business environment. This course will help take the student's knowledge and skills from the theoretical to applicable.",
+          "competency_bullets": [
+            "The graduate applies the competencies from across the business core curriculum, demonstrating the ability to lead the implementation of the mission, strategy, and goals of an organization."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Managing in a Global Business Environment",
+          "description": "Managing in a Global Business Environment provides students with a generalist overview of business from a global perspective, while also developing basic skills and knowledge to help them make strategic decisions, communicate, and develop personal relationships in a global environment. Business today is by its very nature a global environment, and individuals working in business will experience the global nature of business as they progress through their careers. This course builds on previously acquired competencies by providing an overview of U.S. federal laws in relation to doing business in a global environment.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate defines globalization and its major driving forces.",
+            "The graduate describes the regulatory and ethical aspects of global business.",
+            "The graduate compares the effectiveness of business strategies in the global business environment.",
+            "The graduate describes how financial and operational practices influence global business.",
+            "The graduate describes technologies and trends in the global business environment."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "General Education",
+      "courses": [
+        {
+          "title": "Composition: Successful Self-Expression",
+          "description": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing research sources. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the seven competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content. You will demonstrate competency through a performance assessment. There is no prerequisite for this course and there is no specific technical knowledge needed.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner composes a written message with language appropriate for cross-cultural communication.",
+            "The learner writes in a professional manner for a given scenario.",
+            "The learner researches valid and reliable sources.",
+            "The learner writes a reference list.",
+            "The learner incorporates research to support a position or idea.",
+            "The learner writes a message using an effective communication approach for a given situation.",
+            "The learner incorporates self-expression in written communication."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Applied Probability and Statistics",
+          "description": "Applied Probability and Statistics is designed to help students develop competence in the fundamental concepts of basic statistics including: introductory algebra and graphing; descriptive statistics; regression and correlation; and probability. Statistical data and probability are often used in everyday life, science, business, information technology, and educational settings to make informed decisions about the validity of studies and the effect of data on decisions. This course discusses what constitutes sound research design and how to appropriately model phenomena using statistical data. Additionally, the content covers simple probability calculations, based on events that occur in the business and IT industries. No prerequisites are required for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies the operations, processes, and procedures of fractions, decimals, and percentages to evaluate quantitative expressions.",
+            "The graduate applies the operations, processes, and procedures of basic algebra to evaluate quantitative expressions, and to solve equations and inequalities.",
+            "The graduate evaluates categorical and quantitative data pertaining to a single variable using appropriate graphical displays and numerical measures.",
+            "The graduate evaluates the relationship between two variables through interpretation of visual displays and numerical measures.",
+            "The graduate evaluates the relationship between two quantitative variables through correlation and regression.",
+            "The graduate applies principles and methods of probability-based mathematics to explain and solve problems."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Critical Thinking: Reason and Evidence",
+          "description": "In this course you will learn key critical thinking concepts and how to apply them in the analysis and evaluation of reasons and evidence. The course examines the basic components of an argument, the credibility of evidence sources, the impact of bias, and how to construct an argument that provides good support for a claim. The course consists of an introduction and four major sections. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the four competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates the quality of an argument.",
+            "The learner evaluates evidence based on source credibility.",
+            "The learner evaluates bias and its impact.",
+            "The learner makes claims based on evidence."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Global Arts and Humanities",
+          "description": "This is a Global Arts and Humanities course that contains three modules with corresponding lessons. This course is an invitation to see the world through the humanities, examine the humanities during the Information Age, and explore the global origins of music—essentially questioning what makes us human, and how people are connected across culture and time. Each module includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to practice and check learning. With no prior knowledge or experience, a learner can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes diverse voices, ideas, perspectives, and cultural interactions through the lens of the humanities.",
+            "The learner analyzes the humanities during the Information Age.",
+            "The learner analyzes how music shapes and is shaped by diverse cultures and perspectives."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Applied Algebra",
+          "description": "Applied Algebra is designed to help you develop competence in working with functions, the algebra of functions, and using some applied properties of functions. You will start learning about how we can apply different kinds of functions to relevant, real-life examples. From there, the algebra of several families of functions will be explored, including linear, polynomial, exponential, and logistic functions. You will also learn about relevant, applicable mathematical properties of each family of functions, including rate of change, concavity, maximizing/minimizing, and asymptotes. These properties will be used to solve problems related to your major and make sense of everyday living problems. Students should complete Applied Probability and Statistics or its equivalent prior to engaging in Applied Algebra.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner interprets the real-world meaning of various functions based on notation, graphical representations, and data representations.",
+            "The learner applies linear functions and their properties to real-world problems.",
+            "The learner applies polynomial functions and their properties to real-world problems.",
+            "The learner applies exponential functions and their properties to real-world problems.",
+            "The learner applies logistic functions and their properties to real-world problems.",
+            "The learner analyzes graphical depictions of real-world situations using functional properties.",
+            "The learner verifies the validity of a given model."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Communication: Connecting with Others",
+          "description": "Welcome to Introduction to Communication: Connecting with Others! It may seem like common knowledge that communication skills are important, and that communicating with others is inescapable in our everyday lives. While this may appear simplistic, the study of communication is actually complex, dynamic, and multifaceted. Strong communication skills are invaluable to strengthening a multitude of aspects of life. Specifically, this course will focus on communication in the professional setting, and present material from multiple vantage points, including communicating with others in a variety of contexts, across situations, and with diverse populations. Upon completion, you will have a deeper understanding of both your own and others’ communication behaviors, and a toolbox of effective behaviors to enhance your experience in the workplace.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements appropriate communication styles based on audience and setting.",
+            "The learner uses communication strategies for managing conflict.",
+            "The learner uses communication strategies to influence others."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Health, Fitness, and Wellness",
+          "description": "Health, Fitness, and Wellness focuses on the importance and foundations of good health and physical fitness—particularly for children and adolescents—addressing health, nutrition, fitness, and substance use and abuse.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate identifies the influence of disease, fitness, and lifestyle on the body.",
+            "The graduate identifies the principles of nutrition and the components of a healthy diet.",
+            "The graduate identifies factors that influence mental, emotional, and social wellness.",
+            "The graduate identifies the application of the core competencies of social and emotional learning."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "US History: Stories of American Democracy",
+          "description": "This course presents a broad survey of U.S. history from early colonization to the mid-twentieth century. The course explores how historical events and major themes in American history have affected diverse populations, influenced changes in policy an established the American definition of democracy. This course consists of an introduction and five major sections. Each section includes learning opportunities through reading, images, videos, and other relevant resources. Assessment activities with feedback also provide opportunities to practice and check how well you understand the content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the five competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes secondary sources to understand events and processes in American History.",
+            "The learner analyzes primary sources to understand events or processes in American history.",
+            "The learner explains the effect of the actions of individuals in U.S. History.",
+            "The learner explains the effect of institutions on society.",
+            "The learner describes how economic, political, and social factors affect communities"
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Sociology",
+          "description": "This course teaches students to think like sociologists, or, in other words, to see and understand the hidden rules, or norms, by which people live, and how they free or restrain behavior. Students will learn about socializing institutions, such as schools and families, as well as workplace organizations and governments. Participants will also learn how people deviate from the rules by challenging norms and how such behavior may result in social change, either on a large scale or within small groups.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate explains how societies are stratified across various social statuses.",
+            "The graduate explains reciprocal relationships between social institutions and individuals.",
+            "The graduate explains major perspectives and key contributors to the development of sociology.",
+            "The graduate identifies components of culture and socialization as they relate to individuals in society.",
+            "The graduate explains the constructs of conformity to and deviance from social norms."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Integrated Physical Sciences",
+          "description": "This course provides students with an overview of the basic principles and unifying ideas of the physical sciences: physics, chemistry, and earth sciences. Course materials focus on scientific reasoning and practical, everyday applications of physical science concepts to help students integrate conceptual knowledge with practical skills.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes the nature and process of science.",
+            "The learner examines applications of physics including fundamental concepts such as forces, motion, energy, and waves.",
+            "The learner examines applications of key chemistry concepts including the structure of matter and the behavior and conservation of matter in chemical reactions.",
+            "The learner describes the underlying organization, interactions, and processes within the Earth system including the Earth's structure and atmosphere, and Earth's interactions within the solar system."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Accounting",
+      "courses": [
+        {
+          "title": "Financial Accounting",
+          "description": "Financial Accounting focuses on ways in which accounting principles are used in business operations. Students learn the basics of financial accounting, including how the accounting cycle is used to record business transactions under generally accepted accounting principles (GAAP). Students will also be introduced to the concepts of assets, liabilities, and equity. This course also presents bank reconciliation methods, balance sheets, and business ethics. Principles of Accounting is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate describes the basic elements, uses, and relationships of the basic financial statements.",
+            "The graduate applies accounting cycle concepts used to prepare basic financial statements.",
+            "The graduate applies accounting cycle concepts used to close the books for the year.",
+            "The graduate explains the importance of internal controls and their impact on the financial statements.",
+            "The graduate describes how to account for receivables and related accounts.",
+            "The graduate describes how to account for inventory and related accounts.",
+            "The graduate describes how to account for property, plant, equipment, intangible assets, and related accounts to ensure accuracy.",
+            "The graduate describes how to account for liabilities and equity to ensure accuracy."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Taxation I",
+          "description": "This course focuses on the taxation of individuals. It provides an overview of income taxes of both individuals and business entities in order to enhance awareness of the complexities and sources of tax law and to measure and analyze the effect of various tax options. The course will introduce taxation of sole proprietorships. Students will learn principles of individual taxation and how to develop effective personal tax strategies for individuals. Students will also be introduced to tax research of complex taxation issues.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate explains the nature, purpose, and scope of the current U.S. tax system as it relates to individuals.",
+            "The graduate determines the tax treatment for items reflected in individual income tax returns.",
+            "The graduate conducts basic tax research."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Cost and Managerial Accounting",
+          "description": "Cost and Managerial Accounting focuses on the concepts and procedures needed to identify, collect, and interpret accounting data for management control and decision-making. Topics covered include budgeting, cost-volume-profit analysis, job costing, process costing, activity-based costing, standard costing, and differential analysis. Prerequisites include Principles of Accounting and Financial Accounting.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate demonstrates using job-order costing as a product costing tool.",
+            "The graduate analyzes the given information to apply the process costing method in determining product costs.",
+            "The graduate applies overhead to complex and differentiated products using the activity-based costing (ABC) method.",
+            "The graduate leverages the relationship between cost, volume, and profit to support management decision-making.",
+            "The graduate assesses production efficiencies through variance analysis.",
+            "The graduate develops the master budget as a management planning tool.",
+            "The graduate analyzes relevant costs to support management decision-making."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Business Law for Accountants",
+          "description": "Business Law for Accountants is designed to provide the advanced accounting student an understanding of the legal environment and issues encountered in the profession. Topics include the Uniform Commercial Code (UCC), contracts, securities regulation, Sarbanes-Oxley Act, legal entities, ethics, agency, and bankruptcy. The prerequisite to this course is Financial Accounting.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate distinguishes between the legal environment in which businesses operate.",
+            "The graduate differentiates between the types of intellectual property assets and rights in business.",
+            "The graduate evaluates contractual obligations of sellers, buyers, lessors, and lessees under Article 2 of the Uniform Commercial Code.",
+            "The graduate analyzes debtor-creditor relationship and bankruptcy in a business environment.",
+            "The graduate identifies the four most common legal entities in business.",
+            "The graduate determines the existence of an agency relationship and its role in a business environment.",
+            "The graduate identifies key elements of consumer protection, investor protection, and corporate governance in a business environment."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Intermediate Accounting I",
+          "description": "Intermediate Accounting I is the first of three in-depth financial accounting courses for accounting majors. The course builds upon topics covered in Principles of Accounting and Financial Accounting. The course focuses on financial accounting and accounting standards; the conceptual framework of the U.S. generally accepted accounting principles (GAAP); the income statement, the statement of cash flows, and the balance sheet; cash and receivables; and inventory valuation. The prerequisite to this course is Financial Accounting.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate explains the financial environment and theoretical framework of financial accounting to record financial information.",
+            "The graduate prepares an income statement in accordance with generally accepted accounting principles (GAAP) to show financial information.",
+            "The graduate prepares a balance sheet and a statement of cash flows in accordance with generally accepted accounting principles (GAAP) to show financial information.",
+            "The graduate applies time value of money concepts in determining valuation of certain assets and liabilities.",
+            "The graduate analyzes ratios and cash and receivables in accordance with generally accepted accounting principles (GAAP) to provide financial information for multiple stakeholders.",
+            "The graduate analyzes inventory in accordance with generally accepted accounting principles (GAAP) to provide financial information for multiple stakeholders."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Intermediate Accounting II",
+          "description": "Intermediate Accounting II is the second of three in-depth financial accounting courses for accounting majors. The course focuses on acquisition and disposition of noncurrent assets; depreciation, impairments, and depletion; intangible assets; current liabilities and contingencies; long-term obligations; stockholders' equity; dilutive securities; and time value of money concepts. The prerequisite to this course is Intermediate Accounting I.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate accounts for property, plant, and equipment in accordance with generally accepted accounting principles (GAAP).",
+            "The graduate accounts for intangible assets in accordance with generally accepted accounting principles (GAAP).",
+            "The graduate accounts for depreciation, impairment, and depletion in accordance with generally accepted accounting principles (GAAP).",
+            "The graduate accounts for liabilities in accordance with generally accepted accounting principles (GAAP).",
+            "The graduate accounts for equity in accordance with generally accepted accounting principles (GAAP)."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Accounting Information Systems",
+          "description": "Accounting Information Systems (AIS for short) introduces students to AIS, with particular emphasis on the accountant’s role in management and financial reporting systems. Topics include transaction cycles and related information technology (IT) controls, data management, enterprise resource planning (ERP) and e-commerce systems, systems development and acquisition, documentation, and IT auditing. D103 Intermediate Accounting I and D104 Intermediate Accounting II are the prerequisites to this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes system components and transaction processes, using an accounting information system.",
+            "The graduate explains the processes and controls for the revenue, expenditure, and general ledger transaction cycles used in business information systems.",
+            "The graduate explains the roles of database management, enterprise resource planning, and electronic commerce systems in business planning and activities.",
+            "The graduate describes the importance of the accountant’s role in systems and software development activities.",
+            "The graduate explains computer controls and IT auditing procedures essential to information and financial reporting integrity."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Intermediate Accounting III",
+          "description": "Intermediate Accounting III provides comprehensive coverage of investments, revenue recognition, accounting for income taxes, pension plans, and leases. This course completes the intermediate accounting journey. The course explores further advanced topics, including accounting changes and error analysis, full disclosure requirements in financial reporting, and interpretation of the statement of cash flows. Intermediate Accounting I and II are the prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate accounts for revenue in accordance with generally accepted accounting principles (GAAP).",
+            "The graduate accounts for investments in accordance with generally accepted accounting principles (GAAP).",
+            "The graduate accounts for income taxes in accordance with generally accepted accounting principles (GAAP).",
+            "The graduate analyzes leases in accordance with generally accepted accounting principles (GAAP).",
+            "The graduate analyzes the impact of accounting changes and errors on financial statements in accordance with generally accepted accounting principles (GAAP).",
+            "The graduate describes the accounting for pensions in accordance with generally accepted accounting principles (GAAP).",
+            "The graduate interprets the statement of cash flows in accordance with generally accepted accounting principles (GAAP).",
+            "The graduate applies the full disclosure principle in accordance with generally accepted accounting principles (GAAP)."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Auditing",
+          "description": "Auditing covers the entire auditing process. This course will help students gain an understanding of the different assurance services, the AICPA Code of Professional Conduct, and the conceptual framework for members in public practice. The course will teach students how to assess for audit risk, develop an audit strategy, and gain an understanding of the audit client. Audit evidence and a client’s system of internal control will be discussed in depth. The course requires students to assess risk response by identifying and evaluating tests of controls and substantive procedures. In addition, the course will have students evaluate risk response using data analytics and audit sampling for substantive tests. The course concludes with the completion of the audit through subsequent events, engagement wrap-up and management representation, and reporting on the audit with an unqualified audit report or a modification of the audit report. The prerequisites to this course are Intermediate Accounting I, II, and III, Accounting Information Systems, and Business Law for Accountants.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate describes audit and assurance services provided by the accounting profession.",
+            "The graduate reports the results of an audit engagement to the appropriate stakeholders.",
+            "The graduate applies the appropriate professional standards required by the accounting profession.",
+            "The graduate develops risk mitigation strategies in a professional audit engagement.",
+            "The graduate applies a client’s audit evidence in developing the overall audit plan.",
+            "The graduate considers a client’s system of internal controls in order to develop the overall audit plan.",
+            "The graduate evaluates risk response through a test of controls.",
+            "The graduate analyzes risk response through substantive procedures.",
+            "The graduate evaluates risk response through audit data analytics and audit sampling for substantive tests.",
+            "The graduate completes an audit engagement by performing end-of-audit procedures."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "cert_signals": [],
+  "family": null,
+  "anomaly_flags": []
+}

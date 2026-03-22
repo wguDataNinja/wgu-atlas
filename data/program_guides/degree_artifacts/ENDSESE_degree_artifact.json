@@ -1,0 +1,200 @@
+{
+  "program_code": "ENDSESE",
+  "source_degree_title": "Endorsement Preparation Program, Earth Science",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.730172Z",
+    "source_version": "202509",
+    "source_pub_date": "6/17/2025",
+    "source_page_count": 0,
+    "confidence": "high"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "B",
+    "aos_status": "usable",
+    "aos_course_count": 9,
+    "caveat_flags": [],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "Probability and Statistics",
+        "cus": 3,
+        "term": null
+      },
+      {
+        "title": "General Geology",
+        "cus": 3,
+        "term": null
+      },
+      {
+        "title": "Meteorology",
+        "cus": 3,
+        "term": null
+      },
+      {
+        "title": "General Ecology",
+        "cus": 3,
+        "term": null
+      },
+      {
+        "title": "Environmental Science",
+        "cus": 3,
+        "term": null
+      },
+      {
+        "title": "Astronomy",
+        "cus": 3,
+        "term": null
+      },
+      {
+        "title": "Natural Hazards",
+        "cus": 3,
+        "term": null
+      },
+      {
+        "title": "Environmental Management with Lab",
+        "cus": 4,
+        "term": null
+      },
+      {
+        "title": "Secondary Earth Science Curriculum",
+        "cus": 3,
+        "term": null
+      }
+    ],
+    "sp_display_mode": "advisor-guided"
+  },
+  "areas_of_study": [
+    {
+      "group": "Mathematics Education",
+      "courses": [
+        {
+          "title": "Probability and Statistics",
+          "description": "Probability and Statistics offers candidates a comprehensive introduction to the fundamental principles of probability theory and statistical analysis, specifically designed for educators and aspiring statisticians. Beginning with the basics, students will explore essential concepts such as probability rules, conditional probability, and counting techniques, learning how to apply these in real-world contexts and effectively communicate them to K-12 students. Students will then learn sampling methods and estimation techniques, equipping them with the knowledge to gather, analyze, and interpret representative data for statistical analysis. Finally, students will focus on hypothesis testing and statistical inference, where they will learn to conduct and interpret various tests, including confidence intervals, using statistical software. Through a blend of interactive simulations, scenario-based challenges, and reflective activities, this course prepares students to apply these statistical tools in educational settings and beyond, fostering data-driven decision-making and effective teaching practices.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies basic probability theory to solve problems involving random events.",
+            "The learner conducts sampling and estimation for statistical analysis.",
+            "The learner performs hypothesis testing and statistical analysis to make data-driven decisions."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Science Education",
+      "courses": [
+        {
+          "title": "General Geology",
+          "description": "General Geology offers a comprehensive exploration of Earth's dynamic systems, emphasizing the interaction of geological processes that shape our planet. Students will engage in a rigorous study of Earth's materials, surface processes, and the forces driving tectonic movements, with an emphasis on both local and global geological phenomena. Through interactive activities, including simulations, and mapping tools, learners will connect historical geological evidence to the evolution of the Earth and its life forms. The course is designed for educators aiming to enhance their pedagogical approaches to teaching geology. No prior geological knowledge is required, making this course accessible and essential for anyone interested in understanding the Earth's past, present, and future.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes Earth’s materials and systems in the context of a local environment.",
+            "The learner connects the evolution of the planet and its life forms to geologic evidence.",
+            "The learner relates geologic features, events, and environments to surface, bedrock, and internal Earth processes."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Meteorology",
+          "description": "Meteorology provides an in-depth exploration of Earth's atmospheric and hydrospheric systems, examining the complex interactions that govern climate and weather patterns. Students will investigate the fundamental concepts of atmospheric circulation, weather systems, and climate dynamics, linking these to the hydrosphere's critical role. The course progresses to a detailed analysis of the Earth's evolving climate, focusing on both natural and anthropogenic factors that have shaped the current state of the atmosphere and hydrosphere. By integrating scientific principles with practical applications, students will gain a comprehensive understanding of how climate systems operate and evolve, preparing them to assess and address future environmental challenges.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains characteristics and interrelated processes and systems within the Earth’s atmosphere and how these relate to the hydrosphere.",
+            "The learner identifies characteristics and interrelated processes and systems within the Earth’s hydrosphere.",
+            "The learner relates climate concepts and trends to the evolution of Earth’s hydrosphere and atmosphere."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Environmental Science",
+          "description": "This course explores the essential concepts and processes related to Earth's natural resources, focusing on the interactions between land, water, and air. Students will analyze how human activities impact these resources and examine the scientific, technological, and policy-driven efforts to manage and remediate environmental issues. Through case studies and real-world examples, the course emphasizes sustainable practices and the role of innovative solutions in addressing global challenges. By the end of the course, students will be equipped to critically evaluate resource management strategies and contribute to environmental sustainability.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together",
+            "The learner analyzes human efforts to prevent and remediate issues associated with the management of Earth’s resources.",
+            "The learner analyzes the impacts and challenges related to human use of Earth’s natural resources.",
+            "The learner recognizes characteristics and interrelated processes within Earth’s land, water, and air resources."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Astronomy",
+          "description": "Astronomy explores the fundamental principles of the universe, focusing on the lifecycle of stars, the structure of our solar system, and the dynamics of the Sun-Earth-Moon system. In this course, students learn about the analysis of starlight spectra and brightness to determine the composition, movement, and distance of stars. Kepler’s laws are examined to explain the motions of orbiting celestial bodies and the factors that influence their paths. Students will also learn how the cyclical changes in Earth’s orbit and axial orientation affect climate over geological time scales. Additionally, students will build on their geological knowledge by studying extraterrestrial objects, such as lunar rocks and meteorites, to gain insights into Earth's formation and history.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies knowledge of the composition and structure of our solar system to astronomical concepts.",
+            "The learner identifies key developments, tools, and techniques in astronomy.",
+            "The learner relates stellar structure and formation to galaxy and universe evolution."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Natural Hazards",
+          "description": "Natural Hazards delves into the complex and dynamic processes that govern Earth's natural systems and the hazards they produce. Students will explore how the geosphere, atmosphere, hydrosphere, and biosphere interact to create natural events such as earthquakes, volcanic eruptions, hurricanes, floods, and tsunamis. The course emphasizes the role of plate tectonics in generating lithospheric hazards, analyzing how movements within the Earth's crust lead to earthquakes and volcanic activities. Additionally, students will learn about the formation of atmospheric hazards, including how climate patterns and atmospheric circulation contribute to contribute to hurricanes, floods, and tornadoes. Students will examine how human activities impact the frequency and intensity of natural hazards and how natural hazards influence human behavior. By the end of the course, students will have a comprehensive understanding of the scientific principles underlying natural hazards and will be equipped to analyze and address the challenges posed by these events in both natural and human-altered environments.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the characteristics and dynamic interactions involved in atmospheric and hydrologic hazards.",
+            "The learner analyzes the dynamic processes involved in lithospheric hazards.",
+            "The learner analyzes the inputs, outputs, and complex interactions and feedback mechanisms within Earth’s systems."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Environmental Management with Lab",
+          "description": "Environmental Management with Lab is an introductory course for undergraduate students seeking initial licensure or endorsement in secondary science education. This course provides a comprehensive overview of the principles and practices essential for understanding and managing the environment sustainably. This course focuses on sustainable use of energy, water, and other natural resources, as well as pollution of air, water, and land. Through hands-on labs and real-world examples, candidates will gain practical experience in environmental impact assessments and water and air quality monitoring. This course is assessed via a Performance Assessment.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes an energy resource and its environmental impacts within a local context.",
+            "The learner analyzes pollution of air and water, its environmental impacts, and remediation pathways within a local context.",
+            "The learner analyzes pollution of land and soil, its environmental impacts, and remediation pathways within a local context."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Biology Content",
+      "courses": [
+        {
+          "title": "General Ecology",
+          "description": "General Ecology offers an in-depth exploration of how ecosystems function and interact. Candidates will study both biotic and abiotic factors that play crucial roles in sustaining ecological balance. Key topics include the flow of energy through food chains and webs, nutrient cycling, and the dynamics of populations—covering growth models, carrying capacity, and factors influencing population size and structure. The course examines species interactions such as competition, predation, and symbiosis, and explores community structure and biodiversity. Candidates will learn about primary and secondary succession and how these processes shape ecosystems over time. Additionally, the course addresses conservation principles and practices, with a focus on analyzing human impacts on ecosystems and exploring strategies for sustainability. Through this course, candidates will gain a comprehensive understanding of the intricate web of life that sustains our planet.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together",
+            "The learner analyzes changes to ecosystems over time, including the underlying processes and long-term impacts on biodiversity and ecosystem health.",
+            "The learner analyzes conservation of energy and matter as it cycles and flows through ecosystems.",
+            "The learner analyzes population, biodiversity, and ecosystem dynamics and interactions."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Secondary Education",
+      "courses": [
+        {
+          "title": "Secondary Earth Science Curriculum",
+          "description": "UG Secondary Earth Science Curriculum prepares students to develop and evaluate Earth Science curricula for secondary education by examining the foundational principles of Earth's processes, materials, and their interactions within the broader context of the hydrosphere, atmosphere, and the universe. The course delves into the relationships between the Earth, Sun, and Moon, the dynamics of the Earth's internal and external systems, and the characteristics and life cycles of stars and planets. Learners will explore the structure and behavior of Earth's components, as well as celestial phenomena, equipping them with the knowledge necessary to effectively teach these concepts in secondary education settings. This course lays the groundwork for understanding and conveying the complexities of Earth and space science, preparing learners for impactful instruction in the classroom. Through practical examples and interactive activities, students will enhance their ability to design effective curricula that foster student engagement and understanding in Earth Science.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies knowledge of astronomy.",
+            "The learner applies knowledge of Earth’s hydrosphere and atmosphere.",
+            "The learner applies knowledge of Earth’s processes and materials."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "cert_signals": [],
+  "family": null,
+  "anomaly_flags": []
+}

@@ -1,0 +1,809 @@
+{
+  "program_code": "BSDA",
+  "source_degree_title": "Bachelor of Science, Data Analytics",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.729626Z",
+    "source_version": "202309",
+    "source_pub_date": "5/1/23",
+    "source_page_count": 21,
+    "confidence": "high"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "A",
+    "aos_status": "usable",
+    "aos_course_count": 41,
+    "caveat_flags": [],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "Introduction to Analytics",
+        "cus": 2,
+        "term": 1
+      },
+      {
+        "title": "IT Leadership Foundations",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Scripting and Programming - Foundations",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Fundamentals of Spreadsheets and Data Presentations",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Data Management - Foundations",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Change Management",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Data Management - Applications",
+        "cus": 4,
+        "term": 2
+      },
+      {
+        "title": "Applied Probability and Statistics",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Natural Science Lab",
+        "cus": 2,
+        "term": 2
+      },
+      {
+        "title": "Advanced Data Management",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Critical Thinking: Reason and Evidence",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Introduction to Programming in Python",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Network and Security - Foundations",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Applied Algebra",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Version Control",
+        "cus": 1,
+        "term": 3
+      },
+      {
+        "title": "Design Thinking for Business",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Web Development Foundations",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Composition: Writing with a Strategy",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Ethics in Technology",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Cloud Foundations",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Hardware and Operating Systems Essentials",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Health, Fitness, and Wellness",
+        "cus": 4,
+        "term": 5
+      },
+      {
+        "title": "Data Analytics - Applications",
+        "cus": 4,
+        "term": 5
+      },
+      {
+        "title": "Discrete Math: Logic",
+        "cus": 1,
+        "term": 5
+      },
+      {
+        "title": "Discrete Math: Functions and Relations",
+        "cus": 1,
+        "term": 5
+      },
+      {
+        "title": "Scripting and Programming - Applications",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Introduction to Communication: Connecting with Others",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Introduction to Physical and Human Geography",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Business of IT - Project Management",
+        "cus": 4,
+        "term": 6
+      },
+      {
+        "title": "Data and Information Governance",
+        "cus": 2,
+        "term": 6
+      },
+      {
+        "title": "Big Data Foundations",
+        "cus": 4,
+        "term": 6
+      },
+      {
+        "title": "American Politics and the US Constitution",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Influential Communication through Visual Design and Storytelling",
+        "cus": 3,
+        "term": 7
+      },
+      {
+        "title": "Data Structures and Algorithms I",
+        "cus": 4,
+        "term": 7
+      },
+      {
+        "title": "Introduction to Data Science",
+        "cus": 4,
+        "term": 7
+      },
+      {
+        "title": "Data Wrangling",
+        "cus": 3,
+        "term": 7
+      },
+      {
+        "title": "Data Analysis with R",
+        "cus": 2,
+        "term": 7
+      },
+      {
+        "title": "Machine Learning",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Data Visualization",
+        "cus": 2,
+        "term": 8
+      },
+      {
+        "title": "Machine Learning DevOps",
+        "cus": 2,
+        "term": 8
+      },
+      {
+        "title": "Introduction to Systems Thinking",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Data Analytics Capstone",
+        "cus": 4,
+        "term": 8
+      }
+    ]
+  },
+  "areas_of_study": [
+    {
+      "group": "Data Analytics",
+      "courses": [
+        {
+          "title": "Introduction to Analytics",
+          "description": "Analytics is the creative use of data and statistical modeling to tell a compelling story that not only drives strategic action, but also results in business value. Introduction to Analytics examines data analytics as a discipline and the various roles and functions within the field. You will expand your knowledge about what analytics is and develop a basic understanding of statistics, analysis, problem solving, and programming concepts.",
+          "competency_bullets": [
+            "The learner identifies the variety of careers and roles related to the broad field of data analytics.",
+            "The learner identifies the phases of the data analytics life cycle, including contextualizing and defining the scope of each phase.",
+            "The learner identifies the potential drivers of value from deploying an analytical solution."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Data and Information Governance",
+          "description": "Data and Information Governance provides students with the knowledge that establishing rules of engagement, policies, procedures, and data stewardship is essential to exercising organizational control over, and extracting maximum value from, its data assets. Good data governance helps an organization lower costs, create efficiencies, and achieve its strategic goals and objectives. Data governance provides a framework for properly managing information across the entire data lifecycle and establishes strategies in support of disaster recovery and continuity of operations. This course will prepare IT professionals to assist their organization in the definition and implementation of best practices related to the planning and implementation of managed systems that meet business, technical, security, auditing, disaster recovery, and business continuity requirements.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates data governance components to identify deficiencies in the organization's data quality, completeness, and management strategy.",
+            "The learner recommends data and information governance policies, standards, procedures, and best practices."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Business of IT",
+      "courses": [
+        {
+          "title": "IT Leadership Foundations",
+          "description": "IT Leadership Foundations is an introductory course that provides students with an overview of organizational structures, communication, and leadership styles specific to information technology in organizations. It also introduces students to some of the power skills that help make successful IT professionals, including time management, problem solving, and emotional intelligence. Students in this course explore their own strengths and passions in relation to the field. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner selects appropriate influential leadership strategies for workplace situations.",
+            "The learner communicates ideas, opinions, and information suitable for various professional settings.",
+            "The learner reflects on the emotional reactions of self and others in a variety of professional situations.",
+            "The learner recommends strategies for decision-making in team environments."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Business of IT - Project Management",
+          "description": "In this course, students will build on industry standard concepts, techniques, and processes to develop a comprehensive foundation for project management activities. During a project's life cycle, students will develop the critical skills necessary to initiate, plan, execute, monitor, control, and close a project. Students will apply best practices in areas such as scope management, resource allocation, project planning, project scheduling, quality control, risk management, performance measurement, and project reporting. This course prepares students for the following certification exam: CompTIA Project+.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner determines requirements of a project management plan.",
+            "The learner identifies project factors, constraints, and risk strategies.",
+            "The learner applies communication methods and change control processes within a project."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Scripting and Programming",
+      "courses": [
+        {
+          "title": "Scripting and Programming - Foundations",
+          "description": "Scripting and Programming - Foundations introduces programming basics such as variables, data types, flow control, and design concepts. The course is language-agnostic in nature, ending in a survey of languages, and introduces the distinction between interpreted and compiled languages. Learners will gain skills in identifying scripts for computer program requirements and in using fundamental programming elements as part of common computer programming tasks. Learners will also gain an understanding of the logic and outcome of simple algorithms.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner identifies scripts for computer program requirements.",
+            "The learner uses fundamental programming elements as part of common computer programming tasks.",
+            "The learner explains the logic and outcome of simple algorithms."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Programming in Python",
+          "description": "Introduction to Programming in Python introduces skills in creating Python scripts with basic programming concepts. Learners will be able to create control flow with functions and loops, and to implement code with packages, modules, and libraries.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates python scripts with basic programming concepts.",
+            "The learner creates control flow with functions and loops.",
+            "The learner implements code with packages, modules, and libraries."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Business Core",
+      "courses": [
+        {
+          "title": "Fundamentals of Spreadsheets and Data Presentations",
+          "description": "Fundamentals of Spreadsheets and Data Presentations offers learners an overview of the use of spreadsheet functions and methods for presenting data within spreadsheets. Learners will have the opportunity to explore features and uses of MS Excel and apply the tools to situations they may encounter while studying in their program. They will also be introduced to real world uses and tools to collect, organize and present data.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner performs common spreadsheet tasks requiring basic formatting, formulas, and functions.",
+            "The learner prepares data for analysis.",
+            "The learner creates a presentation from a spreadsheet dataset."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Data Management",
+      "courses": [
+        {
+          "title": "Data Management - Foundations",
+          "description": "Data Management Foundations offers an introduction in creating conceptual, logical and physical data models. Students gain skills in creating databases and tables in SQL-enabled database management systems, as well as skills in normalizing databases. No prerequisites are required for this course",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains attributes of databases, database tables, and structured and associated query language (SQL) commands.",
+            "The learner determines how to run queries for creation and manipulation of data in relational databases.",
+            "The learner defines primary and foreign keys in data normalization."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Data Management - Applications",
+          "description": "Data Management - Applications covers conceptual data modeling and introduces MySQL. Students will learn how to create simple to complex SELECT queries, including subqueries and joins, and how to use SQL to update and delete data. Topics covered in this course include exposure to MySQL; creating and modifying databases, tables, views, foreign keys and primary keys (FKs and PKs), and indexes; populating tables; and developing simple Select-From-Where (SFW) queries to complex 3+ table join queries. The following course is a prerequisite: Data Management - Foundations.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner recommends databases and database management systems to meet organizational needs.",
+            "The learner queries database tables and views with SQL code.",
+            "The learner creates DML statements that insert, update, and delete data in data tables.",
+            "The learner implements joins and aggregate functions in SQL queries."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Advanced Data Management",
+          "description": "Advanced Data Management enables learners to extract and analyze raw data. Skillful data management allows organizations to discover and explore data in ways that uncover trends, issues, and their root causes. In turn, businesses are better equipped to capitalize on opportunities and more accurately plan for the future. As organizations continue to extract larger and more detailed volumes of data, the need is rapidly growing for IT professionals who possess data management skills. The skills gained in this course include performing advanced relational data modeling as well as designing data marts, lakes, and warehouses. This course will empower learners with the skills to build business logic at the database layer to employ more stability and higher data-processing speeds. Learners will gain the ability to automate common tasks to summarize and integrate data as they prepare it for analysis. Data Management - Foundations is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner writes complex Structured Query Language (SQL) statements for data analysis and manipulation.",
+            "The learner configures data extraction, transformation, and loading tasks for automated data integration."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Business Management",
+      "courses": [
+        {
+          "title": "Change Management",
+          "description": "Change Management provides an understanding of change and an overview of successfully managing change using various methods and tools. Emphasizing change theories and various best practices, this course covers how to recognize and implement change using an array of other effective strategies, including those related to innovation and leadership. Other topics include approaches to change, diagnosing and planning for change, implementing change, and sustaining change.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate summarizes the theories related to change management.",
+            "The graduate explains how organizations diagnose the need for change and the approaches for implementing change.",
+            "The graduate describes different innovation strategies and the role leaders play in innovation.",
+            "The graduate explains the various approaches to implementing change and the roles that leaders and other stakeholders fulfill.",
+            "The graduate explains the strategies, principles, roles, and models for sustaining change.",
+            "The graduate explains how learning organizations develop and how learning organizations and traditional organizations approach change differently."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "General Education",
+      "courses": [
+        {
+          "title": "Applied Probability and Statistics",
+          "description": "Applied Probability and Statistics is designed to help students develop competence in the fundamental concepts of basic statistics including: introductory algebra and graphing; descriptive statistics; regression and correlation; and probability. Statistical data and probability are often used in everyday life, science, business, information technology, and educational settings to make informed decisions about the validity of studies and the effect of data on decisions. This course discusses what constitutes sound research design and how to appropriately model phenomena using statistical data. Additionally, the content covers simple probability calculations, based on events that occur in the business and IT industries. No prerequisites are required for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies the operations, processes, and procedures of fractions, decimals, and percentages to evaluate quantitative expressions.",
+            "The graduate applies the operations, processes, and procedures of basic algebra to evaluate quantitative expressions, and to solve equations and inequalities.",
+            "The graduate evaluates categorical and quantitative data pertaining to a single variable using appropriate graphical displays and numerical measures.",
+            "The graduate evaluates the relationship between two variables through interpretation of visual displays and numerical measures.",
+            "The graduate evaluates the relationship between two quantitative variables through correlation and regression.",
+            "The graduate applies principles and methods of probability-based mathematics to explain and solve problems."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Natural Science Lab",
+          "description": "This course provides students an introduction to using the scientific method and engaging in scientific research to reach conclusions about the natural world. Students will design and carry out an experiment to investigate a hypothesis by gathering quantitative data. They will also research a specific ecosystem using academic sources and draw conclusions from their findings.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate evaluates academic sources for their credibility and relevance to a chosen research topic on a natural world phenomenon.",
+            "The graduate accurately executes the process of scientific inquiry through experimentation in the natural world.",
+            "The graduate draws conclusions based on academic research and scientific inquiry."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Critical Thinking: Reason and Evidence",
+          "description": "In this course you will learn key critical thinking concepts and how to apply them in the analysis and evaluation of reasons and evidence. The course examines the basic components of an argument, the credibility of evidence sources, the impact of bias, and how to construct an argument that provides good support for a claim. The course consists of an introduction and four major sections. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the four competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates the quality of an argument.",
+            "The learner evaluates evidence based on source credibility.",
+            "The learner evaluates bias and its impact.",
+            "The learner makes claims based on evidence."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Applied Algebra",
+          "description": "Applied Algebra is designed to help you develop competence in working with functions, the algebra of functions, and using some applied properties of functions. You will start learning about how we can apply different kinds of functions to relevant, real-life examples. From there, the algebra of several families of functions will be explored, including linear, polynomial, exponential, and logistic functions. You will also learn about relevant, applicable mathematical properties of each family of functions, including rate of change, concavity, maximizing/minimizing, and asymptotes. These properties will be used to solve problems related to your major and make sense of everyday living problems. Students should complete Applied Probability and Statistics or its equivalent prior to engaging in Applied Algebra.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner interprets the real-world meaning of various functions based on notation, graphical representations, and data representations.",
+            "The learner applies linear functions and their properties to real-world problems.",
+            "The learner applies polynomial functions and their properties to real-world problems.",
+            "The learner applies exponential functions and their properties to real-world problems.",
+            "The learner applies logistic functions and their properties to real-world problems.",
+            "The learner analyzes graphical depictions of real-world situations using functional properties.",
+            "The learner verifies the validity of a given model."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Design Thinking for Business",
+          "description": "Design Thinking for Business examines the design thinking methodology for solving complex problems. This course introduces students to design thinking as a human-centered approach to problem-solving and innovation that draws upon empathy and creativity to develop solutions to complex problems. Students will explore the principles and stages of design thinking and analyze the use of design thinking in developing solutions through real-world scenarios.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes the role of design thinking in problem solving.",
+            "The learner analyzes problems and solutions using design thinking methodology.",
+            "The learner proposes a solution to a complex problem using design thinking."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Composition: Writing with a Strategy",
+          "description": "Welcome to Composition: Writing with a Strategy! In this course, you will focus on three main topics: understanding purpose, context, and audience, writing strategies and techniques, and editing and revising. In addition, the first section, will offer review on core elements of the writing process, cross-cultural communication, as well as working with words and common standards and practices. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the seven competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The individual writes with purpose for a given context and target audience.",
+            "The individual incorporates writing strategies and techniques for written communication.",
+            "The individual constructs a written document with correct format, style, structure, and grammar.",
+            "The individual formulates a strategy for editing and revising written text.",
+            "The individual composes constructive feedback of written texts."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Ethics in Technology",
+          "description": "Ethics in Technology examines the ethical considerations of technology use in the 21st century and introduces students to a decision-making process informed by ethical frameworks. Students will study specific cases related to important topics such as surveillance, social media, hacking, data manipulation, plagiarism and piracy, artificial intelligence, responsible innovation, and the digital divide. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements ethical decision-making frameworks in the information age.",
+            "The learner describes ethical issues regarding data privacy, accuracy, access, and security.",
+            "The learner explains professional ethical codes and their role in guiding professional behavior.",
+            "The learner identifies interventions for personal bias and related legal concerns."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Health, Fitness, and Wellness",
+          "description": "Health, Fitness, and Wellness focuses on the importance and foundations of good health and physical fitness—particularly for children and adolescents—addressing health, nutrition, fitness, and substance use and abuse.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate identifies the influence of disease, fitness, and lifestyle on the body.",
+            "The graduate identifies the principles of nutrition and the components of a healthy diet.",
+            "The graduate identifies factors that influence mental, emotional, and social wellness.",
+            "The graduate identifies the application of the core competencies of social and emotional learning."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Discrete Math: Logic",
+          "description": "Discrete Math-Logic is designed to help students develop competence in the use of logic and proofs and Boolean Algebra and Boolean functions. Applied Probability and Statistics and Applied Algebra are prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates the truth of statements using proofs and the principles of deductive logic.",
+            "The learner minimizes circuits using Boolean algebra and Boolean functions."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Discrete Math: Functions and Relations",
+          "description": "Discrete Math: Functions and Relations is designed to help students develop competence in the use of abstract discrete structures fundamental to systems networking. In particular, this course will introduce students to set theory, finite sequences, series, and relations. Discrete Math: Logic, Applied Probability and Statistics, and Applied Algebra are prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes relationships between sets and functions.",
+            "The learner analyzes mathematical problems using relations and directed graphs."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Communication: Connecting with Others",
+          "description": "Welcome to Introduction to Communication: Connecting with Others! It may seem like common knowledge that communication skills are important, and that communicating with others is inescapable in our everyday lives. While this may appear simplistic, the study of communication is actually complex, dynamic, and multifaceted. Strong communication skills are invaluable to strengthening a multitude of aspects of life. Specifically, this course will focus on communication in the professional setting, and present material from multiple vantage points, including communicating with others in a variety of contexts, across situations, and with diverse populations. Upon completion, you will have a deeper understanding of both your own and others’ communication behaviors, and a toolbox of effective behaviors to enhance your experience in the workplace.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements appropriate communication styles based on audience and setting.",
+            "The learner uses communication strategies for managing conflict.",
+            "The learner uses communication strategies to influence others."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Physical and Human Geography",
+          "description": "This is Introduction to Physical and Human Geography, a three-module course that addresses the question of what geography really is in today's complex world; how migration affects—and has been affected by—geography; and one of the biggest present problems related to geography: climate change. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the five competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 30–40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the message of a data visualization for a specific purpose.",
+            "The learner interprets complex global systems through the lenses of physical and human geography.",
+            "The learner analyzes the various causes and effects of human migration.",
+            "The learner analyzes the connections among the various factors contributing to climate change.",
+            "The learner applies logical reasoning to the analysis of climate change."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "American Politics and the US Constitution",
+          "description": "American Politics and the U.S. Constitution examines the evolution of representative government in the United States and the changing interpretations of the civil rights and civil liberties protected by the Constitution. This course will give candidates an understanding of the powers of the branches of the federal government, the continual tensions inherent in a federal system, the shifting relationship between state and federal governments, and the interactions between elected officials and the ever-changing electorate. This course will focus on such topics as the role of a free press in a democracy, the impact of changing demographics on American politics, and the debates over and expansion of civil rights. Upon completion of the course, candidates should be able to explain the basic functions of the federal government, describe the forces that shape American policy and politics, and be better prepared to participate in America’s civic institutions. This course has no prerequisite.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate describes the influence of competing political ideologies on the development of the United States government.",
+            "The graduate explains how the structure and powers of the United States government interact to form public policy.",
+            "The graduate examines the influence of political parties, citizens, and non-governmental organizations on elections and other political processes inside a participatory democracy.",
+            "The graduate examines the struggle to balance individual liberty, public order, and state’s rights.",
+            "The graduate examines the influence of the media, public opinion, and political discourse on American democracy."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Influential Communication through Visual Design and Storytelling",
+          "description": "Influential Communication through Visual Design and Storytelling provides learners with foundational visual design and storytelling techniques to influence and create a lasting impression on audiences. Learners will first explore how human behavior is influenced by visuals and when to apply visual techniques to better communicate with audiences. Next, learners will learn techniques for creating compelling stories that create memorable images within the audience's mind. Ultimately, learners who master these skills will be well positioned to apply their visual and storytelling techniques to not only better communicate their thoughts and ideas to an audience but to also influence or motivate them.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner adapts written communications to the basic needs and motivations of their audience.",
+            "The learner applies written storytelling techniques to motivate, inform, and influence a target audience.",
+            "The learner applies visual design techniques to motivate, inform, or influence a target audience."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Systems Thinking",
+          "description": "Introduction to Systems Thinking provides learners with the skills required to engage in a holistic systems-based approach to analyzing complex problems and solutions. This course introduces the foundational concepts and principles of systems thinking and provides opportunities to use a systems thinking approach to analyze and evaluate real-world case studies. The course will culminate with using systems thinking to develop a solution to an authentic complex problem. This course has no prerequisites, but general education math (C955 or C957) is preferred. Because the course is self-paced, learners may move through the material as quickly or as slowly as needed, with the goal of demonstrating proficiency in the five competencies covered in the final assessment. If learners have no prior knowledge of this material, they can expect to spend 30 to 40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies the basic principles and foundational theory of systems thinking to a scenario.",
+            "The learner analyzes complex problems and solutions using a systems thinking methodology.",
+            "The learner designs a solution to a complex problem using systems thinking."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Network and Security",
+      "courses": [
+        {
+          "title": "Network and Security - Foundations",
+          "description": "Network and Security - Foundations introduces learners to the basic network systems and concepts related to networking technologies. Learners will gain skills in applying network security concepts for business continuity, data access, and confidentiality, and in identifying solutions for compliance with security guidance.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner identifies basic network systems and concepts related to networking technologies.",
+            "The learner applies network security concepts for business continuity, data access, and confidentiality.",
+            "The learner identifies solutions for compliance with security guidance."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Full Stack Engineering",
+      "courses": [
+        {
+          "title": "Version Control",
+          "description": "Version control is critical to maintaining software and enabling scalability solutions. A best practice for any programming project that requires multiple files uses version control. Version control enables teams to have collaborative workflows and enhances the software development lifecycle. This course introduces students to the basics of publishing, retrieving, branching, and cloning. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements version control processes and solutions that maintains source code."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Web Development",
+      "courses": [
+        {
+          "title": "Web Development Foundations",
+          "description": "Web Development Foundations introduces students to web design and development using HTML, XML, and Cascading Style Sheets (CSS), the foundational languages of the web. This course also covers how to troubleshoot problems using developer tools and integrated development environments commonly employed in web development. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates the structure of basic web documents using HTML and XML.",
+            "The learner implements web page formatting and interface aesthetics using CSS",
+            "The learner resolves software problems in web development environments with debugging tools."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Information Technology Management",
+      "courses": [
+        {
+          "title": "Cloud Foundations",
+          "description": "Cloud Foundations introduces learners to real-world issues and practical solutions to cloud computing. This course covers the business value of cloud computing, examining cloud types, the steps to successful cloud adoption, and the effect cloud adoption has on IT service management, as well as the risks and consequences of implementing cloud solutions. This course prepares learners for the AWS Certified Practitioner certification exam. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner articulates the value proposition of cloud solutions in business scenarios.",
+            "The learner defines cloud security and compliance.",
+            "The learner identifies cloud technology solutions in IaaS, PaaS, and SaaS models.",
+            "The learner determines the best-fit solution for a project based on the cost and support structures."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Software",
+      "courses": [
+        {
+          "title": "Hardware and Operating Systems Essentials",
+          "description": "Hardware and Operating Systems prepares learners for concepts in software engineering by providing a foundation of understanding in computer architecture, the history of computing architectures, and operating systems. Additional topics covered include hardware and software stacks and how to choose appropriate hardware and software solutions to meet both functional and non-functional business requirements.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains design decisions based on the history and foundations of technology stacks.",
+            "The learner develops topologies for hardware and software solutions that address both functional and non-functional requirements of business solutions.",
+            "The learner explains the configuration and deployment of software applications."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Scripting and Programming - Applications",
+          "description": "Scripting and Programming - Applications for undergraduates explores the various aspects of the Python programming language by examining its syntax, the development environment, and tools and techniques to solve some real-world problems. Introduction to Programming in Python is a prerequisite for this course.",
+          "competency_bullets": [
+            "The learner applies fundamental programming concepts in a specific programming environment.",
+            "The learner applies data processing methods to solve complex problems.",
+            "The learner applies object-oriented programming concepts to create a basic application.",
+            "The learner analyzes a business problem and divides it into tasks."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Data Science",
+      "courses": [
+        {
+          "title": "Data Analytics - Applications",
+          "description": "Data Analytics Applications covers advanced concepts across the various phases of the data product lifecycle. You will learn to choose and apply appropriate techniques for data management and data manipulation, statistical analysis, visualization, and data governance concepts to satisfy business needs.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies basic concepts to analyze data types and data structures.",
+            "The learner applies appropriate data acquisition and manipulation techniques to address business’s data requirement for analysis.",
+            "The learner applies data analysis techniques and tools to address a business need.",
+            "The learner applies data visualization techniques to communicate a business need.",
+            "The learner selects the data visualization technique to communicate a business requirement.",
+            "The learner applies data management concepts to ensure the accuracy and quality of data."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Big Data Foundations",
+          "description": "Big Data Foundations provides an in-depth introduction to Big Data concepts, terminology, and applications. You will learn the risks and challenges with extremely large data sets and the course introduces tools and techniques for working with Big Data. The course covers selection criteria for relational and non-relational data architectures and cloud-native data storage concepts. It also provides a historical perspective on the evolution of Big Data storage approaches. Data warehousing, data lakes, and data lakehouses are introduced and design principles for each are explained. Learners design aspects of Big Data architecture and Big Data processing to address given business requirements.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner identifies an appropriate data architecture according to organizational needs.",
+            "The learner designs aspects of data architecture according to business requirements.",
+            "The learner designs aspects of big data processing according to business requirements."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Data Science",
+          "description": "Introduction to Data Science introduces the data analysis process and common statistical techniques necessary for the analysis of data. Students will ask questions that can be solved with a given data set, set up experiments, use statistics and data wrangling to test hypotheses, find ways to speed up their data analysis code, make their data set easier to access, and communicate their findings.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies data analytic techniques to investigate data sets.",
+            "The learner applies data wrangling techniques to investigate data sets.",
+            "The learner applies statistical analysis techniques to interpret data and report their findings."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Data Wrangling",
+          "description": "Data Wrangling elaborates on concepts covered in Introduction to Data Science, helping to develop skills crucial to the field of data science and analysis. It explores how to wrangle data from diverse sources and shape it to enable data-driven applications—a common activity in many data scientists' routine. Topics covered include gathering and extracting data from widely-used data formats, assessing the quality of data, and exploring best practices for data cleaning.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates and tests an ETL pipeline for acquiring and inserting data into a relational database.",
+            "The learner uses data cleansing processes to transform data for downstream analysis."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Data Analysis with R",
+          "description": "Data Analysis with R focuses on exploratory data analysis (EDA) utilizing R. EDA is an approach for summarizing and visualizing the important characteristics of a data set. In this course you will develop skills in R programming to acquire and load data sets, create appropriate statistical summaries of data, and create data visualizations to help uncover and communicate insights about data using R.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies R programming language to gain insight into data.",
+            "The learner creates visuals using code to communicate insights from data analysis.",
+            "The learner uses visuals to communicate trends and relationships in a dataset."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Machine Learning",
+          "description": "Machine Learning presents the end-to-end process of investigating data through a machine learning lens. Topics covered include: supervised and unsupervised learning algorithms, features that best represent data, commonly-used machine learning algorithms, and methods for evaluating the performance of machine learning algorithms.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes supervised and unsupervised learning algorithms.",
+            "The learner evaluates different data preprocessing strategies for feature selection.",
+            "The learner determines appropriate classification algorithms to apply to data sets.",
+            "The learner determines appropriate regression algorithms to apply to data sets.",
+            "The learner determines appropriate clustering algorithms to apply to data sets.",
+            "The learner evaluates algorithm performance."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Data Visualization",
+          "description": "Data Visualization covers the application of design principles, human perception, color theory, and effective storytelling in the context of data visualization. It addresses presenting data to others and advancing technology with visualization tools enabling data scientists to share their findings and support organizational decision-making processes. Additionally, this course focuses on how to visually encode and present data to an audience.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner determines an appropriate data visualization strategy for a business problem.",
+            "The learner produces data visualizations.",
+            "The learner creates a report presenting data analysis findings that incorporates best practices for data visualization design.",
+            "The learner creates an interactive data dashboard that employs visualizations and text to communicate the meaning of data."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Machine Learning DevOps",
+          "description": "Machine Learning DevOps focuses on the software engineering fundamentals needed to successfully streamline the deployment of data and machine learning models in a production-level environment. Students will build the DevOps skills required to automate the various aspects and stages of machine learning model building and monitoring over time.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements end-to-end Machine Learning pipeline to address organizational needs using data.",
+            "The learner implements a Machine Learning automation solution model with continuous integration and deployment framework to address organizational needs."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Computer Science",
+      "courses": [
+        {
+          "title": "Data Structures and Algorithms I",
+          "description": "Data Structures and Algorithms I covers the fundamentals of dynamic data structures, such as bags, lists, stacks, queues, trees, and hash tables, and their associated algorithms. With Java software as the basis, the course discusses object- oriented design and abstract data types as design paradigms. The course emphasizes problem-solving and techniques for designing efficient, maintainable software applications. Students will implement simple applications using the techniques learned. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains the use, logic, and structure of algorithms.",
+            "The learner determines how data structure types impact operations within application, service, or data stores.",
+            "The learner applies algorithms that address a desired outcome based on space and time complexity in big-O notation."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": {
+    "present": true,
+    "partial": false,
+    "title": "Data Analytics Capstone",
+    "description": "The Data Analytics Undergraduate Capstone challenges students to demonstrate competencies supporting all BSDA program outcomes. Students will identify an organizational need, plan and develop a data analytics product to serve that need, and document the process in a project proposal and data project report.",
+    "competency_bullets": [
+      "The learner integrates and synthesizes competencies from across the degree program, thereby demonstrating the ability to participate in and contribute value to the chosen professional field."
+    ],
+    "competency_available": true
+  },
+  "cert_signals": [
+    {
+      "normalized_cert": "AWS Certified",
+      "via_course_title": "Cloud Foundations",
+      "via_course_code": "D282A",
+      "confidence": "high",
+      "atlas_recommendation": "use"
+    },
+    {
+      "normalized_cert": "CompTIA Project+",
+      "via_course_title": "Business of IT - Project Management",
+      "via_course_code": "C176",
+      "confidence": "high",
+      "atlas_recommendation": "use"
+    }
+  ],
+  "family": null,
+  "anomaly_flags": []
+}

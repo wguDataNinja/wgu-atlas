@@ -1,0 +1,611 @@
+{
+  "program_code": "BSPH",
+  "source_degree_title": "Bachelor of Science, Public Health",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.729904Z",
+    "source_version": "202409",
+    "source_pub_date": "5/6/24",
+    "source_page_count": 18,
+    "confidence": "high"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "A",
+    "aos_status": "usable",
+    "aos_course_count": 33,
+    "caveat_flags": [],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "Learning Strategies in Higher Education",
+        "cus": 4,
+        "term": 1
+      },
+      {
+        "title": "Composition: Writing with a Strategy",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Introduction to Communication: Connecting with Others",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Foundations in Public Health",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Critical Thinking: Reason and Evidence",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Health, Fitness, and Wellness",
+        "cus": 4,
+        "term": 2
+      },
+      {
+        "title": "Introduction to Biology",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "World History: Diverse Cultures and Global Connections",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Introduction to Sociology",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Human Growth and Development",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Introduction to Psychology",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Health Equity and Social Determinants of Health",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Fundamentals of Anatomy and Physiology",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Applied Healthcare Statistics",
+        "cus": 4,
+        "term": 4
+      },
+      {
+        "title": "Introduction to Research Methods",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Community and Public Health",
+        "cus": 4,
+        "term": 4
+      },
+      {
+        "title": "Program Planning and Implementation",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Program Evaluation",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Public Health Policy",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Understanding Substance Abuse & Addiction",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Team Dynamics",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Gender and Health",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Human Sexuality",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Chronic and Infectious Diseases",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Introduction to Epidemiology",
+        "cus": 3,
+        "term": 7
+      },
+      {
+        "title": "Mental Health Awareness and Education",
+        "cus": 3,
+        "term": 7
+      },
+      {
+        "title": "Public Health Administration",
+        "cus": 3,
+        "term": 7
+      },
+      {
+        "title": "Career and Lifelong Learning",
+        "cus": 4,
+        "term": 7
+      },
+      {
+        "title": "Grant Writing",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Environmental Health",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Global Health",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Public Health Leadership and Administration",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Public Health Capstone",
+        "cus": 3,
+        "term": 8
+      }
+    ]
+  },
+  "areas_of_study": [
+    {
+      "group": "Foundations of Success",
+      "courses": [
+        {
+          "title": "Learning Strategies in Higher Education",
+          "description": "Learning Strategies in Higher Education provides students with a toolbox of skills that will support student academic growth as they advance in their academic journey. Students will be introduced to the WGU Library; how to use it and best practices for research strategies. Students will learn how to be professional in written communication and how to correctly use current APA format. In this course, students also will learn about setting goals, time-management, study strategies, making and keeping appointments, professional decorum, and test-taking skills. Learning these skills, strategies, and methods will establish an academic foundation for students to be successful in higher education. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies self-directed strategies to advance organizational skills and lifelong learning.",
+            "The learner applies research strategies and technology literacy for gathering information from reliable sources.",
+            "The learner applies critical thinking and cultural awareness in writing.",
+            "The learner applies professionalism to problem-solving strategies in a given context."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "General Education",
+      "courses": [
+        {
+          "title": "Composition: Writing with a Strategy",
+          "description": "Welcome to Composition: Writing with a Strategy! In this course, you will focus on three main topics: understanding purpose, context, and audience, writing strategies and techniques, and editing and revising. In addition, the first section, will offer review on core elements of the writing process, cross-cultural communication, as well as working with words and common standards and practices. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the seven competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner writes with purpose for a given context and target audience.",
+            "The learner incorporates writing strategies and techniques for written communication.",
+            "The learner constructs a written document with correct format, style, structure, and grammar.",
+            "The learner formulates a strategy for editing and revising written text.",
+            "The learner composes constructive feedback of written texts."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Communication: Connecting with Others",
+          "description": "Welcome to Introduction to Communication: Connecting with Others! It may seem like common knowledge that communication skills are important, and that communicating with others is inescapable in our everyday lives. While this may appear simplistic, the study of communication is actually complex, dynamic, and multifaceted. Strong communication skills are invaluable to strengthening a multitude of aspects of life. Specifically, this course will focus on communication in the professional setting, and present material from multiple vantage points, including communicating with others in a variety of contexts, across situations, and with diverse populations. Upon completion, you will have a deeper understanding of both your own and others’ communication behaviors, and a toolbox of effective behaviors to enhance your experience in the workplace.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner implements appropriate communication styles based on audience and setting.",
+            "The learner uses communication strategies for managing conflict.",
+            "The learner uses communication strategies to influence others."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Critical Thinking: Reason and Evidence",
+          "description": "In this course you will learn key critical thinking concepts and how to apply them in the analysis and evaluation of reasons and evidence. The course examines the basic components of an argument, the credibility of evidence sources, the impact of bias, and how to construct an argument that provides good support for a claim. The course consists of an introduction and four major sections. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the four competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates the quality of an argument.",
+            "The learner evaluates evidence based on source credibility.",
+            "The learner evaluates bias and its impact.",
+            "The learner makes claims based on evidence."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Health, Fitness, and Wellness",
+          "description": "Health, Fitness, and Wellness focuses on the importance and foundations of good health and physical fitness—particularly for children and adolescents—addressing health, nutrition, fitness, and substance use and abuse.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate identifies the influence of disease, fitness, and lifestyle on the body.",
+            "The graduate identifies the principles of nutrition and the components of a healthy diet.",
+            "The graduate identifies factors that influence mental, emotional, and social wellness.",
+            "The graduate identifies the application of the core competencies of social and emotional learning."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "World History: Diverse Cultures and Global Connections",
+          "description": "This is World History: Diverse Cultures and Global Connections. In this course, you will focus on three main topics—cultural and religious diversity; pandemics; and the relationship of empires and nation states—as well as the skills of identifying root causes, explaining causes and effects, and analyzing complex systems. This course consists of an introduction and four major sections. Each section includes learning opportunities through reading, images, videos, and other relevant resources. Assessment activities with feedback also provide opportunities to practice and check how well you understand the content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the four competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner differentiates among diverse cultural and religious customs and practices.",
+            "The learner analyzes the role of human actions in the spread of disease.",
+            "The learner explains the factors that contributed to the rise and fall of empires.",
+            "The learner explains the factors that contributed to the development of nation states."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Sociology",
+          "description": "This course teaches students to think like sociologists, or, in other words, to see and understand the hidden rules, or norms, by which people live, and how they free or restrain behavior. Students will learn about socializing institutions, such as schools and families, as well as workplace organizations and governments. Participants will also learn how people deviate from the rules by challenging norms and how such behavior may result in social change, either on a large scale or within small groups.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate explains how societies are stratified across various social statuses.",
+            "The graduate explains reciprocal relationships between social institutions and individuals.",
+            "The graduate explains major perspectives and key contributors to the development of sociology.",
+            "The graduate identifies components of culture and socialization as they relate to individuals in society.",
+            "The graduate explains the constructs of conformity to and deviance from social norms."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Human Growth and Development",
+          "description": "This is Human Growth and Development, a three-module course that examines the entire human lifetime, from conception to death. Presented chronologically, the course focuses on three key areas: physical, cognitive, and psychosocial growth, along with other important issues such as cultural influences, emotions, and resilience. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the four competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains physical, cognitive, and psychosocial development from conception through early childhood.",
+            "The learner explains the influence of emotions and cultural perspectives and practices on psychosocial development and behavior from birth through early childhood.",
+            "The learner explains physical, cognitive, and psychosocial development from middle childhood through adolescence.",
+            "The learner explains the influence of emotions on psychosocial development and behavior from middle childhood through adolescence.",
+            "The learner explains physical, cognitive, and psychosocial development from early adulthood to the end of life.",
+            "The learner explains the influence of emotions on psychosocial development and behavior from early adulthood to the end of life."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Psychology",
+          "description": "In this course, students will develop an understanding of psychology and how it helps them better understand others and themselves. Students will learn general theories about psychological development, the structure of the brain, and how psychologists study behavior. They will gain an understanding of both normal and disordered psychological behaviors, as well as general applications of the science of psychology in society (such as personality typing and counseling).",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains the biological perspectives of psychology.",
+            "The learner explains the theories of learning and memory.",
+            "The learner explains the concepts of personality development and social psychology.",
+            "The learner identifies psychological disorders and treatment methods.",
+            "The learner explains the foundations of psychology."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Fundamentals of Anatomy and Physiology",
+          "description": "Fundamentals of Anatomy and Physiology provides an overview of the structures and functions of organs and systems of the human body. This course will explore how the parts of the body systems work together to produce movement, transport nutrients, eliminate wastes, protect vital tissues and organs, regulate bodily functions, and support reproduction and growth, through videos, readings, exploratory learning, and practice activities.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes the structures and functions of the muscular, skeletal, and nervous systems and their roles in movement.",
+            "The learner describes the structures and functions of the respiratory, cardiovascular, urinary, and digestive systems and their roles transporting nutrients and eliminating waste from the body.",
+            "The learner describes the structures and functions of the immune system, integumentary system, and special senses and their roles in protecting the body and interacting with the environment.",
+            "The learner describes the structures and functions of the endocrine and reproductive systems and their roles in reproduction and maintaining homeostasis within the body."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Applied Healthcare Statistics",
+          "description": "Applied Healthcare Probability and Statistics is designed to help develop competence in the fundamental concepts of basic mathematics, introductory algebra, and statistics and probability. These concepts include basic arithmetic with fractions and signed numbers; introductory algebra and graphing; descriptive statistics; regression and correlation; and probability. Statistical data and probability are now commonplace in the healthcare field. This course will help candidates make informed decisions about which studies and results are valid, which are not, and how those results affect your decisions. This course will give candidates background in what constitutes sound research design and how to appropriately model phenomena using statistical data. Additionally, this course guides candidates in calculating simple probabilities based on events which occur in the healthcare profession. This course will prepare candidates for studies at WGU, as well as in the healthcare profession.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies the operations, processes, and procedures of basic arithmetic to solve expressions.",
+            "The graduate applies the operations, processes, and procedures of fractions, decimals, and percentages to evaluate quantitative expressions.",
+            "The graduate applies the operations, processes, and procedures of basic algebra to evaluate quantitative expressions, and to solve equations and inequalities.",
+            "The graduate evaluates categorical and quantitative data pertaining to a single variable using appropriate graphical displays and numerical measures.",
+            "The graduate evaluates the relationship between two variables through interpretation of visual displays and numerical measures.",
+            "The graduate evaluates the relationship between two quantitative variables through correlation and regression.",
+            "The graduate applies principles and methods of probability-based mathematics to explain and solve problems."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Research Methods",
+          "description": "Introduction to Research Methods familiarizes students with the foundations of research, guiding students through selecting topics, forming research questions, engaging with relevant and reliable literature, and designing a research project. This course provides an overview of how researchers form questions and hypotheses, which different types of methodologies can be used to address these questions, and how existing literature and data are used to support or reject hypotheses. The methods presented in this course can be applied to many fields and disciplines, and they provide a baseline for students to use in their chosen area of study and future work.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes empirical studies related to a research topic.",
+            "The learner identifies ethical and sociocultural considerations in research practices.",
+            "The learner applies knowledge of research methods to design a research project."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Public Health",
+      "courses": [
+        {
+          "title": "Foundations in Public Health",
+          "description": "Foundations in Public Health introduces learners to the nation’s public health systems including an overview of the core functions of Public Health and the 10 essential public health services. Learners examine a variety of strategies to promote health, prevent disease, and prolong life among populations and communities, including behavioral, population, and policy change, mass media approaches, and community-based interventions. This course also provides learners with a foundational and historical orientation to the field of public health by examining the philosophy, history, purpose, organization, terminology, and function.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner identifies the history and role of public health.",
+            "The learner identifies the basic principles of public health.",
+            "The learner identifies general strategies recommended by public health specialists to promote health, longevity, and disease prevention."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Program Planning and Implementation",
+          "description": "Program Planning and Implementation provides learners with the skills to plan and implement evidenced-based public health programs to address the most important health issues affecting communities. Learners analyze community needs assessments, develop program goals and SMART objectives, apply public health theories and models, and plan the implementation of a health education strategy.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes evidence-based programs to meet the identified needs of the community.",
+            "The learner applies a health theory model for planning public health programs.",
+            "The learner develops strategies for implementing a program to educate the community on a specific health goal."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Program Evaluation",
+          "description": "Program Evaluation familiarizes learners with approaches to evaluating an evidence-informed health program or intervention implemented in a public health setting. Topics include logic models and evaluation frameworks; process and outcome metrics for evaluating programs; qualitative and quantitative approaches to collecting data; and dissemination strategies for the results of program evaluation.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner develops an evaluation plan to determine the program's effectiveness.",
+            "The learner analyzes data to determine a program’s success or need for improvement.",
+            "The learner develops a dissemination strategy based on program evaluation."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Public Health Policy",
+          "description": "Public Health Policy introduces students to laws, regulations, actions, and decisions implemented within society to promote wellness and ensure specific health goals are met. Public health policies range from formal legislation to community outreach efforts. In this course, learners will examine the role of public health, the impact it has on our society, and strategies to promote health and health policy on a community and global level.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together",
+            "The learner analyzes the role of public health policies.",
+            "The learner analyzes how public health policy impacts health outcomes.",
+            "The learner promotes the implementation of a public health policy."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Gender and Health",
+          "description": "Gender and Health examines healthcare concerns, from both a historical perspective and the perspective current healthcare trends and practices. This course covers the following topics: the history of gender and health; current healthcare trends the definitions of sex and gender; and other, healthcare-related issues, including: equity versus equality, healthcare policies and bias, and health education. The goal of this course is to increase student knowledge and awareness of how healthcare is influenced by sex, gender, and social determinants of health.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes specific health issues related to gender.",
+            "The learner analyzes gender equity and equality regarding healthcare access and outcomes.",
+            "The learner recommends preventative strategies to reduce risk associated with gender."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Human Sexuality",
+          "description": "Human Sexuality provides learners with foundational knowledge surrounding public health issues, behaviors, risks, prevention, and treatment for sexual health. Learners explore the relationship between one’s environment, biological makeup, and personal choices, and analyze how each could impact sexual health, psychological factors, and physical wellbeing for an individual. Learners examine inequities related to status, age, ethnicity, citizenship, disability, and sexual orientation, addressing challenges and gaps in public sexual healthcare services. Learners then take critical foundational knowledge and produce educational materials for target populations. Learners identify community resources, data sources, and sexual health education materials. This gives learners an opportunity to explore health literacy, methods of meeting the needs of specific communities, and gaps in sexual public health resources. Learners leave this course with an understanding of key human sexuality issues, their causes, and potential resolutions within public health settings.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes the biological, social, cultural, and psychological aspects of human sexuality.",
+            "The learner analyzes the behaviors related to human sexuality and their impact on personal and public well-being.",
+            "The learner develops health education related to sexual activity."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Chronic and Infectious Diseases",
+          "description": "Chronic & Infectious Diseases is designed to provide students with a deep understanding of the major diseases that significantly impact public health. Chronic and infectious diseases remain a critical concern globally, and this course aims to empower students with the knowledge and skills needed to address these challenges effectively. Students explore epidemiology, pathophysiology, prevention, and management of various chronic and infectious diseases.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner discusses the causes and impacts of chronic and infectious diseases.",
+            "The learner identifies reputable data sources about infectious or chronic diseases and health conditions within a population.",
+            "The learner develops a strategy to educate the community on the prevention and control of chronic or infectious diseases."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Public Health Administration",
+          "description": "Public Health Administration is designed to provide students with a comprehensive understanding of the principles, practices, and challenges of managing healthcare organizations in today's complex healthcare environment. It explores the critical aspects of Public Health Administration, including leadership, healthcare policy, financial management, quality improvement, and ethical considerations.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains how policies influence budgeting in public health organizations.",
+            "The learner identifies the legal and ethical ways health information can be accessed and documented to protect the privacy of individuals."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Grant Writing",
+          "description": "Grant Writing introduces learners to essential tasks and approaches to acquiring funding for public health projects and programs through grants. It addresses how to find and apply to both government and non-government grant opportunities. Learners practice researching for grants, determining which grants align with the mission and purpose of a public health program, evaluating draft grant proposals, and identifying and revising key components of a drafted proposal.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together",
+            "The learner researches potential opportunities for grants to meet organizational needs.",
+            "The learner describes the components needed in a grant proposal.",
+            "The learner revises a grant proposal to appeal to stakeholder values and needs."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Environmental Health",
+          "description": "This course provides learners with the foundational knowledge and relationship people have with their environment, the risk management choices made, and the resulting associations that affect health and physical well-being for the individual, communities, and susceptible populations.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates the impact human activities have on their environment.",
+            "The learner explains the role of government in the environmental protection of various dimensions of environmental problems.",
+            "The learner examines how a community can decrease environmental risks and promote health."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Global Health",
+          "description": "Global Health prepares learners to identify and analyze Global Health as a field. Learners consider how globalization has affected the health of various groups of people throughout the world. Likewise, the learner also looks at how economic and environmental factors have different effects on different groups globally. Finally, the course presents the learner with knowledge of various global initiatives and international organizations that strive to promote health and well-being and reduce health disparities. The learner demonstrates their knowledge and skills by drafting an advocacy statement promoting the successful efforts of a global health organization.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the positive and negative impact globalization has on public health.",
+            "The learner explains the impact of economic and environmental factors on health outcomes.",
+            "The learner describes how initiatives and agencies address global health issues."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Public Health Leadership and Administration",
+          "description": "Public Health Leadership & Administration Learners apply leadership principles for public health leadership positions. This includes engaging, organizing, and leading diverse groups, as well as addressing ethical issues in the field of public health. Learners also apply negotiation and mediation skills to address challenges they may face in the organization or community.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies leadership principles to address an issue within an organization.",
+            "The learner applies ethical principles to resolve an ethical dilemma in public health.",
+            "The learner applies negotiation and mediation skills when implementing a policy to address a public health challenge."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Public Health Capstone",
+          "description": "Public Health Capstone provides learners with real-world applications to prepare them for the public health industry. In this course, learners apply the knowledge gained through the program to real-world situations and educates the public in response to those situations.",
+          "competency_bullets": [
+            "The learner demonstrates the comprehensive knowledge and skills gained throughout the degree program to use in the public health industry.",
+            "The learner responds effectively to questions that address meeting the needs of a community.",
+            "The learner communicates in a professional manner that supports addressing the public health needs in a community."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "General Science Content",
+      "courses": [
+        {
+          "title": "Introduction to Biology",
+          "description": "This course is a foundational introduction to the biological sciences. The overarching theories of life from biological research are explored as well as the fundamental concepts and principles of the study of living organisms and their interaction with the environment. Key concepts include how living organisms use and produce energy; how life grows, develops, and reproduces; how life responds to the environment to maintain internal stability; and how life evolves and adapts to the environment.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes the characteristics and classifications of living organisms.",
+            "The graduate analyzes the basic chemical composition of cells and the basic processes that happen at the cellular level.",
+            "The graduate analyzes different types of cells based on their structures and biological functions.",
+            "The graduate analyzes the biological basis for and patterns of heredity and gene expression.",
+            "The graduate analyzes inter-dependencies of organisms and their environments."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Psychology",
+      "courses": [
+        {
+          "title": "Health Equity and Social Determinants of Health",
+          "description": "Health Equity and Social Determinants of Health examines the social determinants of health (SDOH) as underlying factors that contribute to health inequity in populations and communities and their effect on health outcomes. This course will help students understand the evidence-based strategies and approaches that promote health equity. D581 Introduction to Research Methods is a prerequisite to this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains the social determinants of health that contribute to health disparities.",
+            "The learner analyzes how social determinants of health impact health outcomes of a population.",
+            "The learner analyzes strategies to improve health equity for a population."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Understanding Substance Abuse & Addiction",
+          "description": "Understanding Substance Abuse and Addiction provides an overview of substance abuse causes, impact, prevention, and treatment. Students will understand the signs and symptoms of substance abuse and addiction and its impact on individuals, groups, and the community. Students will analyze relevant factors that initiate and reinforce substance abuse and addiction and describe evidence-based strategies for prevention, intervention, and treatment. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes substance abuse and its impact on individuals and communities.",
+            "The learner analyzes factors relevant to the initiation and reinforcement of substance abuse and addiction.",
+            "The learner describes evidence-based strategies for substance abuse prevention, intervention, and treatment"
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Team Dynamics",
+          "description": "Team Dynamics explores interpersonal communication strategies, collaborative team interactions methods, and problemsolving techniques to promote effective communication and improve quality outcomes in a professional environment. In this course, students will apply psychologically-sound approaches for resolving conflicts, allowing them to navigate challenging workplace disagreements and personalities. Students in this course will apply their skills to various situations. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies strategies that influence team dynamics and improve outcomes.",
+            "The learner applies interpersonal communication skills for effective communication within a team environment.",
+            "The learner applies conflict resolution and problem-solving strategies for improved team collaboration."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Mental Health Awareness and Education",
+          "description": "Mental Health Awareness and Education is designed to help students recognize mental disorders, improve access to mental health services, support recovery, and lower the rate of death, disease, and disability among those with mental illnesses. Topics include mental health education programs, mental health stigmas, cultural diversity in mental health, and barriers to mental health care and strategies to overcome those barriers. Students will analyze these topics from the vantage point of a community mental health perspective. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the relationship between mental health and society.",
+            "The learner recommends an evidence-based strategy to provide mental health education services.",
+            "The learner proposes a pathway to equitable access to mental health care."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Career and Lifelong Learning",
+          "description": "Career and Lifelong Learning supports students in taking their first steps in a lifelong journey of development as a professional. Students will explore career pathways, plan how best to achieve their desired professional future, and take tangible steps toward that future by creating career growth materials that adhere to today’s best practices. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner demonstrates foundational knowledge of self and of career pathways and uses that knowledge to identify potential career goals.",
+            "The learner uses specific career goal research, academic planning, and a self-analysis of their own candidacy in relation to that goal to build a career action plan that serves as a pathway to that goal.",
+            "The learner creates materials for the job application process.",
+            "The learner demonstrates their professional identity through practice for professional interactions."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Health and Human Services",
+      "courses": [
+        {
+          "title": "Community and Public Health",
+          "description": "Community and Public Health provides learners with an understanding of the benefits community health offers individuals and families. The course also will identify barriers that will impact health and healthcare access, leading to improved community health. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner identifies aspects of Community and Public Health.",
+            "The learner evaluates barriers to accessing health supports.",
+            "The learner evaluates resources for addressing a community health issue."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Epidemiology",
+          "description": "Introduction to Epidemiology provides an overview of the determinants of communicable, viral, and chronic diseases. Students also will study various other conditions and the impact to public health. Using problem-based inquiry, students will analyze real-world public health problems by examining the distribution and patterns of data, selecting the methods to gather evidence, interpreting the information, and analyzing the trends to support decision making. There are no prerequisites to this course, but students are highly encouraged to adhere to the standard path, whose content is scaffolded to enhance the learning experience of this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains the determinants of diseases and conditions and their implications among individuals, groups, and communities from an epidemiological perspective.",
+            "The learner applies logical reasoning for collecting evidence to solve epidemiological problems.",
+            "The learner analyzes disease outbreaks and the impact on public health."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "cert_signals": [],
+  "family": null,
+  "anomaly_flags": []
+}

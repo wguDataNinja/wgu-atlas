@@ -1,0 +1,726 @@
+{
+  "program_code": "MSITUG",
+  "source_degree_title": "Bachelor of Science, Information Technology (BSIT to MSIT)",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.730683Z",
+    "source_version": "202604",
+    "source_pub_date": "11/20/2025",
+    "source_page_count": 0,
+    "confidence": "high"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "A",
+    "aos_status": "usable",
+    "aos_course_count": 35,
+    "caveat_flags": [],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "Introduction to IT",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Business Productivity Software",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Influential Communication through Visual Design and Storytelling",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Health, Fitness, and Wellness",
+        "cus": 4,
+        "term": 1
+      },
+      {
+        "title": "Technology and Ethics: Emerging Trends and Society",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Critical Thinking: Reason and Evidence",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Business of IT - Applications",
+        "cus": 4,
+        "term": 2
+      },
+      {
+        "title": "Composition: Successful Self-Expression",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Introduction to Systems Thinking and Applications",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Project Management",
+        "cus": 4,
+        "term": 3
+      },
+      {
+        "title": "Applied Probability and Statistics",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Practical Applications of Prompt",
+        "cus": 2,
+        "term": 3
+      },
+      {
+        "title": "Linux Foundations",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "IT Foundations",
+        "cus": 4,
+        "term": 4
+      },
+      {
+        "title": "American Politics and the US Constitution",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Digital Transformation in the Enterprise",
+        "cus": 2,
+        "term": 4
+      },
+      {
+        "title": "Fundamentals of Spreadsheets and Data Presentations",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Agile Methodology",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "IT Applications",
+        "cus": 4,
+        "term": 5
+      },
+      {
+        "title": "Information Technology Management and Leadership",
+        "cus": 3,
+        "term": 5
+      },
+      {
+        "title": "Web Design Fundamentals",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Network and Security - Foundations",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Applied Algebra",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Cloud Applications",
+        "cus": 3,
+        "term": 6
+      },
+      {
+        "title": "Data Management - Foundations",
+        "cus": 3,
+        "term": 7
+      },
+      {
+        "title": "Networks",
+        "cus": 4,
+        "term": 7
+      },
+      {
+        "title": "Technical Communication",
+        "cus": 3,
+        "term": 7
+      },
+      {
+        "title": "Natural Science Lab",
+        "cus": 2,
+        "term": 7
+      },
+      {
+        "title": "Global Arts and Humanities",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Network and Security - Applications",
+        "cus": 4,
+        "term": 8
+      },
+      {
+        "title": "Foundations of Programming (Python)",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Technology Governance",
+        "cus": 3,
+        "term": 8
+      },
+      {
+        "title": "Data Management - Applications",
+        "cus": 4,
+        "term": 9
+      },
+      {
+        "title": "Python for IT Automation",
+        "cus": 3,
+        "term": 9
+      },
+      {
+        "title": "Cloud Foundations",
+        "cus": 3,
+        "term": 9
+      }
+    ]
+  },
+  "areas_of_study": [
+    {
+      "group": "IT Fundamentals",
+      "courses": [
+        {
+          "title": "Introduction to IT",
+          "description": "Introduction to IT introduces the fundamental concepts, structures, and roles of information technology (IT) within an organization. The course is structured to provide a comprehensive understanding of the various aspects of IT, including networking, database management, cybersecurity, artificial intelligence (AI), and software development. This course also explores the essential components of the typical technology infrastructure for various types of organizations, the role and interaction of each component, and the evolving nature of technology and its implications for business practices. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes a company’s technology infrastructure and the role of each component.",
+            "The learner describes the areas of IT and their functions within an organization.",
+            "The learner explains the evolving nature of technology and its implications for business and IT practices."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Business Productivity Software",
+          "description": "Business Productivity Software prepares students to effectively use business productivity software to enhance efficiency, streamline communication, and support collaboration for their personal projects within an IT team setting. The course will explore a range of productivity software, including communication, collaboration, organization, and presentation software. The course covers each tool’s features and functions, how the tools contribute to optimizing productivity, and their role in facilitating clear communication and collaborative efforts. The course examines how to use these tools for productivity while following their organizations’ technology policies and best practices. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies business productivity software to communicate and share work output with stakeholders.",
+            "The learner applies business productivity software to organize and present information.",
+            "The learner applies business productivity software to organize individual work."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "IT Foundations",
+          "description": "IT Foundations provides learners with an understanding of personal computer components and their functions in a desktop system; a knowledge of computer data storage and retrieval; and skills in classifying, installing, configuring, optimizing, upgrading, and troubleshooting printers, laptops, portable devices, operating systems, networks, and system security. This course also gives learners the ability to recommend appropriate tools, diagnostic procedures, preventative maintenance, and troubleshooting techniques for personal computer components in a desktop system; strategies for identifying, preventing, and reporting safety hazards and environmental or human accidents in technological environments; and effective communication skills for interacting with colleagues and clients, including job-related professional behavior. The course prepares learners for the CompTIA A+ Core 1 certification exam.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner configures common hardware and software components of mobile devices.",
+            "The learner configures common hardware in computer systems.",
+            "The learner configures wired and wireless networks.",
+            "The learner creates client-side virtualization with cloud computing components.",
+            "The learner troubleshoots hardware, software, and network issues with best practice methodologies."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Digital Transformation in the Enterprise",
+          "description": "Digital Transformation in the Enterprise provides an in-depth exploration of digital transformation within modern organizations. Students will evaluate emerging technologies and their potential to drive organizational improvement, focusing on the strategic assessment and integration of technology to enhance business processes and performance. The course covers the latest trends in digital innovation, methods for assessing and selecting appropriate technology solutions, and strategies for implementing digital transformation initiatives. By the end of the course, students will be equipped with the skills necessary to analyze business needs, propose technology solutions, and effectively manage the change associated with digital transformation. This course is designed for students who aspire to lead or contribute to digital transformation efforts in their organizations, ensuring they are prepared to leverage technology to create a competitive advantage in the rapidly evolving business landscape. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates technology for organizational improvement.",
+            "The learner proposes integrating new technology to solve a business need using research and data supported storytelling."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Agile Methodology",
+          "description": "Agile Methodology introduces students to agile's principles, practices, and mindset, focusing on adaptability, collaboration, and value delivery in dynamic team environments. This course explores how agile methodologies such as scrum, Kanban, and Lean empower teams to respond to change, prioritize meaningful work, and achieve shared goals through iterative progress. Students will develop skills in facilitating agile ceremonies, managing backlogs, and fostering transparency and alignment while building cohesive, self-organizing teams that value inclusivity and psychological safety. Through real-world scenarios and hands-on exercises, students will embrace agile values and principles to enhance collaboration, continuous improvement, and success across diverse contexts. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies agile methodology to contribute to projects.",
+            "The learner implements effective collaboration and communication practices within agile teams."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "IT Applications",
+          "description": "IT Applications introduces skills in identifying operating systems and their configurations and in implementing security principles across devices and networks. Learners will also gain skills in troubleshooting software, security, and malware issues, and in implementing basic operational procedures in documentation, change management, compliance, and communication. The course will introduce basic disaster recovery and business continuity procedures, scripting basics, and remote access technology solutions. The course prepares learners for the CompTIA A+ Core 2 certification exam.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner identifies operating systems and their configurations.",
+            "The learner identifies remote access technology solutions.",
+            "The learner identifies scripting basics.",
+            "The learner implements basic disaster recovery and business continuity procedures.",
+            "The learner implements basic operational procedures in documentation, change management, compliance, and communication.",
+            "The learner implements security principles across devices and networks.",
+            "The learner troubleshoots software, security, and malware issues."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Foundations of Programming (Python)",
+          "description": "Foundations of Programming (Python) introduces students to the fundamental principles of programming using Python. This course is designed to equip students with the essential skills needed to write, troubleshoot, and debug simple Python programs. Students will explore the syntax and structure of Python, develop an understanding of variables, loops, and conditional statements, and learn to work within different development environments, including integrated development environments (IDEs) and text editors. By the end of the course, students will be able to create functional Python programs, manipulate data structures, and apply debugging techniques across various platforms. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates functional programs by writing and debugging code.",
+            "The learner executes Python code in different development environments.",
+            "The learner identifies basic Python programming constructs to create simple functions.",
+            "The learner manipulates data structures to effectively store, retrieve, and process data."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "General Education",
+      "courses": [
+        {
+          "title": "Influential Communication through Visual Design and Storytelling",
+          "description": "Influential Communication through Visual Design and Storytelling provides learners with foundational visual design and storytelling techniques to influence and create a lasting impression on audiences. Learners will first explore how human behavior is influenced by visuals and when to apply visual techniques to better communicate with audiences. Next, learners will learn techniques for creating compelling stories that create memorable images within the audience's mind. Ultimately, learners who master these skills will be well-positioned to apply their visual and storytelling techniques to not only better communicate their thoughts and ideas to an audience, but to also influence or motivate them.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner adapts communications to the basic needs and motivations of their audience.",
+            "The learner applies storytelling techniques to motivate, inform, or influence a target audience.",
+            "The learner applies visual design techniques to motivate, inform, or influence a target audience."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Health, Fitness, and Wellness",
+          "description": "Health, Fitness, and Wellness focuses on the importance and foundations of good health and physical fitness—particularly for children and adolescents—addressing health, nutrition, fitness, and substance use and abuse.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate identifies factors that influence mental, emotional, and social wellness.",
+            "The graduate identifies the application of the core competencies of social and emotional learning.",
+            "The graduate identifies the influence of disease, fitness, and lifestyle on the body.",
+            "The graduate identifies the principles of nutrition and the components of a healthy diet."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Technology and Ethics: Emerging Trends and Society",
+          "description": "Technology and Ethics: Emerging Trends and Society explores the intersection of ethical thinking and technological innovations. A foundational introduction to ethical frameworks is applied to emerging trends in technology, including artificial intelligence, social media, and other forms of digital media. This course examines the impact of technology on our understanding of self, as well as the individual’s role in interacting with others in a globalized society. The course helps students gain the ability to recognize ethical actions within the context of current and newly evolving technological landscapes. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes privacy ethics and identity as related to emerging technologies.",
+            "The learner applies ethical concepts to emerging technology as it relates to society.",
+            "The learner describes ethical decision-making frameworks as applied to technology."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Critical Thinking: Reason and Evidence",
+          "description": "In this course you will learn key critical thinking concepts and how to apply them in the analysis and evaluation of reasons and evidence. The course examines the basic components of an argument, the credibility of evidence sources, the impact of bias, and how to construct an argument that provides good support for a claim. The course consists of an introduction and four major sections. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the four competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates bias and its impact.",
+            "The learner evaluates evidence based on source credibility.",
+            "The learner evaluates the quality of an argument.",
+            "The learner makes claims based on evidence."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Composition: Successful Self-Expression",
+          "description": "Welcome to Composition: Successful Self-Expression! In this course, you will focus on four main topics: professional writing for a cross-cultural audience, narrowing research topics and questions, researching for content to support a topic, and referencing research sources. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the seven competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content. You will demonstrate competency through a performance assessment. There is no prerequisite for this course and there is no specific technical knowledge needed.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner composes a written message with language appropriate for cross-cultural communication.",
+            "The learner incorporates research to support a position or idea.",
+            "The learner incorporates self-expression in written communication.",
+            "The learner researches valid and reliable sources.",
+            "The learner writes a message using an effective communication approach for a given situation.",
+            "The learner writes a reference list.",
+            "The learner writes in a professional manner for a given scenario."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Systems Thinking and Applications",
+          "description": "Introduction to Systems Thinking and Applications provides learners with the skills required to engage in a holistic systems-based approach to analyzing complex problems and solutions. This course introduces the foundational concepts and principles of systems thinking and provides opportunities to use a systems thinking approach to analyze and evaluate real-world case studies. The course will culminate with using systems thinking to develop a solution to an authentic complex problem. This course has no prerequisites, but general education math (C955 or C957) is preferred. Because the course is self-paced, learners may move through the material as quickly or as slowly as needed, with the goal of demonstrating proficiency in the five competencies covered in the final assessment. If learners have no prior knowledge of this material, they can expect to spend 30 to 40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes complex problems and solutions using a systems thinking methodology.",
+            "The learner applies the basic principles and foundational theory of systems thinking to a scenario.",
+            "The learner designs a solution to a complex problem using systems thinking."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Applied Probability and Statistics",
+          "description": "Applied Probability and Statistics is designed to help students develop competence in the fundamental concepts of basic statistics including: introductory algebra and graphing; descriptive statistics; regression and correlation; and probability. Statistical data and probability are often used in everyday life, science, business, information technology, and educational settings to make informed decisions about the validity of studies and the effect of data on decisions. This course discusses what constitutes sound research design and how to appropriately model phenomena using statistical data. Additionally, the content covers simple probability calculations, based on events that occur in the business and IT industries. No prerequisites are required for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies principles and methods of probability-based mathematics to explain and solve problems.",
+            "The graduate applies the operations, processes, and procedures of basic algebra to evaluate quantitative expressions, and to solve equations and inequalities.",
+            "The graduate applies the operations, processes, and procedures of fractions, decimals, and percentages to evaluate quantitative expressions.",
+            "The graduate evaluates categorical and quantitative data pertaining to a single variable using appropriate graphical displays and numerical measures.",
+            "The graduate evaluates the relationship between two quantitative variables through correlation and regression.",
+            "The graduate evaluates the relationship between two variables through interpretation of visual displays and numerical measures."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "American Politics and the US Constitution",
+          "description": "American Politics and the U.S. Constitution examines the evolution of representative government in the United States and the changing interpretations of the civil rights and civil liberties protected by the Constitution. This course will give candidates an understanding of the powers of the branches of the federal government, the continual tensions inherent in a federal system, the shifting relationship between state and federal governments, and the interactions between elected officials and the ever-changing electorate. This course will focus on such topics as the role of a free press in a democracy, the impact of changing demographics on American politics, and the debates over and expansion of civil rights. Upon completion of the course, candidates should be able to explain the basic functions of the federal government, describe the forces that shape American policy and politics, and be better prepared to participate in America’s civic institutions. This course has no prerequisite.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate describes the influence of competing political ideologies on the development of the United States government.",
+            "The graduate examines the influence of political parties, citizens, and non-governmental organizations on elections and other political processes inside a participatory democracy.",
+            "The graduate examines the influence of the media, public opinion, and political discourse on American democracy.",
+            "The graduate examines the struggle to balance individual liberty, public order, and state’s rights.",
+            "The graduate explains how the structure and powers of the United States government interact to form public policy."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Applied Algebra",
+          "description": "Applied Algebra is designed to help you develop competence in working with functions, the algebra of functions, and using some applied properties of functions. You will start learning about how we can apply different kinds of functions to relevant, real-life examples. From there, the algebra of several families of functions will be explored, including linear, polynomial, exponential, and logistic functions. You will also learn about relevant, applicable mathematical properties of each family of functions, including rate of change, concavity, maximizing/minimizing, and asymptotes. These properties will be used to solve problems related to your major and make sense of everyday living problems. Students should complete Applied Probability and Statistics or its equivalent prior to engaging in Applied Algebra.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes graphical depictions of real-world situations using functional properties.",
+            "The learner applies exponential functions and their properties to real-world problems.",
+            "The learner applies linear functions and their properties to real-world problems.",
+            "The learner applies logistic functions and their properties to real-world problems.",
+            "The learner applies polynomial functions and their properties to real-world problems.",
+            "The learner interprets the real-world meaning of various functions based on notation, graphical representations, and data representations.",
+            "The learner verifies the validity of a given model."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Natural Science Lab",
+          "description": "This course provides students an introduction to using the scientific method and engaging in scientific research to reach conclusions about the natural world. Students will design and carry out an experiment in the natural sciences to investigate a hypothesis by gathering quantitative data. They will also research a specific topic in the natural sciences using academic sources and draw conclusions from their findings.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate accurately executes the process of scientific inquiry through experimentation in the natural world.",
+            "The graduate draws conclusions based on academic research and scientific inquiry.",
+            "The graduate evaluates academic sources for their credibility and relevance to a chosen research topic on a natural world phenomenon."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Global Arts and Humanities",
+          "description": "This is a Global Arts and Humanities course that contains three modules with corresponding lessons. This course is an invitation to see the world through the humanities, examine the humanities during the Information Age, and explore the global origins of music—essentially questioning what makes us human, and how people are connected across culture and time. Each module includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to practice and check learning. With no prior knowledge or experience, a learner can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes diverse voices, ideas, perspectives, and cultural interactions through the lens of the humanities.",
+            "The learner analyzes how music shapes and is shaped by diverse cultures and perspectives.",
+            "The learner analyzes the humanities during the Information Age."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Business of IT",
+      "courses": [
+        {
+          "title": "Business of IT - Applications",
+          "description": "Business of IT - Applications examines Information Technology Infrastructure Library (ITIL®) terminology, structure, policies, and concepts. Focusing on the management of information technology (IT) infrastructure, development, and operations, learners will explore the core principles of ITIL practices for service management to prepare them for careers as IT professionals, business managers, and business process owners. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies Information Technology Infrastructure Library (ITIL) concepts, core components, principles, and models of service management.",
+            "The learner applies the Information Technology Infrastructure Library (ITIL) six activities of the service value chain."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Information Technology Management",
+      "courses": [
+        {
+          "title": "Project Management",
+          "description": "Project Management introduces students to the essential concepts of project management and the role of the project manager. Students learn to develop a project management plan across all project management standardized phases. Although the course takes into consideration the content areas of the Certified Associate in Project Management (CAPM) exam, this revised version of the course asks students to deliver performance assessments; it does not directly ask students to practice in the same modality as the objective CAPM exam. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the scope, schedule, and cost management portions of a project management plan.",
+            "The learner applies the essential concepts, processes, and roles of project management and project integration.",
+            "The learner develops a project management plan according to best practices."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Information Technology Management and Leadership",
+          "description": "Information Technology Management and Leadership addresses the technical and human elements of managing technology within an organization. A technology leader must be able to identify the components of a technology infrastructure, including all of the technologies used within an organization and how they relate to one another. This is crucial for building effective technology solutions, improving efficiency and processes, and knowing how to identify and resolve technical problems. Equipped with this fundamental skill, students in the course will analyze a scenario to create a technology management strategy for an organization. This course considers the ethical responsibilities of leadership and management and the appropriate use of technological solutions within an organization. The course also provides opportunities for students to develop their own leadership strategy, an essential element of effectively influencing and organizing the people who will carry out technology strategies at the ground level. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the technology infrastructure of an organization.",
+            "The learner develops an ethical IT management strategy.",
+            "The learner develops an ethical leadership style and approach to managing human resources."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Technical Communication",
+          "description": "Technical Communication teaches IT managers how to convey complex information clearly and effectively to diverse audiences, whether technical or nontechnical. The course covers skills in writing, presentation, and visual communication, enabling managers to create documentation, reports, and presentations that are precise and accessible. Additionally, it emphasizes audience analysis, which helps managers tailor their messages to stakeholders, enhancing project understanding and decision-making across teams. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner conducts an audience analysis to plan communication strategies.",
+            "The learner creates written communication to inform audiences of an IT issue.",
+            "The learner delivers a presentation regarding information technology issues.",
+            "The learner visualizes data and information to meet audience needs."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Technology Governance",
+          "description": "Technology Governance equips students with strategic frameworks and practices essential for effective governance in technology. The course covers the entire lifecycle of technology governance, including establishing governance structures and leadership techniques for enforcing these frameworks. Key themes include the evaluation of various technology governance models, the development of IT leadership skills, and the strategic integration of technology to meet business objectives. The course is aligned with COBIT, ITIL, CMMI, and ISO frameworks, emphasizing their application in real-world scenarios. Ethical considerations and social responsibility in technological governance are also explored.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates resource management strategies for technology-driven organizations.",
+            "The learner evaluates risk mitigation strategies that meet regulatory and ethical compliance.",
+            "The learner evaluates technology governance structures to ensure coordination with organizational goals."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Cloud Foundations",
+          "description": "Cloud Foundations introduces learners to real-world issues and practical solutions to cloud computing. This course covers the business value of cloud computing, examining cloud types, the steps to successful cloud adoption, and the effect cloud adoption has on IT service management, as well as the risks and consequences of implementing cloud solutions. This course prepares learners for the AWS Certified Practitioner certification exam. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner articulates the value proposition of cloud solutions in business scenarios.",
+            "The learner defines cloud security and compliance.",
+            "The learner determines the best-fit solution for a project based on the cost and support structures.",
+            "The learner identifies cloud technology solutions in IaaS, PaaS, and SaaS models."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Computer Science",
+      "courses": [
+        {
+          "title": "Practical Applications of Prompt",
+          "description": "The Practical Applications of Prompt course introduces learners to generative artificial intelligence (AI). This course aims to allow learners to gain skills for writing effective prompts and develop more effective conversations with artificial intelligence. Practical Applications of Prompt will lead learners to explore why prompt engineering is necessary. The course also aims to help learners, regardless of background, increase prompt fluency, which is fluency in using prompt effectively. The course teaches learners how to create effective prompts to elicit information with consideration of scope, specificity, and context; additionally, it teaches learners to evaluate the medium of the prompt and adjust prompts to output relevant results. The last section of the course focuses on ways to evaluate the efficacy of prompts and improve the depth and quality of analytical investigations. This approach prepares students to navigate the complexities of working with generative AI and use these skills effectively throughout their careers.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "Learners create effective prompts with the consideration of scope, specificity, and context to elicit targeted information.",
+            "Learners evaluate the efficacy of writing different prompts on research outcomes and improve the depth and quality of their analytical investigations.",
+            "Learners evaluate the images, texts, and sound of the prompt and adjust prompts to output relevant results.",
+            "Learners explain why prompt engineering is necessary."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Operating Systems",
+      "courses": [
+        {
+          "title": "Linux Foundations",
+          "description": "Linux Foundations prepares learners for the LPI Linux Essentials certification, and is an introduction to Linux as an operating system as well as an introduction to open-source concepts and the basics of the Linux command line. Learners will gain skills in identifying the fundamentals of open-source software and to develop resources for data access and security.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner develops resources for data access and security.",
+            "The learner identifies the fundamentals of open-source software."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Business Core",
+      "courses": [
+        {
+          "title": "Fundamentals of Spreadsheets and Data Presentations",
+          "description": "Fundamentals of Spreadsheets and Data Presentations offers learners an overview of the use of spreadsheet functions and methods for presenting data within spreadsheets. Learners will have the opportunity to explore features and uses of MS Excel and apply the tools to situations they may encounter while studying in their program. They will also be introduced to real world uses and tools to collect, organize and present data.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates a presentation from a spreadsheet dataset.",
+            "The learner performs common spreadsheet tasks requiring basic formatting, formulas, and functions.",
+            "The learner prepares data for analysis."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Web Development",
+      "courses": [
+        {
+          "title": "Web Design Fundamentals",
+          "description": "Web Design Fundamentals provides students with essential web development skills, guiding them through the creation of accessible, responsive, and interactive web pages. This course will enable students to gain hands-on experience in HTML, CSS, and foundational JavaScript. The course will also focus on teaching students how to structure content, apply styling, and add dynamic functionality to enhance user engagement. Emphasizing industry best practices, this course covers key aspects of web accessibility, focusing on WCAG compliance, along with core UX and UI principles to ensure usability for diverse audiences. By the end of the course, students will have a comprehensive toolkit for designing web pages that are not only visually compelling but also technically sound and adaptable to various devices and user needs. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together,",
+            "The learner applies CSS (Cascading Style Sheets) to style and design visually appealing web pages to enhance user experience.",
+            "The learner constructs basic web pages using HTML to create structured, accessible content.",
+            "The learner modifies basic JavaScript code to add interactive functionality to web pages."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Network and Security",
+      "courses": [
+        {
+          "title": "Network and Security - Foundations",
+          "description": "Network and Security - Foundations introduces learners to the basic network systems and concepts related to networking technologies. Learners will gain skills in applying network security concepts for business continuity, data access, and confidentiality, and in identifying solutions for compliance with security guidance.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies network security concepts for business continuity, data access, and confidentiality.",
+            "The learner identifies basic network systems and concepts related to networking technologies.",
+            "The learner identifies solutions for compliance with security guidance."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Cloud Applications",
+          "description": "Cloud Applications prepares learners for the CompTIA Cloud+ certification exam. Learners will gain skills in designing cloud infrastructure and services and in recommending cloud security solutions, policies, and procedures. The course will also introduce skills in deploying cloud solutions for storage, networking, and security, and in managing cloud operations with processes, procedures, and improvements. Learners will also gain skills in troubleshooting cloud services issues in networking, security, and performance.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner deploys cloud solutions for storage, networking, and security.",
+            "The learner designs cloud infrastructure and services.",
+            "The learner manages cloud operations with processes, procedures, and improvements.",
+            "The learner recommends cloud security solutions, policies, and procedures.",
+            "The learner troubleshoots cloud services issues in networking, security, and performance."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Network and Security - Applications",
+          "description": "Network and Security - Applications prepares learners for the CompTIA Security+ certification exam. The course introduces learners to skills in identifying threats, attacks, and vulnerabilities to organizational security. The learner will also gain skills in designing security solutions for enterprise infrastructures and architectures, as well as in implementing security solutions across hardware, applications, and network services. Learners will be able to execute operations and incident response with tools, policies, forensics, and mitigation techniques, and to analyze information security controls, governance, risk, and compliance.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes information security controls, governance, risk, and compliance.",
+            "The learner designs security solutions for enterprise infrastructures and architectures.",
+            "The learner executes operations and incident response with tools, policies, forensics, and mitigation techniques.",
+            "The learner identifies threats, attacks, and vulnerabilities to organizational security.",
+            "The learner implements security solutions across hardware, applications, and network services."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Data Management",
+      "courses": [
+        {
+          "title": "Data Management - Foundations",
+          "description": "Data Management Foundations offers an introduction in creating conceptual, logical and physical data models. Students gain skills in creating databases and tables in SQL-enabled database management systems, as well as skills in normalizing databases. No prerequisites are required for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner defines primary and foreign keys in data normalization.",
+            "The learner determines how to run queries for creation and manipulation of data in relational databases.",
+            "The learner explains attributes of databases, database tables, and structured and associated query language (SQL) commands."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Data Management - Applications",
+          "description": "Data Management - Applications covers conceptual data modeling and introduces MySQL. Students will learn how to create simple to complex SELECT queries, including subqueries and joins, and how to use SQL to update and delete data. Topics covered in this course include exposure to MySQL; creating and modifying databases, tables, views, foreign keys and primary keys (FKs and PKs), and indexes; populating tables; and developing simple Select-From-Where (SFW) queries to complex 3+ table join queries. The following course is a prerequisite: Data Management - Foundations.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates DML statements that insert, update, and delete data in data tables.",
+            "The learner implements joins and aggregate functions in SQL queries.",
+            "The learner queries database tables and views with SQL code.",
+            "The learner recommends databases and database management systems to meet organizational needs."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Networks",
+      "courses": [
+        {
+          "title": "Networks",
+          "description": "Networks introduces skills in configuring networking components and a network infrastructure. Learners will gain skills in optimizing network operations for availability, performance, and security, and in troubleshooting network issues. The course prepares learners for the CompTIA Network+ certification exam. Network and Security - Foundations is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner configures a network infrastructure.",
+            "The learner configures networking components.",
+            "The learner implements network security techniques.",
+            "The learner optimizes network operations for availability, performance, and security.",
+            "The learner troubleshoots network issues."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Networking",
+      "courses": [
+        {
+          "title": "Python for IT Automation",
+          "description": "Python for IT Automation covers the fundamentals of the Python language and its features to control program flow, inform decisions, and automate IT tasks and processes. The course emphasizes a systematic approach to solving problems and the application of programming logic to administer secure, scalable, and resilient IT networks and systems.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies Python principles and syntax to manage variables, data structures, and operators and to perform IT tasks.",
+            "The learner creates Python scripts using control structures to automate system tasks.",
+            "The learner integrates Python scripts, modules, packages, and libraries to automate networking tasks and processes."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "cert_signals": [
+    {
+      "normalized_cert": "CompTIA A+",
+      "via_course_title": "IT Applications",
+      "via_course_code": "C394",
+      "confidence": "high",
+      "atlas_recommendation": "use"
+    },
+    {
+      "normalized_cert": "CompTIA A+",
+      "via_course_title": "IT Foundations",
+      "via_course_code": "C393",
+      "confidence": "high",
+      "atlas_recommendation": "use"
+    },
+    {
+      "normalized_cert": "AWS Certified",
+      "via_course_title": "Cloud Foundations",
+      "via_course_code": "D282A",
+      "confidence": "high",
+      "atlas_recommendation": "use"
+    },
+    {
+      "normalized_cert": "CompTIA Network+",
+      "via_course_title": "Networks",
+      "via_course_code": "C480",
+      "confidence": "high",
+      "atlas_recommendation": "use"
+    },
+    {
+      "normalized_cert": "CompTIA Security+",
+      "via_course_title": "Network and Security - Applications",
+      "via_course_code": "C178",
+      "confidence": "high",
+      "atlas_recommendation": "use"
+    },
+    {
+      "normalized_cert": "CompTIA Cloud+",
+      "via_course_title": "Cloud Applications",
+      "via_course_code": "C923",
+      "confidence": "high",
+      "atlas_recommendation": "use"
+    }
+  ],
+  "family": null,
+  "anomaly_flags": []
+}

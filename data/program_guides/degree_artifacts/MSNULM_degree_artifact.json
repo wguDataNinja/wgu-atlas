@@ -1,0 +1,305 @@
+{
+  "program_code": "MSNULM",
+  "source_degree_title": "Master of Science, Nursing - Leadership and Management (BSN to MSN)",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.730749Z",
+    "source_version": "202011",
+    "source_pub_date": "8/4/23",
+    "source_page_count": 14,
+    "confidence": "high"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "A",
+    "aos_status": "usable",
+    "aos_course_count": 15,
+    "caveat_flags": [],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "Professional Presence and Influence",
+        "cus": 2,
+        "term": 1
+      },
+      {
+        "title": "Essentials of Advanced Nursing Roles and Interprofessional Practice",
+        "cus": 2,
+        "term": 1
+      },
+      {
+        "title": "Quality Outcomes in a Culture of Value-Based Nursing Care",
+        "cus": 2,
+        "term": 1
+      },
+      {
+        "title": "Informatics for Transforming Nursing Care",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Leadership and Management in Complex Healthcare Systems",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Advancing Evidence-Based Innovation in Nursing Practice",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Advanced Pathopharmacological Foundations",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Advanced Health Assessment for Patients and Populations",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Leading with Personal Mastery",
+        "cus": 2,
+        "term": 3
+      },
+      {
+        "title": "Business Case Analysis for Healthcare Improvement",
+        "cus": 2,
+        "term": 3
+      },
+      {
+        "title": "Managing Resources in an Era of Disruption",
+        "cus": 2,
+        "term": 3
+      },
+      {
+        "title": "Strategically Planning the Execution of a Healthcare Improvement Project",
+        "cus": 2,
+        "term": 4
+      },
+      {
+        "title": "Evidence-Based Measures for Evaluating Healthcare Improvements",
+        "cus": 2,
+        "term": 4
+      },
+      {
+        "title": "Nursing Leadership and Management Field Experience",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Nursing Leadership and Management Capstone",
+        "cus": 2,
+        "term": 4
+      }
+    ]
+  },
+  "areas_of_study": [
+    {
+      "group": "MSN Core",
+      "courses": [
+        {
+          "title": "Professional Presence and Influence",
+          "description": "Professional Presence and Influence is a masters-level course designed to guide students towards an enhanced state of presence, where therapeutic relationships are built between nurse and patient. Students will learn techniques for self-care practices that result in enhanced mental and physical wellbeing and that ensure ethically-generated patient care. Presence is an intrapersonal and interpersonal quality that allows the nurse to relate to others and to be aware of the world around them. The characteristics of presence, which include holism, intimacy, sensitivity and adaptability, create a heightened sense of awareness that fosters therapeutic relationships between the nurse and patient. Developing a mindful, authentic presence is central to health and spiritual practices in several cultures and a major element of leadership. Students will intentionally develop a focused mindfulness practice that will influence patient outcomes and lead to conditions that create joy in the workplace.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner promotes a healthy work environment by demonstrating a professional presence that includes selfawareness characteristics.",
+            "The learner develops solutions and strategies that build positive relationships and promote mindfulness in the workplace.",
+            "The learner recommends social communication strategies and technologies to promote a sense of caring and belonging.",
+            "The learner applies the principles of improvement science to solve the problem of hostility in the workplace and initiate organizational change designed to promote health and joy in the workplace.",
+            "The learner implements the principles of academic writing to produce clear, concise, and evidence-based written communications."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Essentials of Advanced Nursing Roles and Interprofessional Practice",
+          "description": "Essentials of Advanced Nursing Roles and Interprofessional Practice explores essential characteristics of the advanced professional nurse in the role of leader, educator, practitioner, or informatics specialist. In this course, students will apply evidence-based strategies to facilitate interprofessional collaboration on teams. Students will explore the role of nurses in advocating for change at the bedside, as well as leading teams to advocate for health policy reform. Students will gather and analyze data to identify patients and populations at risk and recommend policy change to improve health outcomes in the community.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner recommends strategies for practicing lifelong learning skills to encourage the continuous improvement essential for practicing as an advanced nursing professional",
+            "The learner recommends legal and regulatory policies that advocate for improved health outcomes in patients and populations.",
+            "The learner analyzes the roles and interaction of interprofessional team members to assess the resulting impact on healthcare outcomes.",
+            "The learner analyzes organizational performance data to guide recommendations for improving healthcare outcomes and disseminating results to a professional community."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Quality Outcomes in a Culture of Value-Based Nursing Care",
+          "description": "Quality Outcomes in a Culture of Value-Based Nursing Care incorporates current standards of quality and safety within the context of value-based care. In a value-based healthcare system, the benefits are derived from measuring health outcomes against the cost of delivering the outcomes. These benefits are then extended to patients, providers, payers, suppliers, and society as a whole. This course introduces new healthcare delivery models, which stress a team-oriented approach to patient care and sharing of patient data so that care is coordinated, and outcomes can be measured easily. Emphasis is placed on performance and quality improvement methods that underlie value-based nursing care. The nurse in advanced practice today must exemplify the standards of quality and safety and be prepared to lead the delivery of value-based patient-centered care.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the culture of continuous quality improvement and the provision of value-based care to optimize patient outcomes using a systems-thinking analytic approach.",
+            "The learner develops a systematic process that incorporates quality measures and benchmarks to assess organizational strengths and vulnerabilities.",
+            "The learner integrates performance and process improvement methodologies to develop solutions for identified quality and safety gaps in the practice setting.",
+            "The learner establishes measurable metrics and processes to evaluate the effectiveness of value-based care strategies and initiatives."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Informatics for Transforming Nursing Care",
+          "description": "Informatics for Transforming Nursing Care integrates nursing science with multiple information and analytical sciences to identify, define, manage, and communicate data, information, knowledge, and wisdom in nursing practice. Students will acquire knowledge and skills to apply informatics concepts, communications, and data that are critical to facilitating interprofessional data-driven decision-making. It is designed to build competence in the use of patient- and populationbased applications that inform and support the transformation of nursing care delivery toward a future of value-based quality nursing care that improves health outcomes. This course aligns theoretical concepts with practical applications of informatics and is consistent with the functional areas and responsibilities of informatics nurses as defined by the American Nurses Association Scope and Standards for nursing informatics.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the theoretical and conceptual underpinnings of the nursing informatics scope and standards to improve patient experience and health outcomes.",
+            "The learner determines how technology and informatics can be optimized to improve the patient experience and lower healthcare costs.",
+            "The learner analyzes core administrative systems to support the management of safe, cost-effective, and high-quality healthcare.",
+            "The learner analyzes data from population-based systems to mitigate public health threats and decrease incidence of disease.",
+            "The learner designs data collection tools and processes to capture, analyze, and report health indicators and outcomes.",
+            "The learner refines data to visually represent, forecast, monitor, and report progress in meeting healthcare outcomes."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Leadership and Management in Complex Healthcare Systems",
+          "description": "Leadership and Management in Complex Healthcare Systems prepares graduate nurses to be thoughtful strategists and informed decision-makers who serve as strong leaders in high-performing healthcare systems. Students develop competencies for managing diverse teams in complex systems, monitoring and measuring organizational performance, allocating financial and human resources, and leading change towards a transformed healthcare system. Additionally, students acquire the knowledge and skills to become full partners with other healthcare professionals by demonstrating nurse contributions toward high-quality care to patients and populations, while working collaboratively with interprofessional teams. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner determines the effective leadership skills and approaches required to navigate a diverse staff in a changing healthcare environment.",
+            "The learner creates communication and change management plans to foster a culture of innovation.",
+            "The learner analyzes data to measure progress in meeting organizational performance indicators in complex healthcare systems.",
+            "The learner determines system-level factors necessary to support and empower interprofessional teams.",
+            "The learner validates key performance indicators to measure the impact of nursing care on patient and population outcomes.",
+            "The learner proposes a strategic business plan to start a nurse-managed practice."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Advancing Evidence-Based Innovation in Nursing Practice",
+          "description": "Advancing Evidence-Based Innovation in Nursing Practice introduces students to the dynamic union of healthcare innovation and evidence. Core competencies and behaviors required to be a nurse innovator are discussed. Strategies for measuring innovation at various system levels are presented, as well as techniques for synthesizing and disseminating evidence to advance innovation in healthcare. The skills needed to appraise the quality of diverse sources of evidence are presented within the framework of evidence-based practice. This course focuses on identifying new and emerging sources of evidence that can inform, translate, and scale the complexity of leading innovation in healthcare organizations. Students will experience building communities of practice for collaboratively developing innovative practices and policies designed to improve the health of populations and enhance the patient experience of care.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes evidence from research, clinical expertise, and patient experiences to contribute to the innovation of healthcare practices and policies.",
+            "The learner incorporates research strategies and processes to search and review relevant evidence from credible sources.",
+            "The learner evaluates innovative best practices that support outcomes-driven healthcare practices.",
+            "The learner incorporates new evidence from big data and emerging technologies to design innovative practices.",
+            "The learner applies the theory of disruption when developing innovative strategies to improve healthcare outcomes.",
+            "The learner synthesizes credible sources of evidence to propose innovative patient care practice guidelines, organizational goals and strategies, and population-based care policies."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Advanced Pathopharmacological Foundations",
+          "description": "Advanced Pathopharmacological Foundations provides advanced practice nurses foundational knowledge in the many pathologies encountered in practice today. Advancing from the cellular to the body system level, this course examines the pathologies of common conditions seen in healthcare today. Consideration is also given to the human affective response to alterations in health. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner assesses alterations in cellular and genetic composition to determine the body's self-defense mechanisms to maintain homeostasis.",
+            "The learner analyzes the etiology and pathophysiological alterations associated with common conditions across the lifespan to determine appropriate treatment plans.",
+            "The learner analyzes pathopharmacological concepts and mechanisms of common conditions to guide clinical decision making.",
+            "The learner assesses developmental, racial, ethnic, and cultural manifestations of pathopharmacology to determine their influence on patient outcomes.",
+            "The learner distinguishes between relevant and irrelevant assessment findings to minimize pathologies and manage pharmacotherapeutics to promote optimal patient outcomes.",
+            "The learner traces human responses to disease processes across the lifespan to identify holistic treatment options."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Advanced Health Assessment for Patients and Populations",
+          "description": "Advanced Health Assessment of Patients and Populations builds on prior physical health assessment knowledge and skills acquired during undergraduate studies by focusing on the advanced assessment of biopsychosocial and sociocultural contexts in patients and populations across the life span. This course emphasizes the use of a comprehensive health promotion, disease prevention, and health restoration model to address health concerns in patients and communities. Students will acquire advanced assessment knowledge and skills for clinical interviewing, focused history taking, critical diagnostic reasoning, and clinical decision-making using a problem-focused framework that integrates authentic experiences with practical knowledge of health patterns in patients and communities. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner assesses the physical, biopsychosocial, cultural, spiritual, and environmental elements to improve health in patients and populations.",
+            "The learner distinguishes comprehensive assessment strategies appropriate to evaluating the health of diverse patients across the life span.",
+            "The learner analyzes assessment data to create health promotion plans for patients and communities.",
+            "The learner performs a focused physical examination to identify applicable differential diagnoses based on evidence from the collected data.",
+            "The learner analyzes epidemiologic methods to assess the health of communities and populations.",
+            "The learner develops strategies for disease prevention and outbreak control interventions."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Leadership and Management Specialty",
+      "courses": [
+        {
+          "title": "Leading with Personal Mastery",
+          "description": "Leading with Personal Mastery prepares the advanced professional nurse to demonstrate self-awareness, selfmanagement, executive function, and social awareness skills while leading and managing in diverse healthcare settings. In this course, students will learn how to incorporate these skills when developing personal relationships and building teams. Developing both social and emotional intelligence as a nurse leader will ensure that students have the ability develop strong relationships and make wise decisions when interacting with others. Increasing personal mastery will provide students with a set of tools and strategies to improve healthcare by producing high-quality results. Understanding their strengths and weaknesses, as a leader in healthcare will help students create a vision for success that includes making choices that will help balance their work life more effectively.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner designs pathways to achieve personal mastery for leading and managing individuals and teams in diverse healthcare settings.",
+            "The learner develops a vision for assuming the role of a leader and manager that includes self-awareness, selfmanagemnet, interpersonal communication, executive function, and social awareness.",
+            "The learner applies effective communication and consensus-building strategies when consulting with internal and external stakeholders.",
+            "The learner applies the principles of scholarly writing by producing a clear, concise, and evidence-based paper for the purpose of contributing to the body of nursing knowledge."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Business Case Analysis for Healthcare Improvement",
+          "description": "Business Case Analysis for Healthcare Improvement provides learning experiences that help students develop essential skills for proposing changes that improve and enhance healthcare outcomes. In this course, students will develop a business case during the early stages of a project by assessing the need for the project and the feasibility of initiating a project. Understanding the techniques used to develop a business case will provide students with the skills to obtain buy-in from key stakeholders and determine the best value strategy. Writing a strong business case presents the benefits, challenges, costs, and risks of moving forward with the project or maintaining status quo. It compares the current situation to a future vision so key stakeholders can make data-driven decisions to move forward with the project. During the development of a business case in this course, students will collaborate with internal and external stakeholders to initiate a healthcare improvement project (HIP) that is grounded in project management principles and influenced by stakeholder perspectives. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner examines regulatory and compliance requirements for implementing an improvement project comprising systematic activities and processes that are organized and implemented to improve organizational quality, safety, and performance.",
+            "The learner collaborates with internal and external stakeholders to assess the need and organizational readiness for a healthcare improvement project using improvement science methods and practices.",
+            "The learner describes the four phases of the project management lifecycle that will guide their healthcare improvement project successfully from initiation to closure.",
+            "The learner synthesizes relevant evidence, feasibility results, patient preferences, and interdisciplinary stakeholder perspectives to initiate a healthcare improvement project."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Managing Resources in an Era of Disruption",
+          "description": "Managing Human and Financial Resources in an Era of Disruption examines the main premise of people and fiscal leadership. This includes the promotion of healthy work environments through the development of programs in support of mitigating behavior problems for the betterment of work-life balance. Students will analyze business model budgets, revenue streams, and human and financial resource allocation, develop training programs to evaluate compliance and regulatory requirement, and create team building experiences to promote high performing teams by improving engagement, establishing trust, and achieving common goals. Students will assess an organization’s mission, vision, and values to establish alignment between healthcare improvement and an organization’s principles for management. Changes in healthcare are inevitable, as the business success strategies used in the past are not sufficient for surviving in an era of persistent disruption. This course will help students develop the skills nurse leaders need to become partners in recommending innovative strategies that promote value-based healthcare for the future. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner promotes a healthy work environment by developing programs to mitigate workplace behavior problems and enhance work-life balance.",
+            "The learner designs team-building experiences that promote high-performance teams where members trust each other and have the synergy to work together toward common goals.",
+            "The learner collaborates with key stakeholders to plan for the use of available resources needed to achieve project aims and goals.",
+            "The learner applies human resource principles and practices when developing a project charter that includes planning for adequate human resources for a healthcare improvement project."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Strategically Planning the Execution of a Healthcare Improvement Project",
+          "description": "Strategically Planning the Execution of a Healthcare Improvement Project will help students develop the skills for systems thinking, problem-solving, and data-driven decision-making. In this course, students will plan the implementation of a healthcare improvement project by identifying people, processes, and procedures that need to be in place for implementation. In addition, sociodemographic data on the population that may be affected by the healthcare improvement project will be analyzed to determine risks and opportunities. During this phase, students will perform an assessment of the forces for and against implementing the project. They will also identify short-term objectives and create action plans to align to the vision, mission, and values of the organization where the project will be implemented. Students will also examine the evolution of existing policies, procedures, and processes at the systems level for the purpose of advocating change that will support a healthcare improvement project. During this course, students will plan the implementation of their healthcare improvement project through the use of sociodemographic and health data, strategic planning, and a comprehensive integration of quality and safety concepts. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates existing policies at the systems level that have the potential to influence the implementation of a healthcare improvement project.",
+            "The learner uses sociodemographic and social determinants of health data to describe the target populations that will be affected by a healthcare improvement project.",
+            "The learner examines the structure, processes, and outcomes of an organizational plan that may facilitate or impede the implementation of a healthcare improvement project.",
+            "The learner leads the development of a collaborative implementation plan that includes oversight of the project and the scope of work with specific tasks, timelines, and deliverables."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Evidence-Based Measures for Evaluating Healthcare Improvements",
+          "description": "Evidence-based measures for evaluating healthcare improvements is an essential component of the planning phase of the healthcare improvement project. In this course, students will determine key performance indicators and metrics used to determine the success of a healthcare improvement project (HIP). The student will develop collaborative partnerships and build consensus with stakeholders to determine how specific data will be collected, managed, and analyzed. This is also an opportunity to discuss data issues and technologies needed for the project. To accomplish this phase, students will also determine the parameters, procedures, and technologies needed for data collection, management, analysis, and reporting. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner collaborates with internal and external stakeholders to identify key success indicators for evaluating the effectiveness of a healthcare improvement project.",
+            "The learner determines the most effective technology and data sources for capturing data that will measure the key performance indicators (KPIs) for a health improvement project (HIP).",
+            "The learner creates a data collection plan that includes specific data fields and types, collection frequency, data sources, and data security methods.",
+            "The learner initiates the process of collaboratively developing a healthcare improvement evaluation plan that addresses stakeholder questions and high-priority areas to measure progress over time, and describes contextual issues that may impact the results."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Nursing Leadership and Management Field Experience",
+          "description": "The Nursing Leadership and Management Field Experience course provides an opportunity for students to apply the knowledge and skills they developed in previous courses toward the successful implementation of their healthcare improvement project (HIP). This phase puts into action all the components of project management that were planned and developed while working collaboratively with key stakeholders to establish the need and feasibility of the HIP, analyzing the organizational readiness for change, and planning the implementation and evaluation phases. In this phase, students will develop and implement a training plan for staff, managers, and leaders. They will also implement the communication plan they developed in a previous course. They will also manage the implementation process by applying organizational standards and practices. Students will demonstrate strong leadership skills when meeting with stakeholders to report the status of the implementation phase and collaboratively problem-solve risks. Completion of the specialty courses is a prerequisite for this course. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information.",
+          "competency_bullets": [
+            "The learner utilizes effective communication and relationship-building practices to successfully kick-off the implementation project.",
+            "The learner implements the training plan for the purpose of training staff, managers, and/or leaders regarding the implementation of the health improvement project.",
+            "The learner manages implementation of the healthcare improvement project using organizational standards and practices to problem-solve risks that emerge during implementation.",
+            "The learner leads scheduled meetings with internal and external stakeholders for the purpose of providing status updates regarding the implementation process."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Nursing Leadership and Management Capstone",
+          "description": "The Nursing Leadership and Management Capstone provides students with an opportunity to evaluate and close their capstone project. This is the final course in the MSN Leadership and Management program. Students will evaluate the success of their healthcare improvement project (HIP) by analyzing results, using the key performance indicators and metrics that were identified while planning the evaluation phase. Students will present the results of the improvement project in a final report and presentation with a focus on lessons learned throughout each of the phases: initiation, planning, implementation, and evaluation. Reflective and analytic thinking are essential aspects of a capstone project, as students reflect and report on the successes and challenges encountered in each phase. Nursing Leadership and Management Field Experience is a prerequisite for this course. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information.",
+          "competency_bullets": [
+            "The learner integrates and synthesizes competencies from across the degree program and thereby demonstrates the ability to participate in and contribute value to the chosen professional field."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "cert_signals": [],
+  "family": null,
+  "anomaly_flags": []
+}

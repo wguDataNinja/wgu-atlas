@@ -1,0 +1,204 @@
+{
+  "program_code": "MSITPM",
+  "source_degree_title": "Master of Science, Information Technology - Product Management",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.730665Z",
+    "source_version": "202604",
+    "source_pub_date": "2/3/2026",
+    "source_page_count": 0,
+    "confidence": "high"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "A",
+    "aos_status": "usable",
+    "aos_course_count": 10,
+    "caveat_flags": [],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "Technical Communication",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Information Technology Management and Leadership",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Financial Planning for IT Professionals",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Problem Solving for Technology Business Problems",
+        "cus": 2,
+        "term": 2
+      },
+      {
+        "title": "Project Management",
+        "cus": 4,
+        "term": 2
+      },
+      {
+        "title": "Risk Management and Information Technology",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Agile Processes and Culture in Technology",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Product Strategy",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Product Design",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Product Launch",
+        "cus": 3,
+        "term": 4
+      }
+    ]
+  },
+  "areas_of_study": [
+    {
+      "group": "Information Technology Management",
+      "courses": [
+        {
+          "title": "Technical Communication",
+          "description": "Technical Communication teaches IT managers how to convey complex information clearly and effectively to diverse audiences, whether technical or nontechnical. The course covers skills in writing, presentation, and visual communication, enabling managers to create documentation, reports, and presentations that are precise and accessible. Additionally, it emphasizes audience analysis, which helps managers tailor their messages to stakeholders, enhancing project understanding and decision-making across teams. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner conducts an audience analysis to plan communication strategies.",
+            "The learner creates written communication to inform audiences of an IT issue.",
+            "The learner delivers a presentation regarding information technology issues.",
+            "The learner visualizes data and information to meet audience needs."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Information Technology Management and Leadership",
+          "description": "Information Technology Management and Leadership addresses the technical and human elements of managing technology within an organization. A technology leader must be able to identify the components of a technology infrastructure, including all of the technologies used within an organization and how they relate to one another. This is crucial for building effective technology solutions, improving efficiency and processes, and knowing how to identify and resolve technical problems. Equipped with this fundamental skill, students in the course will analyze a scenario to create a technology management strategy for an organization. This course considers the ethical responsibilities of leadership and management and the appropriate use of technological solutions within an organization. The course also provides opportunities for students to develop their own leadership strategy, an essential element of effectively influencing and organizing the people who will carry out technology strategies at the ground level. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the technology infrastructure of an organization.",
+            "The learner develops an ethical IT management strategy.",
+            "The learner develops an ethical leadership style and approach to managing human resources."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Project Management",
+          "description": "Project Management introduces students to the essential concepts of project management and the role of the project manager. Students learn to develop a project management plan across all project management standardized phases. Although the course takes into consideration the content areas of the Certified Associate in Project Management (CAPM) exam, this revised version of the course asks students to deliver performance assessments; it does not directly ask students to practice in the same modality as the objective CAPM exam. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the scope, schedule, and cost management portions of a project management plan.",
+            "The learner applies the essential concepts, processes, and roles of project management and project integration.",
+            "The learner develops a project management plan according to best practices."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Product Strategy",
+          "description": "Product Strategy prepares students to plan a new product’s development. Students will strategize the needs, requirements, costs, and metrics to determine a successful design. The course covers skills in new product development, product knowledge, product management, user research, product planning, business requirements, and team leadership. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner creates a product requirements document to address the business case and customer needs for a technology-based product.",
+            "The learner develops a product strategy that anticipates and mitigates problems or changes.",
+            "The learner develops metrics to determine the effectiveness of the product strategy."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Product Design",
+          "description": "Product Design teaches students how to design a technical solution to a business problem, create a low-fidelity prototype of the technical solution, and then conduct a very limited user test using a created prototype. The course covers skills in functional knowledge contribution, product design, user needs analysis, and software feasibility and usability studies. The following course is a prerequisite and should be completed prior to beginning Product Design: Product Strategy.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner conducts usability testing for an application's design prototype.",
+            "The learner designs a solution to a technology business problem.",
+            "The learner designs low-fidelity prototypes using industry standard tools and techniques."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Product Launch",
+          "description": "Product Launch has the student role-playing as a Product Manager, overseeing the launch of a technical product. The student will develop a plan for the launch, simulate a solution to an urgent problem that threatens the success of the launch, and evaluate a marketing plan for a technical product. The course covers skills in strategic communications and planning, marketing planning and strategies, new product development, product knowledge, and problem-solving. There are no prerequisites, but the following courses are recommended to be completed prior to beginning Product Launch: Product Strategy and Product Design.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner develops a technology product launch plan.",
+            "The learner evaluates a marketing plan for a technology product.",
+            "The learner solves a problem occurring during a product launch."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "IT Management",
+      "courses": [
+        {
+          "title": "Financial Planning for IT Professionals",
+          "description": "Financial Planning for Information Technology (IT) Professionals provides a foundational basis for technology leaders to determine the value and cost of an organization’s technology. Through this course, students will learn the essentials of financial literacy, as it relates to their role in the technology branch of an organization. Students will read and interpret key indicators such as budgets and tracking tools, benchmark the value of technologies within an organization, and predict the return on investment for a technological change. These are highly valuable skills to determine practical solutions to business problems, while reducing unnecessary costs. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes the key financial indicators that drive IT performance.",
+            "The learner benchmarks the current financial value of an organizational technology.",
+            "The learner determines the return on investment (ROI) and financial value to the business of a technology change."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Problem Solving for Technology Business Problems",
+          "description": "Problem Solving for Technology Business Problems invites students to use frameworks for resolving a range of issues that can emerge within an organization. Problem-solving frameworks offer a reliable, step-by-step process for pinpointing causes of difficulties and then methodically developing solutions. This course addresses business problems such as technology inefficiencies, process improvement and future innovation challenges, and incidents requiring immediate resolution and communication. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies problem-solving frameworks to address a technology business problem.",
+            "The learner performs a Root Cause Analysis (RCA) on a technology business problem."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Risk Management and Information Technology",
+          "description": "The Risk Management course approaches an organization's risk needs from a management perspective. This course will enable the student to understand how risk management protects their organization's sensitive data, intellectual property, and digital assets from threats and breaches. This knowledge includes understanding governance structures, developing a mitigation strategy that includes risks, and creating an incident response plan. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner designs a security incident response plan to maintain business continuity.",
+            "The learner designs an organization’s information security governance to establish a high level of information assurance.",
+            "The learner develops a risk mitigation strategy that complies with all relevant regulations."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Agile Processes and Culture in Technology",
+          "description": "Agile Processes and Culture in Technology provides technology leaders with a framework for adapting to changing business needs and environments. Agile approaches enable teams and individuals to reduce the impact of change on projects and strategies, maintaining top velocity despite uncertainty, unexpected contingencies, or change in client requests. Students will learn how agile process can improve efficiencies; they will apply an agile framework to a business scenario; and they will strategize how to promote an agile culture within an organization, improving resilience to the constant changes they will encounter as technology leaders. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies a leadership framework within an agile environment.",
+            "The learner evaluates how agile leadership, agile teams, and agile processes improve an organization’s results and efficiency.",
+            "The learner strategizes how to foster an agile culture in an organization through leadership."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "cert_signals": [],
+  "family": null,
+  "anomaly_flags": []
+}

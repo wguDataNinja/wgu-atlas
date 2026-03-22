@@ -1,0 +1,231 @@
+{
+  "program_code": "MACCA",
+  "source_degree_title": "Master of Science in Accounting, Auditing Specialization",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.730195Z",
+    "source_version": "202409",
+    "source_pub_date": "4/12/24",
+    "source_page_count": 11,
+    "confidence": "high"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "C",
+    "aos_status": "usable",
+    "aos_course_count": 10,
+    "caveat_flags": [],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "Management Communication",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Ethics for Accountants",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Fraud and Forensic Accounting",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Accounting Research and Critical Thinking",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Data Analytics for Accountants I",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Data Analytics for Accountants II",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Advanced Auditing",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Internal Auditing I",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Internal Auditing II",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Information Systems for Accounting and Control",
+        "cus": 3,
+        "term": 4
+      }
+    ]
+  },
+  "areas_of_study": [
+    {
+      "group": "Management",
+      "courses": [
+        {
+          "title": "Management Communication",
+          "description": "This course prepares students for the communication challenges in organizations. Topics examined include theories and strategies of communication, persuasion, conflict management, and ethics that enhance communication to various audiences.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate communicates effectively, both in writing and speaking, within an organizational setting.",
+            "The graduate demonstrates best practices to overcome biases that inhibit organizations and teams from communicating effectively.",
+            "The graduate recognizes cultural differences in communication and develops strategies and techniques to effectively communicate with internal and external stakeholders.",
+            "The graduate applies negotiation and conflict management strategies to improve organizational performance.",
+            "The graduate utilizes appropriate technology and/or social media to communicate effectively."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Accounting",
+      "courses": [
+        {
+          "title": "Ethics for Accountants",
+          "description": "Ethics for Accountants examines standards of professional conduct and business practices required for accounting professionals. This course will discuss the necessity of applying ethical principles in the application of accounting principles, tax preparation, and attest services to clients. Moreover, the learner will explore how to apply ethical reasoning, various cognitive processes, professional skepticism and ethical decision-making related to situations involving corporate governance and moral dilemmas. Finally, this course will include discussions of the American Institute of Certified Public Accountants’ (AICPA) Statements on Standards for Tax Services and the Institute of Management Accountants’ (IMA) Statement of Ethical Professional Practices.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies ethical reasoning and objectivity to analyze ethical situations.",
+            "The learner applies the American Institute of Certified Public Accountants (AICPA) Code of Professional Conduct and the Institute of Management Accountants (IMA) Statement of Ethical Professional Practice to situations involving organizational ethics, corporate governance and independence.",
+            "The learner analyzes auditor responsibilities, corporate governance, and motivations for fraudulent financial reporting.",
+            "The learner explains auditors’ legal liabilities, defenses, and legislative acts."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Fraud and Forensic Accounting",
+          "description": "Fraud and Forensic Accounting provides learners with an in-depth understanding of how fraud and forensic investigations are part of the accounting profession. This course covers the various types of fraud and their impact on organizations, as well as the detection, investigation, and prevention of fraud. This course also introduces the role of forensic accountants in the legal system and the use of forensic accounting techniques in financial investigations. The course will include scenarios and hands-on exercises to provide learners with practical experience in detecting and investigating fraud.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes types of occupational fraud abuse, schemes, and their prevention and detection.",
+            "The learner explains the legal environment of fraud and law-related fraud.",
+            "The learner analyzes fraud investigation, interviewing, and reporting techniques.",
+            "The learner analyzes methods for fraud prevention and deterrence."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Accounting Research and Critical Thinking",
+          "description": "Accounting Research and Critical Thinking provides learners the skills and knowledge to research and add validity to accounting reports, resolution of issues, and procedural arguments: critical thinking, communication, research strategies, and database resources.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains primary and secondary sources of professional research as used in the accounting field.",
+            "The learner applies critical thinking and effective writing skills for the professional accountant.",
+            "The learner researches financial accounting issues with appropriate tools, including research question development, source validation, and sorted and validated data from public databases."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Data Analytics for Accountants I",
+          "description": "Data Analytics for Accountants I introduces basic concepts and various tools and techniques used in the field of data analytics for accounting. Learners will summarize data analysis definitions and models for the accounting field, explore data mining techniques and the extract-transform-load (ETL) process and create a presentation from accounting data results. This course presents a survey of concepts that provides learners with a basic understanding of how data analytics is used in accounting.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains data analysis concepts and models for the accounting field.",
+            "The learner explains ethical data mining techniques and the extract, transform, and load (ETL) process as they relate to financial data.",
+            "The learner analyzes structured financial data for patterns and trends using descriptive or diagnostic techniques.",
+            "The learner creates a consumable presentation from accounting data results."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Data Analytics for Accountants II",
+          "description": "Accountants are no longer confined to being the chroniclers of an organization’s profits and expenses—they now leverage the power of data to predict the future and advise leaders on appropriate actions. Data Analytics for Accountants II equips learners with the skills needed to analyze and present data to make reliable forecasts and propose strategies. Emphasis will be placed on auditing, managerial accounting, tax accounting and financial reporting as the learner completes a professional scenario that requires predictive analysis and presenting a course of action. As part of the Master of Accounting Program, this course will cover content that appears in the data analysis portions of Certified Public Accountant (CPA) and Certified Management Accountant (CMA) exams. Data Analytics for Accountants I is a prerequisite for this course.",
+          "competency_bullets": [
+            "The learner creates research questions in order to guide data analysis for a given accounting topic.",
+            "The learner applies data analysis techniques for predicative modeling and analysis in a given accounting topic.",
+            "The learner recommends a data-driven set of actions for stakeholders."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Advanced Auditing",
+          "description": "Advanced Auditing reviews basic auditing concepts, including (1) planning the audit: identifying, assessing, and responding to the risk of material misstatement; (2) specialized audit tools: attributes sampling, monetary unit sampling, and data analytic tools; (3) completing a quality audit; and (4) reporting on financial statement audits. The second part of the course dives into an application of auditing through (1) understanding how to audit an acquisition and payment cycle and (2) applying the knowledge learned through the acquisition and payment cycle to the revenue cycle in a performance assessment.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes materiality, sampling, and data analytic methods as used in auditing.",
+            "The learner explains how to complete an audit of a company’s financial statements.",
+            "The learner explains the appropriate audit and internal control reports that apply to the results of a financial statement audit.",
+            "The learner reports on the acquisition and payment cycles during an audit of a company's financial statements.",
+            "The learner reports on an audit of the revenue cycle during an audit of a company's financial statements."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Internal Auditing I",
+          "description": "Internal Auditing I provides learners with the basic knowledge and skills necessary to succeed as an entry-level internal audit professional. The Institute of Internal Auditors defines internal auditing as “an independent, objective assurance and consulting activity designed to add value and improve an organization’s operations.” Topics include the foundations of internal auditing, risk management, governance and controls, and fraud. This course aligns with Certified Internal Auditing (CIA) standards.",
+          "competency_bullets": [
+            "The learner explains the foundational concepts of internal auditing and the Institute of Internal Auditors’ (IIA) International Professional Practices Framework (IPPF).",
+            "The learner assesses the governance process and internal controls to minimize organizational risks.",
+            "The learner evaluates the role of an internal auditor as it relates to information technology risks and fraud risks in an organization."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Internal Auditing II",
+          "description": "Internal Auditing II is a continuation of Internal Auditing I and covers the competencies expected of an internal audit professional in the business world. This course is well aligned to the Institute of Internal Auditors’ (IIA) International Professional Practices framework (IPPF) by focusing learner’s attention on four domains: the internal audit activity, planning the engagement, performing the engagement, communicating the engagement, and monitoring progress.",
+          "competency_bullets": [
+            "The learner plans an internal audit engagement",
+            "The learner performs an internal audit engagement through information gathering, analysis, and evaluation.",
+            "The learner communicates internal audit engagement results."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Information Systems for Accounting and Control",
+          "description": "Information Systems I is intended to provide learners with an overview of information systems and information system technology used in the world of accounting. The topics will include networks, hardware, data needs, cybersecurity, and government compliance with privacy and personal information. The course covers a range of topics which accountants may experience and be responsible for in professional life. There are three competencies, and each competency will introduce learners to topics designed to prepare them for the high-stakes assessment.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains proper IT hardware and software needed for effective IT infrastructure management.",
+            "The learner applies data management strategies to ensure data accessibility, reliability, and timeliness.",
+            "The learner analyzes an organization's information system risk to ensure security, confidentiality, and privacy.",
+            "The learner reviews and recommends how to assess business processes and goals to determine the ideal hardware and software acquisitions or implementations for a company.",
+            "The learner describes the impact of artificial intelligence (AI) on information systems."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "cert_signals": [],
+  "family": {
+    "family_code": "MACC",
+    "family_label": "Master of Accounting",
+    "family_type": "track_specialization",
+    "sp_relationship": "shared_foundation_diverging_track",
+    "track_label": "Auditing Track",
+    "display_recommendation": "surface family relationship on all four degree pages; shared 5-course foundation identified",
+    "siblings": [
+      {
+        "program_code": "MACCF",
+        "track_label": "Financial Reporting Track"
+      },
+      {
+        "program_code": "MACCM",
+        "track_label": "Management Accounting Track"
+      },
+      {
+        "program_code": "MACCT",
+        "track_label": "Taxation Track"
+      }
+    ]
+  },
+  "anomaly_flags": []
+}

@@ -1,0 +1,222 @@
+{
+  "program_code": "MSCIN",
+  "source_degree_title": "Master of Science, Curriculum and Instruction",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.730527Z",
+    "source_version": "202404",
+    "source_pub_date": "6/23/2025",
+    "source_page_count": 0,
+    "confidence": "high"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "B",
+    "aos_status": "usable",
+    "aos_course_count": 10,
+    "caveat_flags": [],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "Designing Curriculum and Instruction I",
+        "cus": 3,
+        "term": null
+      },
+      {
+        "title": "Learning as a Science",
+        "cus": 3,
+        "term": null
+      },
+      {
+        "title": "The Reflective Practitioner",
+        "cus": 3,
+        "term": null
+      },
+      {
+        "title": "Differentiated Instruction",
+        "cus": 3,
+        "term": null
+      },
+      {
+        "title": "Standards-Based Assessment",
+        "cus": 3,
+        "term": null
+      },
+      {
+        "title": "Designing Curriculum and Instruction II",
+        "cus": 3,
+        "term": null
+      },
+      {
+        "title": "The Collaborative Leader",
+        "cus": 3,
+        "term": null
+      },
+      {
+        "title": "Data-Informed Practices",
+        "cus": 3,
+        "term": null
+      },
+      {
+        "title": "Educational Research",
+        "cus": 3,
+        "term": null
+      },
+      {
+        "title": "MSCIN Capstone",
+        "cus": 5,
+        "term": null
+      }
+    ],
+    "sp_display_mode": "advisor-guided"
+  },
+  "areas_of_study": [
+    {
+      "group": "Curriculum and Instruction",
+      "courses": [
+        {
+          "title": "Designing Curriculum and Instruction I",
+          "description": "Designing Curriculum and Instruction I examines the influence that specific theories, design principles, and evaluation models have on the quality and effectiveness of a curriculum. During the course, candidates will conduct a curriculum analysis in order to determine the content that students need. The course requires candidates to learn how to define the scope and sequence of a curriculum to ensure vertical and horizontal alignment. This course will also teach how to map curriculum to address any gaps or unnecessary duplication within and across grade levels. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner conducts a curriculum analysis to identify the unmet needs of learners.",
+            "The learner creates a curriculum map to demonstrate how the curriculum aligns to standards and builds on previous knowledge, skills, and experiences.",
+            "The learner evaluates curriculum through the application of theories, principles, and models.",
+            "The learner evaluates the alignment of curriculum to relevant standards to identify gaps and avoid unnecessary duplication."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Differentiated Instruction",
+          "description": "Differentiated Instruction examines how the classroom environment and students’ readiness levels, interests, and learning profiles influence learning. K–12 educators taking this course will acquire a deep understanding of their students in order to differentiate their curriculum, instruction, and assessments in response to individual students’ needs. This course will allow students to also learn how to effectively monitor and communicate students’ progress toward standards and adjust their practice as needed to empower students and nurture their abilities and aptitudes. As a result of their learning in this course, K–12 teachers will be prepared to act as catalysts for differentiation within their schools and districts. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes students’ readiness levels, interests, and learning profiles so the graduate can respond effectively to individual differences.",
+            "The graduate examines the role the teacher and the learning environment play in supporting differentiated instruction.",
+            "The graduate modifies content, process, and product in order to deliver instruction that takes into account individual students’ differences.",
+            "The graduate plans how to track ongoing learner development in order to evaluate and report individual students’ progress against standards."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Designing Curriculum and Instruction II",
+          "description": "Designing Curriculum and Instruction II examines commonly used curriculum and instructional models and demonstrates how they can be used during the design process to achieve curricular and instructional goals. This course demonstrates how to design curriculum and instruction that leverages digital tools to facilitate deep, authentic learning and provides strategies for ensuring successful curriculum implementation. Designing Curriculum and Instruction I is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies curriculum models to inform the design processes and achieve curricular goals.",
+            "The learner applies instructional models to design effective and engaging learning experiences.",
+            "The learner designs authentic learning activities that leverage digital tools to maximize active, deep learning.",
+            "The learner develops strategies to support stakeholders in implementing curriculum for a diverse group of students."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "National Board Professional Teaching Standards Pathway",
+      "courses": [
+        {
+          "title": "Learning as a Science",
+          "description": "Learning as a Science examines how research from the field of learning sciences can be applied to improve teaching and learning. This course explains how teachers can create a sense of community by examining personal biases and establishing a culturally inclusive learning environment. The course also provides evidence-based strategies for improving motivation, increasing understanding and retention, and teaching social-emotional skills that students need to be successful socially and academically. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate creates a supportive learning environment that fosters strong relationships and community.",
+            "The graduate facilitates the development of social-emotional skills that students need to be successful socially and academically.",
+            "The graduate incorporates evidence-based strategies to improve student motivation.",
+            "The graduate incorporates evidence-based strategies to increase understanding and knowledge retention."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "The Reflective Practitioner",
+          "description": "The Reflective Practitioner defines what reflective teaching is and how accomplished teachers reflect meaningfully on their pedagogical choices to improve their practice. During this course, candidates will examine their teaching to determine how they can more effectively plan, facilitate, and evaluate learning. Candidates will also develop a professional growth plan and incorporate evidence-based practices that support the achievement of their professional goals. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner develops a professional growth plan that includes short- and long-term goals and actionable steps for achieving those goals to continually improve the learner’s teaching practice.",
+            "The learner incorporates evidence-based practices learned through research and training to continue improving their practice and achieve professional goals.",
+            "The learner reflects on instructional practice in order to identify opportunities for professional growth in meeting the needs of all learners."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "The Collaborative Leader",
+          "description": "The Collaborative Leader demonstrates strategies teacher leaders can use to collaborate with other professionals, families, and communities to build strong relationships and improve school effectiveness. This course examines models of collaboration and the benefits and challenges of collaboration. It also examines the characteristics of effective professional development and explains how to collaboratively design effective professional development opportunities for educators. Finally, this course demonstrates how accomplished teachers can build relationships with families and the community to create a positive learning experience for students. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate collaborates with families and communities to enrich learning and build productive relationships.",
+            "The graduate collaborates with team members to address common instructional goals and improve teaching and learning.",
+            "The graduate plans professional development opportunities that address curricular or instructional needs to improve school effectiveness.",
+            "The graduate plans professional development opportunities that address curricular or instructional needs to improve school effectiveness."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Assessment",
+      "courses": [
+        {
+          "title": "Standards-Based Assessment",
+          "description": "Standards-Based Assessment teaches candidates how to unpack academic standards to determine the essential learnings within the standards that should be assessed. This course teaches candidates how to determine, based on academic standards, which topics should be assessed and how to use proficiency statements to create and score standards-based assessments. This course also prepares students to analyze assessment data and develop a holistic assessment system for a specific subject and grade level. Differentiated Instruction is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes assessment data to draw conclusions about students' progress and address any gaps in learning.",
+            "The graduate designs assessments that measure how well students have mastered specific knowledge and skills described in local, state, or national learning standards.",
+            "The graduate develops an assessment system that outlines when and how teachers will measure student progress toward learning goals.",
+            "The graduate unpacks academic standards to determine the knowledge and skills that must be assessed for a given student and grade level."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Research",
+      "courses": [
+        {
+          "title": "Data-Informed Practices",
+          "description": "Data-Informed Practices focuses on the development of data literacy skills. This course teaches candidates about the different types of data, the benefits and limitations of those data types, and how they can use data to identify and solve problems and inform decisions. The course also teaches candidates how to locate, collect, and analyze data from relevant and credible sources, and how to draw conclusions from data in order to drive continuous improvement. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate identifies relevant types and credible sources of data required to solve an identified problem.",
+            "The graduate selects appropriate methods for collecting and analyzing data to present conclusions and drive continuous improvement."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Educational Research",
+          "description": "Educational Research focuses on practical problem solving. This course teaches candidates to use scholarly literature and current research to inform their own practice. It also empowers candidates to recognize opportunities for improvement and engage in action research to systematically implement and evaluate changes. This course prepares candidates to conduct research for the capstone. Data-Informed Practices is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate determines methodologies and data analysis techniques in order to address a research problem.",
+            "The graduate examines the credibility and relevancy of various sources to assess their usefulness in addressing an educational problem.",
+            "The graduate lays the foundation of a research project or study by identifying a topic, problem statement, the purpose of the investigation, anticipated obstacles, and ethical considerations.",
+            "The graduate writes a literature review that identifies gaps in knowledge and unresolved problems that educational research can address."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "MSCIN Capstone",
+          "description": "The Master of Science in Curriculum and Instruction Capstone is the culminating course of the degree. It unites content area knowledge with the completion of a research project or study. This course teaches candidates, under the guidance of program faculty, to apply their data literacy and research skills to topics related to curriculum and instruction and to their career goals. Projects for this course include action research or applied research through the necessary qualitative, quantitative, or mixed research methods. Prerequisites for this course include Data-Informed Practices and Educational Research, as well as all prescribed courses in the candidates' area of study. Additionally, students wishing to add the Capstone with fewer than four weeks remaining in the term must receive permission from program leadership.",
+          "competency_bullets": [
+            "The graduate presents a completed capstone supported by a narrated multimedia presentation that could potentially contribute to knowledge in the field of curriculum and instruction.",
+            "The graduate produces a research proposal that satisfies applicable laws, policies, codes of ethics, professional standards, and appropriate Institutional Review Board (IRB) requirements to advance the learning of K–12 students.",
+            "The graduate writes a scholarly literature review and research methodology chapters that align with the approved research proposal after gaining Institutional Review Board (IRB) approval.",
+            "The graduate writes the results and conclusions chapters to align with the approved research proposal after collecting and analyzing the data for the research project or study."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "cert_signals": [],
+  "family": null,
+  "anomaly_flags": []
+}

@@ -1,0 +1,252 @@
+{
+  "program_code": "MACCF",
+  "source_degree_title": "Master of Science in Accounting, Financial Reporting Specialization",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.730206Z",
+    "source_version": "202409",
+    "source_pub_date": "4/12/24",
+    "source_page_count": 12,
+    "confidence": "high"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "C",
+    "aos_status": "usable",
+    "aos_course_count": 11,
+    "caveat_flags": [],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "Management Communication",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Ethics for Accountants",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Fraud and Forensic Accounting",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Accounting Research and Critical Thinking",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Data Analytics for Accountants I",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Data Analytics for Accountants II",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Advanced Financial Accounting I",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Advanced Financial Accounting II",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Corporate Financial Analysis",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Governmental and Nonprofit Accounting",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Advanced Auditing",
+        "cus": 3,
+        "term": 4
+      }
+    ]
+  },
+  "areas_of_study": [
+    {
+      "group": "Management",
+      "courses": [
+        {
+          "title": "Management Communication",
+          "description": "This course prepares students for the communication challenges in organizations. Topics examined include theories and strategies of communication, persuasion, conflict management, and ethics that enhance communication to various audiences.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate communicates effectively, both in writing and speaking, within an organizational setting.",
+            "The graduate demonstrates best practices to overcome biases that inhibit organizations and teams from communicating effectively.",
+            "The graduate recognizes cultural differences in communication and develops strategies and techniques to effectively communicate with internal and external stakeholders.",
+            "The graduate applies negotiation and conflict management strategies to improve organizational performance.",
+            "The graduate utilizes appropriate technology and/or social media to communicate effectively."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Accounting",
+      "courses": [
+        {
+          "title": "Ethics for Accountants",
+          "description": "Ethics for Accountants examines standards of professional conduct and business practices required for accounting professionals. This course will discuss the necessity of applying ethical principles in the application of accounting principles, tax preparation, and attest services to clients. Moreover, the learner will explore how to apply ethical reasoning, various cognitive processes, professional skepticism and ethical decision-making related to situations involving corporate governance and moral dilemmas. Finally, this course will include discussions of the American Institute of Certified Public Accountants’ (AICPA) Statements on Standards for Tax Services and the Institute of Management Accountants’ (IMA) Statement of Ethical Professional Practices.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies ethical reasoning and objectivity to analyze ethical situations.",
+            "The learner applies the American Institute of Certified Public Accountants (AICPA) Code of Professional Conduct and the Institute of Management Accountants (IMA) Statement of Ethical Professional Practice to situations involving organizational ethics, corporate governance and independence.",
+            "The learner analyzes auditor responsibilities, corporate governance, and motivations for fraudulent financial reporting.",
+            "The learner explains auditors’ legal liabilities, defenses, and legislative acts."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Fraud and Forensic Accounting",
+          "description": "Fraud and Forensic Accounting provides learners with an in-depth understanding of how fraud and forensic investigations are part of the accounting profession. This course covers the various types of fraud and their impact on organizations, as well as the detection, investigation, and prevention of fraud. This course also introduces the role of forensic accountants in the legal system and the use of forensic accounting techniques in financial investigations. The course will include scenarios and hands-on exercises to provide learners with practical experience in detecting and investigating fraud.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes types of occupational fraud abuse, schemes, and their prevention and detection.",
+            "The learner explains the legal environment of fraud and law-related fraud.",
+            "The learner analyzes fraud investigation, interviewing, and reporting techniques.",
+            "The learner analyzes methods for fraud prevention and deterrence."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Accounting Research and Critical Thinking",
+          "description": "Accounting Research and Critical Thinking provides learners the skills and knowledge to research and add validity to accounting reports, resolution of issues, and procedural arguments: critical thinking, communication, research strategies, and database resources.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains primary and secondary sources of professional research as used in the accounting field.",
+            "The learner applies critical thinking and effective writing skills for the professional accountant.",
+            "The learner researches financial accounting issues with appropriate tools, including research question development, source validation, and sorted and validated data from public databases."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Data Analytics for Accountants I",
+          "description": "Data Analytics for Accountants I introduces basic concepts and various tools and techniques used in the field of data analytics for accounting. Learners will summarize data analysis definitions and models for the accounting field, explore data mining techniques and the extract-transform-load (ETL) process and create a presentation from accounting data results. This course presents a survey of concepts that provides learners with a basic understanding of how data analytics is used in accounting.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains data analysis concepts and models for the accounting field.",
+            "The learner explains ethical data mining techniques and the extract, transform, and load (ETL) process as they relate to financial data.",
+            "The learner analyzes structured financial data for patterns and trends using descriptive or diagnostic techniques.",
+            "The learner creates a consumable presentation from accounting data results."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Data Analytics for Accountants II",
+          "description": "Accountants are no longer confined to being the chroniclers of an organization’s profits and expenses—they now leverage the power of data to predict the future and advise leaders on appropriate actions. Data Analytics for Accountants II equips learners with the skills needed to analyze and present data to make reliable forecasts and propose strategies. Emphasis will be placed on auditing, managerial accounting, tax accounting and financial reporting as the learner completes a professional scenario that requires predictive analysis and presenting a course of action. As part of the Master of Accounting Program, this course will cover content that appears in the data analysis portions of Certified Public Accountant (CPA) and Certified Management Accountant (CMA) exams. Data Analytics for Accountants I is a prerequisite for this course.",
+          "competency_bullets": [
+            "The learner creates research questions in order to guide data analysis for a given accounting topic.",
+            "The learner applies data analysis techniques for predicative modeling and analysis in a given accounting topic.",
+            "The learner recommends a data-driven set of actions for stakeholders."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Advanced Financial Accounting I",
+          "description": "Complex accounting skills are in high demand. As the business world continues to expand and broaden, specialized skills are required to accommodate the advanced accounting needs of many industries. Applying financial standards using professional judgment to a variety of business situations is crucial. This course builds the learner’s accounting knowledge by focusing on advanced financial accounting topics such as consolidations, partnership accounting, allocations, adjustments and eliminations.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner prepares consolidated financial statements according to generally accepted accounting principles (GAAP).",
+            "The learner determines required allocations, adjustments, or eliminations according to generally accepted accounting principles (GAAP).",
+            "The learner determines the appropriate accounting treatment for changes in ownership interest and insolvency."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Advanced Financial Accounting II",
+          "description": "Advanced Accounting II builds upon the topics covered in Advanced Accounting I. It provides learners with a deeper understanding of advanced financial accounting topics such as foreign currency transactions, hedging, annual and interim reporting, and partnership accounting. This course will equip learners with the necessary skills to prepare essential accounting records for partnerships, translate foreign currency financial statements, and explain reporting requirements for the Securities and Exchange Commission.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner accounts for hedging for foreign currency transactions and translates foreign currency financial statements.",
+            "The learner explains reporting requirements for the U.S. Securities and Exchange Commission (SEC), segment reporting, and interim reporting.",
+            "The learner prepares essential accounting records for partnerships, including formation, operations, and liquidations."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Corporate Financial Analysis",
+          "description": "Corporate Financial Analysis teaches the analysis of topics in financial management, including financial statement analysis and strategic corporate decision-making related to valuation, risk, capital structure, investment decisions, and performance. In this course, learners develop an understanding of the decisions financial managers/analysts face when making strategic decisions designed to improve an organization’s efficiency.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner assesses how financial statement results and financial information impact value.",
+            "The learner performs valuation of financial securities.",
+            "The learner evaluates market performance through the capital asset pricing model and weighted average cost of capital.",
+            "The learner determines a capital structure strategy appropriate to business goals.",
+            "The learner analyzes corporate long-term financing needs to make capital budgeting decisions."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Governmental and Nonprofit Accounting",
+          "description": "Governmental and Nonprofit Accounting provides learners with the skills and knowledge required to practice accounting for governmental and nonprofit entities: analyzing and recording transactions, financial statement preparation in accordance with Governmental Accounting Standards Board (GASB) standards, and communication.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains the government and nonprofit accounting environment, in accordance with the Financial Accounting Standards Board (FASB) and the Governmental Accounting Standards Board (GASB).",
+            "The learner records revenues and expenditures in governmental funds in accordance with generally accepted accounting principles (GAAP) in government-wide statement of activities through the application of the accrual basis of accounting and the modified accrual basis of accounting.",
+            "The learner accounts for capital assets and long-term obligations in accordance with the Governmental Accounting Standards Board (GASB) through state and local government financial statement calculation and journal entry preparation.",
+            "The learner explains the accounting for business-type activities, pensions, fiduciary activities, and net position balances, including the three basic statements of proprietary fund accounting, in accordance with the Governmental Accounting Standards Board (GASB).",
+            "Explains Financial Reporting for Governments - The learner explains government financial reporting, disclosure, and compliance reporting requirements, including the Annual Comprehensive Financial Report (ACFR) and government fiscal condition assessment.",
+            "The learner describes accounting for a nonprofit organization."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Advanced Auditing",
+          "description": "Advanced Auditing reviews basic auditing concepts, including (1) planning the audit: identifying, assessing, and responding to the risk of material misstatement; (2) specialized audit tools: attributes sampling, monetary unit sampling, and data analytic tools; (3) completing a quality audit; and (4) reporting on financial statement audits. The second part of the course dives into an application of auditing through (1) understanding how to audit an acquisition and payment cycle and (2) applying the knowledge learned through the acquisition and payment cycle to the revenue cycle in a performance assessment.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner describes materiality, sampling, and data analytic methods as used in auditing.",
+            "The learner explains how to complete an audit of a company’s financial statements.",
+            "The learner explains the appropriate audit and internal control reports that apply to the results of a financial statement audit.",
+            "The learner reports on the acquisition and payment cycles during an audit of a company's financial statements.",
+            "The learner reports on an audit of the revenue cycle during an audit of a company's financial statements."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "cert_signals": [],
+  "family": {
+    "family_code": "MACC",
+    "family_label": "Master of Accounting",
+    "family_type": "track_specialization",
+    "sp_relationship": "shared_foundation_diverging_track",
+    "track_label": "Financial Reporting Track",
+    "display_recommendation": "surface family relationship on all four degree pages; shared 5-course foundation identified",
+    "siblings": [
+      {
+        "program_code": "MACCA",
+        "track_label": "Auditing Track"
+      },
+      {
+        "program_code": "MACCM",
+        "track_label": "Management Accounting Track"
+      },
+      {
+        "program_code": "MACCT",
+        "track_label": "Taxation Track"
+      }
+    ]
+  },
+  "anomaly_flags": []
+}

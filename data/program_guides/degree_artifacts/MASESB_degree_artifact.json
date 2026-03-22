@@ -1,0 +1,315 @@
+{
+  "program_code": "MASESB",
+  "source_degree_title": "Master of Arts Science Education (Secondary Biological Science)",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.730294Z",
+    "source_version": "201806",
+    "source_pub_date": "9/13/23",
+    "source_page_count": 13,
+    "confidence": "high"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "A",
+    "aos_status": "usable",
+    "aos_course_count": 13,
+    "caveat_flags": [],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "Concepts in Science",
+        "cus": 1,
+        "term": 1
+      },
+      {
+        "title": "Introduction to Biology",
+        "cus": 2,
+        "term": 1
+      },
+      {
+        "title": "Human Anatomy and Physiology",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Chemistry with Lab",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Molecular and Cellular Biology",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Heredity and Genetics",
+        "cus": 2,
+        "term": 2
+      },
+      {
+        "title": "Science, Technology, and Society",
+        "cus": 2,
+        "term": 2
+      },
+      {
+        "title": "Zoology",
+        "cus": 2,
+        "term": 2
+      },
+      {
+        "title": "Ecology and Environmental Science",
+        "cus": 2,
+        "term": 3
+      },
+      {
+        "title": "Evolution",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Biology: Content Knowledge",
+        "cus": 1,
+        "term": 3
+      },
+      {
+        "title": "Science Methods—Secondary Biology",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "MA, Science Education Teacher Performance Assessment",
+        "cus": 6,
+        "term": 4
+      }
+    ]
+  },
+  "areas_of_study": [
+    {
+      "group": "Science",
+      "courses": [
+        {
+          "title": "Concepts in Science",
+          "description": "Concepts in Science for graduates provides already-licensed teachers seeking an additional license or endorsement in science education with an introduction to essential science themes present within and across all science disciplines, including chemistry, physics, biology, and the geosciences. These themes include comprehending the magnitude of the physical and natural world, analyzing and converting measurements, understanding the basic nature and behavior of matter and energy, examining atomic structure, identifying and naming basic types of chemical bonds, and analyzing and interpreting scientific data. Concepts in Science provides a solid foundation for future, in-depth, scientific studies and should be taken prior to any other science content course. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes a variety of measurements to solve scientific problems.",
+            "The graduate analyzes interactions between matter and energy to explain how they flow within, into, and out of systems.",
+            "The graduate analyzes the composition of atoms and compounds to explain the properties of matter.",
+            "The graduate evaluates experimental data to determine their validity."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "General Education",
+      "courses": [
+        {
+          "title": "Introduction to Biology",
+          "description": "This course is a foundational introduction to the biological sciences. This course explores the overarching theories of life from biological research as well as the fundamental concepts and principles of the study of living organisms and their interaction with the environment. Key concepts include how living organisms use and produce energy; how life grows, develops, and reproduces; how life responds to the environment to maintain internal stability; and how life evolves and adapts to the environment.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes the characteristics and classifications of living organisms.",
+            "The graduate analyzes the basic chemical composition of cells and the basic processes that happen at the cellular level.",
+            "The graduate analyzes different types of cells based on their structures and biological functions.",
+            "The graduate analyzes the biological basis for and patterns of heredity and gene expression.",
+            "The graduate analyzes inter-dependencies of organisms and their environments."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Biology Content",
+      "courses": [
+        {
+          "title": "Human Anatomy and Physiology",
+          "description": "This course examines the structures and functions of the human body and covers anatomical terminology, cells and tissues, and organ systems. Students will study the healthy state of the organ systems of the human body, including the digestive, skeletal, sensory, respiratory, reproductive, nervous, muscular, cardiovascular, lymphatic, integumentary, endocrine, and renal systems. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate applies appropriate terminology to communicate about body position and human anatomical features and relationships.",
+            "The graduate analyzes the structures and functions of the human cardiovascular and respiratory systems.",
+            "The graduate analyzes the structure and function of the human renal and reproductive systems.",
+            "The graduate analyzes the structure and function of the human nervous system.",
+            "The graduate analyzes the structure and function of the human digestive system.",
+            "The graduate analyzes the structures and functions of the human muscular, skeletal, and integumentary systems.",
+            "The graduate analyzes the structure and function of the human lymphatic and endocrine systems."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Molecular and Cellular Biology",
+          "description": "Molecular and Cellular Biology provides graduate students seeking initial licensure or endorsement and/or to earn their MA degree in secondary science education with an introduction to the area of molecular and cellular biology. This course examines the cell as an organism emphasizing molecular basis of cell structure and functions of biological macromolecules, subcellular organelles, intracellular transport, cell division, and biological reactions. A prerequisite for this course is Introduction to Biology.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate examines cells, organelles, viruses, and vaccines to analyze their structure and function in biological systems.",
+            "The graduate examines the processes within the cell cycle in order to recognize their impact on growth and development.",
+            "The graduate examines chemical principles, enzymes, biochemical pathways, energy flow, and cellular environments to analyze cellular metabolism.",
+            "The graduate analyzes the structure of biological macromolecules to determine their function within a cell.",
+            "The graduate distinguishes the steps involved in the synthesis and processing of mRNA and protein to analyze their purpose in cell function.",
+            "The graduate applies basic laboratory techniques to examine biological processes and reactions."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Heredity and Genetics",
+          "description": "Heredity and Genetics is an introductory course for graduate students seeking initial licensure or endorsement and/or students earning their MA degree in secondary or middle grade science education. This course addresses the basic principles of heredity and the function of molecular genetics. Topics include Mendelian and non-Mendelian inheritance and population genetics. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate researches the biological basis of inheritance to analyze patterns of heredity.",
+            "The graduate researches applications of molecular genetics to analyze chromosomal disorders and mutations.",
+            "The graduate examines the structure and expression of genes to explain resulting phenotypes.",
+            "The graduate applies the principles of population genetics to determine characteristics of a population."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Zoology",
+          "description": "Zoology provides graduate students seeking licensure or endorsement and/or their MA degree in secondary science education with an introduction to the field of zoology. Zoology includes the study of major animal phyla emphasizing characteristics, variations in anatomy, life cycles, adaptations, and relationships among the animal kingdom. A prerequisite for this course is Introduction to Biology.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate distinguishes the characteristics of animals to organize them into phyla.",
+            "The graduate analyzes the anatomies of animals to distinguish the relationships among organisms.",
+            "The graduate analyzes adaptations to recognize the impact on the evolution of phyla.",
+            "The graduate analyzes the life cycles of animals to determine the relationships within and between phyla."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Evolution",
+          "description": "This course addresses why evolution is the fundamental concept that underlies all life sciences and how it contributes to advances in medicine, public health, and conservation. This course helps participants gain a firm understanding of the basic mechanisms of evolution including the process of speciation and how these systems have given rise to the great diversity of life in the world today. This course also explore how new ideas, discoveries, and technologies are modifying prior evolutionary concepts. Ultimately, the course will explain how evolution works and how we know what we know.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate has a practical understanding of Darwin and the evidence that led him to propose his theory of evolution.",
+            "The graduate can explain the basic theory of evolution and how evolutionary mechanisms have driven diversification among organisms.",
+            "The graduate has an in-depth understanding of how coevolution, genetic drift, natural selection, and sexual selection contribute to the organization of the Earth’s biodiversity.",
+            "The graduate appreciates the different opinions about how species are defined based on using molecular data to understand evolutionary processes.",
+            "The graduate recognizes the complexities of human evolution, where humans fit with respect to other organisms on the Tree of Life, and what sets humans apart from other animals.",
+            "The graduate recognizes how evolutionary theory impacts our lives through modern medicine, agriculture, and conservation efforts."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Biology: Content Knowledge",
+          "description": "This comprehensive course examines a student’s conceptual understanding of a broad range of biology topics. High school biology teachers must help students make connections between isolated topics. This course starts with macromolecules that make up cellular components and continues with understanding the many cellular processes that allow life to exist. Connections are then made between genetics and evolution. Classification of organisms leads into plant and animal development that study the organ systems and their role in maintaining homeostasis. The course finishes by studying ecology and the effect humans have on the environment.",
+          "competency_bullets": [
+            "This competency exists to assess the readiness of students.",
+            "The graduate synthesizes concepts and processes from across biology to generate a comprehensive understanding of the field.",
+            "The graduate verifies that they possess the requisite biology knowledge and skills by passing the biology content knowledge test required to become a beginning teacher of secondary school biology."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Chemistry Content",
+      "courses": [
+        {
+          "title": "Chemistry with Lab",
+          "description": "Chemistry with Lab for graduates provides already licensed teachers seeking an additional license or endorsement in middle grades science or secondary physics, biological science, or earth science with an introduction to the field of chemistry. Designed for those not majoring in chemistry education, this course highlights how the topics covered can be applied within various branches of science. This course provides students with opportunities to examine the electronic structure of atoms, study periodic trends, name chemical compounds, write chemical formulas, determine the structure of molecules, balance chemical reactions, and discover the changing states of matter. Laboratory experiences facilitate the study of matter and the application of laboratory safety and maintenance procedures. Concepts in Science for graduates is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate evaluates how chemistry is related to other sciences to understand its relevance within the physical and natural world.",
+            "The graduate conducts safe and effective investigations to test hypotheses and draw conclusions.",
+            "The graduate analyzes the electronic structure of atoms and periodic trends to distinguish properties of various substances.",
+            "The graduate explains how to use the periodic table and IUPAC rules to name chemical compounds.",
+            "The graduate explains how chemical bonds and electron orientation impact the structures and behavior of molecules to understand the composition of matter.",
+            "The graduate balances chemical equations to determine what happens during a chemical reaction.",
+            "The graduate analyzes the relationship between heat and other forms of energy to examine the behavior of heat under various circumstances.",
+            "The graduate examines the physical states of matter to explain their properties and the process by which matter changes state."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Science Education",
+      "courses": [
+        {
+          "title": "Science, Technology, and Society",
+          "description": "Science, Technology, and Society explores the ways in which science influences and is influenced by society and technology. A humanistic and social endeavor, science serves the needs of ever-changing societies by providing methods for observing, questioning, discovering, and communicating information about the physical and natural world. This course prepares educators to explain the nature and history of science, the various applications of science, and the scientific and engineering processes used to conduct investigations, make decisions, and solve problems. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes the relationships among themes that appear across multiple scientific ideas.",
+            "The graduate analyzes the nature of science, including how science distinguishes itself from other ways of knowing.",
+            "The graduate analyzes the historical development of science, including how scientific knowledge evolves.",
+            "The graduate analyzes the various ways in which science, technology, and society are interrelated.",
+            "The graduate analyzes socially relevant scientific issues to make informed decisions based on data and context.",
+            "The graduate analyzes the principles, processes, and assumptions of investigations in science to engage students in the nature of inquiry.",
+            "The graduate uses technology tools and mathematics to improve investigations and the communication of results.",
+            "The graduate formulates testable hypotheses for scientific investigations.",
+            "The graduate conducts investigations in science to solve open-ended problems using appropriate scientific methods."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Science Methods—Secondary Biology",
+          "description": "Science Methods—Secondary Biology focuses on teaching methods specific to science for graduate students seeking an endorsement in secondary biology. This course focuses on the design and teaching of standards-based lessons using the three dimensions of science (science and engineering practices, crosscutting concepts, and disciplinary core ideas) and the appropriate integration of technology into those lessons. Students in this course work within their content areas to evaluate, enhance, and plan appropriate science instruction. This course includes laboratory safety training and certification, which includes safe laboratory practices and procedures for science classrooms and the proper use of personal protective equipment. Previous coursework in curriculum, instruction, and assessment is a prerequisite for this course.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate analyzes connections among the three dimensions of science instruction—disciplinary core ideas, crosscutting concepts, and science and engineering practices—to prepare and plan for instruction.",
+            "The graduate integrates technology into science activities to support student engagement and content mastery.",
+            "The graduate develops assessment strategies that measure three-dimensional science learning to determine the effectiveness of teaching and learning experiences.",
+            "The graduate develops lessons that integrate the three dimensions of science with applicable technologies to connect scientific concepts and phenomena.",
+            "The graduate develops plans for the use, storage, and maintenance of science materials and protective equipment and for the care of living organisms to comply with district, state, and federal safety, ethical, and legal standards for science teachers.",
+            "The graduate establishes an emergency response plan to prepare for potential emergency situations in the science learning environment."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "General Science Content",
+      "courses": [
+        {
+          "title": "Ecology and Environmental Science",
+          "description": "Ecology and Environmental Science is an introductory course for graduate students seeking initial licensure or endorsement and/or to earn their MA degree in secondary or middle grade science education. The course explores the relationships between organisms and their environment, including population ecology, communities, adaptations, distributions, interactions, and the environmental factors controlling these relationships. This course has no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate examines ecosystems to analyze the relationship between populations and the environment.",
+            "The graduate examines the flow of energy in an ecosystem to assess how changes in that flow affect biodiversity.",
+            "The graduate analyzes biogeochemical cycles to explain the importance of these cycles to global processes.",
+            "The graduate researches environmental challenges to discuss potential solutions.",
+            "The graduate assesses the challenges associated with resource management in order to compare potential sustainable solutions."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Teacher Performance Assessment",
+      "courses": [
+        {
+          "title": "MA, Science Education Teacher Performance Assessment",
+          "description": "MA, Science Education Teacher Performance Assessment contains a comprehensive, original, research-based curriculum unit designed to meet an identified educational need. It provides direct evidence of the candidate’s ability to design and implement a multi-week, standards-based unit of instruction, assess student learning, and then reflect on the learning process. The WGU Teacher Performance Assessment requires students to plan and teach a multi-week standards-based instructional unit consisting of seven components: 1) contextual factors, 2) learning goals, 3) assessment, 4) design for instruction, 5) instructional decision-making, 6) analysis of student learning, and 7) self-evaluation and reflection.",
+          "competency_bullets": [
+            "The graduate evaluates the teaching context to accommodate student differences to plan for instruction and assessment.",
+            "The graduate recommends improvements for instruction and professional practice through personal reflection.",
+            "The graduate plans learning environments that support individual learning, collaboration, and positive social interaction.",
+            "The graduate demonstrates ethical responsibilities and appropriate teaching dispositions, including those outlined in the Western Governors University Teachers College Code of Ethics.",
+            "The graduate plans comprehensive learning segments of instruction and assessment that align with standards and the needs of students.",
+            "The graduate applies instructional strategies that promote learning, engage students, and provide differentiated instruction.",
+            "The graduate recommends strategies that support the development of academic language for all students.",
+            "The graduate integrates strategies to develop academic language that facilitates effective student participation and engagement in learning.",
+            "The graduate utilizes assessment data to profile student learning, communicate information about student progress and achievement, and guide and modify instruction.",
+            "The graduate integrates a variety of strategies and resources to differentiate instruction and meet the needs of diverse learners.",
+            "The graduate evaluates teaching experiences including the planning and implementing of curriculum and instruction through ongoing reflection.",
+            "The graduate develops appropriate plans for professional growth in subject matter knowledge and pedagogical skills, including habits and skills of continual inquiry and learning."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "cert_signals": [],
+  "family": null,
+  "anomaly_flags": []
+}

@@ -1,0 +1,233 @@
+{
+  "program_code": "MSMK",
+  "source_degree_title": "Master of Science in Marketing, Digital Marketing Specialization",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.730694Z",
+    "source_version": "202301",
+    "source_pub_date": "9/27/23",
+    "source_page_count": 11,
+    "confidence": "high"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "C",
+    "aos_status": "usable",
+    "aos_course_count": 11,
+    "caveat_flags": [],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "Managing Organizations and Leading People",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Frameworks for Strategic Decision-Making",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Marketing in the Digital Era",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Market Research",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Marketing Communications and Storytelling",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Product, Price, and Customer Experience",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Digital Marketing Foundations",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Social Media Marketing",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Email Marketing",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "E-Commerce and Marketing Analytics",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Marketing Experiential Capstone",
+        "cus": 3,
+        "term": 4
+      }
+    ]
+  },
+  "areas_of_study": [
+    {
+      "group": "Management",
+      "courses": [
+        {
+          "title": "Managing Organizations and Leading People",
+          "description": "This course covers principles of effective management and leadership that maximize organizational performance. The following topics are included: the role and functions of a manager, analysis of personal leadership styles, approaches to selfawareness and self-assessment, and application of foundational leadership and management skills.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate explains the theoretical bases, current knowledge, best practices, and trends related to the practice of management.",
+            "The graduate uses contemporary theories of leadership to develop personal leadership skills based on a personal leadership philosophy.",
+            "The graduate applies management and leadership theories for long-term global-business success.",
+            "The graduate analyzes appropriate methods to improve organizational performance."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Frameworks for Strategic Decision-Making",
+          "description": "Frameworks for Strategic Decision-Making challenges students to use logistical reasoning, root cause analysis, and various problem-solving skills to drive improvement, develop relationships, influence others, and make decisions. This course addresses how to evaluate business problems, develop stakeholder-oriented solutions, and influence key stakeholders. It also promotes strategic-level thinking and connection between business disciplines to drive outcomes. There are no prerequisites.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies critical thinking processes to identify, analyze, and address internal and external business problems and opportunities.",
+            "The learner applies strategic thinking processes to evaluate and plan for internal and external opportunities.",
+            "The learner demonstrates emotional intelligence (i.e., behaviors, attitudes, and mindsets) to influence key stakeholders."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Marketing",
+      "courses": [
+        {
+          "title": "Marketing in the Digital Era",
+          "description": "Marketing in the Digital Era examines the marketing skills needed to be an effective marketer in the 21st century. This course provides a company and consumer perspective to learn how consumer value is created while achieving organizational goals. Learners will gain knowledge in the core areas of marketing, including branding and products, consumers, communications, and technology. This course introduces learners to strategic marketing tools used to develop effective strategies for a relevant target market. Marketing in the Digital Era teaches learners about emerging topics, such as marketing automation, artificial intelligence, and data-driven communications, as well as skills needed to continue evolving as a successful marketing professional in the dynamic, ever-changing marketing environment.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains marketing concepts as part of a strategic, interdependent system.",
+            "The learner applies strategic marketing tools and methodologies to inform decision-making.",
+            "The learner explains how emerging technology and trends impact the marketing industry."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Market Research",
+          "description": "Market Research provides learners with a knowledge of the role of marketing research in strategic decision-making. Marketers need to systematically collect and analyze data to develop insights and make decisions. Learners demonstrate proficiency in the fundamentals of market research by practicing statistical methods for analyzing and acting on market data. This course teaches sampling techniques, survey development, data analysis, ethical considerations, and hypothesis testing. Learners will apply their knowledge using a market research simulation. Emphasis is placed on the interpretation and use of results to demonstrate how to communicate information. In this course, learners will also develop awareness for continually monitoring emerging and competitive trends given the dynamic digital marketing landscape.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner designs the market research process to achieve specific organizational objectives.",
+            "The learner implements appropriate market research methodologies.",
+            "The learner analyzes market data.",
+            "The learner communicates data-informed market research insights."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Marketing Communications and Storytelling",
+          "description": "Marketing Communications and Storytelling introduces learners to the principles of integrative marketing communications with an emphasis on storytelling and creativity. Storytelling skills enable marketers to build relationships by making connections with their intended audience. Digital storytelling integrates the use of technology to create a cohesive narrative across various platforms that evokes emotions and feelings about a brand. These efforts can lead to customer acquisition or conversion outcomes. In this course, the creative storytelling process begins with a clear SMART objective that drives strategy development, the creative direction, and the execution of an integrative marketing communication campaign. Campaign types, media channels, messages, timelines, and market development considerations are taught within the context of both digital and traditional application. Learners will also have the opportunity to complete the HubSpot Inbound Marketing certification to learn industry best practices and to enhance marketability within the marketing profession.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains how integrated marketing communication (IMC) concepts and various channels are used to develop and nurture consumer relationships.",
+            "The learner develops a cross-channel integrated marketing communication (IMC) campaign to build consumer relationships.",
+            "The learner constructs engaging stories for a target audience that influences consumer behaviors and builds consumer relationships."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Product, Price, and Customer Experience",
+          "description": "Product, Price, & Customer Experience teaches core marketing concepts used to create integrative marketing strategies that meet the needs of an organization and its customers. This course teaches topics of new product development, product management, value proposition, and customer experience management. The voice of the customer is taught to ensure marketers create a customer-centric culture within their organization to meet the needs, wants, and preference of their target market. Customer experience management practices are key focal points of this course to ensure meaningful customer interactions across the entire customer journey.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains how various products and services are developed and managed to meet customer needs and wants, as well as organizational goals.",
+            "The learner develops pricing strategies and tactics that address the customer experience, enhance customer value, promote ethical pricing, and meet organizational goals.",
+            "The learner develops a customer experience strategy to create meaningful customer interactions across the entire customer journey that align with organizational goals."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Digital Marketing Foundations",
+          "description": "Digital Marketing Foundations provides learners with knowledge in the dynamic and evolving field of marketing that uses the internet and digital technologies to reach customers. This course provides foundational knowledge in digital marketing disciplines, including social media marketing, content marketing, marketing automation, search engine optimization (SEO), paid search (PPC), conversion rate optimization (CRO), mobile marketing, and web analytics. Learners explore how a digital marketing strategy is developed and executed, along with how digital marketing is integrated within an organization's overall strategy. This course provides learners with the opportunity to complete the HubSpot Marketing Software certification to learn marketing automation software that is used in industry to assist marketers in their digital marketing execution. Emphasis throughout the course is placed on industry best practices, and the course content aligns with the Online Marketing Certified Associate (OMCA) certification to prepare students for this third-party certification.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner explains how digital marketing fits within an organization’s marketing strategy.",
+            "The learner explains the digital marketing specializations and how they are used within digital marketing strategy.",
+            "The learner explains marketing automation and the use of marketing automation software to support a digital marketing campaign."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Social Media Marketing",
+          "description": "Social Media Marketing teaches learners about social media from a business perspective and how social media can be used to increase a company’s brand awareness, generate leads, and build meaningful relationships with customers. Throughout this course, learners will develop a social media marketing strategy across various social platforms to create and distribute valuable and relevant content to specific audiences. Social Media Marketing teaches learners influencer marketing, employee advocacy, social selling, and social media analytics. Learners will gain hands-on experience using a simulation to create targeted social media advertisements, perform demographic targeting, implement social media content promotion strategies, and schedule content. In this course, learners will have the opportunity to complete HubSpot's Social Media Marketing certification to learn industry best practices in social media marketing and to enhance marketability within the marketing profession.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner determines the appropriate social media platforms for intended target audiences.",
+            "The learner develops social media marketing strategies to achieve organizational goals.",
+            "The learner applies processes to manage social media marketing strategies."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Email Marketing",
+          "description": "Email Marketing examines the principles and techniques used to effectively manage email marketing campaigns. Email is used daily in both personal and business settings to communicate with others. In this course, learners will examine industry best practices of how to use email marketing as a digital strategy to achieve marketing goals. Learners will explore how to design an email marketing strategy, how to use email marketing for lead generation, how to design a lead nurture campaign, and how automation is used to manage email marketing distribution and campaigns. This course provides learners with an opportunity to explore how effective email messages are crafted and distributed. Industry best practices will be explored and learners have the opportunity to complete the HubSpot Email Marketing certification to enhance marketability within the marketing profession.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner determines email marketing best practices for target audiences.",
+            "The learner creates an email marketing campaign to prospect and nurture leads.",
+            "The learner evaluates the performance of an email marketing campaign."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "E-Commerce and Marketing Analytics",
+          "description": "E-Commerce and Marketing Analytics teaches learners how to sell online, how to reach customers online, and how to measure campaign and website performance. Businesses and consumers actively engage in buying and selling products over the internet. Learners gain skills through the practical application of building and optimizing a Shopify website designed to promote and sell products to customers. The course explores the latest technology platforms with an emphasis on Google applications for hands-on experience. Learners have the opportunity to complete the Google Search Ads certification to gain skills used in practice and to enhance marketability within the marketing profession.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner evaluates campaign performance goals using web analytics.",
+            "The learner analyzes how to implement an e-commerce strategy through the design, development, and optimization of an e-commerce store.",
+            "The learner analyzes how digital marketing tools are used to reach and retain customers to e-commerce stores."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Marketing Experiential Capstone",
+          "description": "Marketing Experiential Capstone is the capstone course for the program that provides learners with real-world applications to prepare them for the marketing industry. In this course, learners will integrate and apply marketing skills gained throughout the program by working with an organization on a marketing project. Marketers must effectively manage many relationships throughout their career with clients and team members in an organization, an agency, or their own marketing firm. This course allows students to apply their technical knowledge while also developing competencies in effective communication, collaboration, conflict management, project management, and time management power skills. Learners will explore their professional goals and develop a personal branding strategy to enhance their marketability and to strategically plan for their marketing career.",
+          "competency_bullets": [
+            "The learner integrates the competencies and skills from across the marketing program by executing a project that aligns with their professional career path.",
+            "The learner develops their personal brand to help them succeed as a marketing professional."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "cert_signals": [],
+  "family": {
+    "family_code": "MSMK",
+    "family_label": "M.S. Marketing",
+    "family_type": "specialization",
+    "sp_relationship": "parallel_specialization",
+    "track_label": "Digital Marketing Specialization",
+    "display_recommendation": "surface family relationship on both degree pages",
+    "siblings": [
+      {
+        "program_code": "MSMKA",
+        "track_label": "Marketing Analytics Specialization"
+      }
+    ]
+  },
+  "anomaly_flags": []
+}

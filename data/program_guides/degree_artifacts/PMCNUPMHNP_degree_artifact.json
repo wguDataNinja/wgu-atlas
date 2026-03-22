@@ -1,0 +1,258 @@
+{
+  "program_code": "PMCNUPMHNP",
+  "source_degree_title": "Post-Master's Certificate, Nursing - Psychiatric Mental Health Nurse",
+  "disposition": "full-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.731176Z",
+    "source_version": "202306",
+    "source_pub_date": "3/27/23",
+    "source_page_count": 13,
+    "confidence": "high"
+  },
+  "quality": {
+    "sp_status": "usable",
+    "sp_category": "C",
+    "aos_status": "usable",
+    "aos_course_count": 11,
+    "caveat_flags": [],
+    "caveat_messages_ui": []
+  },
+  "standard_path": {
+    "available": true,
+    "partial": false,
+    "label": null,
+    "rows": [
+      {
+        "title": "Advanced Pathophysiology for the Advanced Practice Nurse",
+        "cus": 4,
+        "term": 1
+      },
+      {
+        "title": "Advanced Pharmacology for the Advanced Practice Nurse",
+        "cus": 4,
+        "term": 1
+      },
+      {
+        "title": "Advanced Health Assessment for the Advanced Practice Nurse",
+        "cus": 4,
+        "term": 2
+      },
+      {
+        "title": "Foundations of Advanced Psychiatric Mental Health Practice",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "The Assessment and Diagnostic Process of Psychiatric Nurse Practitioner Practice",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Psychopharmacology for Advanced Psychiatric Mental Health Practice",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Advanced Psychiatric Mental Health Care of Adults and Older Adults Across Care Settings",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Advanced Psychiatric Mental Health Care of Children and Adolescents Across Care Settings",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Psychiatric Mental Health Nurse Practitioner Clinical Internship I",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Psychiatric Mental Health Nurse Practitioner Clinical Internship II",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Psychiatric Mental Health Nurse Practitioner Clinical Internship III",
+        "cus": 3,
+        "term": 4
+      }
+    ]
+  },
+  "areas_of_study": [
+    {
+      "group": "Nurse Practitioner Core",
+      "courses": [
+        {
+          "title": "Advanced Pathophysiology for the Advanced Practice Nurse",
+          "description": "Advanced Pathophysiology for the Advanced Practice Nurse prepares the graduate nursing student for the role of an advanced practice nurse with the competencies and skills needed to recognize disease states, identify disease progression, and assess and evaluate symptoms for patients across the lifespan. This course will help the graduate nursing student gain a deeper understanding of pathophysiology from the cellular to the systems level and will provide graduate nursing students with the knowledge and skills to determine the etiology, underlying physiological changes, and the human affective responses to alterations in health. This course will also prepare the graduate nursing student to communicate the pathophysiology of disease processes to providers and patients.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate evaluates foundational concepts of pathophysiology, including the genetic, immunological, and lifestyle factors associated with the development of disease, in order to improve patient education and health outcomes.",
+            "The graduate evaluates the pathophysiology of diseases affecting the HEENT, neurologic, and endocrine systems, as well as the neurobiology of psychiatric disorders, to determine disease management and improve patient education and health outcomes.",
+            "The graduate evaluates the pathophysiology of diseases affecting the reproductive and pulmonary systems to determine disease management and improve patient education and health outcomes.",
+            "The graduate evaluates the pathophysiology of diseases affecting the hematologic, cardiovascular, and lymphatic systems to determine disease management and improve patient education and health outcomes.",
+            "The graduate evaluates the pathophysiology of diseases affecting the renal, urologic, and gastrointestinal systems to determine disease management and improve patient education and health outcomes.",
+            "The graduate evaluates the pathophysiology of diseases affecting the musculoskeletal and integumentary systems to determine disease management and improve patient education and health outcomes."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Advanced Pharmacology for the Advanced Practice Nurse",
+          "description": "Advanced Pharmacology for the Advanced Practice Nurse prepares the graduate nursing student for the role of an advanced practice nurse with the competencies and skills for prescribing and monitoring medication safely and effectively. This course will prepare the graduate nursing student to apply pharmacotherapeutics in primary care settings by utilizing the pivotal basis of pharmacokinetics and pharmacodynamics. This course will also prepare the graduate nursing student to select the correct medication, describe the rationale for that selection to the patient, family, and other providers, and to effectively monitor the patient to promote positive drug outcomes.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate integrates the practice of evidence-based medicine and pharmacology principles to effectively, safely, and responsibly make decisions to improve patient care and address underlying health concerns.",
+            "The graduate analyzes how the nervous system is affected by neuropharmacology to improve quality of life and health outcomes.",
+            "The graduate analyzes how pharmacology affects the pulmonary and cardiovascular systems to inform decisions that improve quality of life and health outcomes.",
+            "The graduate synthesizes pharmacological changes for patients in the transition of care to improve the overall patient experience.",
+            "The graduate analyzes how pharmacology affects wellness, nutrition, and women’s and men’s health to improve quality of life and health outcomes.",
+            "The graduate analyzes how pharmacology affects the gastrointestinal and endocrine systems, as well as obesity, to improve quality of life and health outcomes.",
+            "The graduate analyzes how pharmacology affects infectious diseases, allergies, and musculoskeletal disorders to make evidence-based decisions to improve quality of life and health outcomes."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Advanced Health Assessment for the Advanced Practice Nurse",
+          "description": "Advanced Health Assessment prepares the graduate nursing student to perform the role of an advanced practice nurse with the essential competencies necessary to provide primary health care to patients and families of diverse populations. Students will develop the skills needed for systematically collecting and analyzing subjective and objective patient data. Through simulation and clinical experiences, students will use data to determine current and ongoing patient health status, predict health risks, and identify health-promoting activities for patients across the lifespan. Advanced Health Assessment will prepare the nursing graduate with the critical thinking, clinical reasoning, and advanced diagnostic skills required for advanced practice nursing. Upon completion of Advanced Health Assessment, the graduate will be able to synthesize individual and systems level subjective and objective data to facilitate the differential diagnosis processes. Also, the graduate will be able to clearly describe to patients and providers the pertinent health assessment findings and rationale supporting the diagnostic process.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The graduate generates a comprehensive patient health assessment using subjective and objective data.",
+            "The graduate evaluates the head, eyes, ears, nose, and throat (HEENT), lymphatic, central nervous, and psychiatric systems using a holistic assessment approach to document normal and abnormal findings and incorporate lifespan considerations.",
+            "The graduate evaluates the pulmonary, cardiovascular, and peripheral vascular systems using a holistic assessment approach to document normal and abnormal findings and incorporate lifespan considerations.",
+            "The graduate evaluates the gastrointestinal and urinary systems using a holistic assessment approach to document normal and abnormal findings and incorporate lifespan considerations.",
+            "The graduate evaluates the female and male reproductive systems using a holistic assessment approach to document normal and abnormal findings and incorporate lifespan considerations.",
+            "The graduate evaluates the musculoskeletal, integumentary, and peripheral nervous systems using a holistic assessment approach to document normal and abnormal findings and incorporate lifespan considerations."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Psychiatric Nurse Practitioner Specialty",
+      "courses": [
+        {
+          "title": "Foundations of Advanced Psychiatric Mental Health Practice",
+          "description": "Foundations of Advanced Psychiatric Mental Health Practice guides students through the process of learning about mental health and mental illness. This course presents the history of psychiatric care, along with cultural components that influence individual attitudes and behaviors. This course introduces conceptual models and theories related to practice that provide the basis for understanding the development of psychopathology to apply appropriate therapeutic strategies. This course includes clinical practice guidelines using the DSM-5-TR (Diagnostic Statistical Manual of Mental Disorders) as a basis for diagnostic consistency across the lifespan. This course also includes relevant advanced practice issues, legal and ethical components, and barriers to practice that a mental health psychiatric nurse practitioner may encounter. Various psychological responses to stress are also discussed. The following courses are prerequisites: All MSN Core courses, Advanced Pathophysiology for the Advanced Practice Nurse, Advanced Pharmacology for the Advanced Practice Nurse, and Advanced Health Assessment for the Advanced Practice Nurse.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner analyzes policies related to the individual practice and advocacy of rights, health, and safety of patients and populations.",
+            "The learner applies principles of effective communication, collaboration, and cultural sensitivity when working with diverse populations in behavioral healthcare delivery.",
+            "The learner analyzes evidence-based data for effective psychotherapeutic treatment modalities.",
+            "The learner applies logic and reasoning skills to understand the relationship between patients’ behaviors and their intentions or motivations.",
+            "The learner evaluates evidence-based therapeutic relationship strategies to reduce emotional distress, facilitate cognitive and behavioral change, and foster personal growth in individuals and communities.",
+            "The learner explains how to use self-reflective practices and stress management techniques that build relationships, promote behavior change, and mitigate professional stress."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "The Assessment and Diagnostic Process of Psychiatric Nurse Practitioner Practice",
+          "description": "The Assessment and Diagnostic Processes for Advanced Psychiatric Mental Health Practice guides students when examining determinants to the role of the psychiatric mental health nurse practitioner. This course guides students in building a therapeutic relationship with patients through interviewing skills, conducting a structured assessment, milieu, types of therapy, and various care strategies, including technology usage. This course guides students through exploring their leadership role in collaborating with the interprofessional community as a mental health nurse practitioner. Pathways of quality improvement, practice evaluation, and healthcare reform are also considered. The following courses are prerequisites: All MSN Core courses, Advanced Pathophysiology for the Advanced Practice Nurse, Advanced Pharmacology for the Advanced Practice Nurse, and Advanced Health Assessment for the Advanced Practice Nurse.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner applies holistic evidence-based mental health strategies to promote disease prevention and optimal mental health across the life span.",
+            "The learner conducts a structured assessment of a patient's behavioral and cognitive functioning to guide safe patient care.",
+            "The learner develops individualized mental health plans of care that reflect current comprehensive treatment planning methods, tools, and techniques.",
+            "The learner collaborates with interprofessionals or care team members to achieve quality patient care outcomes through shared decision-making.",
+            "The learner determines psychotherapy techniques that promote well-being, health maintenance, and positive health outcomes."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Psychopharmacology for Advanced Psychiatric Mental Health Practice",
+          "description": "Psychopharmacology for Advanced Psychiatric Mental Health Practice explains the knowledge of advanced pharmacotherapeutics and why it is important to safely and appropriately prescribe agents to manage common chronic and acute mental health problems of diverse populations. This includes differences between experimental and clinical psychopharmacology. This course covers the principles of pharmacokinetics and pharmacodynamics in administration, along with patient education. This course discusses factors of addiction and substance use, including prevalence, clinical manifestations, and treatment of various disorders. Collaborative clinical services, such as group counseling, therapeutic communities, and medication support, are explored. The foundational information in psychopharmacology in this course guides students in planning individualized mental health drug management for individuals across the life span based on setting, context, and professional ethics. The following courses are prerequisites: all MSN Core courses, Advanced Pathophysiology for the Advanced Practice Nurse, Advanced Pharmacology for the Advanced Practice Nurse, and Advanced Health Assessment for the Advanced Practice Nurse.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner assesses a patient’s mental health status to safely prescribe appropriate pharmacologic agents.",
+            "The learner incorporates best practices when caring for patients who present with signs of substance abuse or addiction issues.",
+            "The learner recommends appropriate and effective medications used to treat various mental health conditions and psychiatric disorders."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Advanced Psychiatric Mental Health Care of Adults and Older Adults Across Care Settings",
+          "description": "Advanced Psychiatric Care of Adults and Older Adults Across Care Settings prepares students to provide evidence-based mental healthcare for adults, older adults, and families. This course guides students through the application of age and developmentally appropriate advanced practice health assessment knowledge and diagnostic reasoning skills for adults, older adults, and families experiencing complex mental health issues. This course helps students develop treatment plans using psychotherapeutic treatment modalities, psychopharmacology, and community resources to manage specific mental health disorders for adults, older adults, and families. This course also includes the influences of family dynamics and societal norms on mental health progression and recovery. The following courses are prerequisites: All MSN Core courses, Advanced Pathophysiology for the Advanced Practice Nurse, Advanced Pharmacology for the Advanced Practice Nurse, and Advanced Health Assessment for the Advanced Practice Nurse.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner diagnoses acute and chronic mental conditions in adults and older adults across care settings using the Diagnostic and Statistical Manual of Mental Disorders (DSM-5-TR).",
+            "The learner synthesizes patient-centered treatment plans including Psychotherapeutic and/or Pharmacological treatments for adults and older adults across care settings.",
+            "The learner incorporates mental health best practice approaches, therapeutic interventions, and health teaching into the care of adults, couples, and families across care settings.",
+            "The learner incorporates mental health best practice approaches and therapeutic interventions into the care of older adults throughout the developmental life stage and across care settings."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Advanced Psychiatric Mental Health Care of Children and Adolescents Across Care Settings",
+          "description": "Advanced Psychiatric Mental Health Care of Children and Adolescents across Care Settings prepares students to provide evidence-based mental healthcare for children, adolescents, and families. This course guides students through the application of age and developmentally appropriate advanced practice health assessment knowledge and diagnostic reasoning skills for children, adolescents, and families experiencing complex mental health issues. This course helps students develop treatment plans to manage specific mental health disorders through the use of psychotherapeutic treatment modalities, psychopharmacology, and community resources. This course also covers the influences of family dynamics and societal norms on mental health progression and recovery. The following are prerequisites for this course: all MSN Core courses, Advanced Pathophysiology for the Advanced Practice Nurse, Advanced Pharmacology for the Advanced Practice Nurse, and Advanced Health Assessment for the Advanced Practice Nurse.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner diagnoses acute and chronic mental conditions in children and adolescents across care settings using the Diagnostic and Statistical Manual of Mental Disorders (DSM-5-TR). (4, 5.2)",
+            "The learner synthesizes patient-centered treatment plans including psychotherapeutic and/or pharmacological treatments for children and adolescent patient populations across care settings.",
+            "The learner incorporates mental health best-practice approaches, therapeutic interventions, and health teaching into the care of children, adolescent patients, and their families across care settings."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Psychiatric Mental Health Nurse Practitioner Clinical Internship I",
+          "description": "Through precepted clinical experiences, the learner will develop competencies needed to provide comprehensive and holistic mental health care to individuals, families, and communities across the lifespan. In the precepted clinical setting, the learner will combine competencies developed in preparatory advanced practice coursework to deliver consumer-centered mental health care. Therefore, the learner will conduct advanced mental health assessments and utilize the competencies of advanced pathophysiology, psychopharmacology, psychotherapy and health promotion for individuals and populations across the life span to build self-efficacy in individuals and groups, to determine correct diagnoses, and to establish mental health plans of care that include consumer and population preferences. All MSN Core Courses, NP Core courses, and PMHNP Specialty courses must be completed before taking this course. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information.",
+          "competency_bullets": [
+            "The learner gathers patient mental health data in the care of individuals, families, and populations across the lifespan and care settings as a novice.",
+            "The learner synthesizes subjective and objective data from individuals, families, and populations across the lifespan in order to provide accurate mental health diagnoses in a range of care settings as a novice.",
+            "The learner creates evidence-based individual-, family-, and population-centered mental health plans, including guidelines, clinical expertise, consumer preferences and values, organizational context, and resource limitations in a range of care settings as a novice.",
+            "The learner evaluates the effectiveness of individual-, family-, and population-centered mental health plans in order to modify the plan, offer additional mental health education, or refer patients to other providers to improve quality outcomes in a range of settings as a novice."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Psychiatric Mental Health Nurse Practitioner Clinical Internship II",
+          "description": "Through precepted clinical experiences, the learner will develop competencies needed to provide comprehensive and holistic mental health care to individuals, families, and communities across the lifespan. In the precepted clinical setting, the learner will combine competencies developed in preparatory advanced practice coursework to deliver consumer-centered mental health care. Therefore, the learner will conduct advanced mental health assessments and utilize the competencies of advanced pathophysiology, psychopharmacology, psychotherapy and health promotion for individuals and populations across the life span to build self-efficacy in individuals and groups, to determine correct diagnoses, and to establish mental health plans of care that include consumer and population preferences. All MSN Core Courses, NP Core courses, and PMHNP Specialty courses must be completed before taking this course. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information.",
+          "competency_bullets": [
+            "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+            "The learner gathers patient mental health data in the care of individuals, families, and populations across the lifespan and care settings as an advanced beginner.",
+            "The learner synthesizes subjective and objective data from individuals, families, and populations across the lifespan in order to provide accurate mental health diagnoses in a range of care settings as an advanced beginner.",
+            "The learner creates evidence-based individual-, family-, and population-centered mental health plans, including guidelines, clinical expertise, consumer preferences and values, organizational context, and resource limitations in a range of care settings as an advanced beginner.",
+            "The learner evaluates the effectiveness of individual-, family-, and population-centered mental health plans in order to modify the plan, offer additional mental health education, or refer patients to other providers to improve quality outcomes in a range of settings as an advanced beginner."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Psychiatric Mental Health Nurse Practitioner Clinical Internship III",
+          "description": "Through precepted clinical experiences, the learner will develop competencies needed to provide comprehensive and holistic mental health care to individuals, families, and communities across the lifespan. In the precepted clinical setting, the learner will combine competencies developed in preparatory advanced practice coursework to deliver consumer-centered mental health care. Therefore, the learner will conduct advanced mental health assessments and utilize the competencies of advanced pathophysiology, psychopharmacology, psychotherapy and health promotion for individuals and populations across the life span to build self-efficacy in individuals and groups, to determine correct diagnoses, and to establish mental health plans of care that include consumer and population preferences. All MSN Core Courses, NP Core courses, and PMHNP Specialty courses must be completed before taking this course. This course is eligible for an In Progress grade. Please see the Grading Scale Policy for more information.",
+          "competency_bullets": [
+            "The learner gathers patient mental health data in the care of individuals, families, and populations across the lifespan and care settings as a competent provider.",
+            "The learner synthesizes subjective and objective data from individuals, families, and populations across the lifespan in order to provide accurate mental health diagnoses in a range of care settings as a competent provider.",
+            "The learner creates evidence-based individual-, family-, and population-centered mental health plans, including guidelines, clinical expertise, consumer preferences and values, organizational context, and resource limitations in a range of care settings as a competent provider.",
+            "The learner evaluates the effectiveness of individual-, family-, and population-centered mental health plans in order to modify the plan, offer additional mental health education, or refer patients to other providers to improve quality outcomes in a range of settings as a competent provider."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "cert_signals": [],
+  "family": {
+    "family_code": "PMCNU",
+    "family_label": "Post-Master's Certificate, Nursing",
+    "family_type": "specialization",
+    "sp_relationship": "parallel_specialization_short_sp",
+    "track_label": "Psychiatric Mental Health Nurse Practitioner",
+    "display_recommendation": "surface family relationship; each cert is a distinct specialization on the same base credential",
+    "siblings": [
+      {
+        "program_code": "PMCNUED",
+        "track_label": "Nursing Education"
+      },
+      {
+        "program_code": "PMCNUFNP",
+        "track_label": "Family Nurse Practitioner"
+      },
+      {
+        "program_code": "PMCNULM",
+        "track_label": "Leadership and Management"
+      }
+    ]
+  },
+  "anomaly_flags": []
+}

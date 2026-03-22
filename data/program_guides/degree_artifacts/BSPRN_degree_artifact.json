@@ -1,0 +1,636 @@
+{
+  "program_code": "BSPRN",
+  "source_degree_title": "Bachelor of Science, Nursing - Prelicensure (Pre-Nursing/Nursing)",
+  "disposition": "partial-use",
+  "guide_provenance": {
+    "schema_version": "phase_d_v1",
+    "generated_at": "2026-03-22T00:47:01.729919Z",
+    "source_version": "202303",
+    "source_pub_date": "10/5/22",
+    "source_page_count": 24,
+    "confidence": "medium"
+  },
+  "quality": {
+    "sp_status": "partial",
+    "sp_category": "A",
+    "aos_status": "usable",
+    "aos_course_count": 34,
+    "caveat_flags": [
+      "sp_partial_dual_track"
+    ],
+    "caveat_messages_ui": [
+      "Standard sequence shown for Pre-Nursing segment; nursing-track sequencing is reflected in Areas of Study."
+    ]
+  },
+  "standard_path": {
+    "available": true,
+    "partial": true,
+    "label": "Pre-Nursing Standard Path",
+    "rows": [
+      {
+        "title": "Critical Thinking: Reason and Evidence",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Composition: Writing with a Strategy",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Integrated Physical Sciences",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Introduction to Communication: Connecting with Others",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Global Arts and Humanities",
+        "cus": 3,
+        "term": 1
+      },
+      {
+        "title": "Introduction to Chemistry",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Anatomy and Physiology I with Lab",
+        "cus": 4,
+        "term": 2
+      },
+      {
+        "title": "Introduction to Psychology",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "World History: Diverse Cultures and Global Connections",
+        "cus": 3,
+        "term": 2
+      },
+      {
+        "title": "Applied Healthcare Statistics",
+        "cus": 4,
+        "term": 2
+      },
+      {
+        "title": "Anatomy and Physiology II with Lab",
+        "cus": 4,
+        "term": 3
+      },
+      {
+        "title": "Microbiology with Lab: A Fundamental Approach",
+        "cus": 4,
+        "term": 3
+      },
+      {
+        "title": "Introduction to Sociology",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Health and Wellness Through Nutritional Sciences",
+        "cus": 3,
+        "term": 3
+      },
+      {
+        "title": "Applied Algebra",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Human Growth and Development",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Pathophysiology",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Medical Dosage Calculations and Pharmacology",
+        "cus": 3,
+        "term": 4
+      },
+      {
+        "title": "Foundations of Nursing",
+        "cus": 3,
+        "term": 4
+      }
+    ]
+  },
+  "areas_of_study": [
+    {
+      "group": "General Education",
+      "courses": [
+        {
+          "title": "Critical Thinking: Reason and Evidence",
+          "description": "In this course you will learn key critical thinking concepts and how to apply them in the analysis and evaluation of reasons and evidence. The course examines the basic components of an argument, the credibility of evidence sources, the impact of bias, and how to construct an argument that provides good support for a claim. The course consists of an introduction and four major sections. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the four competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "The learner evaluates the quality of an argument",
+            "The learner evaluates evidence based on source credibility.",
+            "The learner evaluates bias and its impact.",
+            "The learner makes claims based on evidence."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Composition: Writing with a Strategy",
+          "description": "Welcome to Composition I: Writing with a Strategy! In this course, you will focus on three main topics: writing strategies, writing style, format and grammar, and editing and revising text. This course consists of an introduction and five sections aligned to the three main topics. The sections address understanding purpose and audience, writing strategies and techniques, format, style, structure, and grammar, editing and revision strategies, and constructive feedback. Each section includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to check your learning, practice, and show how well you understand course content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to gain proficiency in the five competencies that will be covered in the final assessment. If you have no prior knowledge or experience, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "The individual writes with purpose for a given context and target audience.",
+            "The individual incorporates writing strategies and techniques for written communication.",
+            "The individual constructs a written document with correct format, style, structure, and grammar.",
+            "The individual formulates a strategy for editing and revising written text.",
+            "The individual composes constructive feedback of written texts."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Integrated Physical Sciences",
+          "description": "This course provides students with an overview of the basic principles and unifying ideas of the physical sciences: physics, chemistry, and earth sciences. Course materials focus on scientific reasoning and practical, everyday applications of physical science concepts to help students integrate conceptual knowledge with practical skills.",
+          "competency_bullets": [
+            "The graduate describes the nature and process of science.",
+            "The graduate examines applications of physics including fundamental concepts such as forces, motion, energy, and waves.",
+            "The graduate examines applications of key chemistry concepts including the structure of matter and the behavior and conservation of matter in chemical reactions.",
+            "The graduate describes the underlying organization, interactions, and processes within the Earth system including the Earth's structure and atmosphere, and Earth's interactions within the solar system."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Communication: Connecting with Others",
+          "description": "Welcome to Introduction to Communication: Connecting with Others! It may seem like common knowledge that communication skills are important, and that communicating with others is inescapable in our everyday lives. While this may appear simplistic, the study of communication is actually complex, dynamic, and multifaceted. Strong communication skills are invaluable to strengthening a multitude of aspects of life. Specifically, this course will focus on communication in the professional setting, and present material from multiple vantage points, including communicating with others in a variety of contexts, across situations, and with diverse populations. Upon completion, you will have a deeper understanding of both your own and others’ communication behaviors, and a toolbox of effective behaviors to enhance your experience in the workplace.",
+          "competency_bullets": [
+            "The learner implements appropriate communication styles based on audience and setting.",
+            "The learner uses communication strategies for managing conflict.",
+            "The learner uses communication strategies to influence others."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Global Arts and Humanities",
+          "description": "This is a Global Arts and Humanities course that contains three modules with corresponding lessons. This course is an invitation to see the world through the humanities, examine the humanities during the Information Age, and explore the global origins of music—essentially questioning what makes us human, and how people are connected across culture and time. Each module includes learning opportunities through readings, videos, audio, and other relevant resources. Assessment activities with feedback also provide opportunities to practice and check learning. With no prior knowledge or experience, a learner can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "The learner analyzes diverse voices, ideas, perspectives, and cultural interactions through the lens of the humanities.",
+            "The learner analyzes the humanities during the Information Age.",
+            "The learner analyzes how music shapes and is shaped by diverse cultures and perspectives."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Chemistry",
+          "description": "Introduction to Chemistry provides students with opportunities to examine the structure of the atom, study periodic trends, analyze the structure of molecules and their properties, describe the importance of common functional groups, use balanced chemical equations, identify types of chemical reactions and predict products, examine intermolecular forces and describe their impact on the properties of substances, study the properties of acids, bases, and buffer systems, and understand the relevance of chemistry in the world around us.",
+          "competency_bullets": [
+            "The learner determines the electronic structure of atoms and periodic trends to compare the properties of various substances.",
+            "The learner explains how chemical bonds and electron orientation impact the structures and behavior of molecules to understand the composition of matter.",
+            "The learner uses chemical equations to calculate quantities associated with a reaction.",
+            "The learner identifies the properties of acids, bases, and buffer systems."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Anatomy and Physiology I with Lab",
+          "description": "This is Anatomy and Physiology I, a six-section, 4 CU course that enables students to develop an understanding of the relationships between the structures and function of the integumentary, skeletal, muscular, nervous and endocrine systems in the human body. This course will involve laboratory activities, simulated dissections, textbook material, models, and diagrams. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the four competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 40–60 hours on the course content.",
+          "competency_bullets": [
+            "The learner describes the structural and basic functional organization of the human body and the terminology used to describe the orientation of bodily structures.",
+            "The learner describes the structures and physiological functions of the integumentary system and the connections to complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the skeletal system and the connections to complex systems in the human body.",
+            "The learner analyzes the structures and physiological functions of the muscular system and the connections to complex systems in the human body.",
+            "The learner analyzes the structures and physiological functions of the nervous system and sensory organs and the connections to complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the endocrine system and its regulation of complex systems in the human body."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Psychology",
+          "description": "In this course, students will develop an understanding of psychology and how it helps them better understand others and themselves. Students will learn general theories about psychological development, the structure of the brain, and how psychologists study behavior. They will gain an understanding of both normal and disordered psychological behaviors, as well as general applications of the science of psychology in society (such as personality typing and counseling).",
+          "competency_bullets": [
+            "The graduate explains the biological perspectives of psychology.",
+            "The graduate explains the theories of learning and memory.",
+            "The graduate explains the concepts of personality development and social psychology.",
+            "The graduate identifies psychological disorders and treatment methods.",
+            "The graduate explains the foundations of psychology."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "World History: Diverse Cultures and Global Connections",
+          "description": "This is World History: Diverse Cultures and Global Connections. In this course, you will focus on three main topics—cultural and religious diversity; pandemics; and the relationship of empires and nation states—as well as the skills of identifying root causes, explaining causes and effects, and analyzing complex systems. This course consists of an introduction and four major sections. Each section includes learning opportunities through reading, images, videos, and other relevant resources. Assessment activities with feedback also provide opportunities to practice and check how well you understand the content. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the four competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "The learner differentiates among diverse cultural and religious customs and practices.",
+            "The learner analyzes the role of human actions in the spread of disease.",
+            "The learner explains the factors that contributed to the rise and fall of empires.",
+            "The learner explains the factors that contributed to the development of nation states."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Applied Healthcare Statistics",
+          "description": "Applied Healthcare Probability and Statistics is designed to help develop competence in the fundamental concepts of basic mathematics, introductory algebra, and statistics and probability. These concepts include basic arithmetic with fractions and signed numbers; introductory algebra and graphing; descriptive statistics; regression and correlation; and probability. Statistical data and probability are now commonplace in the healthcare field. This course will help candidates make informed decisions about which studies and results are valid, which are not, and how those results affect your decisions. This course will give candidates background in what constitutes sound research design and how to appropriately model phenomena using statistical data. Additionally, this course guides candidates in calculating simple probabilities based on events which occur in the healthcare profession. This course will prepare candidates for studies at WGU, as well as in the healthcare profession.",
+          "competency_bullets": [
+            "The graduate applies the operations, processes, and procedures of basic arithmetic to solve expressions.",
+            "The graduate applies the operations, processes, and procedures of fractions, decimals, and percentages to evaluate quantitative expressions.",
+            "The graduate applies the operations, processes, and procedures of basic algebra to evaluate quantitative expressions, and to solve equations and inequalities.",
+            "The graduate evaluates categorical and quantitative data pertaining to a single variable using appropriate graphical displays and numerical measures.",
+            "The graduate evaluates the relationship between two variables through interpretation of visual displays and numerical measures.",
+            "The graduate evaluates the relationship between two quantitative variables through correlation and regression.",
+            "The graduate applies principles and methods of probability-based mathematics to explain and solve problems."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Anatomy and Physiology II with Lab",
+          "description": "This is Anatomy and Physiology II, a six section, four CEU course that enables students to develop an understanding of the relationships between the structures and functions of the cardiovascular, respiratory, digestive, urinary, reproductive, and lymphatic systems in the human body. This course will involve laboratory activities, simulated dissections, textbook material, models, and diagrams. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the four competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 40–60 hours on the course content.",
+          "competency_bullets": [
+            "The learner describes the structures and physiological functions of the cardiovascular system and the connections to complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the respiratory system and the connections to complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the digestive system and the connections to metabolism and complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the urinary system and the connections to complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the reproductive system and the connections to complex systems in the human body.",
+            "The learner describes the structures and physiological functions of the lymphatic system, immune response, and the connections to complex systems in the human body."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Microbiology with Lab: A Fundamental Approach",
+          "description": "Microbiology with Lab: A Fundamental Approach explores the science that microorganisms are everywhere, and they have positive and negative effects on the community. The course examines the structure and function of microorganisms, disease transmission and progression, and immune responses and other interventions, and it identifies key global diseases. The course consists of an introduction and four major sections. Each section includes learning opportunities through readings, videos, and other relevant resources. Assessment activities with feedback also provide opportunities for students to check their learning, practice, and show how well they understand course content. To assist students in developing an applied, evidence-based understanding of microbiology, this course integrates several lab experiments to help determine the specific characteristic of an unknown microbial sample and a treatment plan. Because the course is self-paced, students may move through the material as quickly or as slowly as needed to gain proficiency in the four competencies that will be covered in the final assessment. Students who have no prior knowledge of or experience with this topic can expect to spend 48–60 hours on the course content. There are no prerequisites for this course.",
+          "competency_bullets": [
+            "The learner analyzes structures and characteristics of microorganisms that inform etiologies of symptoms and diseases.",
+            "The learner analyzes microbial transmission and progression and the care needed based on symptoms and environment.",
+            "The learner analyzes methods to prevent and treat infectious diseases and influence positive community outcomes.",
+            "The learner analyzes disease characteristics to inform individuals about etiologies and treatments."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Introduction to Sociology",
+          "description": "This course teaches students to think like sociologists, or, in other words, to see and understand the hidden rules, or norms, by which people live, and how they free or restrain behavior. Students will learn about socializing institutions, such as schools and families, as well as workplace organizations and governments. Participants will also learn how people deviate from the rules by challenging norms and how such behavior may result in social change, either on a large scale or within small groups.",
+          "competency_bullets": [
+            "The graduate explains how societies are stratified across various social statuses.",
+            "The graduate explains reciprocal relationships between social institutions and individuals.",
+            "The graduate explains major perspectives and key contributors to the development of sociology.",
+            "The graduate identifies components of culture and socialization as they relate to individuals in society.",
+            "The graduate explains the constructs of conformity to and deviance from social norms."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Applied Algebra",
+          "description": "Applied Algebra is designed to help you develop competence in working with functions, the algebra of functions, and using some applied properties of functions. You will start learning about how we can apply different kinds of functions to relevant, real-life examples. From there, the algebra of several families of functions will be explored, including linear, polynomial, exponential, and logistic functions. You will also learn about relevant, applicable mathematical properties of each family of functions, including rate of change, concavity, maximizing/minimizing, and asymptotes. These properties will be used to solve problems related to your major and make sense of everyday living problems. Students should complete Applied Probability and Statistics or its equivalent prior to engaging in Applied Algebra.",
+          "competency_bullets": [
+            "The learner interprets the real-world meaning of various functions based on notation, graphical representations, and data representations.",
+            "The learner applies linear functions and their properties to real-world problems.",
+            "The learner applies polynomial functions and their properties to real-world problems.",
+            "The learner applies exponential functions and their properties to real-world problems.",
+            "The learner applies logistic functions and their properties to real-world problems.",
+            "The learner analyzes graphical depictions of real-world situations using functional properties.",
+            "The learner verifies the validity of a given model."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Human Growth and Development",
+          "description": "This is Human Growth and Development, a three-module course that examines the entire human lifetime, from conception to death. Presented chronologically, the course focuses on three key areas: physical, cognitive, and psychosocial growth, along with other important issues such as cultural influences, emotions, and resilience. Because the course is self-paced, you may move through the material as quickly or as slowly as you need to, with the goal of demonstrating proficiency in the four competencies covered in the final assessment. If you have no prior knowledge of this material, you can expect to spend 30-40 hours on the course content.",
+          "competency_bullets": [
+            "The learner explains physical, cognitive, and psychosocial development from conception through early childhood.",
+            "The learner explains the influence of emotions and cultural perspectives and practices on psychosocial development and behavior from birth through early childhood.",
+            "The learner explains physical, cognitive, and psychosocial development from middle childhood through adolescence.",
+            "The learner explains the influence of emotions on psychosocial development and behavior from middle childhood through adolescence.",
+            "The learner explains physical, cognitive, and psychosocial development from early adulthood to the end of life.",
+            "The learner explains the influence of emotions on psychosocial development and behavior from early adulthood to the end of life."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Pathophysiology",
+          "description": "Pathophysiology is an overview of the pathology and treatment of diseases in the human body, tissues, glands and membranes, the integumentary system, the sensory system, skeletal and muscular systems, the digestive system, blood, vessels and circulation, lymphatic system, immunity and disease, heart and respiratory system, nervous, urinary and endocrine systems, and male and female reproductive systems. Prerequisites include all prior courses in this programmatic sequence.",
+          "competency_bullets": [
+            "The learner describes basic cellular responses and adaptation related to genetics, injury, aging and congenital anomalies.",
+            "The learner describes pathogenesis, manifestations, complications and variations of the muscular, skeletal, and integumentary systems.",
+            "The learner describes pathogenesis, manifestations, complications and variations of the neurologic systems.",
+            "The learner describes pathogenesis, manifestations, complications and variations of the cardiovascular and lymphatic systems.",
+            "The learner describes pathogenesis, manifestations, complications and variations of the respiratory systems.",
+            "The learner describes pathogenesis, manifestations, complications and variations of the gastrointestinal and renal systems.",
+            "The learner describes pathogenesis, manifestations, complications and variations of the endocrine and reproductive systems."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Prelicensure Nursing",
+      "courses": [
+        {
+          "title": "Health and Wellness Through Nutritional Sciences",
+          "description": "The Health and Wellness Through Nutritional Science course prepares nursing students to learn the basic principles of nutrition, nutrition throughout the life cycle, nutrition related to weight management and physical health, and nutrition related to patient conditions. Students will learn how nutrition influences a patient's overall health status across the life span. Co-requisites: D313, D311 and C273 Prerequisite Courses: All prelicensure nursing curriculum courses from previous terms.",
+          "competency_bullets": [
+            "The learner identifies basic principles of nutrition science.",
+            "The learner identifies principles of nutrition throughout the life cycle.",
+            "The learner identifies community nutrition patterns and their relationship to overall health.",
+            "The learner identifies basic principles of clinical nutrition."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Medical Dosage Calculations and Pharmacology",
+          "description": "Medical Dosage Calculations and Pharmacology introduces an in-depth nursing approach to medication administration concepts, legal & ethical principles, pharmacological principles, variety of drug classifications, complementary & alternative therapies needed to care for diverse patients across the lifespan. Co-requisites are the following: C957, D202, D236, and D439. Prerequisite Courses: All prelicensure nursing curriculum courses from previous terms.",
+          "competency_bullets": [
+            "The learner identifies regulations, standards, policies, and ethical considerations for preparing and administering drugs to promote legal, safe, and ethical pharmacologic interventions.",
+            "The learner distinguishes between terms, drug classes, drug names, therapeutic effects, and side effects of pharmacologic agents to provide safe, effective medication administration.",
+            "The learner calculates medication dosages based on patient information to ensure safe medication administration.",
+            "The learner applies common pharmacologic concepts to ensure the right patient receives the right dose of the right medication at the right time via the right route.",
+            "The learner explains how to administer medications effectively, appropriately, and safely to maintain the quality of medication therapy.",
+            "The learner identifies the appropriate use of technology to administer drugs and maintain the quality of medication therapy effectively, appropriately, and safely."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Foundations of Nursing",
+          "description": "Foundations of Nursing introduces students to the nursing process, scope of practice, clinical judgment model and fundamental concepts of holistic nursing practice that will serve the needs of diverse adult patients across the lifespan. The course will focus on medical terminology, legal/ethical issues, basic care and comfort, oxygenation, safety & infection control, health and wellness, fluid & electrolytes, death and dying, therapeutic communication, patient education & advocacy. Co-requisites: C957, D202, D236, and D441. Prerequisite Courses: All prelicensure nursing curriculum courses from previous terms.",
+          "competency_bullets": [
+            "The learner identifies the steps in the nursing process and clinical judgment model for planning patient care.",
+            "The learner identifies principles of patient education to respond to the learning needs of diverse patients and families.",
+            "The learner recognizes how patient care plans ensure awareness, sensitivity, and respect for cultural differences, beliefs, and values.",
+            "The learner identifies principles of grief, loss, and dying for assessing the needs of patients across the lifespan.",
+            "The learner uses accurate medical terminology, symbols, and abbreviations in communicating medical information verbally, technologically, and in writing.",
+            "The learner applies decision-making skills that reflect a professional and ethical framework within the scope of nursing practice to provide safe and quality nursing care.",
+            "The learner identifies principles of hygiene, comfort, and mobility for assessing the needs of patients across the life span.",
+            "The learner identifies principles of health and wellness, stress and coping, and rest and sleep for assessing the needs of patients across the lifespan.",
+            "The learner identifies principles of nutrition, elimination, fluid, and electrolytes for assessing the needs of patients across the lifespan.",
+            "The learner identifies principles of safety and infection control when providing care to patients across the lifespan.",
+            "The learner identifies principles of vital signs and oxygenation for assessing the needs of patients across the life span.",
+            "The learner applies therapeutic communication to promote patient safety and positive patient outcomes."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "The following section includes the areas of study in the program, with their associated courses. Your specific",
+          "description": "learning resources and level of instructional support will vary based on the individual competencies you bring to the program and your confidence in developing the knowledge, skills, and abilities required in each area of the degree. The Degree Plan and learning resources are dynamic, so you need to review your Degree Plan and seek the advice of your mentor regarding the resources before you purchase them. Prelicensure Nursing Basic Nursing Skills Basic Nursing Skills will introduce foundational principles of nursing process and the clinical judgement model, health assessment techniques, and communication skills needed to care for diverse adult patients across the lifespan. Skills will focus on the concepts of vital signs, medication administration, infection control, nutrition, elimination, mobility, oxygenation, and skin integrity. Students are required to be successful on lab assessments to progress to Adult Health1 clinical. Co-requisites: D443 and D444. Prerequisite Courses: All prelicensure nursing curriculum courses from previous terms.",
+          "competency_bullets": [
+            "The learner performs health assessment strategies and techniques on diverse adult patients to gather information.",
+            "The learner describes the appropriate health care strategies and techniques for diverse adult patient specimen collection.",
+            "The learner performs the steps of the nursing process and clinical judgement model to support diverse adult patient needs.",
+            "The learner develops a plan of care for diverse adult patients using the nursing process and clinical judgement model.",
+            "The learner demonstrates the use of appropriate sterile techniques and equipment to support infection control.",
+            "The learner demonstrates proper personal hygiene practices for diverse adult patient activities of daily living.",
+            "The learner performs the appropriate health care strategies and techniques to support diverse adult patient mobility needs.",
+            "The learner assesses the appropriate health care strategies and techniques to support diverse adult patient nutritional needs.",
+            "The learner performs the appropriate health care strategies and techniques to support diverse adult patient oxygenation, ventilation, and gas exchange needs.",
+            "The learner performs the appropriate health care strategies and techniques to support diverse adult patient medication administration needs.",
+            "The learner performs the appropriate health care strategies and techniques to support diverse adult patient elimination needs."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Health Assessment",
+          "description": "The Health Assessment course focuses on concepts and skills necessary to collect a comprehensive health history and perform a head-to-toe and focused assessments on diverse patients across the lifespan. The emphasis will be to differentiate between normal and abnormal findings of various body systems such as the following: integumentary, head & neck, eyes & ears, respiratory, cardiovascular, gastrointestinal, renal, musculoskeletal, nervous, and reproductive systems. Corequisites are D442 and D444. Prerequisite Courses: All prelicensure nursing curriculum courses from previous terms.",
+          "competency_bullets": [
+            "The learner identifies health cues during an assessment of a patient’s health history and mental status to differentiate between normal or abnormal findings across the life span.",
+            "The learner analyzes clinical scenarios for heath cues to determine the appropriate focused assessment across the life span.",
+            "The learner identifies health cues during a physical assessment of the integumentary system to differentiate between",
+            "normal or abnormal findings across the life span",
+            "The learner identifies health cues during a physical assessment of the head, face, neck, eyes, ears, nose, mouth, and throat to differentiate between normal or abnormal findings across the life span.",
+            "The learner identifies health cues during a physical assessment of the respiratory system to differentiate between normal or abnormal findings across the life span.",
+            "The learner identifies health cues during a physical assessment of the cardiovascular, peripheral vascular, and lymphatic systems to differentiate between normal or abnormal findings across the life span.",
+            "The learner identifies health cues during a physical assessment of the abdomen and gastrointestinal and renal systems to differentiate between normal or abnormal findings across the life span.",
+            "The learner identifies health cues during a physical assessment of the musculoskeletal and nervous systems to differentiate between normal or abnormal findings across the life span.",
+            "The learner identifies health cues during a physical assessment of the reproductive system to differentiate between normal or abnormal findings across the life span.",
+            "The learner performs a head-to-toe physical assessment to identify health cues to differentiate between normal or abnormal findings across the life span."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Adult Health I",
+          "description": "Adult Health I prepares students to provide safe, equitable, high-quality medical surgical nursing care for diverse adult populations across the life span in various healthcare settings. This includes health promotion and management of common conditions. This course explores how social determinants of health impact health risk and outcome. This course will focus on medical surgical nursing care related to head & neck, skin, inflammation, infection, fluid & electrolytes, respiratory, gastrointestinal, hepatic, genitourinary, and reproductive systems. The nursing process and the clinical judgment model will be used as the foundation to navigate the management of care for patients. A variety of populations and settings are used in the experiential learning components of this course. Co-requisite: D443. Complete all BSPRN courses from previous terms & D442 or D457.",
+          "competency_bullets": [
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults experiencing common alterations of the head, eyes, ears, nose, throat, and the integumentary system.",
+            "The learner describes professionalism, therapeutic communication, teaching, and learning strategies to use with diverse adult patients.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults experiencing common fluid and electrolyte and acid-base imbalances and alterations in respiratory functions.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults experiencing common alterations in genitourinary, reproductive, gastrointestinal, and hepatic functions.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults experiencing pain, inflammation, immunity, and infection.",
+            "The learner recognizes the cues of diverse adult patients' body systems using the clinical judgment model.",
+            "The learner recognizes the cues of diverse adult patients' conditions to prepare a plan of care using the nursing process.",
+            "The learner explains the importance of collaborating with interdisciplinary teams to promote safety, quality, and improved patient outcomes.",
+            "The learner explains how to provide pharmacological care to diverse adult patients using safe, person-centered practices based on principles of medication error prevention.",
+            "The learner describes strategies to promote health and well-being."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Intermediate Nursing Skills",
+          "description": "Intermediate Nursing Skills will build on basic nursing skill concepts to develop intermediate medical surgical nursing practice, including peripheral intravenous access, blood administration, airway management, perioperative and postoperative care, and wound care management. The course focuses on nursing care of both adult and pediatric populations, including a focus on the care of women and the maternal care setting. Students will use simulation to apply the clinical judgement model to various diverse populations in various care settings. Students are required to be successful on course performance assessments to progress to Adult Health II clinical.Co-requisites: D446 & D447. Prerequisite Courses: All prelicensure nursing curriculum courses from previous terms.",
+          "competency_bullets": [
+            "The learner performs the appropriate patient management strategies and techniques to manage the care of diverse adult patients.",
+            "The learner performs the appropriate health care strategies and techniques to support diverse adult patients' intravenous therapy and blood administration needs.",
+            "The learner performs the appropriate health care strategies and techniques to support diverse adult patient airway management needs.",
+            "The learner develops a perioperative plan of care for diverse adult patients using the nursing process and clinical judgment model.",
+            "The learner performs the steps of the nursing process and clinical judgment model to support diverse maternity and pediatric patients’ needs.",
+            "The learner identifies principles of in-home equipment education to respond to the learning needs of diverse patients and families."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Adult Health II",
+          "description": "Adult Health II prepares students to provide safe, equitable, high quality medical surgical nursing care for diverse adult populations across the lifespan in various health care settings. This includes health promotion and management of both acute and chronic conditions. This course explores how social determinants of health impact health risk and outcome. This course will focus on medical surgical nursing care related to perioperative nursing, neurological, hematological, renal, cardiovascular, endocrine, and musculoskeletal systems. The nursing process and clinical judgment model will be used for clinical decisionmaking and fostering health promotion and maintenance. A variety of populations and settings are used in the experiential learning components of this course. Co-requisite: D447. Prerequisite Courses: All prelicensure nursing curriculum courses from previous terms and D445.",
+          "competency_bullets": [
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults needing perioperative and post-operative care.",
+            "The learner collaborates with interdisciplinary teams to promote safety, quality, and improved patient outcomes.",
+            "The learner recognizes the cues of diverse adult patients' conditions to provide pharmacological care using safe,",
+            "person-centered practices based upon principles of medication error prevention.",
+            "The learner applies strategies to promote the health and well-being of diverse adult patients.",
+            "The learner applies professionalism, therapeutic communication, teaching, and learning strategies to use with diverseadult patients.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults experiencing common alterations in cardiovascular function.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults experiencing common alterations in endocrine function.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults experiencing common alterations in hematologic function and oncologic conditions.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults experiencing common alterations in musculoskeletal function.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults experiencing common alterations in neurologic function.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults experiencing common alterations in renal function.",
+            "The learner analyzes the cues of diverse adult patients' body systems using the clinical judgment model.",
+            "The learner analyzes cues of diverse adult patients' conditions to determine the effectiveness of the plan of care using the nursing process."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Women's and Children's Nursing",
+          "description": "Womens and Childrens Nursing prepares students to provide safe, equitable, high-quality nursing care, pharmacological care, and emotional support for diverse women and pediatric populations. This course focuses on antepartum, intrapartum, postpartum, neonatal clinical nursing, and women's health. This course builds on growth and development of children, nursing care for children and adolescents with acute and chronic alterations of the respiratory, cardiovascular, hematologic, endocrine, reproductive, gastrointestinal, renal, neurologic, musculoskeletal, and integumentary systems. This course explores how social determinants of health impact health risk and outcomes in women and pediatric populations. A variety of populations and settings are used in the experiential learning components of this course. Co-requisites: D445 and D446. Prerequisite Courses: All prelicensure nursing curriculum courses from previous terms and D445.",
+          "competency_bullets": [
+            "The learner applies the clinical judgment model to person-centered nursing care for the health needs specific to women.",
+            "The learner applies the clinical judgment model to recommend health promotion strategies for diverse pediatric patients based on growth and development stages.",
+            "The learner responds to women's and children's needs using the clinical judgment model.",
+            "The learner performs management of care for women and children using the nursing process.",
+            "The learner collaborates with interdisciplinary teams to promote safety, quality, and improved patient outcomes for women and children.",
+            "The learner provides pharmacological care for women and children using safe, person-centered practices based upon principles of medication error prevention.",
+            "The learner integrates strategies to promote the health and well-being of diverse women and children's patients.",
+            "The learner applies professionalism, therapeutic communication, teaching, and learning strategies with women and children in a healthcare setting.",
+            "The learner applies the clinical judgment model to person-centered nursing care for antepartum, intrapartum, and postpartum women.",
+            "The learner applies the clinical judgment model to person-centered nursing care for newborns during the neonatal period.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse pediatric patients experiencing common genetic disorders and alterations in immune, endocrine, and hematologic function.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse pediatric patients experiencing common alterations in respiratory and cardiovascular function.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse pediatric patients experiencing communicable and non-communicable diseases and common alterations in integumentary function.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse pediatric patients experiencing common alterations in reproductive, renal, gastrointestinal, and hepatic function.",
+            "The learner applies the clinical judgment model based on person-centered nursing care of diverse pediatric patients experiencing common alterations in neurologic, sensory, and musculoskeletal function.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse pediatric patients experiencing mental health disorders."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Psychiatric and Mental Health Nursing",
+          "description": "Psychiatric and Mental Health Nursing prepares students to provide safe, equitable, high-quality care using modern concepts of psychiatric and mental health nursing. The student will utilize therapeutic communication to a diverse population of patients including those with maladaptive behaviors through the utilization of the nursing process by applying the principles of psychiatric and mental healthcare and the clinical judgment model. This course explores the nurse-client relationship, pharmacological management, cognitive conditions, bipolar and thought conditions, personality disorders, substance abuse, eating disorders, and self-harm. A variety of populations and settings are used in the experiential learning components of this course. Co-requisites: D450. Prerequisite Courses: All prelicensure nursing curriculum courses from previous terms and D445.",
+          "competency_bullets": [
+            "The learner applies the principles of the nurse-client relationship to person-centered nursing care of diverse patients experiencing mental health conditions using the clinical judgment model.The learner performs management of care in a psychiatric and mental health setting using the nursing process.",
+            "The learner collaborates with interdisciplinary teams in a psychiatric and mental health setting to promote safety, quality, and improved patient outcomes.",
+            "The learner provides pharmacological care to diverse patients using safe, person-centered practices based upon principles of medication error prevention in a psychiatric and mental health setting.",
+            "The learner integrates strategies to promote the health and well-being of diverse patients in a psychiatric and mental health setting.",
+            "The learner applies professionalism, therapeutic communication, teaching, and learning strategies with diverse patients in a psychiatric and mental health setting.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults experiencing common neurobiology and psychobiology conditions.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults needing psychopharmacological intervention.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults experiencing cognitive disorders.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults experiencing bipolar and thought disorders.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults experiencing personality disorders.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults experiencing substance abuse, eating disorders, and risk of self-harm.",
+            "The learner performs the steps of the nursing process and clinical judgment model to support diverse psychiatric mental health patients' needs.",
+            "The learner responds to diverse patients’ needs in a psychiatric and mental health setting using the clinical judgment model."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Community Health and Population-Focused Nursing",
+          "description": "Community health and population focused nursing concentrates on the theory and concepts of community, public and global health nursing that impact diverse communities. Students learn the role of the community health nurse, learn to assess the community’s healthcare needs, available resources, epidemiology, substance abuse, disaster management, and how social determinants of health impact community and public health risk and outcomes. A variety of populations and settings are used in the experiential learning components of this course. Co-requisite: D449 Prerequisite Courses: All prelicensure nursing curriculum courses from previous terms and D445.",
+          "competency_bullets": [
+            "The learner differentiates U.S. and global healthcare systems and how they facilitate fiscally responsible and equitable person-centered care.",
+            "The learner performs management of care in a community health and population-focused setting using the nursing process.",
+            "The learner collaborates with interdisciplinary teams in a community health and population-focused setting to promote safety, quality, and improved patient outcomes.",
+            "The learner provides pharmacological care to diverse patients using safe, person-centered practices based upon principles of medication error prevention in a community health and population-focused setting.",
+            "The learner integrates strategies to promote the health and well-being of diverse patients in a community health and population-focused setting.",
+            "The learner applies professionalism, therapeutic communication, teaching, and learning strategies with diverse patients in a community health and population-focused setting.",
+            "The learner analyzes public healthcare policies, federal and state laws, and the resulting impact on patients and healthcare delivery.",
+            "The learner analyzes principles and priorities of population health, including social determinants of health and their relationship to health outcomes and healthcare costs.",
+            "The learner analyzes factors influencing nursing in community and population health.",
+            "The learner applies health promotion strategies for diverse community populations.",
+            "The learner applies principles of community assessment.",
+            "The learner analyzes environmental health, and disaster management plans to respond to communities experiencing natural and human-caused emergencies and disasters.",
+            "The learner applies principles of epidemiology to the assessment of the healthcare needs of global communities.",
+            "The learner responds to diverse patients’ needs in a community health and population-focused setting using the clinical judgment model."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Advanced Nursing Skills",
+          "description": "Advanced Nursing Skills will build on intermediate skills and focus on advanced skills related to critical care nursing practice, including closed chest drainage systems, electrocardiograms (EKGs), palliative care, ventilators, disaster management and transition to practice. Clinical judgement and problem solving are emphasized in the assessment of critically ill patients and prioritizing patients’ needs and nursing interventions. Students are required to be successful on course performance assessments to progress to Adult Health III clinical. Co-requisites: D454 and D455. Prerequisite Courses: All prelicensure nursing curriculum courses from previous terms.",
+          "competency_bullets": [
+            "The learner performs the appropriate healthcare strategies and techniques to support the critical care skills needed to care for diverse adult patients.",
+            "The learner performs the appropriate healthcare strategies and techniques to support diverse adult patients needing end-oflife care.",
+            "The learner creates a plan in response to emerging care situations.",
+            "The learner performs the appropriate strategies and techniques to engage in interprofessional education with interdisciplinary teams.",
+            "The learner performs the steps of the nursing process and clinical judgment model to prioritize diverse adult patient care."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Adult Health III",
+          "description": "Adult Health III prepares students to provide safe, equitable, high quality complex medical surgical nursing care for diverse adult populations across the lifespan in various health care settings. This includes health promotion and management of both acute and chronic conditions. This course explores how social determinants of health impact health risk and outcome. This course will focus on caring for patients with potentially life-threatening alterations of the respiratory, cardiovascular, endocrine, and neurologic, renal, hepatic systems, end of life care (palliative), shock and transplants. Clinical judgement and problem solving are emphasized in the assessment of critically ill patients and prioritizing patient ‘s needs and nursing interventions. A variety of populations and settings are used in the experiential learning components of this course. Co-requisites: D455. Prerequisites: All Nursing BSN Term courses from previous terms & D453.",
+          "competency_bullets": [
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults experiencing acute alterations in metabolism and endocrine function.",
+            "The learner generates solutions for diverse adult patients' conditions using the clinical judgment model.",
+            "The learner prioritizes actions to manage the plan of care for diverse adult patients' conditions using the nursing process.",
+            "The learner analyzes the impact of collaborating with a healthcare team to promote safety, quality, and improved patient outcome.",
+            "The learner analyzes cues of diverse adult patients' conditions to determine the effectiveness of pharmacological care using safe, person-centered practices based on principles of medication error prevention.",
+            "The learner analyzes the impact of strategies to promote the health and well-being of diverse adult patients.",
+            "The learner analyzes the impact of professionalism, therapeutic communication, teaching, and learning strategies used with diverse adult patients.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults experiencing acute alterations in renal and hepatic function.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults experiencing acute alterations in cardiovascular function.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults experiencing acute alterations in respiratory function.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults experiencing acute alterations in neurologic function.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults experiencing shock and burns.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults experiencing acute trauma and a need for a transplant.",
+            "The learner evaluates disaster management principles during emerging care situations.",
+            "The learner applies the clinical judgment model to person-centered nursing care of diverse adults and families experiencing end-of-life situations."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Professional Nursing Role Transition",
+          "description": "The Professional Nursing Role Transition course builds on the previous knowledge gained in all other nursing courses. The emphasis of this course is placed on the personal and professional strategies needed to make the transition from student to graduate nurse by highlighting the role and skills of bedside nurse leaders. The course will review content related to leadership and management, foundational nursing, advanced clinical, medical-surgical, pediatric, women’s, and mental health concepts. The students will complete a professional portfolio that showcases their accomplishments, knowledge, and skills throughout the program. A variety of populations and settings are used in the experiential learning components of this course. Co-requisite: D454. Prerequisite Courses: All prelicensure nursing curriculum courses from previous terms and D453.",
+          "competency_bullets": [
+            "The learner applies leadership and management concepts when providing care to diverse patients across the life span.",
+            "The learner evaluates the outcomes of actions to manage the plan of care for diverse patients' conditions using the nursing process.",
+            "The learner evaluates the impact of collaborating with interdisciplinary teams to promote safety, quality, and improved patient outcomes.",
+            "The learner evaluates outcomes of pharmacological care using safe, person-centered practices based upon principles of medication error prevention.",
+            "The learner evaluates the impact of strategies to promote the health and well-being of diverse patients.",
+            "The learner evaluates the impact of professionalism, therapeutic communication, teaching, and learning strategies to use with diverse patients.",
+            "The learner applies foundational nursing concepts when providing care to diverse patients across the life span.",
+            "The learner applies advanced clinical concepts when providing care to diverse patients across the life span.",
+            "The learner applies medical surgical concepts when providing care to diverse patients across the life span.",
+            "The learner applies pediatric nursing concepts when providing care to diverse patients across developmental stages.",
+            "The learner applies women’s nursing concepts when providing care to diverse patients across the life span.",
+            "The learner applies psychiatric mental health nursing concepts when providing care to diverse patients across the life span.",
+            "The learner creates a professional portfolio that includes evidence of a newly prepared nursing baccalaureate graduate.",
+            "The learner evaluates outcomes for diverse patients' conditions using the clinical judgment model."
+          ],
+          "competency_available": true
+        }
+      ]
+    },
+    {
+      "group": "Nursing Core",
+      "courses": [
+        {
+          "title": "Information Technology in Nursing Practice",
+          "description": "Information Technology in Nursing Practice provides a basic overview of information technology as it relates to the baccalaureate-prepared nurse. It is a foundational overview of nursing informatics with an emphasis on developing basic competency. This course teaches students that nursing informatics synthesizes nursing science, information science, and computer science through health applications to support decision-making in a dynamic healthcare environment. All prior courses in the sequence for this program serve as prerequisites for this course.",
+          "competency_bullets": [
+            "The learner explains how data factors into decision-making to promote high-quality patient healthcare.",
+            "The learner identifies barriers to the use of informatics to improve patient outcomes and advance health literacy.",
+            "The learner differentiates among health information systems and technologies that support decision-making.",
+            "The learner evaluates health information technology data in nursing practice to monitor and improve patient outcomes.",
+            "The learner describes the legal and ethical implications related to informatics in the healthcare environment."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Intrapersonal Leadership and Professional Growth",
+          "description": "Intrapersonal Leadership and Professional Growth fosters the development of professional identity. Building on the knowledge, skills, and attitudes gained through nursing practice, students in this course will explore the relationship of theories, professional competencies, standards of leadership, education, and professionalism. The course content will cover development of a nurse as a leader who is proficient in asserting control, influence, and power in professional and personal contexts.",
+          "competency_bullets": [
+            "The learner creates a personal development plan that fosters professional engagement and personal growth.",
+            "The learner adopts strategies to increase resilience and self-care for the nurse in personal and professional situations.",
+            "The learner differentiates between nursing leadership and management principles across the healthcare environment for quality care delivery.",
+            "The learner explores leadership mindset including cultural competence, diversity, equity, and inclusion to positively influence patient care outcomes.",
+            "The learner applies leadership skills to influence professional practice in a healthcare environment."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Organizational Systems and Healthcare Transformation",
+          "description": "Course Description Organizational Systems and Healthcare Transformation covers foundational knowledge, skills, and attitudes toward organizational leadership within healthcare systems that can help students be successful. This course focuses on the concepts of patient safety, improvement science, fiscal responsiveness, quality of care, value-based care, and patient-centered care. Additional topics of quality science and innovation, systems redesign, and interprofessional roles assist the student in building necessary skills for healthcare transformation. All prior courses in the sequence for this program serve as prerequisites for this course.",
+          "competency_bullets": [
+            "The learner compares healthcare delivery models to facilitate value-based care, shared decision-making, and equitable patient-centered care.",
+            "The learner describes evidence-based continuous improvement strategies that improve patient care.",
+            "The learner compares current practice with patient safety standards to promote optimal patient outcomes.",
+            "The learner examines systems design in a high-reliability organization."
+          ],
+          "competency_available": true
+        },
+        {
+          "title": "Scholarship in Nursing Practice",
+          "description": "Scholarship in Nursing Practice teaches students how to design and conduct research to answer important questions about improving nursing practice and patient care delivery outcomes. This course introduces the basics of evidence-based practice, which students are expected to implement throughout their clinical experiences. Students of this course will graduate with more competence and confidence to become leaders in the healing environment.",
+          "competency_bullets": [
+            "The learner differentiates between quality improvement processes, evidence-based practice, and research.",
+            "The learner demonstrates knowledge of the process and outcomes of conducting a literature review.",
+            "The learner demonstrates an understanding of the ethics of nursing research particularly human subjects' protections, informed consent, and alignment with patient and family values and preferences.",
+            "The learner discriminates between evidence-based standards of practice and conventional practices to improve patient outcomes.",
+            "The learner describes the process of data collection, analysis, and implementation of evidence that can improve clinical practice from an interprofessional perspective."
+          ],
+          "competency_available": true
+        }
+      ]
+    }
+  ],
+  "capstone": null,
+  "cert_signals": [],
+  "family": null,
+  "anomaly_flags": []
+}
