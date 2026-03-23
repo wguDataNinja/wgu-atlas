@@ -189,6 +189,7 @@ class VersionDiffCard(BaseModel):
 # ---------------------------------------------------------------------------
 
 
+
 class SectionScope(str, Enum):
     """Explicit section intent for partitioning. Only set when structurally known upstream."""
     COURSE_OVERVIEW = "course_overview"
@@ -256,3 +257,93 @@ class PartitionResult(BaseModel):
 
     # Downstream safe-handling notes (disclosures, anomaly flags)
     notes: list[str] = []
+
+
+# ---------------------------------------------------------------------------
+# Fuzzy retrieval types (Session 04)
+# ---------------------------------------------------------------------------
+
+
+class RetrievalStopReason(str, Enum):
+    """Reason fuzzy retrieval stopped without producing candidates."""
+    PARTITION_FAILED = "partition_failed"
+    EMPTY_CANDIDATE_POOL = "empty_candidate_pool"
+    OFF_SECTION_CANDIDATES = "off_section_candidates"
+    SOURCE_FAMILY_EXHAUSTED = "source_family_exhausted"
+    MIXED_VERSION_BLOCKED = "mixed_version_blocked"
+    CLASSIFIER_UNUSABLE_NO_FALLBACK = "classifier_unusable_no_fallback"
+
+
+class ClassifierHint(BaseModel):
+    """Advisory-only output from the fuzzy-query structured classifier.
+
+    All fields are hints. None may override upstream deterministic scope.
+    """
+    query_class_hint: str | None = None          # "class_b" | "class_c" | "unknown"
+    entity_type_hint: str | None = None          # "course" | "program" | None
+    entity_code_hint: str | None = None          # possible code mention, if any
+    explicit_version_hint: str | None = None     # version string if explicitly stated
+    requested_section_hint: str | None = None    # section name if apparent
+    compare_intent: bool = False                 # true if user is comparing two things
+    unsupported_or_advising: bool = False        # true if advising/unsupported intent
+    confidence_notes: str | None = None          # plain-language notes from classifier
+
+
+class FuzzyRetrievalRequest(BaseModel):
+    """Typed input to the fuzzy retrieval layer.
+
+    Constructed after partition is established. The partition is binding —
+    retrieval must not broaden its scope fields.
+    """
+    raw_query: str
+    partition: PartitionResult           # upstream binding scope — must be status=OK
+    classifier_hint: ClassifierHint | None = None   # advisory; may be absent
+
+
+class RetrievalCandidate(BaseModel):
+    """A single candidate document returned from scoped retrieval."""
+    artifact_type: Literal[
+        "course_card",
+        "program_version_card",
+        "guide_section_card",
+        "version_diff_card",
+    ]
+    entity_code: str
+    version: str | None = None
+    source_family: SourceFamily
+    content_text: str                    # text used for indexing/retrieval
+    score: float = 0.0
+    rank_lexical: int | None = None
+    rank_embedding: int | None = None
+    rank_fused: int | None = None
+    source_object_identity: str          # stable identity for downstream evidence refs
+
+
+class RetrievalResult(BaseModel):
+    """Full typed output of the fuzzy retrieval layer (Session 04).
+
+    Suitable as input to Session 05 evidence-bundle construction.
+    Does not contain final answers.
+    """
+    raw_query: str
+    request: FuzzyRetrievalRequest | None = None
+
+    # Stop state — set when retrieval cannot produce a safe candidate set
+    stop_reason: RetrievalStopReason | None = None
+
+    # Classifier output (if classifier was invoked)
+    classifier_output: ClassifierHint | None = None
+    classifier_parse_error: bool = False
+    classifier_schema_error: bool = False
+    classifier_used_fallback: bool = False
+
+    # Retrieval candidate lists
+    lexical_candidates: list[RetrievalCandidate] = []
+    embedding_candidates: list[RetrievalCandidate] = []
+    fused_candidates: list[RetrievalCandidate] = []
+
+    # Final selected candidate set (top-k after fusion or lexical fallback)
+    selected_candidates: list[RetrievalCandidate] = []
+
+    # Diagnostics (for tests and traceability)
+    diagnostics: dict[str, Any] = {}
