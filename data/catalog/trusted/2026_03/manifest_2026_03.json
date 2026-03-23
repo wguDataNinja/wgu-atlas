@@ -1,0 +1,27 @@
+{
+  "catalog_date": "2026-03",
+  "generated": "2026-03-14",
+  "parser_version": "parse_catalog_v11.py (Step 4 copyright-break fix)",
+  "verification_status": "VERIFIED \u2014 raw AP scan 838/838, 0 fabricated",
+  "ap_scope": {
+    "unique_course_codes": 838,
+    "programs": 114,
+    "source": "course_index_v10.json (verified against raw text)",
+    "file": "courses_2026_03.csv"
+  },
+  "cert_scope": {
+    "unique_course_codes": 52,
+    "overlap_with_ap": 0,
+    "note": "Intentionally out of AP scope. Cert codes are structurally different from AP codes.",
+    "file": "certs_2026_03.csv",
+    "cert_programs": 16
+  },
+  "combined_total_unique": 890,
+  "frozen_source_files": [
+    "course_index_2026_03.json",
+    "sections_index_2026_03.json",
+    "degree_snapshots_2026_03.json",
+    "program_blocks_2026_03.json",
+    "program_index_2026_03.json"
+  ]
+}

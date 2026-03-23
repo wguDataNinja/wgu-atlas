@@ -1,0 +1,995 @@
+[
+  {
+    "transition": "2025-01\u21922025-02",
+    "from_catalog": "2025-01",
+    "to_catalog": "2025-02",
+    "severity_score": 347,
+    "course_churn": 158,
+    "courses_added_count": 110,
+    "courses_removed_count": 48,
+    "program_churn": 14,
+    "programs_added_count": 13,
+    "programs_removed_count": 1,
+    "version_changes_count": 13,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Education",
+      "Health",
+      "Technology"
+    ],
+    "flags": [
+      "course_churn=158",
+      "program_churn=14",
+      "version_changes_count=13",
+      "affected_college_count=3"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2017-05\u21922017-07",
+    "from_catalog": "2017-05",
+    "to_catalog": "2017-07",
+    "severity_score": 318,
+    "course_churn": 175,
+    "courses_added_count": 101,
+    "courses_removed_count": 74,
+    "program_churn": 7,
+    "programs_added_count": 1,
+    "programs_removed_count": 6,
+    "version_changes_count": 22,
+    "title_changes_count": 0,
+    "cu_changes_count": 1,
+    "affected_colleges": [
+      "Education",
+      "Technology"
+    ],
+    "flags": [
+      "course_churn=175",
+      "program_churn=7",
+      "version_changes_count=22"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2018-04\u21922018-05",
+    "from_catalog": "2018-04",
+    "to_catalog": "2018-05",
+    "severity_score": 301,
+    "course_churn": 61,
+    "courses_added_count": 40,
+    "courses_removed_count": 21,
+    "program_churn": 23,
+    "programs_added_count": 12,
+    "programs_removed_count": 11,
+    "version_changes_count": 0,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Education",
+      "Health",
+      "Technology"
+    ],
+    "flags": [
+      "course_churn=61",
+      "program_churn=23",
+      "affected_college_count=3"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2024-08\u21922024-09",
+    "from_catalog": "2024-08",
+    "to_catalog": "2024-09",
+    "severity_score": 240,
+    "course_churn": 91,
+    "courses_added_count": 57,
+    "courses_removed_count": 34,
+    "program_churn": 13,
+    "programs_added_count": 9,
+    "programs_removed_count": 4,
+    "version_changes_count": 3,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Business",
+      "Education",
+      "Technology"
+    ],
+    "flags": [
+      "course_churn=91",
+      "program_churn=13",
+      "affected_college_count=3"
+    ],
+    "notes": "cert_section_added"
+  },
+  {
+    "transition": "2024-09\u21922024-10",
+    "from_catalog": "2024-09",
+    "to_catalog": "2024-10",
+    "severity_score": 187,
+    "course_churn": 101,
+    "courses_added_count": 46,
+    "courses_removed_count": 55,
+    "program_churn": 5,
+    "programs_added_count": 4,
+    "programs_removed_count": 1,
+    "version_changes_count": 7,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Business",
+      "Education",
+      "Health",
+      "Technology"
+    ],
+    "flags": [
+      "course_churn=101",
+      "program_churn=5",
+      "affected_college_count=4"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2022-12\u21922023-01",
+    "from_catalog": "2022-12",
+    "to_catalog": "2023-01",
+    "severity_score": 184,
+    "course_churn": 80,
+    "courses_added_count": 45,
+    "courses_removed_count": 35,
+    "program_churn": 9,
+    "programs_added_count": 6,
+    "programs_removed_count": 3,
+    "version_changes_count": 0,
+    "title_changes_count": 2,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Business",
+      "Health",
+      "Technology"
+    ],
+    "flags": [
+      "course_churn=80",
+      "program_churn=9",
+      "affected_college_count=3"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2020-06\u21922020-07",
+    "from_catalog": "2020-06",
+    "to_catalog": "2020-07",
+    "severity_score": 183,
+    "course_churn": 119,
+    "courses_added_count": 54,
+    "courses_removed_count": 65,
+    "program_churn": 0,
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes_count": 18,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Business",
+      "Education",
+      "Health"
+    ],
+    "flags": [
+      "course_churn=119",
+      "version_changes_count=18",
+      "affected_college_count=3"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2020-01\u21922020-02",
+    "from_catalog": "2020-01",
+    "to_catalog": "2020-02",
+    "severity_score": 171,
+    "course_churn": 41,
+    "courses_added_count": 21,
+    "courses_removed_count": 20,
+    "program_churn": 13,
+    "programs_added_count": 7,
+    "programs_removed_count": 6,
+    "version_changes_count": 0,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Business"
+    ],
+    "flags": [
+      "course_churn=41",
+      "program_churn=13"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2020-10\u21922020-11",
+    "from_catalog": "2020-10",
+    "to_catalog": "2020-11",
+    "severity_score": 134,
+    "course_churn": 53,
+    "courses_added_count": 44,
+    "courses_removed_count": 9,
+    "program_churn": 4,
+    "programs_added_count": 2,
+    "programs_removed_count": 2,
+    "version_changes_count": 8,
+    "title_changes_count": 0,
+    "cu_changes_count": 1,
+    "affected_colleges": [
+      "Business",
+      "Education",
+      "Health",
+      "Technology"
+    ],
+    "flags": [
+      "course_churn=53",
+      "program_churn=4",
+      "affected_college_count=4"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2018-05\u21922018-06",
+    "from_catalog": "2018-05",
+    "to_catalog": "2018-06",
+    "severity_score": 124,
+    "course_churn": 4,
+    "courses_added_count": 3,
+    "courses_removed_count": 1,
+    "program_churn": 12,
+    "programs_added_count": 6,
+    "programs_removed_count": 6,
+    "version_changes_count": 0,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Education"
+    ],
+    "flags": [
+      "program_churn=12"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2025-07\u21922025-08",
+    "from_catalog": "2025-07",
+    "to_catalog": "2025-08",
+    "severity_score": 121,
+    "course_churn": 20,
+    "courses_added_count": 11,
+    "courses_removed_count": 9,
+    "program_churn": 9,
+    "programs_added_count": 4,
+    "programs_removed_count": 5,
+    "version_changes_count": 2,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Business",
+      "Technology"
+    ],
+    "flags": [
+      "course_churn=20",
+      "program_churn=9"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2024-05\u21922024-06",
+    "from_catalog": "2024-05",
+    "to_catalog": "2024-06",
+    "severity_score": 120,
+    "course_churn": 57,
+    "courses_added_count": 37,
+    "courses_removed_count": 20,
+    "program_churn": 5,
+    "programs_added_count": 4,
+    "programs_removed_count": 1,
+    "version_changes_count": 1,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Business",
+      "Health",
+      "Technology"
+    ],
+    "flags": [
+      "course_churn=57",
+      "program_churn=5",
+      "affected_college_count=3"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2023-11\u21922023-12",
+    "from_catalog": "2023-11",
+    "to_catalog": "2023-12",
+    "severity_score": 116,
+    "course_churn": 53,
+    "courses_added_count": 12,
+    "courses_removed_count": 41,
+    "program_churn": 1,
+    "programs_added_count": 1,
+    "programs_removed_count": 0,
+    "version_changes_count": 16,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Education",
+      "Technology"
+    ],
+    "flags": [
+      "course_churn=53",
+      "version_changes_count=16"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2017-01\u21922017-03",
+    "from_catalog": "2017-01",
+    "to_catalog": "2017-03",
+    "severity_score": 112,
+    "course_churn": 20,
+    "courses_added_count": 7,
+    "courses_removed_count": 13,
+    "program_churn": 1,
+    "programs_added_count": 0,
+    "programs_removed_count": 1,
+    "version_changes_count": 13,
+    "title_changes_count": 14,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Business",
+      "Education",
+      "Health",
+      "Technology"
+    ],
+    "flags": [
+      "course_churn=20",
+      "version_changes_count=13",
+      "title_changes_count=14",
+      "affected_college_count=4"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2020-11\u21922020-12",
+    "from_catalog": "2020-11",
+    "to_catalog": "2020-12",
+    "severity_score": 112,
+    "course_churn": 43,
+    "courses_added_count": 9,
+    "courses_removed_count": 34,
+    "program_churn": 3,
+    "programs_added_count": 2,
+    "programs_removed_count": 1,
+    "version_changes_count": 8,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Business",
+      "Education",
+      "Health",
+      "Technology"
+    ],
+    "flags": [
+      "course_churn=43",
+      "affected_college_count=4"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2020-09\u21922020-10",
+    "from_catalog": "2020-09",
+    "to_catalog": "2020-10",
+    "severity_score": 111,
+    "course_churn": 69,
+    "courses_added_count": 39,
+    "courses_removed_count": 30,
+    "program_churn": 0,
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes_count": 9,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Business",
+      "Education",
+      "Health",
+      "Technology"
+    ],
+    "flags": [
+      "course_churn=69",
+      "affected_college_count=4"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2026-01\u21922026-02",
+    "from_catalog": "2026-01",
+    "to_catalog": "2026-02",
+    "severity_score": 107,
+    "course_churn": 39,
+    "courses_added_count": 20,
+    "courses_removed_count": 19,
+    "program_churn": 6,
+    "programs_added_count": 3,
+    "programs_removed_count": 3,
+    "version_changes_count": 1,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Education",
+      "Technology"
+    ],
+    "flags": [
+      "course_churn=39",
+      "program_churn=6"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2023-07\u21922023-08",
+    "from_catalog": "2023-07",
+    "to_catalog": "2023-08",
+    "severity_score": 106,
+    "course_churn": 43,
+    "courses_added_count": 18,
+    "courses_removed_count": 25,
+    "program_churn": 5,
+    "programs_added_count": 3,
+    "programs_removed_count": 2,
+    "version_changes_count": 1,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Business",
+      "Health",
+      "Technology"
+    ],
+    "flags": [
+      "course_churn=43",
+      "program_churn=5",
+      "affected_college_count=3"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2025-02\u21922025-03",
+    "from_catalog": "2025-02",
+    "to_catalog": "2025-03",
+    "severity_score": 103,
+    "course_churn": 53,
+    "courses_added_count": 0,
+    "courses_removed_count": 53,
+    "program_churn": 5,
+    "programs_added_count": 0,
+    "programs_removed_count": 5,
+    "version_changes_count": 0,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Education"
+    ],
+    "flags": [
+      "course_churn=53",
+      "program_churn=5"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2022-11\u21922022-12",
+    "from_catalog": "2022-11",
+    "to_catalog": "2022-12",
+    "severity_score": 95,
+    "course_churn": 60,
+    "courses_added_count": 34,
+    "courses_removed_count": 26,
+    "program_churn": 3,
+    "programs_added_count": 2,
+    "programs_removed_count": 1,
+    "version_changes_count": 0,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Business",
+      "Health"
+    ],
+    "flags": [
+      "course_churn=60"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2025-06\u21922025-07",
+    "from_catalog": "2025-06",
+    "to_catalog": "2025-07",
+    "severity_score": 94,
+    "course_churn": 16,
+    "courses_added_count": 12,
+    "courses_removed_count": 4,
+    "program_churn": 7,
+    "programs_added_count": 7,
+    "programs_removed_count": 0,
+    "version_changes_count": 1,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Education",
+      "Technology"
+    ],
+    "flags": [
+      "program_churn=7"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2024-12\u21922025-01",
+    "from_catalog": "2024-12",
+    "to_catalog": "2025-01",
+    "severity_score": 93,
+    "course_churn": 8,
+    "courses_added_count": 7,
+    "courses_removed_count": 1,
+    "program_churn": 8,
+    "programs_added_count": 4,
+    "programs_removed_count": 4,
+    "version_changes_count": 0,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Business",
+      "Education"
+    ],
+    "flags": [
+      "program_churn=8"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2018-08\u21922018-09",
+    "from_catalog": "2018-08",
+    "to_catalog": "2018-09",
+    "severity_score": 86,
+    "course_churn": 6,
+    "courses_added_count": 4,
+    "courses_removed_count": 2,
+    "program_churn": 8,
+    "programs_added_count": 4,
+    "programs_removed_count": 4,
+    "version_changes_count": 0,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Education"
+    ],
+    "flags": [
+      "program_churn=8"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2024-07\u21922024-08",
+    "from_catalog": "2024-07",
+    "to_catalog": "2024-08",
+    "severity_score": 81,
+    "course_churn": 21,
+    "courses_added_count": 21,
+    "courses_removed_count": 0,
+    "program_churn": 4,
+    "programs_added_count": 4,
+    "programs_removed_count": 0,
+    "version_changes_count": 1,
+    "title_changes_count": 1,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Business",
+      "Education",
+      "Health",
+      "Technology"
+    ],
+    "flags": [
+      "course_churn=21",
+      "program_churn=4",
+      "affected_college_count=4"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2023-03\u21922023-04",
+    "from_catalog": "2023-03",
+    "to_catalog": "2023-04",
+    "severity_score": 76,
+    "course_churn": 35,
+    "courses_added_count": 23,
+    "courses_removed_count": 12,
+    "program_churn": 3,
+    "programs_added_count": 2,
+    "programs_removed_count": 1,
+    "version_changes_count": 0,
+    "title_changes_count": 1,
+    "cu_changes_count": 2,
+    "affected_colleges": [
+      "Business",
+      "Health"
+    ],
+    "flags": [
+      "course_churn=35"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2021-08\u21922021-09",
+    "from_catalog": "2021-08",
+    "to_catalog": "2021-09",
+    "severity_score": 69,
+    "course_churn": 18,
+    "courses_added_count": 13,
+    "courses_removed_count": 5,
+    "program_churn": 2,
+    "programs_added_count": 0,
+    "programs_removed_count": 2,
+    "version_changes_count": 7,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Business",
+      "Education",
+      "Health"
+    ],
+    "flags": [
+      "affected_college_count=3"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2021-12\u21922022-01",
+    "from_catalog": "2021-12",
+    "to_catalog": "2022-01",
+    "severity_score": 66,
+    "course_churn": 29,
+    "courses_added_count": 21,
+    "courses_removed_count": 8,
+    "program_churn": 2,
+    "programs_added_count": 2,
+    "programs_removed_count": 0,
+    "version_changes_count": 4,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Business",
+      "Health"
+    ],
+    "flags": [
+      "course_churn=29"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2022-05\u21922022-06",
+    "from_catalog": "2022-05",
+    "to_catalog": "2022-06",
+    "severity_score": 62,
+    "course_churn": 21,
+    "courses_added_count": 19,
+    "courses_removed_count": 2,
+    "program_churn": 3,
+    "programs_added_count": 3,
+    "programs_removed_count": 0,
+    "version_changes_count": 2,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Education",
+      "Technology"
+    ],
+    "flags": [
+      "course_churn=21"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2026-02\u21922026-03",
+    "from_catalog": "2026-02",
+    "to_catalog": "2026-03",
+    "severity_score": 60,
+    "course_churn": 1,
+    "courses_added_count": 0,
+    "courses_removed_count": 1,
+    "program_churn": 0,
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes_count": 18,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Business",
+      "Education"
+    ],
+    "flags": [
+      "version_changes_count=18"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2018-06\u21922018-07",
+    "from_catalog": "2018-06",
+    "to_catalog": "2018-07",
+    "severity_score": 59,
+    "course_churn": 11,
+    "courses_added_count": 9,
+    "courses_removed_count": 2,
+    "program_churn": 4,
+    "programs_added_count": 2,
+    "programs_removed_count": 2,
+    "version_changes_count": 1,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Education",
+      "Technology"
+    ],
+    "flags": [
+      "program_churn=4"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2023-04\u21922023-05",
+    "from_catalog": "2023-04",
+    "to_catalog": "2023-05",
+    "severity_score": 59,
+    "course_churn": 24,
+    "courses_added_count": 10,
+    "courses_removed_count": 14,
+    "program_churn": 2,
+    "programs_added_count": 2,
+    "programs_removed_count": 0,
+    "version_changes_count": 2,
+    "title_changes_count": 0,
+    "cu_changes_count": 2,
+    "affected_colleges": [
+      "Health",
+      "Technology"
+    ],
+    "flags": [
+      "course_churn=24"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2022-04\u21922022-05",
+    "from_catalog": "2022-04",
+    "to_catalog": "2022-05",
+    "severity_score": 57,
+    "course_churn": 37,
+    "courses_added_count": 30,
+    "courses_removed_count": 7,
+    "program_churn": 2,
+    "programs_added_count": 1,
+    "programs_removed_count": 1,
+    "version_changes_count": 0,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Technology"
+    ],
+    "flags": [
+      "course_churn=37"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2024-01\u21922024-02",
+    "from_catalog": "2024-01",
+    "to_catalog": "2024-02",
+    "severity_score": 55,
+    "course_churn": 24,
+    "courses_added_count": 24,
+    "courses_removed_count": 0,
+    "program_churn": 2,
+    "programs_added_count": 2,
+    "programs_removed_count": 0,
+    "version_changes_count": 2,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Health",
+      "Technology"
+    ],
+    "flags": [
+      "course_churn=24"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2020-08\u21922020-09",
+    "from_catalog": "2020-08",
+    "to_catalog": "2020-09",
+    "severity_score": 51,
+    "course_churn": 14,
+    "courses_added_count": 6,
+    "courses_removed_count": 8,
+    "program_churn": 0,
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes_count": 10,
+    "title_changes_count": 0,
+    "cu_changes_count": 1,
+    "affected_colleges": [
+      "Business",
+      "Health"
+    ],
+    "flags": [
+      "version_changes_count=10"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2018-11\u21922018-12",
+    "from_catalog": "2018-11",
+    "to_catalog": "2018-12",
+    "severity_score": 48,
+    "course_churn": 11,
+    "courses_added_count": 6,
+    "courses_removed_count": 5,
+    "program_churn": 0,
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes_count": 9,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Business",
+      "Health",
+      "Technology"
+    ],
+    "flags": [
+      "affected_college_count=3"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2019-03\u21922019-04",
+    "from_catalog": "2019-03",
+    "to_catalog": "2019-04",
+    "severity_score": 43,
+    "course_churn": 20,
+    "courses_added_count": 13,
+    "courses_removed_count": 7,
+    "program_churn": 2,
+    "programs_added_count": 1,
+    "programs_removed_count": 1,
+    "version_changes_count": 1,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Education"
+    ],
+    "flags": [
+      "course_churn=20"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2024-03\u21922024-04",
+    "from_catalog": "2024-03",
+    "to_catalog": "2024-04",
+    "severity_score": 43,
+    "course_churn": 4,
+    "courses_added_count": 3,
+    "courses_removed_count": 1,
+    "program_churn": 1,
+    "programs_added_count": 1,
+    "programs_removed_count": 0,
+    "version_changes_count": 5,
+    "title_changes_count": 2,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Education",
+      "Health",
+      "Technology"
+    ],
+    "flags": [
+      "affected_college_count=3"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2023-01\u21922023-02",
+    "from_catalog": "2023-01",
+    "to_catalog": "2023-02",
+    "severity_score": 40,
+    "course_churn": 20,
+    "courses_added_count": 12,
+    "courses_removed_count": 8,
+    "program_churn": 0,
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes_count": 2,
+    "title_changes_count": 2,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Business",
+      "Health",
+      "Technology"
+    ],
+    "flags": [
+      "course_churn=20",
+      "affected_college_count=3"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2019-08\u21922019-09",
+    "from_catalog": "2019-08",
+    "to_catalog": "2019-09",
+    "severity_score": 36,
+    "course_churn": 26,
+    "courses_added_count": 26,
+    "courses_removed_count": 0,
+    "program_churn": 1,
+    "programs_added_count": 1,
+    "programs_removed_count": 0,
+    "version_changes_count": 0,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Health"
+    ],
+    "flags": [
+      "course_churn=26"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2023-12\u21922024-01",
+    "from_catalog": "2023-12",
+    "to_catalog": "2024-01",
+    "severity_score": 31,
+    "course_churn": 15,
+    "courses_added_count": 14,
+    "courses_removed_count": 1,
+    "program_churn": 0,
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes_count": 2,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Business",
+      "Health",
+      "Technology"
+    ],
+    "flags": [
+      "affected_college_count=3"
+    ],
+    "notes": ""
+  },
+  {
+    "transition": "2025-11\u21922025-12",
+    "from_catalog": "2025-11",
+    "to_catalog": "2025-12",
+    "severity_score": 25,
+    "course_churn": 22,
+    "courses_added_count": 10,
+    "courses_removed_count": 12,
+    "program_churn": 0,
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes_count": 1,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Health"
+    ],
+    "flags": [
+      "course_churn=22"
+    ],
+    "notes": ""
+  }
+]

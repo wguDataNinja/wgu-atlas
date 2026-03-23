@@ -1,0 +1,53 @@
+scope,course_code,title,cus,program_count,cert_programs
+Cert,AIAPP,AI Skills Fundamentals Capstone,1,1,AI Skills Fundamentals
+Cert,AIRU,Responsible Use of Artificial Intelligence,2,1,AI Skills Fundamentals
+Cert,B2BS1,Building a B2B Sales Foundation,3,1,B2B Sales Fundamentals
+Cert,B2BS2,B2B Sales Strategies,3,1,B2B Sales Fundamentals
+Cert,B2BS3,B2B Relationship Management and Negotiation,3,1,B2B Sales Fundamentals
+Cert,BI1,Data Literacy and Ethics,3,1,Business Intelligence
+Cert,BI2,Framing Business Problems,3,1,Business Intelligence
+Cert,BI3,Insight & Actionable Solutions,3,1,Business Intelligence
+Cert,C715A,Organizational Behavior,3,1,Business Leadership
+Cert,C955A,Applied Probability & Statistics,3,1,Data Analytics Skills
+Cert,CSBE,Back-End Coding: Java and Job Readiness,9,1,Java Developer
+Cert,CSFE,Front-End Engineering: JavaScript and React,9,1,Front-End Web Developer
+Cert,D072A,Fundamentals for Success in Business,3,1,Business Leadership
+Cert,D076A,Finance Skills for Managers,3,1,Accounting Fundamentals
+Cert,D100A,Introduction to Spreadsheets (optional),0,1,Accounting Fundamentals
+Cert,D102A,Financial Accounting,3,1,Accounting Fundamentals
+Cert,D196A,Principles of Financial & Managerial Accounting,3,1,Accounting Fundamentals
+Cert,D218A,Intrapersonal Leadership & Professional Growth,3,1,Nursing Leadership
+Cert,D235A,Interprofessional Communication & Leadership in Healthcare,2,1,Nursing Leadership
+Cert,D253A,Values-Based Leadership,3,1,Business Leadership
+Cert,D277A,Front-End Web Development,3,1,ServiceNow Application Developer
+Cert,D280A,JavaScript Programming,3,1,ServiceNow Application Developer
+Cert,D373A,Marketing in the Digital Era,3,1,Digital Marketing Fundamentals
+Cert,D378A,Digital Marketing Science,4,1,Digital Marketing Fundamentals
+Cert,D381A,E-Commerce and Marketing Analytics,3,1,Digital Marketing Fundamentals
+Cert,D388A,Fundamentals of Spreadsheets & Data Presentations,3,1,Data Analytics Skills
+Cert,D464A,Managing Operations,3,1,Supply Chain Fundamentals
+Cert,D470A,"Transportation, Logistics, and Distribution",3,1,Supply Chain Fundamentals
+Cert,D471A,Global Supply Chain Management,3,1,Supply Chain Fundamentals
+Cert,D472A,21st Century Operations and Supply Chain,3,1,Supply Chain Fundamentals
+Cert,D607A,Cloud Databases,3,1,Data Engineering Professional
+Cert,D608A,Data Processing,3,1,Data Engineering Professional
+Cert,D609A,Data Analytics at Scale,3,1,Data Engineering Professional
+Cert,D615A,Foundations of Coding,3,1,Data Analytics Skills
+Cert,D685A,Probelm-Solving with Artificial Intelligence,2,2,AI Skills Fundamentals; Data Analytics Skills
+Cert,D774A,Introduction to Business Accounting (optional),0,1,Accounting Fundamentals
+Cert,DCADA,Data Analysis with SQL,2,1,Data Analytics Skills
+Cert,DCDV,Data Visualization,1,1,Data Analytics Skills
+Cert,DMC,Remote Employer-Led Digital Capstone Project,1,1,Digital Marketing Fundamentals
+Cert,ESHIP1,Define Your Business,3,1,Entrepreneurship Fundamentals
+Cert,ESHIP2,Build Your Strategy,3,1,Entrepreneurship Fundamentals
+Cert,ESHIP3,Finding Your Inner Founder,3,1,Entrepreneurship Fundamentals
+Cert,FL1,Building and Inspiring Teams,3,1,Management Skills for Supervisors
+Cert,FL2,Effective Communication for Team Leaders,3,1,Management Skills for Supervisors
+Cert,FL3,Decision Making for Team Leaders,3,1,Management Skills for Supervisors
+Cert,HS,Mastering HubSpot,0,1,Digital Marketing Fundamentals
+Cert,NLE,Nursing Leadership Capstone,3,1,Nursing Leadership
+Cert,PM1,Project Planning and Strategy,3,1,Project Management
+Cert,PM2,Project Execution and Performance Management,3,1,Project Management
+Cert,PM3,"Agile, Risk, and Leadership in Project Management",3,1,Project Management
+Cert,PM4,Project Management Capstone,1,1,Project Management
+Cert,QB,Mastering QuickBooks,1,1,Accounting Fundamentals

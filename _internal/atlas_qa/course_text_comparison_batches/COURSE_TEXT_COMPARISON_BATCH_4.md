@@ -3,7 +3,7 @@
 **Source artifact:** `_internal/atlas_qa/COURSE_TEXT_COMPARISON_INDEX.md`
 **Batch scope:** §5C-ii MOD materially different pairs, all 40 rows (diff 6–50)
 **Batching rule:** All MOD rows consolidated into one batch. Ordered as they appear in the source artifact (diff descending within the section).
-**Annotation status:** All `llm_*` fields are blank — to be filled by LLM annotation pass.
+**Annotation status:** Annotated.
 
 ---
 
@@ -14,11 +14,11 @@
 - **guide_text:** "Organizational Systems and Quality Leadership…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is 6% longer; guide for MSRNN programs is slightly condensed relative to catalog.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the more complete version.`
+> - `llm_notable_observations: MSRNN cluster MOD case; small relative difference at this text length.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -29,11 +29,11 @@
 - **guide_text:** "Financial Planning…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Guide is 11% longer; likely adds financial planning competency framing for these business programs.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the default; guide adds program-specific framing.`
+> - `llm_notable_observations: Appears in BSC, BSFIN, and BSHR — three programs. Both texts are truncated in source.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -44,11 +44,11 @@
 - **guide_text:** "Deep Learning…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is 10% longer; guide for MSDADS is a condensed version.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the more complete version.`
+> - `llm_notable_observations: Data science program; straightforward catalog-longer case.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -59,11 +59,11 @@
 - **guide_text:** "Introduction to IT covers fundamental concepts…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Both texts open identically; catalog is 12% longer, providing additional foundational IT content.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the more complete version; guide is a condensed variant for CS/security/data programs.`
+> - `llm_notable_observations: Common introductory IT course across multiple programs; consistent catalog-longer pattern.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -74,11 +74,11 @@
 - **guide_text:** "Advanced Clinical Nursing…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is 6% longer; guide for MSRNN programs is slightly condensed.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the more complete version.`
+> - `llm_notable_observations: MSRNN cluster; small relative difference.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -89,11 +89,11 @@
 - **guide_text:** "Psychopathology…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is 9% longer; guide for BSPSY is a condensed version.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is more complete.`
+> - `llm_notable_observations: Psychology program; straightforward catalog-longer case.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -104,11 +104,11 @@
 - **guide_text:** "Statistical Programming…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is 10% longer; guide across three data analytics/engineering programs is condensed.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is more complete.`
+> - `llm_notable_observations: Appears in three MSD programs; condensation is consistent across the cluster.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -119,11 +119,11 @@
 - **guide_text:** "Consumer Behavior and Ethics…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Guide variant for BSPSY is 6% longer; likely adds psychology-specific consumer behavior context.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the default; guide adds BSPSY-specific framing.`
+> - `llm_notable_observations: Third variant of D175; BSPSY variant is the longest guide text among the variants.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -134,11 +134,11 @@
 - **guide_text:** "Workforce Planning and Employment Law examines organizational workforce planning, including labor relations, employment law…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog emphasizes "strategic workforce management"; BSHR guide emphasizes "organizational workforce planning, labor relations, employment law" — the guide more explicitly signals the legal content.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the default display source; BSHR guide is the older locked text.`
+> - `llm_notable_observations: BSHR cluster — guide's explicit "labor relations, employment law" framing is more specific about legal content than catalog's "strategic workforce management." A student researching employment law coverage would find the guide framing more informative.`
+> - `llm_review_flag: yes`
 
 ---
 
@@ -149,11 +149,11 @@
 - **guide_text:** "Natural Language Processing…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is 10% longer; guide across three data programs is condensed.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is more complete.`
+> - `llm_notable_observations: MSD cluster; consistent catalog-longer pattern.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -164,11 +164,11 @@
 - **guide_text:** "Taxation of Individuals…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is 7% longer; guide for MACCF/MACCT is slightly condensed.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is more complete.`
+> - `llm_notable_observations: MACC cluster — taxation courses show catalog-longer pattern consistently.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -179,11 +179,11 @@
 - **guide_text:** "Clinical Experiences…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is 5% longer; guide for MATELED is slightly condensed.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is slightly more complete.`
+> - `llm_notable_observations: MATELED (MA Teaching, Elementary Education); small difference.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -194,11 +194,11 @@
 - **guide_text:** "Software Engineering…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Guide is marginally longer (3%) for MSSWE programs; both texts are very substantial (~1000 chars).`
+> - `llm_preference_for_research_tool: either`
+> - `llm_preference_reason: The difference is trivially small relative to total text length; both versions are effectively equivalent.`
+> - `llm_notable_observations: At 33 chars of diff on ~1000 char texts, this is functionally a near-duplicate. Both sources are authoritative for their contexts.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -209,11 +209,11 @@
 - **guide_text:** "DevOps Engineering…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Guide for MSSWEDOE is 6% longer; adds program-specific DevOps context.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the default; guide adds MSSWEDOE-specific framing.`
+> - `llm_notable_observations: MSSWEDOE-specific course; modest difference.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -224,11 +224,11 @@
 - **guide_text:** "Perspectives in Diversity…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is 4% longer; guide for health/human services programs is slightly condensed.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is slightly more complete.`
+> - `llm_notable_observations: Cross-program health/human services course; small difference.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -239,11 +239,11 @@
 - **guide_text:** "Introduction to AI…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Guide for MSSWE programs is 6% longer; adds AI introduction context specific to software engineering programs.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the default; guide adds MSSWE-specific framing.`
+> - `llm_notable_observations: Small difference; guide-longer pattern is consistent with MSSWE programs adding program-specific framing.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -254,11 +254,11 @@
 - **guide_text:** "Domain Driven Design…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Guide for MSSWEDDD is 6% longer; adds domain-driven design context for that program.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the default; guide adds MSSWEDDD-specific framing.`
+> - `llm_notable_observations: MSSWEDDD-specific course; small difference.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -269,11 +269,11 @@
 - **guide_text:** "Modern Software Architecture…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Guide for MSSWEDDD is 7% longer; adds software architecture context for that program.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the default; guide adds MSSWEDDD-specific framing.`
+> - `llm_notable_observations: MSSWEDDD-specific; small difference.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -284,11 +284,11 @@
 - **guide_text:** "Visualization and Storytelling…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is 5% longer; guide for MSDADE is slightly condensed.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is slightly more complete.`
+> - `llm_notable_observations: Data analytics program; very small difference.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -299,11 +299,11 @@
 - **guide_text:** "Quality Improvement in Nursing…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Guide is marginally longer (3%) for MSNUED/PMCNUED programs; trivially small content difference.`
+> - `llm_preference_for_research_tool: either`
+> - `llm_preference_reason: The difference is very small; both versions are effectively equivalent in coverage.`
+> - `llm_notable_observations: C947 variant 1 (MSNUED/PMCNUED, diff=25) vs variant 2 for MSRNNUED (diff=101, Batch 3 row 39) — same course shows substantially different guide text for different nursing program families.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -314,11 +314,11 @@
 - **guide_text:** "Cloud Networking…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is 6% longer; CNE cluster guide is slightly condensed.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is more complete; consistent with CNE cluster pattern.`
+> - `llm_notable_observations: CNE cluster cloud networking course; guide text is shorter as expected for CNE programs.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -329,11 +329,11 @@
 - **guide_text:** "SE Foundations…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Guide is marginally longer (3%) for MSSWE programs; trivial content difference.`
+> - `llm_preference_for_research_tool: either`
+> - `llm_preference_reason: The difference is negligible; both versions cover equivalent ground.`
+> - `llm_notable_observations: Software engineering foundations course; small difference at this text length is likely minor phrasing variation.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -344,11 +344,11 @@
 - **guide_text:** "Intermediate Accounting I…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Guide is marginally longer (3%) for BSBAHC; trivial content difference.`
+> - `llm_preference_for_research_tool: either`
+> - `llm_preference_reason: The difference is negligible; both versions are effectively equivalent.`
+> - `llm_notable_observations: Small difference for a business program variant; functionally near-equivalent.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -359,11 +359,11 @@
 - **guide_text:** "Employee Relations…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is 5% longer; guide for MSHRM is slightly condensed.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is slightly more complete.`
+> - `llm_notable_observations: MSHRM cluster; small difference compared to other MSHRM courses which show larger diffs.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -374,11 +374,11 @@
 - **guide_text:** "Concepts in Nursing Practice I…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Guide is marginally longer (3%) for BSNU/BSPRN; trivial content difference.`
+> - `llm_preference_for_research_tool: either`
+> - `llm_preference_reason: The difference is negligible; both versions are effectively equivalent.`
+> - `llm_notable_observations: First in the Concepts in Nursing Practice series; this course shows the smallest variant diff in the series.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -389,11 +389,11 @@
 - **guide_text:** "Accounting Applications…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is 4% longer; guide is slightly condensed.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is slightly more complete.`
+> - `llm_notable_observations: Small difference; both texts are short (≤355 chars). Near-equivalent.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -404,11 +404,11 @@
 - **guide_text:** "Pediatric Nursing…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Guide is marginally longer (2%) for BSPRN; trivial content difference.`
+> - `llm_preference_for_research_tool: either`
+> - `llm_preference_reason: The difference is negligible; both versions are near-equivalent.`
+> - `llm_notable_observations: BSPRN nursing course; at this diff level the texts are functionally equivalent.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -419,11 +419,11 @@
 - **guide_text:** "Medical Surgical Nursing…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Guide is marginally longer (2%) for BSPRN; trivial content difference.`
+> - `llm_preference_for_research_tool: either`
+> - `llm_preference_reason: The difference is negligible; both versions are near-equivalent.`
+> - `llm_notable_observations: BSPRN core nursing course; at this diff level essentially the same content.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -434,11 +434,11 @@
 - **guide_text:** "Healthcare Finance…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Guide is marginally longer (3%) for MHA; trivial content difference.`
+> - `llm_preference_for_research_tool: either`
+> - `llm_preference_reason: The difference is negligible.`
+> - `llm_notable_observations: MHA finance course; very small difference.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -449,11 +449,11 @@
 - **guide_text:** "Chronic Care Management…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is marginally longer (2%) for BSPRN; trivial content difference.`
+> - `llm_preference_for_research_tool: either`
+> - `llm_preference_reason: The difference is negligible.`
+> - `llm_notable_observations: BSPRN chronic care course; near-equivalent at this diff level.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -464,11 +464,11 @@
 - **guide_text:** "Applied Statistics…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is marginally longer (3%); trivial content difference.`
+> - `llm_preference_for_research_tool: either`
+> - `llm_preference_reason: The difference is negligible.`
+> - `llm_notable_observations: MSD data programs; near-equivalent at this diff level.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -479,11 +479,11 @@
 - **guide_text:** "Health Information Management…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is marginally longer (2%); trivial content difference.`
+> - `llm_preference_for_research_tool: either`
+> - `llm_preference_reason: The difference is negligible.`
+> - `llm_notable_observations: MSRNN variant; near-equivalent.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -494,11 +494,11 @@
 - **guide_text:** "Research Methods…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is marginally longer (2%); trivial content difference.`
+> - `llm_preference_for_research_tool: either`
+> - `llm_preference_reason: The difference is negligible.`
+> - `llm_notable_observations: Cross-program human sciences/psychology course; near-equivalent.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -509,11 +509,11 @@
 - **guide_text:** "Machine Learning for AI…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is marginally longer (1%); trivial content difference.`
+> - `llm_preference_for_research_tool: either`
+> - `llm_preference_reason: The difference is negligible; both texts are effectively identical at this scale.`
+> - `llm_notable_observations: MSCSAIML (MS Computer Science, AI/ML) course; functionally a near-duplicate.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -524,11 +524,11 @@
 - **guide_text:** "Data Analytics…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is marginally longer (1%); trivial content difference.`
+> - `llm_preference_for_research_tool: either`
+> - `llm_preference_reason: The difference is negligible; texts are near-identical.`
+> - `llm_notable_observations: Near-duplicate; barely above the near-duplicate threshold (diff=9 vs ≤5 for near-dup classification).`
+> - `llm_review_flag: no`
 
 ---
 
@@ -539,11 +539,11 @@
 - **guide_text:** "Introduction to Biology…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Guide is marginally longer (2%); trivial content difference.`
+> - `llm_preference_for_research_tool: either`
+> - `llm_preference_reason: The difference is negligible.`
+> - `llm_notable_observations: Teacher education science programs; near-duplicate.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -554,11 +554,11 @@
 - **guide_text:** "Operating Systems and Architecture…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Guide is marginally longer (3%) with an 8-character difference; trivial.`
+> - `llm_preference_for_research_tool: either`
+> - `llm_preference_reason: The difference is negligible; texts are near-identical.`
+> - `llm_notable_observations: Both texts are very short (~270 chars); near-duplicate.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -569,11 +569,11 @@
 - **guide_text:** "Biological Psychology…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is marginally longer (1%); trivial content difference.`
+> - `llm_preference_for_research_tool: either`
+> - `llm_preference_reason: The difference is negligible; near-identical texts.`
+> - `llm_notable_observations: Near-duplicate; barely above near-duplicate threshold.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -584,11 +584,11 @@
 - **guide_text:** "Foundations of Nursing Practice…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is marginally longer (1%); trivial content difference at the very bottom of the MOD range.`
+> - `llm_preference_for_research_tool: either`
+> - `llm_preference_reason: The difference is negligible; functionally equivalent to near-duplicate.`
+> - `llm_notable_observations: Bottom of the MOD range (diff=6); this row is substantively indistinguishable from a near-duplicate.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -600,8 +600,8 @@
 - **guide_text:** "Concepts in Nursing Practice…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is 11% longer; guide for BSPRN/MSRNN programs is a condensed variant. Duplicate of Batch 3 row 70.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the more complete version; authoritative annotation is in Batch 3 row 70.`
+> - `llm_notable_observations: MOD-boundary copy of the row annotated in Batch 3 row 70. Both annotations are consistent. The Batch 3 annotation should be treated as primary.`
+> - `llm_review_flag: no`

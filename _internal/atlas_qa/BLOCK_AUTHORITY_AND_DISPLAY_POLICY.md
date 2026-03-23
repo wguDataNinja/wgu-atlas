@@ -3,7 +3,7 @@
 **Version:** 1.0
 **Date:** 2026-03-23
 **Status:** Active — primary policy artifact for course-page and program-page implementation
-**Grounded in:** SOURCE_COVERAGE_MATRIX, COURSE_TEXT_COMPARISON_INDEX, PROGRAM_TEXT_COMPARISON_INDEX, COURSE_TEXT_COMPARISON_BATCH_1 (annotated), COURSE_TEXT_COMPARISON_BATCHES 2–4 (unannotated; patterns cited from index-level analysis)
+**Grounded in:** SOURCE_COVERAGE_MATRIX, COURSE_TEXT_COMPARISON_INDEX, PROGRAM_TEXT_COMPARISON_INDEX, COURSE_TEXT_COMPARISON_BATCHES 1–4 (all annotated; Batches 2–4 re-annotated via strong-model pass 2026-03-23)
 
 ---
 
@@ -59,8 +59,8 @@ Source version is tracked independently per source family. QA answers that draw 
 | **Suppression rule** | When CAT-TEXT and ENRICH are exact or near-duplicate (diff ≤ 5), the ENRICH copy is fully suppressed — no disclosure needed. When materially different, ENRICH is retained internally but not displayed unless explicitly requested. |
 | **Variant rule** | When a course has multiple guide description variants (74 courses; see §5), CAT-TEXT remains the display default. Guide variants are keyed by source program and stored per-variant. |
 | **QA default answer source** | CAT-TEXT. If CAT-TEXT is absent and ENRICH exists, ENRICH is used with source disclosure. |
-| **Review trigger** | Courses where `llm_review_flag: yes` or where guide text is longer than catalog text by >100 chars (potential catalog truncation). Currently flagged: D355 (Compensation and Benefits; borderline framing difference). Batches 2–4 unannotated cases should be reviewed before per-course overrides are set. |
-| **Rationale** | Catalog descriptions are current-edition text. Guide descriptions are often locked to an older authoring event (BSHR cluster, CNE cluster) or are program-family-specific variants. 78% of paired courses are identical anyway. For the 103 mat-diff courses, catalog text is more frequently the complete/modern version. |
+| **Review trigger** | Courses where `llm_review_flag: yes` in the completed annotation pass (~25 rows across Batches 2–3). Primary clusters: BSPRN clinical nursing courses (guide adds clinical assessment/diagnosis/management structure catalog lacks), BSHR pre-rewrite content delta, MSHRM program-degree-specific framing, select FNP/PMHNP variants. Anomaly flags requiring data inspection before canonical object construction: C179 (catalog text 293 chars — suspiciously short, guide adds routing/switching/automation detail — see §8.9) and D554 (guide text appears to be from a different course — see §8.10). |
+| **Rationale** | Catalog descriptions are current-edition text. Guide descriptions are often locked to an older authoring event (BSHR cluster, CNE cluster) or are program-family-specific variants. 78% of paired courses are identical anyway. For the 103 mat-diff courses, no row across the full corpus produced a clear guide preference — catalog-default is confirmed safe. BSPRN-cluster guide text adds genuine clinical framing value and should be stored as labeled program-context alternates. |
 
 ---
 
@@ -435,13 +435,18 @@ Per the architecture invariants in LOCAL_8B_RAG_SYSTEM_DESIGN.md:
 
 ## 8. Open Issues / Deferred Review Items
 
-### 8.1 Batches 2–4 Not Individually Annotated
+### 8.1 Batch Annotation — Resolved
 
-`COURSE_TEXT_COMPARISON_BATCH_2.md`, `BATCH_3.md`, and `BATCH_4.md` contain 110 rows covering the 103 materially different courses. These are unannotated. The policy decisions in §3.1 (catalog default) are grounded in index-level pattern analysis and the BSHR/CNE dominant cluster evidence. Individual per-course `llm_review_flag` decisions for the mat-diff cases have not been made.
+**Resolved.** All 110 rows across Batches 2–4 were annotated via strong-model re-annotation pass (2026-03-23). No row across the full 110-row corpus produced `llm_preference_for_research_tool: guide` as a clear winner. Catalog-default confirmed safe.
 
-**Implication:** The catalog-default rule is safe to implement. Per-course overrides (cases where guide should be preferred) require the batch annotation pass to complete before those overrides can be set in the canonical course objects.
+**Key findings from batch annotation:**
+- **BSHR cluster** (D354–D360): catalog is the modern rewrite; guide is locked to an older pre-rewrite authoring event. Catalog is the display default. Several rows flagged `yes` for the pre-rewrite content delta — candidates for labeled alternate storage, not display overrides.
+- **MSHRM cluster** (D432–D436): guide has program-degree-specific framing. Catalog is the correct default; guide text is a useful labeled program-context alternate.
+- **BSPRN cluster**: guide consistently adds clinical assessment/diagnosis/management framing that catalog lacks. Strongest case for storing guide text as a labeled alternate for program-context display. No catalog override warranted.
+- **CNE cluster** (C172, C175): catalog is longer and more complete; guide is exam-locked. Except C179 — see §8.9.
+- **MOD rows** (Batch 4, diff 6–50): majority `either` at diffs ≤25. No display overrides warranted.
 
-**Deferred action:** Complete LLM annotation pass for Batches 2–4 and identify any courses where `llm_preference_for_research_tool: guide` or `needs_review` should trigger a display override.
+**Remaining action (not a blocker):** Human review of ~25 `llm_review_flag: yes` rows before any program-context display alternates are set in canonical course objects. Catalog-default implementation does not require this review to complete first.
 
 ### 8.2 D355 — Compensation and Benefits
 
@@ -472,3 +477,17 @@ Guide version (202507) is 8 months newer than catalog version (202311). Body tex
 ### 8.8 Source Coverage Matrix File Not Present
 
 `SOURCE_COVERAGE_MATRIX.md` was created in a prior session per the DEV_LOG but is not present in `_internal/atlas_qa/` as of this session. The policy in this document is grounded in the DEV_LOG record of that artifact's findings. If the file needs to be regenerated, the DEV_LOG entries from 2026-03-23 (SOURCE_COVERAGE_MATRIX session) are the authoritative record of its conclusions.
+
+---
+
+### 8.9 C179 — Advanced Networking Concepts (catalog short-text anomaly)
+
+Catalog text for C179 is 293 chars — unusually short for a networking course and the shortest in the CNE cluster. Guide text is longer and adds routing/switching/automation specifics. This is the only CNE-cluster course where the guide is longer than the catalog; every other CNE course (C172, C175) follows the opposite pattern. Flagged `needs_review + yes` in Batch annotation.
+
+**Required action before canonical object construction:** Verify the catalog extract for C179 is not truncated. If the catalog text is genuinely 293 chars (not a pipeline error), document this as an intentional short description and note that the guide provides substantive supplemental content worth storing as a labeled alternate.
+
+### 8.10 D554 — Advanced Financial Accounting I (data anomaly)
+
+Guide text for D554 in the comparison index contains what appears to be course description text from D560 (Internal Auditing I). This is a suspected source data error in the extraction pipeline, not a legitimate description for D554. Flagged `needs_review + yes` in Batch 3 annotation.
+
+**Required action before canonical object construction:** Investigate the guide source data for D554 to determine whether the D560 text was misrouted during extraction. Do not use the current guide description for D554 in any QA canonical object until the anomaly is resolved. Catalog text for D554 is unaffected and remains the display default.

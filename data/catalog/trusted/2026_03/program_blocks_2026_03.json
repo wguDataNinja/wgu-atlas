@@ -1,0 +1,1142 @@
+[
+  {
+    "college": "School of Business",
+    "degree": "Bachelor of Science, Accounting",
+    "deg_idx": 2827,
+    "ccn_idx": 2834,
+    "end": 2882,
+    "code": "BSACC",
+    "version": "202503",
+    "cus": 121
+  },
+  {
+    "college": "School of Business",
+    "degree": "Bachelor of Science, Human Resource Management",
+    "deg_idx": 2884,
+    "ccn_idx": 2894,
+    "end": 2941,
+    "code": "BSHR",
+    "version": "202509",
+    "cus": 117
+  },
+  {
+    "college": "School of Business",
+    "degree": "Bachelor of Science, Information Technology Management",
+    "deg_idx": 2943,
+    "ccn_idx": 2950,
+    "end": 2999,
+    "code": "BSITM",
+    "version": "202503",
+    "cus": 120
+  },
+  {
+    "college": "School of Business",
+    "degree": "Bachelor of Science, Business Management",
+    "deg_idx": 3001,
+    "ccn_idx": 3007,
+    "end": 3052,
+    "code": "BSMGT",
+    "version": "202605",
+    "cus": 110
+  },
+  {
+    "college": "School of Business",
+    "degree": "Bachelor of Science, Marketing",
+    "deg_idx": 3054,
+    "ccn_idx": 3059,
+    "end": 3105,
+    "code": "BSMKT",
+    "version": "202501",
+    "cus": 112
+  },
+  {
+    "college": "School of Business",
+    "degree": "Bachelor of Science, Communications",
+    "deg_idx": 3107,
+    "ccn_idx": 3119,
+    "end": 3169,
+    "code": "BSC",
+    "version": "202510",
+    "cus": 115
+  },
+  {
+    "college": "School of Business",
+    "degree": "Bachelor of Science, Finance",
+    "deg_idx": 3171,
+    "ccn_idx": 3175,
+    "end": 3224,
+    "code": "BSFIN",
+    "version": "202304",
+    "cus": 120
+  },
+  {
+    "college": "School of Business",
+    "degree": "Bachelor of Science, Healthcare Administration",
+    "deg_idx": 3226,
+    "ccn_idx": 3235,
+    "end": 3278,
+    "code": "BSHA",
+    "version": "202509",
+    "cus": 110
+  },
+  {
+    "college": "School of Business",
+    "degree": "Bachelor of Science, Supply Chain and Operations Management",
+    "deg_idx": 3280,
+    "ccn_idx": 3297,
+    "end": 3341,
+    "code": "BSSCOM",
+    "version": "202605",
+    "cus": 110
+  },
+  {
+    "college": "School of Business",
+    "degree": "Bachelor of Science, User Experience Design",
+    "deg_idx": 3343,
+    "ccn_idx": 3354,
+    "end": 3402,
+    "code": "BSUXD",
+    "version": "202510",
+    "cus": 115
+  },
+  {
+    "college": "School of Business",
+    "degree": "Master of Business Administration",
+    "deg_idx": 3404,
+    "ccn_idx": 3407,
+    "end": 3419,
+    "code": "MBA",
+    "version": "201404",
+    "cus": 34
+  },
+  {
+    "college": "School of Business",
+    "degree": "MBA, IT Management",
+    "deg_idx": 3421,
+    "ccn_idx": 3426,
+    "end": 3439,
+    "code": "MBAITM",
+    "version": "201408",
+    "cus": 35
+  },
+  {
+    "college": "School of Business",
+    "degree": "Master of Business Administration, Healthcare Administration",
+    "deg_idx": 3441,
+    "ccn_idx": 3447,
+    "end": 3459,
+    "code": "MBAHA",
+    "version": "202507",
+    "cus": 36
+  },
+  {
+    "college": "School of Business",
+    "degree": "Master of Science, Management and Leadership",
+    "deg_idx": 3461,
+    "ccn_idx": 3471,
+    "end": 3482,
+    "code": "MSML",
+    "version": "202007",
+    "cus": 31
+  },
+  {
+    "college": "School of Business",
+    "degree": "Master of Science in Marketing, Digital Marketing Specialization",
+    "deg_idx": 3484,
+    "ccn_idx": 3494,
+    "end": 3506,
+    "code": "MSMK",
+    "version": "202301",
+    "cus": 33
+  },
+  {
+    "college": "School of Business",
+    "degree": "Master of Science in Marketing, Marketing Analytics Specialization",
+    "deg_idx": 3508,
+    "ccn_idx": 3517,
+    "end": 3529,
+    "code": "MSMKA",
+    "version": "202303",
+    "cus": 34
+  },
+  {
+    "college": "School of Business",
+    "degree": "Master of Science in Accounting, Auditing Specialization",
+    "deg_idx": 3531,
+    "ccn_idx": 3541,
+    "end": 3553,
+    "code": "MACCA",
+    "version": "202412",
+    "cus": 30
+  },
+  {
+    "college": "School of Business",
+    "degree": "Master of Science in Accounting, Financial Reporting Specialization",
+    "deg_idx": 3555,
+    "ccn_idx": 3565,
+    "end": 3577,
+    "code": "MACCF",
+    "version": "202412",
+    "cus": 33
+  },
+  {
+    "college": "School of Business",
+    "degree": "Master of Science in Accounting, Management Accounting Specialization",
+    "deg_idx": 3579,
+    "ccn_idx": 3589,
+    "end": 3601,
+    "code": "MACCM",
+    "version": "202412",
+    "cus": 30
+  },
+  {
+    "college": "School of Business",
+    "degree": "Master of Science in Accounting, Taxation Specialization",
+    "deg_idx": 3603,
+    "ccn_idx": 3613,
+    "end": 3624,
+    "code": "MACCT",
+    "version": "202412",
+    "cus": 30
+  },
+  {
+    "college": "School of Business",
+    "degree": "Master of Science, Human Resource Management",
+    "deg_idx": 3626,
+    "ccn_idx": 3639,
+    "end": 3650,
+    "code": "MSHRM",
+    "version": "202311",
+    "cus": 30
+  },
+  {
+    "college": "Leavitt School of Health",
+    "degree": "Bachelor of Science, Nursing - Prelicensure (Pre-Nursing)",
+    "deg_idx": 3676,
+    "ccn_idx": 3696,
+    "end": 3721,
+    "code": "BSPNTR",
+    "version": "202303",
+    "cus": 61
+  },
+  {
+    "college": "Leavitt School of Health",
+    "degree": "Bachelor of Science, Nursing - Prelicensure (Nursing)",
+    "deg_idx": 3723,
+    "ccn_idx": 3743,
+    "end": 3762,
+    "code": "BSNPLTR",
+    "version": "202303",
+    "cus": 59
+  },
+  {
+    "college": "Leavitt School of Health",
+    "degree": "Bachelor of Science, Nursing",
+    "deg_idx": 3764,
+    "ccn_idx": 3774,
+    "end": 3804,
+    "code": "BSNU",
+    "version": "202410",
+    "cus": 120
+  },
+  {
+    "college": "Leavitt School of Health",
+    "degree": "Bachelor of Science, Health Information Management",
+    "deg_idx": 3806,
+    "ccn_idx": 3819,
+    "end": 3862,
+    "code": "BSHIM",
+    "version": "202504",
+    "cus": 122
+  },
+  {
+    "college": "Leavitt School of Health",
+    "degree": "Bachelor of Science, Health and Human Services",
+    "deg_idx": 3864,
+    "ccn_idx": 3872,
+    "end": 3916,
+    "code": "BSHHS",
+    "version": "202411",
+    "cus": 111
+  },
+  {
+    "college": "Leavitt School of Health",
+    "degree": "Bachelor of Science, Health Science",
+    "deg_idx": 3918,
+    "ccn_idx": 3926,
+    "end": 3960,
+    "code": "BSHS",
+    "version": "202406",
+    "cus": 91
+  },
+  {
+    "college": "Leavitt School of Health",
+    "degree": "Bachelor of Science in Psychology",
+    "deg_idx": 3962,
+    "ccn_idx": 3975,
+    "end": 4016,
+    "code": "BSPSY",
+    "version": "202404",
+    "cus": 106
+  },
+  {
+    "college": "Leavitt School of Health",
+    "degree": "Bachelor of Science, Public Health",
+    "deg_idx": 4018,
+    "ccn_idx": 4029,
+    "end": 4067,
+    "code": "BSPH",
+    "version": "202409",
+    "cus": 104
+  },
+  {
+    "college": "Leavitt School of Health",
+    "degree": "Master of Science, Nursing - Family Nurse Practitioner (BSN to MSN)",
+    "deg_idx": 4069,
+    "ccn_idx": 4083,
+    "end": 4111,
+    "code": "MSNUFNP",
+    "version": "202003",
+    "cus": 48
+  },
+  {
+    "college": "Leavitt School of Health",
+    "degree": "Master of Science, Nursing - Psychiatric Mental Health Nurse Practitioner",
+    "deg_idx": 4113,
+    "ccn_idx": 4128,
+    "end": 4162,
+    "code": "MSNUPMHNP",
+    "version": "202203",
+    "cus": 51
+  },
+  {
+    "college": "Leavitt School of Health",
+    "degree": "Master of Science, Nursing - Education (BSN to MSN)",
+    "deg_idx": 4164,
+    "ccn_idx": 4182,
+    "end": 4208,
+    "code": "MSNUED",
+    "version": "202003",
+    "cus": 36
+  },
+  {
+    "college": "Leavitt School of Health",
+    "degree": "Master of Science, Nursing - Leadership and Management (BSN to MSN)",
+    "deg_idx": 4210,
+    "ccn_idx": 4228,
+    "end": 4254,
+    "code": "MSNULM",
+    "version": "202011",
+    "cus": 36
+  },
+  {
+    "college": "Leavitt School of Health",
+    "degree": "Master of Science, Nursing - Nursing Informatics (BSN to MSN)",
+    "deg_idx": 4256,
+    "ccn_idx": 4272,
+    "end": 4293,
+    "code": "MSNUNI",
+    "version": "202003",
+    "cus": 36
+  },
+  {
+    "college": "Leavitt School of Health",
+    "degree": "Master of Science, Nursing - Education (RN to MSN)",
+    "deg_idx": 4295,
+    "ccn_idx": 4313,
+    "end": 4362,
+    "code": "MSRNNUEDGR",
+    "version": "202202",
+    "cus": 141
+  },
+  {
+    "college": "Leavitt School of Health",
+    "degree": "Master of Science, Nursing - Leadership and Management (RN to MSN)",
+    "deg_idx": 4364,
+    "ccn_idx": 4376,
+    "end": 4425,
+    "code": "MSRNNULMGR",
+    "version": "202202",
+    "cus": 141
+  },
+  {
+    "college": "Leavitt School of Health",
+    "degree": "Master of Science, Nursing - Nursing Informatics (RN to MSN)",
+    "deg_idx": 4427,
+    "ccn_idx": 4446,
+    "end": 4490,
+    "code": "MSRNNUNIFGR",
+    "version": "202202",
+    "cus": 141
+  },
+  {
+    "college": "Leavitt School of Health",
+    "degree": "Master of Healthcare Administration",
+    "deg_idx": 4492,
+    "ccn_idx": 4499,
+    "end": 4510,
+    "code": "MHA",
+    "version": "202602",
+    "cus": 31
+  },
+  {
+    "college": "Leavitt School of Health",
+    "degree": "Master of Public Health",
+    "deg_idx": 4512,
+    "ccn_idx": 4519,
+    "end": 4534,
+    "code": "MPH",
+    "version": "202408",
+    "cus": 36
+  },
+  {
+    "college": "Leavitt School of Health",
+    "degree": "Post-Master's Certificate, Nursing - Family Nurse Practitioner (Post-MSN)",
+    "deg_idx": 4536,
+    "ccn_idx": 4550,
+    "end": 4568,
+    "code": "PMCNUFNP",
+    "version": "202306",
+    "cus": 33
+  },
+  {
+    "college": "Leavitt School of Health",
+    "degree": "Post-Master's Certificate, Nursing - Psychiatric Mental Health Nurse Practitioner (Post-MSN)",
+    "deg_idx": 4570,
+    "ccn_idx": 4586,
+    "end": 4610,
+    "code": "PMCNUPMHNP",
+    "version": "202306",
+    "cus": 36
+  },
+  {
+    "college": "Leavitt School of Health",
+    "degree": "Post-Master's Certificate, Nursing - Nursing Education (Post-MSN)",
+    "deg_idx": 4612,
+    "ccn_idx": 4631,
+    "end": 4645,
+    "code": "PMCNUED",
+    "version": "202110",
+    "cus": 16
+  },
+  {
+    "college": "Leavitt School of Health",
+    "degree": "Post-Master's Certificate, Nursing - Leadership and Management (Post-MSN)",
+    "deg_idx": 4647,
+    "ccn_idx": 4664,
+    "end": 4678,
+    "code": "PMCNULM",
+    "version": "202110",
+    "cus": 16
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Bachelor of Science, Cloud and Network Engineering",
+    "deg_idx": 4703,
+    "ccn_idx": 4712,
+    "end": 4750,
+    "code": "BSCNE",
+    "version": "202510",
+    "cus": 109
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Bachelor of Science, Cloud and Network Engineering - Amazon Web Services",
+    "deg_idx": 4752,
+    "ccn_idx": 4763,
+    "end": 4802,
+    "code": "BSCNEAWS",
+    "version": "202510",
+    "cus": 112
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Bachelor of Science, Cloud and Network Engineering - Cisco",
+    "deg_idx": 4804,
+    "ccn_idx": 4814,
+    "end": 4851,
+    "code": "BSCNECIS",
+    "version": "202510",
+    "cus": 112
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Bachelor of Science, Cloud and Network Engineering - Microsoft Azure",
+    "deg_idx": 4853,
+    "ccn_idx": 4863,
+    "end": 4902,
+    "code": "BSCNEAZR",
+    "version": "202510",
+    "cus": 112
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Bachelor of Science, Computer Science",
+    "deg_idx": 4904,
+    "ccn_idx": 4910,
+    "end": 4953,
+    "code": "BSCS",
+    "version": "202412",
+    "cus": 117
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Bachelor of Science, Computer Science (BSCS to MSCS)",
+    "deg_idx": 4955,
+    "ccn_idx": 4971,
+    "end": 5015,
+    "code": "MSCSUG",
+    "version": "202504",
+    "cus": 116
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Bachelor of Science, Cybersecurity and Information Assurance",
+    "deg_idx": 5017,
+    "ccn_idx": 5025,
+    "end": 5067,
+    "code": "BSCSIA",
+    "version": "202509",
+    "cus": 122
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Bachelor of Science, Data Analytics",
+    "deg_idx": 5069,
+    "ccn_idx": 5075,
+    "end": 5123,
+    "code": "BSDA",
+    "version": "202309",
+    "cus": 122
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Bachelor of Science, Information Technology",
+    "deg_idx": 5125,
+    "ccn_idx": 5134,
+    "end": 5175,
+    "code": "BSIT",
+    "version": "202604",
+    "cus": 110
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Bachelor of Science, Information Technology (BSIT to MSIT)",
+    "deg_idx": 5177,
+    "ccn_idx": 5198,
+    "end": 5240,
+    "code": "MSITUG",
+    "version": "202604",
+    "cus": 110
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Bachelor of Science, Software Engineering",
+    "deg_idx": 5242,
+    "ccn_idx": 5247,
+    "end": 5288,
+    "code": "BSSWE",
+    "version": "202303",
+    "cus": 119
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Bachelor of Science, Software Engineering",
+    "deg_idx": 5290,
+    "ccn_idx": 5295,
+    "end": 5334,
+    "code": "BSSWE_C",
+    "version": "202303",
+    "cus": 119
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Bachelor of Science, Software Engineering (BSSWE to MSSWE)",
+    "deg_idx": 5336,
+    "ccn_idx": 5354,
+    "end": 5395,
+    "code": "MSSWEUG",
+    "version": "202504",
+    "cus": 119
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Master of Science, Computer Science, Artificial Intelligence and Machine Learning",
+    "deg_idx": 5397,
+    "ccn_idx": 5406,
+    "end": 5418,
+    "code": "MSCSAIML",
+    "version": "202504",
+    "cus": 31
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Master of Science, Computer Science, Computing Systems",
+    "deg_idx": 5420,
+    "ccn_idx": 5428,
+    "end": 5440,
+    "code": "MSCSCS",
+    "version": "202504",
+    "cus": 31
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Master of Science, Computer Science, Human-Computer Interaction",
+    "deg_idx": 5442,
+    "ccn_idx": 5450,
+    "end": 5462,
+    "code": "MSCSHCI",
+    "version": "202504",
+    "cus": 31
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Master of Science, Cybersecurity and Information Assurance",
+    "deg_idx": 5464,
+    "ccn_idx": 5473,
+    "end": 5484,
+    "code": "MSCSIA",
+    "version": "202306",
+    "cus": 34
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Master of Science, Data Analytics - Data Science",
+    "deg_idx": 5486,
+    "ccn_idx": 5496,
+    "end": 5508,
+    "code": "MSDADS",
+    "version": "202408",
+    "cus": 32
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Master of Science, Data Analytics - Data Engineering",
+    "deg_idx": 5510,
+    "ccn_idx": 5520,
+    "end": 5532,
+    "code": "MSDADE",
+    "version": "202408",
+    "cus": 32
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Master of Science, Data Analytics - Decision Process Engineering",
+    "deg_idx": 5534,
+    "ccn_idx": 5544,
+    "end": 5556,
+    "code": "MSDADPE",
+    "version": "202408",
+    "cus": 33
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Master of Science, Information Technology",
+    "deg_idx": 5558,
+    "ccn_idx": 5565,
+    "end": 5579,
+    "code": "MSIT",
+    "version": "202604",
+    "cus": 32
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Master of Science, Information Technology - Product Management",
+    "deg_idx": 5581,
+    "ccn_idx": 5588,
+    "end": 5601,
+    "code": "MSITPM",
+    "version": "202604",
+    "cus": 30
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Master of Science, Software Engineering - AI Engineering",
+    "deg_idx": 5603,
+    "ccn_idx": 5618,
+    "end": 5632,
+    "code": "MSSWEAIE",
+    "version": "202504",
+    "cus": 30
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Master of Science, Software Engineering - DevOps Engineering",
+    "deg_idx": 5634,
+    "ccn_idx": 5650,
+    "end": 5663,
+    "code": "MSSWEDOE",
+    "version": "202504",
+    "cus": 30
+  },
+  {
+    "college": "School of Technology",
+    "degree": "Master of Science, Software Engineering - Domain Driven Design",
+    "deg_idx": 5665,
+    "ccn_idx": 5680,
+    "end": 5692,
+    "code": "MSSWEDDD",
+    "version": "202504",
+    "cus": 30
+  },
+  {
+    "college": "School of Education",
+    "degree": "Bachelor of Arts, Elementary Education",
+    "deg_idx": 5771,
+    "ccn_idx": 5782,
+    "end": 5828,
+    "code": "BAELED",
+    "version": "202603",
+    "cus": 120
+  },
+  {
+    "college": "School of Education",
+    "degree": "Bachelor of Arts, Special Education and Elementary Education (Dual Licensure)",
+    "deg_idx": 5830,
+    "ccn_idx": 5850,
+    "end": 5915,
+    "code": "BASPEE",
+    "version": "202603",
+    "cus": 146
+  },
+  {
+    "college": "School of Education",
+    "degree": "Bachelor of Arts, Special Education, Mild to Moderate",
+    "deg_idx": 5917,
+    "ccn_idx": 5933,
+    "end": 5986,
+    "code": "BASPMM",
+    "version": "202603",
+    "cus": 125
+  },
+  {
+    "college": "School of Education",
+    "degree": "Bachelor of Science, Mathematics Education (Secondary)",
+    "deg_idx": 5988,
+    "ccn_idx": 5999,
+    "end": 6046,
+    "code": "BSMES",
+    "version": "202603",
+    "cus": 129
+  },
+  {
+    "college": "School of Education",
+    "degree": "Bachelor of Science, Science Education (Secondary Biological Science)",
+    "deg_idx": 6048,
+    "ccn_idx": 6059,
+    "end": 6107,
+    "code": "BSSESB",
+    "version": "202603",
+    "cus": 124
+  },
+  {
+    "college": "School of Education",
+    "degree": "Bachelor of Science, Science Education (Secondary Chemistry)",
+    "deg_idx": 6109,
+    "ccn_idx": 6121,
+    "end": 6168,
+    "code": "BSSESC",
+    "version": "202603",
+    "cus": 124
+  },
+  {
+    "college": "School of Education",
+    "degree": "Bachelor of Science, Science Education (Secondary Earth Science)",
+    "deg_idx": 6170,
+    "ccn_idx": 6182,
+    "end": 6230,
+    "code": "BSSESE",
+    "version": "202603",
+    "cus": 124
+  },
+  {
+    "college": "School of Education",
+    "degree": "Bachelor of Science, Science Education (Secondary Physics)",
+    "deg_idx": 6232,
+    "ccn_idx": 6244,
+    "end": 6291,
+    "code": "BSSESP",
+    "version": "202603",
+    "cus": 124
+  },
+  {
+    "college": "School of Education",
+    "degree": "Bachelor of Arts, Educational Studies in Elementary Education",
+    "deg_idx": 6293,
+    "ccn_idx": 6302,
+    "end": 6344,
+    "code": "BAESELED",
+    "version": "202603",
+    "cus": 98
+  },
+  {
+    "college": "School of Education",
+    "degree": "Bachelor of Arts, Educational Studies in Special and Elementary Education",
+    "deg_idx": 6346,
+    "ccn_idx": 6358,
+    "end": 6415,
+    "code": "BAESSPEE",
+    "version": "202603",
+    "cus": 124
+  },
+  {
+    "college": "School of Education",
+    "degree": "Bachelor of Arts, Educational Studies in Mild to Moderate Exceptionalities Special Education",
+    "deg_idx": 6417,
+    "ccn_idx": 6429,
+    "end": 6478,
+    "code": "BAESSPMM",
+    "version": "202603",
+    "cus": 103
+  },
+  {
+    "college": "School of Education",
+    "degree": "Bachelor of Arts, Educational Studies in Secondary Mathematics Education",
+    "deg_idx": 6480,
+    "ccn_idx": 6489,
+    "end": 6532,
+    "code": "BAESMES",
+    "version": "202603",
+    "cus": 107
+  },
+  {
+    "college": "School of Education",
+    "degree": "Bachelor of Arts, Educational Studies in Secondary Biological Science Education",
+    "deg_idx": 6534,
+    "ccn_idx": 6543,
+    "end": 6587,
+    "code": "BAESSESB",
+    "version": "202603",
+    "cus": 102
+  },
+  {
+    "college": "School of Education",
+    "degree": "Bachelor of Arts, Educational Studies in Secondary Chemistry Science Education",
+    "deg_idx": 6589,
+    "ccn_idx": 6598,
+    "end": 6641,
+    "code": "BAESSESC",
+    "version": "202603",
+    "cus": 102
+  },
+  {
+    "college": "School of Education",
+    "degree": "Bachelor of Arts, Educational Studies in Secondary Earth Science Education",
+    "deg_idx": 6643,
+    "ccn_idx": 6653,
+    "end": 6697,
+    "code": "BAESSESE",
+    "version": "202603",
+    "cus": 102
+  },
+  {
+    "college": "School of Education",
+    "degree": "Bachelor of Arts, Educational Studies in Secondary Physics Science Education",
+    "deg_idx": 6699,
+    "ccn_idx": 6708,
+    "end": 6751,
+    "code": "BAESSESP",
+    "version": "202603",
+    "cus": 102
+  },
+  {
+    "college": "School of Education",
+    "degree": "Master of Arts in Teaching, Elementary Education",
+    "deg_idx": 6753,
+    "ccn_idx": 6764,
+    "end": 6802,
+    "code": "MATELED",
+    "version": "202411",
+    "cus": 59
+  },
+  {
+    "college": "School of Education",
+    "degree": "Master of Arts in Teaching, English Education (Secondary)",
+    "deg_idx": 6804,
+    "ccn_idx": 6816,
+    "end": 6845,
+    "code": "MATEES",
+    "version": "202504",
+    "cus": 43
+  },
+  {
+    "college": "School of Education",
+    "degree": "Master of Arts in Teaching, Mathematics Education (Secondary)",
+    "deg_idx": 6847,
+    "ccn_idx": 6858,
+    "end": 6887,
+    "code": "MATMES",
+    "version": "202504",
+    "cus": 45
+  },
+  {
+    "college": "School of Education",
+    "degree": "Master of Arts in Teaching, Science Education (Secondary Biology)",
+    "deg_idx": 6889,
+    "ccn_idx": 6901,
+    "end": 6928,
+    "code": "MATSESB",
+    "version": "202504",
+    "cus": 42
+  },
+  {
+    "college": "School of Education",
+    "degree": "Master of Arts in Teaching, Science Education (Secondary Chemistry)",
+    "deg_idx": 6930,
+    "ccn_idx": 6942,
+    "end": 6969,
+    "code": "MATSESC",
+    "version": "202504",
+    "cus": 42
+  },
+  {
+    "college": "School of Education",
+    "degree": "Master of Arts in Teaching, Science Education (Secondary Earth Science)",
+    "deg_idx": 6971,
+    "ccn_idx": 6983,
+    "end": 7010,
+    "code": "MATSESE",
+    "version": "202504",
+    "cus": 42
+  },
+  {
+    "college": "School of Education",
+    "degree": "Master of Arts in Teaching, Science Education (Secondary Physics)",
+    "deg_idx": 7012,
+    "ccn_idx": 7024,
+    "end": 7051,
+    "code": "MATSESP",
+    "version": "202504",
+    "cus": 42
+  },
+  {
+    "college": "School of Education",
+    "degree": "Master of Arts in Teaching, Social Studies Education (Secondary)",
+    "deg_idx": 7053,
+    "ccn_idx": 7065,
+    "end": 7091,
+    "code": "MATSSES",
+    "version": "202504",
+    "cus": 41
+  },
+  {
+    "college": "School of Education",
+    "degree": "Master of Arts in Teaching, Special Education",
+    "deg_idx": 7093,
+    "ccn_idx": 7112,
+    "end": 7158,
+    "code": "MATSPED",
+    "version": "202412",
+    "cus": 64
+  },
+  {
+    "college": "School of Education",
+    "degree": "Master of Science, Curriculum and Instruction",
+    "deg_idx": 7160,
+    "ccn_idx": 7169,
+    "end": 7180,
+    "code": "MSCIN",
+    "version": "202404",
+    "cus": 32
+  },
+  {
+    "college": "School of Education",
+    "degree": "Master of Science, Educational Leadership",
+    "deg_idx": 7182,
+    "ccn_idx": 7193,
+    "end": 7211,
+    "code": "MSEDL",
+    "version": "202404",
+    "cus": 39
+  },
+  {
+    "college": "School of Education",
+    "degree": "Master of Education, Education Technology and Instructional Design",
+    "deg_idx": 7213,
+    "ccn_idx": 7225,
+    "end": 7244,
+    "code": "MEDETID",
+    "version": "202312",
+    "cus": 38
+  },
+  {
+    "college": "School of Education",
+    "degree": "Master of Education, Education Technology and Instructional Design",
+    "deg_idx": 7246,
+    "ccn_idx": 7258,
+    "end": 7273,
+    "code": "MEDETIDA",
+    "version": "202312",
+    "cus": 32
+  },
+  {
+    "college": "School of Education",
+    "degree": "Master of Education, Education Technology and Instructional Design",
+    "deg_idx": 7275,
+    "ccn_idx": 7287,
+    "end": 7303,
+    "code": "MEDETIDK12",
+    "version": "202312",
+    "cus": 32
+  },
+  {
+    "college": "School of Education",
+    "degree": "Master of Arts, English Language Learning",
+    "deg_idx": 7305,
+    "ccn_idx": 7311,
+    "end": 7325,
+    "code": "MAELLP12",
+    "version": "201501",
+    "cus": 30
+  },
+  {
+    "college": "School of Education",
+    "degree": "Master of Arts, Mathematics Education (K-6)",
+    "deg_idx": 7327,
+    "ccn_idx": 7332,
+    "end": 7344,
+    "code": "MAMEK6",
+    "version": "201504",
+    "cus": 30
+  },
+  {
+    "college": "School of Education",
+    "degree": "Master of Arts in Mathematics Education (Middle Grades)",
+    "deg_idx": 7346,
+    "ccn_idx": 7352,
+    "end": 7369,
+    "code": "MAMEMG",
+    "version": "201810",
+    "cus": 32
+  },
+  {
+    "college": "School of Education",
+    "degree": "Master of Arts in Mathematics Education (Secondary)",
+    "deg_idx": 7371,
+    "ccn_idx": 7377,
+    "end": 7399,
+    "code": "MAMES",
+    "version": "201810",
+    "cus": 39
+  },
+  {
+    "college": "School of Education",
+    "degree": "Master of Arts Science Education (Middle Grades)",
+    "deg_idx": 7401,
+    "ccn_idx": 7407,
+    "end": 7424,
+    "code": "MASEMG",
+    "version": "201806",
+    "cus": 34
+  },
+  {
+    "college": "School of Education",
+    "degree": "Master of Arts Science Education (Secondary Biological Science)",
+    "deg_idx": 7426,
+    "ccn_idx": 7432,
+    "end": 7447,
+    "code": "MASESB",
+    "version": "201806",
+    "cus": 33
+  },
+  {
+    "college": "School of Education",
+    "degree": "Master of Arts Science Education (Secondary Chemistry)",
+    "deg_idx": 7449,
+    "ccn_idx": 7455,
+    "end": 7471,
+    "code": "MASESC",
+    "version": "201806",
+    "cus": 34
+  },
+  {
+    "college": "School of Education",
+    "degree": "Master of Arts Science Education (Secondary Earth Science)",
+    "deg_idx": 7473,
+    "ccn_idx": 7479,
+    "end": 7493,
+    "code": "MASESE",
+    "version": "201806",
+    "cus": 32
+  },
+  {
+    "college": "School of Education",
+    "degree": "Master of Arts Science Education (Secondary Physics)",
+    "deg_idx": 7495,
+    "ccn_idx": 7501,
+    "end": 7516,
+    "code": "MASESP",
+    "version": "201806",
+    "cus": 32
+  },
+  {
+    "college": "School of Education",
+    "degree": "Endorsement Preparation Program, English Language Learning",
+    "deg_idx": 7518,
+    "ccn_idx": 7522,
+    "end": 7532,
+    "code": "ENDELL",
+    "version": "201112",
+    "cus": 25
+  },
+  {
+    "college": "School of Education",
+    "degree": "Endorsement Preparation Program, Middle Grades Math",
+    "deg_idx": 7534,
+    "ccn_idx": 7546,
+    "end": 7549,
+    "code": "ENDMEMG",
+    "version": "202509",
+    "cus": 6
+  },
+  {
+    "college": "School of Education",
+    "degree": "Endorsement Preparation Program, Middle Grades Science",
+    "deg_idx": 7551,
+    "ccn_idx": 7563,
+    "end": 7566,
+    "code": "ENDSEMG",
+    "version": "202509",
+    "cus": 6
+  },
+  {
+    "college": "School of Education",
+    "degree": "Endorsement Preparation Program, Biology",
+    "deg_idx": 7568,
+    "ccn_idx": 7574,
+    "end": 7584,
+    "code": "ENDSESB",
+    "version": "202509",
+    "cus": 28
+  },
+  {
+    "college": "School of Education",
+    "degree": "Endorsement Preparation Program, Chemistry",
+    "deg_idx": 7586,
+    "ccn_idx": 7592,
+    "end": 7600,
+    "code": "ENDSESC",
+    "version": "202509",
+    "cus": 23
+  },
+  {
+    "college": "School of Education",
+    "degree": "Endorsement Preparation Program, Earth Science",
+    "deg_idx": 7602,
+    "ccn_idx": 7608,
+    "end": 7618,
+    "code": "ENDSESE",
+    "version": "202509",
+    "cus": 28
+  },
+  {
+    "college": "School of Education",
+    "degree": "Endorsement Preparation Program, Physics",
+    "deg_idx": 7620,
+    "ccn_idx": 7626,
+    "end": 7634,
+    "code": "ENDSESP",
+    "version": "202509",
+    "cus": 23
+  }
+]

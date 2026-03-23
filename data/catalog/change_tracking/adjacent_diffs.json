@@ -1,0 +1,5207 @@
+{
+  "2017-01\u21922017-03": {
+    "from": "2017-01",
+    "to": "2017-03",
+    "courses_added": [
+      "C457",
+      "C860",
+      "C861",
+      "C862",
+      "C863",
+      "C864",
+      "C865"
+    ],
+    "courses_removed": [
+      "C408",
+      "C409",
+      "C411",
+      "C412",
+      "C413",
+      "C414",
+      "C415",
+      "C416",
+      "C418",
+      "C419",
+      "C420",
+      "C422",
+      "C846"
+    ],
+    "courses_added_count": 7,
+    "courses_removed_count": 13,
+    "programs_added": [],
+    "programs_removed": [
+      "MSRNNUNIGR"
+    ],
+    "programs_added_count": 0,
+    "programs_removed_count": 1,
+    "version_changes": [
+      {
+        "program_code": "BAISK8",
+        "from_version": "201703",
+        "to_version": "201708"
+      },
+      {
+        "program_code": "BAMA12",
+        "from_version": "201703",
+        "to_version": "201708"
+      },
+      {
+        "program_code": "BAMA9",
+        "from_version": "201703",
+        "to_version": "201708"
+      },
+      {
+        "program_code": "BASC9",
+        "from_version": "201703",
+        "to_version": "201708"
+      },
+      {
+        "program_code": "BASCB12",
+        "from_version": "201703",
+        "to_version": "201708"
+      },
+      {
+        "program_code": "BASCCH12",
+        "from_version": "201703",
+        "to_version": "201708"
+      },
+      {
+        "program_code": "BASCG12",
+        "from_version": "201703",
+        "to_version": "201708"
+      },
+      {
+        "program_code": "BASCPH12",
+        "from_version": "201703",
+        "to_version": "201708"
+      },
+      {
+        "program_code": "BASP",
+        "from_version": "201703",
+        "to_version": "201708"
+      },
+      {
+        "program_code": "MATENG12",
+        "from_version": "201703",
+        "to_version": "201708"
+      },
+      {
+        "program_code": "MATSS12",
+        "from_version": "201703",
+        "to_version": "201708"
+      },
+      {
+        "program_code": "MSIHCM",
+        "from_version": "201602",
+        "to_version": "201703"
+      },
+      {
+        "program_code": "PBSS12",
+        "from_version": "201703",
+        "to_version": "201708"
+      }
+    ],
+    "version_changes_count": 13,
+    "notes": ""
+  },
+  "2017-03\u21922017-05": {
+    "from": "2017-03",
+    "to": "2017-05",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSMG",
+        "from_version": "201605",
+        "to_version": "201707"
+      }
+    ],
+    "version_changes_count": 1,
+    "notes": ""
+  },
+  "2017-05\u21922017-07": {
+    "from": "2017-05",
+    "to": "2017-07",
+    "courses_added": [
+      "C551",
+      "C552",
+      "C553",
+      "C554",
+      "C572",
+      "C612",
+      "C613",
+      "C614",
+      "C615",
+      "C616",
+      "C617",
+      "C618",
+      "C625",
+      "C645",
+      "C646",
+      "C647",
+      "C649",
+      "C650",
+      "C652",
+      "C653",
+      "C654",
+      "C655",
+      "C656",
+      "C657",
+      "C659",
+      "C728",
+      "C730",
+      "C732",
+      "C733",
+      "C800",
+      "C802",
+      "C803",
+      "C806",
+      "C808",
+      "C810",
+      "C813",
+      "C816",
+      "C818",
+      "C836",
+      "C837",
+      "C838",
+      "C839",
+      "C840",
+      "C841",
+      "C842",
+      "C843",
+      "C844",
+      "C845",
+      "C846",
+      "C870",
+      "C871",
+      "C873",
+      "C874",
+      "C875",
+      "C876",
+      "C877",
+      "C878",
+      "C879",
+      "C880",
+      "C881",
+      "C882",
+      "C883",
+      "C884",
+      "C885",
+      "C886",
+      "C887",
+      "C888",
+      "C889",
+      "C890",
+      "C891",
+      "C892",
+      "C893",
+      "C894",
+      "C895",
+      "C896",
+      "C897",
+      "C898",
+      "C900",
+      "C901",
+      "C902",
+      "C903",
+      "C904",
+      "C907",
+      "C908",
+      "C909",
+      "C910",
+      "C912",
+      "C913",
+      "C914",
+      "C915",
+      "C925",
+      "C926",
+      "C930",
+      "C931",
+      "C932",
+      "C933",
+      "C934",
+      "C935",
+      "C936",
+      "C937",
+      "C938"
+    ],
+    "courses_removed": [
+      "ABP1",
+      "AEP1",
+      "AEP2",
+      "AFP1",
+      "AFP2",
+      "AGP1",
+      "AGP2",
+      "ALP1",
+      "AMP2",
+      "ASP1",
+      "ASP2",
+      "ATP1",
+      "AUP1",
+      "AVP1",
+      "AWP1",
+      "AXP2",
+      "C144",
+      "C257",
+      "C260",
+      "C262",
+      "C265",
+      "C279",
+      "C286",
+      "C287",
+      "C292",
+      "C293",
+      "C294",
+      "C295",
+      "C296",
+      "C297",
+      "C335",
+      "C336",
+      "C337",
+      "C338",
+      "C342",
+      "C366",
+      "C379",
+      "C501",
+      "C502",
+      "C506",
+      "C508",
+      "C627",
+      "C630",
+      "C631",
+      "C633",
+      "C634",
+      "C734",
+      "C757",
+      "C758",
+      "C764",
+      "C765",
+      "C852",
+      "CXV2",
+      "CYV2",
+      "CZV2",
+      "DAV2",
+      "DBV2",
+      "DCV2",
+      "DDV2",
+      "FTC5",
+      "GNC2",
+      "GRT2",
+      "NBT1",
+      "ORT2",
+      "QQT1",
+      "QQT2",
+      "RJT1",
+      "RJT2",
+      "ROT2",
+      "SPT2",
+      "SRT1",
+      "SRT2",
+      "VCT2",
+      "VFT2"
+    ],
+    "courses_added_count": 101,
+    "courses_removed_count": 74,
+    "programs_added": [
+      "BSCSIA"
+    ],
+    "programs_removed": [
+      "MATSC9",
+      "MATSS12",
+      "PBMA12",
+      "PBMA9",
+      "PBSC9",
+      "PBSS12"
+    ],
+    "programs_added_count": 1,
+    "programs_removed_count": 6,
+    "version_changes": [
+      {
+        "program_code": "BAISK8",
+        "from_version": "201708",
+        "to_version": "201709"
+      },
+      {
+        "program_code": "BASC9",
+        "from_version": "201708",
+        "to_version": "201709"
+      },
+      {
+        "program_code": "BASCB12",
+        "from_version": "201708",
+        "to_version": "201709"
+      },
+      {
+        "program_code": "BASCCH12",
+        "from_version": "201708",
+        "to_version": "201709"
+      },
+      {
+        "program_code": "BASCG12",
+        "from_version": "201708",
+        "to_version": "201709"
+      },
+      {
+        "program_code": "BASCPH12",
+        "from_version": "201708",
+        "to_version": "201709"
+      },
+      {
+        "program_code": "BASP",
+        "from_version": "201708",
+        "to_version": "201709"
+      },
+      {
+        "program_code": "BSHIM",
+        "from_version": "201611",
+        "to_version": "201710"
+      },
+      {
+        "program_code": "MAME12",
+        "from_version": "201504",
+        "to_version": "201708"
+      },
+      {
+        "program_code": "MAME9",
+        "from_version": "201504",
+        "to_version": "201708"
+      },
+      {
+        "program_code": "MASE9",
+        "from_version": "201504",
+        "to_version": "201709"
+      },
+      {
+        "program_code": "MASEB12",
+        "from_version": "201603",
+        "to_version": "201709"
+      },
+      {
+        "program_code": "MASECH12",
+        "from_version": "201504",
+        "to_version": "201709"
+      },
+      {
+        "program_code": "MASEG12",
+        "from_version": "201504",
+        "to_version": "201709"
+      },
+      {
+        "program_code": "MASEPH12",
+        "from_version": "201603",
+        "to_version": "201709"
+      },
+      {
+        "program_code": "MATELK8",
+        "from_version": "201504",
+        "to_version": "201709"
+      },
+      {
+        "program_code": "MATENG12",
+        "from_version": "201708",
+        "to_version": "201709"
+      },
+      {
+        "program_code": "MATMA12",
+        "from_version": "201504",
+        "to_version": "201708"
+      },
+      {
+        "program_code": "MATMA9",
+        "from_version": "201504",
+        "to_version": "201708"
+      },
+      {
+        "program_code": "MATSC12",
+        "from_version": "201504",
+        "to_version": "201709"
+      },
+      {
+        "program_code": "PBELK8",
+        "from_version": "201504",
+        "to_version": "201709"
+      },
+      {
+        "program_code": "PBSC12",
+        "from_version": "201504",
+        "to_version": "201709"
+      }
+    ],
+    "version_changes_count": 22,
+    "notes": ""
+  },
+  "2017-07\u21922017-08": {
+    "from": "2017-07",
+    "to": "2017-08",
+    "courses_added": [
+      "C945"
+    ],
+    "courses_removed": [
+      "C397"
+    ],
+    "courses_added_count": 1,
+    "courses_removed_count": 1,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2017-08\u21922017-09": {
+    "from": "2017-08",
+    "to": "2017-09",
+    "courses_added": [
+      "C849",
+      "C850",
+      "C851",
+      "C917"
+    ],
+    "courses_removed": [],
+    "courses_added_count": 4,
+    "courses_removed_count": 0,
+    "programs_added": [
+      "BSNOS"
+    ],
+    "programs_removed": [
+      "BSITSEC"
+    ],
+    "programs_added_count": 1,
+    "programs_removed_count": 1,
+    "version_changes": [
+      {
+        "program_code": "BSIT",
+        "from_version": "201702",
+        "to_version": "201710"
+      },
+      {
+        "program_code": "BSMK",
+        "from_version": "201605",
+        "to_version": "201710"
+      }
+    ],
+    "version_changes_count": 2,
+    "notes": ""
+  },
+  "2017-09\u21922017-10": {
+    "from": "2017-09",
+    "to": "2017-10",
+    "courses_added": [
+      "C856",
+      "C857",
+      "C859",
+      "C867",
+      "C868",
+      "C916",
+      "C923",
+      "C924",
+      "C939"
+    ],
+    "courses_removed": [
+      "ABV1",
+      "C164",
+      "C192",
+      "C193",
+      "C752",
+      "MCT2"
+    ],
+    "courses_added_count": 9,
+    "courses_removed_count": 6,
+    "programs_added": [
+      "BSCLSA"
+    ],
+    "programs_removed": [
+      "BSITNW"
+    ],
+    "programs_added_count": 1,
+    "programs_removed_count": 1,
+    "version_changes": [
+      {
+        "program_code": "BSBUITM",
+        "from_version": "201605",
+        "to_version": "201712"
+      },
+      {
+        "program_code": "BSDMDA",
+        "from_version": "201611",
+        "to_version": "201711"
+      },
+      {
+        "program_code": "BSITSW",
+        "from_version": "201703",
+        "to_version": "201712"
+      },
+      {
+        "program_code": "MSITM",
+        "from_version": "201611",
+        "to_version": "201803"
+      }
+    ],
+    "version_changes_count": 4,
+    "notes": ""
+  },
+  "2017-10\u21922017-11": {
+    "from": "2017-10",
+    "to": "2017-11",
+    "courses_added": [
+      "MCT2"
+    ],
+    "courses_removed": [
+      "C132",
+      "C451"
+    ],
+    "courses_added_count": 1,
+    "courses_removed_count": 2,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSAC",
+        "from_version": "201605",
+        "to_version": "201801"
+      },
+      {
+        "program_code": "BSBUHCM",
+        "from_version": "201605",
+        "to_version": "201801"
+      },
+      {
+        "program_code": "BSBUHR",
+        "from_version": "201605",
+        "to_version": "201712"
+      },
+      {
+        "program_code": "MSITM",
+        "from_version": "201803",
+        "to_version": "201611"
+      }
+    ],
+    "version_changes_count": 4,
+    "notes": ""
+  },
+  "2017-11\u21922017-12": {
+    "from": "2017-11",
+    "to": "2017-12",
+    "courses_added": [
+      "C132",
+      "C451"
+    ],
+    "courses_removed": [],
+    "courses_added_count": 2,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSAC",
+        "from_version": "201801",
+        "to_version": "201605"
+      }
+    ],
+    "version_changes_count": 1,
+    "notes": ""
+  },
+  "2017-12\u21922018-01": {
+    "from": "2017-12",
+    "to": "2018-01",
+    "courses_added": [],
+    "courses_removed": [
+      "C132",
+      "C451"
+    ],
+    "courses_added_count": 0,
+    "courses_removed_count": 2,
+    "programs_added": [],
+    "programs_removed": [
+      "PBSC12"
+    ],
+    "programs_added_count": 0,
+    "programs_removed_count": 1,
+    "version_changes": [
+      {
+        "program_code": "BSAC",
+        "from_version": "201605",
+        "to_version": "201801"
+      },
+      {
+        "program_code": "MBAHM",
+        "from_version": "201408",
+        "to_version": "201802"
+      }
+    ],
+    "version_changes_count": 2,
+    "notes": ""
+  },
+  "2018-01\u21922018-02": {
+    "from": "2018-01",
+    "to": "2018-02",
+    "courses_added": [
+      "C948",
+      "C954"
+    ],
+    "courses_removed": [
+      "MAT2",
+      "MCT2"
+    ],
+    "courses_added_count": 2,
+    "courses_removed_count": 2,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "MSITM",
+        "from_version": "201611",
+        "to_version": "201803"
+      }
+    ],
+    "version_changes_count": 1,
+    "notes": ""
+  },
+  "2018-02\u21922018-03": {
+    "from": "2018-02",
+    "to": "2018-03",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2018-03\u21922018-04": {
+    "from": "2018-03",
+    "to": "2018-04",
+    "courses_added": [
+      "C918",
+      "C919",
+      "C920",
+      "C921",
+      "C922",
+      "C946",
+      "C947"
+    ],
+    "courses_removed": [
+      "C160",
+      "C358",
+      "C359",
+      "C821",
+      "C822"
+    ],
+    "courses_added_count": 7,
+    "courses_removed_count": 5,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "MSNUED",
+        "from_version": "201611",
+        "to_version": "201805"
+      },
+      {
+        "program_code": "MSRNNUEDGR",
+        "from_version": "201611",
+        "to_version": "201805"
+      }
+    ],
+    "version_changes_count": 2,
+    "notes": ""
+  },
+  "2018-04\u21922018-05": {
+    "from": "2018-04",
+    "to": "2018-05",
+    "courses_added": [
+      "C371",
+      "C373",
+      "C374",
+      "C670",
+      "C672",
+      "C673",
+      "C832",
+      "C833",
+      "C940",
+      "C941",
+      "C942",
+      "C943",
+      "C949",
+      "C950",
+      "C951",
+      "C952",
+      "C958",
+      "C959",
+      "C960",
+      "C961",
+      "C964",
+      "C965",
+      "C974",
+      "C975",
+      "C976",
+      "C977",
+      "C978",
+      "C979",
+      "C980",
+      "C981",
+      "C982",
+      "C983",
+      "C984",
+      "C985",
+      "C986",
+      "C987",
+      "C988",
+      "C989",
+      "C990",
+      "C991"
+    ],
+    "courses_removed": [
+      "C288",
+      "C289",
+      "C410",
+      "C417",
+      "C421",
+      "C423",
+      "C424",
+      "C433",
+      "C860",
+      "C861",
+      "C862",
+      "C863",
+      "C864",
+      "C865",
+      "C896",
+      "TSC2",
+      "TSP1",
+      "TSP2",
+      "TUC2",
+      "TUP1",
+      "TUP2"
+    ],
+    "courses_added_count": 40,
+    "courses_removed_count": 21,
+    "programs_added": [
+      "BSCS",
+      "BSSEMG",
+      "BSSESB",
+      "BSSESC",
+      "BSSESE",
+      "BSSESP",
+      "MASEMG",
+      "MASESB",
+      "MASESC",
+      "MASESE",
+      "MASESP",
+      "MHL"
+    ],
+    "programs_removed": [
+      "BASC9",
+      "BASCB12",
+      "BASCCH12",
+      "BASCG12",
+      "BASCPH12",
+      "MASE9",
+      "MASEB12",
+      "MASECH12",
+      "MASEG12",
+      "MASEPH12",
+      "MSIHCM"
+    ],
+    "programs_added_count": 12,
+    "programs_removed_count": 11,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2018-05\u21922018-06": {
+    "from": "2018-05",
+    "to": "2018-06",
+    "courses_added": [
+      "C955",
+      "C966",
+      "C973"
+    ],
+    "courses_removed": [
+      "C552"
+    ],
+    "courses_added_count": 3,
+    "courses_removed_count": 1,
+    "programs_added": [
+      "MATEES",
+      "MATELED",
+      "MATMEMG",
+      "MATMES",
+      "MATSES",
+      "PBELED"
+    ],
+    "programs_removed": [
+      "MATELK8",
+      "MATENG12",
+      "MATMA12",
+      "MATMA9",
+      "MATSC12",
+      "PBELK8"
+    ],
+    "programs_added_count": 6,
+    "programs_removed_count": 6,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2018-06\u21922018-07": {
+    "from": "2018-06",
+    "to": "2018-07",
+    "courses_added": [
+      "C927",
+      "C928",
+      "C929",
+      "C962",
+      "C963",
+      "C968",
+      "C969",
+      "C970",
+      "C971"
+    ],
+    "courses_removed": [
+      "C196",
+      "SJT2"
+    ],
+    "courses_added_count": 9,
+    "courses_removed_count": 2,
+    "programs_added": [
+      "BAELED",
+      "BSITSWC"
+    ],
+    "programs_removed": [
+      "BAISK8",
+      "BSITSW"
+    ],
+    "programs_added_count": 2,
+    "programs_removed_count": 2,
+    "version_changes": [
+      {
+        "program_code": "MSITM",
+        "from_version": "201803",
+        "to_version": "201808"
+      }
+    ],
+    "version_changes_count": 1,
+    "notes": ""
+  },
+  "2018-07\u21922018-08": {
+    "from": "2018-07",
+    "to": "2018-08",
+    "courses_added": [
+      "C994",
+      "DTMG"
+    ],
+    "courses_removed": [
+      "C169",
+      "C189",
+      "C452",
+      "C711",
+      "C754"
+    ],
+    "courses_added_count": 2,
+    "courses_removed_count": 5,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSCS",
+        "from_version": "201806",
+        "to_version": "201809"
+      },
+      {
+        "program_code": "BSDMDA",
+        "from_version": "201711",
+        "to_version": "201809"
+      },
+      {
+        "program_code": "BSITSWC",
+        "from_version": "201806",
+        "to_version": "201809"
+      },
+      {
+        "program_code": "BSMG",
+        "from_version": "201707",
+        "to_version": "201809"
+      },
+      {
+        "program_code": "BSMK",
+        "from_version": "201710",
+        "to_version": "201809"
+      }
+    ],
+    "version_changes_count": 5,
+    "notes": ""
+  },
+  "2018-08\u21922018-09": {
+    "from": "2018-08",
+    "to": "2018-09",
+    "courses_added": [
+      "C729",
+      "C731",
+      "C972",
+      "C992"
+    ],
+    "courses_removed": [
+      "C281",
+      "EXP2"
+    ],
+    "courses_added_count": 4,
+    "courses_removed_count": 2,
+    "programs_added": [
+      "BSMEMG",
+      "BSMES",
+      "MAMEMG",
+      "MAMES"
+    ],
+    "programs_removed": [
+      "BAMA12",
+      "BAMA9",
+      "MAME12",
+      "MAME9"
+    ],
+    "programs_added_count": 4,
+    "programs_removed_count": 4,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2018-09\u21922018-10": {
+    "from": "2018-09",
+    "to": "2018-10",
+    "courses_added": [
+      "C993",
+      "D001",
+      "D002",
+      "D003",
+      "D004",
+      "D005",
+      "D006",
+      "D007",
+      "D008",
+      "D009",
+      "D010",
+      "D011",
+      "D012",
+      "D013",
+      "D014",
+      "D015"
+    ],
+    "courses_removed": [
+      "DTMG"
+    ],
+    "courses_added_count": 16,
+    "courses_removed_count": 1,
+    "programs_added": [
+      "BASPMM"
+    ],
+    "programs_removed": [],
+    "programs_added_count": 1,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2018-10\u21922018-11": {
+    "from": "2018-10",
+    "to": "2018-11",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2018-11\u21922018-12": {
+    "from": "2018-11",
+    "to": "2018-12",
+    "courses_added": [
+      "C854",
+      "C855",
+      "C957",
+      "C995",
+      "C996",
+      "C997"
+    ],
+    "courses_removed": [
+      "C742",
+      "C746",
+      "C793",
+      "C794",
+      "EST1"
+    ],
+    "courses_added_count": 6,
+    "courses_removed_count": 5,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSCSIA",
+        "from_version": "201706",
+        "to_version": "201901"
+      },
+      {
+        "program_code": "BSDMDA",
+        "from_version": "201809",
+        "to_version": "201901"
+      },
+      {
+        "program_code": "BSIT",
+        "from_version": "201710",
+        "to_version": "201901"
+      },
+      {
+        "program_code": "BSITSWC",
+        "from_version": "201809",
+        "to_version": "201901"
+      },
+      {
+        "program_code": "BSMG",
+        "from_version": "201809",
+        "to_version": "201901"
+      },
+      {
+        "program_code": "BSMK",
+        "from_version": "201809",
+        "to_version": "201901"
+      },
+      {
+        "program_code": "BSNOS",
+        "from_version": "201711",
+        "to_version": "201901"
+      },
+      {
+        "program_code": "MSDA",
+        "from_version": "201612",
+        "to_version": "201812"
+      },
+      {
+        "program_code": "MSNUNI",
+        "from_version": "201702",
+        "to_version": "201812"
+      }
+    ],
+    "version_changes_count": 9,
+    "notes": ""
+  },
+  "2018-12\u21922019-01": {
+    "from": "2018-12",
+    "to": "2019-01",
+    "courses_added": [
+      "C725",
+      "C726",
+      "C727",
+      "C795",
+      "C796"
+    ],
+    "courses_removed": [
+      "C688",
+      "FXT2",
+      "JIT2",
+      "LQT2",
+      "TFT2",
+      "VLT2"
+    ],
+    "courses_added_count": 5,
+    "courses_removed_count": 6,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "MSCSIA",
+        "from_version": "201603",
+        "to_version": "201902"
+      }
+    ],
+    "version_changes_count": 1,
+    "notes": ""
+  },
+  "2019-01\u21922019-02": {
+    "from": "2019-01",
+    "to": "2019-02",
+    "courses_added": [
+      "D033"
+    ],
+    "courses_removed": [
+      "C763"
+    ],
+    "courses_added_count": 1,
+    "courses_removed_count": 1,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSHIM",
+        "from_version": "201710",
+        "to_version": "201903"
+      }
+    ],
+    "version_changes_count": 1,
+    "notes": ""
+  },
+  "2019-02\u21922019-03": {
+    "from": "2019-02",
+    "to": "2019-03",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2019-03\u21922019-04": {
+    "from": "2019-03",
+    "to": "2019-04",
+    "courses_added": [
+      "D016",
+      "D017",
+      "D018",
+      "D019",
+      "D020",
+      "D021",
+      "D022",
+      "D023",
+      "D034",
+      "D035",
+      "D036",
+      "D037",
+      "D038"
+    ],
+    "courses_removed": [
+      "C269",
+      "C457",
+      "CWEL",
+      "EFV1",
+      "FCC1",
+      "FJC1",
+      "FLC1"
+    ],
+    "courses_added_count": 13,
+    "courses_removed_count": 7,
+    "programs_added": [
+      "BASPEE"
+    ],
+    "programs_removed": [
+      "BASP"
+    ],
+    "programs_added_count": 1,
+    "programs_removed_count": 1,
+    "version_changes": [
+      {
+        "program_code": "MSEDL",
+        "from_version": "201209",
+        "to_version": "201905"
+      }
+    ],
+    "version_changes_count": 1,
+    "notes": ""
+  },
+  "2019-04\u21922019-05": {
+    "from": "2019-04",
+    "to": "2019-05",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2019-05\u21922019-06": {
+    "from": "2019-05",
+    "to": "2019-06",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2019-06\u21922019-07": {
+    "from": "2019-06",
+    "to": "2019-07",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2019-07\u21922019-08": {
+    "from": "2019-07",
+    "to": "2019-08",
+    "courses_added": [
+      "D084",
+      "D085",
+      "D086",
+      "D087",
+      "D088"
+    ],
+    "courses_removed": [
+      "C185",
+      "C186",
+      "C187",
+      "C697",
+      "C698",
+      "LEC1",
+      "LFT1",
+      "LMT1",
+      "LNT1",
+      "LPT1",
+      "LRT1",
+      "LST1",
+      "LWT1",
+      "TVT2"
+    ],
+    "courses_added_count": 5,
+    "courses_removed_count": 14,
+    "programs_added": [],
+    "programs_removed": [
+      "ENDEDL"
+    ],
+    "programs_added_count": 0,
+    "programs_removed_count": 1,
+    "version_changes": [
+      {
+        "program_code": "BSCLSA",
+        "from_version": "201712",
+        "to_version": "201909"
+      }
+    ],
+    "version_changes_count": 1,
+    "notes": ""
+  },
+  "2019-08\u21922019-09": {
+    "from": "2019-08",
+    "to": "2019-09",
+    "courses_added": [
+      "D046",
+      "D047",
+      "D048",
+      "D049",
+      "D050",
+      "D051",
+      "D052",
+      "D053",
+      "D054",
+      "D055",
+      "D056",
+      "D057",
+      "D058",
+      "D059",
+      "D060",
+      "D061",
+      "D062",
+      "D063",
+      "D064",
+      "D065",
+      "D066",
+      "D067",
+      "D068",
+      "D069",
+      "D070",
+      "D071"
+    ],
+    "courses_removed": [],
+    "courses_added_count": 26,
+    "courses_removed_count": 0,
+    "programs_added": [
+      "BSHSC"
+    ],
+    "programs_removed": [],
+    "programs_added_count": 1,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2019-09\u21922019-10": {
+    "from": "2019-09",
+    "to": "2019-10",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2019-10\u21922019-11": {
+    "from": "2019-10",
+    "to": "2019-11",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2019-11\u21922019-12": {
+    "from": "2019-11",
+    "to": "2019-12",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2019-12\u21922020-01": {
+    "from": "2019-12",
+    "to": "2020-01",
+    "courses_added": [
+      "D114"
+    ],
+    "courses_removed": [
+      "C246",
+      "C247",
+      "C299",
+      "C917"
+    ],
+    "courses_added_count": 1,
+    "courses_removed_count": 4,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSNOS",
+        "from_version": "201901",
+        "to_version": "202002"
+      }
+    ],
+    "version_changes_count": 1,
+    "notes": ""
+  },
+  "2020-01\u21922020-02": {
+    "from": "2020-01",
+    "to": "2020-02",
+    "courses_added": [
+      "D072",
+      "D073",
+      "D074",
+      "D075",
+      "D076",
+      "D077",
+      "D078",
+      "D079",
+      "D080",
+      "D081",
+      "D082",
+      "D083",
+      "D089",
+      "D098",
+      "D099",
+      "D100",
+      "D101",
+      "D102",
+      "D103",
+      "D104",
+      "D105"
+    ],
+    "courses_removed": [
+      "AST1",
+      "C238",
+      "C248",
+      "C249",
+      "C250",
+      "C251",
+      "C459",
+      "C463",
+      "C708",
+      "C712",
+      "C713",
+      "C714",
+      "C718",
+      "C719",
+      "C994",
+      "CZC1",
+      "FVC1",
+      "PFHM",
+      "UFC1",
+      "VYC1"
+    ],
+    "courses_added_count": 21,
+    "courses_removed_count": 20,
+    "programs_added": [
+      "BSBAAC",
+      "BSBAHC",
+      "BSBAHR",
+      "BSBAIT",
+      "BSBAMGA",
+      "BSBAMGB",
+      "BSBAMK"
+    ],
+    "programs_removed": [
+      "BSAC",
+      "BSBUHCM",
+      "BSBUHR",
+      "BSBUITM",
+      "BSMG",
+      "BSMK"
+    ],
+    "programs_added_count": 7,
+    "programs_removed_count": 6,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2020-02\u21922020-03": {
+    "from": "2020-02",
+    "to": "2020-03",
+    "courses_added": [
+      "D024",
+      "D025",
+      "D026",
+      "D027",
+      "D028",
+      "D029",
+      "D030",
+      "D031",
+      "D129"
+    ],
+    "courses_removed": [],
+    "courses_added_count": 9,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "MSNUED",
+        "from_version": "201805",
+        "to_version": "202003"
+      },
+      {
+        "program_code": "MSNUNI",
+        "from_version": "201812",
+        "to_version": "202003"
+      },
+      {
+        "program_code": "MSRNNUEDGR",
+        "from_version": "201805",
+        "to_version": "202003"
+      }
+    ],
+    "version_changes_count": 3,
+    "notes": ""
+  },
+  "2020-03\u21922020-04": {
+    "from": "2020-03",
+    "to": "2020-04",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [
+      "BSCC"
+    ],
+    "programs_removed": [
+      "BSCLSA"
+    ],
+    "programs_added_count": 1,
+    "programs_removed_count": 1,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2020-04\u21922020-05": {
+    "from": "2020-04",
+    "to": "2020-05",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "MSML",
+        "from_version": "201404",
+        "to_version": "202007"
+      }
+    ],
+    "version_changes_count": 1,
+    "notes": ""
+  },
+  "2020-05\u21922020-06": {
+    "from": "2020-05",
+    "to": "2020-06",
+    "courses_added": [],
+    "courses_removed": [
+      "C540",
+      "EFV2",
+      "FCC2",
+      "FJC2",
+      "FLC2"
+    ],
+    "courses_added_count": 0,
+    "courses_removed_count": 5,
+    "programs_added": [
+      "BSBAMGC"
+    ],
+    "programs_removed": [
+      "MSSP",
+      "PBELED"
+    ],
+    "programs_added_count": 1,
+    "programs_removed_count": 2,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2020-06\u21922020-07": {
+    "from": "2020-06",
+    "to": "2020-07",
+    "courses_added": [
+      "D090",
+      "D091",
+      "D092",
+      "D093",
+      "D094",
+      "D095",
+      "D096",
+      "D097",
+      "D125",
+      "D126",
+      "D127",
+      "D128",
+      "D130",
+      "D131",
+      "D132",
+      "D133",
+      "D134",
+      "D135",
+      "D136",
+      "D137",
+      "D138",
+      "D139",
+      "D140",
+      "D141",
+      "D142",
+      "D143",
+      "D144",
+      "D145",
+      "D146",
+      "D147",
+      "D148",
+      "D149",
+      "D150",
+      "D151",
+      "D152",
+      "D155",
+      "D156",
+      "D157",
+      "D158",
+      "D159",
+      "D160",
+      "D161",
+      "D162",
+      "D163",
+      "D164",
+      "D165",
+      "D166",
+      "D167",
+      "D168",
+      "D169",
+      "D170",
+      "D171",
+      "D172",
+      "D173"
+    ],
+    "courses_removed": [
+      "C113",
+      "C128",
+      "C133",
+      "C141",
+      "C142",
+      "C143",
+      "C155",
+      "C157",
+      "C158",
+      "C159",
+      "C161",
+      "C162",
+      "C163",
+      "C272",
+      "C301",
+      "C323",
+      "C324",
+      "C325",
+      "C326",
+      "C327",
+      "C328",
+      "C329",
+      "C330",
+      "C331",
+      "C332",
+      "C333",
+      "C334",
+      "C348",
+      "C350",
+      "C351",
+      "C352",
+      "C368",
+      "C369",
+      "C395",
+      "C398",
+      "C399",
+      "C400",
+      "C401",
+      "C460",
+      "C461",
+      "C462",
+      "C551",
+      "C553",
+      "C554",
+      "C572",
+      "C682",
+      "C729",
+      "C731",
+      "C733",
+      "C762",
+      "C791",
+      "C823",
+      "C824",
+      "C828",
+      "C829",
+      "C830",
+      "C847",
+      "C848",
+      "C913",
+      "C973",
+      "D008",
+      "D011",
+      "DRC1",
+      "EFP1",
+      "NHC1"
+    ],
+    "courses_added_count": 54,
+    "courses_removed_count": 65,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BAELED",
+        "from_version": "201808",
+        "to_version": "202007"
+      },
+      {
+        "program_code": "BASPEE",
+        "from_version": "201905",
+        "to_version": "202007"
+      },
+      {
+        "program_code": "BASPMM",
+        "from_version": "201812",
+        "to_version": "202007"
+      },
+      {
+        "program_code": "BSMEMG",
+        "from_version": "201810",
+        "to_version": "202007"
+      },
+      {
+        "program_code": "BSMES",
+        "from_version": "201810",
+        "to_version": "202007"
+      },
+      {
+        "program_code": "BSSEMG",
+        "from_version": "201806",
+        "to_version": "202007"
+      },
+      {
+        "program_code": "BSSESB",
+        "from_version": "201806",
+        "to_version": "202007"
+      },
+      {
+        "program_code": "BSSESC",
+        "from_version": "201806",
+        "to_version": "202007"
+      },
+      {
+        "program_code": "BSSESE",
+        "from_version": "201806",
+        "to_version": "202007"
+      },
+      {
+        "program_code": "BSSESP",
+        "from_version": "201806",
+        "to_version": "202007"
+      },
+      {
+        "program_code": "MACC",
+        "from_version": "201407",
+        "to_version": "202008"
+      },
+      {
+        "program_code": "MATEES",
+        "from_version": "201807",
+        "to_version": "202007"
+      },
+      {
+        "program_code": "MATELED",
+        "from_version": "201807",
+        "to_version": "202007"
+      },
+      {
+        "program_code": "MATMEMG",
+        "from_version": "201807",
+        "to_version": "202007"
+      },
+      {
+        "program_code": "MATMES",
+        "from_version": "201807",
+        "to_version": "202007"
+      },
+      {
+        "program_code": "MATSES",
+        "from_version": "201807",
+        "to_version": "202007"
+      },
+      {
+        "program_code": "MSNULM",
+        "from_version": "201611",
+        "to_version": "202009"
+      },
+      {
+        "program_code": "MSRNNULMGR",
+        "from_version": "201611",
+        "to_version": "202009"
+      }
+    ],
+    "version_changes_count": 18,
+    "notes": ""
+  },
+  "2020-07\u21922020-08": {
+    "from": "2020-07",
+    "to": "2020-08",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2020-08\u21922020-09": {
+    "from": "2020-08",
+    "to": "2020-09",
+    "courses_added": [
+      "C161",
+      "C162",
+      "C163",
+      "C823",
+      "C824",
+      "D196"
+    ],
+    "courses_removed": [
+      "D074",
+      "D155",
+      "D156",
+      "D157",
+      "D158",
+      "D159",
+      "D160",
+      "D161"
+    ],
+    "courses_added_count": 6,
+    "courses_removed_count": 8,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSBAAC",
+        "from_version": "202003",
+        "to_version": "202010"
+      },
+      {
+        "program_code": "BSBAHC",
+        "from_version": "202003",
+        "to_version": "202010"
+      },
+      {
+        "program_code": "BSBAHR",
+        "from_version": "202003",
+        "to_version": "202010"
+      },
+      {
+        "program_code": "BSBAIT",
+        "from_version": "202003",
+        "to_version": "202010"
+      },
+      {
+        "program_code": "BSBAMGA",
+        "from_version": "202003",
+        "to_version": "202010"
+      },
+      {
+        "program_code": "BSBAMGB",
+        "from_version": "202003",
+        "to_version": "202010"
+      },
+      {
+        "program_code": "BSBAMGC",
+        "from_version": "202007",
+        "to_version": "202010"
+      },
+      {
+        "program_code": "BSBAMK",
+        "from_version": "202003",
+        "to_version": "202010"
+      },
+      {
+        "program_code": "MSNULM",
+        "from_version": "202009",
+        "to_version": "202008"
+      },
+      {
+        "program_code": "MSRNNULMGR",
+        "from_version": "202009",
+        "to_version": "202008"
+      }
+    ],
+    "version_changes_count": 10,
+    "notes": ""
+  },
+  "2020-09\u21922020-10": {
+    "from": "2020-09",
+    "to": "2020-10",
+    "courses_added": [
+      "D153",
+      "D155",
+      "D156",
+      "D157",
+      "D158",
+      "D159",
+      "D160",
+      "D161",
+      "D174",
+      "D175",
+      "D176",
+      "D177",
+      "D178",
+      "D179",
+      "D180",
+      "D181",
+      "D182",
+      "D183",
+      "D184",
+      "D185",
+      "D186",
+      "D187",
+      "D188",
+      "D191",
+      "D192",
+      "D193",
+      "D194",
+      "D195",
+      "D204",
+      "D205",
+      "D206",
+      "D207",
+      "D208",
+      "D209",
+      "D210",
+      "D211",
+      "D212",
+      "D213",
+      "D214"
+    ],
+    "courses_removed": [
+      "ASC1",
+      "C161",
+      "C162",
+      "C163",
+      "C561",
+      "C740",
+      "C741",
+      "C743",
+      "C744",
+      "C745",
+      "C747",
+      "C748",
+      "C755",
+      "C772",
+      "C823",
+      "C824",
+      "C837",
+      "C993",
+      "C995",
+      "C996",
+      "C997",
+      "IYT2",
+      "IZT2",
+      "JWT2",
+      "JXT2",
+      "JYT2",
+      "JZT2",
+      "KAT2",
+      "KBT2",
+      "QIT1"
+    ],
+    "courses_added_count": 39,
+    "courses_removed_count": 30,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSBAMK",
+        "from_version": "202010",
+        "to_version": "202012"
+      },
+      {
+        "program_code": "BSCS",
+        "from_version": "201809",
+        "to_version": "202011"
+      },
+      {
+        "program_code": "BSCSIA",
+        "from_version": "201901",
+        "to_version": "202010"
+      },
+      {
+        "program_code": "BSDMDA",
+        "from_version": "201901",
+        "to_version": "202011"
+      },
+      {
+        "program_code": "BSITSWC",
+        "from_version": "201901",
+        "to_version": "202011"
+      },
+      {
+        "program_code": "MSCIN",
+        "from_version": "201504",
+        "to_version": "202012"
+      },
+      {
+        "program_code": "MSDA",
+        "from_version": "201812",
+        "to_version": "202011"
+      },
+      {
+        "program_code": "MSNULM",
+        "from_version": "202008",
+        "to_version": "202011"
+      },
+      {
+        "program_code": "MSRNNULMGR",
+        "from_version": "202008",
+        "to_version": "202011"
+      }
+    ],
+    "version_changes_count": 9,
+    "notes": ""
+  },
+  "2020-10\u21922020-11": {
+    "from": "2020-10",
+    "to": "2020-11",
+    "courses_added": [
+      "D115",
+      "D116",
+      "D117",
+      "D118",
+      "D119",
+      "D120",
+      "D121",
+      "D122",
+      "D123",
+      "D124",
+      "D190",
+      "D197",
+      "D215",
+      "D216",
+      "D217",
+      "D228",
+      "D229",
+      "D230",
+      "D231",
+      "D232",
+      "D233",
+      "D234",
+      "D237",
+      "D238",
+      "D239",
+      "D240",
+      "D241",
+      "D242",
+      "D243",
+      "D244",
+      "D245",
+      "D254",
+      "D255",
+      "D256",
+      "D257",
+      "D258",
+      "D259",
+      "D260",
+      "D265",
+      "D268",
+      "D269",
+      "D270",
+      "D307",
+      "D309"
+    ],
+    "courses_removed": [
+      "C240",
+      "C241",
+      "C242",
+      "C504",
+      "C509",
+      "C750",
+      "C800",
+      "C818",
+      "D167"
+    ],
+    "courses_added_count": 44,
+    "courses_removed_count": 9,
+    "programs_added": [
+      "MATSPED",
+      "MSNUFNP"
+    ],
+    "programs_removed": [
+      "BSBAMGA",
+      "BSBAMGB"
+    ],
+    "programs_added_count": 2,
+    "programs_removed_count": 2,
+    "version_changes": [
+      {
+        "program_code": "BSBAAC",
+        "from_version": "202010",
+        "to_version": "202103"
+      },
+      {
+        "program_code": "BSDMDA",
+        "from_version": "202011",
+        "to_version": "202111"
+      },
+      {
+        "program_code": "BSHIM",
+        "from_version": "201903",
+        "to_version": "202109"
+      },
+      {
+        "program_code": "MATEES",
+        "from_version": "202007",
+        "to_version": "202109"
+      },
+      {
+        "program_code": "MATELED",
+        "from_version": "202007",
+        "to_version": "202109"
+      },
+      {
+        "program_code": "MATMEMG",
+        "from_version": "202007",
+        "to_version": "202109"
+      },
+      {
+        "program_code": "MATMES",
+        "from_version": "202007",
+        "to_version": "202109"
+      },
+      {
+        "program_code": "MATSES",
+        "from_version": "202007",
+        "to_version": "202109"
+      }
+    ],
+    "version_changes_count": 8,
+    "notes": ""
+  },
+  "2020-11\u21922020-12": {
+    "from": "2020-11",
+    "to": "2020-12",
+    "courses_added": [
+      "C240",
+      "C241",
+      "C242",
+      "C504",
+      "C509",
+      "C750",
+      "C800",
+      "C818",
+      "D167"
+    ],
+    "courses_removed": [
+      "D190",
+      "D197",
+      "D215",
+      "D216",
+      "D217",
+      "D228",
+      "D229",
+      "D230",
+      "D231",
+      "D232",
+      "D233",
+      "D234",
+      "D237",
+      "D238",
+      "D239",
+      "D240",
+      "D241",
+      "D242",
+      "D243",
+      "D244",
+      "D245",
+      "D254",
+      "D255",
+      "D256",
+      "D257",
+      "D258",
+      "D259",
+      "D260",
+      "D265",
+      "D268",
+      "D269",
+      "D270",
+      "D307",
+      "D309"
+    ],
+    "courses_added_count": 9,
+    "courses_removed_count": 34,
+    "programs_added": [
+      "BSBAMGA",
+      "BSBAMGB"
+    ],
+    "programs_removed": [
+      "MATSPED"
+    ],
+    "programs_added_count": 2,
+    "programs_removed_count": 1,
+    "version_changes": [
+      {
+        "program_code": "BSBAAC",
+        "from_version": "202103",
+        "to_version": "202010"
+      },
+      {
+        "program_code": "BSDMDA",
+        "from_version": "202111",
+        "to_version": "202011"
+      },
+      {
+        "program_code": "BSHIM",
+        "from_version": "202109",
+        "to_version": "201903"
+      },
+      {
+        "program_code": "MATEES",
+        "from_version": "202109",
+        "to_version": "202007"
+      },
+      {
+        "program_code": "MATELED",
+        "from_version": "202109",
+        "to_version": "202007"
+      },
+      {
+        "program_code": "MATMEMG",
+        "from_version": "202109",
+        "to_version": "202007"
+      },
+      {
+        "program_code": "MATMES",
+        "from_version": "202109",
+        "to_version": "202007"
+      },
+      {
+        "program_code": "MATSES",
+        "from_version": "202109",
+        "to_version": "202007"
+      }
+    ],
+    "version_changes_count": 8,
+    "notes": ""
+  },
+  "2020-12\u21922021-01": {
+    "from": "2020-12",
+    "to": "2021-01",
+    "courses_added": [
+      "D215",
+      "D216",
+      "D217"
+    ],
+    "courses_removed": [
+      "C240",
+      "C241",
+      "C242"
+    ],
+    "courses_added_count": 3,
+    "courses_removed_count": 3,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSBAAC",
+        "from_version": "202010",
+        "to_version": "202103"
+      }
+    ],
+    "version_changes_count": 1,
+    "notes": ""
+  },
+  "2021-01\u21922021-02": {
+    "from": "2021-01",
+    "to": "2021-02",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2021-02\u21922021-03": {
+    "from": "2021-02",
+    "to": "2021-03",
+    "courses_added": [
+      "D228",
+      "D229",
+      "D230",
+      "D231",
+      "D232",
+      "D233",
+      "D234",
+      "D237",
+      "D238",
+      "D239",
+      "D240",
+      "D241",
+      "D242",
+      "D243",
+      "D244",
+      "D245"
+    ],
+    "courses_removed": [],
+    "courses_added_count": 16,
+    "courses_removed_count": 0,
+    "programs_added": [
+      "MATSPED"
+    ],
+    "programs_removed": [],
+    "programs_added_count": 1,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2021-03\u21922021-04": {
+    "from": "2021-03",
+    "to": "2021-04",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSHIM",
+        "from_version": "201903",
+        "to_version": "202109"
+      }
+    ],
+    "version_changes_count": 1,
+    "notes": ""
+  },
+  "2021-04\u21922021-05": {
+    "from": "2021-04",
+    "to": "2021-05",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSHIM",
+        "from_version": "202109",
+        "to_version": "201903"
+      }
+    ],
+    "version_changes_count": 1,
+    "notes": ""
+  },
+  "2021-05\u21922021-06": {
+    "from": "2021-05",
+    "to": "2021-06",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2021-06\u21922021-07": {
+    "from": "2021-06",
+    "to": "2021-07",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2021-07\u21922021-08": {
+    "from": "2021-07",
+    "to": "2021-08",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2021-08\u21922021-09": {
+    "from": "2021-08",
+    "to": "2021-09",
+    "courses_added": [
+      "D190",
+      "D254",
+      "D255",
+      "D256",
+      "D257",
+      "D258",
+      "D259",
+      "D260",
+      "D265",
+      "D268",
+      "D269",
+      "D270",
+      "D307"
+    ],
+    "courses_removed": [
+      "C504",
+      "C509",
+      "C800",
+      "C818",
+      "D167"
+    ],
+    "courses_added_count": 13,
+    "courses_removed_count": 5,
+    "programs_added": [],
+    "programs_removed": [
+      "BSBAMGA",
+      "BSBAMGB"
+    ],
+    "programs_added_count": 0,
+    "programs_removed_count": 2,
+    "version_changes": [
+      {
+        "program_code": "BSHIM",
+        "from_version": "201903",
+        "to_version": "202109"
+      },
+      {
+        "program_code": "MATEES",
+        "from_version": "202007",
+        "to_version": "202109"
+      },
+      {
+        "program_code": "MATELED",
+        "from_version": "202007",
+        "to_version": "202109"
+      },
+      {
+        "program_code": "MATMEMG",
+        "from_version": "202007",
+        "to_version": "202109"
+      },
+      {
+        "program_code": "MATMES",
+        "from_version": "202007",
+        "to_version": "202109"
+      },
+      {
+        "program_code": "MATSES",
+        "from_version": "202007",
+        "to_version": "202109"
+      },
+      {
+        "program_code": "MATSPED",
+        "from_version": "202105",
+        "to_version": "202109"
+      }
+    ],
+    "version_changes_count": 7,
+    "notes": ""
+  },
+  "2021-09\u21922021-10": {
+    "from": "2021-09",
+    "to": "2021-10",
+    "courses_added": [
+      "D197",
+      "D309"
+    ],
+    "courses_removed": [
+      "C750"
+    ],
+    "courses_added_count": 2,
+    "courses_removed_count": 1,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSDMDA",
+        "from_version": "202011",
+        "to_version": "202111"
+      }
+    ],
+    "version_changes_count": 1,
+    "notes": ""
+  },
+  "2021-10\u21922021-11": {
+    "from": "2021-10",
+    "to": "2021-11",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2021-11\u21922021-12": {
+    "from": "2021-11",
+    "to": "2021-12",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2021-12\u21922022-01": {
+    "from": "2021-12",
+    "to": "2022-01",
+    "courses_added": [
+      "D198",
+      "D202",
+      "D218",
+      "D219",
+      "D220",
+      "D221",
+      "D222",
+      "D223",
+      "D224",
+      "D225",
+      "D226",
+      "D235",
+      "D236",
+      "D250",
+      "D251",
+      "D252",
+      "D266",
+      "D311",
+      "D312",
+      "D313",
+      "D314"
+    ],
+    "courses_removed": [
+      "C228",
+      "C229",
+      "C244",
+      "C245",
+      "C252",
+      "C349",
+      "C493",
+      "D129"
+    ],
+    "courses_added_count": 21,
+    "courses_removed_count": 8,
+    "programs_added": [
+      "PMCNUED",
+      "PMCNULM"
+    ],
+    "programs_removed": [],
+    "programs_added_count": 2,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSNU",
+        "from_version": "201611",
+        "to_version": "202202"
+      },
+      {
+        "program_code": "MACC",
+        "from_version": "202008",
+        "to_version": "202202"
+      },
+      {
+        "program_code": "MSRNNUEDGR",
+        "from_version": "202003",
+        "to_version": "202202"
+      },
+      {
+        "program_code": "MSRNNULMGR",
+        "from_version": "202011",
+        "to_version": "202202"
+      }
+    ],
+    "version_changes_count": 4,
+    "notes": ""
+  },
+  "2022-01\u21922022-02": {
+    "from": "2022-01",
+    "to": "2022-02",
+    "courses_added": [
+      "D253",
+      "D361"
+    ],
+    "courses_removed": [
+      "D073",
+      "D083"
+    ],
+    "courses_added_count": 2,
+    "courses_removed_count": 2,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSBAAC",
+        "from_version": "202103",
+        "to_version": "202203"
+      },
+      {
+        "program_code": "BSBAHC",
+        "from_version": "202010",
+        "to_version": "202203"
+      },
+      {
+        "program_code": "BSBAHR",
+        "from_version": "202010",
+        "to_version": "202203"
+      },
+      {
+        "program_code": "BSBAIT",
+        "from_version": "202010",
+        "to_version": "202203"
+      },
+      {
+        "program_code": "BSBAMGC",
+        "from_version": "202010",
+        "to_version": "202203"
+      },
+      {
+        "program_code": "BSBAMK",
+        "from_version": "202012",
+        "to_version": "202203"
+      }
+    ],
+    "version_changes_count": 6,
+    "notes": ""
+  },
+  "2022-02\u21922022-03": {
+    "from": "2022-02",
+    "to": "2022-03",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2022-03\u21922022-04": {
+    "from": "2022-03",
+    "to": "2022-04",
+    "courses_added": [
+      "D343",
+      "D344",
+      "D345",
+      "D346",
+      "D347",
+      "D348",
+      "D349",
+      "D350"
+    ],
+    "courses_removed": [],
+    "courses_added_count": 8,
+    "courses_removed_count": 0,
+    "programs_added": [
+      "MSNUPMHNP"
+    ],
+    "programs_removed": [],
+    "programs_added_count": 1,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2022-04\u21922022-05": {
+    "from": "2022-04",
+    "to": "2022-05",
+    "courses_added": [
+      "D199",
+      "D276",
+      "D278",
+      "D281",
+      "D282",
+      "D303",
+      "D306",
+      "D315",
+      "D316",
+      "D317",
+      "D318",
+      "D319",
+      "D320",
+      "D322",
+      "D323",
+      "D324",
+      "D325",
+      "D326",
+      "D329",
+      "D330",
+      "D333",
+      "D334",
+      "D335",
+      "D336",
+      "D337",
+      "D338",
+      "D339",
+      "D342",
+      "D370",
+      "D411"
+    ],
+    "courses_removed": [
+      "C916",
+      "C923",
+      "D084",
+      "D085",
+      "D086",
+      "D087",
+      "D088"
+    ],
+    "courses_added_count": 30,
+    "courses_removed_count": 7,
+    "programs_added": [
+      "BSCCMCL"
+    ],
+    "programs_removed": [
+      "BSCC"
+    ],
+    "programs_added_count": 1,
+    "programs_removed_count": 1,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2022-05\u21922022-06": {
+    "from": "2022-05",
+    "to": "2022-06",
+    "courses_added": [
+      "C196",
+      "D291",
+      "D292",
+      "D293",
+      "D294",
+      "D295",
+      "D296",
+      "D297",
+      "D298",
+      "D299",
+      "D300",
+      "D301",
+      "D302",
+      "D304",
+      "D305",
+      "D321",
+      "D341",
+      "D426",
+      "D427"
+    ],
+    "courses_removed": [
+      "D323",
+      "D326"
+    ],
+    "courses_added_count": 19,
+    "courses_removed_count": 2,
+    "programs_added": [
+      "BSCCAWS",
+      "BSCCAZR",
+      "BSITSW"
+    ],
+    "programs_removed": [],
+    "programs_added_count": 3,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSCCMCL",
+        "from_version": "202205",
+        "to_version": "202207"
+      },
+      {
+        "program_code": "BSIT",
+        "from_version": "201901",
+        "to_version": "202207"
+      }
+    ],
+    "version_changes_count": 2,
+    "notes": ""
+  },
+  "2022-06\u21922022-07": {
+    "from": "2022-06",
+    "to": "2022-07",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2022-07\u21922022-08": {
+    "from": "2022-07",
+    "to": "2022-08",
+    "courses_added": [
+      "D372",
+      "D412",
+      "D413",
+      "D414",
+      "D415",
+      "D416",
+      "D417",
+      "D418",
+      "D419",
+      "D420",
+      "D421",
+      "D422",
+      "D423"
+    ],
+    "courses_removed": [
+      "C849",
+      "C851",
+      "C924",
+      "D114"
+    ],
+    "courses_added_count": 13,
+    "courses_removed_count": 4,
+    "programs_added": [
+      "BSNES",
+      "BSNES_C"
+    ],
+    "programs_removed": [
+      "BSNOS"
+    ],
+    "programs_added_count": 2,
+    "programs_removed_count": 1,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2022-08\u21922022-09": {
+    "from": "2022-08",
+    "to": "2022-09",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2022-09\u21922022-10": {
+    "from": "2022-09",
+    "to": "2022-10",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [
+      "MSITMUG"
+    ],
+    "programs_removed": [],
+    "programs_added_count": 1,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2022-10\u21922022-11": {
+    "from": "2022-10",
+    "to": "2022-11",
+    "courses_added": [],
+    "courses_removed": [
+      "C626",
+      "C636",
+      "IDC1",
+      "JNT2",
+      "JOT2",
+      "JPT2",
+      "JQT2",
+      "JRT2",
+      "JST2",
+      "MEC1",
+      "TAT2",
+      "TDT1",
+      "TET1"
+    ],
+    "courses_added_count": 0,
+    "courses_removed_count": 13,
+    "programs_added": [],
+    "programs_removed": [
+      "MEDID",
+      "MEDLT"
+    ],
+    "programs_added_count": 0,
+    "programs_removed_count": 2,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2022-11\u21922022-12": {
+    "from": "2022-11",
+    "to": "2022-12",
+    "courses_added": [
+      "D203",
+      "D263",
+      "D373",
+      "D374",
+      "D375",
+      "D376",
+      "D377",
+      "D379",
+      "D380",
+      "D381",
+      "D384",
+      "D389",
+      "D390",
+      "D391",
+      "D392",
+      "D393",
+      "D394",
+      "D395",
+      "D396",
+      "D397",
+      "D398",
+      "D399",
+      "D400",
+      "D401",
+      "D402",
+      "D403",
+      "D404",
+      "D405",
+      "D406",
+      "D407",
+      "D408",
+      "D409",
+      "D410",
+      "D458"
+    ],
+    "courses_removed": [
+      "D046",
+      "D047",
+      "D048",
+      "D049",
+      "D050",
+      "D051",
+      "D052",
+      "D053",
+      "D054",
+      "D055",
+      "D056",
+      "D057",
+      "D058",
+      "D059",
+      "D060",
+      "D061",
+      "D062",
+      "D063",
+      "D064",
+      "D065",
+      "D066",
+      "D067",
+      "D068",
+      "D069",
+      "D070",
+      "D071"
+    ],
+    "courses_added_count": 34,
+    "courses_removed_count": 26,
+    "programs_added": [
+      "BSHHS",
+      "MSMK"
+    ],
+    "programs_removed": [
+      "BSHSC"
+    ],
+    "programs_added_count": 2,
+    "programs_removed_count": 1,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2022-12\u21922023-01": {
+    "from": "2022-12",
+    "to": "2023-01",
+    "courses_added": [
+      "D267",
+      "D277",
+      "D279",
+      "D280",
+      "D284",
+      "D286",
+      "D287",
+      "D288",
+      "D308",
+      "D326",
+      "D351",
+      "D352",
+      "D362",
+      "D363",
+      "D364",
+      "D365",
+      "D366",
+      "D367",
+      "D368",
+      "D369",
+      "D378",
+      "D382",
+      "D383",
+      "D385",
+      "D386",
+      "D387",
+      "D388",
+      "D424",
+      "D425",
+      "D439",
+      "D440",
+      "D441",
+      "D442",
+      "D443",
+      "D444",
+      "D445",
+      "D446",
+      "D447",
+      "D449",
+      "D450",
+      "D453",
+      "D454",
+      "D455",
+      "D479",
+      "D480"
+    ],
+    "courses_removed": [
+      "C181",
+      "C196",
+      "C217",
+      "C230",
+      "C304",
+      "C361",
+      "C405",
+      "C453",
+      "C465",
+      "C466",
+      "C467",
+      "C468",
+      "C469",
+      "C470",
+      "C471",
+      "C472",
+      "C473",
+      "C474",
+      "C475",
+      "C476",
+      "C477",
+      "C478",
+      "C486",
+      "C487",
+      "C488",
+      "C489",
+      "C490",
+      "C491",
+      "C492",
+      "C785",
+      "C787",
+      "C825",
+      "C826",
+      "C856",
+      "C868"
+    ],
+    "courses_added_count": 45,
+    "courses_removed_count": 35,
+    "programs_added": [
+      "BSFIN",
+      "BSNPLTR",
+      "BSPNTR",
+      "BSSWE",
+      "BSSWE_C",
+      "MSMKA"
+    ],
+    "programs_removed": [
+      "BSITSW",
+      "BSITSWC",
+      "BSRN"
+    ],
+    "programs_added_count": 6,
+    "programs_removed_count": 3,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2023-01\u21922023-02": {
+    "from": "2023-01",
+    "to": "2023-02",
+    "courses_added": [
+      "D332",
+      "D340",
+      "D353",
+      "D354",
+      "D355",
+      "D356",
+      "D357",
+      "D358",
+      "D359",
+      "D360",
+      "D430",
+      "D431"
+    ],
+    "courses_removed": [
+      "C178",
+      "C838",
+      "C839",
+      "C840",
+      "C842",
+      "D153",
+      "HMP1",
+      "QET1"
+    ],
+    "courses_added_count": 12,
+    "courses_removed_count": 8,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSBAHR",
+        "from_version": "202203",
+        "to_version": "202304"
+      },
+      {
+        "program_code": "BSCSIA",
+        "from_version": "202010",
+        "to_version": "202303"
+      }
+    ],
+    "version_changes_count": 2,
+    "notes": ""
+  },
+  "2023-02\u21922023-03": {
+    "from": "2023-02",
+    "to": "2023-03",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2023-03\u21922023-04": {
+    "from": "2023-03",
+    "to": "2023-04",
+    "courses_added": [
+      "D428",
+      "D464",
+      "D465",
+      "D466",
+      "D467",
+      "D468",
+      "D469",
+      "D470",
+      "D471",
+      "D472",
+      "D473",
+      "D509",
+      "D510",
+      "D511",
+      "D512",
+      "D513",
+      "D514",
+      "D515",
+      "D516",
+      "D517",
+      "D518",
+      "D519",
+      "D520"
+    ],
+    "courses_removed": [
+      "C980",
+      "C981",
+      "C982",
+      "C983",
+      "C984",
+      "C985",
+      "C986",
+      "C987",
+      "C988",
+      "C989",
+      "C990",
+      "C991"
+    ],
+    "courses_added_count": 23,
+    "courses_removed_count": 12,
+    "programs_added": [
+      "BSSCOM",
+      "MHA"
+    ],
+    "programs_removed": [
+      "MHL"
+    ],
+    "programs_added_count": 2,
+    "programs_removed_count": 1,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2023-04\u21922023-05": {
+    "from": "2023-04",
+    "to": "2023-05",
+    "courses_added": [
+      "D481",
+      "D482",
+      "D483",
+      "D484",
+      "D485",
+      "D486",
+      "D487",
+      "D488",
+      "D489",
+      "D490"
+    ],
+    "courses_removed": [
+      "C188",
+      "C195",
+      "C482",
+      "C700",
+      "C701",
+      "C702",
+      "C706",
+      "C725",
+      "C726",
+      "C727",
+      "C795",
+      "C796",
+      "C836",
+      "C857"
+    ],
+    "courses_added_count": 10,
+    "courses_removed_count": 14,
+    "programs_added": [
+      "PMCNUFNP",
+      "PMCNUPMHNP"
+    ],
+    "programs_removed": [],
+    "programs_added_count": 2,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSCS",
+        "from_version": "202011",
+        "to_version": "202306"
+      },
+      {
+        "program_code": "MSCSIA",
+        "from_version": "201902",
+        "to_version": "202306"
+      }
+    ],
+    "version_changes_count": 2,
+    "notes": ""
+  },
+  "2023-05\u21922023-06": {
+    "from": "2023-05",
+    "to": "2023-06",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2023-06\u21922023-07": {
+    "from": "2023-06",
+    "to": "2023-07",
+    "courses_added": [],
+    "courses_removed": [
+      "C375"
+    ],
+    "courses_added_count": 0,
+    "courses_removed_count": 1,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BAELED",
+        "from_version": "202007",
+        "to_version": "202308"
+      },
+      {
+        "program_code": "BASPEE",
+        "from_version": "202007",
+        "to_version": "202308"
+      },
+      {
+        "program_code": "BASPMM",
+        "from_version": "202007",
+        "to_version": "202308"
+      }
+    ],
+    "version_changes_count": 3,
+    "notes": ""
+  },
+  "2023-07\u21922023-08": {
+    "from": "2023-07",
+    "to": "2023-08",
+    "courses_added": [
+      "D246",
+      "D432",
+      "D433",
+      "D434",
+      "D435",
+      "D436",
+      "D491",
+      "D492",
+      "D493",
+      "D494",
+      "D495",
+      "D496",
+      "D497",
+      "D498",
+      "D499",
+      "D500",
+      "D501",
+      "D502"
+    ],
+    "courses_removed": [
+      "C107",
+      "C170",
+      "C173",
+      "C176",
+      "C255",
+      "C393",
+      "C394",
+      "C480",
+      "C749",
+      "C751",
+      "C753",
+      "C756",
+      "C768",
+      "C779",
+      "C806",
+      "C820",
+      "C846",
+      "C859",
+      "C939",
+      "D191",
+      "D192",
+      "D193",
+      "D194",
+      "D195",
+      "D309"
+    ],
+    "courses_added_count": 18,
+    "courses_removed_count": 25,
+    "programs_added": [
+      "BSDA",
+      "BSHA",
+      "MSHRM"
+    ],
+    "programs_removed": [
+      "BSBAHC",
+      "BSDMDA"
+    ],
+    "programs_added_count": 3,
+    "programs_removed_count": 2,
+    "version_changes": [
+      {
+        "program_code": "BSHIM",
+        "from_version": "202109",
+        "to_version": "202309"
+      }
+    ],
+    "version_changes_count": 1,
+    "notes": ""
+  },
+  "2023-08\u21922023-09": {
+    "from": "2023-08",
+    "to": "2023-09",
+    "courses_added": [],
+    "courses_removed": [
+      "C235",
+      "C961"
+    ],
+    "courses_added_count": 0,
+    "courses_removed_count": 2,
+    "programs_added": [
+      "CFSEWADS",
+      "CLD"
+    ],
+    "programs_removed": [],
+    "programs_added_count": 2,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSBAMGC",
+        "from_version": "202203",
+        "to_version": "202311"
+      },
+      {
+        "program_code": "BSBAMK",
+        "from_version": "202203",
+        "to_version": "202311"
+      }
+    ],
+    "version_changes_count": 2,
+    "notes": ""
+  },
+  "2023-09\u21922023-10": {
+    "from": "2023-09",
+    "to": "2023-10",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2023-10\u21922023-11": {
+    "from": "2023-10",
+    "to": "2023-11",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [
+      "MEDETID",
+      "MEDETIDA",
+      "MEDETIDK12"
+    ],
+    "programs_removed": [],
+    "programs_added_count": 3,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2023-11\u21922023-12": {
+    "from": "2023-11",
+    "to": "2023-12",
+    "courses_added": [
+      "D523",
+      "D524",
+      "D525",
+      "D526",
+      "D529",
+      "D530",
+      "D531",
+      "D532",
+      "D533",
+      "D534",
+      "D535",
+      "D536"
+    ],
+    "courses_removed": [
+      "C306",
+      "C307",
+      "C308",
+      "C309",
+      "C310",
+      "C311",
+      "C312",
+      "C313",
+      "C314",
+      "C315",
+      "C316",
+      "C317",
+      "C318",
+      "C319",
+      "C320",
+      "C321",
+      "C322",
+      "D012",
+      "D013",
+      "D014",
+      "D015",
+      "D130",
+      "D131",
+      "D132",
+      "D133",
+      "D134",
+      "D135",
+      "D136",
+      "D137",
+      "D138",
+      "D139",
+      "D140",
+      "D141",
+      "D142",
+      "D143",
+      "D144",
+      "D145",
+      "D239",
+      "D240",
+      "D241",
+      "D242"
+    ],
+    "courses_added_count": 12,
+    "courses_removed_count": 41,
+    "programs_added": [
+      "CFSEFE"
+    ],
+    "programs_removed": [],
+    "programs_added_count": 1,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BAELED",
+        "from_version": "202308",
+        "to_version": "202402"
+      },
+      {
+        "program_code": "BASPEE",
+        "from_version": "202308",
+        "to_version": "202402"
+      },
+      {
+        "program_code": "BASPMM",
+        "from_version": "202308",
+        "to_version": "202402"
+      },
+      {
+        "program_code": "BSMEMG",
+        "from_version": "202007",
+        "to_version": "202402"
+      },
+      {
+        "program_code": "BSMES",
+        "from_version": "202007",
+        "to_version": "202402"
+      },
+      {
+        "program_code": "BSSEMG",
+        "from_version": "202007",
+        "to_version": "202402"
+      },
+      {
+        "program_code": "BSSESB",
+        "from_version": "202007",
+        "to_version": "202402"
+      },
+      {
+        "program_code": "BSSESC",
+        "from_version": "202007",
+        "to_version": "202402"
+      },
+      {
+        "program_code": "BSSESE",
+        "from_version": "202007",
+        "to_version": "202402"
+      },
+      {
+        "program_code": "BSSESP",
+        "from_version": "202007",
+        "to_version": "202402"
+      },
+      {
+        "program_code": "MATEES",
+        "from_version": "202109",
+        "to_version": "202402"
+      },
+      {
+        "program_code": "MATELED",
+        "from_version": "202109",
+        "to_version": "202402"
+      },
+      {
+        "program_code": "MATMEMG",
+        "from_version": "202109",
+        "to_version": "202402"
+      },
+      {
+        "program_code": "MATMES",
+        "from_version": "202109",
+        "to_version": "202402"
+      },
+      {
+        "program_code": "MATSES",
+        "from_version": "202109",
+        "to_version": "202402"
+      },
+      {
+        "program_code": "MATSPED",
+        "from_version": "202109",
+        "to_version": "202402"
+      }
+    ],
+    "version_changes_count": 16,
+    "notes": ""
+  },
+  "2023-12\u21922024-01": {
+    "from": "2023-12",
+    "to": "2024-01",
+    "courses_added": [
+      "C715A",
+      "D072A",
+      "D197A",
+      "D253A",
+      "D276A",
+      "D277A",
+      "D278A",
+      "D279A",
+      "D280A",
+      "D281A",
+      "D282A",
+      "D284A",
+      "D411A",
+      "D521"
+    ],
+    "courses_removed": [
+      "D254"
+    ],
+    "courses_added_count": 14,
+    "courses_removed_count": 1,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSHHS",
+        "from_version": "202302",
+        "to_version": "202401"
+      },
+      {
+        "program_code": "BSHIM",
+        "from_version": "202309",
+        "to_version": "202401"
+      }
+    ],
+    "version_changes_count": 2,
+    "notes": ""
+  },
+  "2024-01\u21922024-02": {
+    "from": "2024-01",
+    "to": "2024-02",
+    "courses_added": [
+      "D286A",
+      "D287A",
+      "D288A",
+      "D308A",
+      "D427A",
+      "D564",
+      "D565",
+      "D566",
+      "D567",
+      "D568",
+      "D569",
+      "D570",
+      "D571",
+      "D572",
+      "D573",
+      "D574",
+      "D575",
+      "D576",
+      "D577",
+      "D578",
+      "D579",
+      "D581",
+      "D582",
+      "D616"
+    ],
+    "courses_removed": [],
+    "courses_added_count": 24,
+    "courses_removed_count": 0,
+    "programs_added": [
+      "BSPSY",
+      "CFSEBE"
+    ],
+    "programs_removed": [],
+    "programs_added_count": 2,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSHHS",
+        "from_version": "202401",
+        "to_version": "202402"
+      },
+      {
+        "program_code": "BSHIM",
+        "from_version": "202401",
+        "to_version": "202402"
+      }
+    ],
+    "version_changes_count": 2,
+    "notes": ""
+  },
+  "2024-02\u21922024-03": {
+    "from": "2024-02",
+    "to": "2024-03",
+    "courses_added": [
+      "D629",
+      "D630",
+      "D631",
+      "D632",
+      "D633"
+    ],
+    "courses_removed": [
+      "D020",
+      "D021",
+      "D182",
+      "D183",
+      "D185"
+    ],
+    "courses_added_count": 5,
+    "courses_removed_count": 5,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "MSCIN",
+        "from_version": "202012",
+        "to_version": "202404"
+      },
+      {
+        "program_code": "MSEDL",
+        "from_version": "201905",
+        "to_version": "202404"
+      }
+    ],
+    "version_changes_count": 2,
+    "notes": ""
+  },
+  "2024-03\u21922024-04": {
+    "from": "2024-03",
+    "to": "2024-04",
+    "courses_added": [
+      "D522",
+      "D583",
+      "D634"
+    ],
+    "courses_removed": [
+      "D423"
+    ],
+    "courses_added_count": 3,
+    "courses_removed_count": 1,
+    "programs_added": [
+      "BSHS"
+    ],
+    "programs_removed": [],
+    "programs_added_count": 1,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSCCAWS",
+        "from_version": "202207",
+        "to_version": "202406"
+      },
+      {
+        "program_code": "BSCCAZR",
+        "from_version": "202207",
+        "to_version": "202406"
+      },
+      {
+        "program_code": "BSCCMCL",
+        "from_version": "202207",
+        "to_version": "202406"
+      },
+      {
+        "program_code": "BSNES",
+        "from_version": "202208",
+        "to_version": "202406"
+      },
+      {
+        "program_code": "BSNES_C",
+        "from_version": "202208",
+        "to_version": "202406"
+      }
+    ],
+    "version_changes_count": 5,
+    "notes": ""
+  },
+  "2024-04\u21922024-05": {
+    "from": "2024-04",
+    "to": "2024-05",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2024-05\u21922024-06": {
+    "from": "2024-05",
+    "to": "2024-06",
+    "courses_added": [
+      "D545",
+      "D546",
+      "D547",
+      "D548",
+      "D549",
+      "D580",
+      "D596",
+      "D597",
+      "D598",
+      "D599",
+      "D600",
+      "D601",
+      "D602",
+      "D603",
+      "D604",
+      "D605",
+      "D606",
+      "D607",
+      "D608",
+      "D609",
+      "D610",
+      "D612",
+      "D613",
+      "D614",
+      "D617",
+      "D618",
+      "D619",
+      "D620",
+      "D621",
+      "D622",
+      "D623",
+      "D624",
+      "D625",
+      "D626",
+      "D627",
+      "D628",
+      "D776"
+    ],
+    "courses_removed": [
+      "C425",
+      "C426",
+      "C427",
+      "C428",
+      "C429",
+      "C430",
+      "C431",
+      "C432",
+      "C439",
+      "D204",
+      "D205",
+      "D206",
+      "D207",
+      "D208",
+      "D209",
+      "D210",
+      "D211",
+      "D212",
+      "D213",
+      "D214"
+    ],
+    "courses_added_count": 37,
+    "courses_removed_count": 20,
+    "programs_added": [
+      "MPH",
+      "MSDADE",
+      "MSDADPE",
+      "MSDADS"
+    ],
+    "programs_removed": [
+      "MSDA"
+    ],
+    "programs_added_count": 4,
+    "programs_removed_count": 1,
+    "version_changes": [
+      {
+        "program_code": "BSHA",
+        "from_version": "202309",
+        "to_version": "202407"
+      }
+    ],
+    "version_changes_count": 1,
+    "notes": ""
+  },
+  "2024-06\u21922024-07": {
+    "from": "2024-06",
+    "to": "2024-07",
+    "courses_added": [
+      "D584",
+      "D585",
+      "D586",
+      "D587",
+      "D588",
+      "D589",
+      "D590",
+      "D591",
+      "D592",
+      "D593",
+      "D594",
+      "D595"
+    ],
+    "courses_removed": [],
+    "courses_added_count": 12,
+    "courses_removed_count": 0,
+    "programs_added": [
+      "BSPH"
+    ],
+    "programs_removed": [],
+    "programs_added_count": 1,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2024-07\u21922024-08": {
+    "from": "2024-07",
+    "to": "2024-08",
+    "courses_added": [
+      "D459",
+      "D640",
+      "D641",
+      "D642",
+      "D643",
+      "D644",
+      "D645",
+      "D646",
+      "D647",
+      "D648",
+      "D649",
+      "D650",
+      "D651",
+      "D652",
+      "D653",
+      "D654",
+      "D655",
+      "D656",
+      "D657",
+      "E224",
+      "E225"
+    ],
+    "courses_removed": [],
+    "courses_added_count": 21,
+    "courses_removed_count": 0,
+    "programs_added": [
+      "BAESELED",
+      "BSC",
+      "BSUXD",
+      "MSRNNUNIFGR"
+    ],
+    "programs_removed": [],
+    "programs_added_count": 4,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSNU",
+        "from_version": "202202",
+        "to_version": "202410"
+      }
+    ],
+    "version_changes_count": 1,
+    "notes": ""
+  },
+  "2024-08\u21922024-09": {
+    "from": "2024-08",
+    "to": "2024-09",
+    "courses_added": [
+      "D635",
+      "D636",
+      "D637",
+      "D638",
+      "D639",
+      "D658",
+      "D659",
+      "D660",
+      "D661",
+      "D662",
+      "D663",
+      "D664",
+      "D665",
+      "D668",
+      "D669",
+      "D670",
+      "D671",
+      "D672",
+      "D673",
+      "D674",
+      "D675",
+      "D676",
+      "D677",
+      "D678",
+      "D679",
+      "D680",
+      "D681",
+      "D688",
+      "D689",
+      "D690",
+      "D691",
+      "D692",
+      "D693",
+      "D694",
+      "D695",
+      "D696",
+      "D697",
+      "D698",
+      "D699",
+      "D700",
+      "D701",
+      "D702",
+      "D703",
+      "D706",
+      "D708",
+      "D717",
+      "D718",
+      "D724",
+      "D727",
+      "D737",
+      "D738",
+      "D743",
+      "D752",
+      "D771",
+      "D772",
+      "D773",
+      "D842"
+    ],
+    "courses_removed": [
+      "C381",
+      "C382",
+      "C715A",
+      "C873",
+      "C935",
+      "C936",
+      "D072A",
+      "D128",
+      "D146",
+      "D152",
+      "D164",
+      "D165",
+      "D197A",
+      "D253A",
+      "D276A",
+      "D277A",
+      "D278A",
+      "D279A",
+      "D280A",
+      "D281A",
+      "D282A",
+      "D284A",
+      "D286A",
+      "D287A",
+      "D288A",
+      "D308A",
+      "D411A",
+      "D427A",
+      "D524",
+      "D525",
+      "D526",
+      "DWP2",
+      "DZP2",
+      "EBP2"
+    ],
+    "courses_added_count": 57,
+    "courses_removed_count": 34,
+    "programs_added": [
+      "BAESMEMG",
+      "BAESMES",
+      "BAESSEMG",
+      "BAESSESB",
+      "BAESSESC",
+      "BAESSESE",
+      "BAESSESP",
+      "BAESSPEE",
+      "BAESSPMM"
+    ],
+    "programs_removed": [
+      "CFSEBE",
+      "CFSEFE",
+      "CFSEWADS",
+      "CLD"
+    ],
+    "programs_added_count": 9,
+    "programs_removed_count": 4,
+    "version_changes": [
+      {
+        "program_code": "BAELED",
+        "from_version": "202402",
+        "to_version": "202411"
+      },
+      {
+        "program_code": "BAESELED",
+        "from_version": "202402",
+        "to_version": "202411"
+      },
+      {
+        "program_code": "MATELED",
+        "from_version": "202402",
+        "to_version": "202411"
+      }
+    ],
+    "version_changes_count": 3,
+    "notes": "cert_section_added"
+  },
+  "2024-09\u21922024-10": {
+    "from": "2024-09",
+    "to": "2024-10",
+    "courses_added": [
+      "D429",
+      "D550",
+      "D551",
+      "D552",
+      "D553",
+      "D554",
+      "D555",
+      "D556",
+      "D557",
+      "D558",
+      "D559",
+      "D560",
+      "D561",
+      "D562",
+      "D682",
+      "D683",
+      "D684",
+      "D685",
+      "D686",
+      "D687",
+      "D705",
+      "D719",
+      "D720",
+      "D723",
+      "D728",
+      "D739",
+      "D740",
+      "D746",
+      "D753",
+      "D754",
+      "D755",
+      "D756",
+      "D757",
+      "D758",
+      "D759",
+      "D760",
+      "D761",
+      "D762",
+      "D763",
+      "D764",
+      "D765",
+      "D766",
+      "D767",
+      "D768",
+      "D769",
+      "D770"
+    ],
+    "courses_removed": [
+      "C104",
+      "C105",
+      "C108",
+      "C109",
+      "C191",
+      "C239",
+      "C243",
+      "C253",
+      "C254",
+      "C340",
+      "C365",
+      "C367",
+      "C380",
+      "C732",
+      "C909",
+      "C910",
+      "C934",
+      "C951",
+      "C964",
+      "C970",
+      "D001",
+      "D002",
+      "D003",
+      "D004",
+      "D005",
+      "D006",
+      "D007",
+      "D009",
+      "D010",
+      "D125",
+      "D126",
+      "D127",
+      "D147",
+      "D149",
+      "D228",
+      "D229",
+      "D230",
+      "D231",
+      "D232",
+      "D233",
+      "D234",
+      "D237",
+      "D238",
+      "D243",
+      "D244",
+      "D245",
+      "D392",
+      "D395",
+      "D397",
+      "D403",
+      "D523",
+      "D529",
+      "D530",
+      "D531",
+      "D532"
+    ],
+    "courses_added_count": 46,
+    "courses_removed_count": 55,
+    "programs_added": [
+      "MACCA",
+      "MACCF",
+      "MACCM",
+      "MACCT"
+    ],
+    "programs_removed": [
+      "MACC"
+    ],
+    "programs_added_count": 4,
+    "programs_removed_count": 1,
+    "version_changes": [
+      {
+        "program_code": "BAESSPEE",
+        "from_version": "202402",
+        "to_version": "202412"
+      },
+      {
+        "program_code": "BAESSPMM",
+        "from_version": "202402",
+        "to_version": "202412"
+      },
+      {
+        "program_code": "BASPEE",
+        "from_version": "202402",
+        "to_version": "202412"
+      },
+      {
+        "program_code": "BASPMM",
+        "from_version": "202402",
+        "to_version": "202412"
+      },
+      {
+        "program_code": "BSCS",
+        "from_version": "202306",
+        "to_version": "202412"
+      },
+      {
+        "program_code": "BSHHS",
+        "from_version": "202402",
+        "to_version": "202411"
+      },
+      {
+        "program_code": "MATSPED",
+        "from_version": "202402",
+        "to_version": "202412"
+      }
+    ],
+    "version_changes_count": 7,
+    "notes": ""
+  },
+  "2024-10\u21922024-11": {
+    "from": "2024-10",
+    "to": "2024-11",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [
+      "BSMKT"
+    ],
+    "programs_removed": [
+      "BSBAMK"
+    ],
+    "programs_added_count": 1,
+    "programs_removed_count": 1,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2024-11\u21922024-12": {
+    "from": "2024-11",
+    "to": "2024-12",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2024-12\u21922025-01": {
+    "from": "2024-12",
+    "to": "2025-01",
+    "courses_added": [
+      "D725",
+      "D744",
+      "D745",
+      "D750",
+      "D751",
+      "D774",
+      "D775"
+    ],
+    "courses_removed": [
+      "D746"
+    ],
+    "courses_added_count": 7,
+    "courses_removed_count": 1,
+    "programs_added": [
+      "BSACC",
+      "BSHR",
+      "BSITM",
+      "BSMGT"
+    ],
+    "programs_removed": [
+      "BSBAAC",
+      "BSBAHR",
+      "BSBAIT",
+      "BSBAMGC"
+    ],
+    "programs_added_count": 4,
+    "programs_removed_count": 4,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2025-01\u21922025-02": {
+    "from": "2025-01",
+    "to": "2025-02",
+    "courses_added": [
+      "D667",
+      "D707",
+      "D709",
+      "D721",
+      "D722",
+      "D726",
+      "D729",
+      "D741",
+      "D742",
+      "D777",
+      "D778",
+      "D779",
+      "D780",
+      "D781",
+      "D782",
+      "D783",
+      "D784",
+      "D785",
+      "D786",
+      "D787",
+      "D788",
+      "D789",
+      "D790",
+      "D791",
+      "D793",
+      "D794",
+      "D795",
+      "D796",
+      "D797",
+      "D798",
+      "D799",
+      "D800",
+      "D801",
+      "D802",
+      "D803",
+      "D804",
+      "D805",
+      "D806",
+      "D807",
+      "D808",
+      "D835",
+      "D836",
+      "D837",
+      "D838",
+      "D839",
+      "D840",
+      "D841",
+      "D843",
+      "D844",
+      "D845",
+      "D846",
+      "D847",
+      "D848",
+      "D849",
+      "D850",
+      "D852",
+      "D853",
+      "D854",
+      "D855",
+      "D856",
+      "D857",
+      "D858",
+      "D859",
+      "D860",
+      "D861",
+      "D862",
+      "D863",
+      "D864",
+      "D865",
+      "D866",
+      "D867",
+      "D868",
+      "D869",
+      "D870",
+      "D871",
+      "D872",
+      "D873",
+      "D874",
+      "D875",
+      "D876",
+      "D877",
+      "D878",
+      "D879",
+      "D880",
+      "D881",
+      "D882",
+      "D883",
+      "D884",
+      "D885",
+      "D886",
+      "D887",
+      "D888",
+      "D889",
+      "D890",
+      "D891",
+      "D892",
+      "D893",
+      "D894",
+      "D895",
+      "D896",
+      "D897",
+      "D898",
+      "D899",
+      "D900",
+      "D901",
+      "D902",
+      "D903",
+      "D904",
+      "D905",
+      "D906"
+    ],
+    "courses_removed": [
+      "BVT1",
+      "BWT1",
+      "BYT1",
+      "BZT1",
+      "C263",
+      "C264",
+      "C283",
+      "C362",
+      "C373",
+      "C374",
+      "C396",
+      "C624",
+      "C645",
+      "C649",
+      "C654",
+      "C656",
+      "C736",
+      "C738",
+      "C799",
+      "C853",
+      "C875",
+      "C876",
+      "C877",
+      "C881",
+      "C883",
+      "C885",
+      "C888",
+      "C892",
+      "C897",
+      "C898",
+      "C900",
+      "C901",
+      "C904",
+      "C915",
+      "C932",
+      "C933",
+      "C938",
+      "C940",
+      "C941",
+      "C942",
+      "C943",
+      "C945",
+      "D521",
+      "DPT1",
+      "QDT1",
+      "RKT1",
+      "TQC1",
+      "UQT1"
+    ],
+    "courses_added_count": 110,
+    "courses_removed_count": 48,
+    "programs_added": [
+      "MATSESB",
+      "MATSESC",
+      "MATSESE",
+      "MATSESP",
+      "MATSSES",
+      "MSCSAIML",
+      "MSCSCS",
+      "MSCSHCI",
+      "MSCSUG",
+      "MSSWEAIE",
+      "MSSWEDDD",
+      "MSSWEDOE",
+      "MSSWEUG"
+    ],
+    "programs_removed": [
+      "MATSES"
+    ],
+    "programs_added_count": 13,
+    "programs_removed_count": 1,
+    "version_changes": [
+      {
+        "program_code": "BAESMES",
+        "from_version": "202402",
+        "to_version": "202504"
+      },
+      {
+        "program_code": "BAESSESB",
+        "from_version": "202402",
+        "to_version": "202504"
+      },
+      {
+        "program_code": "BAESSESC",
+        "from_version": "202402",
+        "to_version": "202504"
+      },
+      {
+        "program_code": "BAESSESE",
+        "from_version": "202402",
+        "to_version": "202504"
+      },
+      {
+        "program_code": "BAESSESP",
+        "from_version": "202402",
+        "to_version": "202504"
+      },
+      {
+        "program_code": "BSHIM",
+        "from_version": "202402",
+        "to_version": "202504"
+      },
+      {
+        "program_code": "BSMES",
+        "from_version": "202402",
+        "to_version": "202504"
+      },
+      {
+        "program_code": "BSSESB",
+        "from_version": "202402",
+        "to_version": "202504"
+      },
+      {
+        "program_code": "BSSESC",
+        "from_version": "202402",
+        "to_version": "202504"
+      },
+      {
+        "program_code": "BSSESE",
+        "from_version": "202402",
+        "to_version": "202504"
+      },
+      {
+        "program_code": "BSSESP",
+        "from_version": "202402",
+        "to_version": "202504"
+      },
+      {
+        "program_code": "MATEES",
+        "from_version": "202402",
+        "to_version": "202504"
+      },
+      {
+        "program_code": "MATMES",
+        "from_version": "202402",
+        "to_version": "202504"
+      }
+    ],
+    "version_changes_count": 13,
+    "notes": ""
+  },
+  "2025-02\u21922025-03": {
+    "from": "2025-02",
+    "to": "2025-03",
+    "courses_added": [],
+    "courses_removed": [
+      "C280",
+      "C282",
+      "C284",
+      "C285",
+      "C339",
+      "C341",
+      "C347",
+      "C371",
+      "C388",
+      "C646",
+      "C652",
+      "C728",
+      "C730",
+      "C832",
+      "C879",
+      "C890",
+      "C894",
+      "C902",
+      "C903",
+      "C914",
+      "C925",
+      "C930",
+      "C931",
+      "C937",
+      "C965",
+      "C972",
+      "C974",
+      "D090",
+      "D091",
+      "D092",
+      "D093",
+      "D094",
+      "D095",
+      "D096",
+      "D097",
+      "D148",
+      "D150",
+      "D151",
+      "D162",
+      "D163",
+      "D166",
+      "D168",
+      "D169",
+      "D170",
+      "D171",
+      "D172",
+      "D173",
+      "D307",
+      "D533",
+      "D534",
+      "D535",
+      "D536",
+      "RNT1"
+    ],
+    "courses_added_count": 0,
+    "courses_removed_count": 53,
+    "programs_added": [],
+    "programs_removed": [
+      "BAESMEMG",
+      "BAESSEMG",
+      "BSMEMG",
+      "BSSEMG",
+      "MATMEMG"
+    ],
+    "programs_added_count": 0,
+    "programs_removed_count": 5,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2025-03\u21922025-04": {
+    "from": "2025-03",
+    "to": "2025-04",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2025-04\u21922025-05": {
+    "from": "2025-04",
+    "to": "2025-05",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [
+      "MBAHA"
+    ],
+    "programs_removed": [
+      "MBAHM"
+    ],
+    "programs_added_count": 1,
+    "programs_removed_count": 1,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2025-05\u21922025-06": {
+    "from": "2025-05",
+    "to": "2025-06",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2025-06\u21922025-07": {
+    "from": "2025-06",
+    "to": "2025-07",
+    "courses_added": [
+      "D827",
+      "D828",
+      "D829",
+      "D830",
+      "D831",
+      "D832",
+      "D833",
+      "D917",
+      "D918",
+      "D919",
+      "D922",
+      "D923"
+    ],
+    "courses_removed": [
+      "C841",
+      "C843",
+      "C844",
+      "D431"
+    ],
+    "courses_added_count": 12,
+    "courses_removed_count": 4,
+    "programs_added": [
+      "ENDECE",
+      "ENDMEMG",
+      "ENDSEMG",
+      "ENDSESB",
+      "ENDSESC",
+      "ENDSESE",
+      "ENDSESP"
+    ],
+    "programs_removed": [],
+    "programs_added_count": 7,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSCSIA",
+        "from_version": "202303",
+        "to_version": "202509"
+      }
+    ],
+    "version_changes_count": 1,
+    "notes": ""
+  },
+  "2025-07\u21922025-08": {
+    "from": "2025-07",
+    "to": "2025-08",
+    "courses_added": [
+      "E004",
+      "E010",
+      "E025",
+      "E026",
+      "E027",
+      "E028",
+      "E029",
+      "E030",
+      "E031",
+      "E032",
+      "E033"
+    ],
+    "courses_removed": [
+      "D304",
+      "D305",
+      "D306",
+      "D321",
+      "D330",
+      "D334",
+      "D342",
+      "D411",
+      "D418"
+    ],
+    "courses_added_count": 11,
+    "courses_removed_count": 9,
+    "programs_added": [
+      "BSCNE",
+      "BSCNEAWS",
+      "BSCNEAZR",
+      "BSCNECIS"
+    ],
+    "programs_removed": [
+      "BSCCAWS",
+      "BSCCAZR",
+      "BSCCMCL",
+      "BSNES",
+      "BSNES_C"
+    ],
+    "programs_added_count": 4,
+    "programs_removed_count": 5,
+    "version_changes": [
+      {
+        "program_code": "BSHA",
+        "from_version": "202407",
+        "to_version": "202509"
+      },
+      {
+        "program_code": "BSHR",
+        "from_version": "202503",
+        "to_version": "202509"
+      }
+    ],
+    "version_changes_count": 2,
+    "notes": ""
+  },
+  "2025-08\u21922025-09": {
+    "from": "2025-08",
+    "to": "2025-09",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSC",
+        "from_version": "202409",
+        "to_version": "202510"
+      },
+      {
+        "program_code": "BSUXD",
+        "from_version": "202410",
+        "to_version": "202510"
+      }
+    ],
+    "version_changes_count": 2,
+    "notes": ""
+  },
+  "2025-09\u21922025-10": {
+    "from": "2025-09",
+    "to": "2025-10",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2025-10\u21922025-11": {
+    "from": "2025-10",
+    "to": "2025-11",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2025-11\u21922025-12": {
+    "from": "2025-11",
+    "to": "2025-12",
+    "courses_added": [
+      "D907",
+      "D908",
+      "D909",
+      "D910",
+      "D911",
+      "D912",
+      "D913",
+      "D914",
+      "D915",
+      "D916"
+    ],
+    "courses_removed": [
+      "D509",
+      "D510",
+      "D511",
+      "D512",
+      "D513",
+      "D514",
+      "D515",
+      "D516",
+      "D517",
+      "D518",
+      "D519",
+      "D520"
+    ],
+    "courses_added_count": 10,
+    "courses_removed_count": 12,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "MHA",
+        "from_version": "202306",
+        "to_version": "202602"
+      }
+    ],
+    "version_changes_count": 1,
+    "notes": ""
+  },
+  "2025-12\u21922026-01": {
+    "from": "2025-12",
+    "to": "2026-01",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2026-01\u21922026-02": {
+    "from": "2026-01",
+    "to": "2026-02",
+    "courses_added": [
+      "D822",
+      "E005",
+      "E006",
+      "E007",
+      "E008",
+      "E009",
+      "E011",
+      "E012",
+      "E013",
+      "E014",
+      "E015",
+      "E016",
+      "E017",
+      "E018",
+      "E019",
+      "E020",
+      "E021",
+      "E022",
+      "E023",
+      "E024"
+    ],
+    "courses_removed": [
+      "C268",
+      "C277",
+      "C484",
+      "C498",
+      "C769",
+      "C773",
+      "C777",
+      "C850",
+      "C927",
+      "C928",
+      "C929",
+      "C948",
+      "C954",
+      "C962",
+      "D917",
+      "D918",
+      "D919",
+      "LZT2",
+      "MBT2"
+    ],
+    "courses_added_count": 20,
+    "courses_removed_count": 19,
+    "programs_added": [
+      "MSIT",
+      "MSITPM",
+      "MSITUG"
+    ],
+    "programs_removed": [
+      "ENDECE",
+      "MSITM",
+      "MSITMUG"
+    ],
+    "programs_added_count": 3,
+    "programs_removed_count": 3,
+    "version_changes": [
+      {
+        "program_code": "BSIT",
+        "from_version": "202207",
+        "to_version": "202604"
+      }
+    ],
+    "version_changes_count": 1,
+    "notes": ""
+  },
+  "2026-02\u21922026-03": {
+    "from": "2026-02",
+    "to": "2026-03",
+    "courses_added": [],
+    "courses_removed": [
+      "C182"
+    ],
+    "courses_added_count": 0,
+    "courses_removed_count": 1,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BAELED",
+        "from_version": "202411",
+        "to_version": "202603"
+      },
+      {
+        "program_code": "BAESELED",
+        "from_version": "202411",
+        "to_version": "202603"
+      },
+      {
+        "program_code": "BAESMES",
+        "from_version": "202504",
+        "to_version": "202603"
+      },
+      {
+        "program_code": "BAESSESB",
+        "from_version": "202504",
+        "to_version": "202603"
+      },
+      {
+        "program_code": "BAESSESC",
+        "from_version": "202504",
+        "to_version": "202603"
+      },
+      {
+        "program_code": "BAESSESE",
+        "from_version": "202504",
+        "to_version": "202603"
+      },
+      {
+        "program_code": "BAESSESP",
+        "from_version": "202504",
+        "to_version": "202603"
+      },
+      {
+        "program_code": "BAESSPEE",
+        "from_version": "202412",
+        "to_version": "202603"
+      },
+      {
+        "program_code": "BAESSPMM",
+        "from_version": "202412",
+        "to_version": "202603"
+      },
+      {
+        "program_code": "BASPEE",
+        "from_version": "202412",
+        "to_version": "202603"
+      },
+      {
+        "program_code": "BASPMM",
+        "from_version": "202412",
+        "to_version": "202603"
+      },
+      {
+        "program_code": "BSMES",
+        "from_version": "202504",
+        "to_version": "202603"
+      },
+      {
+        "program_code": "BSMGT",
+        "from_version": "202503",
+        "to_version": "202605"
+      },
+      {
+        "program_code": "BSSCOM",
+        "from_version": "202306",
+        "to_version": "202605"
+      },
+      {
+        "program_code": "BSSESB",
+        "from_version": "202504",
+        "to_version": "202603"
+      },
+      {
+        "program_code": "BSSESC",
+        "from_version": "202504",
+        "to_version": "202603"
+      },
+      {
+        "program_code": "BSSESE",
+        "from_version": "202504",
+        "to_version": "202603"
+      },
+      {
+        "program_code": "BSSESP",
+        "from_version": "202504",
+        "to_version": "202603"
+      }
+    ],
+    "version_changes_count": 18,
+    "notes": ""
+  }
+}

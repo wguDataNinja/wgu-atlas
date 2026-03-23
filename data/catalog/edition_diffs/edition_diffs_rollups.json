@@ -1,0 +1,1302 @@
+{
+  "generated": "2026-03-14T10:11:12",
+  "total_transitions": 107,
+  "severity_score_formula": "course_churn\u00d71 + program_churn\u00d710 + version_changes\u00d73 + title_changes\u00d72 + cu_changes\u00d72 + extra_colleges\u00d75",
+  "top20_by_severity": [
+    {
+      "from_catalog": "2025-01",
+      "to_catalog": "2025-02",
+      "severity_score": 347,
+      "affected_colleges": [
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2017-05",
+      "to_catalog": "2017-07",
+      "severity_score": 318,
+      "affected_colleges": [
+        "Education",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2018-04",
+      "to_catalog": "2018-05",
+      "severity_score": 301,
+      "affected_colleges": [
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2024-08",
+      "to_catalog": "2024-09",
+      "severity_score": 240,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2024-09",
+      "to_catalog": "2024-10",
+      "severity_score": 187,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2022-12",
+      "to_catalog": "2023-01",
+      "severity_score": 184,
+      "affected_colleges": [
+        "Business",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2020-06",
+      "to_catalog": "2020-07",
+      "severity_score": 183,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health"
+      ]
+    },
+    {
+      "from_catalog": "2020-01",
+      "to_catalog": "2020-02",
+      "severity_score": 171,
+      "affected_colleges": [
+        "Business"
+      ]
+    },
+    {
+      "from_catalog": "2020-10",
+      "to_catalog": "2020-11",
+      "severity_score": 134,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2018-05",
+      "to_catalog": "2018-06",
+      "severity_score": 124,
+      "affected_colleges": [
+        "Education"
+      ]
+    },
+    {
+      "from_catalog": "2025-07",
+      "to_catalog": "2025-08",
+      "severity_score": 121,
+      "affected_colleges": [
+        "Business",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2024-05",
+      "to_catalog": "2024-06",
+      "severity_score": 120,
+      "affected_colleges": [
+        "Business",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2023-11",
+      "to_catalog": "2023-12",
+      "severity_score": 116,
+      "affected_colleges": [
+        "Education",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2017-01",
+      "to_catalog": "2017-03",
+      "severity_score": 112,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2020-11",
+      "to_catalog": "2020-12",
+      "severity_score": 112,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2020-09",
+      "to_catalog": "2020-10",
+      "severity_score": 111,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2026-01",
+      "to_catalog": "2026-02",
+      "severity_score": 107,
+      "affected_colleges": [
+        "Education",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2023-07",
+      "to_catalog": "2023-08",
+      "severity_score": 106,
+      "affected_colleges": [
+        "Business",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2025-02",
+      "to_catalog": "2025-03",
+      "severity_score": 103,
+      "affected_colleges": [
+        "Education"
+      ]
+    },
+    {
+      "from_catalog": "2022-11",
+      "to_catalog": "2022-12",
+      "severity_score": 95,
+      "affected_colleges": [
+        "Business",
+        "Health"
+      ]
+    }
+  ],
+  "top20_by_course_churn": [
+    {
+      "from_catalog": "2017-05",
+      "to_catalog": "2017-07",
+      "course_churn": 175,
+      "severity_score": 318,
+      "affected_colleges": [
+        "Education",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2025-01",
+      "to_catalog": "2025-02",
+      "course_churn": 158,
+      "severity_score": 347,
+      "affected_colleges": [
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2020-06",
+      "to_catalog": "2020-07",
+      "course_churn": 119,
+      "severity_score": 183,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health"
+      ]
+    },
+    {
+      "from_catalog": "2024-09",
+      "to_catalog": "2024-10",
+      "course_churn": 101,
+      "severity_score": 187,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2024-08",
+      "to_catalog": "2024-09",
+      "course_churn": 91,
+      "severity_score": 240,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2022-12",
+      "to_catalog": "2023-01",
+      "course_churn": 80,
+      "severity_score": 184,
+      "affected_colleges": [
+        "Business",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2020-09",
+      "to_catalog": "2020-10",
+      "course_churn": 69,
+      "severity_score": 111,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2018-04",
+      "to_catalog": "2018-05",
+      "course_churn": 61,
+      "severity_score": 301,
+      "affected_colleges": [
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2022-11",
+      "to_catalog": "2022-12",
+      "course_churn": 60,
+      "severity_score": 95,
+      "affected_colleges": [
+        "Business",
+        "Health"
+      ]
+    },
+    {
+      "from_catalog": "2024-05",
+      "to_catalog": "2024-06",
+      "course_churn": 57,
+      "severity_score": 120,
+      "affected_colleges": [
+        "Business",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2020-10",
+      "to_catalog": "2020-11",
+      "course_churn": 53,
+      "severity_score": 134,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2023-11",
+      "to_catalog": "2023-12",
+      "course_churn": 53,
+      "severity_score": 116,
+      "affected_colleges": [
+        "Education",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2025-02",
+      "to_catalog": "2025-03",
+      "course_churn": 53,
+      "severity_score": 103,
+      "affected_colleges": [
+        "Education"
+      ]
+    },
+    {
+      "from_catalog": "2020-11",
+      "to_catalog": "2020-12",
+      "course_churn": 43,
+      "severity_score": 112,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2023-07",
+      "to_catalog": "2023-08",
+      "course_churn": 43,
+      "severity_score": 106,
+      "affected_colleges": [
+        "Business",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2020-01",
+      "to_catalog": "2020-02",
+      "course_churn": 41,
+      "severity_score": 171,
+      "affected_colleges": [
+        "Business"
+      ]
+    },
+    {
+      "from_catalog": "2026-01",
+      "to_catalog": "2026-02",
+      "course_churn": 39,
+      "severity_score": 107,
+      "affected_colleges": [
+        "Education",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2022-04",
+      "to_catalog": "2022-05",
+      "course_churn": 37,
+      "severity_score": 57,
+      "affected_colleges": [
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2023-03",
+      "to_catalog": "2023-04",
+      "course_churn": 35,
+      "severity_score": 76,
+      "affected_colleges": [
+        "Business",
+        "Health"
+      ]
+    },
+    {
+      "from_catalog": "2021-12",
+      "to_catalog": "2022-01",
+      "course_churn": 29,
+      "severity_score": 66,
+      "affected_colleges": [
+        "Business",
+        "Health"
+      ]
+    }
+  ],
+  "top20_by_program_churn": [
+    {
+      "from_catalog": "2018-04",
+      "to_catalog": "2018-05",
+      "program_churn": 23,
+      "severity_score": 301,
+      "affected_colleges": [
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2025-01",
+      "to_catalog": "2025-02",
+      "program_churn": 14,
+      "severity_score": 347,
+      "affected_colleges": [
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2020-01",
+      "to_catalog": "2020-02",
+      "program_churn": 13,
+      "severity_score": 171,
+      "affected_colleges": [
+        "Business"
+      ]
+    },
+    {
+      "from_catalog": "2024-08",
+      "to_catalog": "2024-09",
+      "program_churn": 13,
+      "severity_score": 240,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2018-05",
+      "to_catalog": "2018-06",
+      "program_churn": 12,
+      "severity_score": 124,
+      "affected_colleges": [
+        "Education"
+      ]
+    },
+    {
+      "from_catalog": "2022-12",
+      "to_catalog": "2023-01",
+      "program_churn": 9,
+      "severity_score": 184,
+      "affected_colleges": [
+        "Business",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2025-07",
+      "to_catalog": "2025-08",
+      "program_churn": 9,
+      "severity_score": 121,
+      "affected_colleges": [
+        "Business",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2018-08",
+      "to_catalog": "2018-09",
+      "program_churn": 8,
+      "severity_score": 86,
+      "affected_colleges": [
+        "Education"
+      ]
+    },
+    {
+      "from_catalog": "2024-12",
+      "to_catalog": "2025-01",
+      "program_churn": 8,
+      "severity_score": 93,
+      "affected_colleges": [
+        "Business",
+        "Education"
+      ]
+    },
+    {
+      "from_catalog": "2017-05",
+      "to_catalog": "2017-07",
+      "program_churn": 7,
+      "severity_score": 318,
+      "affected_colleges": [
+        "Education",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2025-06",
+      "to_catalog": "2025-07",
+      "program_churn": 7,
+      "severity_score": 94,
+      "affected_colleges": [
+        "Education",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2026-01",
+      "to_catalog": "2026-02",
+      "program_churn": 6,
+      "severity_score": 107,
+      "affected_colleges": [
+        "Education",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2023-07",
+      "to_catalog": "2023-08",
+      "program_churn": 5,
+      "severity_score": 106,
+      "affected_colleges": [
+        "Business",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2024-05",
+      "to_catalog": "2024-06",
+      "program_churn": 5,
+      "severity_score": 120,
+      "affected_colleges": [
+        "Business",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2024-09",
+      "to_catalog": "2024-10",
+      "program_churn": 5,
+      "severity_score": 187,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2025-02",
+      "to_catalog": "2025-03",
+      "program_churn": 5,
+      "severity_score": 103,
+      "affected_colleges": [
+        "Education"
+      ]
+    },
+    {
+      "from_catalog": "2018-06",
+      "to_catalog": "2018-07",
+      "program_churn": 4,
+      "severity_score": 59,
+      "affected_colleges": [
+        "Education",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2020-10",
+      "to_catalog": "2020-11",
+      "program_churn": 4,
+      "severity_score": 134,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2024-07",
+      "to_catalog": "2024-08",
+      "program_churn": 4,
+      "severity_score": 81,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2020-05",
+      "to_catalog": "2020-06",
+      "program_churn": 3,
+      "severity_score": 40,
+      "affected_colleges": [
+        "Business",
+        "Education"
+      ]
+    }
+  ],
+  "top20_by_version_changes": [
+    {
+      "from_catalog": "2017-05",
+      "to_catalog": "2017-07",
+      "version_changes_count": 22,
+      "severity_score": 318,
+      "affected_colleges": [
+        "Education",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2020-06",
+      "to_catalog": "2020-07",
+      "version_changes_count": 18,
+      "severity_score": 183,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health"
+      ]
+    },
+    {
+      "from_catalog": "2026-02",
+      "to_catalog": "2026-03",
+      "version_changes_count": 18,
+      "severity_score": 60,
+      "affected_colleges": [
+        "Business",
+        "Education"
+      ]
+    },
+    {
+      "from_catalog": "2023-11",
+      "to_catalog": "2023-12",
+      "version_changes_count": 16,
+      "severity_score": 116,
+      "affected_colleges": [
+        "Education",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2017-01",
+      "to_catalog": "2017-03",
+      "version_changes_count": 13,
+      "severity_score": 112,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2025-01",
+      "to_catalog": "2025-02",
+      "version_changes_count": 13,
+      "severity_score": 347,
+      "affected_colleges": [
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2020-08",
+      "to_catalog": "2020-09",
+      "version_changes_count": 10,
+      "severity_score": 51,
+      "affected_colleges": [
+        "Business",
+        "Health"
+      ]
+    },
+    {
+      "from_catalog": "2018-11",
+      "to_catalog": "2018-12",
+      "version_changes_count": 9,
+      "severity_score": 48,
+      "affected_colleges": [
+        "Business",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2020-09",
+      "to_catalog": "2020-10",
+      "version_changes_count": 9,
+      "severity_score": 111,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2020-10",
+      "to_catalog": "2020-11",
+      "version_changes_count": 8,
+      "severity_score": 134,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2020-11",
+      "to_catalog": "2020-12",
+      "version_changes_count": 8,
+      "severity_score": 112,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2021-08",
+      "to_catalog": "2021-09",
+      "version_changes_count": 7,
+      "severity_score": 69,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health"
+      ]
+    },
+    {
+      "from_catalog": "2024-09",
+      "to_catalog": "2024-10",
+      "version_changes_count": 7,
+      "severity_score": 187,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2022-01",
+      "to_catalog": "2022-02",
+      "version_changes_count": 6,
+      "severity_score": 22,
+      "affected_colleges": [
+        "Business"
+      ]
+    },
+    {
+      "from_catalog": "2018-07",
+      "to_catalog": "2018-08",
+      "version_changes_count": 5,
+      "severity_score": 27,
+      "affected_colleges": [
+        "Business",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2024-03",
+      "to_catalog": "2024-04",
+      "version_changes_count": 5,
+      "severity_score": 43,
+      "affected_colleges": [
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2017-09",
+      "to_catalog": "2017-10",
+      "version_changes_count": 4,
+      "severity_score": 54,
+      "affected_colleges": [
+        "Business",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2017-10",
+      "to_catalog": "2017-11",
+      "version_changes_count": 4,
+      "severity_score": 24,
+      "affected_colleges": [
+        "Business",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2021-12",
+      "to_catalog": "2022-01",
+      "version_changes_count": 4,
+      "severity_score": 66,
+      "affected_colleges": [
+        "Business",
+        "Health"
+      ]
+    },
+    {
+      "from_catalog": "2020-02",
+      "to_catalog": "2020-03",
+      "version_changes_count": 3,
+      "severity_score": 18,
+      "affected_colleges": [
+        "Health"
+      ]
+    }
+  ],
+  "top20_by_title_changes": [
+    {
+      "from_catalog": "2017-01",
+      "to_catalog": "2017-03",
+      "title_changes_count": 14,
+      "severity_score": 112,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2022-12",
+      "to_catalog": "2023-01",
+      "title_changes_count": 2,
+      "severity_score": 184,
+      "affected_colleges": [
+        "Business",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2023-01",
+      "to_catalog": "2023-02",
+      "title_changes_count": 2,
+      "severity_score": 40,
+      "affected_colleges": [
+        "Business",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2024-03",
+      "to_catalog": "2024-04",
+      "title_changes_count": 2,
+      "severity_score": 43,
+      "affected_colleges": [
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2017-09",
+      "to_catalog": "2017-10",
+      "title_changes_count": 1,
+      "severity_score": 54,
+      "affected_colleges": [
+        "Business",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2017-10",
+      "to_catalog": "2017-11",
+      "title_changes_count": 1,
+      "severity_score": 24,
+      "affected_colleges": [
+        "Business",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2019-06",
+      "to_catalog": "2019-07",
+      "title_changes_count": 1,
+      "severity_score": 2,
+      "affected_colleges": [
+        "Education"
+      ]
+    },
+    {
+      "from_catalog": "2022-08",
+      "to_catalog": "2022-09",
+      "title_changes_count": 1,
+      "severity_score": 2,
+      "affected_colleges": [
+        "Health"
+      ]
+    },
+    {
+      "from_catalog": "2022-09",
+      "to_catalog": "2022-10",
+      "title_changes_count": 1,
+      "severity_score": 17,
+      "affected_colleges": [
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2023-02",
+      "to_catalog": "2023-03",
+      "title_changes_count": 1,
+      "severity_score": 2,
+      "affected_colleges": [
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2023-03",
+      "to_catalog": "2023-04",
+      "title_changes_count": 1,
+      "severity_score": 76,
+      "affected_colleges": [
+        "Business",
+        "Health"
+      ]
+    },
+    {
+      "from_catalog": "2023-09",
+      "to_catalog": "2023-10",
+      "title_changes_count": 1,
+      "severity_score": 2,
+      "affected_colleges": [
+        "Business"
+      ]
+    },
+    {
+      "from_catalog": "2024-02",
+      "to_catalog": "2024-03",
+      "title_changes_count": 1,
+      "severity_score": 23,
+      "affected_colleges": [
+        "Education",
+        "Health"
+      ]
+    },
+    {
+      "from_catalog": "2024-04",
+      "to_catalog": "2024-05",
+      "title_changes_count": 1,
+      "severity_score": 2,
+      "affected_colleges": [
+        "Education"
+      ]
+    },
+    {
+      "from_catalog": "2024-07",
+      "to_catalog": "2024-08",
+      "title_changes_count": 1,
+      "severity_score": 81,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    }
+  ],
+  "top20_by_cu_changes": [
+    {
+      "from_catalog": "2023-03",
+      "to_catalog": "2023-04",
+      "cu_changes_count": 2,
+      "severity_score": 76,
+      "affected_colleges": [
+        "Business",
+        "Health"
+      ]
+    },
+    {
+      "from_catalog": "2023-04",
+      "to_catalog": "2023-05",
+      "cu_changes_count": 2,
+      "severity_score": 59,
+      "affected_colleges": [
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2017-05",
+      "to_catalog": "2017-07",
+      "cu_changes_count": 1,
+      "severity_score": 318,
+      "affected_colleges": [
+        "Education",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2017-07",
+      "to_catalog": "2017-08",
+      "cu_changes_count": 1,
+      "severity_score": 4,
+      "affected_colleges": [
+        "Education"
+      ]
+    },
+    {
+      "from_catalog": "2017-10",
+      "to_catalog": "2017-11",
+      "cu_changes_count": 1,
+      "severity_score": 24,
+      "affected_colleges": [
+        "Business",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2020-08",
+      "to_catalog": "2020-09",
+      "cu_changes_count": 1,
+      "severity_score": 51,
+      "affected_colleges": [
+        "Business",
+        "Health"
+      ]
+    },
+    {
+      "from_catalog": "2020-10",
+      "to_catalog": "2020-11",
+      "cu_changes_count": 1,
+      "severity_score": 134,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2021-09",
+      "to_catalog": "2021-10",
+      "cu_changes_count": 1,
+      "severity_score": 8,
+      "affected_colleges": [
+        "Technology"
+      ]
+    }
+  ],
+  "top20_by_colleges_affected": [
+    {
+      "from_catalog": "2017-01",
+      "to_catalog": "2017-03",
+      "affected_college_count": 4,
+      "severity_score": 112,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2020-09",
+      "to_catalog": "2020-10",
+      "affected_college_count": 4,
+      "severity_score": 111,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2020-10",
+      "to_catalog": "2020-11",
+      "affected_college_count": 4,
+      "severity_score": 134,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2020-11",
+      "to_catalog": "2020-12",
+      "affected_college_count": 4,
+      "severity_score": 112,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2024-07",
+      "to_catalog": "2024-08",
+      "affected_college_count": 4,
+      "severity_score": 81,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2024-09",
+      "to_catalog": "2024-10",
+      "affected_college_count": 4,
+      "severity_score": 187,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2018-04",
+      "to_catalog": "2018-05",
+      "affected_college_count": 3,
+      "severity_score": 301,
+      "affected_colleges": [
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2018-11",
+      "to_catalog": "2018-12",
+      "affected_college_count": 3,
+      "severity_score": 48,
+      "affected_colleges": [
+        "Business",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2020-06",
+      "to_catalog": "2020-07",
+      "affected_college_count": 3,
+      "severity_score": 183,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health"
+      ]
+    },
+    {
+      "from_catalog": "2021-08",
+      "to_catalog": "2021-09",
+      "affected_college_count": 3,
+      "severity_score": 69,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Health"
+      ]
+    },
+    {
+      "from_catalog": "2022-12",
+      "to_catalog": "2023-01",
+      "affected_college_count": 3,
+      "severity_score": 184,
+      "affected_colleges": [
+        "Business",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2023-01",
+      "to_catalog": "2023-02",
+      "affected_college_count": 3,
+      "severity_score": 40,
+      "affected_colleges": [
+        "Business",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2023-07",
+      "to_catalog": "2023-08",
+      "affected_college_count": 3,
+      "severity_score": 106,
+      "affected_colleges": [
+        "Business",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2023-12",
+      "to_catalog": "2024-01",
+      "affected_college_count": 3,
+      "severity_score": 31,
+      "affected_colleges": [
+        "Business",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2024-03",
+      "to_catalog": "2024-04",
+      "affected_college_count": 3,
+      "severity_score": 43,
+      "affected_colleges": [
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2024-05",
+      "to_catalog": "2024-06",
+      "affected_college_count": 3,
+      "severity_score": 120,
+      "affected_colleges": [
+        "Business",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2024-08",
+      "to_catalog": "2024-09",
+      "affected_college_count": 3,
+      "severity_score": 240,
+      "affected_colleges": [
+        "Business",
+        "Education",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2025-01",
+      "to_catalog": "2025-02",
+      "affected_college_count": 3,
+      "severity_score": 347,
+      "affected_colleges": [
+        "Education",
+        "Health",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2017-05",
+      "to_catalog": "2017-07",
+      "affected_college_count": 2,
+      "severity_score": 318,
+      "affected_colleges": [
+        "Education",
+        "Technology"
+      ]
+    },
+    {
+      "from_catalog": "2017-08",
+      "to_catalog": "2017-09",
+      "affected_college_count": 2,
+      "severity_score": 35,
+      "affected_colleges": [
+        "Business",
+        "Technology"
+      ]
+    }
+  ]
+}

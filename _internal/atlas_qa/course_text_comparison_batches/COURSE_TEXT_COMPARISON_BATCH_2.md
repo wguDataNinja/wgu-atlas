@@ -3,7 +3,7 @@
 **Source artifact:** `_internal/atlas_qa/COURSE_TEXT_COMPARISON_INDEX.md`
 **Batch scope:** §5C-i STRONG materially different pairs, rows 1–35 of 70 (diff > 50; sorted by diff descending, highest-priority cases first)
 **Batching rule:** §5C-i was split in half by row number. Batch 2 = rows 1–35 (D560 through D224). Batch 3 = rows 36–70 (D225 through D236).
-**Annotation status:** All `llm_*` fields are blank — to be filled by LLM annotation pass.
+**Annotation status:** Re-annotated (original weak-model pass replaced).
 
 Text excerpts are from the source artifact (200-char truncation). Where source showed abbreviated title only, the full text is available in the paired artifact files.
 
@@ -16,10 +16,10 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Internal Auditing I provides learners with the basic knowledge and skills necessary to succeed as an entry-level internal audit professional. The Institute of Internal Auditors defines internal auditing…"
 
 > **Annotation**
-> - `llm_difference_summary: Guide text is more concise and focuses on IIA definition, while catalog provides broader context about entry-level skills`
+> - `llm_difference_summary: Catalog continues well beyond the guide's stopping point; guide is truncated at roughly the halfway point of the full description.`
 > - `llm_preference_for_research_tool: catalog`
-> - `llm_preference_reason: Catalog provides more comprehensive overview of course scope and skills`
-> - `llm_notable_observations: Guide text is significantly shorter (506 vs 998 chars) and more focused on professional definition`
+> - `llm_preference_reason: Guide appears truncated; catalog provides a complete course overview nearly double the guide length.`
+> - `llm_notable_observations: Both texts open identically; the divergence is entirely a length/completeness issue, not a framing difference.`
 > - `llm_review_flag: no`
 
 ---
@@ -31,11 +31,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Global Human Resource Management explores the rapidly changing field of international human resource management (HRM) and examines a global perspective in relation to staffing, personnel management, s…"
 
 > **Annotation**
-> - `llm_difference_summary: Guide text is significantly more detailed (897 vs 414 chars) with specific focus on global perspective and strategic HRM concepts`
-> - `llm_preference_for_research_tool: guide`
-> - `llm_preference_reason: Guide provides more comprehensive coverage of international HRM scope and applications`
-> - `llm_notable_observations: Guide text is more than double the length of catalog text and includes specific strategic focus areas`
-> - `llm_review_flag: no`
+> - `llm_difference_summary: Catalog is the shorter modern rewrite; guide is the older pre-rewrite BSHR text with more detailed coverage of specific IHRM topics including staffing, personnel management, and global perspective.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the current edition text; guide is locked to an older BSHR authoring event and should not be treated as the authoritative description.`
+> - `llm_notable_observations: BSHR cluster course — guide is substantially richer in content but represents a pre-rewrite version. The guide's additional detail on global HRM topics is notable and may be worth reviewing against the catalog rewrite.`
+> - `llm_review_flag: yes`
 
 ---
 
@@ -46,11 +46,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "HR Technology focuses on the usage of technology for strategic human resource management. The learner will develop competency in critical skills related to analyzing the value and application of the d…"
 
 > **Annotation**
-> - `llm_difference_summary: Guide text is significantly more detailed (678 vs 352 chars) with specific focus on strategic HRM applications and competency development`
-> - `llm_preference_for_research_tool: guide`
-> - `llm_preference_reason: Guide provides more comprehensive coverage of HR technology applications and strategic focus`
-> - `llm_notable_observations: Guide text is nearly double the length and includes specific competency development goals`
-> - `llm_review_flag: no`
+> - `llm_difference_summary: Catalog is the shorter modern rewrite; guide is the older BSHR locked text with specific competency language around analyzing the value and application of digital HR tools.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the current edition text; guide is the pre-rewrite BSHR version locked to an older authoring event.`
+> - `llm_notable_observations: BSHR cluster — guide's "develop competency in critical skills" framing and longer treatment of strategic HR applications is more detailed than the catalog rewrite. Content delta may be worth reviewing.`
+> - `llm_review_flag: yes`
 
 ---
 
@@ -61,10 +61,10 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "This course covers basic elements of technical communication, including professional written communication proficiency; the ability to strategize approaches for communicating with technical and non-tec…"
 
 > **Annotation**
-> - `llm_difference_summary: Catalog text is significantly more detailed (555 vs 235 chars) with specific focus on IT manager skills and diverse audiences`
+> - `llm_difference_summary: Catalog is a full course description framed for IT managers; the MSITM guide variant is a heavily condensed summary at less than half the catalog length.`
 > - `llm_preference_for_research_tool: catalog`
-> - `llm_preference_reason: Catalog provides more comprehensive coverage of technical communication scope and target audience`
-> - `llm_notable_observations: Catalog text is more than double the length and includes specific IT management context`
+> - `llm_preference_reason: Guide variant is severely truncated; catalog provides the complete course description.`
+> - `llm_notable_observations: Most heavily truncated of the E011 guide variants (235 chars vs catalog 555). The MSITM guide condenses the IT manager framing to a brief list of communication skills.`
 > - `llm_review_flag: no`
 
 ---
@@ -76,11 +76,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "The Inclusive Workplace Culture Capstone course is designed to be a comprehensive evaluation of the knowledge and skills accumulated throughout the Master of Science in Human Resource Management degr…"
 
 > **Annotation**
-> - `llm_difference_summary: Guide text is significantly more detailed (706 vs 387 chars) with specific focus on comprehensive evaluation and degree program context`
-> - `llm_preference_for_research_tool: guide`
-> - `llm_preference_reason: Guide provides more comprehensive coverage of capstone scope and program context`
-> - `llm_notable_observations: Guide text is nearly double the length and includes specific degree program context`
-> - `llm_review_flag: no`
+> - `llm_difference_summary: Catalog frames this broadly as a capstone applying prior learning; guide is explicitly scoped to the MSHRM degree with comprehensive evaluation and program-specific competency language.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Guide text is MSHRM-program-specific ("Master of Science in Human Resource Management degree"); catalog provides the general course description appropriate for default display.`
+> - `llm_notable_observations: MSHRM cluster — guide's explicit program-degree framing is more informative for an MSHRM student but unsuitable as a general course description. Worth storing as a program-context alternate.`
+> - `llm_review_flag: yes`
 
 ---
 
@@ -91,11 +91,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Organic Chemistry covers fundamental and applied concepts of organic chemistry. The learner will develop competency in critical skills related to molecular structure, functional groups, and reaction me…"
 
 > **Annotation**
-> - `llm_difference_summary: Guide text is significantly more detailed (562 vs 260 chars) with specific focus on applied concepts and competency development`
-> - `llm_preference_for_research_tool: guide`
-> - `llm_preference_reason: Guide provides more comprehensive coverage of organic chemistry applications and learning outcomes`
-> - `llm_notable_observations: Guide text is more than double the length and includes specific competency development goals`
-> - `llm_review_flag: no`
+> - `llm_difference_summary: Catalog provides a brief topic survey; guide adds "applied concepts" framing and explicit competency development language, and is more than double the catalog length.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the default display source; guide's competency framing is ENDSESC-program-specific.`
+> - `llm_notable_observations: Guide is substantially longer with student-facing competency language that catalog lacks; the additional content may add value as a program-context alternate.`
+> - `llm_review_flag: yes`
 
 ---
 
@@ -106,10 +106,10 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Network and Security - Foundations introduces learners to the fundamentals of networking and security to prepare them for the CompTIA Network+ exam. This course covers…"
 
 > **Annotation**
-> - `llm_difference_summary: Catalog text is significantly more detailed (594 vs 296 chars) with broader scope beyond just CompTIA Network+ exam preparation`
+> - `llm_difference_summary: Catalog provides the full course description; guide for BSDA/BSSWE programs is a condensed exam-focused version about half the catalog length.`
 > - `llm_preference_for_research_tool: catalog`
-> - `llm_preference_reason: Catalog provides more comprehensive overview of networking and security fundamentals`
-> - `llm_notable_observations: Guide text is exactly half the length and focuses specifically on exam preparation`
+> - `llm_preference_reason: Guide is truncated and leads with exam-prep framing; catalog is the complete general course description.`
+> - `llm_notable_observations: Exam-lock pattern consistent with CNE/SWE cluster — guide opens with CompTIA Network+ reference and is ~50% of catalog length.`
 > - `llm_review_flag: no`
 
 ---
@@ -121,10 +121,10 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Network and Security - Foundations introduces learners to the fundamentals of networking and security to prepare them for the CompTIA Network+ exam. This course covers…"
 
 > **Annotation**
-> - `llm_difference_summary: Catalog text is significantly more detailed (594 vs 297 chars) with broader scope beyond just CompTIA Network+ exam preparation`
+> - `llm_difference_summary: Catalog provides the full course description; BSCNE cluster guide is the canonical exam-locked truncated version at roughly half the catalog length.`
 > - `llm_preference_for_research_tool: catalog`
-> - `llm_preference_reason: Catalog provides more comprehensive overview of networking and security fundamentals`
-> - `llm_notable_observations: Guide text is exactly half the length and focuses specifically on exam preparation`
+> - `llm_preference_reason: Guide is the CNE cluster locked version; catalog is more complete and not exam-scoped.`
+> - `llm_notable_observations: Canonical CNE exam-lock pattern — guide leads with Network+ exam reference. Near-identical to variant 2/3; same text, different source programs.`
 > - `llm_review_flag: no`
 
 ---
@@ -136,10 +136,10 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Software Quality Assurance introduces students to the principles and practices of software quality including software testing, debugging, and quality assurance methodologies."
 
 > **Annotation**
-> - `llm_difference_summary: Catalog text is significantly more detailed (433 vs 160 chars) with comprehensive coverage of testing methodologies and software reliability principles`
+> - `llm_difference_summary: Guide is a single condensed sentence (160 chars); catalog provides nearly three times more content covering specific testing methodologies.`
 > - `llm_preference_for_research_tool: catalog`
-> - `llm_preference_reason: Catalog provides more comprehensive overview of software quality assurance scope and testing approaches`
-> - `llm_notable_observations: Catalog text is nearly three times longer and includes specific testing methodology details`
+> - `llm_preference_reason: Guide is severely truncated to a single introductory sentence; catalog is the only meaningful course description available.`
+> - `llm_notable_observations: At 160 chars the guide is among the shortest in the corpus — likely an incomplete or early extraction from the BSITM guide.`
 > - `llm_review_flag: no`
 
 ---
@@ -151,10 +151,10 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Network and Security - Design focuses on advanced network design, implementation and troubleshooting including routing and switching and network security."
 
 > **Annotation**
-> - `llm_difference_summary: Catalog text is significantly more detailed (574 vs 323 chars) with broader scope beyond just routing and switching implementation`
+> - `llm_difference_summary: Catalog covers secure network architecture broadly; CNE cluster guide is narrower, focusing on routing, switching, and troubleshooting at roughly half the catalog length.`
 > - `llm_preference_for_research_tool: catalog`
-> - `llm_preference_reason: Catalog provides more comprehensive overview of network design and security architecture`
-> - `llm_notable_observations: Guide text is less than 60% the length and focuses specifically on implementation and troubleshooting`
+> - `llm_preference_reason: Catalog is more complete; CNE guide variant omits the security architecture framing and is substantially truncated.`
+> - `llm_notable_observations: CNE cluster pattern — guide is shorter with a narrower technical scope; catalog is the appropriate default for general course display.`
 > - `llm_review_flag: no`
 
 ---
@@ -166,11 +166,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Inclusive Workplace Culture focuses on creating and sustaining inclusive work environments where all individuals can thrive. Students will develop competency in…"
 
 > **Annotation**
-> - `llm_difference_summary: Guide text is significantly more detailed (628 vs 380 chars) with specific focus on competency development and inclusive work environment creation`
-> - `llm_preference_for_research_tool: guide`
-> - `llm_preference_reason: Guide provides more comprehensive coverage of inclusive workplace culture applications and learning outcomes`
-> - `llm_notable_observations: Guide text is more than 60% longer and includes specific competency development goals`
-> - `llm_review_flag: no`
+> - `llm_difference_summary: Catalog is a concise overview; MSHRM guide is 65% longer with competency-development framing specific to that program.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the general course description for default display; guide's competency framing is MSHRM-specific.`
+> - `llm_notable_observations: MSHRM cluster pattern — guide consistently provides more specific competency language than catalog across this program's courses. Worth storing as a program-context alternate.`
+> - `llm_review_flag: yes`
 
 ---
 
@@ -181,10 +181,10 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Compensation and Benefits Design introduces learners to concepts of designing and managing compensation and benefits packages."
 
 > **Annotation**
-> - `llm_difference_summary: Catalog text is significantly more detailed (406 vs 170 chars) with comprehensive coverage of compensation strategy and organizational impact`
+> - `llm_difference_summary: Guide is a single introductory sentence (170 chars); catalog provides a full strategic overview more than double the guide length.`
 > - `llm_preference_for_research_tool: catalog`
-> - `llm_preference_reason: Catalog provides more comprehensive overview of compensation and benefits design scope and strategic importance`
-> - `llm_notable_observations: Catalog text is more than double the length and includes specific organizational strategy context`
+> - `llm_preference_reason: Guide is severely truncated; catalog is the only complete description.`
+> - `llm_notable_observations: Unusual within BSHR cluster — while D358/D356 have longer guide text, D360's guide is drastically shorter (170 chars), suggesting different guide authoring events within the same program.`
 > - `llm_review_flag: no`
 
 ---
@@ -196,11 +196,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Care of Older Adults…"
 
 > **Annotation**
-> - `llm_difference_summary: Guide text is significantly more detailed (1110 vs 890 chars) with comprehensive coverage of older adult care principles and applications`
-> - `llm_preference_for_research_tool: guide`
-> - `llm_preference_reason: Guide provides more comprehensive coverage of care of older adults scope and clinical applications`
-> - `llm_notable_observations: Guide text is 25% longer and includes specific clinical care context`
-> - `llm_review_flag: no`
+> - `llm_difference_summary: Guide version for MSRNN programs is 25% longer; likely includes program-specific clinical framing for RN-to-MSN populations.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the default display source; full text is truncated in source so exact differences are not visible.`
+> - `llm_notable_observations: MSRNN cluster — multiple older-adult and nursing practice courses in this batch show longer guide text; pattern suggests MSRNN guides carry additional clinical context.`
+> - `llm_review_flag: yes`
 
 ---
 
@@ -211,10 +211,10 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Business of IT - Applications…"
 
 > **Annotation**
-> - `llm_difference_summary: Catalog text is significantly more detailed (633 vs 417 chars) with broader scope beyond just applications focus`
+> - `llm_difference_summary: Catalog is 50% longer; guide variant for MSDADPE/MSITM is a condensed version of the same description.`
 > - `llm_preference_for_research_tool: catalog`
-> - `llm_preference_reason: Catalog provides more comprehensive overview of IT management applications and professional context`
-> - `llm_notable_observations: Catalog text is 50% longer and includes specific professional settings context`
+> - `llm_preference_reason: Catalog is more complete; guide is a truncated program-specific variant.`
+> - `llm_notable_observations: C722 appears in three guide variants across batches; all guide variants are shorter than catalog (417, 575, 633 for variants 2/3, 3/3, and catalog respectively).`
 > - `llm_review_flag: no`
 
 ---
@@ -226,11 +226,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Technical Communication introduces students to essential writing skills for the workplace, emphasizing…"
 
 > **Annotation**
-> - `llm_difference_summary: Catalog text is significantly more detailed (555 vs 357 chars) with specific focus on IT manager skills and diverse audiences`
+> - `llm_difference_summary: Catalog frames this as an IT manager communication course; BSIT guide variant frames it as general student workplace writing skills — a genuine framing philosophy difference.`
 > - `llm_preference_for_research_tool: catalog`
-> - `llm_preference_reason: Catalog provides more comprehensive coverage of technical communication scope and target audience`
-> - `llm_notable_observations: Catalog text is 55% longer and includes specific IT management context`
-> - `llm_review_flag: no`
+> - `llm_preference_reason: Catalog provides the authoritative course framing for default display; guide variant reflects a different intended audience (general IT students vs managers).`
+> - `llm_notable_observations: The framing difference is substantive — "IT managers" vs "students... workplace writing" — suggesting the course serves different populations across programs. Could matter for students in non-management IT programs.`
+> - `llm_review_flag: yes`
 
 ---
 
@@ -241,11 +241,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Intermediate Accounting II examines complex topics in corporate financial reporting. Students will develop competency in analyzing stockholders' equity, earnings per share…"
 
 > **Annotation**
-> - `llm_difference_summary: Guide text is significantly more detailed (615 vs 427 chars) with specific focus on corporate financial reporting and competency development`
-> - `llm_preference_for_research_tool: guide`
-> - `llm_preference_reason: Guide provides more comprehensive coverage of intermediate accounting II scope and professional applications`
-> - `llm_notable_observations: Guide text is 44% longer and includes specific competency development goals`
-> - `llm_review_flag: no`
+> - `llm_difference_summary: Catalog uses a generic "complex topics in financial accounting" framing; guide adds "corporate financial reporting" emphasis and explicit competency language around stockholders' equity and earnings per share.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the default display source; guide's competency framing is program-specific to BSACC/BSBAHC/BSC.`
+> - `llm_notable_observations: Guide's "develops competency in analyzing stockholders' equity, earnings per share" is more specific and student-facing than catalog; the corporate reporting framing is a genuine content emphasis difference worth preserving as an alternate.`
+> - `llm_review_flag: yes`
 
 ---
 
@@ -256,11 +256,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Organic Chemistry: STEM Connections…"
 
 > **Annotation**
-> - `llm_difference_summary: Guide text is significantly more detailed (809 vs 631 chars) with comprehensive coverage of organic chemistry STEM applications and connections`
-> - `llm_preference_for_research_tool: guide`
-> - `llm_preference_reason: Guide provides more comprehensive coverage of organic chemistry STEM connections scope and interdisciplinary applications`
-> - `llm_notable_observations: Guide text is 28% longer and includes specific STEM integration context`
-> - `llm_review_flag: no`
+> - `llm_difference_summary: Guide variant for MATSESC is 28% longer; likely adds teacher-education-specific STEM connections and pedagogical framing absent from catalog.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the default; guide is a program-specific variant for a teacher education program (MATSESC = MA Teaching, Earth/Space Science with Chemistry).`
+> - `llm_notable_observations: MATSESC context suggests guide adds teacher-educator framing for chemistry content — potentially meaningful for students in that credential program.`
+> - `llm_review_flag: yes`
 
 ---
 
@@ -271,10 +271,10 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Pathophysiology and Pharmacology…"
 
 > **Annotation**
-> - `llm_difference_summary: Catalog text is significantly more detailed (610 vs 444 chars) with comprehensive coverage of RN-BSN pathophysiology and pharmacology scope`
+> - `llm_difference_summary: Catalog is 37% longer; guide is a condensed version that omits the additional clinical context present in catalog.`
 > - `llm_preference_for_research_tool: catalog`
-> - `llm_preference_reason: Catalog provides more comprehensive overview of pathophysiology and pharmacology for RN-BSN scope and clinical applications`
-> - `llm_notable_observations: Catalog text is 37% longer and includes specific RN-BSN program context`
+> - `llm_preference_reason: Catalog is more complete; guide appears truncated relative to the full description.`
+> - `llm_notable_observations: Nursing course with significant length difference; guide for BSNU/BSPRN is notably shorter, which is atypical for BSPRN cluster courses that usually have longer guide text.`
 > - `llm_review_flag: no`
 
 ---
@@ -286,11 +286,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Network and Security - Advanced Networking Concepts focuses on advanced networking including routing protocols, switching, and network automation…"
 
 > **Annotation**
-> - `llm_difference_summary: Guide text is significantly more detailed (457 vs 293 chars) with specific focus on advanced networking concepts and automation`
-> - `llm_preference_for_research_tool: guide`
-> - `llm_preference_reason: Guide provides more comprehensive coverage of advanced networking concepts scope and technical applications`
-> - `llm_notable_observations: Guide text is 56% longer and includes specific routing protocols and automation context`
-> - `llm_review_flag: no`
+> - `llm_difference_summary: Unlike other CNE cluster courses, the guide here is 56% longer than the catalog, adding specific content on routing protocols, switching, and network automation absent from the brief catalog description.`
+> - `llm_preference_for_research_tool: needs_review`
+> - `llm_preference_reason: Reversed pattern from C175/C172 — catalog is unusually short and guide adds substantive technical content; cannot default to catalog without reviewing whether catalog is the truncated version here.`
+> - `llm_notable_observations: This is the only CNE cluster course in this batch where guide is substantially longer than catalog. Catalog at 293 chars is among the shorter descriptions in the corpus. Warrants data-level inspection to determine if catalog is the truncated source.`
+> - `llm_review_flag: yes`
 
 ---
 
@@ -301,11 +301,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Corporate Finance provides students with a deep understanding of how firms make financial decisions…"
 
 > **Annotation**
-> - `llm_difference_summary: Guide text is significantly more detailed (525 vs 367 chars) with specific focus on deep understanding of financial decision-making and firm operations`
-> - `llm_preference_for_research_tool: guide`
-> - `llm_preference_reason: Guide provides more comprehensive coverage of corporate finance scope and strategic applications`
-> - `llm_notable_observations: Guide text is 43% longer and includes specific firm decision-making context`
-> - `llm_review_flag: no`
+> - `llm_difference_summary: Catalog uses a brief "financial management principles" framing; guide is 43% longer with a more detailed treatment of how firms make financial decisions.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the default display source; guide's extended treatment is program-specific to BSFIN/BSHR.`
+> - `llm_notable_observations: Guide's "deep understanding of how firms make financial decisions" framing is more substantive and student-facing than catalog's brief framing; appears in two programs.`
+> - `llm_review_flag: yes`
 
 ---
 
@@ -316,11 +316,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Women's Health covers the assessment, diagnosis, and management of common women's health conditions…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is brief; guide adds clinical structure with "assessment, diagnosis, and management" framing specific to the BSPRN program.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the default; guide's clinical framing is program-specific to BSPRN.`
+> - `llm_notable_observations: For a nursing research query, guide's clinical structure (assessment/diagnosis/management) may be more informative than the brief catalog description. Consistent with BSPRN pattern of longer guide text for clinical courses.`
+> - `llm_review_flag: yes`
 
 ---
 
@@ -331,11 +331,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Machine Learning…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is 24% longer; guide for MSDADS is a condensed variant of the same description.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is more complete; guide appears to be a program-specific abridgment.`
+> - `llm_notable_observations: Both texts are truncated in source; both are substantial. The truncation suggests a program-specific abridgment rather than a fundamentally different description.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -346,11 +346,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Strategic Human Resource Management focuses on the strategic role of human resources in organizational success…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog uses a concise "HR strategy aligns with organizational goals" framing; MSHRM guide is 34% longer with a more detailed treatment of HR's strategic role in organizational success.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the default; guide's extended strategic framing is MSHRM-specific.`
+> - `llm_notable_observations: MSHRM cluster — guide consistently adds more detail on strategic and organizational dimensions across this program's courses. The pattern suggests the MSHRM guide was authored at a higher level of specificity than the catalog descriptions for these courses.`
+> - `llm_review_flag: yes`
 
 ---
 
@@ -361,11 +361,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Teaching and Learning in Secondary Schools…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is 18% longer; MATEES guide variant is condensed and likely omits some catalog content.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the more complete version; guide is a shorter program-specific variant.`
+> - `llm_notable_observations: MATEES (MA Teaching) variant; both texts are truncated in source so exact differences are not visible.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -376,11 +376,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Earth, Moon, and Space…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is 22% longer; guide variant for teacher education STEM programs (MATSESB/C/E) is condensed.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the more complete version.`
+> - `llm_notable_observations: Teacher education STEM course; both texts are truncated in source.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -391,11 +391,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Mathematics Methods…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Guide variant for MAMES is 18% longer; likely adds mathematics education pedagogy framing for teacher educators.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the default; guide adds education-specific framing for the MAMES (MA Mathematics Education Secondary) program.`
+> - `llm_notable_observations: MAMES is a teacher education program; the longer guide text likely reflects pedagogical framing around mathematics instruction that is relevant to that specific audience.`
+> - `llm_review_flag: yes`
 
 ---
 
@@ -406,11 +406,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Compensation and Benefits develops competence in the design and implementation of compensation and benefits systems in a global work environment. Students will analyze…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog emphasizes "total rewards philosophy"; guide emphasizes "design and implementation in a global work environment" with competency framing — a genuine content emphasis difference, not just length.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the default display source; the framing difference is real but catalog remains the authoritative display version.`
+> - `llm_notable_observations: "Total rewards" vs "global design/implementation" represents genuinely different emphasis between the two descriptions of the same course. Worth human review to assess which better serves students browsing the course.`
+> - `llm_review_flag: yes`
 
 ---
 
@@ -421,11 +421,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Prenatal and Newborn Health…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Guide is 33% longer; likely adds clinical prenatal/newborn care framing specific to BSPRN students.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the default; guide adds BSPRN-specific clinical framing.`
+> - `llm_notable_observations: BSPRN cluster — multiple nursing clinical courses in this batch show longer guide text; consistent with the BSPRN guide carrying additional clinical context for RN-BSN students.`
+> - `llm_review_flag: yes`
 
 ---
 
@@ -436,11 +436,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Leadership Foundations…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: BSNU guide variant is 27% longer; likely adds nursing-specific leadership context for undergraduate nursing students.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the default; guide variant is program-specific to BSNU.`
+> - `llm_notable_observations: C805 appears in three guide variants spanning nursing (BSNU) and human services (BSHS) programs; each program family likely frames leadership through its own lens.`
+> - `llm_review_flag: yes`
 
 ---
 
@@ -451,11 +451,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Talent Acquisition focuses on strategies for attracting and selecting qualified candidates…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is 34% longer with a modern recruitment strategy framing; BSHR guide is condensed around attracting and selecting candidates.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the more complete version; guide is a truncated BSHR variant.`
+> - `llm_notable_observations: Within the BSHR cluster, D357 has shorter guide text (unlike D358/D356 where guide is longer). BSHR courses were not all locked at the same authoring event.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -466,11 +466,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Cybersecurity Capstone…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Both texts are substantial; guide is 11% longer and likely adds BSCSIA-specific capstone context beyond what catalog provides.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the default; guide's additional content is program-scoped to BSCSIA.`
+> - `llm_notable_observations: Both are long, substantive descriptions; text is truncated in source so full comparison is not available. The modest percentage difference at this text length could represent meaningful additional capstone-specific content.`
+> - `llm_review_flag: yes`
 
 ---
 
@@ -481,11 +481,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Community Health…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is 16% longer; guide for BSHS is a condensed version of the community health description.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is more complete; guide is a truncated variant.`
+> - `llm_notable_observations: Both texts are truncated in source; straightforward catalog-longer case.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -496,11 +496,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Role of the Nurse Leader…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is 10% longer; MSRNNULM guide variant is slightly condensed relative to catalog.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the more complete version.`
+> - `llm_notable_observations: Both are substantial nurse leader course descriptions (>1000 chars); the difference is modest at this text length.`
+> - `llm_review_flag: no`
 
 ---
 
@@ -511,11 +511,11 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Leadership and Management…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Guide variant for MSNULM/PMCNULM is 10% longer; likely adds advanced nursing leadership management context specific to those programs.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the default; guide's additional content is program-specific to MSNULM/PMCNULM.`
+> - `llm_notable_observations: MSNULM = MSN Nursing Leadership and Management; the guide for this advanced credential program being longer suggests program-depth additions relevant to that specialization.`
+> - `llm_review_flag: yes`
 
 ---
 
@@ -526,8 +526,8 @@ Text excerpts are from the source artifact (200-char truncation). Where source s
 - **guide_text:** "Concepts in Nursing Practice II…"
 
 > **Annotation**
-> - `llm_difference_summary:`
-> - `llm_preference_for_research_tool:` *(catalog | guide | either | needs_review)*
-> - `llm_preference_reason:`
-> - `llm_notable_observations:`
-> - `llm_review_flag:` *(yes | no)*
+> - `llm_difference_summary: Catalog is 19% longer; guide for MSRNN programs is a condensed variant.`
+> - `llm_preference_for_research_tool: catalog`
+> - `llm_preference_reason: Catalog is the more complete version.`
+> - `llm_notable_observations: Part of the Concepts in Nursing Practice series (also D221, D225, D236 in other batches); catalog is consistently the longer version for this course series across the MSRNN cluster.`
+> - `llm_review_flag: no`

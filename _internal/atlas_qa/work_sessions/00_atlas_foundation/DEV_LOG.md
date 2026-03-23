@@ -339,3 +339,187 @@ Stage 0 LLM substrate is complete and live-verified on the Ollama path.
 2. OV-5/OV-6 course/program sets not individually catalogued — CU conflict cases need explicit flags in canonical objects before QA can safely answer CU questions from GUIDE context.
 3. Competency variant conflict detection not done — current placeholder policy (most-common variant) is acceptable for v1 but a substantive-vs-cosmetic pass is needed.
 4. SOURCE_COVERAGE_MATRIX.md file missing from `_internal/atlas_qa/` — should be regenerated or confirmed deleted intentionally.
+
+---
+
+## Session update — 2026-03-23 (COURSE_TEXT_COMPARISON_BATCH_ANNOTATION)
+
+### Scope
+LLM annotation pass for Batches 2, 3, and 4 of the course text comparison. Batch 2 was re-annotated (weak-model pass replaced); Batches 3 and 4 were annotated for the first time.
+
+### Files updated
+- `_internal/atlas_qa/course_text_comparison_batches/COURSE_TEXT_COMPARISON_BATCH_2.md` — 35 rows re-annotated
+- `_internal/atlas_qa/course_text_comparison_batches/COURSE_TEXT_COMPARISON_BATCH_3.md` — 35 rows annotated
+- `_internal/atlas_qa/course_text_comparison_batches/COURSE_TEXT_COMPARISON_BATCH_4.md` — 40 rows annotated
+
+### Row counts
+- Batch 2: 35 rows (STRONG, diff 108–492)
+- Batch 3: 35 rows (STRONG, diff 50–108; includes D236 boundary case)
+- Batch 4: 40 rows (MOD, diff 6–50; includes D236 boundary duplicate)
+- Total: 110 rows annotated
+
+### Key pattern findings vs weak-model pass
+
+**Weak-model errors corrected:**
+- Weak model applied "longer = better" uniformly and preferred `guide` for BSHR cluster courses (D358, D356, D354) and MSHRM courses (D436, D435, D432, D436). These were corrected to `catalog` because: BSHR cluster catalog texts are the modern rewrite; guide texts are locked to an older pre-rewrite authoring event. MSHRM guide texts are program-degree-scoped, not general course descriptions.
+- Weak model set `llm_review_flag: no` on nearly every row including substantive framing differences. Corrected: ~25 rows across Batches 2–3 are now flagged `yes` where the choice is genuinely meaningful for policy or the guide adds substantive program-specific value.
+- Weak model gave formulaic summaries ("Guide text is significantly more detailed (X vs Y chars)"). Replaced with content-aware summaries describing the actual framing difference.
+
+**Dominant patterns confirmed:**
+- BSHR cluster (D354, D356, D357, D358, D359, D360): mixed — some courses have guide longer (older locked text), others have catalog longer. Not all BSHR courses were locked at the same authoring event.
+- MSHRM cluster (D432, D433, D435, D436): guide consistently longer with program-degree-specific framing. Catalog is the correct default; guide text is useful as a program-context alternate.
+- BSPRN cluster: guide texts are consistently longer for clinical nursing courses. Multiple rows flagged `yes` because guide adds clinical structure (assessment/diagnosis/management framing) that catalog lacks.
+- FNP programs (MSNUFNP, PMCNUFNP): guide texts are consistently slightly longer for clinical courses. D118, D119, D124 flagged `yes`.
+- CNE cluster (C172, C175): catalog is consistently longer; guide is exam-locked (Network+/CompTIA focus) and truncated. Except C179 (Advanced Networking Concepts) where this pattern reverses — guide is longer and catalog is unusually short. C179 flagged `needs_review + yes`.
+- MACC/MHA programs: catalog is consistently longer across accounting and healthcare administration courses. Straightforward catalog preference throughout.
+- MPH program: guide-longer pattern for research/environmental health courses. Flagged `yes` where guide adds public health context.
+- MOD rows (Batch 4, diff 6–50): majority are `either` at diffs ≤25. Below ~15 chars diff, texts are functionally near-duplicate regardless of classification.
+
+**Notable individual rows:**
+- **C179** (Advanced Networking Concepts, row 19): unique `needs_review + yes` — only CNE cluster course where guide is longer than catalog. Catalog (293 chars) is suspiciously short; guide adds routing/switching/automation specifics. Requires data-level inspection.
+- **D554** (Advanced Financial Accounting I, Batch 3 row 54): confirmed data anomaly — text content is from D560 (Internal Auditing I). Annotated `needs_review + yes`; requires source data investigation.
+- **D255** (PPE I: Technical, Batch 3 row 53): rare visible-text row in Batch 3. Genuine framing difference — "practical information management tasks" vs "eight core competency areas." Flagged `yes`.
+- **C236** (Compensation and Benefits, Batch 2 row 27): genuine content emphasis difference between "total rewards philosophy" (catalog) and "global work environment design/implementation" (guide). Flagged `yes`.
+- **E011** (Technical Communication, variant 1/3, Batch 2 row 15): framing philosophy difference — "IT managers" vs "students... workplace writing." Flagged `yes` as the framing may affect perception of the course for students in non-management programs.
+
+### Policy impact
+- The catalog-default rule from BLOCK_AUTHORITY_AND_DISPLAY_POLICY §3.1 is confirmed safe across all 110 rows: no row in Batches 2–4 produced `llm_preference_for_research_tool: guide` as the clear winner.
+- Blocker 1 from the prior session (§8.1 in BLOCK_AUTHORITY_AND_DISPLAY_POLICY) is now resolved: all batch annotations are complete.
+- Courses warranting `llm_review_flag: yes` in Batches 2–3 (~25 rows): these are candidates for program-context display overrides or for storing guide text as a labeled alternate. No display override should be set without human review.
+- D554 data anomaly should be investigated before the canonical course object for D554 is constructed.
+
+---
+
+## Session update — 2026-03-23 (POLICY SYNTHESIS / BLOCKER CLEANUP)
+
+### Scope
+Post-annotation policy synthesis pass. Verified batch completion state, removed stale blocker language from `BLOCK_AUTHORITY_AND_DISPLAY_POLICY.md`, folded in Batch 2–4 findings, added anomaly sections.
+
+### Batch completion verified
+- Batch 1: 59 near-dup rows — annotated (prior session)
+- Batch 2: 35 STRONG rows — annotated (re-annotated strong-model pass)
+- Batch 3: 35 STRONG rows — annotated
+- Batch 4: 40 MOD rows — annotated
+- All 110 mat-diff rows complete. No row produced `llm_preference_for_research_tool: guide` as a clear winner.
+
+### Policy doc changes made
+1. **Header "Grounded in"** — removed "(unannotated)" qualifier; updated to reflect all batches annotated.
+2. **§3.1 Review trigger** — removed stale "Batches 2–4 unannotated cases should be reviewed before per-course overrides are set." Replaced with confirmed findings: ~25 `llm_review_flag: yes` rows across Batches 2–3, primary clusters identified. C179 and D554 anomaly flags added with cross-references to new §8.9/§8.10.
+3. **§3.1 Rationale** — added explicit confirmation that no mat-diff row produced a clear guide preference, and noted BSPRN-cluster guide text as a labeled-alternate candidate.
+4. **§8.1** — full replacement: stale "not annotated / deferred action" language removed. Replaced with resolved status + per-cluster findings. Remaining action (human review of ~25 flagged rows) noted as non-blocking.
+5. **§8.9 added** — C179 Advanced Networking Concepts: catalog short-text anomaly, required pre-construction inspection.
+6. **§8.10 added** — D554 Advanced Financial Accounting I: guide text appears to be from D560; source data investigation required before canonical object construction.
+
+### Policy state after this pass
+- Catalog-default for course description: **confirmed safe, no remaining annotation blocker**
+- Guide descriptions: stored as alternates, not displayed; BSPRN cluster strongest case for labeled program-context alternates
+- C179 and D554: flagged, require data inspection before canonical object construction
+- Remaining non-blockers: ~25 `yes`-flagged rows for human review (program-context alternate candidates); OV-5/OV-6 CU catalog pass; competency variant conflict detection
+
+---
+
+## Session update — 2026-03-23 (POLICY_IMPLEMENTATION_PLAN)
+
+### Scope
+First staged implementation plan for applying the settled block-authority/display policy. Design artifact only — no implementation.
+
+### File created
+- `_internal/atlas_qa/POLICY_IMPLEMENTATION_PLAN.md`
+
+### Stage sequence
+| Stage | Name | Output |
+|---|---|---|
+| 1 | Source-authority annotation artifact | `data/atlas_qa/course_description_authority.json` |
+| 2 | Artifact validation | Passing test suite |
+| 3 | Course-page display hardening | Production page wired; catalog-only confirmed |
+| 4 | Guide alternate storage | `data/atlas_qa/course_guide_alternates.json` |
+| 5 | QA canonical object source-authority fields | `course_card` extended |
+
+### Key design decisions recorded in the plan
+- Authority artifact is the single source of truth for all downstream source selection; built deterministically from `course_descriptions.json` + `course_enrichment_candidates.json`
+- `display_source` is always `"cat"` when catalog text is present; no LLM involvement in source selection
+- D554 guide alternates blocked at the artifact layer (set to `[]`); C179 flagged but not blocked
+- ~25 review-flagged courses hard-coded from batch annotation; list named in §8
+- OV-5/OV-6 and competency variant detection explicitly deferred
+- Stages 1–4 (website) and Stage 5 (QA) are independent; both can start from Stage 1 output
+- Stages 3 may be documentation-only if production page already uses catalog-only path
+
+### Implementation readiness
+Stage 1 ready to start immediately — both input artifacts exist, no app code touched.
+
+---
+
+## Session update — 2026-03-23 (STAGE 0 BASELINE COMPLETION)
+
+### Scope
+Final pass to complete Stage 0 baseline: catalog artifact mirroring, substrate re-verification,
+large-file policy resolution, and baseline doc update.
+
+### Context at session start
+- LLM substrate: previously ported, audited, and live-verified (see prior entries)
+- Catalog artifacts: `data/catalog/` did not exist; mirroring not yet executed
+- Large-file policy: documented as pending inspection evidence
+
+### File size inspection results
+
+| File | Size | Policy |
+|---|---|---|
+| `course_index_v10.json` (helper) | 58 MB | gitignored — `.gitignore` lines 27–30 already covered all v10 helpers |
+| `degree_snapshots_v10_seed.json` (helper) | 524 KB | gitignored (same) |
+| `sections_index_v10.json` (helper) | 824 KB | gitignored (same) |
+| `trusted/2026_03/` total | ~1 MB | committed — all files are small |
+| `change_tracking/` total | ~644 KB | committed |
+| `edition_diffs/` total | ~244 KB | committed |
+
+**Finding:** The `.gitignore` already contained explicit entries for all three v10 helper files
+before this session. Large-file policy was already implicit in the repo; this session confirms
+and documents it explicitly in `data/catalog/README.md`.
+
+### Catalog mirroring executed
+
+All 6 artifact families from `STAGE_1_DEPENDENCY_INVENTORY.md` §1 mirrored to `data/catalog/`:
+
+1. `trusted/2026_03/` → `data/catalog/trusted/2026_03/` — 8 files copied
+2. `change_tracking/` → `data/catalog/change_tracking/` — 5 files copied
+3. `edition_diffs/` → `data/catalog/edition_diffs/` — 4 files copied
+4. `helpers/course_index_v10.json` → `data/catalog/helpers/` — 58 MB, gitignored
+5. `helpers/degree_snapshots_v10_seed.json` → `data/catalog/helpers/` — 524 KB, gitignored
+6. `helpers/sections_index_v10.json` → `data/catalog/helpers/` — 824 KB, gitignored
+
+### Substrate re-verification
+
+Ran structured parse path directly from project root:
+- `safe_parse_structured_response` valid JSON: PASS
+- `safe_parse_structured_response` invalid JSON (parse failure): PASS
+- `safe_parse_structured_response` schema failure (wrong type): PASS
+- `registry.get_model_info('llama3')` → `provider=ollama, is_local=True`: PASS
+
+Real Ollama live call remains verified from prior session (2026-03-23). No re-run needed.
+
+### Files created/updated
+
+- `data/catalog/trusted/2026_03/` — mirrored (8 files, ~1 MB)
+- `data/catalog/change_tracking/` — mirrored (5 files, ~644 KB)
+- `data/catalog/edition_diffs/` — mirrored (4 files, ~244 KB)
+- `data/catalog/helpers/course_index_v10.json` — mirrored (58 MB, gitignored)
+- `data/catalog/helpers/degree_snapshots_v10_seed.json` — mirrored (524 KB, gitignored)
+- `data/catalog/helpers/sections_index_v10.json` — mirrored (824 KB, gitignored)
+- `data/catalog/README.md` — created; documents mirror contents, large-file policy, acquisition path
+- `_internal/atlas_qa/INITIAL_ATLAS_QA_FOUNDATION_STATE.md` — updated to reflect real completed state
+
+### Stage 0 completion status
+
+**Stage 0 is complete.** All baseline items are satisfied:
+- All 6 catalog artifact families mirrored to `data/catalog/`
+- All 6 LLM utility modules ported and clean in `src/atlas_qa/llm/` + `src/atlas_qa/utils/`
+- Real Ollama provider success path verified end-to-end (live call, prior session)
+- Large-file policy resolved and documented
+- Baseline doc updated to reflect real Atlas state
+- No `wgu-reddit` runtime import paths in Atlas QA code
+- Stage 2 is unblocked
+
+### No remaining Stage 0 blockers
+
+- Evidence reference ID format remains TBD/RFI (explicitly deferred, not a Stage 0 blocker)
+- OpenAI live call pending OPENAI_API_KEY (not a blocker; Ollama path is primary)
+- Version token conflict precedence is a Stage 3+ design question, not a Stage 0 blocker

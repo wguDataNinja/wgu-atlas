@@ -1,0 +1,87 @@
+{
+  "generated": "2026-03-14T09:55:25",
+  "editions": 108,
+  "date_range": "2017-01 \u2192 2026-03",
+  "total_unique_codes": 1594,
+  "active_codes": 838,
+  "retired_codes": 756,
+  "total_programs": 196,
+  "active_programs": 114,
+  "retired_programs": 82,
+  "programs_with_version_changes": 100,
+  "codes_with_title_variants": 167,
+  "top5_course_addition_months": [
+    {
+      "pair": "2025-01\u21922025-02",
+      "courses_added": 110
+    },
+    {
+      "pair": "2017-05\u21922017-07",
+      "courses_added": 101
+    },
+    {
+      "pair": "2024-08\u21922024-09",
+      "courses_added": 57
+    },
+    {
+      "pair": "2020-06\u21922020-07",
+      "courses_added": 54
+    },
+    {
+      "pair": "2024-09\u21922024-10",
+      "courses_added": 46
+    }
+  ],
+  "top5_course_removal_months": [
+    {
+      "pair": "2017-05\u21922017-07",
+      "courses_removed": 74
+    },
+    {
+      "pair": "2020-06\u21922020-07",
+      "courses_removed": 65
+    },
+    {
+      "pair": "2024-09\u21922024-10",
+      "courses_removed": 55
+    },
+    {
+      "pair": "2025-02\u21922025-03",
+      "courses_removed": 53
+    },
+    {
+      "pair": "2025-01\u21922025-02",
+      "courses_removed": 48
+    }
+  ],
+  "top5_version_change_months": [
+    {
+      "pair": "2017-05\u21922017-07",
+      "version_changes": 22
+    },
+    {
+      "pair": "2020-06\u21922020-07",
+      "version_changes": 18
+    },
+    {
+      "pair": "2026-02\u21922026-03",
+      "version_changes": 18
+    },
+    {
+      "pair": "2023-11\u21922023-12",
+      "version_changes": 16
+    },
+    {
+      "pair": "2017-01\u21922017-03",
+      "version_changes": 13
+    }
+  ],
+  "smallest_course_edition": [
+    "2017-03",
+    532
+  ],
+  "largest_course_edition": [
+    "2025-02",
+    883
+  ]
+}

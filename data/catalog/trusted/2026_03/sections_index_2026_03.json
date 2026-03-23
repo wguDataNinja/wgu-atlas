@@ -1,0 +1,468 @@
+{
+  "2026-03": {
+    "School of Business": {
+      "Bachelor of Science, Accounting": [
+        2827,
+        2883
+      ],
+      "Bachelor of Science, Human Resource Management": [
+        2884,
+        2942
+      ],
+      "Bachelor of Science, Information Technology Management": [
+        2943,
+        3000
+      ],
+      "Bachelor of Science, Business Management": [
+        3001,
+        3053
+      ],
+      "Bachelor of Science, Marketing": [
+        3054,
+        3106
+      ],
+      "Bachelor of Science, Communications": [
+        3107,
+        3170
+      ],
+      "Bachelor of Science, Finance": [
+        3171,
+        3225
+      ],
+      "Bachelor of Science, Healthcare Administration": [
+        3226,
+        3279
+      ],
+      "Bachelor of Science, Supply Chain and Operations Management": [
+        3280,
+        3342
+      ],
+      "Bachelor of Science, User Experience Design": [
+        3343,
+        3403
+      ],
+      "Master of Business Administration": [
+        3404,
+        3420
+      ],
+      "MBA, IT Management": [
+        3421,
+        3440
+      ],
+      "Master of Business Administration, Healthcare Administration": [
+        3441,
+        3460
+      ],
+      "Master of Science, Management and Leadership": [
+        3461,
+        3483
+      ],
+      "Master of Science in Marketing, Digital Marketing Specialization": [
+        3484,
+        3507
+      ],
+      "Master of Science in Marketing, Marketing Analytics Specialization": [
+        3508,
+        3530
+      ],
+      "Master of Science in Accounting, Auditing Specialization": [
+        3531,
+        3554
+      ],
+      "Master of Science in Accounting, Financial Reporting Specialization": [
+        3555,
+        3578
+      ],
+      "Master of Science in Accounting, Management Accounting Specialization": [
+        3579,
+        3602
+      ],
+      "Master of Science in Accounting, Taxation Specialization": [
+        3603,
+        3625
+      ],
+      "Master of Science, Human Resource Management": [
+        3626,
+        3651
+      ]
+    },
+    "Leavitt School of Health": {
+      "Bachelor of Science, Nursing - Prelicensure (Pre-Nursing)": [
+        3676,
+        3722
+      ],
+      "Bachelor of Science, Nursing - Prelicensure (Nursing)": [
+        3723,
+        3763
+      ],
+      "Bachelor of Science, Nursing": [
+        3764,
+        3805
+      ],
+      "Bachelor of Science, Health Information Management": [
+        3806,
+        3863
+      ],
+      "Bachelor of Science, Health and Human Services": [
+        3864,
+        3917
+      ],
+      "Bachelor of Science, Health Science": [
+        3918,
+        3961
+      ],
+      "Bachelor of Science in Psychology": [
+        3962,
+        4017
+      ],
+      "Bachelor of Science, Public Health": [
+        4018,
+        4068
+      ],
+      "Master of Science, Nursing - Family Nurse Practitioner (BSN to MSN)": [
+        4069,
+        4112
+      ],
+      "Master of Science, Nursing - Psychiatric Mental Health Nurse Practitioner": [
+        4113,
+        4163
+      ],
+      "Master of Science, Nursing - Education (BSN to MSN)": [
+        4164,
+        4209
+      ],
+      "Master of Science, Nursing - Leadership and Management (BSN to MSN)": [
+        4210,
+        4255
+      ],
+      "Master of Science, Nursing - Nursing Informatics (BSN to MSN)": [
+        4256,
+        4294
+      ],
+      "Master of Science, Nursing - Education (RN to MSN)": [
+        4295,
+        4363
+      ],
+      "Master of Science, Nursing - Leadership and Management (RN to MSN)": [
+        4364,
+        4426
+      ],
+      "Master of Science, Nursing - Nursing Informatics (RN to MSN)": [
+        4427,
+        4491
+      ],
+      "Master of Healthcare Administration": [
+        4492,
+        4511
+      ],
+      "Master of Public Health": [
+        4512,
+        4535
+      ],
+      "Post-Master's Certificate, Nursing - Family Nurse Practitioner (Post-MSN)": [
+        4536,
+        4569
+      ],
+      "Post-Master's Certificate, Nursing - Psychiatric Mental Health Nurse Practitioner (Post-MSN)": [
+        4570,
+        4611
+      ],
+      "Post-Master's Certificate, Nursing - Nursing Education (Post-MSN)": [
+        4612,
+        4646
+      ],
+      "Post-Master's Certificate, Nursing - Leadership and Management (Post-MSN)": [
+        4647,
+        4679
+      ]
+    },
+    "School of Technology": {
+      "Bachelor of Science, Cloud and Network Engineering": [
+        4703,
+        4751
+      ],
+      "Bachelor of Science, Cloud and Network Engineering - Amazon Web Services": [
+        4752,
+        4803
+      ],
+      "Bachelor of Science, Cloud and Network Engineering - Cisco": [
+        4804,
+        4852
+      ],
+      "Bachelor of Science, Cloud and Network Engineering - Microsoft Azure": [
+        4853,
+        4903
+      ],
+      "Bachelor of Science, Computer Science": [
+        4904,
+        4954
+      ],
+      "Bachelor of Science, Computer Science (BSCS to MSCS)": [
+        4955,
+        5016
+      ],
+      "Bachelor of Science, Cybersecurity and Information Assurance": [
+        5017,
+        5068
+      ],
+      "Bachelor of Science, Data Analytics": [
+        5069,
+        5124
+      ],
+      "Bachelor of Science, Information Technology": [
+        5125,
+        5176
+      ],
+      "Bachelor of Science, Information Technology (BSIT to MSIT)": [
+        5177,
+        5241
+      ],
+      "Bachelor of Science, Software Engineering [BSSWE]": [
+        5242,
+        5289
+      ],
+      "Bachelor of Science, Software Engineering [BSSWE_C]": [
+        5290,
+        5335
+      ],
+      "Bachelor of Science, Software Engineering (BSSWE to MSSWE)": [
+        5336,
+        5396
+      ],
+      "Master of Science, Computer Science, Artificial Intelligence and Machine Learning": [
+        5397,
+        5419
+      ],
+      "Master of Science, Computer Science, Computing Systems": [
+        5420,
+        5441
+      ],
+      "Master of Science, Computer Science, Human-Computer Interaction": [
+        5442,
+        5463
+      ],
+      "Master of Science, Cybersecurity and Information Assurance": [
+        5464,
+        5485
+      ],
+      "Master of Science, Data Analytics - Data Science": [
+        5486,
+        5509
+      ],
+      "Master of Science, Data Analytics - Data Engineering": [
+        5510,
+        5533
+      ],
+      "Master of Science, Data Analytics - Decision Process Engineering": [
+        5534,
+        5557
+      ],
+      "Master of Science, Information Technology": [
+        5558,
+        5580
+      ],
+      "Master of Science, Information Technology - Product Management": [
+        5581,
+        5602
+      ],
+      "Master of Science, Software Engineering - AI Engineering": [
+        5603,
+        5633
+      ],
+      "Master of Science, Software Engineering - DevOps Engineering": [
+        5634,
+        5664
+      ],
+      "Master of Science, Software Engineering - Domain Driven Design": [
+        5665,
+        5693
+      ]
+    },
+    "School of Education": {
+      "Bachelor of Arts, Elementary Education": [
+        5771,
+        5829
+      ],
+      "Bachelor of Arts, Special Education and Elementary Education (Dual Licensure)": [
+        5830,
+        5916
+      ],
+      "Bachelor of Arts, Special Education, Mild to Moderate": [
+        5917,
+        5987
+      ],
+      "Bachelor of Science, Mathematics Education (Secondary)": [
+        5988,
+        6047
+      ],
+      "Bachelor of Science, Science Education (Secondary Biological Science)": [
+        6048,
+        6108
+      ],
+      "Bachelor of Science, Science Education (Secondary Chemistry)": [
+        6109,
+        6169
+      ],
+      "Bachelor of Science, Science Education (Secondary Earth Science)": [
+        6170,
+        6231
+      ],
+      "Bachelor of Science, Science Education (Secondary Physics)": [
+        6232,
+        6292
+      ],
+      "Bachelor of Arts, Educational Studies in Elementary Education": [
+        6293,
+        6345
+      ],
+      "Bachelor of Arts, Educational Studies in Special and Elementary Education": [
+        6346,
+        6416
+      ],
+      "Bachelor of Arts, Educational Studies in Mild to Moderate Exceptionalities Special Education": [
+        6417,
+        6479
+      ],
+      "Bachelor of Arts, Educational Studies in Secondary Mathematics Education": [
+        6480,
+        6533
+      ],
+      "Bachelor of Arts, Educational Studies in Secondary Biological Science Education": [
+        6534,
+        6588
+      ],
+      "Bachelor of Arts, Educational Studies in Secondary Chemistry Science Education": [
+        6589,
+        6642
+      ],
+      "Bachelor of Arts, Educational Studies in Secondary Earth Science Education": [
+        6643,
+        6698
+      ],
+      "Bachelor of Arts, Educational Studies in Secondary Physics Science Education": [
+        6699,
+        6752
+      ],
+      "Master of Arts in Teaching, Elementary Education": [
+        6753,
+        6803
+      ],
+      "Master of Arts in Teaching, English Education (Secondary)": [
+        6804,
+        6846
+      ],
+      "Master of Arts in Teaching, Mathematics Education (Secondary)": [
+        6847,
+        6888
+      ],
+      "Master of Arts in Teaching, Science Education (Secondary Biology)": [
+        6889,
+        6929
+      ],
+      "Master of Arts in Teaching, Science Education (Secondary Chemistry)": [
+        6930,
+        6970
+      ],
+      "Master of Arts in Teaching, Science Education (Secondary Earth Science)": [
+        6971,
+        7011
+      ],
+      "Master of Arts in Teaching, Science Education (Secondary Physics)": [
+        7012,
+        7052
+      ],
+      "Master of Arts in Teaching, Social Studies Education (Secondary)": [
+        7053,
+        7092
+      ],
+      "Master of Arts in Teaching, Special Education": [
+        7093,
+        7159
+      ],
+      "Master of Science, Curriculum and Instruction": [
+        7160,
+        7181
+      ],
+      "Master of Science, Educational Leadership": [
+        7182,
+        7212
+      ],
+      "Master of Education, Education Technology and Instructional Design [MEDETID]": [
+        7213,
+        7245
+      ],
+      "Master of Education, Education Technology and Instructional Design [MEDETIDA]": [
+        7246,
+        7274
+      ],
+      "Master of Education, Education Technology and Instructional Design": [
+        7275,
+        7304
+      ],
+      "Master of Arts, English Language Learning": [
+        7305,
+        7326
+      ],
+      "Master of Arts, Mathematics Education (K-6)": [
+        7327,
+        7345
+      ],
+      "Master of Arts in Mathematics Education (Middle Grades)": [
+        7346,
+        7370
+      ],
+      "Master of Arts in Mathematics Education (Secondary)": [
+        7371,
+        7400
+      ],
+      "Master of Arts Science Education (Middle Grades)": [
+        7401,
+        7425
+      ],
+      "Master of Arts Science Education (Secondary Biological Science)": [
+        7426,
+        7448
+      ],
+      "Master of Arts Science Education (Secondary Chemistry)": [
+        7449,
+        7472
+      ],
+      "Master of Arts Science Education (Secondary Earth Science)": [
+        7473,
+        7494
+      ],
+      "Master of Arts Science Education (Secondary Physics)": [
+        7495,
+        7517
+      ],
+      "Endorsement Preparation Program, English Language Learning": [
+        7518,
+        7533
+      ],
+      "Endorsement Preparation Program, Middle Grades Math": [
+        7534,
+        7550
+      ],
+      "Endorsement Preparation Program, Middle Grades Science": [
+        7551,
+        7567
+      ],
+      "Endorsement Preparation Program, Biology": [
+        7568,
+        7585
+      ],
+      "Endorsement Preparation Program, Chemistry": [
+        7586,
+        7601
+      ],
+      "Endorsement Preparation Program, Earth Science": [
+        7602,
+        7619
+      ],
+      "Endorsement Preparation Program, Physics": [
+        7620,
+        7635
+      ]
+    }
+  }
+}
