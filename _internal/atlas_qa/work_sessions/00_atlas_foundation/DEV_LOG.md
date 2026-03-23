@@ -584,3 +584,30 @@ Targeted consistency pass between `LOCAL_8B_RAG_SYSTEM_DESIGN.md` and `LOCAL_8B_
 - §5.4 Q4: narrowed to explicitly exclude prefix-artifact explanations and named anomaly cases (C179, D554) from scope of the question
 - §8 (new): source family terminology table (CAT, CAT-TEXT, GUIDE, CANON, ENRICH) added as first appendix for external reviewers
 - Old §8 architecture snapshot renumbered to §9; footer updated with terminology reference
+
+---
+
+## Session update — 2026-03-23 (SESSION 00 EXTERNAL-REVIEW SPACE + RFI TIGHTENING)
+
+### Scope
+Document-organization pass and targeted RFI tightening for external review.
+
+### Files created
+- `_internal/atlas_qa/work_sessions/00_atlas_foundation/EXTERNAL_REVIEW_FEEDBACK.md` — placeholder with section headings; no invented content
+- `_internal/atlas_qa/work_sessions/00_atlas_foundation/LOCAL_8B_RAG_SYSTEM_DESIGN_v0.md` — snapshot copy of `LOCAL_8B_RAG_SYSTEM_DESIGN.md` at current v1.4 state; preserved unmodified
+
+### File moved
+- `_internal/atlas_qa/LOCAL_8B_RFI.md` → `_internal/atlas_qa/work_sessions/00_atlas_foundation/LOCAL_8B_RFI.md`
+- The Session 00 RFI is now the active iteration surface for this external-review cycle. Do not create a parallel RFI at the top level.
+
+### RFI tightening edits made (v2 → v3)
+1. **Status header** — bumped to v3; updated status line to name the tightening direction
+2. **§2 item 1 (deterministic-first)** — added explicit statement: for exact-identifier and single-entity factual questions, model is not the primary answer composer; intended path is deterministic lookup → typed retrieval → evidence bundle → templated/surface-realization-only answer
+3. **§2 item 2 (canonical objects)** — renamed to "primary retrieval substrate"; added explicit statement that parsed artifacts and raw spans are support/provenance layers, not the main retrieval target
+4. **§2 item 3 (version isolation)** — added: version control is an upstream retrieval partition; mixed-version generation outside compare mode is forbidden; silent mixed-version synthesis is the top launch-blocking failure mode
+5. **§2 item 6 (source authority)** — added: authority is enforced before retrieval, not only at display/generation time; guide-only block questions must not retrieve CAT/CANON evidence; catalog-default questions must not widen into guide descriptions without explicit policy allowance
+6. **§4 (core risk model)** — renamed top risk to "silent mixed-version synthesis" with fuller description; named it launch-blocking explicitly
+7. **§5.2 (retrieval and partitioning)** — added Q4 (source authority as hard retrieval-time filter, not post-generation rule) and Q5 (deterministic pre-retrieval disambiguation step for entity-collision cases)
+8. **§5.3 Q1 (abstention)** — tightened to name the target operational framing: "not found in the relevant indexed source scope," not real-world absence
+9. **§5.4 Q1 (multi-variant)** — replaced "most-common variant" as silent default with explicit fallback chain: known context → matching; no context + single → use it; no context + multiple → most-common with explicit disclosure OR abstain; framed as an open review question
+10. **§5.5 (launch gates)** — sharpened to: silent version merge rate (not just contamination rate), claim entailment precision (not just citation presence), abstention on ambiguous/underspecified entity or version queries, near-zero error tolerance for deterministic lookup cases as a separate gate

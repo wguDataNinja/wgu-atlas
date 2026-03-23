@@ -1,8 +1,8 @@
-# RFI (Updated v2): Local 8B Citation-Grounded QA for WGU Catalog + Program Guide Data
+# RFI (Updated v3): Local 8B Citation-Grounded QA for WGU Catalog + Program Guide Data
 
-Status: Updated 2026-03-23 to reflect completed Atlas baseline (Stages 0–2 done)
+Status: Updated 2026-03-23 — tightened for external review (deterministic assembly, version isolation, source authority, launch gates)
 Owner: WGU Atlas / data systems team
-Prior version: 2026-03-23 (first external review round)
+Prior version: v2 2026-03-23 (second external review round)
 
 ## 1) Purpose
 We are requesting targeted feedback on remaining open decisions for a bounded, version-aware, citation-based QA system running on a local ~7B–8B model (Ollama).
@@ -21,17 +21,21 @@ The following are now treated as design commitments for v1:
 1. Deterministic-first architecture
 - deterministic routing and entity/version resolution
 - deterministic lookup for exact/simple questions
-- constrained generation only when needed
+- for exact-identifier and single-entity factual questions, the model is **not** the primary answer composer; the intended path is deterministic lookup → typed retrieval → structured evidence bundle → templated or surface-realization-only answer
+- constrained LLM generation used only when deterministic assembly is insufficient (NL questions, complex phrasing)
 
-2. Canonical synthetic retrieval objects
+2. Canonical synthetic retrieval objects — primary retrieval substrate
 - `course_card`
 - `program_version_card`
 - `guide_section_card`
 - `version_diff_card` (deterministic where possible)
+- these are the **primary semantic retrieval layer**; parsed artifacts and raw spans are support/provenance layers, not the main retrieval target
 
 3. Hard version isolation
-- single-version retrieval by default
-- mixed-version context only in explicit compare mode
+- version control is an **upstream retrieval partition**, not just metadata attached to retrieved content
+- single-version retrieval by default; entity/version scope is resolved and locked before retrieval begins
+- mixed-version generation outside explicit compare mode is **forbidden**
+- silent mixed-version synthesis is treated as the top launch-blocking failure mode
 
 4. LLM role constraints
 - allowed: structured intent/entity extraction (fuzzy queries), bounded phrasing
@@ -41,11 +45,14 @@ The following are now treated as design commitments for v1:
 - no answer without evidence bundle
 - no negative claim without completeness checks
 
-6. Source authority per block (newly locked — see §3.3 for detail)
+6. Source authority per block — enforced as a hard retrieval-time filter (newly locked — see §3.3 for detail)
 - Course description default: CAT-TEXT (catalog). Guide descriptions are stored alternates, not default display.
 - Guide-only enrichment blocks (competencies, cert signals, AoS, capstone): GUIDE sole source.
 - Identity facts (CU, course code, title): CANON. Guide CU values are not authoritative.
 - Program learning outcomes: CAT-TEXT sole source. Guides do not contain PLOs.
+- Source authority is enforced **before retrieval**, not only at display/generation time:
+  - guide-only block questions must not retrieve CAT or CANON evidence for that block
+  - catalog-default description questions must not widen into guide descriptions unless alternates are explicitly allowed by policy
 - LLM is not permitted to select source; source selection is deterministic and policy-driven.
 
 ## 3) New knowns (validated)
@@ -96,9 +103,9 @@ The main unresolved QA design issues are no longer about default description aut
 Full policy: `BLOCK_AUTHORITY_AND_DISPLAY_POLICY.md`.
 
 ## 4) Core risk model
-Highest-risk failure mode remains:
+Highest-risk / launch-blocking failure mode:
 
-**Plausible, citation-bearing, wrong-version synthesis.**
+**Silent mixed-version synthesis: a plausible, citation-bearing answer that silently blends content from multiple versions without disclosure.**
 
 Secondary risks:
 - entity collision across near-duplicate titles/tracks
@@ -118,9 +125,11 @@ Secondary risks:
 1. Practical hybrid weighting strategy by query class (exact vs NL).
 2. Hard partition edge cases: when to allow controlled scope widening without introducing version/entity contamination.
 3. Recommended reranking strategy for v1 before adding heavier components.
+4. Enforcing source authority as a hard retrieval-time filter: the intended design is that block-level source scope is resolved before retrieval begins and only matching evidence is eligible. What are the failure modes of this approach and is there a better boundary (e.g., post-retrieval hard filter before context packing)?
+5. Should a deterministic pre-retrieval disambiguation step be defined for cases where multiple entities match a query (near-duplicate titles, track/specialization collision)? Without one, entity-collision errors cascade into version-ambiguity errors downstream.
 
 ### 5.3 Completeness and abstention policy
-1. Recommended operational definition of completeness for absence claims.
+1. Recommended operational definition of completeness for absence claims. Our target framing: a negative claim asserts "not found in the relevant indexed source scope for the resolved entity/version," not real-world absence. Does this framing hold up under reviewer scrutiny, and what are its edge cases?
 2. Best abstention thresholds/signals for deterministic-first pipelines.
 3. Which ambiguous query classes should default to abstain vs clarify.
 
@@ -130,7 +139,11 @@ The prior version of this section asked whether catalog-first was the right defa
 
 **Remaining genuine open questions:**
 
-1. For courses with multi-variant competency rows (185 courses, 2–6 variants keyed to source programs): when program context is absent, is "most-common variant by source program count" a defensible default, or is there a better selection heuristic for a v1 QA system?
+1. For courses with multi-variant competency rows (185 courses, 2–6 variants keyed to source programs): our intended fallback chain is:
+   - program context known → use the matching variant
+   - no context, single canonical variant → use it
+   - no context, multiple variants → either (a) use most-common variant by source program count with explicit deterministic disclosure ("competencies shown are the most common variant; wording may differ by program"), or (b) abstain and ask for program context
+   Is (a) defensible for v1, or should the default be (b)? What are the failure modes of each?
 
 2. For the 5 version-conflicted programs (MACCA/MACCF/MACCM/MACCT/MSHRM): what is the least-confusing way to surface dual version tokens in a citation-grounded answer without appearing to undermine confidence in the answer itself?
 
@@ -139,11 +152,12 @@ The prior version of this section asked whether catalog-first was the right defa
 4. Same-field substantive conflict within a single version — meaning both catalog and guide are present for the same field with genuinely different text, not explained by the known guide prefix artifact and not a named anomaly case (C179, D554): what is the right QA display contract — surface both with source labels, suppress the weaker source, or abstain until a per-field policy decision is made?
 
 ### 5.5 Evaluation and launch gates
-1. Required minimum test set composition before v1 launch.
+1. Required minimum test set composition before v1 launch (suggest: exact-code lookup, single-entity factual, NL section-grounded, explicit compare, ambiguous/abstain cases — across the full query class taxonomy).
 2. Critical thresholds for:
-   - version contamination rate
-   - claim entailment support
-   - abstention precision/recall
+   - **silent version merge rate** — what tolerance is acceptable before this is a launch blocker?
+   - **claim entailment precision**, not just citation presence — a citation is present but does the cited evidence actually support the claim?
+   - **abstention rate on ambiguous / underspecified entity or version queries** — must be validated, not assumed
+   - for deterministic lookup cases (Class A/B): near-zero error tolerance; these should not fail and must be tested as a separate gate from NL retrieval cases
 3. Recommended manual-audit protocol for citation-entailment correctness.
 
 ## 6) Scope boundaries (unchanged)
