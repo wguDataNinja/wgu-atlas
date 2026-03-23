@@ -347,3 +347,89 @@ class RetrievalResult(BaseModel):
 
     # Diagnostics (for tests and traceability)
     diagnostics: dict[str, Any] = {}
+
+
+# ---------------------------------------------------------------------------
+# Session 05 — Evidence bundle, answerability gate, generation, post-check
+# ---------------------------------------------------------------------------
+
+
+class EvidenceArtifact(BaseModel):
+    """A single vetted artifact included in an evidence bundle."""
+    artifact_type: Literal[
+        "course_card",
+        "program_version_card",
+        "guide_section_card",
+        "version_diff_card",
+    ]
+    entity_code: str
+    version: str
+    source_family: SourceFamily
+    content: dict | str                     # canonical object fields used
+    source_object_identity: str             # stable identity for citations
+    evidence_ref: EvidenceRef
+
+
+class EvidenceBundle(BaseModel):
+    """Pre-assembled, pre-validated set of evidence artifacts for one query.
+
+    Constructed deterministically from RetrievalResult.selected_candidates or
+    from an ExactLookupAnswer. Never built from raw LLM output or corpus search.
+    """
+    entity_code: str
+    entity_type: EntityType
+    version_used: str
+    source_scope: list[SourceFamily]
+    artifacts: list[EvidenceArtifact]       # 1–5 items for single-entity
+    anomaly_disclosures: list[AnomalyDisclosure]
+    notes: list[str]                        # upstream scope notes from partition
+    from_exact_path: bool
+
+
+class AnswerabilityResult(BaseModel):
+    """Output of the deterministic answerability/sufficiency gate."""
+    answerable: bool
+    abstention_reason: AbstentionState | None = None
+    gate_notes: list[str] = []
+
+
+class GenerationOutput(BaseModel):
+    """Typed output of one constrained LLM generation call.
+
+    Fields are populated after parsing and validation. On failure, answer_text
+    is None and the error flags are set.
+    """
+    raw_text: str
+    answer_text: str | None = None
+    cited_evidence_ids: list[str] = []
+    version_disclosed: str | None = None
+    parse_error: bool = False
+    schema_error: bool = False
+    llm_failure: bool = False
+
+
+class PostCheckResult(BaseModel):
+    """Result of the deterministic post-check pass over a GenerationOutput."""
+    passed: bool
+    citation_ids_present: bool
+    version_token_present: bool
+    schema_valid: bool
+    failure_reasons: list[str] = []
+
+
+class QAResponse(BaseModel):
+    """Final typed answer or abstention for a single-entity QA query.
+
+    Produced by the Session 05 answer orchestrator. Carries either a grounded,
+    citation-bearing answer or an explicit abstention state — never both.
+    """
+    raw_query: str
+    entity_code: str | None = None
+    entity_type: EntityType | None = None
+    version_used: str | None = None
+    abstention: AbstentionState | None = None
+    answer_text: str | None = None
+    evidence_bundle: EvidenceBundle | None = None
+    generation_output: GenerationOutput | None = None
+    postcheck: PostCheckResult | None = None
+    diagnostics: dict[str, Any] = {}
