@@ -563,3 +563,24 @@ Brought `LOCAL_8B_RFI.md` from upstream (`WGU-Reddit/Atlas_LLM/`) into Atlas at 
 
 ### File created
 - `_internal/atlas_qa/LOCAL_8B_RFI.md`
+
+---
+
+## Session update — 2026-03-23 (DESIGN DOC / RFI ALIGNMENT PASS)
+
+Targeted consistency pass between `LOCAL_8B_RAG_SYSTEM_DESIGN.md` and `LOCAL_8B_RFI.md` before external review.
+
+### LOCAL_8B_RAG_SYSTEM_DESIGN.md changes
+- `## 5) Revised v1.3 pipeline` → `## 5) Revised v1.4 pipeline` (section title now matches document version)
+- §9 Course description row: notes now cite "633-pair comparison corpus completed; no pair produced a clear guide preference" (was "571 overlapping courses; catalog default confirmed safe")
+- §9 Program description row: notes now cite "63 of 65 STRONG mat-diff pairs" finding and name MATSPED/BAESSPMM as genuine exceptions (was generic "97% identical after prefix strip")
+- §9 `Course roster / standard path` row split into two rows: `Program required courses (official policy) → CAT` and `Standard path sequencing / guide path presentation → GUIDE (standard_path)`
+- Stage 2 open item on evidence ID: expanded to clarify v1 hard requirement for evidence-backed answers vs TBD internal ID schema; not blocking Stage 3
+- Stage 2 open item on version precedence: clarified this is a canonical object construction detail, not a reopening of the settled high-level source-authority policy
+
+### LOCAL_8B_RFI.md changes
+- §3.3 program-description wording: "63 of 65 apparent program-description conflicts" → "63 of 65 STRONG mat-diff program description pairs"; named MATSPED/BAESSPMM as the two genuine exceptions
+- §3.3 end: added sentence identifying the three remaining genuine open QA design issues (multi-variant handling, dual-version UX, anomaly-aware behavior)
+- §5.4 Q4: narrowed to explicitly exclude prefix-artifact explanations and named anomaly cases (C179, D554) from scope of the question
+- §8 (new): source family terminology table (CAT, CAT-TEXT, GUIDE, CANON, ENRICH) added as first appendix for external reviewers
+- Old §8 architecture snapshot renumbered to §9; footer updated with terminology reference

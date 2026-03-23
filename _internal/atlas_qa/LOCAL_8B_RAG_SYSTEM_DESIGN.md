@@ -136,7 +136,7 @@ Answer student-style factual questions about programs/courses with:
 6. No comparison narrative unless diff is deterministic/precomputed.
 7. LLM classifier output is untrusted input and must be schema-validated.
 
-## 5) Revised v1.3 pipeline
+## 5) Revised v1.4 pipeline
 1. Deterministic pre-router (regex/rules for obvious code/version/compare cues).
 2. Structured LLM classifier for remaining fuzzy queries (JSON schema only).
 3. Deterministic entity + version resolution.
@@ -226,7 +226,7 @@ Settled per-block authority (from `BLOCK_AUTHORITY_AND_DISPLAY_POLICY.md`, 2026-
 
 | Block | Default QA source | Notes |
 |---|---|---|
-| Course description / overview | CAT-TEXT | Guide description stored as alternate. 571 overlapping courses; catalog default confirmed safe. |
+| Course description / overview | CAT-TEXT | Guide description stored as alternate. 633-pair comparison corpus completed; no pair produced a clear guide preference over catalog for default display. |
 | Guide description variants | ENRICH (program-scoped) | Use when program context is supplied; fall back to CAT-TEXT otherwise. |
 | Competency bullets | ENRICH — sole source | Most-common variant by default; disclose multi-variant when count > 1. |
 | Cert prep signal | ENRICH — sole source | Show when present; abstain on absence without completeness confirmation. |
@@ -236,10 +236,11 @@ Settled per-block authority (from `BLOCK_AUTHORITY_AND_DISPLAY_POLICY.md`, 2026-
 | CU / title / course code | CANON (fallback CAT) | Guide CU is not authoritative (41 courses with guide-internal CU conflicts). |
 | Areas of Study | GUIDE — sole source | Program-scoped. |
 | Capstone (program) | GUIDE — sole source | |
-| Program description | CAT-TEXT | Guide prefix artifact makes guide unsuitable as default display; body text is identical in 97% of cases after prefix strip. |
+| Program description | CAT-TEXT | 63 of 65 STRONG mat-diff program pairs are explained by guide prepending a metadata header; body text is identical to catalog after stripping. Only MATSPED and BAESSPMM have genuine content differences; catalog is the display default for both. |
 | Program identity (title, code) | CAT | |
 | Total CU | CAT | Guide SP sums unreliable (7 programs with >1 CU discrepancy vs catalog total). |
-| Course roster / standard path | GUIDE (standard_path) | Qualify as "as listed in the program guide"; may reflect one path through elective structure. |
+| Program required courses (official policy) | CAT | Authoritative for accreditation-level requirements. Not machine-parseable from catalog PDF; abstain if structured data is unavailable. |
+| Standard path sequencing / guide path presentation | GUIDE (standard_path) | Sole machine-parseable source. Qualify as "as listed in the program guide"; may reflect one path through an elective structure. |
 | Program learning outcomes | CAT-TEXT — sole source | Guides do not contain PLOs. |
 | Licensure notes | CAT-TEXT | Guide licensure mentions are supplemental context, not policy. |
 | Certification notes (program) | GUIDE | Cite guide program + version. |
@@ -399,9 +400,9 @@ See [STAGE_1_DEPENDENCY_INVENTORY.md](STAGE_1_DEPENDENCY_INVENTORY.md).
 - Real Ollama success path live-verified end-to-end.
 
 **Open items (not blocking Stage 3):**
-- Evidence reference ID format: explicitly TBD/RFI; no standard frozen in this phase.
+- Evidence reference ID format: explicitly TBD/RFI. Evidence-backed answers are a v1 hard requirement (Architecture invariant §4.4); the internal schema for evidence reference IDs is not yet frozen. Not blocking Stage 3 canonical object construction — objects can be built with a placeholder `evidence_refs` shape that is finalized before Stage 4.
 - OpenAI live call: pending `OPENAI_API_KEY`. Clean failure confirmed when key absent.
-- Version token conflict precedence (provenance vs manifest fields): open design question for Stage 3 construction.
+- Version token conflict precedence (provenance vs manifest fields): open for Stage 3 canonical object construction details only. This does not reopen the settled high-level source-authority policy (§9); it concerns how to resolve conflicting version tokens within a single artifact during object generation.
 - The three v10 helper files are gitignored; must be re-acquired from upstream after a fresh clone (see `data/catalog/README.md`).
 
 See [INITIAL_ATLAS_QA_FOUNDATION_STATE.md](INITIAL_ATLAS_QA_FOUNDATION_STATE.md) for full detail.

@@ -79,7 +79,7 @@ A full annotation pass over 633 course description pairs (catalog vs guide) acro
 
 **What is resolved:**
 - Course description default = CAT-TEXT confirmed safe across all 571 overlapping courses. No row in the full 633-pair corpus produced a clear guide preference over catalog for default display.
-- Guide prefix artifact explains 63 of 65 apparent program-description conflicts: guides prepend a metadata header (`Program Code / Catalog Version / Published Date`); after stripping, body text is identical to catalog. Catalog is the display default for program descriptions.
+- Guide prefix artifact explains 63 of 65 STRONG mat-diff program description pairs: guides prepend a metadata header (`Program Code / Catalog Version / Published Date`); after stripping, body text is identical to catalog. Only MATSPED (guide text abridged) and BAESSPMM (guide has additional sentence) have genuine content differences; catalog is the display default for both. Catalog is the display default for all program descriptions.
 - GUIDE is the sole source for competency bullets, cert prep signals, AoS, and capstone. No authority question exists for these blocks.
 - CANON is the sole authority for identity facts (CU, code, title). 41 courses have guide-internal CU conflicts across programs.
 - PLOs exist only in CAT-TEXT; guides contain no program learning outcomes.
@@ -90,6 +90,8 @@ A full annotation pass over 633 course description pairs (catalog vs guide) acro
 - Two hard anomaly flags must be in canonical objects before QA construction:
   - C179 (Advanced Networking Concepts): catalog text is 293 chars — unusually short; completeness unconfirmed. Guide adds detail not in catalog. Inspect catalog extract before treating catalog-default as complete for this course.
   - D554 (Advanced Financial Accounting I): guide description contains text from D560 (data anomaly in extraction pipeline). Do not use guide description for D554.
+
+The main unresolved QA design issues are no longer about default description authority — that is settled. The genuine open issues are: multi-variant handling when program context is absent (§5.4 Q1), dual-version-token disclosure UX for the 5 conflicted programs (§5.4 Q2–3), and anomaly-aware QA behavior for C179 and D554 (§5.4 Q4).
 
 Full policy: `BLOCK_AUTHORITY_AND_DISPLAY_POLICY.md`.
 
@@ -134,7 +136,7 @@ The prior version of this section asked whether catalog-first was the right defa
 
 3. For the MSHRM case specifically (guide 8 months newer, body text currently identical): should QA default to guide-version disclosure proactively, or only disclose the gap when the user's question is about content that could plausibly differ between versions?
 
-4. Same-field conflict within a single version (both sources present for the same field with different text, not explained by the prefix artifact): what is the right display contract — surface both with source labels, suppress the weaker, or abstain until a policy decision is made for that specific field?
+4. Same-field substantive conflict within a single version — meaning both catalog and guide are present for the same field with genuinely different text, not explained by the known guide prefix artifact and not a named anomaly case (C179, D554): what is the right QA display contract — surface both with source labels, suppress the weaker source, or abstain until a per-field policy decision is made?
 
 ### 5.5 Evaluation and launch gates
 1. Required minimum test set composition before v1 launch.
@@ -166,7 +168,19 @@ Please respond in this structure:
 4. **Minimum launch-gate metrics you would enforce**
 5. **What to defer from v1 even if technically feasible**
 
-## 8) Appendix: concise architecture snapshot
+## 8) Appendix: source family terminology
+
+| Abbreviation | Meaning |
+|---|---|
+| CAT | Catalog PDF structured data (program/course metadata, CU totals, roster facts) |
+| CAT-TEXT | Catalog extracted text fields (descriptions, PLOs, licensure language) |
+| GUIDE | Parsed program guide content (standard path, AoS, capstone, competencies, cert signals) |
+| CANON | Canonical course/program index — cross-source identity resolution (course codes, titles, CU) |
+| ENRICH | Guide-derived enrichment fields surfaced at the course level (competency bullets, cert signals, guide description variants) |
+
+---
+
+## 9) Appendix: concise architecture snapshot
 Pipeline (v1 target):
 1. deterministic pre-router
 2. structured LLM classifier for fuzzy queries
@@ -177,6 +191,8 @@ Pipeline (v1 target):
 7. pre-generation sufficiency/abstention gate
 8. constrained generation (if needed)
 9. post-check (citation + version disclosure + source-authority compliance)
+
+Source family terminology: see §8 above.
 
 Atlas-local substrate: `src/atlas_qa/llm/` (client, registry, types, structured, artifacts) + `src/atlas_qa/utils/logging`. All verified. See `LOCAL_8B_RAG_SYSTEM_DESIGN.md` §2.2–2.4 for current-state detail.
 
