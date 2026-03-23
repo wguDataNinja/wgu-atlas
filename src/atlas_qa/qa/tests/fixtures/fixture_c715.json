@@ -1,0 +1,98 @@
+{
+  "course_code": "C715",
+  "canonical_title": "Organizational Behavior",
+  "canonical_cus": "3",
+  "title_variants": [],
+  "catalog_description": "Organizational Behavior and Leadership explores how to lead and manage effectively in diverse business environments. Students are asked to demonstrate the ability to apply organizational leadership theories and management strategies in a series of scenario-based problems.",
+  "catalog_description_version": "2026-03",
+  "cat_short_text_flag": true,
+  "guide_description_alternates": [
+    {
+      "source_program_code": "BSACC",
+      "guide_version": "202503",
+      "description_text": "Organizational Behavior and Leadership explores how to lead and manage effectively in diverse business environments. Students are asked to demonstrate the ability to apply organizational leadership theories and management strategies in a series of scenario-based problems."
+    }
+  ],
+  "guide_misrouted_text_flag": false,
+  "competency_variants": [
+    {
+      "source_program_code": "BSACC",
+      "guide_version": "202503",
+      "bullets": [
+        "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+        "The graduate can describe the effects of specified influences on individual behavior.",
+        "The graduate can recommend appropriate principles or techniques for guiding the development of a group.",
+        "The graduate can determine which type of team and team leadership should be used to accomplish a task or project.",
+        "The graduate analyzes the culture within an organization to determine how to work effectively within that organization.",
+        "The graduate can analyze leadership theories, methods, and tools in given situations and select the appropriate behavior of the leader.",
+        "The graduate can develop and recommend how to implement effective performance evaluation processes."
+      ]
+    },
+    {
+      "source_program_code": "BSC",
+      "guide_version": "202510",
+      "bullets": [
+        "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+        "The graduate analyzes the culture within an organization to determine how to work effectively within that organization.",
+        "The graduate can analyze leadership theories, methods, and tools in given situations and select the appropriate behavior of the leader.",
+        "The graduate can describe the effects of specified influences on individual behavior.",
+        "The graduate can determine which type of team and team leadership should be used to accomplish a task or project.",
+        "The graduate can develop and recommend how to implement effective performance evaluation processes.",
+        "The graduate can recommend appropriate principles or techniques for guiding the development of a group."
+      ]
+    }
+  ],
+  "competency_variant_count": 2,
+  "cert_prep_signal": {
+    "status": "not_found_in_observed_guides",
+    "label": null,
+    "guide_versions_observed": []
+  },
+  "prerequisite_course_codes": [],
+  "is_prereq_for": [],
+  "program_codes": [
+    "BSACC",
+    "BSC",
+    "BSFIN",
+    "BSHA",
+    "BSHR",
+    "BSITM",
+    "BSMGT",
+    "BSMKT",
+    "BSSCOM",
+    "BSUXD"
+  ],
+  "instances_by_version": [
+    {
+      "catalog_version": "2026-03",
+      "program_codes": [
+        "BSACC",
+        "BSC",
+        "BSFIN",
+        "BSHA",
+        "BSHR",
+        "BSITM",
+        "BSMGT",
+        "BSMKT",
+        "BSSCOM",
+        "BSUXD"
+      ]
+    }
+  ],
+  "guide_enrichment_available": true,
+  "guide_enrichment_summary": {
+    "has_guide_description_alternates": true,
+    "has_competencies": true,
+    "competency_variant_count": 2,
+    "has_cert_prep_signal": false,
+    "program_count_with_guide_enrichment": 11
+  },
+  "version_conflict_programs": [],
+  "evidence_refs": [
+    {
+      "source_type": "catalog",
+      "artifact_id": "course_index_2026_03",
+      "version": "2026-03"
+    }
+  ]
+}

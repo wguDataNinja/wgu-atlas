@@ -1,0 +1,73 @@
+{
+  "course_code": "D554",
+  "canonical_title": "Advanced Financial Accounting I",
+  "canonical_cus": "3",
+  "title_variants": [],
+  "catalog_description": "D554: Advanced Financial Accounting I prepares students to engage in an expanding business world by teaching complex accounting and specialized skills required to accommodate the advanced accounting needs of many industries. Being able to apply financial standards using professional judgment to a variety of business situations is crucial for success in the business world. This course builds student\u2019s accounting knowledge by focusing on advanced financial accounting topics such as consolidations, partnership accounting, allocations, adjustments, and eliminations.",
+  "catalog_description_version": "2026-03",
+  "cat_short_text_flag": false,
+  "guide_description_alternates": [],
+  "guide_misrouted_text_flag": true,
+  "competency_variants": [
+    {
+      "source_program_code": "MACCF",
+      "guide_version": "202409",
+      "bullets": [
+        "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+        "The learner prepares consolidated financial statements according to generally accepted accounting principles (GAAP).",
+        "The learner determines required allocations, adjustments, or eliminations according to generally accepted accounting principles (GAAP).",
+        "The learner determines the appropriate accounting treatment for changes in ownership interest and insolvency."
+      ]
+    }
+  ],
+  "competency_variant_count": 1,
+  "cert_prep_signal": {
+    "status": "not_found_in_observed_guides",
+    "label": null,
+    "guide_versions_observed": []
+  },
+  "prerequisite_course_codes": [],
+  "is_prereq_for": [],
+  "program_codes": [
+    "MACCF",
+    "MACCT"
+  ],
+  "instances_by_version": [
+    {
+      "catalog_version": "2026-03",
+      "program_codes": [
+        "MACCF",
+        "MACCT"
+      ]
+    }
+  ],
+  "guide_enrichment_available": true,
+  "guide_enrichment_summary": {
+    "has_guide_description_alternates": false,
+    "has_competencies": true,
+    "competency_variant_count": 1,
+    "has_cert_prep_signal": false,
+    "program_count_with_guide_enrichment": 2
+  },
+  "version_conflict_programs": [
+    {
+      "program_code": "MACCF",
+      "catalog_version": "202412",
+      "guide_version": "202409",
+      "conflict_type": "catalog_guide_version_mismatch"
+    },
+    {
+      "program_code": "MACCT",
+      "catalog_version": "202412",
+      "guide_version": "202409",
+      "conflict_type": "catalog_guide_version_mismatch"
+    }
+  ],
+  "evidence_refs": [
+    {
+      "source_type": "catalog",
+      "artifact_id": "course_index_2026_03",
+      "version": "2026-03"
+    }
+  ]
+}

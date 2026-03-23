@@ -1,0 +1,96 @@
+{
+  "course_code": "D550",
+  "canonical_title": "Ethics for Accountants",
+  "canonical_cus": "3",
+  "title_variants": [],
+  "catalog_description": "Ethics for Accountants examines standards of professional conduct and business practices required for accounting professionals. This course will discuss the necessity of applying ethical principles in the application of accounting principles, tax preparation, and attest services to clients. Moreover, the learner will explore how to apply ethical reasoning, various cognitive processes, professional skepticism and ethical decision-making related to situations involving corporate governance and moral dilemmas. Finally, this course will include discussions of the American Institute of Certified Public Accountants\u2019 (AICPA) Statements on Standards for Tax Services and the Institute of Management Accountants\u2019 (IMA) Statement of Ethical Professional Practices.",
+  "catalog_description_version": "2026-03",
+  "cat_short_text_flag": false,
+  "guide_description_alternates": [
+    {
+      "source_program_code": "MACCA",
+      "guide_version": "202409",
+      "description_text": "Ethics for Accountants examines standards of professional conduct and business practices required for accounting professionals. This course will discuss the necessity of applying ethical principles in the application of accounting principles, tax preparation, and attest services to clients. Moreover, the learner will explore how to apply ethical reasoning, various cognitive processes, professional skepticism and ethical decision-making related to situations involving corporate governance and moral dilemmas. Finally, this course will include discussions of the American Institute of Certified Public Accountants\u2019 (AICPA) Statements on Standards for Tax Services and the Institute of Management Accountants\u2019 (IMA) Statement of Ethical Professional Practices."
+    }
+  ],
+  "guide_misrouted_text_flag": false,
+  "competency_variants": [
+    {
+      "source_program_code": "MACCA",
+      "guide_version": "202409",
+      "bullets": [
+        "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+        "The learner applies ethical reasoning and objectivity to analyze ethical situations.",
+        "The learner applies the American Institute of Certified Public Accountants (AICPA) Code of Professional Conduct and the Institute of Management Accountants (IMA) Statement of Ethical Professional Practice to situations involving organizational ethics, corporate governance and independence.",
+        "The learner analyzes auditor responsibilities, corporate governance, and motivations for fraudulent financial reporting.",
+        "The learner explains auditors\u2019 legal liabilities, defenses, and legislative acts."
+      ]
+    }
+  ],
+  "competency_variant_count": 1,
+  "cert_prep_signal": {
+    "status": "not_found_in_observed_guides",
+    "label": null,
+    "guide_versions_observed": []
+  },
+  "prerequisite_course_codes": [],
+  "is_prereq_for": [],
+  "program_codes": [
+    "MACCA",
+    "MACCF",
+    "MACCM",
+    "MACCT"
+  ],
+  "instances_by_version": [
+    {
+      "catalog_version": "2026-03",
+      "program_codes": [
+        "MACCA",
+        "MACCF",
+        "MACCM",
+        "MACCT"
+      ]
+    }
+  ],
+  "guide_enrichment_available": true,
+  "guide_enrichment_summary": {
+    "has_guide_description_alternates": true,
+    "has_competencies": true,
+    "competency_variant_count": 1,
+    "has_cert_prep_signal": false,
+    "program_count_with_guide_enrichment": 4
+  },
+  "version_conflict_programs": [
+    {
+      "program_code": "MACCA",
+      "catalog_version": "202412",
+      "guide_version": "202409",
+      "conflict_type": "catalog_guide_version_mismatch"
+    },
+    {
+      "program_code": "MACCF",
+      "catalog_version": "202412",
+      "guide_version": "202409",
+      "conflict_type": "catalog_guide_version_mismatch"
+    },
+    {
+      "program_code": "MACCM",
+      "catalog_version": "202412",
+      "guide_version": "202409",
+      "conflict_type": "catalog_guide_version_mismatch"
+    },
+    {
+      "program_code": "MACCT",
+      "catalog_version": "202412",
+      "guide_version": "202409",
+      "conflict_type": "catalog_guide_version_mismatch"
+    }
+  ],
+  "evidence_refs": [
+    {
+      "source_type": "catalog",
+      "artifact_id": "course_index_2026_03",
+      "version": "2026-03"
+    }
+  ]
+}

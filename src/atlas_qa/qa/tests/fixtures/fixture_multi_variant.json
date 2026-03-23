@@ -1,0 +1,83 @@
+{
+  "course_code": "AIT2",
+  "canonical_title": "Organic Chemistry",
+  "canonical_cus": "2",
+  "title_variants": [],
+  "catalog_description": "Organic Chemistry focuses on the study of compounds that contain carbon, much of which is learning how to organize and group organic compounds in order to predict their structure, behavior, and reactivity based on common bonds found within an organic compound.",
+  "catalog_description_version": "2026-03",
+  "cat_short_text_flag": true,
+  "guide_description_alternates": [
+    {
+      "source_program_code": "ENDSESC",
+      "guide_version": "202509",
+      "description_text": "This Organic Chemistry course prepares teacher candidates to understand and apply foundational concepts in carbon-based chemistry. You will learn to describe molecular structures using proper nomenclature, analyze chemical processes, and apply instrumental methods of analysis to determine molecular structures. The course emphasizes practical skills, including the use of modeling kits and spectroscopic techniques to synthesize and analyze organic compounds. By the end of this course, you will be equipped to teach these concepts effectively to your students."
+    },
+    {
+      "source_program_code": "MASESC",
+      "guide_version": "201806",
+      "description_text": "Organic Chemistry focuses on the study of compounds that contain carbon, much of which is learning how to organize and group organic compounds in order to predict their structure, behavior, and reactivity based on common bonds found within an organic compound."
+    }
+  ],
+  "guide_misrouted_text_flag": false,
+  "competency_variants": [
+    {
+      "source_program_code": "ENDSESC",
+      "guide_version": "202509",
+      "bullets": [
+        "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+        "The learner analyzes the chemical processes of carbon-based molecules.",
+        "The learner applies instrumental methods of analysis to determine the structure of simple organic compounds.",
+        "The learner describes carbon-based molecules, their properties, and their 3-dimensional structure using nomenclature and visual representations."
+      ]
+    },
+    {
+      "source_program_code": "MASESC",
+      "guide_version": "201806",
+      "bullets": [
+        "Begin your course by discussing your course planning tool report with your instructor and creating your personalized course plan together.",
+        "The graduate uses drawings and models to communicate and predict the structure and shape of organic molecules.",
+        "The graduate applies concepts of acid-base chemistry to determine the relative acidities of organic acids and the position of equilibrium in an acid-base reaction.",
+        "The graduate applies the IUPAC nomenclature to name organic molecules.",
+        "The graduate applies concepts of stereochemistry to analyze organic molecules.",
+        "The graduate applies mechanisms to analyze organic reactions, including organic synthesis.",
+        "The graduate analyzes properties and reactions of important organic compounds, including aromatic compounds.",
+        "The graduate applies instrumental methods of analysis to determine the structure of organic compounds."
+      ]
+    }
+  ],
+  "competency_variant_count": 2,
+  "cert_prep_signal": {
+    "status": "not_found_in_observed_guides",
+    "label": null,
+    "guide_versions_observed": []
+  },
+  "prerequisite_course_codes": [],
+  "is_prereq_for": [],
+  "program_codes": [
+    "MASESC"
+  ],
+  "instances_by_version": [
+    {
+      "catalog_version": "2026-03",
+      "program_codes": [
+        "MASESC"
+      ]
+    }
+  ],
+  "guide_enrichment_available": true,
+  "guide_enrichment_summary": {
+    "has_guide_description_alternates": true,
+    "has_competencies": true,
+    "competency_variant_count": 2,
+    "has_cert_prep_signal": false,
+    "program_count_with_guide_enrichment": 2
+  },
+  "version_conflict_programs": [],
+  "evidence_refs": [
+    {
+      "source_type": "catalog",
+      "artifact_id": "course_index_2026_03",
+      "version": "2026-03"
+    }
+  ]
+}
