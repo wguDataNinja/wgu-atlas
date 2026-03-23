@@ -611,3 +611,32 @@ Document-organization pass and targeted RFI tightening for external review.
 8. **§5.3 Q1 (abstention)** — tightened to name the target operational framing: "not found in the relevant indexed source scope," not real-world absence
 9. **§5.4 Q1 (multi-variant)** — replaced "most-common variant" as silent default with explicit fallback chain: known context → matching; no context + single → use it; no context + multiple → most-common with explicit disclosure OR abstain; framed as an open review question
 10. **§5.5 (launch gates)** — sharpened to: silent version merge rate (not just contamination rate), claim entailment precision (not just citation presence), abstention on ambiguous/underspecified entity or version queries, near-zero error tolerance for deterministic lookup cases as a separate gate
+
+---
+
+## Session update — 2026-03-23 (RFI v4 + REVIEW-SUPPORT ARTIFACT PACK)
+
+### Scope
+Prepared next external-review round: preserved v3 RFI as snapshot, created three concrete review-support artifacts, updated active RFI to v4, aligned version references across the feedback space.
+
+### Files created
+- `LOCAL_8B_RFI_v3_snapshot.md` — verbatim copy of v3 RFI; preserved unmodified as prior-round record
+- `CANONICAL_OBJECT_PROTOTYPE_PACK.md` — prototype objects for all four first-class canonical object types: normal course (D426), multi-variant course (D358), C179 (cat_short_text anomaly), D554 (guide_misrouted_text anomaly), normal program (BSCS), MSHRM (version-conflicted), guide_section_card (BSCS standard_path), version_diff_card (BSCS 2025_06→2026_03)
+- `EVIDENCE_BUNDLE_EXAMPLES.md` — concrete evidence bundles for 6 query scenarios: exact course lookup (Class A), exact program CU lookup (Class A), capstone section-grounded (Class B/C), multi-variant competency with and without program context (Class C), version-conflicted program question (Class B), disambiguation/abstain (Class E)
+- `DISAMBIGUATION_AND_VARIANT_EXAMPLES.md` — 5 disambiguation examples (abbreviated program name collision, track family collision, course title collision, version ambiguity, retired course status) and 5 variant handling examples (known context, single variant, most-common fallback, abstain fallback, guide description variant with context)
+
+### Files updated
+- `LOCAL_8B_RFI.md` — bumped to v4; added §0 artifact pack index; updated §5.1, §5.2, §5.4, §5.5 to reference artifacts and sharpen open questions against concrete examples
+- `EXTERNAL_REVIEW_FEEDBACK.md` — added version header (feedback received on v3); added Reviewer A/B/C section headers for the three review submissions received
+
+### Versioning scheme after this session
+- Active RFI: `LOCAL_8B_RFI.md` (v4)
+- v3 snapshot: `LOCAL_8B_RFI_v3_snapshot.md`
+- Feedback file: `EXTERNAL_REVIEW_FEEDBACK.md` — labeled as feedback on v3; headers distinguish three reviewers
+
+### Open questions still pending (not resolved in this pass)
+- §5.4 Q1: most-common variant vs abstain for multi-variant competency with no program context
+- §5.4 Q2: disclosure_text string vs structured object for dual-version-token programs
+- §5.4 Q3: proactive vs reactive MSHRM version-gap disclosure
+- §5.4 Q4: same-field substantive conflict display contract (no confirmed corpus example yet)
+- §5.2 Q5: whether disambiguation_card is a named object type or control-layer output only

@@ -1,32 +1,19 @@
-# RFI (v4): Local 8B Citation-Grounded QA for WGU Catalog + Program Guide Data
+# RFI (Updated v3): Local 8B Citation-Grounded QA for WGU Catalog + Program Guide Data
 
-Status: Updated 2026-03-23 — v4 review round; includes concrete artifact pack for reviewer use
+Status: Updated 2026-03-23 — tightened for external review (deterministic assembly, version isolation, source authority, launch gates)
 Owner: WGU Atlas / data systems team
-Prior version: v3 2026-03-23 (preserved as `LOCAL_8B_RFI_v3_snapshot.md`)
-
-## 0) Review-support artifact pack (new in v4)
-
-This version includes three concrete artifacts designed to make the remaining open questions reviewable against real object shapes and real query scenarios:
-
-| Artifact | Purpose |
-|---|---|
-| `CANONICAL_OBJECT_PROTOTYPE_PACK.md` | Representative `course_card`, `program_version_card`, `guide_section_card`, and `version_diff_card` prototypes — including normal cases, multi-variant cases, anomaly cases (C179, D554), and the version-conflicted MSHRM program |
-| `EVIDENCE_BUNDLE_EXAMPLES.md` | Concrete evidence bundles for each query class — shows what the QA control layer hands to answer assembly, what is excluded and why, and what the answer contract is |
-| `DISAMBIGUATION_AND_VARIANT_EXAMPLES.md` | 5 disambiguation examples and 5 multi-variant handling examples — shows expected deterministic behavior for the cases most likely to produce entity-collision or silent-synthesis failures |
-
-Please review the open questions in §5 in light of these artifacts. Where examples already show a proposed behavior, the question is whether that behavior is defensible for v1.
+Prior version: v2 2026-03-23 (second external review round)
 
 ## 1) Purpose
 We are requesting targeted feedback on remaining open decisions for a bounded, version-aware, citation-based QA system running on a local ~7B–8B model (Ollama).
 
-This is a third-pass RFI. Core architecture direction is now set. v3 tightened the language around deterministic assembly, version isolation, and source authority. v4 adds concrete examples to make the remaining open questions actionable.
+This is a second-pass RFI. Core architecture direction is now set; we want critique on unresolved implementation choices and evaluation thresholds.
 
-**What has changed since v3:**
-- Three review-support artifacts added (see §0).
-- §5 open questions updated to reference the artifact pack; questions where examples narrow the uncertainty are sharpened accordingly.
-- §5.4 Q1 (multi-variant fallback) now shows both candidate behaviors side-by-side in `EVIDENCE_BUNDLE_EXAMPLES.md` Example 4 and `DISAMBIGUATION_AND_VARIANT_EXAMPLES.md` V3/V4.
-- §5.1 Q4 (source-authority fields in `course_card`) is now illustrated in `CANONICAL_OBJECT_PROTOTYPE_PACK.md` — the question is whether the proposed fields are sufficient.
-- §5.2 Q5 (disambiguation) is now illustrated with 5 concrete examples — the question is whether a first-class `disambiguation_card` object type is needed.
+**What has changed since the last version:**
+- Atlas-local LLM substrate is now implemented and live-verified (see §3.2).
+- Source-authority and display policy for course and program descriptions is now settled (see §3.3). Questions in §5.4 that were open in the prior version are now resolved or narrowed.
+- All catalog artifact families are mirrored into Atlas. No runtime dependency on upstream repo remains.
+- §5.4 has been revised to reflect the settled decisions and identify the remaining genuine open questions.
 
 ## 2) Locked decisions (current plan)
 The following are now treated as design commitments for v1:
@@ -129,21 +116,17 @@ Secondary risks:
 ## 5) What we still need expert feedback on
 
 ### 5.1 Representation and canonical object design
-Prototype objects are in `CANONICAL_OBJECT_PROTOTYPE_PACK.md`. React to those shapes.
-
-1. Minimum required fields per canonical object to support robust retrieval + grounded answers. The prototype pack shows a proposed field set — are there missing fields, or fields that are not load-bearing for v1?
-2. Whether any additional first-class object is needed for v1 beyond the four current types. Reviewers noted in v3 feedback that a `disambiguation_card` or pre-retrieval disambiguation step may be needed — see `DISAMBIGUATION_AND_VARIANT_EXAMPLES.md` for 5 concrete examples. Is this a named object type, or a control-layer output?
-3. Best practices for preserving source fidelity while normalizing text views. The prototype pack uses `evidence_refs` to point back to source artifacts — is this the right provenance shape?
-4. The prototype pack shows `description_display_source`, `anomaly_flags`, `description_guide_alternate_count`, `description_multi_variant`, and `description_review_flag` on `course_card`. Is this field set sufficient for the QA control layer to apply the source policy deterministically at retrieval time without LLM involvement? Are there missing fields?
+1. Minimum required fields per canonical object to support robust retrieval + grounded answers.
+2. Whether any additional first-class object is needed for v1 beyond the four current types (`course_card`, `program_version_card`, `guide_section_card`, `version_diff_card`).
+3. Best practices for preserving source fidelity while normalizing text views.
+4. How to carry source-authority fields (`display_source`, `anomaly_flags`, `description_guide_alternate_count`) in `course_card` so the QA control layer can apply the source policy deterministically at retrieval time without LLM involvement.
 
 ### 5.2 Retrieval and partitioning details
-Evidence bundle shapes are in `EVIDENCE_BUNDLE_EXAMPLES.md`. React to what is included and excluded in each example.
-
-1. Practical hybrid weighting strategy by query class (exact vs NL). The evidence bundle examples show that Class A queries use deterministic fetch only and Class C queries use hybrid retrieval — is the boundary between these classes right?
-2. Hard partition edge cases: when to allow controlled scope widening without introducing version/entity contamination. `EVIDENCE_BUNDLE_EXAMPLES.md` Example 6 (disambiguation) shows that retrieval is not initiated when entity is unresolved — is this the right gate?
+1. Practical hybrid weighting strategy by query class (exact vs NL).
+2. Hard partition edge cases: when to allow controlled scope widening without introducing version/entity contamination.
 3. Recommended reranking strategy for v1 before adding heavier components.
-4. Enforcing source authority as a hard retrieval-time filter: the intended design is that block-level source scope is resolved before retrieval begins and only matching evidence is eligible. The bundle examples show `excluded_evidence` with reasons — are the exclusion rules right?
-5. Disambiguation before retrieval: `DISAMBIGUATION_AND_VARIANT_EXAMPLES.md` shows 5 cases. Is a first-class `disambiguation_card` object type warranted, or is this handled entirely by the control layer?
+4. Enforcing source authority as a hard retrieval-time filter: the intended design is that block-level source scope is resolved before retrieval begins and only matching evidence is eligible. What are the failure modes of this approach and is there a better boundary (e.g., post-retrieval hard filter before context packing)?
+5. Should a deterministic pre-retrieval disambiguation step be defined for cases where multiple entities match a query (near-duplicate titles, track/specialization collision)? Without one, entity-collision errors cascade into version-ambiguity errors downstream.
 
 ### 5.3 Completeness and abstention policy
 1. Recommended operational definition of completeness for absence claims. Our target framing: a negative claim asserts "not found in the relevant indexed source scope for the resolved entity/version," not real-world absence. Does this framing hold up under reviewer scrutiny, and what are its edge cases?
@@ -156,30 +139,26 @@ The prior version of this section asked whether catalog-first was the right defa
 
 **Remaining genuine open questions:**
 
-1. **Multi-variant competency fallback** — `DISAMBIGUATION_AND_VARIANT_EXAMPLES.md` V3 and V4 show both candidate behaviors. `EVIDENCE_BUNDLE_EXAMPLES.md` Example 4 shows the evidence bundle for each path. The fallback chain is:
-   - program context known → use the matching variant (V1: settled)
-   - no context, single canonical variant → use it (V2: settled)
-   - no context, multiple variants → either:
-     - (a) most-common variant with explicit deterministic disclosure (V3): reviewer concern is that a student in a minority-variant program reads the wrong competency list, even with disclosure
-     - (b) abstain and ask for program context (V4): safer but higher friction
-   **Question for reviewers:** Is (a) defensible for v1, or is (b) required? What is the right gate condition (e.g., only abstain when variant differences are substantive, not cosmetic)?
+1. For courses with multi-variant competency rows (185 courses, 2–6 variants keyed to source programs): our intended fallback chain is:
+   - program context known → use the matching variant
+   - no context, single canonical variant → use it
+   - no context, multiple variants → either (a) use most-common variant by source program count with explicit deterministic disclosure ("competencies shown are the most common variant; wording may differ by program"), or (b) abstain and ask for program context
+   Is (a) defensible for v1, or should the default be (b)? What are the failure modes of each?
 
-2. **Dual-version-token disclosure UX** — `CANONICAL_OBJECT_PROTOTYPE_PACK.md` Prototype 6 (MSHRM) shows the proposed `version_conflict_detail` shape with a pre-composed `disclosure_text`. `EVIDENCE_BUNDLE_EXAMPLES.md` Example 5 shows it appearing in the evidence bundle. **Question:** Is a pre-composed disclosure string the right shape, or should this be a structured object that the answer template renders? For the MACC programs (catalog 3 months newer), is the same shape appropriate?
+2. For the 5 version-conflicted programs (MACCA/MACCF/MACCM/MACCT/MSHRM): what is the least-confusing way to surface dual version tokens in a citation-grounded answer without appearing to undermine confidence in the answer itself?
 
-3. **MSHRM proactive disclosure** — the MSHRM program_version_card shows `body_text_status: "identical_after_prefix_strip"` and `gap_months: 8`. **Question:** Should `disclosure_text` appear in every MSHRM answer (proactive), or only when the question involves content that could plausibly have changed in 8 months (reactive)? The proactive path is simpler to implement; the reactive path requires the QA layer to classify whether the queried field is "freshness-sensitive."
+3. For the MSHRM case specifically (guide 8 months newer, body text currently identical): should QA default to guide-version disclosure proactively, or only disclose the gap when the user's question is about content that could plausibly differ between versions?
 
-4. **Same-field substantive conflict** (not explained by prefix artifact, not a named anomaly): what is the right QA display contract — surface both with source labels, suppress the weaker source, or abstain until a per-field policy decision is made? This case is not yet illustrated in the artifact pack because no confirmed example exists in the current corpus outside the named anomalies.
+4. Same-field substantive conflict within a single version — meaning both catalog and guide are present for the same field with genuinely different text, not explained by the known guide prefix artifact and not a named anomaly case (C179, D554): what is the right QA display contract — surface both with source labels, suppress the weaker source, or abstain until a per-field policy decision is made?
 
 ### 5.5 Evaluation and launch gates
-The query class taxonomy and expected answer contracts from `EVIDENCE_BUNDLE_EXAMPLES.md` should inform test set construction.
-
-1. Required minimum test set composition. Prior reviewer feedback suggested: 75 exact identifier queries, 75 single-entity NL queries, 50 section-grounded, 50 version-sensitive, 40 comparison, 40 abstain-required, 20 anomaly/conflict cases (~350 total). Does this composition match reviewer experience? Which category is most under-weighted?
+1. Required minimum test set composition before v1 launch (suggest: exact-code lookup, single-entity factual, NL section-grounded, explicit compare, ambiguous/abstain cases — across the full query class taxonomy).
 2. Critical thresholds for:
-   - **silent version merge rate** — prior reviewer feedback suggested 0% tolerance in a launch-blocker set. Is this operationally achievable, or is a small non-zero tolerance (e.g., <1% on a 500-query set) more realistic?
-   - **claim entailment precision** (not just citation presence): prior feedback suggested ≥95% on answerable set. Is claim-level entailment audit feasible manually at the scale of a v1 test set?
-   - **abstention rate on ambiguous / underspecified entity or version queries**: the disambiguation examples show the intended behavior; how should this be measured in a holdout set?
-   - for Class A/B deterministic lookup cases: what is the right separate gate, given that these should approach 100% and failure here is an architecture defect, not a model quality issue?
-3. Recommended manual-audit protocol for citation-entailment correctness. Should the audit protocol be anchored to the evidence bundle (verifiable against `excluded_evidence`) or to the final answer text only?
+   - **silent version merge rate** — what tolerance is acceptable before this is a launch blocker?
+   - **claim entailment precision**, not just citation presence — a citation is present but does the cited evidence actually support the claim?
+   - **abstention rate on ambiguous / underspecified entity or version queries** — must be validated, not assumed
+   - for deterministic lookup cases (Class A/B): near-zero error tolerance; these should not fail and must be tested as a separate gate from NL retrieval cases
+3. Recommended manual-audit protocol for citation-entailment correctness.
 
 ## 6) Scope boundaries (unchanged)
 In-scope v1:
