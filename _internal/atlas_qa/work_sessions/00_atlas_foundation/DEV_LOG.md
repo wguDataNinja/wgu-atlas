@@ -523,3 +523,24 @@ Real Ollama live call remains verified from prior session (2026-03-23). No re-ru
 - Evidence reference ID format remains TBD/RFI (explicitly deferred, not a Stage 0 blocker)
 - OpenAI live call pending OPENAI_API_KEY (not a blocker; Ollama path is primary)
 - Version token conflict precedence is a Stage 3+ design question, not a Stage 0 blocker
+
+---
+
+## Session update — 2026-03-23 (DESIGN DOC SYNC)
+
+Updated `LOCAL_8B_RAG_SYSTEM_DESIGN.md` to v1.4 to reflect the completed Atlas baseline.
+
+### Changes made
+- Document status: version bump to v1.4; current stage noted as Stage 3 active.
+- §2.2: replaced prospective "existing patterns in src" language with real Atlas-local substrate inventory and live verification status.
+- §2.3 (new): Atlas-local artifact inventory — catalog mirror contents, file sizes, gitignore policy for v10 helpers.
+- §2.4 (new): Source-authority knowns from settled block-authority policy — course description default (CAT-TEXT), guide-only blocks, CANON identity facts, PLO source, version conflict programs, C179/D554 anomaly flags.
+- §2.5: renumbered from old §2.3 (decision knowns unchanged).
+- §9: expanded source precedence from 3 generic rules to per-block authority table matching settled policy.
+- §11: added current provider verification status (Ollama live-verified; OpenAI pending key; available local models noted).
+- §15.2 Stages 0–2: marked ✅ COMPLETE with brief what-was-done summaries; expanded Stage 2 to list open items not blocking Stage 3.
+- §17: updated immediate priorities to show Stages 0–2 struck through and Stage 3 as active.
+- §18: updated summary paragraph to describe the real completed baseline state.
+
+### File updated
+- `_internal/atlas_qa/LOCAL_8B_RAG_SYSTEM_DESIGN.md` — v1.4

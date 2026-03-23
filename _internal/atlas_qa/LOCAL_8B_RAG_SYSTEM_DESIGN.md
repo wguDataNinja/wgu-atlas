@@ -1,10 +1,12 @@
-# Local 8B QA System Design (Revised v1.3)
+# Local 8B QA System Design (Revised v1.4)
 
 ## Document status
-- Updated to reflect repo ownership decision: `wgu-atlas` is the single implementation home for all Atlas QA runtime, artifacts, evals, and tests.
-- `wgu-reddit` is a temporary upstream source only; cross-repo dependence will be reduced deliberately, in stages.
+- **Updated 2026-03-23** to reflect completed Atlas-local baseline (Stages 0–2 done).
+- `wgu-atlas` is the single implementation home for all Atlas QA runtime, artifacts, evals, and tests. Ownership boundary is now enforced, not only declared.
+- `wgu-reddit` is a temporary upstream source only; all Stage 0–2 dependencies have been resolved. No runtime dependency on `wgu-reddit` remains in Atlas QA code.
 - Scope: bounded, citation-based QA over WGU catalog + program-guide corpus.
 - Runtime: local Ollama model (~7B–8B), no fine-tuning in v1.
+- Current stage: Stage 3 (canonical object generation) is the active next step.
 
 ## 1) Executive summary
 The architecture is now explicitly **deterministic-first**:
@@ -30,16 +32,82 @@ These are now treated as confirmed implementation inputs.
   - guide→catalog linking artifacts
   - anomalies/reconciliation outputs
 
-### 2.2 Existing local LLM orchestration knowns (already in `src`)
-We already have working local-model patterns that match this project’s control philosophy:
-- Ollama provider is registered and used via provider dispatch.
-- Structured output parsing + validation is already implemented (JSON extraction + fallback + Pydantic schema validation).
-- Parse/schema/fallback/LLM-failure flags are already tracked per call.
-- End-to-end run artifacts already capture prompt, raw output, and error flags for auditability.
+### 2.2 Atlas-local LLM substrate (verified 2026-03-23)
+The minimum viable structured-output substrate is now ported, audited, and live-verified in Atlas:
 
-Implication: Atlas LLM does **not** need to invent local structured-output orchestration from scratch; it should reuse this pattern.
+**Atlas-local modules (`src/atlas_qa/llm/` and `src/atlas_qa/utils/`):**
+- `client.py` — provider dispatch; `generate(model_name, prompt) -> LlmCallResult`
+- `registry.py` — model registry; `get_model_info(name)` with Ollama/OpenAI support
+- `types.py` — `LlmCallResult` with all required flags: `raw_text`, `llm_failure`, `parse_failure`, `schema_failure`, `num_retries`, `error_message`, `elapsed_sec`
+- `structured.py` — `safe_parse_structured_response()` (JSON extraction + Pydantic validation + fallback), `validate_and_fallback()`
+- `artifacts.py` — `ArtifactCapture`; writes `{prompt, raw_output, flags}` per call to JSONL
+- `utils/logging.py` — stdlib logging wrapper
 
-### 2.3 Decision knowns
+**Verification status:**
+- Structured parse (valid JSON, parse failure, schema failure), fallback, and artifact capture: all verified.
+- Real Ollama call (`llama3:latest`, 8B Q4) end-to-end: **live-verified** — `generate()` → HTTP → `safe_parse_structured_response()` → Pydantic validation → JSONL artifact on disk. `elapsed_sec` ~13s, no failures.
+- OpenAI path: clean failure when `OPENAI_API_KEY` absent; live call pending key. Note: retry loop retries on permanent key-missing failure (pre-existing behavior; not fixed in Stage 2).
+- No Atlas QA source file imports from `wgu-reddit`. Import boundary confirmed.
+
+Implication: Stage 3+ QA build work can import from `src.atlas_qa.*` directly. No substrate work needed before canonical object construction begins.
+
+### 2.3 Atlas-local artifact inventory (as of 2026-03-23)
+
+All Stage 1 artifact families are now present in Atlas. No QA runtime path needs to read from `wgu-reddit`.
+
+**Catalog artifacts (mirrored to `data/catalog/`):**
+- `trusted/2026_03/` — 8 files, ~1 MB; current edition program blocks, program/course indexes, manifest, degree snapshots, sections index, certs. Committed to git.
+- `change_tracking/` — 5 files, ~644 KB; adjacent diffs, course/program history, summary stats. Committed.
+- `edition_diffs/` — 4 files, ~244 KB; edition diff events, full diffs, rollups, summary. Committed.
+- `helpers/course_index_v10.json` — 58 MB; **gitignored**. Acquire from `wgu-reddit/WGU_catalog/outputs/helpers/` after a fresh clone. See `data/catalog/README.md`.
+- `helpers/degree_snapshots_v10_seed.json` — 524 KB; **gitignored**.
+- `helpers/sections_index_v10.json` — 824 KB; **gitignored**.
+
+**Program guide artifacts (pre-existing in Atlas):**
+- `data/program_guides/parsed/` — 115 parsed guide JSON files
+- `data/program_guides/guide_manifest.json`, `guide_anomaly_registry.json`, `section_presence_matrix.csv`
+
+**Canonical course data (pre-existing in Atlas):**
+- `data/canonical_courses.csv` and `data/canonical_courses.json` — 1594 course codes
+
+Stage 3+ build work can assume all of the above are present locally.
+
+---
+
+### 2.4 Source-authority knowns (settled 2026-03-23)
+
+The full block-authority and display policy is in `BLOCK_AUTHORITY_AND_DISPLAY_POLICY.md`. The entries below are the QA-design-relevant decisions only.
+
+**Course description:**
+- Default answer source: `CAT-TEXT` (WGU Catalog 2026-03).
+- Guide descriptions are stored as alternates keyed by source program code(s). Not displayed by default; available for program-context queries.
+- 74 courses have 2–4 guide description variants. 185 courses have 2–6 competency variants.
+- Confirmed safe across all 571 overlapping courses after full annotation pass: no row produced a clear guide preference over catalog for default display.
+
+**Guide-only blocks (no catalog overlap, no authority question):**
+- Competency bullets: GUIDE sole source.
+- Cert prep signal: GUIDE sole source.
+- Areas of Study: GUIDE sole source.
+- Capstone (both program and course level): GUIDE sole source, always scoped to the program.
+
+**Identity facts:**
+- CU, course title, course code, canonical status: CANON authoritative. Guide CU values are not authoritative (41 courses have guide-internal CU conflicts across programs).
+- Program identity (degree title, program code): CAT.
+- Program total CU: CAT. Guide SP sums are not authoritative (7 programs have >1 CU discrepancy vs catalog total).
+
+**Program learning outcomes:** CAT-TEXT sole source. Guides do not contain PLOs.
+
+**Version conflicts requiring QA disclosure:**
+- MACCA, MACCF, MACCM, MACCT: catalog 3 months newer than guide. Use CAT-TEXT; cite both version tokens.
+- MSHRM: guide 8 months newer than catalog (body text currently identical after prefix strip, but freshness gap is the widest in corpus). Cite both version tokens. Do not assert catalog is current.
+
+**Hard anomaly flags (must be in canonical objects before Stage 3 construction):**
+- C179: catalog text is 293 chars — unusually short; completeness unconfirmed. Guide adds routing/switching/automation specifics. Inspect catalog extract before relying on catalog-default for this course.
+- D554: guide description contains text from D560 (Internal Auditing I) — data anomaly in extraction pipeline. Do not use guide description for D554. Catalog text is unaffected.
+
+---
+
+### 2.5 Decision knowns
 - v1 will not be agentic.
 - v1 will not use model-based routing as primary controller.
 - v1 will default to single-version retrieval unless explicit compare intent.
@@ -149,10 +217,33 @@ Any chunk outside hard scope is discarded before context packing.
 - Unresolved version ambiguity: abstain (or clarifying UX later).
 
 ## 9) Source precedence policy
-When source families disagree:
+General rules:
 1. Catalog structured artifacts are authoritative for catalog-encoded fields (program composition, CU totals, edition roster facts).
 2. Guide structured artifacts are authoritative for guide-only fields (standard path wording/rows, AoS wording, capstone wording).
 3. Same-field conflict in same version: surface conflict explicitly; cite both; do not force-merge.
+
+Settled per-block authority (from `BLOCK_AUTHORITY_AND_DISPLAY_POLICY.md`, 2026-03-23):
+
+| Block | Default QA source | Notes |
+|---|---|---|
+| Course description / overview | CAT-TEXT | Guide description stored as alternate. 571 overlapping courses; catalog default confirmed safe. |
+| Guide description variants | ENRICH (program-scoped) | Use when program context is supplied; fall back to CAT-TEXT otherwise. |
+| Competency bullets | ENRICH — sole source | Most-common variant by default; disclose multi-variant when count > 1. |
+| Cert prep signal | ENRICH — sole source | Show when present; abstain on absence without completeness confirmation. |
+| Prerequisites | CANON | Structured prereq relationships only; CAT-TEXT prereq mentions are informal. |
+| Reverse prerequisites | CANON-derived | Do not assert absence without completeness confirmation. |
+| Capstone callout | ENRICH — sole source | Always scoped to the program; do not assert "capstone" without naming the program. |
+| CU / title / course code | CANON (fallback CAT) | Guide CU is not authoritative (41 courses with guide-internal CU conflicts). |
+| Areas of Study | GUIDE — sole source | Program-scoped. |
+| Capstone (program) | GUIDE — sole source | |
+| Program description | CAT-TEXT | Guide prefix artifact makes guide unsuitable as default display; body text is identical in 97% of cases after prefix strip. |
+| Program identity (title, code) | CAT | |
+| Total CU | CAT | Guide SP sums unreliable (7 programs with >1 CU discrepancy vs catalog total). |
+| Course roster / standard path | GUIDE (standard_path) | Qualify as "as listed in the program guide"; may reflect one path through elective structure. |
+| Program learning outcomes | CAT-TEXT — sole source | Guides do not contain PLOs. |
+| Licensure notes | CAT-TEXT | Guide licensure mentions are supplemental context, not policy. |
+| Certification notes (program) | GUIDE | Cite guide program + version. |
+| Edition / version info | Per-source token | Never merge version tokens across source families. |
 
 ## 10) Negative claim completeness policy
 For negative claims (absence assertions), require all:
@@ -171,8 +262,10 @@ LLM allowed roles:
 - bounded surface realization from vetted evidence
 
 Provider/model policy:
-- provider abstraction is preserved (Ollama-first locally; OpenAI-compatible path remains available).
-- model family remains swappable; Atlas QA must not hard-code to a single provider family.
+- Provider abstraction is preserved (Ollama-first locally; OpenAI-compatible path remains available).
+- Model family remains swappable; Atlas QA must not hard-code to a single provider family.
+- **Current verified state:** Ollama path live-verified with `llama3:latest` (8B Q4). OpenAI path confirmed clean failure when key is absent; live call pending `OPENAI_API_KEY`. Only `llama3` is registered in `registry.py`; additional models can be added when needed.
+- Available Ollama models on this machine (not yet registered): `llama3.1:latest`, `qwen3.5:9b`, `mistral:7b-instruct`, `qwen2.5-coder:7b`, `codestral:latest`.
 
 LLM disallowed roles:
 - autonomous source selection
@@ -273,62 +366,45 @@ The control philosophy is unchanged. The only change is repo ownership.
 
 ### 15.2 Staged migration plan
 
-#### Stage 0 — Atlas ownership boundary
+#### Stage 0 — Atlas ownership boundary ✅ COMPLETE
 
 **Purpose:** Declare ownership. Produce a written boundary contract.
 
-**Outputs:**
-- Statement that Atlas QA runtime, tests/evals, and generated artifacts live entirely in `wgu-atlas`.
-- All remaining `wgu-reddit` dependencies are transitional and explicitly enumerated.
+**Completed 2026-03-23.** Outputs:
+- `STAGE_0_OWNERSHIP_CONTRACT.md` — ownership declaration, hard rules, transitional externals enumerated, current boundary observed.
+- 23 dependencies classified; 0 uncategorized.
 
-**Verification:**
-- Dependency inventory listing every current Atlas dependency on `wgu-reddit`.
-- Each dependency classified as: `keep temporarily` / `mirror into Atlas` / `replace in Atlas` / `delete`.
-- No dependency remains uncategorized.
-
-**Definition of done:** Single explicit ownership contract + dependency inventory for migration planning.
+See [STAGE_0_OWNERSHIP_CONTRACT.md](STAGE_0_OWNERSHIP_CONTRACT.md).
 
 ---
 
-#### Stage 1 — Dependency inventory and target map
+#### Stage 1 — Dependency inventory and target map ✅ COMPLETE
 
 **Purpose:** Identify exactly what Atlas QA needs from `wgu-reddit` and define where each dependency will live in Atlas.
 
-**Output table format:**
+**Completed 2026-03-23.** 23 dependencies classified; every dependency has exactly one strategy (mirror / port / keep / exclude); no guessing required.
 
-| Dependency | Current source | Used for | Atlas target | Strategy |
-|---|---|---|---|---|
-| parser output artifact X | wgu-reddit/... | build input | wgu-atlas/data/... | mirror |
-| structured LLM utility Y | wgu-reddit/src/... | Ollama schema call | wgu-atlas/src/... | port |
-| raw PDFs | wgu-reddit/... | extraction only | none for runtime | exclude |
-
-**Deterministic rules:** Every dependency gets exactly one strategy: `mirror` / `port` / `replace` / `exclude`.
-
-**Definition of done:** Codex can migrate foundations without guessing.
+See [STAGE_1_DEPENDENCY_INVENTORY.md](STAGE_1_DEPENDENCY_INVENTORY.md).
 
 ---
 
-#### Stage 2 — Atlas-local foundation import/port
+#### Stage 2 — Atlas-local foundation import/port ✅ COMPLETE
 
 **Purpose:** Make Atlas self-sufficient enough to begin QA work without cross-repo runtime imports.
 
-**Scope:**
-- Port minimal structured-output utilities into Atlas (provider abstraction, JSON extraction + fallback, Pydantic schema validation, parse/schema/fallback/failure flags, run-level observability).
-- Stage 2 entry requirement: Atlas-local structured-output substrate must be runnable in-repo with validation/fallback behavior preserved before broader QA build work.
-- Mirror required build inputs/artifacts into Atlas-local locations.
-- Create Atlas QA module skeleton.
+**Completed 2026-03-23.** What was done:
+- Minimum viable LLM substrate ported, audited, and verified in `src/atlas_qa/llm/` and `src/atlas_qa/utils/`. See §2.2 for module inventory and verification status.
+- All 6 catalog artifact families mirrored to `data/catalog/`. See §2.3 for inventory and large-file policy.
+- Import boundary confirmed: no Atlas QA module imports from `wgu-reddit`.
+- Real Ollama success path live-verified end-to-end.
 
-**Stable interface contracts to define:**
-- structured model call result
-- validated classifier output
-- evidence reference type
-- version/entity identifiers
+**Open items (not blocking Stage 3):**
+- Evidence reference ID format: explicitly TBD/RFI; no standard frozen in this phase.
+- OpenAI live call: pending `OPENAI_API_KEY`. Clean failure confirmed when key absent.
+- Version token conflict precedence (provenance vs manifest fields): open design question for Stage 3 construction.
+- The three v10 helper files are gitignored; must be re-acquired from upstream after a fresh clone (see `data/catalog/README.md`).
 
-**Hard rule:** Atlas QA code imports Atlas modules only. No new code path imports runtime helpers from `wgu-reddit`.
-
-**Verification:** Import smoke tests pass; grep/import check shows no forbidden upstream imports in QA package.
-
-**Definition of done:** Atlas has its own minimal reusable QA foundation.
+See [INITIAL_ATLAS_QA_FOUNDATION_STATE.md](INITIAL_ATLAS_QA_FOUNDATION_STATE.md) for full detail.
 
 ---
 
@@ -391,14 +467,19 @@ The control philosophy is unchanged. The only change is repo ownership.
 
 ## 17) Immediate implementation priorities
 
-The staged plan in §15.2 defines the sequence. The immediate priorities map to Stages 0 and 1:
+Stages 0, 1, and 2 are complete. The current active stage is **Stage 3**.
 
-1. **Stage 0** — Produce the Atlas ownership boundary contract. Enumerate every current Atlas dependency on `wgu-reddit`. Classify each dependency (keep temporarily / mirror / port / replace / delete). No ambiguous dependency left uncategorized.
-2. **Stage 1** — Produce the dependency inventory and target map table. Every dependency gets an Atlas target path and a single migration strategy. This is the Codex-ready input for Stage 2.
-3. **Stage 2** — Port minimal structured-output utilities into Atlas-local modules. Mirror required artifacts. Stand up the Atlas QA package skeleton. Verify no forbidden upstream imports remain.
-4. **Stage 3** — Build canonical object generators (`course_card`, `program_version_card`, `guide_section_card`, `version_diff_card`) entirely in Atlas.
-5. **Stage 4** — Implement deterministic pre-router, strict query-class execution matrix, and hard version/entity/source/section partitioning.
-6. **Stage 5+** — Add sufficiency/completeness gates, fuzzy retrieval path, evaluation harness, and compare mode.
+1. ~~**Stage 0**~~ — ✅ Complete. Ownership boundary contract produced.
+2. ~~**Stage 1**~~ — ✅ Complete. Dependency inventory produced; 23 dependencies classified.
+3. ~~**Stage 2**~~ — ✅ Complete. Substrate ported and live-verified; catalog artifacts mirrored; import boundary confirmed.
+4. **Stage 3 (active)** — Build canonical object generators (`course_card`, `program_version_card`, `guide_section_card`, `version_diff_card`) entirely in Atlas. Inputs are now all Atlas-local. Source-authority fields from §2.4 and §9 must be reflected in `course_card` (see `POLICY_IMPLEMENTATION_PLAN.md` §5 for the field list).
+5. **Stage 4** — Implement deterministic pre-router, exact identifier routing, entity/version resolution, and simple factual fetch. Abstention states must be wired before generation path is opened.
+6. **Stage 5** — Add sufficiency/completeness gates, fuzzy retrieval path, structured classifier, and hard scope partitioning.
+7. **Stage 6** — Compare mode, eval harness, and v1 launch gates.
 
 ## 18) Summary
-v1.3 is a deterministic QA system with a constrained local LLM component, with `wgu-atlas` as the single implementation home. The architecture prevents the highest-risk error class (plausible mixed-version answers with valid-looking citations) and eliminates cross-repo runtime dependence through a deliberate staged migration. Stage 0 and Stage 1 artifacts are complete; see [STAGE_0_OWNERSHIP_CONTRACT.md](STAGE_0_OWNERSHIP_CONTRACT.md) and [STAGE_1_DEPENDENCY_INVENTORY.md](STAGE_1_DEPENDENCY_INVENTORY.md).
+v1.4 is a deterministic QA system with a constrained local LLM component, with `wgu-atlas` as the single implementation home. The architecture prevents the highest-risk error class (plausible mixed-version answers with valid-looking citations) and eliminates cross-repo runtime dependence through a deliberate staged migration.
+
+**Current baseline (as of 2026-03-23):** Stages 0–2 are complete. Atlas has a verified local LLM substrate (`src/atlas_qa/`), all catalog and program-guide artifact families mirrored to `data/catalog/` and `data/program_guides/`, no runtime dependency on `wgu-reddit`, a real Ollama success path verified end-to-end, and a settled block-authority display policy grounding the canonical object design. Stage 3 (canonical object generation) is the active next step.
+
+See [STAGE_0_OWNERSHIP_CONTRACT.md](STAGE_0_OWNERSHIP_CONTRACT.md), [STAGE_1_DEPENDENCY_INVENTORY.md](STAGE_1_DEPENDENCY_INVENTORY.md), [INITIAL_ATLAS_QA_FOUNDATION_STATE.md](INITIAL_ATLAS_QA_FOUNDATION_STATE.md), and [BLOCK_AUTHORITY_AND_DISPLAY_POLICY.md](BLOCK_AUTHORITY_AND_DISPLAY_POLICY.md).
