@@ -256,6 +256,62 @@ Checked: no parallel log file exists. All session state is in this DEV_LOG only.
 
 ---
 
+## Session update — 2026-03-23 (PROVIDER LIVE VERIFICATION)
+
+### Scope
+Install missing runtime deps and execute real provider calls through the substrate end-to-end.
+
+### Dependency installs
+- `requests==2.32.5` — installed into `~/.pyenv/versions/3.11.7`
+- `openai==2.21.0` — was already installed
+
+### Ollama live call — FULL SUCCESS
+
+**Model:** `llama3` (maps to `llama3:latest` on local Ollama instance)
+**Prompt:** minimal structured output request — respond with `{question, answer, confidence}` JSON
+**Result:**
+- `llm_failure`: False
+- `elapsed_sec`: 13.467
+- `raw_text`: `{"question": "What is 2 + 2?", "answer": "4", "confidence": 1.0}`
+- `parse_error`: False / `schema_error`: False / `used_fallback`: False
+- `parsed`: `question='What is 2 + 2?' answer='4' confidence=1.0`
+- Artifact written to `artifacts/test_runs/run_20260323_034740/artifacts.jsonl`
+
+Full path verified: `generate()` → real Ollama HTTP call → `safe_parse_structured_response()` → Pydantic schema validation → `capture_call()` with correct flags → JSONL artifact on disk.
+
+### OpenAI live call — NOT RUN (no API key)
+
+`OPENAI_API_KEY` is not set in the environment. Call was attempted to confirm graceful failure:
+- `llm_failure`: True
+- `error_message`: `RuntimeError: OPENAI_API_KEY is missing; cannot call OpenAI models.`
+
+The guard in `_call_openai()` fires before any HTTP call is made. Failure is clean and flagged.
+
+Side note: the retry loop currently retries even on a missing-key error (permanent failure, not transient). This is a pre-existing behavior inherited from the source. Not fixing now — out of scope for Stage 0. Worth noting before Stage 5+ when OpenAI path gets real load.
+
+OpenAI path will be verified when a key is available.
+
+### Available Ollama models on this machine (for reference)
+`llama3:latest` (8B Q4), `llama3.1:latest` (8B Q4), `qwen3.5:9b` (9.7B Q4), `mistral:7b-instruct`, `qwen2.5-coder:7b`, `codestral:latest`
+
+Only `llama3` is registered in `registry.py` at this time. Others can be added when needed.
+
+### Updated substrate status after this session
+
+| Path | Status |
+|---|---|
+| Structured parse — valid JSON | VERIFIED |
+| Structured parse — parse failure | VERIFIED |
+| Structured parse — schema failure | VERIFIED |
+| Fallback with defaults | VERIFIED |
+| Artifact capture with all flags | VERIFIED |
+| Real Ollama call (llama3) | **VERIFIED LIVE** |
+| Real OpenAI call | Pending — no API key in environment |
+
+Stage 0 LLM substrate is complete and live-verified on the Ollama path.
+
+---
+
 ## Session update — 2026-03-23 (BLOCK_AUTHORITY_AND_DISPLAY_POLICY)
 
 - Completed LLM annotation pass for `COURSE_TEXT_COMPARISON_BATCH_1.md` (§5A exact reference + §5B 59 near-dup rows). All `llm_*` fields populated.
