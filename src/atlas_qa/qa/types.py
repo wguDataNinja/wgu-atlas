@@ -433,3 +433,165 @@ class QAResponse(BaseModel):
     generation_output: GenerationOutput | None = None
     postcheck: PostCheckResult | None = None
     diagnostics: dict[str, Any] = {}
+
+
+# ---------------------------------------------------------------------------
+# Session 06 — Compare mode types
+# ---------------------------------------------------------------------------
+
+
+class CompareRequest(BaseModel):
+    """Typed input for an explicit compare-mode query."""
+    raw_query: str
+    entity_code: str
+    entity_type: EntityType
+    from_version: str
+    to_version: str
+    source_scope: list[SourceFamily] = []
+
+
+class CompareSide(BaseModel):
+    """One version side of a compare evidence bundle."""
+    version: str
+    artifacts: list[EvidenceArtifact]
+
+
+class CompareEvidenceBundle(BaseModel):
+    """Evidence bundle for a compare-mode query.
+
+    Keeps the two version sides strictly separated.
+    No mixed-version merging without explicit disclosure.
+    """
+    entity_code: str
+    entity_type: EntityType
+    from_version: str
+    to_version: str
+    source_scope: list[SourceFamily]
+    from_side: CompareSide
+    to_side: CompareSide
+    diff_card: VersionDiffCard | None = None   # present if version_diff_card was available
+    anomaly_disclosures: list[AnomalyDisclosure]
+    notes: list[str]
+
+
+class CompareGenerationOutput(BaseModel):
+    """Typed output of one constrained compare generation call."""
+    raw_text: str
+    answer_text: str | None = None
+    cited_evidence_ids: list[str] = []
+    from_version_disclosed: str | None = None
+    to_version_disclosed: str | None = None
+    parse_error: bool = False
+    schema_error: bool = False
+    llm_failure: bool = False
+
+
+class ComparePostCheckResult(BaseModel):
+    """Post-check result for a compare answer."""
+    passed: bool
+    from_version_named: bool
+    to_version_named: bool
+    citation_ids_present: bool
+    schema_valid: bool
+    failure_reasons: list[str] = []
+
+
+class CompareAnswer(BaseModel):
+    """Final typed compare answer or abstention.
+
+    Produced by the Session 06 compare orchestrator. Carries either a grounded
+    compare answer or an explicit abstention — never both.
+    """
+    raw_query: str
+    entity_code: str | None = None
+    entity_type: EntityType | None = None
+    from_version: str | None = None
+    to_version: str | None = None
+    abstention: AbstentionState | None = None
+    answer_text: str | None = None
+    compare_bundle: CompareEvidenceBundle | None = None
+    generation_output: CompareGenerationOutput | None = None
+    postcheck: ComparePostCheckResult | None = None
+    diagnostics: dict[str, Any] = {}
+
+
+# ---------------------------------------------------------------------------
+# Session 06 — Evaluation harness types
+# ---------------------------------------------------------------------------
+
+
+class QueryClass(str, Enum):
+    A = "A"
+    B = "B"
+    C = "C"
+    D = "D"
+    E = "E"
+    F = "F"
+    G = "G"
+
+
+class EvalExpectedBehavior(str, Enum):
+    ANSWER = "answer"
+    ABSTAIN = "abstain"
+    CLARIFY = "clarify"
+
+
+class GoldQuestion(BaseModel):
+    """A single question from the gold question set."""
+    question_id: str
+    query: str
+    query_class: QueryClass
+    expected_behavior: EvalExpectedBehavior
+    entity_type_label: str       # "course" / "program" / "section" / "compare" / "none"
+    source_scope_label: str      # "catalog" / "guide" / "canon" / "both" / "none"
+    version_sensitive: bool
+    notes: str = ""
+    is_launch_subset: bool = False
+
+
+class EvalCaseResult(BaseModel):
+    """Result for a single evaluated question."""
+    question_id: str
+    query: str
+    query_class: QueryClass
+    expected_behavior: EvalExpectedBehavior
+    actual_behavior: str          # "answer" | "abstain" | "clarify" | "error"
+    passed: bool
+    citation_present: bool | None = None
+    version_disclosed: bool | None = None
+    anomaly_disclosure_present: bool | None = None
+    failure_reason: str | None = None
+    diagnostics: dict[str, Any] = {}
+
+
+class ClassGateResult(BaseModel):
+    """Launch-gate result for one query class."""
+    query_class: QueryClass
+    total: int
+    passed: int
+    pass_rate: float
+    threshold: float
+    gate_passed: bool
+    failure_details: list[str] = []
+
+
+class LaunchGateSummary(BaseModel):
+    """Aggregated launch-gate result across all query classes."""
+    run_id: str
+    timestamp: str
+    total_questions: int
+    total_passed: int
+    overall_pass_rate: float
+    per_class: list[ClassGateResult]
+    gate_passed: bool           # True only if ALL class gates passed
+    notes: list[str] = []
+
+
+class EvalRunSummary(BaseModel):
+    """Full typed summary of one evaluation run."""
+    run_id: str
+    timestamp: str
+    question_set: str           # "gold_v1" | "launch_subset"
+    total_questions: int
+    cases: list[EvalCaseResult]
+    launch_gate: LaunchGateSummary | None = None
