@@ -1,9 +1,63 @@
 """Pydantic v2 schemas for Atlas QA canonical objects."""
 from __future__ import annotations
 
-from typing import Literal
+from enum import Enum
+from typing import Any, Literal
 
 from pydantic import BaseModel
+
+
+# ---------------------------------------------------------------------------
+# Abstention and entity types (Session 02)
+# ---------------------------------------------------------------------------
+
+
+class AbstentionState(str, Enum):
+    NOT_IN_CORPUS = "not_in_corpus"
+    AMBIGUOUS_ENTITY = "ambiguous_entity"
+    AMBIGUOUS_VERSION = "ambiguous_version"
+    INSUFFICIENT_EVIDENCE = "insufficient_evidence"
+    OUT_OF_SCOPE = "out_of_scope"
+
+
+class EntityType(str, Enum):
+    COURSE = "course"
+    PROGRAM = "program"
+
+
+# ---------------------------------------------------------------------------
+# Response types (Session 02)
+# ---------------------------------------------------------------------------
+
+
+class AnomalyDisclosure(BaseModel):
+    anomaly_type: Literal["cat_short_text", "guide_misrouted_text", "version_conflict"]
+    message: str
+
+
+class ExactLookupQuery(BaseModel):
+    raw_query: str
+    entity_code: str
+    entity_type: EntityType | None = None
+    requested_field: str | None = None
+    explicit_version: str | None = None
+
+
+class ExactLookupAnswer(BaseModel):
+    entity_code: str
+    entity_type: EntityType
+    resolved_version: str
+    field_name: str | None
+    field_value: Any
+    source_object_identity: str
+    evidence_refs: list[EvidenceRef]
+    anomaly_disclosures: list[AnomalyDisclosure]
+
+
+class ExactLookupResponse(BaseModel):
+    query: ExactLookupQuery
+    abstention: AbstentionState | None = None
+    answer: ExactLookupAnswer | None = None
 
 
 class GuideDescriptionAlternate(BaseModel):
@@ -128,3 +182,77 @@ class VersionDiffCard(BaseModel):
     removed: list[str]
     changed: list[dict]
     evidence_refs: list[EvidenceRef]
+
+
+# ---------------------------------------------------------------------------
+# Scope partitioning types (Session 03)
+# ---------------------------------------------------------------------------
+
+
+class SectionScope(str, Enum):
+    """Explicit section intent for partitioning. Only set when structurally known upstream."""
+    COURSE_OVERVIEW = "course_overview"
+    COMPETENCIES = "competencies"
+    CAPSTONE = "capstone"
+    AREAS_OF_STUDY = "areas_of_study"
+    PROGRAM_DESCRIPTION = "program_description"
+    TOTAL_CU_IDENTITY = "total_cu_identity"
+    CERTIFICATION_LICENSURE = "certification_licensure"
+
+
+class SourceFamily(str, Enum):
+    """Artifact source families for scope enforcement."""
+    CATALOG = "catalog"
+    GUIDE = "guide"
+
+
+class PartitionStatus(str, Enum):
+    OK = "ok"
+    FAILED = "failed"
+
+
+class PartitionInput(BaseModel):
+    """Typed input to the scope partitioning layer.
+
+    Two construction paths:
+    - from_exact_path=True: built from a Session 02 ExactLookupResponse; entity_code,
+      entity_type, and resolved_version are populated.
+    - from_exact_path=False: built from partial/NL upstream context; candidate_codes
+      is populated; entity_type and resolved_version may be absent.
+    """
+    from_exact_path: bool
+
+    # Exact-path fields (populated when from_exact_path=True)
+    entity_code: str | None = None
+    entity_type: EntityType | None = None
+    resolved_version: str | None = None
+
+    # Partial-context fields (populated when from_exact_path=False)
+    candidate_codes: list[str] = []
+
+    # Shared optional fields
+    section_scope: SectionScope | None = None
+    compare_intent: bool = False
+    upstream_abstention: AbstentionState | None = None
+
+
+class PartitionResult(BaseModel):
+    """Typed output of scope partitioning — the handoff contract for Session 04 retrieval.
+
+    When status=OK all scope fields are populated and safe to use.
+    When status=FAILED, failure_reason explains why safe scope could not be derived.
+    """
+    status: PartitionStatus
+    failure_reason: AbstentionState | None = None
+
+    # Scope fields (populated when status=OK)
+    entity_type: EntityType | None = None
+    entity_codes: list[str] = []
+    version_scope: list[str] = []
+    source_scope: list[SourceFamily] = []
+    section_scope: SectionScope | None = None
+    compare_mode: bool = False
+    from_exact_path: bool = False
+
+    # Downstream safe-handling notes (disclosures, anomaly flags)
+    notes: list[str] = []
