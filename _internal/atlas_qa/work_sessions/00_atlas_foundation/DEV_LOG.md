@@ -544,3 +544,22 @@ Updated `LOCAL_8B_RAG_SYSTEM_DESIGN.md` to v1.4 to reflect the completed Atlas b
 
 ### File updated
 - `_internal/atlas_qa/LOCAL_8B_RAG_SYSTEM_DESIGN.md` — v1.4
+
+---
+
+## Session update — 2026-03-23 (RFI IMPORT AND UPDATE)
+
+Brought `LOCAL_8B_RFI.md` from upstream (`WGU-Reddit/Atlas_LLM/`) into Atlas at `_internal/atlas_qa/LOCAL_8B_RFI.md`, next to the main design doc.
+
+### Changes from prior version
+- Status and date updated to reflect completed baseline.
+- §2 locked decisions: added item 6 (source authority per block, newly locked).
+- §3.2: replaced "patterns already in src/wgu_reddit_analyzer" with real Atlas-local substrate inventory and live verification status.
+- §3.3 (new): source-authority knowns — settled decisions, version conflict programs, anomaly flags.
+- §4: added source-authority violation as a secondary risk.
+- §5.1: added item 4 (how to carry source-authority fields in `course_card`).
+- §5.4: completely revised — prior open questions mostly settled; replaced with 4 remaining genuine open questions (multi-variant competency heuristic, dual-version-token citation UX, MSHRM proactive disclosure, same-field within-version conflicts).
+- §8: updated appendix to note Atlas-local substrate.
+
+### File created
+- `_internal/atlas_qa/LOCAL_8B_RFI.md`
