@@ -21,6 +21,20 @@ harness, and v1 launch gates.
 
 ---
 
+## Primary eval input
+
+The gold question set for Session 06 eval harness work is:
+
+- `_internal/atlas_qa/QA_GOLD_QUESTION_SET.md` — 100 questions across all query classes,
+  with expected behavior, entity type, source scope, version-sensitivity, and notes.
+- Recommended launch-gate subset: 20 questions from that document (§5).
+- Launch-gate pass criteria are declared in §5 of the question set as targets;
+  final thresholds must be confirmed and encoded in the eval harness implementation.
+
+This document must be read before writing the full Session 06 spec.
+
+---
+
 ## Scope (high level — to be detailed before implementation starts)
 
 Per `LOCAL_8B_RAG_SYSTEM_DESIGN.md` Stage 6:
