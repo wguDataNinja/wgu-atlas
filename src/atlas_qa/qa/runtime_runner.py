@@ -190,6 +190,8 @@ def run_query(raw_query: str, model_name: str = "llama3") -> RuntimeQueryTrace:
     )
     from atlas_qa.qa.coordinator import coordinate
     from atlas_qa.qa.answer import answer_from_exact, answer_from_retrieval
+    from atlas_qa.qa.entity_resolution import resolve_entity_code_from_candidates
+    from atlas_qa.qa.loaders import get_course_cards, get_program_version_cards
     from atlas_qa.qa.retrieval import retrieve
     from atlas_qa.qa.router import route as _route, RouteClass
     from atlas_qa.qa.types import AbstentionState, EntityType, PartitionStatus
@@ -237,7 +239,38 @@ def run_query(raw_query: str, model_name: str = "llama3") -> RuntimeQueryTrace:
             trace_kwargs["compare_from_version"] = from_v
             trace_kwargs["compare_to_version"] = to_v
 
-            entity_code = candidate_codes[0] if candidate_codes else None
+            # Session 09 fix: resolve entity_code via coordinate() (which uses
+            # the Session 08 candidate-exhaustion fix internally) rather than
+            # taking candidate_codes[0] unconditionally.
+            entity_code: str | None = None
+            entity_type: EntityType = EntityType.PROGRAM
+
+            try:
+                _, exact_resp = coordinate(raw_query)
+                if exact_resp and exact_resp.answer:
+                    entity_code = exact_resp.answer.entity_code
+                    entity_type = exact_resp.answer.entity_type
+                    trace_kwargs["entity_type"] = entity_type.value
+                    trace_kwargs["resolved_version"] = exact_resp.answer.resolved_version
+                    trace_kwargs["version_resolution_result"] = "resolved"
+                    trace_kwargs["entity_resolution_result"] = "resolved"
+                else:
+                    entity_code = resolve_entity_code_from_candidates(
+                        candidate_codes,
+                        get_course_cards(),
+                        get_program_version_cards(),
+                    )
+                    trace_kwargs["entity_type"] = "program"
+                    trace_kwargs["entity_resolution_result"] = "not_found"
+            except Exception:
+                entity_code = resolve_entity_code_from_candidates(
+                    candidate_codes,
+                    get_course_cards(),
+                    get_program_version_cards(),
+                )
+                trace_kwargs["entity_type"] = "program"
+                trace_kwargs["entity_resolution_result"] = "n/a"
+
             if entity_code is None:
                 trace_kwargs["final_outcome"] = RuntimeOutcome.ABSTAIN
                 trace_kwargs["outcome_reason"] = "no_entity_code_detected_for_compare"
@@ -246,25 +279,7 @@ def run_query(raw_query: str, model_name: str = "llama3") -> RuntimeQueryTrace:
 
             trace_kwargs["entity_code"] = entity_code
 
-            # Determine entity type from quick coordinate pass.
-            try:
-                _, exact_resp = coordinate(raw_query)
-                if exact_resp and exact_resp.answer:
-                    entity_type = exact_resp.answer.entity_type.value
-                    trace_kwargs["entity_type"] = entity_type
-                    trace_kwargs["resolved_version"] = exact_resp.answer.resolved_version
-                    trace_kwargs["version_resolution_result"] = "resolved"
-                    trace_kwargs["entity_resolution_result"] = "resolved"
-                else:
-                    entity_type = EntityType.PROGRAM
-                    trace_kwargs["entity_type"] = "program"
-                    trace_kwargs["entity_resolution_result"] = "not_found"
-            except Exception:
-                entity_type = EntityType.PROGRAM
-                trace_kwargs["entity_type"] = "program"
-                trace_kwargs["entity_resolution_result"] = "n/a"
-
-            result = answer_compare(raw_query, entity_code, EntityType(entity_type) if isinstance(entity_type, str) else entity_type, model_name=model_name)
+            result = answer_compare(raw_query, entity_code, entity_type, model_name=model_name)
 
             # Extract trace data from compare result.
             if result.compare_bundle:
