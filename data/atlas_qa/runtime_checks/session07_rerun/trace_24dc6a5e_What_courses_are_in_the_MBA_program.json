@@ -1,0 +1,55 @@
+{
+  "trace_id": "24dc6a5e",
+  "timestamp": "2026-03-24T04:51:43.801167+00:00",
+  "raw_query": "What courses are in the MBA program?",
+  "routed_path": "exact",
+  "route_candidate_codes": [
+    "WHAT",
+    "COURSES",
+    "ARE",
+    "THE",
+    "MBA",
+    "PROGRAM"
+  ],
+  "route_explicit_version": null,
+  "compare_intent_detected": false,
+  "classifier_invoked": false,
+  "classifier_output": null,
+  "classifier_parse_ok": null,
+  "classifier_schema_ok": null,
+  "classifier_used_fallback": false,
+  "entity_code": "MBA",
+  "entity_type": "program",
+  "entity_resolution_result": "resolved",
+  "resolved_version": "201404",
+  "version_resolution_result": "resolved",
+  "source_scope": [
+    "catalog",
+    "guide"
+  ],
+  "section_scope": null,
+  "compare_mode": false,
+  "compare_from_version": null,
+  "compare_to_version": null,
+  "anomaly_flags": [],
+  "top_evidence_ids": [
+    "program_version_cards/MBA"
+  ],
+  "evidence_bundle_artifact_count": 1,
+  "evidence_bundle_sources": [
+    "catalog"
+  ],
+  "evidence_bundle_notes": [],
+  "gate_result": "answerable",
+  "gate_notes": [],
+  "generation_invoked": true,
+  "prompt_type": "answer",
+  "postcheck_passed": false,
+  "postcheck_failures": [
+    "version token '201404' not found in answer_text"
+  ],
+  "final_outcome": "abstain",
+  "outcome_reason": "insufficient_evidence",
+  "answer_text": null,
+  "error": null
+}

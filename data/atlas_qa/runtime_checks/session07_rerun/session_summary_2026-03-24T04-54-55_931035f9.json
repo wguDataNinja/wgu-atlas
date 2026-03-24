@@ -1,0 +1,43 @@
+{
+  "session_id": "931035f9",
+  "timestamp": "2026-03-24T04:54:55.046749+00:00",
+  "model_name": "llama3",
+  "queries_run": [
+    "What is D426?",
+    "How many CUs is BSACC?",
+    "What is the capstone for BSDA?",
+    "What competencies are listed for C949?",
+    "How does D335 compare with D522?",
+    "What courses are in the MBA program?",
+    "Which WGU class is easiest?",
+    "Tell me about C179",
+    "Tell me about D554",
+    "What is the current version of MSHRM?"
+  ],
+  "total_queries": 10,
+  "outcome_counts": {
+    "answer": 7,
+    "abstain": 3,
+    "clarify": 0,
+    "failure": 0
+  },
+  "major_failures": [],
+  "immediate_blockers": [],
+  "notes": [
+    "Model: llama3",
+    "Total: 10 queries",
+    "Outcomes: answer=7, abstain=3, clarify=0, failure=0"
+  ],
+  "trace_files": [
+    "trace_c355f4e6_What_is_D426.json",
+    "trace_06ff0840_How_many_CUs_is_BSACC.json",
+    "trace_475892bb_What_is_the_capstone_for_BSDA.json",
+    "trace_fc6b76f7_What_competencies_are_listed_for_C949.json",
+    "trace_94da138c_How_does_D335_compare_with_D522.json",
+    "trace_0ff0825d_What_courses_are_in_the_MBA_program.json",
+    "trace_aaeff2ba_Which_WGU_class_is_easiest.json",
+    "trace_9512e5a0_Tell_me_about_C179.json",
+    "trace_ae3b04f4_Tell_me_about_D554.json",
+    "trace_f284400c_What_is_the_current_version_of_MSHRM.json"
+  ]
+}

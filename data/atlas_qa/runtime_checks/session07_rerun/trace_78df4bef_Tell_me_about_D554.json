@@ -1,0 +1,62 @@
+{
+  "trace_id": "78df4bef",
+  "timestamp": "2026-03-24T04:49:45.696692+00:00",
+  "raw_query": "Tell me about D554",
+  "routed_path": "exact",
+  "route_candidate_codes": [
+    "D554",
+    "TELL",
+    "ABOUT"
+  ],
+  "route_explicit_version": null,
+  "compare_intent_detected": false,
+  "classifier_invoked": false,
+  "classifier_output": null,
+  "classifier_parse_ok": null,
+  "classifier_schema_ok": null,
+  "classifier_used_fallback": false,
+  "entity_code": "D554",
+  "entity_type": "course",
+  "entity_resolution_result": "resolved",
+  "resolved_version": "2026-03",
+  "version_resolution_result": "resolved",
+  "source_scope": [
+    "catalog"
+  ],
+  "section_scope": null,
+  "compare_mode": false,
+  "compare_from_version": null,
+  "compare_to_version": null,
+  "anomaly_flags": [
+    {
+      "anomaly_type": "guide_misrouted_text",
+      "message": "D554: guide description text matches the catalog description; guide description alternates are suppressed."
+    },
+    {
+      "anomaly_type": "version_conflict",
+      "message": "D554 is associated with MACCF, which has a catalog/guide version mismatch (catalog=202412, guide=202409)."
+    },
+    {
+      "anomaly_type": "version_conflict",
+      "message": "D554 is associated with MACCT, which has a catalog/guide version mismatch (catalog=202412, guide=202409)."
+    }
+  ],
+  "top_evidence_ids": [
+    "course_cards/D554"
+  ],
+  "evidence_bundle_artifact_count": 1,
+  "evidence_bundle_sources": [
+    "catalog"
+  ],
+  "evidence_bundle_notes": [],
+  "gate_result": "answerable",
+  "gate_notes": [],
+  "generation_invoked": true,
+  "prompt_type": "answer",
+  "postcheck_passed": null,
+  "postcheck_failures": [],
+  "final_outcome": "abstain",
+  "outcome_reason": "insufficient_evidence",
+  "answer_text": null,
+  "error": null
+}

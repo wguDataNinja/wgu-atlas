@@ -1,0 +1,52 @@
+{
+  "trace_id": "fc6b76f7",
+  "timestamp": "2026-03-24T04:55:17.562163+00:00",
+  "raw_query": "What competencies are listed for C949?",
+  "routed_path": "exact",
+  "route_candidate_codes": [
+    "C949",
+    "WHAT",
+    "ARE",
+    "LISTED",
+    "FOR"
+  ],
+  "route_explicit_version": null,
+  "compare_intent_detected": false,
+  "classifier_invoked": false,
+  "classifier_output": null,
+  "classifier_parse_ok": null,
+  "classifier_schema_ok": null,
+  "classifier_used_fallback": false,
+  "entity_code": "C949",
+  "entity_type": "course",
+  "entity_resolution_result": "resolved",
+  "resolved_version": "2026-03",
+  "version_resolution_result": "resolved",
+  "source_scope": [
+    "catalog",
+    "guide"
+  ],
+  "section_scope": null,
+  "compare_mode": false,
+  "compare_from_version": null,
+  "compare_to_version": null,
+  "anomaly_flags": [],
+  "top_evidence_ids": [
+    "course_cards/C949"
+  ],
+  "evidence_bundle_artifact_count": 1,
+  "evidence_bundle_sources": [
+    "catalog"
+  ],
+  "evidence_bundle_notes": [],
+  "gate_result": "answerable",
+  "gate_notes": [],
+  "generation_invoked": true,
+  "prompt_type": "answer",
+  "postcheck_passed": true,
+  "postcheck_failures": [],
+  "final_outcome": "answer",
+  "outcome_reason": "generation_passed_postcheck",
+  "answer_text": "As of version 2026-03, The learner explains the use, logic, and structure of algorithms., The learner determines how data structure types impact operations within application, service, or data stores., The learner applies algorithms that address a desired outcome based on space and time complexity in big-O notation.",
+  "error": null
+}

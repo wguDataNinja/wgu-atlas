@@ -35,16 +35,16 @@ ONLY the evidence artifacts provided below. Do not use any outside knowledge.
 
 Rules:
 1. Cite every artifact you use by including its ID in "cited_evidence_ids".
-2. State the version (e.g., "2026-03") in "version_disclosed".
+2. Your answer_text MUST begin with the exact version string from the artifact (e.g., "As of version 2026-03, ..."). Populate "version_disclosed" with the same string.
 3. If the evidence is insufficient, set "abstain": true and leave "answer_text" null.
 4. Do not guess, infer beyond the artifacts, or resolve conflicting sources.
 5. Respond with a single JSON object matching the schema below — nothing else.
 
 Output schema:
 {
-  "answer_text": "<your answer as a plain string, or null>",
+  "answer_text": "As of version 2026-03, <your answer here>",
   "cited_evidence_ids": ["<artifact ID>", ...],
-  "version_disclosed": "<version string, e.g. 2026-03>",
+  "version_disclosed": "2026-03",
   "abstain": false
 }
 """
@@ -57,6 +57,8 @@ _PROMPT_TEMPLATE = """\
 --- END EVIDENCE ---
 
 USER QUESTION: {question}
+
+IMPORTANT: answer_text must begin with "As of version {version_used}, ..."
 
 Respond with JSON only."""
 
@@ -97,4 +99,5 @@ def render_generation_prompt(bundle: EvidenceBundle, question: str) -> str:
         system_instructions=_SYSTEM_INSTRUCTIONS,
         artifacts_block=artifacts_block,
         question=question,
+        version_used=bundle.version_used or "unknown",
     )
