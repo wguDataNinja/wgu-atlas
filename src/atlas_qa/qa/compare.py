@@ -323,7 +323,7 @@ def build_compare_bundle(
 # Compare generation
 # ---------------------------------------------------------------------------
 
-DEFAULT_MODEL = "llama3:latest"
+DEFAULT_MODEL = "llama3"
 
 
 class _CompareModelOutput(BaseModel):

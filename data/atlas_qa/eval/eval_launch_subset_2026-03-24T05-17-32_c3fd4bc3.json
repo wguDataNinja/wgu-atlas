@@ -1,0 +1,407 @@
+{
+  "run_id": "c3fd4bc3",
+  "timestamp": "2026-03-24T05:17:32.537007+00:00",
+  "question_set": "launch_subset",
+  "total_questions": 20,
+  "cases": [
+    {
+      "question_id": "A-001",
+      "query": "What is D426?",
+      "query_class": "A",
+      "expected_behavior": "answer",
+      "actual_behavior": "abstain",
+      "passed": false,
+      "citation_present": null,
+      "version_disclosed": null,
+      "anomaly_disclosure_present": null,
+      "failure_reason": "insufficient_evidence",
+      "diagnostics": {
+        "reason": "generation abstained or failed"
+      }
+    },
+    {
+      "question_id": "A-002",
+      "query": "How many CUs is C715?",
+      "query_class": "A",
+      "expected_behavior": "answer",
+      "actual_behavior": "abstain",
+      "passed": false,
+      "citation_present": null,
+      "version_disclosed": null,
+      "anomaly_disclosure_present": null,
+      "failure_reason": "insufficient_evidence",
+      "diagnostics": {
+        "reason": "generation abstained or failed"
+      }
+    },
+    {
+      "question_id": "A-005",
+      "query": "How many total CUs does BSCS require?",
+      "query_class": "A",
+      "expected_behavior": "answer",
+      "actual_behavior": "abstain",
+      "passed": false,
+      "citation_present": null,
+      "version_disclosed": null,
+      "anomaly_disclosure_present": null,
+      "failure_reason": "insufficient_evidence",
+      "diagnostics": {
+        "reason": "generation abstained or failed"
+      }
+    },
+    {
+      "question_id": "B-016",
+      "query": "What is the catalog description for D426?",
+      "query_class": "B",
+      "expected_behavior": "answer",
+      "actual_behavior": "abstain",
+      "passed": false,
+      "citation_present": null,
+      "version_disclosed": null,
+      "anomaly_disclosure_present": null,
+      "failure_reason": "insufficient_evidence",
+      "diagnostics": {
+        "reason": "generation abstained or failed"
+      }
+    },
+    {
+      "question_id": "B-019",
+      "query": "What program learning outcomes does BSDA list?",
+      "query_class": "B",
+      "expected_behavior": "answer",
+      "actual_behavior": "abstain",
+      "passed": false,
+      "citation_present": null,
+      "version_disclosed": null,
+      "anomaly_disclosure_present": null,
+      "failure_reason": "insufficient_evidence",
+      "diagnostics": {
+        "reason": "generation abstained or failed"
+      }
+    },
+    {
+      "question_id": "B-020",
+      "query": "What is the capstone course for BSACC?",
+      "query_class": "B",
+      "expected_behavior": "answer",
+      "actual_behavior": "abstain",
+      "passed": false,
+      "citation_present": null,
+      "version_disclosed": null,
+      "anomaly_disclosure_present": null,
+      "failure_reason": "insufficient_evidence",
+      "diagnostics": {
+        "reason": "generation abstained or failed"
+      }
+    },
+    {
+      "question_id": "C-038",
+      "query": "What courses are in the standard path for BSCS?",
+      "query_class": "C",
+      "expected_behavior": "answer",
+      "actual_behavior": "abstain",
+      "passed": false,
+      "citation_present": null,
+      "version_disclosed": null,
+      "anomaly_disclosure_present": null,
+      "failure_reason": "insufficient_evidence",
+      "diagnostics": {
+        "reason": "generation abstained or failed"
+      }
+    },
+    {
+      "question_id": "C-041",
+      "query": "What competencies are listed for C949?",
+      "query_class": "C",
+      "expected_behavior": "answer",
+      "actual_behavior": "abstain",
+      "passed": false,
+      "citation_present": null,
+      "version_disclosed": null,
+      "anomaly_disclosure_present": null,
+      "failure_reason": "insufficient_evidence",
+      "diagnostics": {
+        "reason": "generation abstained or failed"
+      }
+    },
+    {
+      "question_id": "C-044",
+      "query": "What learning outcomes are listed for BSCS?",
+      "query_class": "C",
+      "expected_behavior": "answer",
+      "actual_behavior": "abstain",
+      "passed": false,
+      "citation_present": null,
+      "version_disclosed": null,
+      "anomaly_disclosure_present": null,
+      "failure_reason": "insufficient_evidence",
+      "diagnostics": {
+        "reason": "generation abstained or failed"
+      }
+    },
+    {
+      "question_id": "D-054",
+      "query": "What changed in BSCS between the 2025-06 and 2026-03 catalog editions?",
+      "query_class": "D",
+      "expected_behavior": "answer",
+      "actual_behavior": "abstain",
+      "passed": false,
+      "citation_present": null,
+      "version_disclosed": null,
+      "anomaly_disclosure_present": null,
+      "failure_reason": "insufficient_evidence",
+      "diagnostics": {
+        "reason": "no corpus cards found for WHAT at 2025-06 or 2026-03"
+      }
+    },
+    {
+      "question_id": "D-060",
+      "query": "Did D426 change between the 2025-06 and 2026-03 catalog editions?",
+      "query_class": "D",
+      "expected_behavior": "answer",
+      "actual_behavior": "abstain",
+      "passed": false,
+      "citation_present": null,
+      "version_disclosed": null,
+      "anomaly_disclosure_present": null,
+      "failure_reason": "insufficient_evidence",
+      "diagnostics": {
+        "reason": "no corpus cards found for D426 at 2025-06 or 2026-03"
+      }
+    },
+    {
+      "question_id": "E-066",
+      "query": "What courses are in the MBA program?",
+      "query_class": "E",
+      "expected_behavior": "clarify",
+      "actual_behavior": "abstain",
+      "passed": false,
+      "citation_present": null,
+      "version_disclosed": null,
+      "anomaly_disclosure_present": null,
+      "failure_reason": "insufficient_evidence",
+      "diagnostics": {
+        "reason": "generation abstained or failed"
+      }
+    },
+    {
+      "question_id": "E-067",
+      "query": "What is the capstone for the accounting master's?",
+      "query_class": "E",
+      "expected_behavior": "clarify",
+      "actual_behavior": "abstain",
+      "passed": false,
+      "citation_present": null,
+      "version_disclosed": null,
+      "anomaly_disclosure_present": null,
+      "failure_reason": "out_of_scope",
+      "diagnostics": {}
+    },
+    {
+      "question_id": "F-076",
+      "query": "Which WGU class is the easiest?",
+      "query_class": "F",
+      "expected_behavior": "abstain",
+      "actual_behavior": "abstain",
+      "passed": true,
+      "citation_present": null,
+      "version_disclosed": null,
+      "anomaly_disclosure_present": null,
+      "failure_reason": null,
+      "diagnostics": {}
+    },
+    {
+      "question_id": "F-079",
+      "query": "What should I study to pass D426?",
+      "query_class": "F",
+      "expected_behavior": "abstain",
+      "actual_behavior": "abstain",
+      "passed": true,
+      "citation_present": null,
+      "version_disclosed": null,
+      "anomaly_disclosure_present": null,
+      "failure_reason": null,
+      "diagnostics": {
+        "reason": "generation abstained or failed"
+      }
+    },
+    {
+      "question_id": "F-087",
+      "query": "Should I choose BSACC or BSDA?",
+      "query_class": "F",
+      "expected_behavior": "abstain",
+      "actual_behavior": "abstain",
+      "passed": true,
+      "citation_present": null,
+      "version_disclosed": null,
+      "anomaly_disclosure_present": null,
+      "failure_reason": null,
+      "diagnostics": {
+        "reason": "generation abstained or failed"
+      }
+    },
+    {
+      "question_id": "G-091",
+      "query": "What is the catalog description for C179?",
+      "query_class": "G",
+      "expected_behavior": "answer",
+      "actual_behavior": "abstain",
+      "passed": false,
+      "citation_present": null,
+      "version_disclosed": null,
+      "anomaly_disclosure_present": null,
+      "failure_reason": "insufficient_evidence",
+      "diagnostics": {
+        "reason": "generation abstained or failed"
+      }
+    },
+    {
+      "question_id": "G-092",
+      "query": "What does the program guide say about D554?",
+      "query_class": "G",
+      "expected_behavior": "abstain",
+      "actual_behavior": "abstain",
+      "passed": true,
+      "citation_present": null,
+      "version_disclosed": null,
+      "anomaly_disclosure_present": null,
+      "failure_reason": null,
+      "diagnostics": {
+        "reason": "generation abstained or failed"
+      }
+    },
+    {
+      "question_id": "G-094",
+      "query": "Is the MSHRM program guide current?",
+      "query_class": "G",
+      "expected_behavior": "answer",
+      "actual_behavior": "abstain",
+      "passed": false,
+      "citation_present": null,
+      "version_disclosed": null,
+      "anomaly_disclosure_present": null,
+      "failure_reason": "insufficient_evidence",
+      "diagnostics": {
+        "reason": "generation abstained or failed"
+      }
+    },
+    {
+      "question_id": "G-095",
+      "query": "What is the description of MACCA?",
+      "query_class": "G",
+      "expected_behavior": "answer",
+      "actual_behavior": "abstain",
+      "passed": false,
+      "citation_present": null,
+      "version_disclosed": null,
+      "anomaly_disclosure_present": null,
+      "failure_reason": "insufficient_evidence",
+      "diagnostics": {
+        "reason": "generation abstained or failed"
+      }
+    }
+  ],
+  "launch_gate": {
+    "run_id": "c3fd4bc3",
+    "timestamp": "2026-03-24T05:17:32.537007+00:00",
+    "total_questions": 20,
+    "total_passed": 4,
+    "overall_pass_rate": 0.2,
+    "per_class": [
+      {
+        "query_class": "A",
+        "total": 3,
+        "passed": 0,
+        "pass_rate": 0.0,
+        "threshold": 0.95,
+        "gate_passed": false,
+        "failure_details": [
+          "A-001: expected=answer actual=abstain reason=insufficient_evidence",
+          "A-002: expected=answer actual=abstain reason=insufficient_evidence",
+          "A-005: expected=answer actual=abstain reason=insufficient_evidence"
+        ]
+      },
+      {
+        "query_class": "B",
+        "total": 3,
+        "passed": 0,
+        "pass_rate": 0.0,
+        "threshold": 0.85,
+        "gate_passed": false,
+        "failure_details": [
+          "B-016: expected=answer actual=abstain reason=insufficient_evidence",
+          "B-019: expected=answer actual=abstain reason=insufficient_evidence",
+          "B-020: expected=answer actual=abstain reason=insufficient_evidence"
+        ]
+      },
+      {
+        "query_class": "C",
+        "total": 3,
+        "passed": 0,
+        "pass_rate": 0.0,
+        "threshold": 0.85,
+        "gate_passed": false,
+        "failure_details": [
+          "C-038: expected=answer actual=abstain reason=insufficient_evidence",
+          "C-041: expected=answer actual=abstain reason=insufficient_evidence",
+          "C-044: expected=answer actual=abstain reason=insufficient_evidence"
+        ]
+      },
+      {
+        "query_class": "D",
+        "total": 2,
+        "passed": 0,
+        "pass_rate": 0.0,
+        "threshold": 0.8,
+        "gate_passed": false,
+        "failure_details": [
+          "D-054: expected=answer actual=abstain reason=insufficient_evidence",
+          "D-060: expected=answer actual=abstain reason=insufficient_evidence"
+        ]
+      },
+      {
+        "query_class": "E",
+        "total": 2,
+        "passed": 0,
+        "pass_rate": 0.0,
+        "threshold": 0.9,
+        "gate_passed": false,
+        "failure_details": [
+          "E-066: expected=clarify actual=abstain reason=insufficient_evidence",
+          "E-067: expected=clarify actual=abstain reason=out_of_scope"
+        ]
+      },
+      {
+        "query_class": "F",
+        "total": 3,
+        "passed": 3,
+        "pass_rate": 1.0,
+        "threshold": 0.98,
+        "gate_passed": true,
+        "failure_details": []
+      },
+      {
+        "query_class": "G",
+        "total": 4,
+        "passed": 1,
+        "pass_rate": 0.25,
+        "threshold": 1.0,
+        "gate_passed": false,
+        "failure_details": [
+          "G-091: expected=answer actual=abstain reason=insufficient_evidence",
+          "G-094: expected=answer actual=abstain reason=insufficient_evidence",
+          "G-095: expected=answer actual=abstain reason=insufficient_evidence"
+        ]
+      }
+    ],
+    "gate_passed": false,
+    "notes": [
+      "Class A: 0/3 (0.0%) — below threshold 95%",
+      "Class B: 0/3 (0.0%) — below threshold 85%",
+      "Class C: 0/3 (0.0%) — below threshold 85%",
+      "Class D: 0/2 (0.0%) — below threshold 80%",
+      "Class E: 0/2 (0.0%) — below threshold 90%",
+      "Class G: 1/4 (25.0%) — below threshold 100%"
+    ]
+  }
+}

@@ -20,7 +20,7 @@ from atlas_qa.qa.types import EvidenceBundle, GenerationOutput
 from src.atlas_qa.llm.client import generate  # type: ignore[import]
 
 # Default local model per session spec.
-DEFAULT_MODEL = "llama3:latest"
+DEFAULT_MODEL = "llama3"
 
 # ---------------------------------------------------------------------------
 # Internal schema for model output validation
