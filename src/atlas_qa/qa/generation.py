@@ -17,7 +17,7 @@ from pydantic import BaseModel, ValidationError
 
 from atlas_qa.qa.generation_prompts import render_generation_prompt
 from atlas_qa.qa.types import EvidenceBundle, GenerationOutput
-from src.atlas_qa.llm.client import generate  # type: ignore[import]
+from atlas_qa.llm.client import generate
 
 # Default local model per session spec.
 DEFAULT_MODEL = "llama3"

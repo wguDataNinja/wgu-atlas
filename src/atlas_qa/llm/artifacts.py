@@ -14,7 +14,7 @@ import time
 from pathlib import Path
 from typing import Any, Dict
 
-from src.atlas_qa.llm.types import LlmCallResult
+from atlas_qa.llm.types import LlmCallResult
 
 
 class ArtifactCapture:

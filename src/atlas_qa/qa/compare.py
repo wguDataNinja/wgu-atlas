@@ -340,7 +340,7 @@ def generate_compare_answer(
     model_name: str = DEFAULT_MODEL,
 ) -> CompareGenerationOutput:
     """Call the LLM with the compare prompt and return a typed CompareGenerationOutput."""
-    from src.atlas_qa.llm.client import generate  # type: ignore[import]
+    from atlas_qa.llm.client import generate
 
     prompt = render_compare_prompt(bundle, question)
     llm_result = generate(model_name, prompt)

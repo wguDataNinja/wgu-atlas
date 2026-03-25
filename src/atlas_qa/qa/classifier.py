@@ -39,8 +39,8 @@ def classify_fuzzy_query(
     The caller must treat hint as advisory only and must never let it
     override upstream deterministic scope.
     """
-    from src.atlas_qa.llm.client import generate
-    from src.atlas_qa.llm.structured import safe_parse_structured_response
+    from atlas_qa.llm.client import generate
+    from atlas_qa.llm.structured import safe_parse_structured_response
 
     prompt = build_classifier_prompt(query)
 

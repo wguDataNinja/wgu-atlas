@@ -27,9 +27,11 @@ import time
 from concurrent.futures import ThreadPoolExecutor, TimeoutError as FuturesTimeoutError
 from typing import Any, Tuple
 
-from src.atlas_qa.llm.registry import get_model_info
-from src.atlas_qa.llm.types import LlmCallResult
-from src.atlas_qa.utils.logging import get_logger
+import requests
+
+from atlas_qa.llm.registry import get_model_info
+from atlas_qa.llm.types import LlmCallResult
+from atlas_qa.utils.logging import get_logger
 
 logger = get_logger("atlas_qa.llm.client")
 
@@ -92,14 +94,25 @@ def _call_openai(model_name: str, prompt: str, api_key: str) -> str:
     return ""
 
 
+_OLLAMA_TIMEOUT_SEC = 300
+# qwen3 family uses extended thinking by default; disable it for deterministic eval.
+_QWEN3_THINK_DISABLE = frozenset(["qwen3", "qwen3.5"])
+
+
 def _call_ollama(model_name: str, prompt: str) -> str:
     """
     Call a local Ollama instance for the given model.
     """
-    import requests
+    payload: dict = {"model": model_name, "prompt": prompt, "stream": False}
+    family = model_name.split(":")[0].lower()
+    if family in _QWEN3_THINK_DISABLE:
+        payload["think"] = False
 
-    payload = {"model": model_name, "prompt": prompt, "stream": False}
-    r = requests.post("http://localhost:11434/api/generate", json=payload, timeout=60)
+    r = requests.post(
+        "http://localhost:11434/api/generate",
+        json=payload,
+        timeout=_OLLAMA_TIMEOUT_SEC,
+    )
     r.raise_for_status()
     data = r.json()
     return (data.get("response") or "").strip()
