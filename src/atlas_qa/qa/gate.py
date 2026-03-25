@@ -26,6 +26,7 @@ _GUIDE_BLOCK_ANOMALY = "guide_misrouted_text"
 def check_answerability(
     bundle: EvidenceBundle,
     section_scope: SectionScope | None = None,
+    guide_seeking_intent: bool = False,
 ) -> AnswerabilityResult:
     """Deterministic gate over an EvidenceBundle.
 
@@ -40,6 +41,8 @@ def check_answerability(
     4. All artifacts are within the resolved version scope.
     5. If a guide-section scope is required, at least one guide_section_card is present.
     6. No unresolvable D554 guide block that blocks this query type.
+    6b. Guide-seeking queries with a guide_misrouted_text disclosure and no guide
+        evidence must abstain, regardless of section_scope.
     """
     notes: list[str] = []
 
@@ -115,6 +118,24 @@ def check_answerability(
                     abstention_reason=AbstentionState.INSUFFICIENT_EVIDENCE,
                     gate_notes=[f"D554 guide block: {disclosure.message}"],
                 )
+
+    # 6b. Guide-seeking queries with guide_misrouted_text and no guide evidence.
+    # Fires regardless of section_scope when guide_seeking_intent is detected upstream.
+    if guide_seeking_intent:
+        for disclosure in bundle.anomaly_disclosures:
+            if disclosure.anomaly_type == _GUIDE_BLOCK_ANOMALY:
+                guide_artifacts = [
+                    a for a in bundle.artifacts if a.artifact_type == "guide_section_card"
+                ]
+                if not guide_artifacts:
+                    return AnswerabilityResult(
+                        answerable=False,
+                        abstention_reason=AbstentionState.INSUFFICIENT_EVIDENCE,
+                        gate_notes=[
+                            f"guide-seeking query blocked: no guide evidence available "
+                            f"({disclosure.message})"
+                        ],
+                    )
 
     return AnswerabilityResult(
         answerable=True,

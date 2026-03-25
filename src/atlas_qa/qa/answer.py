@@ -14,6 +14,8 @@ Compare-mode inputs are rejected. Session 06 handles Class D queries.
 """
 from __future__ import annotations
 
+import re
+
 from atlas_qa.qa.evidence import bundle_from_exact, bundle_from_retrieval
 from atlas_qa.qa.gate import check_answerability
 from atlas_qa.qa.generation import DEFAULT_MODEL, generate_answer
@@ -25,6 +27,14 @@ from atlas_qa.qa.types import (
     QAResponse,
     RetrievalResult,
     SectionScope,
+)
+
+# Keyword pattern that indicates the user is explicitly asking about guide content.
+# Used to distinguish guide-seeking queries from generic entity queries when
+# the guide_misrouted_text anomaly is present.
+_GUIDE_SEEKING_RE = re.compile(
+    r"\bprogram\s+guide\b|\bguide\s+description\b|\bguide\s+say[s]?\b",
+    re.IGNORECASE,
 )
 
 
@@ -83,7 +93,12 @@ def _run_pipeline(
     """Run the gate → generate → post-check pipeline over a pre-built bundle."""
 
     # Step 2 — Answerability gate.
-    gate_result = check_answerability(bundle, section_scope=section_scope)
+    guide_seeking_intent = bool(_GUIDE_SEEKING_RE.search(raw_query))
+    gate_result = check_answerability(
+        bundle,
+        section_scope=section_scope,
+        guide_seeking_intent=guide_seeking_intent,
+    )
     if not gate_result.answerable:
         return QAResponse(
             raw_query=raw_query,

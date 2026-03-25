@@ -234,3 +234,50 @@ def test_bundle_from_exact_dict_field_value():
     bundle = bundle_from_exact(answer)
     assert not isinstance(bundle, QAResponse)
     assert isinstance(bundle.artifacts[0].content, dict)
+
+
+# ---------------------------------------------------------------------------
+# Fix 1 — source_object_identity derivation when empty/falsy
+# ---------------------------------------------------------------------------
+
+
+def _exact_answer_no_identity(
+    entity_code: str,
+    entity_type: EntityType,
+) -> ExactLookupAnswer:
+    """Build an ExactLookupAnswer with an empty source_object_identity."""
+    return ExactLookupAnswer(
+        entity_code=entity_code,
+        entity_type=entity_type,
+        resolved_version=_VERSION,
+        field_name=None,
+        field_value="test value",
+        source_object_identity="",  # empty — triggers derivation in bundle_from_exact
+        evidence_refs=_EVIDENCE,
+        anomaly_disclosures=[],
+    )
+
+
+def test_bundle_from_exact_derives_identity_for_program():
+    answer = _exact_answer_no_identity("MACCA", EntityType.PROGRAM)
+    bundle = bundle_from_exact(answer)
+    assert not isinstance(bundle, QAResponse)
+    assert bundle.artifacts[0].source_object_identity == "program_version_cards/MACCA"
+
+
+def test_bundle_from_exact_derives_identity_for_course():
+    answer = _exact_answer_no_identity("D554", EntityType.COURSE)
+    bundle = bundle_from_exact(answer)
+    assert not isinstance(bundle, QAResponse)
+    assert bundle.artifacts[0].source_object_identity == "course_cards/D554"
+
+
+def test_bundle_from_exact_preserves_nonempty_identity():
+    answer = _exact_answer(
+        entity_code="C715",
+        entity_type=EntityType.COURSE,
+    )
+    # The default helper sets source_object_identity = "course_cards/C715"
+    bundle = bundle_from_exact(answer)
+    assert not isinstance(bundle, QAResponse)
+    assert bundle.artifacts[0].source_object_identity == "course_cards/C715"

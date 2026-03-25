@@ -202,3 +202,53 @@ def test_gate_passes_course_overview_no_guide_needed():
         section_scope=SectionScope.COURSE_OVERVIEW,
     )
     assert result.answerable is True
+
+
+# ---------------------------------------------------------------------------
+# Fix 2 — guide-seeking intent gate (check 6b)
+# ---------------------------------------------------------------------------
+
+
+def _guide_misrouted_disclosure() -> AnomalyDisclosure:
+    return AnomalyDisclosure(
+        anomaly_type="guide_misrouted_text",
+        message="D554: guide description text matches catalog; guide alternates suppressed.",
+    )
+
+
+def test_gate_blocks_guide_seeking_with_disclosure_no_guide_cards():
+    """guide_misrouted_text disclosure + no guide_section_card artifacts + guide_seeking → block."""
+    bundle = _bundle(
+        entity_code="D554",
+        anomaly_disclosures=[_guide_misrouted_disclosure()],
+        artifacts=[_artifact(entity_code="D554", artifact_type="course_card")],
+    )
+    result = check_answerability(bundle, guide_seeking_intent=True)
+    assert result.answerable is False
+    assert result.abstention_reason == AbstentionState.INSUFFICIENT_EVIDENCE
+    assert any("guide-seeking" in n for n in result.gate_notes)
+
+
+def test_gate_allows_guide_seeking_with_disclosure_when_guide_cards_present():
+    """guide_misrouted_text disclosure + guide_section_card present → allow (cards exist)."""
+    bundle = _bundle(
+        entity_code="D554",
+        anomaly_disclosures=[_guide_misrouted_disclosure()],
+        artifacts=[
+            _artifact(entity_code="D554", artifact_type="course_card"),
+            _artifact(entity_code="D554", artifact_type="guide_section_card"),
+        ],
+    )
+    result = check_answerability(bundle, guide_seeking_intent=True)
+    assert result.answerable is True
+
+
+def test_gate_allows_non_guide_query_with_disclosure():
+    """generic query (guide_seeking_intent=False) + disclosure → allow (check 6b does not fire)."""
+    bundle = _bundle(
+        entity_code="D554",
+        anomaly_disclosures=[_guide_misrouted_disclosure()],
+        artifacts=[_artifact(entity_code="D554", artifact_type="course_card")],
+    )
+    result = check_answerability(bundle, guide_seeking_intent=False)
+    assert result.answerable is True

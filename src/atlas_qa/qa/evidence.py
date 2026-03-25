@@ -140,6 +140,11 @@ def bundle_from_exact(answer: ExactLookupAnswer) -> EvidenceBundle | QAResponse:
                         diag={"reason": "null ExactLookupAnswer"})
 
     source_object_identity = answer.source_object_identity
+    if not source_object_identity:
+        if answer.entity_type == EntityType.COURSE:
+            source_object_identity = f"course_cards/{answer.entity_code}"
+        else:
+            source_object_identity = f"program_version_cards/{answer.entity_code}"
     version_used = answer.resolved_version
 
     # Determine source family from the artifact identity prefix.
