@@ -94,11 +94,11 @@ If local docs conflict on current progress or next-step sequencing, trust in thi
 
 ### 6.0b Atlas QA
 
-**Status:** Active — sessions 07–11 complete
+**Status:** Active — sessions 07–12 complete
 
 **What exists:**
 - Full deterministic pipeline: entity resolution → exact/fuzzy/compare/clarify routing → evidence bundle → gate → generation → post-check
-- 265 unit + integration tests passing
+- 274 unit + integration tests passing
 - Model comparison complete: `llama3:latest` selected (9/10 on session07 sample, fastest)
 - `qwen3.5:9b` viable (same accuracy, 2–3× slower); `llama3.1:latest` drops 2 queries
 
@@ -108,6 +108,7 @@ If local docs conflict on current progress or next-step sequencing, trust in thi
 - Session 09: compare path routing fix → Class D entity codes now correct
 - Session 10: clarify path — 7/8 targeted Class E queries fire clarify; E-066/E-073 invariants preserved
 - Session 11: source_object_identity derivation guard (evidence.py); guide-presence gate check 6b (gate.py + answer.py) — G-092/G-099 now deterministically abstain
+- Session 12: generation prompt citation example; postcheck entity-code fallback for single-artifact bundles; generation retry on clean abstention (Fix 3 introduced F-089 regression — retry to be removed)
 
 **Gold eval results — run 4 (2026-03-25T13-26, llama3:latest):**
 
@@ -357,7 +358,7 @@ These should not be reopened by default.
 
 ## 9. Exact next-session order
 
-1. **Atlas QA — session 12:** citation reliability hardening — prompt fix, postcheck fallback, generation retry for B-018. Spec: `_internal/atlas_qa/work_sessions/12_citation_reliability_hardening/SESSION_SPEC.md`. Session 11 complete ✅.
+1. **Atlas QA — session 12b (micro-fix):** remove Fix 3 retry from `generation.py` (introduced F-089 regression — retry overrides correct model abstention on out-of-scope queries); update `GenerationOutput.retried` field removal or leave as dead flag; re-run eval to confirm F gate recovers; no spec file needed for a one-function revert. Session 12 complete ✅.
 2. **Homepage redesign — implementation planning pass:** convert the 2026-03-22 homepage strategy into implementation-ready section/module specs, copy hierarchy, and build order.
 3. **Official resource — bounded next pass:** reconcile regulatory queue against current placements, then run outcomes/accreditation completeness audit. Working area: `_internal/official_resource/`.
 4. **Course-page enrichment — production implementation planning:** only after homepage planning is stabilized; start from prototype conclusions and define production wiring sequence.

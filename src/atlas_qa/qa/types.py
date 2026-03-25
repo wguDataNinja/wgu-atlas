@@ -406,7 +406,6 @@ class GenerationOutput(BaseModel):
     parse_error: bool = False
     schema_error: bool = False
     llm_failure: bool = False
-    retried: bool = False
 
 
 class PostCheckResult(BaseModel):

@@ -173,60 +173,27 @@ def test_prompt_contains_citation_example():
 
 
 # ---------------------------------------------------------------------------
-# Session 12 — Fix 3: single retry on clean model-level abstention
+# Session 12b — confirm no retry on abstention (retry removed, caused F-089 regression)
 # ---------------------------------------------------------------------------
 
-_ABSTAIN_JSON = (
-    '{"answer_text": null, '
-    '"cited_evidence_ids": [], '
-    '"version_disclosed": null, '
-    '"abstain": true}'
-)
 
-_VALID_RETRY_JSON = (
-    '{"answer_text": "As of version 2026-03, C715 is a course. ", '
-    '"cited_evidence_ids": ["course_cards/C715"], '
-    '"version_disclosed": "2026-03", '
-    '"abstain": false}'
-)
-
-
-def test_generate_answer_retries_on_abstain_and_succeeds():
-    """First call abstains; second call returns valid answer → retried=True, answer populated."""
-    side_effects = [_llm_result(_ABSTAIN_JSON), _llm_result(_VALID_RETRY_JSON)]
-    with patch(_PATCH_TARGET, side_effect=side_effects):
-        out = generate_answer(_bundle(), "What is C715?")
-    assert out.answer_text is not None
-    assert out.retried is True
-    assert out.llm_failure is False
-
-
-def test_generate_answer_retries_on_abstain_both_fail():
-    """Both calls abstain → answer_text=None, retried=True."""
-    with patch(_PATCH_TARGET, return_value=_llm_result(_ABSTAIN_JSON)):
-        out = generate_answer(_bundle(), "What is C715?")
-    assert out.answer_text is None
-    assert out.retried is True
-
-
-def test_generate_answer_no_retry_on_success():
-    """First call succeeds → no retry, retried=False."""
-    with patch(_PATCH_TARGET, return_value=_llm_result(_VALID_JSON)):
-        out = generate_answer(_bundle(), "What is C715?")
-    assert out.answer_text is not None
-    assert out.retried is False
-
-
-def test_generate_answer_no_retry_on_llm_failure():
-    """LLM failure (not clean abstention) → no retry."""
+def test_generate_answer_abstain_no_retry():
+    """Model abstains cleanly → answer_text=None, single LLM call only (no retry)."""
+    _abstain_json = (
+        '{"answer_text": null, '
+        '"cited_evidence_ids": [], '
+        '"version_disclosed": null, '
+        '"abstain": true}'
+    )
     call_count = 0
 
     def counting_generate(*args, **kwargs):
         nonlocal call_count
         call_count += 1
-        return _llm_result("", llm_failure=True)
+        return _llm_result(_abstain_json)
 
     with patch(_PATCH_TARGET, side_effect=counting_generate):
         out = generate_answer(_bundle(), "What is C715?")
-    assert call_count == 1  # no retry for LLM failure
-    assert out.llm_failure is True
+    assert call_count == 1  # no retry
+    assert out.answer_text is None
+    assert out.llm_failure is False
