@@ -78,3 +78,34 @@ Append-only. One entry per work block.
 | E | 90% | No regression |
 | F | 98% | No regression |
 | G | 100% | PASS — G-100 citation fallback now covers it |
+
+---
+
+## 2026-03-25 — Gold Eval Run 4 Results (operator-run)
+
+**Artifact:** `data/atlas_qa/runtime_checks/gold_eval/2026-03-25T13-26-12_llama3_latest_results.json`
+**Score:** 87/100 (up from 82)
+
+| Class | Result | vs. expected |
+|-------|--------|-------------|
+| A | 15/15 100% ✅ | As expected |
+| B | 19/20 95.0% ✅ | As expected |
+| C | 17/18 94.4% ✅ | As expected |
+| D | 2/12 16.7% ❌ | corpus gap (expected fail) |
+| E | 10/10 100% ✅ | As expected |
+| F | 14/15 93.3% ❌ | **REGRESSION** — F-089 answered when should abstain |
+| G | 10/10 100% ✅ | As expected |
+
+**Fixed:** A-008, B-018, B-029, C-053, D-054, G-100 (+6)
+**Regressed:** F-089 (-1)
+
+**F-089 root cause analysis:**
+- Query: "What are WGU's tuition rates for BSCS?" — expected: abstain
+- Actual: `generation_passed_postcheck` (model answered)
+- Fix 3 (retry) is the likely cause: BSCS has a valid catalog card (bundle non-empty),
+  model correctly abstained on first call (recognizing tuition is out-of-scope), but
+  retry fired unconditionally and second call answered incorrectly
+- Postcheck passed because BSCS appears in the answer and version token was present
+
+**Next action:** restrict or remove Fix 3 retry to prevent override of correct abstentions
+for out-of-scope queries

@@ -43,7 +43,7 @@ If local docs conflict on current progress or next-step sequencing, trust in thi
 
 | Workstream | Status | Current objective | Primary blocker | Next bounded step |
 |---|---|---|---|---|
-| **Atlas QA** | **Active** — Sessions 07–11 complete + gold eval run 3 done (82/100); A at 93.3% (gate 95%), G at 90% (gate 100%) | Improve citation reliability (A-008, B-029, C-053, G-100 LLM non-determinism) and fix B-018 model-level abstention | Ollama must be running | Run session 12 (spec ready: `work_sessions/12_citation_reliability_hardening/`) |
+| **Atlas QA** | **Active** — Sessions 07–12 complete + gold eval run 4 done (87/100); A/B/C/E/G pass gates; F regressed (F-089 retry side-effect) | Fix F-089 regression (retry fires on correct model abstention for out-of-scope query) | Ollama must be running | Restrict or remove Fix 3 retry; re-run eval |
 | **Degree pages — review/improvement** | **CLOSED** — Sessions 1–2 complete (2026-03-22); all priority fixes implemented and live | No active objective | none | see `_internal/degree_pages/WORK_LOG.md` for deferred follow-ups |
 | Program guides / degree pages (wiring) | **CLOSED OUT** — extraction complete, artifacts built, degree pages wired. Guide-derived content is live. | No active objective — narrow follow-ups exist (cert review queue, course-page prereqs, variant policy) but are not the active track | none | see `data/program_guides/README.md` for follow-up list |
 | Courses (course-page enrichment) | **READY, NOT ACTIVE — design/prototype phase closed; implementation path is known** | No active objective until selected | not selected as current implementation track | when selected: build variant-toggle UI, wire enrichment into production courses/[code]/page.tsx, then add prereq/cert/reverse-prereq blocks |
@@ -109,31 +109,28 @@ If local docs conflict on current progress or next-step sequencing, trust in thi
 - Session 10: clarify path — 7/8 targeted Class E queries fire clarify; E-066/E-073 invariants preserved
 - Session 11: source_object_identity derivation guard (evidence.py); guide-presence gate check 6b (gate.py + answer.py) — G-092/G-099 now deterministically abstain
 
-**Gold eval results — run 3 (2026-03-25T04-06, llama3:latest):**
+**Gold eval results — run 4 (2026-03-25T13-26, llama3:latest):**
 
 | Class | Pass | Total | Rate | Gate | Status |
 |-------|------|-------|------|------|--------|
-| A | 14 | 15 | 93.3% | 95% | FAIL |
-| B | 17 | 20 | 85.0% | 85% | PASS ✅ |
-| C | 16 | 18 | 88.9% | 85% | PASS ✅ |
-| D | 1 | 12 | 8.3% | 80% | FAIL (corpus gap) |
+| A | 15 | 15 | 100% | 95% | PASS ✅ |
+| B | 19 | 20 | 95.0% | 85% | PASS ✅ |
+| C | 17 | 18 | 94.4% | 85% | PASS ✅ |
+| D | 2 | 12 | 16.7% | 80% | FAIL (corpus gap) |
 | E | 10 | 10 | 100% | 90% | PASS ✅ |
-| F | 15 | 15 | 100% | 98% | PASS ✅ |
-| G | 9 | 10 | 90.0% | 100% | FAIL |
-| **Total** | **82** | **100** | **82%** | — | — |
+| F | 14 | 15 | 93.3% | 98% | FAIL — regression |
+| G | 10 | 10 | 100% | 100% | PASS ✅ |
+| **Total** | **87** | **100** | **87%** | — | — |
 
-Run 3 vs run 2 diff: +5 fixed (A-009, A-015, C-047, G-092, G-099), −4 regressed (A-008, B-018, B-029, C-053 — all LLM non-determinism)
+Run 4 vs run 3 diff: +6 fixed (A-008, B-018, B-029, C-053, D-054, G-100), −1 regressed (F-089)
 
 **Known open issues:**
-- Class D (11 failures): missing 2025-06 corpus cards — corpus gap, deferred
-- Class A (1 failure): A-008 D554 citation — LLM non-determinism (model omits `course_cards/D554` from cited_evidence_ids)
-- Class G (1 failure): G-100 MACCA/MACCF guide version — same citation non-determinism (`program_version_cards/MACCA`)
-- B-029, C-053: same citation non-determinism pattern (MACCA, D554)
-- B-018: BSACC total CU — model abstained (generation returned abstain=true)
-- B-031, C-051: BSPRN not in corpus — will always fail; gold question set note
+- Class D (10 failures): missing 2025-06 corpus cards — corpus gap, deferred to session 13
+- Class F (1 failure): F-089 "What are WGU's tuition rates for BSCS?" — expected abstain, answered; likely caused by Fix 3 retry overriding a correct model abstention; gate passes the query (BSCS is a valid entity), model correctly abstains first call, retry fires and second call answers
+- B-031, C-051: BSPRN not in corpus — gold question set issue, not pipeline
 - E-066: gold question note is wrong (MBA is unambiguous; correct behavior is answer)
 
-**Next bounded step:** run session 12 — spec ready at `_internal/atlas_qa/work_sessions/12_citation_reliability_hardening/SESSION_SPEC.md`; fixes generation prompt, postcheck fallback, and generation retry for B-018
+**Next bounded step:** session 12b (micro-fix) — restrict Fix 3 retry to not fire when the query is out-of-scope/advising type; likely fix is making retry conditional on `bundle.from_exact_path` AND the gate explicitly marking the question as answerable, OR removing the retry entirely and accepting B-018 as LLM non-determinism
 
 **Key files:**
 - `scripts/run_gold_eval.py` — full 100-question eval runner
