@@ -14,11 +14,28 @@ This repo is being compressed to a 3-document system:
 
 No separate long-lived `ATLAS_SPEC.md` or `DECISIONS.md` should be treated as active canon. Both are archived in `_internal/archive/2026-03-final-consolidation/docs/`.
 
+**Project-overview grounding docs**
+- `_internal/project_overview/01_SITE_DESIGN_SPEC.md`
+- `_internal/project_overview/02_SCOPE_AND_ACCOMPLISHMENTS.md`
+- `_internal/project_overview/03_DATA_QUALITY_AND_VALIDATION.md`
+- `_internal/project_overview/04_SCRAPING_CHALLENGES.md`
+
+These are not control-surface canon, but they are now the primary long-form reference set for:
+- product identity
+- current site scope
+- accomplishment/coverage claims
+- validation posture
+- scraping/parsing difficulty record
+
+If control-state questions arise, use ATLAS_CONTROL first. If factual product/scope grounding is needed, use the project-overview docs before older module writeups.
+
 If local docs conflict on current progress or next-step sequencing, trust in this order:
 
 1. on-disk execution artifacts (`data/program_guides/{parsed,validation,manifest_rows}`, `data/program_guides/family_validation/`, runtime artifacts in `public/data/`)
-2. workstream execution log (`_internal/program_guides/DEV_NOTES.md`, module session logs)
-3. module orientation/design docs (`_internal/program_guides/README.md`, `_internal/program_guides/TECHNICAL_READOUT.md`, `_internal/page_designs/*`)
+2. current control/memory canon (ATLAS_CONTROL, ATLAS_REPO_MEMORY, DEV_LOG)
+3. project-overview grounding docs (`_internal/project_overview/`)
+4. workstream execution log (`_internal/program_guides/DEV_NOTES.md`, module session logs)
+5. module orientation/design docs (`_internal/program_guides/README.md`, `_internal/program_guides/TECHNICAL_READOUT.md`, `_internal/page_designs/*`)
 
 ---
 
@@ -26,121 +43,106 @@ If local docs conflict on current progress or next-step sequencing, trust in thi
 
 | Workstream | Status | Current objective | Primary blocker | Next bounded step |
 |---|---|---|---|---|
+| **Atlas QA** | **Active** — Sessions 07–11 complete + gold eval run 3 done (82/100); A at 93.3% (gate 95%), G at 90% (gate 100%) | Improve citation reliability (A-008, B-029, C-053, G-100 LLM non-determinism) and address G-100 definitively | Ollama must be running | Write session 12 spec |
 | **Degree pages — review/improvement** | **CLOSED** — Sessions 1–2 complete (2026-03-22); all priority fixes implemented and live | No active objective | none | see `_internal/degree_pages/WORK_LOG.md` for deferred follow-ups |
-| Program guides / degree pages (wiring) | **CLOSED OUT** — extraction complete, artifacts built, degree pages wired (Sessions 29–35). Guide-derived content is live. | No active objective — narrow follow-ups exist (cert review queue, course-page prereqs, variant policy) but are not the active track | none | see `data/program_guides/README.md` for follow-up list |
-| Courses (course-page enrichment) | **CLOSED OUT at design/prototype phase** — Sessions 1–2 complete; prototype surface built and reviewed; design conclusions recorded in `_internal/course_pages/WORK_LOG.md` | No active objective — implementation resumes when selected | none | when ready: start from prototype surface and recorded conclusions; main remaining work is variant-toggle UI and production wiring |
-| Homepage redesign | **Active three-track workstream** | Design comprehensive proof-and-orientation surface showcasing degree, course, and ecosystem value | align with concurrent degree and course workstreams | build homepage modules in parallel with degree/course enrichment |
+| Program guides / degree pages (wiring) | **CLOSED OUT** — extraction complete, artifacts built, degree pages wired. Guide-derived content is live. | No active objective — narrow follow-ups exist (cert review queue, course-page prereqs, variant policy) but are not the active track | none | see `data/program_guides/README.md` for follow-up list |
+| Courses (course-page enrichment) | **READY, NOT ACTIVE — design/prototype phase closed; implementation path is known** | No active objective until selected | not selected as current implementation track | when selected: build variant-toggle UI, wire enrichment into production courses/[code]/page.tsx, then add prereq/cert/reverse-prereq blocks |
+| Homepage redesign | **ACTIVE — primary product/design track** | Define and design a research-first homepage that presents Atlas as a student research surface for curriculum inspection, degree comparison, and catalog history | proof-module copy and implementation plan not yet locked | convert homepage strategy into section-level messaging, module specs, and implementation-ready homepage plan |
 | Official resource layer | active, bounded queueing established | continue conservative attachment expansion with provenance clarity | placement model expansion and completeness audits are still incomplete | reconcile regulatory queue vs current placements, then run outcomes/accreditation completeness pass |
 | Continuity review | initialized, lightweight | validate compact review method | first tiny validation batch not created | create 4-card validation batch |
 | Program lineage / degree history | ready, not selected | keep system stable for later export/UI if chosen | export/runtime wiring not implemented | no action unless selected |
 | Catalog baseline / site runtime | stable | preserve current deterministic site behavior | none immediate | no action |
-| Homepage/product framing rethink | deferred | revisit after module priorities settle | depends on clearer emphasis across modules | defer |
 
 ---
 
 ## 6. Current module snapshots
 
-### 6.0 Program guide extraction
+### 6.0 Program guide extraction / degree-enrichment layer
 
 **Status**
-- **Guide data collection and extraction is COMPLETE.**
-- 115/115 guidebooks parsed and validated. Parser stable, all 19 program families covered.
-- **Guide-derived enrichment data is available for 751 canonical courses** (descriptions + competency bullets + program context).
-- Course-matching audit complete: all ambiguous title matches resolved or explicitly recorded as unresolvable.
-- **Human entry point:** `data/program_guides/README.md`
-- Nothing from this data is yet published to the Atlas site.
+- **CLOSED OUT**
+- 115/115 program guides collected, parsed, validated, and converted into degree-enrichment artifacts
+- guide-derived content is live on Atlas degree pages
 
-**Coverage:**
-- Parsed guides: 115/115
-- Validated guides: 115/115
-- Courses with guide-derived enrichment: 751 (of ~1,641 in the catalog)
-- Courses unmatched (guide titles not in catalog): 542 — irreducible without catalog changes
-- Publish-ready Atlas artifacts: none yet — the artifact generator has not been built
+**Durable facts**
+- 751 canonical courses enriched with guide-derived descriptions and competency data
+- 115 per-program degree artifacts built
+- cert/prereq/family/anomaly extraction artifacts exist and remain the source for downstream course-page and review work
+- parser is stable; no planned rewrite
 
-**Complete family coverage (19 total):**
-standard_bs(19), cs_ug(8), education_ba(11), graduate_standard(9), mba(3), healthcare_grad(2), education_bs(4), teaching_mat(9), cs_grad(5), swe_grad(4), data_analytics_grad(3), education_ma(9), endorsement(8), nursing_msn(5), nursing_pmc(4), accounting_ma(5), nursing_ug(2), nursing_rn_msn(3)
-education_grad: complete (MSEDL=HIGH + MEDETID=MEDIUM)
+**What shipped**
+- degree artifacts built and wired into production degree pages
+- licensure, cert, family/track, provenance, caveat, AoS, and capstone handling are live
+- NCLEX-RN and CPA Exam degree-level signals extracted and surfaced with correct framing
+- anomaly-bearing programs handled with explicit caveat messaging
 
-**No partial families remaining.**
-
-**Why it matters**
-- Program guides contain the richest per-program content: Standard Path with CUs and term, course descriptions, competency bullets, prereq mentions, cert-prep mentions.
-- 0 empty course descriptions across all parsed guides. Strongest field in the pipeline.
-
-**Current parser state**
-- `scripts/program_guides/parse_guide.py` — stable, tested, no planned rewrites
-- Session 18 fix: `_is_bullet_continuation` Title Case guard (≥80% capitalized words → not a continuation). Regression-verified.
-- Session 19 fix: `parse_capstone` KeyError. Regression-verified.
-- Session 22 fix (3 fixes): SP_CHANGES_RE conditional break, STANDARD_PATH_RE second-table break, Certificate Guidebook title skip.
-- Session 23 fix (7 fixes): `looks_like_prose` 3-heuristic expansion, `_is_bullet_continuation` terminal-punctuation override, `ACCESSIBILITY_RE` typo tolerance, `no_footer_lines_found` combined-program suppression, `sp_row_invalid` "Advanced Standing" silent skip. See DEV_NOTES.md Session 23 for full detail.
-- Known source-artifact outliers (SP unusable, AoS intact): BSITM, MATSPED, MSCSUG
-
-**Known downstream exclusions**
-- BSITM SP, MATSPED SP, MSCSUG SP: source-PDF column extraction failures — AoS usable
-- BSPRN SP: Pre-Nursing track only — 15 Nursing-track courses AoS-only (dual-track structural)
-- BSNU: version/pub_date/page_count not recoverable (no footer in source PDF) — content intact
-- MSRNNUED/LM/NI: degree_title truncated (cosmetic — "Bachelor of Science and Post-Baccalaureate Certificate, Nursing +")
-- MSCSAIML degree_title: truncated in parsed output (cosmetic)
-- MACCM Corporate Financial Analysis: title/first-sentence quality issue (cosmetic)
-- MEDETID: capstone field captures only first of 3 courses (multi-capstone structural limitation)
-- MAELLP12: page_count=0 (cosmetic — older guide format, content intact)
+**Not-active follow-ups**
+- cert review queue: 21 rows
+- course-page prereq display: 50 auto-accepted rows ready
+- multi-description / competency variant policy for course pages
+- nursing cumulative-prereq display design
 
 **Key files**
-- `data/program_guides/README.md` — **human entry point** for the full program-guides area
-- `_internal/program_guides/PROGRAM_GUIDE_PROJECT_STATUS.md` — concise operator entry point
-- `_internal/program_guides/DEV_NOTES.md` — session history and technical change log
-- `data/program_guides/audit/PROGRAM_GUIDE_CORPUS_MANIFEST.{md,json}` — canonical corpus facts
-- `data/program_guides/audit/program_guide_claims_register.{md,json}` — approved/disallowed claims
-- `data/program_guides/audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md` — design doc for building the Atlas degree-enrichment artifact layer
-- `data/program_guides/enrichment/course_enrichment_summary.json` — enrichment coverage counts
-- `data/program_guides/bridge/merge_summary.json` — course-matching audit: resolutions, deferred cases, unresolvable records
-- `public/data/program_guides/` — not yet created; requires the artifact generator to be built first
+- `data/program_guides/README.md`
+- `_internal/program_guides/PROGRAM_GUIDE_PROJECT_STATUS.md`
+- `_internal/program_guides/DEV_NOTES.md`
+- `data/program_guides/audit/PROGRAM_GUIDE_CORPUS_MANIFEST.{md,json}`
+- `data/program_guides/bridge/merge_summary.json`
+- `data/program_guides/enrichment/course_enrichment_summary.json`
 
-**What is complete**
-- All 115 guidebooks collected, parsed, and validated
-- Per-course descriptions and competency bullets extracted
-- Guide courses matched to canonical catalog codes for 751 courses
-- Policy and schema for the Atlas degree-enrichment artifact layer fully designed
-- Course-matching audit with explicit records for all ambiguous or unresolvable cases
+---
 
-**Guide targets extraction complete (Session 29, 2026-03-21)**
-- `cert_course_mapping.json` — 9 auto-accepted cert→course mappings, 21 review-needed
-- `prereq_relationships.json` — 50 auto-accepted prereq relationships, 21 review-needed, 71 total
-- `sp_family_classification.json` — 115 programs classified A(72)/B(23)/C(19)/D(1)
-- `sp_families.json` — 7 named family definitions (BSSWE, MACC, MSRNN, BSCNE, PMCNU, MSMK, BAELED)
-- `guide_anomaly_registry.json` — 9 anomaly records
-Scripts: `scripts/program_guides/extract_cert_mapping.py`, `extract_prereq_relationships.py`, `classify_sp_families.py`
+### 6.0b Atlas QA
 
-**Guide product handoff complete (Session 30, 2026-03-21)**
-- `_internal/program_guides/GUIDE_ARTIFACTS_PRODUCT_HANDOFF.md` — comprehensive product handoff doc for build/design sessions.
-- Covers: executive state, full artifact inventory, product payload by surface, degree/course/family shape families, what is not yet cleanly extracted (NCLEX, CPA Exam, variant selection policy, CU conflicts, education sub-families), merge-to-product planning bridge, concrete examples.
-- Guide enrichment extraction workstream is COMPLETE through artifact production. Remaining work: build artifact generator, resolve signal gaps (NCLEX, CPA), establish variant selection policy, then merge to product surfaces.
+**Status:** Active — sessions 07–11 complete
 
-**Known gaps identified in Session 30 handoff**
-- NCLEX (nursing programs): present in program description text only; not in cert_course_mapping.json; requires a program-description pass.
-- CPA Exam (BSACC): thin capture (review-required); richer in program description; needs targeted recovery before surfacing.
-- Multi-description/competency variant selection: 74 courses with multiple description variants, 185 with multiple competency variants — no policy decision yet.
-- SP CU conflicts: 41 cases across programs — recommend defaulting to catalog CU value.
+**What exists:**
+- Full deterministic pipeline: entity resolution → exact/fuzzy/compare/clarify routing → evidence bundle → gate → generation → post-check
+- 265 unit + integration tests passing
+- Model comparison complete: `llama3:latest` selected (9/10 on session07 sample, fastest)
+- `qwen3.5:9b` viable (same accuracy, 2–3× slower); `llama3.1:latest` drops 2 queries
 
-**Workstream closed out — Sessions 29–35**
+**Session outcomes:**
+- Session 07: baseline run — 1/10 pass; two blockers identified
+- Session 08: blocker fixes (version token, first-candidate bias) → 7/10
+- Session 09: compare path routing fix → Class D entity codes now correct
+- Session 10: clarify path — 7/8 targeted Class E queries fire clarify; E-066/E-073 invariants preserved
+- Session 11: source_object_identity derivation guard (evidence.py); guide-presence gate check 6b (gate.py + answer.py) — G-092/G-099 now deterministically abstain
 
-All guide extraction, artifact generation, and degree-page wiring is complete. Guide-derived content is live on Atlas degree pages. This section is now a reference record, not an active task queue.
+**Gold eval results — run 3 (2026-03-25T04-06, llama3:latest):**
 
-**What shipped:**
-- `build_guide_artifacts.py` built and run — 115 per-program degree artifacts in `degree_artifacts/`
-- Degree pages wired: Licensure Preparation block, Industry Certifications block, Family/track panel, Areas of Study, Capstone callout, Guide provenance badge, Caveat banners, Advisor-sequenced label
-- NCLEX-RN and CPA Exam degree-level signals extracted and live
-- Praxis signals surfaced with correct licensure framing (not "industry cert")
-- All anomaly programs have specific caveat messages (BSITM, MSCSUG, MEDETID, BSNU, MATSPED, BSPRN)
-- BSSWE catalog code aliased to BSSWE_Java artifact
+| Class | Pass | Total | Rate | Gate | Status |
+|-------|------|-------|------|------|--------|
+| A | 14 | 15 | 93.3% | 95% | FAIL |
+| B | 17 | 20 | 85.0% | 85% | PASS ✅ |
+| C | 16 | 18 | 88.9% | 85% | PASS ✅ |
+| D | 1 | 12 | 8.3% | 80% | FAIL (corpus gap) |
+| E | 10 | 10 | 100% | 90% | PASS ✅ |
+| F | 15 | 15 | 100% | 98% | PASS ✅ |
+| G | 9 | 10 | 90.0% | 100% | FAIL |
+| **Total** | **82** | **100** | **82%** | — | — |
 
-**Known follow-ups (not active — see `data/program_guides/README.md`):**
-- Cert review queue: 21 rows needing editorial judgment
-- Prereq display on course pages: 50 auto-accepted rows ready, component not built
-- Multi-description variant policy: one decision unblocks course-page enrichment
-- Nursing cumulative prereq display design
+Run 3 vs run 2 diff: +5 fixed (A-009, A-015, C-047, G-092, G-099), −4 regressed (A-008, B-018, B-029, C-053 — all LLM non-determinism)
 
-**Next major work is outside `data/program_guides/` — see section 9.**
+**Known open issues:**
+- Class D (11 failures): missing 2025-06 corpus cards — corpus gap, deferred
+- Class A (1 failure): A-008 D554 citation — LLM non-determinism (model omits `course_cards/D554` from cited_evidence_ids)
+- Class G (1 failure): G-100 MACCA/MACCF guide version — same citation non-determinism (`program_version_cards/MACCA`)
+- B-029, C-053: same citation non-determinism pattern (MACCA, D554)
+- B-018: BSACC total CU — model abstained (generation returned abstain=true)
+- B-031, C-051: BSPRN not in corpus — will always fail; gold question set note
+- E-066: gold question note is wrong (MBA is unambiguous; correct behavior is answer)
+
+**Next bounded step:** address citation reliability — model fails to include `source_object_identity` in cited_evidence_ids ~20% of the time; root cause and fix options to be scoped in session 12
+
+**Key files:**
+- `scripts/run_gold_eval.py` — full 100-question eval runner
+- `scripts/compare_models.py` — model comparison runner
+- `src/atlas_qa/qa/` — pipeline source
+- `tests/atlas_qa/` — 265 tests
+- `data/atlas_qa/runtime_checks/` — all trace artifacts
+- `_internal/atlas_qa/QA_GOLD_QUESTION_SET.md` — 100-question eval corpus
+- `_internal/atlas_qa/work_sessions/` — session specs and dev logs
 
 ---
 
@@ -153,8 +155,7 @@ All guide extraction, artifact generation, and degree-page wiring is complete. G
 - broader expansion and completeness auditing remain in progress
 
 **Why it matters**
-- This is the clearest next student-facing value layer after catalog facts.
-- It fits the product posture better than a homepage redesign or Reddit/community expansion.
+- This is the clearest next student-facing value layer after the current homepage/design track.
 - It can improve program and school pages without changing the core site identity.
 
 **Locked direction**
@@ -281,6 +282,38 @@ Priority order:
 
 ---
 
+### 6.5 Homepage redesign
+
+**Status**
+- **ACTIVE — primary product/design track**
+- strategy updated on 2026-03-22
+- homepage direction now grounded in both the raw catalog baseline and the official public-site student-experience baseline
+
+**Current conclusion**
+- homepage should present Atlas as a research surface
+- core framing: Atlas helps students research what a WGU degree actually contains, how it connects to other programs, and how it changed over time
+- Atlas should be framed not as the only source of WGU program information, but as the clearest surface for researching that information together
+- homepage should be proof-first, not navigation-shell-first
+
+**Locked direction**
+- research-first positioning language should remain visible
+- degree pages and Compare are the two co-anchor proof modules
+- course-connectedness should be framed as following a course across programs
+- history/continuity is a real research differentiator
+- school navigation is secondary to the academic research story
+- homepage should mirror the real student flow: degree → course → overlap → compare
+
+**Current grounding docs**
+- `_internal/page_designs/homepage_design_session_2026_03_22.md`
+- `_internal/page_designs/wgu_public_site_student_experience.md`
+- `_internal/project_overview/01_SITE_DESIGN_SPEC.md`
+- `_internal/project_overview/02_SCOPE_AND_ACCOMPLISHMENTS.md`
+
+**Next bounded step**
+- turn strategy into implementation-ready homepage module/copy/spec artifact
+
+---
+
 ## 7. Locked decisions
 
 These should not be reopened by default.
@@ -291,9 +324,14 @@ These should not be reopened by default.
 - History/lineage is supporting context, not homepage identity.
 - Program History is a program-page enrichment layer, not a separate product surface.
 - Continuity review is a bounded validation track, not a large feature buildout.
-- Homepage is an active three-track workstream alongside Degrees and Courses.
+- Homepage is now the primary active product/design workstream.
+- Homepage framing is locked to a research-first, curriculum-inspection posture.
+- Atlas should be presented as supporting student research, not as a generic browse shell or enrollment-style exploration surface.
+- Degree pages and Compare are the two co-anchor homepage proof surfaces.
+- School navigation and ecosystem material are secondary to the academic research story.
+- Atlas should not be framed as the only place with WGU program information; the truthful contrast is structural clarity and research usability.
 - The official-resource layer is the most likely next major module.
-- Compare is not the first active implementation track; revisit after baseline cleanup settles.
+- No standalone Compare expansion track is active; Compare currently matters primarily as a homepage proof surface.
 - Lineage export is not an automatic next move; it remains a defer-or-promote decision.
 - If a predecessor program is still active, default to pathway-variant logic rather than lineage.
 - Approved low-confidence lineage events require guardrails in wording.
@@ -301,6 +339,8 @@ These should not be reopened by default.
 - Suppressed or unresolved lineage events should not surface by default.
 
 **Ecosystem index note:** A broader WGU online ecosystem index now exists at `_internal/WGU_ONLINE_ECOSYSTEM_INDEX.md` for future homepage/community/social exploration. It does not change the current product posture or the deferred status of Reddit/community integration.
+
+- Multi-source overlap resolution (catalog vs guide description text) uses an artifact-first, bounded-LLM workflow: deterministic comparison index → batched LLM annotation files → explicit block authority and display policy. Do not let LLMs improvise policy directly on raw source corpora. The resolution artifacts live in `_internal/atlas_qa/`.
 
 ---
 
@@ -320,9 +360,11 @@ These should not be reopened by default.
 
 ## 9. Exact next-session order
 
-1. **Course-page enrichment — shape-disposition artifact:** answer the open design questions (variant policy, capstone rule, cumulative-sequence handling) and produce the display-policy artifact. Working area: `_internal/course_pages/`. Session 1 artifact and work log are live.
-2. **Official resource — bounded next pass:** reconcile regulatory queue against current placements, then run outcomes/accreditation completeness audit. Working area: `_internal/official_resource/`.
-3. **Continuity review first batch:** run first 4-card batch (`_internal/continuity_review/validation_batch_01.md`). Low priority relative to items 1–2.
+1. **Atlas QA — session 11:** fix Class A postcheck (MACCA/MACCM `source_object_identity` is null in corpus) + Class G guide-presence gate for D554; re-run full eval. Spec: `_internal/atlas_qa/work_sessions/11_postcheck_and_guide_presence_gate/SESSION_SPEC.md`.
+2. **Homepage redesign — implementation planning pass:** convert the 2026-03-22 homepage strategy into implementation-ready section/module specs, copy hierarchy, and build order.
+3. **Official resource — bounded next pass:** reconcile regulatory queue against current placements, then run outcomes/accreditation completeness audit. Working area: `_internal/official_resource/`.
+4. **Course-page enrichment — production implementation planning:** only after homepage planning is stabilized; start from prototype conclusions and define production wiring sequence.
+5. **Continuity review first batch:** run first 4-card batch (`_internal/continuity_review/validation_batch_01.md`). Low priority relative to items 1–3.
 
 **Guide-adjacent items that can be picked up any time without blocking other work:**
 - Cert review queue (21 rows) — editorial judgment against source text
@@ -337,8 +379,14 @@ These should not be reopened by default.
 | What matters now | `_internal/ATLAS_CONTROL.md` |
 | How the repo works | `_internal/ATLAS_REPO_MEMORY.md` |
 | What changed recently | `_internal/DEV_LOG.md` |
+| Current product/site state | `_internal/project_overview/01_SITE_DESIGN_SPEC.md` |
+| What Atlas has built / accomplishment claims | `_internal/project_overview/02_SCOPE_AND_ACCOMPLISHMENTS.md` |
+| Validation / trust posture | `_internal/project_overview/03_DATA_QUALITY_AND_VALIDATION.md` |
+| Scraping/parsing difficulty record | `_internal/project_overview/04_SCRAPING_CHALLENGES.md` |
+| Homepage strategy | `_internal/page_designs/homepage_design_session_2026_03_22.md` |
+| Official public-site student baseline | `_internal/page_designs/wgu_public_site_student_experience.md` |
 | **Degree pages — review/improvement** | **`_internal/degree_pages/`** — artifact, work log, content maps |
-| Page-state docs, source baseline, homepage design conclusions | `_internal/page_designs/` — see `README.md` for reading order |
+| Page-design and source-baseline docs | `_internal/page_designs/` — see `README.md` for reading order |
 | **Program guide extraction — human entry point** | **`data/program_guides/README.md`** |
 | Program guide extraction — operator status | `_internal/program_guides/PROGRAM_GUIDE_PROJECT_STATUS.md` |
 | Program guide extraction — design and pipeline | `_internal/program_guides/TECHNICAL_READOUT.md` |
@@ -346,6 +394,7 @@ These should not be reopened by default.
 | Program guide extraction — degree-enrichment design pack | `data/program_guides/audit/PHASE_D_POLICY_AND_SCHEMA_MASTER_PLAN.md` |
 | Program guide extraction — enrichment coverage | `data/program_guides/enrichment/course_enrichment_summary.json` |
 | Program guide extraction — course-matching audit | `data/program_guides/bridge/merge_summary.json` |
+| Course/program text overlap policy + annotation artifacts | `_internal/atlas_qa/BLOCK_AUTHORITY_AND_DISPLAY_POLICY.md` and `_internal/atlas_qa/` |
 | Official-resource module materials | `_internal/official_resource/` |
 | Continuity-review materials | `_internal/continuity_review/` |
 | Lineage data + decisions | `data/lineage/` |

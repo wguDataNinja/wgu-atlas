@@ -5,6 +5,47 @@ Each entry records what changed, decisions locked, what's blocked, and the next 
 
 ---
 
+## 2026-03-24/25 (Atlas QA — Sessions 07–10 + gold eval baseline)
+
+**Done**
+- Session 07: runtime validation baseline — 1/10 pass; identified two blockers (version token enforcement, first-candidate bias)
+- Session 08: both blockers fixed → 7/10 on sample; `generation_prompts.py` + `lookup.py`
+- Session 09: compare path entity-code routing fix; added `resolve_entity_code_from_candidates()` to `entity_resolution.py`; all 5 Class D traces show correct entity codes
+- Session 10: clarify path implemented — `clarify.py`, `ClarifyCandidate`/`ClarifyResponse` types; 7/8 Class E disambiguation queries fire clarify; E-066/E-073 invariants preserved
+- Model comparison: `llama3:latest` (9/10), `llama3.1:latest` (7/10), `qwen3.5:9b` (9/10 after adding `think=false` and raising timeout to 300s); `llama3:latest` selected (fastest, consistent)
+- Gold eval run 1 (pre-intent-gate): 68/100 — Class F critical failures (10 out-of-scope queries answered because entity codes triggered resolution)
+- Added `intent_gate.py` — LLM-backed query intent gate runs before entity resolution; blocks advice, career/salary, admissions, accreditation, completion-time queries; fail-open on LLM failure
+- Gold eval run 2 (post-intent-gate): **81/100 (81%)** — F: 15/15 (100%) ✅, E: 10/10 ✅, B: 19/20 ✅, C: 16/18 ✅
+- 259 tests passing throughout; `requests` import moved to module level in `client.py`
+
+**Decisions locked**
+- `llama3:latest` is the standard eval model until a challenger beats it on harder queries
+- Intent gate is LLM-backed (same model); fail-open; uncertain → allow
+- `qwen3.5:9b` requires `think=false` in Ollama payload; 300s timeout
+- Class D failures (11/12) are a data gap, not code — requires 2025-06 program version cards
+
+**What's blocked / open**
+- Class A: 86.7% (2 failures — down from 1; need to investigate new regression vs run variance)
+- Class D: 8.3% — missing 2025-06 corpus cards; course-entity compare not implemented; YYYYMM format mismatch for MACCA
+- Class G: 70% (3 failures) — G-092 (D554 guide should abstain), G-100 (MACCA/MACCF guide version compare), + 1 new
+- No session 11 spec written yet
+
+**Next starting task**
+- Investigate Class A and G failures from run 2 artifact; write session 11 spec targeting A/G fixes
+
+---
+
+## 2026-03-25 (Atlas QA — Session 11 + gold eval run 3)
+
+Session 11: `evidence.py` source_object_identity derivation guard; `gate.py` check 6b + `answer.py` keyword detection to block guide-seeking D554 queries. 6 new tests; 265 passing.
+
+Gold eval run 3: **82/100 (82%)** — +5 fixed (A-009, A-015, C-047, G-092 ✓, G-099 ✓), −4 regressed (LLM non-determinism). A: 93.3% (gate 95% FAIL), B: 85% ✅, C: 88.9% ✅, G: 90% (gate 100% FAIL). Remaining failures are citation reliability (~20% miss rate on evidence ID in cited_evidence_ids) and 1 out-of-scope entity (BSPRN not in corpus).
+
+Next: session 12 — scope and fix citation reliability; source is model not including source_object_identity in cited_evidence_ids.
+- Homepage redesign implementation planning is next product track after QA stabilizes
+
+---
+
 ## 2026-03-21 (session 23 — corpus close: accounting_ma 5 + nursing_ug 2 + nursing_rn_msn 3; 7 parser fixes)
 
 **Done**
