@@ -203,3 +203,94 @@ def test_postcheck_multiple_failures():
     result = post_check(gen, _bundle())
     assert result.passed is False
     assert len(result.failure_reasons) >= 2
+
+
+# ---------------------------------------------------------------------------
+# Session 12 — entity-code fallback for empty cited_evidence_ids
+# ---------------------------------------------------------------------------
+
+
+def _artifact_prog(code: str = "MACCA") -> EvidenceArtifact:
+    return EvidenceArtifact(
+        artifact_type="program_version_card",
+        entity_code=code,
+        version=_VERSION,
+        source_family=SourceFamily.CATALOG,
+        content="test",
+        source_object_identity=f"program_version_cards/{code}",
+        evidence_ref=_REF,
+    )
+
+
+def _bundle_prog(code: str = "MACCA") -> EvidenceBundle:
+    return EvidenceBundle(
+        entity_code=code,
+        entity_type=EntityType.PROGRAM,
+        version_used=_VERSION,
+        source_scope=[SourceFamily.CATALOG],
+        artifacts=[_artifact_prog(code)],
+        anomaly_disclosures=[],
+        notes=[],
+        from_exact_path=True,
+    )
+
+
+def test_postcheck_fallback_entity_code_in_answer():
+    # cited_evidence_ids empty, but entity code "MACCA" appears in answer_text.
+    # Single-artifact bundle → fallback fires → citation_ids_present=True.
+    gen = _gen(
+        answer_text=f"MACCA is the Master of Accounting program. As of version {_VERSION}.",
+        cited=[],
+        version_disclosed=_VERSION,
+    )
+    result = post_check(gen, _bundle_prog("MACCA"))
+    assert result.citation_ids_present is True
+    assert result.passed is True
+
+
+def test_postcheck_fallback_entity_code_absent_from_answer():
+    # cited_evidence_ids empty, entity code not mentioned → fallback does not fire.
+    gen = _gen(
+        answer_text=f"The program is an accounting master's degree. As of version {_VERSION}.",
+        cited=[],
+        version_disclosed=_VERSION,
+    )
+    result = post_check(gen, _bundle_prog("MACCA"))
+    assert result.citation_ids_present is False
+    assert result.passed is False
+
+
+def test_postcheck_fallback_does_not_fire_for_two_artifact_bundle():
+    # Two artifacts → fallback guard: len(non_none) == 1 fails → fallback does not fire.
+    second = _artifact_prog("MACCF")
+    bundle = EvidenceBundle(
+        entity_code="MACCA",
+        entity_type=EntityType.PROGRAM,
+        version_used=_VERSION,
+        source_scope=[SourceFamily.CATALOG],
+        artifacts=[_artifact_prog("MACCA"), second],
+        anomaly_disclosures=[],
+        notes=[],
+        from_exact_path=True,
+    )
+    gen = _gen(
+        answer_text=f"MACCA and MACCF are both accounting programs. As of version {_VERSION}.",
+        cited=[],
+        version_disclosed=_VERSION,
+    )
+    result = post_check(gen, bundle)
+    # Fallback must not fire; multi-artifact bundle falls through to original check.
+    assert result.citation_ids_present is False
+    assert result.passed is False
+
+
+def test_postcheck_fallback_normal_citation_path_unchanged():
+    # cited_evidence_ids contains the correct ID → original path wins, no fallback needed.
+    gen = _gen(
+        answer_text=f"MACCA is the program. As of version {_VERSION}.",
+        cited=["program_version_cards/MACCA"],
+        version_disclosed=_VERSION,
+    )
+    result = post_check(gen, _bundle_prog("MACCA"))
+    assert result.citation_ids_present is True
+    assert result.passed is True

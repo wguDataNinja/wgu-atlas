@@ -42,6 +42,19 @@ def post_check(
         (cited & bundle_ids)
         or any(bid in answer_text for bid in bundle_ids)
     )
+
+    # Narrow fallback: single-artifact bundle, cited_evidence_ids empty, entity code in answer.
+    # Guards: (a) cited list must be empty, (b) exactly one non-None artifact in bundle,
+    # (c) entity code (everything after last "/") appears literally in answer_text.
+    # Does not fire for compare-path bundles (two artifacts) or when cited list is non-empty.
+    if not citation_ids_present and not gen_output.cited_evidence_ids:
+        non_none = [a for a in bundle.artifacts if a.source_object_identity]
+        if len(non_none) == 1:
+            identity = non_none[0].source_object_identity
+            entity_code = identity.rsplit("/", 1)[-1]
+            if entity_code and entity_code in answer_text:
+                citation_ids_present = True
+
     if not citation_ids_present:
         failure_reasons.append(
             f"no bundle source_object_identity found in cited_evidence_ids or answer_text "

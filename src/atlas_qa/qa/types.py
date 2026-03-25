@@ -406,6 +406,7 @@ class GenerationOutput(BaseModel):
     parse_error: bool = False
     schema_error: bool = False
     llm_failure: bool = False
+    retried: bool = False
 
 
 class PostCheckResult(BaseModel):
@@ -595,3 +596,22 @@ class EvalRunSummary(BaseModel):
     total_questions: int
     cases: list[EvalCaseResult]
     launch_gate: LaunchGateSummary | None = None
+
+
+# ---------------------------------------------------------------------------
+# Session 10 — Clarify path types
+# ---------------------------------------------------------------------------
+
+
+class ClarifyCandidate(BaseModel):
+    entity_code: str
+    entity_type: EntityType
+    display_title: str
+    match_score: int
+
+
+class ClarifyResponse(BaseModel):
+    raw_query: str
+    clarify_prompt: str
+    candidates: list[ClarifyCandidate]
+    match_basis: str

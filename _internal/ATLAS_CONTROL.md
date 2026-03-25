@@ -43,7 +43,7 @@ If local docs conflict on current progress or next-step sequencing, trust in thi
 
 | Workstream | Status | Current objective | Primary blocker | Next bounded step |
 |---|---|---|---|---|
-| **Atlas QA** | **Active** — Sessions 07–11 complete + gold eval run 3 done (82/100); A at 93.3% (gate 95%), G at 90% (gate 100%) | Improve citation reliability (A-008, B-029, C-053, G-100 LLM non-determinism) and address G-100 definitively | Ollama must be running | Write session 12 spec |
+| **Atlas QA** | **Active** — Sessions 07–11 complete + gold eval run 3 done (82/100); A at 93.3% (gate 95%), G at 90% (gate 100%) | Improve citation reliability (A-008, B-029, C-053, G-100 LLM non-determinism) and fix B-018 model-level abstention | Ollama must be running | Run session 12 (spec ready: `work_sessions/12_citation_reliability_hardening/`) |
 | **Degree pages — review/improvement** | **CLOSED** — Sessions 1–2 complete (2026-03-22); all priority fixes implemented and live | No active objective | none | see `_internal/degree_pages/WORK_LOG.md` for deferred follow-ups |
 | Program guides / degree pages (wiring) | **CLOSED OUT** — extraction complete, artifacts built, degree pages wired. Guide-derived content is live. | No active objective — narrow follow-ups exist (cert review queue, course-page prereqs, variant policy) but are not the active track | none | see `data/program_guides/README.md` for follow-up list |
 | Courses (course-page enrichment) | **READY, NOT ACTIVE — design/prototype phase closed; implementation path is known** | No active objective until selected | not selected as current implementation track | when selected: build variant-toggle UI, wire enrichment into production courses/[code]/page.tsx, then add prereq/cert/reverse-prereq blocks |
@@ -133,7 +133,7 @@ Run 3 vs run 2 diff: +5 fixed (A-009, A-015, C-047, G-092, G-099), −4 regresse
 - B-031, C-051: BSPRN not in corpus — will always fail; gold question set note
 - E-066: gold question note is wrong (MBA is unambiguous; correct behavior is answer)
 
-**Next bounded step:** address citation reliability — model fails to include `source_object_identity` in cited_evidence_ids ~20% of the time; root cause and fix options to be scoped in session 12
+**Next bounded step:** run session 12 — spec ready at `_internal/atlas_qa/work_sessions/12_citation_reliability_hardening/SESSION_SPEC.md`; fixes generation prompt, postcheck fallback, and generation retry for B-018
 
 **Key files:**
 - `scripts/run_gold_eval.py` — full 100-question eval runner
@@ -360,7 +360,7 @@ These should not be reopened by default.
 
 ## 9. Exact next-session order
 
-1. **Atlas QA — session 11:** fix Class A postcheck (MACCA/MACCM `source_object_identity` is null in corpus) + Class G guide-presence gate for D554; re-run full eval. Spec: `_internal/atlas_qa/work_sessions/11_postcheck_and_guide_presence_gate/SESSION_SPEC.md`.
+1. **Atlas QA — session 12:** citation reliability hardening — prompt fix, postcheck fallback, generation retry for B-018. Spec: `_internal/atlas_qa/work_sessions/12_citation_reliability_hardening/SESSION_SPEC.md`. Session 11 complete ✅.
 2. **Homepage redesign — implementation planning pass:** convert the 2026-03-22 homepage strategy into implementation-ready section/module specs, copy hierarchy, and build order.
 3. **Official resource — bounded next pass:** reconcile regulatory queue against current placements, then run outcomes/accreditation completeness audit. Working area: `_internal/official_resource/`.
 4. **Course-page enrichment — production implementation planning:** only after homepage planning is stabilized; start from prototype conclusions and define production wiring sequence.

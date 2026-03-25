@@ -43,6 +43,7 @@ def generate_answer(
     bundle: EvidenceBundle,
     question: str,
     model_name: str = DEFAULT_MODEL,
+    _retried: bool = False,
 ) -> GenerationOutput:
     """Call the LLM with a strict prompt contract and return a typed GenerationOutput.
 
@@ -105,6 +106,21 @@ def generate_answer(
 
     # Step 5 — Check model-level abstention.
     if parsed.abstain or not parsed.answer_text:
+        # Retry once on clean model-level abstention for non-empty bundles.
+        # Only retries when no parse/schema/LLM error occurred — the model cleanly
+        # chose to abstain. Handles non-deterministic over-caution (e.g., B-018).
+        if not _retried and bundle.artifacts:
+            retry_result = generate_answer(bundle, question, model_name, _retried=True)
+            return GenerationOutput(
+                raw_text=retry_result.raw_text,
+                answer_text=retry_result.answer_text,
+                cited_evidence_ids=retry_result.cited_evidence_ids,
+                version_disclosed=retry_result.version_disclosed,
+                parse_error=retry_result.parse_error,
+                schema_error=retry_result.schema_error,
+                llm_failure=retry_result.llm_failure,
+                retried=True,
+            )
         return GenerationOutput(
             raw_text=raw_text,
             answer_text=None,
@@ -113,6 +129,7 @@ def generate_answer(
             parse_error=False,
             schema_error=False,
             llm_failure=False,
+            retried=_retried,
         )
 
     return GenerationOutput(
@@ -123,6 +140,7 @@ def generate_answer(
         parse_error=False,
         schema_error=False,
         llm_failure=False,
+        retried=_retried,
     )
 
 
