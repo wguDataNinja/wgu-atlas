@@ -35,19 +35,19 @@ export default function CompareView({
         {/* ── Sticky header: utility bar + 3-column lane headers ── */}
         <div className="sticky top-14 z-10">
           {/* Utility bar: Change / Reset (top-right) */}
-          <div className="flex justify-end gap-4 px-3 py-1.5 bg-slate-800 rounded-t-xl border-b border-slate-700">
+          <div className="flex justify-end gap-2 px-3 py-1.5 bg-slate-800 rounded-t-xl border-b border-slate-700">
             {onChangeSelection && (
               <button
                 onClick={onChangeSelection}
-                className="text-xs text-slate-300 hover:text-white transition-colors"
+                className="text-xs font-semibold text-white bg-slate-600 hover:bg-slate-500 px-2.5 py-1 rounded-md transition-colors"
               >
-                Change
+                Change selection
               </button>
             )}
             {onReset && (
               <button
                 onClick={onReset}
-                className="text-xs text-slate-400 hover:text-slate-200 transition-colors"
+                className="text-xs text-slate-400 hover:text-slate-200 transition-colors px-1"
               >
                 Reset
               </button>
@@ -59,7 +59,7 @@ export default function CompareView({
             <div className="bg-blue-600 px-3 py-2.5 text-center border-r border-blue-700">
               <p className="text-xs font-bold text-white leading-tight">{leftLabel}</p>
               <p className="text-xs text-blue-200 mt-0.5">
-                {leftOnly} unique · {left.program_code}
+                {metrics.left_count} courses · {leftOnly} unique
               </p>
             </div>
             <div className="bg-slate-700 px-3 py-2.5 text-center border-r border-slate-600">
@@ -71,7 +71,7 @@ export default function CompareView({
             <div className="bg-amber-500 px-3 py-2.5 text-center">
               <p className="text-xs font-bold text-white leading-tight">{rightLabel}</p>
               <p className="text-xs text-amber-100 mt-0.5">
-                {rightOnly} unique · {right.program_code}
+                {metrics.right_count} courses · {rightOnly} unique
               </p>
             </div>
           </div>
@@ -110,6 +110,8 @@ function TermBlock({
   const hasShared = lane.shared.length > 0;
   const hasRight = lane.rightOnly.length > 0;
   const allShared = !hasLeft && !hasRight && hasShared;
+  const leftCount = lane.leftOnly.length + lane.shared.length;
+  const rightCount = lane.rightOnly.length + lane.shared.length;
 
   return (
     <div className="border-t border-slate-200">
@@ -118,9 +120,13 @@ function TermBlock({
         <span className="text-xs font-bold text-white tracking-wide">
           {term === 0 ? "UNPLACED" : `TERM ${term}`}
         </span>
-        {allShared && (
+        {allShared ? (
           <span className="text-xs text-slate-300 font-normal">
-            all shared this term
+            all shared · {lane.shared.length} courses
+          </span>
+        ) : (
+          <span className="text-xs text-slate-400 font-normal">
+            {leftCount} vs {rightCount} courses
           </span>
         )}
       </div>

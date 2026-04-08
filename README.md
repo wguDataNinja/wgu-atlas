@@ -8,6 +8,34 @@ WGU Atlas is a public-facing reference and explorer built from the validated WGU
 
 ---
 
+## Authoritative Project Docs
+
+Internal project authority and current execution state are tracked in:
+- `_internal/ATLAS_CONTROL.md` (current execution control)
+- `_internal/ATLAS_REPO_MEMORY.md` (stable architecture/runtime facts and durable decisions)
+- `_internal/DEV_LOG.md` (session ledger / recent changes)
+- `_internal/project_overview/01_SITE_DESIGN_SPEC.md` (current product/scope grounding spec)
+
+If there is conflict between older docs and current state, use those three in that order.
+
+---
+
+## Current Status (2026-04-08)
+
+Active branch: `homepage-redesign` — UI polish in progress. `main` is the stable deployed baseline.
+
+**Pages polished (this branch):**
+- `/compare` — compact result header with degree names, improved column stats, per-term course counts, filter bug fix
+- `/courses/[code]` — section reordered (description first), degree list capped with expand, internal data notes removed
+- `/programs/[code]` — course roster promoted above curriculum detail, internal provenance labels removed
+
+**Still to-do:**
+- Homepage (`/`) — design TBD; planned to feature screenshots/previews of polished pages
+- About page
+- Course explorer, degree explorer, colleges pages
+
+---
+
 ## What's here
 
 | Section | What it does |
@@ -44,6 +72,27 @@ WGU Atlas maintains a hard boundary between:
 - **LLM-generated content** — clearly labeled where used
 
 These are never mixed in the same data field or presented without attribution.
+
+---
+
+## Development workflow
+
+Active UI work happens on the `homepage-redesign` branch. `main` is the stable/deployed baseline.
+
+To iterate on the UI locally:
+
+```bash
+# Start dev server (port 3099)
+npm run dev -- --port 3099 > /tmp/atlas-dev.log 2>&1 &
+
+# Capture a screenshot (after ~8s startup)
+npx playwright screenshot --browser chromium "http://localhost:3099/wgu-atlas/" /tmp/atlas-homepage.png
+
+# Interactive compare page screenshot (uses Playwright scripting)
+# See memory/project_playwright_selection.md for the full script + nth(1) selector trick
+```
+
+The site uses `basePath: "/wgu-atlas"` in `next.config.ts` — all local routes are prefixed. Key routes: `/wgu-atlas/` (home), `/wgu-atlas/compare`, `/wgu-atlas/programs/BSCS`.
 
 ---
 
@@ -116,8 +165,6 @@ Any code that appears in student posts but is absent from the dataset is a genui
 ## Disclaimer
 
 WGU Atlas is an independent community project and is not affiliated with Western Governors University. All catalog data is derived from WGU's publicly available course catalog. No proprietary or internal WGU data is used.
-
-
 
 
 

@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
 import { getPrograms, getProgramEnriched } from "@/lib/data";
 import { LAB_EXCLUSIONS } from "@/lib/compareUtils";
-import CompareSelector from "@/components/compare/CompareSelector";
+import Compare3PrototypeLab from "@/components/proto/Compare3PrototypeLab";
 import type { ProgramEnriched } from "@/lib/types";
 
 export const metadata: Metadata = {
   title: "Compare Degrees",
   description:
-    "Compare WGU degree course rosters side by side. See shared courses, track-specific courses, and overlap metrics.",
+    "Compare 2 or 3 WGU degree course rosters. Two-degree mode uses the current lane compare view; third degree is optional.",
 };
 
 export default function ComparePage() {
@@ -32,18 +31,14 @@ export default function ComparePage() {
   }
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-10">
-      <div className="mb-8">
+    <div className="max-w-6xl mx-auto px-4 py-10">
+      <div className="mb-6">
         <h1 className="text-3xl font-bold text-slate-800">Compare Degrees</h1>
-        <p className="text-slate-500 mt-2 max-w-2xl">
-          Select two degrees to compare their course rosters side by side.
-          Shared courses, unique courses, and overlap metrics are shown for each
-          comparison.
+        <p className="text-slate-500 mt-1 text-sm">
+          Pick two (or three) WGU degrees from the same college to see a side-by-side course breakdown.
         </p>
       </div>
-      <Suspense>
-        <CompareSelector programs={comparePrograms} enriched={compareEnriched} />
-      </Suspense>
+      <Compare3PrototypeLab programs={comparePrograms} enriched={compareEnriched} />
     </div>
   );
 }

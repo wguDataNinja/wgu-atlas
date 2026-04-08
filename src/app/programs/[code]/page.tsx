@@ -141,38 +141,8 @@ export default async function ProgramDetailPage({ params }: Props) {
                 Retired — last seen: {program.last_seen}
               </p>
             )}
-            {guideArtifact && (
-              <GuideProvenance
-                provenance={guideArtifact.guide_provenance}
-                quality={guideArtifact.quality}
-                anomalyFlags={guideArtifact.anomaly_flags}
-                suppressCaveatPill={hasCaveats}
-              />
-            )}
           </div>
 
-          {/* ============================================================
-              DEGRADED QUALITY WARNING
-              Shown for low-confidence or caveat-bearing guide artifacts.
-              Replaces the inline amber pill so the warning is prominent.
-              ============================================================ */}
-          {isDegraded && (
-            <div className="mb-8 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3">
-              <div className="flex items-start gap-2">
-                <span className="shrink-0 text-amber-600 mt-0.5">⚠</span>
-                <div className="space-y-1 text-sm">
-                  {guideArtifact.guide_provenance.confidence === "low" && (
-                    <p className="font-medium text-amber-800">
-                      Guide data for this program has low confidence — information below reflects what could be extracted from the source guide.
-                    </p>
-                  )}
-                  {guideArtifact.quality.caveat_messages_ui.map((msg, i) => (
-                    <p key={i} className="text-amber-700">{msg}</p>
-                  ))}
-                </div>
-              </div>
-            </div>
-          )}
 
           {/* ============================================================
               ABOUT THIS DEGREE
@@ -286,38 +256,8 @@ export default async function ProgramDetailPage({ params }: Props) {
           )}
 
           {/* ============================================================
-              GUIDE: CERT SIGNALS
-              ============================================================ */}
-          {guideArtifact && guideArtifact.cert_signals.length > 0 && (
-            <GuideCertBlock certSignals={guideArtifact.cert_signals} />
-          )}
-
-          {/* ============================================================
-              GUIDE: FAMILY / RELATED PROGRAMS
-              ============================================================ */}
-          {guideArtifact && guideArtifact.family && (
-            <GuideFamilyPanel
-              family={guideArtifact.family}
-              currentCode={code}
-            />
-          )}
-
-          {/* ============================================================
-              GUIDE: AREAS OF STUDY
-              Moved above the Course Roster so the richest explanatory
-              content (descriptions, competencies) is visible before the
-              term-by-term CU table. For suppressed-roster programs this
-              section IS the primary course map.
-              ============================================================ */}
-          {guideArtifact && guideArtifact.areas_of_study.length > 0 && (
-            <GuideAreasOfStudy
-              areasOfStudy={guideArtifact.areas_of_study}
-              rosterCourses={rosterForAos}
-            />
-          )}
-
-          {/* ============================================================
-              COURSE ROSTER (normal)
+              COURSE ROSTER (normal) — shown early so students see the
+              actual course list without scrolling through curriculum detail.
               ============================================================ */}
           {enriched?.roster && enriched.roster.length > 0 && !spSuppressed && (
             <section className="mb-8">
@@ -392,6 +332,36 @@ export default async function ProgramDetailPage({ params }: Props) {
                 {latestCus != null && ` Degree total per catalog: ${latestCus} CUs.`}
               </p>
             </section>
+          )}
+
+          {/* ============================================================
+              GUIDE: AREAS OF STUDY
+              For suppressed-roster programs this section IS the primary
+              course map. For normal programs it's curriculum detail below
+              the roster.
+              ============================================================ */}
+          {guideArtifact && guideArtifact.areas_of_study.length > 0 && (
+            <GuideAreasOfStudy
+              areasOfStudy={guideArtifact.areas_of_study}
+              rosterCourses={rosterForAos}
+            />
+          )}
+
+          {/* ============================================================
+              GUIDE: CERT SIGNALS
+              ============================================================ */}
+          {guideArtifact && guideArtifact.cert_signals.length > 0 && (
+            <GuideCertBlock certSignals={guideArtifact.cert_signals} />
+          )}
+
+          {/* ============================================================
+              GUIDE: FAMILY / RELATED PROGRAMS
+              ============================================================ */}
+          {guideArtifact && guideArtifact.family && (
+            <GuideFamilyPanel
+              family={guideArtifact.family}
+              currentCode={code}
+            />
           )}
 
           {/* ============================================================

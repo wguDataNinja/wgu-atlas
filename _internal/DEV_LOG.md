@@ -5,6 +5,199 @@ Each entry records what changed, decisions locked, what's blocked, and the next 
 
 ---
 
+## 2026-04-08 (UI polish — compare, course, and degree pages)
+
+**Branch:** `homepage-redesign`
+
+**Done**
+
+Compare page (`/compare`):
+- Removed redundant "WGU Atlas (unofficial) / Degree Comparison Tool" header from compare result view
+- Replaced with compact `Comparing [Name A] vs [Name B]` breadcrumb using full degree names (with `shortDegName` helper to strip degree-type prefix)
+- Column headers updated: now show `N courses · N unique` (total first, then unique) instead of `N unique · CODE`
+- Term dividers now show per-side course count: `TERM 1 · 4 vs 6 courses`
+- "Change" button in sticky header upgraded to visible pill
+- Fixed filter bug: selecting a college no longer unconditionally clears the level filter — only clears if the new college doesn't offer the selected level
+- Page description shortened to one line
+
+Course pages (`/courses/[code]`):
+- Section order fixed: "About This Course" now appears before "Included in Current Degrees"
+- Degree list capped at 8 with expand/collapse (`DegreeList` client component); heading changes to "Found in Active Programs" for retired courses
+- Removed "Also known as in catalog" section (internal data quality artifact)
+- Removed Notes/notes_confidence banner (internal data quality metadata)
+- Removed "scraping artifact" badge and internal paragraph from `CourseLearningOutcomes`
+
+Degree pages (`/programs/[code]`):
+- Course Roster moved above Areas of Study, Cert Signals, and Family Panel — now visible without scrolling past curriculum detail
+- Removed `GuideProvenance` component from header (showed "medium confidence / low confidence" pipeline labels)
+- Removed `isDegraded` warning block (used internal language about guide extraction confidence)
+
+**New files**
+- `src/components/courses/DegreeList.tsx` — collapsible degree list with expand/collapse and active/retired label variants
+
+**Decisions locked**
+- Internal data quality signals (confidence levels, scraping provenance, artifact labels) must not appear in the public UI
+- Course roster is primary student-facing content on degree pages; curriculum detail sections (AoS, certs, family) are secondary
+
+**Still to-do on this branch**
+- Homepage (`/`) — design TBD; will use screenshots of polished pages
+- About page
+- Other pages (course explorer, degree explorer, colleges)
+
+---
+
+## 2026-03-29 (Atlas <> bsda_courses boundary update)
+
+**Done**
+- Wrote a dedicated boundary/status artifact:
+  - `_internal/bsda_courses/ATLAS_BSDA_BOUNDARY_UPDATE_2026-03-29.md`
+- Documented:
+  - collaboration boundary and responsibilities
+  - what Atlas provides to `bsda_courses`
+  - BSDA upstream authority files owned in `bsda_courses`
+  - current status and next bounded step
+- Linked boundary artifact in:
+  - `_internal/ATLAS_CONTROL.md` (key artifact map)
+  - `_internal/ATLAS_REPO_MEMORY.md` (cross-repo boundary note)
+
+**Decisions locked**
+- Atlas should consume BSDA upstream authority files as inputs and not silently redefine them.
+- Cross-degree portability remains an Atlas-owned validation decision after non-BSDA pilot.
+
+**Next starting task**
+- Execute non-BSDA pilot reconciliation run and decide promotion path for shared tooling.
+
+---
+
+## 2026-03-29 (method capture — single-course context packet pattern)
+
+**Done**
+- Captured a reusable Atlas method from `bsda_courses`: normalized per-course context packet designed to fit one course in one LLM context window while preserving source and authority boundaries.
+- Added this method as an approved rule in:
+  - `_internal/ATLAS_CONTROL.md` (locked rule + locked decisions note)
+  - `_internal/ATLAS_REPO_MEMORY.md` (durable pattern under course-page enrichment system)
+
+**Decisions locked**
+- For mixed-source course/degree page design work, Atlas should prefer the single-course context-packet pattern over ad hoc multi-file prompting.
+
+**Next starting task**
+- Apply this packet pattern in the next non-BSDA pilot degree reconciliation run and evaluate portability.
+
+---
+
+## 2026-03-29 (compare visual-review prep — 3-way live, print control removed)
+
+**Done**
+- Confirmed production `/compare` is using the 2-or-3 degree comparison flow (`Compare3PrototypeLab`).
+- Removed compare-level print/PDF control (`Save As PDF`) from the shared 2/3-way compare surface.
+- Removed compare-specific print-mode class toggles tied to that control in:
+  - `src/components/proto/Compare3PrototypeLab.tsx`
+  - `src/app/proto/compare-3/page.tsx`
+- Updated compare design reference to record that print export is intentionally disabled due to color/fidelity issues:
+  - `_internal/page_designs/compare_page.md`
+- Verified no lint regressions (`npm run lint` clean).
+
+**Decisions locked**
+- Compare should be visually reviewed in-browser for layout decisions; print output is not a reliable review medium for color-dependent compare semantics.
+- If print fidelity becomes a requirement later, it should be rebuilt as a dedicated export design pass rather than using raw browser print.
+
+**Next starting task**
+- Run structured in-browser visual inspection pass across key compare scenarios (2-way baseline + 3-way overlap-heavy + 3-way sparse overlap) and lock final layout adjustments.
+
+---
+
+## 2026-03-29 (degree-homepage description reconciliation docs + policy capture)
+
+**Done**
+- Added reusable extraction script to map degree-homepage course descriptions by course code:
+  - `scripts/extract_degree_page_course_enrichment.py`
+- Added reusable comparison script to class degree-homepage description differences against catalog/program-guide descriptions:
+  - `scripts/compare_bsda_description_sources.py`
+- Generated BSDA mapping artifact:
+  - `_internal/bsda_courses/BSDA_DEGREE_PAGE_COURSE_ENRICHMENTS_2026-03-29.json`
+- Updated top-level `README.md` with:
+  - authoritative doc pointers (`ATLAS_CONTROL`, `ATLAS_REPO_MEMORY`, `DEV_LOG`)
+  - current-status note that degree-homepage extraction/comparison must be validated per degree
+- Updated control/memory docs to preserve this as a current policy and bounded workstream:
+  - `_internal/ATLAS_CONTROL.md`
+  - `_internal/ATLAS_REPO_MEMORY.md`
+
+**Decisions locked**
+- Degree-homepage descriptions are an additional source only; they are not auto-authoritative replacements for catalog/program-guide descriptions.
+- Every degree needs an explicit extraction/comparison validation pass before adopting homepage-derived descriptions in policy.
+
+**What's blocked / open**
+- Only BSDA has completed extraction/comparison artifacts so far.
+- Cross-degree portability remains unverified until at least one non-BSDA pilot run is completed and reviewed.
+
+**Next starting task**
+- Run one non-BSDA pilot through extraction + comparison, review mismatch classes and mapping coverage, then decide whether to promote scripts into broader official-resource tooling.
+
+---
+
+## 2026-03-26 (ecosystem index update - state-affiliate network notes)
+
+**Done**
+- Updated `_internal/WGU_ONLINE_ECOSYSTEM_INDEX.md` to add a dedicated state-affiliate/state-partnership layer section.
+- Added tracked state list for older affiliate pattern and newer partnership pattern.
+- Added observed X handle pattern rows for state-affiliate accounts.
+- Added explicit note that WGU Indiana has a state-affiliate YouTube presence (URL marked for follow-up verification).
+
+**Files changed**
+- `_internal/WGU_ONLINE_ECOSYSTEM_INDEX.md`
+
+**Next starting task**
+- Optional verification pass: pin canonical URLs for all state-affiliate social channels (especially state YouTube channels) and add timestamped verification notes.
+
+---
+
+## 2026-03-26 (compare route switch — production `/compare` now uses 2-or-3 flow)
+
+**Done**
+- Replaced production `/compare` page wiring to use `Compare3PrototypeLab` instead of legacy `CompareSelector`.
+- Kept the same compare universe filter (ACTIVE + non-empty roster + `LAB_EXCLUSIONS`) and same lean roster payload construction.
+- Updated `/compare` metadata/intro copy to reflect 2-degree activation with optional third degree.
+- Verified build success after route switch.
+
+**Files changed**
+- `src/app/compare/page.tsx`
+- `_internal/ATLAS_REPO_MEMORY.md` (route role wording)
+
+**Notes**
+- If dev still shows `__webpack_modules__[moduleId] is not a function`, restart dev server and clear `.next` cache (`rm -rf .next`) before relaunching.
+
+**Next starting task**
+- Optional cleanup: retire old `CompareSelector` production docs and refresh compare section in `content_map.txt` to match the new production UI exactly.
+
+---
+
+## 2026-03-26 (course-page enrichment — production baseline wiring)
+
+**Done**
+- Implemented first production course-page enrichment slice on `src/app/courses/[code]/page.tsx`.
+- Added guide-derived `Course Learning Outcomes` section (explicitly labeled as a scraping artifact) sourced from `data/program_guides/enrichment/course_enrichment_candidates.json`.
+- Added production enrichment loader in `src/lib/data.ts`: `getCourseGuideEnrichmentByCode(code)`.
+- Added typed contracts in `src/lib/types.ts` for course guide enrichment candidate data.
+- Added new UI component: `src/components/courses/CourseLearningOutcomes.tsx` with dropdown disclosure blocks for description contexts and outcome sets.
+- Reordered `/courses/[code]` page: compact facts/status bar now appears before About + Course Learning Outcomes.
+- Removed student-facing retired-degree list from the course detail page.
+
+**Decisions locked**
+- Guide-derived course text on production course pages is presented as a **scraping artifact**, not as Areas of Study.
+- Section naming for this layer is **Course Learning Outcomes**.
+- Catalog description remains authoritative; guide-derived content is supplemental.
+
+**Docs updated**
+- `_internal/course_pages/WORK_LOG.md`
+- `_internal/ATLAS_REPO_MEMORY.md`
+- `_internal/ATLAS_CONTROL.md`
+- `data/program_guides/README.md`
+
+**Next starting task**
+- Continue bounded course-page rollout: cert/prereq/reverse-prereq/capstone blocks and multi-variant display policy refinement.
+
+---
+
 ## 2026-03-24/25 (Atlas QA — Sessions 07–10 + gold eval baseline)
 
 **Done**

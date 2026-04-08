@@ -7,7 +7,10 @@ import {
   getHeadingToProgramCode,
   getPrograms,
   getCourseDescription,
+  getCourseGuideEnrichmentByCode,
 } from "@/lib/data";
+import CourseLearningOutcomes from "@/components/courses/CourseLearningOutcomes";
+import DegreeList from "@/components/courses/DegreeList";
 
 type Props = { params: Promise<{ code: string }> };
 
@@ -45,6 +48,7 @@ export default async function CourseDetailPage({ params }: Props) {
 
   // Catalog description
   const catalogDesc = getCourseDescription(code);
+  const guideEnrichment = getCourseGuideEnrichmentByCode(code);
 
   // Normalize current_programs to array
   const currentProgramNames: string[] =
@@ -59,10 +63,9 @@ export default async function CourseDetailPage({ params }: Props) {
     ? [course.colleges_seen]
     : [];
 
-  // Split programs_timeline into current and retired
+  // Split programs_timeline into current appearances only
   type TimelineEntry = { program: string; first_seen: string };
   let currentAppearances: TimelineEntry[] = [];
-  const retiredAppearances: TimelineEntry[] = [];
 
   if (isRichDetail && course.programs_timeline) {
     for (const entry of course.programs_timeline) {
@@ -70,8 +73,6 @@ export default async function CourseDetailPage({ params }: Props) {
       const status = progCode ? codeToStatus[progCode] : undefined;
       if (status === "ACTIVE") {
         currentAppearances.push(entry);
-      } else {
-        retiredAppearances.push(entry);
       }
     }
   } else if (!isRichDetail && course.historical_programs) {
@@ -86,22 +87,14 @@ export default async function CourseDetailPage({ params }: Props) {
       const entry: TimelineEntry = { program: name, first_seen: "" };
       if (status === "ACTIVE") {
         currentAppearances.push(entry);
-      } else {
-        retiredAppearances.push(entry);
       }
     }
   }
 
-  // For active courses, use current_programs for the current section (more authoritative)
-  // and the timeline for retired
+  // For active courses, use current_programs for the current section (more authoritative).
   if (isCurrent && currentProgramNames.length > 0) {
     currentAppearances = currentProgramNames.map((name) => ({ program: name, first_seen: "" }));
   }
-
-  // Title variants
-  const titleVariants = course.observed_titles.filter(
-    (t) => t !== course.canonical_title_current
-  );
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-10">
@@ -144,25 +137,6 @@ export default async function CourseDetailPage({ params }: Props) {
         )}
       </div>
 
-      {/* ── About This Course ─────────────────────────────────────────────── */}
-      {catalogDesc?.description && (
-        <section className="mb-8">
-          <div className="flex items-center gap-2 mb-3">
-            <div className="w-1 h-5 bg-blue-600 rounded" />
-            <h2 className="text-lg font-bold text-slate-800">About This Course</h2>
-            <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
-              WGU Catalog 2026-03
-            </span>
-          </div>
-          <blockquote className="border-l-4 border-blue-100 pl-4 text-slate-700 text-sm leading-relaxed">
-            {catalogDesc.description}
-          </blockquote>
-          <p className="text-xs text-slate-400 mt-2">
-            Official catalog text — WGU-authored.
-          </p>
-        </section>
-      )}
-
       {/* ── Compact facts ─────────────────────────────────────────────────── */}
       <section className="mb-8">
         <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-600 bg-slate-50 border border-slate-200 rounded-lg px-4 py-3">
@@ -199,89 +173,35 @@ export default async function CourseDetailPage({ params }: Props) {
         </div>
       </section>
 
-      {/* ── Included in Current Degrees ───────────────────────────────────── */}
-      {currentAppearances.length > 0 && (
+      {/* ── About This Course ─────────────────────────────────────────────── */}
+      {catalogDesc?.description && (
         <section className="mb-8">
           <div className="flex items-center gap-2 mb-3">
             <div className="w-1 h-5 bg-blue-600 rounded" />
-            <h2 className="text-base font-semibold text-slate-800">
-              Included in Current Degrees ({currentAppearances.length})
-            </h2>
+            <h2 className="text-lg font-bold text-slate-800">About This Course</h2>
+            <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
+              WGU Catalog 2026-03
+            </span>
           </div>
-          <div className="border border-slate-200 rounded-lg overflow-hidden">
-            <ul>
-              {currentAppearances.map((entry, i) => {
-                const progCode = headingToCode[entry.program];
-                return (
-                  <li
-                    key={i}
-                    className="border-b border-slate-100 last:border-0 px-4 py-2.5 text-sm"
-                  >
-                    {progCode ? (
-                      <Link
-                        href={`/programs/${progCode}`}
-                        className="text-blue-700 hover:underline"
-                      >
-                        {entry.program}
-                      </Link>
-                    ) : (
-                      <span className="text-slate-700">{entry.program}</span>
-                    )}
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
+          <blockquote className="border-l-4 border-blue-100 pl-4 text-slate-700 text-sm leading-relaxed">
+            {catalogDesc.description}
+          </blockquote>
+          <p className="text-xs text-slate-400 mt-2">
+            Official catalog text — WGU-authored.
+          </p>
         </section>
       )}
 
-      {/* ── Previously Appeared in Retired Degrees ────────────────────────── */}
-      {retiredAppearances.length > 0 && (
-        <section className="mb-8">
-          <div className="flex items-center gap-2 mb-3">
-            <div className="w-1 h-5 bg-slate-300 rounded" />
-            <h2 className="text-base font-semibold text-slate-500">
-              Previously Appeared in Retired Degrees ({retiredAppearances.length})
-            </h2>
-          </div>
-          <div className="border border-slate-200 rounded-lg overflow-hidden">
-            <ul>
-              {retiredAppearances.slice(0, 50).map((entry, i) => {
-                const progCode = headingToCode[entry.program];
-                return (
-                  <li
-                    key={i}
-                    className="border-b border-slate-100 last:border-0 px-4 py-2 text-sm"
-                  >
-                    <span className="text-slate-400">
-                      {progCode ? (
-                        <Link
-                          href={`/programs/${progCode}`}
-                          className="hover:text-blue-600 hover:underline"
-                        >
-                          {entry.program}
-                        </Link>
-                      ) : (
-                        entry.program
-                      )}
-                    </span>
-                    {entry.first_seen && (
-                      <span className="ml-2 text-xs text-slate-300 font-mono">
-                        from {entry.first_seen}
-                      </span>
-                    )}
-                  </li>
-                );
-              })}
-            </ul>
-            {retiredAppearances.length > 50 && (
-              <div className="px-4 py-2 bg-slate-50 text-xs text-slate-400 border-t border-slate-200">
-                Showing 50 of {retiredAppearances.length} — full history in the downloadable dataset.
-              </div>
-            )}
-          </div>
-        </section>
+      {/* ── Included in Current Degrees ───────────────────────────────────── */}
+      {currentAppearances.length > 0 && (
+        <DegreeList appearances={currentAppearances} headingToCode={headingToCode} courseActive={isCurrent} />
       )}
+
+      {/* ── Course Learning Outcomes ─────────────────────────────────────── */}
+      <CourseLearningOutcomes
+        descriptions={guideEnrichment?.descriptions ?? []}
+        competencySets={guideEnrichment?.competency_sets ?? []}
+      />
 
       {/* ── If no current appearances and course is active ─────────────────── */}
       {isCurrent && currentAppearances.length === 0 && (
@@ -294,35 +214,6 @@ export default async function CourseDetailPage({ params }: Props) {
         </section>
       )}
 
-      {/* ── Also known as (title variants) ───────────────────────────────── */}
-      {titleVariants.length > 0 && (
-        <section className="mb-8">
-          <h3 className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">
-            Also known as in catalog
-          </h3>
-          <ul className="flex flex-col gap-1">
-            {titleVariants.map((t, i) => (
-              <li
-                key={i}
-                className="text-sm text-slate-500 font-mono bg-slate-50 border border-slate-200 rounded px-2 py-1"
-              >
-                {t}
-              </li>
-            ))}
-          </ul>
-          {course.title_variant_detail && (
-            <p className="text-xs text-slate-400 mt-1">{course.title_variant_detail}</p>
-          )}
-        </section>
-      )}
-
-      {/* ── Notes ─────────────────────────────────────────────────────────── */}
-      {(course.notes_confidence || course.notes) && (
-        <div className="mb-8 bg-amber-50 border border-amber-200 rounded p-3 text-xs text-amber-800">
-          <span className="font-semibold">Note: </span>
-          {course.notes_confidence ?? course.notes}
-        </div>
-      )}
 
       {/* Back */}
       <div className="border-t border-slate-100 pt-6">
