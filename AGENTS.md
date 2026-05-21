@@ -28,7 +28,7 @@ npm run dev     # Next.js dev server (port 3000, basePath: /wgu-atlas)
 npm run build   # Static export to out/
 npm run lint    # ESLint
 npm run start   # Production preview (requires build first)
-npm test        # pytest (Python QA subsystem)
+pytest          # Python QA subsystem tests (276 tests)
 ```
 
 ## Watchouts
