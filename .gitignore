@@ -30,6 +30,15 @@ sections_index_v10.json
 degree_snapshots_v10_seed.json
 data/catalog/raw_catalog_texts/*.txt
 
+# Generated QA pipeline outputs — build artifacts, not source
+data/atlas_qa/course_cards.json
+data/atlas_qa/guide_section_cards.json
+data/atlas_qa/program_version_cards.json
+data/atlas_qa/version_diff_cards.json
+data/atlas_qa/embeddings/
+data/atlas_qa/runtime_checks/
+artifacts/
+
 # macOS
 .DS_Store
 .AppleDouble
