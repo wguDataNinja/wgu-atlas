@@ -1,7 +1,7 @@
 # Compare Page — `/compare`
 
 Route: `/compare`
-Reference capture date: 2026-03-20
+Reference capture date: 2026-03-29
 Primary evidence:
 - live compare screenshot reviewed in design session
 - current compare page behavior as observed in UI
@@ -17,6 +17,13 @@ Related docs:
 ## Purpose of this doc
 
 This document preserves the current-state visual and product reading of the Compare Degrees page as a homepage-relevant flagship feature.
+
+Current production state note (2026-03-29):
+- `/compare` now uses the 2-or-3 compare flow.
+- A + B are required to enable compare; C is optional.
+- 2-way view uses the existing lane compare view.
+- 3-way view switches to aligned degree columns.
+- Print/PDF control was removed from compare because browser print output did not preserve intended color-dependent comparison semantics.
 
 It exists to answer:
 

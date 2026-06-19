@@ -1,6 +1,6 @@
 # ATLAS Repo Memory
 
-Last updated: 2026-03-22  
+Last updated: 2026-06-18  
 Role: stable repo memory, runtime facts, durable decisions  
 Use this file for repo orientation, architecture, contracts, and design rationale.  
 This is the long-lived reference companion to `_internal/ATLAS_CONTROL.md`.
@@ -93,12 +93,12 @@ These are not control-plane canon, but they are now the primary long-form factua
 |---|---|---|
 | `/` | homepage / search / framing / research entry surface | core live |
 | `/courses` | course browse and filtering | core live |
-| `/courses/[code]` | course detail with catalog/history context and future guide-enrichment target | core live |
+| `/courses/[code]` | course detail with catalog context, recency/status facts, current-degree usage, and a guide-derived "Course Learning Outcomes" scraping-artifact section | core live |
 | `/programs` | degree/program browse | core live |
 | `/programs/[code]` | guide-enriched degree detail with description, roster, outcomes, official resources, history context, cert/licensure handling, and course-linked Areas of Study | core live |
 | `/schools` | school index and orientation | core live |
 | `/schools/[slug]` | school detail with programs/courses/history context | core live |
-| `/compare` | bounded degree-comparison tool; flagship differentiated comparison surface | flagship supporting live |
+| `/compare` | degree-comparison tool with 2-degree default flow and optional 3rd-degree mode | flagship supporting live |
 | `/timeline` | catalog event/history browsing | supporting live |
 | `/data` | downloadable datasets and schema-oriented transparency | supporting live |
 | `/methods` | methodology, provenance, caveats | supporting live |
@@ -180,15 +180,54 @@ Important config facts:
 - images are configured for GitHub Pages compatibility
 - GitHub Actions deploy with `NEXT_PUBLIC_BASE_PATH=/wgu-atlas`
 
-### Upstream build dependency
+### Catalog mirror and upstream build dependency
 
-Site data builds depend on a separate repo: `wgu-reddit` (specifically `WGU_catalog/outputs/`).
+Atlas has a local catalog artifact mirror at `data/catalog/`. As of 2026-06-18,
+that mirror spans 111 extracted catalog editions from 2017-01 through 2026-06.
+The three missing archive editions remain 2017-02, 2017-04, and 2017-06.
+
+The acquisition/parser/change-tracking pipeline still physically lives in
+`/Users/buddy/Desktop/WGU-Reddit/WGU_catalog`, but the target boundary is a
+future dedicated `wgu-catalog` repo. Atlas should consume stable catalog outputs
+or its committed/local mirror, not parser internals.
 
 Key environment variables for running build scripts:
-- `WGU_REDDIT_PATH` — path to `wgu-reddit/WGU_catalog/outputs/`
+- `WGU_CATALOG_OUTPUTS` — preferred path to catalog outputs or the Atlas-local `data/catalog/` mirror
+- `WGU_REDDIT_PATH` — backward-compatible alias for the old `wgu-reddit/WGU_catalog/outputs/` path
 - `WGU_ATLAS_DATA` — path to this repo's `data/` directory (defaults to `../data` relative to scripts/)
 
-Pre-generated artifacts are committed in `public/data/` and `data/`. Re-running build scripts is only needed when new catalog data has been processed in the `wgu-reddit` repo. A new maintainer cannot run a full data rebuild without the external repo present.
+Pre-generated artifacts are committed in `public/data/` and `data/`. Re-running
+site-data build scripts is only needed when new catalog data has been processed
+and mirrored. The current public runtime exports still use the frozen 2026-03
+current-site snapshot (`data/catalog/trusted/2026_03/`); the 2026-04, 2026-05,
+and 2026-06 editions are present in history/diff/raw-text mirror artifacts but
+are not yet a new site-current trusted snapshot.
+
+Operational parser rule: `parse_catalog_v11.py` is authoritative only when run
+over the full corpus. A single-edition parser run rebuilds global indexes from
+an incomplete input set and invalidates downstream change-tracking and edition
+diff outputs.
+
+Recent verified mirrored transitions:
+- 2026-03 -> 2026-04: no course or program changes
+- 2026-04 -> 2026-05: 28 course additions and 2 program additions (`BSAIE`, `BSPM`)
+- 2026-05 -> 2026-06: `E200` added, `D436` removed, no program additions/removals, 2 version changes
+
+### Cross-repo boundary (Atlas <> bsda_courses)
+
+Atlas collaborates with `bsda_courses` for BSDA-specific course-guide synthesis and source reconciliation work.
+
+Boundary rule:
+- Atlas owns reusable extraction/comparison methods and cross-degree portability decisions.
+- `bsda_courses` owns BSDA upstream authority files used for course universe and cert/nanodegree overrides.
+
+Upstream BSDA authority inputs (owned in `bsda_courses`):
+- `/Users/buddy/projects/bsda_courses/data/bsda_authoritative_mappings.json`
+- `/Users/buddy/projects/bsda_courses/data/bsda_courses_condensed.json`
+- `/Users/buddy/projects/bsda_courses/data/data_analytics_courses.json`
+
+Reference boundary update:
+- `_internal/bsda_courses/ATLAS_BSDA_BOUNDARY_UPDATE_2026-03-29.md`
 
 ---
 
@@ -227,6 +266,7 @@ Pre-generated artifacts are committed in `public/data/` and `data/`. Re-running 
 | official resource placements | `public/data/official_resource_placements.json` | curated official-resource attachment layer |
 | named events / curated major events | `data/site/` and `public/data/` | event curation/build support |
 | lineage artifacts | `data/lineage/` and `data/` | continuity/lineage analysis and enrichment |
+| catalog mirror | `data/catalog/` | local mirror of catalog raw texts, helpers, change tracking, edition diffs, and program-name artifacts |
 
 ### Runtime principle
 
@@ -730,11 +770,14 @@ Publish guide-derived content — descriptions, competency bullets, cert signals
 
 ### Status
 
-**READY, NOT ACTIVE.**
+**PARTIALLY ACTIVE (initial production wiring shipped 2026-03-26).**
 
 - design/prototype phase closed on 2026-03-22
-- implementation path is known, but no production wiring has started
-- next time this workstream is selected, begin from prototype conclusions and implementation targets rather than reopening core design questions
+- production now shows a baseline `Course Learning Outcomes` section on `/courses/[code]` from guide scraping artifacts
+- section is explicitly labeled as a scraping artifact (supplemental, not official catalog text)
+- compact facts/status bar is positioned before About + Course Learning Outcomes on course pages
+- retired-degree list is no longer shown on the student-facing course page
+- cert/prereq/reverse-prereq/capstone blocks are still pending
 
 ### Available inputs (from closed program-guides workstream)
 
@@ -801,6 +844,24 @@ Publish guide-derived content — descriptions, competency bullets, cert signals
 ### Important principle
 
 Guide-derived content must be labeled with guide provenance (source, version/date). Catalog description remains authoritative; guide description is supplementary context. Never surface guide content without attribution.
+
+### Single-context packet pattern (durable method)
+
+For course/degree page design decisions that combine heterogeneous evidence (catalog + guide + official-web + relationship/history signals), Atlas can use a normalized per-course context packet so one course fits in one LLM context window with provenance intact.
+
+Pattern requirements:
+- one object per course with stable field groups (identity, official framing, competency context, prereq/relationship context, history/stability, source/override tracking)
+- explicit authority fields for non-inferable classifications (for example cert/nanodegree overrides)
+- no hidden source blending; each field must preserve basis/source class
+- missing data represented explicitly (null/empty/default) rather than omitted silently
+
+Why this matters:
+- improves design iteration speed for course/degree page blocks
+- reduces cross-source ambiguity during LLM-assisted synthesis
+- keeps authority boundaries auditable when multiple evidence sources disagree
+
+Current practical reference:
+- BSDA packet workflow and artifacts in `../bsda_courses/_internal/sessions/session_7/`
 
 ### Multi-source overlap resolution pattern
 
@@ -945,6 +1006,8 @@ This is the main deterministic build step for runtime-facing site data.
 | `generate_program_history_artifacts.py` | program-history transformation | active core for lineage pipeline |
 | `generate_program_history_enrichment.py` | enrichment layer for history/site use | active core for lineage pipeline |
 | `generate_content_map.js` | content-proofing / reference artifact generation | occasional utility |
+| `extract_degree_page_course_enrichment.py` | map degree-homepage course descriptions to course codes for evidence comparison | pilot utility (cross-degree validation required) |
+| `compare_bsda_description_sources.py` | compare degree-homepage descriptions vs catalog/program-guide descriptions | pilot utility (policy support) |
 
 ### Important build principle
 
@@ -1033,7 +1096,7 @@ These are repo boundaries or mismatches that matter for rebuild assumptions and 
 - `program_enriched.json` outcomes coverage is partial: 74/114 programs populated; 40 have empty outcomes arrays (2026-03 extraction)
 - Full regeneration pipeline depends on non-committed upstream file `course_index_v10.json` (~59 MB)
 - School lineage in runtime is hardcoded in `src/lib/data.ts` constants, not derived from a dedicated artifact
-- Missing catalog editions: `2017-02`, `2017-04`, `2017-06`
+- Missing catalog editions: `2017-02`, `2017-04`, `2017-06`; Atlas-local mirror otherwise spans `2017-01` through `2026-06`
 - Homepage summary uses stale `total_course_codes_ever: 1594` vs actual canonical 1,646 rows
 
 ---
@@ -1240,6 +1303,12 @@ Do not present Atlas summaries as source-authored text. Observed vs interpreted 
 ### Timeline and lineage separation
 
 Timeline events (`public/data/events.json`) and program-lineage events are separate systems with separate recall logic. Do not merge or conflate them.
+
+### Degree-homepage description policy
+
+- Degree-homepage course descriptions are an additional evidence source, not an automatic authoritative replacement for catalog/program-guide descriptions.
+- For any degree where homepage extraction is used, run a degree-specific comparison pass against existing catalog/program-guide artifacts and record classed diffs (exact/near/different/missing).
+- Script portability is not assumed across degrees. WGU degree pages can differ in section structure and description-expansion behavior; each degree run requires explicit validation before policy adoption.
 
 
 ## 18a. Doc freshness note (2026-03-24)

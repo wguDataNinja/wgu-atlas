@@ -1,6 +1,6 @@
 # WGU Online Ecosystem Index
 
-Last updated: 2026-03-20 (rev 6)
+Last updated: 2026-03-26 (rev 7)
 Role: internal source atlas for official/unofficial/community/media surfaces related to WGU
 Status: reference only; inclusion here does not imply product surfacing
 
@@ -56,6 +56,74 @@ Current Atlas posture:
 | WGU TikTok | https://www.tiktok.com/@wgu?lang=en | social | public | medium | low | candidate_homepage | Official short-form social |
 | WGU YouTube | https://www.youtube.com/@wgu | video | public | high | low | candidate_homepage | Main official video channel |
 | WGU Career Services YouTube | https://www.youtube.com/@wgucareerservices | video | public | medium | low | candidate_homepage | Official career/professional-development channel |
+
+---
+
+## 4.1 State-affiliate / state-partnership layer (official-adjacent network pattern)
+
+WGU's online footprint includes a state-branded layer beyond the national institutional channels.
+This appears to be used for state-level marketing, workforce/government partnership visibility,
+scholarship promotion, and local PR.
+
+### 4.1.1 States with formal affiliate/partnership structure (tracked set)
+
+Older state-affiliate pattern (historically state-endorsed entities):
+- Indiana
+- Washington
+- Texas
+- Missouri
+- Tennessee
+- Nevada
+- North Carolina
+- Ohio
+
+Newer state-partnership pattern (tracked in official state-partnership messaging):
+- Montana
+- Nebraska
+- Arizona
+- Colorado
+
+### 4.1.2 X/Twitter state-handle pattern (official-looking state layer)
+
+Observed dedicated state handles include:
+- `@WGUIndiana`
+- `@WGUOhio`
+- `@WGUTexas`
+- `@WGUTennessee`
+- `@WGUWashington`
+- `@WGUNevada`
+- `@WGUMissouri`
+- `@WGUNC` (WGU North Carolina)
+
+### 4.1.3 Cross-platform note
+
+This state-layer pattern is not X-only.
+Historical state-affiliate materials have shown state-specific social presence across multiple
+platforms (Facebook, LinkedIn, Instagram, YouTube, X), though platform separation is inconsistent
+by state and era.
+
+### 4.1.4 State-affiliate social inventory (seed rows)
+
+| name | url_or_status | surface_type | official_status | access | current_product_status | trust_risk | notes |
+|---|---|---|---|---|---|---|---|
+| WGU Indiana (X) | https://x.com/WGUIndiana | social | official_adjacent | public | research_only | low | State-affiliate handle pattern |
+| WGU Ohio (X) | https://x.com/WGUOhio | social | official_adjacent | public | research_only | low | State-affiliate handle pattern |
+| WGU Texas (X) | https://x.com/WGUTexas | social | official_adjacent | public | research_only | low | State-affiliate handle pattern |
+| WGU Tennessee (X) | https://x.com/WGUTennessee | social | official_adjacent | public | research_only | low | State-affiliate handle pattern |
+| WGU Washington (X) | https://x.com/WGUWashington | social | official_adjacent | public | research_only | low | State-affiliate handle pattern |
+| WGU Nevada (X) | https://x.com/WGUNevada | social | official_adjacent | public | research_only | low | State-affiliate handle pattern |
+| WGU Missouri (X) | https://x.com/WGUMissouri | social | official_adjacent | public | research_only | low | State-affiliate handle pattern |
+| WGU North Carolina (X) | https://x.com/WGUNC | social | official_adjacent | public | research_only | low | State-affiliate handle pattern (`@WGUNC`) |
+| WGU Indiana (YouTube) | state_affiliate_channel_present_url_to_verify | video | official_adjacent | public | research_only | low | Indiana has a state-affiliate YouTube presence; exact canonical channel URL should be pinned in next verification pass |
+
+### 4.1.5 Product implication
+
+For Atlas ecosystem work, treat this as a distinct official-adjacent layer:
+- national official WGU channels
+- state-affiliate/state-partnership channels
+- unofficial community channels
+
+Do not mix these without explicit provenance labels.
 
 ---
 

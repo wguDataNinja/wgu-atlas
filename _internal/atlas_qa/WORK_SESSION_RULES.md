@@ -31,6 +31,16 @@ Sessions are numbered linearly: `00_atlas_foundation`, `01_canonical_objects`, `
 
 ---
 
+## Log destination rule
+
+**Write session detail to the session's own `DEV_LOG.md` — not `_internal/DEV_LOG.md`.**
+
+- All work log entries during a session go to `work_sessions/NN_<name>/DEV_LOG.md`.
+- At session close, add one terse summary line to `_internal/DEV_LOG.md` (what changed, decisions locked, next step). That's it.
+- Do not write full session detail to `_internal/DEV_LOG.md`. It is a project-level ledger, not a session log.
+
+---
+
 ## DEV_LOG.md format
 
 Append-only. Each entry includes:

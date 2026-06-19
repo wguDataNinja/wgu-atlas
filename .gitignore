@@ -28,6 +28,7 @@ venv/
 course_index_v10.json
 sections_index_v10.json
 degree_snapshots_v10_seed.json
+data/catalog/raw_catalog_texts/*.txt
 
 # macOS
 .DS_Store

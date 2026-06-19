@@ -66,8 +66,8 @@ These documents describe what a page currently is: route, layout, visible sectio
 - **`homepage.md`**
   Current-state documentation for `/`. Captures structure, section hierarchy, and current homepage limitations relative to the site's strongest inner surfaces.
 
-- **`program_detail.md`**
-  Current-state documentation for `/programs/[code]`. BSCS is used as the reference example because it activates all major enrichment layers — description, outcomes, roster, history, and sidebar resources.
+- **`program_detail.md`** *(archived 2026-03-22)*
+  Archived to `_internal/archive/docs/program_detail.md`. Self-identified as stale before archival. Described the page before guide wiring (Sessions 29–35). For the current section inventory see ATLAS_REPO_MEMORY §8 or `src/app/programs/[code]/page.tsx`.
 
 - **`compare_page.md`**
   Current-state visual and product reading of `/compare`, based on design-session screenshot analysis. Preserves why Compare is a flagship feature and its strongest homepage-proof characteristics.
@@ -145,10 +145,10 @@ Homepage work should proceed in this order:
 1. `homepage.md`
 2. `catalog_raw_analysis.md`
 3. `wgu_public_site_student_experience.md`
-4. `program_detail.md`
-5. `compare_page.md`
-6. `source_vs_atlas_program_entry.md`
-7. `homepage_design_session_2026-03.md`
+4. `compare_page.md`
+5. `source_vs_atlas_program_entry.md`
+6. `homepage_design_session_2026-03.md`
+7. `homepage_design_session_2026_03_22.md`
 8. `screenshot_analysis_log.md`
 
 This order moves from the current homepage → source baselines → strongest Atlas surfaces → homepage strategy and visual evidence.
@@ -173,10 +173,13 @@ Do not treat this folder as a task tracker, dev log, implementation checklist, o
 ## File index
 
 - `homepage.md`
-- `program_detail.md`
 - `compare_page.md`
 - `catalog_raw_analysis.md`
 - `source_vs_atlas_program_entry.md`
-- `wgu_public_site_student_experience.md` *(in progress)*
+- `wgu_public_site_student_experience.md`
 - `screenshot_analysis_log.md`
 - `homepage_design_session_2026-03.md`
+- `homepage_design_session_2026_03_22.md`
+
+*Archived (no longer active):*
+- `program_detail.md` → `_internal/archive/docs/program_detail.md` (self-identified stale; pre-guide-wiring page inventory)

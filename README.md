@@ -2,7 +2,7 @@
 
 **Explore courses, programs, catalog changes, and student discussion**
 
-WGU Atlas is a public-facing reference and explorer built from the validated WGU public catalog archive. It tracks course and program history across 108 catalog editions spanning 2017 through 2026, with a timeline of major catalog events and (planned) student discussion context layered on top.
+WGU Atlas is a public-facing reference and explorer built from the validated WGU public catalog archive. Its Atlas-local catalog mirror now spans 111 catalog editions from 2017-01 through 2026-06, while the current committed public site data still uses the frozen 2026-03 current-edition snapshot.
 
 *Created by WGU-DataNinja*
 
@@ -50,16 +50,22 @@ Active branch: `homepage-redesign` — UI polish in progress. `main` is the stab
 
 ## Data provenance
 
-All catalog data is derived from the official WGU public course catalog, scraped and parsed across 108 editions (2017-01 through 2026-03). Three editions are missing from the archive (2017-02, 2017-04, 2017-06).
+All catalog data is derived from the official WGU public course catalog. The mirrored history layer in `data/catalog/` covers 111 editions (2017-01 through 2026-06). Three editions are missing from the archive (2017-02, 2017-04, 2017-06).
 
-The underlying archive and parser live in a separate internal research repository. This repo contains only the pre-generated site-ready data artifacts.
+The underlying acquisition/parser pipeline currently lives in a separate internal research repository and is expected to move toward a dedicated `wgu-catalog` boundary. This repo contains the Atlas-local mirror plus pre-generated site-ready data artifacts.
 
 Key facts about the current data layer:
+- **111** catalog editions mirrored in `data/catalog/` (latest mirrored edition: 2026-06)
 - **838** active AP course codes (2026-03 baseline)
 - **52** active certificate codes
 - **114** program body blocks
 - **1,646** total course codes (active + retired + cert)
 - **41** named catalog events
+
+Recent mirrored edition changes:
+- 2026-04 added no course or program changes relative to 2026-03
+- 2026-05 added 28 courses and 2 programs (`BSAIE`, `BSPM`) relative to 2026-04
+- 2026-06 added `E200`, removed `D436`, and had no program additions/removals relative to 2026-05
 
 ---
 
@@ -132,7 +138,7 @@ wgu-atlas/
 
 ### What we did
 
-- **108 catalog editions** scraped and parsed (2017-01 through 2026-03), covering every program roster across that span
+- **111 catalog editions** scraped and parsed in the mirrored history layer (2017-01 through 2026-06), with the public site-current snapshot still frozen at 2026-03
 - **Cross-referenced two independent sources:** the edition history and the 2026-03 catalog snapshot; any code missing from the snapshot is flagged retired rather than silently dropped
 - **Internal consistency check:** every course code appearing in active program rosters (`program_enriched.json`, scraped from catalog program pages) is present in `canonical_courses.csv` — zero gaps found
 - **Per-code trust signals** computed and stored: `ghost_flag`, `single_appearance_flag`, `stability_class`, `current_title_confidence`, `title_variant_class` — each row carries its own confidence indicator rather than a single dataset-wide claim
@@ -144,7 +150,7 @@ This dataset is **comprehensive for what the scraper saw** but cannot guarantee 
 
 - **Certificate codes only tracked from 2024-09 forward** — cert courses that existed earlier or under different structures may not appear
 - **Courses not in any program roster** — if a course exists only as a standalone page the scraper never visited, it would be absent from the entire universe
-- **Post-2026-03 additions** — nothing added after the last scrape run is present
+- **Post-2026-03 current-site snapshot lag** — history/diff artifacts are mirrored through 2026-06, but current active-course/program site exports still require a newer trusted snapshot before 2026-06 can become the site-current baseline
 - **No independent external cross-check** — there is no WGU API or authoritative public course list to validate against
 
 ### Human review path
@@ -165,6 +171,5 @@ Any code that appears in student posts but is absent from the dataset is a genui
 ## Disclaimer
 
 WGU Atlas is an independent community project and is not affiliated with Western Governors University. All catalog data is derived from WGU's publicly available course catalog. No proprietary or internal WGU data is used.
-
 
 

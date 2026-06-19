@@ -46,12 +46,14 @@ If local docs conflict on current progress or next-step sequencing, trust in thi
 | **Atlas QA** | **Active** — Sessions 07–12 complete + gold eval run 4 done (87/100); A/B/C/E/G pass gates; F regressed (F-089 retry side-effect) | Fix F-089 regression (retry fires on correct model abstention for out-of-scope query) | Ollama must be running | Restrict or remove Fix 3 retry; re-run eval |
 | **Degree pages — review/improvement** | **CLOSED** — Sessions 1–2 complete (2026-03-22); all priority fixes implemented and live | No active objective | none | see `_internal/degree_pages/WORK_LOG.md` for deferred follow-ups |
 | Program guides / degree pages (wiring) | **CLOSED OUT** — extraction complete, artifacts built, degree pages wired. Guide-derived content is live. | No active objective — narrow follow-ups exist (cert review queue, course-page prereqs, variant policy) but are not the active track | none | see `data/program_guides/README.md` for follow-up list |
-| Courses (course-page enrichment) | **READY, NOT ACTIVE — design/prototype phase closed; implementation path is known** | No active objective until selected | not selected as current implementation track | when selected: build variant-toggle UI, wire enrichment into production courses/[code]/page.tsx, then add prereq/cert/reverse-prereq blocks |
+| Courses (course-page enrichment) | **PARTIALLY ACTIVE — initial production wiring landed (2026-03-26)** | Continue incremental rollout (cert/prereq/reverse-prereq/capstone + variant handling) | bounded implementation bandwidth while homepage remains primary active track | iterate production `/courses/[code]` enrichment blocks without reopening core design decisions |
+| Degree-homepage description reconciliation (cross-degree tooling) | **INITIALIZED — BSDA pass complete (2026-03-29)** | Treat degree-homepage text as an additional source and compare it against catalog/program-guide descriptions before policy adoption | each degree page has different structure/expand behavior; scripts are not plug-and-play without validation | run one non-BSDA pilot degree through extraction + comparison and review mismatch classes |
 | Homepage redesign | **ACTIVE — primary product/design track** | Define and design a research-first homepage that presents Atlas as a student research surface for curriculum inspection, degree comparison, and catalog history | proof-module copy and implementation plan not yet locked | convert homepage strategy into section-level messaging, module specs, and implementation-ready homepage plan |
 | Official resource layer | active, bounded queueing established | continue conservative attachment expansion with provenance clarity | placement model expansion and completeness audits are still incomplete | reconcile regulatory queue vs current placements, then run outcomes/accreditation completeness pass |
 | Continuity review | initialized, lightweight | validate compact review method | first tiny validation batch not created | create 4-card validation batch |
 | Program lineage / degree history | ready, not selected | keep system stable for later export/UI if chosen | export/runtime wiring not implemented | no action unless selected |
 | Catalog baseline / site runtime | stable | preserve current deterministic site behavior | none immediate | no action |
+| Catalog mirror / future wgu-catalog boundary | UPDATED 2026-06-18 — mirror spans 111 editions through 2026-06; site-current snapshot remains 2026-03 | Keep Atlas consuming local `data/catalog/` mirror and document split-readiness | no trusted 2026-06 current-site snapshot yet | create trusted 2026-06 snapshot before rebasing public runtime exports |
 
 ---
 
@@ -257,6 +259,33 @@ Priority order:
 
 ---
 
+### 6.3b Catalog mirror / pipeline boundary
+
+**Status**
+- Atlas-local mirror refreshed on 2026-06-18
+- `data/catalog/` now includes raw text and derived history artifacts through 2026-06
+- public runtime exports still use the frozen 2026-03 current-site snapshot
+
+**Verified mirror facts**
+- 111 raw catalog text editions mirrored, spanning 2017-01 through 2026-06
+- missing editions remain 2017-02, 2017-04, 2017-06
+- `2026-03 -> 2026-04`: no course/program changes
+- `2026-04 -> 2026-05`: 28 course additions and 2 program additions (`BSAIE`, `BSPM`)
+- `2026-05 -> 2026-06`: `E200` added, `D436` removed, no program additions/removals, 2 version changes
+
+**Locked operational caution**
+- `parse_catalog_v11.py` is authoritative only for full-corpus runs. Single-edition parser runs rebuild global indexes from incomplete input and invalidate downstream change tracking/diffs.
+
+**Boundary direction**
+- Current physical pipeline home: `/Users/buddy/Desktop/WGU-Reddit/WGU_catalog`
+- Future target: `wgu-catalog` owns acquisition, parsing, validation, change tracking, and edition diffs
+- Atlas should consume `data/catalog/` or a stable catalog-output directory via `WGU_CATALOG_OUTPUTS`; `WGU_REDDIT_PATH` is compatibility only
+
+**Next bounded step**
+- Produce/freeze a trusted 2026-06 current snapshot before attempting to regenerate public runtime exports against 2026-06.
+
+---
+
 ### 6.4 Degree pages — review/improvement
 
 **Status:** CLOSED — Sessions 1–2 complete (2026-03-22)
@@ -308,7 +337,38 @@ Priority order:
 - `_internal/project_overview/02_SCOPE_AND_ACCOMPLISHMENTS.md`
 
 **Next bounded step**
-- turn strategy into implementation-ready homepage module/copy/spec artifact
+- turn strategy into implementation-ready homepage module/copy/spec artifact; include in-browser visual inspection of compare layouts (2-way + 3-way scenarios) as a homepage proof-module lock step
+
+---
+
+### 6.6 Degree-homepage description reconciliation (cross-degree)
+
+**Status**
+- initialized with BSDA baseline artifacts (2026-03-29)
+- extraction and comparison scripts created
+- intended as evidence-policy support, not auto-ingestion
+
+**What exists**
+- degree-page extraction script:
+  - `scripts/extract_degree_page_course_enrichment.py`
+- source-comparison script:
+  - `scripts/compare_bsda_description_sources.py`
+- BSDA generated artifacts:
+  - `_internal/bsda_courses/BSDA_DEGREE_PAGE_COURSE_ENRICHMENTS_2026-03-29.json`
+  - external session artifact: `/Users/buddy/projects/bsda_courses/_internal/sessions/session_7/bsda_description_source_comparison_2026-03-29.{json,md}`
+
+**Current finding (BSDA)**
+- 41/42 degree-page descriptions are exact or punctuation-only matches to catalog description text
+- 1/42 (`D502`) is materially different (generic capstone block vs course-specific catalog capstone text)
+
+**Locked rule**
+- degree-homepage descriptions are an additional source only
+- they are not auto-authoritative replacements for catalog/program-guide descriptions
+- each new degree run requires explicit validation because page structures and expansion behavior vary
+- the BSDA-style single-course context-packet method (one normalized object per course for one LLM context window) is approved as a reusable upstream design pattern for Atlas page design work
+
+**Next bounded step**
+- run one non-BSDA pilot degree through extraction/comparison, validate mapping coverage and mismatch classes, then decide if scripts can be promoted to shared official-resource tooling
 
 ---
 
@@ -339,6 +399,7 @@ These should not be reopened by default.
 **Ecosystem index note:** A broader WGU online ecosystem index now exists at `_internal/WGU_ONLINE_ECOSYSTEM_INDEX.md` for future homepage/community/social exploration. It does not change the current product posture or the deferred status of Reddit/community integration.
 
 - Multi-source overlap resolution (catalog vs guide description text) uses an artifact-first, bounded-LLM workflow: deterministic comparison index → batched LLM annotation files → explicit block authority and display policy. Do not let LLMs improvise policy directly on raw source corpora. The resolution artifacts live in `_internal/atlas_qa/`.
+- For mixed-source course/degree design work, prefer a normalized single-course context-packet artifact (catalog + guide + official-web + relationships + history + explicit authority/override fields) so one course can be evaluated in one LLM context window with provenance visible.
 
 ---
 
@@ -361,8 +422,10 @@ These should not be reopened by default.
 1. **Atlas QA — session 12b (micro-fix):** remove Fix 3 retry from `generation.py` (introduced F-089 regression — retry overrides correct model abstention on out-of-scope queries); update `GenerationOutput.retried` field removal or leave as dead flag; re-run eval to confirm F gate recovers; no spec file needed for a one-function revert. Session 12 complete ✅.
 2. **Homepage redesign — implementation planning pass:** convert the 2026-03-22 homepage strategy into implementation-ready section/module specs, copy hierarchy, and build order.
 3. **Official resource — bounded next pass:** reconcile regulatory queue against current placements, then run outcomes/accreditation completeness audit. Working area: `_internal/official_resource/`.
-4. **Course-page enrichment — production implementation planning:** only after homepage planning is stabilized; start from prototype conclusions and define production wiring sequence.
+4. **Course-page enrichment — incremental production rollout:** baseline "Course Learning Outcomes" scraping-artifact section is live on `/courses/[code]`; continue bounded block rollout (cert/prereq/reverse-prereq/capstone) after homepage planning milestones.
 5. **Continuity review first batch:** run first 4-card batch (`_internal/continuity_review/validation_batch_01.md`). Low priority relative to items 1–3.
+6. **Degree-homepage reconciliation pilot (non-BSDA):** run the extraction/comparison scripts on one additional degree page, then assess portability and failure modes before broader rollout.
+7. **Catalog current-snapshot refresh:** when selected, create and validate trusted 2026-06 current snapshot artifacts, then rerun Atlas site-data exports with `WGU_CATALOG_OUTPUTS=data/catalog`.
 
 **Guide-adjacent items that can be picked up any time without blocking other work:**
 - Cert review queue (21 rows) — editorial judgment against source text
@@ -393,6 +456,8 @@ These should not be reopened by default.
 | Program guide extraction — enrichment coverage | `data/program_guides/enrichment/course_enrichment_summary.json` |
 | Program guide extraction — course-matching audit | `data/program_guides/bridge/merge_summary.json` |
 | Course/program text overlap policy + annotation artifacts | `_internal/atlas_qa/BLOCK_AUTHORITY_AND_DISPLAY_POLICY.md` and `_internal/atlas_qa/` |
+| Degree-homepage extraction/comparison tooling (pilot) | `scripts/extract_degree_page_course_enrichment.py`, `scripts/compare_bsda_description_sources.py`, `_internal/bsda_courses/BSDA_DEGREE_PAGE_COURSE_ENRICHMENTS_2026-03-29.json` |
+| Atlas <> bsda_courses boundary update | `_internal/bsda_courses/ATLAS_BSDA_BOUNDARY_UPDATE_2026-03-29.md` |
 | Official-resource module materials | `_internal/official_resource/` |
 | Continuity-review materials | `_internal/continuity_review/` |
 | Lineage data + decisions | `data/lineage/` |

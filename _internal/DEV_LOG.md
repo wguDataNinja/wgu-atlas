@@ -5,6 +5,31 @@ Each entry records what changed, decisions locked, what's blocked, and the next 
 
 ---
 
+## 2026-06-18 (catalog mirror refresh + split-readiness docs)
+
+**Done**
+- Refreshed Atlas-local `data/catalog/` mirror from `/Users/buddy/Desktop/WGU-Reddit/WGU_catalog`.
+- Mirrored `change_tracking/`, `edition_diffs/`, `helpers/`, `program_names/`, and `raw_catalog_texts/`.
+- Verified 111 raw text editions through 2026-06; missing editions remain 2017-02, 2017-04, 2017-06.
+- Updated catalog/docs control surfaces: `data/catalog/README.md`, `README.md`, `README_INTERNAL.md`, `_internal/ATLAS_CONTROL.md`, `_internal/ATLAS_REPO_MEMORY.md`.
+- Updated `scripts/build_site_data.py` path config to prefer `WGU_CATALOG_OUTPUTS`, keep `WGU_REDDIT_PATH` compatibility, and default to `data/catalog/`.
+- Added `.gitignore` rule for `data/catalog/raw_catalog_texts/*.txt`; raw texts are locally mirrored large build inputs, not commit targets.
+
+**Decisions locked**
+- Raw PDFs were not mirrored into Atlas.
+- `trusted/2026_03/` remains the frozen public site-current snapshot; 2026-06 history artifacts are mirrored but do not make 2026-06 the site-current baseline.
+- `parse_catalog_v11.py` must be run full-corpus for authoritative outputs; single-edition runs invalidate global indexes and downstream diffs.
+
+**Blocked / open**
+- No trusted 2026-06 current snapshot exists yet.
+- Public runtime exports in `public/data/` still report 2026-03 current-site state.
+- Verified artifacts disagree with the initial session prompt: `2026-04 -> 2026-05` has 28 course additions and 2 program additions (`BSAIE`, `BSPM`).
+
+**Next starting task**
+Create and validate a trusted 2026-06 current snapshot, then rerun Atlas site-data exports with `WGU_CATALOG_OUTPUTS=data/catalog`.
+
+---
+
 ## 2026-04-08 (UI polish — compare, course, and degree pages)
 
 **Branch:** `homepage-redesign`

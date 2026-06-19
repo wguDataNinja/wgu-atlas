@@ -166,14 +166,6 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
     [source: src/app/courses/[code]/page.tsx:25]
 
 ----------------------------------------------------------------------
-  Section: About This Course
-----------------------------------------------------------------------
-  H2: About This Course
-  Source badge: WGU Catalog 2026-03
-  Content: {catalogDesc.description}  (official catalog text, blockquote)
-  Attribution: Official catalog text — WGU-authored.
-
-----------------------------------------------------------------------
   Section: Compact Facts Bar
 ----------------------------------------------------------------------
   Inline facts row:  First in catalog  |  Status  |  Last seen (if retired)  |  Current degrees (if active)  |  Total degree appearances
@@ -182,14 +174,23 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   Section: Included in Current Degrees
 ----------------------------------------------------------------------
   H2: Included in Current Degrees ({N})
-  List of linked degree names — linked to /programs/[code] when resolvable.
+  List of linked degree names - linked to /programs/[code] when resolvable.
 
 ----------------------------------------------------------------------
-  Section: Previously Appeared in Retired Degrees
+  Section: About This Course
 ----------------------------------------------------------------------
-  H2: Previously Appeared in Retired Degrees ({N})
-  Muted (slate-400) list — linked when resolvable. first_seen date shown if available.
-  Overflow note: Showing 50 of {N} — full history in the downloadable dataset.
+  H2: About This Course
+  Source badge: WGU Catalog 2026-03
+  Content: {catalogDesc.description}  (official catalog text, blockquote)
+  Attribution: Official catalog text - WGU-authored.
+
+----------------------------------------------------------------------
+  Section: Course Learning Outcomes
+----------------------------------------------------------------------
+  H2: Course Learning Outcomes
+  Badge: scraping artifact
+  Source note: Guide-derived course text from program-guide scraping artifacts.
+  Structure: dropdown disclosures for description contexts and outcome sets.
 
 ----------------------------------------------------------------------
   Section: Also known as
@@ -367,37 +368,30 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
 ----------------------------------------------------------------------
   H1: Compare Degrees
     [source: src/app/compare/page.tsx:9]
-  Description: Select two degrees to compare their course rosters side by side. Shared courses, unique courses, and overlap metrics are shown for each comparison.
+  Description: Select two degrees to activate compare, then optionally add a third. Two-degree mode preserves the lane compare behavior; three-degree mode uses aligned degree columns.
   Meta title: Compare Degrees
-  Meta description: Compare WGU degree course rosters side by side. See shared courses, track-specific courses, and overlap metrics.
+  Meta description: Compare 2 or 3 WGU degree course rosters. Two-degree mode uses the current lane compare view; third degree is optional.
 
 ----------------------------------------------------------------------
-  CompareSelector UI
+  Compare Orchestrator UI
 ----------------------------------------------------------------------
-  [source: src/components/compare/CompareSelector.tsx]
+  [source: src/components/proto/Compare3PrototypeLab.tsx]
 
   Universe: active programs with non-empty rosters, excluding LAB_EXCLUSIONS (6 programs).
-  Sibling logic: same college + same degree level as the selected degree (not pilot-family gated).
+  Sibling logic: same college + same degree level as degree A.
 
-  Step 1 panel:
-    Header: Choose a degree
-    [source: src/components/compare/CompareSelector.tsx:210]
-    Filters: All colleges (default) + All levels (default)
-    Empty state: No degrees match these filters.
-    Footer note: {N} degrees shown. Select one to see comparable degrees in step 2.
+  Selection flow:
+    Step 1: Choose degree A
+    Step 2: Choose degree B (compare becomes available)
+    Step 3: Optional degree C
 
-  Step 2 panel:
-    Header: Compare with
-    Prompt (before step 1): Select a degree in step 1 first.
-    No siblings text: No comparable degrees.
-    No siblings sub-text: No other degrees share the same college and level as this degree.
-    Comparing-with label: Comparing with: {index_name ?? canonical_name}
-    Footer note: Showing degrees in the same college and level as your selection.
+  Controls:
+    Compare button (enabled after A+B)
+    Reset button (selection stage + compare stage)
+    Save As PDF button (compare stage)
 
-  Prompt (A selected, waiting for B):
-    Text: Now select a degree in step 2 to see the comparison.
-
-  Note: Change and Reset live in the CompareView sticky header — no compact bar.
+  Search behavior:
+    Search applies to the currently active selection step (A, then B, then C), and resets when advancing steps.
 
 ----------------------------------------------------------------------
   CompareView — Sticky header + lane roster
@@ -975,4 +969,3 @@ Purpose: Proofreading reference. Shows all visible text with source locations.
   Nav links → src/components/layout/Nav.tsx
   Footer text → src/components/layout/Footer.tsx
   Compare universe + exclusions (compare) → src/lib/compareUtils.ts
-

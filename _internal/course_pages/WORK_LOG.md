@@ -4,6 +4,37 @@ Reverse-chronological. One top-level section per session.
 
 ---
 
+## Session 3 — 2026-03-26
+
+**Objective:** Ship the first production course-page enrichment slice while keeping the scope bounded.
+
+**Production changes shipped (`/courses/[code]`):**
+- Added a new **Course Learning Outcomes** section sourced from guide scraping artifacts (`data/program_guides/enrichment/course_enrichment_candidates.json`).
+- Explicitly labeled this section as a **scraping artifact** (supplemental context, not official catalog text).
+- Rendered outcomes as dropdown disclosures (description contexts and outcome sets), not as Areas of Study.
+- Reordered page sections so the compact recency/status facts bar appears before both:
+  - About This Course
+  - Course Learning Outcomes
+- Kept Included in Current Degrees near the top after the facts bar.
+- Removed the student-facing retired-degree list section from the course page.
+
+**Files touched:**
+- `src/app/courses/[code]/page.tsx`
+- `src/components/courses/CourseLearningOutcomes.tsx` (new)
+- `src/lib/data.ts` (new course enrichment loader)
+- `src/lib/types.ts` (course enrichment types)
+
+**Scope intentionally not included in this session:**
+- cert block on course page
+- prereq block / reverse-prereq block
+- capstone block
+- multi-variant collapse policy refinements
+
+**Next step:**
+Continue production course-page enrichment incrementally (cert/prereq/capstone blocks), keeping provenance labels explicit and preserving catalog text as the authoritative course description.
+
+---
+
 ## Session 1 — 2026-03-21
 
 **Objective:** Establish starting artifact set and preserve planning inputs for course-page design.

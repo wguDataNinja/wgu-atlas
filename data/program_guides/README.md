@@ -133,7 +133,7 @@ The following guide-derived sections appear on `programs/[code]` pages:
 ### Still missing (would require further work)
 
 - **Prereq display on course pages** — 50 auto-accepted relationships are ready; course-page component not built.
-- **Course-page guide enrichment** — 751 courses have descriptions/bullets; course pages don't show them yet. Needs variant selection policy first.
+- **Course-page guide enrichment (advanced blocks)** — initial production wiring is now live as a "Course Learning Outcomes" scraping-artifact section on `/courses/[code]`; cert/prereq/reverse-prereq/capstone blocks are not yet shipped.
 - **Multi-description/competency variant policy** — 74 courses with multiple description variants, 185 with multiple competency variants. One policy decision unblocks course-page use.
 - **Education content-area sub-families** — cross-degree-level sibling groupings not captured. Low priority.
 - **MEDETID full capstone** — only first of 3 capstone courses captured (ANOM-007). Partial note is shown on the degree page.
@@ -147,7 +147,7 @@ These are bounded, completable items — none require re-extraction or re-parsin
 1. **Resolve cert review queue** — 21 rows; editorial review against source text; likely 4–6 get promoted to `degree-only`, rest suppressed.
 2. **Prereq display on course pages** — build the course-page prereq component; 50 auto-accepted rows are ready as input.
 3. **Nursing cumulative prereq display** — 16 rows need a distinct "all prior terms" display model.
-4. **Multi-description variant policy** — one decision unblocks course-page enrichment for 751 courses.
+4. **Multi-description variant policy** — refine display policy for multi-variant description/competency rows now that baseline course-page enrichment is live.
 
 ---
 
