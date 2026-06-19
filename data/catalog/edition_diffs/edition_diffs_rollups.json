@@ -1,6 +1,6 @@
 {
-  "generated": "2026-03-14T10:11:12",
-  "total_transitions": 107,
+  "generated": "2026-06-18T18:11:18",
+  "total_transitions": 110,
   "severity_score_formula": "course_churn\u00d71 + program_churn\u00d710 + version_changes\u00d73 + title_changes\u00d72 + cu_changes\u00d72 + extra_colleges\u00d75",
   "top20_by_severity": [
     {

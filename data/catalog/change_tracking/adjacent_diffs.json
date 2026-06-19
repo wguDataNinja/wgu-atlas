@@ -5203,5 +5203,103 @@
     ],
     "version_changes_count": 18,
     "notes": ""
+  },
+  "2026-03\u21922026-04": {
+    "from": "2026-03",
+    "to": "2026-04",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [],
+    "version_changes_count": 0,
+    "notes": ""
+  },
+  "2026-04\u21922026-05": {
+    "from": "2026-04",
+    "to": "2026-05",
+    "courses_added": [
+      "E054",
+      "E055",
+      "E056",
+      "E057",
+      "E058",
+      "E059",
+      "E060",
+      "E061",
+      "E062",
+      "E066",
+      "E067",
+      "E068",
+      "E071",
+      "E077",
+      "E078",
+      "E079",
+      "E080",
+      "E081",
+      "E082",
+      "E083",
+      "E084",
+      "E085",
+      "E086",
+      "E087",
+      "E088",
+      "E089",
+      "E090",
+      "E101"
+    ],
+    "courses_removed": [],
+    "courses_added_count": 28,
+    "courses_removed_count": 0,
+    "programs_added": [
+      "BSAIE",
+      "BSPM"
+    ],
+    "programs_removed": [],
+    "programs_added_count": 2,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSMKT",
+        "from_version": "202501",
+        "to_version": "202607"
+      }
+    ],
+    "version_changes_count": 1,
+    "notes": ""
+  },
+  "2026-05\u21922026-06": {
+    "from": "2026-05",
+    "to": "2026-06",
+    "courses_added": [
+      "E200"
+    ],
+    "courses_removed": [
+      "D436"
+    ],
+    "courses_added_count": 1,
+    "courses_removed_count": 1,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "version_changes": [
+      {
+        "program_code": "BSFIN",
+        "from_version": "202304",
+        "to_version": "202608"
+      },
+      {
+        "program_code": "MSHRM",
+        "from_version": "202311",
+        "to_version": "202608"
+      }
+    ],
+    "version_changes_count": 2,
+    "notes": ""
   }
 }

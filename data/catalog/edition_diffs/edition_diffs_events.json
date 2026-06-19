@@ -784,6 +784,29 @@
     "notes": ""
   },
   {
+    "transition": "2026-04\u21922026-05",
+    "from_catalog": "2026-04",
+    "to_catalog": "2026-05",
+    "severity_score": 56,
+    "course_churn": 28,
+    "courses_added_count": 28,
+    "courses_removed_count": 0,
+    "program_churn": 2,
+    "programs_added_count": 2,
+    "programs_removed_count": 0,
+    "version_changes_count": 1,
+    "title_changes_count": 0,
+    "cu_changes_count": 0,
+    "affected_colleges": [
+      "Business",
+      "Technology"
+    ],
+    "flags": [
+      "course_churn=28"
+    ],
+    "notes": ""
+  },
+  {
     "transition": "2024-01\u21922024-02",
     "from_catalog": "2024-01",
     "to_catalog": "2024-02",

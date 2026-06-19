@@ -8179,5 +8179,155 @@
     "affected_college_count": 2,
     "severity_score": 60,
     "notes": ""
+  },
+  {
+    "from_catalog": "2026-03",
+    "to_catalog": "2026-04",
+    "courses_added": [],
+    "courses_removed": [],
+    "courses_added_count": 0,
+    "courses_removed_count": 0,
+    "course_churn": 0,
+    "net_course_change": 0,
+    "courses_with_title_changes": [],
+    "courses_with_title_truncations": [],
+    "courses_with_cu_changes": [],
+    "title_changes_count": 0,
+    "title_truncations_count": 0,
+    "cu_changes_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "program_churn": 0,
+    "net_program_change": 0,
+    "programs_with_version_changes": [],
+    "version_changes_detail": [],
+    "version_changes_count": 0,
+    "affected_colleges": [],
+    "affected_college_count": 0,
+    "severity_score": 0,
+    "notes": ""
+  },
+  {
+    "from_catalog": "2026-04",
+    "to_catalog": "2026-05",
+    "courses_added": [
+      "E054",
+      "E055",
+      "E056",
+      "E057",
+      "E058",
+      "E059",
+      "E060",
+      "E061",
+      "E062",
+      "E066",
+      "E067",
+      "E068",
+      "E071",
+      "E077",
+      "E078",
+      "E079",
+      "E080",
+      "E081",
+      "E082",
+      "E083",
+      "E084",
+      "E085",
+      "E086",
+      "E087",
+      "E088",
+      "E089",
+      "E090",
+      "E101"
+    ],
+    "courses_removed": [],
+    "courses_added_count": 28,
+    "courses_removed_count": 0,
+    "course_churn": 28,
+    "net_course_change": 28,
+    "courses_with_title_changes": [],
+    "courses_with_title_truncations": [],
+    "courses_with_cu_changes": [],
+    "title_changes_count": 0,
+    "title_truncations_count": 0,
+    "cu_changes_count": 0,
+    "programs_added": [
+      "BSAIE",
+      "BSPM"
+    ],
+    "programs_removed": [],
+    "programs_added_count": 2,
+    "programs_removed_count": 0,
+    "program_churn": 2,
+    "net_program_change": 2,
+    "programs_with_version_changes": [
+      "BSMKT"
+    ],
+    "version_changes_detail": [
+      {
+        "program_code": "BSMKT",
+        "from_version": "202501",
+        "to_version": "202607"
+      }
+    ],
+    "version_changes_count": 1,
+    "affected_colleges": [
+      "Business",
+      "Technology"
+    ],
+    "affected_college_count": 2,
+    "severity_score": 56,
+    "notes": ""
+  },
+  {
+    "from_catalog": "2026-05",
+    "to_catalog": "2026-06",
+    "courses_added": [
+      "E200"
+    ],
+    "courses_removed": [
+      "D436"
+    ],
+    "courses_added_count": 1,
+    "courses_removed_count": 1,
+    "course_churn": 2,
+    "net_course_change": 0,
+    "courses_with_title_changes": [],
+    "courses_with_title_truncations": [],
+    "courses_with_cu_changes": [],
+    "title_changes_count": 0,
+    "title_truncations_count": 0,
+    "cu_changes_count": 0,
+    "programs_added": [],
+    "programs_removed": [],
+    "programs_added_count": 0,
+    "programs_removed_count": 0,
+    "program_churn": 0,
+    "net_program_change": 0,
+    "programs_with_version_changes": [
+      "BSFIN",
+      "MSHRM"
+    ],
+    "version_changes_detail": [
+      {
+        "program_code": "BSFIN",
+        "from_version": "202304",
+        "to_version": "202608"
+      },
+      {
+        "program_code": "MSHRM",
+        "from_version": "202311",
+        "to_version": "202608"
+      }
+    ],
+    "version_changes_count": 2,
+    "affected_colleges": [
+      "Business"
+    ],
+    "affected_college_count": 1,
+    "severity_score": 8,
+    "notes": ""
   }
 ]
