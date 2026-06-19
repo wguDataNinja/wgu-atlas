@@ -41,6 +41,7 @@ import csv
 import json
 import os
 import re
+import sys
 import unicodedata
 from collections import defaultdict, Counter
 
@@ -140,6 +141,21 @@ def write_json(path, obj, indent=2):
         json.dump(obj, f, indent=indent, ensure_ascii=False)
     return path
 
+def split_pipe(value):
+    """Split the pipeline's pipe-delimited text fields into stable arrays."""
+    if not value:
+        return []
+    return [part.strip() for part in str(value).split(" | ") if part.strip()]
+
+def parse_int_pipe(value):
+    ints = []
+    for part in split_pipe(value):
+        try:
+            ints.append(int(part))
+        except (TypeError, ValueError):
+            continue
+    return ints
+
 # ---------------------------------------------------------------------------
 # Load source data
 # ---------------------------------------------------------------------------
@@ -159,6 +175,7 @@ course_hist = {r["course_code"]: r for r in course_hist_rows}
 prog_hist   = {r["program_code"]: r for r in prog_hist_rows}
 courses2026_by_code = {r["course_code"]: r for r in courses_2026}
 certs2026_by_code   = {r["course_code"]: r for r in certs_2026}
+program_blocks_by_code = {p["code"]: p for p in program_blocks}
 
 # Active AP codes in 2026-03
 active_ap_codes = set(courses2026_by_code.keys())
@@ -971,6 +988,67 @@ print(f"  Events needing manual review / interpretation: {len(ambiguous)}")
 # ---------------------------------------------------------------------------
 print("\n=== STEP 4: Static site-ready JSON exports ===")
 
+# Program records (for explorer, program routes, schools, compare, and search).
+# program_history.csv contains useful historical metadata, but its status field
+# is unreliable for currentness after the mirrored 2026-06 refresh. Current
+# ACTIVE/RETIRED status is derived from the trusted current-edition program
+# blocks so programs.json agrees with homepage/search/current routes.
+program_records = []
+for row in prog_hist_rows:
+    code = row["program_code"]
+    current_block = program_blocks_by_code.get(code)
+    headings = split_pipe(row.get("degree_headings", ""))
+    colleges = split_pipe(row.get("colleges", ""))
+    cus_values = parse_int_pipe(row.get("cus_values", ""))
+
+    if current_block:
+        current_degree = current_block.get("degree", "").strip()
+        current_school = current_block.get("college", "").strip()
+        if current_degree and current_degree not in headings:
+            headings.insert(0, current_degree)
+        if current_school:
+            colleges = [c for c in colleges if c != current_school] + [current_school]
+        current_cus = current_block.get("cus")
+        if isinstance(current_cus, int) and current_cus not in cus_values:
+            cus_values.append(current_cus)
+
+    canonical_name = (
+        current_block.get("degree", "").strip()
+        if current_block and current_block.get("degree")
+        else (headings[0] if headings else code)
+    )
+    status = "ACTIVE" if current_block else "RETIRED"
+    school = (
+        current_block.get("college", "").strip()
+        if current_block and current_block.get("college")
+        else (colleges[-1] if colleges else "")
+    )
+
+    program_records.append({
+        "program_code":        code,
+        "status":              status,
+        "canonical_name":      canonical_name,
+        "degree_headings":     headings or [canonical_name],
+        "first_seen":          row.get("first_seen", ""),
+        "last_seen":           EDITION_DATE if current_block else row.get("last_seen", ""),
+        "edition_count":       int(row.get("edition_count") or 0),
+        "version_changes":     int(row.get("version_changes") or 0),
+        "version_progression": row.get("version_progression", ""),
+        "colleges":            colleges,
+        "cus_values":          cus_values,
+        "school":              school,
+    })
+
+program_records.sort(key=lambda p: (
+    0 if p["status"] == "ACTIVE" else 1,
+    p["school"],
+    p["canonical_name"],
+    p["program_code"],
+))
+
+p = write_json(os.path.join(EXP, "programs.json"), program_records)
+print(f"  → {p}  ({len(program_records)} program records)")
+
 # Build course cards (lightweight, for explorer + search)
 course_cards = []
 for r in canonical_rows:
@@ -1075,19 +1153,22 @@ for r in canonical_rows:
         entry["alt_titles"] = [t.strip() for t in r["observed_titles"].split(" | ") if t.strip() and t.strip() != r["canonical_title_current"]]
     search_entries.append(entry)
 
-# Add programs to search index
-# Active status is derived from trusted program_blocks (current edition),
-# not from program_history.csv status field (which is unreliable).
-_program_blocks_codes = {p['code'] for p in program_blocks}
-for row in prog_hist_rows:
+# Add programs to search index from the same records used by program routes.
+for row in program_records:
     entry = {
         "type":    "program",
         "code":    row["program_code"],
-        "title":   row.get("degree_headings", ""),
-        "active":  row["program_code"] in _program_blocks_codes,
+        "title":   row["canonical_name"],
+        "active":  row["status"] == "ACTIVE",
         "scope":   "AP",
-        "school":  row.get("colleges", "").split(" | ")[0].strip(),
+        "school":  row["school"],
     }
+    alt_titles = [
+        h for h in row.get("degree_headings", [])
+        if h and h != row["canonical_name"]
+    ]
+    if alt_titles:
+        entry["alt_titles"] = alt_titles
     search_entries.append(entry)
 
 p = write_json(os.path.join(EXP, "search_index.json"), search_entries)
@@ -1110,8 +1191,8 @@ for code, r26 in courses2026_by_code.items():
 
 # Recent version changes — programs with version change in last 3 editions
 recent_versions = []
-for row in prog_hist_rows:
-    if row["program_code"] in _program_blocks_codes and row.get("version_progression"):
+for row in program_records:
+    if row["status"] == "ACTIVE" and row.get("version_progression"):
         prog = row.get("version_progression", "")
         parts = [p.strip() for p in prog.split("→") if p.strip()]
         if parts:
@@ -1121,21 +1202,21 @@ for row in prog_hist_rows:
                     "program_code": row["program_code"],
                     "last_version_date": last.split(":")[0] if ":" in last else last,
                     "version_stamp": last.split(":")[1] if ":" in last else "",
-                    "degree_heading": row.get("degree_headings", ""),
-                    "school": row.get("colleges", "").split(" | ")[0].strip(),
+                    "degree_heading": row["canonical_name"],
+                    "school": row["school"],
                 })
 
 recent_versions.sort(key=lambda r: r["last_version_date"], reverse=True)
 
 # Newest programs
 newest_programs = []
-for row in prog_hist_rows:
-    if row["program_code"] in _program_blocks_codes and row["first_seen"] >= "2024-01":
+for row in program_records:
+    if row["status"] == "ACTIVE" and row["first_seen"] >= "2024-01":
         newest_programs.append({
             "program_code": row["program_code"],
             "first_seen": row["first_seen"],
-            "degree_heading": row.get("degree_headings", ""),
-            "school": row.get("colleges", "").split(" | ")[0].strip(),
+            "degree_heading": row["canonical_name"],
+            "school": row["school"],
         })
 newest_programs.sort(key=lambda r: r["first_seen"], reverse=True)
 
@@ -1161,7 +1242,7 @@ homepage = {
     "active_cert_codes":   cert_count,
     "retired_ap_codes":    ap_retired,
     "active_programs":     len(program_blocks),
-    "retired_programs":    len(prog_hist_rows) - len(program_blocks),
+    "retired_programs":    len(program_records) - len(program_blocks),
     "active_by_school": {
         "Business":   active_by_college["Business"],
         "Health":     active_by_college["Health"],
@@ -1205,6 +1286,7 @@ print(f"  named_events.json")
 print(f"  curated_major_events.json          — {len(curated_events)} curated")
 print(f"\nExports in: {EXP}/")
 print(f"  courses.json                       — {len(course_cards)} course cards")
+print(f"  programs.json                      — {len(program_records)} program records")
 print(f"  courses/{{code}}.json              — {len(active_ap)} individual AP files")
 print(f"  events.json                        — {len(events_export)} events")
 print(f"  search_index.json                  — {len(search_entries)} search entries")

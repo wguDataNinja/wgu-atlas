@@ -5,7 +5,7 @@ import ProgramExplorer from "@/components/programs/ProgramExplorer";
 
 export const metadata: Metadata = {
   title: "Degrees",
-  description: "Browse WGU degrees — view course rosters, compare related degrees, and see current or retired status for each.",
+  description: "Browse WGU degrees. View course rosters, compare related degrees, and see current or retired status for each.",
 };
 
 export default function ProgramsPage() {
@@ -18,7 +18,7 @@ export default function ProgramsPage() {
       <div className="mb-6">
         <h1 className="text-3xl font-bold text-slate-800">Degrees</h1>
         <p className="text-slate-500 mt-1">
-          {programs.length} WGU degrees — {activeCount} current, {retiredCount} retired.
+          {programs.length} WGU degrees: {activeCount} current, {retiredCount} retired.
         </p>
       </div>
       <Suspense>

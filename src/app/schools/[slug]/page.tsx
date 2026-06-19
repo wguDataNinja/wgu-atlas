@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!school) return { title: "College Not Found" };
   return {
     title: school.current_name,
-    description: `WGU ${school.current_name} — degrees, courses, and recent changes.`,
+    description: `WGU ${school.current_name}: degrees, courses, and recent changes.`,
   };
 }
 
@@ -385,7 +385,7 @@ export default async function SchoolPage({ params }: Props) {
                         href={`/courses/${c.code}`}
                         className="text-sm text-blue-700 hover:underline"
                       >
-                        {c.code} — {c.title.length > 40 ? c.title.slice(0, 40) + "…" : c.title}
+                        {c.code}: {c.title.length > 40 ? c.title.slice(0, 40) + "…" : c.title}
                       </Link>
                       <span className="text-xs text-slate-400 ml-1">
                         {c.added_in}

@@ -216,6 +216,27 @@ export interface CourseDescription {
 }
 
 // ---------------------------------------------------------------------------
+// Course guide enrichment candidate — from
+// data/program_guides/enrichment/course_enrichment_candidates.json
+// ---------------------------------------------------------------------------
+
+export interface CourseGuideEnrichmentDescription {
+  text: string;
+  source_program_codes: string[];
+}
+
+export interface CourseGuideEnrichmentCompetencySet {
+  bullets: string[];
+  source_program_codes: string[];
+}
+
+export interface CourseGuideEnrichmentCandidate {
+  course_code: string;
+  descriptions: CourseGuideEnrichmentDescription[];
+  competency_sets: CourseGuideEnrichmentCompetencySet[];
+}
+
+// ---------------------------------------------------------------------------
 // Guide artifact — from data/program_guides/degree_artifacts/{CODE}_degree_artifact.json
 // One file per program, loaded on demand at build time.
 // ---------------------------------------------------------------------------

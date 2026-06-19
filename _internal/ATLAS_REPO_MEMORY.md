@@ -202,6 +202,13 @@ site-data build scripts is only needed when new catalog data has been processed
 and mirrored. The build script now accepts `WGU_CATALOG_CURRENT_EDITION` to
 target a specific trusted snapshot. Default remains `2026_03`.
 
+As of the 2026-06 Package E correction, `scripts/build_site_data.py` generates
+the program runtime contract as well as course/search/homepage artifacts:
+`public/data/programs.json` is built from `program_history.csv` plus the selected
+trusted current-edition `program_blocks`. Program ACTIVE/RETIRED status is
+derived from trusted program blocks, not `program_history.csv` status, because
+the history status field is unreliable for currentness after the 2026-06 mirror.
+
 Trusted snapshot directories follow the convention `trusted/{YYYY}_{MM}/`
 containing 8 files: courses CSV, certs CSV, course_index JSON, sections_index
 JSON, degree_snapshots JSON, program_blocks JSON, program_index JSON, and
@@ -1102,17 +1109,17 @@ Avoid pretending the repo is more self-contained than it is. Document the bounda
 
 These are repo boundaries or mismatches that matter for rebuild assumptions and maintenance.
 
-- `build_site_data.py` does not generate `public/data/programs.json`, `public/data/program_enriched.json`, or `public/data/official_resource_placements.json` — those are produced by separate scripts and committed as artifacts
-- `program_enriched.json` outcomes coverage is partial: 74/114 programs populated; 40 have empty outcomes arrays (2026-03 extraction)
+- `build_site_data.py` now generates `public/data/programs.json` from `program_history.csv` + trusted current `program_blocks`. It still does not generate `public/data/program_enriched.json` or `public/data/official_resource_placements.json`; those are separate committed artifacts.
+- `program_enriched.json` outcomes coverage is partial and still based on the older guide/catalog enrichment layer. New 2026-05 programs (`BSAIE`, `BSPM`) resolve as catalog-current program pages but currently use the "Current Catalog Record" fallback because guide-derived roster/outcomes/resources are not yet attached.
 - Full regeneration pipeline depends on non-committed upstream file `course_index_v10.json` (~59 MB)
 - School lineage in runtime is hardcoded in `src/lib/data.ts` constants, not derived from a dedicated artifact
 - Missing catalog editions: `2017-02`, `2017-04`, `2017-06`; Atlas-local mirror otherwise spans `2017-01` through `2026-06`
-- Homepage summary fields `total_course_codes_ever`, `active_programs`, `retired_programs` were previously stale or zero. Resolved in 2026-06-19 Package D:
+- Homepage summary fields `total_course_codes_ever`, `active_programs`, `retired_programs`, and program runtime status were previously stale or inconsistent. Resolved in 2026-06-19 Packages D/E:
   - `active_programs` derived from `len(trusted/{EDITION}/program_blocks_{EDITION}.json)` (not `program_history.csv` status field, which is unreliable).
-  - `retired_programs` derived as `len(prog_hist_rows) - len(program_blocks)`.
+  - `retired_programs` derived as `len(program_records) - len(program_blocks)`.
   - `total_course_codes_ever` derived as `len(canonical_rows)` from the site-data build output.
   - Build script cleans stale `public/data/courses/*.json` files before regenerating active per-course files.
-  - Program active status in search index, `newest_programs`, and `recent_version_changes` also use program_blocks-derived status.
+  - `public/data/programs.json`, program active status in search index, `newest_programs`, `recent_version_changes`, school program lists, and program route static params use the same program-record contract.
 - `total_editions` in homepage_summary is derived by counting sections_index_v10.json edition keys <= the selected `EDITION_DATE`. Since the helper file already excludes the 3 known missing editions, this resolves to 108 for 2026_03 and 111 for 2026_06.
 
 ---

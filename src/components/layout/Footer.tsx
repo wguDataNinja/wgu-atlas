@@ -1,8 +1,14 @@
 import Link from "next/link";
 
-export default function Footer({ dataDate }: { dataDate?: string }) {
+export default function Footer({
+  archiveSpan,
+  dataDate,
+}: {
+  archiveSpan?: string;
+  dataDate?: string;
+}) {
   return (
-    <footer className="border-t border-slate-200 bg-slate-50 mt-16">
+    <footer className="print:hidden border-t border-slate-200 bg-slate-50 mt-16">
       <div className="max-w-6xl mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-slate-500">
           <div>
@@ -14,15 +20,15 @@ export default function Footer({ dataDate }: { dataDate?: string }) {
           </div>
           <div>
             <p className="font-semibold text-slate-700 mb-1">Data</p>
-            <p>Catalog coverage: 2017-01 → 2026-03</p>
+            <p>Catalog coverage: {archiveSpan ?? "2017-01 to 2026-06"}</p>
             {dataDate && <p>Data through: {dataDate}</p>}
             <p className="mt-1">
               <Link href="/methods" className="underline hover:text-slate-700">
-                Methods
+                How data was collected
               </Link>
               {" · "}
-              <Link href="/data" className="underline hover:text-slate-700">
-                Download datasets
+              <Link href="/timeline" className="underline hover:text-slate-700">
+                Timeline
               </Link>
             </p>
           </div>

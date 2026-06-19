@@ -23,21 +23,14 @@
       "last_version_date": "2026-06",
       "version_stamp": "202608",
       "degree_heading": "Bachelor of Science, Finance",
-      "school": "College of Business"
+      "school": "School of Business"
     },
     {
       "program_code": "MSHRM",
       "last_version_date": "2026-06",
       "version_stamp": "202608",
       "degree_heading": "Master of Science, Human Resource Management",
-      "school": "College of Business"
-    },
-    {
-      "program_code": "BSAIE",
-      "last_version_date": "2026-05",
-      "version_stamp": "202607",
-      "degree_heading": "Bachelor of Science, AI Engineering",
-      "school": "School of Technology"
+      "school": "School of Business"
     },
     {
       "program_code": "BSMKT",
@@ -54,11 +47,25 @@
       "school": "School of Business"
     },
     {
-      "program_code": "BAELED",
+      "program_code": "BSAIE",
+      "last_version_date": "2026-05",
+      "version_stamp": "202607",
+      "degree_heading": "Bachelor of Science, AI Engineering",
+      "school": "School of Technology"
+    },
+    {
+      "program_code": "BSMGT",
       "last_version_date": "2026-03",
-      "version_stamp": "202603",
-      "degree_heading": "Bachelor of Arts, Elementary Education | Master of Arts in Teaching programs are the choice for you. These teacher-prep programs qualify you to become",
-      "school": "Teachers College"
+      "version_stamp": "202605",
+      "degree_heading": "Bachelor of Science, Business Management",
+      "school": "School of Business"
+    },
+    {
+      "program_code": "BSSCOM",
+      "last_version_date": "2026-03",
+      "version_stamp": "202605",
+      "degree_heading": "Bachelor of Science, Supply Chain and Operations Management",
+      "school": "School of Business"
     },
     {
       "program_code": "BAESELED",
@@ -66,16 +73,15 @@
       "version_stamp": "202603",
       "degree_heading": "Bachelor of Arts, Educational Studies in Elementary Education",
       "school": "School of Education"
-    },
-    {
-      "program_code": "BAESMES",
-      "last_version_date": "2026-03",
-      "version_stamp": "202603",
-      "degree_heading": "Bachelor of Arts, Educational Studies in Secondary Mathematics Education",
-      "school": "School of Education"
     }
   ],
   "newest_programs": [
+    {
+      "program_code": "BSPM",
+      "first_seen": "2026-05",
+      "degree_heading": "Bachelor of Science, Project Management",
+      "school": "School of Business"
+    },
     {
       "program_code": "BSAIE",
       "first_seen": "2026-05",
@@ -83,10 +89,10 @@
       "school": "School of Technology"
     },
     {
-      "program_code": "BSPM",
-      "first_seen": "2026-05",
-      "degree_heading": "Bachelor of Science, Project Management",
-      "school": "School of Business"
+      "program_code": "MSITUG",
+      "first_seen": "2026-02",
+      "degree_heading": "Bachelor of Science, Information Technology (BSIT to MSIT)",
+      "school": "School of Technology"
     },
     {
       "program_code": "MSIT",
@@ -98,12 +104,6 @@
       "program_code": "MSITPM",
       "first_seen": "2026-02",
       "degree_heading": "Master of Science, Information Technology - Product Management",
-      "school": "School of Technology"
-    },
-    {
-      "program_code": "MSITUG",
-      "first_seen": "2026-02",
-      "degree_heading": "Bachelor of Science, Information Technology (BSIT to MSIT)",
       "school": "School of Technology"
     },
     {
@@ -119,9 +119,9 @@
       "school": "School of Technology"
     },
     {
-      "program_code": "BSCNEAZR",
+      "program_code": "BSCNECIS",
       "first_seen": "2025-08",
-      "degree_heading": "Bachelor of Science, Cloud and Network Engineering - Microsoft Azure",
+      "degree_heading": "Bachelor of Science, Cloud and Network Engineering - Cisco",
       "school": "School of Technology"
     }
   ],

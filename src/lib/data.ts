@@ -4,6 +4,7 @@ import type {
   CourseCard,
   CourseDescription,
   CourseDetail,
+  CourseGuideEnrichmentCandidate,
   CatalogEvent,
   GuideArtifact,
   HomepageSummary,
@@ -107,6 +108,37 @@ export function getCourseDescriptions(): Record<string, CourseDescription> {
 
 export function getCourseDescription(code: string): CourseDescription | null {
   return getCourseDescriptions()[code] ?? null;
+}
+
+// ---------------------------------------------------------------------------
+// Course guide enrichment candidates — from
+// data/program_guides/enrichment/course_enrichment_candidates.json
+// ---------------------------------------------------------------------------
+
+let _courseGuideEnrichmentByCode: Record<string, CourseGuideEnrichmentCandidate> | null = null;
+
+export function getCourseGuideEnrichmentByCode(
+  code: string
+): CourseGuideEnrichmentCandidate | null {
+  if (!_courseGuideEnrichmentByCode) {
+    const filePath = path.join(
+      INTERNAL_DATA,
+      "program_guides",
+      "enrichment",
+      "course_enrichment_candidates.json"
+    );
+    if (!fs.existsSync(filePath)) {
+      _courseGuideEnrichmentByCode = {};
+    } else {
+      const raw = fs.readFileSync(filePath, "utf-8");
+      const parsed = JSON.parse(raw) as { courses?: CourseGuideEnrichmentCandidate[] };
+      _courseGuideEnrichmentByCode = {};
+      for (const row of parsed.courses ?? []) {
+        _courseGuideEnrichmentByCode[row.course_code] = row;
+      }
+    }
+  }
+  return _courseGuideEnrichmentByCode[code] ?? null;
 }
 
 // ---------------------------------------------------------------------------

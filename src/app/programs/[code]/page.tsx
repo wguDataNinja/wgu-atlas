@@ -12,7 +12,6 @@ import {
 import type { RosterCourse } from "@/lib/types";
 import RelevantResources from "@/components/resources/RelevantResources";
 import LearningOutcomes from "./LearningOutcomes";
-import GuideProvenance from "@/components/programs/GuideProvenance";
 import GuideCertBlock from "@/components/programs/GuideCertBlock";
 import GuideFamilyPanel from "@/components/programs/GuideFamilyPanel";
 import GuideAreasOfStudy from "@/components/programs/GuideAreasOfStudy";
@@ -80,9 +79,6 @@ export default async function ProgramDetailPage({ params }: Props) {
 
   // Quality signals
   const hasCaveats = (guideArtifact?.quality?.caveat_messages_ui?.length ?? 0) > 0;
-  const isDegraded =
-    guideArtifact &&
-    (guideArtifact.guide_provenance.confidence === "low" || hasCaveats);
 
   // Capstone discoverability — when capstone only appears inside an AoS group
   const hasCapstoneInAos =
@@ -138,7 +134,7 @@ export default async function ProgramDetailPage({ params }: Props) {
             </div>
             {!isActive && (
               <p className="text-sm text-slate-400 mt-1">
-                Retired — last seen: {program.last_seen}
+                Retired. Last seen: {program.last_seen}
               </p>
             )}
           </div>
@@ -160,7 +156,7 @@ export default async function ProgramDetailPage({ params }: Props) {
                 {enriched.description}
               </blockquote>
               <p className="text-xs text-slate-400 mt-2">
-                Official catalog text — WGU-authored.
+                Official catalog text, WGU-authored.
               </p>
             </section>
           )}
@@ -230,6 +226,20 @@ export default async function ProgramDetailPage({ params }: Props) {
             )}
           </section>
 
+          {!enriched && isActive && (
+            <section className="mb-8">
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-1 h-5 bg-amber-400 rounded" />
+                <h2 className="text-lg font-bold text-slate-800">Current Catalog Record</h2>
+              </div>
+              <div className="rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm leading-relaxed text-amber-900">
+                This degree is present in the current catalog snapshot, but Atlas has not yet attached
+                guide-derived roster, outcomes, or resource detail for it. The status, school, first-seen
+                date, version history, and CU total above come from the catalog history data.
+              </div>
+            </section>
+          )}
+
           {/* ============================================================
               PROGRAM LEARNING OUTCOMES
               Falls back to a placeholder when outcomes are absent but the
@@ -272,7 +282,7 @@ export default async function ProgramDetailPage({ params }: Props) {
               </div>
               {spAdvisorGuided && (
                 <p className="text-sm text-amber-700 bg-amber-50 border border-amber-200 rounded px-3 py-2 mb-3">
-                  This program uses an advisor-guided course sequence. The order and pacing of courses may vary by student — the roster below reflects the current catalog course set, not a fixed sequence guaranteed for every student.
+                  This program uses an advisor-guided course sequence. The order and pacing of courses may vary by student. The roster below reflects the current catalog course set, not a fixed sequence guaranteed for every student.
                 </p>
               )}
               <div className="space-y-4">
@@ -381,7 +391,7 @@ export default async function ProgramDetailPage({ params }: Props) {
                 </span>
               </div>
               <div className="bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-sm text-slate-600">
-                This program does not use a fixed-term course sequence. The Areas of Study section above is the primary program map for this degree — expand each group to see courses, descriptions, and competencies.
+                This program does not use a fixed-term course sequence. The Areas of Study section above is the primary program map for this degree. Expand each group to see courses, descriptions, and competencies.
               </div>
               <p className="text-xs text-slate-400 mt-3">
                 Total: {enriched.roster.reduce((sum, c) => sum + c.cus, 0)} CUs across{" "}
@@ -411,7 +421,7 @@ export default async function ProgramDetailPage({ params }: Props) {
               ============================================================ */}
           {showCapstoneAosHint && (
             <p className="text-xs text-slate-400 mb-8">
-              This program includes a capstone sequence — see the capstone group in Areas of Study above for details.
+              This program includes a capstone sequence. See the capstone group in Areas of Study above for details.
             </p>
           )}
 

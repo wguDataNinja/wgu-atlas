@@ -13908,11 +13908,376 @@
   },
   {
     "type": "program",
-    "code": "BAELED",
-    "title": "Bachelor of Arts, Elementary Education | Master of Arts in Teaching programs are the choice for you. These teacher-prep programs qualify you to become",
+    "code": "BSPSY",
+    "title": "Bachelor of Science in Psychology",
     "active": true,
     "scope": "AP",
-    "school": "Teachers College"
+    "school": "Leavitt School of Health"
+  },
+  {
+    "type": "program",
+    "code": "BSHIM",
+    "title": "Bachelor of Science, Health Information Management",
+    "active": true,
+    "scope": "AP",
+    "school": "Leavitt School of Health"
+  },
+  {
+    "type": "program",
+    "code": "BSHS",
+    "title": "Bachelor of Science, Health Science",
+    "active": true,
+    "scope": "AP",
+    "school": "Leavitt School of Health"
+  },
+  {
+    "type": "program",
+    "code": "BSHHS",
+    "title": "Bachelor of Science, Health and Human Services",
+    "active": true,
+    "scope": "AP",
+    "school": "Leavitt School of Health"
+  },
+  {
+    "type": "program",
+    "code": "BSNU",
+    "title": "Bachelor of Science, Nursing",
+    "active": true,
+    "scope": "AP",
+    "school": "Leavitt School of Health"
+  },
+  {
+    "type": "program",
+    "code": "BSNPLTR",
+    "title": "Bachelor of Science, Nursing - Prelicensure (Nursing)",
+    "active": true,
+    "scope": "AP",
+    "school": "Leavitt School of Health"
+  },
+  {
+    "type": "program",
+    "code": "BSPNTR",
+    "title": "Bachelor of Science, Nursing - Prelicensure (Pre-Nursing)",
+    "active": true,
+    "scope": "AP",
+    "school": "Leavitt School of Health"
+  },
+  {
+    "type": "program",
+    "code": "BSPH",
+    "title": "Bachelor of Science, Public Health",
+    "active": true,
+    "scope": "AP",
+    "school": "Leavitt School of Health"
+  },
+  {
+    "type": "program",
+    "code": "MHA",
+    "title": "Master of Healthcare Administration",
+    "active": true,
+    "scope": "AP",
+    "school": "Leavitt School of Health"
+  },
+  {
+    "type": "program",
+    "code": "MPH",
+    "title": "Master of Public Health",
+    "active": true,
+    "scope": "AP",
+    "school": "Leavitt School of Health"
+  },
+  {
+    "type": "program",
+    "code": "MSNUED",
+    "title": "Master of Science, Nursing - Education (BSN to MSN)",
+    "active": true,
+    "scope": "AP",
+    "school": "Leavitt School of Health",
+    "alt_titles": [
+      "Master of Science, Nursing - Education"
+    ]
+  },
+  {
+    "type": "program",
+    "code": "MSRNNUEDGR",
+    "title": "Master of Science, Nursing - Education (RN to MSN)",
+    "active": true,
+    "scope": "AP",
+    "school": "Leavitt School of Health",
+    "alt_titles": [
+      "Master of Science, Nursing - Education"
+    ]
+  },
+  {
+    "type": "program",
+    "code": "MSNUFNP",
+    "title": "Master of Science, Nursing - Family Nurse Practitioner (BSN to MSN)",
+    "active": true,
+    "scope": "AP",
+    "school": "Leavitt School of Health"
+  },
+  {
+    "type": "program",
+    "code": "MSNULM",
+    "title": "Master of Science, Nursing - Leadership and Management (BSN to MSN)",
+    "active": true,
+    "scope": "AP",
+    "school": "Leavitt School of Health",
+    "alt_titles": [
+      "Master of Science, Nursing - Leadership and Management"
+    ]
+  },
+  {
+    "type": "program",
+    "code": "MSRNNULMGR",
+    "title": "Master of Science, Nursing - Leadership and Management (RN to MSN)",
+    "active": true,
+    "scope": "AP",
+    "school": "Leavitt School of Health",
+    "alt_titles": [
+      "Master of Science, Nursing - Leadership and Management"
+    ]
+  },
+  {
+    "type": "program",
+    "code": "MSNUNI",
+    "title": "Master of Science, Nursing - Nursing Informatics (BSN to MSN)",
+    "active": true,
+    "scope": "AP",
+    "school": "Leavitt School of Health",
+    "alt_titles": [
+      "Master of Science, Nursing - Nursing Informatics"
+    ]
+  },
+  {
+    "type": "program",
+    "code": "MSRNNUNIFGR",
+    "title": "Master of Science, Nursing - Nursing Informatics (RN to MSN)",
+    "active": true,
+    "scope": "AP",
+    "school": "Leavitt School of Health"
+  },
+  {
+    "type": "program",
+    "code": "MSNUPMHNP",
+    "title": "Master of Science, Nursing - Psychiatric Mental Health Nurse Practitioner",
+    "active": true,
+    "scope": "AP",
+    "school": "Leavitt School of Health"
+  },
+  {
+    "type": "program",
+    "code": "PMCNUFNP",
+    "title": "Post-Master's Certificate, Nursing - Family Nurse Practitioner (Post-MSN)",
+    "active": true,
+    "scope": "AP",
+    "school": "Leavitt School of Health"
+  },
+  {
+    "type": "program",
+    "code": "PMCNULM",
+    "title": "Post-Master's Certificate, Nursing - Leadership and Management (Post-MSN)",
+    "active": true,
+    "scope": "AP",
+    "school": "Leavitt School of Health"
+  },
+  {
+    "type": "program",
+    "code": "PMCNUED",
+    "title": "Post-Master's Certificate, Nursing - Nursing Education (Post-MSN)",
+    "active": true,
+    "scope": "AP",
+    "school": "Leavitt School of Health"
+  },
+  {
+    "type": "program",
+    "code": "PMCNUPMHNP",
+    "title": "Post-Master's Certificate, Nursing - Psychiatric Mental Health Nurse Practitioner (Post-MSN)",
+    "active": true,
+    "scope": "AP",
+    "school": "Leavitt School of Health"
+  },
+  {
+    "type": "program",
+    "code": "BSACC",
+    "title": "Bachelor of Science, Accounting",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "program",
+    "code": "BSMGT",
+    "title": "Bachelor of Science, Business Management",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business",
+    "alt_titles": [
+      "Bachelor of Science, Management"
+    ]
+  },
+  {
+    "type": "program",
+    "code": "BSC",
+    "title": "Bachelor of Science, Communications",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "program",
+    "code": "BSFIN",
+    "title": "Bachelor of Science, Finance",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "program",
+    "code": "BSHA",
+    "title": "Bachelor of Science, Healthcare Administration",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "program",
+    "code": "BSHR",
+    "title": "Bachelor of Science, Human Resource Management",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "program",
+    "code": "BSITM",
+    "title": "Bachelor of Science, Information Technology Management",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "program",
+    "code": "BSMKT",
+    "title": "Bachelor of Science, Marketing",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "program",
+    "code": "BSPM",
+    "title": "Bachelor of Science, Project Management",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "program",
+    "code": "BSSCOM",
+    "title": "Bachelor of Science, Supply Chain and Operations Management",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business",
+    "alt_titles": [
+      "Bachelor of Science Supply Chain and Operations Management"
+    ]
+  },
+  {
+    "type": "program",
+    "code": "BSUXD",
+    "title": "Bachelor of Science, User Experience Design",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "program",
+    "code": "MBAITM",
+    "title": "MBA, IT Management",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "program",
+    "code": "MBA",
+    "title": "Master of Business Administration",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "program",
+    "code": "MBAHA",
+    "title": "Master of Business Administration, Healthcare Administration",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "program",
+    "code": "MACCA",
+    "title": "Master of Science in Accounting, Auditing Specialization",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "program",
+    "code": "MACCF",
+    "title": "Master of Science in Accounting, Financial Reporting Specialization",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "program",
+    "code": "MACCM",
+    "title": "Master of Science in Accounting, Management Accounting Specialization",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "program",
+    "code": "MACCT",
+    "title": "Master of Science in Accounting, Taxation Specialization",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "program",
+    "code": "MSMK",
+    "title": "Master of Science in Marketing, Digital Marketing Specialization",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "program",
+    "code": "MSMKA",
+    "title": "Master of Science in Marketing, Marketing Analytics Specialization",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "program",
+    "code": "MSHRM",
+    "title": "Master of Science, Human Resource Management",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "program",
+    "code": "MSML",
+    "title": "Master of Science, Management and Leadership",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
   },
   {
     "type": "program",
@@ -13924,25 +14289,9 @@
   },
   {
     "type": "program",
-    "code": "BAESMEMG",
-    "title": "Bachelor of Arts, Educational Studies in Middle Grades Mathematics Education",
-    "active": false,
-    "scope": "AP",
-    "school": "School of Education"
-  },
-  {
-    "type": "program",
-    "code": "BAESMES",
-    "title": "Bachelor of Arts, Educational Studies in Secondary Mathematics Education",
+    "code": "BAESSPMM",
+    "title": "Bachelor of Arts, Educational Studies in Mild to Moderate Exceptionalities Special Education",
     "active": true,
-    "scope": "AP",
-    "school": "School of Education"
-  },
-  {
-    "type": "program",
-    "code": "BAESSEMG",
-    "title": "Bachelor of Arts, Educational Studies in Middle Grades Science Education",
-    "active": false,
     "scope": "AP",
     "school": "School of Education"
   },
@@ -13972,6 +14321,14 @@
   },
   {
     "type": "program",
+    "code": "BAESMES",
+    "title": "Bachelor of Arts, Educational Studies in Secondary Mathematics Education",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
     "code": "BAESSESP",
     "title": "Bachelor of Arts, Educational Studies in Secondary Physics Science Education",
     "active": true,
@@ -13988,11 +14345,947 @@
   },
   {
     "type": "program",
-    "code": "BAESSPMM",
-    "title": "Bachelor of Arts, Educational Studies in Mild to Moderate Exceptionalities Special Education",
+    "code": "BAELED",
+    "title": "Bachelor of Arts, Elementary Education",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education",
+    "alt_titles": [
+      "Master of Arts in Teaching programs are the choice for you. These teacher-prep programs qualify you to become"
+    ]
+  },
+  {
+    "type": "program",
+    "code": "BASPEE",
+    "title": "Bachelor of Arts, Special Education and Elementary Education (Dual Licensure)",
     "active": true,
     "scope": "AP",
     "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "BASPMM",
+    "title": "Bachelor of Arts, Special Education, Mild to Moderate",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education",
+    "alt_titles": [
+      "Bachelor of Arts, Special Education Mild to Moderate"
+    ]
+  },
+  {
+    "type": "program",
+    "code": "BSMES",
+    "title": "Bachelor of Science, Mathematics Education (Secondary)",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "BSSESB",
+    "title": "Bachelor of Science, Science Education (Secondary Biological Science)",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "BSSESC",
+    "title": "Bachelor of Science, Science Education (Secondary Chemistry)",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "BSSESE",
+    "title": "Bachelor of Science, Science Education (Secondary Earth Science)",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "BSSESP",
+    "title": "Bachelor of Science, Science Education (Secondary Physics)",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "ENDSESB",
+    "title": "Endorsement Preparation Program, Biology",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "ENDSESC",
+    "title": "Endorsement Preparation Program, Chemistry",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "ENDSESE",
+    "title": "Endorsement Preparation Program, Earth Science",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "ENDELL",
+    "title": "Endorsement Preparation Program, English Language Learning",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education",
+    "alt_titles": [
+      "Endorsement Preparation Program, English Language Learning (PreK-12)"
+    ]
+  },
+  {
+    "type": "program",
+    "code": "ENDMEMG",
+    "title": "Endorsement Preparation Program, Middle Grades Math",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "ENDSEMG",
+    "title": "Endorsement Preparation Program, Middle Grades Science",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "ENDSESP",
+    "title": "Endorsement Preparation Program, Physics",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "MASEMG",
+    "title": "Master of Arts Science Education (Middle Grades)",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "MASESB",
+    "title": "Master of Arts Science Education (Secondary Biological Science)",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "MASESC",
+    "title": "Master of Arts Science Education (Secondary Chemistry)",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "MASESE",
+    "title": "Master of Arts Science Education (Secondary Earth Science)",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "MASESP",
+    "title": "Master of Arts Science Education (Secondary Physics)",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "MAMEMG",
+    "title": "Master of Arts in Mathematics Education (Middle Grades)",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "MAMES",
+    "title": "Master of Arts in Mathematics Education (Secondary)",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "MATELED",
+    "title": "Master of Arts in Teaching, Elementary Education",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "MATEES",
+    "title": "Master of Arts in Teaching, English Education (Secondary)",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "MATMES",
+    "title": "Master of Arts in Teaching, Mathematics Education (Secondary)",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "MATSESB",
+    "title": "Master of Arts in Teaching, Science Education (Secondary Biology)",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "MATSESC",
+    "title": "Master of Arts in Teaching, Science Education (Secondary Chemistry)",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "MATSESE",
+    "title": "Master of Arts in Teaching, Science Education (Secondary Earth Science)",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "MATSESP",
+    "title": "Master of Arts in Teaching, Science Education (Secondary Physics)",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "MATSSES",
+    "title": "Master of Arts in Teaching, Social Studies Education (Secondary)",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "MATSPED",
+    "title": "Master of Arts in Teaching, Special Education",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "MAELLP12",
+    "title": "Master of Arts, English Language Learning",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education",
+    "alt_titles": [
+      "Master of Arts, English Language Learning (PreK-12)"
+    ]
+  },
+  {
+    "type": "program",
+    "code": "MAMEK6",
+    "title": "Master of Arts, Mathematics Education (K-6)",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "MEDETID",
+    "title": "Master of Education, Education Technology and Instructional Design",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "MEDETIDA",
+    "title": "Master of Education, Education Technology and Instructional Design",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "MEDETIDK12",
+    "title": "Master of Education, Education Technology and Instructional Design",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "MSCIN",
+    "title": "Master of Science, Curriculum and Instruction",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "MSEDL",
+    "title": "Master of Science, Educational Leadership",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "BSAIE",
+    "title": "Bachelor of Science, AI Engineering",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "BSCNE",
+    "title": "Bachelor of Science, Cloud and Network Engineering",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "BSCNEAWS",
+    "title": "Bachelor of Science, Cloud and Network Engineering - Amazon Web Services",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "BSCNECIS",
+    "title": "Bachelor of Science, Cloud and Network Engineering - Cisco",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "BSCNEAZR",
+    "title": "Bachelor of Science, Cloud and Network Engineering - Microsoft Azure",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "BSCS",
+    "title": "Bachelor of Science, Computer Science",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "MSCSUG",
+    "title": "Bachelor of Science, Computer Science (BSCS to MSCS)",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "BSCSIA",
+    "title": "Bachelor of Science, Cybersecurity and Information Assurance",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "BSDA",
+    "title": "Bachelor of Science, Data Analytics",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "BSIT",
+    "title": "Bachelor of Science, Information Technology",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "MSITUG",
+    "title": "Bachelor of Science, Information Technology (BSIT to MSIT)",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "BSSWE",
+    "title": "Bachelor of Science, Software Engineering",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology",
+    "alt_titles": [
+      "Master of Science, Information Technology Management portion"
+    ]
+  },
+  {
+    "type": "program",
+    "code": "BSSWE_C",
+    "title": "Bachelor of Science, Software Engineering",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "MSSWEUG",
+    "title": "Bachelor of Science, Software Engineering (BSSWE to MSSWE)",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "MSCSAIML",
+    "title": "Master of Science, Computer Science, Artificial Intelligence and Machine Learning",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "MSCSCS",
+    "title": "Master of Science, Computer Science, Computing Systems",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "MSCSHCI",
+    "title": "Master of Science, Computer Science, Human-Computer Interaction",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "MSCSIA",
+    "title": "Master of Science, Cybersecurity and Information Assurance",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "MSDADE",
+    "title": "Master of Science, Data Analytics - Data Engineering",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "MSDADS",
+    "title": "Master of Science, Data Analytics - Data Science",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "MSDADPE",
+    "title": "Master of Science, Data Analytics - Decision Process Engineering",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "MSIT",
+    "title": "Master of Science, Information Technology",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "MSITPM",
+    "title": "Master of Science, Information Technology - Product Management",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "MSSWEAIE",
+    "title": "Master of Science, Software Engineering - AI Engineering",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "MSSWEDOE",
+    "title": "Master of Science, Software Engineering - DevOps Engineering",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "MSSWEDDD",
+    "title": "Master of Science, Software Engineering - Domain Driven Design",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "BSBAHC",
+    "title": "Bachelor of Science Business Administration Healthcare Management",
+    "active": false,
+    "scope": "AP",
+    "school": "College of Business",
+    "alt_titles": [
+      "Bachelor of Science Business Administration, Healthcare Management"
+    ]
+  },
+  {
+    "type": "program",
+    "code": "BSBAMGA",
+    "title": "Bachelor of Science Business Administration Management",
+    "active": false,
+    "scope": "AP",
+    "school": "College of Business",
+    "alt_titles": [
+      "Bachelor of Science Business Administration, Management"
+    ]
+  },
+  {
+    "type": "program",
+    "code": "BSBAMGB",
+    "title": "Bachelor of Science Business Administration Management",
+    "active": false,
+    "scope": "AP",
+    "school": "College of Business",
+    "alt_titles": [
+      "Bachelor of Science Business Administration, Management"
+    ]
+  },
+  {
+    "type": "program",
+    "code": "BSAC",
+    "title": "Bachelor of Science, Accounting",
+    "active": false,
+    "scope": "AP",
+    "school": "College of Business"
+  },
+  {
+    "type": "program",
+    "code": "BSBUHCM",
+    "title": "Bachelor of Science, Business - Healthcare Management",
+    "active": false,
+    "scope": "AP",
+    "school": "College of Business"
+  },
+  {
+    "type": "program",
+    "code": "BSBUHR",
+    "title": "Bachelor of Science, Business - Human Resource Management",
+    "active": false,
+    "scope": "AP",
+    "school": "College of Business"
+  },
+  {
+    "type": "program",
+    "code": "BSBUITM",
+    "title": "Bachelor of Science, Business - Information Technology Management",
+    "active": false,
+    "scope": "AP",
+    "school": "College of Business"
+  },
+  {
+    "type": "program",
+    "code": "BSMG",
+    "title": "Bachelor of Science, Business Management",
+    "active": false,
+    "scope": "AP",
+    "school": "College of Business"
+  },
+  {
+    "type": "program",
+    "code": "BSMK",
+    "title": "Bachelor of Science, Marketing Management",
+    "active": false,
+    "scope": "AP",
+    "school": "College of Business"
+  },
+  {
+    "type": "program",
+    "code": "BSHSC",
+    "title": "Bachelor of Science, Health Services Coordination",
+    "active": false,
+    "scope": "AP",
+    "school": "College of Health Professions"
+  },
+  {
+    "type": "program",
+    "code": "BSRN",
+    "title": "Bachelor of Science, Nursing",
+    "active": false,
+    "scope": "AP",
+    "school": "College of Health Professions"
+  },
+  {
+    "type": "program",
+    "code": "MSIHCM",
+    "title": "Master of Science, Integrated Healthcare Management",
+    "active": false,
+    "scope": "AP",
+    "school": "College of Health Professions"
+  },
+  {
+    "type": "program",
+    "code": "MSRNNUNIGR",
+    "title": "Master of Science, Nursing - Nursing Informatics",
+    "active": false,
+    "scope": "AP",
+    "school": "College of Health Professions"
+  },
+  {
+    "type": "program",
+    "code": "BSCC",
+    "title": "Bachelor of Science, Cloud Computing",
+    "active": false,
+    "scope": "AP",
+    "school": "College of Information Technology"
+  },
+  {
+    "type": "program",
+    "code": "BSCLSA",
+    "title": "Bachelor of Science, Cloud and Systems Administration",
+    "active": false,
+    "scope": "AP",
+    "school": "College of Information Technology"
+  },
+  {
+    "type": "program",
+    "code": "BSDMDA",
+    "title": "Bachelor of Science, Data Management/Data Analytics",
+    "active": false,
+    "scope": "AP",
+    "school": "College of Information Technology"
+  },
+  {
+    "type": "program",
+    "code": "BSITNW",
+    "title": "Bachelor of Science, IT - Networks Administration Emphasis",
+    "active": false,
+    "scope": "AP",
+    "school": "College of Information Technology"
+  },
+  {
+    "type": "program",
+    "code": "BSITSEC",
+    "title": "Bachelor of Science, IT - Security Emphasis",
+    "active": false,
+    "scope": "AP",
+    "school": "College of Information Technology"
+  },
+  {
+    "type": "program",
+    "code": "BSNOS",
+    "title": "Bachelor of Science, Network Operations and Security",
+    "active": false,
+    "scope": "AP",
+    "school": "College of Information Technology"
+  },
+  {
+    "type": "program",
+    "code": "BSITSW",
+    "title": "Bachelor of Science, Software Development",
+    "active": false,
+    "scope": "AP",
+    "school": "College of Information Technology"
+  },
+  {
+    "type": "program",
+    "code": "BSITSWC",
+    "title": "Bachelor of Science, Software Development",
+    "active": false,
+    "scope": "AP",
+    "school": "College of Information Technology"
+  },
+  {
+    "type": "program",
+    "code": "MHL",
+    "title": "Master of Health Leadership",
+    "active": false,
+    "scope": "AP",
+    "school": "Leavitt School of Health"
+  },
+  {
+    "type": "program",
+    "code": "BSBAAC",
+    "title": "Bachelor of Science Business Administration Accounting",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Business",
+    "alt_titles": [
+      "Bachelor of Science Business Administration, Accounting"
+    ]
+  },
+  {
+    "type": "program",
+    "code": "BSBAHR",
+    "title": "Bachelor of Science Business Administration Human Resource Management",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Business",
+    "alt_titles": [
+      "Bachelor of Science Business Administration, Human Resource Management"
+    ]
+  },
+  {
+    "type": "program",
+    "code": "BSBAIT",
+    "title": "Bachelor of Science Business Administration Information Technology Management",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Business",
+    "alt_titles": [
+      "Bachelor of Science Business Administration, Information Technology Management"
+    ]
+  },
+  {
+    "type": "program",
+    "code": "BSBAMK",
+    "title": "Bachelor of Science Business Administration Marketing",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Business",
+    "alt_titles": [
+      "Bachelor of Science Business Administration, Marketing"
+    ]
+  },
+  {
+    "type": "program",
+    "code": "BSBAMGC",
+    "title": "Bachelor of Science Business Administration, Management",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "program",
+    "code": "CLD",
+    "title": "Certificate: Leadership",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "program",
+    "code": "MBAHM",
+    "title": "MBA, Healthcare Management",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "program",
+    "code": "MACC",
+    "title": "Master of Science, Accounting",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "program",
+    "code": "BAESMEMG",
+    "title": "Bachelor of Arts, Educational Studies in Middle Grades Mathematics Education",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "BAESSEMG",
+    "title": "Bachelor of Arts, Educational Studies in Middle Grades Science Education",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "BSMEMG",
+    "title": "Bachelor of Science, Mathematics Education (Middle Grades)",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "BSSEMG",
+    "title": "Bachelor of Science, Science Education (Middle Grades)",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "ENDECE",
+    "title": "Endorsement Preparation Program, Early Childhood Education",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "MATMEMG",
+    "title": "Master of Arts in Teaching, Mathematics Education (Middle Grades)",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "MATSES",
+    "title": "Master of Arts in Teaching, Science Education (Secondary)",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Education"
+  },
+  {
+    "type": "program",
+    "code": "BSCCMCL",
+    "title": "Bachelor of Science, Cloud Computing",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "BSCCAWS",
+    "title": "Bachelor of Science, Cloud Computing - Amazon Web Services track",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Technology",
+    "alt_titles": [
+      "Bachelor of Science, Cloud Computing – Amazon Web Services track"
+    ]
+  },
+  {
+    "type": "program",
+    "code": "BSCCAZR",
+    "title": "Bachelor of Science, Cloud Computing - Microsoft Azure track",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Technology",
+    "alt_titles": [
+      "Bachelor of Science, Cloud Computing – Microsoft Azure track"
+    ]
+  },
+  {
+    "type": "program",
+    "code": "MSITMUG",
+    "title": "Bachelor of Science, Information Technology (BSIT to MSITM)",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Technology",
+    "alt_titles": [
+      "Master of Science, Information Technology Management portion"
+    ]
+  },
+  {
+    "type": "program",
+    "code": "BSNES",
+    "title": "Bachelor of Science, Network Engineering and Security",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Technology",
+    "alt_titles": [
+      "Master of Science, Information Technology Management portion"
+    ]
+  },
+  {
+    "type": "program",
+    "code": "BSNES_C",
+    "title": "Bachelor of Science, Network Engineering and Security Cisco Track",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "CFSEBE",
+    "title": "Certificate: Back End Web Development",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "CFSEFE",
+    "title": "Certificate: Front End Web Development",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "CFSEWADS",
+    "title": "Certificate: Web Application Deployment and Support",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "MSDA",
+    "title": "Master of Science, Data Analytics",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "program",
+    "code": "MSITM",
+    "title": "Master of Science, Information Technology Management",
+    "active": false,
+    "scope": "AP",
+    "school": "School of Technology"
   },
   {
     "type": "program",
@@ -14014,14 +15307,6 @@
     "type": "program",
     "code": "BAMA9",
     "title": "Bachelor of Arts, Mathematics (5-9)",
-    "active": false,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "BASC9",
-    "title": "Bachelor of Arts, Science (5-9)",
     "active": false,
     "scope": "AP",
     "school": "Teachers College"
@@ -14060,6 +15345,14 @@
   },
   {
     "type": "program",
+    "code": "BASC9",
+    "title": "Bachelor of Arts, Science (5-9)",
+    "active": false,
+    "scope": "AP",
+    "school": "Teachers College"
+  },
+  {
+    "type": "program",
     "code": "BASP",
     "title": "Bachelor of Arts, Special Education",
     "active": false,
@@ -14068,833 +15361,9 @@
   },
   {
     "type": "program",
-    "code": "BASPEE",
-    "title": "Bachelor of Arts, Special Education and Elementary Education (Dual Licensure)",
-    "active": true,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "BASPMM",
-    "title": "Bachelor of Arts, Special Education Mild to Moderate | Bachelor of Arts, Special Education, Mild to Moderate",
-    "active": true,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "BSAC",
-    "title": "Bachelor of Science, Accounting",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "BSACC",
-    "title": "Bachelor of Science, Accounting",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Business"
-  },
-  {
-    "type": "program",
-    "code": "BSAIE",
-    "title": "Bachelor of Science, AI Engineering",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSBAAC",
-    "title": "Bachelor of Science Business Administration Accounting | Bachelor of Science Business Administration, Accounting",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "BSBAHC",
-    "title": "Bachelor of Science Business Administration Healthcare Management | Bachelor of Science Business Administration, Healthcare Management",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "BSBAHR",
-    "title": "Bachelor of Science Business Administration Human Resource Management | Bachelor of Science Business Administration, Human Resource Management",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "BSBAIT",
-    "title": "Bachelor of Science Business Administration Information Technology Management | Bachelor of Science Business Administration, Information Technology Management",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "BSBAMGA",
-    "title": "Bachelor of Science Business Administration Management | Bachelor of Science Business Administration, Management",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "BSBAMGB",
-    "title": "Bachelor of Science Business Administration Management | Bachelor of Science Business Administration, Management",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "BSBAMGC",
-    "title": "Bachelor of Science Business Administration, Management",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "BSBAMK",
-    "title": "Bachelor of Science Business Administration Marketing | Bachelor of Science Business Administration, Marketing",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "BSBUHCM",
-    "title": "Bachelor of Science, Business - Healthcare Management",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "BSBUHR",
-    "title": "Bachelor of Science, Business - Human Resource Management",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "BSBUITM",
-    "title": "Bachelor of Science, Business - Information Technology Management",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "BSC",
-    "title": "Bachelor of Science, Communications",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Business"
-  },
-  {
-    "type": "program",
-    "code": "BSCC",
-    "title": "Bachelor of Science, Cloud Computing",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSCCAWS",
-    "title": "Bachelor of Science, Cloud Computing - Amazon Web Services track | Bachelor of Science, Cloud Computing – Amazon Web Services track",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSCCAZR",
-    "title": "Bachelor of Science, Cloud Computing - Microsoft Azure track | Bachelor of Science, Cloud Computing – Microsoft Azure track",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSCCMCL",
-    "title": "Bachelor of Science, Cloud Computing",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSCLSA",
-    "title": "Bachelor of Science, Cloud and Systems Administration",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSCNE",
-    "title": "Bachelor of Science, Cloud and Network Engineering",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSCNEAWS",
-    "title": "Bachelor of Science, Cloud and Network Engineering - Amazon Web Services",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSCNEAZR",
-    "title": "Bachelor of Science, Cloud and Network Engineering - Microsoft Azure",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSCNECIS",
-    "title": "Bachelor of Science, Cloud and Network Engineering - Cisco",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSCS",
-    "title": "Bachelor of Science, Computer Science",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSCSIA",
-    "title": "Bachelor of Science, Cybersecurity and Information Assurance",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSDA",
-    "title": "Bachelor of Science, Data Analytics",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSDMDA",
-    "title": "Bachelor of Science, Data Management/Data Analytics",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSFIN",
-    "title": "Bachelor of Science, Finance",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "BSHA",
-    "title": "Bachelor of Science, Healthcare Administration",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "BSHHS",
-    "title": "Bachelor of Science, Health and Human Services",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Health Professions"
-  },
-  {
-    "type": "program",
-    "code": "BSHIM",
-    "title": "Bachelor of Science, Health Information Management",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSHR",
-    "title": "Bachelor of Science, Human Resource Management",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Business"
-  },
-  {
-    "type": "program",
-    "code": "BSHS",
-    "title": "Bachelor of Science, Health Science",
-    "active": true,
-    "scope": "AP",
-    "school": "Leavitt School of Health"
-  },
-  {
-    "type": "program",
-    "code": "BSHSC",
-    "title": "Bachelor of Science, Health Services Coordination",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Health Professions"
-  },
-  {
-    "type": "program",
-    "code": "BSIT",
-    "title": "Bachelor of Science, Information Technology",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSITM",
-    "title": "Bachelor of Science, Information Technology Management",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Business"
-  },
-  {
-    "type": "program",
-    "code": "BSITNW",
-    "title": "Bachelor of Science, IT - Networks Administration Emphasis",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSITSEC",
-    "title": "Bachelor of Science, IT - Security Emphasis",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSITSW",
-    "title": "Bachelor of Science, Software Development",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSITSWC",
-    "title": "Bachelor of Science, Software Development",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSMEMG",
-    "title": "Bachelor of Science, Mathematics Education (Middle Grades)",
-    "active": false,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "BSMES",
-    "title": "Bachelor of Science, Mathematics Education (Secondary)",
-    "active": true,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "BSMG",
-    "title": "Bachelor of Science, Business Management",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "BSMGT",
-    "title": "Bachelor of Science, Business Management | Bachelor of Science, Management",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Business"
-  },
-  {
-    "type": "program",
-    "code": "BSMK",
-    "title": "Bachelor of Science, Marketing Management",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "BSMKT",
-    "title": "Bachelor of Science, Marketing",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Business"
-  },
-  {
-    "type": "program",
-    "code": "BSNES",
-    "title": "Bachelor of Science, Network Engineering and Security | Master of Science, Information Technology Management portion",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSNES_C",
-    "title": "Bachelor of Science, Network Engineering and Security Cisco Track",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSNOS",
-    "title": "Bachelor of Science, Network Operations and Security",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSNPLTR",
-    "title": "Bachelor of Science, Nursing - Prelicensure (Nursing)",
-    "active": true,
-    "scope": "AP",
-    "school": "Leavitt School of Health"
-  },
-  {
-    "type": "program",
-    "code": "BSNU",
-    "title": "Bachelor of Science, Nursing",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Health Professions"
-  },
-  {
-    "type": "program",
-    "code": "BSPH",
-    "title": "Bachelor of Science, Public Health",
-    "active": true,
-    "scope": "AP",
-    "school": "Leavitt School of Health"
-  },
-  {
-    "type": "program",
-    "code": "BSPM",
-    "title": "Bachelor of Science, Project Management",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Business"
-  },
-  {
-    "type": "program",
-    "code": "BSPNTR",
-    "title": "Bachelor of Science, Nursing - Prelicensure (Pre-Nursing)",
-    "active": true,
-    "scope": "AP",
-    "school": "Leavitt School of Health"
-  },
-  {
-    "type": "program",
-    "code": "BSPSY",
-    "title": "Bachelor of Science in Psychology",
-    "active": true,
-    "scope": "AP",
-    "school": "Leavitt School of Health"
-  },
-  {
-    "type": "program",
-    "code": "BSRN",
-    "title": "Bachelor of Science, Nursing",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Health Professions"
-  },
-  {
-    "type": "program",
-    "code": "BSSCOM",
-    "title": "Bachelor of Science Supply Chain and Operations Management | Bachelor of Science, Supply Chain and Operations Management",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "BSSEMG",
-    "title": "Bachelor of Science, Science Education (Middle Grades)",
-    "active": false,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "BSSESB",
-    "title": "Bachelor of Science, Science Education (Secondary Biological Science)",
-    "active": true,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "BSSESC",
-    "title": "Bachelor of Science, Science Education (Secondary Chemistry)",
-    "active": true,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "BSSESE",
-    "title": "Bachelor of Science, Science Education (Secondary Earth Science)",
-    "active": true,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "BSSESP",
-    "title": "Bachelor of Science, Science Education (Secondary Physics)",
-    "active": true,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "BSSWE",
-    "title": "Bachelor of Science, Software Engineering | Master of Science, Information Technology Management portion",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSSWE_C",
-    "title": "Bachelor of Science, Software Engineering",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "BSUXD",
-    "title": "Bachelor of Science, User Experience Design",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Business"
-  },
-  {
-    "type": "program",
-    "code": "CFSEBE",
-    "title": "Certificate: Back End Web Development",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "CFSEFE",
-    "title": "Certificate: Front End Web Development",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "CFSEWADS",
-    "title": "Certificate: Web Application Deployment and Support",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "CLD",
-    "title": "Certificate: Leadership",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "ENDECE",
-    "title": "Endorsement Preparation Program, Early Childhood Education",
-    "active": false,
-    "scope": "AP",
-    "school": "School of Education"
-  },
-  {
-    "type": "program",
     "code": "ENDEDL",
     "title": "Endorsement Preparation Program, Educational Leadership",
     "active": false,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "ENDELL",
-    "title": "Endorsement Preparation Program, English Language Learning | Endorsement Preparation Program, English Language Learning (PreK-12)",
-    "active": true,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "ENDMEMG",
-    "title": "Endorsement Preparation Program, Middle Grades Math",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Education"
-  },
-  {
-    "type": "program",
-    "code": "ENDSEMG",
-    "title": "Endorsement Preparation Program, Middle Grades Science",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Education"
-  },
-  {
-    "type": "program",
-    "code": "ENDSESB",
-    "title": "Endorsement Preparation Program, Biology",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Education"
-  },
-  {
-    "type": "program",
-    "code": "ENDSESC",
-    "title": "Endorsement Preparation Program, Chemistry",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Education"
-  },
-  {
-    "type": "program",
-    "code": "ENDSESE",
-    "title": "Endorsement Preparation Program, Earth Science",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Education"
-  },
-  {
-    "type": "program",
-    "code": "ENDSESP",
-    "title": "Endorsement Preparation Program, Physics",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Education"
-  },
-  {
-    "type": "program",
-    "code": "MACC",
-    "title": "Master of Science, Accounting",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "MACCA",
-    "title": "Master of Science in Accounting, Auditing Specialization",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Business"
-  },
-  {
-    "type": "program",
-    "code": "MACCF",
-    "title": "Master of Science in Accounting, Financial Reporting Specialization",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Business"
-  },
-  {
-    "type": "program",
-    "code": "MACCM",
-    "title": "Master of Science in Accounting, Management Accounting Specialization",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Business"
-  },
-  {
-    "type": "program",
-    "code": "MACCT",
-    "title": "Master of Science in Accounting, Taxation Specialization",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Business"
-  },
-  {
-    "type": "program",
-    "code": "MAELLP12",
-    "title": "Master of Arts, English Language Learning | Master of Arts, English Language Learning (PreK-12)",
-    "active": true,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "MAME12",
-    "title": "Master of Arts, Mathematics Education (5-12)",
-    "active": false,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "MAME9",
-    "title": "Master of Arts, Mathematics Education (5-9)",
-    "active": false,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "MAMEK6",
-    "title": "Master of Arts, Mathematics Education (K-6)",
-    "active": true,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "MAMEMG",
-    "title": "Master of Arts in Mathematics Education (Middle Grades)",
-    "active": true,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "MAMES",
-    "title": "Master of Arts in Mathematics Education (Secondary)",
-    "active": true,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "MASE9",
-    "title": "Master of Arts, Science Education (5-9)",
-    "active": false,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "MASEB12",
-    "title": "Master of Arts, Science Education (5-12, Bio)",
-    "active": false,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "MASECH12",
-    "title": "Master of Arts, Science Education (5-12, Chemistry)",
-    "active": false,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "MASEG12",
-    "title": "Master of Arts, Science Education (5-12, Geo)",
-    "active": false,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "MASEMG",
-    "title": "Master of Arts Science Education (Middle Grades)",
-    "active": true,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "MASEPH12",
-    "title": "Master of Arts, Science Education (5-12, Physics)",
-    "active": false,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "MASESB",
-    "title": "Master of Arts Science Education (Secondary Biological Science)",
-    "active": true,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "MASESC",
-    "title": "Master of Arts Science Education (Secondary Chemistry)",
-    "active": true,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "MASESE",
-    "title": "Master of Arts Science Education (Secondary Earth Science)",
-    "active": true,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "MASESP",
-    "title": "Master of Arts Science Education (Secondary Physics)",
-    "active": true,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "MATEES",
-    "title": "Master of Arts in Teaching, English Education (Secondary)",
-    "active": true,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "MATELED",
-    "title": "Master of Arts in Teaching, Elementary Education",
-    "active": true,
     "scope": "AP",
     "school": "Teachers College"
   },
@@ -14932,22 +15401,6 @@
   },
   {
     "type": "program",
-    "code": "MATMEMG",
-    "title": "Master of Arts in Teaching, Mathematics Education (Middle Grades)",
-    "active": false,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "MATMES",
-    "title": "Master of Arts in Teaching, Mathematics Education (Secondary)",
-    "active": true,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
     "code": "MATSC12",
     "title": "Master of Arts in Teaching, Science (5-12)",
     "active": false,
@@ -14964,54 +15417,6 @@
   },
   {
     "type": "program",
-    "code": "MATSES",
-    "title": "Master of Arts in Teaching, Science Education (Secondary)",
-    "active": false,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "MATSESB",
-    "title": "Master of Arts in Teaching, Science Education (Secondary Biology)",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Education"
-  },
-  {
-    "type": "program",
-    "code": "MATSESC",
-    "title": "Master of Arts in Teaching, Science Education (Secondary Chemistry)",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Education"
-  },
-  {
-    "type": "program",
-    "code": "MATSESE",
-    "title": "Master of Arts in Teaching, Science Education (Secondary Earth Science)",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Education"
-  },
-  {
-    "type": "program",
-    "code": "MATSESP",
-    "title": "Master of Arts in Teaching, Science Education (Secondary Physics)",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Education"
-  },
-  {
-    "type": "program",
-    "code": "MATSPED",
-    "title": "Master of Arts in Teaching, Special Education",
-    "active": true,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
     "code": "MATSS12",
     "title": "Master of Arts in Teaching, Social Science (5-12)",
     "active": false,
@@ -15020,67 +15425,59 @@
   },
   {
     "type": "program",
-    "code": "MATSSES",
-    "title": "Master of Arts in Teaching, Social Studies Education (Secondary)",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Education"
-  },
-  {
-    "type": "program",
-    "code": "MBA",
-    "title": "Master of Business Administration",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "MBAHA",
-    "title": "Master of Business Administration, Healthcare Administration",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Business"
-  },
-  {
-    "type": "program",
-    "code": "MBAHM",
-    "title": "MBA, Healthcare Management",
+    "code": "MAME12",
+    "title": "Master of Arts, Mathematics Education (5-12)",
     "active": false,
     "scope": "AP",
-    "school": "College of Business"
+    "school": "Teachers College"
   },
   {
     "type": "program",
-    "code": "MBAITM",
-    "title": "MBA, IT Management",
-    "active": true,
+    "code": "MAME9",
+    "title": "Master of Arts, Mathematics Education (5-9)",
+    "active": false,
     "scope": "AP",
-    "school": "College of Business"
+    "school": "Teachers College"
   },
   {
     "type": "program",
-    "code": "MEDETID",
-    "title": "Master of Education, Education Technology and Instructional Design",
-    "active": true,
+    "code": "MASEB12",
+    "title": "Master of Arts, Science Education (5-12, Bio)",
+    "active": false,
     "scope": "AP",
-    "school": "School of Education"
+    "school": "Teachers College"
   },
   {
     "type": "program",
-    "code": "MEDETIDA",
-    "title": "Master of Education, Education Technology and Instructional Design",
-    "active": true,
+    "code": "MASECH12",
+    "title": "Master of Arts, Science Education (5-12, Chemistry)",
+    "active": false,
     "scope": "AP",
-    "school": "School of Education"
+    "school": "Teachers College"
   },
   {
     "type": "program",
-    "code": "MEDETIDK12",
-    "title": "Master of Education, Education Technology and Instructional Design",
-    "active": true,
+    "code": "MASEG12",
+    "title": "Master of Arts, Science Education (5-12, Geo)",
+    "active": false,
     "scope": "AP",
-    "school": "School of Education"
+    "school": "Teachers College"
+  },
+  {
+    "type": "program",
+    "code": "MASEPH12",
+    "title": "Master of Arts, Science Education (5-12, Physics)",
+    "active": false,
+    "scope": "AP",
+    "school": "Teachers College"
+  },
+  {
+    "type": "program",
+    "code": "MASE9",
+    "title": "Master of Arts, Science Education (5-9)",
+    "active": false,
+    "scope": "AP",
+    "school": "Teachers College"
   },
   {
     "type": "program",
@@ -15100,312 +15497,8 @@
   },
   {
     "type": "program",
-    "code": "MHA",
-    "title": "Master of Healthcare Administration",
-    "active": true,
-    "scope": "AP",
-    "school": "Leavitt School of Health"
-  },
-  {
-    "type": "program",
-    "code": "MHL",
-    "title": "Master of Health Leadership",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Health Professions"
-  },
-  {
-    "type": "program",
-    "code": "MPH",
-    "title": "Master of Public Health",
-    "active": true,
-    "scope": "AP",
-    "school": "Leavitt School of Health"
-  },
-  {
-    "type": "program",
-    "code": "MSCIN",
-    "title": "Master of Science, Curriculum and Instruction",
-    "active": true,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "MSCSAIML",
-    "title": "Master of Science, Computer Science, Artificial Intelligence and Machine Learning",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Technology"
-  },
-  {
-    "type": "program",
-    "code": "MSCSCS",
-    "title": "Master of Science, Computer Science, Computing Systems",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Technology"
-  },
-  {
-    "type": "program",
-    "code": "MSCSHCI",
-    "title": "Master of Science, Computer Science, Human-Computer Interaction",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Technology"
-  },
-  {
-    "type": "program",
-    "code": "MSCSIA",
-    "title": "Master of Science, Cybersecurity and Information Assurance",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "MSCSUG",
-    "title": "Bachelor of Science, Computer Science (BSCS to MSCS)",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Technology"
-  },
-  {
-    "type": "program",
-    "code": "MSDA",
-    "title": "Master of Science, Data Analytics",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "MSDADE",
-    "title": "Master of Science, Data Analytics - Data Engineering",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Technology"
-  },
-  {
-    "type": "program",
-    "code": "MSDADPE",
-    "title": "Master of Science, Data Analytics - Decision Process Engineering",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Technology"
-  },
-  {
-    "type": "program",
-    "code": "MSDADS",
-    "title": "Master of Science, Data Analytics - Data Science",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Technology"
-  },
-  {
-    "type": "program",
-    "code": "MSEDL",
-    "title": "Master of Science, Educational Leadership",
-    "active": true,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "MSHRM",
-    "title": "Master of Science, Human Resource Management",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "MSIHCM",
-    "title": "Master of Science, Integrated Healthcare Management",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "MSIT",
-    "title": "Master of Science, Information Technology",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Technology"
-  },
-  {
-    "type": "program",
-    "code": "MSITM",
-    "title": "Master of Science, Information Technology Management",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "MSITMUG",
-    "title": "Bachelor of Science, Information Technology (BSIT to MSITM) | Master of Science, Information Technology Management portion",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Information Technology"
-  },
-  {
-    "type": "program",
-    "code": "MSITPM",
-    "title": "Master of Science, Information Technology - Product Management",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Technology"
-  },
-  {
-    "type": "program",
-    "code": "MSITUG",
-    "title": "Bachelor of Science, Information Technology (BSIT to MSIT)",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Technology"
-  },
-  {
-    "type": "program",
-    "code": "MSMK",
-    "title": "Master of Science in Marketing, Digital Marketing Specialization",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "MSMKA",
-    "title": "Master of Science in Marketing, Marketing Analytics Specialization",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "MSML",
-    "title": "Master of Science, Management and Leadership",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Business"
-  },
-  {
-    "type": "program",
-    "code": "MSNUED",
-    "title": "Master of Science, Nursing - Education | Master of Science, Nursing - Education (BSN to MSN)",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Health Professions"
-  },
-  {
-    "type": "program",
-    "code": "MSNUFNP",
-    "title": "Master of Science, Nursing - Family Nurse Practitioner (BSN to MSN)",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Health Professions"
-  },
-  {
-    "type": "program",
-    "code": "MSNULM",
-    "title": "Master of Science, Nursing - Leadership and Management | Master of Science, Nursing - Leadership and Management (BSN to MSN)",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Health Professions"
-  },
-  {
-    "type": "program",
-    "code": "MSNUNI",
-    "title": "Master of Science, Nursing - Nursing Informatics | Master of Science, Nursing - Nursing Informatics (BSN to MSN)",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Health Professions"
-  },
-  {
-    "type": "program",
-    "code": "MSNUPMHNP",
-    "title": "Master of Science, Nursing - Psychiatric Mental Health Nurse Practitioner",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Health Professions"
-  },
-  {
-    "type": "program",
-    "code": "MSRNNUEDGR",
-    "title": "Master of Science, Nursing - Education | Master of Science, Nursing - Education (RN to MSN)",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Health Professions"
-  },
-  {
-    "type": "program",
-    "code": "MSRNNULMGR",
-    "title": "Master of Science, Nursing - Leadership and Management | Master of Science, Nursing - Leadership and Management (RN to MSN)",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Health Professions"
-  },
-  {
-    "type": "program",
-    "code": "MSRNNUNIFGR",
-    "title": "Master of Science, Nursing - Nursing Informatics (RN to MSN)",
-    "active": true,
-    "scope": "AP",
-    "school": "Leavitt School of Health"
-  },
-  {
-    "type": "program",
-    "code": "MSRNNUNIGR",
-    "title": "Master of Science, Nursing - Nursing Informatics",
-    "active": false,
-    "scope": "AP",
-    "school": "College of Health Professions"
-  },
-  {
-    "type": "program",
     "code": "MSSP",
     "title": "Master of Science, Special Education",
-    "active": false,
-    "scope": "AP",
-    "school": "Teachers College"
-  },
-  {
-    "type": "program",
-    "code": "MSSWEAIE",
-    "title": "Master of Science, Software Engineering - AI Engineering",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Technology"
-  },
-  {
-    "type": "program",
-    "code": "MSSWEDDD",
-    "title": "Master of Science, Software Engineering - Domain Driven Design",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Technology"
-  },
-  {
-    "type": "program",
-    "code": "MSSWEDOE",
-    "title": "Master of Science, Software Engineering - DevOps Engineering",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Technology"
-  },
-  {
-    "type": "program",
-    "code": "MSSWEUG",
-    "title": "Bachelor of Science, Software Engineering (BSSWE to MSSWE)",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Technology"
-  },
-  {
-    "type": "program",
-    "code": "PBELED",
-    "title": "Post-baccalaureate, Elementary Education",
     "active": false,
     "scope": "AP",
     "school": "Teachers College"
@@ -15460,34 +15553,10 @@
   },
   {
     "type": "program",
-    "code": "PMCNUED",
-    "title": "Post-Master's Certificate, Nursing - Nursing Education (Post-MSN)",
-    "active": true,
+    "code": "PBELED",
+    "title": "Post-baccalaureate, Elementary Education",
+    "active": false,
     "scope": "AP",
-    "school": "College of Health Professions"
-  },
-  {
-    "type": "program",
-    "code": "PMCNUFNP",
-    "title": "Post-Master's Certificate, Nursing - Family Nurse Practitioner (Post-MSN)",
-    "active": true,
-    "scope": "AP",
-    "school": "Leavitt School of Health"
-  },
-  {
-    "type": "program",
-    "code": "PMCNULM",
-    "title": "Post-Master's Certificate, Nursing - Leadership and Management (Post-MSN)",
-    "active": true,
-    "scope": "AP",
-    "school": "College of Health Professions"
-  },
-  {
-    "type": "program",
-    "code": "PMCNUPMHNP",
-    "title": "Post-Master's Certificate, Nursing - Psychiatric Mental Health Nurse Practitioner (Post-MSN)",
-    "active": true,
-    "scope": "AP",
-    "school": "Leavitt School of Health"
+    "school": "Teachers College"
   }
 ]

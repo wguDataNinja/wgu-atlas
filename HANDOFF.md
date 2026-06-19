@@ -1,6 +1,6 @@
 # HANDOFF
 
-Updated: 2026-06-19
+Updated: 2026-06-19 (post-program-runtime-export fix)
 Repo: wgu-atlas
 Role: Current assistant/coding-agent entry point.
 
@@ -30,7 +30,11 @@ Next.js static site (public-facing) for WGU course, program, and catalog history
 
 **Public/data state (local):**
 - `public/data/homepage_summary.json` locally reports `data_date: "2026-06"`, archive span 2017-01 to 2026-06, 111 editions.
-- Local public/data has been regenerated from trusted/2026_06. Deployed site (GitHub Pages) remains at 2026-03 until a deploy/stage/commit is executed.
+- Local public/data has been regenerated from trusted/2026_06.
+- `public/data/programs.json` now exports 198 program records: 116 active and 82 retired. Active program records match `trusted/2026_06/program_blocks_2026_06.json`.
+- `BSAIE` and `BSPM` are present in `programs.json`, active in `search_index.json`, included in homepage `newest_programs` / `recent_version_changes`, and generated as static program routes. They render with an intentional "Current Catalog Record" fallback because guide-derived roster/outcomes/resources are not yet attached for those new programs.
+- The earlier 2026-06 refresh commit is `9fa38e1`; the program-runtime export correction is local and must be reviewed/staged/committed before push/deploy.
+- Deployed site (GitHub Pages) remains at 2026-03 until push + deploy.
 
 **Deployment:**
 - Static export via Next.js build, deployed via GitHub Pages + GitHub Actions on push.
@@ -43,27 +47,42 @@ Next.js static site (public-facing) for WGU course, program, and catalog history
 
 ## Current priority
 
-1. Git-steward review and stage/commit of the complete catalog-currentness package (Packages A-D).
-2. Deploy approval and post-deploy smoke checks.
-3. Defer actual `wgu-catalog` repo split until parser guardrails and output contract are documented.
+1. ~~Git-steward review and stage/commit~~ ✅ Done — commit `9fa38e1`.
+2. **Review/stage/commit the program-runtime export correction** — includes `build_site_data.py`, regenerated `public/data/{programs,search_index,homepage_summary}.json`, program-route fallback, footer currentness wiring, and docs.
+3. **Push** `homepage-redesign` branch to origin.
+4. **Deploy** — GitHub Actions auto-deploys on push. Verify the workflow runs clean.
+5. **Post-deploy smoke checks** on the live site.
+6. Defer `wgu-catalog` repo split until parser guardrails and output contract are documented.
 
 ## Next safe actions
 
-1. Git-steward review: stage/commit the 4 change groups (freeze script + trusted/2026_06 snapshot + build_site_data.py edition config + regenerated public/data).
-2. Deploy via standard GitHub Pages workflow.
-3. Post-deploy smoke-check: `/wgu-atlas/` shows 2026-06 current edition, E200 renders, D436 not active, BSAIE/BSPM visible.
-4. Document data currency matrix in `docs/data_currency.md` (deferred from active sprint).
+1. **Git-steward review/stage/commit** the local program-runtime export correction. Do not include unrelated dirty UI/QA files.
+2. **Push** — `git push origin homepage-redesign` (manual/operator).
+3. **Deploy** — Triggered automatically on push via GitHub Actions `.github/workflows/`. Verify the build + deploy workflow succeeds.
+4. **Post-deploy smoke-check** — visit these routes on the live site:
+   - `/wgu-atlas/` — homepage shows 2026-06 current, active_ap=866, active_programs=116
+   - `/wgu-atlas/courses/E200` — MSHRM Capstone renders
+   - `/wgu-atlas/courses/D436` — 404 or clearly retired (removed in 2026-06)
+   - `/wgu-atlas/programs/BSAIE` — Bachelor of Science, AI Engineering; shows Current Catalog Record fallback
+   - `/wgu-atlas/programs/BSPM` — Bachelor of Science, Project Management; shows Current Catalog Record fallback
+   - `/wgu-atlas/schools/business` — includes BSPM in current degrees
+   - `/wgu-atlas/schools/technology` — includes BSAIE in current degrees
+   - `/wgu-atlas/data` — download links reflect 2026-06 data
+   - `/wgu-atlas/methods` — copy still accurate
+5. **Document data currency matrix** in `docs/data_currency.md` (deferred — low urgency).
+6. **Resume product work** after deploy: homepage redesign, official resource layer, course-page enrichment, Atlas QA F-089 regression fix.
 
 ## Do not do
 
-- Do not update public copy to claim 2026-06 current active state until `public/data/` is regenerated from trusted 2026-06.
-- Do not run `scripts/build_site_data.py` as a publish step until trusted 2026-06 exists and edition config is ready.
-- Do not regenerate public runtime from 2026-06 before `trusted/2026_06/` exists.
+- ~~Do not update public copy to claim 2026-06~~ ✅ Done — public/data committed at 2026-06.
+- ~~Do not run `build_site_data.py` as publish step~~ ✅ Done — edition-configurable, deploy-blockers fixed.
+- ~~Do not regenerate public runtime before trusted/2026_06 exists~~ ✅ Done — snapshot exists.
 - Do not start actual `wgu-catalog` repo split unless explicitly activated.
 - Do not run long full upstream pipeline jobs without operator approval.
 - Do not commit raw PDFs or raw catalog text files.
 - Do not clean unrelated dirty files opportunistically.
-- Do not redesign homepage around stale/ambiguous current data.
+- Do not redesign homepage around stale/ambiguous current data (still relevant — deploy first).
+- Do not push or deploy without verifying the GitHub Actions workflow is ready.
 
 ## Key paths
 
@@ -71,23 +90,25 @@ Next.js static site (public-facing) for WGU course, program, and catalog history
 - `src/atlas_qa/` — **source code**: Python QA subsystem (retrieval, generation, eval).
 - `public/data/` — **public/publishable outputs**: site-consumed JSON (courses, events, search index). Tracked, deployed with site.
 - `data/catalog/trusted/2026_03/` — **source inputs**: frozen site-current snapshot (8 files). Currently the only trusted snapshot.
-- `data/catalog/trusted/2026_06/` — **intended source inputs**: next trusted snapshot (does not exist yet).
+- `data/catalog/trusted/2026_06/` — **source inputs**: next trusted snapshot (created, 8 files, committed).
 - `data/catalog/change_tracking/`, `edition_diffs/`, `program_names/` — **generated outputs**: mirrored history/diff artifacts (tracked).
 - `data/catalog/helpers/` — **local-only/ignored**: large JSON build tools (course_index_v10.json 58MB, etc.).
 - `data/catalog/raw_catalog_texts/` — **local-only/ignored**: raw scraped edition texts (gitignored .txt files).
 - `scripts/` — **scripts/tools**: ~22 Python data build and validation scripts.
 - `tests/` — **tests/QA**: pytest test suite (276 tests for atlas_qa).
 - `_internal/` — **docs/control docs**: CONTROL, REPO_MEMORY, DEV_LOG, CODEX_*, WORKQUEUE. Tracked; classify by specific doc.
-- `artifacts/` — **unknown/ambiguous**: pipeline run artifacts (JSONL). Not in gitignore — inspect before publishing.
+- `artifacts/` — **pipeline run artifacts**: JSONL outputs (in `.gitignore`).
 
 ## Current data/status
 
 - 111 catalog editions mirrored (2017-01 through 2026-06), 3 missing.
 - **Trusted snapshots**: `trusted/2026_03/` (original) and `trusted/2026_06/` (created via `scripts/freeze_trusted_snapshot.py`).
 - **Local runtime**: public/data regenerated from trusted/2026_06 — 866 active AP courses, 116 active programs, 52 cert codes.
-- **Deployed runtime**: remains 2026-03 until stage/commit/deploy cycle completes.
+- Program runtime is now consistent: `programs.json` has 198 records, 116 active, 82 retired; active program codes exactly match trusted 2026_06 program blocks.
+- **Deployed runtime**: remains 2026-03 until push + deploy completes.
 - `build_site_data.py` now supports `WGU_CATALOG_CURRENT_EDITION` env var (default `2026_03`).
 - `active_programs` derived from trusted program_blocks, not program_history.csv status field.
+- `programs.json`, program search entries, homepage program lists, school program lists, and program route static params now use the same program records/status contract.
 - Build script cleans stale `public/data/courses/*.json` before regenerating active per-course files.
 - 3 catalog editions missing from archive: 2017-02, 2017-04, 2017-06.
 - Certificate codes tracked only from 2024-09 forward.
@@ -126,11 +147,12 @@ The following require approval or caution:
 4. **active_programs=0**: RESOLVED — derived from `len(program_blocks)` instead of program_history.csv status field.
 5. **stale per-course files**: RESOLVED — build script cleans `public/data/courses/*.json` before regeneration.
 6. **total_course_codes_ever**: RESOLVED — now data-driven from `len(canonical_rows)`.
-7. `summary_stats.json` reports active counts cautiously; upstream schema review needed before relying on counts for anything other than edition-count derivation.
-8. Raw/helper catalog files (`helpers/`, `raw_catalog_texts/`) are large and must stay gitignored.
-9. Dirty working tree can mix mirror changes with unrelated work — checkpoint before new work.
-10. `_internal/` is tracked and contains design docs, session notes, QA plans. These would become public on deploy.
-11. `artifacts/` at repo root contains pipeline run outputs (JSONL) and is not in gitignore — inspect before publishing.
+7. **program runtime export gap**: RESOLVED locally — `build_site_data.py` now writes `public/data/programs.json`; `BSAIE`/`BSPM` resolve as active program pages with intentional fallback messaging for missing guide-derived detail.
+8. `summary_stats.json` reports active counts cautiously; upstream schema review needed before relying on counts for anything other than edition-count derivation.
+9. Raw/helper catalog files (`helpers/`, `raw_catalog_texts/`) are large and must stay gitignored.
+10. Dirty working tree can mix mirror changes with unrelated work — checkpoint before new work.
+11. `_internal/` is tracked and contains design docs, session notes, QA plans. These would become public on deploy.
+12. `artifacts/` at repo root contains pipeline run outputs (JSONL) — already in `.gitignore` (inspected 2026-06-19: two tiny files, safe).
 
 ## Latest planning sources
 
@@ -150,3 +172,41 @@ The following require approval or caution:
 - [`data/catalog/README.md`](data/catalog/README.md) — Catalog mirror layout and conventions (121 lines).
 - [`AGENTS.md`](AGENTS.md) — Agent contract and watchouts.
 - [`README.md`](README.md) — Public orientation and data provenance.
+
+---
+
+## What's done (Packages A-E)
+
+| Package | What | Status |
+|---|---|---|
+| **A** | `scripts/freeze_trusted_snapshot.py` + `data/catalog/trusted/2026_06/` (8 files) | ✅ Committed |
+| **B** | `WGU_CATALOG_CURRENT_EDITION` env var; dynamic TRUST path; data-driven homepage fields | ✅ Committed |
+| **C** | Local 2026_06 runtime regeneration; blocker identification | ✅ Committed |
+| **D** | `active_programs` fix (program_blocks), stale per-course cleanup, `total_course_codes_ever` data-driven, search/program active status fix | ✅ Committed |
+| **E** | `programs.json` export from trusted-current program records; BSAIE/BSPM static routes; program fallback messaging; footer archive-span wiring | ✅ Local — needs review/stage/commit |
+| **Docs** | HANDOFF, ATLAS_CONTROL, ATLAS_REPO_MEMORY, DEV_LOG updated | ✅ Committed |
+| **Git** | `9fa38e1` — 889 files staged/committed. No unrelated files included. | ✅ Committed |
+
+## What remains
+
+- **Commit Package E**: review/stage/commit the local program-runtime export correction without unrelated dirty files.
+- **Push** (operator): `git push origin homepage-redesign`
+- **Deploy**: GitHub Actions auto-deploys on push. Watch the workflow.
+- **Smoke-check** the live site on the routes listed above.
+- **Resume product roadmap**: homepage redesign, official resource layer, course-page enrichment, Atlas QA.
+
+## My thoughts on next steps
+
+**Immediate (pre-deploy):**
+- Commit the Package E correction first. The local build validates 1906 static pages, including `/programs/BSAIE` and `/programs/BSPM`.
+- The `homepage-redesign` branch still has pre-existing unrelated dirty files (UI polish, Atlas QA) that must not be swept into the program-runtime correction commit.
+- `README.md` still references 108 editions / 2026-03 in its public-facing copy. Should be updated to 111 editions / 2026-06 as part of the release cleanup cycle.
+
+**Medium-term:**
+- **Homepage redesign** is the stated primary product track. The catalog-currentness work existed to make homepage stats data-honest before redesign. That foundation is now ready. The next bounded step is converting the homepage strategy into implementation-ready module specs.
+- **Official resource layer** and **course-page enrichment** are the next major content-expansion tracks after homepage.
+- **Atlas QA** F-089 regression fix is a small bounded fix that's been deferred through this whole catalog-currentness workstream.
+
+**Deferred:**
+- `wgu-catalog` repo split — still deferred. Parser guardrails (`--all` requirement enforcement) and output contract documentation are prerequisites.
+- `docs/data_currency.md` — a helpful documentation artifact but not blocking anything.

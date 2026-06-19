@@ -18,13 +18,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const { data_date } = getHomepageSummary();
+  const { archive_span, data_date } = getHomepageSummary();
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col">
         <Nav />
         <main className="flex-1">{children}</main>
-        <Footer dataDate={data_date} />
+        <Footer archiveSpan={archive_span} dataDate={data_date} />
       </body>
     </html>
   );

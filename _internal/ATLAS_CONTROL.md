@@ -52,7 +52,7 @@ If local docs conflict on current progress or next-step sequencing, trust in thi
 | Official resource layer | active, bounded queueing established | continue conservative attachment expansion with provenance clarity | placement model expansion and completeness audits are still incomplete | reconcile regulatory queue vs current placements, then run outcomes/accreditation completeness pass |
 | Continuity review | initialized, lightweight | validate compact review method | first tiny validation batch not created | create 4-card validation batch |
 | Program lineage / degree history | ready, not selected | keep system stable for later export/UI if chosen | export/runtime wiring not implemented | no action unless selected |
-| Catalog baseline / site runtime (currentness refresh) | **COMPLETE** — Packages A-D finished 2026-06-19 | trusted/2026_06 snapshot created and validated; build_site_data.py edition-configurable; local public/data regenerated and deploy-blockers fixed | git-steward review/stage/commit, then deploy approval | stage/commit catalog-currentness package, deploy, post-deploy smoke-check |
+| Catalog baseline / site runtime (currentness refresh) | **COMPLETE LOCALLY** — Packages A-E finished 2026-06-19 | trusted/2026_06 snapshot created and validated; build_site_data.py edition-configurable; local public/data regenerated; program runtime export gap fixed | git-steward review/stage/commit of Package E, then deploy approval | commit program-runtime correction, deploy, post-deploy smoke-check |
 | Catalog mirror / future wgu-catalog boundary | ON HOLD until post-deploy | Keep Atlas consuming local `data/catalog/` mirror and document split-readiness | no immediate work until currentness refresh is deployed | after deploy: resume split-readiness docs |
 
 ---
@@ -259,9 +259,9 @@ Priority order:
 
 ---
 
-### 6.3b Catalog currentness refresh (Packages A-D)
+### 6.3b Catalog currentness refresh (Packages A-E)
 
-**Status: COMPLETE** (2026-06-19)
+**Status: COMPLETE LOCALLY** (2026-06-19)
 
 **What was done:**
 - **Package A**: Created `data/catalog/trusted/2026_06/` (8 files) via `scripts/freeze_trusted_snapshot.py`.
@@ -272,14 +272,24 @@ Priority order:
   - Build script cleans stale `public/data/courses/*.json` before generating active per-course files.
   - `total_course_codes_ever` is data-driven from `len(canonical_rows)`.
   - Program active status in search + newest_programs + recent_version_changes uses program_blocks-derived status.
-- Final validation: `validate_canonical_objects` 14/14, `npm lint` clean, `npm build` 1904 pages.
+- **Package E**: Fixed the remaining program runtime export gap:
+  - `scripts/build_site_data.py` now writes `public/data/programs.json` from `program_history.csv` plus trusted current `program_blocks`.
+  - Program status is derived from trusted current blocks because `program_history.csv` status is unreliable for currentness.
+  - `programs.json`, search program entries, homepage program lists, school program lists, and program static params now share the same program record/status contract.
+  - `BSAIE` and `BSPM` now resolve as active program routes.
+  - New active programs without guide/enriched detail render an intentional "Current Catalog Record" fallback instead of silent thin pages.
+  - Footer archive coverage is now sourced from `homepage_summary.archive_span`.
+- Final validation: `python3 -m py_compile scripts/build_site_data.py`, `WGU_CATALOG_CURRENT_EDITION=2026_06 python3 scripts/build_site_data.py`, read-only artifact consistency checks, and `npm run build` (1906 static pages).
 
 **Remaining gates:**
-- Git-steward review, stage/commit of the complete package.
+- Git-steward review, stage/commit of Package E. Do not include unrelated dirty UI/QA files.
 - Deploy approval and post-deploy smoke checks.
 
 **Local runtime state:**
 - `public/data/homepage_summary.json`: `data_date=2026-06`, `active_ap=866`, `active_programs=116`, `total_editions=111`.
+- `public/data/programs.json`: 198 records, 116 active, 82 retired; active program codes exactly match `trusted/2026_06/program_blocks_2026_06.json`.
+- `BSAIE`: active, School of Technology, 121 CUs, static route generated with Current Catalog Record fallback.
+- `BSPM`: active, School of Business, 120 CUs, static route generated with Current Catalog Record fallback.
 - `trusted/2026_06/` manifest status: `SCRIPT_VALIDATED_PENDING_MANUAL_REVIEW`.
 - Deployed site (GitHub Pages) remains at 2026-03 until commit+deploy.
 
@@ -418,13 +428,13 @@ These should not be reopened by default.
 
 ## 9. Exact next-session order
 
-1. **Atlas QA — session 12b (micro-fix):** remove Fix 3 retry from `generation.py` (introduced F-089 regression — retry overrides correct model abstention on out-of-scope queries); update `GenerationOutput.retried` field removal or leave as dead flag; re-run eval to confirm F gate recovers; no spec file needed for a one-function revert. Session 12 complete ✅.
-2. **Homepage redesign — implementation planning pass:** convert the 2026-03-22 homepage strategy into implementation-ready section/module specs, copy hierarchy, and build order.
-3. **Official resource — bounded next pass:** reconcile regulatory queue against current placements, then run outcomes/accreditation completeness audit. Working area: `_internal/official_resource/`.
-4. **Course-page enrichment — incremental production rollout:** baseline "Course Learning Outcomes" scraping-artifact section is live on `/courses/[code]`; continue bounded block rollout (cert/prereq/reverse-prereq/capstone) after homepage planning milestones.
-5. **Continuity review first batch:** run first 4-card batch (`_internal/continuity_review/validation_batch_01.md`). Low priority relative to items 1–3.
-6. **Degree-homepage reconciliation pilot (non-BSDA):** run the extraction/comparison scripts on one additional degree page, then assess portability and failure modes before broader rollout.
-7. **Catalog current-snapshot refresh:** **COMPLETE** — trusted/2026_06 exists, build_site_data.py edition-configurable, local public/data regenerated. Deploy blocker fixes applied. Remaining: git-steward closure and deploy.
+1. **Catalog current-snapshot refresh Package E closure:** review/stage/commit the local program-runtime export correction, then push/deploy only after operator approval. `BSAIE`/`BSPM` now resolve locally; keep this package isolated from unrelated dirty UI/QA files.
+2. **Atlas QA — session 12b (micro-fix):** remove Fix 3 retry from `generation.py` (introduced F-089 regression — retry overrides correct model abstention on out-of-scope queries); update `GenerationOutput.retried` field removal or leave as dead flag; re-run eval to confirm F gate recovers; no spec file needed for a one-function revert. Session 12 complete ✅.
+3. **Homepage redesign — implementation planning pass:** convert the 2026-03-22 homepage strategy into implementation-ready section/module specs, copy hierarchy, and build order.
+4. **Official resource — bounded next pass:** reconcile regulatory queue against current placements, then run outcomes/accreditation completeness audit. Working area: `_internal/official_resource/`.
+5. **Course-page enrichment — incremental production rollout:** baseline "Course Learning Outcomes" scraping-artifact section is live on `/courses/[code]`; continue bounded block rollout (cert/prereq/reverse-prereq/capstone) after homepage planning milestones.
+6. **Continuity review first batch:** run first 4-card batch (`_internal/continuity_review/validation_batch_01.md`). Low priority relative to items 1–4.
+7. **Degree-homepage reconciliation pilot (non-BSDA):** run the extraction/comparison scripts on one additional degree page, then assess portability and failure modes before broader rollout.
 
 **Guide-adjacent items that can be picked up any time without blocking other work:**
 - Cert review queue (21 rows) — editorial judgment against source text
