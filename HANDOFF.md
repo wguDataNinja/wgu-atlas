@@ -183,24 +183,26 @@ The following require approval or caution:
 | **B** | `WGU_CATALOG_CURRENT_EDITION` env var; dynamic TRUST path; data-driven homepage fields | ✅ Committed |
 | **C** | Local 2026_06 runtime regeneration; blocker identification | ✅ Committed |
 | **D** | `active_programs` fix (program_blocks), stale per-course cleanup, `total_course_codes_ever` data-driven, search/program active status fix | ✅ Committed |
-| **E** | `programs.json` export from trusted-current program records; BSAIE/BSPM static routes; program fallback messaging; footer archive-span wiring | ✅ Local — needs review/stage/commit |
+| **E** | `programs.json` export from trusted-current program records; BSAIE/BSPM static routes; program fallback messaging; footer archive-span wiring | ✅ Committed (`7058c05`) |
 | **Docs** | HANDOFF, ATLAS_CONTROL, ATLAS_REPO_MEMORY, DEV_LOG updated | ✅ Committed |
 | **Git** | `9fa38e1` — 889 files staged/committed. No unrelated files included. | ✅ Committed |
+| **Release copy** | Public currentness claims advanced 2026-03→2026-06 (about, methods, data, homepage, courses, schools, README) | ✅ Committed (`c725b00`) |
+| **Trusted checker** | `scripts/check_trusted_consistency.py` — 22 automated snapshot checks | ✅ Committed (`13a6881`) |
+| **UI polish (leftover)** | Punctuation, print-hidden nav, em-dash cleanup, basePath fallback (9 files) | ✅ Committed (`fee6ed1`) |
 
 ## What remains
 
-- **Commit Package E**: review/stage/commit the local program-runtime export correction without unrelated dirty files.
 - **Push** (operator): `git push origin homepage-redesign`
 - **Deploy**: GitHub Actions auto-deploys on push. Watch the workflow.
 - **Smoke-check** the live site on the routes listed above.
 - **Resume product roadmap**: homepage redesign, official resource layer, course-page enrichment, Atlas QA.
+- **Review/commit pre-existing QA subsystem work**: 6 modified tracked files (QA source + session docs) and ~30 untracked files remain from earlier sessions — needs focused review before staging.
 
 ## My thoughts on next steps
 
 **Immediate (pre-deploy):**
-- Commit the Package E correction first. The local build validates 1906 static pages, including `/programs/BSAIE` and `/programs/BSPM`.
-- The `homepage-redesign` branch still has pre-existing unrelated dirty files (UI polish, Atlas QA) that must not be swept into the program-runtime correction commit.
-- `README.md` still references 108 editions / 2026-03 in its public-facing copy. Should be updated to 111 editions / 2026-06 as part of the release cleanup cycle.
+- Push + deploy is the next step. The tree is clean except for pre-existing QA subsystem work that is independent of the deploy.
+- Pre-deploy smoke-check routes are listed above.
 
 **Medium-term:**
 - **Homepage redesign** is the stated primary product track. The catalog-currentness work existed to make homepage stats data-honest before redesign. That foundation is now ready. The next bounded step is converting the homepage strategy into implementation-ready module specs.

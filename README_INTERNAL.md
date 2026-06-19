@@ -28,7 +28,7 @@ deploy: GitHub Actions CI (static export to out/)
 
 - **Next.js site**: 55+ TS/TSX files across App Router pages (courses, programs, schools, compare, timeline, data, methods, about, proto)
 - **Atlas QA subsystem**: Python Q&A over catalog data — retrieval (BM25 + embedding + fusion), compare mode, answer generation, evidence extraction, post-check, eval harness (100-question gold set)
-- **Data layer**: catalog mirror in `data/catalog/` spans 111 editions through 2026-06; frontend JSON in `public/data/` still uses the frozen 2026-03 current-site snapshot — 838 active AP courses, 52 cert codes, 1,646 total course codes, 114 program blocks, 41 catalog events
+- **Data layer**: catalog mirror in `data/catalog/` spans 111 editions through 2026-06; public runtime updated to 2026-06 trusted snapshot — 866 active AP courses, 52 cert codes, 1,675 total course codes, 116 program blocks, 41 catalog events
 - **3-doc internal system**: `_internal/ATLAS_CONTROL.md` (execution control), `_internal/ATLAS_REPO_MEMORY.md` (durable facts), `_internal/DEV_LOG.md` (dated ledger)
 - **Ecosystem role**: Catalog-only reference explorer. **Does NOT consume Reddit/community data.** Explicit boundary with Reddit/WGU ecosystem repos.
 
@@ -52,7 +52,7 @@ deploy: GitHub Actions CI (static export to out/)
 5. **Certificate codes** — Only tracked from 2024-09 forward
 6. **Continuity review** — 4-card validation batch not yet created
 7. **Program lineage export/routing** — Not implemented (not active)
-8. **Catalog site-current refresh** — 2026-04/05/06 history mirror is present, but a trusted 2026-06 current snapshot is not yet available for public runtime exports
+8. **Catalog site-current refresh** — ✅ Done — trusted 2026-06 snapshot created, public runtime regenerated and committed (866 AP, 116 programs, 111 editions). Deployed on next push.
 
 ## Durable Decisions
 
