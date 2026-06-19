@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "About WGU Atlas — an independent guide to WGU degrees and courses, built from public WGU sources.",
+  description: "About WGU Atlas: a research surface for WGU degree structure, course relationships, program comparisons, and catalog history.",
 };
 
 export default function AboutPage() {
@@ -11,80 +11,82 @@ export default function AboutPage() {
     <div className="max-w-3xl mx-auto px-4 py-10">
       <h1 className="text-3xl font-bold text-slate-800 mb-2">About WGU Atlas</h1>
       <p className="text-slate-500 mb-10">
-        An independent guide to WGU degrees and courses.
+        A research surface for WGU degree structure, course comparisons, and catalog history.
       </p>
 
-      <Section title="What is WGU Atlas?">
+      <Section title="Catalog Timeline">
         <p>
-          WGU Atlas is an independent guide built from WGU&apos;s public catalog and other
-          public WGU sources. It is not affiliated with or operated by WGU.
+          Atlas tracks 111 published WGU catalog editions from January 2017 through June 2026.
+          Major events are named, dated, and annotated: school reorganizations, program restructures, mass course changes, and degree additions.
         </p>
         <p>
-          The site is meant to help students understand WGU degree options, explore
-          courses, compare related degrees, and find useful context in one place.
+          <Link href="/timeline" className="text-blue-600 hover:underline font-medium">
+            View the full catalog timeline →
+          </Link>
         </p>
       </Section>
 
-      <Section title="What it covers">
-        <ul className="list-disc list-inside space-y-1 text-slate-600">
-          <li>Current WGU degrees across all four colleges</li>
-          <li>A course catalog with historical coverage back to 2017</li>
-          <li>Degree comparisons for related degrees</li>
-          <li>Retired degrees that are still useful for reference</li>
-          <li>College background and earlier names where relevant</li>
+      <Section title="What Atlas is for">
+        <p>
+          Atlas helps students research what a WGU degree actually contains: course by course,
+          across related programs, and over time.
+        </p>
+        <p>
+          WGU publishes a lot of useful information. The problem is that it&apos;s spread across
+          many page types and packaging styles. Atlas reorganizes the academic core of that
+          information into a clearer research surface: inspect a degree, follow a course across
+          programs, compare curricula side by side, understand how things changed.
+        </p>
+      </Section>
+
+      <Section title="What you can do here">
+        <ul className="list-none space-y-2 text-slate-600">
+          {[
+            ["Research a degree in one place", "roster, outcomes, certifications, history, and official resources together"],
+            ["Compare programs by actual courses", "see exact shared and unique courses, not just headline metrics"],
+            ["Follow a course across the catalog", "see every degree it appears in, active and retired"],
+            ["Understand catalog history", "111 editions from 2017–2026; see when degrees and courses first appeared and how they changed"],
+          ].map(([lead, detail]) => (
+            <li key={lead} className="flex gap-2">
+              <span className="text-blue-500 mt-0.5 shrink-0">→</span>
+              <span>
+                <span className="font-medium text-slate-700">{lead}</span>
+                <span className="text-slate-400">: {detail}</span>
+              </span>
+            </li>
+          ))}
         </ul>
       </Section>
 
-      <Section title="Source and independence">
+      <Section title="Independence and sources">
         <p>
-          Atlas is built from WGU&apos;s publicly available catalog data, covering 108
-          editions from January 2017 through March 2026. It does not use internal WGU
-          systems or private data.
+          Atlas is an independent community project, not affiliated with or operated by WGU.
+          All data is derived from WGU&apos;s publicly available course catalog (111 editions,
+          January 2017 through June 2026), plus official WGU program guides and public
+          outcomes pages.
         </p>
         <p>
-          It is a community project, and official WGU sources should still be the final
-          word for advising, enrollment, and academic policy.
-        </p>
-      </Section>
-
-      <Section title="How history and resources are used">
-        <p>
-          When a degree or college has changed over time, Atlas shows that context where
-          it helps explain what you&apos;re viewing. That might include earlier names,
-          past curriculum versions, or other relevant background.
-        </p>
-        <p>
-          Official WGU resources, such as program guides and outcomes pages, are attached
-          to degree and college pages when they have been identified and verified from
-          public WGU sources.
+          For advising, enrollment, or academic policy decisions, official WGU sources are
+          authoritative. Atlas is a research aid, not a substitute.
         </p>
       </Section>
 
       <div className="border-t border-slate-100 pt-8 mt-4">
-        <h2 className="text-base font-semibold text-slate-700 mb-4">More detail</h2>
         <ul className="flex flex-col gap-3 text-sm">
           <li>
             <Link href="/methods" className="text-blue-600 hover:underline font-medium">
-              Methods
+              How this data was collected
             </Link>
             <span className="text-slate-500 ml-2">
-              — how the data was collected and how to interpret it
-            </span>
-          </li>
-          <li>
-            <Link href="/data" className="text-blue-600 hover:underline font-medium">
-              Data
-            </Link>
-            <span className="text-slate-500 ml-2">
-              — download the Atlas datasets
+              archive coverage, validation, and trust caveats
             </span>
           </li>
           <li>
             <Link href="/timeline" className="text-blue-600 hover:underline font-medium">
-              Timeline
+              Catalog timeline
             </Link>
             <span className="text-slate-500 ml-2">
-              — major WGU catalog events from 2017 to 2026
+              major WGU catalog events from 2017 to 2026
             </span>
           </li>
         </ul>

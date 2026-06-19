@@ -320,7 +320,7 @@ export default async function SchoolPage({ params }: Props) {
             <div className="w-1 h-5 bg-amber-500 rounded" />
             <h2 className="text-lg font-bold text-slate-800">Recent Changes</h2>
             <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
-              Based on 2026-03 catalog
+              Based on 2026-06 catalog
             </span>
           </div>
 

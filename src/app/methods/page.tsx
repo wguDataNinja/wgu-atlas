@@ -1,143 +1,99 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Methods",
-  description: "How WGU Atlas data was collected, validated, and interpreted — archive coverage, parser eras, and trust caveats.",
+  title: "How This Data Was Collected",
+  description: "How WGU Atlas data was collected, validated, and what to keep in mind when interpreting it.",
 };
 
 export default function MethodsPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-10">
-      <h1 className="text-3xl font-bold text-slate-800 mb-2">Methods &amp; Caveats</h1>
+      <h1 className="text-3xl font-bold text-slate-800 mb-2">How This Data Was Collected</h1>
       <p className="text-slate-500 mb-10">
-        How this data was collected, validated, and how to interpret it correctly.
+        What Atlas is built from, how it was validated, and what to keep in mind.
       </p>
 
-      <Section title="Archive Coverage">
+      <Section title="The catalog archive">
         <p>
-          WGU Atlas is built from <strong>108 public WGU catalog editions</strong> spanning{" "}
-          <strong>January 2017 through March 2026</strong>. Three editions are absent from
-          the archive (2017-02, 2017-04, 2017-06), likely never published as separate
-          snapshots on the WGU public catalog page.
+          Atlas is built from <strong>111 published editions</strong> of WGU&apos;s public course
+          catalog, spanning January 2017 through June 2026. Each edition is a distinct published
+          snapshot. Three editions are missing from the archive (2017-02, 2017-04, 2017-06) and
+          were likely never published as separate snapshots.
         </p>
         <p>
-          Each edition represents a distinct published snapshot of WGU&apos;s public course
-          catalog. The parser extracts course codes, titles, program memberships, and
-          structural metadata from each edition.
-        </p>
-      </Section>
-
-      <Section title="Parser Eras">
-        <p>
-          The WGU catalog underwent a structural formatting change in mid-2024. Two
-          parser eras are recognized:
-        </p>
-        <ul className="list-disc list-inside text-slate-600 space-y-1">
-          <li><strong>ERA_A:</strong> 2017-01 through 2024-07 — original catalog structure</li>
-          <li><strong>ERA_B:</strong> 2024-08 through 2026-03 — updated catalog structure</li>
-        </ul>
-        <p>
-          The active parser (<code className="text-sm bg-slate-100 px-1 rounded">parse_catalog_v11.py</code>)
-          handles both eras. A full archive run produces 0 skipped editions and 0 body-parse anomalies.
-
+          Each edition was parsed to extract course codes, titles, program memberships, and
+          structural metadata. The 2026-06 edition serves as the current baseline, validated through automated consistency checks and as the most recently archived edition.
         </p>
       </Section>
 
       <Section title="Validation">
         <p>
-          The 2026-03 edition serves as the trusted reference baseline. It was validated
-          deeply after an initial scrape returned incomplete results (696 AP codes vs.
-          the correct 838). The discrepancy was traced, corrected, and verified.
+          The current course count (866 active AP codes) was not taken at face value from the
+          first pass. An initial scrape returned only 696 codes. The discrepancy was traced,
+          corrected, and individually verified against the source.
         </p>
         <p>
-          14 structurally critical editions — breakpoints where the parser or catalog
-          structure changed — were individually validated. All 14 passed clean.
+          14 structurally critical editions (breakpoints where catalog structure changed) were
+          individually validated. All 14 passed clean.
         </p>
-        <Callout>
-          The 696 → 838 correction is an important part of this project&apos;s trust story.
-          The current counts are hard-won and verified, not taken at face value from
-          the first parser run.
-        </Callout>
       </Section>
 
-      <Section title="Observed vs. Inferred">
+      <Section title="What's observed vs. what's inferred">
         <p>
-          WGU Atlas distinguishes between observed facts and inferred relationships:
+          Atlas keeps a clear line between what the catalog directly states and what is derived
+          from patterns across editions:
         </p>
         <ul className="list-disc list-inside text-slate-600 space-y-1">
           <li>
-            <strong>Observed:</strong> directly present in the catalog archive — course code,
-            title, program membership, edition dates
+            <strong>Observed:</strong> course code, title, program membership, edition dates.
+            Directly present in the source.
           </li>
           <li>
-            <strong>Inferred:</strong> derived from patterns across editions — event types,
-            event interpretations, stability classifications
+            <strong>Inferred:</strong> event types, event interpretations, stability
+            classifications. Derived from patterns and labeled with confidence levels.
           </li>
         </ul>
+      </Section>
+
+      <Section title="Program guides">
         <p>
-          Interpretive content (event interpretations, title variant classifications) is
-          labeled with confidence levels: <em>high</em>, <em>moderate</em>, or{" "}
-          <em>tentative</em>.
+          Degree pages on Atlas also draw from WGU&apos;s official program guides, which are
+          published on WGU&apos;s main site. These guides contain course descriptions,
+          competency sets, and learning outcomes for each degree.
+        </p>
+        <p>
+          Program guides are degree-specific. An example:{" "}
+          <a
+            href="https://www.wgu.edu/online-nursing-health-degrees/health-human-services/program-guide.html"
+            className="text-blue-600 hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Health and Human Services program guide
+          </a>
+          . Each degree program has its own guide page on the WGU site.
         </p>
       </Section>
 
-      <Section title="Title Variant Classification">
-        <p>
-          167 course codes show title variation across editions. These have been manually
-          classified into categories:
-        </p>
-        <ul className="list-disc list-inside text-slate-600 space-y-1">
-          <li><strong>Extraction noise</strong> (145 codes, 87%) — PDF line-wrap, Unicode variants, catalog oscillations. Not real renames.</li>
-          <li><strong>Punctuation only</strong> (16) — hyphen, comma, em-dash changes.</li>
-          <li><strong>Wording refinement</strong> (3) — typo fix or minor synonym swap.</li>
-          <li><strong>Substantive change</strong> (2) — genuine semantic renames.</li>
-          <li><strong>Formatting only</strong> (1) — space insertion.</li>
-        </ul>
-        <p>
-          The overwhelming majority of apparent title variation is extraction artifact,
-          not editorial intent.
-        </p>
-      </Section>
-
-      <Section title="Key Caveats">
+      <Section title="What to keep in mind">
         <ul className="space-y-3 text-slate-600">
-          <CaveatItem title="Catalog date ≠ implementation date">
-            The catalog reflects publication timing, not guaranteed student rollout.
-            A course appearing in a March catalog may have been deployed to students earlier or later.
+          <CaveatItem title="Catalog dates aren't rollout dates">
+            The catalog reflects when WGU published a change, not when students experienced it.
+            A course appearing in a March catalog may have been available earlier or later.
           </CaveatItem>
-          <CaveatItem title="Catalog presence ≠ lived experience">
-            Official structure does not perfectly capture actual student pathways or
-            the subjective experience of a course.
+          <CaveatItem title="Structure isn't experience">
+            The official catalog captures the designed curriculum. It doesn&apos;t capture how
+            courses are actually experienced by students, or variation in sequencing and pacing.
           </CaveatItem>
-          <CaveatItem title="Code change ≠ substantive change">
-            Course code changes may reflect renumbering, administrative reorganization,
-            or cleanup — not necessarily changes to course content.
+          <CaveatItem title="Code changes aren&apos;t always content changes">
+            A course code change may reflect renumbering or administrative cleanup rather than
+            a change to the actual course content.
           </CaveatItem>
-          <CaveatItem title="Reddit is supplementary context">
-            Student discussion data (planned for v1.1) is useful context, not
-            institutional truth. WGU Atlas keeps official catalog facts and discussion
-            signals in clearly separate sections.
-          </CaveatItem>
-          <CaveatItem title="One-off courses require caution">
-            Courses with only 1–2 catalog appearances are flagged (ghost_flag,
-            single_appearance_flag). These may represent data anomalies or genuinely
-            short-lived entries.
+          <CaveatItem title="Official WGU sources are authoritative">
+            For enrollment, advising, or policy decisions, WGU&apos;s official sources are
+            authoritative. Atlas is a research aid, not a substitute.
           </CaveatItem>
         </ul>
-      </Section>
-
-      <Section title="Data Separation Policy">
-        <p>
-          WGU Atlas enforces a strict separation between three information types:
-        </p>
-        <ul className="list-disc list-inside text-slate-600 space-y-1">
-          <li><strong>Official catalog facts</strong> — from the WGU public catalog archive</li>
-          <li><strong>Discussion signals</strong> — from Reddit and community spaces (v1.1)</li>
-          <li><strong>LLM-generated summaries</strong> — clearly labeled with date, source count, and disclaimer (v1.1)</li>
-        </ul>
-        <p>
-          These three types are never mixed in the same field or presented as equivalent.
-        </p>
       </Section>
     </div>
   );
@@ -152,14 +108,6 @@ function Section({ title, children }: { title: string; children: React.ReactNode
       </div>
       <div className="space-y-3 text-slate-600 leading-relaxed text-sm">{children}</div>
     </section>
-  );
-}
-
-function Callout({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="bg-blue-50 border border-blue-200 rounded p-3 text-sm text-blue-800">
-      {children}
-    </div>
   );
 }
 

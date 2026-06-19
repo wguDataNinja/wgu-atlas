@@ -836,3 +836,33 @@ Commit all pending changes (data reorg, src, script fixes, DEV_LOG, ATLAS_CONTRO
 
 **Next starting task**
 Commit the pending data reorg + src changes, then build `_internal/official_resource/regulatory_candidate_queue.md`.
+
+## 2026-06-19 (Release-copy cleanup — public pages, README)
+
+**Done**
+- Updated 7 source files to replace stale 2026-03/108-editions/838-AP/114-programs claims with 2026-06/111-editions/866-AP/116-programs.
+- `src/app/about/page.tsx`: 3 stale version/edition-count references fixed.
+- `src/app/methods/page.tsx`: current baseline advanced to 2026-06 (from 2026-03), edition counts/date ranges/active-AP fixed.
+- `src/app/page.tsx`: fallback defaults and timeline callout updated (108→111, 838→866, 114→116).
+- `src/app/data/page.tsx`: schema note "all 108 editions" → "all 111 editions".
+- `src/app/courses/[code]/page.tsx`: "WGU Catalog 2026-03" → "WGU Catalog 2026-06".
+- `src/app/schools/[slug]/page.tsx`: "Based on 2026-03 catalog" → "Based on 2026-06 catalog".
+- `README.md`: updated Current Status (date, data-layer state), edition counts, active AP (838→866), programs (114→116), total codes (1,646→1,675), snapshot-lag language to reflect current 2026-06 release.
+- Proto component references and source comments with "2026-03" left as-is (not public-facing).
+- Validation: `npm run lint` (clean), `python3 scripts/validate_canonical_objects.py` (14/14), `npm run build` (clean — 1904 pages, no errors/warnings).
+- Grep confirmed no remaining stale public `2026-03`, `108 editions`, `March 2026`, or `838 active` claims.
+
+**Decisions locked**
+- Release copy is accurate and consistent with 2026-06 trusted snapshot.
+- Remaining `2026-03` references are in proto components and internal comments — correct as-where-used.
+
+**Next starting task**
+- `scripts/check_trusted_consistency.py` — automated consistency checker for future trusted snapshot creation/validation.
+
+## 2026-06-19 (check_trusted_consistency.py — trusted snapshot validation script)
+
+**Done**
+- Created `scripts/check_trusted_consistency.py` — validates all 8 files in a trusted snapshot directory: file existence, manifest self-consistency, CSV row counts, program block counts, edition keys in helper JSONs, course index instance coverage.
+- Accepts `--edition` parameter (default `2026_06`).
+- Both 2026_03 and 2026_06 snapshots pass 22/22 checks.
+- Exit code 0 on pass, 1 on failure — suitable for CI/pre-deploy gating.

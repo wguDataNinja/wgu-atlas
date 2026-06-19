@@ -2,7 +2,7 @@
 
 **Explore courses, programs, catalog changes, and student discussion**
 
-WGU Atlas is a public-facing reference and explorer built from the validated WGU public catalog archive. Its Atlas-local catalog mirror now spans 111 catalog editions from 2017-01 through 2026-06, while the current committed public site data still uses the frozen 2026-03 current-edition snapshot.
+WGU Atlas is a public-facing reference and explorer built from the validated WGU public catalog archive. The public runtime data is generated from the 2026-06 trusted snapshot — 111 catalog editions from 2017-01 through 2026-06.
 
 *Created by WGU-DataNinja*
 
@@ -20,19 +20,19 @@ If there is conflict between older docs and current state, use those three in th
 
 ---
 
-## Current Status (2026-04-08)
+## Current Status (2026-06-19)
 
 Active branch: `homepage-redesign` — UI polish in progress. `main` is the stable deployed baseline.
 
-**Pages polished (this branch):**
-- `/compare` — compact result header with degree names, improved column stats, per-term course counts, filter bug fix
-- `/courses/[code]` — section reordered (description first), degree list capped with expand, internal data notes removed
-- `/programs/[code]` — course roster promoted above curriculum detail, internal provenance labels removed
+**Data layer updated:**
+- Public runtime advanced from 2026-03 to 2026-06 trusted snapshot
+- 111 editions tracked (2017-01 to 2026-06), 866 active AP codes, 116 active programs
+- Edition-based claims throughout the site now reflect the 2026-06 baseline
 
-**Still to-do:**
-- Homepage (`/`) — design TBD; planned to feature screenshots/previews of polished pages
-- About page
-- Course explorer, degree explorer, colleges pages
+**Recent UI polish (this branch):**
+- `/compare` — compact result header, degree names, per-term course counts, filter fix
+- `/courses/[code]` — section reordered, degree list capped, internal notes removed
+- `/programs/[code]` — course roster promoted, provenance labels cleaned up
 
 ---
 
@@ -55,11 +55,11 @@ All catalog data is derived from the official WGU public course catalog. The mir
 The underlying acquisition/parser pipeline currently lives in a separate internal research repository and is expected to move toward a dedicated `wgu-catalog` boundary. This repo contains the Atlas-local mirror plus pre-generated site-ready data artifacts.
 
 Key facts about the current data layer:
-- **111** catalog editions mirrored in `data/catalog/` (latest mirrored edition: 2026-06)
-- **838** active AP course codes (2026-03 baseline)
+- **111** catalog editions mirrored in `data/catalog/` (latest: 2026-06)
+- **866** active AP course codes (2026-06 baseline)
 - **52** active certificate codes
-- **114** program body blocks
-- **1,646** total course codes (active + retired + cert)
+- **116** program body blocks
+- **1,675** total course codes ever seen (active + retired + cert)
 - **41** named catalog events
 
 Recent mirrored edition changes:
@@ -138,7 +138,7 @@ wgu-atlas/
 
 ### What we did
 
-- **111 catalog editions** scraped and parsed in the mirrored history layer (2017-01 through 2026-06), with the public site-current snapshot still frozen at 2026-03
+- **111 catalog editions** scraped and parsed in the mirrored history layer (2017-01 through 2026-06), with the public site-current snapshot updated to 2026-06
 - **Cross-referenced two independent sources:** the edition history and the 2026-03 catalog snapshot; any code missing from the snapshot is flagged retired rather than silently dropped
 - **Internal consistency check:** every course code appearing in active program rosters (`program_enriched.json`, scraped from catalog program pages) is present in `canonical_courses.csv` — zero gaps found
 - **Per-code trust signals** computed and stored: `ghost_flag`, `single_appearance_flag`, `stability_class`, `current_title_confidence`, `title_variant_class` — each row carries its own confidence indicator rather than a single dataset-wide claim
@@ -150,7 +150,7 @@ This dataset is **comprehensive for what the scraper saw** but cannot guarantee 
 
 - **Certificate codes only tracked from 2024-09 forward** — cert courses that existed earlier or under different structures may not appear
 - **Courses not in any program roster** — if a course exists only as a standalone page the scraper never visited, it would be absent from the entire universe
-- **Post-2026-03 current-site snapshot lag** — history/diff artifacts are mirrored through 2026-06, but current active-course/program site exports still require a newer trusted snapshot before 2026-06 can become the site-current baseline
+- **2026-06 snapshot is script-validated** — the current trusted snapshot passed automated consistency checks but has not undergone the same manual per-edition review applied to historical breakpoint editions
 - **No independent external cross-check** — there is no WGU API or authoritative public course list to validate against
 
 ### Human review path

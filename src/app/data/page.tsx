@@ -148,7 +148,7 @@ export default function DataPage() {
         <div className="text-sm text-slate-600 space-y-3">
           <p>
             <strong>stability_class</strong> — Classifies a course by its persistence across
-            editions: <code className="bg-slate-100 px-1 rounded">perpetual</code> (all 108 editions),{" "}
+            editions: <code className="bg-slate-100 px-1 rounded">perpetual</code> (all 111 editions),{" "}
             <code className="bg-slate-100 px-1 rounded">stable</code>,{" "}
             <code className="bg-slate-100 px-1 rounded">moderate</code>,{" "}
             <code className="bg-slate-100 px-1 rounded">ephemeral</code>,{" "}

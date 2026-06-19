@@ -24,8 +24,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!course) return { title: "Course Not Found" };
   const statusLabel = course.active_current ? "" : " (Retired)";
   return {
-    title: `${code}${statusLabel} — ${course.canonical_title_current}`,
-    description: `${course.canonical_title_current} (${code}). ${course.active_current ? "Active" : "Retired"} WGU course — ${course.historical_program_count} degree appearances, first offered ${course.first_seen_edition}.`,
+    title: `${code}${statusLabel}: ${course.canonical_title_current}`,
+    description: `${course.canonical_title_current} (${code}). ${course.active_current ? "Active" : "Retired"} WGU course. ${course.historical_program_count} degree appearances, first offered ${course.first_seen_edition}.`,
   };
 }
 
@@ -180,14 +180,14 @@ export default async function CourseDetailPage({ params }: Props) {
             <div className="w-1 h-5 bg-blue-600 rounded" />
             <h2 className="text-lg font-bold text-slate-800">About This Course</h2>
             <span className="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
-              WGU Catalog 2026-03
+              WGU Catalog 2026-06
             </span>
           </div>
           <blockquote className="border-l-4 border-blue-100 pl-4 text-slate-700 text-sm leading-relaxed">
             {catalogDesc.description}
           </blockquote>
           <p className="text-xs text-slate-400 mt-2">
-            Official catalog text — WGU-authored.
+            Official catalog text, WGU-authored.
           </p>
         </section>
       )}
