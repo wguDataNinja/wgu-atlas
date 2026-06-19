@@ -4,7 +4,7 @@ import { getSchools, getProgramsBySchool, getCoursesBySchool } from "@/lib/data"
 
 export const metadata: Metadata = {
   title: "Colleges",
-  description: "Browse WGU's four colleges — Business, Health, Technology, and Education — with degree and course listings.",
+  description: "Browse WGU's four colleges: Business, Health, Technology, and Education, with degree and course listings.",
 };
 
 const COLLEGE_DESCRIPTIONS: Record<string, string> = {

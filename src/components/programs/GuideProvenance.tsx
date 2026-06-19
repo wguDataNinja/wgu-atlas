@@ -51,7 +51,7 @@ export default function GuideProvenance({ provenance, quality, anomalyFlags, sup
           <span>
             {quality.caveat_messages_ui.length > 0
               ? quality.caveat_messages_ui[0]
-              : "Guide data has caveats — see source guide for accuracy."}
+              : "Guide data has caveats. See source guide for accuracy."}
           </span>
         </span>
       )}

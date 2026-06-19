@@ -100,7 +100,7 @@ export default function GuideCertBlock({ certSignals }: Props) {
               ))}
             </ul>
             <p className="text-xs text-slate-400 mt-2">
-              Cert alignment is informational — preparation depends on individual coursework and study.
+              Cert alignment is informational. Preparation depends on individual coursework and study.
             </p>
           </div>
         </section>

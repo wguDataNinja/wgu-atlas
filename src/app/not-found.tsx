@@ -5,7 +5,7 @@ export default function NotFound() {
     <div className="max-w-xl mx-auto px-4 py-24 text-center">
       <h1 className="text-4xl font-bold text-slate-800 mb-3">Not found</h1>
       <p className="text-slate-500 mb-2">
-        This page doesn&apos;t exist — or this course code may be retired or a certificate
+        This page doesn&apos;t exist. This course code may be retired or a certificate
         code without a detail page in the current data version.
       </p>
       <p className="text-slate-400 text-sm mb-8">

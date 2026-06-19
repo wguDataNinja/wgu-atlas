@@ -17,8 +17,6 @@
  * 10. Also Known As / Notes
  */
 
-"use client";
-
 import Link from "next/link";
 import type { CoursePreviewEnrichment, EnrichmentDescription, CompetencySet } from "@/lib/coursePreviewData";
 import type { CourseDetail, CourseDescription } from "@/lib/types";

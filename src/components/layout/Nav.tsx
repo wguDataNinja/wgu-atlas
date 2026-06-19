@@ -19,7 +19,7 @@ export default function Nav() {
     href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(href + "/");
 
   return (
-    <nav className="bg-white border-b border-slate-200 sticky top-0 z-40">
+    <nav className="print:hidden bg-white border-b border-slate-200 sticky top-0 z-40">
       <div className="max-w-6xl mx-auto px-4 flex items-center h-14 gap-1">
         <Link href="/" className="font-bold text-blue-700 text-lg tracking-tight shrink-0 mr-4">
           WGU Atlas

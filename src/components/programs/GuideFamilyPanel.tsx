@@ -52,7 +52,7 @@ export default function GuideFamilyPanel({ family, currentCode }: Props) {
                 >
                   <span className="font-mono">{sibling.program_code}</span>
                   {sibling.track_label && (
-                    <span className="text-slate-500">— {sibling.track_label}</span>
+                    <span className="text-slate-500 ml-1">{sibling.track_label}</span>
                   )}
                 </Link>
               ))}
