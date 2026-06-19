@@ -10,19 +10,24 @@ Steps:
   4. Static site-ready JSON exports
 
 Usage (from wgu-atlas repo):
-  WGU_REDDIT_PATH=/path/to/wgu-reddit/WGU_catalog/outputs \
+  WGU_CATALOG_OUTPUTS=/path/to/catalog/outputs-or-atlas/data/catalog \
   WGU_ATLAS_DATA=/path/to/wgu-atlas/data \
   python3 scripts/build_site_data.py
 
 Environment variables:
-  WGU_REDDIT_PATH  Path to the wgu-reddit WGU_catalog/outputs/ directory
-                   (contains change_tracking/, trusted/, edition_diffs/, helpers/)
-  WGU_ATLAS_DATA   Path to the wgu-atlas output root
-                   Defaults to ../data relative to this script
+  WGU_CATALOG_OUTPUTS  Path to catalog outputs or Atlas's data/catalog mirror
+                       (contains change_tracking/, trusted/, edition_diffs/, helpers/)
+  WGU_REDDIT_PATH      Backward-compatible alias for WGU_CATALOG_OUTPUTS
+  WGU_ATLAS_DATA       Path to the wgu-atlas output root
+                       Defaults to ../data relative to this script
 
 Note: The v1 site build does NOT require running this script.
 Pre-generated exports are committed in public/data/. Re-run only when
-new catalog data has been processed in the wgu-reddit repo.
+new catalog data has been processed and mirrored.
+
+Current limitation: the current-course/program snapshot is still read from
+trusted/2026_03. Newer change-history artifacts can be mirrored without making
+2026-06 the site-current edition until a trusted 2026_06 snapshot exists.
 
 Note on course_index_v10.json: This 59 MB file (in helpers/) must exist
 in the wgu-reddit outputs directory at runtime. It is not committed to git.
@@ -42,9 +47,14 @@ from collections import defaultdict, Counter
 _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 _REPO_ROOT  = os.path.dirname(_SCRIPT_DIR)
 
-# Upstream: wgu-reddit WGU_catalog/outputs/
-BASE  = os.environ.get("WGU_REDDIT_PATH",
-                       os.path.join(_SCRIPT_DIR, "outputs"))  # fallback for local runs
+# Catalog outputs. Prefer the Atlas-local mirror so the build does not require
+# runtime reads from the upstream acquisition/parser repo. WGU_REDDIT_PATH is
+# kept as a compatibility alias while the future wgu-catalog boundary is pending.
+BASE  = (
+    os.environ.get("WGU_CATALOG_OUTPUTS")
+    or os.environ.get("WGU_REDDIT_PATH")
+    or os.path.join(_REPO_ROOT, "data", "catalog")
+)
 TRUST = os.path.join(BASE, "trusted", "2026_03")
 CT    = os.path.join(BASE, "change_tracking")
 ED    = os.path.join(BASE, "edition_diffs")
@@ -417,13 +427,13 @@ print("\n=== STEP 2: Canonical course intelligence table ===")
 #   Excludes the large batch of AXX-format codes retired in 2017-07 (those are structural).
 # single_appearance_flag: edition_count == 1
 # stability_class:
-#   perpetual  — appeared in all 108 editions (the 113 assessment codes)
+#   perpetual  — appeared in every mirrored edition
 #   stable     — edition_count >= 50
 #   moderate   — edition_count 10–49
 #   ephemeral  — edition_count 2–9
 #   single     — edition_count == 1
 
-TOTAL_EDITIONS = 108
+TOTAL_EDITIONS = int(summary_stats.get("editions", 108))
 
 def stability_class(edition_count):
     n = int(edition_count)
