@@ -5,6 +5,165 @@ Each entry records what changed, decisions locked, what's blocked, and the next 
 
 ---
 
+## 2026-06-19 (Docs update — catalog-currentness status reflected in HANDOFF/CONTROL/MEMORY)
+
+**Done**
+- Updated `HANDOFF.md`: catalog state reflects trusted/2026_06 existence, edition-configurable build, active_programs fix, stale cleanup; priorities shifted to git-steward closure + deploy.
+- Updated `_internal/ATLAS_CONTROL.md`: workstream status table updated; 6.3b section rewritten as "Catalog currentness refresh (Packages A-D)" with complete summary and remaining gates; next-session item 7 marked complete.
+- Updated `_internal/ATLAS_REPO_MEMORY.md`: added durable facts for `WGU_CATALOG_CURRENT_EDITION` convention, freeze script (scripts/freeze_trusted_snapshot.py), active_programs derivation from program_blocks, stale cleanup, total_course_codes_ever derivation, edition count derivation.
+- Added `freeze_trusted_snapshot.py` to the Major script roles table.
+- No data/script/generated files changed.
+- Safe checks: py_compile on both build_site_data.py and freeze_trusted_snapshot.py (both clean), validate_canonical_objects 14/14 passed, npm run lint clean.
+
+**Decisions locked**
+- Durable memory now reflects the complete catalog-currentness architecture.
+- Control procedures: next step is git-steward review, then deploy.
+- No further implementation work is needed on this workstream until deploy is complete.
+
+**Next starting task**
+Git-steward closure: review all changes from Packages A-D, stage/commit, deploy, post-deploy smoke-check.
+
+## 2026-06-19 (Package D: deploy blocker fixes — active_programs, stale cleanup, total_course_codes_ever)
+
+**Done**
+- Three fixes to `scripts/build_site_data.py`:
+  1. **active_programs**: Derived from `len(program_blocks)` loaded from trusted snapshot (114 for 2026_03, 116 for 2026_06) instead of unreliable `program_history.csv` status field. Also fixed `retired_programs` via `len(prog_hist_rows) - len(program_blocks)` (84 for 2026_03, 82 for 2026_06).
+  2. **Stale per-course file cleanup**: Added cleanup before per-course file generation — removes `.json` files in `public/data/courses/` not belonging to active AP codes. D436.json, E-series stale files properly removed.
+  3. **total_course_codes_ever**: Changed from hardcoded 1594 to `len(canonical_rows)` (1675).
+  4. **Bonus**: Fixed search index program `active` status, `newest_programs`, and `recent_version_changes` to use program_blocks-derived active status instead of program_history.csv status.
+
+- Regenerated 2026_06 runtime: all checks pass.
+- Validated 2026_03 build as safety check (active_programs=114, all correct); rebuilt 2026_06 as final state.
+- Ran `validate_canonical_objects` (14/14), `npm run lint` (clean), `npm run build` (1904 pages).
+
+**Decisions locked**
+- `program_blocks_{EDITION}.json` is the authoritative source for current active program count.
+- `prog_hist_rows` (program_history.csv total rows) minus program_blocks gives reliable retired program count regardless of status field.
+- Stale file cleanup is scoped to `public/data/courses/*.json` only — does not touch other generated output directories.
+- Program active status in search index, newest_programs, and recent_version_changes now uses `program_code in program_blocks_codes` lookup.
+
+**Blocked / open**
+- No remaining deploy blockers. All known issues resolved.
+
+**Next starting task**
+Durable memory/control doc update, then git-steward closure.
+
+## 2026-06-19 (Package C: controlled 2026_06 runtime regeneration)
+
+**Done**
+- Ran `WGU_CATALOG_CURRENT_EDITION=2026_06 python3 scripts/build_site_data.py` — regenerated all runtime data from trusted/2026_06.
+- Validated runtime:
+  - `homepage_summary.json`: data_date=2026-06 ✓, archive_span=2017-01 to 2026-06 ✓, total_editions=111 ✓, active_ap_codes=866 ✓, active_cert_codes=52 ✓
+  - courses.json: 1675 cards, E200 active=True ✓, D436 not in active set ✓
+  - search_index: 1873 entries, BSAIE and BSPM present ✓
+  - Per-course E200.json generated with correct detail ✓
+  - Stale file D436.json persists (not cleaned by build script — expected, deployment concern)
+- Ran `npm run build`: compiled successfully, 1904 static pages generated ✓
+- Ran `python3 scripts/validate_canonical_objects.py`: 14/14 passed ✓
+- Ran `npm run lint`: clean (2 pre-existing warnings) ✓
+- `active_programs` remains 0 (pre-existing upstream program_history.csv issue — all programs show RETIRED). `active` flag for BSAIE/BSPM in search is False for same reason.
+
+**Decisions locked**
+- 2026_06 runtime generation is validated and locally consistent.
+- `public/data` is now locally at 2026_06 runtime state. Not deployed or committed.
+- Stale per-course files from 2026_03 (e.g., D436.json) persist because the build script writes only active courses and does not clean the output directory. Deployment should either run the build in a clean export or add cleanup logic.
+- `total_course_codes_ever` (1594) remains hardcoded and stale for both 2026_03 and 2026_06 builds — not part of Package C scope.
+- `active_programs=0` is a deploy blocker for any public claims about active program counts. Must be resolved before or during deployment.
+
+**Blocked / open**
+- `active_programs` must be fixed before claiming program counts publicly. Recommended: derive from trusted/2026_XX/program_blocks_2026_XX.json count (116 for 2026_06) instead of program_history.csv status field.
+- `total_course_codes_ever` should be made data-driven in a future cleanup pass.
+- Stale file cleanup should be added to the build or deployment script.
+
+**Next starting task**
+Git-steward closure: review generated 2026_06 diffs, decide on active_programs fix approach, prepare for deployment.
+
+## 2026-06-19 (Package B: edition-configurable build_site_data.py)
+
+**Done**
+- Modified `scripts/build_site_data.py` with 61 insertions, 11 deletions across 4 functional areas:
+  1. **Edition config**: Added `WGU_CATALOG_CURRENT_EDITION` env var (default `2026_03`), normalizes both `2026_03` and `2026-06` formats, derives `EDITION_DIR` and `EDITION_DATE`.
+  2. **Preflight checks**: Validates trusted directory, manifest, required CSV files exist. Prints manifest verification status. Warns if manifest catalog_date mismatches requested edition.
+  3. **Trusted path + filenames**: `TRUST` path uses `EDITION_DIR`, CSV loads use `f"courses_{EDITION_DIR}.csv"` and `f"certs_{EDITION_DIR}.csv"`.
+  4. **Homepage fields**: `data_date`, `archive_span`, `total_editions` now data-driven from `EDITION_DATE` and sections_index edition count. `total_editions` resolves to 108 for 2026_03, 111 for 2026_06.
+
+- Ran `python3 scripts/build_site_data.py` twice with default edition (2026_03). Both runs produced identical stable output.
+- Ran `python3 scripts/validate_canonical_objects.py` (14/14 passed), `npm run lint` (clean, 2 pre-existing warnings).
+- Verified `public/data/homepage_summary.json`: `data_date: 2026-03`, `archive_span: 2017-01 to 2026-03`, `total_editions: 108`, `active_ap_codes: 838`. All correct.
+
+**Decisions locked**
+- `WGU_CATALOG_CURRENT_EDITION` accepts both underscore (2026_03) and hyphen (2026-06) input formats.
+- `total_editions` is derived by counting sections_index_v10.json edition keys <= EDITION_DATE (excludes the 3 known missing editions by design, since they're absent from the helper file).
+- `archive_span` start is hardcoded to "2017-01" (the earliest mirrored edition). If future editions add more missing editions in the gap, this may need revisiting.
+- Preflight warnings (not errors) when manifest `catalog_date` mismatches requested edition; the edition is set by directory name, not manifest field.
+
+**Blocked / open**
+- `active_programs` shows 0 because refreshed program_history.csv has all programs as RETIRED — pre-existing upstream issue (noted in summary_stats.json risk register). Not caused by edition config changes.
+- `total_course_codes_ever` remains hardcoded at 1594 (stale). Should be made data-driven in a future pass.
+- `retired_ap_codes` diff (756→785) and `retired_programs` diff (82→198) are pre-existing data freshness effects from the June 18 mirror refresh.
+- public/data remains 2026-03. No 2026_06 publish in this package.
+
+**Next starting task**
+Package C: controlled 2026_06 runtime regeneration/validation with `WGU_CATALOG_CURRENT_EDITION=2026_06`.
+
+## 2026-06-19 (Package A: trusted/2026_06 snapshot freeze)
+
+**Done**
+- Created `scripts/freeze_trusted_snapshot.py` — reusable deterministic freeze script with `--edition` parameter.
+- Generated all 8 trusted snapshot files in `data/catalog/trusted/2026_06/`:
+  - courses_2026_06.csv (866 AP rows, +28 from 838)
+  - certs_2026_06.csv (52 rows, C955A→D979A swap)
+  - course_index_2026_06.json (866 codes, 2026-06 instances only)
+  - sections_index_2026_06.json (2026-06 key extracted from helper)
+  - degree_snapshots_2026_06.json (2026-06 key extracted from helper)
+  - program_blocks_2026_06.json (116 blocks, BSAIE+BSPM added)
+  - program_index_2026_06.json (mirrored from program_names)
+  - manifest_2026_06.json (SCRIPT_VALIDATED_PENDING_MANUAL_REVIEW)
+- Verified 14/14 validation assertions all pass: correct headers, row counts, known changes (E200 present, D436 absent, BSAIE/BSPM present), program blocks count 116, cert count 52, manifest counts match files.
+- Cert detection: raw text shows C955A→D979A swap in Data Analytics Skills cert; Cybersecurity Fundamentals cert uses existing AP codes (D329, E025), no new cert-specific codes. Parser re-run needed for authoritative cert extraction.
+- Ran py_compile on freeze script (clean), validate_canonical_objects (14/14 passed), npm run lint (clean).
+
+**Decisions locked**
+- `scripts/freeze_trusted_snapshot.py` is the canonical freeze method; accepts `--edition` parameter, reads helpers+program_names, writes trusted/ output.
+- Certs data is carried forward from prior trusted snapshot with targeted corrections, since cert codes are not in course_index_v10.json.
+- Verification status is SCRIPT_VALIDATED_PENDING_MANUAL_REVIEW — the manifest does not claim manual verification.
+- Date format convention documented: helper keys use YYYY-MM (display), directory/filenames use YYYY_MM (filesystem).
+
+**Blocked / open**
+- Certs data requires parser re-run for fully authoritative extraction (currently forward-ported with known corrections).
+- build_site_data.py still hardcodes trusted/2026_03 — Package B needed before 2026-06 can be published.
+- public/data remains 2026-03. No runtime changes in this package.
+
+**Next starting task**
+Package B: make scripts/build_site_data.py edition-configurable with WGU_CATALOG_CURRENT_EDITION while preserving default 2026_03 behavior.
+
+## 2026-06-19 (catalog-currentness inspection — trusted 2026_06 planning)
+
+**Done**
+- Comprehensive inspection of catalog data-layer state: mirror, trusted snapshots, public runtime, helper files, program names, raw texts.
+- Read HANDOFF.md, ATLAS_CONTROL.md, ATLAS_REPO_MEMORY.md, CODEX_ROADMAP.md, CODEX_SESSION.md, CODEX_SESSION_LOG.md, DEV_LOG.md, WORKQUEUE.md, data/catalog/README.md.
+- Inventory of trusted/2026_03/ production clues: manifest, CSV schemas, JSON schemas, upstream pipeline docs (MIGRATION_HANDOFF.md, README_INTERNAL.md, STAGE docs).
+- Inspected scripts/build_site_data.py edition-configuration (lines 54–58 hardcode TRUST to trusted/2026_03; homepage summary hardcodes data_date, archive_span, total_editions at lines 1093–1095).
+- Ran all safe validation commands: python3 -m py_compile on build_site_data.py, validate_canonical_objects.py, validate_lineage_decisions.py, build_course_cards.py (all clean); python3 scripts/validate_canonical_objects.py (14/14 passed); npm run lint (clean, 2 pre-existing warnings).
+- Confirmed helper files (course_index_v10.json, sections_index_v10.json, degree_snapshots_v10_seed.json) all contain 2026-06 data. Program_names has 2026_06_program_blocks_v11.json (116 blocks, +2 = BSAIE, BSPM).
+- Verified summary_stats.json reports 111 editions through 2026-06. Public homepage_summary.json still reports 108 editions through 2026-03. No trusted/2026_06/ exists.
+
+**Decisions locked**
+- trusted/2026_03/ was produced by the full parser pipeline (parse_catalog_v11.py full-corpus run) with manual verification — not by a dedicated freeze script. The 8 files are a mix of parser-extracted rows (courses_*_03.csv, certs_*_03.csv) and frozen edition-specific subsets of helper data (course_index, sections_index, degree_snapshots, program_blocks, program_index).
+- No snapshot-freeze script exists. Creating trusted/2026_06/ is a manual/scripted freeze step.
+- build_site_data.py edition-configuration requires: (1) env var WGU_CATALOG_CURRENT_EDITION, (2) dynamic TRUST path, (3) data-driven homepage fields from summary_stats and manifest, (4) variable rename from courses_2026 to current_courses.
+- Mirror helpers already contain all 2026_06 data needed for a trusted snapshot.
+
+**Blocked / open**
+- No trusted/2026_06/ exists. No snapshot-freeze procedure is documented or scripted.
+- build_site_data.py hardcodes trusted/2026_03 at line 58 and hardcodes homepage fields at lines 1093–1095.
+- summary_stats.json active_codes=0, active_programs=0 — upstream schema issue; not usable for "active" counts directly. Trusted CSV row counts are the reliable source.
+- sections_index_v10.json uses date format YYYY-MM (hyphen) while trusted directory uses YYYY_MM (underscore) — format conversion needed during freeze.
+- program_index_2026_03.json in trusted/ is just 4 school name strings — likely vestigial; actual program data lives in program_blocks.
+
+**Next starting task**
+Build trusted/2026_06/ freeze plan (detailed in inspection report). First implementation session: create data/catalog/trusted/2026_06/ with the 8 expected files, then validate against known 2026_06 assertions.
+
 ## 2026-06-18 (catalog mirror refresh + split-readiness docs)
 
 **Done**

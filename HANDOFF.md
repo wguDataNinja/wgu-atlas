@@ -1,6 +1,6 @@
 # HANDOFF
 
-Updated: 2026-06-18
+Updated: 2026-06-19
 Repo: wgu-atlas
 Role: Current assistant/coding-agent entry point.
 
@@ -25,12 +25,12 @@ Next.js static site (public-facing) for WGU course, program, and catalog history
 - 111 catalog editions mirrored in `data/catalog/` (2017-01 through 2026-06).
 - Three editions missing from archive: 2017-02, 2017-04, 2017-06.
 - Mirrored families: `change_tracking/`, `edition_diffs/`, `helpers/`, `program_names/`, `raw_catalog_texts/` (local, gitignored).
-- `data/catalog/trusted/` contains only `trusted/2026_03/` — the frozen site-current snapshot.
+- `data/catalog/trusted/` now contains **two** frozen snapshots: `trusted/2026_03/` (original) and `trusted/2026_06/` (new, created via `scripts/freeze_trusted_snapshot.py`).
+- `trusted/2026_06/` is validated and locally consumed. It is **not yet publicly deployed**.
 
-**Public/data mismatch:**
-- `public/data/homepage_summary.json` reports `data_date: "2026-03"`, archive span 2017-01 to 2026-03, 108 editions.
-- README says 111 editions through 2026-06. The 2026-04/05/06 editions exist in catalog mirror but not promoted to trusted.
-- Public site still uses 2026-03 as current edition. No trusted 2026-06 snapshot exists.
+**Public/data state (local):**
+- `public/data/homepage_summary.json` locally reports `data_date: "2026-06"`, archive span 2017-01 to 2026-06, 111 editions.
+- Local public/data has been regenerated from trusted/2026_06. Deployed site (GitHub Pages) remains at 2026-03 until a deploy/stage/commit is executed.
 
 **Deployment:**
 - Static export via Next.js build, deployed via GitHub Pages + GitHub Actions on push.
@@ -43,21 +43,16 @@ Next.js static site (public-facing) for WGU course, program, and catalog history
 
 ## Current priority
 
-1. Preserve/checkpoint current 2026-06 mirror state.
-2. Create trusted 2026-06 current snapshot (`data/catalog/trusted/2026_06/`).
-3. Make `scripts/build_site_data.py` edition-configurable with `WGU_CATALOG_CURRENT_EDITION`.
-4. Regenerate `public/data/` only after trusted 2026-06 validation passes.
-5. Defer actual `wgu-catalog` repo split until parser guardrails and output contract are documented.
+1. Git-steward review and stage/commit of the complete catalog-currentness package (Packages A-D).
+2. Deploy approval and post-deploy smoke checks.
+3. Defer actual `wgu-catalog` repo split until parser guardrails and output contract are documented.
 
 ## Next safe actions
 
-1. Review/checkpoint dirty working tree and mirror docs. The 2026-06-18 session may have left uncommitted catalog changes.
-2. Inventory how `trusted/2026_03/` was produced — what scripts, what validation, what acceptance criteria.
-3. Create/validate `data/catalog/trusted/2026_06/` following the same pattern.
-4. Add `WGU_CATALOG_CURRENT_EDITION` support to `scripts/build_site_data.py`.
-5. Run 2026-03 baseline build as safe reference — verify `public/data/` matches current deployed state.
-6. Do not publish 2026-06 until trusted snapshot exists and edition config is ready.
-7. Document data currency matrix in `docs/data_currency.md`.
+1. Git-steward review: stage/commit the 4 change groups (freeze script + trusted/2026_06 snapshot + build_site_data.py edition config + regenerated public/data).
+2. Deploy via standard GitHub Pages workflow.
+3. Post-deploy smoke-check: `/wgu-atlas/` shows 2026-06 current edition, E200 renders, D436 not active, BSAIE/BSPM visible.
+4. Document data currency matrix in `docs/data_currency.md` (deferred from active sprint).
 
 ## Do not do
 
@@ -88,10 +83,12 @@ Next.js static site (public-facing) for WGU course, program, and catalog history
 ## Current data/status
 
 - 111 catalog editions mirrored (2017-01 through 2026-06), 3 missing.
-- 838 active AP course codes (2026-03 baseline), 52 active certificate codes.
-- Public data frozen at 2026-03 (108 editions in published JSON vs 111 mirrored).
-- No trusted 2026-04/05/06 snapshot exists.
-- `build_site_data.py` currently reads from `trusted/2026_03/` — hardcoded.
+- **Trusted snapshots**: `trusted/2026_03/` (original) and `trusted/2026_06/` (created via `scripts/freeze_trusted_snapshot.py`).
+- **Local runtime**: public/data regenerated from trusted/2026_06 — 866 active AP courses, 116 active programs, 52 cert codes.
+- **Deployed runtime**: remains 2026-03 until stage/commit/deploy cycle completes.
+- `build_site_data.py` now supports `WGU_CATALOG_CURRENT_EDITION` env var (default `2026_03`).
+- `active_programs` derived from trusted program_blocks, not program_history.csv status field.
+- Build script cleans stale `public/data/courses/*.json` before regenerating active per-course files.
 - 3 catalog editions missing from archive: 2017-02, 2017-04, 2017-06.
 - Certificate codes tracked only from 2024-09 forward.
 - Active branch: `homepage-redesign` (UI polish). `main` is stable deployed baseline.
@@ -123,15 +120,17 @@ The following require approval or caution:
 
 ## Known risks
 
-1. **108 vs 111 edition mismatch**: `homepage_summary.json` reports 108 editions through 2026-03. README says 111 through 2026-06. Public data is stale.
-2. **No trusted 2026-06 snapshot**: The 2026-04/05/06 editions exist in catalog mirror but were never validated/promoted to `trusted/`. Any claim of current data currency is inaccurate.
-3. `build_site_data.py` variable names and hardcoded trusted paths remain misleading — inspect before modifying.
-4. `summary_stats.json` reports active counts cautiously; upstream schema review needed before relying on counts.
-5. Raw/helper catalog files (`helpers/`, `raw_catalog_texts/`) are large and must stay gitignored.
-6. Dirty working tree can mix mirror changes with unrelated work — checkpoint before new work.
-7. `_internal/` is tracked and contains design docs, session notes, QA plans. These would become public on deploy.
-8. `artifacts/` at repo root contains pipeline run outputs (JSONL) and is not in gitignore — inspect before publishing.
-9. `_internal/` also exists at `\_internal/` (with backslash prefix) — possible filename encoding artifact.
+1. **108 vs 111 edition mismatch**: RESOLVED — `total_editions` is now data-driven from sections_index keys, resolving to 108 for 2026_03 and 111 for 2026_06.
+2. **trusted 2026_06 snapshot**: RESOLVED — snapshot exists and validates. Script-validated pending manual review.
+3. **hardcoded `build_site_data.py` paths**: RESOLVED — `WGU_CATALOG_CURRENT_EDITION` env var controls snapshot path.
+4. **active_programs=0**: RESOLVED — derived from `len(program_blocks)` instead of program_history.csv status field.
+5. **stale per-course files**: RESOLVED — build script cleans `public/data/courses/*.json` before regeneration.
+6. **total_course_codes_ever**: RESOLVED — now data-driven from `len(canonical_rows)`.
+7. `summary_stats.json` reports active counts cautiously; upstream schema review needed before relying on counts for anything other than edition-count derivation.
+8. Raw/helper catalog files (`helpers/`, `raw_catalog_texts/`) are large and must stay gitignored.
+9. Dirty working tree can mix mirror changes with unrelated work — checkpoint before new work.
+10. `_internal/` is tracked and contains design docs, session notes, QA plans. These would become public on deploy.
+11. `artifacts/` at repo root contains pipeline run outputs (JSONL) and is not in gitignore — inspect before publishing.
 
 ## Latest planning sources
 

@@ -52,8 +52,8 @@ If local docs conflict on current progress or next-step sequencing, trust in thi
 | Official resource layer | active, bounded queueing established | continue conservative attachment expansion with provenance clarity | placement model expansion and completeness audits are still incomplete | reconcile regulatory queue vs current placements, then run outcomes/accreditation completeness pass |
 | Continuity review | initialized, lightweight | validate compact review method | first tiny validation batch not created | create 4-card validation batch |
 | Program lineage / degree history | ready, not selected | keep system stable for later export/UI if chosen | export/runtime wiring not implemented | no action unless selected |
-| Catalog baseline / site runtime | stable | preserve current deterministic site behavior | none immediate | no action |
-| Catalog mirror / future wgu-catalog boundary | UPDATED 2026-06-18 — mirror spans 111 editions through 2026-06; site-current snapshot remains 2026-03 | Keep Atlas consuming local `data/catalog/` mirror and document split-readiness | no trusted 2026-06 current-site snapshot yet | create trusted 2026-06 snapshot before rebasing public runtime exports |
+| Catalog baseline / site runtime (currentness refresh) | **COMPLETE** — Packages A-D finished 2026-06-19 | trusted/2026_06 snapshot created and validated; build_site_data.py edition-configurable; local public/data regenerated and deploy-blockers fixed | git-steward review/stage/commit, then deploy approval | stage/commit catalog-currentness package, deploy, post-deploy smoke-check |
+| Catalog mirror / future wgu-catalog boundary | ON HOLD until post-deploy | Keep Atlas consuming local `data/catalog/` mirror and document split-readiness | no immediate work until currentness refresh is deployed | after deploy: resume split-readiness docs |
 
 ---
 
@@ -259,30 +259,29 @@ Priority order:
 
 ---
 
-### 6.3b Catalog mirror / pipeline boundary
+### 6.3b Catalog currentness refresh (Packages A-D)
 
-**Status**
-- Atlas-local mirror refreshed on 2026-06-18
-- `data/catalog/` now includes raw text and derived history artifacts through 2026-06
-- public runtime exports still use the frozen 2026-03 current-site snapshot
+**Status: COMPLETE** (2026-06-19)
 
-**Verified mirror facts**
-- 111 raw catalog text editions mirrored, spanning 2017-01 through 2026-06
-- missing editions remain 2017-02, 2017-04, 2017-06
-- `2026-03 -> 2026-04`: no course/program changes
-- `2026-04 -> 2026-05`: 28 course additions and 2 program additions (`BSAIE`, `BSPM`)
-- `2026-05 -> 2026-06`: `E200` added, `D436` removed, no program additions/removals, 2 version changes
+**What was done:**
+- **Package A**: Created `data/catalog/trusted/2026_06/` (8 files) via `scripts/freeze_trusted_snapshot.py`.
+- **Package B**: Made `scripts/build_site_data.py` edition-configurable with `WGU_CATALOG_CURRENT_EDITION` (default `2026_03`).
+- **Package C**: Regenerated `public/data/` locally from trusted/2026_06; identified blockers.
+- **Package D**: Fixed deploy blockers:
+  - `active_programs` now derived from `trusted/{EDITION}/program_blocks_{EDITION}.json` (116 for 2026_06).
+  - Build script cleans stale `public/data/courses/*.json` before generating active per-course files.
+  - `total_course_codes_ever` is data-driven from `len(canonical_rows)`.
+  - Program active status in search + newest_programs + recent_version_changes uses program_blocks-derived status.
+- Final validation: `validate_canonical_objects` 14/14, `npm lint` clean, `npm build` 1904 pages.
 
-**Locked operational caution**
-- `parse_catalog_v11.py` is authoritative only for full-corpus runs. Single-edition parser runs rebuild global indexes from incomplete input and invalidate downstream change tracking/diffs.
+**Remaining gates:**
+- Git-steward review, stage/commit of the complete package.
+- Deploy approval and post-deploy smoke checks.
 
-**Boundary direction**
-- Current physical pipeline home: `/Users/buddy/Desktop/WGU-Reddit/WGU_catalog`
-- Future target: `wgu-catalog` owns acquisition, parsing, validation, change tracking, and edition diffs
-- Atlas should consume `data/catalog/` or a stable catalog-output directory via `WGU_CATALOG_OUTPUTS`; `WGU_REDDIT_PATH` is compatibility only
-
-**Next bounded step**
-- Produce/freeze a trusted 2026-06 current snapshot before attempting to regenerate public runtime exports against 2026-06.
+**Local runtime state:**
+- `public/data/homepage_summary.json`: `data_date=2026-06`, `active_ap=866`, `active_programs=116`, `total_editions=111`.
+- `trusted/2026_06/` manifest status: `SCRIPT_VALIDATED_PENDING_MANUAL_REVIEW`.
+- Deployed site (GitHub Pages) remains at 2026-03 until commit+deploy.
 
 ---
 
@@ -425,7 +424,7 @@ These should not be reopened by default.
 4. **Course-page enrichment — incremental production rollout:** baseline "Course Learning Outcomes" scraping-artifact section is live on `/courses/[code]`; continue bounded block rollout (cert/prereq/reverse-prereq/capstone) after homepage planning milestones.
 5. **Continuity review first batch:** run first 4-card batch (`_internal/continuity_review/validation_batch_01.md`). Low priority relative to items 1–3.
 6. **Degree-homepage reconciliation pilot (non-BSDA):** run the extraction/comparison scripts on one additional degree page, then assess portability and failure modes before broader rollout.
-7. **Catalog current-snapshot refresh:** when selected, create and validate trusted 2026-06 current snapshot artifacts, then rerun Atlas site-data exports with `WGU_CATALOG_OUTPUTS=data/catalog`.
+7. **Catalog current-snapshot refresh:** **COMPLETE** — trusted/2026_06 exists, build_site_data.py edition-configurable, local public/data regenerated. Deploy blocker fixes applied. Remaining: git-steward closure and deploy.
 
 **Guide-adjacent items that can be picked up any time without blocking other work:**
 - Cert review queue (21 rows) — editorial judgment against source text

@@ -15,6 +15,9 @@ Usage (from wgu-atlas repo):
   python3 scripts/build_site_data.py
 
 Environment variables:
+  WGU_CATALOG_CURRENT_EDITION
+                       Which trusted edition to use as the current snapshot
+                       (e.g., 2026_03 or 2026-06). Defaults to 2026_03.
   WGU_CATALOG_OUTPUTS  Path to catalog outputs or Atlas's data/catalog mirror
                        (contains change_tracking/, trusted/, edition_diffs/, helpers/)
   WGU_REDDIT_PATH      Backward-compatible alias for WGU_CATALOG_OUTPUTS
@@ -25,9 +28,9 @@ Note: The v1 site build does NOT require running this script.
 Pre-generated exports are committed in public/data/. Re-run only when
 new catalog data has been processed and mirrored.
 
-Current limitation: the current-course/program snapshot is still read from
-trusted/2026_03. Newer change-history artifacts can be mirrored without making
-2026-06 the site-current edition until a trusted 2026_06 snapshot exists.
+The default current edition is 2026_03. To target a different trusted snapshot
+(e.g., after creating data/catalog/trusted/2026_06/), set:
+  WGU_CATALOG_CURRENT_EDITION=2026_06
 
 Note on course_index_v10.json: This 59 MB file (in helpers/) must exist
 in the wgu-reddit outputs directory at runtime. It is not committed to git.
@@ -55,7 +58,14 @@ BASE  = (
     or os.environ.get("WGU_REDDIT_PATH")
     or os.path.join(_REPO_ROOT, "data", "catalog")
 )
-TRUST = os.path.join(BASE, "trusted", "2026_03")
+
+# Edition configuration
+_RAW_EDITION = os.environ.get("WGU_CATALOG_CURRENT_EDITION", "2026_03")
+# Normalise both underscore and hyphen formats
+EDITION_DIR = _RAW_EDITION.replace("-", "_")   # e.g. 2026_03
+EDITION_DATE = _RAW_EDITION.replace("_", "-")  # e.g. 2026-03
+
+TRUST = os.path.join(BASE, "trusted", EDITION_DIR)
 CT    = os.path.join(BASE, "change_tracking")
 ED    = os.path.join(BASE, "edition_diffs")
 HELP  = os.path.join(BASE, "helpers")
@@ -70,6 +80,41 @@ CDIR = os.path.join(EXP, "courses")
 
 for d in [OUT, SITE_OUT, EXP, CDIR]:
     os.makedirs(d, exist_ok=True)
+
+# ---------------------------------------------------------------------------
+# Preflight – verify trusted snapshot for the requested edition
+# ---------------------------------------------------------------------------
+print(f"Target edition: {EDITION_DATE}  (dir: {EDITION_DIR})")
+print(f"Trusted path:   {TRUST}")
+
+_manifest_path = os.path.join(TRUST, f"manifest_{EDITION_DIR}.json")
+_required_csv = [f"courses_{EDITION_DIR}.csv", f"certs_{EDITION_DIR}.csv"]
+
+if not os.path.isdir(TRUST):
+    print(f"\nERROR: Trusted directory not found: {TRUST}")
+    print(f"  Create a trusted snapshot for edition {EDITION_DIR} before building.")
+    print(f"  See scripts/freeze_trusted_snapshot.py")
+    sys.exit(1)
+
+if not os.path.isfile(_manifest_path):
+    print(f"\nERROR: Manifest not found: {_manifest_path}")
+    sys.exit(1)
+
+for _csv_name in _required_csv:
+    if not os.path.isfile(os.path.join(TRUST, _csv_name)):
+        print(f"\nERROR: Required file not found: {os.path.join(TRUST, _csv_name)}")
+        sys.exit(1)
+
+_manifest = json.load(open(_manifest_path, encoding="utf-8"))
+_manifest_cat_date = _manifest.get("catalog_date")
+if _manifest_cat_date is not None and _manifest_cat_date != EDITION_DATE:
+    print(f"\nWARNING: Manifest catalog_date ({_manifest_cat_date}) "
+          f"does not match requested edition ({EDITION_DATE}).")
+    print(f"  Proceeding anyway – verify the trusted snapshot is correct.")
+
+_verification = _manifest.get("verification_status", "unknown")
+print(f"Manifest verification: {_verification}")
+print()
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -98,15 +143,16 @@ def write_json(path, obj, indent=2):
 # ---------------------------------------------------------------------------
 # Load source data
 # ---------------------------------------------------------------------------
-print("Loading source data...")
+print(f"Loading source data (edition: {EDITION_DATE})...")
 course_hist_rows = load_csv(os.path.join(CT, "course_history.csv"))
 prog_hist_rows   = load_csv(os.path.join(CT, "program_history.csv"))
-courses_2026     = load_csv(os.path.join(TRUST, "courses_2026_03.csv"))
-certs_2026       = load_csv(os.path.join(TRUST, "certs_2026_03.csv"))
+courses_2026     = load_csv(os.path.join(TRUST, f"courses_{EDITION_DIR}.csv"))
+certs_2026       = load_csv(os.path.join(TRUST, f"certs_{EDITION_DIR}.csv"))
 diffs_full       = load_json(os.path.join(ED,  "edition_diffs_full.json"))
 events_raw       = load_json(os.path.join(ED,  "edition_diffs_events.json"))
 course_index     = load_json(os.path.join(HELP, "course_index_v10.json"))
 summary_stats    = load_json(os.path.join(CT,  "summary_stats.json"))
+program_blocks   = load_json(os.path.join(TRUST, f"program_blocks_{EDITION_DIR}.json"))
 
 # Index lookups
 course_hist = {r["course_code"]: r for r in course_hist_rows}
@@ -433,7 +479,12 @@ print("\n=== STEP 2: Canonical course intelligence table ===")
 #   ephemeral  — edition_count 2–9
 #   single     — edition_count == 1
 
-TOTAL_EDITIONS = int(summary_stats.get("editions", 108))
+# Count catalog editions up to the requested current edition.
+# sections_index_v10.json has one key per mirrored edition, already excluding
+# the three known missing editions (2017-02, 2017-04, 2017-06).
+_editions_helper = load_json(os.path.join(HELP, "sections_index_v10.json"))
+TOTAL_EDITIONS = sum(1 for e in _editions_helper if e <= EDITION_DATE)
+print(f"  Total editions <= {EDITION_DATE}: {TOTAL_EDITIONS}")
 
 def stability_class(edition_count):
     n = int(edition_count)
@@ -944,8 +995,17 @@ for r in canonical_rows:
 p = write_json(os.path.join(EXP, "courses.json"), course_cards)
 print(f"  → {p}  ({len(course_cards)} course cards)")
 
-# Individual course detail files (active AP codes only — 838 files)
+# Individual course detail files (active AP codes only)
 active_ap = [r for r in canonical_rows if r["contexts_seen"] == "AP" and r["active_current"]]
+
+# Clean stale per-course JSON files before regeneration.
+# Courses that were active in a prior edition but are no longer current
+# would otherwise persist as stale detail files.
+for _fname in os.listdir(CDIR):
+    if _fname.endswith(".json") and _fname not in {f"{r['course_code']}.json" for r in active_ap}:
+        _path = os.path.join(CDIR, _fname)
+        os.remove(_path)
+        print(f"  (removed stale: {_fname})")
 for r in active_ap:
     code = r["course_code"]
     tvc  = tvc_by_code.get(code, {})
@@ -1016,12 +1076,15 @@ for r in canonical_rows:
     search_entries.append(entry)
 
 # Add programs to search index
+# Active status is derived from trusted program_blocks (current edition),
+# not from program_history.csv status field (which is unreliable).
+_program_blocks_codes = {p['code'] for p in program_blocks}
 for row in prog_hist_rows:
     entry = {
         "type":    "program",
         "code":    row["program_code"],
         "title":   row.get("degree_headings", ""),
-        "active":  row["status"] == "ACTIVE",
+        "active":  row["program_code"] in _program_blocks_codes,
         "scope":   "AP",
         "school":  row.get("colleges", "").split(" | ")[0].strip(),
     }
@@ -1048,7 +1111,7 @@ for code, r26 in courses2026_by_code.items():
 # Recent version changes — programs with version change in last 3 editions
 recent_versions = []
 for row in prog_hist_rows:
-    if row["status"] == "ACTIVE" and row.get("version_progression"):
+    if row["program_code"] in _program_blocks_codes and row.get("version_progression"):
         prog = row.get("version_progression", "")
         parts = [p.strip() for p in prog.split("→") if p.strip()]
         if parts:
@@ -1067,7 +1130,7 @@ recent_versions.sort(key=lambda r: r["last_version_date"], reverse=True)
 # Newest programs
 newest_programs = []
 for row in prog_hist_rows:
-    if row["status"] == "ACTIVE" and row["first_seen"] >= "2024-01":
+    if row["program_code"] in _program_blocks_codes and row["first_seen"] >= "2024-01":
         newest_programs.append({
             "program_code": row["program_code"],
             "first_seen": row["first_seen"],
@@ -1090,15 +1153,15 @@ for key in sorted(diffs_by_transition.keys(), reverse=True)[:6]:
             })
 
 homepage = {
-    "data_date":           "2026-03",
-    "archive_span":        "2017-01 to 2026-03",
-    "total_editions":      108,
-    "total_course_codes_ever": 1594,
+    "data_date":           EDITION_DATE,
+    "archive_span":        f"2017-01 to {EDITION_DATE}",
+    "total_editions":      TOTAL_EDITIONS,
+    "total_course_codes_ever": len(canonical_rows),
     "active_ap_codes":     ap_active,
     "active_cert_codes":   cert_count,
     "retired_ap_codes":    ap_retired,
-    "active_programs":     sum(1 for r in prog_hist_rows if r["status"] == "ACTIVE"),
-    "retired_programs":    sum(1 for r in prog_hist_rows if r["status"] == "RETIRED"),
+    "active_programs":     len(program_blocks),
+    "retired_programs":    len(prog_hist_rows) - len(program_blocks),
     "active_by_school": {
         "Business":   active_by_college["Business"],
         "Health":     active_by_college["Health"],

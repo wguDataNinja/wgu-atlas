@@ -42,12 +42,12 @@
   {
     "type": "course",
     "code": "AUA2",
-    "title": "Graphing, Proportional Reasoning and",
+    "title": "Graphing, Proportional Reasoning and Equations/Inequalities",
     "active": true,
     "scope": "AP",
     "school": "School of Education",
     "alt_titles": [
-      "Graphing, Proportional Reasoning and Equations/Inequalities"
+      "Graphing, Proportional Reasoning and"
     ]
   },
   {
@@ -112,7 +112,7 @@
     "title": "Integrated Physical Sciences",
     "active": true,
     "scope": "AP",
-    "school": "Leavitt School of Health; School of Business; School of Education; School of Technology"
+    "school": "School of Business; Leavitt School of Health; School of Technology; School of Education"
   },
   {
     "type": "course",
@@ -301,12 +301,12 @@
   {
     "type": "course",
     "code": "C218",
-    "title": "MBA, Information Technology Management",
+    "title": "MBA, Information Technology Management Capstone",
     "active": true,
     "scope": "AP",
     "school": "School of Business",
     "alt_titles": [
-      "MBA, Information Technology Management Capstone"
+      "MBA, Information Technology Management"
     ]
   },
   {
@@ -368,12 +368,12 @@
   {
     "type": "course",
     "code": "C234",
-    "title": "Workforce Planning: Recruitment and",
+    "title": "Workforce Planning: Recruitment and Selection",
     "active": true,
     "scope": "AP",
     "school": "School of Business",
     "alt_titles": [
-      "Workforce Planning: Recruitment and Selection"
+      "Workforce Planning: Recruitment and"
     ]
   },
   {
@@ -414,7 +414,7 @@
     "title": "Introduction to Sociology",
     "active": true,
     "scope": "AP",
-    "school": "Leavitt School of Health; School of Business"
+    "school": "School of Business; Leavitt School of Health"
   },
   {
     "type": "course",
@@ -427,12 +427,12 @@
   {
     "type": "course",
     "code": "C360",
-    "title": "Teacher Work Sample in English Language",
+    "title": "Teacher Work Sample in English Language Learning",
     "active": true,
     "scope": "AP",
     "school": "School of Education",
     "alt_titles": [
-      "Teacher Work Sample in English Language Learning"
+      "Teacher Work Sample in English Language"
     ]
   },
   {
@@ -470,12 +470,12 @@
   {
     "type": "course",
     "code": "C458",
-    "title": "Health, Fitness, and Wellness",
+    "title": "Health, Fitness and Wellness",
     "active": true,
     "scope": "AP",
-    "school": "Leavitt School of Health; School of Business; School of Technology",
+    "school": "School of Business; Leavitt School of Health; School of Technology",
     "alt_titles": [
-      "Health, Fitness and Wellness"
+      "Health, Fitness, and Wellness"
     ]
   },
   {
@@ -513,12 +513,12 @@
   {
     "type": "course",
     "code": "C613",
-    "title": "Middle School Mathematics: Content",
+    "title": "Middle School Mathematics: Content Knowledge",
     "active": true,
     "scope": "AP",
     "school": "School of Education",
     "alt_titles": [
-      "Middle School Mathematics: Content Knowledge"
+      "Middle School Mathematics: Content"
     ]
   },
   {
@@ -655,7 +655,7 @@
     "title": "Natural Science Lab",
     "active": true,
     "scope": "AP",
-    "school": "School of Education; School of Technology"
+    "school": "School of Technology; School of Education"
   },
   {
     "type": "course",
@@ -751,7 +751,7 @@
     "title": "Applied Healthcare Statistics",
     "active": true,
     "scope": "AP",
-    "school": "Leavitt School of Health; School of Business"
+    "school": "School of Business; Leavitt School of Health"
   },
   {
     "type": "course",
@@ -764,12 +764,12 @@
   {
     "type": "course",
     "code": "C792",
-    "title": "Data Modeling and Database Management",
+    "title": "Data Modeling and Database Management Systems",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Data Modeling and Database Management Systems"
+      "Data Modeling and Database Management"
     ]
   },
   {
@@ -799,12 +799,12 @@
   {
     "type": "course",
     "code": "C802",
-    "title": "Foundations in Healthcare Information",
+    "title": "Foundations in Healthcare Information Management",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Foundations in Healthcare Information Management"
+      "Foundations in Healthcare Information"
     ]
   },
   {
@@ -882,12 +882,12 @@
   {
     "type": "course",
     "code": "C815",
-    "title": "Quality and Performance Management and",
+    "title": "Quality and Performance Management and Methods",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Quality and Performance Management and Methods"
+      "Quality and Performance Management and"
     ]
   },
   {
@@ -949,23 +949,23 @@
   {
     "type": "course",
     "code": "C871",
-    "title": "MA, Science Education Teacher Performance",
+    "title": "MA, Science Education Teacher Performance Assessment",
     "active": true,
     "scope": "AP",
     "school": "School of Education",
     "alt_titles": [
-      "MA, Science Education Teacher Performance Assessment"
+      "MA, Science Education Teacher Performance"
     ]
   },
   {
     "type": "course",
     "code": "C874",
-    "title": "MA, Mathematics Education (5-12) Teacher",
+    "title": "MA, Mathematics Education (5-12) Teacher Performance",
     "active": true,
     "scope": "AP",
     "school": "School of Education",
     "alt_titles": [
-      "MA, Mathematics Education (5-12) Teacher Performance"
+      "MA, Mathematics Education (5-12) Teacher"
     ]
   },
   {
@@ -987,23 +987,23 @@
   {
     "type": "course",
     "code": "C882",
-    "title": "Geometry for Secondary Mathematics",
+    "title": "Geometry for Secondary Mathematics Teaching",
     "active": true,
     "scope": "AP",
     "school": "School of Education",
     "alt_titles": [
-      "Geometry for Secondary Mathematics Teaching"
+      "Geometry for Secondary Mathematics"
     ]
   },
   {
     "type": "course",
     "code": "C884",
-    "title": "Statistics and Probability for Secondary",
+    "title": "Statistics and Probability for Secondary Mathematics Teaching",
     "active": true,
     "scope": "AP",
     "school": "School of Education",
     "alt_titles": [
-      "Statistics and Probability for Secondary Mathematics Teaching"
+      "Statistics and Probability for Secondary"
     ]
   },
   {
@@ -1017,12 +1017,12 @@
   {
     "type": "course",
     "code": "C887",
-    "title": "MA, Mathematics Education (5-9) Teacher",
+    "title": "MA, Mathematics Education (5-9) Teacher Performance",
     "active": true,
     "scope": "AP",
     "school": "School of Education",
     "alt_titles": [
-      "MA, Mathematics Education (5-9) Teacher Performance"
+      "MA, Mathematics Education (5-9) Teacher"
     ]
   },
   {
@@ -1084,56 +1084,56 @@
   {
     "type": "course",
     "code": "C918",
-    "title": "Evolving Roles of Nurse Educators in Diverse",
+    "title": "Evolving Roles of Nurse Educators in Diverse Environments",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Evolving Roles of Nurse Educators in Diverse Environments"
+      "Evolving Roles of Nurse Educators in Diverse"
     ]
   },
   {
     "type": "course",
     "code": "C919",
-    "title": "Facilitation of Context-Based Student-",
+    "title": "Facilitation of Context-Based Student-Centered Learning",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Facilitation of Context-Based Student-Centered Learning"
+      "Facilitation of Context-Based Student-"
     ]
   },
   {
     "type": "course",
     "code": "C920",
-    "title": "Contemporary Curriculum Design and",
+    "title": "Contemporary Curriculum Design and Development in Nursing",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Contemporary Curriculum Design and Development in Nursing"
+      "Contemporary Curriculum Design and"
     ]
   },
   {
     "type": "course",
     "code": "C921",
-    "title": "Assessment and Evaluation Strategies for",
+    "title": "Assessment and Evaluation Strategies for Measuring Student",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Assessment and Evaluation Strategies for Measuring Student"
+      "Assessment and Evaluation Strategies for"
     ]
   },
   {
     "type": "course",
     "code": "C922",
-    "title": "Emerging Trends and Challenges in 21st",
+    "title": "Emerging Trends and Challenges in 21st Century Nursing",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Emerging Trends and Challenges in 21st Century Nursing"
+      "Emerging Trends and Challenges in 21st"
     ]
   },
   {
@@ -1190,7 +1190,7 @@
     "title": "Applied Probability and Statistics",
     "active": true,
     "scope": "AP",
-    "school": "Leavitt School of Health; School of Business; School of Technology"
+    "school": "School of Business; Leavitt School of Health; School of Technology"
   },
   {
     "type": "course",
@@ -1198,7 +1198,7 @@
     "title": "Applied Algebra",
     "active": true,
     "scope": "AP",
-    "school": "Leavitt School of Health; School of Business; School of Technology"
+    "school": "School of Business; Leavitt School of Health; School of Technology"
   },
   {
     "type": "course",
@@ -1230,7 +1230,7 @@
     "title": "American Politics and the US Constitution",
     "active": true,
     "scope": "AP",
-    "school": "Leavitt School of Health; School of Business; School of Education; School of Technology"
+    "school": "School of Business; Leavitt School of Health; School of Technology; School of Education"
   },
   {
     "type": "course",
@@ -1267,12 +1267,12 @@
   {
     "type": "course",
     "code": "C975",
-    "title": "Science Methods—Middle Grades General",
+    "title": "Science Methods—Middle Grades General Science",
     "active": true,
     "scope": "AP",
     "school": "School of Education",
     "alt_titles": [
-      "Science Methods—Middle Grades General Science"
+      "Science Methods—Middle Grades General"
     ]
   },
   {
@@ -1390,23 +1390,23 @@
   {
     "type": "course",
     "code": "D025",
-    "title": "Essentials of Advanced Nursing Roles and",
+    "title": "Essentials of Advanced Nursing Roles and Interprofessional",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Essentials of Advanced Nursing Roles and Interprofessional"
+      "Essentials of Advanced Nursing Roles and"
     ]
   },
   {
     "type": "course",
     "code": "D026",
-    "title": "Quality Outcomes in a Culture of Value-Based",
+    "title": "Quality Outcomes in a Culture of Value-Based Nursing Care",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Quality Outcomes in a Culture of Value-Based Nursing Care"
+      "Quality Outcomes in a Culture of Value-Based"
     ]
   },
   {
@@ -1420,12 +1420,12 @@
   {
     "type": "course",
     "code": "D028",
-    "title": "Advanced Health Assessment for Patients and",
+    "title": "Advanced Health Assessment for Patients and Populations",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Advanced Health Assessment for Patients and Populations"
+      "Advanced Health Assessment for Patients and"
     ]
   },
   {
@@ -1439,23 +1439,23 @@
   {
     "type": "course",
     "code": "D030",
-    "title": "Leadership and Management in Complex",
+    "title": "Leadership and Management in Complex Healthcare Systems",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Leadership and Management in Complex Healthcare Systems"
+      "Leadership and Management in Complex"
     ]
   },
   {
     "type": "course",
     "code": "D031",
-    "title": "Advancing Evidence-Based Innovation in",
+    "title": "Advancing Evidence-Based Innovation in Nursing Practice",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Advancing Evidence-Based Innovation in Nursing Practice"
+      "Advancing Evidence-Based Innovation in"
     ]
   },
   {
@@ -1485,23 +1485,23 @@
   {
     "type": "course",
     "code": "D036",
-    "title": "Practicum in Educational Leadership - Focus",
+    "title": "Practicum in Educational Leadership - Focus on Professional",
     "active": true,
     "scope": "AP",
     "school": "School of Education",
     "alt_titles": [
-      "Practicum in Educational Leadership - Focus on Professional"
+      "Practicum in Educational Leadership - Focus"
     ]
   },
   {
     "type": "course",
     "code": "D037",
-    "title": "Practicum in Educational Leadership - Focus",
+    "title": "Practicum in Educational Leadership - Focus on Instruction and",
     "active": true,
     "scope": "AP",
     "school": "School of Education",
     "alt_titles": [
-      "Practicum in Educational Leadership - Focus on Instruction and"
+      "Practicum in Educational Leadership - Focus"
     ]
   },
   {
@@ -1523,12 +1523,12 @@
   {
     "type": "course",
     "code": "D075",
-    "title": "Information Technology Management",
+    "title": "Information Technology Management Essentials",
     "active": true,
     "scope": "AP",
     "school": "School of Business",
     "alt_titles": [
-      "Information Technology Management Essentials"
+      "Information Technology Management"
     ]
   },
   {
@@ -1542,34 +1542,34 @@
   {
     "type": "course",
     "code": "D077",
-    "title": "Concepts in Marketing, Sales, and Customer",
+    "title": "Concepts in Marketing, Sales, and Customer Contact",
     "active": true,
     "scope": "AP",
     "school": "School of Business",
     "alt_titles": [
-      "Concepts in Marketing, Sales, and Customer Contact"
+      "Concepts in Marketing, Sales, and Customer"
     ]
   },
   {
     "type": "course",
     "code": "D078",
-    "title": "Business Environment Applications I: Business",
+    "title": "Business Environment Applications I: Business Structures and",
     "active": true,
     "scope": "AP",
     "school": "School of Business",
     "alt_titles": [
-      "Business Environment Applications I: Business Structures and"
+      "Business Environment Applications I: Business"
     ]
   },
   {
     "type": "course",
     "code": "D079",
-    "title": "Business Environment Applications II: Process,",
+    "title": "Business Environment Applications II: Process, Logistics, and",
     "active": true,
     "scope": "AP",
     "school": "School of Business",
     "alt_titles": [
-      "Business Environment Applications II: Process, Logistics, and"
+      "Business Environment Applications II: Process,"
     ]
   },
   {
@@ -1671,78 +1671,78 @@
   {
     "type": "course",
     "code": "D115",
-    "title": "Advanced Pathophysiology for the Advanced",
+    "title": "Advanced Pathophysiology for the Advanced Practice Nurse",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Advanced Pathophysiology for the Advanced Practice Nurse"
+      "Advanced Pathophysiology for the Advanced"
     ]
   },
   {
     "type": "course",
     "code": "D116",
-    "title": "Advanced Pharmacology for the Advanced",
+    "title": "Advanced Pharmacology for the Advanced Practice Nurse",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Advanced Pharmacology for the Advanced Practice Nurse"
+      "Advanced Pharmacology for the Advanced"
     ]
   },
   {
     "type": "course",
     "code": "D117",
-    "title": "Advanced Health Assessment for the",
+    "title": "Advanced Health Assessment for the Advanced Practice Nurse",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Advanced Health Assessment for the Advanced Practice Nurse"
+      "Advanced Health Assessment for the"
     ]
   },
   {
     "type": "course",
     "code": "D118",
-    "title": "Adult Primary Care for the Advanced Practice",
+    "title": "Adult Primary Care for the Advanced Practice Nurse",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Adult Primary Care for the Advanced Practice Nurse"
+      "Adult Primary Care for the Advanced Practice"
     ]
   },
   {
     "type": "course",
     "code": "D119",
-    "title": "Pediatric Primary Care for the Advanced",
+    "title": "Pediatric Primary Care for the Advanced Practice Nurse",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Pediatric Primary Care for the Advanced Practice Nurse"
+      "Pediatric Primary Care for the Advanced"
     ]
   },
   {
     "type": "course",
     "code": "D120",
-    "title": "Special Populations Primary Care for the",
+    "title": "Special Populations Primary Care for the Advanced Practice",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Special Populations Primary Care for the Advanced Practice"
+      "Special Populations Primary Care for the"
     ]
   },
   {
     "type": "course",
     "code": "D121",
-    "title": "Health Promotion of Patients and Populations",
+    "title": "Health Promotion of Patients and Populations Across the",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Health Promotion of Patients and Populations Across the"
+      "Health Promotion of Patients and Populations"
     ]
   },
   {
@@ -1780,12 +1780,12 @@
   {
     "type": "course",
     "code": "D156",
-    "title": "Business Case Analysis for Healthcare",
+    "title": "Business Case Analysis for Healthcare Improvement",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Business Case Analysis for Healthcare Improvement"
+      "Business Case Analysis for Healthcare"
     ]
   },
   {
@@ -1799,45 +1799,45 @@
   {
     "type": "course",
     "code": "D158",
-    "title": "Strategically Planning the Execution of a",
+    "title": "Strategically Planning the Execution of a Healthcare",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Strategically Planning the Execution of a Healthcare"
+      "Strategically Planning the Execution of a"
     ]
   },
   {
     "type": "course",
     "code": "D159",
-    "title": "Evidence-Based Measures for Evaluating",
+    "title": "Evidence-Based Measures for Evaluating Healthcare",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Evidence-Based Measures for Evaluating Healthcare"
+      "Evidence-Based Measures for Evaluating"
     ]
   },
   {
     "type": "course",
     "code": "D160",
-    "title": "Nursing Leadership and Management Field",
+    "title": "Nursing Leadership and Management Field Experience",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Nursing Leadership and Management Field Experience"
+      "Nursing Leadership and Management Field"
     ]
   },
   {
     "type": "course",
     "code": "D161",
-    "title": "Nursing Leadership and Management",
+    "title": "Nursing Leadership and Management Capstone",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Nursing Leadership and Management Capstone"
+      "Nursing Leadership and Management"
     ]
   },
   {
@@ -1947,12 +1947,12 @@
   {
     "type": "course",
     "code": "D196",
-    "title": "Principles of Financial and Managerial",
+    "title": "Principles of Financial and Managerial Accounting",
     "active": true,
     "scope": "AP",
     "school": "School of Business",
     "alt_titles": [
-      "Principles of Financial and Managerial Accounting"
+      "Principles of Financial and Managerial"
     ]
   },
   {
@@ -1969,17 +1969,17 @@
     "title": "Global Arts and Humanities",
     "active": true,
     "scope": "AP",
-    "school": "Leavitt School of Health; School of Business; School of Technology"
+    "school": "School of Business; Leavitt School of Health; School of Technology"
   },
   {
     "type": "course",
     "code": "D199",
-    "title": "Introduction to Physical and Human",
+    "title": "Introduction to Physical and Human Geography",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health; School of Technology",
     "alt_titles": [
-      "Introduction to Physical and Human Geography"
+      "Introduction to Physical and Human"
     ]
   },
   {
@@ -1988,7 +1988,7 @@
     "title": "Human Growth and Development",
     "active": true,
     "scope": "AP",
-    "school": "Leavitt School of Health; School of Business"
+    "school": "School of Business; Leavitt School of Health"
   },
   {
     "type": "course",
@@ -2025,12 +2025,12 @@
   {
     "type": "course",
     "code": "D218",
-    "title": "Intrapersonal Leadership and Professional",
+    "title": "Intrapersonal Leadership and Professional Growth",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Intrapersonal Leadership and Professional Growth"
+      "Intrapersonal Leadership and Professional"
     ]
   },
   {
@@ -2052,12 +2052,12 @@
   {
     "type": "course",
     "code": "D221",
-    "title": "Organizational Systems and Healthcare",
+    "title": "Organizational Systems and Healthcare Transformation",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Organizational Systems and Healthcare Transformation"
+      "Organizational Systems and Healthcare"
     ]
   },
   {
@@ -2103,12 +2103,12 @@
   {
     "type": "course",
     "code": "D235",
-    "title": "Interprofessional Communication and",
+    "title": "Interprofessional Communication and Leadership in Healthcare",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Interprofessional Communication and Leadership in Healthcare"
+      "Interprofessional Communication and"
     ]
   },
   {
@@ -2122,12 +2122,12 @@
   {
     "type": "course",
     "code": "D246",
-    "title": "Influential Communication through Visual",
+    "title": "Influential Communication through Visual Design and",
     "active": true,
     "scope": "AP",
-    "school": "Leavitt School of Health; School of Business; School of Technology",
+    "school": "School of Business; Leavitt School of Health; School of Technology",
     "alt_titles": [
-      "Influential Communication through Visual Design and"
+      "Influential Communication through Visual"
     ]
   },
   {
@@ -2168,17 +2168,17 @@
     "title": "Professional Practice Experience I: Technical",
     "active": true,
     "scope": "AP",
-    "school": "Leavitt School of Health; School of Business"
+    "school": "School of Business; Leavitt School of Health"
   },
   {
     "type": "course",
     "code": "D256",
-    "title": "Principles of Management in Health",
+    "title": "Principles of Management in Health Information Management",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Principles of Management in Health Information Management"
+      "Principles of Management in Health"
     ]
   },
   {
@@ -2200,12 +2200,12 @@
   {
     "type": "course",
     "code": "D259",
-    "title": "Professional Practice Experience II:",
+    "title": "Professional Practice Experience II: Management",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Professional Practice Experience II: Management"
+      "Professional Practice Experience II:"
     ]
   },
   {
@@ -2230,17 +2230,17 @@
     "title": "Critical Thinking: Reason and Evidence",
     "active": true,
     "scope": "AP",
-    "school": "Leavitt School of Health; School of Business; School of Technology"
+    "school": "School of Business; Leavitt School of Health; School of Technology"
   },
   {
     "type": "course",
     "code": "D266",
-    "title": "World History: Diverse Cultures and Global",
+    "title": "World History: Diverse Cultures and Global Connections",
     "active": true,
     "scope": "AP",
-    "school": "Leavitt School of Health; School of Business",
+    "school": "School of Business; Leavitt School of Health",
     "alt_titles": [
-      "World History: Diverse Cultures and Global Connections"
+      "World History: Diverse Cultures and Global"
     ]
   },
   {
@@ -2254,12 +2254,12 @@
   {
     "type": "course",
     "code": "D268",
-    "title": "Introduction to Communication: Connecting",
+    "title": "Introduction to Communication: Connecting with Others",
     "active": true,
     "scope": "AP",
-    "school": "Leavitt School of Health; School of Business; School of Education; School of Technology",
+    "school": "School of Business; Leavitt School of Health; School of Technology; School of Education",
     "alt_titles": [
-      "Introduction to Communication: Connecting with Others"
+      "Introduction to Communication: Connecting"
     ]
   },
   {
@@ -2268,7 +2268,7 @@
     "title": "Composition: Writing with a Strategy",
     "active": true,
     "scope": "AP",
-    "school": "Leavitt School of Health; School of Business; School of Education; School of Technology"
+    "school": "School of Business; Leavitt School of Health; School of Technology; School of Education"
   },
   {
     "type": "course",
@@ -2276,7 +2276,7 @@
     "title": "Composition: Successful Self-Expression",
     "active": true,
     "scope": "AP",
-    "school": "Leavitt School of Health; School of Business; School of Education; School of Technology"
+    "school": "School of Business; Leavitt School of Health; School of Technology; School of Education"
   },
   {
     "type": "course",
@@ -2396,28 +2396,28 @@
     "title": "Learning Technology",
     "active": true,
     "scope": "AP",
-    "school": "School of Education; School of Technology"
+    "school": "School of Technology; School of Education"
   },
   {
     "type": "course",
     "code": "D295",
-    "title": "Designing and Facilitating E-Learning",
+    "title": "Designing and Facilitating E-Learning Experiences for K–12",
     "active": true,
     "scope": "AP",
     "school": "School of Education",
     "alt_titles": [
-      "Designing and Facilitating E-Learning Experiences for K–12"
+      "Designing and Facilitating E-Learning"
     ]
   },
   {
     "type": "course",
     "code": "D296",
-    "title": "Quality and Impact of K–12 E-Learning",
+    "title": "Quality and Impact of K–12 E-Learning Solutions",
     "active": true,
     "scope": "AP",
     "school": "School of Education",
     "alt_titles": [
-      "Quality and Impact of K–12 E-Learning Solutions"
+      "Quality and Impact of K–12 E-Learning"
     ]
   },
   {
@@ -2431,12 +2431,12 @@
   {
     "type": "course",
     "code": "D298",
-    "title": "Quality and Impact of Adult E-Learning",
+    "title": "Quality and Impact of Adult E-Learning Solutions",
     "active": true,
     "scope": "AP",
     "school": "School of Education",
     "alt_titles": [
-      "Quality and Impact of Adult E-Learning Solutions"
+      "Quality and Impact of Adult E-Learning"
     ]
   },
   {
@@ -2450,34 +2450,34 @@
   {
     "type": "course",
     "code": "D300",
-    "title": "Identifying Learner Needs and a Research",
+    "title": "Identifying Learner Needs and a Research Problem",
     "active": true,
     "scope": "AP",
     "school": "School of Education",
     "alt_titles": [
-      "Identifying Learner Needs and a Research Problem"
+      "Identifying Learner Needs and a Research"
     ]
   },
   {
     "type": "course",
     "code": "D301",
-    "title": "Developing an E-Learning Solution and",
+    "title": "Developing an E-Learning Solution and Research Methodology",
     "active": true,
     "scope": "AP",
     "school": "School of Education",
     "alt_titles": [
-      "Developing an E-Learning Solution and Research Methodology"
+      "Developing an E-Learning Solution and"
     ]
   },
   {
     "type": "course",
     "code": "D302",
-    "title": "Implementing and Evaluating E-Learning",
+    "title": "Implementing and Evaluating E-Learning Solutions",
     "active": true,
     "scope": "AP",
     "school": "School of Education",
     "alt_titles": [
-      "Implementing and Evaluating E-Learning Solutions"
+      "Implementing and Evaluating E-Learning"
     ]
   },
   {
@@ -2499,12 +2499,12 @@
   {
     "type": "course",
     "code": "D311",
-    "title": "Microbiology with Lab: A Fundamental",
+    "title": "Microbiology with Lab: A Fundamental Approach",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Microbiology with Lab: A Fundamental Approach"
+      "Microbiology with Lab: A Fundamental"
     ]
   },
   {
@@ -2646,12 +2646,12 @@
   {
     "type": "course",
     "code": "D336",
-    "title": "Business of IT - Applications",
+    "title": "Business of IT – Applications",
     "active": true,
     "scope": "AP",
     "school": "School of Technology",
     "alt_titles": [
-      "Business of IT – Applications"
+      "Business of IT - Applications"
     ]
   },
   {
@@ -2697,92 +2697,92 @@
   {
     "type": "course",
     "code": "D343",
-    "title": "Foundations of Advanced Psychiatric Mental",
+    "title": "Foundations of Advanced Psychiatric Mental Health Practice",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Foundations of Advanced Psychiatric Mental Health Practice"
+      "Foundations of Advanced Psychiatric Mental"
     ]
   },
   {
     "type": "course",
     "code": "D344",
-    "title": "The Assessment and Diagnostic Process of",
+    "title": "The Assessment and Diagnostic Process of Psychiatric Nurse",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "The Assessment and Diagnostic Process of Psychiatric Nurse",
+      "The Assessment and Diagnostic Process of",
       "The Assessment and Diagnostic Processes for Advanced"
     ]
   },
   {
     "type": "course",
     "code": "D345",
-    "title": "Psychopharmacology for Advanced Psychiatric",
+    "title": "Psychopharmacology for Advanced Psychiatric Mental Health",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Psychopharmacology for Advanced Psychiatric Mental Health"
+      "Psychopharmacology for Advanced Psychiatric"
     ]
   },
   {
     "type": "course",
     "code": "D346",
-    "title": "Advanced Psychiatric Mental Health Care of",
+    "title": "Advanced Psychological Care of Adults and Older Adults",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Advanced Psychological Care of Adults and Older Adults",
+      "Advanced Psychiatric Mental Health Care of",
       "Advanced Psychiatric Mental Health Care of Adults and Older"
     ]
   },
   {
     "type": "course",
     "code": "D347",
-    "title": "Advanced Psychiatric Mental Health Care of",
+    "title": "Advanced Psychological Care of Children and Adolescents",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Advanced Psychological Care of Children and Adolescents",
+      "Advanced Psychiatric Mental Health Care of",
       "Advanced Psychiatric Mental Health Care of Children and"
     ]
   },
   {
     "type": "course",
     "code": "D348",
-    "title": "Psychiatric Mental Health Nurse Practitioner",
+    "title": "Psychiatric Mental Health Nurse Practitioner Clinical Internship I",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Psychiatric Mental Health Nurse Practitioner Clinical Internship I"
+      "Psychiatric Mental Health Nurse Practitioner"
     ]
   },
   {
     "type": "course",
     "code": "D349",
-    "title": "Psychiatric Mental Health Nurse Practitioner",
+    "title": "Psychiatric Mental Health Nurse Practitioner Clinical Internship",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Psychiatric Mental Health Nurse Practitioner Clinical Internship"
+      "Psychiatric Mental Health Nurse Practitioner"
     ]
   },
   {
     "type": "course",
     "code": "D350",
-    "title": "Psychiatric Mental Health Nurse Practitioner",
+    "title": "Psychiatric Mental Health Nurse Practitioner Clinical Internship",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Psychiatric Mental Health Nurse Practitioner Clinical Internship"
+      "Psychiatric Mental Health Nurse Practitioner"
     ]
   },
   {
@@ -3076,12 +3076,12 @@
   {
     "type": "course",
     "code": "D388",
-    "title": "Fundamentals of Spreadsheets and Data",
+    "title": "Fundamentals of Spreadsheets and Data Presentations",
     "active": true,
     "scope": "AP",
     "school": "School of Business; School of Technology",
     "alt_titles": [
-      "Fundamentals of Spreadsheets and Data Presentations"
+      "Fundamentals of Spreadsheets and Data"
     ]
   },
   {
@@ -3155,12 +3155,12 @@
   {
     "type": "course",
     "code": "D400",
-    "title": "End-of-Life Care",
+    "title": "End of Life Care",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "End of Life Care"
+      "End-of-Life Care"
     ]
   },
   {
@@ -3190,12 +3190,12 @@
   {
     "type": "course",
     "code": "D405",
-    "title": "Financial Resource Management and",
+    "title": "Financial Resource Management and Healthcare",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Financial Resource Management and Healthcare"
+      "Financial Resource Management and"
     ]
   },
   {
@@ -3225,23 +3225,23 @@
   {
     "type": "course",
     "code": "D409",
-    "title": "Health and Human Services Professional Field",
+    "title": "Health and Human Services Professional Field Experience",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Health and Human Services Professional Field Experience"
+      "Health and Human Services Professional Field"
     ]
   },
   {
     "type": "course",
     "code": "D410",
-    "title": "Health & Human Services Professional",
+    "title": "Health & Human Services Professional Capstone",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Health & Human Services Professional Capstone"
+      "Health & Human Services Professional"
     ]
   },
   {
@@ -3295,12 +3295,12 @@
   {
     "type": "course",
     "code": "D419",
-    "title": "Implementing and Administering Networking",
+    "title": "Implementing and Administering Networking Solutions",
     "active": true,
     "scope": "AP",
     "school": "School of Technology",
     "alt_titles": [
-      "Implementing and Administering Networking Solutions"
+      "Implementing and Administering Networking"
     ]
   },
   {
@@ -3417,14 +3417,6 @@
   },
   {
     "type": "course",
-    "code": "D436",
-    "title": "Inclusive Workplace Culture Capstone",
-    "active": true,
-    "scope": "AP",
-    "school": "School of Business"
-  },
-  {
-    "type": "course",
     "code": "D439",
     "title": "Foundations of Nursing",
     "active": true,
@@ -3434,24 +3426,24 @@
   {
     "type": "course",
     "code": "D440",
-    "title": "Health and Wellness Through Nutritional",
+    "title": "Health and Wellness Through Nutritional Sciences",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Health and Wellness Through Nutritional Sciences",
+      "Health and Wellness Through Nutritional",
       "Health and Wellness Through Nutritional Science"
     ]
   },
   {
     "type": "course",
     "code": "D441",
-    "title": "Medical Dosage Calculations and",
+    "title": "Medical Dosage Calculations and Pharmacology",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Medical Dosage Calculations and Pharmacology"
+      "Medical Dosage Calculations and"
     ]
   },
   {
@@ -3513,12 +3505,12 @@
   {
     "type": "course",
     "code": "D450",
-    "title": "Community Health and Population-Focused",
+    "title": "Community Health and Population-Focused Nursing",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Community Health and Population-Focused Nursing"
+      "Community Health and Population-Focused"
     ]
   },
   {
@@ -3548,12 +3540,12 @@
   {
     "type": "course",
     "code": "D458",
-    "title": "Introduction to Systems Thinking for Health",
+    "title": "Introduction to Systems Thinking for Health Professionals",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Introduction to Systems Thinking for Health Professionals"
+      "Introduction to Systems Thinking for Health"
     ]
   },
   {
@@ -3562,7 +3554,7 @@
     "title": "Introduction to Systems Thinking and",
     "active": true,
     "scope": "AP",
-    "school": "School of Business; School of Education; School of Technology"
+    "school": "School of Business; School of Technology; School of Education"
   },
   {
     "type": "course",
@@ -3607,12 +3599,12 @@
   {
     "type": "course",
     "code": "D469",
-    "title": "Quality, Continuous Improvement, and Lean",
+    "title": "Quality, Continuous Improvement, and Lean Six Sigma",
     "active": true,
     "scope": "AP",
     "school": "School of Business",
     "alt_titles": [
-      "Quality, Continuous Improvement, and Lean Six Sigma"
+      "Quality, Continuous Improvement, and Lean"
     ]
   },
   {
@@ -3642,12 +3634,12 @@
   {
     "type": "course",
     "code": "D473",
-    "title": "Solutions Design and Visualization Capstone",
+    "title": "Solutions Design & Visualization Capstone",
     "active": true,
     "scope": "AP",
     "school": "School of Business",
     "alt_titles": [
-      "Solutions Design & Visualization Capstone"
+      "Solutions Design and Visualization Capstone"
     ]
   },
   {
@@ -3856,12 +3848,12 @@
   {
     "type": "course",
     "code": "D545",
-    "title": "Healthcare Administration Evolution, Systems,",
+    "title": "Healthcare Administration Evolution, Systems, and Leadership",
     "active": true,
     "scope": "AP",
     "school": "School of Business",
     "alt_titles": [
-      "Healthcare Administration Evolution, Systems, and Leadership"
+      "Healthcare Administration Evolution, Systems,"
     ]
   },
   {
@@ -3883,23 +3875,23 @@
   {
     "type": "course",
     "code": "D548",
-    "title": "Emergency Management and Planning in",
+    "title": "Emergency Management and Planning in Healthcare",
     "active": true,
     "scope": "AP",
     "school": "School of Business",
     "alt_titles": [
-      "Emergency Management and Planning in Healthcare"
+      "Emergency Management and Planning in"
     ]
   },
   {
     "type": "course",
     "code": "D549",
-    "title": "Exploring Emerging Trends in Healthcare",
+    "title": "Exploring Emerging Trends in Healthcare Administration",
     "active": true,
     "scope": "AP",
     "school": "School of Business",
     "alt_titles": [
-      "Exploring Emerging Trends in Healthcare Administration"
+      "Exploring Emerging Trends in Healthcare"
     ]
   },
   {
@@ -4041,12 +4033,12 @@
   {
     "type": "course",
     "code": "D568",
-    "title": "Health Equity and Social Determinants of",
+    "title": "Health Equity and Social Determinants of Health",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Health Equity and Social Determinants of Health"
+      "Health Equity and Social Determinants of"
     ]
   },
   {
@@ -4124,12 +4116,12 @@
   {
     "type": "course",
     "code": "D578",
-    "title": "Capstone in Psychology",
+    "title": "Capstone for BS in Psychology",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Capstone for BS in Psychology"
+      "Capstone in Psychology"
     ]
   },
   {
@@ -4311,12 +4303,12 @@
   {
     "type": "course",
     "code": "D601",
-    "title": "Data Storytelling for Varied Audiences",
+    "title": "Data Storytelling for Diverse Audiences",
     "active": true,
     "scope": "AP",
     "school": "School of Technology",
     "alt_titles": [
-      "Data Storytelling for Diverse Audiences"
+      "Data Storytelling for Varied Audiences"
     ]
   },
   {
@@ -4426,12 +4418,12 @@
   {
     "type": "course",
     "code": "D617",
-    "title": "Public Health Core Functions and Essential",
+    "title": "Public Health Core Functions and Essential Services",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Public Health Core Functions and Essential Services"
+      "Public Health Core Functions and Essential"
     ]
   },
   {
@@ -4469,12 +4461,12 @@
   {
     "type": "course",
     "code": "D622",
-    "title": "Public Health Assessment, Program Planning,",
+    "title": "Public Health Assessment, Program Planning, Intervention, and",
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health",
     "alt_titles": [
-      "Public Health Assessment, Program Planning, Intervention, and"
+      "Public Health Assessment, Program Planning,"
     ]
   },
   {
@@ -4552,23 +4544,23 @@
   {
     "type": "course",
     "code": "D632",
-    "title": "Cultural Competency and Social-Emotional",
+    "title": "Cultural Competency and Social-Emotional Learning",
     "active": true,
     "scope": "AP",
     "school": "School of Education",
     "alt_titles": [
-      "Cultural Competency and Social-Emotional Learning"
+      "Cultural Competency and Social-Emotional"
     ]
   },
   {
     "type": "course",
     "code": "D633",
-    "title": "Leadership of Curriculum Design and",
+    "title": "Leadership of Curriculum Design and Instruction",
     "active": true,
     "scope": "AP",
     "school": "School of Education",
     "alt_titles": [
-      "Leadership of Curriculum Design and Instruction"
+      "Leadership of Curriculum Design and"
     ]
   },
   {
@@ -5529,7 +5521,7 @@
     "title": "Technology and Ethics: Emerging Trends and",
     "active": true,
     "scope": "AP",
-    "school": "School of Education; School of Technology"
+    "school": "School of Business; School of Technology; School of Education"
   },
   {
     "type": "course",
@@ -5550,12 +5542,12 @@
   {
     "type": "course",
     "code": "D776",
-    "title": "Healthcare Leadership and Community",
+    "title": "Healthcare Leadership and Community Engagement",
     "active": true,
     "scope": "AP",
     "school": "School of Business",
     "alt_titles": [
-      "Healthcare Leadership and Community Engagement"
+      "Healthcare Leadership and Community"
     ]
   },
   {
@@ -5940,7 +5932,7 @@
     "title": "General Chemistry I",
     "active": true,
     "scope": "AP",
-    "school": "School of Education"
+    "school": "School of Technology; School of Education"
   },
   {
     "type": "course",
@@ -5948,7 +5940,7 @@
     "title": "General Chemistry I Lab",
     "active": true,
     "scope": "AP",
-    "school": "School of Education"
+    "school": "School of Technology; School of Education"
   },
   {
     "type": "course",
@@ -6784,6 +6776,238 @@
   },
   {
     "type": "course",
+    "code": "E054",
+    "title": "Foundations of Project Management",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "course",
+    "code": "E055",
+    "title": "Project Scoping and Scheduling",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "course",
+    "code": "E056",
+    "title": "Budgeting and Cost Control",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "course",
+    "code": "E057",
+    "title": "Risk Management and Contingency Planning",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "course",
+    "code": "E058",
+    "title": "Stakeholder Communication and Collaboration",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "course",
+    "code": "E059",
+    "title": "Legal, Ethical, and Cultural Considerations in",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "course",
+    "code": "E060",
+    "title": "Project Management Methodologies",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "course",
+    "code": "E061",
+    "title": "Strategic Project Management and Decision",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "course",
+    "code": "E062",
+    "title": "Applied Project Management Capstone",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "course",
+    "code": "E066",
+    "title": "Object Oriented Programming in Python",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "course",
+    "code": "E067",
+    "title": "Calculus I",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "course",
+    "code": "E068",
+    "title": "Ethical Engineering",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "course",
+    "code": "E071",
+    "title": "Applied Discrete Mathematics",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "course",
+    "code": "E077",
+    "title": "Introduction to AI Engineering",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "course",
+    "code": "E078",
+    "title": "Calculus II for Engineers",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "course",
+    "code": "E079",
+    "title": "Calculus III for Engineers",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "course",
+    "code": "E080",
+    "title": "AI Engineering with C#",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "course",
+    "code": "E081",
+    "title": "Azure AI Fundamentals",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "course",
+    "code": "E082",
+    "title": "Linear Algebra for Engineers",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "course",
+    "code": "E083",
+    "title": "Mathematics of AI",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "course",
+    "code": "E084",
+    "title": "Advanced C#",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "course",
+    "code": "E085",
+    "title": "C# .NET Back End Development",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "course",
+    "code": "E086",
+    "title": "Computer Systems for AI",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "course",
+    "code": "E087",
+    "title": "Deep Learning for AI Engineers",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "course",
+    "code": "E088",
+    "title": "Natural Language Processing for AI Engineers",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "course",
+    "code": "E089",
+    "title": "Computer Vision for AI Engineers",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "course",
+    "code": "E090",
+    "title": "Applied AI Engineering",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
+  },
+  {
+    "type": "course",
+    "code": "E101",
+    "title": "Applied Professional Experience",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "course",
+    "code": "E200",
+    "title": "MSHRM Capstone",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
+  },
+  {
+    "type": "course",
     "code": "E224",
     "title": "Global and Population Health",
     "active": true,
@@ -6881,12 +7105,12 @@
   {
     "type": "course",
     "code": "PFIT",
-    "title": "Business - IT Management Portfolio",
+    "title": "Business - IT Management Portfolio Requirement",
     "active": true,
     "scope": "AP",
     "school": "School of Business",
     "alt_titles": [
-      "Business - IT Management Portfolio Requirement"
+      "Business - IT Management Portfolio"
     ]
   },
   {
@@ -6908,12 +7132,12 @@
   {
     "type": "course",
     "code": "QGT1",
-    "title": "Business Management Capstone Written",
+    "title": "Business Management Capstone Written Project",
     "active": true,
     "scope": "AP",
     "school": "School of Business",
     "alt_titles": [
-      "Business Management Capstone Written Project"
+      "Business Management Capstone Written"
     ]
   },
   {
@@ -6967,12 +7191,12 @@
   {
     "type": "course",
     "code": "SLO1",
-    "title": "Theories of Second Language Acquisition and",
+    "title": "Theories of Second Language Acquisition and Grammar",
     "active": true,
     "scope": "AP",
     "school": "School of Education",
     "alt_titles": [
-      "Theories of Second Language Acquisition and Grammar"
+      "Theories of Second Language Acquisition and"
     ]
   },
   {
@@ -12269,6 +12493,14 @@
   },
   {
     "type": "course",
+    "code": "D436",
+    "title": "Inclusive Workplace Culture Capstone",
+    "active": false,
+    "scope": "AP",
+    "school": "College of Business"
+  },
+  {
+    "type": "course",
     "code": "D509",
     "title": "Innovative Solutions in Healthcare Leadership",
     "active": false,
@@ -13332,14 +13564,6 @@
   },
   {
     "type": "course",
-    "code": "C955A",
-    "title": "Applied Probability & Statistics",
-    "active": true,
-    "scope": "cert",
-    "school": "Certificates - Standard Paths"
-  },
-  {
-    "type": "course",
     "code": "CSBE",
     "title": "Back-End Coding: Java and Job Readiness",
     "active": true,
@@ -13542,6 +13766,14 @@
     "type": "course",
     "code": "D774A",
     "title": "Introduction to Business Accounting (optional)",
+    "active": true,
+    "scope": "cert",
+    "school": "Certificates - Standard Paths"
+  },
+  {
+    "type": "course",
+    "code": "D979A",
+    "title": "Data and Decisions: Applied Statistics",
     "active": true,
     "scope": "cert",
     "school": "Certificates - Standard Paths"
@@ -13865,6 +14097,14 @@
     "active": true,
     "scope": "AP",
     "school": "School of Business"
+  },
+  {
+    "type": "program",
+    "code": "BSAIE",
+    "title": "Bachelor of Science, AI Engineering",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Technology"
   },
   {
     "type": "program",
@@ -14265,6 +14505,14 @@
     "active": true,
     "scope": "AP",
     "school": "Leavitt School of Health"
+  },
+  {
+    "type": "program",
+    "code": "BSPM",
+    "title": "Bachelor of Science, Project Management",
+    "active": true,
+    "scope": "AP",
+    "school": "School of Business"
   },
   {
     "type": "program",

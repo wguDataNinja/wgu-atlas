@@ -1,0 +1,36 @@
+{
+  "catalog_date": "2026-06",
+  "current_edition": "2026_06",
+  "generated": "2026-06-19T00:20:57",
+  "generator": "scripts/freeze_trusted_snapshot.py",
+  "parser_version": "N/A (frozen from helpers + program_names; not a fresh parser run)",
+  "verification_status": "SCRIPT_VALIDATED_PENDING_MANUAL_REVIEW",
+  "ap_scope": {
+    "unique_course_codes": 866,
+    "active_courses_in_csv": 866,
+    "programs": 116,
+    "source": "course_index_v10.json (filtered to current edition)",
+    "file": "courses_2026_06.csv"
+  },
+  "cert_scope": {
+    "unique_course_codes": 52,
+    "overlap_with_ap": 0,
+    "note": "Intentionally out of AP scope. Cert codes are structurally different from AP codes. Carried forward from prior trusted snapshot with known corrections.",
+    "file": "certs_2026_06.csv",
+    "cert_programs": 16
+  },
+  "combined_total_unique": 918,
+  "frozen_source_files": [
+    "course_index_2026_06.json",
+    "sections_index_2026_06.json",
+    "degree_snapshots_2026_06.json",
+    "program_blocks_2026_06.json",
+    "program_index_2026_06.json"
+  ],
+  "validation_assertions": {
+    "edition_has_course_data": true,
+    "edition_in_helper_sections_index": true,
+    "edition_in_helper_degree_snapshots": true,
+    "program_blocks_match_edition": true
+  }
+}

@@ -1,23 +1,58 @@
 {
-  "data_date": "2026-03",
-  "archive_span": "2017-01 to 2026-03",
-  "total_editions": 108,
-  "total_course_codes_ever": 1594,
-  "active_ap_codes": 838,
+  "data_date": "2026-06",
+  "archive_span": "2017-01 to 2026-06",
+  "total_editions": 111,
+  "total_course_codes_ever": 1675,
+  "active_ap_codes": 866,
   "active_cert_codes": 52,
-  "retired_ap_codes": 756,
-  "active_programs": 114,
+  "retired_ap_codes": 757,
+  "active_programs": 116,
   "retired_programs": 82,
   "active_by_school": {
-    "Business": 190,
+    "Business": 201,
     "Health": 193,
-    "Technology": 200,
+    "Technology": 220,
     "Education": 299
   },
   "active_by_school_note": "Courses in multiple schools are counted in each. Total may exceed active_ap_codes.",
   "curated_major_events_count": 10,
   "most_recent_curated_event": "Graduate CS/SWE Specialization Split and Education/Health Expansion",
   "recent_version_changes": [
+    {
+      "program_code": "BSFIN",
+      "last_version_date": "2026-06",
+      "version_stamp": "202608",
+      "degree_heading": "Bachelor of Science, Finance",
+      "school": "College of Business"
+    },
+    {
+      "program_code": "MSHRM",
+      "last_version_date": "2026-06",
+      "version_stamp": "202608",
+      "degree_heading": "Master of Science, Human Resource Management",
+      "school": "College of Business"
+    },
+    {
+      "program_code": "BSAIE",
+      "last_version_date": "2026-05",
+      "version_stamp": "202607",
+      "degree_heading": "Bachelor of Science, AI Engineering",
+      "school": "School of Technology"
+    },
+    {
+      "program_code": "BSMKT",
+      "last_version_date": "2026-05",
+      "version_stamp": "202607",
+      "degree_heading": "Bachelor of Science, Marketing",
+      "school": "School of Business"
+    },
+    {
+      "program_code": "BSPM",
+      "last_version_date": "2026-05",
+      "version_stamp": "202607",
+      "degree_heading": "Bachelor of Science, Project Management",
+      "school": "School of Business"
+    },
     {
       "program_code": "BAELED",
       "last_version_date": "2026-03",
@@ -38,44 +73,21 @@
       "version_stamp": "202603",
       "degree_heading": "Bachelor of Arts, Educational Studies in Secondary Mathematics Education",
       "school": "School of Education"
-    },
-    {
-      "program_code": "BAESSESB",
-      "last_version_date": "2026-03",
-      "version_stamp": "202603",
-      "degree_heading": "Bachelor of Arts, Educational Studies in Secondary Biological Science Education",
-      "school": "School of Education"
-    },
-    {
-      "program_code": "BAESSESC",
-      "last_version_date": "2026-03",
-      "version_stamp": "202603",
-      "degree_heading": "Bachelor of Arts, Educational Studies in Secondary Chemistry Science Education",
-      "school": "School of Education"
-    },
-    {
-      "program_code": "BAESSESE",
-      "last_version_date": "2026-03",
-      "version_stamp": "202603",
-      "degree_heading": "Bachelor of Arts, Educational Studies in Secondary Earth Science Education",
-      "school": "School of Education"
-    },
-    {
-      "program_code": "BAESSESP",
-      "last_version_date": "2026-03",
-      "version_stamp": "202603",
-      "degree_heading": "Bachelor of Arts, Educational Studies in Secondary Physics Science Education",
-      "school": "School of Education"
-    },
-    {
-      "program_code": "BAESSPEE",
-      "last_version_date": "2026-03",
-      "version_stamp": "202603",
-      "degree_heading": "Bachelor of Arts, Educational Studies in Special and Elementary Education",
-      "school": "School of Education"
     }
   ],
   "newest_programs": [
+    {
+      "program_code": "BSAIE",
+      "first_seen": "2026-05",
+      "degree_heading": "Bachelor of Science, AI Engineering",
+      "school": "School of Technology"
+    },
+    {
+      "program_code": "BSPM",
+      "first_seen": "2026-05",
+      "degree_heading": "Bachelor of Science, Project Management",
+      "school": "School of Business"
+    },
     {
       "program_code": "MSIT",
       "first_seen": "2026-02",
@@ -111,21 +123,45 @@
       "first_seen": "2025-08",
       "degree_heading": "Bachelor of Science, Cloud and Network Engineering - Microsoft Azure",
       "school": "School of Technology"
-    },
-    {
-      "program_code": "BSCNECIS",
-      "first_seen": "2025-08",
-      "degree_heading": "Bachelor of Science, Cloud and Network Engineering - Cisco",
-      "school": "School of Technology"
-    },
-    {
-      "program_code": "ENDMEMG",
-      "first_seen": "2025-07",
-      "degree_heading": "Endorsement Preparation Program, Middle Grades Math",
-      "school": "School of Education"
     }
   ],
   "recent_course_additions": [
+    {
+      "code": "E200",
+      "title": "MSHRM Capstone",
+      "added_in": "2026-06",
+      "school": "School of Business"
+    },
+    {
+      "code": "E054",
+      "title": "Foundations of Project Management",
+      "added_in": "2026-05",
+      "school": "School of Business"
+    },
+    {
+      "code": "E055",
+      "title": "Project Scoping and Scheduling",
+      "added_in": "2026-05",
+      "school": "School of Business"
+    },
+    {
+      "code": "E056",
+      "title": "Budgeting and Cost Control",
+      "added_in": "2026-05",
+      "school": "School of Business"
+    },
+    {
+      "code": "E057",
+      "title": "Risk Management and Contingency Planning",
+      "added_in": "2026-05",
+      "school": "School of Business"
+    },
+    {
+      "code": "E058",
+      "title": "Stakeholder Communication and Collaboration",
+      "added_in": "2026-05",
+      "school": "School of Business"
+    },
     {
       "code": "D822",
       "title": "Technology Governance",
@@ -155,36 +191,6 @@
       "title": "Technology Management",
       "added_in": "2026-02",
       "school": "School of Technology"
-    },
-    {
-      "code": "D907",
-      "title": "Health Services Research",
-      "added_in": "2025-12",
-      "school": "Leavitt School of Health"
-    },
-    {
-      "code": "D908",
-      "title": "Healthcare Management",
-      "added_in": "2025-12",
-      "school": "Leavitt School of Health"
-    },
-    {
-      "code": "D909",
-      "title": "Healthcare Law and Ethics",
-      "added_in": "2025-12",
-      "school": "Leavitt School of Health"
-    },
-    {
-      "code": "D910",
-      "title": "Data Analysis for Healthcare Decisions",
-      "added_in": "2025-12",
-      "school": "Leavitt School of Health"
-    },
-    {
-      "code": "D911",
-      "title": "Transforming Healthcare Through Technology",
-      "added_in": "2025-12",
-      "school": "Leavitt School of Health"
     }
   ],
   "curated_major_events_preview": [

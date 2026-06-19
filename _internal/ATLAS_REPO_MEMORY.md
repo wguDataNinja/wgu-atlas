@@ -192,16 +192,25 @@ future dedicated `wgu-catalog` repo. Atlas should consume stable catalog outputs
 or its committed/local mirror, not parser internals.
 
 Key environment variables for running build scripts:
+- `WGU_CATALOG_CURRENT_EDITION` — which trusted edition to use as the current snapshot (default `2026_03`). Accepts both underscore (`2026_06`) and hyphen (`2026-06`) formats; normalized internally.
 - `WGU_CATALOG_OUTPUTS` — preferred path to catalog outputs or the Atlas-local `data/catalog/` mirror
 - `WGU_REDDIT_PATH` — backward-compatible alias for the old `wgu-reddit/WGU_catalog/outputs/` path
 - `WGU_ATLAS_DATA` — path to this repo's `data/` directory (defaults to `../data` relative to scripts/)
 
 Pre-generated artifacts are committed in `public/data/` and `data/`. Re-running
 site-data build scripts is only needed when new catalog data has been processed
-and mirrored. The current public runtime exports still use the frozen 2026-03
-current-site snapshot (`data/catalog/trusted/2026_03/`); the 2026-04, 2026-05,
-and 2026-06 editions are present in history/diff/raw-text mirror artifacts but
-are not yet a new site-current trusted snapshot.
+and mirrored. The build script now accepts `WGU_CATALOG_CURRENT_EDITION` to
+target a specific trusted snapshot. Default remains `2026_03`.
+
+Trusted snapshot directories follow the convention `trusted/{YYYY}_{MM}/`
+containing 8 files: courses CSV, certs CSV, course_index JSON, sections_index
+JSON, degree_snapshots JSON, program_blocks JSON, program_index JSON, and
+manifest JSON. A reusable freeze script at `scripts/freeze_trusted_snapshot.py`
+creates new snapshots deterministically from helper files.
+
+Current trusted snapshots:
+- `data/catalog/trusted/2026_03/` — original frozen site-current snapshot (838 AP, 114 programs, 108 editions).
+- `data/catalog/trusted/2026_06/` — new snapshot created 2026-06-19 (866 AP, 116 programs, 111 editions). Manifest status: `SCRIPT_VALIDATED_PENDING_MANUAL_REVIEW`.
 
 Operational parser rule: `parse_catalog_v11.py` is authoritative only when run
 over the full corpus. A single-edition parser run rebuilds global indexes from
@@ -997,7 +1006,8 @@ This is the main deterministic build step for runtime-facing site data.
 
 | Script | Role | Classification |
 |---|---|---|
-| `build_site_data.py` | builds core site-ready artifacts | active core |
+| `build_site_data.py` | builds core site-ready artifacts; supports `WGU_CATALOG_CURRENT_EDITION` env var | active core |
+| `freeze_trusted_snapshot.py` | creates a deterministic trusted snapshot from helpers + program_names | active supporting |
 | `extract_program_enriched.py` | extracts program descriptions/rosters/outcomes | active supporting |
 | `extract_course_descriptions.py` | extracts course descriptions | active supporting |
 | `validate_lineage_decisions.py` | validates lineage curation overlay | active supporting |
@@ -1097,7 +1107,13 @@ These are repo boundaries or mismatches that matter for rebuild assumptions and 
 - Full regeneration pipeline depends on non-committed upstream file `course_index_v10.json` (~59 MB)
 - School lineage in runtime is hardcoded in `src/lib/data.ts` constants, not derived from a dedicated artifact
 - Missing catalog editions: `2017-02`, `2017-04`, `2017-06`; Atlas-local mirror otherwise spans `2017-01` through `2026-06`
-- Homepage summary uses stale `total_course_codes_ever: 1594` vs actual canonical 1,646 rows
+- Homepage summary fields `total_course_codes_ever`, `active_programs`, `retired_programs` were previously stale or zero. Resolved in 2026-06-19 Package D:
+  - `active_programs` derived from `len(trusted/{EDITION}/program_blocks_{EDITION}.json)` (not `program_history.csv` status field, which is unreliable).
+  - `retired_programs` derived as `len(prog_hist_rows) - len(program_blocks)`.
+  - `total_course_codes_ever` derived as `len(canonical_rows)` from the site-data build output.
+  - Build script cleans stale `public/data/courses/*.json` files before regenerating active per-course files.
+  - Program active status in search index, `newest_programs`, and `recent_version_changes` also use program_blocks-derived status.
+- `total_editions` in homepage_summary is derived by counting sections_index_v10.json edition keys <= the selected `EDITION_DATE`. Since the helper file already excludes the 3 known missing editions, this resolves to 108 for 2026_03 and 111 for 2026_06.
 
 ---
 
